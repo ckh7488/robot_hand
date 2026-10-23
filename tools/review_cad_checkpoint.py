@@ -4,7 +4,8 @@ from pathlib import Path
 import FreeCAD as A
 import Part
 P=Path(__file__).resolve().parents[1]
-ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path);args=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path);ap.add_argument('--root',type=Path);args=ap.parse_args()
+if args.root:P=args.root.resolve()
 B=P/'cad/modular_roots_v9';W=P/'cad/wiring_access_v10';D=P/'cad/audit_fixes_v12'
 scene=json.loads((B/'scene.json').read_text(encoding='utf-8'))['Open']
 meta={x['name']:x for x in scene}
@@ -56,28 +57,15 @@ assert sum(len(x.Shape.Solids) for x in objects)==976
 modified=doc.getObject('thumb_mcp_link').Shape
 symmetric_difference=modified.cut(new_world).Volume+new_world.cut(modified).Volume
 assert symmetric_difference < 1e-6,symmetric_difference
-# All other pre-existing objects retain V11 shape and placement.
-prior=A.openDocument(str(P/'cad/service_loops_v11/V11_open_hand_loop_packaging.FCStd'))
-unchanged=0
-boolean_fallbacks=[]
-for obj in objects:
-    if obj.Name=='thumb_mcp_link':continue
-    source=prior.getObject(obj.Name)
-    assert source is not None,obj.Name
-    assert abs(source.Shape.Volume-obj.Shape.Volume) < 1e-6,obj.Name
-    assert abs(source.Shape.Area-obj.Shape.Area) < 1e-5,obj.Name
-    for v,w in zip(source.Placement.toMatrix().A,obj.Placement.toMatrix().A):assert abs(v-w)<1e-9,obj.Name
-    # Exact shape equality in saved documents, after global placement.
-    if hashlib.sha256(source.Shape.exportBrepToString().encode()).digest()!=hashlib.sha256(obj.Shape.exportBrepToString().encode()).digest():
-        delta=source.Shape.cut(obj.Shape).Volume+obj.Shape.cut(source.Shape).Volume
-        assert delta<1e-6,(obj.Name,delta)
-        boolean_fallbacks.append({'object':obj.Name,'symmetric_difference_mm3':delta})
-    unchanged+=1
+# Compare topology, geometry tokens and exact saved placements; avoid boolean unions of vendor surfaces.
+from compare_saved_breps import compare_objects
+same=compare_objects(P/'cad/service_loops_v11/V11_open_hand_loop_packaging.FCStd',D/'V12_hand_packaging.FCStd',exclude=['thumb_mcp_link'])
+unchanged=same['unchanged_objects'];boolean_fallbacks=[]
 result={'FreeCAD':A.Version()[:3],'new_single_valid_solid':True,'material_outside_V10_mm3':outside,
         'material_outside_V9_mm3':outside_baseline,'removed_from_V10_mm3':removed,
         'head_rederived_from_actual_screw_BRep_mm':[head.x,head.y,head.z],
         'before_shaft_overlap_mm3':before,'tool_checks':rows,'assembly_objects':len(objects),'assembly_solids':976,
-        'saved_thumb_shape_symmetric_difference_mm3':symmetric_difference,'other_objects_unchanged':unchanged,'serialization_difference_BRep_rechecks':boolean_fallbacks,
+        'saved_thumb_shape_symmetric_difference_mm3':symmetric_difference,'other_objects_unchanged':unchanged,'serialization_difference_BRep_rechecks':boolean_fallbacks,'saved_BRep_equivalence':same,
         'scope':'Minimum subassembly straight-tool access, source subtraction and saved-hand consistency. Not whole-hand servicing, screw tightening, nut retention or FDM strength.',
         'manufacturing_release':False}
 text=json.dumps(result,indent=2)

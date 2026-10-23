@@ -1,0 +1,1344 @@
+{
+  "FreeCAD": [
+    "1",
+    "0",
+    "2"
+  ],
+  "new_single_valid_solid": true,
+  "material_outside_V10_mm3": 0.0,
+  "material_outside_V9_mm3": 0.0,
+  "removed_from_V10_mm3": 38.23144650901667,
+  "head_rederived_from_actual_screw_BRep_mm": [
+    86.97647541473168,
+    73.04518338927727,
+    -3.2000000000000064
+  ],
+  "before_shaft_overlap_mm3": 24.630086404143967,
+  "tool_checks": [
+    {
+      "tool": "head_pass",
+      "obstacle": "thumb_mcp_link",
+      "overlap_mm3": 0.0,
+      "gap_mm": 1.8500000000000005
+    },
+    {
+      "tool": "head_pass",
+      "obstacle": "thumb_pip_fixed_frame",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.1499999999984154
+    },
+    {
+      "tool": "head_pass",
+      "obstacle": "thumb_pip_base_nuts",
+      "overlap_mm3": 0.0,
+      "gap_mm": 4.650000000000001
+    },
+    {
+      "tool": "shaft",
+      "obstacle": "thumb_mcp_link",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.3499999999969532
+    },
+    {
+      "tool": "shaft",
+      "obstacle": "thumb_pip_fixed_frame",
+      "overlap_mm3": 0.0,
+      "gap_mm": 5.25755833806735
+    },
+    {
+      "tool": "shaft",
+      "obstacle": "thumb_pip_base_nuts",
+      "overlap_mm3": 0.0,
+      "gap_mm": 12.600000000000001
+    },
+    {
+      "tool": "handle",
+      "obstacle": "thumb_mcp_link",
+      "overlap_mm3": 0.0,
+      "gap_mm": 27.800000000000004
+    },
+    {
+      "tool": "handle",
+      "obstacle": "thumb_pip_fixed_frame",
+      "overlap_mm3": 0.0,
+      "gap_mm": 54.800000000000004
+    },
+    {
+      "tool": "handle",
+      "obstacle": "thumb_pip_base_nuts",
+      "overlap_mm3": 0.0,
+      "gap_mm": 64.60000000000001
+    }
+  ],
+  "assembly_objects": 252,
+  "assembly_solids": 976,
+  "saved_thumb_shape_symmetric_difference_mm3": 0.0,
+  "other_objects_unchanged": 251,
+  "serialization_difference_BRep_rechecks": [],
+  "saved_BRep_equivalence": {
+    "unchanged_objects": 251,
+    "byte_identical": 115,
+    "max_numeric_roundoff": 9.992007221626409e-16,
+    "ignored_flag": "OCCT Checked state only, third of seven bits",
+    "numeric_token_tolerance": 1e-10,
+    "rows": [
+      {
+        "object": "Index_root_cartridge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000064e-17
+      },
+      {
+        "object": "Index_root_mount_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Index_root_mount_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Little_loop_q0_wire1",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Little_loop_q0_wire2",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Little_loop_q0_wire3",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Little_root_cartridge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000064e-17
+      },
+      {
+        "object": "Little_root_mount_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Little_root_mount_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Middle_root_cartridge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000064e-17
+      },
+      {
+        "object": "Middle_root_mount_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Middle_root_mount_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Palm_back_chassis",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "Palm_cover_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Palm_cover_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Palm_front_cover",
+        "byte_identical": false,
+        "max_numeric_roundoff": 2.220446049250313e-16
+      },
+      {
+        "object": "Palm_saddle_mount_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Palm_saddle_mount_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Palm_thumb_mount_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Palm_thumb_mount_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Ring_root_cartridge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000064e-17
+      },
+      {
+        "object": "Ring_root_mount_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Ring_root_mount_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "Thumb_internal_cradle",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_dip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_dip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_dip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_dip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_dip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_dip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_dip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_dip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_dip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_dip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "index_dip_tip",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_mcp_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_mcp_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_mcp_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_mcp_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "index_pip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_pip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_pip_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_pip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_pip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "index_root_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_root_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_root_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_root_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_root_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_root_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "index_root_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_root_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_root_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "index_root_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "index_spread_carrier",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_dip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_dip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_dip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_dip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "little_dip_tip",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_mcp_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_mcp_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_mcp_motor_plug",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_motor_wire1",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_motor_wire2",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_motor_wire3",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_mcp_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "little_pip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_pip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_pip_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_pip_motor_plug",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_motor_wire1",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_motor_wire2",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_motor_wire3",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_pip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "little_root_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_root_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_root_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_root_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_root_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_root_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "little_root_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_root_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_root_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "little_root_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "little_spread_carrier",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_dip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_dip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_dip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_dip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "middle_dip_tip",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_mcp_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_mcp_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_mcp_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_mcp_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "middle_pip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_pip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_pip_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_pip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_pip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "middle_root_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_root_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_root_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_root_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_root_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_root_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "middle_root_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_root_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_root_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "middle_root_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "middle_spread_carrier",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_dip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_dip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_dip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_dip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "ring_dip_tip",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_mcp_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_mcp_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_mcp_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_mcp_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "ring_pip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_pip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_pip_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_pip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_pip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "ring_root_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_root_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_root_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_root_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_root_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_root_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "ring_root_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_root_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_root_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "ring_root_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "ring_spread_carrier",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_dip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_dip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_dip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_dip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_dip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 9.992007221626409e-16
+      },
+      {
+        "object": "thumb_dip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_dip_output_hinge_tap",
+        "byte_identical": false,
+        "max_numeric_roundoff": 9.992007221626409e-16
+      },
+      {
+        "object": "thumb_dip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 9.992007221626409e-16
+      },
+      {
+        "object": "thumb_dip_output_screws",
+        "byte_identical": false,
+        "max_numeric_roundoff": 9.992007221626409e-16
+      },
+      {
+        "object": "thumb_dip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 9.992007221626409e-16
+      },
+      {
+        "object": "thumb_dip_tip",
+        "byte_identical": false,
+        "max_numeric_roundoff": 9.992007221626409e-16
+      },
+      {
+        "object": "thumb_mcp_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_mcp_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_mcp_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_mcp_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_mcp_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_mcp_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_mcp_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_mcp_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_mcp_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_mcp_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "thumb_pip_base_body_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_base_nuts",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_base_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_fixed_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_pip_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_pip_link",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_pip_output_hinge_tap",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_output_screws",
+        "byte_identical": true,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_pip_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "thumb_root_base_body_tap",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_root_base_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_root_base_screws",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_root_frame",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_root_hinge",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_root_motor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.1102230246251565e-16
+      },
+      {
+        "object": "thumb_root_output_hinge_tap",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_root_output_nuts",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_root_output_screws",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      },
+      {
+        "object": "thumb_root_rotor",
+        "byte_identical": false,
+        "max_numeric_roundoff": 1.0000000000000002e-17
+      },
+      {
+        "object": "thumb_spread_carrier",
+        "byte_identical": false,
+        "max_numeric_roundoff": 0.0
+      }
+    ]
+  },
+  "scope": "Minimum subassembly straight-tool access, source subtraction and saved-hand consistency. Not whole-hand servicing, screw tightening, nut retention or FDM strength.",
+  "manufacturing_release": false
+}
