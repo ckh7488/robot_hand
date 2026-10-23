@@ -1,0 +1,116 @@
+{
+  "source_cover": "../modular_roots_v9/parts/Palm_front_cover.step",
+  "source_screws": "../modular_roots_v9/parts/M3_cover_screws.step",
+  "source_assembly": "../audit_fixes_v12/V12_hand_packaging.FCStd",
+  "screw_spec": {
+    "checked_on_kst": "2026-10-24",
+    "part": "Accu SSB-M3-8-A2, ISO 7380-1 socket button M3x8",
+    "url": "https://www.accu.co.uk/socket-button-screws/8102-SSB-M3-8-A2",
+    "max_head_diameter_mm": 5.7,
+    "max_head_height_mm": 1.65,
+    "thread_pitch_mm": 0.5,
+    "socket_mm": 2,
+    "model": "Conservative cylinder envelope for head and full threaded shank, not vendor STEP; socket and domed head omitted.",
+    "purchase_approved": false
+  },
+  "counterbore_diameter_mm": 6.3,
+  "removed_cover_material_mm3": 215.40919077960945,
+  "material_outside_source_mm3": 0.0,
+  "screw_cover_overlap_mm3": 0.0,
+  "cover_valid_single_solid": true,
+  "screw_components": 5,
+  "screws": [
+    {
+      "xy_mm": [
+        -39.0,
+        15.0
+      ],
+      "seat_z_mm": 24.05,
+      "head_top_z_mm": 25.7,
+      "recess_below_cover_mm": 0.2999999999999994,
+      "remaining_full_bearing_land_mm": 2.0500000000000007,
+      "retained_annulus_missing_mm3": 0.0,
+      "nut_z_mm": [
+        17.5,
+        19.9
+      ],
+      "full_nut_engagement_mm": 2.4,
+      "thread_tip_z_mm": 16.05,
+      "tip_beyond_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        -62.0,
+        48.0
+      ],
+      "seat_z_mm": 24.05,
+      "head_top_z_mm": 25.7,
+      "recess_below_cover_mm": 0.2999999999999994,
+      "remaining_full_bearing_land_mm": 2.0500000000000007,
+      "retained_annulus_missing_mm3": 0.0,
+      "nut_z_mm": [
+        17.5,
+        19.9
+      ],
+      "full_nut_engagement_mm": 2.4,
+      "thread_tip_z_mm": 16.05,
+      "tip_beyond_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        -86.0,
+        98.0
+      ],
+      "seat_z_mm": 24.05,
+      "head_top_z_mm": 25.7,
+      "recess_below_cover_mm": 0.2999999999999994,
+      "remaining_full_bearing_land_mm": 2.0500000000000007,
+      "retained_annulus_missing_mm3": 0.0,
+      "nut_z_mm": [
+        17.5,
+        19.9
+      ],
+      "full_nut_engagement_mm": 2.4,
+      "thread_tip_z_mm": 16.05,
+      "tip_beyond_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        -40.0,
+        106.0
+      ],
+      "seat_z_mm": 24.05,
+      "head_top_z_mm": 25.7,
+      "recess_below_cover_mm": 0.2999999999999994,
+      "remaining_full_bearing_land_mm": 2.0500000000000007,
+      "retained_annulus_missing_mm3": 0.0,
+      "nut_z_mm": [
+        17.5,
+        19.9
+      ],
+      "full_nut_engagement_mm": 2.4,
+      "thread_tip_z_mm": 16.05,
+      "tip_beyond_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        2.0,
+        121.0
+      ],
+      "seat_z_mm": 24.05,
+      "head_top_z_mm": 25.7,
+      "recess_below_cover_mm": 0.2999999999999994,
+      "remaining_full_bearing_land_mm": 2.0500000000000007,
+      "retained_annulus_missing_mm3": 0.0,
+      "nut_z_mm": [
+        17.5,
+        19.9
+      ],
+      "full_nut_engagement_mm": 2.4,
+      "thread_tip_z_mm": 16.05,
+      "tip_beyond_nut_mm": 1.4499999999999993
+    }
+  ],
+  "scope": "Nominal BRep geometry. No FDM clamp/creep approval or all-body servicing/retention proof. Screw envelope omits socket and rounded crown.",
+  "manufacturing_release": false
+}

@@ -10,3 +10,5 @@ mpl_config/
 /tmp/
 /review_runs/
 /cad_review_state.json
+
+/cad/assembly_fixes_v13/reviews/*.npz

@@ -1,9 +1,9 @@
 {
-  "id": "CP001",
-  "candidate": "cad/audit_fixes_v12",
+  "id": "CP002",
+  "candidate": "cad/assembly_fixes_v13",
   "baseline": "cad/modular_roots_v9",
-  "manifest": "checkpoints/CP001.manifest.json",
+  "manifest": "checkpoints/CP002.manifest.json",
   "manufacturing_release": false,
   "motor_performance_validated": false,
-  "status": "CAD audit-response checkpoint; post-commit review recorded separately"
+  "status": "Recessed cover screw candidate; full-fist endpoint fails 1mm clearance. Post-commit review is recorded separately."
 }

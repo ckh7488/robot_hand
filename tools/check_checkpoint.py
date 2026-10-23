@@ -34,6 +34,7 @@ for relative in [
     'cad/audit_fixes_v12/parts/Thumb_metacarpal_tool_access.stl',
     'cad/service_loops_v11/parts/Little_root_cable_saddle.stl',
     'cad/service_loops_v11/parts/Little_MCP_link_cable_saddle.stl',
+    *(['cad/assembly_fixes_v13/parts/Palm_front_cover_recessed.stl'] if current['candidate']=='cad/assembly_fixes_v13' else []),
 ]:
     m = trimesh.load_mesh(P/relative)
     components = len(m.split(only_watertight=False))

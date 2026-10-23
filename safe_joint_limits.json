@@ -1,0 +1,72 @@
+{
+  "status": "Partial offline geometry domains, not a complete robot joint-limit set",
+  "geometry_basis": "V9 collision_meshes.npz only; NOT V10/V11 wiring or V12/V13 full assembly",
+  "physical_actuation_approved": false,
+  "continuous_paths_approved": false,
+  "unit": "degree",
+  "fingers": [
+    "index",
+    "middle",
+    "ring",
+    "little",
+    "thumb"
+  ],
+  "spread_index": 0,
+  "required_other_joint_error_bound_deg": 0,
+  "required_arm_deg": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "evidence": [
+    {
+      "path": "cad/modular_roots_v9/design.json",
+      "sha256": "5fd76e966a29733b9897a050108ac4c2835359b8a4bdeb0f7eb2ed100252f296"
+    },
+    {
+      "path": "cad/modular_roots_v9/collision_meshes.npz",
+      "sha256": "e68c92ea217631dcf14c97926509a1cc6c1474e47de8eed43dcfd304bb02486a"
+    },
+    {
+      "path": "cad/audit_fixes_v12/reviews/spread_neighborhoods.json",
+      "sha256": "4a14ac78324ed85166bca74e052fca218f13612d8a9cccc5d035ed57eb4246d3"
+    }
+  ],
+  "domains": [
+    {
+      "pose": "Open",
+      "simultaneous_four_spread_halfwidth_deg": 1
+    },
+    {
+      "pose": "Close",
+      "simultaneous_four_spread_halfwidth_deg": 3
+    },
+    {
+      "pose": "Splay",
+      "simultaneous_four_spread_halfwidth_deg": 0.5
+    }
+  ],
+  "excluded_poses": [
+    "Backbend"
+  ],
+  "arm_pair_notes": {
+    "elbow_checked_actual_deg": [
+      0,
+      98
+    ],
+    "wrist_deviation_checked_actual_deg": [
+      -20,
+      17
+    ],
+    "other_axes_held_zero": true,
+    "not_a_coupled_arm_limit": true
+  },
+  "limitations": [
+    "A positive result covers four spread coordinates simultaneously around one fixed posture only.",
+    "All flexion, thumb and arm coordinates and their uncertainties must match the evidence domain exactly.",
+    "Camera uncertainty must be added to tracking error; no measured error envelope is supplied.",
+    "Do not interpolate between accepted endpoints and assume the path is approved.",
+    "No result from this tool authorizes movement or fabrication."
+  ]
+}

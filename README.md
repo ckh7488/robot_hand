@@ -2,12 +2,16 @@
 
 사람의 손과 팔 동작을 빠르게 따라 하는 3D 프린트 로봇 손을 설계하는 저장소입니다. 손가락 20축과 팔 4축을 검토합니다. **현재는 조립·배선·구동 검토용 후보이며, 제작 승인이나 실시간 추종 성능을 검증한 완성품이 아닙니다.**
 
-![현재 CAD 후보](cad/audit_fixes_v12/reviews/checkpoint_preview.png)
+**[진행 흐름만 보기 → PROGRESS.md](PROGRESS.md)**
+
+![덮개 나사 수정 후보](cad/assembly_fixes_v13/reviews/cover_fix_preview.png)
 
 ## 지금 볼 것
 
-- [CP001 감사 대응과 남은 문제](checkpoints/CP001.md)
-- [V12 손 전체 CAD](cad/audit_fixes_v12/V12_hand_packaging.FCStd) — FreeCAD 1.0에서 열기. 현재 손 후보이며 팔 전체 조립 파일은 아닙니다.
+- [CP002 덮개 나사 수정과 남은 문제](checkpoints/CP002.md)
+- [CP001 커밋 후 재검토](docs/reviews/CP001_c738a40.md)
+- [V13 손 조립 후보](cad/assembly_fixes_v13/V13_hand_packaging.FCStd) — 덮개와 나사 5개만 V12에서 변경.
+- [V12 손 전체 CAD](cad/audit_fixes_v12/V12_hand_packaging.FCStd) — FreeCAD 1.0에서 열기. 엄지 공구 통로 수정 기준이며 팔 전체 조립 파일은 아닙니다.
 - [V9 손+전완 전체 CAD](cad/modular_roots_v9/hand_forearm_v9.FCStd) / [STEP](cad/modular_roots_v9/hand_forearm_v9.step) — 독립 감사를 받은 동결 기준본.
 - [V12 엄지 수정 부품 STEP](cad/audit_fixes_v12/parts/Thumb_metacarpal_tool_access.step)
 - [독립 V9 감사 보고서](cad/audit_fixes_v12/received_audit/V9_audit_package/V9_audit_report.md)
@@ -20,7 +24,8 @@
 | cad/modular_roots_v9 | 동결된 감사 기준본 | 해시 222개 보존. 팔 모터 부족 등 알려진 미달 항목 포함 |
 | cad/wiring_access_v10 | 고정 출선과 엄지 채널 후보 | 완성된 전기 배선 아님 |
 | cad/service_loops_v11 | 새끼손가락 가이드·기하 루프 후보 | 실제 전선 유연체/수명 시뮬레이션 아님 |
-| cad/audit_fixes_v12 | 현재 감사 대응 후보 | 엄지 공구 통로 수정, 오차 여유 및 구동 대안 검토 |
+| cad/audit_fixes_v12 | 엄지 공구 통로 수정 기준 | 엄지 공구 통로 수정, 오차 여유 및 구동 대안 검토 |
+| cad/assembly_fixes_v13 | 현재 덮개 체결 후보 | 감사의 깊은 주먹 t=.99 접촉 해소. t=1은 덮개 여유 0.665mm로 미달 |
 
 V9 손은 약 1.335 kg이며, 손바닥 폭 232 mm인 큰 직결 구동 구조입니다. 이전 소형 상자 모델의 속도·토크 결과는 이 CAD에 적용하지 않습니다. XL330-M077이 목표 속도를 충족한다는 실측 근거는 아직 없습니다.
 
@@ -34,9 +39,12 @@ V9 손은 약 1.335 kg이며, 손바닥 폭 232 mm인 큰 직결 구동 구조�
 python verify_audit_evidence.py --full
 python cad/modular_roots_v9/kinematics_numpy.py
 python tools/check_checkpoint.py
+python tools/test_offline_pose_guard.py
 ~~~
 
 이 검사는 저장된 증거의 보존·일관성과 일부 형상을 확인합니다. 전체 동역학, 모든 조립 순서, 모든 연속 자세의 충돌을 승인하는 검사는 아닙니다. 정확한 CAD 재검사와 깨끗한 커밋 사본 검토는 docs/CHECKPOINT_WORKFLOW.md를 따릅니다.
+
+safe_joint_limits.json과 tools/offline_pose_guard.py는 V9의 네 벌림 관절 오차 상자에 대한 부분 오프라인 검사입니다. 전체 관절 제한이 아니며 V13이나 실물 구동을 승인하지 않습니다.
 
 ## 다음 설계 우선순위
 

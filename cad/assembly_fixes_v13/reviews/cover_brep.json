@@ -1,0 +1,118 @@
+{
+  "FreeCAD": [
+    "1",
+    "0",
+    "2"
+  ],
+  "cover_valid_single_solid": true,
+  "modified_objects": [
+    "Palm_front_cover",
+    "Palm_cover_screws"
+  ],
+  "cover_material_only_removed_mm3": 215.4091907796094,
+  "screw_cover_overlap_mm3": 0.0,
+  "screws_remeasured": [
+    {
+      "xy_mm": [
+        -39.0,
+        15.0
+      ],
+      "shank_length_mm": 8.0,
+      "head_top_below_cover_mm": 0.3000000000000007,
+      "remaining_bearing_land_mm": 2.0500000000000007,
+      "full_nut_engagement_mm": 2.3999999999999986,
+      "tip_past_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        -62.0,
+        48.0
+      ],
+      "shank_length_mm": 8.0,
+      "head_top_below_cover_mm": 0.3000000000000007,
+      "remaining_bearing_land_mm": 2.0500000000000007,
+      "full_nut_engagement_mm": 2.3999999999999986,
+      "tip_past_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        -86.0,
+        98.0
+      ],
+      "shank_length_mm": 8.0,
+      "head_top_below_cover_mm": 0.3000000000000007,
+      "remaining_bearing_land_mm": 2.0500000000000007,
+      "full_nut_engagement_mm": 2.3999999999999986,
+      "tip_past_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        -40.0,
+        106.0
+      ],
+      "shank_length_mm": 8.0,
+      "head_top_below_cover_mm": 0.3000000000000007,
+      "remaining_bearing_land_mm": 2.0500000000000007,
+      "full_nut_engagement_mm": 2.3999999999999986,
+      "tip_past_nut_mm": 1.4499999999999993
+    },
+    {
+      "xy_mm": [
+        1.9999999999999998,
+        121.0
+      ],
+      "shank_length_mm": 8.0,
+      "head_top_below_cover_mm": 0.3000000000000007,
+      "remaining_bearing_land_mm": 2.0500000000000007,
+      "full_nut_engagement_mm": 2.3999999999999986,
+      "tip_past_nut_mm": 1.4499999999999993
+    }
+  ],
+  "independent_critical_little_tip_placement": [
+    1.0,
+    0.0,
+    0.0,
+    -72.0,
+    0.0,
+    -0.04710645070964237,
+    0.9988898749619701,
+    104.34276688175538,
+    0.0,
+    -0.9988898749619701,
+    -0.04710645070964237,
+    56.22995565348735,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "critical_t0_99": {
+    "old_screws": {
+      "gap_mm": 0.0,
+      "overlap_mm3": 11.927698984888478
+    },
+    "new_screws": {
+      "gap_mm": 2.660595436262149,
+      "overlap_mm3": 0.0
+    },
+    "new_cover": {
+      "gap_mm": 1.7428681967461195,
+      "overlap_mm3": 0.0
+    }
+  },
+  "deep_fist_endpoint": {
+    "new_screws": {
+      "gap_mm": 0.9648874719873639,
+      "overlap_mm3": 0.0
+    },
+    "new_cover": {
+      "gap_mm": 0.6648874719873596,
+      "overlap_mm3": 0.0
+    },
+    "cover_1mm_clearance_target_met": false
+  },
+  "unchanged_objects": 250,
+  "max_saved_BRep_token_roundoff": 1.1102230246251565e-16,
+  "scope": "Candidate STEP and saved assembly consistency, critical actual-CAD contact and nominal bearing lands/engagement only. No complete harness, FDM strength, coupling-space or actuator approval.",
+  "manufacturing_release": false
+}
