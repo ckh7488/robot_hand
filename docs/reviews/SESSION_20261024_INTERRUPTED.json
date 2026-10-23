@@ -1,0 +1,35 @@
+{
+  "state": "interrupted_before_CP002_commit",
+  "date_kst": "2026-10-24",
+  "last_pushed_review_sha": "1a8a9b5fd1b414373982642bf41d6368047d91dd",
+  "CP001_sha": "c738a40ec8b56985a8c6785470f66c14b709fcc1",
+  "local_repo": "E:/hand_recog/robot_hand",
+  "local_candidate": "cad/assembly_fixes_v13",
+  "last_unobserved_job_log": "E:/hand_recog/tmp/V13_current/v13_cover_motion_final.log",
+  "last_unobserved_output": "E:/hand_recog/robot_hand/cad/assembly_fixes_v13/reviews/cover_motion.json",
+  "verified_before_disconnect": {
+    "CP001_recheck_pushed": true,
+    "cover_fix_BRep_pass": true,
+    "cover_unchanged_objects": 250,
+    "old_critical_overlap_mm3": 11.927698984888478,
+    "new_screw_critical_gap_mm": 2.660595436262149,
+    "new_cover_critical_gap_mm": 1.7428681967461195,
+    "deep_fist_endpoint_cover_gap_mm": 0.664887,
+    "changed_interface_moving_pairs": 390,
+    "named_pose_count": 6,
+    "samples_per_path": 401,
+    "offline_guard_tests_passed": 15
+  },
+  "not_verified": [
+    "V13 commit/push",
+    "CP002 fresh clone recheck",
+    "final continuous bound output",
+    "full nut retention",
+    "whole harness",
+    "FDM clamp/creep strength",
+    "motor performance"
+  ],
+  "manufacturing_release": false,
+  "actuation_approved": false,
+  "resume_document": "checkpoints/CP002_PENDING.md"
+}
