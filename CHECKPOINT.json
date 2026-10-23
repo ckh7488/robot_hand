@@ -5,5 +5,8 @@
   "manifest": "checkpoints/CP002.manifest.json",
   "manufacturing_release": false,
   "motor_performance_validated": false,
-  "status": "Recessed cover screw candidate; full-fist endpoint fails 1mm clearance. Post-commit review is recorded separately."
+  "status": "Post-commit results reproduced from a clean clone. Full-fist endpoint still fails 1mm clearance; no manufacturing or actuation approval.",
+  "post_commit_review_target": "f4739db35b04d6cb49bbf2847512059a9295778a",
+  "post_commit_review_report": "docs/reviews/CP002_f4739db.md",
+  "post_commit_results_reproduced": true
 }

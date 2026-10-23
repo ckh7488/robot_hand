@@ -1,0 +1,3621 @@
+{
+  "scope": "Changed cover and cover screw interfaces against baseline META hand moving parts. Includes V12 thumb replacement; additional V10/V11 wires and guide additions are NOT included. Other V12 source geometry retained. No global-space or continuous path certification.",
+  "moving_pairs_checked": 390,
+  "named_poses": [
+    {
+      "pose": "Open",
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_mcp_motor"
+        ],
+        "distance_mm": 4.48619,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -74.74325842696629,
+            125.52078651685393,
+            22.0
+          ],
+          [
+            -75.2,
+            127.5,
+            18.0
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": []
+    },
+    {
+      "pose": "Curl",
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_mcp_motor"
+        ],
+        "distance_mm": 4.48619,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": []
+    },
+    {
+      "pose": "Splay",
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_mcp_motor"
+        ],
+        "distance_mm": 4.142638,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -71.65595780401128,
+            126.23324050676663,
+            22.0
+          ],
+          [
+            -71.89828994741148,
+            127.28334646150088,
+            18.0
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": []
+    },
+    {
+      "pose": "Backbend",
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_mcp_motor"
+        ],
+        "distance_mm": 4.48619,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -74.74325842696629,
+            125.52078651685393,
+            22.0
+          ],
+          [
+            -75.2,
+            127.5,
+            18.0
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": []
+    },
+    {
+      "pose": "Close",
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_mcp_motor"
+        ],
+        "distance_mm": 4.48619,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": []
+    },
+    {
+      "pose": "ThumbSweep",
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_mcp_motor"
+        ],
+        "distance_mm": 4.48619,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": []
+    }
+  ],
+  "open_close_samples": 401,
+  "open_close_sampled_minimum": {
+    "t": 0.0,
+    "minimum": {
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ],
+      "distance_mm": 4.48619,
+      "surface_collision_or_containment": false,
+      "cached_rigid_relative_transform": true,
+      "lower_bound_only": false
+    },
+    "below_threshold": []
+  },
+  "open_close_below_1_1mm_samples": [],
+  "audit_fist_definition": "All four fingers [0,90*t,100*t,80*t], thumb held at Open as executed by received e2_range.py (its comment incorrectly says thumb Close).",
+  "audit_fist_samples": 401,
+  "audit_fist_profile": [
+    {
+      "t": 0.0,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.005,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.01,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.015,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.02,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.03,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.035,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.04,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.045,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.05,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.055,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.06,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.065,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.07,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.08,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.085,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.08750000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.09,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.095,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.0975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.10250000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.105,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.11,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.115,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.11750000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.12,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.13,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.135,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.14,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.14250000000000002,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.145,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.15,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.155,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.16,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.165,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.17,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.17250000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.17500000000000002,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.18,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.185,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.19,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.195,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.1975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.20500000000000002,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.20750000000000002,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.21,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.215,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.22,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.23,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.23500000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.23750000000000002,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.24,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.245,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.25,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.255,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.26,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.265,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.27,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.28,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.28250000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.28500000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.28750000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.29,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.295,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.2975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.305,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.31,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.315,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.32,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.33,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.335,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.34,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.34500000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.34750000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.35000000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.355,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.36,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.365,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.37,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.38,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.385,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.39,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.395,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.3975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.405,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.40750000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.41000000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.41250000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.41500000000000004,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.42,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.43,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.435,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.44,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.445,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.45,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.455,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.46,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.465,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.47000000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.47250000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.47500000000000003,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.47750000000000004,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.48,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.485,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.49,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.495,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.4975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5025000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.505,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5075000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.51,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.515,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.52,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.53,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.535,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.54,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.545,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.55,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.555,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.56,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5650000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5700000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5750000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.58,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.585,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.59,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.595,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.5975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.605,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.61,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.615,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.62,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6275000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.63,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6325000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.635,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6375000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.64,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.645,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.65,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.655,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.66,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.665,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.67,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.68,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.685,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6900000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6950000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.6975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7000000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.705,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.71,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.715,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.72,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.73,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.735,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.74,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.745,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.75,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7525000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.755,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7575000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.76,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7625000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.765,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7675000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.77,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7775,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.78,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7825,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.785,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.79,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.795,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.7975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.805,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.81,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8150000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8200000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8250000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8300000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.835,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.84,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.845,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.85,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.855,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.86,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.865,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8675,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.87,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8725,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.875,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8775000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.88,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8825000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.885,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8875000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.89,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8925000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.895,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.8975,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9025,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.905,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9075,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.91,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9125,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.915,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9175,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.92,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9225,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.925,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9275,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.93,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9325,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.935,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9375,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9400000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9425,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9450000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9475,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9500000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9525,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9550000000000001,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9575,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.96,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9625,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.965,
+      "minimum_mm": 4.48619,
+      "pair": [
+        "Palm_front_cover",
+        "little_mcp_motor"
+      ]
+    },
+    {
+      "t": 0.9675,
+      "minimum_mm": 4.375938,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.97,
+      "minimum_mm": 4.069388,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.9725,
+      "minimum_mm": 3.766301,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.975,
+      "minimum_mm": 3.466691,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.9775,
+      "minimum_mm": 3.170575,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.98,
+      "minimum_mm": 2.877965,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.9825,
+      "minimum_mm": 2.588877,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.985,
+      "minimum_mm": 2.303323,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.9875,
+      "minimum_mm": 2.021316,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.99,
+      "minimum_mm": 1.742868,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.9925,
+      "minimum_mm": 1.467991,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.995,
+      "minimum_mm": 1.196695,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 0.9975,
+      "minimum_mm": 0.92899,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    },
+    {
+      "t": 1.0,
+      "minimum_mm": 0.664887,
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ]
+    }
+  ],
+  "partial_path_continuous_bound": {
+    "parameter_range": [
+      0,
+      0.99
+    ],
+    "distance_Lipschitz_bound_mm_per_t": 444.15988654452985,
+    "speed_bound_source_object": "middle_dip_tip",
+    "nearest_sample_parameter_radius": 0.00125,
+    "sampled_minimum_mm": 1.742868,
+    "continuous_mesh_distance_lower_bound_mm": 1.1876671418193379,
+    "mesh_1_1mm_target_met": true,
+    "scope": "Only these 390 edited-cover moving pairs; not all moving pairs or V10/V11 wires/guides. Actual CAD interpretation also requires the per-surface tessellation error bounds."
+  },
+  "audit_fist_sampled_minimum": {
+    "t": 1.0,
+    "minimum": {
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ],
+      "distance_mm": 0.664887,
+      "surface_collision_or_containment": false,
+      "nearest_points_mm": [
+        [
+          -98.13223214755641,
+          93.23823370566367,
+          26.0
+        ],
+        [
+          -98.13223214755642,
+          93.23823370566367,
+          26.664887471987353
+        ]
+      ],
+      "lower_bound_only": false
+    },
+    "below_threshold": [
+      {
+        "pair": [
+          "Palm_front_cover",
+          "little_dip_tip"
+        ],
+        "distance_mm": 0.664887,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -98.13223214755641,
+            93.23823370566367,
+            26.0
+          ],
+          [
+            -98.13223214755642,
+            93.23823370566367,
+            26.664887471987353
+          ]
+        ]
+      },
+      {
+        "pair": [
+          "Palm_cover_screws",
+          "little_dip_tip"
+        ],
+        "distance_mm": 0.964887,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -87.37180849791334,
+            96.92622713127011,
+            25.7
+          ],
+          [
+            -87.37180849791334,
+            96.92622713127011,
+            26.664887471987353
+          ]
+        ]
+      }
+    ]
+  },
+  "audit_fist_below_1_1mm_samples": [
+    {
+      "t": 0.9975,
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_dip_tip"
+        ],
+        "distance_mm": 0.92899,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -98.5,
+            114.54711337986733,
+            26.0
+          ],
+          [
+            -98.5,
+            114.54711337986733,
+            26.928990228724025
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "Palm_front_cover",
+            "little_dip_tip"
+          ],
+          "distance_mm": 0.92899,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -98.5,
+              114.54711337986733,
+              26.0
+            ],
+            [
+              -98.5,
+              114.54711337986733,
+              26.928990228724025
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "t": 1.0,
+      "minimum": {
+        "pair": [
+          "Palm_front_cover",
+          "little_dip_tip"
+        ],
+        "distance_mm": 0.664887,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -98.13223214755641,
+            93.23823370566367,
+            26.0
+          ],
+          [
+            -98.13223214755642,
+            93.23823370566367,
+            26.664887471987353
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "Palm_front_cover",
+            "little_dip_tip"
+          ],
+          "distance_mm": 0.664887,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -98.13223214755641,
+              93.23823370566367,
+              26.0
+            ],
+            [
+              -98.13223214755642,
+              93.23823370566367,
+              26.664887471987353
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "Palm_cover_screws",
+            "little_dip_tip"
+          ],
+          "distance_mm": 0.964887,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -87.37180849791334,
+              96.92622713127011,
+              25.7
+            ],
+            [
+              -87.37180849791334,
+              96.92622713127011,
+              26.664887471987353
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "audit_t0_99_before": {
+    "minimum": {
+      "pair": [
+        "Palm_cover_screws",
+        "little_dip_tip"
+      ],
+      "distance_mm": 0.0,
+      "surface_collision_or_containment": true,
+      "nearest_points_mm": [
+        [
+          -88.10662221857717,
+          96.232334073362,
+          28.52751348042754
+        ],
+        [
+          -88.10662221857717,
+          97.37321182793222,
+          28.52751348042754
+        ]
+      ],
+      "lower_bound_only": false
+    },
+    "below_threshold": [
+      {
+        "pair": [
+          "Palm_cover_screws",
+          "little_dip_tip"
+        ],
+        "distance_mm": 0.0,
+        "surface_collision_or_containment": true,
+        "nearest_points_mm": [
+          [
+            -88.10662221857717,
+            96.232334073362,
+            28.52751348042754
+          ],
+          [
+            -88.10662221857717,
+            97.37321182793222,
+            28.52751348042754
+          ]
+        ]
+      }
+    ],
+    "distance_calls": 17,
+    "containment_calls": 0
+  },
+  "audit_t0_99_after": {
+    "minimum": {
+      "pair": [
+        "Palm_front_cover",
+        "little_dip_tip"
+      ],
+      "distance_mm": 1.742868,
+      "surface_collision_or_containment": false,
+      "nearest_points_mm": [
+        [
+          -97.98863782311383,
+          114.01157488646706,
+          26.0
+        ],
+        [
+          -97.98863782311383,
+          114.01157488646706,
+          27.74286819674614
+        ]
+      ],
+      "lower_bound_only": false
+    },
+    "below_threshold": [],
+    "distance_calls": 8,
+    "containment_calls": 0
+  },
+  "cover_STL_closed_single_component": true,
+  "mesh_deflection_request_mm": 0.03,
+  "elapsed_s": 53.625,
+  "manufacturing_release": false
+}

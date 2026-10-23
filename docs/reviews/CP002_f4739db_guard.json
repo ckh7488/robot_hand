@@ -1,0 +1,183 @@
+{
+  "tests": 15,
+  "passed": true,
+  "rows": [
+    {
+      "name": "Open simultaneous error within box",
+      "expected_match": true,
+      "result": {
+        "offline_geometry_domain_matched": true,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [],
+        "evidence_pose": "Open",
+        "spread_halfwidth_deg": 1
+      }
+    },
+    {
+      "name": "Open +/-3deg audit failure is rejected",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Outside every coupled spread-domain box; no independent-axis clipping is applied"
+        ]
+      }
+    },
+    {
+      "name": "Backbend excluded even with zero error",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Outside every coupled spread-domain box; no independent-axis clipping is applied"
+        ]
+      }
+    },
+    {
+      "name": "Close +/-3deg at fixed other joints",
+      "expected_match": true,
+      "result": {
+        "offline_geometry_domain_matched": true,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [],
+        "evidence_pose": "Close",
+        "spread_halfwidth_deg": 3
+      }
+    },
+    {
+      "name": "Offset plus error exceeds evidence box",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Outside every coupled spread-domain box; no independent-axis clipping is applied"
+        ]
+      }
+    },
+    {
+      "name": "Opposing offsets plus errors remain in simultaneous box",
+      "expected_match": true,
+      "result": {
+        "offline_geometry_domain_matched": true,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [],
+        "evidence_pose": "Open",
+        "spread_halfwidth_deg": 1
+      }
+    },
+    {
+      "name": "Missing flexion uncertainty evidence",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Non-spread uncertainty has not been covered"
+        ]
+      }
+    },
+    {
+      "name": "Thumb changed outside proof domain",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Outside every coupled spread-domain box; no independent-axis clipping is applied"
+        ]
+      }
+    },
+    {
+      "name": "Coupled arm proof unavailable",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Coupled arm domain is not available"
+        ]
+      }
+    },
+    {
+      "name": "NaN rejected",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Each finger needs four finite numeric joint angles"
+        ]
+      }
+    },
+    {
+      "name": "Missing finger rejected",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "All five finger arrays must be present"
+        ]
+      }
+    },
+    {
+      "name": "Negative uncertainty rejected",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Error bounds must be finite and nonnegative"
+        ]
+      }
+    },
+    {
+      "name": "Do not transfer V9 evidence to V13",
+      "expected_match": false,
+      "result": {
+        "offline_geometry_domain_matched": false,
+        "physical_actuation_approved": false,
+        "continuous_path_approved": false,
+        "geometry_basis": "V9 only",
+        "reasons": [
+          "Only V9 spread-domain evidence is available; later candidate geometry is not certified"
+        ]
+      }
+    },
+    {
+      "name": "Widened contract without matching geometry proof rejected",
+      "expected_match": false
+    },
+    {
+      "name": "Stale or changed geometry evidence rejected",
+      "expected_match": false
+    }
+  ]
+}

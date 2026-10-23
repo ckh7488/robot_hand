@@ -1,0 +1,61 @@
+{
+  "target_sha": "f4739db35b04d6cb49bbf2847512059a9295778a",
+  "manifest_files": 846,
+  "frozen_hashes": 222,
+  "fk_passed": true,
+  "closed_candidate_meshes": 4,
+  "loop_curves_recomputed": 123,
+  "guard_tests": 15,
+  "geometry_unchanged_objects": 250,
+  "critical_STEP": {
+    "old_screws": {
+      "gap_mm": 0,
+      "overlap_mm3": 11.927698984888478
+    },
+    "new_screws": {
+      "gap_mm": 2.660595436262149,
+      "overlap_mm3": 0
+    },
+    "new_cover": {
+      "gap_mm": 1.7428681967461195,
+      "overlap_mm3": 0
+    }
+  },
+  "full_fist_STEP": {
+    "new_screws": {
+      "gap_mm": 0.9648874719873639,
+      "overlap_mm3": 0
+    },
+    "new_cover": {
+      "gap_mm": 0.6648874719873596,
+      "overlap_mm3": 0
+    },
+    "cover_1mm_clearance_target_met": false
+  },
+  "edited_pairs": 390,
+  "poses": 6,
+  "continuous_lower_bound": 1.1876671418193379,
+  "open_close_min": 4.48619,
+  "full_fist_mesh_min": 0.664887,
+  "clean_checkout_unchanged": true,
+  "results_reproduced": true,
+  "manufacturing_release": false,
+  "actuation_approved": false,
+  "environment": {
+    "python": "3.12.9",
+    "numpy": "2.4.2",
+    "trimesh": "5.1.1"
+  },
+  "FreeCAD": [
+    "1",
+    "0",
+    "2"
+  ],
+  "commands": [
+    "python verify_audit_evidence.py --full",
+    "python tools/check_checkpoint.py --output OUT/checkpoint.json",
+    "python tools/test_offline_pose_guard.py",
+    "freecad-python tools/review_cover_checkpoint.py --output OUT/geometry.json",
+    "python cad/assembly_fixes_v13/check_cover_motion.py --output OUT/motion.json"
+  ]
+}
