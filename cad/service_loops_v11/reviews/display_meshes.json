@@ -1,0 +1,59 @@
+{
+  "scope": "Display only; actual STEP/Bezier control points and capsule collision geometry unchanged.",
+  "assets": [
+    {
+      "asset": "Little_loop_q60_wire1",
+      "vertices": 3970,
+      "faces": 7936,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q60_wire2",
+      "vertices": 4066,
+      "faces": 8128,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q60_wire3",
+      "vertices": 4114,
+      "faces": 8224,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q0_wire1",
+      "vertices": 3250,
+      "faces": 6496,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q0_wire2",
+      "vertices": 3282,
+      "faces": 6560,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q0_wire3",
+      "vertices": 3298,
+      "faces": 6592,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q-20_wire1",
+      "vertices": 3570,
+      "faces": 7136,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q-20_wire2",
+      "vertices": 3650,
+      "faces": 7296,
+      "watertight": true
+    },
+    {
+      "asset": "Little_loop_q-20_wire3",
+      "vertices": 3602,
+      "faces": 7200,
+      "watertight": true
+    }
+  ]
+}

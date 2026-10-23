@@ -1,0 +1,12 @@
+{
+  "reference": "Library ZIP version6 local checkpoint",
+  "unchanged_previous_files_outside_CAD_module": 82,
+  "changed_previous_files_outside_CAD_module": [
+    "package_project.py",
+    "README.md",
+    "write_feedback_report.py"
+  ],
+  "old_24axis_geometry_control_models_CAD_unchanged": true,
+  "new_module_not_applied_to_old_90_routes": true,
+  "candidate_revision": 2
+}

@@ -1,0 +1,21 @@
+# FreeCAD macro: static CAD pose only, no hardware commands.
+import FreeCAD as App,FreeCADGui as Gui,Part,json
+from pathlib import Path
+from PySide import QtWidgets
+D=Path(__file__).resolve().parent
+scenes=json.loads((D/'scene.json').read_text(encoding='utf-8'))
+name,ok=QtWidgets.QInputDialog.getItem(None,'CAD 자세 미리보기','저장 자세 (물리 시뮬레이션 아님)',list(scenes),0,False)
+if ok:
+ doc=App.ActiveDocument
+ if doc is None or Path(doc.FileName).resolve()!=(D/'hand_forearm_v9.FCStd').resolve():doc=App.openDocument(str(D/'hand_forearm_v9.FCStd'))
+ for it in scenes[str(name)]:
+  obj=doc.getObject(it['name'])
+  if obj is None:continue
+  m=App.Matrix()
+  for i in range(3):
+   for j in range(3):setattr(m,'A%d%d'%(i+1,j+1),it['R'][i][j])
+   setattr(m,'A%d4'%(i+1),it['pos_mm'][i])
+  shape=Part.read(str(D/'parts'/(it['asset']+'.step')))
+  shape.Placement=App.Placement(m).multiply(shape.Placement);obj.Shape=shape
+  if obj.ViewObject:obj.ViewObject.ShapeColor=tuple(it["color"])
+ doc.recompute();Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()

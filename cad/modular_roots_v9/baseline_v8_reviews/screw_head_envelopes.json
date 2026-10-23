@@ -1,0 +1,159 @@
+{
+  "status": "Parametric cylindrical head envelope probe only. ROBOTIS product pages verify PHS M2 screw families but do not provide these head dimensions. No exact off-the-shelf part confirmed.",
+  "tests": [
+    {
+      "kind": "base",
+      "diameter_mm": 3,
+      "height_mm": 0.6,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "kind": "output",
+      "diameter_mm": 3,
+      "height_mm": 0.6,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "kind": "base",
+      "diameter_mm": 3.5,
+      "height_mm": 0.6,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "kind": "output",
+      "diameter_mm": 3.5,
+      "height_mm": 0.6,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "kind": "base",
+      "diameter_mm": 3.5,
+      "height_mm": 1.3,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "kind": "output",
+      "diameter_mm": 3.5,
+      "height_mm": 1.3,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "kind": "base",
+      "diameter_mm": 3.8,
+      "height_mm": 1.6,
+      "collisions": [
+        {
+          "screw": 0,
+          "obstacle": "S101_relief",
+          "volume_mm3": 2.587705844938892
+        },
+        {
+          "screw": 1,
+          "obstacle": "S101_relief",
+          "volume_mm3": 2.587705844936343
+        },
+        {
+          "screw": 2,
+          "obstacle": "S101_relief",
+          "volume_mm3": 2.5877058449349803
+        },
+        {
+          "screw": 3,
+          "obstacle": "S101_relief",
+          "volume_mm3": 2.5877058449299675
+        }
+      ],
+      "passed": false
+    },
+    {
+      "kind": "output",
+      "diameter_mm": 3.8,
+      "height_mm": 1.6,
+      "collisions": [
+        {
+          "screw": 0,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 2.5877058449376484
+        },
+        {
+          "screw": 1,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 2.587705844937057
+        },
+        {
+          "screw": 2,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 2.587705844937899
+        },
+        {
+          "screw": 3,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 2.5877058449378527
+        }
+      ],
+      "passed": false
+    },
+    {
+      "kind": "base",
+      "diameter_mm": 4,
+      "height_mm": 1.6,
+      "collisions": [
+        {
+          "screw": 0,
+          "obstacle": "S101_relief",
+          "volume_mm3": 4.438588236309593
+        },
+        {
+          "screw": 1,
+          "obstacle": "S101_relief",
+          "volume_mm3": 4.438588236306435
+        },
+        {
+          "screw": 2,
+          "obstacle": "S101_relief",
+          "volume_mm3": 4.438588236304831
+        },
+        {
+          "screw": 3,
+          "obstacle": "S101_relief",
+          "volume_mm3": 4.438588236299719
+        }
+      ],
+      "passed": false
+    },
+    {
+      "kind": "output",
+      "diameter_mm": 4,
+      "height_mm": 1.6,
+      "collisions": [
+        {
+          "screw": 0,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 4.438588236308581
+        },
+        {
+          "screw": 1,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 4.438588236307458
+        },
+        {
+          "screw": 2,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 4.438588236308284
+        },
+        {
+          "screw": 3,
+          "obstacle": "H101_vendor",
+          "volume_mm3": 4.438588236308247
+        }
+      ],
+      "passed": false
+    }
+  ]
+}

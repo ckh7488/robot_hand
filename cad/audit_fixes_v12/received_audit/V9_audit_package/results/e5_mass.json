@@ -1,0 +1,106 @@
+{
+ "hand_mass_kg": 1.3352151157498962,
+ "hand_mass_by_role_kg": {
+  "printed": 0.7430083659829795,
+  "fastener": 0.13075438124288422,
+  "vendor_motor": 0.36000000000000004,
+  "vendor_frame_modified": 0.03828294280561867,
+  "vendor_hinge": 0.06316942571841543
+ },
+ "gravity_max_Nm": {
+  "elbow_flex": [
+   9.768,
+   [
+    "Open",
+    80,
+    5,
+    -10
+   ]
+  ],
+  "forearm_roll": [
+   2.534,
+   [
+    "ThumbSweep",
+    60,
+    55,
+    -20
+   ]
+  ],
+  "wrist_flex": [
+   3.053,
+   [
+    "Open",
+    -60,
+    45,
+    -10
+   ]
+  ],
+  "wrist_deviation": [
+   2.785,
+   [
+    "Open",
+    -60,
+    15,
+    -5
+   ]
+  ]
+ },
+ "inertia_max_kgm2": {
+  "elbow_flex": 0.441,
+  "forearm_roll": 0.0634,
+  "wrist_flex": 0.0788,
+  "wrist_deviation": 0.0732
+ },
+ "gravity_max_their_grid_Nm": {
+  "elbow_flex": 9.765,
+  "forearm_roll": 2.534,
+  "wrist_flex": 3.053,
+  "wrist_deviation": 2.785
+ },
+ "middle_mcp": {
+  "J_point_kgm2": 0.0008608207970694267,
+  "J_mesh_kgm2": 0.0008794454305824269,
+  "gravity_worst_Nm": 0.08323806211237156,
+  "rows": {
+   "their: point mass, stall 0.215": {
+    "no_gravity_s": 0.2098713794191644,
+    "worst_gravity_s": 0.27657744958039976
+   },
+   "mesh inertia": {
+    "no_gravity_s": 0.21188470719814625,
+    "worst_gravity_s": 0.27911273903333345
+   },
+   "+ reflected rotor 2e-5": {
+    "no_gravity_s": 0.2140241300090694,
+    "worst_gravity_s": 0.2818077918658678
+   },
+   "+ 0.7A current cap (0.102 N.m)": {
+    "no_gravity_s": 0.2822651962759537,
+    "worst_gravity_s": 0.6527744686632846
+   }
+  }
+ },
+ "elbow_90deg_minjerk": [
+  {
+   "T_s": 0.4,
+   "peak_acc_rad_s2": 56.7,
+   "peak_vel_rad_s": 7.36,
+   "inertial_Nm": 25.0,
+   "gravity_plus_inertial_upper_Nm": 34.76
+  },
+  {
+   "T_s": 0.6,
+   "peak_acc_rad_s2": 25.2,
+   "peak_vel_rad_s": 4.91,
+   "inertial_Nm": 11.11,
+   "gravity_plus_inertial_upper_Nm": 20.88
+  },
+  {
+   "T_s": 1.0,
+   "peak_acc_rad_s2": 9.1,
+   "peak_vel_rad_s": 2.95,
+   "inertial_Nm": 4.0,
+   "gravity_plus_inertial_upper_Nm": 13.77
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Geometric cubic Bezier candidates, fixed individual wire length and endpoint tangents, 3 wires, one little MCP hinge. End attachments derive from V10 fixed exits. No contact/friction/gravity/material constitutive law; not the physical cable shape or flexible-body simulation.",
+  "radius_threshold_mm": 10,
+  "radius_threshold_provenance": "Design assumption; actual cable bend/fatigue specification must be measured or supplied.",
+  "angles_step_deg": 2,
+  "curve_samples": 201,
+  "length_quadrature_order": 64,
+  "searches": [
+    {
+      "target_length_mm": 80,
+      "all_3_lanes_41_angles_feasible": false,
+      "worst_sampled_radius_mm": 1.7653748517859167,
+      "cases": 1
+    },
+    {
+      "target_length_mm": 100,
+      "all_3_lanes_41_angles_feasible": false,
+      "worst_sampled_radius_mm": 3.3057115676882685,
+      "cases": 1
+    },
+    {
+      "target_length_mm": 120,
+      "all_3_lanes_41_angles_feasible": false,
+      "worst_sampled_radius_mm": 4.976065247093618,
+      "cases": 1
+    },
+    {
+      "target_length_mm": 140,
+      "all_3_lanes_41_angles_feasible": false,
+      "worst_sampled_radius_mm": 6.714856707149621,
+      "cases": 1
+    }
+  ],
+  "chosen": null,
+  "elapsed_s": 0.8599999999860302,
+  "full_harness_approved": false
+}

@@ -1,0 +1,33 @@
+{
+  "revision": 10,
+  "scope": "Fixed lead exit packaging study, not complete electrical harness or final CAD release",
+  "V9_frozen_hashes_unchanged": 222,
+  "original_motors_with_blocked_fixed_leads": {
+    "Open": 10,
+    "Curl": 9,
+    "Splay": 6,
+    "Backbend": 10,
+    "Close": 6,
+    "ThumbSweep": 9
+  },
+  "templates_compared": 14,
+  "pose_motor_template_tests": 1680,
+  "final_fixed_exit_BRep_tests": 120,
+  "final_fixed_exits_passed": true,
+  "minimum_exact_reserved_envelope_gap_mm": 0.3499999999999872,
+  "mutual_fixed_tails_mesh6poses_passed": true,
+  "thumb_link_removed_volume_mm3": 134.14327568599126,
+  "thumb_link_removed_fraction_percent": 0.6728807700626396,
+  "minimum_removed_material_to_fasteners_mm": 11.568274663690307,
+  "geometry_changes": "One separate thumb-link cable channel; no V9 file changed",
+  "pending": [
+    "Genuine mated housing and3mmstraight-exit strain relief",
+    "Connected inter-joint cables and service slack",
+    "Both ports where electrically required",
+    "Full swept motion and servo tracking error",
+    "Electrical branch/protection and measured current",
+    "Print material, layer strength, creep and fatigue"
+  ],
+  "manufacturing_release": false,
+  "full_harness_validated": false
+}

@@ -1,0 +1,503 @@
+{
+  "scope": "41 little MCP angles. Physical-wire enclosures0.96mm(loop) and0.952mm(fixed exits), original OD1.9mm. Each wire self-contact checked only between portions separated by>6mm chordwise arclength. Connected same-wire joins within3mm of either end are excluded as expected tube adjacency; all other own-tail pairs are checked. Complements3-wire mutual check; no cable mechanics or electrical approval.",
+  "cases": 41,
+  "self_collision_cases": 0,
+  "own_exit_collision_cases": 0,
+  "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+  "minimum_own_exit_gap_capped_2mm": 0.5155859580247002,
+  "rows": [
+    {
+      "q_deg": -20.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5871883036161982,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -18.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872072184702022,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -16.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872079151007243,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -14.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.587208246753828,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -12.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872081731566001,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -10.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872076554706451,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -8.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872066564737981,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -6.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872051405594525,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -4.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872030736690395,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": -2.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872004232607169,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 0.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5871971580084963,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 2.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5871932478151258,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 4.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5872481483715557,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 6.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.587282285152424,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 8.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5873181649804118,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 10.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5873522461902736,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 12.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5873846562057929,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 14.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5874159284617586,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 16.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5874461817473331,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 18.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5874776439908578,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 20.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5875159254809934,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 22.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5875481288990141,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 1,
+        "tail_motor": 0,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 24.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5875717118668278,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 26.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5875907748793119,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 28.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.58760803968512,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 30.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5876236621430566,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 32.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5876377400348889,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 34.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.587650494892376,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 36.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.587659628667847,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 38.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5876693210848098,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 40.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5876868430445388,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 42.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.587732876424707,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 44.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5877638162038581,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 46.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5877981103292891,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 48.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5155859580247002,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 0,
+        "tail_motor": 1,
+        "tail_lane": 0
+      }
+    },
+    {
+      "q_deg": 50.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5802535634088786,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 1,
+        "tail_lane": 2
+      }
+    },
+    {
+      "q_deg": 52.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5878855709839521,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 54.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5879072452182839,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 56.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5879271924491167,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 58.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5879488540173092,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    },
+    {
+      "q_deg": 60.0,
+      "minimum_nonlocal_self_gap_capped_2mm": 2.0,
+      "self_collision": false,
+      "minimum_own_exit_gap_capped_2mm": 0.5879677847840235,
+      "own_exit_collision": false,
+      "nearest_exit_pair": {
+        "loop_lane": 2,
+        "tail_motor": 0,
+        "tail_lane": 1
+      }
+    }
+  ],
+  "full_harness_approved": false
+}

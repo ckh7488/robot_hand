@@ -1,0 +1,2504 @@
+{
+  "motors": [
+    {
+      "motor": "index_root_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "index_mcp_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Splay",
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.05105967470798004,
+          "failed_poses": [
+            "Splay"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "index_pip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "index_dip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend",
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.35038680980255776,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.35038680980255776,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "middle_root_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "middle_mcp_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Splay"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "middle_pip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend",
+            "Close"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "middle_dip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "ring_root_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "ring_mcp_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Splay",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "ring_pip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Backbend"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.3503868100526759,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.3503868103027372,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "ring_dip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Backbend"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Curl",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.3503868100526759,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Backbend"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.3503868103027372,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "little_root_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.34999847412109375,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "little_mcp_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Splay"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Splay",
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Close"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "little_pip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "little_dip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "thumb_root_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.34999847412109375,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "thumb_mcp_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    },
+    {
+      "motor": "thumb_pip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Curl",
+            "Splay",
+            "Backbend",
+            "Close",
+            "ThumbSweep"
+          ]
+        }
+      ]
+    },
+    {
+      "motor": "thumb_dip_motor",
+      "options": [
+        {
+          "template": "negativeZ_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.062403727237268475,
+          "failed_poses": [
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Splay",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_forward",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "negativeZ_short5_back",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short3_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Splay",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "negativeZ_short5_outboard",
+          "passed_all6stored_poses": false,
+          "minimum_capped_gap_mm": 0.0,
+          "failed_poses": [
+            "Open",
+            "Splay",
+            "Backbend",
+            "ThumbSweep"
+          ]
+        },
+        {
+          "template": "positiveZ_short3_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_back",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short3_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        },
+        {
+          "template": "positiveZ_short5_outboard",
+          "passed_all6stored_poses": true,
+          "minimum_capped_gap_mm": 0.49999961853027486,
+          "failed_poses": []
+        }
+      ]
+    }
+  ],
+  "nominal_fixed_exit_only": true,
+  "full_harness_validated": false
+}

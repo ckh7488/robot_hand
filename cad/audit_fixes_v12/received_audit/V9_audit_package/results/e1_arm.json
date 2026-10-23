@@ -1,0 +1,1026 @@
+{
+ "evaluations": 15390,
+ "grid": "elbow{0,55,110} x roll{-80,-60,0,60,80} x pitch -35..55/5 x yaw -20..20/5 x 6 hand poses",
+ "rows": [
+  {
+   "a": "Elbow_fixed_cradle",
+   "b": "Elbow_roll_carrier",
+   "min_mm": 0.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "AK_forearm_roll",
+   "b": "Elbow_fixed_cradle",
+   "min_mm": 0.031,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "AK_wrist_flex",
+   "b": "Palm_wrist_saddle",
+   "min_mm": 0.921,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -60,
+    0,
+    20
+   ]
+  },
+  {
+   "a": "Wrist_box_carrier",
+   "b": "Palm_wrist_saddle",
+   "min_mm": 3.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    80,
+    55,
+    -10
+   ]
+  },
+  {
+   "a": "AK_elbow_flex",
+   "b": "Elbow_roll_carrier",
+   "min_mm": 4.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "AK_forearm_roll",
+   "b": "Roll_output_flange",
+   "min_mm": 4.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    0,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "AK_wrist_flex",
+   "b": "Wrist_box_carrier",
+   "min_mm": 4.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    45,
+    -20
+   ]
+  },
+  {
+   "a": "AK_wrist_deviation",
+   "b": "Palm_wrist_saddle",
+   "min_mm": 4.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    80,
+    55,
+    -10
+   ]
+  },
+  {
+   "a": "AK_forearm_roll",
+   "b": "Forearm_box_beam",
+   "min_mm": 8.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "Forearm_box_beam",
+   "b": "Wrist_box_carrier",
+   "min_mm": 8.551,
+   "hand_pose": "Open",
+   "arm_q": [
+    0,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_back_chassis",
+   "b": "Forearm_box_beam",
+   "min_mm": 8.677,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    0,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "AK_wrist_flex",
+   "b": "AK_wrist_deviation",
+   "min_mm": 9.5,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    45,
+    -20
+   ]
+  },
+  {
+   "a": "AK_wrist_deviation",
+   "b": "Forearm_box_beam",
+   "min_mm": 10.831,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_front_cover",
+   "b": "Forearm_box_beam",
+   "min_mm": 12.895,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    80,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "Palm_back_chassis",
+   "b": "AK_wrist_flex",
+   "min_mm": 14.958,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    10,
+    20
+   ]
+  },
+  {
+   "a": "Forearm_box_beam",
+   "b": "Palm_wrist_saddle",
+   "min_mm": 18.376,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -60,
+    55,
+    20
+   ]
+  },
+  {
+   "a": "Palm_front_cover",
+   "b": "AK_wrist_flex",
+   "min_mm": 19.071,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    0,
+    -15,
+    20
+   ]
+  },
+  {
+   "a": "Palm_cover_nuts",
+   "b": "Forearm_box_beam",
+   "min_mm": 23.155,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    60,
+    -20,
+    20
+   ]
+  },
+  {
+   "a": "Palm_back_chassis",
+   "b": "Wrist_box_carrier",
+   "min_mm": 23.608,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    60,
+    10,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_cover_screws",
+   "b": "Forearm_box_beam",
+   "min_mm": 24.019,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -60,
+    -30,
+    20
+   ]
+  },
+  {
+   "a": "Palm_cover_nuts",
+   "b": "AK_wrist_flex",
+   "min_mm": 29.55,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    0,
+    55,
+    20
+   ]
+  },
+  {
+   "a": "Thumb_internal_cradle",
+   "b": "Wrist_box_carrier",
+   "min_mm": 30.022,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    0,
+    50,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_nuts",
+   "b": "Wrist_box_carrier",
+   "min_mm": 30.365,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    60,
+    25,
+    20
+   ]
+  },
+  {
+   "a": "Palm_cover_screws",
+   "b": "AK_wrist_flex",
+   "min_mm": 30.608,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    0,
+    -15,
+    20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_screws",
+   "b": "Wrist_box_carrier",
+   "min_mm": 31.86,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    80,
+    -5,
+    20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_nuts",
+   "b": "Forearm_box_beam",
+   "min_mm": 36.772,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_screws",
+   "b": "Forearm_box_beam",
+   "min_mm": 36.878,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -60,
+    55,
+    20
+   ]
+  },
+  {
+   "a": "Palm_back_chassis",
+   "b": "AK_wrist_deviation",
+   "min_mm": 38.5,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    0,
+    15,
+    -10
+   ]
+  },
+  {
+   "a": "AK_elbow_flex",
+   "b": "AK_forearm_roll",
+   "min_mm": 38.503,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_thumb_mount_nuts",
+   "b": "Wrist_box_carrier",
+   "min_mm": 38.594,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    15,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_thumb_mount_screws",
+   "b": "Wrist_box_carrier",
+   "min_mm": 39.772,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    15,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_base_nuts",
+   "b": "Wrist_box_carrier",
+   "min_mm": 40.24,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    -20,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_base_screws",
+   "b": "Wrist_box_carrier",
+   "min_mm": 40.679,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    -20,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_nuts",
+   "b": "AK_wrist_flex",
+   "min_mm": 41.8,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_screws",
+   "b": "AK_wrist_flex",
+   "min_mm": 41.805,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    35,
+    20
+   ]
+  },
+  {
+   "a": "Palm_front_cover",
+   "b": "Wrist_box_carrier",
+   "min_mm": 42.104,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    80,
+    -5,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_frame",
+   "b": "Wrist_box_carrier",
+   "min_mm": 43.664,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -80,
+    -15,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_motor",
+   "b": "Wrist_box_carrier",
+   "min_mm": 45.61,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    0,
+    35,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_base_body_tap",
+   "b": "Wrist_box_carrier",
+   "min_mm": 46.086,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    25,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_front_cover",
+   "b": "AK_wrist_deviation",
+   "min_mm": 46.457,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    60,
+    -25,
+    10
+   ]
+  },
+  {
+   "a": "Elbow_roll_carrier",
+   "b": "Roll_output_flange",
+   "min_mm": 47.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_nuts",
+   "b": "AK_wrist_deviation",
+   "min_mm": 47.67,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    60,
+    5,
+    15
+   ]
+  },
+  {
+   "a": "Palm_saddle_mount_screws",
+   "b": "AK_wrist_deviation",
+   "min_mm": 49.08,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    60,
+    5,
+    15
+   ]
+  },
+  {
+   "a": "Thumb_internal_cradle",
+   "b": "AK_wrist_deviation",
+   "min_mm": 50.97,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    80,
+    40,
+    -5
+   ]
+  },
+  {
+   "a": "Elbow_roll_carrier",
+   "b": "Forearm_box_beam",
+   "min_mm": 51.0,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -80,
+    -35,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_spread_carrier",
+   "b": "Wrist_box_carrier",
+   "min_mm": 52.302,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    110,
+    0,
+    35,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_spread_carrier",
+   "b": "AK_wrist_deviation",
+   "min_mm": 54.051,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    110,
+    -60,
+    35,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_hinge",
+   "b": "Wrist_box_carrier",
+   "min_mm": 60.135,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    -25,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_rotor",
+   "b": "Wrist_box_carrier",
+   "min_mm": 60.135,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    60,
+    45,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_spread_carrier",
+   "b": "AK_wrist_flex",
+   "min_mm": 60.678,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    80,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_output_hinge_tap",
+   "b": "Wrist_box_carrier",
+   "min_mm": 61.602,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    60,
+    45,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_frame",
+   "b": "AK_wrist_deviation",
+   "min_mm": 62.234,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    40,
+    -15
+   ]
+  },
+  {
+   "a": "thumb_root_motor",
+   "b": "AK_wrist_deviation",
+   "min_mm": 63.489,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    40,
+    -15
+   ]
+  },
+  {
+   "a": "Thumb_internal_cradle",
+   "b": "AK_wrist_flex",
+   "min_mm": 63.729,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_base_body_tap",
+   "b": "AK_wrist_deviation",
+   "min_mm": 63.92,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    40,
+    -15
+   ]
+  },
+  {
+   "a": "thumb_mcp_fixed_frame",
+   "b": "Wrist_box_carrier",
+   "min_mm": 68.597,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    60,
+    15,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_mcp_base_body_tap",
+   "b": "Wrist_box_carrier",
+   "min_mm": 68.701,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    60,
+    10,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_cover_nuts",
+   "b": "Wrist_box_carrier",
+   "min_mm": 69.301,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    80,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_motor",
+   "b": "Wrist_box_carrier",
+   "min_mm": 70.716,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    60,
+    10,
+    -20
+   ]
+  },
+  {
+   "a": "Palm_cover_screws",
+   "b": "Wrist_box_carrier",
+   "min_mm": 70.828,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    80,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "thumb_spread_carrier",
+   "b": "Forearm_box_beam",
+   "min_mm": 73.599,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    110,
+    -80,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_base_nuts",
+   "b": "Wrist_box_carrier",
+   "min_mm": 74.883,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    80,
+    25,
+    -10
+   ]
+  },
+  {
+   "a": "thumb_mcp_base_screws",
+   "b": "Wrist_box_carrier",
+   "min_mm": 75.668,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    80,
+    25,
+    -10
+   ]
+  },
+  {
+   "a": "thumb_mcp_fixed_frame",
+   "b": "Forearm_box_beam",
+   "min_mm": 79.998,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    -60,
+    -35,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_base_body_tap",
+   "b": "Forearm_box_beam",
+   "min_mm": 80.165,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    110,
+    -60,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_motor",
+   "b": "Forearm_box_beam",
+   "min_mm": 80.207,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    110,
+    -60,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "Palm_cover_nuts",
+   "b": "AK_wrist_deviation",
+   "min_mm": 80.286,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    50,
+    -15
+   ]
+  },
+  {
+   "a": "Palm_cover_screws",
+   "b": "AK_wrist_deviation",
+   "min_mm": 81.456,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    80,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_base_nuts",
+   "b": "Forearm_box_beam",
+   "min_mm": 82.938,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    -60,
+    -30,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_base_screws",
+   "b": "Forearm_box_beam",
+   "min_mm": 83.419,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    -60,
+    -25,
+    20
+   ]
+  },
+  {
+   "a": "Thumb_internal_cradle",
+   "b": "Forearm_box_beam",
+   "min_mm": 85.743,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -60,
+    40,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_hinge",
+   "b": "Wrist_box_carrier",
+   "min_mm": 86.668,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    0,
+    -60,
+    45,
+    -5
+   ]
+  },
+  {
+   "a": "thumb_root_motor",
+   "b": "Forearm_box_beam",
+   "min_mm": 87.261,
+   "hand_pose": "Open",
+   "arm_q": [
+    110,
+    -80,
+    55,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_output_hinge_tap",
+   "b": "Wrist_box_carrier",
+   "min_mm": 89.462,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    0,
+    -60,
+    45,
+    0
+   ]
+  },
+  {
+   "a": "thumb_root_frame",
+   "b": "Forearm_box_beam",
+   "min_mm": 89.992,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    35,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_base_body_tap",
+   "b": "Forearm_box_beam",
+   "min_mm": 90.046,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    -60,
+    -15,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_rotor",
+   "b": "Wrist_box_carrier",
+   "min_mm": 93.204,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    110,
+    -60,
+    30,
+    10
+   ]
+  },
+  {
+   "a": "thumb_mcp_link",
+   "b": "Wrist_box_carrier",
+   "min_mm": 93.646,
+   "hand_pose": "Close",
+   "arm_q": [
+    55,
+    -80,
+    50,
+    -20
+   ]
+  },
+  {
+   "a": "thumb_root_base_screws",
+   "b": "Forearm_box_beam",
+   "min_mm": 94.487,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_base_nuts",
+   "b": "Forearm_box_beam",
+   "min_mm": 95.262,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    45,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_hinge",
+   "b": "Forearm_box_beam",
+   "min_mm": 96.456,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    -60,
+    -35,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_rotor",
+   "b": "Forearm_box_beam",
+   "min_mm": 96.558,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    -60,
+    -35,
+    20
+   ]
+  },
+  {
+   "a": "thumb_mcp_output_hinge_tap",
+   "b": "Forearm_box_beam",
+   "min_mm": 96.688,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    -60,
+    -35,
+    20
+   ]
+  },
+  {
+   "a": "Palm_thumb_mount_screws",
+   "b": "Forearm_box_beam",
+   "min_mm": 109.193,
+   "hand_pose": "Open",
+   "arm_q": [
+    55,
+    60,
+    50,
+    20
+   ]
+  },
+  {
+   "a": "thumb_root_hinge",
+   "b": "Forearm_box_beam",
+   "min_mm": 116.97,
+   "hand_pose": "ThumbSweep",
+   "arm_q": [
+    55,
+    60,
+    40,
+    10
+   ]
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+  "AK_elbow_flex": {
+    "step_sha256": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01",
+    "vertices": 252,
+    "triangles": 500,
+    "deflection_mm": 0.05
+  },
+  "AK_forearm_roll": {
+    "step_sha256": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36",
+    "vertices": 252,
+    "triangles": 500,
+    "deflection_mm": 0.05
+  },
+  "AK_wrist_deviation": {
+    "step_sha256": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256",
+    "vertices": 252,
+    "triangles": 500,
+    "deflection_mm": 0.05
+  },
+  "AK_wrist_flex": {
+    "step_sha256": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243",
+    "vertices": 252,
+    "triangles": 500,
+    "deflection_mm": 0.05
+  },
+  "Compact_root": {
+    "step_sha256": "dc6230b6e8542a9d300a8329b7d5bbd545d51b482adbd682d3c0d67b45fb31da",
+    "vertices": 2574,
+    "triangles": 5180,
+    "deflection_mm": 0.05
+  },
+  "Elbow_fixed_cradle": {
+    "step_sha256": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6",
+    "vertices": 16,
+    "triangles": 28,
+    "deflection_mm": 0.05
+  },
+  "Elbow_roll_carrier": {
+    "step_sha256": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156",
+    "vertices": 28,
+    "triangles": 52,
+    "deflection_mm": 0.05
+  },
+  "Flex_link_48": {
+    "step_sha256": "9760a610b868906f8e2a53f272390ab0e29c74a193c10baf21c8cfb2e1829568",
+    "vertices": 2138,
+    "triangles": 4304,
+    "deflection_mm": 0.05
+  },
+  "Flex_link_50": {
+    "step_sha256": "2e6172fbb8fa47cb678d505e8d4ffb019ae9329c80883ffe8faa2e5265dca140",
+    "vertices": 2138,
+    "triangles": 4304,
+    "deflection_mm": 0.05
+  },
+  "Flex_link_55": {
+    "step_sha256": "906978e842fb2e2c7faa39544d923fc580e63e2da393994e97b4f5a24428773d",
+    "vertices": 2138,
+    "triangles": 4304,
+    "deflection_mm": 0.05
+  },
+  "Flex_link_62": {
+    "step_sha256": "684874af1b86962539df60cf33f4c0bf4a51a2f18950701d3a57fe4b28793531",
+    "vertices": 2138,
+    "triangles": 4304,
+    "deflection_mm": 0.05
+  },
+  "Flex_link_65": {
+    "step_sha256": "23b5936203ea702ca0813437e5f0d8182925961e911e9733e337bf8a0d1d0ce9",
+    "vertices": 2138,
+    "triangles": 4304,
+    "deflection_mm": 0.05
+  },
+  "Flex_link_70": {
+    "step_sha256": "46bfaf90a9bbb640c25556be0f9ee2c5720b4a28f71400c14d3563c70ba83b9b",
+    "vertices": 2138,
+    "triangles": 4304,
+    "deflection_mm": 0.05
+  },
+  "Forearm_box_beam": {
+    "step_sha256": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365",
+    "vertices": 248,
+    "triangles": 492,
+    "deflection_mm": 0.05
+  },
+  "H101_vendor": {
+    "step_sha256": "148c51ba09bab3ce46f0db8cf8bfeab2e1edd65f691d908eb8520e7117b1af67",
+    "vertices": 26108,
+    "triangles": 52368,
+    "deflection_mm": 0.05
+  },
+  "M077_rotor": {
+    "step_sha256": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+    "vertices": 24905,
+    "triangles": 49838,
+    "deflection_mm": 0.05
+  },
+  "M077_stator": {
+    "step_sha256": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+    "vertices": 50332,
+    "triangles": 100964,
+    "deflection_mm": 0.05
+  },
+  "M2_base_nuts": {
+    "step_sha256": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f",
+    "vertices": 1056,
+    "triangles": 2112,
+    "deflection_mm": 0.05
+  },
+  "M2_base_screws": {
+    "step_sha256": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856",
+    "vertices": 2016,
+    "triangles": 4016,
+    "deflection_mm": 0.05
+  },
+  "M2_body_TAP8": {
+    "step_sha256": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a",
+    "vertices": 2016,
+    "triangles": 4016,
+    "deflection_mm": 0.05
+  },
+  "M2_hinge_TAP4": {
+    "step_sha256": "81574ad7817f887b4d5b589da1a178acdc9bb24832f3024cca0bbe41817e8726",
+    "vertices": 4032,
+    "triangles": 8032,
+    "deflection_mm": 0.05
+  },
+  "M2_output_nuts": {
+    "step_sha256": "743276ff606a9f92edca270bf2f65bf7975260a9f2a1dc8dd8240001949c853f",
+    "vertices": 1056,
+    "triangles": 2112,
+    "deflection_mm": 0.05
+  },
+  "M2_output_screws": {
+    "step_sha256": "075237c118d956b4a8c197204629c98152ed896f39dd461c4228c96ee732b2da",
+    "vertices": 2016,
+    "triangles": 4016,
+    "deflection_mm": 0.05
+  },
+  "M2_root_output_nuts": {
+    "step_sha256": "62d7f47eb7614675835d3c3767ee891a89f940b2ed5b5cf85d9d88766b80efc7",
+    "vertices": 1056,
+    "triangles": 2112,
+    "deflection_mm": 0.05
+  },
+  "M3_cover_nuts": {
+    "step_sha256": "bddcb14b37f46e6380044ed7134849d35572ef1de5a02aad6deb82af082d6a93",
+    "vertices": 1320,
+    "triangles": 2640,
+    "deflection_mm": 0.05
+  },
+  "M3_cover_screws": {
+    "step_sha256": "44f16ccfdf3f2da1fbf33f2f85639600bad249e65e4770fe5c58c0848659b7de",
+    "vertices": 2520,
+    "triangles": 5020,
+    "deflection_mm": 0.05
+  },
+  "M3_root_mount_nuts": {
+    "step_sha256": "81788484fb6ea1f6469e31d8273d12b50dc55f1243df0ec30041f37996b5d032",
+    "vertices": 528,
+    "triangles": 1056,
+    "deflection_mm": 0.05
+  },
+  "M3_root_mount_screws": {
+    "step_sha256": "3a8564baa2d8aa32f77204b3bac4128947ecc1989f786f774956258303ff56ba",
+    "vertices": 1008,
+    "triangles": 2008,
+    "deflection_mm": 0.05
+  },
+  "M3_saddle_mount_nuts": {
+    "step_sha256": "01c7ae1e9fc35ca5a5a8cda51ea259dbab8ec129fe2a0d3e9ced2e0cdc1f094e",
+    "vertices": 1056,
+    "triangles": 2112,
+    "deflection_mm": 0.05
+  },
+  "M3_saddle_mount_screws": {
+    "step_sha256": "4405108299722709d4ab9464ec8080741547f715e7cf7da6894a0c6ca65f97b0",
+    "vertices": 2016,
+    "triangles": 4016,
+    "deflection_mm": 0.05
+  },
+  "M3_thumb_mount_nuts": {
+    "step_sha256": "ba9619f59f9c53e6f0d84966abda4e5130e76536b302939864f7f14258aba7cf",
+    "vertices": 528,
+    "triangles": 1056,
+    "deflection_mm": 0.05
+  },
+  "M3_thumb_mount_screws": {
+    "step_sha256": "1f56712246780475a6104efebae9b98b4671fb0166ccac36064f532ecbbe97ce",
+    "vertices": 1008,
+    "triangles": 2008,
+    "deflection_mm": 0.05
+  },
+  "Palm_back_chassis": {
+    "step_sha256": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429",
+    "vertices": 9700,
+    "triangles": 19536,
+    "deflection_mm": 0.05
+  },
+  "Palm_front_cover": {
+    "step_sha256": "0116f22f492541a36ec6038b65ef6176ba0744875587a5ad5d6cdacfda2fa417",
+    "vertices": 2352,
+    "triangles": 4720,
+    "deflection_mm": 0.05
+  },
+  "Palm_wrist_saddle": {
+    "step_sha256": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c",
+    "vertices": 1560,
+    "triangles": 3136,
+    "deflection_mm": 0.05
+  },
+  "Roll_output_flange": {
+    "step_sha256": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d",
+    "vertices": 252,
+    "triangles": 500,
+    "deflection_mm": 0.05
+  },
+  "Root_cartridge": {
+    "step_sha256": "08b7dadcdd9ecb12130d7e4bafa022d66d70a19b8da3db01c98aa905468c4367",
+    "vertices": 1640,
+    "triangles": 3300,
+    "deflection_mm": 0.05
+  },
+  "S101_relief": {
+    "step_sha256": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec",
+    "vertices": 15802,
+    "triangles": 31700,
+    "deflection_mm": 0.05
+  },
+  "Thumb_internal_cradle": {
+    "step_sha256": "b7934a5e403c22a663e192bc09c29a9352e0d8dcd95a9befcfd9c2f002472247",
+    "vertices": 1777,
+    "triangles": 3574,
+    "deflection_mm": 0.05
+  },
+  "Thumb_metacarpal": {
+    "step_sha256": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb",
+    "vertices": 2152,
+    "triangles": 4332,
+    "deflection_mm": 0.05
+  },
+  "Tip_28": {
+    "step_sha256": "4c17fc40b7c0ad40362a0e52605126b81aa9bc734cbdc60c8b723aa3ef16965b",
+    "vertices": 1320,
+    "triangles": 2652,
+    "deflection_mm": 0.05
+  },
+  "Tip_32": {
+    "step_sha256": "54473e906898321eb7362890031dc912e9030e4321b3240746a0f78dc94d1f54",
+    "vertices": 1388,
+    "triangles": 2804,
+    "deflection_mm": 0.05
+  },
+  "Tip_34": {
+    "step_sha256": "f4aec04f8cd6e8926102745e2872a703b0048c996b42d649d8a9e08da76afd68",
+    "vertices": 1388,
+    "triangles": 2804,
+    "deflection_mm": 0.05
+  },
+  "Wrist_box_carrier": {
+    "step_sha256": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f",
+    "vertices": 242,
+    "triangles": 480,
+    "deflection_mm": 0.05
+  }
+}

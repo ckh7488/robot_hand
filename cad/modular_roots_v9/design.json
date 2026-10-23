@@ -1,0 +1,343 @@
+{
+  "revision": 9,
+  "status": "Iterative assembly and motion review; not a fabrication release",
+  "units": "mm",
+  "handedness": "right",
+  "hand": {
+    "palm_width": 232,
+    "palm_length": 195,
+    "palm_floor_z": -63,
+    "palm_front_z": 26,
+    "wall": 5,
+    "root_gap": 0,
+    "root_axis_offset_z": 32,
+    "cover_height": 140,
+    "fingers": [
+      {
+        "name": "index",
+        "root": [
+          72,
+          162,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          65,
+          50,
+          32
+        ]
+      },
+      {
+        "name": "middle",
+        "root": [
+          24,
+          172,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          70,
+          50,
+          34
+        ]
+      },
+      {
+        "name": "ring",
+        "root": [
+          -24,
+          166,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          62,
+          50,
+          32
+        ]
+      },
+      {
+        "name": "little",
+        "root": [
+          -72,
+          151,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          55,
+          48,
+          28
+        ]
+      },
+      {
+        "name": "thumb",
+        "root": [
+          62,
+          46,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          -50
+        ],
+        "links": [
+          65,
+          48,
+          28
+        ],
+        "mcp_mount_yaw": 35
+      }
+    ]
+  },
+  "arm": {
+    "elbow_to_roll": 130,
+    "elbow_to_wrist_flex": 280,
+    "wrist_axis_offset": 15,
+    "wrist_to_palm": 65,
+    "wrist_lateral_offset": 32
+  },
+  "poses": {
+    "Open": {
+      "index": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "middle": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ring": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "little": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "thumb": [
+        0,
+        0,
+        5,
+        5
+      ]
+    },
+    "Curl": {
+      "index": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "middle": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "ring": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "little": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "thumb": [
+        0,
+        15,
+        20,
+        10
+      ]
+    },
+    "Splay": {
+      "index": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "middle": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "ring": [
+        -4,
+        0,
+        0,
+        0
+      ],
+      "little": [
+        -8,
+        0,
+        0,
+        0
+      ],
+      "thumb": [
+        0,
+        0,
+        5,
+        5
+      ]
+    },
+    "Backbend": {
+      "index": [
+        0,
+        -20,
+        0,
+        0
+      ],
+      "middle": [
+        0,
+        -20,
+        0,
+        0
+      ],
+      "ring": [
+        0,
+        -20,
+        0,
+        0
+      ],
+      "little": [
+        0,
+        -20,
+        0,
+        0
+      ],
+      "thumb": [
+        0,
+        0,
+        5,
+        5
+      ]
+    },
+    "Close": {
+      "index": [
+        0,
+        60,
+        45,
+        30
+      ],
+      "middle": [
+        0,
+        60,
+        45,
+        30
+      ],
+      "ring": [
+        0,
+        60,
+        45,
+        30
+      ],
+      "little": [
+        0,
+        60,
+        45,
+        30
+      ],
+      "thumb": [
+        0,
+        20,
+        25,
+        15
+      ]
+    },
+    "ThumbSweep": {
+      "index": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "middle": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "ring": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "little": [
+        0,
+        35,
+        35,
+        20
+      ],
+      "thumb": [
+        -10,
+        10,
+        15,
+        10
+      ]
+    }
+  },
+  "notes": [
+    "CAD layout candidate, not a manufacturing release or a calibrated actuator model.",
+    "New tapered palm envelope, 195mm long versus110mm; front cover grows from47mm to a shaped upper edge near140mm. Hollow shell, not solid infill.",
+    "Thumb CMC root moves from[112,21,0] to[62,46,-24]mm, inside the lower palm. Thumb metacarpal has a fixed35deg MCP mounting yaw; upper thumb is not a straight continuation of its metacarpal.",
+    "Hand20 axes + arm4 axes retained. Finger roots and lengths are redesigned. Root2axis mechanical submodule and stock motor/frame interfaces are reused.",
+    "Palm structural thickness89mm includes the actual stacked root motor envelopes; 3D print layer strength and weight not validated.",
+    "Arm motor shapes remain nominal cylinders; vendor flange details, bearings, wiring and strength are pending. Existing90paths and speed results do not apply.",
+    "Explicit floor windows preserve16mm load rails, motor wall pads and fastener lands.6mm ribs and chamfered wall openings reduce mass; cover skin2.4mm with4mm lands. Tip interiors are hollowed without changing joint centers. Structural strength remains unverified.",
+    "Forearm extension V4.1: elbow-to-wrist-flex axis distance280mm (was220); elbow-to-roll130mm (was100). Hand and wrist interfaces unchanged. Longer proximal carrier and hollow beam are regenerated, not scaled motor meshes. Elbow gravity and acceleration margins must be reassessed.",
+    "Assembly review correction: factory S101 head seat Z=-11.8mm and H101 head seat Y=15.8mm were verified by BRep ray intersections. Original M2x6 has full nominal nut engagement;2.2mm nut pockets improve nominal protrusion from0.1 to0.4mm. No additional H101/S101 head machining.1.6mm nuts and low heads diameter3mm,height0.6mm. All hardware dimensions require physical fit confirmation.",
+    "Assembly review: printed root-seat tool corridors diameter3.5mm allow2.8mm straight screwdriver shaft before motors/cover installation; root-frame order must follow the CAD tool-blocking graph. Cover changes to5xM3x10 with side-loaded AF5.5x2.4 nuts near the top of12mm bosses; no90mm cover bolts. Tool/hand ergonomics, printed tolerances and strength remain physical bench checks.",
+    "Round6: add8 M3x14 palm mounting screws and nuts, plus4 body M2x8 TAP and8 horn/idler M2x4 TAP per actuator. Printed root carrier left edge relieved0.6mm. Thread engagement is explicit; threads and screw drives remain simplified.",
+    "Round7: move thumb cartridge bolts to localX[-19,20],Y[-28,8]mm; add root body screw tool corridors through floor and thumb flange; remove0.01mm nut-pocket lip; H101 TAP Y=-6mm seat corrected outboard0.1mm based on actual BRep material boundary, other6 TAP seats unchanged.",
+    "V7 index root fixed wall becomes a removable cartridge. Build its S101/motor/hinge outside palm, seat a printed foot in a locating lip, then fit two M3x12 screws from below. Other roots are retained as V6 pending this proof.",
+    "V8: four finger cartridges and top-installed thumb foot preserve joint axes. Closed box load rails carry V6 stiffness concept; new cartridge load paths require fresh structural checks.",
+    "V9: root wall top lowered from localZ4 to-3mm. Highest M2mount centerZ=-8.843mm retains5.843mm center-to-edge distance and about3.36mm beyond the hex-pocket corner. Axis locations, foot, bolts and palm unchanged.",
+    "Round22: C-carrier MCPseat positive edge reduced0.8mm, width25.8→25.0mm, to retain clearance with3deg excess backbend. Nearest M2nut center-to-edge6.443mm, about3.96mm beyond AF4.3hex corner. Mount bores and seat thickness unchanged. Strength still physical/FEA pending.",
+    "Round24: symmetric left seat edge also reduced0.8mm; final main seat width24.2mm, centered atX-14.5. Both nut-pocket corner edge ligaments about3.96mm. One-sided relief alone did not increase minimum because the opposite edge had the same gap."
+  ],
+  "assembly": {
+    "modular_root_fingers": [
+      "index",
+      "middle",
+      "ring",
+      "little"
+    ],
+    "thumb_top_cartridge": true,
+    "cartridge_mount_clearance_per_side_mm": 0.3,
+    "status": "Five removable roots; symmetric seat edge relief and7mm root-wall relief under final recheck",
+    "root_wall_top_local_z_mm": -3,
+    "MCP_seat_positive_x_mm": -2.4,
+    "MCP_seat_negative_x_mm": -26.6
+  }
+}

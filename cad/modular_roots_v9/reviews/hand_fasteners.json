@@ -1,0 +1,58 @@
+{
+  "scope": "Modeled M2 machine and TAP screws, M3 screws and captive nuts versus CAD assembly parts. Explicit fastener/part volume intersections; no thread helix, assembly preload or strength claim.",
+  "poses": {
+    "Open": {
+      "checked_overlapping_bounds": 554,
+      "interference": [],
+      "seconds": 32.92,
+      "unique_exact_booleans_total": 240
+    },
+    "Curl": {
+      "checked_overlapping_bounds": 671,
+      "interference": [],
+      "seconds": 27.45,
+      "unique_exact_booleans_total": 324
+    },
+    "Splay": {
+      "checked_overlapping_bounds": 575,
+      "interference": [],
+      "seconds": 27.88,
+      "unique_exact_booleans_total": 406
+    },
+    "Backbend": {
+      "checked_overlapping_bounds": 693,
+      "interference": [],
+      "seconds": 24.86,
+      "unique_exact_booleans_total": 439
+    },
+    "Close": {
+      "checked_overlapping_bounds": 677,
+      "interference": [],
+      "seconds": 27.09,
+      "unique_exact_booleans_total": 521
+    },
+    "ThumbSweep": {
+      "checked_overlapping_bounds": 661,
+      "interference": [],
+      "seconds": 25.33,
+      "unique_exact_booleans_total": 559
+    }
+  },
+  "bolt_length_mm": 6,
+  "frame_mm": 3,
+  "printed_wall_mm": 5,
+  "nut_height_mm": 1.6,
+  "pocket_depth_mm": 2.2,
+  "calculated_tip_beyond_nut_mm": 0.4,
+  "procurement_exact_low_head_part_verified": false,
+  "reference_screw": {
+    "part": "NBK SNZS-M2-6",
+    "source": "https://www.nbk1560.com/en/products/specialscrew/nedzicom/miniaturescrew/SNZS-M/SNZS-M2/",
+    "manufacturer_dimensions_verified": true,
+    "physical_fit_and_preload_verified": false
+  },
+  "factory_S101_head_seat_z_mm": -11.8,
+  "factory_H101_head_seat_y_mm": 15.8,
+  "modeled_thread_engagement_note": "TAP-to-designated motor thread volume is intentional and omitted from collision failure; frame heads, neighboring parts and non-designated motor pieces remain checked. No helix, driver bit or clamping force model.",
+  "passed": true
+}

@@ -1,0 +1,614 @@
+{
+ "boxes_motor_local_mm": {
+  "plug_dorsal": [
+   [
+    -25.6,
+    -13.75,
+    -9.9
+   ],
+   [
+    -18.5,
+    -4.25,
+    -6.1000000000000005
+   ]
+  ],
+  "lead_dorsal": [
+   [
+    -34.5,
+    -12.75,
+    -9.25
+   ],
+   [
+    -25.6,
+    -5.25,
+    -6.75
+   ]
+  ],
+  "plug_palmar": [
+   [
+    -25.6,
+    -13.75,
+    6.1000000000000005
+   ],
+   [
+    -18.5,
+    -4.25,
+    9.9
+   ]
+  ],
+  "lead_palmar": [
+   [
+    -34.5,
+    -12.75,
+    6.75
+   ],
+   [
+    -25.6,
+    -5.25,
+    9.25
+   ]
+  ]
+ },
+ "rows": [
+  {
+   "motor": "index_mcp_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.0,
+   "nearest_part": "index_mcp_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "middle_mcp_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.0,
+   "nearest_part": "middle_mcp_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "ring_mcp_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.0,
+   "nearest_part": "ring_mcp_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "little_mcp_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.0,
+   "nearest_part": "little_mcp_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "index_pip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.148,
+   "nearest_part": "index_pip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "middle_pip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.148,
+   "nearest_part": "middle_pip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "ring_pip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.148,
+   "nearest_part": "ring_pip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "little_pip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.148,
+   "nearest_part": "little_pip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "index_dip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.542,
+   "nearest_part": "index_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "middle_dip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.542,
+   "nearest_part": "middle_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "ring_dip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.542,
+   "nearest_part": "ring_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "little_dip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.542,
+   "nearest_part": "little_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "index_mcp_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "index_mcp_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "index_pip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "index_pip_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "middle_mcp_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "middle_mcp_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "middle_pip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "middle_pip_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "ring_root_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "ring_root_hinge",
+   "pose": "Splay"
+  },
+  {
+   "motor": "ring_root_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.551,
+   "nearest_part": "ring_root_hinge",
+   "pose": "Splay"
+  },
+  {
+   "motor": "ring_mcp_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "ring_mcp_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "ring_pip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "ring_pip_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "little_mcp_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "little_mcp_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "little_pip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.551,
+   "nearest_part": "little_pip_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "index_root_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "index_root_hinge",
+   "pose": "Splay"
+  },
+  {
+   "motor": "index_dip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "index_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "middle_root_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "middle_root_hinge",
+   "pose": "Splay"
+  },
+  {
+   "motor": "middle_root_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.552,
+   "nearest_part": "middle_root_hinge",
+   "pose": "Splay"
+  },
+  {
+   "motor": "middle_dip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "middle_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "ring_dip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "ring_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "little_root_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.552,
+   "nearest_part": "little_root_hinge",
+   "pose": "Splay"
+  },
+  {
+   "motor": "little_dip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "little_dip_hinge",
+   "pose": "Close"
+  },
+  {
+   "motor": "thumb_root_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_root_hinge",
+   "pose": "ThumbSweep"
+  },
+  {
+   "motor": "thumb_root_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_root_hinge",
+   "pose": "ThumbSweep"
+  },
+  {
+   "motor": "thumb_mcp_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_mcp_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "thumb_mcp_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_mcp_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "thumb_pip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_pip_hinge",
+   "pose": "ThumbSweep"
+  },
+  {
+   "motor": "thumb_pip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_pip_hinge",
+   "pose": "Open"
+  },
+  {
+   "motor": "thumb_dip_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_dip_hinge",
+   "pose": "Curl"
+  },
+  {
+   "motor": "thumb_dip_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.552,
+   "nearest_part": "thumb_dip_hinge",
+   "pose": "Open"
+  },
+  {
+   "motor": "index_root_motor",
+   "keepout": "lead_palmar",
+   "min_mm": 0.553,
+   "nearest_part": "index_root_hinge",
+   "pose": "Open"
+  },
+  {
+   "motor": "little_root_motor",
+   "keepout": "lead_dorsal",
+   "min_mm": 0.553,
+   "nearest_part": "little_root_hinge",
+   "pose": "Open"
+  },
+  {
+   "motor": "index_mcp_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "index_mcp_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "index_pip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "index_pip_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "middle_mcp_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "middle_mcp_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "middle_pip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "middle_pip_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "ring_mcp_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "ring_mcp_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "ring_pip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "ring_pip_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "little_mcp_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "little_mcp_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "little_pip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.851,
+   "nearest_part": "little_pip_output_hinge_tap",
+   "pose": "Curl"
+  },
+  {
+   "motor": "index_dip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.917,
+   "nearest_part": "index_dip_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "middle_dip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.917,
+   "nearest_part": "middle_dip_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "ring_dip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.917,
+   "nearest_part": "ring_dip_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "little_dip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 0.917,
+   "nearest_part": "little_dip_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "index_mcp_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 0.996,
+   "nearest_part": "index_mcp_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "middle_mcp_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 0.996,
+   "nearest_part": "middle_mcp_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "ring_mcp_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 0.996,
+   "nearest_part": "ring_mcp_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "little_mcp_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 0.996,
+   "nearest_part": "little_mcp_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "index_root_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "index_root_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "index_pip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "index_pip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "index_dip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "index_dip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "middle_root_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "middle_root_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "middle_pip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "middle_pip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "middle_dip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "middle_dip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "ring_root_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "ring_root_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "ring_pip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "ring_pip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "ring_dip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "ring_dip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "little_root_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "little_root_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "little_pip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "little_pip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "little_dip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "little_dip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "thumb_root_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "thumb_root_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "thumb_mcp_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "thumb_mcp_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "thumb_pip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "thumb_pip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "thumb_dip_motor",
+   "keepout": "plug_dorsal",
+   "min_mm": 1.005,
+   "nearest_part": "thumb_dip_fixed_frame",
+   "pose": "Open"
+  },
+  {
+   "motor": "thumb_pip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 1.131,
+   "nearest_part": "thumb_pip_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "thumb_mcp_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 1.473,
+   "nearest_part": "thumb_mcp_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "thumb_dip_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 1.898,
+   "nearest_part": "thumb_dip_output_hinge_tap",
+   "pose": "Close"
+  },
+  {
+   "motor": "thumb_root_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 2.37,
+   "nearest_part": "thumb_root_output_hinge_tap",
+   "pose": "ThumbSweep"
+  },
+  {
+   "motor": "little_root_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 2.566,
+   "nearest_part": "little_root_output_hinge_tap",
+   "pose": "Splay"
+  },
+  {
+   "motor": "ring_root_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 2.967,
+   "nearest_part": "ring_root_output_hinge_tap",
+   "pose": "Splay"
+  },
+  {
+   "motor": "index_root_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 3.375,
+   "nearest_part": "index_root_output_hinge_tap",
+   "pose": "Open"
+  },
+  {
+   "motor": "middle_root_motor",
+   "keepout": "plug_palmar",
+   "min_mm": 3.375,
+   "nearest_part": "middle_root_output_hinge_tap",
+   "pose": "Open"
+  }
+ ]
+}

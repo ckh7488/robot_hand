@@ -1,0 +1,10 @@
+{
+  "V9_frozen_hashes_unchanged": 222,
+  "candidate_print_mesh": {
+    "watertight": true,
+    "consistent_winding": true,
+    "components": 1,
+    "mesh_volume_mm3": 19801.629739764026
+  },
+  "manufacturing_release": false
+}

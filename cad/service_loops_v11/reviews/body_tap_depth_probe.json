@@ -1,0 +1,1141 @@
+{
+  "scope": "Diagnostic of modeled8mmTAPs. Centerline CAD material is not an accepted thread-depth specification; compare manufacturer drawing.",
+  "rows": [
+    {
+      "side": -1,
+      "y": 7.5,
+      "underhead": [
+        -27.3,
+        7.5,
+        -8.0
+      ],
+      "model_length_mm": 8,
+      "core1p2mm_overlap_motor_mm3": 0.0,
+      "thread1p9mm_overlap_motor_mm3": 1.8142697574481037,
+      "points": [
+        {
+          "from_underhead_mm": 0.0,
+          "x_mm": -27.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.2,
+          "x_mm": -27.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.4,
+          "x_mm": -26.900000000000002,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.6000000000000001,
+          "x_mm": -26.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.8,
+          "x_mm": -26.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.0,
+          "x_mm": -26.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.2000000000000002,
+          "x_mm": -26.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.4000000000000001,
+          "x_mm": -25.900000000000002,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.6,
+          "x_mm": -25.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.8,
+          "x_mm": -25.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.0,
+          "x_mm": -25.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.2,
+          "x_mm": -25.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.4000000000000004,
+          "x_mm": -24.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.6,
+          "x_mm": -24.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.8000000000000003,
+          "x_mm": -24.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.0,
+          "x_mm": -24.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.2,
+          "x_mm": -24.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.4000000000000004,
+          "x_mm": -23.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.6,
+          "x_mm": -23.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.8000000000000003,
+          "x_mm": -23.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.0,
+          "x_mm": -23.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.2,
+          "x_mm": -23.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.4,
+          "x_mm": -22.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.6000000000000005,
+          "x_mm": -22.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.800000000000001,
+          "x_mm": -22.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.0,
+          "x_mm": -22.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.2,
+          "x_mm": -22.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.4,
+          "x_mm": -21.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.6000000000000005,
+          "x_mm": -21.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.800000000000001,
+          "x_mm": -21.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.0,
+          "x_mm": -21.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.2,
+          "x_mm": -21.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.4,
+          "x_mm": -20.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.6000000000000005,
+          "x_mm": -20.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.800000000000001,
+          "x_mm": -20.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.0,
+          "x_mm": -20.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.2,
+          "x_mm": -20.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.4,
+          "x_mm": -19.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.6000000000000005,
+          "x_mm": -19.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.800000000000001,
+          "x_mm": -19.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.0,
+          "x_mm": -19.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.200000000000001,
+          "x_mm": -19.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.4,
+          "x_mm": -18.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.6,
+          "x_mm": -18.700000000000003,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.8,
+          "x_mm": -18.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "y": -22.5,
+      "underhead": [
+        -27.3,
+        -22.5,
+        -8.0
+      ],
+      "model_length_mm": 8,
+      "core1p2mm_overlap_motor_mm3": 0.0,
+      "thread1p9mm_overlap_motor_mm3": 1.814269757448104,
+      "points": [
+        {
+          "from_underhead_mm": 0.0,
+          "x_mm": -27.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.2,
+          "x_mm": -27.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.4,
+          "x_mm": -26.900000000000002,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.6000000000000001,
+          "x_mm": -26.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.8,
+          "x_mm": -26.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.0,
+          "x_mm": -26.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.2000000000000002,
+          "x_mm": -26.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.4000000000000001,
+          "x_mm": -25.900000000000002,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.6,
+          "x_mm": -25.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.8,
+          "x_mm": -25.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.0,
+          "x_mm": -25.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.2,
+          "x_mm": -25.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.4000000000000004,
+          "x_mm": -24.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.6,
+          "x_mm": -24.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.8000000000000003,
+          "x_mm": -24.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.0,
+          "x_mm": -24.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.2,
+          "x_mm": -24.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.4000000000000004,
+          "x_mm": -23.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.6,
+          "x_mm": -23.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.8000000000000003,
+          "x_mm": -23.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.0,
+          "x_mm": -23.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.2,
+          "x_mm": -23.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.4,
+          "x_mm": -22.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.6000000000000005,
+          "x_mm": -22.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.800000000000001,
+          "x_mm": -22.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.0,
+          "x_mm": -22.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.2,
+          "x_mm": -22.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.4,
+          "x_mm": -21.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.6000000000000005,
+          "x_mm": -21.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.800000000000001,
+          "x_mm": -21.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.0,
+          "x_mm": -21.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.2,
+          "x_mm": -21.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.4,
+          "x_mm": -20.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.6000000000000005,
+          "x_mm": -20.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.800000000000001,
+          "x_mm": -20.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.0,
+          "x_mm": -20.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.2,
+          "x_mm": -20.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.4,
+          "x_mm": -19.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.6000000000000005,
+          "x_mm": -19.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.800000000000001,
+          "x_mm": -19.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.0,
+          "x_mm": -19.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.200000000000001,
+          "x_mm": -19.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.4,
+          "x_mm": -18.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.6,
+          "x_mm": -18.700000000000003,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.8,
+          "x_mm": -18.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "y": 7.5,
+      "underhead": [
+        -1.7,
+        7.5,
+        -8.0
+      ],
+      "model_length_mm": 8,
+      "core1p2mm_overlap_motor_mm3": 0.0,
+      "thread1p9mm_overlap_motor_mm3": 2.6389378290154184,
+      "points": [
+        {
+          "from_underhead_mm": 0.0,
+          "x_mm": -1.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.2,
+          "x_mm": -1.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.4,
+          "x_mm": -2.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.6000000000000001,
+          "x_mm": -2.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.8,
+          "x_mm": -2.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.0,
+          "x_mm": -2.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.2000000000000002,
+          "x_mm": -2.9000000000000004,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.4000000000000001,
+          "x_mm": -3.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.6,
+          "x_mm": -3.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.8,
+          "x_mm": -3.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.0,
+          "x_mm": -3.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.2,
+          "x_mm": -3.9000000000000004,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.4000000000000004,
+          "x_mm": -4.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.6,
+          "x_mm": -4.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.8000000000000003,
+          "x_mm": -4.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.0,
+          "x_mm": -4.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.2,
+          "x_mm": -4.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.4000000000000004,
+          "x_mm": -5.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.6,
+          "x_mm": -5.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.8000000000000003,
+          "x_mm": -5.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.0,
+          "x_mm": -5.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.2,
+          "x_mm": -5.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.4,
+          "x_mm": -6.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.6000000000000005,
+          "x_mm": -6.300000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.800000000000001,
+          "x_mm": -6.500000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.0,
+          "x_mm": -6.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.2,
+          "x_mm": -6.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.4,
+          "x_mm": -7.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.6000000000000005,
+          "x_mm": -7.300000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.800000000000001,
+          "x_mm": -7.500000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.0,
+          "x_mm": -7.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.2,
+          "x_mm": -7.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.4,
+          "x_mm": -8.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.6000000000000005,
+          "x_mm": -8.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.800000000000001,
+          "x_mm": -8.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.0,
+          "x_mm": -8.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.2,
+          "x_mm": -8.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.4,
+          "x_mm": -9.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.6000000000000005,
+          "x_mm": -9.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.800000000000001,
+          "x_mm": -9.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.0,
+          "x_mm": -9.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.200000000000001,
+          "x_mm": -9.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.4,
+          "x_mm": -10.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.6,
+          "x_mm": -10.299999999999999,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.8,
+          "x_mm": -10.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "y": -22.5,
+      "underhead": [
+        -1.7,
+        -22.5,
+        -8.0
+      ],
+      "model_length_mm": 8,
+      "core1p2mm_overlap_motor_mm3": 0.0,
+      "thread1p9mm_overlap_motor_mm3": 2.638937829015423,
+      "points": [
+        {
+          "from_underhead_mm": 0.0,
+          "x_mm": -1.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.2,
+          "x_mm": -1.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.4,
+          "x_mm": -2.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.6000000000000001,
+          "x_mm": -2.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 0.8,
+          "x_mm": -2.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.0,
+          "x_mm": -2.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.2000000000000002,
+          "x_mm": -2.9000000000000004,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.4000000000000001,
+          "x_mm": -3.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.6,
+          "x_mm": -3.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 1.8,
+          "x_mm": -3.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.0,
+          "x_mm": -3.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.2,
+          "x_mm": -3.9000000000000004,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.4000000000000004,
+          "x_mm": -4.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.6,
+          "x_mm": -4.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 2.8000000000000003,
+          "x_mm": -4.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.0,
+          "x_mm": -4.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.2,
+          "x_mm": -4.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.4000000000000004,
+          "x_mm": -5.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.6,
+          "x_mm": -5.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 3.8000000000000003,
+          "x_mm": -5.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.0,
+          "x_mm": -5.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.2,
+          "x_mm": -5.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.4,
+          "x_mm": -6.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.6000000000000005,
+          "x_mm": -6.300000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 4.800000000000001,
+          "x_mm": -6.500000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.0,
+          "x_mm": -6.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.2,
+          "x_mm": -6.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.4,
+          "x_mm": -7.1000000000000005,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.6000000000000005,
+          "x_mm": -7.300000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 5.800000000000001,
+          "x_mm": -7.500000000000001,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.0,
+          "x_mm": -7.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.2,
+          "x_mm": -7.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.4,
+          "x_mm": -8.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.6000000000000005,
+          "x_mm": -8.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 6.800000000000001,
+          "x_mm": -8.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.0,
+          "x_mm": -8.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.2,
+          "x_mm": -8.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.4,
+          "x_mm": -9.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.6000000000000005,
+          "x_mm": -9.3,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 7.800000000000001,
+          "x_mm": -9.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.0,
+          "x_mm": -9.7,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.200000000000001,
+          "x_mm": -9.9,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.4,
+          "x_mm": -10.1,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.6,
+          "x_mm": -10.299999999999999,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        },
+        {
+          "from_underhead_mm": 8.8,
+          "x_mm": -10.5,
+          "motor_centerline_material": false,
+          "frame_centerline_material": false
+        }
+      ]
+    }
+  ]
+}

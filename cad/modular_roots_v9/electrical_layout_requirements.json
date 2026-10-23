@@ -1,0 +1,73 @@
+{
+  "status": "Requirements and current scenario only; no powered hardware or wiring route qualified",
+  "references": [
+    {
+      "url": "https://docs.robotis.com/docs/dxl/model_reference/x_series/xl_series/xl330-m077/",
+      "facts": {
+        "recommended_supply_V": 5,
+        "allowed_supply_V": [
+          3.7,
+          6
+        ],
+        "TTL_pins": [
+          "GND",
+          "VDD",
+          "DATA"
+        ],
+        "housing": "JST EHR-03/EHR-3",
+        "header": "JST B3B-EH-A",
+        "wire_gauge_listed_by_ROBOTIS": "21AWG"
+      }
+    },
+    {
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eEH.pdf",
+      "facts": {
+        "EH_pitch_mm": 2.5,
+        "current_rating_A": 3,
+        "rating_wire": "AWG22",
+        "applicable_AWG_range": [
+          22,
+          32
+        ],
+        "housing_EHR3_outer_mm": [
+          9.5,
+          3.8,
+          6.5
+        ],
+        "max_wire_insulation_OD_mm": 1.9
+      }
+    }
+  ],
+  "current_scenarios": [
+    {
+      "name": "20axes with700mA allocation each",
+      "total_A": 14,
+      "per4motor_finger_A": 2.8,
+      "total_at5V_W": 70,
+      "note": "Arithmetic allocation, not a measured or guaranteed supply-current peak. Driver current limit and supply transients are not equivalent."
+    },
+    {
+      "name": "20times published5Vstall current",
+      "total_A": 29.4,
+      "per4motor_finger_A": 5.88,
+      "note": "Simultaneous stalled motors are not a continuous operating target."
+    }
+  ],
+  "layout_requirements": [
+    "Keep5Vhand power electrically distinct from24/48Varm supply. Connect communication reference grounds according to interface requirements.",
+    "Do not route the whole20motor supply through one3AEHcontact.",
+    "Compare5finger feeds with10two-servo feeds;2.8Aper4motor branch is close to the3Acatalog rating before derating. No branch architecture selected yet.",
+    "If VDDbranches are separately protected, do not inadvertently bridge them through daisy-chain power pins; TTLdata and reference ground topology needs an explicit harness drawing.",
+    "Include plug insertion/removal space, strain relief and moving-joint slack in CAD before wiring approval.",
+    "ROBOTISlists21AWG but JSTcatalog quotesAWG22maximum for this terminal family. Confirm actual factory cable/terminal variant; do not assume arbitrary21AWGwire is a qualified crimp.",
+    "Add harness, distribution board and connector mass to CAD after weighing. Current mass/torque screens omit them."
+  ],
+  "connector_geometry_status": "Public catalog envelope only. Prior one-joint model still has unresolved housing/case mating fit. Manufacturer individual STEP download requests personal/company details; no form was submitted and no supplier CAD was fetched or redistributed.",
+  "next_minimum_test": [
+    "Use genuine matching factory cable for first bench module",
+    "Measure connector mating and lead direction on one actuator/frame",
+    "Measure branch supply voltage/current during representative fastest trace",
+    "Choose wire/connector/protection ratings using measured current and connector temperature rise, then route complete harness"
+  ],
+  "assembly_and_electrical_release": false
+}

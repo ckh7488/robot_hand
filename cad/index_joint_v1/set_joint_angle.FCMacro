@@ -1,0 +1,23 @@
+# FreeCAD macro: edit one kinematic CAD joint; no physics or hardware commands.
+import FreeCAD as App, FreeCADGui as Gui
+from PySide import QtGui
+try:
+ from PySide import QtWidgets
+except ImportError:
+ QtWidgets=QtGui
+from pathlib import Path
+p=Path(__file__).resolve().parent if '__file__' in globals() else None
+doc=App.ActiveDocument
+if not doc or not doc.getObject('Moving'):
+ if not p:raise RuntimeError('Open index_root_joint.FCStd first.')
+ doc=App.openDocument(str(p/'index_root_joint.FCStd'))
+g=doc.getObject('Moving')
+q,ok=QtWidgets.QInputDialog.getDouble(None,'Index root CAD joint','Flexion in degrees (-20 to 100)',g.Flexion.Value,-20,100,1)
+if ok:
+ g.Placement=App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(1,0,0),q));g.Flexion=q
+ for o in g.Group:
+  if o.ViewObject:o.ViewObject.ShapeColor=(.18,.47,.8) if o.Name=='FPX330_H101' else ((.87,.5,.17) if o.Name=='Output_test_tab' else (.75,.76,.8))
+ for name,col in [('FPX330_S101',(.2,.63,.47)),('Bench_base',(.63,.67,.73))]:
+  o=doc.getObject(name)
+  if o.ViewObject:o.ViewObject.ShapeColor=col
+ doc.recompute();Gui.activeDocument().activeView().viewIsometric();Gui.activeDocument().activeView().fitAll()

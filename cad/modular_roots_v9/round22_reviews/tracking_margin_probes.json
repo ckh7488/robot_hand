@@ -1,0 +1,1463 @@
+{
+  "scope": "Backbend nominal pose with one MCP perturbed at a time by\u00b13deg. Other joints fixed; no simultaneous error, printed tolerance, deflection or calibrated servo model.",
+  "rows": [
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 0.0,
+        "surface_collision_or_containment": true,
+        "nearest_points_mm": [
+          [
+            41.5,
+            181.67351833924442,
+            -19.905399874542393
+          ],
+          [
+            41.837305115283016,
+            181.63336296837738,
+            -20.000000000000014
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "index_mcp_link",
+            "Middle_root_cartridge"
+          ],
+          "distance_mm": 0.0,
+          "surface_collision_or_containment": true,
+          "nearest_points_mm": [
+            [
+              41.5,
+              181.67351833924442,
+              -19.905399874542393
+            ],
+            [
+              41.837305115283016,
+              181.63336296837738,
+              -20.000000000000014
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "index_spread_carrier",
+            "index_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              44.6,
+              169.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              44.07832637418237,
+              170.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 542,
+      "containment_calls": 119
+    },
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 0.094409,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42.0,
+            183.03536640849538,
+            -19.912465067280525
+          ],
+          [
+            42.0,
+            183.0,
+            -19.99999999999999
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "index_mcp_link",
+            "Middle_root_cartridge"
+          ],
+          "distance_mm": 0.094409,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              42.0,
+              183.03536640849538,
+              -19.912465067280525
+            ],
+            [
+              42.0,
+              183.0,
+              -19.99999999999999
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 0.614525,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42.0,
+            183.22022606472126,
+            -19.426291487034124
+          ],
+          [
+            42.0,
+            183.0,
+            -19.999999999999993
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "index_mcp_link",
+            "Middle_root_cartridge"
+          ],
+          "distance_mm": 0.614525,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              42.0,
+              183.22022606472126,
+              -19.426291487034124
+            ],
+            [
+              42.0,
+              183.0,
+              -19.999999999999993
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42.0,
+            183.38613060849877,
+            -18.939114872189318
+          ],
+          [
+            42.0,
+            183.0,
+            -20.000000000000004
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "index",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "middle_spread_carrier",
+          "middle_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -3.3999999999999986,
+            179.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            -3.921673625817629,
+            180.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "middle_spread_carrier",
+            "middle_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -3.3999999999999986,
+              179.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              -3.921673625817629,
+              180.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 78,
+      "containment_calls": 10
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "middle",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "ring_spread_carrier",
+          "ring_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -51.4,
+            173.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            -51.92167362581763,
+            174.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "ring_spread_carrier",
+            "ring_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -51.4,
+              173.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              -51.92167362581763,
+              174.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 75,
+      "containment_calls": 10
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 39,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 39,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 38,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 37,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 36,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "ring",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "little_spread_carrier",
+          "little_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -99.4,
+            158.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            -99.92167362581763,
+            159.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "little_spread_carrier",
+            "little_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -99.4,
+              158.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              -99.92167362581763,
+              159.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 92,
+      "containment_calls": 10
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 50,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 49,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 48,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 43,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V8",
+      "finger": "little",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 40,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "index_spread_carrier",
+          "index_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            44.6,
+            169.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            44.07832637418237,
+            170.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "index_spread_carrier",
+            "index_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              44.6,
+              169.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              44.07832637418237,
+              170.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 542,
+      "containment_calls": 119
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "index_spread_carrier",
+          "index_mcp_hinge"
+        ],
+        "distance_mm": 1.193043,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            44.6,
+            169.5505966502166,
+            -6.101193300433163
+          ],
+          [
+            43.94159564590072,
+            170.44047589775982,
+            -5.656253676661546
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "index",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "middle_spread_carrier",
+          "middle_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -3.3999999999999986,
+            179.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            -3.921673625817629,
+            180.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "middle_spread_carrier",
+            "middle_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -3.3999999999999986,
+              179.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              -3.921673625817629,
+              180.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 78,
+      "containment_calls": 10
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "middle_spread_carrier",
+          "middle_mcp_hinge"
+        ],
+        "distance_mm": 1.193043,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -3.3999999999999986,
+            179.5505966502166,
+            -6.101193300433163
+          ],
+          [
+            -4.0584043540992845,
+            180.44047589775982,
+            -5.656253676661546
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "middle",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "ring_spread_carrier",
+          "ring_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -51.4,
+            173.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            -51.92167362581763,
+            174.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "ring_spread_carrier",
+            "ring_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -51.4,
+              173.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              -51.92167362581763,
+              174.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 75,
+      "containment_calls": 10
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "ring_spread_carrier",
+          "ring_mcp_hinge"
+        ],
+        "distance_mm": 1.193043,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -51.4,
+            173.5505966502166,
+            -6.101193300433163
+          ],
+          [
+            -52.05840435409928,
+            174.44047589775982,
+            -5.656253676661546
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 39,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.80000000008867,
+            170.8279507524269,
+            -3.999999999748029
+          ],
+          [
+            -57.0,
+            170.8279507524269,
+            -4.000000000000002
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 39,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 38,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.80000000004951,
+            171.55390167085207,
+            -3.999999999732651
+          ],
+          [
+            -57.0,
+            171.55390167085207,
+            -3.999999999999986
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 37,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.8000000000268,
+            171.94399305486502,
+            -3.9999999997241282
+          ],
+          [
+            -57.0,
+            171.94399305486502,
+            -3.9999999999999947
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 36,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "ring",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.80000000000173,
+            172.35487222960774,
+            -3.999999999714934
+          ],
+          [
+            -57.0,
+            172.35487222960774,
+            -3.9999999999999893
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": -3,
+      "minimum": {
+        "pair": [
+          "little_spread_carrier",
+          "little_mcp_hinge"
+        ],
+        "distance_mm": 0.958689,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -99.4,
+            158.60730556865775,
+            -6.214611137315526
+          ],
+          [
+            -99.92167362581763,
+            159.32671718182183,
+            -5.854905330733494
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [
+        {
+          "pair": [
+            "little_spread_carrier",
+            "little_mcp_hinge"
+          ],
+          "distance_mm": 0.958689,
+          "surface_collision_or_containment": false,
+          "nearest_points_mm": [
+            [
+              -99.4,
+              158.60730556865775,
+              -6.214611137315526
+            ],
+            [
+              -99.92167362581763,
+              159.32671718182183,
+              -5.854905330733494
+            ]
+          ]
+        }
+      ],
+      "distance_calls": 92,
+      "containment_calls": 10
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": -2,
+      "minimum": {
+        "pair": [
+          "little_spread_carrier",
+          "little_mcp_hinge"
+        ],
+        "distance_mm": 1.193043,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -99.4,
+            158.5505966502166,
+            -6.101193300433163
+          ],
+          [
+            -100.05840435409928,
+            159.44047589775982,
+            -5.656253676661546
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 50,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": -1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 49,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": 0,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 48,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": 1,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 43,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": 2,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 5
+    },
+    {
+      "revision": "V9",
+      "finger": "little",
+      "MCP_error_deg": 3,
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 40,
+      "containment_calls": 5
+    }
+  ]
+}

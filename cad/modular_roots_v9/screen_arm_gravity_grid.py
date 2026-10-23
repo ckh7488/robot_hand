@@ -1,0 +1,15 @@
+"""Sampled CAD arm gravity envelope; not dynamic sizing or physical validation."""
+import json,itertools,numpy as np
+from kinematics_numpy import D,C,META,forward,rigid_body,T,around
+M=json.loads((D/'cad_manifest.json').read_text(encoding='utf-8'));mass=json.loads((D/'mass_screen.json').read_text(encoding='utf-8'));rows={r['name']:r for r in mass['items']};idx=[i for i,it in enumerate(META) if it['name'] in rows];items=[META[i] for i in idx];weights=np.array([rows[it['name']]['mass_kg'] for it in items]);com=np.array([np.array(it['R']).T@(np.array(rows[it['name']]['com_mm'])-it['pos_mm']) for it in items]);bodies=[rigid_body(it['name']) for it in items]
+ys=M['axis_locations_y_mm'];points=[(0,ys['elbow'],0),(0,ys['forearm_roll'],0),(0,ys['wrist_flex'],0),(C['arm']['wrist_lateral_offset'],ys['wrist_deviation'],0)];axes=[np.array([1.,0,0]),np.array([0.,1,0]),np.array([1.,0,0]),np.array([0.,0,1])];names=['elbow_flex','forearm_roll','wrist_flex','wrist_deviation'];masks=[np.array([b!='fixed' for b in bodies]),np.array([b not in ['fixed','elbow_link'] for b in bodies]),np.array([b not in ['fixed','elbow_link','forearm_link'] for b in bodies]),np.array([b not in ['fixed','elbow_link','forearm_link','wrist_link'] for b in bodies])];best=[None]*4;count=0
+for pname,pose in C['poses'].items():
+ for roll,flex,yaw in itertools.product([-60,0,60],range(-35,56,5),range(-20,21,5)):
+  q=[0,roll,flex,yaw];mat=forward(pose,q)[idx];xyz=np.einsum('nij,nj->ni',mat[:,:3,:3],com)+mat[:,:3,3];E=around(points[0],0,0);F=around(points[1],1,roll);P=around(points[2],0,flex);up=[np.eye(4),E,E@F,E@F@P]
+  for j,(point,axis,upstream,mask) in enumerate(zip(points,axes,up,masks)):
+   p=upstream[:3,:3]@point+upstream[:3,3];a=upstream[:3,:3]@axis;S=((xyz[mask]-p)*weights[mask,None]).sum(0)/1000;tau=9.81*np.linalg.norm(np.cross(a,S))
+   row={'joint':names[j],'maximum_sampled_gravity_Nm':float(tau),'hand_pose':pname,'arm_q_deg':q,'downstream_mass_kg':float(weights[mask].sum()),'minimum_continuous_rating_for_70pct_static_fraction_Nm':float(tau/.7)}
+   if best[j] is None or tau>best[j]['maximum_sampled_gravity_Nm']:best[j]=row
+  count+=1
+ print(pname,'samples',count,flush=True)
+out={'scope':'CAD sampled gravity screen. Worst gravity direction optimized separately for each joint, not all maxima at one configuration.','sampled_configurations':count,'joint_grid_deg':{'elbow':0,'roll':[-60,0,60],'wrist_flex':[-35,55,5],'wrist_deviation':[-20,20,5]},'assumptions':mass['limitations']+['Elbow rotation omitted because gravity orientation is optimized and rotation about its own axis preserves the moment norm.','No inertia torque, rotor/gear dynamics, friction, cable force, backlash or thermal derating.','70percent static fraction is a project screening target, not a manufacturer rating or approval.','Arm motor bodies are nominal cylinders, flange geometry and structure are not finalized.'],'joints':best,'actuator_selection_approved':False};(D/'reviews/arm_gravity_grid.json').write_text(json.dumps(out,indent=2));print(json.dumps(best,indent=2))

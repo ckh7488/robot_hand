@@ -1,0 +1,17 @@
+{
+  "FCStd_parts": 54,
+  "FCStd_solids": 54,
+  "STEP_solids": 54,
+  "FCStd_valid": true,
+  "STEP_valid": true,
+  "volume_delta_mm3": 0.02256063505410566,
+  "bbox_delta_mm": 1.7763568394002505e-15,
+  "moving_group_70deg_point_mm": [
+    0.0,
+    16.4169668796321,
+    45.1052457977236
+  ],
+  "moving_group_transform_pass": true,
+  "relative_volume_error": 7.653494751685702e-07,
+  "passed": true
+}

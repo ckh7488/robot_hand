@@ -1,0 +1,22 @@
+{
+  "V9_frozen_hashes_unchanged": 222,
+  "print_candidates": [
+    {
+      "part": "Little_root_cable_saddle",
+      "watertight": true,
+      "consistent_winding": true,
+      "components": 1,
+      "volume_mm3": 13428.008001286558
+    },
+    {
+      "part": "Little_MCP_link_cable_saddle",
+      "watertight": true,
+      "consistent_winding": true,
+      "components": 1,
+      "volume_mm3": 12829.788806481685
+    }
+  ],
+  "guide_material_subset_transfer_used": false,
+  "basis": "Direct final geometry motion and BRep checks. Baseline axes/holes retained; original part minus new part has zero volume. No guide-to-previous-guide subset claim.",
+  "manufacturing_release": false
+}

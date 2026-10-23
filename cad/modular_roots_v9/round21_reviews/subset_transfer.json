@@ -1,0 +1,259 @@
+{
+  "claim": "New fixed root CAD solids are subsets of V8 at identical placements, so removing material cannot introduce interference or reduce physical separation along unchanged rigid kinematics.",
+  "baseline": {
+    "revision": 8,
+    "scene_sha256": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e",
+    "motion_evidence_sha256": "1271e34b0cadacffaee47304e31d2400c3af873704c46e741913eabfe05dd490",
+    "paths": 15,
+    "maximum_joint_sample_step_deg": 0.5,
+    "minimum_certified_sample_clearance_mm": 1.12897
+  },
+  "identical_assets": [
+    "M077_stator",
+    "M077_rotor",
+    "H101_vendor",
+    "S101_relief",
+    "M2_base_screws",
+    "M2_base_nuts",
+    "M2_output_screws",
+    "M2_output_nuts",
+    "M2_root_output_nuts",
+    "M2_body_TAP8",
+    "M2_hinge_TAP4",
+    "Palm_back_chassis",
+    "Palm_front_cover",
+    "Compact_root",
+    "Flex_link_48",
+    "Flex_link_50",
+    "Flex_link_55",
+    "Flex_link_62",
+    "Flex_link_65",
+    "Flex_link_70",
+    "Tip_28",
+    "Tip_32",
+    "Tip_34",
+    "Thumb_metacarpal",
+    "AK_elbow_flex",
+    "AK_forearm_roll",
+    "AK_wrist_flex",
+    "AK_wrist_deviation",
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier",
+    "Forearm_box_beam",
+    "Roll_output_flange",
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle",
+    "M3_cover_screws",
+    "M3_cover_nuts",
+    "M3_thumb_mount_screws",
+    "M3_thumb_mount_nuts",
+    "M3_saddle_mount_screws",
+    "M3_saddle_mount_nuts",
+    "M3_root_mount_screws",
+    "M3_root_mount_nuts"
+  ],
+  "changed_assets": [
+    {
+      "asset": "Thumb_internal_cradle",
+      "new_material_outside_old_mm3": 0.0,
+      "removed_material_mm3": 1469.9999999998777,
+      "new_valid": true,
+      "new_solids": 1,
+      "subset_passed": true
+    },
+    {
+      "asset": "Root_cartridge",
+      "new_material_outside_old_mm3": 0.0,
+      "removed_material_mm3": 1470.0,
+      "new_valid": true,
+      "new_solids": 1,
+      "subset_passed": true
+    }
+  ],
+  "asset_hashes": {
+    "M077_stator": {
+      "old_sha256": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+      "new_sha256": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5"
+    },
+    "M077_rotor": {
+      "old_sha256": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+      "new_sha256": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5"
+    },
+    "H101_vendor": {
+      "old_sha256": "148c51ba09bab3ce46f0db8cf8bfeab2e1edd65f691d908eb8520e7117b1af67",
+      "new_sha256": "148c51ba09bab3ce46f0db8cf8bfeab2e1edd65f691d908eb8520e7117b1af67"
+    },
+    "S101_relief": {
+      "old_sha256": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec",
+      "new_sha256": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec"
+    },
+    "M2_base_screws": {
+      "old_sha256": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856",
+      "new_sha256": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856"
+    },
+    "M2_base_nuts": {
+      "old_sha256": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f",
+      "new_sha256": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f"
+    },
+    "M2_output_screws": {
+      "old_sha256": "075237c118d956b4a8c197204629c98152ed896f39dd461c4228c96ee732b2da",
+      "new_sha256": "075237c118d956b4a8c197204629c98152ed896f39dd461c4228c96ee732b2da"
+    },
+    "M2_output_nuts": {
+      "old_sha256": "743276ff606a9f92edca270bf2f65bf7975260a9f2a1dc8dd8240001949c853f",
+      "new_sha256": "743276ff606a9f92edca270bf2f65bf7975260a9f2a1dc8dd8240001949c853f"
+    },
+    "M2_root_output_nuts": {
+      "old_sha256": "62d7f47eb7614675835d3c3767ee891a89f940b2ed5b5cf85d9d88766b80efc7",
+      "new_sha256": "62d7f47eb7614675835d3c3767ee891a89f940b2ed5b5cf85d9d88766b80efc7"
+    },
+    "M2_body_TAP8": {
+      "old_sha256": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a",
+      "new_sha256": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a"
+    },
+    "M2_hinge_TAP4": {
+      "old_sha256": "81574ad7817f887b4d5b589da1a178acdc9bb24832f3024cca0bbe41817e8726",
+      "new_sha256": "81574ad7817f887b4d5b589da1a178acdc9bb24832f3024cca0bbe41817e8726"
+    },
+    "Thumb_internal_cradle": {
+      "old_sha256": "18e2bf3670dee94ce5864f415eea5cba8e2ba84146e490cfee1c782b26f6fc9c",
+      "new_sha256": "2910e87bec31b9a365c783f3aa235c4c76d8bd521d028b4c55abaf14ec02bb5c"
+    },
+    "Root_cartridge": {
+      "old_sha256": "73b9e4a31f83ec3b2b705242de9e3c926e2ebf81306d9948751d37f0843d2f8c",
+      "new_sha256": "50682ff32e01e39ee738c1ad2b675cfb9042f4c4f983b7dc75e26b40a8676d90"
+    },
+    "Palm_back_chassis": {
+      "old_sha256": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429",
+      "new_sha256": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429"
+    },
+    "Palm_front_cover": {
+      "old_sha256": "0116f22f492541a36ec6038b65ef6176ba0744875587a5ad5d6cdacfda2fa417",
+      "new_sha256": "0116f22f492541a36ec6038b65ef6176ba0744875587a5ad5d6cdacfda2fa417"
+    },
+    "Compact_root": {
+      "old_sha256": "fc52c4a0a3c3484508114d1f1b2071ec53fd4cf0edfc70debc9236f1e1165758",
+      "new_sha256": "fc52c4a0a3c3484508114d1f1b2071ec53fd4cf0edfc70debc9236f1e1165758"
+    },
+    "Flex_link_48": {
+      "old_sha256": "9760a610b868906f8e2a53f272390ab0e29c74a193c10baf21c8cfb2e1829568",
+      "new_sha256": "9760a610b868906f8e2a53f272390ab0e29c74a193c10baf21c8cfb2e1829568"
+    },
+    "Flex_link_50": {
+      "old_sha256": "2e6172fbb8fa47cb678d505e8d4ffb019ae9329c80883ffe8faa2e5265dca140",
+      "new_sha256": "2e6172fbb8fa47cb678d505e8d4ffb019ae9329c80883ffe8faa2e5265dca140"
+    },
+    "Flex_link_55": {
+      "old_sha256": "906978e842fb2e2c7faa39544d923fc580e63e2da393994e97b4f5a24428773d",
+      "new_sha256": "906978e842fb2e2c7faa39544d923fc580e63e2da393994e97b4f5a24428773d"
+    },
+    "Flex_link_62": {
+      "old_sha256": "684874af1b86962539df60cf33f4c0bf4a51a2f18950701d3a57fe4b28793531",
+      "new_sha256": "684874af1b86962539df60cf33f4c0bf4a51a2f18950701d3a57fe4b28793531"
+    },
+    "Flex_link_65": {
+      "old_sha256": "23b5936203ea702ca0813437e5f0d8182925961e911e9733e337bf8a0d1d0ce9",
+      "new_sha256": "23b5936203ea702ca0813437e5f0d8182925961e911e9733e337bf8a0d1d0ce9"
+    },
+    "Flex_link_70": {
+      "old_sha256": "46bfaf90a9bbb640c25556be0f9ee2c5720b4a28f71400c14d3563c70ba83b9b",
+      "new_sha256": "46bfaf90a9bbb640c25556be0f9ee2c5720b4a28f71400c14d3563c70ba83b9b"
+    },
+    "Tip_28": {
+      "old_sha256": "4c17fc40b7c0ad40362a0e52605126b81aa9bc734cbdc60c8b723aa3ef16965b",
+      "new_sha256": "4c17fc40b7c0ad40362a0e52605126b81aa9bc734cbdc60c8b723aa3ef16965b"
+    },
+    "Tip_32": {
+      "old_sha256": "54473e906898321eb7362890031dc912e9030e4321b3240746a0f78dc94d1f54",
+      "new_sha256": "54473e906898321eb7362890031dc912e9030e4321b3240746a0f78dc94d1f54"
+    },
+    "Tip_34": {
+      "old_sha256": "f4aec04f8cd6e8926102745e2872a703b0048c996b42d649d8a9e08da76afd68",
+      "new_sha256": "f4aec04f8cd6e8926102745e2872a703b0048c996b42d649d8a9e08da76afd68"
+    },
+    "Thumb_metacarpal": {
+      "old_sha256": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb",
+      "new_sha256": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb"
+    },
+    "AK_elbow_flex": {
+      "old_sha256": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01",
+      "new_sha256": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01"
+    },
+    "AK_forearm_roll": {
+      "old_sha256": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36",
+      "new_sha256": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36"
+    },
+    "AK_wrist_flex": {
+      "old_sha256": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243",
+      "new_sha256": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243"
+    },
+    "AK_wrist_deviation": {
+      "old_sha256": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256",
+      "new_sha256": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256"
+    },
+    "Elbow_fixed_cradle": {
+      "old_sha256": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6",
+      "new_sha256": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6"
+    },
+    "Elbow_roll_carrier": {
+      "old_sha256": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156",
+      "new_sha256": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156"
+    },
+    "Forearm_box_beam": {
+      "old_sha256": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365",
+      "new_sha256": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365"
+    },
+    "Roll_output_flange": {
+      "old_sha256": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d",
+      "new_sha256": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d"
+    },
+    "Wrist_box_carrier": {
+      "old_sha256": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f",
+      "new_sha256": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f"
+    },
+    "Palm_wrist_saddle": {
+      "old_sha256": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c",
+      "new_sha256": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c"
+    },
+    "M3_cover_screws": {
+      "old_sha256": "44f16ccfdf3f2da1fbf33f2f85639600bad249e65e4770fe5c58c0848659b7de",
+      "new_sha256": "44f16ccfdf3f2da1fbf33f2f85639600bad249e65e4770fe5c58c0848659b7de"
+    },
+    "M3_cover_nuts": {
+      "old_sha256": "bddcb14b37f46e6380044ed7134849d35572ef1de5a02aad6deb82af082d6a93",
+      "new_sha256": "bddcb14b37f46e6380044ed7134849d35572ef1de5a02aad6deb82af082d6a93"
+    },
+    "M3_thumb_mount_screws": {
+      "old_sha256": "1f56712246780475a6104efebae9b98b4671fb0166ccac36064f532ecbbe97ce",
+      "new_sha256": "1f56712246780475a6104efebae9b98b4671fb0166ccac36064f532ecbbe97ce"
+    },
+    "M3_thumb_mount_nuts": {
+      "old_sha256": "ba9619f59f9c53e6f0d84966abda4e5130e76536b302939864f7f14258aba7cf",
+      "new_sha256": "ba9619f59f9c53e6f0d84966abda4e5130e76536b302939864f7f14258aba7cf"
+    },
+    "M3_saddle_mount_screws": {
+      "old_sha256": "4405108299722709d4ab9464ec8080741547f715e7cf7da6894a0c6ca65f97b0",
+      "new_sha256": "4405108299722709d4ab9464ec8080741547f715e7cf7da6894a0c6ca65f97b0"
+    },
+    "M3_saddle_mount_nuts": {
+      "old_sha256": "01c7ae1e9fc35ca5a5a8cda51ea259dbab8ec129fe2a0d3e9ced2e0cdc1f094e",
+      "new_sha256": "01c7ae1e9fc35ca5a5a8cda51ea259dbab8ec129fe2a0d3e9ced2e0cdc1f094e"
+    },
+    "M3_root_mount_screws": {
+      "old_sha256": "3a8564baa2d8aa32f77204b3bac4128947ecc1989f786f774956258303ff56ba",
+      "new_sha256": "3a8564baa2d8aa32f77204b3bac4128947ecc1989f786f774956258303ff56ba"
+    },
+    "M3_root_mount_nuts": {
+      "old_sha256": "81788484fb6ea1f6469e31d8273d12b50dc55f1243df0ec30041f37996b5d032",
+      "new_sha256": "81788484fb6ea1f6469e31d8273d12b50dc55f1243df0ec30041f37996b5d032"
+    }
+  },
+  "placements_and_kinematics_identical": true,
+  "nominal_motion_clearance_transfer_passed": true,
+  "not_transferred": [
+    "Stiffness and printed strength",
+    "Fastener retention/thread engagement",
+    "Motor dynamics or tracking error",
+    "Collision safety for unsampled or arbitrary input trajectories"
+  ]
+}

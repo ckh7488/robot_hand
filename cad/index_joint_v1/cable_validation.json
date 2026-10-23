@@ -1,0 +1,193 @@
+{
+  "scope": "Single fixed-motor harness only; no downstream motor chain, torque or flex-life certification.",
+  "static": [
+    {
+      "wire": 1,
+      "target": "case",
+      "reserve_radius_mm": 0.3,
+      "distance_mm": 0.75,
+      "overlap_mm3": 0.0
+    },
+    {
+      "wire": 1,
+      "target": "fixed_frame",
+      "reserve_radius_mm": 0.3,
+      "distance_mm": 0.7499999996181366,
+      "overlap_mm3": 0.0
+    },
+    {
+      "wire": 2,
+      "target": "case",
+      "reserve_radius_mm": 0.3,
+      "distance_mm": 0.75,
+      "overlap_mm3": 0.0
+    },
+    {
+      "wire": 2,
+      "target": "fixed_frame",
+      "reserve_radius_mm": 0.3,
+      "distance_mm": 0.749999999571239,
+      "overlap_mm3": 0.0
+    },
+    {
+      "wire": 3,
+      "target": "case",
+      "reserve_radius_mm": 0.3,
+      "distance_mm": 0.75,
+      "overlap_mm3": 0.0
+    },
+    {
+      "wire": 3,
+      "target": "fixed_frame",
+      "reserve_radius_mm": 0.3,
+      "distance_mm": 0.7499999995243414,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "Guide_M3x16",
+      "case_overlap_mm3": 0.0
+    },
+    {
+      "part": "Guide_M3_nut",
+      "case_overlap_mm3": 0.0
+    }
+  ],
+  "moving_samples": [
+    {
+      "q_deg": -20,
+      "wire_lane": 3,
+      "hinge_distance_mm": 1.0577640640441515
+    },
+    {
+      "q_deg": 40,
+      "wire_lane": 3,
+      "hinge_distance_mm": 1.057764064044155
+    },
+    {
+      "q_deg": 100,
+      "wire_lane": 3,
+      "hinge_distance_mm": 1.0577640640441512
+    }
+  ],
+  "connector_envelope_checks": [
+    {
+      "target": "FPX330_S101",
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.004987562112089
+    },
+    {
+      "target": "Idler_disc",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.5000000000000053
+    },
+    {
+      "target": "Idler_cap",
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.156630295440394
+    },
+    {
+      "target": "Idler_retaining_screw",
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.108382476339059
+    },
+    {
+      "target": "Motor_part_02",
+      "overlap_mm3": 0.6399999999999972,
+      "distance_mm": 0.0
+    }
+  ],
+  "continuous_separation": {
+    "moving_back_outside_cylinder": [
+      {
+        "part": "Output_horn",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Horn_retaining_screw",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Idler_disc",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "FPX330_H101",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Idler_M2x4_TAP_1",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Idler_M2x4_TAP_2",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Idler_M2x4_TAP_4",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Horn_M2x4_TAP_1",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Horn_M2x4_TAP_2",
+        "outside_radius_8p5_mm3": 0.0
+      },
+      {
+        "part": "Horn_M2x4_TAP_4",
+        "outside_radius_8p5_mm3": 0.0
+      }
+    ],
+    "straight_lead_max_local_y_mm": -2.1218408885030553,
+    "straight_lead_radial_gap_lower_bound_mm": 0.5577640640441519,
+    "rear_bend_axial_gap_lower_bound_mm": 1.4499999990490196,
+    "wire_extra_radius_mm": 0.3,
+    "basis": "Exact BRep cylinder inclusion plus rigid-rotation invariant radius and axial plane bounds. Stock CAD only; printed/manufacturing error not certified."
+  },
+  "wire_continuous_passed": true,
+  "connector_case_fit_closed": false,
+  "connector_case_fit_note": "EHR-3 is a conservative public-drawing outer envelope. Record all overlap; do not treat it as a hollow vendor housing or hide it as a passed physical fit. Physical mated housing / pin seating and crimp are still required.",
+  "frame_window_nominal_clearance_passed": true,
+  "manufacturing_release": false,
+  "guide_motion_gap_lower_bound_mm": 4.816809941865266,
+  "guide_case_overlap_mm3": 0.0,
+  "extra_connector_pose_checks": [
+    {
+      "q_deg": -20,
+      "target": "FPX330_H101",
+      "distance_mm": 3.400000000000002,
+      "overlap_mm3": 0
+    },
+    {
+      "q_deg": -20,
+      "target": "Idler_disc",
+      "distance_mm": 0.5000000000000053,
+      "overlap_mm3": 0
+    },
+    {
+      "q_deg": 40,
+      "target": "FPX330_H101",
+      "distance_mm": 3.400000000000002,
+      "overlap_mm3": 0
+    },
+    {
+      "q_deg": 40,
+      "target": "Idler_disc",
+      "distance_mm": 0.5000000000000053,
+      "overlap_mm3": 0
+    },
+    {
+      "q_deg": 100,
+      "target": "FPX330_H101",
+      "distance_mm": 3.400000000000002,
+      "overlap_mm3": 0
+    },
+    {
+      "q_deg": 100,
+      "target": "Idler_disc",
+      "distance_mm": 0.5000000000000053,
+      "overlap_mm3": 0
+    }
+  ]
+}

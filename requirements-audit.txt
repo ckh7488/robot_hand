@@ -1,0 +1,10 @@
+# Analysis Python3.12; FreeCAD1.0 bundled Python is a separate runtime.
+numpy==2.4.2
+scipy==1.18.1
+trimesh==5.1.1
+rtree==1.4.1
+python-fcl==0.7.0.11
+matplotlib==3.10.8
+Pillow==12.1.1
+mujoco==3.16.0
+# MuJoCo renders CAD only here; no calibrated V9 dynamics model provided.

@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-10-23T14:01:45.656Z",
+  "source": "https://docs.robotis.com/ko/docs/dxl/model_reference/x_series/xl_series/xl330-m077/",
+  "scope": "Manufacturer register facts and modeling corrections only. No hardware read or write; no calibrated dynamic model.",
+  "pwm_slope": {
+    "address": 62,
+    "bytes": 1,
+    "default_raw": 140,
+    "unit_mV_per_ms_per_raw": 1.977,
+    "example_bus_V": 5,
+    "example_zero_to_full_ms": 18.064889081581036,
+    "interpretation": "Voltage-output slew example in PWM mode, not a fixed bus delay or measured torque-rise time. Read actual value; do not impose 18ms on every position command."
+  },
+  "current_sensing": {
+    "location": "input power source",
+    "torque_inference": "Do not apply one stall Nm/A ratio to supply current at every speed; fit measured torque/current/speed."
+  },
+  "mode5_limits": {
+    "host_limits_required": true,
+    "hardware_registers_48_52_apply": false
+  },
+  "profile_mode5": {
+    "status": "Documentation inconsistent: Profile Velocity section omits Mode5; trajectory/profile sections include it.",
+    "decision": "Record firmware, Drive Mode, Profile Acceleration/Velocity and trajectory registers; verify actual behavior before fitting."
+  },
+  "manufacturing_release": false
+}

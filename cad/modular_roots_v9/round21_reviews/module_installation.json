@@ -1,0 +1,86 @@
+{
+  "assembly_order": [
+    "little",
+    "ring",
+    "middle",
+    "index",
+    "thumb"
+  ],
+  "opening_pose": "Open",
+  "cover_fitted_last": true,
+  "mount_screws_fitted_from_below_after_each_module": true,
+  "scope": "Straight vertical insertion of full preassembled modules at1mm samples; no actuator dynamics, cable or hand-tool volume included",
+  "final_bearing_surface_contact": "Excluded at height0 only for cartridge vs palm; exact BRep volume must pass independently",
+  "input_hashes": {
+    "design.json": "cd1bd0b1b34c58cad68127d4f263ac9999a3eb9b2ea2769c9db822011e1a4f21",
+    "scene.json": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e",
+    "collision_meshes.npz": "b400285b30f2945d742636af6a4a6443e437069d2c6ab3afe077507bef628149"
+  },
+  "modules": [
+    {
+      "module": "little",
+      "previously_installed": [],
+      "moving_placements": 46,
+      "start_above_seat_mm": 90,
+      "step_mm": 1,
+      "calls": 1395,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "module": "ring",
+      "previously_installed": [
+        "little"
+      ],
+      "moving_placements": 46,
+      "start_above_seat_mm": 90,
+      "step_mm": 1,
+      "calls": 1287,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "module": "middle",
+      "previously_installed": [
+        "little",
+        "ring"
+      ],
+      "moving_placements": 46,
+      "start_above_seat_mm": 90,
+      "step_mm": 1,
+      "calls": 1287,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "module": "index",
+      "previously_installed": [
+        "little",
+        "ring",
+        "middle"
+      ],
+      "moving_placements": 46,
+      "start_above_seat_mm": 90,
+      "step_mm": 1,
+      "calls": 1287,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "module": "thumb",
+      "previously_installed": [
+        "little",
+        "ring",
+        "middle",
+        "index"
+      ],
+      "moving_placements": 46,
+      "start_above_seat_mm": 95,
+      "step_mm": 1,
+      "calls": 1784,
+      "collisions": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

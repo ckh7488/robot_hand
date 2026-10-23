@@ -1,0 +1,141 @@
+로봇 손·전완 V9 — 독립 감사 인계서
+작성: 2026-10-23 / 대상: cad/modular_roots_v9
+이 문서는 제조 승인서가 아닙니다. 감사 대상 형상을 고정한 체크포인트입니다.
+
+1. 목표와 유지한 결정
+실시간 사람 손 따라하기가 최우선이며 물건을 잡는 용도는 우선 제외합니다.
+손20축+팔4축, 관절 직결 XL330-M077 20개, 현재 오른손입니다.
+팔꿈치–손목 굽힘축은280mm입니다. 작게 보이기보다 승인된 손 모양과 엄지 배치를 유지했습니다.
+맞춤 기구는3D프린트 예정입니다. 현재 CAD는 손바닥 외곽232×195mm로 작은 사람 손 축척이 아닙니다.
+예산 목표500만원은 유지하지만 이 버전의 구매 확정 견적은 없습니다.
+
+2. 바로 볼 파일
+CAD-review.html: 이미지를 포함한 단일 HTML 보고서.
+cad/modular_roots_v9/hand_forearm_v9.FCStd: FreeCAD 원본 조립체.
+같은 폴더 hand_forearm_v9.step: 조립체 STEP.
+parts/: 개별 STEP 및 실제 mm단위 STL. meshes/: 뷰어용 metres STL, 혼용 금지.
+design.json: 치수·6자세·축 배치 원본. joint_convention.json:24축 규약.
+assembly_BOM.csv: 현재 배치와 그룹별 실제 체결 부품 수량.
+AI_AUDIT_REQUEST.txt: 다른 AI에 붙여 넣을 감사 요청문.
+AUDIT_EVIDENCE_INDEX.json: 주요 형상·소스·결과 파일 해시.
+
+3. 이전 구조에서 수정한 것
+A. 손가락5개를 손바닥 밖에서 조립한 뒤 장착하는 분리형 고정대 구조로 변경했습니다.
+  완성 모듈 장착 순서: 소지→약지→중지→검지→엄지, 덮개는 마지막.
+  고정 발을 맞춤턱에 놓고 밑면 M3×12 두 개씩으로 고정합니다.
+  엄지도 위에서 내려 넣는 고정 발로 변경했습니다.
+B. 맞춤턱 부피 겹침, 보강대가 너트 입구를 막던 문제, 엄지 너트 방향·나사 끝 여유를 수정했습니다.
+C. 고정대 벽 위쪽7mm를 제거했습니다. Backbend에서 검지 MCP링크–중지 고정대
+  실제 BRep 간격이1.128970→7.706819mm로 증가했습니다.
+D. MCP 모터 좌석 양쪽 끝을0.8mm씩 줄였습니다. 축·볼트 중심·좌석 두께는 유지했습니다.
+  Backbend에서 MCP 하나씩 ±3°오차를 준28표본은 모두1.1mm 기준을 통과했습니다.
+  이 결과는 여러 축의 동시 오차, 출력 오차, 휨, 실제 서보 추종을 보장하지 않습니다.
+E. 손바닥은 넓은 바닥과 상자형 보강을 사용합니다. 닫힌 상자 리브의8.4mm 브리지는
+  실제 프린터로 시험해야 합니다. 얇은 고정대/나사부의 실물 강도는 미승인입니다.
+
+4. 확인된 결과와 정확한 범위
+- FCStd/STEP:251배치,975솔리드, 왕복 부피·경계 일치 검사 통과.
+- 새 출력 손 부품:15종, 각1연결 유효 솔리드; STL 닫힘·방향 일관성 통과.
+- Open/Curl/Splay/Backbend/Close/ThumbSweep6자세:
+  실제 BRep 출력 손 부품 대 손 부품 부피 겹침0. 별도 나사·너트 검사6자세 통과.
+- 비볼록 실제 CAD 메시 거리:6자세 통과, 최솟값1.20mm(Backbend).
+  메시 편차 설정0.05mm, 물리 목표1mm보다 큰 판정값1.1mm를 썼습니다.
+  모든 근접 쌍의 BRep 최소거리를 전수 인증한 결과는 아닙니다.
+- 완성 모듈 장착:각1mm높이 표본,5개 모두 통과. 공구 전체 체적·케이블은 제외했습니다.
+  최종 착좌면의 의도된 접촉은 높이0에서 제외하고 최종 BRep 겹침을 별도로 검사했습니다.
+- M2/M3너트 투입:일반 손가락/엄지 고정대 두 종류 모두 통과.
+- 뷰어:6자세251배치가 FreeCAD의 실제 메시 정점 위치와 약0.000004mm 이내 일치합니다.
+  뷰어에는 dynamic body0, actuator0입니다. 모터 응답 시뮬레이션이 아닙니다.
+- 자세 간15개 경로:V8에서 최대 관절간격0.5°표본을 검사해 최저1.128970mm였습니다.
+  V9에서15경로 전부를 새로 돌린 것은 아닙니다. V8/V9의 축·자세·배치가 같고,
+  달라진3종 CAD가 모두 기존 재료의 부분집합임을 실제 BRep 차집합으로 확인했습니다.
+  나머지41종 STEP는 바이트 동일합니다. 따라서 같은 명목 경로의 기하 간격은 악화되지 않습니다.
+  이 포함관계는 강도·모터 추종·임의 사람 손 궤적의 검증으로 이전되지 않습니다.
+
+5. 반드시 감사할 미해결 사항
+P0 실시간 성능과 모터:
+  손의 전부피×1.25g/cm3, 금속 나사,18g/XL330 등을 가정한 질량은1.33527kg입니다.
+  출력 인필·실측 부품 질량에 따라 달라지며 하네스는 누락됐습니다.
+  3078구성의 중력 방향별 정적 검사 최대:
+    팔꿈치9.76571 / 전완회전2.53333 / 손목굽힘3.05342 / 손목편위2.78542 N·m.
+  현재 정격8.3/3/3/2.5N·m와 비교하면 팔꿈치와 두 손목축이 정격을 넘습니다.
+  각 축 최대는 서로 다른 자세·중력방향이며 동시에 발생한다는 뜻은 아닙니다.
+  전완회전도 프로젝트 정적70%목표 여유가 부족합니다. 가속 토크는 아직 더하지 않았습니다.
+  현재 팔 모터와 전체500만원 구매표는 승인하지 않았습니다.
+  중지 MCP90°최소저크의 낙관적 점질량/DC근사는5V에서0.210초(중력 없음),
+  약0.277초(모든 손 방향의 중력 여유 포함)입니다. 실제 응답 또는 도착시간 보장이 아닙니다.
+  모터 자체/반사 관성, 마찰·전류0.7A모드·내부제어·통신 지연은 이 계산에서 미확인입니다.
+  DIP모터 제거 비교는 추가 연동 링크 질량0의 이상화 하한이며 채택된 기구 변경이 아닙니다.
+P0 실제 조립/강성:
+  손 모터·H101·S101은 제조사 STEP에서 왔지만, 팔 모터는 공칭 외곽 모델입니다.
+  실제 팔 플랜지 볼트·축·베어링·전선 통과·보강 연결은 미완료입니다.
+  S101은 기존10.1×11.5mm케이블 여유 창의 추가 가공을 전제합니다. 구매품 그대로가 아닙니다.
+  정확한 가공 설정:cad/index_joint_v1/joint_hardware_spec.json.
+  케이블 출구의 손바닥 바닥/고정대 간섭, EHR커넥터 체결·굽힘·스트레인릴리프,
+  손목을 거치는 전체 하네스, 드라이버 공구 접근 및 실물 조립 순서는 추가 검증 필요합니다.
+  너트 채널은 회전 방지 포켓이며 낙하 방지 클립을 검증한 것은 아닙니다.
+  얇게 줄인 벽/좌석의 체결력·굽힘강도도 아직 검증되지 않았습니다.
+P1 전기:
+  XL330은5V권장, AK팔 모터는 별도 전압입니다. 배전/보호회로가 설계되지 않았습니다.
+  공장 EH2.5접점 규격3A와20모터 전류를 고려해 전체 전원을 한 커넥터로 연쇄 공급하면 안 됩니다.
+  분기·공통TTL신호·보호전원·전압강하·정지/동작전류의 실측이 필요합니다.
+  electrical_layout_requirements.json에 공식 출처와 미결정 항목이 있습니다.
+P1 수치 해석:
+  실제 Palm STEP의 등방성E1500MPa 선형탄성, 이상적4손목 보어 고정, 각 손가락 고정 볼트
+  주변 하중 패치에 힘/모멘트를 분배했습니다. 덮개의 무게는 포함하고 덮개 강성은 제외했습니다.
+  거친/미세 C3D10메시의 최대 휨(mm):
+    손바닥 수직1.42981/1.43207, 손가락 방향2.33365/2.31209, 옆0.50547/0.48945.
+  두 메시의 변위 차이는0.16%/−0.92%/−3.17%지만 고정부 응력은 수렴하지 않았습니다.
+  하중점/고정점 특이응력, FDM적층방향·볼트접촉·슬립·크리프·피로·고정대 자체 휨은 미인증입니다.
+  1mm급 기하 여유를 수mm급 휨이 소모할 수 있어 실물 강성을 확인해야 합니다.
+
+6. 재현 방법 (해제 후 mujoco-direct 폴더에서)
+기존 결과는 JSON과 파일 해시로 먼저 확인하세요. 원본은 보존하고 복사본에서 재실행하세요.
+FreeCAD1.0동봉Python3.11과 별도 분석Python3.12를 나눠 사용했습니다.
+requirements-audit.txt는 분석 환경 패키지 버전입니다. FreeCAD모듈은 pip로 설치하지 않습니다.
+
+빠른 증거/해시 확인:
+  <분석Python> verify_audit_evidence.py
+실제 메시6자세/뷰어 변환:
+  <분석Python> cad/modular_roots_v9/scan_mesh_motion.py named
+  <분석Python> cad/modular_roots_v9/verify_cad_viewer.py
+실제 BRep/체결/너트/장착/왕복:
+  <FreeCAD동봉Python> cad/modular_roots_v9/review_geometry.py
+  <FreeCAD동봉Python> cad/modular_roots_v9/review_hand_fasteners.py
+  <분석Python> cad/modular_roots_v9/review_all_cartridge_nuts.py
+  <분석Python> cad/modular_roots_v9/review_module_installation.py
+  <FreeCAD동봉Python> cad/modular_roots_v9/review_arm_and_roundtrip.py
+  <FreeCAD동봉Python> cad/modular_roots_v9/verify_subset_transfer.py
+V8/V9경로 직접 재검사(각각 15경로, 수십분 가능):
+  <분석Python> cad/modular_roots_v8/scan_mesh_motion.py transitions
+  <분석Python> cad/modular_roots_v9/scan_mesh_motion.py transitions
+CAD재생성(제출 원본을 덮어쓰므로 반드시 복사본에서):
+  <FreeCAD동봉Python> cad/modular_roots_v9/build_candidate.py
+  <FreeCAD동봉Python> cad/modular_roots_v9/make_collision_meshes.py
+STEP재출력은 메타데이터 등으로 바이트가 달라질 수 있으므로 새 해시와 새 검사 결과를 함께 보관하세요.
+
+백그라운드 실행(Windows):
+  <분석Pythonw> background_tasks.pyw --task quick --analysis-python <분석Pythonw경로>
+  --task cad는 FreeCAD검사도 포함하며 --freecad-python <FreeCAD동봉Pythonw경로>로 지정할 수 있습니다.
+  로그/완료 상태는 audit_runs/<UTC시각>/입니다. FreeCADCmd/콘솔을 열지 않습니다.
+  --task viewer는 시각 뷰어 창만 엽니다. 슬라이더 범위는 안전 범위가 아닙니다.
+  launch_cad_review.vbs는 현재 로컬 환경용 창 없는 실행 바로가기입니다.
+
+FEM 재현:
+  structural_screen/ 및 refined/의 .geo로 Gmsh4.x에서3D이차요소 .inp를 재생성합니다.
+  예: gmsh palm_linearized.geo -3 -format inp -o palm_mesh_linear.inp
+  prepare_screen.py를 실행하고 CalculiX로 ccx -i palm_static, 완전 종료 후 summarize_screen.py를 실행합니다.
+  두 메시의 raw .frd/.inp는 압축 크기 때문에 제출에서 제외했습니다. .geo/설정/수치결과/소스는 포함했습니다.
+  결과 재현은 동일 메시 생성기/솔버 버전·설정을 확인해야 합니다. 두 밀도 비교는 강도 수렴 인증이 아닙니다.
+
+7. 실물 시험 준비
+fit_coupons/의4시험편으로 M2/M3너트 포켓과 고정 발 공차부터 확인합니다.
+hardware_bench_plan.json과 bench/빈 CSV에 실제 질량, 정지 처짐, 기본/안정된 I게인 비교,
+대표 관성을 건0.7A응답을 기록하도록 했습니다. 어떤 실측도 했다고 주장하지 않습니다.
+약83.6g@101.4mm는 무게 없는 시험구의 점질량 하한입니다. 시험구 질량·고유관성을 더해야 합니다.
+
+8. 이전 결과와 혼동 금지
+이전 작은 모델의90전환,250ms도착,668g손,정적70%이하표는 현재V9의 결과가 아닙니다.
+루트 control/model 및 models/output은 전체 프로젝트 압축 안에서만 이전 자료로 유지됩니다.
+감사용 ZIP은 V9+필수V8근거와 원본출처를 중심으로 제한했습니다.
+아직 최신 CAD 기반 MuJoCo/Isaac의 동역학·실측 보정·실시간 추종은 완료하지 않았습니다.

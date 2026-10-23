@@ -1,0 +1,88 @@
+{
+  "status": "Plan only; no hardware connected or operated.",
+  "inherits": {
+    "file": "../modular_roots_v9/hardware_bench_plan.json",
+    "sha256": "2d36edb43fe0b07aac0c3ebc461d72dfd13544ee73478c007c7b3ba4e7a97b17"
+  },
+  "reason": "Include actual cable drag, PCB connector strain relief, and output-voltage slew in the representative joint bench. Preserve existing V9 sag and dynamic plan.",
+  "extra_readbacks": [
+    {
+      "name": "PWM Slope",
+      "address": 62,
+      "size_bytes": 1
+    },
+    {
+      "name": "Drive Mode",
+      "address": 10,
+      "size_bytes": 1
+    },
+    {
+      "name": "Firmware Version",
+      "address": 6,
+      "size_bytes": 1
+    },
+    {
+      "name": "Profile Acceleration",
+      "address": 108,
+      "size_bytes": 4
+    },
+    {
+      "name": "Profile Velocity",
+      "address": 112,
+      "size_bytes": 4
+    },
+    {
+      "name": "Position Trajectory",
+      "address": 140,
+      "size_bytes": 4
+    },
+    {
+      "name": "Velocity Trajectory",
+      "address": 136,
+      "size_bytes": 4
+    }
+  ],
+  "quasistatic_cable_drag": {
+    "measure": "Disconnect power and unload the joint mechanically; compare the same joint bare and with the proposed harness. Use a force gauge applied tangentially at a measured perpendicular lever arm. Do not infer cable torque from Present Current.",
+    "conditions": [
+      "Increasing angle and decreasing angle, same slow speed",
+      "Full allowed range, in 5deg steps initially; inspect between steps near guides",
+      "3 cycles for screening; this is not a flex-life qualification",
+      "Record actual conductor count, insulation OD, cable construction, free length, endpoint orientation and guide geometry"
+    ],
+    "compute": "cable torque(q,direction) = measured harness force*r_perp - bare-joint force*r_perp; keep both signed traces and their hysteresis.",
+    "example_lever_mm": 50,
+    "example_resolution": "0.1N at50mm corresponds to0.005Nm; choose instrument resolution after inspecting the small-servo torque budget, do not treat this example as achieved accuracy.",
+    "observe": [
+      "Minimum local bend radius",
+      "Loop touching neighboring fingers/palm",
+      "Wire rubbing at slot edges",
+      "Terminal motion, housing pull or loose latch",
+      "Any discontinuity in force trace"
+    ],
+    "model_use": "Measured drag/hysteresis is a separate joint load. Add it to gravity, inertia, friction and drive-limits before judging real-time tracking. A geometric loop passing CAD clearance is insufficient."
+  },
+  "dynamic_comparison": {
+    "sequence": [
+      "Bare representative joint from V9 stage3",
+      "Same fixture with harness and guides",
+      "Repeat unloaded reference to detect thermal drift"
+    ],
+    "keep_identical": [
+      "Supply voltage",
+      "Gains and limits",
+      "Command trace",
+      "Fixture mass/inertia",
+      "Joint angle calibration"
+    ],
+    "record_extra": [
+      "PWM Slope raw",
+      "Position/velocity trajectory",
+      "Force-derived cable torque curve",
+      "Loop geometry version",
+      "Hardware voltage/current with timestamps"
+    ],
+    "success": "Replay measured human trace and1.5x only after low-speed verification. No claimed response time before measurement."
+  },
+  "sourced_register_reference": "actuator_reference_corrections.json"
+}

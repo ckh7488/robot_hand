@@ -1,0 +1,219 @@
+{
+  "source": "CAD volumes and COM with1.25g/cm3 polymer,7.85g/cm3 hardware,18g per XL330",
+  "motor_reference": {
+    "source_url": "https://emanual.robotis.com/docs/en/dxl/x/xl330-m077/",
+    "at_5V_stall_Nm": 0.215,
+    "stall_current_A": 1.47,
+    "stall_ratio_Nm_per_A": 0.146,
+    "no_load_rpm": 383,
+    "caution": "Stall values are not continuous ratings. Current-scaled torque is a rough screen, not a calibrated actuator model."
+  },
+  "joints": [
+    {
+      "joint": "index_root",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.07865375425373922,
+      "downstream_kg": 0.1416098385424753,
+      "rough_current_for_static_A": 0.5387243442036933,
+      "fraction_5V_stall": 0.3658314151336708,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0007933534653680157,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.31977422468833794
+    },
+    {
+      "joint": "index_mcp",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.07796713524052608,
+      "downstream_kg": 0.09907455082288719,
+      "rough_current_for_static_A": 0.5340214742501787,
+      "fraction_5V_stall": 0.36263783832802826,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0007700145946675221,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.3103671071686713
+    },
+    {
+      "joint": "index_pip",
+      "pose": "Backbend",
+      "worst_hand_orientation_gravity_Nm": 0.02355850460651467,
+      "downstream_kg": 0.05522233185244446,
+      "rough_current_for_static_A": 0.16135962059256623,
+      "fraction_5V_stall": 0.10957444003030078,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0001240612129890454,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.05000492205459032
+    },
+    {
+      "joint": "index_dip",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.0025362950806279705,
+      "downstream_kg": 0.014370112882001728,
+      "rough_current_for_static_A": 0.01737188411389021,
+      "fraction_5V_stall": 0.011796721305246375,
+      "point_mass_inertia_lower_bound_kg_m2": 5.60417424847901e-06,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.0022588550419886675
+    },
+    {
+      "joint": "middle_root",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.08382958355020176,
+      "downstream_kg": 0.14306391000115173,
+      "rough_current_for_static_A": 0.5741752297959025,
+      "fraction_5V_stall": 0.38990503976838026,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0008840382142054216,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.3563262113076771
+    },
+    {
+      "joint": "middle_mcp",
+      "pose": "Backbend",
+      "worst_hand_orientation_gravity_Nm": 0.08322786451893213,
+      "downstream_kg": 0.10052862228156362,
+      "rough_current_for_static_A": 0.5700538665680284,
+      "fraction_5V_stall": 0.38710634659968435,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0008606220437912237,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.34688793686099445
+    },
+    {
+      "joint": "middle_pip",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.02394680598672342,
+      "downstream_kg": 0.0556764033111209,
+      "rough_current_for_static_A": 0.16401921908714673,
+      "fraction_5V_stall": 0.11138049296150428,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0001274650454674107,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.05137689298463894
+    },
+    {
+      "joint": "middle_dip",
+      "pose": "Splay",
+      "worst_hand_orientation_gravity_Nm": 0.0027039543694016835,
+      "downstream_kg": 0.014824184340678169,
+      "rough_current_for_static_A": 0.018520235406860847,
+      "fraction_5V_stall": 0.012576531950705504,
+      "point_mass_inertia_lower_bound_kg_m2": 6.164835728867851e-06,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.002484838916806422
+    },
+    {
+      "joint": "ring_root",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.0759956283164202,
+      "downstream_kg": 0.1410098385424753,
+      "rough_current_for_static_A": 0.5205180021672617,
+      "fraction_5V_stall": 0.3534680386810242,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0007478458049907891,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.30143161014167114
+    },
+    {
+      "joint": "ring_mcp",
+      "pose": "Backbend",
+      "worst_hand_orientation_gravity_Nm": 0.07525461405295217,
+      "downstream_kg": 0.09847455082288718,
+      "rough_current_for_static_A": 0.5154425620065217,
+      "fraction_5V_stall": 0.35002146071140544,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0007244972261714539,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.292020579604275
+    },
+    {
+      "joint": "ring_pip",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.023558504606514666,
+      "downstream_kg": 0.05522233185244446,
+      "rough_current_for_static_A": 0.16135962059256623,
+      "fraction_5V_stall": 0.10957444003030077,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0001240612129890453,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.050004922054590284
+    },
+    {
+      "joint": "ring_dip",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.0025362950806279705,
+      "downstream_kg": 0.014370112882001728,
+      "rough_current_for_static_A": 0.01737188411389021,
+      "fraction_5V_stall": 0.011796721305246375,
+      "point_mass_inertia_lower_bound_kg_m2": 5.60417424847901e-06,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.0022588550419886675
+    },
+    {
+      "joint": "little_root",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.06728810489329683,
+      "downstream_kg": 0.13811988483969642,
+      "rough_current_for_static_A": 0.4608774307760057,
+      "fraction_5V_stall": 0.3129679297362643,
+      "point_mass_inertia_lower_bound_kg_m2": 0.000606912836036012,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.2446262480328233
+    },
+    {
+      "joint": "little_mcp",
+      "pose": "Splay",
+      "worst_hand_orientation_gravity_Nm": 0.06637559234707308,
+      "downstream_kg": 0.09558459712010828,
+      "rough_current_for_static_A": 0.4546273448429663,
+      "fraction_5V_stall": 0.3087236853352236,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0005837692858695717,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.23529785768215386
+    },
+    {
+      "joint": "little_pip",
+      "pose": "Splay",
+      "worst_hand_orientation_gravity_Nm": 0.02174465912397029,
+      "downstream_kg": 0.053732378149665555,
+      "rough_current_for_static_A": 0.14893602139705678,
+      "fraction_5V_stall": 0.10113794941381529,
+      "point_mass_inertia_lower_bound_kg_m2": 0.00010826335417716325,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.04363733399475615
+    },
+    {
+      "joint": "little_dip",
+      "pose": "Splay",
+      "worst_hand_orientation_gravity_Nm": 0.002181966732972726,
+      "downstream_kg": 0.013280159179222817,
+      "rough_current_for_static_A": 0.014944977623100864,
+      "fraction_5V_stall": 0.010148682478942912,
+      "point_mass_inertia_lower_bound_kg_m2": 4.516464564598356e-06,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.0018204356790788604
+    },
+    {
+      "joint": "thumb_root",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.07274792828684166,
+      "downstream_kg": 0.14929842054486256,
+      "rough_current_for_static_A": 0.4982734814167238,
+      "fraction_5V_stall": 0.33836245714810076,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0006278304517288962,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.25305743870950087
+    },
+    {
+      "joint": "thumb_mcp",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.06810599002458377,
+      "downstream_kg": 0.10676313282527444,
+      "rough_current_for_static_A": 0.46647938373002584,
+      "fraction_5V_stall": 0.316772046625971,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0005426586008937474,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.21872751673273538
+    },
+    {
+      "joint": "thumb_pip",
+      "pose": "Open",
+      "worst_hand_orientation_gravity_Nm": 0.02172145816929173,
+      "downstream_kg": 0.053732378149665555,
+      "rough_current_for_static_A": 0.1487771107485735,
+      "fraction_5V_stall": 0.10103003799670572,
+      "point_mass_inertia_lower_bound_kg_m2": 0.00010818210116507438,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.043604583625496386
+    },
+    {
+      "joint": "thumb_dip",
+      "pose": "Curl",
+      "worst_hand_orientation_gravity_Nm": 0.002181966732972726,
+      "downstream_kg": 0.013280159179222817,
+      "rough_current_for_static_A": 0.014944977623100864,
+      "fraction_5V_stall": 0.010148682478942912,
+      "point_mass_inertia_lower_bound_kg_m2": 4.516464564598352e-06,
+      "inertia_only_90deg_150ms_minjerk_peak_Nm": 0.0018204356790788591
+    }
+  ],
+  "limitations": [
+    "Worst gravity direction is optimized separately per joint; these maxima need not occur at the same hand orientation.",
+    "No acceleration, transmission friction, motor rotor reflected inertia, cable load or continuous thermal rating.",
+    "Motor COM is an approximate full-motor box; vendor frame mass density is assumed.",
+    "Full-solid CAD mass; slicer infill and actual purchased masses require updates."
+  ]
+}

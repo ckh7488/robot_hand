@@ -1,0 +1,2335 @@
+{
+  "status": "Illustrative full-solid mass screen, NOT validated material or measured mass",
+  "assumed_density_g_cm3": 1.25,
+  "frame_mass_assumption": "Vendor H101/S101 volumes also assigned same illustrative density; true masses unknown",
+  "fasteners_included": true,
+  "wires_included": false,
+  "fastener_density_g_cm3": 7.85,
+  "hand_mass_kg": 1.3352690456938585,
+  "hand_com_mm": [
+    3.3000726128562583,
+    142.84662963408766,
+    -15.672222355536837
+  ],
+  "elbow_max_neutral_gravity_about_X_Nm": 9.719065960150283,
+  "wrist_flex_max_neutral_gravity_about_X_Nm": 3.0289396049332717,
+  "hand_printed_solid_volume_cm3": 594.4218582641071,
+  "items": [
+    {
+      "name": "Palm_back_chassis",
+      "mass_kg": 0.36838071723757765,
+      "com_mm": [
+        -8.8757566586163,
+        71.34814403472497,
+        -39.28887200264187
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Palm_front_cover",
+      "mass_kg": 0.053634189413324436,
+      "com_mm": [
+        -23.95815859807704,
+        73.9747828438294,
+        24.524299040753327
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Palm_cover_screws",
+      "mass_kg": 0.0055719581828379845,
+      "com_mm": [
+        -45.0,
+        77.6,
+        24.26348547717842
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Palm_cover_nuts",
+      "mass_kg": 0.0018019221264255888,
+      "com_mm": [
+        -44.999999999999986,
+        77.6,
+        18.7
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Thumb_internal_cradle",
+      "mass_kg": 0.012070489381220637,
+      "com_mm": [
+        66.10107105052107,
+        27.06446813603166,
+        -47.44701179367741
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Palm_thumb_mount_screws",
+      "mass_kg": 0.002450736794111312,
+      "com_mm": [
+        75.12876930312002,
+        25.686570536084904,
+        -60.4245283018868
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Palm_thumb_mount_nuts",
+      "mass_kg": 0.0007207688505702361,
+      "com_mm": [
+        75.12876930312002,
+        25.68657053608491,
+        -54.300000000000004
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Palm_saddle_mount_screws",
+      "mass_kg": 0.005345380630174861,
+      "com_mm": [
+        -11.999999999999998,
+        18.0,
+        -64.55882352941177
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Palm_saddle_mount_nuts",
+      "mass_kg": 0.0014415377011404724,
+      "com_mm": [
+        -12.0,
+        18.000000000000004,
+        -56.800000000000004
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Index_root_cartridge",
+      "mass_kg": 0.012003865160230397,
+      "com_mm": [
+        90.6252794601501,
+        151.34769955886534,
+        -46.86590580044474
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Index_root_mount_screws",
+      "mass_kg": 0.0024507367941113117,
+      "com_mm": [
+        97.0,
+        152.0,
+        -60.424528301886795
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Index_root_mount_nuts",
+      "mass_kg": 0.0007207688505702367,
+      "com_mm": [
+        97.0,
+        152.0,
+        -54.3
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_root_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        72.0,
+        154.5,
+        -39.0
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "index_root_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        83.40298956797886,
+        154.6880104309123,
+        -37.42668098402439
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "index_root_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        86.1938775510204,
+        154.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_root_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        88.6,
+        154.5,
+        -38.49999999999999
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_root_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        80.0,
+        154.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_root_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        71.99999999996378,
+        172.07683946465437,
+        -38.4999999852113
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "index_root_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        72.0,
+        180.19387755102042,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_root_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        72.0,
+        182.6,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_root_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        72.0,
+        162.0,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_spread_carrier",
+      "mass_kg": 0.014181617919601272,
+      "com_mm": [
+        69.31308917828449,
+        160.79538464498754,
+        -15.711629640217215
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "index_mcp_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        57.0,
+        154.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "index_mcp_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        58.57331901597561,
+        154.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "index_mcp_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        57.5,
+        154.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_mcp_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        57.50000000000001,
+        154.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_mcp_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        57.5,
+        154.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_mcp_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        57.5000000147887,
+        172.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "index_mcp_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        57.5,
+        180.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_mcp_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        57.5,
+        182.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_mcp_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        57.5,
+        162.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_mcp_link",
+      "mass_kg": 0.015741049170455823,
+      "com_mm": [
+        57.494997156851035,
+        201.18733161124777,
+        -3.8540352513675167
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "index_pip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        57.0,
+        219.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "index_pip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        58.57331901597561,
+        219.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "index_pip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        57.5,
+        219.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_pip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        57.50000000000001,
+        219.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_pip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        57.5,
+        219.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_pip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        57.5000000147887,
+        237.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "index_pip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        57.5,
+        245.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_pip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        57.5,
+        247.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_pip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        57.5,
+        227.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_pip_link",
+      "mass_kg": 0.012741049170455827,
+      "com_mm": [
+        57.49381919032362,
+        259.56732153073904,
+        -2.995558520011638
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "index_dip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        57.0,
+        269.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "index_dip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        58.57331901597561,
+        269.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "index_dip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        57.5,
+        269.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_dip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        57.50000000000001,
+        269.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_dip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        57.5,
+        269.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_dip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        57.5000000147887,
+        287.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "index_dip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        57.5,
+        295.1938775510204,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_dip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        57.5,
+        297.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_dip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        57.5,
+        277.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "index_dip_tip",
+      "mass_kg": 0.008511037019248031,
+      "com_mm": [
+        57.49999999999997,
+        300.78357253370507,
+        8.282018724456194
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Middle_root_cartridge",
+      "mass_kg": 0.012003865160230397,
+      "com_mm": [
+        42.6252794601501,
+        161.34769955886534,
+        -46.86590580044474
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Middle_root_mount_screws",
+      "mass_kg": 0.0024507367941113117,
+      "com_mm": [
+        49.0,
+        162.0,
+        -60.424528301886795
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Middle_root_mount_nuts",
+      "mass_kg": 0.0007207688505702367,
+      "com_mm": [
+        48.99999999999999,
+        162.0,
+        -54.3
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_root_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        24.000000000000004,
+        164.5,
+        -39.0
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "middle_root_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        35.402989567978864,
+        164.6880104309123,
+        -37.42668098402439
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "middle_root_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        38.193877551020414,
+        164.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_root_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        40.599999999999994,
+        164.5,
+        -38.49999999999999
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_root_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        32.00000000000001,
+        164.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_root_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        23.999999999963777,
+        182.07683946465437,
+        -38.4999999852113
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "middle_root_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        24.000000000000004,
+        190.19387755102042,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_root_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        24.000000000000004,
+        192.6,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_root_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        24.000000000000004,
+        172.0,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_spread_carrier",
+      "mass_kg": 0.014181617919601272,
+      "com_mm": [
+        21.31308917828448,
+        170.79538464498754,
+        -15.711629640217215
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "middle_mcp_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        8.999999999999993,
+        164.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "middle_mcp_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        10.573319015975608,
+        164.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "middle_mcp_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        9.499999999999996,
+        164.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_mcp_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        9.499999999999998,
+        164.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_mcp_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        9.499999999999993,
+        164.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_mcp_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        9.500000014788686,
+        182.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "middle_mcp_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        9.49999999999999,
+        190.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_mcp_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        9.499999999999995,
+        192.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_mcp_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        9.499999999999996,
+        172.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_mcp_link",
+      "mass_kg": 0.016741049170455814,
+      "com_mm": [
+        9.495295993745765,
+        213.4640880395221,
+        -4.071821168576749
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "middle_pip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        8.999999999999993,
+        234.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "middle_pip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        10.573319015975608,
+        234.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "middle_pip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        9.499999999999996,
+        234.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_pip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        9.499999999999998,
+        234.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_pip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        9.499999999999993,
+        234.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_pip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        9.500000014788686,
+        252.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "middle_pip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        9.49999999999999,
+        260.1938775510204,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_pip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        9.499999999999995,
+        262.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_pip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        9.499999999999996,
+        242.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_pip_link",
+      "mass_kg": 0.012741049170455827,
+      "com_mm": [
+        9.493819190323611,
+        274.56732153073904,
+        -2.995558520011638
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "middle_dip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        8.999999999999993,
+        284.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "middle_dip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        10.573319015975608,
+        284.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "middle_dip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        9.499999999999996,
+        284.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_dip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        9.499999999999998,
+        284.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_dip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        9.499999999999993,
+        284.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_dip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        9.500000014788686,
+        302.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "middle_dip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        9.49999999999999,
+        310.1938775510204,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_dip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        9.499999999999995,
+        312.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_dip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        9.499999999999996,
+        292.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "middle_dip_tip",
+      "mass_kg": 0.008965108477924472,
+      "com_mm": [
+        9.499999999999972,
+        316.484119778103,
+        8.387292782069228
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Ring_root_cartridge",
+      "mass_kg": 0.012003865160230397,
+      "com_mm": [
+        -5.3747205398499,
+        155.34769955886534,
+        -46.86590580044474
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Ring_root_mount_screws",
+      "mass_kg": 0.0024507367941113117,
+      "com_mm": [
+        0.9999999999999964,
+        156.0,
+        -60.424528301886795
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Ring_root_mount_nuts",
+      "mass_kg": 0.0007207688505702367,
+      "com_mm": [
+        0.9999999999999929,
+        156.0,
+        -54.3
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_root_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -23.999999999999996,
+        158.5,
+        -39.0
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "ring_root_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -12.59701043202114,
+        158.6880104309123,
+        -37.42668098402439
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "ring_root_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -9.806122448979588,
+        158.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_root_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -7.400000000000002,
+        158.5,
+        -38.49999999999999
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_root_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -15.999999999999993,
+        158.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_root_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -24.000000000036223,
+        176.07683946465437,
+        -38.4999999852113
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "ring_root_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -23.999999999999996,
+        184.19387755102042,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_root_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -23.999999999999996,
+        186.6,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_root_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -23.999999999999996,
+        166.0,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_spread_carrier",
+      "mass_kg": 0.014181617919601272,
+      "com_mm": [
+        -26.68691082171552,
+        164.79538464498754,
+        -15.711629640217215
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "ring_mcp_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -39.00000000000001,
+        158.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "ring_mcp_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -37.426680984024394,
+        158.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "ring_mcp_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -38.5,
+        158.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_mcp_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -38.5,
+        158.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_mcp_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -38.50000000000001,
+        158.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_mcp_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -38.49999998521132,
+        176.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "ring_mcp_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -38.500000000000014,
+        184.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_mcp_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -38.50000000000001,
+        186.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_mcp_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -38.5,
+        166.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_mcp_link",
+      "mass_kg": 0.015141049170455825,
+      "com_mm": [
+        -38.505201092679485,
+        203.83543224426887,
+        -3.709555247072437
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "ring_pip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -39.00000000000001,
+        220.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "ring_pip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -37.426680984024394,
+        220.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "ring_pip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -38.5,
+        220.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_pip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -38.5,
+        220.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_pip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -38.50000000000001,
+        220.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_pip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -38.49999998521132,
+        238.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "ring_pip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -38.500000000000014,
+        246.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_pip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -38.50000000000001,
+        248.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_pip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -38.5,
+        228.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_pip_link",
+      "mass_kg": 0.012741049170455827,
+      "com_mm": [
+        -38.50618080967639,
+        260.56732153073904,
+        -2.995558520011638
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "ring_dip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -39.00000000000001,
+        270.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "ring_dip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -37.426680984024394,
+        270.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "ring_dip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -38.5,
+        270.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_dip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -38.5,
+        270.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_dip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -38.50000000000001,
+        270.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_dip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -38.49999998521132,
+        288.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "ring_dip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -38.500000000000014,
+        296.1938775510204,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_dip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -38.50000000000001,
+        298.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_dip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -38.5,
+        278.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "ring_dip_tip",
+      "mass_kg": 0.008511037019248031,
+      "com_mm": [
+        -38.50000000000003,
+        301.78357253370507,
+        8.282018724456194
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Little_root_cartridge",
+      "mass_kg": 0.012003865160230397,
+      "com_mm": [
+        -53.3747205398499,
+        140.34769955886534,
+        -46.86590580044474
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "Little_root_mount_screws",
+      "mass_kg": 0.0024507367941113117,
+      "com_mm": [
+        -47.0,
+        141.0,
+        -60.424528301886795
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "Little_root_mount_nuts",
+      "mass_kg": 0.0007207688505702367,
+      "com_mm": [
+        -47.00000000000001,
+        141.0,
+        -54.3
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_root_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -72.0,
+        143.5,
+        -39.0
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "little_root_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -60.597010432021136,
+        143.6880104309123,
+        -37.42668098402439
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "little_root_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -57.806122448979586,
+        143.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_root_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -55.400000000000006,
+        143.5,
+        -38.49999999999999
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_root_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -63.99999999999999,
+        143.5,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_root_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -72.00000000003622,
+        161.07683946465437,
+        -38.4999999852113
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "little_root_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -72.0,
+        169.19387755102042,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_root_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -72.0,
+        171.6,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_root_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -72.0,
+        151.0,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_spread_carrier",
+      "mass_kg": 0.014181617919601272,
+      "com_mm": [
+        -74.68691082171551,
+        149.79538464498754,
+        -15.711629640217215
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "little_mcp_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -87.0,
+        143.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "little_mcp_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -85.42668098402439,
+        143.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "little_mcp_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -86.5,
+        143.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_mcp_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -86.5,
+        143.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_mcp_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -86.5,
+        143.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_mcp_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -86.4999999852113,
+        161.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "little_mcp_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -86.5,
+        169.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_mcp_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -86.5,
+        171.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_mcp_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -86.5,
+        151.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_mcp_link",
+      "mass_kg": 0.013741049170455821,
+      "com_mm": [
+        -86.50573100343527,
+        185.73129758719134,
+        -3.3233676577354974
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "little_pip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -87.0,
+        198.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "little_pip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -85.42668098402439,
+        198.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "little_pip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -86.5,
+        198.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_pip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -86.5,
+        198.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_pip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -86.5,
+        198.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_pip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -86.4999999852113,
+        216.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "little_pip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -86.5,
+        224.19387755102042,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_pip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -86.5,
+        226.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_pip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -86.5,
+        206.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_pip_link",
+      "mass_kg": 0.012341049170455832,
+      "com_mm": [
+        -86.50638114303835,
+        237.71697887241115,
+        -2.8495598640538553
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "little_dip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        -87.0,
+        246.5,
+        7.9999999999999964
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "little_dip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        -85.42668098402439,
+        246.6880104309123,
+        -3.40298956797886
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "little_dip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        -86.5,
+        246.5,
+        -6.193877551020412
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_dip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        -86.5,
+        246.5,
+        -8.599999999999998
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_dip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        -86.5,
+        246.5,
+        -7.105427357601002e-15
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_dip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        -86.4999999852113,
+        264.07683946465437,
+        8.000000000036223
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "little_dip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        -86.5,
+        272.1938775510204,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_dip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        -86.5,
+        274.6,
+        7.9999999999999964
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_dip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        -86.5,
+        254.0,
+        7.999999999999997
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "little_dip_tip",
+      "mass_kg": 0.007421083316469119,
+      "com_mm": [
+        -86.5,
+        276.41113645175517,
+        7.9999999999999964
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "thumb_root_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        56.25466667660767,
+        41.17909292735095,
+        -39.0
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "thumb_root_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        63.728391430138124,
+        32.564746909339334,
+        -37.42668098402439
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "thumb_root_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        65.3783152998115,
+        30.305951903080555,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_root_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        66.92494099740422,
+        28.462755171575918,
+        -38.49999999999999
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_root_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        61.39696755409998,
+        35.05073738239912,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_root_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        69.71930687607723,
+        52.47726755270792,
+        -38.49999998521131
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "thumb_root_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        75.93731879674633,
+        57.69479906194999,
+        -38.50000000000001
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_root_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        77.78051552825096,
+        59.2414247595427,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_root_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        62.00000000000001,
+        46.0,
+        -38.5
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_spread_carrier",
+      "mass_kg": 0.014181617919601272,
+      "com_mm": [
+        59.35009811666549,
+        47.28398127949126,
+        -15.711629640217215
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "thumb_mcp_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        46.61285253130958,
+        52.66975957413563,
+        7.999999999999991
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "thumb_mcp_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        47.7681868467117,
+        51.58537806017635,
+        -3.4029895679788655
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "thumb_mcp_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        46.934246336152846,
+        52.28673735257614,
+        -6.193877551020417
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_mcp_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        46.93424633615285,
+        52.28673735257614,
+        -8.600000000000001
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_mcp_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        46.93424633615284,
+        52.28673735257614,
+        -1.2434497875801753e-14
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_mcp_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        60.398886545151676,
+        63.584911966576556,
+        8.000000000036218
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "thumb_mcp_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        66.6168984562915,
+        68.80244348717518,
+        7.999999999999991
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_mcp_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        68.46009518779613,
+        70.34906918476788,
+        7.999999999999991
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_mcp_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        52.67957965954518,
+        57.10764442522518,
+        7.999999999999991
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_mcp_link",
+      "mass_kg": 0.024919584875621986,
+      "com_mm": [
+        79.94835878050297,
+        81.29838803580377,
+        1.9355528615564142
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "thumb_pip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        95.36285857012865,
+        84.41903660899484,
+        7.999999999999992
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "thumb_pip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        96.93122872084925,
+        84.19343581446834,
+        -3.4029895679788638
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "thumb_pip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        95.8458214832732,
+        84.28962708644359,
+        -6.193877551020417
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_pip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        95.8458214832732,
+        84.28962708644359,
+        -8.600000000000001
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_pip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        95.84582148327318,
+        84.28962708644359,
+        -1.2434497875801753e-14
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_pip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        100.38511777965121,
+        101.23051143799644,
+        8.878254428126946
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "thumb_pip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        102.4779674660819,
+        109.04113285749958,
+        9.585700911419119
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_pip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        103.09834802776587,
+        111.35642463373219,
+        9.795408300601748
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_pip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        97.7869643215421,
+        91.5340707836116,
+        7.999999999999992
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_pip_link",
+      "mass_kg": 0.012341049170455832,
+      "com_mm": [
+        106.20326089565908,
+        122.96877205323199,
+        -0.04395716186268217
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "thumb_dip_motor",
+      "mass_kg": 0.018,
+      "com_mm": [
+        107.7462849084977,
+        130.63461287557473,
+        11.529807581280144
+      ],
+      "role": "vendor_motor"
+    },
+    {
+      "name": "thumb_dip_fixed_frame",
+      "mass_kg": 0.0019139852514784529,
+      "com_mm": [
+        109.57169358170631,
+        131.36829290647597,
+        0.1865960200145924
+      ],
+      "role": "vendor_frame_modified"
+    },
+    {
+      "name": "thumb_dip_base_screws",
+      "mass_kg": 0.0007250481685219883,
+      "com_mm": [
+        108.54942715290133,
+        131.70012888481583,
+        -2.6100579804098363
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_dip_base_nuts",
+      "mass_kg": 0.0005383122456617319,
+      "com_mm": [
+        108.60370341912052,
+        131.90269066799098,
+        -5.007024407042826
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_dip_base_body_tap",
+      "mass_kg": 0.001074748271571029,
+      "com_mm": [
+        108.40970835054743,
+        131.1786912156584,
+        3.560249996546176
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_dip_hinge",
+      "mass_kg": 0.003158443092737952,
+      "com_mm": [
+        112.73145944288923,
+        147.30768581280515,
+        13.933300461602695
+      ],
+      "role": "vendor_hinge"
+    },
+    {
+      "name": "thumb_dip_output_screws",
+      "mass_kg": 0.0007250481685219888,
+      "com_mm": [
+        114.80038693354174,
+        155.02902838223542,
+        15.342809333317547
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_dip_output_nuts",
+      "mass_kg": 0.0005383122456617324,
+      "com_mm": [
+        115.41367627159457,
+        157.31785535158886,
+        15.760628111826344
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_dip_output_hinge_tap",
+      "mass_kg": 0.0014372723558320239,
+      "com_mm": [
+        110.16300402536449,
+        137.7220797547664,
+        12.18347565188758
+      ],
+      "role": "fastener"
+    },
+    {
+      "name": "thumb_dip_tip",
+      "mass_kg": 0.007421083316469119,
+      "com_mm": [
+        115.87531141243761,
+        159.0407011517743,
+        16.075128656179782
+      ],
+      "role": "printed"
+    },
+    {
+      "name": "AK_elbow_flex",
+      "mass_kg": 0.621,
+      "com_mm": [
+        -29.12500000000001,
+        -360.0,
+        -6.703115264571548e-15
+      ],
+      "role": "arm_motor_nominal"
+    },
+    {
+      "name": "AK_forearm_roll",
+      "mass_kg": 0.38,
+      "com_mm": [
+        4.418629732507802e-15,
+        -255.5,
+        5.888529531778111e-15
+      ],
+      "role": "arm_motor_nominal"
+    },
+    {
+      "name": "AK_wrist_flex",
+      "mass_kg": 0.38,
+      "com_mm": [
+        -25.500000000000004,
+        -80.0,
+        1.1046574331269497e-15
+      ],
+      "role": "arm_motor_nominal"
+    },
+    {
+      "name": "AK_wrist_deviation",
+      "mass_kg": 0.262,
+      "com_mm": [
+        32.00000000000001,
+        -65.0,
+        -26.599999999999998
+      ],
+      "role": "arm_motor_nominal"
+    },
+    {
+      "name": "Elbow_fixed_cradle",
+      "mass_kg": 0.26624000000000003,
+      "com_mm": [
+        -18.114257812500004,
+        -401.6484375,
+        -1.6019837699977357e-15
+      ],
+      "role": "arm_packaging"
+    },
+    {
+      "name": "Elbow_roll_carrier",
+      "mass_kg": 0.14796,
+      "com_mm": [
+        19.884833738848336,
+        -316.2298256285482,
+        -9.664552958348213e-16
+      ],
+      "role": "arm_packaging"
+    },
+    {
+      "name": "Forearm_box_beam",
+      "mass_kg": 0.1642634989889804,
+      "com_mm": [
+        -16.18104427221126,
+        -141.84566227593632,
+        -1.2803857891709648e-15
+      ],
+      "role": "arm_packaging"
+    },
+    {
+      "name": "Roll_output_flange",
+      "mass_kg": 0.016084954386379743,
+      "com_mm": [
+        0.0,
+        -228.0,
+        6.074120666717266e-16
+      ],
+      "role": "arm_packaging"
+    },
+    {
+      "name": "Wrist_box_carrier",
+      "mass_kg": 0.06981719278676796,
+      "com_mm": [
+        42.60272132888709,
+        -70.52088434689382,
+        -28.652476332023898
+      ],
+      "role": "arm_packaging"
+    },
+    {
+      "name": "Palm_wrist_saddle",
+      "mass_kg": 0.09175653611133827,
+      "com_mm": [
+        24.09823307773697,
+        -24.588948688080208,
+        -8.107760398189768
+      ],
+      "role": "arm_packaging"
+    }
+  ],
+  "limitations": [
+    "No fatigue, stiffness, printed-layer material data or motor acceleration simulation.",
+    "Only modeled steel-envelope fastener masses included; harness and unmodeled arm flange fasteners omitted.",
+    "Neutral configuration first moment only, not a full joint-range gravity search.",
+    "Use measured printed part and purchased frame masses before motor decisions."
+  ]
+}

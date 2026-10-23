@@ -1,0 +1,26 @@
+{
+  "scope": "Offline geometry of four simultaneous spread errors, all other finger/arm joints exact. Pairwise branch subdivision plus rigid-motion displacement bounds2Rsin(eps/2), with common-root transforms canceled. Not a certified full joint-limit set, actuator error estimate, actual CAD/FDM guarantee or runtime speed claim.",
+  "mesh_target_mm": 1.1,
+  "CAD_interpretation": "1.0mm only conditional on0.05mm per-surface tessellation bound; this does not include print tolerance or structural/servo errors.",
+  "topology": "Known nonintersecting nominal moving pairs. Continuous positive boundary separation prevents new containment across each connected uncertainty box.",
+  "rows": [
+    {
+      "pose": "Splay",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1056336734599963,
+      "distance_queries": 597,
+      "certified_leaf_cells": 188,
+      "broad_phase_pair_candidates": 550,
+      "unresolved": []
+    }
+  ],
+  "elapsed_s": 1.390999999945052,
+  "actuation_approved": false
+}

@@ -1,0 +1,6 @@
+import json
+from pathlib import Path
+D=Path(__file__).resolve().parent;W=D.parent/'wiring_access_v10';s=json.loads((W/'reviews'/'route_summary.json').read_text(encoding='utf-8'));rows=[]
+for m in s['motors']:
+ negative=[o['template'] for o in m['options'] if o['passed_all6stored_poses'] and o['template'].startswith('negativeZ')];positive=[o['template'] for o in m['options'] if o['passed_all6stored_poses'] and o['template'].startswith('positiveZ')];rows.append({'motor':m['motor'],'negative_side_candidates':negative,'positive_side_candidates':positive,'independently_available_two_ports':bool(negative and positive)})
+out={'scope':'Availability of independent fixed-exit templates at both motor ports, based on14template mesh study. Does not check both plugs/leads simultaneously or qualify actual mating. V10 thumb channel may alter thumb results; no other motor geometry changed.','requirement':'A direct daisy chain needs2ports at internal motors; one-port selection alone is insufficient. A one-plug tap harness is a distinct alternative with unapproved wiring, strain relief, power distribution and connector requirements.','rows':rows,'electrical_topology_approved':False};(D/'reviews'/'second_port_availability.json').write_text(json.dumps(out,indent=2),encoding='utf-8');print([(r['motor'],r['independently_available_two_ports']) for r in rows])

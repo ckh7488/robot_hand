@@ -1,0 +1,42 @@
+{
+  "scope": "Only little-finger Compact_root and55mm MCP link candidates. Axes and holes unchanged; no original material removed. New saddle geometry must pass moving CAD checks. Cable ties, actual clamping, print strength and fatigue not qualified.",
+  "channel_radius_mm": 1.75,
+  "wire_nominal_radius_mm": 0.95,
+  "wire_reserve_radius_mm": 1.25,
+  "manufacturing_release": false,
+  "parts": [
+    {
+      "part": "Little_root_cable_saddle",
+      "valid_single_solid": true,
+      "old_volume_mm3": 11345.294335678122,
+      "new_volume_mm3": 13427.875416851479,
+      "added_volume_mm3": 2082.5811363202624,
+      "removed_original_volume_mm3": 0,
+      "added_bounds_mm": [
+        -44.5,
+        -16,
+        -2,
+        -26.6,
+        -2,
+        18.5
+      ]
+    },
+    {
+      "part": "Little_MCP_link_cable_saddle",
+      "valid_single_solid": true,
+      "old_volume_mm3": 10992.839336366047,
+      "new_volume_mm3": 12829.720503844117,
+      "added_volume_mm3": 1836.8811355746016,
+      "removed_original_volume_mm3": 0,
+      "added_bounds_mm": [
+        -44.5,
+        39,
+        -34,
+        -30.5,
+        53,
+        -13.5
+      ]
+    }
+  ],
+  "validation_policy": "No material-subset transfer claimed for V11 guide checks; direct final-geometry motion and BRep checks are used."
+}

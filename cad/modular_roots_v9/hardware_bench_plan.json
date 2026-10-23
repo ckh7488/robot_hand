@@ -1,0 +1,313 @@
+{
+  "status": "Plan only; no hardware connected, powered or measured",
+  "CAD_revision": 9,
+  "purpose": "Close assembly, stiffness and fast-tracking uncertainty with the smallest representative build before buying20motors.",
+  "stage0": {
+    "build": [
+      "4fit coupons",
+      "OneRoot_cartridge in proposed broad-wall-down orientation",
+      "OneCompact_root and65or70mm link"
+    ],
+    "record": [
+      "nut AF and thickness",
+      "actual screw head diameter/height and length",
+      "measured fit in stock S101/H101",
+      "printed dimensions and layer orientation",
+      "printed part masses"
+    ],
+    "screw_head_nominal_CAD_mm": [
+      3,
+      0.6
+    ],
+    "separately_probed_envelope_mm": [
+      3.5,
+      1.3
+    ],
+    "not_allowed_assumption": "Do not infer head dimensions from M2thread designation. Supplied M2x4 frame screws are not long enough for this5mm printed interface.",
+    "reference_machine_screw": {
+      "part": "NBK SNZS-M2-6",
+      "thread": "M2x0.4",
+      "length_mm": 6,
+      "head_diameter_mm": 3,
+      "head_height_mm": 0.6,
+      "drive": "cross recess No.0",
+      "manufacturer_dimensions_verified": true,
+      "source": "https://www.nbk1560.com/en/products/specialscrew/nedzicom/miniaturescrew/SNZS-M/SNZS-M2/",
+      "physical_fit_verified": false,
+      "printed_interface_assembly_torque_Nm": null,
+      "note": "Manufacturer maximum screw tightening torque is not a validated clamping torque for the printed interface."
+    }
+  },
+  "stage1": {
+    "option_A": "OneMCPservo+stockS101/H101 with an independently weighed load fixture. Fit both first moment and inertia; include fixture/weights own inertia.",
+    "option_B": "Onecomplete middle finger:4M077,4S101,4H101,onecartridge,oneCompact_root,twoFlex_links,onetip. Fix spread/PIP/DIP at the measured Open angles and test MCP. This directly reproduces the actual mass distribution.",
+    "CAD_point_mass_equivalent": {
+      "downstream_mass_kg": 0.1005286222815636,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0008606220437912236,
+      "worst_static_gravity_Nm": 0.08322786451893212,
+      "equivalent_single_point_mass_kg": 0.08363479996401747,
+      "equivalent_point_radius_m": 0.10144081310258074
+    },
+    "interpretation": "About84g with center101mm from axis matches the point-mass lower-bound screen only when fixture and other hardware mass/inertia are zero. Subtract real fixture contributions and add each weight intrinsic inertia. A short50mm heavy load matching static torque alone is not dynamically representative.",
+    "fixture_matching_equations": {
+      "first_moment": "S_remaining = S_CAD - sum(m_i * r_perp_i)",
+      "inertia": "I_remaining = I_CAD - I_fixture_total",
+      "single_point_solution": "r = I_remaining / S_remaining; m = S_remaining^2 / I_remaining",
+      "checks": "Keep positive remaining mass/inertia; use2Dfirst moment if COM not on the intended lever. Intrinsic and reflected motor inertia still need measurement."
+    }
+  },
+  "stage2_static_sag": {
+    "status": "measurement_pending",
+    "purpose": "Measure static gravity/load sag in one XL330 root-joint module before fitting the actuator model or changing CAD. The current simulator is a PD/PWM/current proxy without an integral term, not the measured internal servo PID.",
+    "observed_simulation_issue": {
+      "historical_only": true,
+      "applies_to_current_CAD": false,
+      "note": "Old90paths/40sag failures belong to the previous small/remote model. NewV9geometry has no calibrated torque tracking result."
+    },
+    "fixed_conditions": {
+      "operating_mode": 5,
+      "supply_V": 5,
+      "current_limit_mA": 700,
+      "goal_current_mA": 700,
+      "keep_identical": [
+        "joint fixture and goal angle",
+        "P and D readbacks",
+        "feedforward gains",
+        "current and PWM limits",
+        "profile settings",
+        "load application and goal approach direction"
+      ],
+      "joint_coordinate_mapping": "Record hardware zero offset and encoder direction; Mode 5 uses signed multi-turn position, so do not wrap errors at 360deg."
+    },
+    "gains": {
+      "registers": {
+        "position_d": {
+          "address": 80,
+          "size_bytes": 2,
+          "control_table_initial_raw": 400
+        },
+        "position_i": {
+          "address": 82,
+          "size_bytes": 2,
+          "control_table_initial_raw": 0,
+          "range_raw": [
+            0,
+            16383
+          ],
+          "internal_conversion": "K_I = register/65536; not an SI torque-integral gain"
+        },
+        "position_p": {
+          "address": 84,
+          "size_bytes": 2,
+          "control_table_initial_raw": 400
+        }
+      },
+      "mode_switch_note": "Switching Operating Mode resets gains and limits, including Position PID/PWM Limit for Mode 5. Read back after the mode switch. Do not assume the generic control-table initial P/D values are the actual Mode 5 baseline.",
+      "profiles": [
+        {
+          "id": "A_default_PD_I0",
+          "position_p_gain_raw": null,
+          "position_d_gain_raw": null,
+          "position_i_gain_raw": 0,
+          "setup": "Use actual Mode 5 default P and D readbacks. Record the initial I readback and any explicit change to I=0."
+        },
+        {
+          "id": "B_same_PD_I_enabled",
+          "position_p_gain_raw": "same as A",
+          "position_d_gain_raw": "same as A",
+          "position_i_gain_raw": null,
+          "setup": "Select one stable positive I value at zero/0.02Nm first; record its raw readback. Use that same value across all B load trials."
+        }
+      ],
+      "positive_i_selection": "Begin with a small positive value and increase gradually on the secured low-load fixture. Compare residual error, settling, oscillation, load-release overshoot and current saturation. The final I value is not specified before measurement.",
+      "comparison_rule": "Change only Position I Gain between A and B; avoid switching operating mode between these profiles. Archive readbacks and restore the baseline settings after testing."
+    },
+    "loading": {
+      "external_torque_magnitudes_Nm": [
+        0,
+        0.02,
+        0.05,
+        0.08
+      ],
+      "torque_directions": [
+        -1,
+        1
+      ],
+      "zero_torque_measured_once_per_profile": true,
+      "repetitions_per_condition": 3,
+      "primary_calibrated_joint_goal_deg": null,
+      "optional_relative_goal_offsets_deg": [
+        -15,
+        15
+      ],
+      "fixture": "A rigid single-joint root module with representative downstream mass or a calibrated load arm. Keep fingers/pads free of contact.",
+      "torque_measurement": "Use independently known force/weight and the actual perpendicular lever arm; tau = m*9.80665*r_perp. Record fixture/downstream gravity torque separately. Do not infer applied load torque from Present Current.",
+      "example_horizontal_lever_arm_m": 0.05,
+      "example_masses_kg": [
+        {
+          "torque_Nm": 0.02,
+          "mass_kg": 0.04078864851911713
+        },
+        {
+          "torque_Nm": 0.05,
+          "mass_kg": 0.10197162129779283
+        },
+        {
+          "torque_Nm": 0.08,
+          "mass_kg": 0.1631545940764685
+        }
+      ],
+      "example_note": "Mass values are examples at a 50mm perpendicular arm, not additional loads to apply automatically. Recompute the perpendicular arm after rotation.",
+      "sequence": "For each goal and repetition, measure unloaded reference, apply each signed torque, hold, unload and record release response. Alternate A/B trial order across repetitions to expose drift; use the same approach direction. Opposite load directions expose backlash/hysteresis."
+    },
+    "acquisition": {
+      "target_sample_rate_Hz": 100,
+      "minimum_hold_s": 10,
+      "maximum_hold_s": 30,
+      "steady_window_s": 3,
+      "steady_window_criteria": {
+        "max_abs_velocity_deg_s": 0.5,
+        "max_position_peak_to_peak_deg": 0.35,
+        "note": "Initial analysis settings, adjustable after inspecting the data; not manufacturer specifications or a physical-clearance acceptance limit."
+      },
+      "record_actual_timestamps": true,
+      "optional_external_link_angle": "An independent link-angle measurement can separate servo position error from bracket/horn compliance and backlash.",
+      "errors": {
+        "signed_error_deg": "goal_joint_deg - actual_joint_deg; apply calibrated encoder sign/zero",
+        "loaded_sag_deg": "mean loaded signed error minus the mean of unloaded-before and unloaded-after errors",
+        "retain_absolute_error": true,
+        "position_quantum_deg": 0.087890625
+      },
+      "saturation_policy": "Mark suspected current/PWM limiting, unsettled trials, hardware faults and large voltage/temperature changes. Preserve all logs; exclude saturated/unsettled trials from an unconstrained static-stiffness fit. Do not attribute saturation error to missing integral gain.",
+      "stop_conditions": [
+        "hardware error",
+        "calibrated software limit exceeded",
+        "load fixture slipping",
+        "sustained oscillation",
+        "device voltage/temperature limit reached"
+      ]
+    },
+    "required_trial_metadata": [
+      "device ID/model/firmware",
+      "mode and full P/I/D readbacks after switching",
+      "calibrated joint zero and encoder direction",
+      "supply voltage/current/PWM limits",
+      "fixture mass/COM and actual lever arm",
+      "chosen positive I for B",
+      "goal angle, load sign and repetition"
+    ],
+    "time_series_fields": [
+      "trial_id",
+      "time_monotonic_s",
+      "phase",
+      "profile",
+      "motor_id",
+      "firmware_version",
+      "goal_joint_deg",
+      "goal_position_raw",
+      "present_position_raw",
+      "position_trajectory_raw",
+      "present_velocity_raw",
+      "signed_error_deg",
+      "external_link_angle_deg",
+      "external_torque_Nm",
+      "fixture_gravity_torque_Nm",
+      "perpendicular_lever_arm_m",
+      "load_mass_kg",
+      "position_p_gain_raw",
+      "position_i_gain_raw",
+      "position_d_gain_raw",
+      "current_limit_mA",
+      "goal_current_mA",
+      "present_current_mA",
+      "present_pwm_raw",
+      "goal_pwm_raw",
+      "pwm_limit_raw",
+      "input_voltage_V",
+      "temperature_C",
+      "hardware_error",
+      "saturation_suspected"
+    ],
+    "summary_fields": [
+      "trial_id",
+      "profile",
+      "motor_id",
+      "firmware_version",
+      "goal_joint_deg",
+      "external_torque_Nm",
+      "fixture_gravity_torque_Nm",
+      "torque_direction",
+      "repetition",
+      "position_p_gain_raw",
+      "position_i_gain_raw",
+      "position_d_gain_raw",
+      "unloaded_error_before_deg",
+      "unloaded_error_after_deg",
+      "steady_mean_signed_error_deg",
+      "steady_std_error_deg",
+      "steady_max_abs_error_deg",
+      "load_induced_sag_deg",
+      "external_link_sag_deg",
+      "settling_time_s",
+      "load_release_peak_error_deg",
+      "peak_current_mA",
+      "mean_temperature_C",
+      "saturation_suspected",
+      "settled",
+      "usable_for_static_fit",
+      "notes"
+    ],
+    "analysis_and_model_update": [
+      "Compare A versus B at identical goal, torque sign and magnitude; summarize signed mean error, variation, settling, release overshoot, current and temperature.",
+      "Use A's unloaded-subtracted error versus independently measured load torque to fit effective static stiffness/friction/hysteresis over the measured range. Do not copy DYNAMIXEL register gains directly into the simulator.",
+      "If B is selected, model its measured integral response and current-limited recovery/anti-windup behavior using the time series; changing only a constant bias is insufficient.",
+      "Record the measurement files, firmware and chosen gains with the calibrated model. Test the measured parameter range and uncertainty, then rerun new CAD motion cases and actual surface-clearance checks.",
+      "Treat real sag as unmeasured; after fitting, rerun actual new CAD collision checks under tracking and deformation uncertainty."
+    ],
+    "templates": {
+      "time_series": "bench/static_sag_timeseries_template.csv",
+      "summary": "bench/static_sag_summary_template.csv",
+      "content": "Headers only; no real measurements."
+    },
+    "source": {
+      "url": "https://emanual.robotis.com/docs/en/dxl/x/xl330-m077/",
+      "checked_date_local": "2026-10-23",
+      "sections": [
+        "Operating Mode(11)",
+        "Position PID Gain(80,82,84)",
+        "Current Limit(38)",
+        "Goal Current(102)",
+        "Min/Max Position Limit(52,48)"
+      ],
+      "scope": "Register facts are documented; loads, repetition counts and analysis windows are this project's test design."
+    }
+  },
+  "stage3_dynamic": {
+    "start": "Low speed, no contact; verify calibrated encoder sign and software limits before moves.",
+    "profiles": [
+      "Smooth30/60/90deg flexion with generous initial duration then gradually shorter commands",
+      "Both motion directions, horizontal/vertical palm orientations",
+      "Record actual human tracking trajectory; replay1.0x then1.5x only after prior test stays within limits"
+    ],
+    "record": [
+      "goal and measured joint angle with monotonic timestamps",
+      "external link angle when available",
+      "current/PWM/voltage/temperature",
+      "delay,10-90%rise,tracking error and\u00b15degsettling",
+      "saturation,gear backlash,printed bracket flex and vibration"
+    ],
+    "acceptance": "Compare measured response with the user target trace, not unloaded RPM. No fixed pass speed declared until a target human trace and actual fixture are measured.",
+    "no_automatic_changes": [
+      "Do not raise current to1.2A as an untested cure",
+      "Do not remove DIP motors from the baseline design without reviewing the candidate mechanism",
+      "Do not copy legacy90paths or old250ms results into this CAD"
+    ]
+  },
+  "procurement_hold_points": [
+    "NBK SNZS-M2-6 maker dimensions verified; sample fit, sourcing and printed clamping torque remain unverified",
+    "Actual printed masses and representative servo response",
+    "Elbow/wrist gravity+acceleration margin; current full-solid estimates9.77/3.05Nm",
+    "Arm flange mounting and cables not yet complete"
+  ],
+  "legacy_trajectory_results_apply": false
+}

@@ -1,0 +1,99 @@
+{
+  "revision": 2,
+  "machine_screw": {
+    "part": "NBK SNZS-M2-6",
+    "thread": "M2x0.4",
+    "length_mm": 6,
+    "head_diameter_mm": 3,
+    "head_height_mm": 0.6,
+    "drive": "cross recess No.0",
+    "maker_max_torque_Nm": 0.22,
+    "assembly_torque_Nm": null,
+    "source": "https://www.nbk1560.com/en-US/products/specialscrew/nedzicom/miniaturescrew/SNZS-M/SNZS-M2/SNZS-M2-6/"
+  },
+  "connector": {
+    "housing": "JST EHR-3",
+    "header": "JST B3B-EH-A",
+    "terminal": "SEH-001T-P0.6",
+    "pitch_mm": 2.5,
+    "housing_outer_mm": [
+      9.5,
+      3.8,
+      6.5
+    ],
+    "stub_projection_mm": 0.6,
+    "registered_outer_origin_mm": [
+      -11.1,
+      -13.75,
+      -9.9
+    ],
+    "registered_outer_size_mm": [
+      7.1,
+      9.5,
+      3.8
+    ],
+    "mating_direction_hand": [
+      -1,
+      0,
+      0
+    ],
+    "selected_port": "dorsal -Z",
+    "representation": "Conservative outer box derived from public dimensions; NOT vendor EHR-3 STEP. Simplified mating registration requires physical check.",
+    "source": "https://www.jst-mfg.com/product/pdf/eng/eEH.pdf"
+  },
+  "wire": {
+    "awg": 22,
+    "insulation_od_max_mm": 1.9,
+    "extra_radial_allowance_mm": 0.3,
+    "start_x_mm": -11.1,
+    "start_y_mm": [
+      -11.5,
+      -9,
+      -6.5
+    ],
+    "z_mm": -8,
+    "bend_start_x_mm": -20,
+    "bend_center_y_mm": -21.5,
+    "end_y_mm": -36,
+    "minimum_centerline_radius_mm": 10,
+    "bend_radius_basis": "Design provision for static fixed-motor lead; not a maker flex-life rating.",
+    "full_hand_power_distribution_validated": false
+  },
+  "frame_relief": {
+    "origin_mm": [
+      -12.6,
+      -14.75,
+      -16
+    ],
+    "size_mm": [
+      10.1,
+      11.5,
+      10
+    ],
+    "manufacture": "FPX330-S101 with clearance window post-machined; stock unmodified frame no longer accepted here."
+  },
+  "guide": {
+    "origin_mm": [
+      -41,
+      -29,
+      -13
+    ],
+    "size_mm": [
+      29,
+      6,
+      6.5
+    ],
+    "mount_xy_mm": [
+      -15,
+      -26
+    ],
+    "mount_screw": "M3x16 socket head, NBK SNS-M3-16 reference",
+    "mount_screw_head_mm": [
+      5.5,
+      3
+    ],
+    "mount_source": "https://static.nbk1560.com/en/products/specialscrew/nedzicom/high_specific_strength/SNS-J/SNS-M3/",
+    "restraint": "2.5mm cable tie in two 1.8x3mm through slots; tie not represented in CAD.",
+    "tolerance_note": "Trough allows route placement; 0.3mm radial wire reserve, not a printed strength approval."
+  }
+}

@@ -1,0 +1,810 @@
+{
+  "continuous_pair_bounds": [
+    {
+      "joint": "elbow",
+      "actual_angle_domain_deg": [
+        0,
+        98
+      ],
+      "moving_radius_bound_mm": 94.94467845985885,
+      "nearest_sample_max_angle_error_deg": 0.5,
+      "mesh_surface_distance_lower_bound_mm": 4.020132654815589,
+      "CAD_lower_bound_if_0p05mm_tessellation_each_mm": 3.9201326548155886,
+      "scope": "Only the named pair, one axis and other angles0; not global arm-space."
+    },
+    {
+      "joint": "wrist_deviation",
+      "actual_angle_domain_deg": [
+        -20,
+        17
+      ],
+      "moving_radius_bound_mm": 126.45015822774906,
+      "nearest_sample_max_angle_error_deg": 0.5,
+      "mesh_surface_distance_lower_bound_mm": 1.404617819489227,
+      "CAD_lower_bound_if_0p05mm_tessellation_each_mm": 1.3046178194892268,
+      "scope": "Only the named pair, one axis and other angles0; not global arm-space."
+    }
+  ],
+  "scope": "Two known stop pairs only, sampled1deg in nominal arm CAD. Continuous bounds apply only to these two pairs in the stated one-axis domains; no global arm-space or actual vendor flange approval.",
+  "rows": [
+    {
+      "joint": "elbow",
+      "pair": [
+        "Elbow_fixed_cradle",
+        "Elbow_roll_carrier"
+      ],
+      "rows": [
+        {
+          "angle_deg": 0,
+          "gap_mm": 26.326080224750513,
+          "collision": false
+        },
+        {
+          "angle_deg": 1,
+          "gap_mm": 25.553846363614817,
+          "collision": false
+        },
+        {
+          "angle_deg": 2,
+          "gap_mm": 24.762438920157088,
+          "collision": false
+        },
+        {
+          "angle_deg": 3,
+          "gap_mm": 23.952631942590344,
+          "collision": false
+        },
+        {
+          "angle_deg": 4,
+          "gap_mm": 23.125300114084503,
+          "collision": false
+        },
+        {
+          "angle_deg": 5,
+          "gap_mm": 22.28788476710927,
+          "collision": false
+        },
+        {
+          "angle_deg": 6,
+          "gap_mm": 21.497410282965077,
+          "collision": false
+        },
+        {
+          "angle_deg": 7,
+          "gap_mm": 20.76005831806295,
+          "collision": false
+        },
+        {
+          "angle_deg": 8,
+          "gap_mm": 20.04547388211282,
+          "collision": false
+        },
+        {
+          "angle_deg": 9,
+          "gap_mm": 19.352235665726727,
+          "collision": false
+        },
+        {
+          "angle_deg": 10,
+          "gap_mm": 18.680735389006156,
+          "collision": false
+        },
+        {
+          "angle_deg": 11,
+          "gap_mm": 18.031356259925744,
+          "collision": false
+        },
+        {
+          "angle_deg": 12,
+          "gap_mm": 17.404470004341725,
+          "collision": false
+        },
+        {
+          "angle_deg": 13,
+          "gap_mm": 16.800433295954925,
+          "collision": false
+        },
+        {
+          "angle_deg": 14,
+          "gap_mm": 16.219583527104852,
+          "collision": false
+        },
+        {
+          "angle_deg": 15,
+          "gap_mm": 15.662233873115175,
+          "collision": false
+        },
+        {
+          "angle_deg": 16,
+          "gap_mm": 15.128667622431237,
+          "collision": false
+        },
+        {
+          "angle_deg": 17,
+          "gap_mm": 14.619131773577921,
+          "collision": false
+        },
+        {
+          "angle_deg": 18,
+          "gap_mm": 14.133829939286745,
+          "collision": false
+        },
+        {
+          "angle_deg": 19,
+          "gap_mm": 13.672914648616128,
+          "collision": false
+        },
+        {
+          "angle_deg": 20,
+          "gap_mm": 13.236479199050388,
+          "collision": false
+        },
+        {
+          "angle_deg": 21,
+          "gap_mm": 12.824549280422938,
+          "collision": false
+        },
+        {
+          "angle_deg": 22,
+          "gap_mm": 12.437074667126172,
+          "collision": false
+        },
+        {
+          "angle_deg": 23,
+          "gap_mm": 12.07392134836344,
+          "collision": false
+        },
+        {
+          "angle_deg": 24,
+          "gap_mm": 11.734864530019843,
+          "collision": false
+        },
+        {
+          "angle_deg": 25,
+          "gap_mm": 11.419582986462425,
+          "collision": false
+        },
+        {
+          "angle_deg": 26,
+          "gap_mm": 11.127655256248513,
+          "collision": false
+        },
+        {
+          "angle_deg": 27,
+          "gap_mm": 10.858558153600232,
+          "collision": false
+        },
+        {
+          "angle_deg": 28,
+          "gap_mm": 10.61166800202178,
+          "collision": false
+        },
+        {
+          "angle_deg": 29,
+          "gap_mm": 10.386264886956559,
+          "collision": false
+        },
+        {
+          "angle_deg": 30,
+          "gap_mm": 10.18154007639991,
+          "collision": false
+        },
+        {
+          "angle_deg": 31,
+          "gap_mm": 9.996606583651735,
+          "collision": false
+        },
+        {
+          "angle_deg": 32,
+          "gap_mm": 9.830512661747775,
+          "collision": false
+        },
+        {
+          "angle_deg": 33,
+          "gap_mm": 9.682257844031032,
+          "collision": false
+        },
+        {
+          "angle_deg": 34,
+          "gap_mm": 9.550810998762284,
+          "collision": false
+        },
+        {
+          "angle_deg": 35,
+          "gap_mm": 9.435129762736329,
+          "collision": false
+        },
+        {
+          "angle_deg": 36,
+          "gap_mm": 9.334180668349585,
+          "collision": false
+        },
+        {
+          "angle_deg": 37,
+          "gap_mm": 9.246959281671478,
+          "collision": false
+        },
+        {
+          "angle_deg": 38,
+          "gap_mm": 9.172509719798267,
+          "collision": false
+        },
+        {
+          "angle_deg": 39,
+          "gap_mm": 9.109943002548876,
+          "collision": false
+        },
+        {
+          "angle_deg": 40,
+          "gap_mm": 9.058453801749364,
+          "collision": false
+        },
+        {
+          "angle_deg": 41,
+          "gap_mm": 9.017335265879021,
+          "collision": false
+        },
+        {
+          "angle_deg": 42,
+          "gap_mm": 8.985991705488127,
+          "collision": false
+        },
+        {
+          "angle_deg": 43,
+          "gap_mm": 8.96394901568272,
+          "collision": false
+        },
+        {
+          "angle_deg": 44,
+          "gap_mm": 8.950862780317102,
+          "collision": false
+        },
+        {
+          "angle_deg": 45,
+          "gap_mm": 8.946524046592325,
+          "collision": false
+        },
+        {
+          "angle_deg": 46,
+          "gap_mm": 8.95086278031712,
+          "collision": false
+        },
+        {
+          "angle_deg": 47,
+          "gap_mm": 8.963949015682715,
+          "collision": false
+        },
+        {
+          "angle_deg": 48,
+          "gap_mm": 8.98599170548813,
+          "collision": false
+        },
+        {
+          "angle_deg": 49,
+          "gap_mm": 9.017335265879028,
+          "collision": false
+        },
+        {
+          "angle_deg": 50,
+          "gap_mm": 9.058453801749355,
+          "collision": false
+        },
+        {
+          "angle_deg": 51,
+          "gap_mm": 9.109943002548878,
+          "collision": false
+        },
+        {
+          "angle_deg": 52,
+          "gap_mm": 9.172509719798267,
+          "collision": false
+        },
+        {
+          "angle_deg": 53,
+          "gap_mm": 9.246959281671483,
+          "collision": false
+        },
+        {
+          "angle_deg": 54,
+          "gap_mm": 9.334180668349589,
+          "collision": false
+        },
+        {
+          "angle_deg": 55,
+          "gap_mm": 9.435129762736334,
+          "collision": false
+        },
+        {
+          "angle_deg": 56,
+          "gap_mm": 9.55081099876228,
+          "collision": false
+        },
+        {
+          "angle_deg": 57,
+          "gap_mm": 9.682257844031037,
+          "collision": false
+        },
+        {
+          "angle_deg": 58,
+          "gap_mm": 9.830512661747761,
+          "collision": false
+        },
+        {
+          "angle_deg": 59,
+          "gap_mm": 9.99660658365173,
+          "collision": false
+        },
+        {
+          "angle_deg": 60,
+          "gap_mm": 10.181540076399905,
+          "collision": false
+        },
+        {
+          "angle_deg": 61,
+          "gap_mm": 10.386264886956551,
+          "collision": false
+        },
+        {
+          "angle_deg": 62,
+          "gap_mm": 10.611668002021762,
+          "collision": false
+        },
+        {
+          "angle_deg": 63,
+          "gap_mm": 10.858558153600189,
+          "collision": false
+        },
+        {
+          "angle_deg": 64,
+          "gap_mm": 11.127655256248518,
+          "collision": false
+        },
+        {
+          "angle_deg": 65,
+          "gap_mm": 11.419582986462428,
+          "collision": false
+        },
+        {
+          "angle_deg": 66,
+          "gap_mm": 11.734864530019848,
+          "collision": false
+        },
+        {
+          "angle_deg": 67,
+          "gap_mm": 12.073921348363465,
+          "collision": false
+        },
+        {
+          "angle_deg": 68,
+          "gap_mm": 12.437074667126172,
+          "collision": false
+        },
+        {
+          "angle_deg": 69,
+          "gap_mm": 12.824549280422948,
+          "collision": false
+        },
+        {
+          "angle_deg": 70,
+          "gap_mm": 13.236479199050361,
+          "collision": false
+        },
+        {
+          "angle_deg": 71,
+          "gap_mm": 13.67291464861607,
+          "collision": false
+        },
+        {
+          "angle_deg": 72,
+          "gap_mm": 14.13382993928673,
+          "collision": false
+        },
+        {
+          "angle_deg": 73,
+          "gap_mm": 14.61913177357793,
+          "collision": false
+        },
+        {
+          "angle_deg": 74,
+          "gap_mm": 15.12866762243125,
+          "collision": false
+        },
+        {
+          "angle_deg": 75,
+          "gap_mm": 15.662233873115152,
+          "collision": false
+        },
+        {
+          "angle_deg": 76,
+          "gap_mm": 16.21958352710484,
+          "collision": false
+        },
+        {
+          "angle_deg": 77,
+          "gap_mm": 16.80043329595494,
+          "collision": false
+        },
+        {
+          "angle_deg": 78,
+          "gap_mm": 17.40447000434171,
+          "collision": false
+        },
+        {
+          "angle_deg": 79,
+          "gap_mm": 18.03135625992572,
+          "collision": false
+        },
+        {
+          "angle_deg": 80,
+          "gap_mm": 18.680735389006177,
+          "collision": false
+        },
+        {
+          "angle_deg": 81,
+          "gap_mm": 19.352235665726756,
+          "collision": false
+        },
+        {
+          "angle_deg": 82,
+          "gap_mm": 20.045473882112844,
+          "collision": false
+        },
+        {
+          "angle_deg": 83,
+          "gap_mm": 20.760058318062928,
+          "collision": false
+        },
+        {
+          "angle_deg": 84,
+          "gap_mm": 21.49741028296508,
+          "collision": false
+        },
+        {
+          "angle_deg": 85,
+          "gap_mm": 22.28788476710927,
+          "collision": false
+        },
+        {
+          "angle_deg": 86,
+          "gap_mm": 21.572435804517145,
+          "collision": false
+        },
+        {
+          "angle_deg": 87,
+          "gap_mm": 20.07872661195164,
+          "collision": false
+        },
+        {
+          "angle_deg": 88,
+          "gap_mm": 18.587914084637987,
+          "collision": false
+        },
+        {
+          "angle_deg": 89,
+          "gap_mm": 17.101269211931978,
+          "collision": false
+        },
+        {
+          "angle_deg": 90,
+          "gap_mm": 15.620499351813308,
+          "collision": false
+        },
+        {
+          "angle_deg": 91,
+          "gap_mm": 14.147971000062782,
+          "collision": false
+        },
+        {
+          "angle_deg": 92,
+          "gap_mm": 12.687080493756573,
+          "collision": false
+        },
+        {
+          "angle_deg": 93,
+          "gap_mm": 11.242896679450865,
+          "collision": false
+        },
+        {
+          "angle_deg": 94,
+          "gap_mm": 9.823327001636363,
+          "collision": false
+        },
+        {
+          "angle_deg": 95,
+          "gap_mm": 8.441338976024257,
+          "collision": false
+        },
+        {
+          "angle_deg": 96,
+          "gap_mm": 7.119393622111631,
+          "collision": false
+        },
+        {
+          "angle_deg": 97,
+          "gap_mm": 5.898534127312097,
+          "collision": false
+        },
+        {
+          "angle_deg": 98,
+          "gap_mm": 4.848678648937948,
+          "collision": false
+        },
+        {
+          "angle_deg": 99,
+          "gap_mm": 3.8560168339749907,
+          "collision": false
+        },
+        {
+          "angle_deg": 100,
+          "gap_mm": 2.842380809261215,
+          "collision": false
+        },
+        {
+          "angle_deg": 101,
+          "gap_mm": 1.8080793381490707,
+          "collision": false
+        },
+        {
+          "angle_deg": 102,
+          "gap_mm": 0.7534274788860671,
+          "collision": false
+        },
+        {
+          "angle_deg": 103,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 104,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 105,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 106,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 107,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 108,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 109,
+          "gap_mm": 0,
+          "collision": true
+        },
+        {
+          "angle_deg": 110,
+          "gap_mm": 0,
+          "collision": true
+        }
+      ]
+    },
+    {
+      "joint": "wrist_deviation",
+      "pair": [
+        "AK_wrist_flex",
+        "Palm_wrist_saddle"
+      ],
+      "rows": [
+        {
+          "angle_deg": -20,
+          "gap_mm": 7.463750139658348,
+          "collision": false
+        },
+        {
+          "angle_deg": -19,
+          "gap_mm": 7.5096991809318725,
+          "collision": false
+        },
+        {
+          "angle_deg": -18,
+          "gap_mm": 7.564326643826634,
+          "collision": false
+        },
+        {
+          "angle_deg": -17,
+          "gap_mm": 7.627615888288231,
+          "collision": false
+        },
+        {
+          "angle_deg": -16,
+          "gap_mm": 7.699547635799716,
+          "collision": false
+        },
+        {
+          "angle_deg": -15,
+          "gap_mm": 7.78009997525397,
+          "collision": false
+        },
+        {
+          "angle_deg": -14,
+          "gap_mm": 7.869248369628076,
+          "collision": false
+        },
+        {
+          "angle_deg": -13,
+          "gap_mm": 7.966965663457499,
+          "collision": false
+        },
+        {
+          "angle_deg": -12,
+          "gap_mm": 8.073222091107935,
+          "collision": false
+        },
+        {
+          "angle_deg": -11,
+          "gap_mm": 8.187985285842194,
+          "collision": false
+        },
+        {
+          "angle_deg": -10,
+          "gap_mm": 8.311220289679422,
+          "collision": false
+        },
+        {
+          "angle_deg": -9,
+          "gap_mm": 8.44288956404364,
+          "collision": false
+        },
+        {
+          "angle_deg": -8,
+          "gap_mm": 8.582953001198382,
+          "collision": false
+        },
+        {
+          "angle_deg": -7,
+          "gap_mm": 8.731367936463853,
+          "collision": false
+        },
+        {
+          "angle_deg": -6,
+          "gap_mm": 8.888089161213044,
+          "collision": false
+        },
+        {
+          "angle_deg": -5,
+          "gap_mm": 9.053068936642715,
+          "collision": false
+        },
+        {
+          "angle_deg": -4,
+          "gap_mm": 9.226257008315061,
+          "collision": false
+        },
+        {
+          "angle_deg": -3,
+          "gap_mm": 9.407600621465749,
+          "collision": false
+        },
+        {
+          "angle_deg": -2,
+          "gap_mm": 9.597044537073494,
+          "collision": false
+        },
+        {
+          "angle_deg": -1,
+          "gap_mm": 9.794531048686418,
+          "collision": false
+        },
+        {
+          "angle_deg": 0,
+          "gap_mm": 9.999999999999993,
+          "collision": false
+        },
+        {
+          "angle_deg": 1,
+          "gap_mm": 9.642340803368546,
+          "collision": false
+        },
+        {
+          "angle_deg": 2,
+          "gap_mm": 9.273196016661242,
+          "collision": false
+        },
+        {
+          "angle_deg": 3,
+          "gap_mm": 8.892760892920819,
+          "collision": false
+        },
+        {
+          "angle_deg": 4,
+          "gap_mm": 8.501239242775565,
+          "collision": false
+        },
+        {
+          "angle_deg": 5,
+          "gap_mm": 8.098843025102266,
+          "collision": false
+        },
+        {
+          "angle_deg": 6,
+          "gap_mm": 7.685791912925321,
+          "collision": false
+        },
+        {
+          "angle_deg": 7,
+          "gap_mm": 7.262312836836466,
+          "collision": false
+        },
+        {
+          "angle_deg": 8,
+          "gap_mm": 6.828639508349963,
+          "collision": false
+        },
+        {
+          "angle_deg": 9,
+          "gap_mm": 6.385011925716146,
+          "collision": false
+        },
+        {
+          "angle_deg": 10,
+          "gap_mm": 5.931675864801364,
+          "collision": false
+        },
+        {
+          "angle_deg": 11,
+          "gap_mm": 5.468882357703499,
+          "collision": false
+        },
+        {
+          "angle_deg": 12,
+          "gap_mm": 4.99688716181008,
+          "collision": false
+        },
+        {
+          "angle_deg": 13,
+          "gap_mm": 4.5159502220191925,
+          "collision": false
+        },
+        {
+          "angle_deg": 14,
+          "gap_mm": 4.026335128834171,
+          "collision": false
+        },
+        {
+          "angle_deg": 15,
+          "gap_mm": 3.5283085750103793,
+          "collision": false
+        },
+        {
+          "angle_deg": 16,
+          "gap_mm": 3.022139813378576,
+          "collision": false
+        },
+        {
+          "angle_deg": 17,
+          "gap_mm": 2.508100118394848,
+          "collision": false
+        },
+        {
+          "angle_deg": 18,
+          "gap_mm": 1.9864622538739027,
+          "collision": false
+        },
+        {
+          "angle_deg": 19,
+          "gap_mm": 1.4574999492517324,
+          "collision": false
+        },
+        {
+          "angle_deg": 20,
+          "gap_mm": 0.9214873865978319,
+          "collision": false
+        }
+      ]
+    }
+  ],
+  "manufacturing_release": false
+}

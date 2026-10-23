@@ -1,0 +1,181 @@
+{
+  "scope": "Exact BRep for one chosen FIXED lead exit per motor in6stored poses. Replaces one thumb-link candidate locally only. Own connector/case catalog-envelope mating unqualified; no connected cable, moving slack, wire-wire or full joint sweep.",
+  "wire_nominal_radius_mm": 0.95,
+  "wire_reserve_radius_mm": 1.25,
+  "additional_gap_target_mm": 0.3,
+  "rows": [
+    {
+      "pose": "Open",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.49999995490485977,
+        "source": "wire3",
+        "obstacle": "little_spread_carrier",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.499999954904844,
+        "source": "wire3",
+        "obstacle": "little_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.49999995490485977,
+        "source": "wire3",
+        "obstacle": "little_spread_carrier",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.499999954904844,
+        "source": "wire3",
+        "obstacle": "little_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.49999995490485977,
+        "source": "wire3",
+        "obstacle": "little_spread_carrier",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.499999954904844,
+        "source": "wire3",
+        "obstacle": "little_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.49999995490485977,
+        "source": "wire3",
+        "obstacle": "little_spread_carrier",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.499999954904844,
+        "source": "wire3",
+        "obstacle": "little_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.49999995490485977,
+        "source": "wire3",
+        "obstacle": "little_spread_carrier",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.499999954904844,
+        "source": "wire3",
+        "obstacle": "little_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.49999995490485977,
+        "source": "wire3",
+        "obstacle": "little_spread_carrier",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.499999954904844,
+        "source": "wire3",
+        "obstacle": "little_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "manufacturing_release": false,
+  "full_harness_validated": false,
+  "BRep_uncached_distance_queries": 113,
+  "elapsed_seconds": 25.75,
+  "all_selected_fixed_exits_passed": true
+}

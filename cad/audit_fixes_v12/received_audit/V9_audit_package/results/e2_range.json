@@ -1,0 +1,2064 @@
+{
+ "single_axis": [
+  {
+   "finger": "index",
+   "joint": 0,
+   "+": {
+    "first_below_1mm": [
+     10,
+     0.852,
+     [
+      "index_spread_carrier",
+      "middle_spread_carrier"
+     ]
+    ],
+    "first_contact": [
+     12,
+     [
+      "index_spread_carrier",
+      "middle_spread_carrier"
+     ]
+    ],
+    "searched_to": 30
+   },
+   "-": {
+    "first_below_1mm": [
+     -3,
+     0.78,
+     [
+      "index_mcp_link",
+      "middle_spread_carrier"
+     ]
+    ],
+    "first_contact": [
+     -5,
+     [
+      "index_mcp_link",
+      "middle_spread_carrier"
+     ]
+    ],
+    "searched_to": -30
+   }
+  },
+  {
+   "finger": "index",
+   "joint": 1,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 110
+   },
+   "-": {
+    "first_below_1mm": [
+     -25,
+     0.733,
+     [
+      "index_spread_carrier",
+      "index_mcp_hinge"
+     ]
+    ],
+    "first_contact": [
+     -28,
+     [
+      "index_spread_carrier",
+      "index_mcp_hinge"
+     ]
+    ],
+    "searched_to": -45
+   }
+  },
+  {
+   "finger": "index",
+   "joint": 2,
+   "+": {
+    "first_below_1mm": [
+     114,
+     0.975,
+     [
+      "index_pip_motor",
+      "index_pip_output_screws"
+     ]
+    ],
+    "first_contact": [
+     119,
+     [
+      "index_pip_motor",
+      "index_pip_output_screws"
+     ]
+    ],
+    "searched_to": 120
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "index_mcp_link",
+      "index_pip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "index_mcp_link",
+      "index_pip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "index",
+   "joint": 3,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 100
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "index_pip_link",
+      "index_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "index_pip_link",
+      "index_dip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "thumb",
+   "joint": 0,
+   "+": {
+    "first_below_1mm": [
+     10,
+     0.892,
+     [
+      "Thumb_internal_cradle",
+      "thumb_root_hinge"
+     ]
+    ],
+    "first_contact": [
+     14,
+     [
+      "Thumb_internal_cradle",
+      "thumb_root_hinge"
+     ]
+    ],
+    "searched_to": 90
+   },
+   "-": {
+    "first_below_1mm": [
+     -3,
+     0.001,
+     [
+      "index_spread_carrier",
+      "thumb_pip_link"
+     ]
+    ],
+    "first_contact": [
+     -4,
+     [
+      "index_spread_carrier",
+      "thumb_pip_link"
+     ]
+    ],
+    "searched_to": -90
+   }
+  },
+  {
+   "finger": "thumb",
+   "joint": 1,
+   "+": {
+    "first_below_1mm": [
+     114,
+     0.975,
+     [
+      "thumb_mcp_motor",
+      "thumb_mcp_output_screws"
+     ]
+    ],
+    "first_contact": [
+     119,
+     [
+      "thumb_mcp_motor",
+      "thumb_mcp_output_screws"
+     ]
+    ],
+    "searched_to": 120
+   },
+   "-": {
+    "first_below_1mm": [
+     -4,
+     0.885,
+     [
+      "thumb_spread_carrier",
+      "thumb_mcp_link"
+     ]
+    ],
+    "first_contact": [
+     -7,
+     [
+      "thumb_spread_carrier",
+      "thumb_mcp_link"
+     ]
+    ],
+    "searched_to": -45
+   }
+  },
+  {
+   "finger": "thumb",
+   "joint": 2,
+   "+": {
+    "first_below_1mm": [
+     58,
+     0.868,
+     [
+      "thumb_mcp_link",
+      "thumb_pip_hinge"
+     ]
+    ],
+    "first_contact": [
+     63,
+     [
+      "thumb_mcp_link",
+      "thumb_pip_hinge"
+     ]
+    ],
+    "searched_to": 110
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "thumb_mcp_link",
+      "thumb_pip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "thumb_mcp_link",
+      "thumb_pip_hinge"
+     ]
+    ],
+    "searched_to": -40
+   }
+  },
+  {
+   "finger": "thumb",
+   "joint": 3,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 100
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "thumb_pip_link",
+      "thumb_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "thumb_pip_link",
+      "thumb_dip_hinge"
+     ]
+    ],
+    "searched_to": -40
+   }
+  },
+  {
+   "finger": "middle",
+   "joint": 0,
+   "+": {
+    "first_below_1mm": [
+     5,
+     0.64,
+     [
+      "index_mcp_link",
+      "middle_spread_carrier"
+     ]
+    ],
+    "first_contact": [
+     7,
+     [
+      "index_mcp_link",
+      "middle_spread_carrier"
+     ]
+    ],
+    "searched_to": 30
+   },
+   "-": {
+    "first_below_1mm": [
+     -6,
+     0.379,
+     [
+      "middle_dip_hinge",
+      "ring_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -7,
+     [
+      "middle_dip_hinge",
+      "ring_dip_hinge"
+     ]
+    ],
+    "searched_to": -30
+   }
+  },
+  {
+   "finger": "middle",
+   "joint": 1,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 110
+   },
+   "-": {
+    "first_below_1mm": [
+     -25,
+     0.733,
+     [
+      "middle_spread_carrier",
+      "middle_mcp_hinge"
+     ]
+    ],
+    "first_contact": [
+     -28,
+     [
+      "middle_spread_carrier",
+      "middle_mcp_hinge"
+     ]
+    ],
+    "searched_to": -45
+   }
+  },
+  {
+   "finger": "middle",
+   "joint": 2,
+   "+": {
+    "first_below_1mm": [
+     114,
+     0.975,
+     [
+      "middle_pip_motor",
+      "middle_pip_output_screws"
+     ]
+    ],
+    "first_contact": [
+     119,
+     [
+      "middle_pip_motor",
+      "middle_pip_output_screws"
+     ]
+    ],
+    "searched_to": 120
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "middle_mcp_link",
+      "middle_pip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "middle_mcp_link",
+      "middle_pip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "middle",
+   "joint": 3,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 100
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "middle_pip_link",
+      "middle_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "middle_pip_link",
+      "middle_dip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "ring",
+   "joint": 0,
+   "+": {
+    "first_below_1mm": [
+     6,
+     0.015,
+     [
+      "middle_dip_hinge",
+      "ring_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     7,
+     [
+      "middle_dip_hinge",
+      "ring_dip_hinge"
+     ]
+    ],
+    "searched_to": 30
+   },
+   "-": {
+    "first_below_1mm": [
+     -7,
+     0.364,
+     [
+      "ring_dip_hinge",
+      "little_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -8,
+     [
+      "ring_dip_hinge",
+      "little_dip_hinge"
+     ]
+    ],
+    "searched_to": -30
+   }
+  },
+  {
+   "finger": "ring",
+   "joint": 1,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 110
+   },
+   "-": {
+    "first_below_1mm": [
+     -25,
+     0.733,
+     [
+      "ring_spread_carrier",
+      "ring_mcp_hinge"
+     ]
+    ],
+    "first_contact": [
+     -28,
+     [
+      "ring_spread_carrier",
+      "ring_mcp_hinge"
+     ]
+    ],
+    "searched_to": -45
+   }
+  },
+  {
+   "finger": "ring",
+   "joint": 2,
+   "+": {
+    "first_below_1mm": [
+     114,
+     0.975,
+     [
+      "ring_pip_motor",
+      "ring_pip_output_screws"
+     ]
+    ],
+    "first_contact": [
+     119,
+     [
+      "ring_pip_motor",
+      "ring_pip_output_screws"
+     ]
+    ],
+    "searched_to": 120
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "ring_mcp_link",
+      "ring_pip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "ring_mcp_link",
+      "ring_pip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "ring",
+   "joint": 3,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 100
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "ring_pip_link",
+      "ring_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "ring_pip_link",
+      "ring_dip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "little",
+   "joint": 0,
+   "+": {
+    "first_below_1mm": [
+     7,
+     0.36,
+     [
+      "ring_dip_output_hinge_tap",
+      "little_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     8,
+     [
+      "ring_dip_hinge",
+      "little_dip_tip"
+     ]
+    ],
+    "searched_to": 30
+   },
+   "-": {
+    "first_below_1mm": [
+     -13,
+     0.888,
+     [
+      "ring_spread_carrier",
+      "little_spread_carrier"
+     ]
+    ],
+    "first_contact": [
+     -16,
+     [
+      "ring_spread_carrier",
+      "little_spread_carrier"
+     ]
+    ],
+    "searched_to": -30
+   }
+  },
+  {
+   "finger": "little",
+   "joint": 1,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 110
+   },
+   "-": {
+    "first_below_1mm": [
+     -25,
+     0.733,
+     [
+      "little_spread_carrier",
+      "little_mcp_hinge"
+     ]
+    ],
+    "first_contact": [
+     -28,
+     [
+      "little_spread_carrier",
+      "little_mcp_hinge"
+     ]
+    ],
+    "searched_to": -45
+   }
+  },
+  {
+   "finger": "little",
+   "joint": 2,
+   "+": {
+    "first_below_1mm": [
+     114,
+     0.975,
+     [
+      "little_pip_motor",
+      "little_pip_output_screws"
+     ]
+    ],
+    "first_contact": [
+     119,
+     [
+      "little_pip_motor",
+      "little_pip_output_screws"
+     ]
+    ],
+    "searched_to": 120
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "little_mcp_link",
+      "little_pip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "little_mcp_link",
+      "little_pip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  },
+  {
+   "finger": "little",
+   "joint": 3,
+   "+": {
+    "first_below_1mm": null,
+    "first_contact": null,
+    "searched_to": 100
+   },
+   "-": {
+    "first_below_1mm": [
+     -10,
+     0.892,
+     [
+      "little_pip_link",
+      "little_dip_hinge"
+     ]
+    ],
+    "first_contact": [
+     -14,
+     [
+      "little_pip_link",
+      "little_dip_hinge"
+     ]
+    ],
+    "searched_to": -15
+   }
+  }
+ ],
+ "note": "first angle from Open where an external (non servo-internal) moving pair is <1.0mm and <=0 (contact). 1 deg steps; contact angle +-1 deg.",
+ "elbow_sweep": [
+  [
+   -20,
+   3.0,
+   null
+  ],
+  [
+   -19,
+   3.0,
+   null
+  ],
+  [
+   -18,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   -17,
+   3.0,
+   null
+  ],
+  [
+   -16,
+   3.0,
+   null
+  ],
+  [
+   -15,
+   3.0,
+   null
+  ],
+  [
+   -14,
+   3.0,
+   null
+  ],
+  [
+   -13,
+   3.0,
+   null
+  ],
+  [
+   -12,
+   3.0,
+   null
+  ],
+  [
+   -11,
+   3.0,
+   null
+  ],
+  [
+   -10,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   -9,
+   3.0,
+   null
+  ],
+  [
+   -8,
+   3.0,
+   null
+  ],
+  [
+   -7,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   -6,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   -5,
+   3.0,
+   null
+  ],
+  [
+   -4,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   -3,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   -2,
+   3.0,
+   null
+  ],
+  [
+   -1,
+   3.0,
+   null
+  ],
+  [
+   0,
+   3.0,
+   null
+  ],
+  [
+   1,
+   3.0,
+   null
+  ],
+  [
+   2,
+   3.0,
+   null
+  ],
+  [
+   3,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   4,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   5,
+   3.0,
+   null
+  ],
+  [
+   6,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   7,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   8,
+   3.0,
+   null
+  ],
+  [
+   9,
+   3.0,
+   null
+  ],
+  [
+   10,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   11,
+   3.0,
+   null
+  ],
+  [
+   12,
+   3.0,
+   null
+  ],
+  [
+   13,
+   3.0,
+   null
+  ],
+  [
+   14,
+   3.0,
+   null
+  ],
+  [
+   15,
+   3.0,
+   null
+  ],
+  [
+   16,
+   3.0,
+   null
+  ],
+  [
+   17,
+   3.0,
+   null
+  ],
+  [
+   18,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   19,
+   3.0,
+   null
+  ],
+  [
+   20,
+   3.0,
+   null
+  ],
+  [
+   21,
+   3.0,
+   null
+  ],
+  [
+   22,
+   3.0,
+   null
+  ],
+  [
+   23,
+   3.0,
+   null
+  ],
+  [
+   24,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   25,
+   3.0,
+   null
+  ],
+  [
+   26,
+   3.0,
+   null
+  ],
+  [
+   27,
+   3.0,
+   null
+  ],
+  [
+   28,
+   3.0,
+   null
+  ],
+  [
+   29,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   30,
+   3.0,
+   null
+  ],
+  [
+   31,
+   3.0,
+   null
+  ],
+  [
+   32,
+   3.0,
+   null
+  ],
+  [
+   33,
+   3.0,
+   null
+  ],
+  [
+   34,
+   3.0,
+   null
+  ],
+  [
+   35,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   36,
+   3.0,
+   null
+  ],
+  [
+   37,
+   3.0,
+   null
+  ],
+  [
+   38,
+   3.0,
+   null
+  ],
+  [
+   39,
+   3.0,
+   null
+  ],
+  [
+   40,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   41,
+   3.0,
+   null
+  ],
+  [
+   42,
+   3.0,
+   null
+  ],
+  [
+   43,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   44,
+   3.0,
+   null
+  ],
+  [
+   45,
+   3.0,
+   null
+  ],
+  [
+   46,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   47,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   48,
+   3.0,
+   null
+  ],
+  [
+   49,
+   3.0,
+   null
+  ],
+  [
+   50,
+   3.0,
+   null
+  ],
+  [
+   51,
+   3.0,
+   null
+  ],
+  [
+   52,
+   3.0,
+   null
+  ],
+  [
+   53,
+   3.0,
+   null
+  ],
+  [
+   54,
+   3.0,
+   null
+  ],
+  [
+   55,
+   3.0,
+   null
+  ],
+  [
+   56,
+   3.0,
+   null
+  ],
+  [
+   57,
+   3.0,
+   null
+  ],
+  [
+   58,
+   3.0,
+   null
+  ],
+  [
+   59,
+   3.0,
+   null
+  ],
+  [
+   60,
+   3.0,
+   null
+  ],
+  [
+   61,
+   3.0,
+   null
+  ],
+  [
+   62,
+   3.0,
+   null
+  ],
+  [
+   63,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   64,
+   3.0,
+   null
+  ],
+  [
+   65,
+   3.0,
+   null
+  ],
+  [
+   66,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   67,
+   3.0,
+   null
+  ],
+  [
+   68,
+   3.0,
+   null
+  ],
+  [
+   69,
+   3.0,
+   null
+  ],
+  [
+   70,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   71,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   72,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   73,
+   3.0,
+   null
+  ],
+  [
+   74,
+   3.0,
+   null
+  ],
+  [
+   75,
+   3.0,
+   null
+  ],
+  [
+   76,
+   3.0,
+   null
+  ],
+  [
+   77,
+   3.0,
+   null
+  ],
+  [
+   78,
+   3.0,
+   null
+  ],
+  [
+   79,
+   3.0,
+   null
+  ],
+  [
+   80,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   81,
+   3.0,
+   null
+  ],
+  [
+   82,
+   3.0,
+   null
+  ],
+  [
+   83,
+   3.0,
+   null
+  ],
+  [
+   84,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   85,
+   3.0,
+   null
+  ],
+  [
+   86,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   87,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   88,
+   3.0,
+   null
+  ],
+  [
+   89,
+   3.0,
+   null
+  ],
+  [
+   90,
+   3.0,
+   null
+  ],
+  [
+   91,
+   3.0,
+   null
+  ],
+  [
+   92,
+   3.0,
+   null
+  ],
+  [
+   93,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   94,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   95,
+   3.0,
+   null
+  ],
+  [
+   96,
+   3.0,
+   [
+    "Wrist_box_carrier",
+    "Palm_wrist_saddle"
+   ]
+  ],
+  [
+   97,
+   3.0,
+   null
+  ],
+  [
+   98,
+   3.0,
+   null
+  ],
+  [
+   99,
+   3.0,
+   null
+  ],
+  [
+   100,
+   2.842,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   101,
+   1.808,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   102,
+   0.753,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   103,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   104,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   105,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   106,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   107,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   108,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   109,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   110,
+   0.0,
+   [
+    "Elbow_fixed_cradle",
+    "Elbow_roll_carrier"
+   ]
+  ],
+  [
+   111,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   112,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   113,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   114,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   115,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   116,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   117,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   118,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   119,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ],
+  [
+   120,
+   0.0,
+   [
+    "AK_forearm_roll",
+    "Elbow_fixed_cradle"
+   ]
+  ]
+ ],
+ "fist_fingers_only": [
+  [
+   0.0,
+   1.0,
+   null
+  ],
+  [
+   0.01,
+   1.0,
+   null
+  ],
+  [
+   0.02,
+   1.0,
+   null
+  ],
+  [
+   0.03,
+   1.0,
+   null
+  ],
+  [
+   0.04,
+   1.0,
+   null
+  ],
+  [
+   0.05,
+   1.0,
+   null
+  ],
+  [
+   0.06,
+   1.0,
+   null
+  ],
+  [
+   0.07,
+   1.0,
+   null
+  ],
+  [
+   0.08,
+   1.0,
+   null
+  ],
+  [
+   0.09,
+   1.0,
+   null
+  ],
+  [
+   0.1,
+   1.0,
+   null
+  ],
+  [
+   0.11,
+   1.0,
+   null
+  ],
+  [
+   0.12,
+   1.0,
+   null
+  ],
+  [
+   0.13,
+   1.0,
+   null
+  ],
+  [
+   0.14,
+   1.0,
+   null
+  ],
+  [
+   0.15,
+   1.0,
+   null
+  ],
+  [
+   0.16,
+   1.0,
+   null
+  ],
+  [
+   0.17,
+   1.0,
+   null
+  ],
+  [
+   0.18,
+   1.0,
+   null
+  ],
+  [
+   0.19,
+   1.0,
+   null
+  ],
+  [
+   0.2,
+   1.0,
+   null
+  ],
+  [
+   0.21,
+   1.0,
+   null
+  ],
+  [
+   0.22,
+   1.0,
+   null
+  ],
+  [
+   0.23,
+   1.0,
+   null
+  ],
+  [
+   0.24,
+   1.0,
+   null
+  ],
+  [
+   0.25,
+   1.0,
+   null
+  ],
+  [
+   0.26,
+   1.0,
+   null
+  ],
+  [
+   0.27,
+   1.0,
+   null
+  ],
+  [
+   0.28,
+   1.0,
+   null
+  ],
+  [
+   0.29,
+   1.0,
+   null
+  ],
+  [
+   0.3,
+   1.0,
+   null
+  ],
+  [
+   0.31,
+   1.0,
+   null
+  ],
+  [
+   0.32,
+   1.0,
+   null
+  ],
+  [
+   0.33,
+   1.0,
+   null
+  ],
+  [
+   0.34,
+   1.0,
+   null
+  ],
+  [
+   0.35,
+   1.0,
+   null
+  ],
+  [
+   0.36,
+   1.0,
+   null
+  ],
+  [
+   0.37,
+   1.0,
+   null
+  ],
+  [
+   0.38,
+   1.0,
+   null
+  ],
+  [
+   0.39,
+   1.0,
+   null
+  ],
+  [
+   0.4,
+   1.0,
+   null
+  ],
+  [
+   0.41,
+   1.0,
+   null
+  ],
+  [
+   0.42,
+   1.0,
+   null
+  ],
+  [
+   0.43,
+   1.0,
+   null
+  ],
+  [
+   0.44,
+   1.0,
+   null
+  ],
+  [
+   0.45,
+   1.0,
+   null
+  ],
+  [
+   0.46,
+   1.0,
+   null
+  ],
+  [
+   0.47,
+   1.0,
+   null
+  ],
+  [
+   0.48,
+   1.0,
+   null
+  ],
+  [
+   0.49,
+   1.0,
+   null
+  ],
+  [
+   0.5,
+   1.0,
+   null
+  ],
+  [
+   0.51,
+   1.0,
+   null
+  ],
+  [
+   0.52,
+   1.0,
+   null
+  ],
+  [
+   0.53,
+   1.0,
+   null
+  ],
+  [
+   0.54,
+   1.0,
+   null
+  ],
+  [
+   0.55,
+   1.0,
+   null
+  ],
+  [
+   0.56,
+   1.0,
+   null
+  ],
+  [
+   0.57,
+   1.0,
+   null
+  ],
+  [
+   0.58,
+   1.0,
+   null
+  ],
+  [
+   0.59,
+   1.0,
+   null
+  ],
+  [
+   0.6,
+   1.0,
+   null
+  ],
+  [
+   0.61,
+   1.0,
+   null
+  ],
+  [
+   0.62,
+   1.0,
+   null
+  ],
+  [
+   0.63,
+   1.0,
+   null
+  ],
+  [
+   0.64,
+   1.0,
+   null
+  ],
+  [
+   0.65,
+   1.0,
+   null
+  ],
+  [
+   0.66,
+   1.0,
+   null
+  ],
+  [
+   0.67,
+   1.0,
+   null
+  ],
+  [
+   0.68,
+   1.0,
+   null
+  ],
+  [
+   0.69,
+   1.0,
+   null
+  ],
+  [
+   0.7,
+   1.0,
+   null
+  ],
+  [
+   0.71,
+   1.0,
+   null
+  ],
+  [
+   0.72,
+   1.0,
+   null
+  ],
+  [
+   0.73,
+   1.0,
+   null
+  ],
+  [
+   0.74,
+   1.0,
+   null
+  ],
+  [
+   0.75,
+   1.0,
+   null
+  ],
+  [
+   0.76,
+   1.0,
+   null
+  ],
+  [
+   0.77,
+   1.0,
+   null
+  ],
+  [
+   0.78,
+   1.0,
+   null
+  ],
+  [
+   0.79,
+   1.0,
+   null
+  ],
+  [
+   0.8,
+   1.0,
+   null
+  ],
+  [
+   0.81,
+   1.0,
+   null
+  ],
+  [
+   0.82,
+   1.0,
+   null
+  ],
+  [
+   0.83,
+   1.0,
+   null
+  ],
+  [
+   0.84,
+   1.0,
+   null
+  ],
+  [
+   0.85,
+   1.0,
+   null
+  ],
+  [
+   0.86,
+   1.0,
+   null
+  ],
+  [
+   0.87,
+   1.0,
+   null
+  ],
+  [
+   0.88,
+   1.0,
+   null
+  ],
+  [
+   0.89,
+   1.0,
+   null
+  ],
+  [
+   0.9,
+   1.0,
+   null
+  ],
+  [
+   0.91,
+   1.0,
+   null
+  ],
+  [
+   0.92,
+   1.0,
+   null
+  ],
+  [
+   0.93,
+   1.0,
+   null
+  ],
+  [
+   0.94,
+   1.0,
+   null
+  ],
+  [
+   0.95,
+   1.0,
+   null
+  ],
+  [
+   0.96,
+   1.0,
+   null
+  ],
+  [
+   0.97,
+   1.0,
+   null
+  ],
+  [
+   0.98,
+   1.0,
+   null
+  ],
+  [
+   0.99,
+   0.0,
+   [
+    "Palm_cover_screws",
+    "little_dip_tip"
+   ]
+  ],
+  [
+   1.0,
+   0.0,
+   [
+    "Palm_cover_screws",
+    "little_dip_tip"
+   ]
+  ]
+ ]
+}

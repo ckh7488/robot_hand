@@ -1,0 +1,40 @@
+{
+  "kinematics": {
+    "poses": 6,
+    "parts_per_pose": 251,
+    "max_position_error_mm": 5.684341886080802e-14,
+    "max_rotation_matrix_error": 5.053215498074303e-16,
+    "passed": true
+  },
+  "parts": 251,
+  "dynamic_bodies": 0,
+  "actuators": 0,
+  "claims_motor_response": false,
+  "mesh_alignment": [
+    {
+      "pose": "Open",
+      "max_actual_mesh_vertex_position_error_mm": 3.8809303869497665e-06
+    },
+    {
+      "pose": "Curl",
+      "max_actual_mesh_vertex_position_error_mm": 3.8809303869497665e-06
+    },
+    {
+      "pose": "Splay",
+      "max_actual_mesh_vertex_position_error_mm": 3.8809303869497665e-06
+    },
+    {
+      "pose": "Backbend",
+      "max_actual_mesh_vertex_position_error_mm": 3.8809303869497665e-06
+    },
+    {
+      "pose": "Close",
+      "max_actual_mesh_vertex_position_error_mm": 3.8809303869497665e-06
+    },
+    {
+      "pose": "ThumbSweep",
+      "max_actual_mesh_vertex_position_error_mm": 3.8809303869497665e-06
+    }
+  ],
+  "passed": true
+}

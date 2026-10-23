@@ -1,0 +1,87 @@
+{
+  "scope": "CAD sampled gravity screen. Worst gravity direction optimized separately for each joint, not all maxima at one configuration.",
+  "sampled_configurations": 3078,
+  "joint_grid_deg": {
+    "elbow": 0,
+    "roll": [
+      -60,
+      0,
+      60
+    ],
+    "wrist_flex": [
+      -35,
+      55,
+      5
+    ],
+    "wrist_deviation": [
+      -20,
+      20,
+      5
+    ]
+  },
+  "assumptions": [
+    "No fatigue, stiffness, printed-layer material data or motor acceleration simulation.",
+    "Only modeled steel-envelope fastener masses included; harness and unmodeled arm flange fasteners omitted.",
+    "Neutral configuration first moment only, not a full joint-range gravity search.",
+    "Use measured printed part and purchased frame masses before motor decisions.",
+    "Elbow rotation omitted because gravity orientation is optimized and rotation about its own axis preserves the moment norm.",
+    "No inertia torque, rotor/gear dynamics, friction, cable force, backlash or thermal derating.",
+    "70percent static fraction is a project screening target, not a manufacturer rating or approval.",
+    "Arm motor bodies are nominal cylinders, flange geometry and structure are not finalized."
+  ],
+  "joints": [
+    {
+      "joint": "elbow_flex",
+      "maximum_sampled_gravity_Nm": 9.815769733625713,
+      "hand_pose": "Open",
+      "arm_q_deg": [
+        0,
+        60,
+        5,
+        -10
+      ],
+      "downstream_mass_kg": 2.857551227967325,
+      "minimum_continuous_rating_for_70pct_static_fraction_Nm": 14.022528190893876
+    },
+    {
+      "joint": "forearm_roll",
+      "maximum_sampled_gravity_Nm": 2.5511360303448813,
+      "hand_pose": "ThumbSweep",
+      "arm_q_deg": [
+        0,
+        -60,
+        55,
+        -20
+      ],
+      "downstream_mass_kg": 2.3295912279673248,
+      "minimum_continuous_rating_for_70pct_static_fraction_Nm": 3.6444800433498306
+    },
+    {
+      "joint": "wrist_flex",
+      "maximum_sampled_gravity_Nm": 3.0747264747349496,
+      "hand_pose": "Open",
+      "arm_q_deg": [
+        0,
+        -60,
+        -15,
+        -10
+      ],
+      "downstream_mass_kg": 1.7692427745919648,
+      "minimum_continuous_rating_for_70pct_static_fraction_Nm": 4.3924663924785
+    },
+    {
+      "joint": "wrist_deviation",
+      "maximum_sampled_gravity_Nm": 2.8051582206107986,
+      "hand_pose": "Open",
+      "arm_q_deg": [
+        0,
+        -60,
+        20,
+        -5
+      ],
+      "downstream_mass_kg": 1.4374255818051966,
+      "minimum_continuous_rating_for_70pct_static_fraction_Nm": 4.007368886586855
+    }
+  ],
+  "actuator_selection_approved": false
+}

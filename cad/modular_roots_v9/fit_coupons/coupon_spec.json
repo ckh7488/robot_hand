@@ -1,0 +1,53 @@
+{
+  "units": "mm",
+  "manufacturing_release": false,
+  "test_parts": [
+    {
+      "asset": "M2_nut_fit",
+      "left_to_right_AF_mm": [
+        4.2,
+        4.3,
+        4.4
+      ],
+      "depth_mm": 2.2,
+      "hole_diameter_mm": 2.4,
+      "purpose": "Printer fit only. Actual purchased nut dimensions and orientation must be checked."
+    },
+    {
+      "asset": "M3_nut_fit",
+      "left_to_right_AF_mm": [
+        5.8,
+        5.9,
+        6.0
+      ],
+      "depth_mm": 2.6,
+      "hole_diameter_mm": 3.4,
+      "purpose": "Printer fit only. Actual purchased nut dimensions and orientation must be checked."
+    },
+    {
+      "asset": "Root_foot_seat_fit",
+      "left_to_right_per_side_clearance_mm": [
+        0.2,
+        0.3,
+        0.4
+      ],
+      "male_dimensions_mm": [
+        17,
+        45,
+        5
+      ],
+      "locator_lip_height_mm": 0.8,
+      "purpose": "Choose locating clearance with the same printer, material and orientation before a whole palm print."
+    },
+    {
+      "asset": "Root_foot_test_male",
+      "purpose": "Foot cross-section and bolt-hole/nut fit only; does not test cartridge strength."
+    }
+  ],
+  "notes": [
+    "Print coupons first with the intended printer/material/line width.",
+    "Do not force nuts into undersized pockets; record fit and measured dimensions.",
+    "Side-open nut pockets prevent rotation but are not retention clips; keep nuts seated during assembly with removable tape or a separately tested retainer.",
+    "No servo, load bearing or dynamic qualification is implied."
+  ]
+}

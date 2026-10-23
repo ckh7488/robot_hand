@@ -1,0 +1,295 @@
+{
+  "status": "CAD convention only; safe joint limits and encoder calibration pending",
+  "units": "degree",
+  "handedness": "right",
+  "coordinates": {
+    "x": "thumb side of authoring right hand",
+    "y": "finger direction",
+    "z": "palm side"
+  },
+  "joint_order": [
+    "elbow_flex",
+    "forearm_roll",
+    "wrist_flex",
+    "wrist_deviation",
+    "index_spread",
+    "index_mcp",
+    "index_pip",
+    "index_dip",
+    "middle_spread",
+    "middle_mcp",
+    "middle_pip",
+    "middle_dip",
+    "ring_spread",
+    "ring_mcp",
+    "ring_pip",
+    "ring_dip",
+    "little_spread",
+    "little_mcp",
+    "little_pip",
+    "little_dip",
+    "thumb_base_sweep",
+    "thumb_opposition",
+    "thumb_mcp",
+    "thumb_ip"
+  ],
+  "cad_root_motor_axis_relation": -1,
+  "hardware_encoder_direction_verified": false,
+  "poses": {
+    "Open": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      5
+    ],
+    "Curl": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      35,
+      35,
+      20,
+      0,
+      35,
+      35,
+      20,
+      0,
+      35,
+      35,
+      20,
+      0,
+      35,
+      35,
+      20,
+      0,
+      15,
+      20,
+      10
+    ],
+    "Splay": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      -4,
+      0,
+      0,
+      0,
+      -8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      5
+    ],
+    "Backbend": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -20,
+      0,
+      0,
+      0,
+      -20,
+      0,
+      0,
+      0,
+      -20,
+      0,
+      0,
+      0,
+      -20,
+      0,
+      0,
+      0,
+      0,
+      5,
+      5
+    ],
+    "Close": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      60,
+      45,
+      30,
+      0,
+      60,
+      45,
+      30,
+      0,
+      60,
+      45,
+      30,
+      0,
+      60,
+      45,
+      30,
+      0,
+      20,
+      25,
+      15
+    ],
+    "ThumbSweep": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      35,
+      35,
+      20,
+      0,
+      35,
+      35,
+      20,
+      0,
+      35,
+      35,
+      20,
+      0,
+      35,
+      35,
+      20,
+      -10,
+      10,
+      15,
+      10
+    ]
+  },
+  "safe_joint_limits": null,
+  "retarget_routes_reused": false,
+  "kinematic_layout": {
+    "units": "mm",
+    "fingers": [
+      {
+        "name": "index",
+        "root": [
+          72,
+          162,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          65,
+          50,
+          32
+        ]
+      },
+      {
+        "name": "middle",
+        "root": [
+          24,
+          172,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          70,
+          50,
+          34
+        ]
+      },
+      {
+        "name": "ring",
+        "root": [
+          -24,
+          166,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          62,
+          50,
+          32
+        ]
+      },
+      {
+        "name": "little",
+        "root": [
+          -72,
+          151,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          0
+        ],
+        "links": [
+          55,
+          48,
+          28
+        ]
+      },
+      {
+        "name": "thumb",
+        "root": [
+          62,
+          46,
+          -24
+        ],
+        "base_rpy": [
+          0,
+          0,
+          -50
+        ],
+        "links": [
+          65,
+          48,
+          28
+        ],
+        "mcp_mount_yaw": 35
+      }
+    ],
+    "root_axis_offset_z": 32
+  }
+}

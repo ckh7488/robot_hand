@@ -1,0 +1,1129 @@
+{
+  "scope": "Independent adaptive quadrature and10001samples per curve. Sampled radius and inter-angle continuity screen, not physical equilibrium or continuous-joint certification.",
+  "target_length_mm": 140,
+  "minimum_dense_sampled_radius_mm": 10.138420561491937,
+  "maximum_absolute_length_error_mm": 2.1282162379065994e-06,
+  "loop_bounds_little_MCP_frame_mm": [
+    [
+      -67.01781228548802,
+      -26.73588822255411,
+      -96.85919324936043
+    ],
+    [
+      -44.5,
+      73.58240556833435,
+      24.00223208354527
+    ]
+  ],
+  "largest_matched_curve_point_shift_per_2deg_mm": 4.7492933579593295,
+  "rows": [
+    {
+      "q_deg": 2.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000033936,
+      "length_error_mm": 3.3935521059902385e-10,
+      "quad_error_bound_mm": 1.1720437850196858e-06,
+      "minimum_sampled_radius_mm": 11.19862898004727,
+      "minimum_parametric_speed": 91.60122420943974
+    },
+    {
+      "q_deg": 2.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000026623,
+      "length_error_mm": 2.6622615223459434e-10,
+      "quad_error_bound_mm": 1.7050621601171802e-06,
+      "minimum_sampled_radius_mm": 10.47593199644113,
+      "minimum_parametric_speed": 89.97740228546033
+    },
+    {
+      "q_deg": 2.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999973204,
+      "length_error_mm": -2.67959876509849e-10,
+      "quad_error_bound_mm": 2.0848896409154764e-06,
+      "minimum_sampled_radius_mm": 10.149999999984107,
+      "minimum_parametric_speed": 89.8908659787022
+    },
+    {
+      "q_deg": 4.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000124976,
+      "length_error_mm": 1.249759407073725e-09,
+      "quad_error_bound_mm": 9.574702791129857e-07,
+      "minimum_sampled_radius_mm": 11.53845679520289,
+      "minimum_parametric_speed": 92.9448124378094
+    },
+    {
+      "q_deg": 4.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000506512,
+      "length_error_mm": 5.065118102720589e-09,
+      "quad_error_bound_mm": 1.420474406413916e-06,
+      "minimum_sampled_radius_mm": 10.743878236159423,
+      "minimum_parametric_speed": 91.12944192287827
+    },
+    {
+      "q_deg": 4.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000048948,
+      "length_error_mm": 4.894786798104178e-10,
+      "quad_error_bound_mm": 1.9905638185787385e-06,
+      "minimum_sampled_radius_mm": 10.149999999748045,
+      "minimum_parametric_speed": 89.99638871005993
+    },
+    {
+      "q_deg": 6.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000001757,
+      "length_error_mm": 1.7570300769875757e-10,
+      "quad_error_bound_mm": 8.046873030112447e-07,
+      "minimum_sampled_radius_mm": 11.684711252395212,
+      "minimum_parametric_speed": 93.53186496964287
+    },
+    {
+      "q_deg": 6.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999997675,
+      "length_error_mm": -2.3248958314070478e-11,
+      "quad_error_bound_mm": 1.2858780276535662e-06,
+      "minimum_sampled_radius_mm": 10.765827209648199,
+      "minimum_parametric_speed": 91.28206414828712
+    },
+    {
+      "q_deg": 6.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000085,
+      "length_error_mm": 8.526512829121202e-13,
+      "quad_error_bound_mm": 1.8298862615665347e-06,
+      "minimum_sampled_radius_mm": 10.150000000000219,
+      "minimum_parametric_speed": 90.0738228431568
+    },
+    {
+      "q_deg": 8.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000038912,
+      "length_error_mm": 3.8912162381166127e-10,
+      "quad_error_bound_mm": 6.565336379250018e-07,
+      "minimum_sampled_radius_mm": 11.758187264981553,
+      "minimum_parametric_speed": 93.8039367252493
+    },
+    {
+      "q_deg": 8.0,
+      "lane": 1,
+      "independent_length_mm": 139.9999999998184,
+      "length_error_mm": -1.815863015508512e-10,
+      "quad_error_bound_mm": 1.0980365990501204e-06,
+      "minimum_sampled_radius_mm": 10.817213696491741,
+      "minimum_parametric_speed": 91.50484652290677
+    },
+    {
+      "q_deg": 8.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000006915,
+      "length_error_mm": 6.915001904417295e-11,
+      "quad_error_bound_mm": 1.6298611271285419e-06,
+      "minimum_sampled_radius_mm": 10.149999999994856,
+      "minimum_parametric_speed": 90.10965072946863
+    },
+    {
+      "q_deg": 10.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000075969,
+      "length_error_mm": 7.596895557071548e-09,
+      "quad_error_bound_mm": 4.767016972394983e-07,
+      "minimum_sampled_radius_mm": 11.858490405033834,
+      "minimum_parametric_speed": 94.15838600209312
+    },
+    {
+      "q_deg": 10.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000484715,
+      "length_error_mm": 4.847152013098821e-09,
+      "quad_error_bound_mm": 9.051251427982972e-07,
+      "minimum_sampled_radius_mm": 10.857103212910015,
+      "minimum_parametric_speed": 91.6721355693343
+    },
+    {
+      "q_deg": 10.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000021087,
+      "length_error_mm": 2.1086918877699645e-09,
+      "quad_error_bound_mm": 1.41006705499944e-06,
+      "minimum_sampled_radius_mm": 10.14999999981724,
+      "minimum_parametric_speed": 90.1329232322209
+    },
+    {
+      "q_deg": 12.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999999696,
+      "length_error_mm": -3.0411229090532288e-12,
+      "quad_error_bound_mm": 2.948181932133434e-07,
+      "minimum_sampled_radius_mm": 11.925949325168375,
+      "minimum_parametric_speed": 94.35447718579933
+    },
+    {
+      "q_deg": 12.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000296,
+      "length_error_mm": 2.9558577807620168e-12,
+      "quad_error_bound_mm": 7.078815039687422e-07,
+      "minimum_sampled_radius_mm": 10.883339930588757,
+      "minimum_parametric_speed": 91.74742831481558
+    },
+    {
+      "q_deg": 12.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000009356,
+      "length_error_mm": 9.356426744488999e-11,
+      "quad_error_bound_mm": 1.1826091794518538e-06,
+      "minimum_sampled_radius_mm": 10.149999999999972,
+      "minimum_parametric_speed": 90.11817663532702
+    },
+    {
+      "q_deg": 14.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999978485,
+      "length_error_mm": -2.1515234038815834e-10,
+      "quad_error_bound_mm": 1.3506111925902509e-07,
+      "minimum_sampled_radius_mm": 11.980289708756562,
+      "minimum_parametric_speed": 94.44778621845121
+    },
+    {
+      "q_deg": 14.0,
+      "lane": 1,
+      "independent_length_mm": 140.0000000000191,
+      "length_error_mm": 1.9099388737231493e-11,
+      "quad_error_bound_mm": 5.245351865895004e-07,
+      "minimum_sampled_radius_mm": 10.903597209356912,
+      "minimum_parametric_speed": 91.74686815743294
+    },
+    {
+      "q_deg": 14.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000000158,
+      "length_error_mm": 1.5802470443304628e-11,
+      "quad_error_bound_mm": 9.64745732551231e-07,
+      "minimum_sampled_radius_mm": 10.150000000001082,
+      "minimum_parametric_speed": 90.05221758281192
+    },
+    {
+      "q_deg": 16.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999998286,
+      "length_error_mm": -1.7138290786533616e-11,
+      "quad_error_bound_mm": 3.022246630908498e-08,
+      "minimum_sampled_radius_mm": 12.068556231908786,
+      "minimum_parametric_speed": 94.62948124461971
+    },
+    {
+      "q_deg": 16.0,
+      "lane": 1,
+      "independent_length_mm": 140.0000000000029,
+      "length_error_mm": 2.8990143619012088e-12,
+      "quad_error_bound_mm": 3.9231050483201635e-07,
+      "minimum_sampled_radius_mm": 10.91971621708085,
+      "minimum_parametric_speed": 91.70504709382246
+    },
+    {
+      "q_deg": 16.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000196,
+      "length_error_mm": 1.9610979506978765e-12,
+      "quad_error_bound_mm": 7.879019300249465e-07,
+      "minimum_sampled_radius_mm": 10.150000005129094,
+      "minimum_parametric_speed": 89.96158952865156
+    },
+    {
+      "q_deg": 18.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000001531504,
+      "length_error_mm": 1.53150381265732e-08,
+      "quad_error_bound_mm": 1.165627831842958e-07,
+      "minimum_sampled_radius_mm": 12.145477848238144,
+      "minimum_parametric_speed": 94.73332071192297
+    },
+    {
+      "q_deg": 18.0,
+      "lane": 1,
+      "independent_length_mm": 140.0000000002973,
+      "length_error_mm": 2.972910806420259e-10,
+      "quad_error_bound_mm": 3.997560005398332e-07,
+      "minimum_sampled_radius_mm": 10.9800733662926,
+      "minimum_parametric_speed": 91.79393616651699
+    },
+    {
+      "q_deg": 18.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000057582,
+      "length_error_mm": 5.758238330599852e-10,
+      "quad_error_bound_mm": 7.160955634538495e-07,
+      "minimum_sampled_radius_mm": 10.150000000077972,
+      "minimum_parametric_speed": 89.83496374188404
+    },
+    {
+      "q_deg": 20.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999997783,
+      "length_error_mm": -2.2168933355715126e-11,
+      "quad_error_bound_mm": 6.362098329639777e-07,
+      "minimum_sampled_radius_mm": 12.32704877076861,
+      "minimum_parametric_speed": 95.01509511672364
+    },
+    {
+      "q_deg": 20.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000077,
+      "length_error_mm": 7.673861546209082e-13,
+      "quad_error_bound_mm": 7.428990790561869e-07,
+      "minimum_sampled_radius_mm": 11.183800970397636,
+      "minimum_parametric_speed": 92.25448120426617
+    },
+    {
+      "q_deg": 20.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000063,
+      "length_error_mm": 6.252776074688882e-13,
+      "quad_error_bound_mm": 9.433400496141123e-07,
+      "minimum_sampled_radius_mm": 10.15000053960871,
+      "minimum_parametric_speed": 89.55414273962849
+    },
+    {
+      "q_deg": 22.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000002051,
+      "length_error_mm": 2.0509105524979532e-10,
+      "quad_error_bound_mm": 9.213515436408008e-07,
+      "minimum_sampled_radius_mm": 12.715929738577064,
+      "minimum_parametric_speed": 95.73509122203515
+    },
+    {
+      "q_deg": 22.0,
+      "lane": 1,
+      "independent_length_mm": 140.0000000001118,
+      "length_error_mm": 1.1181100489920937e-10,
+      "quad_error_bound_mm": 1.913511549631519e-06,
+      "minimum_sampled_radius_mm": 11.375287713291439,
+      "minimum_parametric_speed": 92.4459056596384
+    },
+    {
+      "q_deg": 22.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000017093,
+      "length_error_mm": 1.709281605144497e-10,
+      "quad_error_bound_mm": 1.7283096272016933e-06,
+      "minimum_sampled_radius_mm": 10.149999999996872,
+      "minimum_parametric_speed": 89.08055712409644
+    },
+    {
+      "q_deg": 24.0,
+      "lane": 0,
+      "independent_length_mm": 139.9999999994096,
+      "length_error_mm": -5.904041699977824e-10,
+      "quad_error_bound_mm": 2.0594786289734657e-06,
+      "minimum_sampled_radius_mm": 13.12972672667446,
+      "minimum_parametric_speed": 95.43476682090241
+    },
+    {
+      "q_deg": 24.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999990507,
+      "length_error_mm": -9.492850949754938e-11,
+      "quad_error_bound_mm": 1.5557441122040487e-06,
+      "minimum_sampled_radius_mm": 11.534836955287947,
+      "minimum_parametric_speed": 92.25670530022833
+    },
+    {
+      "q_deg": 24.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000022663,
+      "length_error_mm": 2.2663471099804156e-10,
+      "quad_error_bound_mm": 1.162383651486073e-06,
+      "minimum_sampled_radius_mm": 10.149999999978512,
+      "minimum_parametric_speed": 88.38464856637383
+    },
+    {
+      "q_deg": 26.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000000085,
+      "length_error_mm": 8.526512829121202e-13,
+      "quad_error_bound_mm": 1.3267003814140322e-11,
+      "minimum_sampled_radius_mm": 13.541953536614106,
+      "minimum_parametric_speed": 93.89355471015935
+    },
+    {
+      "q_deg": 26.0,
+      "lane": 1,
+      "independent_length_mm": 139.9999999999997,
+      "length_error_mm": -3.126388037344441e-13,
+      "quad_error_bound_mm": 2.5453812224873447e-11,
+      "minimum_sampled_radius_mm": 11.702736671842333,
+      "minimum_parametric_speed": 91.87895755358015
+    },
+    {
+      "q_deg": 26.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000477,
+      "length_error_mm": 4.774847184307873e-12,
+      "quad_error_bound_mm": 3.9254132187842094e-11,
+      "minimum_sampled_radius_mm": 10.15000000000011,
+      "minimum_parametric_speed": 87.54424238623142
+    },
+    {
+      "q_deg": 28.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999999937,
+      "length_error_mm": -6.252776074688882e-13,
+      "quad_error_bound_mm": 1.1005002968007588e-11,
+      "minimum_sampled_radius_mm": 13.945190520753911,
+      "minimum_parametric_speed": 92.17768628838171
+    },
+    {
+      "q_deg": 28.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000074,
+      "length_error_mm": 7.389644451905042e-13,
+      "quad_error_bound_mm": 2.3717231480081986e-11,
+      "minimum_sampled_radius_mm": 11.869852069290316,
+      "minimum_parametric_speed": 90.92696906405305
+    },
+    {
+      "q_deg": 28.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999999966,
+      "length_error_mm": -3.410605131648481e-13,
+      "quad_error_bound_mm": 3.423163203245661e-11,
+      "minimum_sampled_radius_mm": 10.150000000000238,
+      "minimum_parametric_speed": 86.52957648997237
+    },
+    {
+      "q_deg": 30.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000000001,
+      "length_error_mm": 1.1368683772161603e-13,
+      "quad_error_bound_mm": 1.6579681438112824e-11,
+      "minimum_sampled_radius_mm": 14.352500704519544,
+      "minimum_parametric_speed": 90.386215509855
+    },
+    {
+      "q_deg": 30.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000003,
+      "length_error_mm": 2.842170943040401e-14,
+      "quad_error_bound_mm": 2.7989298938035966e-11,
+      "minimum_sampled_radius_mm": 12.051044827989601,
+      "minimum_parametric_speed": 88.98996535557097
+    },
+    {
+      "q_deg": 30.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000003,
+      "length_error_mm": 2.842170943040401e-14,
+      "quad_error_bound_mm": 3.14186712963115e-11,
+      "minimum_sampled_radius_mm": 10.150000006900617,
+      "minimum_parametric_speed": 85.35230918351958
+    },
+    {
+      "q_deg": 32.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000003348,
+      "length_error_mm": 3.348077370901592e-11,
+      "quad_error_bound_mm": 4.203133989537063e-11,
+      "minimum_sampled_radius_mm": 13.446772931776419,
+      "minimum_parametric_speed": 88.55394060235253
+    },
+    {
+      "q_deg": 32.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000634,
+      "length_error_mm": 6.338041202980094e-12,
+      "quad_error_bound_mm": 4.425033307051113e-11,
+      "minimum_sampled_radius_mm": 12.240960367193734,
+      "minimum_parametric_speed": 86.96650885857275
+    },
+    {
+      "q_deg": 32.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000000164,
+      "length_error_mm": 1.6399326341343112e-11,
+      "quad_error_bound_mm": 2.3068117338369954e-07,
+      "minimum_sampled_radius_mm": 10.150000000000077,
+      "minimum_parametric_speed": 83.92559735934228
+    },
+    {
+      "q_deg": 34.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000015767,
+      "length_error_mm": 1.5766943306516623e-09,
+      "quad_error_bound_mm": 1.2536364004181455e-10,
+      "minimum_sampled_radius_mm": 12.579391288540277,
+      "minimum_parametric_speed": 86.71995605888532
+    },
+    {
+      "q_deg": 34.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000171784,
+      "length_error_mm": 1.7178365396830486e-09,
+      "quad_error_bound_mm": 5.565884121204597e-07,
+      "minimum_sampled_radius_mm": 12.449739620036198,
+      "minimum_parametric_speed": 84.92964901777037
+    },
+    {
+      "q_deg": 34.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000109253,
+      "length_error_mm": 1.09253051050473e-09,
+      "quad_error_bound_mm": 2.3126552374146743e-11,
+      "minimum_sampled_radius_mm": 10.15000000025999,
+      "minimum_parametric_speed": 82.08184451651233
+    },
+    {
+      "q_deg": 36.0,
+      "lane": 0,
+      "independent_length_mm": 140.000000025404,
+      "length_error_mm": 2.540400600992143e-08,
+      "quad_error_bound_mm": 3.319335634720727e-10,
+      "minimum_sampled_radius_mm": 11.82008399647181,
+      "minimum_parametric_speed": 85.11075853459089
+    },
+    {
+      "q_deg": 36.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000002050854,
+      "length_error_mm": 2.0508537090790924e-08,
+      "quad_error_bound_mm": 1.483894205835069e-10,
+      "minimum_sampled_radius_mm": 11.916102057447386,
+      "minimum_parametric_speed": 83.10821242415088
+    },
+    {
+      "q_deg": 36.0,
+      "lane": 2,
+      "independent_length_mm": 140.000000018705,
+      "length_error_mm": 1.8705009097175207e-08,
+      "quad_error_bound_mm": 9.158483772254457e-12,
+      "minimum_sampled_radius_mm": 10.150000002296553,
+      "minimum_parametric_speed": 80.26831388234612
+    },
+    {
+      "q_deg": 38.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999998522,
+      "length_error_mm": -1.4779288903810084e-11,
+      "quad_error_bound_mm": 9.376001080876341e-10,
+      "minimum_sampled_radius_mm": 11.025078331025048,
+      "minimum_parametric_speed": 83.2424375828672
+    },
+    {
+      "q_deg": 38.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000003,
+      "length_error_mm": 2.842170943040401e-14,
+      "quad_error_bound_mm": 2.393052047483784e-10,
+      "minimum_sampled_radius_mm": 11.045310994337331,
+      "minimum_parametric_speed": 81.02513371257912
+    },
+    {
+      "q_deg": 38.0,
+      "lane": 2,
+      "independent_length_mm": 139.9999999999998,
+      "length_error_mm": -1.9895196601282805e-13,
+      "quad_error_bound_mm": 5.062709126436079e-11,
+      "minimum_sampled_radius_mm": 10.150007609031364,
+      "minimum_parametric_speed": 78.08491115476372
+    },
+    {
+      "q_deg": 40.0,
+      "lane": 0,
+      "independent_length_mm": 139.9999999999886,
+      "length_error_mm": -1.1397105481592007e-11,
+      "quad_error_bound_mm": 2.3686817644976007e-09,
+      "minimum_sampled_radius_mm": 10.283027437057259,
+      "minimum_parametric_speed": 81.29405249705854
+    },
+    {
+      "q_deg": 40.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000007623,
+      "length_error_mm": 7.622702469234355e-11,
+      "quad_error_bound_mm": 2.264395162939999e-10,
+      "minimum_sampled_radius_mm": 10.242342608586247,
+      "minimum_parametric_speed": 78.8523146706597
+    },
+    {
+      "q_deg": 40.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000003953,
+      "length_error_mm": 3.9534597817691974e-11,
+      "quad_error_bound_mm": 4.6038355617475553e-10,
+      "minimum_sampled_radius_mm": 10.1490055019269,
+      "minimum_parametric_speed": 75.81780648902418
+    },
+    {
+      "q_deg": 42.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000000788,
+      "length_error_mm": 7.881340025051031e-11,
+      "quad_error_bound_mm": 1.0813902483327795e-08,
+      "minimum_sampled_radius_mm": 10.171276581689163,
+      "minimum_parametric_speed": 82.07484182705046
+    },
+    {
+      "q_deg": 42.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000026,
+      "length_error_mm": 2.5579538487363607e-13,
+      "quad_error_bound_mm": 3.6835408171348753e-10,
+      "minimum_sampled_radius_mm": 10.140548055997108,
+      "minimum_parametric_speed": 79.55165858880571
+    },
+    {
+      "q_deg": 42.0,
+      "lane": 2,
+      "independent_length_mm": 139.9999999999999,
+      "length_error_mm": -1.1368683772161603e-13,
+      "quad_error_bound_mm": 5.345105325688625e-10,
+      "minimum_sampled_radius_mm": 10.148722973554193,
+      "minimum_parametric_speed": 76.7703536285048
+    },
+    {
+      "q_deg": 44.0,
+      "lane": 0,
+      "independent_length_mm": 140.0,
+      "length_error_mm": 0.0,
+      "quad_error_bound_mm": 2.965860667356133e-09,
+      "minimum_sampled_radius_mm": 10.192533128220477,
+      "minimum_parametric_speed": 83.48351971018188
+    },
+    {
+      "q_deg": 44.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000005545,
+      "length_error_mm": 5.545075509871822e-11,
+      "quad_error_bound_mm": 1.4061147596903774e-06,
+      "minimum_sampled_radius_mm": 10.141862989241508,
+      "minimum_parametric_speed": 80.80489408315427
+    },
+    {
+      "q_deg": 44.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999999994,
+      "length_error_mm": -5.684341886080802e-14,
+      "quad_error_bound_mm": 5.478537792153425e-10,
+      "minimum_sampled_radius_mm": 10.14747888521611,
+      "minimum_parametric_speed": 77.84802666962659
+    },
+    {
+      "q_deg": 46.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000000003,
+      "length_error_mm": 2.842170943040401e-14,
+      "quad_error_bound_mm": 3.207279774880209e-09,
+      "minimum_sampled_radius_mm": 10.141128055165336,
+      "minimum_parametric_speed": 84.35756264713801
+    },
+    {
+      "q_deg": 46.0,
+      "lane": 1,
+      "independent_length_mm": 140.0,
+      "length_error_mm": 0.0,
+      "quad_error_bound_mm": 3.9052945577898457e-10,
+      "minimum_sampled_radius_mm": 10.167062289694277,
+      "minimum_parametric_speed": 81.97076696613627
+    },
+    {
+      "q_deg": 46.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999999994,
+      "length_error_mm": -5.684341886080802e-14,
+      "quad_error_bound_mm": 5.747934713589926e-10,
+      "minimum_sampled_radius_mm": 10.14241404471919,
+      "minimum_parametric_speed": 78.80746855963757
+    },
+    {
+      "q_deg": 48.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000000554,
+      "length_error_mm": 5.5422333389287814e-12,
+      "quad_error_bound_mm": 3.308029030240603e-09,
+      "minimum_sampled_radius_mm": 10.138420561491937,
+      "minimum_parametric_speed": 85.30439684057774
+    },
+    {
+      "q_deg": 48.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000001052,
+      "length_error_mm": 1.0516032489249483e-11,
+      "quad_error_bound_mm": 2.2255577057910675e-10,
+      "minimum_sampled_radius_mm": 10.225455430397142,
+      "minimum_parametric_speed": 83.14332111336888
+    },
+    {
+      "q_deg": 48.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000006,
+      "length_error_mm": 5.684341886080802e-14,
+      "quad_error_bound_mm": 5.8139301930578e-10,
+      "minimum_sampled_radius_mm": 10.148553028372381,
+      "minimum_parametric_speed": 79.72038723576759
+    },
+    {
+      "q_deg": 50.0,
+      "lane": 0,
+      "independent_length_mm": 140.0,
+      "length_error_mm": 0.0,
+      "quad_error_bound_mm": 3.562688816107374e-09,
+      "minimum_sampled_radius_mm": 10.14114320187503,
+      "minimum_parametric_speed": 86.38882137455613
+    },
+    {
+      "q_deg": 50.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999999997,
+      "length_error_mm": -2.842170943040401e-14,
+      "quad_error_bound_mm": 2.7052936164828883e-10,
+      "minimum_sampled_radius_mm": 10.241406406258164,
+      "minimum_parametric_speed": 84.17498516884638
+    },
+    {
+      "q_deg": 50.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999999994,
+      "length_error_mm": -5.684341886080802e-14,
+      "quad_error_bound_mm": 5.763833524030063e-10,
+      "minimum_sampled_radius_mm": 10.149081938251626,
+      "minimum_parametric_speed": 80.61655855759625
+    },
+    {
+      "q_deg": 52.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999999994,
+      "length_error_mm": -5.684341886080802e-14,
+      "quad_error_bound_mm": 3.772746994295444e-09,
+      "minimum_sampled_radius_mm": 10.143173428457587,
+      "minimum_parametric_speed": 87.3864341915711
+    },
+    {
+      "q_deg": 52.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999999997,
+      "length_error_mm": -2.842170943040401e-14,
+      "quad_error_bound_mm": 4.5813056277608675e-10,
+      "minimum_sampled_radius_mm": 10.25735437773243,
+      "minimum_parametric_speed": 85.16958295740325
+    },
+    {
+      "q_deg": 52.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999999991,
+      "length_error_mm": -8.526512829121202e-14,
+      "quad_error_bound_mm": 5.956482033073174e-10,
+      "minimum_sampled_radius_mm": 10.14854557456887,
+      "minimum_parametric_speed": 81.46359546566806
+    },
+    {
+      "q_deg": 54.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000001149,
+      "length_error_mm": 1.149089712271234e-10,
+      "quad_error_bound_mm": 3.6869791715503787e-09,
+      "minimum_sampled_radius_mm": 10.146800716666027,
+      "minimum_parametric_speed": 88.34664287961087
+    },
+    {
+      "q_deg": 54.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999992468,
+      "length_error_mm": -7.531752999057062e-11,
+      "quad_error_bound_mm": 6.709754396178372e-10,
+      "minimum_sampled_radius_mm": 10.26285462504166,
+      "minimum_parametric_speed": 86.03986140224603
+    },
+    {
+      "q_deg": 54.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000000311,
+      "length_error_mm": 3.1093350116861984e-11,
+      "quad_error_bound_mm": 6.381200321769229e-10,
+      "minimum_sampled_radius_mm": 10.146641972029114,
+      "minimum_parametric_speed": 82.24631001220143
+    },
+    {
+      "q_deg": 56.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000000034,
+      "length_error_mm": 3.410605131648481e-13,
+      "quad_error_bound_mm": 3.578713486933433e-09,
+      "minimum_sampled_radius_mm": 10.154349546297496,
+      "minimum_parametric_speed": 89.15865722688032
+    },
+    {
+      "q_deg": 56.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000188,
+      "length_error_mm": 1.8758328224066645e-12,
+      "quad_error_bound_mm": 8.716570308729308e-10,
+      "minimum_sampled_radius_mm": 10.272203044299866,
+      "minimum_parametric_speed": 86.83525646161536
+    },
+    {
+      "q_deg": 56.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000017,
+      "length_error_mm": 1.7053025658242404e-13,
+      "quad_error_bound_mm": 6.567130226867667e-10,
+      "minimum_sampled_radius_mm": 10.143134565332252,
+      "minimum_parametric_speed": 82.96400645211186
+    },
+    {
+      "q_deg": 58.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000000352,
+      "length_error_mm": 3.524291969370097e-12,
+      "quad_error_bound_mm": 2.48894042399468e-07,
+      "minimum_sampled_radius_mm": 10.221616729987474,
+      "minimum_parametric_speed": 90.15510267703847
+    },
+    {
+      "q_deg": 58.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000747,
+      "length_error_mm": 7.474909580196254e-12,
+      "quad_error_bound_mm": 9.239534902840877e-10,
+      "minimum_sampled_radius_mm": 10.32243273541758,
+      "minimum_parametric_speed": 87.67528027626211
+    },
+    {
+      "q_deg": 58.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000412,
+      "length_error_mm": 4.121147867408581e-12,
+      "quad_error_bound_mm": 6.688642410591981e-10,
+      "minimum_sampled_radius_mm": 10.142597923665402,
+      "minimum_parametric_speed": 83.56454485747432
+    },
+    {
+      "q_deg": 60.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999999977,
+      "length_error_mm": -2.2737367544323206e-13,
+      "quad_error_bound_mm": 3.3583411674755815e-09,
+      "minimum_sampled_radius_mm": 10.283644442833246,
+      "minimum_parametric_speed": 90.95334395318618
+    },
+    {
+      "q_deg": 60.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000000125,
+      "length_error_mm": 1.2505552149377763e-12,
+      "quad_error_bound_mm": 9.104981115017557e-10,
+      "minimum_sampled_radius_mm": 10.359415610216358,
+      "minimum_parametric_speed": 88.35602776992421
+    },
+    {
+      "q_deg": 60.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999999974,
+      "length_error_mm": -2.5579538487363607e-13,
+      "quad_error_bound_mm": 6.707409316159663e-10,
+      "minimum_sampled_radius_mm": 10.142586364815935,
+      "minimum_parametric_speed": 84.11148948019547
+    },
+    {
+      "q_deg": 0.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000002183,
+      "length_error_mm": 2.1827872842550278e-11,
+      "quad_error_bound_mm": 1.1234298479888098e-06,
+      "minimum_sampled_radius_mm": 11.290129606570277,
+      "minimum_parametric_speed": 92.08232855681256
+    },
+    {
+      "q_deg": 0.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999994054,
+      "length_error_mm": -5.945821612840518e-11,
+      "quad_error_bound_mm": 1.655648995591355e-06,
+      "minimum_sampled_radius_mm": 10.561683516590811,
+      "minimum_parametric_speed": 90.44930222057813
+    },
+    {
+      "q_deg": 0.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999986449,
+      "length_error_mm": -1.355147105641663e-10,
+      "quad_error_bound_mm": 2.0320876732808635e-06,
+      "minimum_sampled_radius_mm": 10.234706508210262,
+      "minimum_parametric_speed": 90.37196132529684
+    },
+    {
+      "q_deg": -2.0,
+      "lane": 0,
+      "independent_length_mm": 139.999999999834,
+      "length_error_mm": -1.660112047829898e-10,
+      "quad_error_bound_mm": 1.042998417603077e-06,
+      "minimum_sampled_radius_mm": 11.375327058990395,
+      "minimum_parametric_speed": 92.53230349637299
+    },
+    {
+      "q_deg": -2.0,
+      "lane": 1,
+      "independent_length_mm": 140.0000000002164,
+      "length_error_mm": 2.164028956030961e-10,
+      "quad_error_bound_mm": 1.5666082860041862e-06,
+      "minimum_sampled_radius_mm": 10.640974527169096,
+      "minimum_parametric_speed": 90.88773785024269
+    },
+    {
+      "q_deg": -2.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000011394,
+      "length_error_mm": 1.1394263310648967e-10,
+      "quad_error_bound_mm": 1.9420219478593313e-06,
+      "minimum_sampled_radius_mm": 10.312597660597145,
+      "minimum_parametric_speed": 90.8165106095705
+    },
+    {
+      "q_deg": -4.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000006995,
+      "length_error_mm": 6.994582690822426e-11,
+      "quad_error_bound_mm": 9.396752616820051e-07,
+      "minimum_sampled_radius_mm": 11.454118003628174,
+      "minimum_parametric_speed": 92.95087289080264
+    },
+    {
+      "q_deg": -4.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000012764,
+      "length_error_mm": 1.276418970519444e-10,
+      "quad_error_bound_mm": 1.45182691706062e-06,
+      "minimum_sampled_radius_mm": 10.713741746346251,
+      "minimum_parametric_speed": 91.29254407321454
+    },
+    {
+      "q_deg": -4.0,
+      "lane": 2,
+      "independent_length_mm": 139.99999999987853,
+      "length_error_mm": -1.2147438610554673e-10,
+      "quad_error_bound_mm": 1.825885871765704e-06,
+      "minimum_sampled_radius_mm": 10.383636673685738,
+      "minimum_parametric_speed": 91.22446859725812
+    },
+    {
+      "q_deg": -6.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000005423,
+      "length_error_mm": 5.4228621593210846e-11,
+      "quad_error_bound_mm": 8.164371998677263e-07,
+      "minimum_sampled_radius_mm": 11.52643801059483,
+      "minimum_parametric_speed": 93.33781615833917
+    },
+    {
+      "q_deg": -6.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999999636,
+      "length_error_mm": -3.637978807091713e-12,
+      "quad_error_bound_mm": 1.3123115437043038e-06,
+      "minimum_sampled_radius_mm": 10.779962773097997,
+      "minimum_parametric_speed": 91.66366215319555
+    },
+    {
+      "q_deg": -6.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000004843,
+      "length_error_mm": 4.843059286940843e-11,
+      "quad_error_bound_mm": 1.6748989926560452e-06,
+      "minimum_sampled_radius_mm": 10.447829462305277,
+      "minimum_parametric_speed": 91.59588764024596
+    },
+    {
+      "q_deg": -8.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000004064,
+      "length_error_mm": 4.064304448547773e-11,
+      "quad_error_bound_mm": 6.6370463920086e-07,
+      "minimum_sampled_radius_mm": 11.592262681036361,
+      "minimum_parametric_speed": 93.69300658668764
+    },
+    {
+      "q_deg": -8.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000001125,
+      "length_error_mm": 1.1254996934439987e-11,
+      "quad_error_bound_mm": 1.129591757879564e-06,
+      "minimum_sampled_radius_mm": 10.839656190541223,
+      "minimum_parametric_speed": 92.00109148997977
+    },
+    {
+      "q_deg": -8.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000000891,
+      "length_error_mm": 8.910205906431656e-11,
+      "quad_error_bound_mm": 1.461239945078907e-06,
+      "minimum_sampled_radius_mm": 10.505227891970623,
+      "minimum_parametric_speed": 91.93092013527857
+    },
+    {
+      "q_deg": -10.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000001432,
+      "length_error_mm": 1.432454155292362e-11,
+      "quad_error_bound_mm": 5.178994394519632e-07,
+      "minimum_sampled_radius_mm": 11.651610530715597,
+      "minimum_parametric_speed": 94.01636895152289
+    },
+    {
+      "q_deg": -10.0,
+      "lane": 1,
+      "independent_length_mm": 139.99999999997124,
+      "length_error_mm": -2.8762769943568856e-11,
+      "quad_error_bound_mm": 9.442462975614574e-07,
+      "minimum_sampled_radius_mm": 10.892884021046964,
+      "minimum_parametric_speed": 92.30498336072218
+    },
+    {
+      "q_deg": -10.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000114,
+      "length_error_mm": 1.1368683772161603e-12,
+      "quad_error_bound_mm": 1.2507629728805703e-06,
+      "minimum_sampled_radius_mm": 10.555928633188438,
+      "minimum_parametric_speed": 92.22987927961904
+    },
+    {
+      "q_deg": -12.0,
+      "lane": 0,
+      "independent_length_mm": 139.99999999991377,
+      "length_error_mm": -8.623146641184576e-11,
+      "quad_error_bound_mm": 3.4793291819879e-07,
+      "minimum_sampled_radius_mm": 11.704543153345085,
+      "minimum_parametric_speed": 94.30797349989166
+    },
+    {
+      "q_deg": -12.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000001222,
+      "length_error_mm": 1.2221335055073723e-11,
+      "quad_error_bound_mm": 7.293578312139726e-07,
+      "minimum_sampled_radius_mm": 10.93975113409683,
+      "minimum_parametric_speed": 92.57557894661036
+    },
+    {
+      "q_deg": -12.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000001176,
+      "length_error_mm": 1.1760903362301178e-10,
+      "quad_error_bound_mm": 1.0099123255169484e-06,
+      "minimum_sampled_radius_mm": 10.600074068478698,
+      "minimum_parametric_speed": 92.49317192538405
+    },
+    {
+      "q_deg": -14.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000004167,
+      "length_error_mm": 4.1666226024972275e-11,
+      "quad_error_bound_mm": 3.3850710856597743e-07,
+      "minimum_sampled_radius_mm": 11.751164803872776,
+      "minimum_parametric_speed": 94.56795249551713
+    },
+    {
+      "q_deg": -14.0,
+      "lane": 1,
+      "independent_length_mm": 140.0000000000095,
+      "length_error_mm": 9.492850949754938e-12,
+      "quad_error_bound_mm": 5.759616005240886e-07,
+      "minimum_sampled_radius_mm": 10.980404799579384,
+      "minimum_parametric_speed": 92.81322092111566
+    },
+    {
+      "q_deg": -14.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000000452,
+      "length_error_mm": 4.519051799434237e-12,
+      "quad_error_bound_mm": 8.300631105240264e-07,
+      "minimum_sampled_radius_mm": 10.637850199080862,
+      "minimum_parametric_speed": 92.72137246661188
+    },
+    {
+      "q_deg": -16.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000000001089,
+      "length_error_mm": 1.0885514711844735e-11,
+      "quad_error_bound_mm": 1.1308347541705288e-06,
+      "minimum_sampled_radius_mm": 11.7916219613056,
+      "minimum_parametric_speed": 92.68772785670869
+    },
+    {
+      "q_deg": -16.0,
+      "lane": 1,
+      "independent_length_mm": 140.00000000004138,
+      "length_error_mm": 4.1382008930668235e-11,
+      "quad_error_bound_mm": 1.1420931365080378e-06,
+      "minimum_sampled_radius_mm": 11.015032719956999,
+      "minimum_parametric_speed": 93.0184003620199
+    },
+    {
+      "q_deg": -16.0,
+      "lane": 2,
+      "independent_length_mm": 140.00000000001347,
+      "length_error_mm": 1.34718902700115e-11,
+      "quad_error_bound_mm": 1.2924542115433368e-06,
+      "minimum_sampled_radius_mm": 10.6694838003568,
+      "minimum_parametric_speed": 92.91515067919799
+    },
+    {
+      "q_deg": -18.0,
+      "lane": 0,
+      "independent_length_mm": 140.0000000000153,
+      "length_error_mm": 1.5290879673557356e-11,
+      "quad_error_bound_mm": 3.222482228377629e-08,
+      "minimum_sampled_radius_mm": 10.670372158460493,
+      "minimum_parametric_speed": 88.87517856442804
+    },
+    {
+      "q_deg": -18.0,
+      "lane": 1,
+      "independent_length_mm": 140.000000000022,
+      "length_error_mm": 2.1998403099132702e-11,
+      "quad_error_bound_mm": 2.1095020706416918e-07,
+      "minimum_sampled_radius_mm": 10.859900070851626,
+      "minimum_parametric_speed": 89.94363929697867
+    },
+    {
+      "q_deg": -18.0,
+      "lane": 2,
+      "independent_length_mm": 140.0000000000071,
+      "length_error_mm": 7.105427357601002e-12,
+      "quad_error_bound_mm": 4.0445419281666e-07,
+      "minimum_sampled_radius_mm": 10.69523912639697,
+      "minimum_parametric_speed": 90.39512276521766
+    },
+    {
+      "q_deg": -20.0,
+      "lane": 0,
+      "independent_length_mm": 140.00000212821624,
+      "length_error_mm": 2.1282162379065994e-06,
+      "quad_error_bound_mm": 3.30145860924281e-07,
+      "minimum_sampled_radius_mm": 10.14708803427039,
+      "minimum_parametric_speed": 87.98646953716272
+    },
+    {
+      "q_deg": -20.0,
+      "lane": 1,
+      "independent_length_mm": 140.000000329209,
+      "length_error_mm": 3.292090013928828e-07,
+      "quad_error_bound_mm": 4.6021166031517736e-07,
+      "minimum_sampled_radius_mm": 10.14193399387565,
+      "minimum_parametric_speed": 87.52029939860579
+    },
+    {
+      "q_deg": -20.0,
+      "lane": 2,
+      "independent_length_mm": 140.000000095311,
+      "length_error_mm": 9.531100886306376e-08,
+      "quad_error_bound_mm": 1.4053853729132015e-07,
+      "minimum_sampled_radius_mm": 10.141557897273403,
+      "minimum_parametric_speed": 87.65614642607743
+    }
+  ],
+  "approved_for_manufacture": false
+}

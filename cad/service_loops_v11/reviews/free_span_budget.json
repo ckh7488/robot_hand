@@ -1,0 +1,376 @@
+{
+  "scope": "Geometric necessary lower bounds between center loose ends of current fixed exit templates. Proposed root\u2192MCP\u2192PIP\u2192DIP connectivity only, not an approved electrical topology or a connected routed cable. Each pair varies one hinge; other upstream joints are common rigid transforms.",
+  "limits_scope": "Explicit per-joint exploration intervals, not complete safe tracking limits.",
+  "method": "Squared chord=K+Acos(q)+Bsin(q); extrema at endpoints and analytic stationary angles.0/90/180degree basis evaluations are mathematical fits, not safe poses.41in-range samples cross-check formula.",
+  "maximum_formula_error_mm2": 7.275957614183426e-12,
+  "endpoint_units": "mm",
+  "electrical_topology_approved": false,
+  "full_harness_validated": false,
+  "notes": [
+    "Wire length must exceed the maximum chord; finite bend radius, fixed tangents, guides, slack and obstacle routing require additional length.",
+    "Do not turn chord excursion into automatic cable-length allowance: slack changes shape and may collide.",
+    "One exit per motor requires a tap/star harness for intermediate nodes. Direct port-to-port chaining requires a second exit, not checked here."
+  ],
+  "pairs": [
+    {
+      "finger": "index",
+      "rotating_joint": "root",
+      "endpoint_motors": [
+        "index_root_motor",
+        "index_mcp_motor"
+      ],
+      "range_deg": [
+        -4,
+        8
+      ],
+      "minimum_chord_mm": 84.91124198359816,
+      "minimum_at_deg": -4,
+      "maximum_chord_mm": 89.23362703790723,
+      "maximum_at_deg": 8,
+      "chord_excursion_mm": 4.322385054309066,
+      "distance_squared_form_mm2": {
+        "constant": 9386.21,
+        "cos": -1934.4000000000005,
+        "sin": 3535.2000000000007
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "index",
+      "rotating_joint": "mcp",
+      "endpoint_motors": [
+        "index_mcp_motor",
+        "index_pip_motor"
+      ],
+      "range_deg": [
+        -20,
+        60
+      ],
+      "minimum_chord_mm": 88.64632782871587,
+      "minimum_at_deg": -20,
+      "maximum_chord_mm": 103.50730227954024,
+      "maximum_at_deg": 45.264033981259125,
+      "chord_excursion_mm": 14.860974450824372,
+      "distance_squared_form_mm2": {
+        "constant": 5803.56,
+        "cos": 3455.999999999999,
+        "sin": 3488.000000000001
+      },
+      "upstream_template": "negativeZ_short3_back",
+      "downstream_template": "negativeZ_outboard"
+    },
+    {
+      "finger": "index",
+      "rotating_joint": "pip",
+      "endpoint_motors": [
+        "index_pip_motor",
+        "index_dip_motor"
+      ],
+      "range_deg": [
+        0,
+        60
+      ],
+      "minimum_chord_mm": 36.39450507975071,
+      "minimum_at_deg": 0,
+      "maximum_chord_mm": 49.84196289432904,
+      "maximum_at_deg": 60,
+      "chord_excursion_mm": 13.447457814578335,
+      "distance_squared_form_mm2": {
+        "constant": 1648.56,
+        "cos": -324.0,
+        "sin": 1152.0
+      },
+      "upstream_template": "negativeZ_outboard",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "middle",
+      "rotating_joint": "root",
+      "endpoint_motors": [
+        "middle_root_motor",
+        "middle_mcp_motor"
+      ],
+      "range_deg": [
+        -3,
+        3
+      ],
+      "minimum_chord_mm": 85.26102835094528,
+      "minimum_at_deg": -3,
+      "maximum_chord_mm": 87.40411375033104,
+      "maximum_at_deg": 3,
+      "chord_excursion_mm": 2.143085399385754,
+      "distance_squared_form_mm2": {
+        "constant": 9386.21,
+        "cos": -1934.4000000000005,
+        "sin": 3535.199999999999
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "middle",
+      "rotating_joint": "mcp",
+      "endpoint_motors": [
+        "middle_mcp_motor",
+        "middle_pip_motor"
+      ],
+      "range_deg": [
+        -20,
+        60
+      ],
+      "minimum_chord_mm": 66.15908342547196,
+      "minimum_at_deg": -20,
+      "maximum_chord_mm": 71.8066762223175,
+      "maximum_at_deg": 25.769327624338715,
+      "chord_excursion_mm": 5.647592796845544,
+      "distance_squared_form_mm2": {
+        "constant": 2580.0,
+        "cos": 2320.0,
+        "sin": 1120.0
+      },
+      "upstream_template": "negativeZ_short3_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "middle",
+      "rotating_joint": "pip",
+      "endpoint_motors": [
+        "middle_pip_motor",
+        "middle_dip_motor"
+      ],
+      "range_deg": [
+        0,
+        60
+      ],
+      "minimum_chord_mm": 50.0,
+      "minimum_at_deg": 0,
+      "maximum_chord_mm": 53.002693325768654,
+      "maximum_at_deg": 42.27368900609374,
+      "chord_excursion_mm": 3.0026933257686537,
+      "distance_squared_form_mm2": {
+        "constant": 1620.0,
+        "cos": 880.0,
+        "sin": 800.0
+      },
+      "upstream_template": "negativeZ_short3_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "ring",
+      "rotating_joint": "root",
+      "endpoint_motors": [
+        "ring_root_motor",
+        "ring_mcp_motor"
+      ],
+      "range_deg": [
+        -4,
+        3
+      ],
+      "minimum_chord_mm": 84.91124198359816,
+      "minimum_at_deg": -4,
+      "maximum_chord_mm": 87.40411375033104,
+      "maximum_at_deg": 3,
+      "chord_excursion_mm": 2.4928717667328755,
+      "distance_squared_form_mm2": {
+        "constant": 9386.21,
+        "cos": -1934.4000000000005,
+        "sin": 3535.2000000000007
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "ring",
+      "rotating_joint": "mcp",
+      "endpoint_motors": [
+        "ring_mcp_motor",
+        "ring_pip_motor"
+      ],
+      "range_deg": [
+        -20,
+        60
+      ],
+      "minimum_chord_mm": 58.305573905687275,
+      "minimum_at_deg": -20,
+      "maximum_chord_mm": 64.08111884664244,
+      "maximum_at_deg": 29.631536678203886,
+      "chord_excursion_mm": 5.7755449409551645,
+      "distance_squared_form_mm2": {
+        "constant": 2100.0,
+        "cos": 1744.0,
+        "sin": 992.0
+      },
+      "upstream_template": "negativeZ_short3_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "ring",
+      "rotating_joint": "pip",
+      "endpoint_motors": [
+        "ring_pip_motor",
+        "ring_dip_motor"
+      ],
+      "range_deg": [
+        0,
+        60
+      ],
+      "minimum_chord_mm": 50.0,
+      "minimum_at_deg": 0,
+      "maximum_chord_mm": 53.002693325768654,
+      "maximum_at_deg": 42.27368900609374,
+      "chord_excursion_mm": 3.0026933257686537,
+      "distance_squared_form_mm2": {
+        "constant": 1620.0,
+        "cos": 880.0,
+        "sin": 800.0
+      },
+      "upstream_template": "negativeZ_short3_back",
+      "downstream_template": "negativeZ_short3_back"
+    },
+    {
+      "finger": "little",
+      "rotating_joint": "root",
+      "endpoint_motors": [
+        "little_root_motor",
+        "little_mcp_motor"
+      ],
+      "range_deg": [
+        -8,
+        3
+      ],
+      "minimum_chord_mm": 69.76872948811065,
+      "minimum_at_deg": -8,
+      "maximum_chord_mm": 74.22521856973997,
+      "maximum_at_deg": 3,
+      "chord_excursion_mm": 4.456489081629314,
+      "distance_squared_form_mm2": {
+        "constant": 5270.25,
+        "cos": 64.00000000000045,
+        "sin": 3348.0
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_outboard"
+    },
+    {
+      "finger": "little",
+      "rotating_joint": "mcp",
+      "endpoint_motors": [
+        "little_mcp_motor",
+        "little_pip_motor"
+      ],
+      "range_deg": [
+        -20,
+        60
+      ],
+      "minimum_chord_mm": 32.729611516602,
+      "minimum_at_deg": -20,
+      "maximum_chord_mm": 54.77846666822713,
+      "maximum_at_deg": 60,
+      "chord_excursion_mm": 22.048855151625133,
+      "distance_squared_form_mm2": {
+        "constant": 1808.25,
+        "cos": -234.0,
+        "sin": 1512.0
+      },
+      "upstream_template": "negativeZ_outboard",
+      "downstream_template": "negativeZ_back"
+    },
+    {
+      "finger": "little",
+      "rotating_joint": "pip",
+      "endpoint_motors": [
+        "little_pip_motor",
+        "little_dip_motor"
+      ],
+      "range_deg": [
+        0,
+        60
+      ],
+      "minimum_chord_mm": 48.0,
+      "minimum_at_deg": 0,
+      "maximum_chord_mm": 51.30038293102751,
+      "maximum_at_deg": 46.2188752351313,
+      "chord_excursion_mm": 3.3003829310275066,
+      "distance_squared_form_mm2": {
+        "constant": 1568.0,
+        "cos": 736.0,
+        "sin": 768.0
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_back"
+    },
+    {
+      "finger": "thumb",
+      "rotating_joint": "root",
+      "endpoint_motors": [
+        "thumb_root_motor",
+        "thumb_mcp_motor"
+      ],
+      "range_deg": [
+        -20,
+        20
+      ],
+      "minimum_chord_mm": 82.59882450848971,
+      "minimum_at_deg": -20,
+      "maximum_chord_mm": 97.62871168525976,
+      "maximum_at_deg": 20,
+      "chord_excursion_mm": 15.029887176770046,
+      "distance_squared_form_mm2": {
+        "constant": 9906.000000000002,
+        "cos": -1840.0000000000023,
+        "sin": 3959.999999999998
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_back"
+    },
+    {
+      "finger": "thumb",
+      "rotating_joint": "mcp",
+      "endpoint_motors": [
+        "thumb_mcp_motor",
+        "thumb_pip_motor"
+      ],
+      "range_deg": [
+        0,
+        35
+      ],
+      "minimum_chord_mm": 75.29200263650311,
+      "minimum_at_deg": 0,
+      "maximum_chord_mm": 84.47700214711128,
+      "maximum_at_deg": 35,
+      "chord_excursion_mm": 9.184999510608165,
+      "distance_squared_form_mm2": {
+        "constant": 3933.4350877832103,
+        "cos": 1735.450573231982,
+        "sin": 3105.65568294044
+      },
+      "upstream_template": "negativeZ_back",
+      "downstream_template": "negativeZ_outboard"
+    },
+    {
+      "finger": "thumb",
+      "rotating_joint": "pip",
+      "endpoint_motors": [
+        "thumb_pip_motor",
+        "thumb_dip_motor"
+      ],
+      "range_deg": [
+        0,
+        40
+      ],
+      "minimum_chord_mm": 35.164755082326394,
+      "minimum_at_deg": 0,
+      "maximum_chord_mm": 44.37019169488902,
+      "maximum_at_deg": 40,
+      "chord_excursion_mm": 9.205436612562629,
+      "distance_squared_form_mm2": {
+        "constant": 1596.56,
+        "cos": -360.0,
+        "sin": 1007.9999999999995
+      },
+      "upstream_template": "negativeZ_outboard",
+      "downstream_template": "negativeZ_short3_back"
+    }
+  ]
+}

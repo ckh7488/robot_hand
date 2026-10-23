@@ -1,0 +1,336 @@
+{
+ "target_mm": 1.0,
+ "internal_pairs_excluded": 180,
+ "rows": [
+  {
+   "from": "Open",
+   "to": "Curl",
+   "max_joint_delta_deg": 35,
+   "samples": 71,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.398,
+   "sampled_min_mm": 2.0,
+   "sampled_min_t": 0.4571,
+   "sampled_min_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "continuous_lower_bound_mm": 1.0443,
+   "lb_pair": [
+    "middle_pip_link",
+    "middle_dip_hinge"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Open",
+   "to": "Splay",
+   "max_joint_delta_deg": 8,
+   "samples": 17,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.367,
+   "sampled_min_mm": 1.3426,
+   "sampled_min_t": 1.0,
+   "sampled_min_pair": [
+    "Index_root_cartridge",
+    "index_root_hinge"
+   ],
+   "continuous_lower_bound_mm": 1.1749,
+   "lb_pair": [
+    "Index_root_cartridge",
+    "index_root_hinge"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Open",
+   "to": "Backbend",
+   "max_joint_delta_deg": 20,
+   "samples": 41,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.378,
+   "sampled_min_mm": 1.2,
+   "sampled_min_t": 1.0,
+   "sampled_min_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "continuous_lower_bound_mm": 1.0324,
+   "lb_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Open",
+   "to": "Close",
+   "max_joint_delta_deg": 60,
+   "samples": 121,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.172,
+   "sampled_min_mm": 2.0,
+   "sampled_min_t": 0.0333,
+   "sampled_min_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "continuous_lower_bound_mm": 1.0043,
+   "lb_pair": [
+    "ring_dip_motor",
+    "ring_dip_output_screws"
+   ],
+   "refine_calls": 48,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Open",
+   "to": "ThumbSweep",
+   "max_joint_delta_deg": 35,
+   "samples": 71,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.398,
+   "sampled_min_mm": 2.0,
+   "sampled_min_t": 0.5286,
+   "sampled_min_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "continuous_lower_bound_mm": 1.0443,
+   "lb_pair": [
+    "middle_pip_link",
+    "middle_dip_hinge"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Curl",
+   "to": "Splay",
+   "max_joint_delta_deg": 35,
+   "samples": 71,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.621,
+   "sampled_min_mm": 1.3426,
+   "sampled_min_t": 1.0,
+   "sampled_min_pair": [
+    "Index_root_cartridge",
+    "index_root_hinge"
+   ],
+   "continuous_lower_bound_mm": 1.017,
+   "lb_pair": [
+    "ring_pip_link",
+    "ring_dip_hinge"
+   ],
+   "refine_calls": 9,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Curl",
+   "to": "Backbend",
+   "max_joint_delta_deg": 55,
+   "samples": 111,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.98,
+   "sampled_min_mm": 1.2,
+   "sampled_min_t": 1.0,
+   "sampled_min_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "continuous_lower_bound_mm": 1.0324,
+   "lb_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Curl",
+   "to": "Close",
+   "max_joint_delta_deg": 25,
+   "samples": 51,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.805,
+   "sampled_min_mm": 2.1414,
+   "sampled_min_t": 0.0,
+   "sampled_min_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "continuous_lower_bound_mm": 1.1833,
+   "lb_pair": [
+    "middle_dip_motor",
+    "middle_dip_output_screws"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Curl",
+   "to": "ThumbSweep",
+   "max_joint_delta_deg": 10,
+   "samples": 21,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.277,
+   "sampled_min_mm": 2.0,
+   "sampled_min_t": 0.6,
+   "sampled_min_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "continuous_lower_bound_mm": 1.1119,
+   "lb_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Splay",
+   "to": "Backbend",
+   "max_joint_delta_deg": 20,
+   "samples": 41,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.865,
+   "sampled_min_mm": 1.2,
+   "sampled_min_t": 1.0,
+   "sampled_min_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "continuous_lower_bound_mm": 1.0028,
+   "lb_pair": [
+    "index_mcp_hinge",
+    "middle_spread_carrier"
+   ],
+   "refine_calls": 7,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Splay",
+   "to": "Close",
+   "max_joint_delta_deg": 60,
+   "samples": 121,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.276,
+   "sampled_min_mm": 1.3426,
+   "sampled_min_t": 0.0,
+   "sampled_min_pair": [
+    "Index_root_cartridge",
+    "index_root_hinge"
+   ],
+   "continuous_lower_bound_mm": 1.001,
+   "lb_pair": [
+    "little_dip_motor",
+    "little_dip_output_screws"
+   ],
+   "refine_calls": 85,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Splay",
+   "to": "ThumbSweep",
+   "max_joint_delta_deg": 35,
+   "samples": 71,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.627,
+   "sampled_min_mm": 1.3426,
+   "sampled_min_t": 0.0,
+   "sampled_min_pair": [
+    "Index_root_cartridge",
+    "index_root_hinge"
+   ],
+   "continuous_lower_bound_mm": 1.0168,
+   "lb_pair": [
+    "index_pip_link",
+    "index_dip_hinge"
+   ],
+   "refine_calls": 8,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Backbend",
+   "to": "Close",
+   "max_joint_delta_deg": 80,
+   "samples": 161,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.973,
+   "sampled_min_mm": 1.2,
+   "sampled_min_t": 0.0,
+   "sampled_min_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "continuous_lower_bound_mm": 1.0324,
+   "lb_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Backbend",
+   "to": "ThumbSweep",
+   "max_joint_delta_deg": 55,
+   "samples": 111,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 2.027,
+   "sampled_min_mm": 1.2,
+   "sampled_min_t": 0.0,
+   "sampled_min_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "continuous_lower_bound_mm": 1.0324,
+   "lb_pair": [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  },
+  {
+   "from": "Close",
+   "to": "ThumbSweep",
+   "max_joint_delta_deg": 25,
+   "samples": 51,
+   "step_deg": 0.5,
+   "max_disp_bound_per_step_mm": 1.742,
+   "sampled_min_mm": 2.0,
+   "sampled_min_t": 0.76,
+   "sampled_min_pair": [
+    "thumb_spread_carrier",
+    "thumb_mcp_link"
+   ],
+   "continuous_lower_bound_mm": 1.2222,
+   "lb_pair": [
+    "middle_dip_motor",
+    "middle_dip_output_screws"
+   ],
+   "refine_calls": 0,
+   "uncertified_intervals": 0,
+   "examples": []
+  }
+ ]
+}

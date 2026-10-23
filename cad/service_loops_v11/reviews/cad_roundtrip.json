@@ -1,0 +1,8 @@
+{
+  "expected_solids": 976,
+  "roundtrip_solids": 976,
+  "valid": true,
+  "objects": 252,
+  "scope": "Open hand CAD including two exit templates,3geometric loop wires and2guide candidates. Hand only; arm CAD unchanged outside this add-on.",
+  "manufacturing_release": false
+}

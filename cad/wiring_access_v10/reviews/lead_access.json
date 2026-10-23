@@ -1,0 +1,2484 @@
+{
+  "scope": "Inherited single-joint fixed lead paths transformed to actual V9 motor frames. A collision rejects this particular inherited route, not every possible harness. Connector is catalog outer envelope, mating fit unqualified.",
+  "wire_outer_diameter_mm": 1.9,
+  "radial_reserve_mm": 0.3,
+  "canonical_old_to_new_translation_mm": [
+    -14.5,
+    0,
+    0
+  ],
+  "source_sha256": {
+    "cad/modular_roots_v9/design.json": "5fd76e966a29733b9897a050108ac4c2835359b8a4bdeb0f7eb2ed100252f296",
+    "cad/modular_roots_v9/scene.json": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e",
+    "cad/wiring_access_v10/connector_reference.json": "775859c2b21026dedac7ece30a5e77a349af1631aeefafae37c0293085d18e51",
+    "cad/modular_roots_v9/parts/AK_elbow_flex.step": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01",
+    "cad/modular_roots_v9/parts/AK_forearm_roll.step": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36",
+    "cad/modular_roots_v9/parts/AK_wrist_deviation.step": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256",
+    "cad/modular_roots_v9/parts/AK_wrist_flex.step": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243",
+    "cad/modular_roots_v9/parts/Compact_root.step": "dc6230b6e8542a9d300a8329b7d5bbd545d51b482adbd682d3c0d67b45fb31da",
+    "cad/modular_roots_v9/parts/Elbow_fixed_cradle.step": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6",
+    "cad/modular_roots_v9/parts/Elbow_roll_carrier.step": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156",
+    "cad/modular_roots_v9/parts/Flex_link_48.step": "9760a610b868906f8e2a53f272390ab0e29c74a193c10baf21c8cfb2e1829568",
+    "cad/modular_roots_v9/parts/Flex_link_50.step": "2e6172fbb8fa47cb678d505e8d4ffb019ae9329c80883ffe8faa2e5265dca140",
+    "cad/modular_roots_v9/parts/Flex_link_55.step": "906978e842fb2e2c7faa39544d923fc580e63e2da393994e97b4f5a24428773d",
+    "cad/modular_roots_v9/parts/Flex_link_62.step": "684874af1b86962539df60cf33f4c0bf4a51a2f18950701d3a57fe4b28793531",
+    "cad/modular_roots_v9/parts/Flex_link_65.step": "23b5936203ea702ca0813437e5f0d8182925961e911e9733e337bf8a0d1d0ce9",
+    "cad/modular_roots_v9/parts/Flex_link_70.step": "46bfaf90a9bbb640c25556be0f9ee2c5720b4a28f71400c14d3563c70ba83b9b",
+    "cad/modular_roots_v9/parts/Forearm_box_beam.step": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365",
+    "cad/modular_roots_v9/parts/H101_vendor.step": "148c51ba09bab3ce46f0db8cf8bfeab2e1edd65f691d908eb8520e7117b1af67",
+    "cad/modular_roots_v9/parts/M077_rotor.step": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+    "cad/modular_roots_v9/parts/M077_stator.step": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+    "cad/modular_roots_v9/parts/M2_base_nuts.step": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f",
+    "cad/modular_roots_v9/parts/M2_base_screws.step": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856",
+    "cad/modular_roots_v9/parts/M2_body_TAP8.step": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a",
+    "cad/modular_roots_v9/parts/M2_hinge_TAP4.step": "81574ad7817f887b4d5b589da1a178acdc9bb24832f3024cca0bbe41817e8726",
+    "cad/modular_roots_v9/parts/M2_output_nuts.step": "743276ff606a9f92edca270bf2f65bf7975260a9f2a1dc8dd8240001949c853f",
+    "cad/modular_roots_v9/parts/M2_output_screws.step": "075237c118d956b4a8c197204629c98152ed896f39dd461c4228c96ee732b2da",
+    "cad/modular_roots_v9/parts/M2_root_output_nuts.step": "62d7f47eb7614675835d3c3767ee891a89f940b2ed5b5cf85d9d88766b80efc7",
+    "cad/modular_roots_v9/parts/M3_cover_nuts.step": "bddcb14b37f46e6380044ed7134849d35572ef1de5a02aad6deb82af082d6a93",
+    "cad/modular_roots_v9/parts/M3_cover_screws.step": "44f16ccfdf3f2da1fbf33f2f85639600bad249e65e4770fe5c58c0848659b7de",
+    "cad/modular_roots_v9/parts/M3_root_mount_nuts.step": "81788484fb6ea1f6469e31d8273d12b50dc55f1243df0ec30041f37996b5d032",
+    "cad/modular_roots_v9/parts/M3_root_mount_screws.step": "3a8564baa2d8aa32f77204b3bac4128947ecc1989f786f774956258303ff56ba",
+    "cad/modular_roots_v9/parts/M3_saddle_mount_nuts.step": "01c7ae1e9fc35ca5a5a8cda51ea259dbab8ec129fe2a0d3e9ced2e0cdc1f094e",
+    "cad/modular_roots_v9/parts/M3_saddle_mount_screws.step": "4405108299722709d4ab9464ec8080741547f715e7cf7da6894a0c6ca65f97b0",
+    "cad/modular_roots_v9/parts/M3_thumb_mount_nuts.step": "ba9619f59f9c53e6f0d84966abda4e5130e76536b302939864f7f14258aba7cf",
+    "cad/modular_roots_v9/parts/M3_thumb_mount_screws.step": "1f56712246780475a6104efebae9b98b4671fb0166ccac36064f532ecbbe97ce",
+    "cad/modular_roots_v9/parts/Palm_back_chassis.step": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429",
+    "cad/modular_roots_v9/parts/Palm_front_cover.step": "0116f22f492541a36ec6038b65ef6176ba0744875587a5ad5d6cdacfda2fa417",
+    "cad/modular_roots_v9/parts/Palm_wrist_saddle.step": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c",
+    "cad/modular_roots_v9/parts/Roll_output_flange.step": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d",
+    "cad/modular_roots_v9/parts/Root_cartridge.step": "08b7dadcdd9ecb12130d7e4bafa022d66d70a19b8da3db01c98aa905468c4367",
+    "cad/modular_roots_v9/parts/S101_relief.step": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec",
+    "cad/modular_roots_v9/parts/Thumb_internal_cradle.step": "b7934a5e403c22a663e192bc09c29a9352e0d8dcd95a9befcfd9c2f002472247",
+    "cad/modular_roots_v9/parts/Thumb_metacarpal.step": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb",
+    "cad/modular_roots_v9/parts/Tip_28.step": "4c17fc40b7c0ad40362a0e52605126b81aa9bc734cbdc60c8b723aa3ef16965b",
+    "cad/modular_roots_v9/parts/Tip_32.step": "54473e906898321eb7362890031dc912e9030e4321b3240746a0f78dc94d1f54",
+    "cad/modular_roots_v9/parts/Tip_34.step": "f4aec04f8cd6e8926102745e2872a703b0048c996b42d649d8a9e08da76afd68",
+    "cad/modular_roots_v9/parts/Wrist_box_carrier.step": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f"
+  },
+  "poses": [
+    {
+      "pose": "Open",
+      "motors": [
+        {
+          "motor": "index_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565795
+        },
+        {
+          "motor": "index_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.27623869798545264,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "index_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 3.715656680301241,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 14.726215563702157,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566036
+        },
+        {
+          "motor": "index_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 3.4009872314447005,
+              "wire_lane": "1"
+            },
+            {
+              "part": "middle_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.09543946793306901,
+              "wire_lane": "1"
+            },
+            {
+              "part": "middle_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.03675233564777422,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 0.293686038134209,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 62.03670479458188,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 1.2609473864975647,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 0.13516096114457726,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 10.970085008386597,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.403123206474378,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 8.95095227705082,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 11.109935275854866,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.1305550203484353,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 20.017474977254434,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956601
+        },
+        {
+          "motor": "middle_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "middle_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602513335,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 10.970109571693195,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.403123206473248,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956605
+        },
+        {
+          "motor": "middle_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.0367523356024886,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 1.6672103203109347,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.5736878508633918,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 8.600354754316418,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 3.513006858970536,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 4.733055980194058,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 10.989086783026366,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.9836198843161088,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956606
+        },
+        {
+          "motor": "middle_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_dip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.03675233560249117,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 1.6672103203107242,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.5736878508633759,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_dip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 8.600354754294194,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 3.5130068590268406,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 4.733055980194043,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 10.989086783026345,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.9836198843161742,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956602
+        },
+        {
+          "motor": "ring_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956611
+        },
+        {
+          "motor": "ring_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602452606,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 2.2408822847794796,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 1.4861561437584305,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 7.266279708057271,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.36550785394566293,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 6.773687596357787,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.599471836787512,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.2812968032271107,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566036
+        },
+        {
+          "motor": "ring_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.5372777411048764,
+              "wire_lane": "1"
+            },
+            {
+              "part": "little_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.09562458111763797,
+              "wire_lane": "1"
+            },
+            {
+              "part": "little_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 0.34410674130410196,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 23.808143398864598,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 1.3591694843032465,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 6.286738631341364,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_pip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 3.510622353353489,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 13.13791466995992,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 19.136713961778856,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.13055496215857967,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956604
+        },
+        {
+          "motor": "ring_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 1.4133203781942993,
+              "wire_lane": "1"
+            },
+            {
+              "part": "little_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.09640062279052544,
+              "wire_lane": "1"
+            },
+            {
+              "part": "little_dip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 0.38236947599119986,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 31.563107717462696,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 1.3531550467448148,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_dip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 7.663788538649509,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_dip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 8.547423139063095,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_dip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 13.10903994193543,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 16.15638987217356,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.13055502034836747,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956601
+        },
+        {
+          "motor": "little_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565866
+        },
+        {
+          "motor": "little_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "little_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "little_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956614
+        },
+        {
+          "motor": "thumb_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        },
+        {
+          "motor": "thumb_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956592
+        },
+        {
+          "motor": "thumb_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 0.05837804569457617,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.924065086552645,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_screws",
+              "asset": "M2_output_screws",
+              "overlap_mm3": 0.22077483242292237,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_nuts",
+              "asset": "M2_output_nuts",
+              "overlap_mm3": 0.004417388286855423,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.894144899541093,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 5.473438971621624,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.052394053707543,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.525268458317203,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 9.585902298661741,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 5.545852261305553,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.288609981570175,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 23.17617771033451,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565916
+        },
+        {
+          "motor": "thumb_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        }
+      ],
+      "BRep_common_calls": 728
+    },
+    {
+      "pose": "Curl",
+      "motors": [
+        {
+          "motor": "index_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565795
+        },
+        {
+          "motor": "index_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.27623869798545264,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "index_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 1.4757602977800421,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 5.848862296851658,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565745
+        },
+        {
+          "motor": "index_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 1.8151009749846259,
+              "wire_lane": "1"
+            },
+            {
+              "part": "middle_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 0.05017363788008444,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 39.87427664627795,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 6.163297237530233,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 1.577241436307058,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 9.783935058775919,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 24.54753437056102,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956602
+        },
+        {
+          "motor": "middle_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "middle_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602513335,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 10.970109571693195,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.403123206473248,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956605
+        },
+        {
+          "motor": "middle_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.346233458755771,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 79.83899188808681,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956575
+        },
+        {
+          "motor": "middle_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 26.857985063913063,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 45.60750054139517,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565894
+        },
+        {
+          "motor": "ring_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956611
+        },
+        {
+          "motor": "ring_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602452606,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 6.484438027292476,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 7.266279708057271,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.36550785394566293,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 6.77829628824124,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 6.373381849456401,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566036
+        },
+        {
+          "motor": "ring_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_link",
+              "asset": "Flex_link_55",
+              "overlap_mm3": 68.75698816602048,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_link",
+              "asset": "Flex_link_55",
+              "overlap_mm3": 118.40124316061745,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956601
+        },
+        {
+          "motor": "ring_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956549
+        },
+        {
+          "motor": "little_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565866
+        },
+        {
+          "motor": "little_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "little_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566214
+        },
+        {
+          "motor": "little_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565894
+        },
+        {
+          "motor": "thumb_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        },
+        {
+          "motor": "thumb_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956592
+        },
+        {
+          "motor": "thumb_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.924065086669996,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_screws",
+              "asset": "M2_output_screws",
+              "overlap_mm3": 0.2207748324230578,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_nuts",
+              "asset": "M2_output_nuts",
+              "overlap_mm3": 0.004417388286858021,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.894144899551023,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.052394053690024,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.52526644062915,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 3.394496232327354,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.288609981584877,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 23.17617771034075,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956601
+        },
+        {
+          "motor": "thumb_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956577
+        }
+      ],
+      "BRep_common_calls": 666
+    },
+    {
+      "pose": "Splay",
+      "motors": [
+        {
+          "motor": "index_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565795
+        },
+        {
+          "motor": "index_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.7855829163141321,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 5.7413851093882,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 4.982681073271079,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 12.906387201135592,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 7.458142881662297,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "index_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956594
+        },
+        {
+          "motor": "index_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565894
+        },
+        {
+          "motor": "middle_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "middle_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.0008669796372998849,
+              "wire_lane": "1"
+            },
+            {
+              "part": "ring_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 0.0039032008810426706,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 12.114848694825804,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.327297205095421,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 46.512590363599465,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.7168578305517401,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 6.566491843300392,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.9137421937463506,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "middle_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956605
+        },
+        {
+          "motor": "middle_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565916
+        },
+        {
+          "motor": "ring_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956611
+        },
+        {
+          "motor": "ring_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 1.3202176168638016,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 1.6834747987902374,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.0025037132473395,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 1.3185004989952382,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 11.963080348055623,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 9.084410314414512,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 0.06239187361355332,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 2.7019800158717056,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 1.101623508059091,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566
+        },
+        {
+          "motor": "ring_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.3821818432145048,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.10338964241743104,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566
+        },
+        {
+          "motor": "ring_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566
+        },
+        {
+          "motor": "little_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565866
+        },
+        {
+          "motor": "little_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "Palm_back_chassis",
+              "asset": "Palm_back_chassis",
+              "overlap_mm3": 40.80056322783467,
+              "wire_lane": "1"
+            },
+            {
+              "part": "Palm_back_chassis",
+              "asset": "Palm_back_chassis",
+              "overlap_mm3": 31.277283865957877,
+              "wire_lane": "2"
+            },
+            {
+              "part": "Palm_back_chassis",
+              "asset": "Palm_back_chassis",
+              "overlap_mm3": 3.6330474983747294,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565944
+        },
+        {
+          "motor": "little_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956599
+        },
+        {
+          "motor": "little_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956608
+        },
+        {
+          "motor": "thumb_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        },
+        {
+          "motor": "thumb_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956592
+        },
+        {
+          "motor": "thumb_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 0.05837804569457617,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.924065086552645,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_screws",
+              "asset": "M2_output_screws",
+              "overlap_mm3": 0.22077483242292237,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_nuts",
+              "asset": "M2_output_nuts",
+              "overlap_mm3": 0.004417388286855423,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.894144899541093,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 5.473438971621624,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.052394053707543,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.525268458317203,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 9.585902298661741,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 5.545852261305553,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.288609981570175,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 23.17617771033451,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565916
+        },
+        {
+          "motor": "thumb_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        }
+      ],
+      "BRep_common_calls": 675
+    },
+    {
+      "pose": "Backbend",
+      "motors": [
+        {
+          "motor": "index_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565795
+        },
+        {
+          "motor": "index_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.27623869798545264,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "index_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 2.9687182921406783,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 16.978287614204753,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566164
+        },
+        {
+          "motor": "index_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.18955469795039678,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 0.4075770965591455,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 38.3538212429872,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 21.956623264574695,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 38.95009339964177
+        },
+        {
+          "motor": "middle_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "middle_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602513335,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 10.970109571693195,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.403123206473248,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956605
+        },
+        {
+          "motor": "middle_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.07749649682778692,
+              "wire_lane": "1"
+            },
+            {
+              "part": "ring_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 14.02316866297556,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 2.187824916888444,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 2.4791003845722086,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.9089300848976336,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 18.40570988831363,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.257714075381742,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 10.246611151156813,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 38.95009339964159
+        },
+        {
+          "motor": "middle_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.07749649682781172,
+              "wire_lane": "1"
+            },
+            {
+              "part": "ring_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 14.023166202477405,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 2.1878249169048787,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_dip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 2.4791003845740716,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.9089300848975335,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 18.405709888314224,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.257706273412346,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 10.246611958480269,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956585
+        },
+        {
+          "motor": "ring_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956611
+        },
+        {
+          "motor": "ring_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602452606,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 5.35953067358752,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 1.2203059562204328,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 7.266279708057271,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.36550785394566293,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 6.778296308771779,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 14.032373258701082,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566036
+        },
+        {
+          "motor": "ring_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 3.851306754956468,
+              "wire_lane": "1"
+            },
+            {
+              "part": "little_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 1.898247435765278,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 44.48675073058199,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_pip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.022068970486901644,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 65.38478808005888,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 20.215395155965172,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566086
+        },
+        {
+          "motor": "ring_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 4.523562319226187,
+              "wire_lane": "1"
+            },
+            {
+              "part": "little_dip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 2.3637680625632758,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 52.29550304321836,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_dip_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.08367301251581032,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_dip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 70.58506608810131,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_dip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 19.75018577155064,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566214
+        },
+        {
+          "motor": "little_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565866
+        },
+        {
+          "motor": "little_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "little_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956623
+        },
+        {
+          "motor": "little_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 38.63009339973535
+        },
+        {
+          "motor": "thumb_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        },
+        {
+          "motor": "thumb_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956592
+        },
+        {
+          "motor": "thumb_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 0.05837804569457617,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.924065086552645,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_screws",
+              "asset": "M2_output_screws",
+              "overlap_mm3": 0.22077483242292237,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_nuts",
+              "asset": "M2_output_nuts",
+              "overlap_mm3": 0.004417388286855423,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.894144899541093,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 5.473438971621624,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.052394053707543,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.525268458317203,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 9.585902298661741,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 5.545852261305553,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.288609981570175,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 23.17617771033451,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565916
+        },
+        {
+          "motor": "thumb_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        }
+      ],
+      "BRep_common_calls": 742
+    },
+    {
+      "pose": "Close",
+      "motors": [
+        {
+          "motor": "index_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565795
+        },
+        {
+          "motor": "index_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.27623869798545264,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "index_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566306
+        },
+        {
+          "motor": "index_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 0.5803231836412214,
+              "wire_lane": "1"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 15.82980591056423,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 6.192761133842898,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 5.824218831477515,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 24.543692606170296,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956654
+        },
+        {
+          "motor": "middle_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "middle_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602513335,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 10.970109571693195,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.403123206473248,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956605
+        },
+        {
+          "motor": "middle_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_link",
+              "asset": "Flex_link_62",
+              "overlap_mm3": 40.89102075704905,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_link",
+              "asset": "Flex_link_62",
+              "overlap_mm3": 70.97478060446012,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 28.93840515456961,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956622
+        },
+        {
+          "motor": "middle_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956621
+        },
+        {
+          "motor": "ring_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956611
+        },
+        {
+          "motor": "ring_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602452606,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 5.064557563040387,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_output_hinge_tap",
+              "asset": "M2_hinge_TAP4",
+              "overlap_mm3": 0.1113538355249695,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 7.266279708057271,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.36550785394566293,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 6.662139516145565,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 7.580204430781656,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566036
+        },
+        {
+          "motor": "ring_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956618
+        },
+        {
+          "motor": "ring_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956639
+        },
+        {
+          "motor": "little_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565866
+        },
+        {
+          "motor": "little_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "little_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566576
+        },
+        {
+          "motor": "little_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956647
+        },
+        {
+          "motor": "thumb_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        },
+        {
+          "motor": "thumb_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956592
+        },
+        {
+          "motor": "thumb_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.924065086663315,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_screws",
+              "asset": "M2_output_screws",
+              "overlap_mm3": 0.22077483242288193,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_nuts",
+              "asset": "M2_output_nuts",
+              "overlap_mm3": 0.004417388286870955,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.89414491483493,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.052394053713739,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.52526644063448,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 1.286011551378454,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.288609981588998,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 23.1761779020135,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566
+        },
+        {
+          "motor": "thumb_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566186
+        }
+      ],
+      "BRep_common_calls": 637
+    },
+    {
+      "pose": "ThumbSweep",
+      "motors": [
+        {
+          "motor": "index_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565795
+        },
+        {
+          "motor": "index_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.27623869798545264,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "index_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 1.4757602977800421,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_mcp_link",
+              "asset": "Flex_link_70",
+              "overlap_mm3": 5.848862296851658,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565745
+        },
+        {
+          "motor": "index_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 1.8151009749846259,
+              "wire_lane": "1"
+            },
+            {
+              "part": "middle_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 0.05017363788008444,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 39.87427664627795,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 6.163297237530233,
+              "wire_lane": "2"
+            },
+            {
+              "part": "middle_pip_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 1.577241436307058,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 9.783935058775919,
+              "wire_lane": "3"
+            },
+            {
+              "part": "middle_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 24.54753437056102,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956602
+        },
+        {
+          "motor": "middle_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "middle_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602513335,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 10.970109571693195,
+              "wire_lane": "3"
+            },
+            {
+              "part": "ring_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 11.403123206473248,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956605
+        },
+        {
+          "motor": "middle_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.346233458755771,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 79.83899188808681,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956575
+        },
+        {
+          "motor": "middle_dip_motor",
+          "wire_collisions": [
+            {
+              "part": "ring_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 26.857985063913063,
+              "wire_lane": "2"
+            },
+            {
+              "part": "ring_pip_link",
+              "asset": "Flex_link_50",
+              "overlap_mm3": 45.60750054139517,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565894
+        },
+        {
+          "motor": "ring_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956611
+        },
+        {
+          "motor": "ring_mcp_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 0.036752335602452606,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 6.484438027292476,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_fixed_frame",
+              "asset": "S101_relief",
+              "overlap_mm3": 7.266279708057271,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.36550785394566293,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_rotor",
+              "asset": "M077_rotor",
+              "overlap_mm3": 6.77829628824124,
+              "wire_lane": "3"
+            },
+            {
+              "part": "little_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 6.373381849456401,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566036
+        },
+        {
+          "motor": "ring_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "little_mcp_link",
+              "asset": "Flex_link_55",
+              "overlap_mm3": 68.75698816602048,
+              "wire_lane": "2"
+            },
+            {
+              "part": "little_mcp_link",
+              "asset": "Flex_link_55",
+              "overlap_mm3": 118.40124316061745,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956601
+        },
+        {
+          "motor": "ring_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956549
+        },
+        {
+          "motor": "little_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565866
+        },
+        {
+          "motor": "little_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956613
+        },
+        {
+          "motor": "little_pip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566214
+        },
+        {
+          "motor": "little_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399565894
+        },
+        {
+          "motor": "thumb_root_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956596
+        },
+        {
+          "motor": "thumb_mcp_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566015
+        },
+        {
+          "motor": "thumb_pip_motor",
+          "wire_collisions": [
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.924065086662436,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_screws",
+              "asset": "M2_output_screws",
+              "overlap_mm3": 0.22077483242299503,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_output_nuts",
+              "asset": "M2_output_nuts",
+              "overlap_mm3": 0.004417388286873003,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.894144914839885,
+              "wire_lane": "1"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 0.25642184508795823,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 12.052394054516169,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 29.52526845831597,
+              "wire_lane": "2"
+            },
+            {
+              "part": "thumb_mcp_motor",
+              "asset": "M077_stator",
+              "overlap_mm3": 6.58453047649245,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_base_body_tap",
+              "asset": "M2_body_TAP8",
+              "overlap_mm3": 0.04875075862683973,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_hinge",
+              "asset": "H101_vendor",
+              "overlap_mm3": 13.288609981582322,
+              "wire_lane": "3"
+            },
+            {
+              "part": "thumb_mcp_link",
+              "asset": "Thumb_metacarpal",
+              "overlap_mm3": 23.17617790200564,
+              "wire_lane": "3"
+            }
+          ],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.270093399566065
+        },
+        {
+          "motor": "thumb_dip_motor",
+          "wire_collisions": [],
+          "connector_obstacles": [],
+          "own_case_catalog_envelope_overlap_mm3": 39.27009339956607
+        }
+      ],
+      "BRep_common_calls": 666
+    }
+  ],
+  "geometry_modified": false,
+  "manufacturing_release": false,
+  "full_harness_validated": false
+}

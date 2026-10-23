@@ -1,0 +1,196 @@
+{
+  "wire_OD_mm": 1.9,
+  "radial_reserve_mm": 0.3,
+  "bend_centerline_radius_mm": [
+    10,
+    12.5,
+    15
+  ],
+  "basis": "Fixed exit templates only. No connected flexible harness, mated-housing or strain relief qualification.",
+  "templates": [
+    {
+      "name": "negativeZ_back",
+      "port_side_z": -1,
+      "bend_direction_y": -1,
+      "wire_assets": [
+        "negativeZ_back_wire1",
+        "negativeZ_back_wire2",
+        "negativeZ_back_wire3"
+      ],
+      "plug_asset": "negativeZ_back_plug",
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "negativeZ_forward",
+      "port_side_z": -1,
+      "bend_direction_y": 1,
+      "wire_assets": [
+        "negativeZ_forward_wire1",
+        "negativeZ_forward_wire2",
+        "negativeZ_forward_wire3"
+      ],
+      "plug_asset": "negativeZ_forward_plug",
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "negativeZ_outboard",
+      "port_side_z": -1,
+      "bend_direction_y": 0,
+      "wire_assets": [
+        "negativeZ_outboard_wire1",
+        "negativeZ_outboard_wire2",
+        "negativeZ_outboard_wire3"
+      ],
+      "plug_asset": "negativeZ_outboard_plug",
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_back",
+      "port_side_z": 1,
+      "bend_direction_y": -1,
+      "wire_assets": [
+        "positiveZ_back_wire1",
+        "positiveZ_back_wire2",
+        "positiveZ_back_wire3"
+      ],
+      "plug_asset": "positiveZ_back_plug",
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_forward",
+      "port_side_z": 1,
+      "bend_direction_y": 1,
+      "wire_assets": [
+        "positiveZ_forward_wire1",
+        "positiveZ_forward_wire2",
+        "positiveZ_forward_wire3"
+      ],
+      "plug_asset": "positiveZ_forward_plug",
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_outboard",
+      "port_side_z": 1,
+      "bend_direction_y": 0,
+      "wire_assets": [
+        "positiveZ_outboard_wire1",
+        "positiveZ_outboard_wire2",
+        "positiveZ_outboard_wire3"
+      ],
+      "plug_asset": "positiveZ_outboard_plug",
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "negativeZ_short3_back",
+      "port_side_z": -1,
+      "bend_direction_y": -1,
+      "wire_assets": [
+        "negativeZ_short3_back_wire1",
+        "negativeZ_short3_back_wire2",
+        "negativeZ_short3_back_wire3"
+      ],
+      "plug_asset": "negativeZ_short3_back_plug",
+      "straight_stub_mm": 3,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "negativeZ_short5_back",
+      "port_side_z": -1,
+      "bend_direction_y": -1,
+      "wire_assets": [
+        "negativeZ_short5_back_wire1",
+        "negativeZ_short5_back_wire2",
+        "negativeZ_short5_back_wire3"
+      ],
+      "plug_asset": "negativeZ_short5_back_plug",
+      "straight_stub_mm": 5,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "negativeZ_short3_outboard",
+      "port_side_z": -1,
+      "bend_direction_y": 0,
+      "wire_assets": [
+        "negativeZ_short3_outboard_wire1",
+        "negativeZ_short3_outboard_wire2",
+        "negativeZ_short3_outboard_wire3"
+      ],
+      "plug_asset": "negativeZ_short3_outboard_plug",
+      "straight_stub_mm": 3,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "negativeZ_short5_outboard",
+      "port_side_z": -1,
+      "bend_direction_y": 0,
+      "wire_assets": [
+        "negativeZ_short5_outboard_wire1",
+        "negativeZ_short5_outboard_wire2",
+        "negativeZ_short5_outboard_wire3"
+      ],
+      "plug_asset": "negativeZ_short5_outboard_plug",
+      "straight_stub_mm": 5,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_short3_back",
+      "port_side_z": 1,
+      "bend_direction_y": -1,
+      "wire_assets": [
+        "positiveZ_short3_back_wire1",
+        "positiveZ_short3_back_wire2",
+        "positiveZ_short3_back_wire3"
+      ],
+      "plug_asset": "positiveZ_short3_back_plug",
+      "straight_stub_mm": 3,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_short5_back",
+      "port_side_z": 1,
+      "bend_direction_y": -1,
+      "wire_assets": [
+        "positiveZ_short5_back_wire1",
+        "positiveZ_short5_back_wire2",
+        "positiveZ_short5_back_wire3"
+      ],
+      "plug_asset": "positiveZ_short5_back_plug",
+      "straight_stub_mm": 5,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_short3_outboard",
+      "port_side_z": 1,
+      "bend_direction_y": 0,
+      "wire_assets": [
+        "positiveZ_short3_outboard_wire1",
+        "positiveZ_short3_outboard_wire2",
+        "positiveZ_short3_outboard_wire3"
+      ],
+      "plug_asset": "positiveZ_short3_outboard_plug",
+      "straight_stub_mm": 3,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    },
+    {
+      "name": "positiveZ_short5_outboard",
+      "port_side_z": 1,
+      "bend_direction_y": 0,
+      "wire_assets": [
+        "positiveZ_short5_outboard_wire1",
+        "positiveZ_short5_outboard_wire2",
+        "positiveZ_short5_outboard_wire3"
+      ],
+      "plug_asset": "positiveZ_short5_outboard_plug",
+      "straight_stub_mm": 5,
+      "strain_relief_qualified": false,
+      "catalog_mating_qualified": false
+    }
+  ]
+}

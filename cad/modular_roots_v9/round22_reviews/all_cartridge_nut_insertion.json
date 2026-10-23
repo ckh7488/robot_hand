@@ -1,0 +1,82 @@
+{
+  "scope": "Individual captive nut insertion into unloaded printed cartridges; not complete module insertion. M2 final bearing surface omitted at0 and independently checked in BRep.",
+  "tests": [
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 2,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 3,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M3_root_mount_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M3_root_mount_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 2,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 3,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M3_thumb_mount_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M3_thumb_mount_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    }
+  ],
+  "passed": true,
+  "input_hashes": {
+    "design.json": "4d248d8a800ea0b2fdba71b6abcf8f212e7f2decb9c05315b2a2f5b1361474bd",
+    "collision_meshes.npz": "e353a6e616a6f05b506edab5f25c6f3e2c649c07042fba7f4cd819e24b303cee"
+  }
+}

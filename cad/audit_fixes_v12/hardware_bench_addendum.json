@@ -1,0 +1,35 @@
+{
+  "status": "Plan only; no hardware operated",
+  "inherits": [
+    "../modular_roots_v9/hardware_bench_plan.json",
+    "../service_loops_v11/hardware_bench_addendum.json"
+  ],
+  "static_sag": {
+    "applied_load_torque_Nm": [
+      0.02,
+      0.05,
+      0.08
+    ],
+    "conditions": [
+      "Read back default P/I/D gains and firmware.",
+      "Compare defaults with a documented nonzero position I setting; no guessed final gain.",
+      "Record goal minus measured angle after settling, both load directions, temperature and supply voltage."
+    ],
+    "sensors": "Independent angle reference preferred; log Present Position/Current/PWM and timestamps too.",
+    "interpretation": "Present Current measures input power current. Do not equate it to phase current or a constant torque cap."
+  },
+  "dynamic": {
+    "conditions": [
+      "Actual CAD-equivalent moving mass/inertia, with and without harness.",
+      "Replay recorded human traces, then 1.5x temporal speed only after low-speed commissioning.",
+      "Record time-aligned commanded/trajectory/measured angles, voltage/current and temperature."
+    ],
+    "metrics": [
+      "Latency separately from speed saturation",
+      "Tracking error percentiles and worst case",
+      "Overshoot, settling and gravity-dependent sag",
+      "Joint speed/acceleration and thermal duty"
+    ]
+  },
+  "pass_condition": "Define measured error envelopes and torque-speed model before releasing collision limits or claiming real-time headroom."
+}

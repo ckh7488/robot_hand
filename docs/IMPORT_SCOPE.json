@@ -1,0 +1,33 @@
+{
+  "source": "Existing local CAD project, 2026-10-23",
+  "frozen_V9_index_preserved": true,
+  "tracked_files_imported": 799,
+  "omitted": [
+    {
+      "kind": "Older whole-assembly revisions and backups",
+      "reason": "Retain audited V8/V9 dependencies and V11/V12 candidates; omit redundant earlier full assemblies."
+    },
+    {
+      "kind": "Bulk solver meshes/fields/raw output",
+      "reason": "Keep existing solver scripts and summary evidence; raw calculations can be regenerated and are not manufacturing qualification."
+    },
+    {
+      "kind": "Old small-hand MuJoCo dynamics and virtual environments",
+      "reason": "Not applicable to this CAD. Not a calibrated actuator model for V9/V12."
+    },
+    {
+      "kind": "Temporary execution state, cache, credentials, transfer helpers",
+      "reason": "Not project source."
+    }
+  ],
+  "limitations": [
+    "This import is not every file from the historical scratch workspace.",
+    "Some historical prototype generators outside the selected studies may lack old dependencies.",
+    "The V9 frozen hash list, not all old history, is the immutable audit baseline."
+  ],
+  "compatibility_inputs_added": [
+    "sources/XL330.stp",
+    "sources/XL330.pdf",
+    "robot_config.json"
+  ]
+}

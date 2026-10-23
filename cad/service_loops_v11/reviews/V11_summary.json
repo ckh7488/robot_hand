@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-23T14:32:32.468177+00:00",
+  "status": "Geometric and CAD assembly checkpoint; not a production or fast-tracking approval.",
+  "baseline": "V9 audit unchanged; V10 thumb channel retained as a candidate.",
+  "design_changes": [
+    "Two broad integral cable saddles in little-finger Compact_root and55mm MCP link. Existing hole/axis geometry retained.",
+    "Little PIP fixed exit changed from back to outboard, matching little MCP.",
+    "Candidate3-wire constant-length140mm service-loop family, with inter-wire clearance and branch continuity corrected.",
+    "Manufacturer-grounded actuator reference and cable-drag bench addendum added."
+  ],
+  "guide_body_mesh_cases": 1458,
+  "guide_body_exact_part_cases": 28,
+  "guide_body_minimum_gap_mm": 0.49999999999999467,
+  "fixed_exit_exact_cases": 120,
+  "connected_loop_sampled_cases": 246,
+  "loop_reserved_body_minimum_gap_mm": 1.3971797970506221,
+  "loop_actual_wire_minimum_gap_mm": 0.32982184474009557,
+  "loop_minimum_dense_sampled_radius_mm": 10.138420561491937,
+  "loop_free_length_per_wire_mm": 140,
+  "loop_maximum_length_error_mm": 2.1282162379065994e-06,
+  "loop_maximum_matched_point_shift_per_2deg_mm": 4.7492933579593295,
+  "full_solid_polymer_density_assumption_g_cm3": 1.25,
+  "added_guide_mass_estimate_g": 4.89932783986858,
+  "CAD_roundtrip_solids": 976,
+  "full_harness_validated": false,
+  "manufacturing_release": false,
+  "measured_servo_response": false,
+  "remaining": [
+    "Cable ties/retainers and actual plug mating are not qualified. The open saddles are packaging candidates, not a demonstrated strain-relief clamp.",
+    "Bezier curves are feasible geometric candidates. They are not the shape predicted by a cable constitutive/dynamic model; no gravity, friction, creep, hysteresis or fatigue approval.",
+    "Only one little-finger inter-joint free span is connected here. One-port test/tap topology remains unapproved; this is not a complete20-motor electrical harness.",
+    "Other background and continuous joint states, print/servo errors and dynamic motor following remain unverified.",
+    "V9 arm gravity/rating shortfall and unmeasured real-time response remain unresolved."
+  ]
+}

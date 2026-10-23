@@ -1,0 +1,37 @@
+{
+  "scope": "Only local cable channel in one printed thumb link. No motor, axis, bolt-hole or approved V9 geometry changed. Structural strength, tool access and genuine plug strain relief not qualified.",
+  "route_template": "negativeZ_outboard",
+  "wire_nominal_radius_mm": 0.95,
+  "wire_reserve_radius_mm": 1.25,
+  "cut_radius_mm": 1.75,
+  "additional_nominal_gap_mm": 0.5,
+  "old_volume_mm3": 19935.667900496494,
+  "new_volume_mm3": 19801.524591696907,
+  "removed_volume_mm3": 134.14327568599126,
+  "new_material_outside_old_mm3": 0.0,
+  "one_valid_connected_solid": true,
+  "related_fasteners": [
+    {
+      "fastener": "thumb_mcp_output_screws",
+      "removed_material_distance_mm": 12.199448775483779,
+      "removed_material_overlap_mm3": 0.0
+    },
+    {
+      "fastener": "thumb_mcp_output_nuts",
+      "removed_material_distance_mm": 11.568274663690307,
+      "removed_material_overlap_mm3": 0.0
+    },
+    {
+      "fastener": "thumb_pip_base_screws",
+      "removed_material_distance_mm": 21.24449548622198,
+      "removed_material_overlap_mm3": 0.0
+    },
+    {
+      "fastener": "thumb_pip_base_nuts",
+      "removed_material_distance_mm": 20.78047500343357,
+      "removed_material_overlap_mm3": 0.0
+    }
+  ],
+  "baseline_link_sha256": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb",
+  "manufacturing_release": false
+}

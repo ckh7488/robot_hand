@@ -1,0 +1,50 @@
+[
+  {
+    "name": "AK70.zip",
+    "url": "https://www.cubemars.com/data/cms/202607/ak70-10-robotic-actuator-3d-drawing.zip",
+    "status": 200,
+    "type": "application/zip",
+    "size": 421863,
+    "valid": true
+  },
+  {
+    "name": "AK70.pdf",
+    "url": "https://www.cubemars.com/data/cms/202602/ak70-10-robotic-actuator-2d-drawing.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "size": 68012,
+    "valid": true
+  },
+  {
+    "name": "AK60.zip",
+    "url": "https://www.cubemars.com/data/cms/202602/ak60-6-v3-0-robotic-actuator-3d-drawing.zip",
+    "status": 200,
+    "type": "application/zip",
+    "size": 829971,
+    "valid": true
+  },
+  {
+    "name": "AK60.pdf",
+    "url": "https://www.cubemars.com/data/cms/202602/ak60-6-v3-0-robotic-actuator-2d-drawing.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "size": 69049,
+    "valid": true
+  },
+  {
+    "name": "AK45.zip",
+    "url": "https://www.cubemars.com/data/cms/202607/ak45-10-v3-0-kv75-3d-drawing.zip",
+    "status": 200,
+    "type": "application/zip",
+    "size": 325564,
+    "valid": true
+  },
+  {
+    "name": "AK45.pdf",
+    "url": "https://www.cubemars.com/data/cms/202607/ak45-10-v3-0-kv75-2d-drawing.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "size": 141897,
+    "valid": true
+  }
+]

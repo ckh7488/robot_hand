@@ -1,0 +1,535 @@
+{
+  "status": "CAD interface candidate; not manufacturing release",
+  "axis": {
+    "name": "index_mcp_flex",
+    "xyz": [
+      1,
+      0,
+      0
+    ],
+    "origin_mm": [
+      0,
+      0,
+      0
+    ],
+    "positive": "finger +Y bends toward palm +Z",
+    "requested_deg": [
+      -20,
+      100
+    ]
+  },
+  "vendor_coordinate_transform": {
+    "R": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "p_mm": [
+      8,
+      0,
+      0
+    ]
+  },
+  "revision": 2,
+  "hardware_spec_file": "joint_hardware_spec.json",
+  "new_parts": [
+    "Bench_base",
+    "Output_test_tab",
+    "FPX330_S101",
+    "Cable_guide"
+  ],
+  "base_holes_mm": [
+    [
+      -5.656854249492381,
+      -20.65685424949238,
+      -18
+    ],
+    [
+      -5.656854249492381,
+      5.65685424949238,
+      -18
+    ],
+    [
+      5.656854249492381,
+      -20.65685424949238,
+      -18
+    ],
+    [
+      5.656854249492381,
+      5.65685424949238,
+      -18
+    ]
+  ],
+  "tab_holes_xz_mm": [
+    [
+      -5.656854249492381,
+      -5.656854249492381
+    ],
+    [
+      -5.656854249492381,
+      5.656854249492381
+    ],
+    [
+      5.656854249492381,
+      -5.656854249492381
+    ],
+    [
+      5.656854249492381,
+      5.656854249492381
+    ]
+  ],
+  "parts": [
+    {
+      "name": "Motor_part_00",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9546.086580238638
+    },
+    {
+      "name": "Motor_part_01",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2071.503510441052
+    },
+    {
+      "name": "Motor_part_02",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2594.923135709231
+    },
+    {
+      "name": "Output_horn",
+      "moving": true,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 577.0943231746223
+    },
+    {
+      "name": "Motor_part_04",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 31.640572473942832
+    },
+    {
+      "name": "Motor_part_05",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40.38848035819464
+    },
+    {
+      "name": "Motor_part_06",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40.38848035819464
+    },
+    {
+      "name": "Motor_part_07",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40.38848035819466
+    },
+    {
+      "name": "Motor_part_08",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40.388480358194656
+    },
+    {
+      "name": "Horn_retaining_screw",
+      "moving": true,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 68.80325061525281
+    },
+    {
+      "name": "Idler_disc",
+      "moving": true,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 464.67534309661653
+    },
+    {
+      "name": "Idler_cap",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 65.39320565325224
+    },
+    {
+      "name": "Idler_retaining_screw",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 68.80325061525281
+    },
+    {
+      "name": "Motor_part_13",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 107.02993882067207
+    },
+    {
+      "name": "Motor_part_14",
+      "moving": false,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 107.02993882067204
+    },
+    {
+      "name": "FPX330_H101",
+      "moving": true,
+      "role": "purchased",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2526.7544741903635
+    },
+    {
+      "name": "FPX330_S101",
+      "moving": false,
+      "role": "custom",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1531.190248125478
+    },
+    {
+      "name": "Bench_base",
+      "moving": false,
+      "role": "custom",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4451.238062332722
+    },
+    {
+      "name": "Output_test_tab",
+      "moving": true,
+      "role": "custom",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2729.713278945968
+    },
+    {
+      "name": "Idler_M2x4_TAP_1",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.88650248140165
+    },
+    {
+      "name": "Idler_M2x4_TAP_2",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.88650248140165
+    },
+    {
+      "name": "Idler_M2x4_TAP_3",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.88650248140165
+    },
+    {
+      "name": "Idler_M2x4_TAP_4",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.886502481401656
+    },
+    {
+      "name": "Horn_M2x4_TAP_1",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.886502481401656
+    },
+    {
+      "name": "Horn_M2x4_TAP_2",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.886502481401653
+    },
+    {
+      "name": "Horn_M2x4_TAP_3",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.886502481401653
+    },
+    {
+      "name": "Horn_M2x4_TAP_4",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.886502481401653
+    },
+    {
+      "name": "Body_M2x8_TAP_-1_0",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34.22765196086081
+    },
+    {
+      "name": "Body_M2x8_TAP_-1_1",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34.22765196086082
+    },
+    {
+      "name": "Body_M2x8_TAP_1_0",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34.22765196086081
+    },
+    {
+      "name": "Body_M2x8_TAP_1_1",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34.227651960860825
+    },
+    {
+      "name": "Base_M2x6_1",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392046
+    },
+    {
+      "name": "Base_M2_nut_1",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.95325945960569
+    },
+    {
+      "name": "Base_M2x6_2",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392046
+    },
+    {
+      "name": "Base_M2_nut_2",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.95325945960569
+    },
+    {
+      "name": "Base_M2x6_3",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392046
+    },
+    {
+      "name": "Base_M2_nut_3",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.95325945960569
+    },
+    {
+      "name": "Base_M2x6_4",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392046
+    },
+    {
+      "name": "Base_M2_nut_4",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.953259459605693
+    },
+    {
+      "name": "Tab_M2x6_1",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392064
+    },
+    {
+      "name": "Tab_M2_nut_1",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.953259459605704
+    },
+    {
+      "name": "Tab_M2x6_2",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392064
+    },
+    {
+      "name": "Tab_M2_nut_2",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.953259459605704
+    },
+    {
+      "name": "Tab_M2x6_3",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392064
+    },
+    {
+      "name": "Tab_M2_nut_3",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.953259459605704
+    },
+    {
+      "name": "Tab_M2x6_4",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.344263589392064
+    },
+    {
+      "name": "Tab_M2_nut_4",
+      "moving": true,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18.953259459605704
+    },
+    {
+      "name": "JST_EHR3_outer_envelope",
+      "moving": false,
+      "role": "connector-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 256.31
+    },
+    {
+      "name": "Cable_lane_1",
+      "moving": false,
+      "role": "wire-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 110.88231431475177
+    },
+    {
+      "name": "Cable_lane_2",
+      "moving": false,
+      "role": "wire-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 122.01646177973072
+    },
+    {
+      "name": "Cable_lane_3",
+      "moving": false,
+      "role": "wire-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 133.1506092447096
+    },
+    {
+      "name": "Cable_guide",
+      "moving": false,
+      "role": "custom",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 869.7851820023159
+    },
+    {
+      "name": "Guide_M3x16",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 181.37639610308776
+    },
+    {
+      "name": "Guide_M3_nut",
+      "moving": false,
+      "role": "fastener-envelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 50.131144511790055
+    }
+  ],
+  "open_items": [
+    "Final palm and next-joint mounting not designed.",
+    "M2 nuts and heads are nominal envelopes, no thread/contact/friction model. NBK SNZS-M2-6 dimensions fixed; procurement lead time/assembly preload not verified.",
+    "Dorsal header exits axially toward -X, with windowed S101. EHR-3 outer-box mating leaves a small envelope/case intersection; actual housing and cable alignment need physical fit check.",
+    "No stiffness, fatigue, insert pull-out or printed fit tests.",
+    "Idler cap and retaining screw treated as fixed; vendor bearing friction unmeasured.",
+    "No final link inertia or motor dynamics; do not reuse old hand route clearance claims."
+  ]
+}

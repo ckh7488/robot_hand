@@ -1,0 +1,67 @@
+{
+  "cad_inputs_sha256": {
+    "design.json": "5fd76e966a29733b9897a050108ac4c2835359b8a4bdeb0f7eb2ed100252f296",
+    "hand_forearm_v9.step": "ee270c6966c7fec6a366359b5b1ca4d389d77f3bb396611af7c0e057b9770c93",
+    "hand_forearm_v9.FCStd": "a3a2a0c2f143fd2663d76d68a11826b398b964cd0dd97156a985c75fe5cd295c"
+  },
+  "manufacturing_release": false,
+  "scope": "Finite BRep intersections of nominal arm motor cylinders and structural CAD, plus rigid palm. Does not verify vendor flange bolts, bearing ratings, or cables.",
+  "samples": [
+    {
+      "pitch_deg": 0,
+      "yaw_deg": 0,
+      "interference": []
+    },
+    {
+      "pitch_deg": -35,
+      "yaw_deg": 0,
+      "interference": []
+    },
+    {
+      "pitch_deg": 55,
+      "yaw_deg": 0,
+      "interference": []
+    },
+    {
+      "pitch_deg": 0,
+      "yaw_deg": -20,
+      "interference": []
+    },
+    {
+      "pitch_deg": 0,
+      "yaw_deg": 20,
+      "interference": []
+    },
+    {
+      "pitch_deg": -35,
+      "yaw_deg": -20,
+      "interference": []
+    },
+    {
+      "pitch_deg": -35,
+      "yaw_deg": 20,
+      "interference": []
+    },
+    {
+      "pitch_deg": 55,
+      "yaw_deg": -20,
+      "interference": []
+    },
+    {
+      "pitch_deg": 55,
+      "yaw_deg": 20,
+      "interference": []
+    }
+  ],
+  "sampled_nominal_arm_passed": true,
+  "roundtrip": {
+    "step_valid": true,
+    "native_all_valid": true,
+    "step_solids": 975,
+    "native_solids": 975,
+    "native_parts": 251,
+    "volume_relative_error": 1.3443156082795802e-07,
+    "bbox_error_mm": 7.673861546209082e-13,
+    "passed": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "scope": "Individual captive nut insertion into unloaded printed cartridges; not complete module insertion. M2 final bearing surface omitted at0 and independently checked in BRep.",
+  "tests": [
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 2,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M2_base_nuts",
+      "component": 3,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M3_root_mount_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "finger",
+      "asset": "M3_root_mount_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 0,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 1,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 2,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M2_base_nuts",
+      "component": 3,
+      "colliding_offsets_mm": []
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M3_thumb_mount_nuts",
+      "component": 0,
+      "colliding_offsets_mm": [
+        1.0,
+        0.75,
+        0.5,
+        0.25
+      ]
+    },
+    {
+      "module_kind": "thumb",
+      "asset": "M3_thumb_mount_nuts",
+      "component": 1,
+      "colliding_offsets_mm": [
+        1.0,
+        0.75,
+        0.5,
+        0.25
+      ]
+    }
+  ],
+  "passed": false,
+  "input_hashes": {
+    "design.json": "1e9b2f44597a81c68886d0db9b29961b14c690f8a59c7f37bf902557d4af033e",
+    "collision_meshes.npz": "0dda530c374660395041d823d8ee50fa028d2af7ad06f3f9b713d5c248672997"
+  }
+}

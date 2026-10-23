@@ -1,0 +1,292 @@
+{
+  "scope": "Exact BRep added-material checks at6 stored poses and8 little MCP/spread endpoint combinations. Includes new guides, fasteners and V10 thumb channel. Not a continuous full joint-space certificate; complements1458mesh samples.",
+  "cases": 14,
+  "part_cases": 28,
+  "minimum_gap_mm": 0.49999999999999467,
+  "failed_part_cases": 0,
+  "uncached_BRep_distance_calls": 204,
+  "elapsed_s": 72.98399999993853,
+  "rows": [
+    {
+      "case": "Open",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509254,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Curl",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Curl",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.267156809750924,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Splay",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Splay",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.26715680975091,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Backbend",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Backbend",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509263,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509267,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "ThumbSweep",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "ThumbSweep",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.267156809750924,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s-8_m-20",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s-8_m-20",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509094,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s-8_m60",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s-8_m60",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509227,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s3_m-20",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s3_m-20",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509223,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s3_m60",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Open_s3_m60",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.267156809750918,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s-8_m-20",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s-8_m-20",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509094,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s-8_m60",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s-8_m60",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509227,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s3_m-20",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s3_m-20",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.2671568097509223,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s3_m60",
+      "parent": "little_spread_carrier",
+      "minimum_added_gap_capped_4mm": 0.49999999999999467,
+      "pair": [
+        "little_spread_carrier",
+        "little_mcp_fixed_frame"
+      ],
+      "failures": []
+    },
+    {
+      "case": "Close_s3_m60",
+      "parent": "little_mcp_link",
+      "minimum_added_gap_capped_4mm": 2.267156809750918,
+      "pair": [
+        "little_mcp_link",
+        "little_pip_fixed_frame"
+      ],
+      "failures": []
+    }
+  ],
+  "manufacturing_release": false
+}

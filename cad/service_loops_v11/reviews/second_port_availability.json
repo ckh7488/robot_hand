@@ -1,0 +1,304 @@
+{
+  "scope": "Availability of independent fixed-exit templates at both motor ports, based on14template mesh study. Does not check both plugs/leads simultaneously or qualify actual mating. V10 thumb channel may alter thumb results; no other motor geometry changed.",
+  "requirement": "A direct daisy chain needs2ports at internal motors; one-port selection alone is insufficient. A one-plug tap harness is a distinct alternative with unapproved wiring, strain relief, power distribution and connector requirements.",
+  "rows": [
+    {
+      "motor": "index_root_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "index_mcp_motor",
+      "negative_side_candidates": [
+        "negativeZ_short3_back"
+      ],
+      "positive_side_candidates": [],
+      "independently_available_two_ports": false
+    },
+    {
+      "motor": "index_pip_motor",
+      "negative_side_candidates": [
+        "negativeZ_outboard",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "index_dip_motor",
+      "negative_side_candidates": [
+        "negativeZ_short3_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "middle_root_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "middle_mcp_motor",
+      "negative_side_candidates": [
+        "negativeZ_short3_back"
+      ],
+      "positive_side_candidates": [],
+      "independently_available_two_ports": false
+    },
+    {
+      "motor": "middle_pip_motor",
+      "negative_side_candidates": [
+        "negativeZ_outboard",
+        "negativeZ_short3_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_short3_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "middle_dip_motor",
+      "negative_side_candidates": [
+        "negativeZ_outboard",
+        "negativeZ_short3_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_short3_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "ring_root_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "ring_mcp_motor",
+      "negative_side_candidates": [
+        "negativeZ_short3_back"
+      ],
+      "positive_side_candidates": [],
+      "independently_available_two_ports": false
+    },
+    {
+      "motor": "ring_pip_motor",
+      "negative_side_candidates": [
+        "negativeZ_short3_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_short3_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "ring_dip_motor",
+      "negative_side_candidates": [
+        "negativeZ_short3_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_short3_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "little_root_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "little_mcp_motor",
+      "negative_side_candidates": [
+        "negativeZ_forward",
+        "negativeZ_outboard",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [],
+      "independently_available_two_ports": false
+    },
+    {
+      "motor": "little_pip_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard",
+        "negativeZ_short3_back",
+        "negativeZ_short5_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "little_dip_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard",
+        "negativeZ_short3_back",
+        "negativeZ_short5_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "thumb_root_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard",
+        "negativeZ_short3_back",
+        "negativeZ_short5_back"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "thumb_mcp_motor",
+      "negative_side_candidates": [
+        "negativeZ_back",
+        "negativeZ_forward",
+        "negativeZ_outboard",
+        "negativeZ_short3_back",
+        "negativeZ_short5_back",
+        "negativeZ_short3_outboard",
+        "negativeZ_short5_outboard"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    },
+    {
+      "motor": "thumb_pip_motor",
+      "negative_side_candidates": [],
+      "positive_side_candidates": [],
+      "independently_available_two_ports": false
+    },
+    {
+      "motor": "thumb_dip_motor",
+      "negative_side_candidates": [
+        "negativeZ_forward",
+        "negativeZ_short3_back"
+      ],
+      "positive_side_candidates": [
+        "positiveZ_back",
+        "positiveZ_forward",
+        "positiveZ_outboard",
+        "positiveZ_short3_back",
+        "positiveZ_short5_back",
+        "positiveZ_short3_outboard",
+        "positiveZ_short5_outboard"
+      ],
+      "independently_available_two_ports": true
+    }
+  ],
+  "electrical_topology_approved": false
+}

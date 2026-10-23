@@ -1,0 +1,7 @@
+# Preserve byte-identical frozen CAD/audit inputs, including historical line endings.
+* -text
+*.FCStd -diff
+*.step -diff
+*.stl -diff
+*.npz -diff
+*.png -diff

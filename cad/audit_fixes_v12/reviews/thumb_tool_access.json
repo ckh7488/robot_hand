@@ -1,0 +1,109 @@
+{
+  "source": "Independent V9 audit F6, thumb_pip_base_screws first screw; hole cut from V10 thumb-channel candidate.",
+  "exact_head_top_world_mm": [
+    86.97647541472877,
+    73.04518338927559,
+    -3.2000000000000064
+  ],
+  "exact_outward_axis_world": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "bore_diameter_mm": 3.5,
+  "bore_start_above_head_mm": 0.05,
+  "bore_length_mm": 60,
+  "removed_volume_mm3": 38.23144650901741,
+  "new_material_outside_source_mm3": 0.0,
+  "source_volume_mm3": 19801.52459476481,
+  "new_volume_mm3": 19763.293146321874,
+  "valid_single_solid": true,
+  "rows": [
+    {
+      "tool_segment": "head_pass",
+      "variant": "before",
+      "obstacle": "thumb_mcp_link",
+      "distance_mm": 1.8500000000000005,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "head_pass",
+      "variant": "after",
+      "obstacle": "thumb_mcp_link",
+      "distance_mm": 1.8500000000000005,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "head_pass",
+      "variant": "both",
+      "obstacle": "thumb_pip_fixed_frame",
+      "distance_mm": 0.1499999999966219,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "head_pass",
+      "variant": "both",
+      "obstacle": "thumb_pip_base_nuts",
+      "distance_mm": 4.650000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "shaft",
+      "variant": "before",
+      "obstacle": "thumb_mcp_link",
+      "distance_mm": 1.4210854715202004e-14,
+      "overlap_mm3": 24.630086404143974
+    },
+    {
+      "tool_segment": "shaft",
+      "variant": "after",
+      "obstacle": "thumb_mcp_link",
+      "distance_mm": 0.34999999999995546,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "shaft",
+      "variant": "both",
+      "obstacle": "thumb_pip_fixed_frame",
+      "distance_mm": 5.257558338065242,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "shaft",
+      "variant": "both",
+      "obstacle": "thumb_pip_base_nuts",
+      "distance_mm": 12.600000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "handle",
+      "variant": "before",
+      "obstacle": "thumb_mcp_link",
+      "distance_mm": 27.800000000000004,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "handle",
+      "variant": "after",
+      "obstacle": "thumb_mcp_link",
+      "distance_mm": 27.800000000000004,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "handle",
+      "variant": "both",
+      "obstacle": "thumb_pip_fixed_frame",
+      "distance_mm": 54.800000000000004,
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool_segment": "handle",
+      "variant": "both",
+      "obstacle": "thumb_pip_base_nuts",
+      "distance_mm": 64.60000000000001,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "scope": "Straight tool on minimum preassembled link/S101/nut stage. Other screw positions, complete hand tool sweep, retention and FDM strength not approved.",
+  "manufacturing_release": false
+}

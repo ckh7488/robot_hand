@@ -1,0 +1,160 @@
+{
+  "scope": "Analytical optimistic lower bounds, single MCP axis, other joints held straight. No control loop, gear losses, rotor/reflected inertia or structural flex.",
+  "reference_url": "https://emanual.robotis.com/docs/en/dxl/x/xl330-m077/",
+  "density_assumption_g_cm3": 1.25,
+  "rows": [
+    {
+      "scenario": "current",
+      "angle_deg": 60,
+      "supply": "5V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.16803237519183314,
+      "speed_only_minimum_s": 0.048955613577023493
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 60,
+      "supply": "5V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.2198911441431665,
+      "speed_only_minimum_s": 0.048955613577023493
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 60,
+      "supply": "6V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.16133710369434986,
+      "speed_only_minimum_s": 0.041118421052631575
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 60,
+      "supply": "6V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.2062744086590465,
+      "speed_only_minimum_s": 0.041118421052631575
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 90,
+      "supply": "5V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.20984977866764892,
+      "speed_only_minimum_s": 0.07343342036553524
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 90,
+      "supply": "5V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.276537491483814,
+      "speed_only_minimum_s": 0.07343342036553524
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 90,
+      "supply": "6V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.20085808512596487,
+      "speed_only_minimum_s": 0.061677631578947366
+    },
+    {
+      "scenario": "current",
+      "angle_deg": 90,
+      "supply": "6V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.258142608273156,
+      "speed_only_minimum_s": 0.061677631578947366
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 60,
+      "supply": "5V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.12924130207587958,
+      "speed_only_minimum_s": 0.048955613577023493
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 60,
+      "supply": "5V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.15079281841954068,
+      "speed_only_minimum_s": 0.048955613577023493
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 60,
+      "supply": "6V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.12349470666522394,
+      "speed_only_minimum_s": 0.041118421052631575
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 60,
+      "supply": "6V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.1422362923058063,
+      "speed_only_minimum_s": 0.041118421052631575
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 90,
+      "supply": "5V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.16280717920675672,
+      "speed_only_minimum_s": 0.07343342036553524
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 90,
+      "supply": "5V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.19100572998046111,
+      "speed_only_minimum_s": 0.07343342036553524
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 90,
+      "supply": "6V nominal",
+      "gravity": "zero",
+      "optimistic_minimum_minjerk_duration_s": 0.15483028056038173,
+      "speed_only_minimum_s": 0.061677631578947366
+    },
+    {
+      "scenario": "ideal_passive_DIP",
+      "angle_deg": 90,
+      "supply": "6V nominal",
+      "gravity": "all_hand_orientations",
+      "optimistic_minimum_minjerk_duration_s": 0.17906274740777003,
+      "speed_only_minimum_s": 0.061677631578947366
+    }
+  ],
+  "scenarios": {
+    "current": {
+      "downstream_mass_kg": 0.1005286222815636,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0008606220437912236,
+      "worst_static_gravity_Nm": 0.08322786451893212,
+      "equivalent_single_point_mass_kg": 0.08363479996401747,
+      "equivalent_point_radius_m": 0.10144081310258074
+    },
+    "ideal_passive_DIP": {
+      "downstream_mass_kg": 0.0724174524815767,
+      "point_mass_inertia_lower_bound_kg_m2": 0.0004796751589362822,
+      "worst_static_gravity_Nm": 0.05124945810311926,
+      "equivalent_single_point_mass_kg": 0.056897516758355485,
+      "equivalent_point_radius_m": 0.0918178159015212
+    }
+  },
+  "limitations": [
+    "Point masses omit each part intrinsic inertia, so physical inertia is higher.",
+    "Linear stall-to-no-load curve is an illustrative DC motor approximation, not a measured XL330 response.",
+    "Stall torque is not continuous rated torque; current limiting, bus voltage sag and controller delay can worsen performance.",
+    "Ideal passive DIP deletes parts without adding a real linkage; it is a bound, not a proposed build or a changed20axis design.",
+    "An all-orientations envelope is used; a particular hand orientation may need less gravity torque.",
+    "Full-solid CAD volume assumptions require weighed parts.",
+    "This screen does not establish a safe speed or a motor selection."
+  ]
+}

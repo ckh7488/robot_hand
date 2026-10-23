@@ -1,0 +1,308 @@
+{
+  "mode": "transitions",
+  "target_physical_clearance_mm": 1,
+  "mesh_screen_threshold_mm": 1.1,
+  "mesh_deflection_mm": 0.05,
+  "distance_method": "FCL non-convex triangle BVH + containment rays; near limits require exact CAD confirmation",
+  "actuator_simulation": false,
+  "continuous_swept_volume_certified": false,
+  "kinematics_check": {
+    "poses": 6,
+    "parts_per_pose": 251,
+    "max_position_error_mm": 5.684341886080802e-14,
+    "max_rotation_matrix_error": 5.053215498074303e-16,
+    "passed": true
+  },
+  "items": [
+    {
+      "from": "Open",
+      "to": "Curl",
+      "max_joint_step_deg": 0.5,
+      "samples": 71,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 18321
+    },
+    {
+      "from": "Open",
+      "to": "Splay",
+      "max_joint_step_deg": 0.5,
+      "samples": 17,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 2133
+    },
+    {
+      "from": "Open",
+      "to": "Backbend",
+      "max_joint_step_deg": 0.5,
+      "samples": 41,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42,
+            183.38613060849877,
+            -18.939114872189318
+          ],
+          [
+            42,
+            183,
+            -20.000000000000004
+          ]
+        ],
+        "lower_bound_only": false,
+        "t": 1
+      },
+      "bad_samples": [],
+      "distance_calls": 2663
+    },
+    {
+      "from": "Open",
+      "to": "Close",
+      "max_joint_step_deg": 0.5,
+      "samples": 121,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 31330
+    },
+    {
+      "from": "Open",
+      "to": "ThumbSweep",
+      "max_joint_step_deg": 0.5,
+      "samples": 71,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 20950
+    },
+    {
+      "from": "Curl",
+      "to": "Splay",
+      "max_joint_step_deg": 0.5,
+      "samples": 71,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 24964
+    },
+    {
+      "from": "Curl",
+      "to": "Backbend",
+      "max_joint_step_deg": 0.5,
+      "samples": 111,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42,
+            183.38613060849877,
+            -18.939114872189318
+          ],
+          [
+            42,
+            183,
+            -20.000000000000004
+          ]
+        ],
+        "lower_bound_only": false,
+        "t": 1
+      },
+      "bad_samples": [],
+      "distance_calls": 27847
+    },
+    {
+      "from": "Curl",
+      "to": "Close",
+      "max_joint_step_deg": 0.5,
+      "samples": 51,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 13446
+    },
+    {
+      "from": "Curl",
+      "to": "ThumbSweep",
+      "max_joint_step_deg": 0.5,
+      "samples": 21,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 2473
+    },
+    {
+      "from": "Splay",
+      "to": "Backbend",
+      "max_joint_step_deg": 0.5,
+      "samples": 41,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42,
+            183.38613060849877,
+            -18.939114872189318
+          ],
+          [
+            42,
+            183,
+            -20.000000000000004
+          ]
+        ],
+        "lower_bound_only": false,
+        "t": 1
+      },
+      "bad_samples": [],
+      "distance_calls": 6595
+    },
+    {
+      "from": "Splay",
+      "to": "Close",
+      "max_joint_step_deg": 0.5,
+      "samples": 121,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 43295
+    },
+    {
+      "from": "Splay",
+      "to": "ThumbSweep",
+      "max_joint_step_deg": 0.5,
+      "samples": 71,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 28046
+    },
+    {
+      "from": "Backbend",
+      "to": "Close",
+      "max_joint_step_deg": 0.5,
+      "samples": 161,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 40961
+    },
+    {
+      "from": "Backbend",
+      "to": "ThumbSweep",
+      "max_joint_step_deg": 0.5,
+      "samples": 111,
+      "minimum": {
+        "pair": [
+          "index_mcp_link",
+          "Middle_root_cartridge"
+        ],
+        "distance_mm": 1.12897,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            42,
+            183.38613060849877,
+            -18.939114872189318
+          ],
+          [
+            42,
+            183,
+            -20.000000000000004
+          ]
+        ],
+        "lower_bound_only": false,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 32088
+    },
+    {
+      "from": "Close",
+      "to": "ThumbSweep",
+      "max_joint_step_deg": 0.5,
+      "samples": 51,
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true,
+        "t": 0
+      },
+      "bad_samples": [],
+      "distance_calls": 15188
+    }
+  ],
+  "elapsed_s": 869.125,
+  "passed_at_threshold": true,
+  "input_sha256": {
+    "design.json": "1e9b2f44597a81c68886d0db9b29961b14c690f8a59c7f37bf902557d4af033e",
+    "scene.json": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e",
+    "collision_meshes.npz": "e6df0d2ab2f884a87c39ce0adcef62669fe681cec978b23ab7aa7dfccd8720fd",
+    "kinematics_numpy.py": "fdbe1f7e3b546b9fd43e04eed441883a89f66b221d0789311fe5c0b55b168a76",
+    "mesh_collision.py": "fd6c9d03f5c24d4250548cda5dca8cc857d32d24bfda8dfc36e0138dc5d2785e",
+    "scan_mesh_motion.py": "67a8c7f517901c644f557f8267b912d1acb46134d69ea0867379244b97ce5beb"
+  },
+  "audit_scope": "V8actual CAD mesh positions sampled atmax0.5deg. No actuator torque tracking."
+}

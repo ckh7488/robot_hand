@@ -1,0 +1,87 @@
+{
+  "scope": "Actual hand CAD in Open plus local loop wire solids at3angles. All mm. Packaging candidate only; cable tie fixation/dynamic equilibrium/electrical wiring not approved.",
+  "wire_radius_mm": 0.95,
+  "loop_length_mm": 140,
+  "loop_shapes": [
+    {
+      "name": "Little_loop_q-20_wire1",
+      "q_deg": -20,
+      "lane": 0,
+      "centerline_length_mm": 140.010608522547,
+      "valid_single_solid": true,
+      "volume_mm3": 396.94065993461396
+    },
+    {
+      "name": "Little_loop_q-20_wire2",
+      "q_deg": -20,
+      "lane": 1,
+      "centerline_length_mm": 140.01126075477384,
+      "valid_single_solid": true,
+      "volume_mm3": 396.94027296030646
+    },
+    {
+      "name": "Little_loop_q-20_wire3",
+      "q_deg": -20,
+      "lane": 2,
+      "centerline_length_mm": 140.00986818612034,
+      "valid_single_solid": true,
+      "volume_mm3": 396.9404218916104
+    },
+    {
+      "name": "Little_loop_q0_wire1",
+      "q_deg": 0,
+      "lane": 0,
+      "centerline_length_mm": 139.99993810840542,
+      "valid_single_solid": true,
+      "volume_mm3": 396.94032309956725
+    },
+    {
+      "name": "Little_loop_q0_wire2",
+      "q_deg": 0,
+      "lane": 1,
+      "centerline_length_mm": 139.99992977865165,
+      "valid_single_solid": true,
+      "volume_mm3": 396.9398801638032
+    },
+    {
+      "name": "Little_loop_q0_wire3",
+      "q_deg": 0,
+      "lane": 2,
+      "centerline_length_mm": 139.99992777447946,
+      "valid_single_solid": true,
+      "volume_mm3": 396.9402809517519
+    },
+    {
+      "name": "Little_loop_q60_wire1",
+      "q_deg": 60,
+      "lane": 0,
+      "centerline_length_mm": 140.00270625986818,
+      "valid_single_solid": true,
+      "volume_mm3": 396.93999075836297
+    },
+    {
+      "name": "Little_loop_q60_wire2",
+      "q_deg": 60,
+      "lane": 1,
+      "centerline_length_mm": 140.00299343138946,
+      "valid_single_solid": true,
+      "volume_mm3": 396.94045921711506
+    },
+    {
+      "name": "Little_loop_q60_wire3",
+      "q_deg": 60,
+      "lane": 2,
+      "centerline_length_mm": 140.002280888294,
+      "valid_single_solid": true,
+      "volume_mm3": 396.94055663885445
+    }
+  ],
+  "maximum_length_error_mm": 0.011260754773843473,
+  "collision_uses_display_mesh": false,
+  "wire_display_mesh": {
+    "circle_sides": 16,
+    "centerline_control_hull_error_mm": 0.005,
+    "maximum_centerline_chord_mm": 1,
+    "collision_uses_display_mesh": false
+  }
+}

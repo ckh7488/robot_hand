@@ -1,0 +1,1693 @@
+{
+  "scope": "Exact BRep for one chosen FIXED lead exit per motor in6stored poses. Replaces one thumb-link candidate locally only. Own connector/case catalog-envelope mating unqualified; no connected cable, moving slack, wire-wire or full joint sweep.",
+  "wire_nominal_radius_mm": 0.95,
+  "wire_reserve_radius_mm": 1.25,
+  "additional_gap_target_mm": 0.3,
+  "rows": [
+    {
+      "pose": "Open",
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "index_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.350000000000005,
+        "source": "wire3",
+        "obstacle": "middle_pip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "middle_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "ring_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.4299563985499501,
+        "source": "wire3",
+        "obstacle": "little_pip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.3499999999999943,
+        "source": "wire3",
+        "obstacle": "little_dip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_forward",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.4999999463327728,
+        "source": "wire1",
+        "obstacle": "thumb_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Open",
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.49999999999999417,
+        "source": "plug",
+        "obstacle": "thumb_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "index_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.3499999999999872,
+        "source": "wire3",
+        "obstacle": "middle_pip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "middle_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "ring_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_forward",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.49999999999999656,
+        "source": "plug",
+        "obstacle": "thumb_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.4999999463327728,
+        "source": "wire1",
+        "obstacle": "thumb_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999792,
+        "source": "plug",
+        "obstacle": "thumb_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "index_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "ring_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_forward",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.4999999463327728,
+        "source": "wire1",
+        "obstacle": "thumb_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.49999999999999417,
+        "source": "plug",
+        "obstacle": "thumb_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "index_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "middle_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "ring_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.3499999999999943,
+        "source": "wire3",
+        "obstacle": "little_pip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.3500000000000085,
+        "source": "wire3",
+        "obstacle": "little_dip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_forward",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.4999999463327728,
+        "source": "wire1",
+        "obstacle": "thumb_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.49999999999999417,
+        "source": "plug",
+        "obstacle": "thumb_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "index_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.34999999999999076,
+        "source": "wire3",
+        "obstacle": "middle_pip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "middle_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "ring_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_forward",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "thumb_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "thumb_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.4999999463327728,
+        "source": "wire1",
+        "obstacle": "thumb_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999943,
+        "source": "plug",
+        "obstacle": "thumb_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "index_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "index_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.3499999999999872,
+        "source": "wire3",
+        "obstacle": "middle_pip_hinge",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "middle_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "middle_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "ring_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "ring_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999929,
+        "source": "plug",
+        "obstacle": "little_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_forward",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_pip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "little_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "thumb_root_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "minimum": {
+        "distance_mm": 0.5,
+        "source": "plug",
+        "obstacle": "thumb_mcp_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "minimum": {
+        "distance_mm": 0.4999999463327728,
+        "source": "wire1",
+        "obstacle": "thumb_mcp_link",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "minimum": {
+        "distance_mm": 0.4999999999999792,
+        "source": "plug",
+        "obstacle": "thumb_dip_rotor",
+        "overlap_mm3": 0,
+        "capped_lower_bound": false
+      },
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "manufacturing_release": false,
+  "full_harness_validated": false,
+  "BRep_uncached_distance_queries": 731,
+  "elapsed_seconds": 135.48400000005495,
+  "all_selected_fixed_exits_passed": true
+}

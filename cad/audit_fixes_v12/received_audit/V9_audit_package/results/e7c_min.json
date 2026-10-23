@@ -1,0 +1,4322 @@
+[
+ {
+  "screw": "index_root_base_screws",
+  "k": 0,
+  "head_top": [
+   83.2,
+   141.3,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_root_frame"
+  ],
+  "stage": "minimal: index_root_frame,Index_root_cartridge,index_root_base_nuts"
+ },
+ {
+  "screw": "index_root_base_screws",
+  "k": 1,
+  "head_top": [
+   83.2,
+   167.7,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_root_frame"
+  ],
+  "stage": "minimal: index_root_frame,Index_root_cartridge,index_root_base_nuts"
+ },
+ {
+  "screw": "index_root_base_screws",
+  "k": 2,
+  "head_top": [
+   83.2,
+   141.3,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_root_frame"
+  ],
+  "stage": "minimal: index_root_frame,Index_root_cartridge,index_root_base_nuts"
+ },
+ {
+  "screw": "index_root_base_screws",
+  "k": 3,
+  "head_top": [
+   83.2,
+   167.7,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_root_frame"
+  ],
+  "stage": "minimal: index_root_frame,Index_root_cartridge,index_root_base_nuts"
+ },
+ {
+  "screw": "index_root_output_screws",
+  "k": 0,
+  "head_top": [
+   77.7,
+   177.2,
+   -44.2
+  ],
+  "axis": [
+   -0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "index_spread_carrier"
+  ],
+  "stage": "minimal: index_root_hinge,index_spread_carrier,index_root_output_nuts"
+ },
+ {
+  "screw": "index_root_output_screws",
+  "k": 1,
+  "head_top": [
+   66.3,
+   177.2,
+   -44.2
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "index_spread_carrier"
+  ],
+  "stage": "minimal: index_root_hinge,index_spread_carrier,index_root_output_nuts"
+ },
+ {
+  "screw": "index_root_output_screws",
+  "k": 2,
+  "head_top": [
+   77.7,
+   177.2,
+   -32.8
+  ],
+  "axis": [
+   -0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "index_spread_carrier"
+  ],
+  "stage": "minimal: index_root_hinge,index_spread_carrier,index_root_output_nuts"
+ },
+ {
+  "screw": "index_root_output_screws",
+  "k": 3,
+  "head_top": [
+   66.3,
+   177.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "index_spread_carrier"
+  ],
+  "stage": "minimal: index_root_hinge,index_spread_carrier,index_root_output_nuts"
+ },
+ {
+  "screw": "index_mcp_base_screws",
+  "k": 0,
+  "head_top": [
+   51.8,
+   141.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_mcp_fixed_frame"
+  ],
+  "stage": "minimal: index_mcp_fixed_frame,index_spread_carrier,index_mcp_base_nuts"
+ },
+ {
+  "screw": "index_mcp_base_screws",
+  "k": 1,
+  "head_top": [
+   51.8,
+   167.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_mcp_fixed_frame"
+  ],
+  "stage": "minimal: index_mcp_fixed_frame,index_spread_carrier,index_mcp_base_nuts"
+ },
+ {
+  "screw": "index_mcp_base_screws",
+  "k": 2,
+  "head_top": [
+   63.2,
+   141.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_mcp_fixed_frame"
+  ],
+  "stage": "minimal: index_mcp_fixed_frame,index_spread_carrier,index_mcp_base_nuts"
+ },
+ {
+  "screw": "index_mcp_base_screws",
+  "k": 3,
+  "head_top": [
+   63.2,
+   167.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_mcp_fixed_frame"
+  ],
+  "stage": "minimal: index_mcp_fixed_frame,index_spread_carrier,index_mcp_base_nuts"
+ },
+ {
+  "screw": "index_mcp_output_screws",
+  "k": 0,
+  "head_top": [
+   51.8,
+   177.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_mcp_hinge"
+  ],
+  "stage": "minimal: index_mcp_hinge,index_mcp_link,index_mcp_output_nuts"
+ },
+ {
+  "screw": "index_mcp_output_screws",
+  "k": 1,
+  "head_top": [
+   51.8,
+   177.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_mcp_hinge"
+  ],
+  "stage": "minimal: index_mcp_hinge,index_mcp_link,index_mcp_output_nuts"
+ },
+ {
+  "screw": "index_mcp_output_screws",
+  "k": 2,
+  "head_top": [
+   63.2,
+   177.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_mcp_hinge"
+  ],
+  "stage": "minimal: index_mcp_hinge,index_mcp_link,index_mcp_output_nuts"
+ },
+ {
+  "screw": "index_mcp_output_screws",
+  "k": 3,
+  "head_top": [
+   63.2,
+   177.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_mcp_hinge"
+  ],
+  "stage": "minimal: index_mcp_hinge,index_mcp_link,index_mcp_output_nuts"
+ },
+ {
+  "screw": "index_pip_base_screws",
+  "k": 0,
+  "head_top": [
+   51.8,
+   206.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_pip_fixed_frame"
+  ],
+  "handle": [
+   41.37,
+   "index_mcp_link"
+  ],
+  "stage": "minimal: index_pip_fixed_frame,index_mcp_link,index_pip_base_nuts"
+ },
+ {
+  "screw": "index_pip_base_screws",
+  "k": 1,
+  "head_top": [
+   51.8,
+   232.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_pip_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_pip_fixed_frame"
+  ],
+  "stage": "minimal: index_pip_fixed_frame,index_mcp_link,index_pip_base_nuts"
+ },
+ {
+  "screw": "index_pip_base_screws",
+  "k": 2,
+  "head_top": [
+   63.2,
+   206.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_pip_fixed_frame"
+  ],
+  "handle": [
+   41.37,
+   "index_mcp_link"
+  ],
+  "stage": "minimal: index_pip_fixed_frame,index_mcp_link,index_pip_base_nuts"
+ },
+ {
+  "screw": "index_pip_base_screws",
+  "k": 3,
+  "head_top": [
+   63.2,
+   232.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_pip_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "index_pip_fixed_frame"
+  ],
+  "stage": "minimal: index_pip_fixed_frame,index_mcp_link,index_pip_base_nuts"
+ },
+ {
+  "screw": "index_pip_output_screws",
+  "k": 0,
+  "head_top": [
+   51.8,
+   242.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_pip_hinge"
+  ],
+  "stage": "minimal: index_pip_hinge,index_pip_link,index_pip_output_nuts"
+ },
+ {
+  "screw": "index_pip_output_screws",
+  "k": 1,
+  "head_top": [
+   51.8,
+   242.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_pip_hinge"
+  ],
+  "stage": "minimal: index_pip_hinge,index_pip_link,index_pip_output_nuts"
+ },
+ {
+  "screw": "index_pip_output_screws",
+  "k": 2,
+  "head_top": [
+   63.2,
+   242.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_pip_hinge"
+  ],
+  "stage": "minimal: index_pip_hinge,index_pip_link,index_pip_output_nuts"
+ },
+ {
+  "screw": "index_pip_output_screws",
+  "k": 3,
+  "head_top": [
+   63.2,
+   242.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_pip_hinge"
+  ],
+  "stage": "minimal: index_pip_hinge,index_pip_link,index_pip_output_nuts"
+ },
+ {
+  "screw": "index_dip_base_screws",
+  "k": 0,
+  "head_top": [
+   51.8,
+   256.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_dip_fixed_frame"
+  ],
+  "handle": [
+   38.8,
+   "index_pip_link"
+  ],
+  "stage": "minimal: index_dip_fixed_frame,index_pip_link,index_dip_base_nuts"
+ },
+ {
+  "screw": "index_dip_base_screws",
+  "k": 1,
+  "head_top": [
+   51.8,
+   282.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_dip_fixed_frame"
+  ],
+  "handle": [
+   46.52,
+   "index_pip_link"
+  ],
+  "stage": "minimal: index_dip_fixed_frame,index_pip_link,index_dip_base_nuts"
+ },
+ {
+  "screw": "index_dip_base_screws",
+  "k": 2,
+  "head_top": [
+   63.2,
+   256.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_dip_fixed_frame"
+  ],
+  "handle": [
+   38.8,
+   "index_pip_link"
+  ],
+  "stage": "minimal: index_dip_fixed_frame,index_pip_link,index_dip_base_nuts"
+ },
+ {
+  "screw": "index_dip_base_screws",
+  "k": 3,
+  "head_top": [
+   63.2,
+   282.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "index_dip_fixed_frame"
+  ],
+  "handle": [
+   46.52,
+   "index_pip_link"
+  ],
+  "stage": "minimal: index_dip_fixed_frame,index_pip_link,index_dip_base_nuts"
+ },
+ {
+  "screw": "index_dip_output_screws",
+  "k": 0,
+  "head_top": [
+   51.8,
+   292.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_dip_hinge"
+  ],
+  "stage": "minimal: index_dip_hinge,index_dip_tip,index_dip_output_nuts"
+ },
+ {
+  "screw": "index_dip_output_screws",
+  "k": 1,
+  "head_top": [
+   51.8,
+   292.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_dip_hinge"
+  ],
+  "stage": "minimal: index_dip_hinge,index_dip_tip,index_dip_output_nuts"
+ },
+ {
+  "screw": "index_dip_output_screws",
+  "k": 2,
+  "head_top": [
+   63.2,
+   292.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_dip_hinge"
+  ],
+  "stage": "minimal: index_dip_hinge,index_dip_tip,index_dip_output_nuts"
+ },
+ {
+  "screw": "index_dip_output_screws",
+  "k": 3,
+  "head_top": [
+   63.2,
+   292.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "index_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "index_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "index_dip_hinge"
+  ],
+  "stage": "minimal: index_dip_hinge,index_dip_tip,index_dip_output_nuts"
+ },
+ {
+  "screw": "middle_root_base_screws",
+  "k": 0,
+  "head_top": [
+   35.2,
+   151.3,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_root_frame"
+  ],
+  "stage": "minimal: middle_root_frame,Middle_root_cartridge,middle_root_base_nuts"
+ },
+ {
+  "screw": "middle_root_base_screws",
+  "k": 1,
+  "head_top": [
+   35.2,
+   177.7,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_root_frame"
+  ],
+  "stage": "minimal: middle_root_frame,Middle_root_cartridge,middle_root_base_nuts"
+ },
+ {
+  "screw": "middle_root_base_screws",
+  "k": 2,
+  "head_top": [
+   35.2,
+   151.3,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_root_frame"
+  ],
+  "stage": "minimal: middle_root_frame,Middle_root_cartridge,middle_root_base_nuts"
+ },
+ {
+  "screw": "middle_root_base_screws",
+  "k": 3,
+  "head_top": [
+   35.2,
+   177.7,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_root_frame"
+  ],
+  "stage": "minimal: middle_root_frame,Middle_root_cartridge,middle_root_base_nuts"
+ },
+ {
+  "screw": "middle_root_output_screws",
+  "k": 0,
+  "head_top": [
+   29.7,
+   187.2,
+   -44.2
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "middle_spread_carrier"
+  ],
+  "stage": "minimal: middle_root_hinge,middle_spread_carrier,middle_root_output_nuts"
+ },
+ {
+  "screw": "middle_root_output_screws",
+  "k": 1,
+  "head_top": [
+   18.3,
+   187.2,
+   -44.2
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "middle_spread_carrier"
+  ],
+  "stage": "minimal: middle_root_hinge,middle_spread_carrier,middle_root_output_nuts"
+ },
+ {
+  "screw": "middle_root_output_screws",
+  "k": 2,
+  "head_top": [
+   29.7,
+   187.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "middle_spread_carrier"
+  ],
+  "stage": "minimal: middle_root_hinge,middle_spread_carrier,middle_root_output_nuts"
+ },
+ {
+  "screw": "middle_root_output_screws",
+  "k": 3,
+  "head_top": [
+   18.3,
+   187.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "middle_spread_carrier"
+  ],
+  "stage": "minimal: middle_root_hinge,middle_spread_carrier,middle_root_output_nuts"
+ },
+ {
+  "screw": "middle_mcp_base_screws",
+  "k": 0,
+  "head_top": [
+   3.8,
+   151.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_mcp_fixed_frame"
+  ],
+  "stage": "minimal: middle_mcp_fixed_frame,middle_spread_carrier,middle_mcp_base_nuts"
+ },
+ {
+  "screw": "middle_mcp_base_screws",
+  "k": 1,
+  "head_top": [
+   3.8,
+   177.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_mcp_fixed_frame"
+  ],
+  "stage": "minimal: middle_mcp_fixed_frame,middle_spread_carrier,middle_mcp_base_nuts"
+ },
+ {
+  "screw": "middle_mcp_base_screws",
+  "k": 2,
+  "head_top": [
+   15.2,
+   151.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_mcp_fixed_frame"
+  ],
+  "stage": "minimal: middle_mcp_fixed_frame,middle_spread_carrier,middle_mcp_base_nuts"
+ },
+ {
+  "screw": "middle_mcp_base_screws",
+  "k": 3,
+  "head_top": [
+   15.2,
+   177.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_mcp_fixed_frame"
+  ],
+  "stage": "minimal: middle_mcp_fixed_frame,middle_spread_carrier,middle_mcp_base_nuts"
+ },
+ {
+  "screw": "middle_mcp_output_screws",
+  "k": 0,
+  "head_top": [
+   3.8,
+   187.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_mcp_hinge"
+  ],
+  "stage": "minimal: middle_mcp_hinge,middle_mcp_link,middle_mcp_output_nuts"
+ },
+ {
+  "screw": "middle_mcp_output_screws",
+  "k": 1,
+  "head_top": [
+   3.8,
+   187.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_mcp_hinge"
+  ],
+  "stage": "minimal: middle_mcp_hinge,middle_mcp_link,middle_mcp_output_nuts"
+ },
+ {
+  "screw": "middle_mcp_output_screws",
+  "k": 2,
+  "head_top": [
+   15.2,
+   187.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_mcp_hinge"
+  ],
+  "stage": "minimal: middle_mcp_hinge,middle_mcp_link,middle_mcp_output_nuts"
+ },
+ {
+  "screw": "middle_mcp_output_screws",
+  "k": 3,
+  "head_top": [
+   15.2,
+   187.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_mcp_hinge"
+  ],
+  "stage": "minimal: middle_mcp_hinge,middle_mcp_link,middle_mcp_output_nuts"
+ },
+ {
+  "screw": "middle_pip_base_screws",
+  "k": 0,
+  "head_top": [
+   3.8,
+   221.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_pip_fixed_frame"
+  ],
+  "handle": [
+   43.35,
+   "middle_mcp_link"
+  ],
+  "stage": "minimal: middle_pip_fixed_frame,middle_mcp_link,middle_pip_base_nuts"
+ },
+ {
+  "screw": "middle_pip_base_screws",
+  "k": 1,
+  "head_top": [
+   3.8,
+   247.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_pip_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_pip_fixed_frame"
+  ],
+  "stage": "minimal: middle_pip_fixed_frame,middle_mcp_link,middle_pip_base_nuts"
+ },
+ {
+  "screw": "middle_pip_base_screws",
+  "k": 2,
+  "head_top": [
+   15.2,
+   221.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_pip_fixed_frame"
+  ],
+  "handle": [
+   43.35,
+   "middle_mcp_link"
+  ],
+  "stage": "minimal: middle_pip_fixed_frame,middle_mcp_link,middle_pip_base_nuts"
+ },
+ {
+  "screw": "middle_pip_base_screws",
+  "k": 3,
+  "head_top": [
+   15.2,
+   247.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_pip_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "middle_pip_fixed_frame"
+  ],
+  "stage": "minimal: middle_pip_fixed_frame,middle_mcp_link,middle_pip_base_nuts"
+ },
+ {
+  "screw": "middle_pip_output_screws",
+  "k": 0,
+  "head_top": [
+   3.8,
+   257.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_pip_hinge"
+  ],
+  "stage": "minimal: middle_pip_hinge,middle_pip_link,middle_pip_output_nuts"
+ },
+ {
+  "screw": "middle_pip_output_screws",
+  "k": 1,
+  "head_top": [
+   3.8,
+   257.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_pip_hinge"
+  ],
+  "stage": "minimal: middle_pip_hinge,middle_pip_link,middle_pip_output_nuts"
+ },
+ {
+  "screw": "middle_pip_output_screws",
+  "k": 2,
+  "head_top": [
+   15.2,
+   257.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_pip_hinge"
+  ],
+  "stage": "minimal: middle_pip_hinge,middle_pip_link,middle_pip_output_nuts"
+ },
+ {
+  "screw": "middle_pip_output_screws",
+  "k": 3,
+  "head_top": [
+   15.2,
+   257.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_pip_hinge"
+  ],
+  "stage": "minimal: middle_pip_hinge,middle_pip_link,middle_pip_output_nuts"
+ },
+ {
+  "screw": "middle_dip_base_screws",
+  "k": 0,
+  "head_top": [
+   3.8,
+   271.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_dip_fixed_frame"
+  ],
+  "handle": [
+   38.8,
+   "middle_pip_link"
+  ],
+  "stage": "minimal: middle_dip_fixed_frame,middle_pip_link,middle_dip_base_nuts"
+ },
+ {
+  "screw": "middle_dip_base_screws",
+  "k": 1,
+  "head_top": [
+   3.8,
+   297.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_dip_fixed_frame"
+  ],
+  "handle": [
+   46.52,
+   "middle_pip_link"
+  ],
+  "stage": "minimal: middle_dip_fixed_frame,middle_pip_link,middle_dip_base_nuts"
+ },
+ {
+  "screw": "middle_dip_base_screws",
+  "k": 2,
+  "head_top": [
+   15.2,
+   271.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_dip_fixed_frame"
+  ],
+  "handle": [
+   38.8,
+   "middle_pip_link"
+  ],
+  "stage": "minimal: middle_dip_fixed_frame,middle_pip_link,middle_dip_base_nuts"
+ },
+ {
+  "screw": "middle_dip_base_screws",
+  "k": 3,
+  "head_top": [
+   15.2,
+   297.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "middle_dip_fixed_frame"
+  ],
+  "handle": [
+   46.52,
+   "middle_pip_link"
+  ],
+  "stage": "minimal: middle_dip_fixed_frame,middle_pip_link,middle_dip_base_nuts"
+ },
+ {
+  "screw": "middle_dip_output_screws",
+  "k": 0,
+  "head_top": [
+   3.8,
+   307.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_dip_hinge"
+  ],
+  "stage": "minimal: middle_dip_hinge,middle_dip_tip,middle_dip_output_nuts"
+ },
+ {
+  "screw": "middle_dip_output_screws",
+  "k": 1,
+  "head_top": [
+   3.8,
+   307.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_dip_hinge"
+  ],
+  "stage": "minimal: middle_dip_hinge,middle_dip_tip,middle_dip_output_nuts"
+ },
+ {
+  "screw": "middle_dip_output_screws",
+  "k": 2,
+  "head_top": [
+   15.2,
+   307.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_dip_hinge"
+  ],
+  "stage": "minimal: middle_dip_hinge,middle_dip_tip,middle_dip_output_nuts"
+ },
+ {
+  "screw": "middle_dip_output_screws",
+  "k": 3,
+  "head_top": [
+   15.2,
+   307.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "middle_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "middle_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "middle_dip_hinge"
+  ],
+  "stage": "minimal: middle_dip_hinge,middle_dip_tip,middle_dip_output_nuts"
+ },
+ {
+  "screw": "ring_root_base_screws",
+  "k": 0,
+  "head_top": [
+   -12.8,
+   145.3,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_root_frame"
+  ],
+  "stage": "minimal: ring_root_frame,Ring_root_cartridge,ring_root_base_nuts"
+ },
+ {
+  "screw": "ring_root_base_screws",
+  "k": 1,
+  "head_top": [
+   -12.8,
+   171.7,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_root_frame"
+  ],
+  "stage": "minimal: ring_root_frame,Ring_root_cartridge,ring_root_base_nuts"
+ },
+ {
+  "screw": "ring_root_base_screws",
+  "k": 2,
+  "head_top": [
+   -12.8,
+   145.3,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_root_frame"
+  ],
+  "stage": "minimal: ring_root_frame,Ring_root_cartridge,ring_root_base_nuts"
+ },
+ {
+  "screw": "ring_root_base_screws",
+  "k": 3,
+  "head_top": [
+   -12.8,
+   171.7,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_root_frame"
+  ],
+  "stage": "minimal: ring_root_frame,Ring_root_cartridge,ring_root_base_nuts"
+ },
+ {
+  "screw": "ring_root_output_screws",
+  "k": 0,
+  "head_top": [
+   -18.3,
+   181.2,
+   -44.2
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "ring_spread_carrier"
+  ],
+  "stage": "minimal: ring_root_hinge,ring_spread_carrier,ring_root_output_nuts"
+ },
+ {
+  "screw": "ring_root_output_screws",
+  "k": 1,
+  "head_top": [
+   -29.7,
+   181.2,
+   -44.2
+  ],
+  "axis": [
+   -0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "ring_spread_carrier"
+  ],
+  "stage": "minimal: ring_root_hinge,ring_spread_carrier,ring_root_output_nuts"
+ },
+ {
+  "screw": "ring_root_output_screws",
+  "k": 2,
+  "head_top": [
+   -18.3,
+   181.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "ring_spread_carrier"
+  ],
+  "stage": "minimal: ring_root_hinge,ring_spread_carrier,ring_root_output_nuts"
+ },
+ {
+  "screw": "ring_root_output_screws",
+  "k": 3,
+  "head_top": [
+   -29.7,
+   181.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "ring_spread_carrier"
+  ],
+  "stage": "minimal: ring_root_hinge,ring_spread_carrier,ring_root_output_nuts"
+ },
+ {
+  "screw": "ring_mcp_base_screws",
+  "k": 0,
+  "head_top": [
+   -44.2,
+   145.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_mcp_fixed_frame"
+  ],
+  "stage": "minimal: ring_mcp_fixed_frame,ring_spread_carrier,ring_mcp_base_nuts"
+ },
+ {
+  "screw": "ring_mcp_base_screws",
+  "k": 1,
+  "head_top": [
+   -44.2,
+   171.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_mcp_fixed_frame"
+  ],
+  "stage": "minimal: ring_mcp_fixed_frame,ring_spread_carrier,ring_mcp_base_nuts"
+ },
+ {
+  "screw": "ring_mcp_base_screws",
+  "k": 2,
+  "head_top": [
+   -32.8,
+   145.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_mcp_fixed_frame"
+  ],
+  "stage": "minimal: ring_mcp_fixed_frame,ring_spread_carrier,ring_mcp_base_nuts"
+ },
+ {
+  "screw": "ring_mcp_base_screws",
+  "k": 3,
+  "head_top": [
+   -32.8,
+   171.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "ring_mcp_fixed_frame"
+  ],
+  "stage": "minimal: ring_mcp_fixed_frame,ring_spread_carrier,ring_mcp_base_nuts"
+ },
+ {
+  "screw": "ring_mcp_output_screws",
+  "k": 0,
+  "head_top": [
+   -44.2,
+   181.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_mcp_hinge"
+  ],
+  "stage": "minimal: ring_mcp_hinge,ring_mcp_link,ring_mcp_output_nuts"
+ },
+ {
+  "screw": "ring_mcp_output_screws",
+  "k": 1,
+  "head_top": [
+   -44.2,
+   181.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_mcp_hinge"
+  ],
+  "stage": "minimal: ring_mcp_hinge,ring_mcp_link,ring_mcp_output_nuts"
+ },
+ {
+  "screw": "ring_mcp_output_screws",
+  "k": 2,
+  "head_top": [
+   -32.8,
+   181.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_mcp_hinge"
+  ],
+  "stage": "minimal: ring_mcp_hinge,ring_mcp_link,ring_mcp_output_nuts"
+ },
+ {
+  "screw": "ring_mcp_output_screws",
+  "k": 3,
+  "head_top": [
+   -32.8,
+   181.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_mcp_hinge"
+  ],
+  "stage": "minimal: ring_mcp_hinge,ring_mcp_link,ring_mcp_output_nuts"
+ },
+ {
+  "screw": "ring_pip_base_screws",
+  "k": 0,
+  "head_top": [
+   -44.2,
+   207.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_pip_fixed_frame"
+  ],
+  "handle": [
+   40.42,
+   "ring_mcp_link"
+  ],
+  "stage": "minimal: ring_pip_fixed_frame,ring_mcp_link,ring_pip_base_nuts"
+ },
+ {
+  "screw": "ring_pip_base_screws",
+  "k": 1,
+  "head_top": [
+   -44.2,
+   233.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_pip_fixed_frame"
+  ],
+  "handle": [
+   54.07,
+   "ring_mcp_link"
+  ],
+  "stage": "minimal: ring_pip_fixed_frame,ring_mcp_link,ring_pip_base_nuts"
+ },
+ {
+  "screw": "ring_pip_base_screws",
+  "k": 2,
+  "head_top": [
+   -32.8,
+   207.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_pip_fixed_frame"
+  ],
+  "handle": [
+   40.42,
+   "ring_mcp_link"
+  ],
+  "stage": "minimal: ring_pip_fixed_frame,ring_mcp_link,ring_pip_base_nuts"
+ },
+ {
+  "screw": "ring_pip_base_screws",
+  "k": 3,
+  "head_top": [
+   -32.8,
+   233.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_pip_fixed_frame"
+  ],
+  "handle": [
+   54.07,
+   "ring_mcp_link"
+  ],
+  "stage": "minimal: ring_pip_fixed_frame,ring_mcp_link,ring_pip_base_nuts"
+ },
+ {
+  "screw": "ring_pip_output_screws",
+  "k": 0,
+  "head_top": [
+   -44.2,
+   243.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_pip_hinge"
+  ],
+  "stage": "minimal: ring_pip_hinge,ring_pip_link,ring_pip_output_nuts"
+ },
+ {
+  "screw": "ring_pip_output_screws",
+  "k": 1,
+  "head_top": [
+   -44.2,
+   243.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_pip_hinge"
+  ],
+  "stage": "minimal: ring_pip_hinge,ring_pip_link,ring_pip_output_nuts"
+ },
+ {
+  "screw": "ring_pip_output_screws",
+  "k": 2,
+  "head_top": [
+   -32.8,
+   243.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_pip_hinge"
+  ],
+  "stage": "minimal: ring_pip_hinge,ring_pip_link,ring_pip_output_nuts"
+ },
+ {
+  "screw": "ring_pip_output_screws",
+  "k": 3,
+  "head_top": [
+   -32.8,
+   243.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_pip_hinge"
+  ],
+  "stage": "minimal: ring_pip_hinge,ring_pip_link,ring_pip_output_nuts"
+ },
+ {
+  "screw": "ring_dip_base_screws",
+  "k": 0,
+  "head_top": [
+   -44.2,
+   257.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_dip_fixed_frame"
+  ],
+  "handle": [
+   38.8,
+   "ring_pip_link"
+  ],
+  "stage": "minimal: ring_dip_fixed_frame,ring_pip_link,ring_dip_base_nuts"
+ },
+ {
+  "screw": "ring_dip_base_screws",
+  "k": 1,
+  "head_top": [
+   -44.2,
+   283.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_dip_fixed_frame"
+  ],
+  "handle": [
+   46.52,
+   "ring_pip_link"
+  ],
+  "stage": "minimal: ring_dip_fixed_frame,ring_pip_link,ring_dip_base_nuts"
+ },
+ {
+  "screw": "ring_dip_base_screws",
+  "k": 2,
+  "head_top": [
+   -32.8,
+   257.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_dip_fixed_frame"
+  ],
+  "handle": [
+   38.8,
+   "ring_pip_link"
+  ],
+  "stage": "minimal: ring_dip_fixed_frame,ring_pip_link,ring_dip_base_nuts"
+ },
+ {
+  "screw": "ring_dip_base_screws",
+  "k": 3,
+  "head_top": [
+   -32.8,
+   283.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "ring_dip_fixed_frame"
+  ],
+  "handle": [
+   46.52,
+   "ring_pip_link"
+  ],
+  "stage": "minimal: ring_dip_fixed_frame,ring_pip_link,ring_dip_base_nuts"
+ },
+ {
+  "screw": "ring_dip_output_screws",
+  "k": 0,
+  "head_top": [
+   -44.2,
+   293.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_dip_hinge"
+  ],
+  "stage": "minimal: ring_dip_hinge,ring_dip_tip,ring_dip_output_nuts"
+ },
+ {
+  "screw": "ring_dip_output_screws",
+  "k": 1,
+  "head_top": [
+   -44.2,
+   293.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_dip_hinge"
+  ],
+  "stage": "minimal: ring_dip_hinge,ring_dip_tip,ring_dip_output_nuts"
+ },
+ {
+  "screw": "ring_dip_output_screws",
+  "k": 2,
+  "head_top": [
+   -32.8,
+   293.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_dip_hinge"
+  ],
+  "stage": "minimal: ring_dip_hinge,ring_dip_tip,ring_dip_output_nuts"
+ },
+ {
+  "screw": "ring_dip_output_screws",
+  "k": 3,
+  "head_top": [
+   -32.8,
+   293.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "ring_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "ring_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "ring_dip_hinge"
+  ],
+  "stage": "minimal: ring_dip_hinge,ring_dip_tip,ring_dip_output_nuts"
+ },
+ {
+  "screw": "little_root_base_screws",
+  "k": 0,
+  "head_top": [
+   -60.8,
+   130.3,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_root_frame"
+  ],
+  "stage": "minimal: little_root_frame,Little_root_cartridge,little_root_base_nuts"
+ },
+ {
+  "screw": "little_root_base_screws",
+  "k": 1,
+  "head_top": [
+   -60.8,
+   156.7,
+   -44.2
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_root_frame"
+  ],
+  "stage": "minimal: little_root_frame,Little_root_cartridge,little_root_base_nuts"
+ },
+ {
+  "screw": "little_root_base_screws",
+  "k": 2,
+  "head_top": [
+   -60.8,
+   130.3,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_root_frame"
+  ],
+  "stage": "minimal: little_root_frame,Little_root_cartridge,little_root_base_nuts"
+ },
+ {
+  "screw": "little_root_base_screws",
+  "k": 3,
+  "head_top": [
+   -60.8,
+   156.7,
+   -32.8
+  ],
+  "axis": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_root_frame"
+  ],
+  "stage": "minimal: little_root_frame,Little_root_cartridge,little_root_base_nuts"
+ },
+ {
+  "screw": "little_root_output_screws",
+  "k": 0,
+  "head_top": [
+   -66.3,
+   166.2,
+   -44.2
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "little_spread_carrier"
+  ],
+  "stage": "minimal: little_root_hinge,little_spread_carrier,little_root_output_nuts"
+ },
+ {
+  "screw": "little_root_output_screws",
+  "k": 1,
+  "head_top": [
+   -77.7,
+   166.2,
+   -44.2
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "little_spread_carrier"
+  ],
+  "stage": "minimal: little_root_hinge,little_spread_carrier,little_root_output_nuts"
+ },
+ {
+  "screw": "little_root_output_screws",
+  "k": 2,
+  "head_top": [
+   -66.3,
+   166.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "little_spread_carrier"
+  ],
+  "stage": "minimal: little_root_hinge,little_spread_carrier,little_root_output_nuts"
+ },
+ {
+  "screw": "little_root_output_screws",
+  "k": 3,
+  "head_top": [
+   -77.7,
+   166.2,
+   -32.8
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "little_spread_carrier"
+  ],
+  "stage": "minimal: little_root_hinge,little_spread_carrier,little_root_output_nuts"
+ },
+ {
+  "screw": "little_mcp_base_screws",
+  "k": 0,
+  "head_top": [
+   -92.2,
+   130.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_mcp_fixed_frame"
+  ],
+  "stage": "minimal: little_mcp_fixed_frame,little_spread_carrier,little_mcp_base_nuts"
+ },
+ {
+  "screw": "little_mcp_base_screws",
+  "k": 1,
+  "head_top": [
+   -92.2,
+   156.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_mcp_fixed_frame"
+  ],
+  "stage": "minimal: little_mcp_fixed_frame,little_spread_carrier,little_mcp_base_nuts"
+ },
+ {
+  "screw": "little_mcp_base_screws",
+  "k": 2,
+  "head_top": [
+   -80.8,
+   130.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_mcp_fixed_frame"
+  ],
+  "stage": "minimal: little_mcp_fixed_frame,little_spread_carrier,little_mcp_base_nuts"
+ },
+ {
+  "screw": "little_mcp_base_screws",
+  "k": 3,
+  "head_top": [
+   -80.8,
+   156.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "little_mcp_fixed_frame"
+  ],
+  "stage": "minimal: little_mcp_fixed_frame,little_spread_carrier,little_mcp_base_nuts"
+ },
+ {
+  "screw": "little_mcp_output_screws",
+  "k": 0,
+  "head_top": [
+   -92.2,
+   166.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_mcp_hinge"
+  ],
+  "stage": "minimal: little_mcp_hinge,little_mcp_link,little_mcp_output_nuts"
+ },
+ {
+  "screw": "little_mcp_output_screws",
+  "k": 1,
+  "head_top": [
+   -92.2,
+   166.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_mcp_hinge"
+  ],
+  "stage": "minimal: little_mcp_hinge,little_mcp_link,little_mcp_output_nuts"
+ },
+ {
+  "screw": "little_mcp_output_screws",
+  "k": 2,
+  "head_top": [
+   -80.8,
+   166.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_mcp_hinge"
+  ],
+  "stage": "minimal: little_mcp_hinge,little_mcp_link,little_mcp_output_nuts"
+ },
+ {
+  "screw": "little_mcp_output_screws",
+  "k": 3,
+  "head_top": [
+   -80.8,
+   166.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_mcp_hinge"
+  ],
+  "stage": "minimal: little_mcp_hinge,little_mcp_link,little_mcp_output_nuts"
+ },
+ {
+  "screw": "little_pip_base_screws",
+  "k": 0,
+  "head_top": [
+   -92.2,
+   185.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_pip_fixed_frame"
+  ],
+  "handle": [
+   39.04,
+   "little_mcp_link"
+  ],
+  "stage": "minimal: little_pip_fixed_frame,little_mcp_link,little_pip_base_nuts"
+ },
+ {
+  "screw": "little_pip_base_screws",
+  "k": 1,
+  "head_top": [
+   -92.2,
+   211.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_pip_fixed_frame"
+  ],
+  "handle": [
+   49.45,
+   "little_mcp_link"
+  ],
+  "stage": "minimal: little_pip_fixed_frame,little_mcp_link,little_pip_base_nuts"
+ },
+ {
+  "screw": "little_pip_base_screws",
+  "k": 2,
+  "head_top": [
+   -80.8,
+   185.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_pip_fixed_frame"
+  ],
+  "handle": [
+   39.04,
+   "little_mcp_link"
+  ],
+  "stage": "minimal: little_pip_fixed_frame,little_mcp_link,little_pip_base_nuts"
+ },
+ {
+  "screw": "little_pip_base_screws",
+  "k": 3,
+  "head_top": [
+   -80.8,
+   211.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_pip_fixed_frame"
+  ],
+  "handle": [
+   49.45,
+   "little_mcp_link"
+  ],
+  "stage": "minimal: little_pip_fixed_frame,little_mcp_link,little_pip_base_nuts"
+ },
+ {
+  "screw": "little_pip_output_screws",
+  "k": 0,
+  "head_top": [
+   -92.2,
+   221.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_pip_hinge"
+  ],
+  "stage": "minimal: little_pip_hinge,little_pip_link,little_pip_output_nuts"
+ },
+ {
+  "screw": "little_pip_output_screws",
+  "k": 1,
+  "head_top": [
+   -92.2,
+   221.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_pip_hinge"
+  ],
+  "stage": "minimal: little_pip_hinge,little_pip_link,little_pip_output_nuts"
+ },
+ {
+  "screw": "little_pip_output_screws",
+  "k": 2,
+  "head_top": [
+   -80.8,
+   221.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_pip_hinge"
+  ],
+  "stage": "minimal: little_pip_hinge,little_pip_link,little_pip_output_nuts"
+ },
+ {
+  "screw": "little_pip_output_screws",
+  "k": 3,
+  "head_top": [
+   -80.8,
+   221.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_pip_hinge"
+  ],
+  "stage": "minimal: little_pip_hinge,little_pip_link,little_pip_output_nuts"
+ },
+ {
+  "screw": "little_dip_base_screws",
+  "k": 0,
+  "head_top": [
+   -92.2,
+   233.3,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_fixed_frame"
+  ],
+  "shaft": [
+   3.94,
+   "little_pip_link"
+  ],
+  "handle": [
+   38.8,
+   "little_pip_link"
+  ],
+  "stage": "minimal: little_dip_fixed_frame,little_pip_link,little_dip_base_nuts"
+ },
+ {
+  "screw": "little_dip_base_screws",
+  "k": 1,
+  "head_top": [
+   -92.2,
+   259.7,
+   -3.2
+  ],
+  "axis": [
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_dip_fixed_frame"
+  ],
+  "handle": [
+   45.44,
+   "little_pip_link"
+  ],
+  "stage": "minimal: little_dip_fixed_frame,little_pip_link,little_dip_base_nuts"
+ },
+ {
+  "screw": "little_dip_base_screws",
+  "k": 2,
+  "head_top": [
+   -80.8,
+   233.3,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_fixed_frame"
+  ],
+  "shaft": [
+   3.94,
+   "little_pip_link"
+  ],
+  "handle": [
+   38.8,
+   "little_pip_link"
+  ],
+  "stage": "minimal: little_dip_fixed_frame,little_pip_link,little_dip_base_nuts"
+ },
+ {
+  "screw": "little_dip_base_screws",
+  "k": 3,
+  "head_top": [
+   -80.8,
+   259.7,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "little_dip_fixed_frame"
+  ],
+  "handle": [
+   45.44,
+   "little_pip_link"
+  ],
+  "stage": "minimal: little_dip_fixed_frame,little_pip_link,little_dip_base_nuts"
+ },
+ {
+  "screw": "little_dip_output_screws",
+  "k": 0,
+  "head_top": [
+   -92.2,
+   269.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_dip_hinge"
+  ],
+  "stage": "minimal: little_dip_hinge,little_dip_tip,little_dip_output_nuts"
+ },
+ {
+  "screw": "little_dip_output_screws",
+  "k": 1,
+  "head_top": [
+   -92.2,
+   269.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_dip_hinge"
+  ],
+  "stage": "minimal: little_dip_hinge,little_dip_tip,little_dip_output_nuts"
+ },
+ {
+  "screw": "little_dip_output_screws",
+  "k": 2,
+  "head_top": [
+   -80.8,
+   269.2,
+   2.3
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_dip_hinge"
+  ],
+  "stage": "minimal: little_dip_hinge,little_dip_tip,little_dip_output_nuts"
+ },
+ {
+  "screw": "little_dip_output_screws",
+  "k": 3,
+  "head_top": [
+   -80.8,
+   269.2,
+   13.7
+  ],
+  "axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "little_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "little_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "little_dip_hinge"
+  ],
+  "stage": "minimal: little_dip_hinge,little_dip_tip,little_dip_output_nuts"
+ },
+ {
+  "screw": "thumb_root_base_screws",
+  "k": 0,
+  "head_top": [
+   53.4,
+   24.1,
+   -44.2
+  ],
+  "axis": [
+   -0.64,
+   0.77,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_root_frame"
+  ],
+  "stage": "minimal: thumb_root_frame,Thumb_internal_cradle,thumb_root_base_nuts"
+ },
+ {
+  "screw": "thumb_root_base_screws",
+  "k": 1,
+  "head_top": [
+   73.5,
+   41.1,
+   -44.2
+  ],
+  "axis": [
+   -0.64,
+   0.77,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_root_frame"
+  ],
+  "stage": "minimal: thumb_root_frame,Thumb_internal_cradle,thumb_root_base_nuts"
+ },
+ {
+  "screw": "thumb_root_base_screws",
+  "k": 2,
+  "head_top": [
+   53.4,
+   24.1,
+   -32.8
+  ],
+  "axis": [
+   -0.64,
+   0.77,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_root_frame"
+  ],
+  "stage": "minimal: thumb_root_frame,Thumb_internal_cradle,thumb_root_base_nuts"
+ },
+ {
+  "screw": "thumb_root_base_screws",
+  "k": 3,
+  "head_top": [
+   73.5,
+   41.1,
+   -32.8
+  ],
+  "axis": [
+   -0.64,
+   0.77,
+   -0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_root_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_root_frame"
+  ],
+  "stage": "minimal: thumb_root_frame,Thumb_internal_cradle,thumb_root_base_nuts"
+ },
+ {
+  "screw": "thumb_root_output_screws",
+  "k": 0,
+  "head_top": [
+   77.3,
+   51.4,
+   -44.2
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "thumb_spread_carrier"
+  ],
+  "stage": "minimal: thumb_root_hinge,thumb_spread_carrier,thumb_root_output_nuts"
+ },
+ {
+  "screw": "thumb_root_output_screws",
+  "k": 1,
+  "head_top": [
+   70.0,
+   60.1,
+   -44.2
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_root_hinge"
+  ],
+  "handle": [
+   29.57,
+   "thumb_spread_carrier"
+  ],
+  "stage": "minimal: thumb_root_hinge,thumb_spread_carrier,thumb_root_output_nuts"
+ },
+ {
+  "screw": "thumb_root_output_screws",
+  "k": 2,
+  "head_top": [
+   77.3,
+   51.4,
+   -32.8
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "thumb_spread_carrier"
+  ],
+  "stage": "minimal: thumb_root_hinge,thumb_spread_carrier,thumb_root_output_nuts"
+ },
+ {
+  "screw": "thumb_root_output_screws",
+  "k": 3,
+  "head_top": [
+   70.0,
+   60.1,
+   -32.8
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_root_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_root_hinge"
+  ],
+  "handle": [
+   20.27,
+   "thumb_spread_carrier"
+  ],
+  "stage": "minimal: thumb_root_hinge,thumb_spread_carrier,thumb_root_output_nuts"
+ },
+ {
+  "screw": "thumb_mcp_base_screws",
+  "k": 0,
+  "head_top": [
+   33.2,
+   48.2,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_mcp_fixed_frame"
+  ],
+  "stage": "minimal: thumb_mcp_fixed_frame,thumb_spread_carrier,thumb_mcp_base_nuts"
+ },
+ {
+  "screw": "thumb_mcp_base_screws",
+  "k": 1,
+  "head_top": [
+   53.4,
+   65.1,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_mcp_fixed_frame"
+  ],
+  "stage": "minimal: thumb_mcp_fixed_frame,thumb_spread_carrier,thumb_mcp_base_nuts"
+ },
+ {
+  "screw": "thumb_mcp_base_screws",
+  "k": 2,
+  "head_top": [
+   40.5,
+   39.5,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_mcp_fixed_frame"
+  ],
+  "stage": "minimal: thumb_mcp_fixed_frame,thumb_spread_carrier,thumb_mcp_base_nuts"
+ },
+ {
+  "screw": "thumb_mcp_base_screws",
+  "k": 3,
+  "head_top": [
+   60.6,
+   56.4,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_mcp_fixed_frame"
+  ],
+  "handle": [
+   54.8,
+   "thumb_mcp_fixed_frame"
+  ],
+  "stage": "minimal: thumb_mcp_fixed_frame,thumb_spread_carrier,thumb_mcp_base_nuts"
+ },
+ {
+  "screw": "thumb_mcp_output_screws",
+  "k": 0,
+  "head_top": [
+   60.7,
+   71.2,
+   2.3
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_mcp_hinge"
+  ],
+  "stage": "minimal: thumb_mcp_hinge,thumb_mcp_link,thumb_mcp_output_nuts"
+ },
+ {
+  "screw": "thumb_mcp_output_screws",
+  "k": 1,
+  "head_top": [
+   60.7,
+   71.2,
+   13.7
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_mcp_hinge"
+  ],
+  "stage": "minimal: thumb_mcp_hinge,thumb_mcp_link,thumb_mcp_output_nuts"
+ },
+ {
+  "screw": "thumb_mcp_output_screws",
+  "k": 2,
+  "head_top": [
+   68.0,
+   62.5,
+   2.3
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_mcp_hinge"
+  ],
+  "stage": "minimal: thumb_mcp_hinge,thumb_mcp_link,thumb_mcp_output_nuts"
+ },
+ {
+  "screw": "thumb_mcp_output_screws",
+  "k": 3,
+  "head_top": [
+   68.0,
+   62.5,
+   13.7
+  ],
+  "axis": [
+   -0.77,
+   -0.64,
+   0.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_mcp_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_mcp_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_mcp_hinge"
+  ],
+  "stage": "minimal: thumb_mcp_hinge,thumb_mcp_link,thumb_mcp_output_nuts"
+ },
+ {
+  "screw": "thumb_pip_base_screws",
+  "k": 0,
+  "head_top": [
+   87.0,
+   73.0,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_fixed_frame"
+  ],
+  "shaft": [
+   0.0,
+   "thumb_mcp_link"
+  ],
+  "handle": [
+   27.8,
+   "thumb_mcp_link"
+  ],
+  "stage": "minimal: thumb_pip_fixed_frame,thumb_mcp_link,thumb_pip_base_nuts"
+ },
+ {
+  "screw": "thumb_pip_base_screws",
+  "k": 1,
+  "head_top": [
+   93.8,
+   98.5,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_pip_fixed_frame"
+  ],
+  "handle": [
+   28.26,
+   "thumb_mcp_link"
+  ],
+  "stage": "minimal: thumb_pip_fixed_frame,thumb_mcp_link,thumb_pip_base_nuts"
+ },
+ {
+  "screw": "thumb_pip_base_screws",
+  "k": 2,
+  "head_top": [
+   97.9,
+   70.1,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_pip_fixed_frame"
+  ],
+  "handle": [
+   27.8,
+   "thumb_mcp_link"
+  ],
+  "stage": "minimal: thumb_pip_fixed_frame,thumb_mcp_link,thumb_pip_base_nuts"
+ },
+ {
+  "screw": "thumb_pip_base_screws",
+  "k": 3,
+  "head_top": [
+   104.7,
+   95.5,
+   -3.2
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_pip_fixed_frame"
+  ],
+  "handle": [
+   30.11,
+   "thumb_mcp_link"
+  ],
+  "stage": "minimal: thumb_pip_fixed_frame,thumb_mcp_link,thumb_pip_base_nuts"
+ },
+ {
+  "screw": "thumb_pip_output_screws",
+  "k": 0,
+  "head_top": [
+   96.4,
+   108.1,
+   3.7
+  ],
+  "axis": [
+   -0.26,
+   -0.96,
+   -0.09
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_pip_hinge"
+  ],
+  "stage": "minimal: thumb_pip_hinge,thumb_pip_link,thumb_pip_output_nuts"
+ },
+ {
+  "screw": "thumb_pip_output_screws",
+  "k": 1,
+  "head_top": [
+   96.1,
+   107.1,
+   15.0
+  ],
+  "axis": [
+   -0.26,
+   -0.96,
+   -0.09
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_pip_hinge"
+  ],
+  "stage": "minimal: thumb_pip_hinge,thumb_pip_link,thumb_pip_output_nuts"
+ },
+ {
+  "screw": "thumb_pip_output_screws",
+  "k": 2,
+  "head_top": [
+   107.3,
+   105.2,
+   3.7
+  ],
+  "axis": [
+   -0.26,
+   -0.96,
+   -0.09
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_pip_hinge"
+  ],
+  "stage": "minimal: thumb_pip_hinge,thumb_pip_link,thumb_pip_output_nuts"
+ },
+ {
+  "screw": "thumb_pip_output_screws",
+  "k": 3,
+  "head_top": [
+   107.0,
+   104.2,
+   15.0
+  ],
+  "axis": [
+   -0.26,
+   -0.96,
+   -0.09
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_pip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_pip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_pip_hinge"
+  ],
+  "stage": "minimal: thumb_pip_hinge,thumb_pip_link,thumb_pip_output_nuts"
+ },
+ {
+  "screw": "thumb_dip_base_screws",
+  "k": 0,
+  "head_top": [
+   99.6,
+   120.3,
+   -0.8
+  ],
+  "axis": [
+   -0.02,
+   -0.08,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_fixed_frame"
+  ],
+  "shaft": [
+   3.94,
+   "thumb_pip_link"
+  ],
+  "handle": [
+   38.8,
+   "thumb_pip_link"
+  ],
+  "stage": "minimal: thumb_dip_fixed_frame,thumb_pip_link,thumb_dip_base_nuts"
+ },
+ {
+  "screw": "thumb_dip_base_screws",
+  "k": 1,
+  "head_top": [
+   106.4,
+   145.6,
+   1.5
+  ],
+  "axis": [
+   -0.02,
+   -0.08,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_dip_fixed_frame"
+  ],
+  "handle": [
+   45.44,
+   "thumb_pip_link"
+  ],
+  "stage": "minimal: thumb_dip_fixed_frame,thumb_pip_link,thumb_dip_base_nuts"
+ },
+ {
+  "screw": "thumb_dip_base_screws",
+  "k": 2,
+  "head_top": [
+   110.6,
+   117.3,
+   -0.8
+  ],
+  "axis": [
+   -0.02,
+   -0.08,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_fixed_frame"
+  ],
+  "shaft": [
+   3.94,
+   "thumb_pip_link"
+  ],
+  "handle": [
+   38.8,
+   "thumb_pip_link"
+  ],
+  "stage": "minimal: thumb_dip_fixed_frame,thumb_pip_link,thumb_dip_base_nuts"
+ },
+ {
+  "screw": "thumb_dip_base_screws",
+  "k": 3,
+  "head_top": [
+   117.3,
+   142.6,
+   1.5
+  ],
+  "axis": [
+   -0.02,
+   -0.08,
+   1.0
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_fixed_frame"
+  ],
+  "shaft": [
+   5.26,
+   "thumb_dip_fixed_frame"
+  ],
+  "handle": [
+   45.44,
+   "thumb_pip_link"
+  ],
+  "stage": "minimal: thumb_dip_fixed_frame,thumb_pip_link,thumb_dip_base_nuts"
+ },
+ {
+  "screw": "thumb_dip_output_screws",
+  "k": 0,
+  "head_top": [
+   108.8,
+   154.6,
+   9.3
+  ],
+  "axis": [
+   -0.25,
+   -0.95,
+   -0.17
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_dip_hinge"
+  ],
+  "stage": "minimal: thumb_dip_hinge,thumb_dip_tip,thumb_dip_output_nuts"
+ },
+ {
+  "screw": "thumb_dip_output_screws",
+  "k": 1,
+  "head_top": [
+   108.3,
+   152.7,
+   20.4
+  ],
+  "axis": [
+   -0.25,
+   -0.95,
+   -0.17
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_dip_hinge"
+  ],
+  "stage": "minimal: thumb_dip_hinge,thumb_dip_tip,thumb_dip_output_nuts"
+ },
+ {
+  "screw": "thumb_dip_output_screws",
+  "k": 2,
+  "head_top": [
+   119.8,
+   151.7,
+   9.3
+  ],
+  "axis": [
+   -0.25,
+   -0.95,
+   -0.17
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_dip_hinge"
+  ],
+  "stage": "minimal: thumb_dip_hinge,thumb_dip_tip,thumb_dip_output_nuts"
+ },
+ {
+  "screw": "thumb_dip_output_screws",
+  "k": 3,
+  "head_top": [
+   119.2,
+   149.8,
+   20.4
+  ],
+  "axis": [
+   -0.25,
+   -0.95,
+   -0.17
+  ],
+  "head_pass": [
+   0.15,
+   "thumb_dip_hinge"
+  ],
+  "shaft": [
+   6.81,
+   "thumb_dip_hinge"
+  ],
+  "handle": [
+   36.88,
+   "thumb_dip_hinge"
+  ],
+  "stage": "minimal: thumb_dip_hinge,thumb_dip_tip,thumb_dip_output_nuts"
+ }
+]

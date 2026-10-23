@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+mpl_config/
+*.FCBak
+*.log
+.env
+.env.*
+/tmp/
+/review_runs/
+/cad_review_state.json

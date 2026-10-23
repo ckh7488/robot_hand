@@ -1,0 +1,463 @@
+{
+  "status": "Illustrative static stiffness screen; NOT strength release",
+  "source_setup": {
+    "material": {
+      "E_MPa": 1500.0,
+      "nu": 0.35,
+      "density_tonne_mm3": 1.25e-09,
+      "status": "Illustrative isotropic polymer, NOT measured printed anisotropic material"
+    },
+    "mesh": {
+      "source_step_sha256": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429",
+      "mesh_sha256": "dcb7531c554e787fc3df70bc412a345453264b377e2fc4936bcd800e0f5f606c",
+      "nodes": 134434,
+      "C3D10_elements": 72634,
+      "straight_midside_nodes": true,
+      "minimum_corner_tet_volume_mm3": 0.003950968044382871,
+      "total_corner_tet_volume_mm3": 293122.3562879473,
+      "negative_corner_tets": 0
+    },
+    "support_nodes": 1168,
+    "support_model": "Zero displacement on M3 cylindrical bore nodes in four saddle holes; idealized rigid clamps, no preload/contact",
+    "cases": [
+      {
+        "name": "palm_normal",
+        "gravity_direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "patches": [
+          {
+            "name": "index",
+            "nodes": 2414,
+            "mass_kg": 0.1787948032846205,
+            "force_N": [
+              0.0,
+              0.0,
+              -1.7539770202221265
+            ],
+            "moment_Nmm": [
+              -90.94606730948679,
+              -58.22914215752269,
+              0.0
+            ],
+            "maximum_resultant_error": 3.552713678800501e-14
+          },
+          {
+            "name": "middle",
+            "nodes": 2352,
+            "mass_kg": 0.18024887474329693,
+            "force_N": [
+              0.0,
+              0.0,
+              -1.7682414612317423
+            ],
+            "moment_Nmm": [
+              -96.34925800628709,
+              -58.792587577402536,
+              0.0
+            ],
+            "maximum_resultant_error": 4.263256414560601e-14
+          },
+          {
+            "name": "ring",
+            "nodes": 2379,
+            "mass_kg": 0.17819480328462048,
+            "force_N": [
+              0.0,
+              0.0,
+              -1.7480910202221265
+            ],
+            "moment_Nmm": [
+              -88.1756757199533,
+              -57.99664515752271,
+              0.0
+            ],
+            "maximum_resultant_error": 2.842170943040401e-14
+          },
+          {
+            "name": "little",
+            "nodes": 2459,
+            "mass_kg": 0.1753048495818416,
+            "force_N": [
+              0.0,
+              0.0,
+              -1.7197405743978658
+            ],
+            "moment_Nmm": [
+              -79.0133040663577,
+              -56.87680254746438,
+              0.0
+            ],
+            "maximum_resultant_error": 4.973799150320701e-14
+          },
+          {
+            "name": "thumb",
+            "nodes": 2171,
+            "mass_kg": 0.186550009507998,
+            "force_N": [
+              0.0,
+              0.0,
+              -1.8300555932734601
+            ],
+            "moment_Nmm": [
+              -97.83631593179015,
+              8.66819757320367,
+              0.0
+            ],
+            "maximum_resultant_error": 2.6645352591003757e-14
+          },
+          {
+            "name": "cover",
+            "nodes": 2608,
+            "mass_kg": 0.06100806972258801,
+            "force_N": [
+              0.0,
+              0.0,
+              -0.5984891639785884
+            ],
+            "moment_Nmm": [
+              0.35134124895303015,
+              8.078748453268124,
+              0.0
+            ],
+            "maximum_resultant_error": 3.941291737419306e-15
+          }
+        ],
+        "point_load_resultant_N": [
+          2.8662282881050227e-14,
+          1.1630168518099752e-14,
+          -9.418594833325898
+        ],
+        "palm_self_weight_N": 3.594412893980954
+      },
+      {
+        "name": "finger_direction",
+        "gravity_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "patches": [
+          {
+            "name": "index",
+            "nodes": 2414,
+            "mass_kg": 0.1787948032846205,
+            "force_N": [
+              0.0,
+              -1.7539770202221265,
+              0.0
+            ],
+            "moment_Nmm": [
+              90.76821783965951,
+              0.0,
+              58.22914215752269
+            ],
+            "maximum_resultant_error": 2.1316282072803006e-14
+          },
+          {
+            "name": "middle",
+            "nodes": 2352,
+            "mass_kg": 0.18024887474329693,
+            "force_N": [
+              0.0,
+              -1.7682414612317423,
+              0.0
+            ],
+            "moment_Nmm": [
+              91.6037918973182,
+              0.0,
+              58.792587577402536
+            ],
+            "maximum_resultant_error": 1.4210854715202004e-14
+          },
+          {
+            "name": "ring",
+            "nodes": 2379,
+            "mass_kg": 0.17819480328462048,
+            "force_N": [
+              0.0,
+              -1.7480910202221265,
+              0.0
+            ],
+            "moment_Nmm": [
+              90.45625983965952,
+              0.0,
+              57.99664515752271
+            ],
+            "maximum_resultant_error": 2.842170943040401e-14
+          },
+          {
+            "name": "little",
+            "nodes": 2459,
+            "mass_kg": 0.1753048495818416,
+            "force_N": [
+              0.0,
+              -1.7197405743978658,
+              0.0
+            ],
+            "moment_Nmm": [
+              88.76440663430071,
+              0.0,
+              56.87680254746438
+            ],
+            "maximum_resultant_error": 1.4210854715202004e-14
+          },
+          {
+            "name": "thumb",
+            "nodes": 2171,
+            "mass_kg": 0.186550009507998,
+            "force_N": [
+              0.0,
+              -1.8300555932734601,
+              0.0
+            ],
+            "moment_Nmm": [
+              98.34441995708985,
+              0.0,
+              -8.66819757320367
+            ],
+            "maximum_resultant_error": 1.2917172115780359e-14
+          },
+          {
+            "name": "cover",
+            "nodes": 2608,
+            "mass_kg": 0.06100806972258801,
+            "force_N": [
+              0.0,
+              -0.5984891639785884,
+              0.0
+            ],
+            "moment_Nmm": [
+              2.590532348028117,
+              0.0,
+              -8.078748453268124
+            ],
+            "maximum_resultant_error": 1.7763568394002505e-15
+          }
+        ],
+        "point_load_resultant_N": [
+          1.8244859290895976e-14,
+          -9.41859483332593,
+          -1.0636206271199405e-14
+        ],
+        "palm_self_weight_N": 3.594412893980954
+      },
+      {
+        "name": "sideways",
+        "gravity_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "patches": [
+          {
+            "name": "index",
+            "nodes": 2414,
+            "mass_kg": 0.1787948032846205,
+            "force_N": [
+              -1.7539770202221265,
+              0.0,
+              0.0
+            ],
+            "moment_Nmm": [
+              0.0,
+              -90.76821783965951,
+              90.94606730948679
+            ],
+            "maximum_resultant_error": 7.105427357601002e-14
+          },
+          {
+            "name": "middle",
+            "nodes": 2352,
+            "mass_kg": 0.18024887474329693,
+            "force_N": [
+              -1.7682414612317423,
+              0.0,
+              0.0
+            ],
+            "moment_Nmm": [
+              0.0,
+              -91.6037918973182,
+              96.34925800628709
+            ],
+            "maximum_resultant_error": 4.263256414560601e-14
+          },
+          {
+            "name": "ring",
+            "nodes": 2379,
+            "mass_kg": 0.17819480328462048,
+            "force_N": [
+              -1.7480910202221265,
+              0.0,
+              0.0
+            ],
+            "moment_Nmm": [
+              0.0,
+              -90.45625983965952,
+              88.1756757199533
+            ],
+            "maximum_resultant_error": 5.684341886080802e-14
+          },
+          {
+            "name": "little",
+            "nodes": 2459,
+            "mass_kg": 0.1753048495818416,
+            "force_N": [
+              -1.7197405743978658,
+              0.0,
+              0.0
+            ],
+            "moment_Nmm": [
+              0.0,
+              -88.76440663430071,
+              79.0133040663577
+            ],
+            "maximum_resultant_error": 1.4210854715202004e-13
+          },
+          {
+            "name": "thumb",
+            "nodes": 2171,
+            "mass_kg": 0.186550009507998,
+            "force_N": [
+              -1.8300555932734601,
+              0.0,
+              0.0
+            ],
+            "moment_Nmm": [
+              0.0,
+              -98.34441995708985,
+              97.83631593179015
+            ],
+            "maximum_resultant_error": 2.842170943040401e-14
+          },
+          {
+            "name": "cover",
+            "nodes": 2608,
+            "mass_kg": 0.06100806972258801,
+            "force_N": [
+              -0.5984891639785884,
+              0.0,
+              0.0
+            ],
+            "moment_Nmm": [
+              0.0,
+              -2.590532348028117,
+              -0.35134124895303015
+            ],
+            "maximum_resultant_error": 2.0539125955565396e-15
+          }
+        ],
+        "point_load_resultant_N": [
+          -9.418594833325876,
+          -7.016068769797462e-15,
+          9.411945506819508e-15
+        ],
+        "palm_self_weight_N": 3.594412893980954
+      }
+    ],
+    "limitations": [
+      "No FDM layer anisotropy, creep, fatigue, impact, buckling or measured modulus.",
+      "Cartridge load resultants distributed to two M3 bearing-zone node groups; cartridges, bolt contact, slip and preload are not modeled.",
+      "Palm cover stiffness ignored; its mass is included.",
+      "Wiring, missing arm flange hardware and motor inertia omitted.",
+      "Quadratic displacement interpolation on straight-sided CAD tetrahedra; no mesh-convergence proof yet."
+    ]
+  },
+  "cases": [
+    {
+      "name": "palm_normal",
+      "maximum_displacement_mm": 1.4298065667140083,
+      "displacement_max_at_mm": [
+        48.0,
+        195.0,
+        -63.0
+      ],
+      "maximum_vm_MPa_raw": 13.877672037946422,
+      "raw_stress_at_mm": [
+        9.1586466538352,
+        29.924326687193,
+        -63.0
+      ],
+      "maximum_vm_MPa_excluding_10mm_fixture_and_load_neighbourhoods": 2.9951520171639032,
+      "support_max_displacement_mm": 0.0,
+      "summed_reaction_N": [
+        1.8139420039919862e-06,
+        -1.265559992025267e-06,
+        13.012303806599975
+      ],
+      "expected_reaction_N": [
+        -2.8662282881050227e-14,
+        -1.1630168518099752e-14,
+        13.013007727306851
+      ],
+      "reaction_equilibrium_error_N": 0.0007039241817100874,
+      "max_displacement_if_E800_MPa_mm": 2.680887312588766,
+      "max_displacement_if_E2500_MPa_mm": 0.8578839400284051
+    },
+    {
+      "name": "finger_direction",
+      "maximum_displacement_mm": 2.333649874053457,
+      "displacement_max_at_mm": [
+        -87.85410196625,
+        92.293660902229,
+        22.0
+      ],
+      "maximum_vm_MPa_raw": 4.648335155497288,
+      "raw_stress_at_mm": [
+        7.4286067860055,
+        30.09428829673,
+        -58.0
+      ],
+      "maximum_vm_MPa_excluding_10mm_fixture_and_load_neighbourhoods": 2.857723076640212,
+      "support_max_displacement_mm": 0.0,
+      "summed_reaction_N": [
+        2.016000002769136e-07,
+        13.012299243860003,
+        -5.925200047968149e-07
+      ],
+      "expected_reaction_N": [
+        -1.8244859290895976e-14,
+        13.013007727306883,
+        1.0636206271199405e-14
+      ],
+      "reaction_equilibrium_error_N": 0.0007084837233316217,
+      "max_displacement_if_E800_MPa_mm": 4.375593513850232,
+      "max_displacement_if_E2500_MPa_mm": 1.4001899244320744
+    },
+    {
+      "name": "sideways",
+      "maximum_displacement_mm": 0.5054722703063443,
+      "displacement_max_at_mm": [
+        -84.14589803375,
+        92.293660902229,
+        22.0
+      ],
+      "maximum_vm_MPa_raw": 5.2714322664054025,
+      "raw_stress_at_mm": [
+        -62.0,
+        30.594,
+        -57.5
+      ],
+      "maximum_vm_MPa_excluding_10mm_fixture_and_load_neighbourhoods": 5.2714322664054025,
+      "support_max_displacement_mm": 0.0,
+      "summed_reaction_N": [
+        13.012299485070006,
+        9.316000103565258e-07,
+        3.919997618173632e-09
+      ],
+      "expected_reaction_N": [
+        13.01300772730683,
+        7.016068769797462e-15,
+        -9.411945506819508e-15
+      ],
+      "reaction_equilibrium_error_N": 0.0007082428495334088,
+      "max_displacement_if_E800_MPa_mm": 0.9477605068243956,
+      "max_displacement_if_E2500_MPa_mm": 0.3032833621838066
+    }
+  ],
+  "numerical_checks_passed": true,
+  "mesh_converged": false,
+  "FDM_strength_certified": false
+}

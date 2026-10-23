@@ -1,0 +1,1185 @@
+{
+ "tool_model": [
+  [
+   "head_pass",
+   2.85,
+   0.05,
+   12
+  ],
+  [
+   "shaft",
+   1.5,
+   12,
+   90
+  ],
+  [
+   "handle",
+   11,
+   90,
+   180
+  ]
+ ],
+ "rows": [
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 0,
+   "head_top": [
+    -32.0,
+    8.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 1,
+   "head_top": [
+    -32.0,
+    28.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 2,
+   "head_top": [
+    8.0,
+    8.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 3,
+   "head_top": [
+    8.0,
+    28.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 0,
+   "head_top": [
+    -32.0,
+    8.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle+arm"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 1,
+   "head_top": [
+    -32.0,
+    28.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle+arm"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 2,
+   "head_top": [
+    8.0,
+    8.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle+arm"
+  },
+  {
+   "screw": "Palm_saddle_mount_screws",
+   "k": 3,
+   "head_top": [
+    8.0,
+    28.0,
+    -71.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_wrist_saddle"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_wrist_saddle"
+   ],
+   "handle": [
+    93.0,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "palm+saddle+arm"
+  },
+  {
+   "screw": "Little_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    -47.0,
+    127.0,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little'] no saddle/arm"
+  },
+  {
+   "screw": "Little_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    -47.0,
+    155.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little'] no saddle/arm"
+  },
+  {
+   "screw": "Little_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    -47.0,
+    127.0,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little'] +saddle"
+  },
+  {
+   "screw": "Little_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    -47.0,
+    155.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little'] +saddle"
+  },
+  {
+   "screw": "Little_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    -47.0,
+    127.0,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little'] +saddle+arm"
+  },
+  {
+   "screw": "Little_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    -47.0,
+    155.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little'] +saddle+arm"
+  },
+  {
+   "screw": "Ring_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    1.0,
+    142.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring'] no saddle/arm"
+  },
+  {
+   "screw": "Ring_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    1.0,
+    170.0,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring'] no saddle/arm"
+  },
+  {
+   "screw": "Ring_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    1.0,
+    142.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring'] +saddle"
+  },
+  {
+   "screw": "Ring_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    1.0,
+    170.0,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring'] +saddle"
+  },
+  {
+   "screw": "Ring_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    1.0,
+    142.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring'] +saddle+arm"
+  },
+  {
+   "screw": "Ring_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    1.0,
+    170.0,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring'] +saddle+arm"
+  },
+  {
+   "screw": "Middle_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    49.0,
+    148.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle'] no saddle/arm"
+  },
+  {
+   "screw": "Middle_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    49.0,
+    176.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle'] no saddle/arm"
+  },
+  {
+   "screw": "Middle_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    49.0,
+    148.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle'] +saddle"
+  },
+  {
+   "screw": "Middle_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    49.0,
+    176.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle'] +saddle"
+  },
+  {
+   "screw": "Middle_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    49.0,
+    148.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle'] +saddle+arm"
+  },
+  {
+   "screw": "Middle_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    49.0,
+    176.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle'] +saddle+arm"
+  },
+  {
+   "screw": "Index_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    97.0,
+    138.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle', 'index'] no saddle/arm"
+  },
+  {
+   "screw": "Index_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    97.0,
+    166.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle', 'index'] no saddle/arm"
+  },
+  {
+   "screw": "Index_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    97.0,
+    138.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle', 'index'] +saddle"
+  },
+  {
+   "screw": "Index_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    97.0,
+    166.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle', 'index'] +saddle"
+  },
+  {
+   "screw": "Index_root_mount_screws",
+   "k": 0,
+   "head_top": [
+    97.0,
+    138.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle', 'index'] +saddle+arm"
+  },
+  {
+   "screw": "Index_root_mount_screws",
+   "k": 1,
+   "head_top": [
+    97.0,
+    166.0,
+    -66.0
+   ],
+   "axis": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "modules ['little', 'ring', 'middle', 'index'] +saddle+arm"
+  },
+  {
+   "screw": "Palm_thumb_mount_screws",
+   "k": 0,
+   "head_top": [
+    66.7,
+    18.6,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "all modules no saddle/arm"
+  },
+  {
+   "screw": "Palm_thumb_mount_screws",
+   "k": 1,
+   "head_top": [
+    83.6,
+    32.8,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "all modules no saddle/arm"
+  },
+  {
+   "screw": "Palm_thumb_mount_screws",
+   "k": 0,
+   "head_top": [
+    66.7,
+    18.6,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    88.75,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "all modules +saddle"
+  },
+  {
+   "screw": "Palm_thumb_mount_screws",
+   "k": 1,
+   "head_top": [
+    83.6,
+    32.8,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "all modules +saddle"
+  },
+  {
+   "screw": "Palm_thumb_mount_screws",
+   "k": 0,
+   "head_top": [
+    66.7,
+    18.6,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    88.75,
+    "Palm_wrist_saddle"
+   ],
+   "stage": "all modules +saddle+arm"
+  },
+  {
+   "screw": "Palm_thumb_mount_screws",
+   "k": 1,
+   "head_top": [
+    83.6,
+    32.8,
+    -66.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_back_chassis"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_back_chassis"
+   ],
+   "handle": [
+    93.0,
+    "Palm_back_chassis"
+   ],
+   "stage": "all modules +saddle+arm"
+  },
+  {
+   "screw": "Palm_cover_screws",
+   "k": 0,
+   "head_top": [
+    -39.0,
+    15.0,
+    29.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_front_cover"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_front_cover"
+   ],
+   "handle": [
+    93.0,
+    "Palm_front_cover"
+   ],
+   "stage": "complete hand, Open pose"
+  },
+  {
+   "screw": "Palm_cover_screws",
+   "k": 1,
+   "head_top": [
+    -62.0,
+    48.0,
+    29.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_front_cover"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_front_cover"
+   ],
+   "handle": [
+    93.0,
+    "Palm_front_cover"
+   ],
+   "stage": "complete hand, Open pose"
+  },
+  {
+   "screw": "Palm_cover_screws",
+   "k": 2,
+   "head_top": [
+    -86.0,
+    98.0,
+    29.0
+   ],
+   "axis": [
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_front_cover"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_front_cover"
+   ],
+   "handle": [
+    93.0,
+    "Palm_front_cover"
+   ],
+   "stage": "complete hand, Open pose"
+  },
+  {
+   "screw": "Palm_cover_screws",
+   "k": 3,
+   "head_top": [
+    -40.0,
+    106.0,
+    29.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_front_cover"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_front_cover"
+   ],
+   "handle": [
+    93.0,
+    "Palm_front_cover"
+   ],
+   "stage": "complete hand, Open pose"
+  },
+  {
+   "screw": "Palm_cover_screws",
+   "k": 4,
+   "head_top": [
+    2.0,
+    121.0,
+    29.0
+   ],
+   "axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "head_pass": [
+    3.05,
+    "Palm_front_cover"
+   ],
+   "shaft": [
+    15.0,
+    "Palm_front_cover"
+   ],
+   "handle": [
+    93.0,
+    "Palm_front_cover"
+   ],
+   "stage": "complete hand, Open pose"
+  }
+ ]
+}

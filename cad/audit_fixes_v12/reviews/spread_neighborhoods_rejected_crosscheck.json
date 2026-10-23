@@ -1,0 +1,155 @@
+{
+  "scope": "Offline geometry of four simultaneous spread errors, all other finger/arm joints exact. Pairwise branch subdivision plus rigid-motion displacement bounds2Rsin(eps/2), with common-root transforms canceled. Not a certified full joint-limit set, actuator error estimate, actual CAD/FDM guarantee or runtime speed claim.",
+  "mesh_target_mm": 1.1,
+  "CAD_interpretation": "1.0mm only conditional on0.05mm per-surface tessellation bound; this does not include print tolerance or structural/servo errors.",
+  "topology": "Known nonintersecting nominal moving pairs. Continuous positive boundary separation prevents new containment across each connected uncertainty box.",
+  "rows": [
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "explicit sample below mesh target",
+      "pair": [
+        "index_mcp_hinge",
+        "middle_spread_carrier"
+      ],
+      "spread_error_sample_deg": {
+        "index": -1.0,
+        "middle": 1.0
+      },
+      "sample_gap_mm": 0.9499832572341073,
+      "calls": 187
+    },
+    {
+      "pose": "Splay",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1056336734599963,
+      "distance_queries": 596,
+      "certified_leaf_cells": 188,
+      "broad_phase_pair_candidates": 550,
+      "unresolved": []
+    },
+    {
+      "pose": "Open",
+      "independent_four_spread_errors_deg": [
+        -1,
+        1
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1463075112171497,
+      "distance_queries": 304,
+      "certified_leaf_cells": 121,
+      "broad_phase_pair_candidates": 304,
+      "unresolved": []
+    },
+    {
+      "pose": "Open",
+      "independent_four_spread_errors_deg": [
+        -0.5,
+        0.5
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 2.0,
+      "distance_queries": 271,
+      "certified_leaf_cells": 115,
+      "broad_phase_pair_candidates": 271,
+      "unresolved": []
+    },
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -0.5,
+        0.5
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "explicit sample below mesh target",
+      "pair": [
+        "index_mcp_hinge",
+        "middle_spread_carrier"
+      ],
+      "spread_error_sample_deg": {
+        "index": -0.3671875,
+        "middle": 0.49609375
+      },
+      "sample_gap_mm": 1.0999241704050267,
+      "calls": 292
+    },
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -0.25,
+        0.25
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "unresolved cells",
+      "mesh_boundary_lower_bound_mm": null,
+      "smallest_evaluated_cell_lower_mm": 1.1001300782479744,
+      "distance_queries": 327,
+      "certified_leaf_cells": 161,
+      "broad_phase_pair_candidates": 375,
+      "unresolved": [
+        {
+          "pair": [
+            "middle_mcp_hinge",
+            "ring_spread_carrier"
+          ],
+          "reason": "subdivision budget",
+          "lower_mm": 1.0999813113104226
+        }
+      ]
+    },
+    {
+      "pose": "Splay",
+      "independent_four_spread_errors_deg": [
+        -0.5,
+        0.5
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1713410953538737,
+      "distance_queries": 302,
+      "certified_leaf_cells": 130,
+      "broad_phase_pair_candidates": 302,
+      "unresolved": []
+    },
+    {
+      "pose": "Close",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1167564596302508,
+      "distance_queries": 394,
+      "certified_leaf_cells": 140,
+      "broad_phase_pair_candidates": 378,
+      "unresolved": []
+    }
+  ],
+  "elapsed_s": 6.922000000020489,
+  "actuation_approved": false
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Two mesh density comparison; displacement sensitivity only. Raw fixture/load stress is not mesh-converged; no FDM strength certification.",
+  "cases": [
+    {
+      "name": "palm_normal",
+      "coarse_displacement_mm": 1.4298065667140083,
+      "fine_displacement_mm": 1.4320656096071644,
+      "relative_displacement_change_percent": 0.1579963993554756,
+      "coarse_raw_vm_MPa": 13.877672037946422,
+      "fine_raw_vm_MPa": 10.850710484454464
+    },
+    {
+      "name": "finger_direction",
+      "coarse_displacement_mm": 2.333649874053457,
+      "fine_displacement_mm": 2.31208845454398,
+      "relative_displacement_change_percent": -0.9239354947460754,
+      "coarse_raw_vm_MPa": 4.648335155497288,
+      "fine_raw_vm_MPa": 3.7701268483602024
+    },
+    {
+      "name": "sideways",
+      "coarse_displacement_mm": 0.5054722703063443,
+      "fine_displacement_mm": 0.4894545226461128,
+      "relative_displacement_change_percent": -3.168867730473901,
+      "coarse_raw_vm_MPa": 5.2714322664054025,
+      "fine_raw_vm_MPa": 5.197071203437567
+    }
+  ]
+}

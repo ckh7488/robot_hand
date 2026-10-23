@@ -1,0 +1,194 @@
+{
+  "scope": "Offline geometry of four simultaneous spread errors, all other finger/arm joints exact. Pairwise branch subdivision plus rigid-motion displacement bounds2Rsin(eps/2), with common-root transforms canceled. Not a certified full joint-limit set, actuator error estimate, actual CAD/FDM guarantee or runtime speed claim.",
+  "mesh_target_mm": 1.1,
+  "CAD_interpretation": "1.0mm only conditional on0.05mm per-surface tessellation bound; this does not include print tolerance or structural/servo errors.",
+  "topology": "Known nonintersecting nominal moving pairs. Continuous positive boundary separation prevents new containment across each connected uncertainty box.",
+  "rows": [
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "explicit sample below mesh target",
+      "pair": [
+        "index_mcp_hinge",
+        "middle_spread_carrier"
+      ],
+      "spread_error_sample_deg": {
+        "index": 0.1875,
+        "middle": 2.8125
+      },
+      "sample_gap_mm": 1.0932198079759248,
+      "calls": 311
+    },
+    {
+      "pose": "Splay",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "explicit sample below mesh target",
+      "pair": [
+        "Index_root_cartridge",
+        "index_root_hinge"
+      ],
+      "spread_error_sample_deg": {
+        "index": 1.5
+      },
+      "sample_gap_mm": 1.006189155516556,
+      "calls": 126
+    },
+    {
+      "pose": "Open",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "explicit sample below mesh target",
+      "pair": [
+        "index_mcp_link",
+        "middle_spread_carrier"
+      ],
+      "spread_error_sample_deg": {
+        "index": -1.5,
+        "middle": 1.5
+      },
+      "sample_gap_mm": 1.090948057084649,
+      "calls": 200
+    },
+    {
+      "pose": "Open",
+      "independent_four_spread_errors_deg": [
+        -1,
+        1
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1463075112171497,
+      "distance_queries": 310,
+      "certified_leaf_cells": 123,
+      "broad_phase_pair_candidates": 304,
+      "unresolved": []
+    },
+    {
+      "pose": "Open",
+      "independent_four_spread_errors_deg": [
+        -0.5,
+        0.5
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 2.0,
+      "distance_queries": 271,
+      "certified_leaf_cells": 115,
+      "broad_phase_pair_candidates": 271,
+      "unresolved": []
+    },
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -0.5,
+        0.5
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "explicit sample below mesh target",
+      "pair": [
+        "index_mcp_hinge",
+        "middle_spread_carrier"
+      ],
+      "spread_error_sample_deg": {
+        "index": -0.3671875,
+        "middle": 0.49609375
+      },
+      "sample_gap_mm": 1.0999241704050267,
+      "calls": 292
+    },
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -0.25,
+        0.25
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": false,
+      "reason": "unresolved cells",
+      "mesh_boundary_lower_bound_mm": null,
+      "smallest_evaluated_cell_lower_mm": 1.1001300782479744,
+      "distance_queries": 327,
+      "certified_leaf_cells": 161,
+      "broad_phase_pair_candidates": 375,
+      "unresolved": [
+        {
+          "pair": [
+            "middle_mcp_hinge",
+            "ring_spread_carrier"
+          ],
+          "reason": "subdivision budget",
+          "lower_mm": 1.0999813113104226
+        }
+      ]
+    },
+    {
+      "pose": "Backbend",
+      "independent_four_spread_errors_deg": [
+        -0.1,
+        0.1
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1036637440187578,
+      "distance_queries": 388,
+      "certified_leaf_cells": 132,
+      "broad_phase_pair_candidates": 374,
+      "unresolved": []
+    },
+    {
+      "pose": "Splay",
+      "independent_four_spread_errors_deg": [
+        -0.5,
+        0.5
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1713410953538737,
+      "distance_queries": 302,
+      "certified_leaf_cells": 130,
+      "broad_phase_pair_candidates": 302,
+      "unresolved": []
+    },
+    {
+      "pose": "Close",
+      "independent_four_spread_errors_deg": [
+        -3,
+        3
+      ],
+      "other_joints_held_exactly_at_pose": true,
+      "certified": true,
+      "reason": "all continuously bounded pair cells passed",
+      "mesh_boundary_lower_bound_mm": 1.1,
+      "smallest_evaluated_cell_lower_mm": 1.1242898685277787,
+      "distance_queries": 410,
+      "certified_leaf_cells": 148,
+      "broad_phase_pair_candidates": 378,
+      "unresolved": []
+    }
+  ],
+  "elapsed_s": 8.171999999904074,
+  "actuation_approved": false
+}

@@ -1,0 +1,54 @@
+{
+ "index": {
+  "best_collision_free": {
+   "tip_tip_mm": 0.23,
+   "centroid_mm": 32.3,
+   "finger_q": [
+    90,
+    40,
+    80
+   ],
+   "thumb_q": [
+    -10,
+    16,
+    42,
+    40
+   ]
+  },
+  "candidates_within_40mm": 282758,
+  "tested": 480,
+  "collision_free": 62
+ },
+ "middle": {
+  "best_collision_free": {
+   "tip_tip_mm": 0.1,
+   "centroid_mm": 37.0,
+   "finger_q": [
+    90,
+    60,
+    20
+   ],
+   "thumb_q": [
+    -6,
+    72,
+    24,
+    10
+   ]
+  },
+  "candidates_within_40mm": 4050,
+  "tested": 120,
+  "collision_free": 79
+ },
+ "ring": {
+  "best_collision_free": null,
+  "candidates_within_40mm": 0,
+  "tested": 0,
+  "collision_free": 0
+ },
+ "little": {
+  "best_collision_free": null,
+  "candidates_within_40mm": 0,
+  "tested": 0,
+  "collision_free": 0
+ }
+}

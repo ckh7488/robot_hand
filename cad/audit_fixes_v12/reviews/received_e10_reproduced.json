@@ -1,0 +1,110 @@
+{
+ "Backbend MCP \u00b13": {
+  "combos": 81,
+  "below_1mm": 0,
+  "contact": 0,
+  "worst": [
+   1.2,
+   [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   [
+    3,
+    3,
+    3,
+    3
+   ]
+  ]
+ },
+ "Backbend spread \u00b13": {
+  "combos": 81,
+  "below_1mm": 67,
+  "contact": 26,
+  "worst": [
+   0.0,
+   [
+    "ring_mcp_hinge",
+    "little_spread_carrier"
+   ],
+   [
+    -3,
+    -3,
+    -3,
+    3
+   ]
+  ]
+ },
+ "Splay MCP \u00b13": {
+  "combos": 81,
+  "below_1mm": 0,
+  "contact": 0,
+  "worst": [
+   1.343,
+   [
+    "Index_root_cartridge",
+    "index_root_hinge"
+   ],
+   [
+    3,
+    3,
+    3,
+    3
+   ]
+  ]
+ },
+ "Splay spread \u00b13": {
+  "combos": 81,
+  "below_1mm": 45,
+  "contact": 18,
+  "worst": [
+   0.0,
+   [
+    "middle_spread_carrier",
+    "ring_spread_carrier"
+   ],
+   [
+    -3,
+    3,
+    -3,
+    -3
+   ]
+  ]
+ },
+ "Close MCP \u00b13": {
+  "combos": 81,
+  "below_1mm": 0,
+  "contact": 0,
+  "worst": [
+   2.2,
+   [
+    "Palm_back_chassis",
+    "index_root_hinge"
+   ],
+   [
+    3,
+    3,
+    3,
+    3
+   ]
+  ]
+ },
+ "Close spread \u00b13": {
+  "combos": 81,
+  "below_1mm": 0,
+  "contact": 0,
+  "worst": [
+   1.802,
+   [
+    "index_mcp_fixed_frame",
+    "middle_spread_carrier"
+   ],
+   [
+    3,
+    -3,
+    -3,
+    -3
+   ]
+  ]
+ }
+}

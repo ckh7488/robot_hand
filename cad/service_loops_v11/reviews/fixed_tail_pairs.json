@@ -1,0 +1,49 @@
+{
+  "scope": "Mutual fixed tails only, one connector/three wires per motor. Same-motor wire lane reserve shells intentionally ignored; original conductor OD1.9mm has0.6mm nominal lane spacing. No connected flexible cable or dynamic service loop.",
+  "poses": [
+    {
+      "pose": "Open",
+      "minimum_gap_capped_1mm": 1.0,
+      "nearest": null,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Curl",
+      "minimum_gap_capped_1mm": 1.0,
+      "nearest": null,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Splay",
+      "minimum_gap_capped_1mm": 1.0,
+      "nearest": null,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Backbend",
+      "minimum_gap_capped_1mm": 1.0,
+      "nearest": null,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "Close",
+      "minimum_gap_capped_1mm": 1.0,
+      "nearest": null,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "pose": "ThumbSweep",
+      "minimum_gap_capped_1mm": 1.0,
+      "nearest": null,
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "all6sampled_fixed_tail_pairs_passed": true,
+  "full_harness_validated": false
+}

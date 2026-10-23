@@ -1,0 +1,28 @@
+{
+  "reference_machine_screw": {
+    "part": "NBK SNZS-M2-6",
+    "thread": "M2x0.4",
+    "length_mm": 6,
+    "head_diameter_mm": 3,
+    "head_height_mm": 0.6,
+    "drive": "cross recess No.0",
+    "manufacturer_dimensions_verified": true,
+    "source": "https://www.nbk1560.com/en/products/specialscrew/nedzicom/miniaturescrew/SNZS-M/SNZS-M2/",
+    "physical_fit_verified": false,
+    "printed_interface_assembly_torque_Nm": null,
+    "note": "Manufacturer maximum screw tightening torque is not a validated clamping torque for the printed interface."
+  },
+  "factory_frame_relief": {
+    "origin_mm": [
+      -12.6,
+      -14.75,
+      -16
+    ],
+    "size_mm": [
+      10.1,
+      11.5,
+      10
+    ],
+    "manufacture": "FPX330-S101 with clearance window post-machined; stock unmodified frame no longer accepted here."
+  }
+}

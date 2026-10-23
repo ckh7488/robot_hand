@@ -1,0 +1,198 @@
+{
+  "scope": "CAD geometry only. Sampled poses, not continuous collision certification.",
+  "all_shapes_valid": true,
+  "pair_checks": [
+    {
+      "pair": [
+        "Base_M2_nut_1",
+        "FPX330_S101"
+      ],
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "seconds": 0.06604313850402832
+    },
+    {
+      "pair": [
+        "Tab_M2_nut_1",
+        "FPX330_H101"
+      ],
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "seconds": 0.07408738136291504
+    },
+    {
+      "pair": [
+        "Base_M2x6_1",
+        "FPX330_S101"
+      ],
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "seconds": 0.08603978157043457
+    },
+    {
+      "pair": [
+        "Tab_M2x6_1",
+        "FPX330_H101"
+      ],
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "seconds": 0.09877681732177734
+    }
+  ],
+  "sweep_samples": [
+    {
+      "q_deg": -20,
+      "pair": [
+        "FPX330_H101",
+        "body"
+      ],
+      "distance_mm": 0.19999999999999396,
+      "seconds": 5.858184099197388
+    },
+    {
+      "q_deg": -20,
+      "pair": [
+        "FPX330_H101",
+        "FPX330_S101"
+      ],
+      "distance_mm": 0.19999999942925584,
+      "seconds": 5.609036207199097
+    },
+    {
+      "q_deg": -20,
+      "pair": [
+        "Output_test_tab",
+        "Bench_base"
+      ],
+      "distance_mm": 4.554573120103758,
+      "seconds": 0.008079767227172852
+    },
+    {
+      "q_deg": 0,
+      "pair": [
+        "FPX330_H101",
+        "body"
+      ],
+      "distance_mm": 0.1999999999999975,
+      "seconds": 5.2264063358306885
+    },
+    {
+      "q_deg": 0,
+      "pair": [
+        "FPX330_H101",
+        "FPX330_S101"
+      ],
+      "distance_mm": 0.19999999942999658,
+      "seconds": 5.8290486335754395
+    },
+    {
+      "q_deg": 0,
+      "pair": [
+        "Output_test_tab",
+        "Bench_base"
+      ],
+      "distance_mm": 9.486832980505138,
+      "seconds": 0.009019851684570312
+    },
+    {
+      "q_deg": 45,
+      "pair": [
+        "FPX330_H101",
+        "body"
+      ],
+      "distance_mm": 0.19999999999999574,
+      "seconds": 6.235826015472412
+    },
+    {
+      "q_deg": 45,
+      "pair": [
+        "FPX330_H101",
+        "FPX330_S101"
+      ],
+      "distance_mm": 0.5147424599183751,
+      "seconds": 5.712494134902954
+    },
+    {
+      "q_deg": 45,
+      "pair": [
+        "Output_test_tab",
+        "Bench_base"
+      ],
+      "distance_mm": 21.10031527497547,
+      "seconds": 0.012100934982299805
+    },
+    {
+      "q_deg": 70,
+      "pair": [
+        "FPX330_H101",
+        "body"
+      ],
+      "distance_mm": 0.20000000000000107,
+      "seconds": 4.947776556015015
+    },
+    {
+      "q_deg": 70,
+      "pair": [
+        "FPX330_H101",
+        "FPX330_S101"
+      ],
+      "distance_mm": 0.5342415172395413,
+      "seconds": 5.622118234634399
+    },
+    {
+      "q_deg": 70,
+      "pair": [
+        "Output_test_tab",
+        "Bench_base"
+      ],
+      "distance_mm": 26.5525630177648,
+      "seconds": 0.011089801788330078
+    },
+    {
+      "q_deg": 100,
+      "pair": [
+        "FPX330_H101",
+        "body"
+      ],
+      "distance_mm": 0.19999999999999574,
+      "seconds": 5.212259531021118
+    },
+    {
+      "q_deg": 100,
+      "pair": [
+        "FPX330_H101",
+        "FPX330_S101"
+      ],
+      "distance_mm": 0.534241517239539,
+      "seconds": 5.739337682723999
+    },
+    {
+      "q_deg": 100,
+      "pair": [
+        "Output_test_tab",
+        "Bench_base"
+      ],
+      "distance_mm": 28.005250024538235,
+      "seconds": 0.012019157409667969
+    }
+  ],
+  "interfaces": {
+    "horn_idler_axis_offset_mm": 0.0,
+    "horn_PCD_mm": 12,
+    "horn_hole_diameter_mm": 1.6,
+    "hinge_horn_hole_diameter_mm": 2.05,
+    "horn_thread_engagement_mm": 2.7,
+    "vendor_horn_max_depth_mm": 3,
+    "body_fixing_screw_length_mm": 8,
+    "body_engagement_mm": {
+      "front": 3.2,
+      "rear": 2.2
+    },
+    "idler_contact_separation_mm": 29,
+    "hinge_internal_width_mm": 29,
+    "hinge_external_width_mm": 34.6,
+    "nominal_fit_note": "Intended bearing/horn contacts may have zero clearance; not a 3mm free-motion margin."
+  },
+  "nuts_fitted": true,
+  "sampled_forbidden_interference": false
+}

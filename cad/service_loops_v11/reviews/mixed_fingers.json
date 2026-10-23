@@ -1,0 +1,6140 @@
+{
+  "scope": "Structured independent finger states; not a complete joint configuration space. Body only, cables excluded.",
+  "rows": [
+    {
+      "name": "little_open__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 286,
+      "containment_calls": 119
+    },
+    {
+      "name": "little_open__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 99,
+      "containment_calls": 11
+    },
+    {
+      "name": "little_close__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 100,
+      "containment_calls": 21
+    },
+    {
+      "name": "little_close__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "ring_close__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 118,
+      "containment_calls": 28
+    },
+    {
+      "name": "ring_close__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "ring_close__little_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_00111",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_close__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 136,
+      "containment_calls": 35
+    },
+    {
+      "name": "middle_close__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_01010",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_01011",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_close__ring_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 93,
+      "containment_calls": 28
+    },
+    {
+      "name": "binary_01101",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_01110",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_01111",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "index_close__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 154,
+      "containment_calls": 42
+    },
+    {
+      "name": "index_close__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_10010",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_10011",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_10100",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 93,
+      "containment_calls": 28
+    },
+    {
+      "name": "binary_10101",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_10110",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_10111",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "index_close__middle_close",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 111,
+      "containment_calls": 35
+    },
+    {
+      "name": "binary_11001",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_11010",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_11011",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_11100",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 93,
+      "containment_calls": 28
+    },
+    {
+      "name": "binary_11101",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "binary_11110",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 75,
+      "containment_calls": 21
+    },
+    {
+      "name": "binary_11111",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 57,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_curl__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 153,
+      "containment_calls": 42
+    },
+    {
+      "name": "middle_hook__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 6
+    },
+    {
+      "name": "middle_backbend__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 51,
+      "containment_calls": 7
+    },
+    {
+      "name": "index_curl__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 52,
+      "containment_calls": 9
+    },
+    {
+      "name": "index_curl__middle_curl",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 39,
+      "containment_calls": 4
+    },
+    {
+      "name": "index_curl__middle_close",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "index_curl__middle_hook",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 6
+    },
+    {
+      "name": "index_curl__middle_backbend",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "index_close__middle_curl",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 78,
+      "containment_calls": 8
+    },
+    {
+      "name": "index_close__middle_hook",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 6
+    },
+    {
+      "name": "index_close__middle_backbend",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "index_hook__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 11
+    },
+    {
+      "name": "index_hook__middle_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 39,
+      "containment_calls": 4
+    },
+    {
+      "name": "index_hook__middle_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "index_hook__middle_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 6
+    },
+    {
+      "name": "index_hook__middle_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "index_backbend__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            40.2,
+            169.35630377132816,
+            -5.000000000000007
+          ],
+          [
+            39.0,
+            169.35630377132816,
+            -5.0000000000000036
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 66,
+      "containment_calls": 12
+    },
+    {
+      "name": "index_backbend__middle_curl",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "index_backbend__middle_close",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "index_backbend__middle_hook",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 6
+    },
+    {
+      "name": "index_backbend__middle_backbend",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "ring_curl__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 61,
+      "containment_calls": 14
+    },
+    {
+      "name": "ring_hook__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 33,
+      "containment_calls": 6
+    },
+    {
+      "name": "ring_backbend__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 51,
+      "containment_calls": 7
+    },
+    {
+      "name": "middle_curl__ring_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 80,
+      "containment_calls": 8
+    },
+    {
+      "name": "middle_curl__ring_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "middle_curl__ring_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 6
+    },
+    {
+      "name": "middle_curl__ring_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "middle_close__ring_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 82,
+      "containment_calls": 8
+    },
+    {
+      "name": "middle_close__ring_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 6
+    },
+    {
+      "name": "middle_close__ring_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "middle_hook__ring_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 72,
+      "containment_calls": 10
+    },
+    {
+      "name": "middle_hook__ring_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "middle_hook__ring_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 6
+    },
+    {
+      "name": "middle_hook__ring_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "middle_backbend__ring_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 85,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_backbend__ring_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "middle_backbend__ring_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 34,
+      "containment_calls": 6
+    },
+    {
+      "name": "middle_backbend__ring_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 44,
+      "containment_calls": 7
+    },
+    {
+      "name": "little_curl__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 65,
+      "containment_calls": 14
+    },
+    {
+      "name": "little_hook__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 6
+    },
+    {
+      "name": "little_backbend__thumb_Open",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 58,
+      "containment_calls": 7
+    },
+    {
+      "name": "ring_curl__little_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 84,
+      "containment_calls": 8
+    },
+    {
+      "name": "ring_curl__little_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "ring_curl__little_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 6
+    },
+    {
+      "name": "ring_curl__little_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 51,
+      "containment_calls": 7
+    },
+    {
+      "name": "ring_close__little_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 87,
+      "containment_calls": 8
+    },
+    {
+      "name": "ring_close__little_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 6
+    },
+    {
+      "name": "ring_close__little_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 51,
+      "containment_calls": 7
+    },
+    {
+      "name": "ring_hook__little_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 76,
+      "containment_calls": 10
+    },
+    {
+      "name": "ring_hook__little_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "ring_hook__little_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 6
+    },
+    {
+      "name": "ring_hook__little_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 51,
+      "containment_calls": 7
+    },
+    {
+      "name": "ring_backbend__little_curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 90,
+      "containment_calls": 11
+    },
+    {
+      "name": "ring_backbend__little_close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 41,
+      "containment_calls": 4
+    },
+    {
+      "name": "ring_backbend__little_hook",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 42,
+      "containment_calls": 6
+    },
+    {
+      "name": "ring_backbend__little_backbend",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 51,
+      "containment_calls": 7
+    },
+    {
+      "name": "little_open__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 115,
+      "containment_calls": 25
+    },
+    {
+      "name": "little_open__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 116,
+      "containment_calls": 30
+    },
+    {
+      "name": "index_curl__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 136,
+      "containment_calls": 33
+    },
+    {
+      "name": "index_curl__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "index_curl__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 122,
+      "containment_calls": 32
+    },
+    {
+      "name": "index_close__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 152,
+      "containment_calls": 33
+    },
+    {
+      "name": "index_close__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 104,
+      "containment_calls": 30
+    },
+    {
+      "name": "index_hook__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 128,
+      "containment_calls": 35
+    },
+    {
+      "name": "index_hook__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "index_hook__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 119,
+      "containment_calls": 32
+    },
+    {
+      "name": "index_backbend__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            40.2,
+            169.35630377132816,
+            -5.000000000000007
+          ],
+          [
+            39.0,
+            169.35630377132816,
+            -5.0000000000000036
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 155,
+      "containment_calls": 36
+    },
+    {
+      "name": "index_backbend__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "index_backbend__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "index_mcp_hinge",
+          "middle_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 119,
+      "containment_calls": 32
+    },
+    {
+      "name": "middle_curl__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 161,
+      "containment_calls": 38
+    },
+    {
+      "name": "middle_curl__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_curl__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 119,
+      "containment_calls": 32
+    },
+    {
+      "name": "middle_close__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 152,
+      "containment_calls": 33
+    },
+    {
+      "name": "middle_close__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 95,
+      "containment_calls": 30
+    },
+    {
+      "name": "middle_hook__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 128,
+      "containment_calls": 35
+    },
+    {
+      "name": "middle_hook__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_hook__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "middle_backbend__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -7.800000000000001,
+            183.0,
+            -6.326196969944579
+          ],
+          [
+            -9.0,
+            183.0,
+            -6.326196969944579
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 155,
+      "containment_calls": 36
+    },
+    {
+      "name": "middle_backbend__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "middle_backbend__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "middle_mcp_hinge",
+          "ring_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "ring_curl__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 161,
+      "containment_calls": 38
+    },
+    {
+      "name": "ring_curl__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "ring_curl__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "ring_close__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 152,
+      "containment_calls": 33
+    },
+    {
+      "name": "ring_close__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 95,
+      "containment_calls": 30
+    },
+    {
+      "name": "ring_hook__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 128,
+      "containment_calls": 35
+    },
+    {
+      "name": "ring_hook__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "ring_hook__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "ring_backbend__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 155,
+      "containment_calls": 36
+    },
+    {
+      "name": "ring_backbend__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "ring_backbend__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "little_curl__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 166,
+      "containment_calls": 38
+    },
+    {
+      "name": "little_curl__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "little_curl__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          35,
+          35,
+          20
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "little_close__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 152,
+      "containment_calls": 33
+    },
+    {
+      "name": "little_close__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          60,
+          45,
+          30
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 95,
+      "containment_calls": 30
+    },
+    {
+      "name": "little_hook__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 136,
+      "containment_calls": 35
+    },
+    {
+      "name": "little_hook__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "little_hook__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          0,
+          60,
+          45
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    },
+    {
+      "name": "little_backbend__thumb_Curl",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          15,
+          20,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 162,
+      "containment_calls": 36
+    },
+    {
+      "name": "little_backbend__thumb_Close",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          0,
+          20,
+          25,
+          15
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 89,
+      "containment_calls": 11
+    },
+    {
+      "name": "little_backbend__thumb_ThumbSweep",
+      "pose": {
+        "index": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "little": [
+          0,
+          -20,
+          0,
+          0
+        ],
+        "thumb": [
+          -10,
+          10,
+          15,
+          10
+        ]
+      },
+      "minimum": {
+        "distance_mm": 1.3,
+        "pair": null,
+        "lower_bound_only": true
+      },
+      "below_threshold": [],
+      "distance_calls": 114,
+      "containment_calls": 32
+    }
+  ],
+  "elapsed_seconds": 36.48499999998603,
+  "sampled_poses": 135,
+  "poses_with_body_collision": 0,
+  "poses_below_1p1mm": 0
+}

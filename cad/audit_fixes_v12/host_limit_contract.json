@@ -1,0 +1,47 @@
+{
+  "status": "Offline partial geometry contract, not approved for powered operation",
+  "manufacturing_release": false,
+  "actuation_approved": false,
+  "geometry_baseline": "../modular_roots_v9",
+  "preserve_named_joint_axes": true,
+  "mode5_requires_host_limit_enforcement": true,
+  "known_arm_pair_domains": [
+    {
+      "joint": "elbow",
+      "checked_actual_deg": [
+        0,
+        98
+      ],
+      "illustrative_command_deg_if_bounded_3deg_error": [
+        3,
+        95
+      ],
+      "other_arm_joints_deg": 0
+    },
+    {
+      "joint": "wrist_deviation",
+      "checked_actual_deg": [
+        -20,
+        17
+      ],
+      "illustrative_command_deg_if_bounded_3deg_error": [
+        -17,
+        14
+      ],
+      "other_arm_joints_deg": 0
+    }
+  ],
+  "assumed_tracking_error_deg": 3,
+  "tracking_error_measured": false,
+  "limitations": [
+    "Only named pair distances, no coupled four-axis arm-space certification.",
+    "Actual error must be measured including overshoot; camera error is a separate command uncertainty.",
+    "All four finger spread angles are coupled. Independent per-axis clamps are insufficient.",
+    "Backbend excluded from proposed live-tracking development defaults pending geometry/error margin work. This exclusion alone does not make other poses safe.",
+    "No global finger/arm limit set is approved; whole-body collision filtering and measured error envelopes remain required."
+  ],
+  "linked_evidence": [
+    "reviews/arm_stop_pairs.json",
+    "reviews/spread_neighborhoods.json"
+  ]
+}

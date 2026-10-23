@@ -1,0 +1,739 @@
+{
+  "revision": 9,
+  "manufacturing_release": false,
+  "handedness": "right",
+  "assets": {
+    "M077_stator": {
+      "valid": true,
+      "solids": 12,
+      "volume_mm3": 14753.964011080036,
+      "com_mm": [
+        -14.404594737987406,
+        -7.4644491455134645,
+        -0.004857209025719305
+      ],
+      "bbox_mm": [
+        25.800000000000008,
+        34.00000000000001,
+        20.000000000000007
+      ]
+    },
+    "M077_rotor": {
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 1110.6040692122097,
+      "com_mm": [
+        -12.657430845647973,
+        -0.0017684066287986383,
+        1.0767966044787532e-06
+      ],
+      "bbox_mm": [
+        29.000000000000014,
+        15.99542716666927,
+        16.000000000000004
+      ]
+    },
+    "H101_vendor": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2526.754474190361,
+      "com_mm": [
+        -14.499999985211307,
+        10.076839464654377,
+        3.6227027888019446e-11
+      ],
+      "bbox_mm": [
+        34.60000000190001,
+        25.000000000000004,
+        20.000000000000014
+      ]
+    },
+    "S101_relief": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1531.1882011827622,
+      "com_mm": [
+        -13.426680984024387,
+        -7.311989569087689,
+        -11.402989567978857
+      ],
+      "bbox_mm": [
+        28.600000001140003,
+        34.0,
+        7.0
+      ]
+    },
+    "M2_base_screws": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 92.36282401553991,
+      "com_mm": [
+        -14.5,
+        -7.5,
+        -14.193877551020408
+      ],
+      "bbox_mm": [
+        14.31370849898476,
+        29.31277604498721,
+        6.6
+      ]
+    },
+    "M2_base_nuts": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 68.57480836455184,
+      "com_mm": [
+        -14.499999999999998,
+        -7.5,
+        -16.599999999999994
+      ],
+      "bbox_mm": [
+        15.932510652501767,
+        30.31370849898476,
+        1.5999999999999996
+      ]
+    },
+    "M2_output_screws": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 92.36282401553999,
+      "com_mm": [
+        -14.500000000000004,
+        18.19387755102041,
+        3.077180644197505e-16
+      ],
+      "bbox_mm": [
+        14.31370849898476,
+        6.600000000000007,
+        14.31277604498721
+      ]
+    },
+    "M2_output_nuts": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 68.5748083645519,
+      "com_mm": [
+        -14.499999999999998,
+        20.599999999999998,
+        0.0
+      ],
+      "bbox_mm": [
+        15.932510652501767,
+        1.6000000000000014,
+        15.313708498984763
+      ]
+    },
+    "M2_root_output_nuts": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 68.5748083645519,
+      "com_mm": [
+        -14.5,
+        20.6,
+        -2.0723141710663484e-16
+      ],
+      "bbox_mm": [
+        15.31370849898476,
+        1.6000000000000014,
+        15.932510652501769
+      ]
+    },
+    "M2_body_TAP8": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 136.91060784344322,
+      "com_mm": [
+        -14.500000000000002,
+        -7.500000000000004,
+        -8.000000000000004
+      ],
+      "bbox_mm": [
+        28.000000000000007,
+        33.49891213700286,
+        3.5000000000000036
+      ]
+    },
+    "M2_hinge_TAP4": {
+      "valid": true,
+      "solids": 8,
+      "volume_mm3": 183.09201985121325,
+      "com_mm": [
+        -14.499999999999996,
+        -3.104636614255547e-16,
+        2.1101826987518169e-16
+      ],
+      "bbox_mm": [
+        34.20000000000001,
+        15.498912137002861,
+        15.500000000000007
+      ]
+    },
+    "Thumb_internal_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9656.39150497651,
+      "com_mm": [
+        66.10107105052107,
+        27.06446813603166,
+        -47.44701179367741
+      ],
+      "bbox_mm": [
+        45.892416638754945,
+        35.027294538321755,
+        36.00000000000002
+      ]
+    },
+    "Root_cartridge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9603.092128184317,
+      "com_mm": [
+        18.6252794601501,
+        -10.652300441134669,
+        -22.865905800444743
+      ],
+      "bbox_mm": [
+        20.0,
+        45.0,
+        31.000000000000004
+      ]
+    },
+    "Palm_back_chassis": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 294704.5737900621,
+      "com_mm": [
+        -8.8757566586163,
+        71.34814403472497,
+        -39.28887200264187
+      ],
+      "bbox_mm": [
+        232.0,
+        195.0,
+        85.0
+      ]
+    },
+    "Palm_front_cover": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 42907.351530659544,
+      "com_mm": [
+        -23.95815859807704,
+        73.9747828438294,
+        24.524299040753327
+      ],
+      "bbox_mm": [
+        183.9981581792108,
+        140.0,
+        4.0
+      ]
+    },
+    "Compact_root": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11345.294335681017,
+      "com_mm": [
+        -2.6869108217155184,
+        -1.204615355012467,
+        8.288370359782785
+      ],
+      "bbox_mm": [
+        43.0,
+        53.0,
+        50.0
+      ]
+    },
+    "Flex_link_48": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9872.839336364665,
+      "com_mm": [
+        -14.50638114303835,
+        31.716978872411136,
+        -10.849559864053852
+      ],
+      "bbox_mm": [
+        32.0,
+        42.0,
+        28.0
+      ]
+    },
+    "Flex_link_50": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10192.839336364661,
+      "com_mm": [
+        -14.506180809676383,
+        32.56732153073903,
+        -10.995558520011635
+      ],
+      "bbox_mm": [
+        32.0,
+        44.0,
+        28.0
+      ]
+    },
+    "Flex_link_55": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10992.839336364656,
+      "com_mm": [
+        -14.505731003435272,
+        34.73129758719133,
+        -11.323367657735494
+      ],
+      "bbox_mm": [
+        32.0,
+        49.0,
+        28.0
+      ]
+    },
+    "Flex_link_62": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12112.83933636466,
+      "com_mm": [
+        -14.505201092679481,
+        37.83543224426888,
+        -11.709555247072434
+      ],
+      "bbox_mm": [
+        32.0,
+        56.0,
+        28.0
+      ]
+    },
+    "Flex_link_65": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12592.839336364657,
+      "com_mm": [
+        -14.505002843148969,
+        39.18733161124776,
+        -11.854035251367513
+      ],
+      "bbox_mm": [
+        32.0,
+        59.0,
+        28.0
+      ]
+    },
+    "Flex_link_70": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13392.83933636465,
+      "com_mm": [
+        -14.504704006254231,
+        41.46408803952211,
+        -12.071821168576745
+      ],
+      "bbox_mm": [
+        32.0,
+        64.0,
+        28.0
+      ]
+    },
+    "Tip_28": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5936.866653175295,
+      "com_mm": [
+        -14.499999999999993,
+        22.411136451755176,
+        -7.659719805955982e-17
+      ],
+      "bbox_mm": [
+        27.0,
+        11.0,
+        22.0
+      ]
+    },
+    "Tip_32": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6808.829615398425,
+      "com_mm": [
+        -14.500000000000025,
+        23.783572533705055,
+        0.28201872445619697
+      ],
+      "bbox_mm": [
+        27.0,
+        15.0,
+        22.0
+      ]
+    },
+    "Tip_34": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7172.086782339577,
+      "com_mm": [
+        -14.500000000000021,
+        24.484119778102993,
+        0.38729278206923096
+      ],
+      "bbox_mm": [
+        27.0,
+        17.0,
+        22.0
+      ]
+    },
+    "Thumb_metacarpal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 19935.66790049759,
+      "com_mm": [
+        -15.503151367568991,
+        36.43860697823226,
+        -6.064447138443577
+      ],
+      "bbox_mm": [
+        58.05747770403839,
+        59.304978232583096,
+        39.0
+      ]
+    },
+    "AK_elbow_flex": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 312612.22732662736,
+      "com_mm": [
+        -29.12500000000001,
+        -360.0,
+        -6.703115264571548e-15
+      ],
+      "bbox_mm": [
+        50.25000000000003,
+        88.97233719807258,
+        89.00000000000003
+      ]
+    },
+    "AK_forearm_roll": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 210771.80732382945,
+      "com_mm": [
+        4.418629732507802e-15,
+        -255.5,
+        5.888529531778111e-15
+      ],
+      "bbox_mm": [
+        79.0,
+        43.0,
+        78.97544537806449
+      ]
+    },
+    "AK_wrist_flex": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 210771.8073238296,
+      "com_mm": [
+        -25.500000000000004,
+        -80.0,
+        1.1046574331269497e-15
+      ],
+      "bbox_mm": [
+        43.00000000000002,
+        78.9754453780645,
+        79.00000000000003
+      ]
+    },
+    "AK_wrist_deviation": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 99719.49153245115,
+      "com_mm": [
+        32.00000000000001,
+        -65.0,
+        -26.599999999999998
+      ],
+      "bbox_mm": [
+        53.0,
+        52.98352664604327,
+        45.199999999999996
+      ]
+    },
+    "Elbow_fixed_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 212992.0,
+      "com_mm": [
+        -18.114257812500004,
+        -401.6484375,
+        -1.6019837699977357e-15
+      ],
+      "bbox_mm": [
+        140.0,
+        116.0,
+        130.0
+      ]
+    },
+    "Elbow_roll_carrier": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 118368.0,
+      "com_mm": [
+        19.884833738848336,
+        -316.2298256285482,
+        -9.664552958348213e-16
+      ],
+      "bbox_mm": [
+        100.0,
+        97.0,
+        92.0
+      ]
+    },
+    "Forearm_box_beam": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 131410.7991911843,
+      "com_mm": [
+        -16.18104427221126,
+        -141.84566227593632,
+        -1.2803857891709648e-15
+      ],
+      "bbox_mm": [
+        76.0,
+        189.98731899523892,
+        87.9999223955736
+      ]
+    },
+    "Roll_output_flange": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12867.963509103793,
+      "com_mm": [
+        0.0,
+        -228.0,
+        6.074120666717266e-16
+      ],
+      "bbox_mm": [
+        64.0,
+        4.0,
+        63.98010764805225
+      ]
+    },
+    "Wrist_box_carrier": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 55853.754229414364,
+      "com_mm": [
+        42.60272132888709,
+        -70.52088434689382,
+        -28.652476332023898
+      ],
+      "bbox_mm": [
+        70.0,
+        64.0,
+        70.19999999999999
+      ]
+    },
+    "Palm_wrist_saddle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 73405.22888907061,
+      "com_mm": [
+        24.09823307773697,
+        -24.588948688080208,
+        -8.107760398189768
+      ],
+      "bbox_mm": [
+        98.0,
+        116.99503146009188,
+        98.0
+      ]
+    },
+    "M3_cover_screws": {
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 709.803590170444,
+      "com_mm": [
+        -45.0,
+        77.6,
+        24.26348547717842
+      ],
+      "bbox_mm": [
+        93.5,
+        111.49829050100448,
+        13.0
+      ]
+    },
+    "M3_cover_nuts": {
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 229.54421992682663,
+      "com_mm": [
+        -44.999999999999986,
+        77.6,
+        18.7
+      ],
+      "bbox_mm": [
+        94.35085296108588,
+        111.5,
+        2.3999999999999986
+      ]
+    },
+    "M3_thumb_mount_screws": {
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 312.19576995048567,
+      "com_mm": [
+        75.12876930312002,
+        25.686570536084904,
+        -60.4245283018868
+      ],
+      "bbox_mm": [
+        22.35297774861752,
+        19.639617914108356,
+        15.0
+      ]
+    },
+    "M3_thumb_mount_nuts": {
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 91.81768797073072,
+      "com_mm": [
+        75.12876930312002,
+        25.68657053608491,
+        -54.300000000000004
+      ],
+      "bbox_mm": [
+        23.10734698293544,
+        20.109177076332603,
+        2.4000000000000057
+      ]
+    },
+    "M3_saddle_mount_screws": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 680.9402076655875,
+      "com_mm": [
+        -11.999999999999998,
+        18.0,
+        -64.55882352941177
+      ],
+      "bbox_mm": [
+        45.5,
+        25.49829050100449,
+        17.0
+      ]
+    },
+    "M3_saddle_mount_nuts": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 183.63537594146146,
+      "com_mm": [
+        -12.0,
+        18.000000000000004,
+        -56.800000000000004
+      ],
+      "bbox_mm": [
+        46.35085296108588,
+        25.5,
+        2.4000000000000057
+      ]
+    },
+    "M3_root_mount_screws": {
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 312.1957699504856,
+      "com_mm": [
+        24.999999999999996,
+        -10.0,
+        -36.424528301886795
+      ],
+      "bbox_mm": [
+        5.5,
+        33.49829050100449,
+        15.0
+      ]
+    },
+    "M3_root_mount_nuts": {
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 91.8176879707308,
+      "com_mm": [
+        24.999999999999993,
+        -9.999999999999998,
+        -30.3
+      ],
+      "bbox_mm": [
+        6.350852961085884,
+        33.5,
+        2.400000000000002
+      ]
+    }
+  },
+  "poses": {
+    "Open": {
+      "hand_bbox_mm": [
+        247.43864177513828,
+        326.0,
+        100.0
+      ]
+    },
+    "Curl": {
+      "hand_bbox_mm": [
+        241.50109705381806,
+        267.1183390172416,
+        200.13498158386864
+      ]
+    },
+    "Splay": {
+      "hand_bbox_mm": [
+        251.51859999556004,
+        326.88337326861074,
+        100.0
+      ]
+    },
+    "Backbend": {
+      "hand_bbox_mm": [
+        247.43864177513828,
+        320.4748851776123,
+        100.0
+      ]
+    },
+    "Close": {
+      "hand_bbox_mm": [
+        237.43748495526182,
+        228.0884572681199,
+        219.73787473275877
+      ]
+    },
+    "ThumbSweep": {
+      "hand_bbox_mm": [
+        232.0,
+        267.1183390172416,
+        200.13498158386864
+      ]
+    }
+  },
+  "axis_locations_y_mm": {
+    "elbow": -360,
+    "forearm_roll": -230,
+    "wrist_flex": -80,
+    "wrist_deviation": -65,
+    "palm_origin": 0
+  },
+  "known_limits": [
+    "CAD layout candidate, not a manufacturing release or a calibrated actuator model.",
+    "New tapered palm envelope, 195mm long versus110mm; front cover grows from47mm to a shaped upper edge near140mm. Hollow shell, not solid infill.",
+    "Thumb CMC root moves from[112,21,0] to[62,46,-24]mm, inside the lower palm. Thumb metacarpal has a fixed35deg MCP mounting yaw; upper thumb is not a straight continuation of its metacarpal.",
+    "Hand20 axes + arm4 axes retained. Finger roots and lengths are redesigned. Root2axis mechanical submodule and stock motor/frame interfaces are reused.",
+    "Palm structural thickness89mm includes the actual stacked root motor envelopes; 3D print layer strength and weight not validated.",
+    "Arm motor shapes remain nominal cylinders; vendor flange details, bearings, wiring and strength are pending. Existing90paths and speed results do not apply.",
+    "Explicit floor windows preserve16mm load rails, motor wall pads and fastener lands.6mm ribs and chamfered wall openings reduce mass; cover skin2.4mm with4mm lands. Tip interiors are hollowed without changing joint centers. Structural strength remains unverified.",
+    "Forearm extension V4.1: elbow-to-wrist-flex axis distance280mm (was220); elbow-to-roll130mm (was100). Hand and wrist interfaces unchanged. Longer proximal carrier and hollow beam are regenerated, not scaled motor meshes. Elbow gravity and acceleration margins must be reassessed.",
+    "Assembly review correction: factory S101 head seat Z=-11.8mm and H101 head seat Y=15.8mm were verified by BRep ray intersections. Original M2x6 has full nominal nut engagement;2.2mm nut pockets improve nominal protrusion from0.1 to0.4mm. No additional H101/S101 head machining.1.6mm nuts and low heads diameter3mm,height0.6mm. All hardware dimensions require physical fit confirmation.",
+    "Assembly review: printed root-seat tool corridors diameter3.5mm allow2.8mm straight screwdriver shaft before motors/cover installation; root-frame order must follow the CAD tool-blocking graph. Cover changes to5xM3x10 with side-loaded AF5.5x2.4 nuts near the top of12mm bosses; no90mm cover bolts. Tool/hand ergonomics, printed tolerances and strength remain physical bench checks.",
+    "Round6: add8 M3x14 palm mounting screws and nuts, plus4 body M2x8 TAP and8 horn/idler M2x4 TAP per actuator. Printed root carrier left edge relieved0.6mm. Thread engagement is explicit; threads and screw drives remain simplified.",
+    "Round7: move thumb cartridge bolts to localX[-19,20],Y[-28,8]mm; add root body screw tool corridors through floor and thumb flange; remove0.01mm nut-pocket lip; H101 TAP Y=-6mm seat corrected outboard0.1mm based on actual BRep material boundary, other6 TAP seats unchanged.",
+    "V7 index root fixed wall becomes a removable cartridge. Build its S101/motor/hinge outside palm, seat a printed foot in a locating lip, then fit two M3x12 screws from below. Other roots are retained as V6 pending this proof.",
+    "V8: four finger cartridges and top-installed thumb foot preserve joint axes. Closed box load rails carry V6 stiffness concept; new cartridge load paths require fresh structural checks.",
+    "V9: root wall top lowered from localZ4 to-3mm. Highest M2mount centerZ=-8.843mm retains5.843mm center-to-edge distance and about3.36mm beyond the hex-pocket corner. Axis locations, foot, bolts and palm unchanged.",
+    "Round22: C-carrier MCPseat positive edge reduced0.8mm, width25.8\u219225.0mm, to retain clearance with3deg excess backbend. Nearest M2nut center-to-edge6.443mm, about3.96mm beyond AF4.3hex corner. Mount bores and seat thickness unchanged. Strength still physical/FEA pending.",
+    "Round24: symmetric left seat edge also reduced0.8mm; final main seat width24.2mm, centered atX-14.5. Both nut-pocket corner edge ligaments about3.96mm. One-sided relief alone did not increase minimum because the opposite edge had the same gap."
+  ],
+  "geometry_checks_file": "geometry_review.json",
+  "old_results_valid_for_this_geometry": false
+}

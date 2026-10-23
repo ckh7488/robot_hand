@@ -1,0 +1,23 @@
+{
+  "AK70": {
+    "sewn_valid": false,
+    "closed_solids": 0,
+    "volumes": [],
+    "source_faces": 439,
+    "sewn_faces": 439
+  },
+  "AK60": {
+    "sewn_valid": false,
+    "closed_solids": 0,
+    "volumes": [],
+    "source_faces": 615,
+    "sewn_faces": 615
+  },
+  "AK45": {
+    "sewn_valid": true,
+    "closed_solids": 0,
+    "volumes": [],
+    "source_faces": 313,
+    "sewn_faces": 313
+  }
+}

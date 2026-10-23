@@ -1,0 +1,277 @@
+{
+  "units": "mm",
+  "material_and_layer_strength_verified": false,
+  "parts": [
+    {
+      "asset": "Compact_root",
+      "quantity": 5,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        50.0,
+        53.0,
+        43.0
+      ],
+      "volume_mm3": 11345.32628687114,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "C profile laid on its side",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Flex_link_48",
+      "quantity": 2,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        32.0,
+        42.0,
+        28.0
+      ],
+      "volume_mm3": 9872.852049092284,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Flex_link_50",
+      "quantity": 3,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        32.0,
+        44.0,
+        28.0
+      ],
+      "volume_mm3": 10192.852049092284,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Flex_link_55",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        32.0,
+        49.0,
+        28.0
+      ],
+      "volume_mm3": 10992.852049092284,
+      "rigid_orientation_volume_relative_error": 1.6547019785425536e-16,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Flex_link_62",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        32.0,
+        56.0,
+        28.0
+      ],
+      "volume_mm3": 12112.852049092284,
+      "rigid_orientation_volume_relative_error": 1.5017019907232903e-16,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Flex_link_65",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        32.0,
+        59.0,
+        28.0
+      ],
+      "volume_mm3": 12592.852049092284,
+      "rigid_orientation_volume_relative_error": 1.4444618236239604e-16,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Flex_link_70",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        32.0,
+        64.0,
+        28.0
+      ],
+      "volume_mm3": 13392.852049092284,
+      "rigid_orientation_volume_relative_error": 1.3581792712099295e-16,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Palm_back_chassis",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        232.0,
+        195.0,
+        85.0
+      ],
+      "volume_mm3": 294699.8329153811,
+      "rigid_orientation_volume_relative_error": 3.950301589087153e-16,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": false,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Palm_front_cover",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        183.99815999999998,
+        140.0,
+        4.000000000000018
+      ],
+      "volume_mm3": 42907.13900364019,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "outer cover face down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Root_cartridge",
+      "quantity": 4,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        31.0,
+        45.0,
+        20.0
+      ],
+      "volume_mm3": 9603.103127753247,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "broad root wall face down; support and layer review pending",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Thumb_internal_cradle",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        36.0,
+        49.000002796318874,
+        16.50000234765537
+      ],
+      "volume_mm3": 9656.404382968378,
+      "rigid_orientation_volume_relative_error": 1.1302277730336915e-15,
+      "candidate_orientation": "broad root wall face down; support and layer review pending",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Thumb_metacarpal",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        58.05748,
+        59.30498,
+        39.0
+      ],
+      "volume_mm3": 19935.68081339174,
+      "rigid_orientation_volume_relative_error": 1.8248580728920527e-16,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Tip_28",
+      "quantity": 2,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        27.0,
+        11.0,
+        22.0
+      ],
+      "volume_mm3": 5936.86350155735,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Tip_32",
+      "quantity": 2,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        27.0,
+        15.0,
+        22.0
+      ],
+      "volume_mm3": 6808.823004851423,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    },
+    {
+      "asset": "Tip_34",
+      "quantity": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_mesh_components": 1,
+      "bbox_mm": [
+        27.0,
+        17.0,
+        22.0
+      ],
+      "volume_mm3": 7172.078442363459,
+      "rigid_orientation_volume_relative_error": 0.0,
+      "candidate_orientation": "modeled base plane down",
+      "fits_256_square_by_bbox": true,
+      "fits_220_square_by_bbox": true,
+      "notes": "Bounding-box fit includes10mm total brim/edge allowance; actual printer, support, layer direction and tolerances require slicer review."
+    }
+  ],
+  "all_watertight": true
+}

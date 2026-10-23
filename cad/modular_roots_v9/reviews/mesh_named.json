@@ -1,0 +1,171 @@
+{
+  "mode": "named",
+  "target_physical_clearance_mm": 1.0,
+  "mesh_screen_threshold_mm": 1.1,
+  "mesh_deflection_mm": 0.05,
+  "distance_method": "FCL non-convex triangle BVH + containment rays; near limits require exact CAD confirmation",
+  "actuator_simulation": false,
+  "continuous_swept_volume_certified": false,
+  "kinematics_check": {
+    "poses": 6,
+    "parts_per_pose": 251,
+    "max_position_error_mm": 5.684341886080802e-14,
+    "max_rotation_matrix_error": 5.053215498074303e-16,
+    "passed": true
+  },
+  "items": [
+    {
+      "name": "Open",
+      "minimum": {
+        "pair": [
+          "thumb_spread_carrier",
+          "thumb_mcp_link"
+        ],
+        "distance_mm": 2.0,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            82.06691579705021,
+            56.31110519750898,
+            -10.0
+          ],
+          [
+            80.78134057767713,
+            57.84319408374693,
+            -10.0
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 367,
+      "containment_calls": 119
+    },
+    {
+      "name": "Curl",
+      "minimum": {
+        "pair": [
+          "thumb_spread_carrier",
+          "thumb_mcp_link"
+        ],
+        "distance_mm": 2.141407,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            82.06691579705021,
+            56.31110519750898,
+            -4.0
+          ],
+          [
+            81.34758961395204,
+            58.3183334412397,
+            -3.801935810190063
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 324,
+      "containment_calls": 31
+    },
+    {
+      "name": "Splay",
+      "minimum": {
+        "pair": [
+          "Index_root_cartridge",
+          "index_root_hinge"
+        ],
+        "distance_mm": 1.342581,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            85.0,
+            173.0,
+            -53.005464022516776
+          ],
+          [
+            83.67048512081013,
+            173.1868511308706,
+            -53.005464022516776
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 360,
+      "containment_calls": 106
+    },
+    {
+      "name": "Backbend",
+      "minimum": {
+        "pair": [
+          "ring_mcp_hinge",
+          "little_spread_carrier"
+        ],
+        "distance_mm": 1.2,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            -55.800000000070064,
+            171.18249928423046,
+            -3.999999999740634
+          ],
+          [
+            -57.0,
+            171.18249928423046,
+            -4.000000000000021
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 320,
+      "containment_calls": 76
+    },
+    {
+      "name": "Close",
+      "minimum": {
+        "pair": [
+          "Palm_back_chassis",
+          "little_root_hinge"
+        ],
+        "distance_mm": 2.2,
+        "surface_collision_or_containment": false,
+        "cached_rigid_relative_transform": true,
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 307,
+      "containment_calls": 27
+    },
+    {
+      "name": "ThumbSweep",
+      "minimum": {
+        "pair": [
+          "thumb_spread_carrier",
+          "thumb_mcp_link"
+        ],
+        "distance_mm": 2.0,
+        "surface_collision_or_containment": false,
+        "nearest_points_mm": [
+          [
+            79.97154962869875,
+            59.63903970018482,
+            -6.398485438357181
+          ],
+          [
+            78.4394607424608,
+            60.9246149195579,
+            -6.398485438357181
+          ]
+        ],
+        "lower_bound_only": false
+      },
+      "below_threshold": [],
+      "distance_calls": 372,
+      "containment_calls": 48
+    }
+  ],
+  "elapsed_s": 7.875,
+  "passed_at_threshold": true
+}

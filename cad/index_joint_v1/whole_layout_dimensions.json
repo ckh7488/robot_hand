@@ -1,0 +1,18 @@
+{
+  "status": "Existing full-hand packaging concept; new one-axis fixture is separate, not integrated.",
+  "hand_bbox_mm": [
+    290.04466176399853,
+    283.0220457173374,
+    131.11954284247446
+  ],
+  "palm_plate_mm": [
+    196,
+    70,
+    6
+  ],
+  "full_bbox_mm": [
+    335.0,
+    845.0717116265193,
+    278.2869587923761
+  ]
+}

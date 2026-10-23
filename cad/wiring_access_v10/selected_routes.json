@@ -1,0 +1,125 @@
+{
+  "scope": "Provisional one fixed lead exit per motor, not the final electrical harness",
+  "selected": [
+    {
+      "motor": "index_root_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "index_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "index_pip_motor",
+      "template": "negativeZ_outboard",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "index_dip_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "middle_root_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "middle_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "middle_pip_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "middle_dip_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "ring_root_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "ring_mcp_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "ring_pip_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "ring_dip_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "little_root_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "little_mcp_motor",
+      "template": "negativeZ_outboard",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "little_pip_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "little_dip_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "thumb_root_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "thumb_mcp_motor",
+      "template": "negativeZ_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    },
+    {
+      "motor": "thumb_pip_motor",
+      "template": "negativeZ_outboard",
+      "uses_thumb_channel": true,
+      "mesh_baseline_pass": false
+    },
+    {
+      "motor": "thumb_dip_motor",
+      "template": "negativeZ_short3_back",
+      "uses_thumb_channel": false,
+      "mesh_baseline_pass": true
+    }
+  ]
+}

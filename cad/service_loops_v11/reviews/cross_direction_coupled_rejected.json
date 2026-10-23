@@ -1,0 +1,30 @@
+{
+  "scope": "Coupled spatial quintic Bezier candidates. Fixed length of every wire, fixed endpoint tangents, minimum sampled curvature radius10.14mm, minimum sampled wire center gap2.32mm. Exact CAD capsule validation remains required. No contact/friction/gravity/material law; not a physical cable simulation.",
+  "radius_threshold_mm": 10,
+  "angles_step_deg": 2,
+  "curve_samples": 151,
+  "length_quadrature_order": 64,
+  "searches": [
+    {
+      "target_length_mm": 120,
+      "all_3_lanes_41_angles_feasible": false,
+      "completed_curves": 75,
+      "failed_q_deg": 30.0
+    },
+    {
+      "target_length_mm": 140,
+      "all_3_lanes_41_angles_feasible": false,
+      "completed_curves": 84,
+      "failed_q_deg": 36.0
+    },
+    {
+      "target_length_mm": 160,
+      "all_3_lanes_41_angles_feasible": false,
+      "completed_curves": 96,
+      "failed_q_deg": 44.0
+    }
+  ],
+  "chosen": null,
+  "elapsed_s": 65.67200000002049,
+  "full_harness_approved": false
+}

@@ -1,0 +1,22 @@
+{
+  "revision": 10,
+  "scope": "Actual V9 hand CAD with catalog connector and fixed single-joint lead envelopes. Wiring-access study only; no full harness or physical mating approval.",
+  "baseline": "../modular_roots_v9",
+  "canonical_translation_from_single_joint_mm": [
+    -14.5,
+    0,
+    0
+  ],
+  "wire_extra_radius_mm": 0.3,
+  "poses": [
+    "Open",
+    "Curl",
+    "Splay",
+    "Backbend",
+    "Close",
+    "ThumbSweep"
+  ],
+  "motors": "all20",
+  "geometry_modified": false,
+  "audit_V9_frozen": true
+}

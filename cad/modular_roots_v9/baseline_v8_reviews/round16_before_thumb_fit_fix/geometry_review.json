@@ -1,0 +1,171 @@
+{
+  "cad_inputs_sha256": {
+    "design.json": "1e9b2f44597a81c68886d0db9b29961b14c690f8a59c7f37bf902557d4af033e",
+    "scene.json": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e",
+    "parts/AK_elbow_flex.step": "4efbcfb0c36eed5efc82f10954661a625e2e27e83e07c9a0fbe3adc354a7a727",
+    "parts/AK_forearm_roll.step": "fc40d24f7cd2e6b81922d1b9c2f2271698dda7ff10f24983e2d66fcd4126ecb5",
+    "parts/AK_wrist_deviation.step": "7afafcebc685266023885ca309ceb41f093bcc0d2af77b6ec1794b50c9635991",
+    "parts/AK_wrist_flex.step": "e5075b23cf5af1951069f64c54fb5551cef3a0d54d62cdf575b05a954dce5e8b",
+    "parts/Compact_root.step": "e12ef8e7bba2cc52130ac52a88802a7bba08219e3821b044d92e61048705e2c3",
+    "parts/Elbow_fixed_cradle.step": "b584d33b52d78c4db6b48b8fbb3596e852ea48860350db782eabe1bbeaa18a20",
+    "parts/Elbow_roll_carrier.step": "27de4f82cf802b7b9179db1b171aa1756d2fbf48b84f1d5ed4420fb6b519a3ed",
+    "parts/Flex_link_48.step": "7fb5f4f4d209607d59e614dac971482479f33f1a585eb4911431f56051c909e5",
+    "parts/Flex_link_50.step": "06cc45f36030a95c3cad7b4b67f3f74082b3afcf88669977f73d88511eb5f151",
+    "parts/Flex_link_55.step": "df2e0d7ab83a23d6a425b2e560d56d094699a0557337b18a38862cd1f2d668f2",
+    "parts/Flex_link_62.step": "4cfcb384f628cef34f9970702e67e0d7515293c4826b8b44a1d15513a0e8c094",
+    "parts/Flex_link_65.step": "5c064214f19dfef86680f56be5112d3bd8c6fa2da0ce5474015d49f5297ff697",
+    "parts/Flex_link_70.step": "ebc5939869cf8fc0f397ae60d338af856e3c888b5f44d248fb1ed58563cfbc7e",
+    "parts/Forearm_box_beam.step": "384bf8a98e7f6a4eb18766c85e2922fdeaa6d5ab8ff3fce249bf7afa4644bae5",
+    "parts/H101_vendor.step": "36965df4d4d317ae4bb6e5db44ded537e2df7373f9a55ca3bab1f73346499aa3",
+    "parts/M077_rotor.step": "c5461a442e37272a8654924cddd64c7c854536667fa34e432bf505658389487e",
+    "parts/M077_stator.step": "871e1fd45bdadea4a85133b9871b9d38237bcb50ef61271aa349de637a348454",
+    "parts/M2_base_nuts.step": "9b4f3b8466aa7f5c92509ca07904680c36b736998bac58cae09931be2a42bb24",
+    "parts/M2_base_screws.step": "d8efda64154b352e465145a71b97902624632c632aca56350847ee90a73bb2a4",
+    "parts/M2_body_TAP8.step": "691dc1fb15ada5a32b606e6a9929125175f396c4ed1fc99fdc66d5de1aa02fec",
+    "parts/M2_hinge_TAP4.step": "ec61f0f5268d4b97fe70f78015b5ef4e12617bb23e292ee1229bbf2086dd842b",
+    "parts/M2_output_nuts.step": "13c95c0b97f3bbb8f4243e6271f3a545031b08cb76f887298639afdeac043eff",
+    "parts/M2_output_screws.step": "9e87fd474ee13d55d76734a6918189d856fe374aea31a78827c1b8df5d5d02bc",
+    "parts/M2_root_output_nuts.step": "b1a95e1f7d1a5e3baaffd9c585c55030305b90957fead1d6e9d5cedf4dccf3ef",
+    "parts/M3_cover_nuts.step": "7b09beacd18603c2cc3839ea8d80f73df1265e5a7cf1a3b62177c444533cea95",
+    "parts/M3_cover_screws.step": "2a453b22c13ac9482631cd5b15f0e60e2665b520eddbab838ae3a9a9364cdd19",
+    "parts/M3_root_mount_nuts.step": "c6a0d15fb63da6bb6cf3be8c008febce9eb2fbfa56f855f5928a66f3f694516a",
+    "parts/M3_root_mount_screws.step": "3395a0bba28a3a1bb1420a693d34a6502201f9a1665852db79e15529b2985430",
+    "parts/M3_saddle_mount_nuts.step": "0fc04b387e529c8ff99d45ee8ff6466ea87aeec4739c57860e394e933dd6195c",
+    "parts/M3_saddle_mount_screws.step": "2d37d7ed1bf18cc3e00740510111a3045a5734a7cca019dca98f791f9609c9db",
+    "parts/M3_thumb_mount_nuts.step": "f57d265c4e920b6e697446199883513d6af8bfe656694fa147ecf3e637da469a",
+    "parts/M3_thumb_mount_screws.step": "84b0407676dcd33904560c27cb67fb8fbbe559e2c505171bddf2c4fcded68e32",
+    "parts/Palm_back_chassis.step": "de6f63e7fb2f20ade1568d56e09ada7ebce74b8b08e54ea609040bd57b590b18",
+    "parts/Palm_front_cover.step": "dc4af8f8cd987afb4e4fbca539d0e12a9a8e6d5ac31f70cf72b8c1043d6e3a71",
+    "parts/Palm_wrist_saddle.step": "58c1261265927780a2abbd6546b3c49f295f9437e69293cd0efb39248f3580f8",
+    "parts/Roll_output_flange.step": "1b0fbb0ac2b61d996eb2e3319a14c61cbefda006f15a80aa15ef749814125fdf",
+    "parts/Root_cartridge.step": "4d39b1100794d5d742fb6ac9f2abee6db8c402b7116093ecac5672c8671d881c",
+    "parts/S101_relief.step": "77a5cd3b5906ef4968e057df8735579b8e42c36ef5066d7e1b3cf2a98566ef64",
+    "parts/Thumb_internal_cradle.step": "ee9b3bee018cbad808bd48045790c537d12450ede251f455072302dbf55ffb5a",
+    "parts/Thumb_metacarpal.step": "bd7006503bf7cef259674fdabbd91b0a2df6a9d513f82651a70ed09177ca567f",
+    "parts/Tip_28.step": "d6f4f64d140ad305e89b37d473631e6198b9643752b10507ed09284c0f05cc42",
+    "parts/Tip_32.step": "846b6b5ff56bd6767a8a66e76e491d7ec3f2d30eb87b29a088d5c5cee2d56b8f",
+    "parts/Tip_34.step": "ee0d35f997d8b4e6fa1199d08977c19bd96e31084e00d3389dfe314c51c6e6a4",
+    "parts/Wrist_box_carrier.step": "031344a9a0c998dd5357a2c7e15475cb6212c307ecdc6508bf4bb792b25b06aa"
+  },
+  "manufacturing_release": false,
+  "scope": "Actual BRep volume intersections: new printed hand parts versus all hand parts, including same rigid body. Six sampled poses only; no swept paths or continuous limits certified. Arm flange and wiring movement not validated.",
+  "cad_connected_printed_parts": {
+    "Thumb_internal_cradle": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Root_cartridge": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Palm_back_chassis": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Palm_front_cover": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Compact_root": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Flex_link_48": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Flex_link_50": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Flex_link_55": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Flex_link_62": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Flex_link_65": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Flex_link_70": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Tip_28": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Tip_32": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Tip_34": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    },
+    "Thumb_metacarpal": {
+      "valid": true,
+      "solids": 1,
+      "one_connected_solid": true
+    }
+  },
+  "poses": {
+    "Open": {
+      "interference": [
+        {
+          "pair": [
+            "Thumb_internal_cradle",
+            "Palm_thumb_mount_screws"
+          ],
+          "intersection_mm3": 3.27124
+        },
+        {
+          "pair": [
+            "Thumb_internal_cradle",
+            "Palm_thumb_mount_nuts"
+          ],
+          "intersection_mm3": 0.05395
+        }
+      ],
+      "candidate_pairs": 420,
+      "printed_part_interference_free": false
+    },
+    "Curl": {
+      "interference": [
+        {
+          "pair": [
+            "Thumb_internal_cradle",
+            "Palm_thumb_mount_screws"
+          ],
+          "intersection_mm3": 3.27124
+        },
+        {
+          "pair": [
+            "Thumb_internal_cradle",
+            "Palm_thumb_mount_nuts"
+          ],
+          "intersection_mm3": 0.05395
+        }
+      ],
+      "candidate_pairs": 411,
+      "printed_part_interference_free": false
+    }
+  }
+}
