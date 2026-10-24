@@ -6,9 +6,9 @@
 
 목표는 **로봇 자체의 추종 지연 50ms 이하, 정해진 시험 범위의 최대 지연 100ms 이하**입니다. 로봇 제어부가 목표 각도를 받은 뒤 실제 관절이 따라오는 과정이 대상입니다. 카메라·인식·장갑의 입력 지연은 이번 평가에서 제외합니다. 추종 지연은 90° 회전 전체를 끝내는 시간과 다릅니다.
 
-![변경된 엄지와 주먹 형상에서 관절을 개선한 CAD](cad/articulation_drive_v2/generated/robot_hand_drive002.png)
+![현재 손 형상으로 만든 아홉 가지 자세](cad/gesture_hand_v3/generated/gestures_oblique.png)
 
-*변경된 엄지 축과 주먹 자세를 유지하면서 실제 뿌리 관절의 연결·축 유지·손바닥 체결을 개선하는 후보입니다. [현재 CAD와 검사 범위](cad/articulation_drive_v2/README.md) · [이전 외형 기준](cad/form_candidate_v1/README.md)*
+*사용자가 수용한 손의 비율과 엄지 형태를 유지하고, 내부 관절·덮개·손끝 체결을 다듬는 후보입니다. [현재 CAD와 자세 검사](cad/gesture_hand_v3/README.md) · [수용한 외형 기준](cad/accepted_form_v1/README.md)*
 
 > CAD와 시뮬레이션을 반복 개선하는 단계입니다. 제작 승인과 실제 하드웨어의 100ms 이하 성능 검증은 아직 완료하지 않았습니다.
 
@@ -18,7 +18,7 @@
 
 | 항목 | 개발 방향 |
 | --- | --- |
-| 손 크기·형태 | 손바닥180×150mm 후보, 중지154mm 유지. 손가락을 더 줄이지 않고 전체 비율부터 검토. [외형 기준](docs/FORM_REFERENCE.md) |
+| 손 크기·형태 | 수용한 FORM002의 손바닥180×150mm, 엄지65/50/52.6mm와 네 손가락 비율·관절 배치 유지. [현재 외형 기준](cad/accepted_form_v1/README.md) |
 | 손가락 | 20축 독립 제어 기본안. 16축 연동은 별도 비교 옵션 |
 | 모터 배치 | 이전 DRIVE001의 실제 크기20개(손바닥6·후면14)를 새 관절 CAD와 다시 대조. 현재 손 조립에 통합 완료된 모터는0개 |
 | 전달 구조 | 새 엄지 축·깊은 굽힘 범위에서 원격 줄 구동 경로를 재설계. 실제 관성에 연결한 가정 전달계 계산과 조립된 구동계를 구분 |
@@ -34,9 +34,10 @@
 | 자료 | 위치 | 범위 |
 | --- | --- | --- |
 | 개발 기준 | [요구사항과 반복 순서](docs/REMOTE_DRIVE_PLAN.md) | 측정 경계, 설계 방향, 미확정 항목 |
-| 새 외형 CAD | [손 확대·설명](cad/form_candidate_v1/README.md) · [STEP](cad/form_candidate_v1/generated/hand_form_candidate.step) | 새 비율의 손 외피·관절 형상. 내부 모터와 전달계 미완성 |
-| 현재 제작·구동 후보 | [articulation_drive_v2](cad/articulation_drive_v2/README.md) | 변경된 엄지·주먹 형상에서 뿌리 연결·핀·손바닥 체결 수정, 전체 부품 검사 |
-| 현재 형상 동역학 | [articulation_drive_v2](sim/articulation_drive_v2/README.md) | 새 축과 명시적 부품 소속·BRep 질량/관성을 연결한20축 모델 |
+| 수용한 외형 | [FORM002](cad/accepted_form_v1/README.md) | 현재 손 비율·엄지·주먹의 시각 기준. 제조용 솔리드와 구분 |
+| 현재 제작·자세 후보 | [gesture_hand_v3](cad/gesture_hand_v3/README.md) | FORM002의 외형을 유지한 실제 관절·외피 체결과9개 손짓 검사 |
+| 이전 제작·구동 후보 | [articulation_drive_v2](cad/articulation_drive_v2/README.md) | 이전 엄지·주먹 형상의 뿌리 관절 개선과 실패 사례 보존 |
+| 이전 형상 동역학 | [articulation_drive_v2](sim/articulation_drive_v2/README.md) | 이전 축·질량/관성의20축 모델. FORM002의 성능 결과로 승계하지 않음 |
 | 이전 모터 배치 | [form_drive_v1](cad/form_drive_v1/README.md) | DRIVE001의20개 모터·받침·후면 랙과 중지 줄 끝단 검토. 새 형상 통합 여부는 별도 검사 |
 | 변경된 운동 형상 | [webcam_articulation_v1](cad/webcam_articulation_v1/README.md) | 엄지 축·주먹 목표, 제작성 감사 WEBCAM003. 웹캠 앱과 함께 원본 보존 |
 | 이전 구동 CAD | [전체 STEP 압축 파일](cad/remote_drive_v1/assembly.step.zip) · [GLB](cad/remote_drive_v1/assembly.glb) · [입력·설명](cad/remote_drive_v1/) | 보류한 CP006/CP007 방향의 구동·체결 검토 자료 |
@@ -45,7 +46,7 @@
 | 진행 상황 | [PROGRESS.md](PROGRESS.md) | 회차별 변경·검사·다음 작업 |
 | 이전 직접 구동 구조 | [보존 브랜치](https://github.com/ckh7488/robot_hand/tree/archive/direct-drive-v13) | V9~V13 방향을 중단 상태로 보존 |
 
-이전 V9~V13 파일은 비교·감사 추적을 위해 main에도 보존합니다. 비율 기준은 form_candidate_v1, 변경된 운동 형상은 webcam_articulation_v1, 현재 제작·구동 개선은 articulation_drive_v2입니다. remote_drive_v1의 미완성 개선은 보류했습니다. 과거 보고서의 통과 판정은 새 구조에 승계되지 않습니다. V9의 [설계 입력](cad/modular_roots_v9/design.json)은 원형 치수·자세의 출처입니다.
+이전 V9~V13 파일은 비교·감사 추적을 위해 main에도 보존합니다. 현재 외형·관절·주먹 기준은 accepted_form_v1(FORM002), 제작·자세 검토는 gesture_hand_v3입니다. form_candidate_v1, webcam_articulation_v1, articulation_drive_v2는 이전 단계이며 remote_drive_v1의 미완성 개선도 보존합니다. 과거 보고서의 통과 판정은 새 구조에 승계되지 않습니다. V9의 [설계 입력](cad/modular_roots_v9/design.json)은 처음 외형의 출처입니다.
 
 ## 성능 확인 방법
 
@@ -83,6 +84,7 @@
 
 | 버전·날짜 | 주요 변경 | 기록 |
 | --- | --- | --- |
+| 손짓·제작성 검토 · 2026-10-25 | FORM002 비율을 유지한 관절·덮개·손끝 체결과 아홉 대표 자세 검사. 이번 결과를 보여준 뒤 추가 반복 중지 | [GESTURE001](checkpoints/GESTURE001.md) |
 | 변경 CAD에서 재개 · 2026-10-25 | 새 엄지·주먹 형상을 유지한 뿌리 관절·핀 유지·손바닥 체결 수정, 새20축 모델과 간섭 재검사 | [DRIVE002](checkpoints/DRIVE002.md) |
 | 새 형상 구동 재개 · 2026-10-24 | 실제 모터20개 배치, 새 외형 질량·관성의20축 모델, 중지 줄 끝단 검토 | [DRIVE001](checkpoints/DRIVE001.md) |
 | 손 비율 재설계 · 2026-10-24 | 손바닥180×150mm, 중지154mm 유지와 새 중공 마디. 내부 배치·성능 미검증 | [외형 CAD](cad/form_candidate_v1/README.md) |

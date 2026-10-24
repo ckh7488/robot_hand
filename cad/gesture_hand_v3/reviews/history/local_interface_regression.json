@@ -1,0 +1,238 @@
+{
+  "source_sha256": {
+    "cad/gesture_hand_v3/fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+    "cad/gesture_hand_v3/audit_fabrication.py": "143f2f17ca329453ca81a18abdcf241226fb7ab317e7e419ac01208ec2f6d61d",
+    "cad/gesture_hand_v3/geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+    "cad/gesture_hand_v3/generated/parts/thumb_segment1_thenar_shell.step": "9750f9e86c8ebb077392430a7b3228ff97db9b1b378d6d29d3ba98716aa770c4",
+    "cad/gesture_hand_v3/generated/parts/thumb_root_proximal_left_bushing.step": "166b65dbbcde15225f35a044790fcaf2d2b55b408e351d0a2b1035ba6da3a00d",
+    "cad/gesture_hand_v3/generated/parts/thumb_root_proximal_right_bushing.step": "44f21cf8ecea82afcfe1771d9d50b8bc9ba675f6e7083100ccd3f00c8cd088f1",
+    "cad/gesture_hand_v3/generated/parts/thumb_distal1_left_thrust_washer.step": "2fabc72ccc9ca80dd95bb30b7f9b0bb17a9e952bcd57de8be3f780d25e3ce753",
+    "cad/gesture_hand_v3/generated/parts/thumb_distal1_right_thrust_washer.step": "6d82ed1b841e49d2dcfa1433cda58f4cd8910db49321439a0fb364cb14c8515f",
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_segment_shell.step": "a7ff3c29a22a1410a5b881281979c9b2d36047c0f535ab6ffc8297f6959f5985",
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_distal_left_bushing.step": "6634a1689e3cc45f9dc4c9d864a904956e4d29fe16cd0b190ebe3ca2bf3603a2",
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_distal_right_bushing.step": "80a3bc0762375e199dec69aa97c41e2dbfad63a0ec475f66a6c5d8ca72ed59c4",
+    "cad/gesture_hand_v3/generated/parts/Palm_shaped_front_cover.step": "a01c6f11a79d8f304a60e087c15728832bcf5848dea4f01f99d82987b3a6230a",
+    "cad/gesture_hand_v3/generated/parts/Cover_screw_-18_104.step": "42ce8ed0464de8b92d7c4169832b5c61c4ca20e6134644e81618b7e10efe982e",
+    "cad/gesture_hand_v3/generated/parts/Cover_nut_-18_104.step": "07238ef95a80ab7ff126fe0a942442aa830fa172ec73bc59775809cdcb9f732b"
+  },
+  "inputs_unchanged": true,
+  "checks": [
+    {
+      "parts": [
+        "thumb_segment1_thenar_shell",
+        "thumb_root_proximal_left_bushing"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "thumb_segment1_thenar_shell",
+        "thumb_root_proximal_right_bushing"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "thumb_segment1_thenar_shell",
+        "thumb_distal1_left_thrust_washer"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "thumb_segment1_thenar_shell",
+        "thumb_distal1_right_thrust_washer"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "thumb_segment2_segment_shell",
+        "thumb_segment2_distal_left_bushing"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "thumb_segment2_segment_shell",
+        "thumb_segment2_distal_right_bushing"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "new_washer",
+        "Palm_shaped_front_cover"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "new_washer",
+        "Cover_screw_-18_104"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "Cover_screw_-18_104",
+        "Palm_shaped_front_cover"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "parts": [
+        "Cover_screw_-18_104",
+        "Cover_nut_-18_104"
+      ],
+      "material_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "seats": [
+    {
+      "definition": {
+        "parts": [
+          "new_washer",
+          "Palm_shaped_front_cover"
+        ],
+        "plane_origin_mm": [
+          -5,
+          64.96062992125984,
+          29.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_radius_mm": 4.2,
+        "patch_centre_xy_mm": [
+          -5,
+          64.96062992125984
+        ]
+      },
+      "passed": true,
+      "contact_area_mm2": 45.238934211693035,
+      "unlocalized_contact_area_mm2": 45.238934211693035,
+      "patch_kind": "world_Z_cylinder_footprint",
+      "distance_mm": 0.0,
+      "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+    },
+    {
+      "definition": {
+        "parts": [
+          "Cover_screw_-18_104",
+          "new_washer"
+        ],
+        "plane_origin_mm": [
+          -5,
+          64.96062992125984,
+          30.0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_radius_mm": 3.3,
+        "patch_centre_xy_mm": [
+          -5,
+          64.96062992125984
+        ]
+      },
+      "passed": true,
+      "contact_area_mm2": 25.13274122871833,
+      "unlocalized_contact_area_mm2": 25.13274122871833,
+      "patch_kind": "world_Z_cylinder_footprint",
+      "distance_mm": 0.0,
+      "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+    }
+  ],
+  "solid_checks": [
+    {
+      "name": "thumb_segment1_thenar_shell",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_root_proximal_left_bushing",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_root_proximal_right_bushing",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_distal1_left_thrust_washer",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_distal1_right_thrust_washer",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_segment2_segment_shell",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_segment2_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "thumb_segment2_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "Palm_shaped_front_cover",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "Cover_nut_-18_104",
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "new_washer",
+      "valid": true,
+      "solid_count": 1
+    }
+  ],
+  "cover": {
+    "centre_xy_mm": [
+      -5,
+      64.96062992125984
+    ],
+    "recess_mm": 0.5,
+    "pocket_radius_mm": 4.3,
+    "washer_bottom_z_mm": 29.5,
+    "washer_top_z_mm": 30.0,
+    "head_top_z_mm": 31.65,
+    "remaining_vertical_wall_mm": 3.0
+  },
+  "scope": "Eleven saved input parts; final repair functions; no whole-hand pose or tolerance approval",
+  "manufacture_approved": false,
+  "passed": true
+}

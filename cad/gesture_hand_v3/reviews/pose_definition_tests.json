@@ -1,0 +1,60 @@
+{
+  "completed": true,
+  "tests": [
+    {
+      "name": "Current catalog passes explicit reference/candidate/FK checks",
+      "passed": true
+    },
+    {
+      "name": "Modified authored reference rejected",
+      "passed": true,
+      "rejection": "Authored reference fist path was altered"
+    },
+    {
+      "name": "Candidate cannot alter first four finger trajectory",
+      "passed": true,
+      "rejection": "Candidate changed reference fractions or first-four-finger angles"
+    },
+    {
+      "name": "Bent IP is not hidden by thumb-up exemption",
+      "passed": true,
+      "rejection": "Thumb-up requires near-straight IP and distal direction within 45 degrees of +Y"
+    },
+    {
+      "name": "Other extended digits retain 95 percent rule",
+      "passed": true,
+      "rejection": "Extended digit is curled: mountain middle"
+    },
+    {
+      "name": "Only three declared gesture targets corrected",
+      "passed": true
+    },
+    {
+      "name": "fist retains original first four finger target",
+      "passed": true
+    },
+    {
+      "name": "rock_thumb_folded retains original first four finger target",
+      "passed": true
+    },
+    {
+      "name": "thumb_up retains original first four finger target",
+      "passed": true
+    },
+    {
+      "name": "Renderer source syntax is valid",
+      "passed": true
+    },
+    {
+      "name": "All source bytes unchanged by tests",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\poses.py": "6c960ab6d30d8aa3cd244718590eadb0899a466dbaf046daf8942cb8188ad9e7",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\poses.json": "54ce13b0ee182218be0fccc12b4bbbcf795bea529e623d90e04d74d80435fc3a",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56"
+  },
+  "inputs_unchanged": true,
+  "scope": "Small catalog/provenance rejection tests. No CAD geometry, path clearance or dynamics validation."
+}

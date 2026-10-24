@@ -1,24 +1,18 @@
 {
-  "id": "DRIVE002",
-  "candidate": "cad/articulation_drive_v2",
-  "simulation": "sim/articulation_drive_v2",
-  "exterior_reference": "cad/webcam_articulation_v1",
-  "manifest": "checkpoints/DRIVE002.manifest.json",
-  "simulation_results": "sim/articulation_drive_v2/results/drive002",
-  "status": "Changed thumb/fist CAD integrated into root assembly repairs and new20axis mass/kinematics. Remaining fabrication and drive failures are retained.",
+  "id": "GESTURE001",
+  "candidate": "cad/gesture_hand_v3",
+  "exterior_reference": "cad/accepted_form_v1",
+  "manifest": "checkpoints/GESTURE001.manifest.json",
+  "previous_checkpoint": "DRIVE002",
+  "status": "Nine static gesture endpoints have no material intersection above the declared threshold; nominal attachment checks pass. Pause after showing this step. Transitions, manufacturing and hardware latency remain unapproved.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
-  "previous_checkpoint": "DRIVE001",
-  "source_geometry_audit": "WEBCAM003",
-  "archive_branch": "archive/direct-drive-v13",
-  "archive_sha": "accd6c8d8d9791828233e9461ef1b1e8dccc8b0b",
   "tracking_requirement_ms": {
     "target": 50,
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "661e19ced68b64daefd0600060219c84fc0a0694",
-  "post_commit_review_report": "docs/reviews/DRIVE002_661e19ced68b/review.json",
-  "post_commit_reproduction_scope": "Rebuilt CAD, mass tensors, open/fist/counterexample and root interfaces; regenerated contract; actual adapter and protocol tests. Four dynamics cases, full 13-pose path, packaging and render not reexecuted."
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null
 }

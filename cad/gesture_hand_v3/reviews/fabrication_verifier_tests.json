@@ -1,0 +1,2146 @@
+{
+  "schema_version": "gesture_hand_v3.fabrication_counterexamples.v1",
+  "tests": [
+    {
+      "name": "localized_contact_passes",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "parts": [
+            "a",
+            "b"
+          ],
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "patch_radius_mm": 1.0
+        },
+        "passed": true,
+        "distance_mm": null,
+        "distance_measured": false,
+        "contact_area_mm2": 3.141592653589792,
+        "unlocalized_contact_area_mm2": 16.0,
+        "patch_kind": "normal_plane_disk",
+        "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+      }
+    },
+    {
+      "name": "remote_coplanar_contact_does_not_seat_missing_post",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "parts": [
+            "a",
+            "b"
+          ],
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "patch_radius_mm": 1.0
+        },
+        "passed": false,
+        "distance_mm": null,
+        "distance_measured": false,
+        "contact_area_mm2": 0.0,
+        "unlocalized_contact_area_mm2": 16.0,
+        "patch_kind": "normal_plane_disk",
+        "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+      }
+    },
+    {
+      "name": "remote_counterexample_has_other_contact",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "undeclared_seating_region_rejected",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "parts": [
+            "a",
+            "b"
+          ],
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "passed": false,
+        "distance_mm": null,
+        "distance_measured": false,
+        "error": "ValueError('A localized seating patch radius is required')"
+      }
+    },
+    {
+      "name": "inclined_world_Z_footprint_passes",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "parts": [
+            "a",
+            "b"
+          ],
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -0.49999999999999994,
+            0.8660254037844387
+          ],
+          "patch_radius_mm": 1.0,
+          "patch_centre_xy_mm": [
+            0,
+            0
+          ]
+        },
+        "passed": true,
+        "distance_mm": null,
+        "distance_measured": false,
+        "contact_area_mm2": 3.6275987284684352,
+        "unlocalized_contact_area_mm2": 16.0,
+        "patch_kind": "world_Z_cylinder_footprint",
+        "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+      }
+    },
+    {
+      "name": "rotated_normal_disk_passes",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "parts": [
+            "a",
+            "b"
+          ],
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -0.49999999999999994,
+            0.8660254037844387
+          ],
+          "patch_radius_mm": 1.0
+        },
+        "passed": true,
+        "distance_mm": null,
+        "distance_measured": false,
+        "contact_area_mm2": 3.141592653589792,
+        "unlocalized_contact_area_mm2": 16.0,
+        "patch_kind": "normal_plane_disk",
+        "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+      }
+    },
+    {
+      "name": "shared_flat_key_full_span_passes",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "part": "a",
+          "mating_part": "b",
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "plane_normal": [
+            0,
+            1,
+            0
+          ],
+          "axial_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axial_direction": [
+            1,
+            0,
+            0
+          ],
+          "span_mm": [
+            0,
+            10
+          ],
+          "mating_flat_offset_mm": 0.03
+        },
+        "passed": true,
+        "own_face_area_mm2": 20.0,
+        "mating_face_area_mm2": 20.0,
+        "projected_common_area_mm2": 20.0,
+        "projected_common_axial_intervals_mm": [
+          [
+            0.0,
+            10.0
+          ]
+        ],
+        "continuous_projected_coverage": true,
+        "scope": "Shared face projection after removing the declared nominal flat gap; continuous axial coverage, not loaded contact or key strength"
+      }
+    },
+    {
+      "name": "transverse_disjoint_key_with_same_axial_extent_fails",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "part": "a",
+          "mating_part": "b",
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "plane_normal": [
+            0,
+            1,
+            0
+          ],
+          "axial_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axial_direction": [
+            1,
+            0,
+            0
+          ],
+          "span_mm": [
+            0,
+            10
+          ],
+          "mating_flat_offset_mm": 0.03
+        },
+        "passed": false,
+        "own_face_area_mm2": 20.0,
+        "mating_face_area_mm2": 20.0,
+        "projected_common_area_mm2": 0.0,
+        "projected_common_axial_intervals_mm": [],
+        "continuous_projected_coverage": false,
+        "scope": "Shared face projection after removing the declared nominal flat gap; continuous axial coverage, not loaded contact or key strength"
+      }
+    },
+    {
+      "name": "two_key_fragments_with_axial_gap_fail",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "definition": {
+          "part": "a",
+          "mating_part": "b",
+          "plane_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "plane_normal": [
+            0,
+            1,
+            0
+          ],
+          "axial_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axial_direction": [
+            1,
+            0,
+            0
+          ],
+          "span_mm": [
+            0,
+            10
+          ],
+          "mating_flat_offset_mm": 0.03
+        },
+        "passed": false,
+        "own_face_area_mm2": 16.0,
+        "mating_face_area_mm2": 20.0,
+        "projected_common_area_mm2": 16.0,
+        "projected_common_axial_intervals_mm": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            6.0,
+            10.0
+          ]
+        ],
+        "continuous_projected_coverage": false,
+        "scope": "Shared face projection after removing the declared nominal flat gap; continuous axial coverage, not loaded contact or key strength"
+      }
+    },
+    {
+      "name": "complete_nominal_cover_stack_passes",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "id": "cover",
+        "definition": {
+          "id": "cover",
+          "centre_xy_mm": [
+            0,
+            0
+          ],
+          "screw": "screw",
+          "nut": "nut",
+          "washer": "washer",
+          "shaft_radius_mm": 1.5,
+          "shaft_span_z_mm": [
+            -4,
+            1.5
+          ],
+          "nut_span_z_mm": [
+            -3,
+            -2
+          ],
+          "washer_top_z_mm": 1.5,
+          "nut_upper_seat_z_mm": -2
+        },
+        "cylinders": [
+          {
+            "part": "screw",
+            "axis_origin_mm": [
+              0,
+              0,
+              0.0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -4,
+              1.5
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -4.0,
+                  1.5
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0.0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -3,
+              -2
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -3.0,
+                  -2.0
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "Palm_tapered_chassis",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "Palm_shaped_front_cover",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "washer",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "parts": [
+                "screw",
+                "washer"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1.5
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.3
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 25.13274122871833,
+            "unlocalized_contact_area_mm2": 25.13274122871833,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "parts": [
+                "nut",
+                "Palm_tapered_chassis"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                -2
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.175
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 21.490457245962673,
+            "unlocalized_contact_area_mm2": 21.490457245962673,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "passed": true,
+        "washer_underside_seats": [
+          {
+            "definition": {
+              "id": "cover_washer",
+              "parts": [
+                "washer",
+                "Palm_shaped_front_cover"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 4.2,
+              "patch_centre_xy_mm": [
+                0,
+                0
+              ]
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 45.238934211693035,
+            "unlocalized_contact_area_mm2": 45.238934211693035,
+            "patch_kind": "world_Z_cylinder_footprint",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "helical_thread_engagement_verified": false
+      }
+    },
+    {
+      "name": "floating_washer_fails_even_when_head_and_nut_are_seated",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "id": "cover",
+        "definition": {
+          "id": "cover",
+          "centre_xy_mm": [
+            0,
+            0
+          ],
+          "screw": "screw",
+          "nut": "nut",
+          "washer": "washer",
+          "shaft_radius_mm": 1.5,
+          "shaft_span_z_mm": [
+            -4,
+            1.75
+          ],
+          "nut_span_z_mm": [
+            -3,
+            -2
+          ],
+          "washer_top_z_mm": 1.75,
+          "nut_upper_seat_z_mm": -2
+        },
+        "cylinders": [
+          {
+            "part": "screw",
+            "axis_origin_mm": [
+              0,
+              0,
+              0.0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -4,
+              1.75
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -4.0,
+                  1.75
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0.0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -3,
+              -2
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -3.0,
+                  -2.0
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "Palm_tapered_chassis",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "Palm_shaped_front_cover",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "washer",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "parts": [
+                "screw",
+                "washer"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1.75
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.3
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 25.13274122871833,
+            "unlocalized_contact_area_mm2": 25.13274122871833,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "parts": [
+                "nut",
+                "Palm_tapered_chassis"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                -2
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.175
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 21.490457245962673,
+            "unlocalized_contact_area_mm2": 21.490457245962673,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "passed": false,
+        "washer_underside_seats": [
+          {
+            "definition": {
+              "id": "cover_washer",
+              "parts": [
+                "washer",
+                "Palm_shaped_front_cover"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 4.2,
+              "patch_centre_xy_mm": [
+                0,
+                0
+              ]
+            },
+            "passed": false,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 0.0,
+            "unlocalized_contact_area_mm2": 0.0,
+            "reason": "Missing declared planar seating face"
+          }
+        ],
+        "helical_thread_engagement_verified": false
+      }
+    },
+    {
+      "name": "floating_fixture_other_seats_really_pass",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "missing_cover_underside_declaration_fails",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "id": "cover",
+        "definition": {
+          "id": "cover",
+          "centre_xy_mm": [
+            0,
+            0
+          ],
+          "screw": "screw",
+          "nut": "nut",
+          "washer": "washer",
+          "shaft_radius_mm": 1.5,
+          "shaft_span_z_mm": [
+            -4,
+            1.5
+          ],
+          "nut_span_z_mm": [
+            -3,
+            -2
+          ],
+          "washer_top_z_mm": 1.5,
+          "nut_upper_seat_z_mm": -2
+        },
+        "cylinders": [
+          {
+            "part": "screw",
+            "axis_origin_mm": [
+              0,
+              0,
+              0.0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -4,
+              1.5
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -4.0,
+                  1.5
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0.0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -3,
+              -2
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -3.0,
+                  -2.0
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "Palm_tapered_chassis",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "Palm_shaped_front_cover",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "washer",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "parts": [
+                "screw",
+                "washer"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1.5
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.3
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 25.13274122871833,
+            "unlocalized_contact_area_mm2": 25.13274122871833,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "parts": [
+                "nut",
+                "Palm_tapered_chassis"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                -2
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.175
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 21.490457245962673,
+            "unlocalized_contact_area_mm2": 21.490457245962673,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "passed": false,
+        "washer_underside_seats": [],
+        "helical_thread_engagement_verified": false
+      }
+    },
+    {
+      "name": "saved_part_gate_valid_single",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "part_count": 1,
+        "invalid_or_non_single_solid_parts": [],
+        "passed": true
+      }
+    },
+    {
+      "name": "saved_part_gate_invalid",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "part_count": 1,
+        "invalid_or_non_single_solid_parts": [
+          "invalid"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "name": "saved_part_gate_disconnected",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "part_count": 1,
+        "invalid_or_non_single_solid_parts": [
+          "disconnected"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "name": "empty_part_inventory_fails",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "declared_skin_clamp_requires_complete_saved_contact_chain",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "id": "clamp1",
+        "definition": {
+          "id": "clamp1",
+          "skin": "Palm_shaped_front_cover",
+          "structure": "Palm_tapered_chassis",
+          "bolt": "screw",
+          "nut": "nut",
+          "washer": "washer",
+          "axis_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axis_direction": [
+            0,
+            0,
+            1
+          ],
+          "shaft_radius_mm": 1.5,
+          "shaft_span_local_z_mm": [
+            -4,
+            1.5
+          ],
+          "nut_span_local_z_mm": [
+            -3,
+            -2
+          ]
+        },
+        "passed": true,
+        "cylinders": [
+          {
+            "part": "screw",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -4,
+              1.5
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -4.0,
+                  1.5
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -3,
+              -2
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -3.0,
+                  -2.0
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "Palm_shaped_front_cover",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "Palm_tapered_chassis",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "washer",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "id": "clamp1_boss_skin",
+              "parts": [
+                "Palm_tapered_chassis",
+                "Palm_shaped_front_cover"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 4.8
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 62.20353454107789,
+            "unlocalized_contact_area_mm2": 133.82123980236906,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "clamp1_nut_boss",
+              "parts": [
+                "nut",
+                "Palm_tapered_chassis"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                -2
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.175
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 21.490457245962673,
+            "unlocalized_contact_area_mm2": 21.490457245962673,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "clamp1_washer_skin",
+              "parts": [
+                "washer",
+                "Palm_shaped_front_cover"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 4.2,
+              "patch_centre_xy_mm": [
+                0,
+                0
+              ]
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 45.238934211693035,
+            "unlocalized_contact_area_mm2": 45.238934211693035,
+            "patch_kind": "world_Z_cylinder_footprint",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "clamp1_head_washer",
+              "parts": [
+                "screw",
+                "washer"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1.5
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.3
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 25.13274122871833,
+            "unlocalized_contact_area_mm2": 25.13274122871833,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "required_seat_coverage": [
+          {
+            "parts": [
+              "Palm_tapered_chassis",
+              "Palm_shaped_front_cover"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "nut",
+              "Palm_tapered_chassis"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "washer",
+              "Palm_shaped_front_cover"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "screw",
+              "washer"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          }
+        ],
+        "thread_engagement_driver_access_preload_strength_verified": false
+      }
+    },
+    {
+      "name": "another_clamp_seats_cannot_satisfy_missing_clamp",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "id": "clamp1",
+        "definition": {
+          "id": "clamp1",
+          "skin": "Palm_shaped_front_cover",
+          "structure": "Palm_tapered_chassis",
+          "bolt": "screw",
+          "nut": "nut",
+          "washer": "washer",
+          "axis_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axis_direction": [
+            0,
+            0,
+            1
+          ],
+          "shaft_radius_mm": 1.5,
+          "shaft_span_local_z_mm": [
+            -4,
+            1.5
+          ],
+          "nut_span_local_z_mm": [
+            -3,
+            -2
+          ]
+        },
+        "passed": false,
+        "cylinders": [
+          {
+            "part": "screw",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -4,
+              1.5
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -4.0,
+                  1.5
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -3,
+              -2
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -3.0,
+                  -2.0
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "Palm_shaped_front_cover",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "Palm_tapered_chassis",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "washer",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [],
+        "required_seat_coverage": [
+          {
+            "parts": [
+              "Palm_tapered_chassis",
+              "Palm_shaped_front_cover"
+            ],
+            "seat_rows": 0,
+            "passed": false
+          },
+          {
+            "parts": [
+              "nut",
+              "Palm_tapered_chassis"
+            ],
+            "seat_rows": 0,
+            "passed": false
+          },
+          {
+            "parts": [
+              "washer",
+              "Palm_shaped_front_cover"
+            ],
+            "seat_rows": 0,
+            "passed": false
+          },
+          {
+            "parts": [
+              "screw",
+              "washer"
+            ],
+            "seat_rows": 0,
+            "passed": false
+          }
+        ],
+        "thread_engagement_driver_access_preload_strength_verified": false
+      }
+    },
+    {
+      "name": "skin_clamp_missing_washer_contact_fails",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "id": "clamp1",
+        "definition": {
+          "id": "clamp1",
+          "skin": "Palm_shaped_front_cover",
+          "structure": "Palm_tapered_chassis",
+          "bolt": "screw",
+          "nut": "nut",
+          "washer": "washer",
+          "axis_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axis_direction": [
+            0,
+            0,
+            1
+          ],
+          "shaft_radius_mm": 1.5,
+          "shaft_span_local_z_mm": [
+            -4,
+            1.5
+          ],
+          "nut_span_local_z_mm": [
+            -3,
+            -2
+          ]
+        },
+        "passed": false,
+        "cylinders": [
+          {
+            "part": "screw",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -4,
+              1.5
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -4.0,
+                  1.5
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              0,
+              1
+            ],
+            "radius_mm": 1.5,
+            "requested_span_mm": [
+              -3,
+              -2
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.5,
+                "axis_offset_mm": 0.0,
+                "axis_direction_cross_error": 0.0,
+                "axial_span_mm": [
+                  -3.0,
+                  -2.0
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "Palm_shaped_front_cover",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "Palm_tapered_chassis",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "washer",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "id": "clamp1_boss_skin",
+              "parts": [
+                "Palm_tapered_chassis",
+                "Palm_shaped_front_cover"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 4.8
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 62.20353454107789,
+            "unlocalized_contact_area_mm2": 133.82123980236906,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "clamp1_nut_boss",
+              "parts": [
+                "nut",
+                "Palm_tapered_chassis"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                -2
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.175
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 21.490457245962673,
+            "unlocalized_contact_area_mm2": 21.490457245962673,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "clamp1_head_washer",
+              "parts": [
+                "screw",
+                "washer"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                1.5
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "patch_radius_mm": 3.3
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 25.13274122871833,
+            "unlocalized_contact_area_mm2": 25.13274122871833,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "required_seat_coverage": [
+          {
+            "parts": [
+              "Palm_tapered_chassis",
+              "Palm_shaped_front_cover"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "nut",
+              "Palm_tapered_chassis"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "washer",
+              "Palm_shaped_front_cover"
+            ],
+            "seat_rows": 0,
+            "passed": false
+          },
+          {
+            "parts": [
+              "screw",
+              "washer"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          }
+        ],
+        "thread_engagement_driver_access_preload_strength_verified": false
+      }
+    },
+    {
+      "name": "recessed_axial_Y_tip_clamp_passes",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "detail": {
+        "id": "tip1",
+        "definition": {
+          "id": "tip1",
+          "skin": "cap",
+          "structure": "core",
+          "bolt": "bolt",
+          "nut": "nut",
+          "local_axis": "Y",
+          "axis_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axis_direction": [
+            0,
+            1,
+            0
+          ],
+          "shaft_radius_mm": 1,
+          "shaft_span_local_y_mm": [
+            -6,
+            1.8
+          ],
+          "nut_span_local_y_mm": [
+            -5,
+            -3.4
+          ],
+          "head_counterbore_radius_mm": 2.05,
+          "head_span_local_y_mm": [
+            1.8,
+            3.0
+          ]
+        },
+        "passed": true,
+        "cylinders": [
+          {
+            "part": "bolt",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              1,
+              0
+            ],
+            "radius_mm": 1,
+            "requested_span_mm": [
+              -6,
+              1.8
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.0,
+                "axis_offset_mm": 6.661338147750939e-16,
+                "axis_direction_cross_error": 1.1102230246251565e-16,
+                "axial_span_mm": [
+                  -6.0,
+                  1.7999999999999998
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              1,
+              0
+            ],
+            "radius_mm": 1,
+            "requested_span_mm": [
+              -5,
+              -3.4
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.0,
+                "axis_offset_mm": 6.661338147750939e-16,
+                "axis_direction_cross_error": 1.1102230246251565e-16,
+                "axial_span_mm": [
+                  -5.0,
+                  -3.4
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "cap",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              1,
+              0
+            ],
+            "radius_mm": 2.05,
+            "requested_span_mm": [
+              1.8,
+              3.0
+            ],
+            "matching_faces": [
+              {
+                "face_index": 6,
+                "radius_mm": 2.05,
+                "axis_offset_mm": 1.9984014443252818e-16,
+                "axis_direction_cross_error": 1.1102230246251565e-16,
+                "axial_span_mm": [
+                  1.8,
+                  3.2
+                ]
+              }
+            ],
+            "passed": true
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "cap",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "core",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "id": "tip1_boss_cap",
+              "parts": [
+                "core",
+                "cap"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "patch_radius_mm": 3.5
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 33.96061658530566,
+            "unlocalized_contact_area_mm2": 139.4761065788307,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "tip1_nut_boss",
+              "parts": [
+                "nut",
+                "core"
+              ],
+              "plane_origin_mm": [
+                0,
+                -3.4,
+                0
+              ],
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "patch_radius_mm": 2.4
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 12.239959137651194,
+            "unlocalized_contact_area_mm2": 12.239959137651194,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "tip1_head_cap",
+              "parts": [
+                "bolt",
+                "cap"
+              ],
+              "plane_origin_mm": [
+                0,
+                1.8,
+                0
+              ],
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "patch_radius_mm": 1.9
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 6.817256058289851,
+            "unlocalized_contact_area_mm2": 6.817256058289851,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          }
+        ],
+        "required_seat_coverage": [
+          {
+            "parts": [
+              "core",
+              "cap"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "nut",
+              "core"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "bolt",
+              "cap"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          }
+        ],
+        "thread_engagement_driver_access_preload_strength_verified": false
+      }
+    },
+    {
+      "name": "missing_tip_head_counterbore_fails",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "detail": {
+        "id": "tip1",
+        "definition": {
+          "id": "tip1",
+          "skin": "cap",
+          "structure": "core",
+          "bolt": "bolt",
+          "nut": "nut",
+          "local_axis": "Y",
+          "axis_origin_mm": [
+            0,
+            0,
+            0
+          ],
+          "axis_direction": [
+            0,
+            1,
+            0
+          ],
+          "shaft_radius_mm": 1,
+          "shaft_span_local_y_mm": [
+            -6,
+            1.8
+          ],
+          "nut_span_local_y_mm": [
+            -5,
+            -3.4
+          ],
+          "head_counterbore_radius_mm": 2.05,
+          "head_span_local_y_mm": [
+            1.8,
+            3.0
+          ]
+        },
+        "passed": false,
+        "cylinders": [
+          {
+            "part": "bolt",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              1,
+              0
+            ],
+            "radius_mm": 1,
+            "requested_span_mm": [
+              -6,
+              1.8
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.0,
+                "axis_offset_mm": 6.661338147750939e-16,
+                "axis_direction_cross_error": 1.1102230246251565e-16,
+                "axial_span_mm": [
+                  -6.0,
+                  1.7999999999999998
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              1,
+              0
+            ],
+            "radius_mm": 1,
+            "requested_span_mm": [
+              -5,
+              -3.4
+            ],
+            "matching_faces": [
+              {
+                "face_index": 3,
+                "radius_mm": 1.0,
+                "axis_offset_mm": 6.661338147750939e-16,
+                "axis_direction_cross_error": 1.1102230246251565e-16,
+                "axial_span_mm": [
+                  -5.0,
+                  -3.4
+                ]
+              }
+            ],
+            "passed": true
+          },
+          {
+            "part": "cap",
+            "axis_origin_mm": [
+              0,
+              0,
+              0
+            ],
+            "axis_direction": [
+              0,
+              1,
+              0
+            ],
+            "radius_mm": 2.05,
+            "requested_span_mm": [
+              1.8,
+              3.0
+            ],
+            "matching_faces": [],
+            "passed": false
+          }
+        ],
+        "actual_bolt_clearance": [
+          {
+            "part": "cap",
+            "material_overlap_mm3": 8.180707269947819,
+            "passed": false
+          },
+          {
+            "part": "core",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          },
+          {
+            "part": "nut",
+            "material_overlap_mm3": 0.0,
+            "passed": true
+          }
+        ],
+        "seats": [
+          {
+            "definition": {
+              "id": "tip1_boss_cap",
+              "parts": [
+                "core",
+                "cap"
+              ],
+              "plane_origin_mm": [
+                0,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "patch_radius_mm": 3.5
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 33.96061658530566,
+            "unlocalized_contact_area_mm2": 139.4761065788307,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "tip1_nut_boss",
+              "parts": [
+                "nut",
+                "core"
+              ],
+              "plane_origin_mm": [
+                0,
+                -3.4,
+                0
+              ],
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "patch_radius_mm": 2.4
+            },
+            "passed": true,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 12.239959137651194,
+            "unlocalized_contact_area_mm2": 12.239959137651194,
+            "patch_kind": "normal_plane_disk",
+            "scope": "Positive contact inside the declared local patch only; full support/load capacity not implied"
+          },
+          {
+            "definition": {
+              "id": "tip1_head_cap",
+              "parts": [
+                "bolt",
+                "cap"
+              ],
+              "plane_origin_mm": [
+                0,
+                1.8,
+                0
+              ],
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "patch_radius_mm": 1.9
+            },
+            "passed": false,
+            "distance_mm": null,
+            "distance_measured": false,
+            "contact_area_mm2": 0.0,
+            "unlocalized_contact_area_mm2": 0.0,
+            "reason": "Missing declared planar seating face"
+          }
+        ],
+        "required_seat_coverage": [
+          {
+            "parts": [
+              "core",
+              "cap"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "nut",
+              "core"
+            ],
+            "seat_rows": 1,
+            "passed": true
+          },
+          {
+            "parts": [
+              "bolt",
+              "cap"
+            ],
+            "seat_rows": 1,
+            "passed": false
+          }
+        ],
+        "thread_engagement_driver_access_preload_strength_verified": false
+      }
+    }
+  ],
+  "passed": true,
+  "test_count": 22,
+  "source_sha256": {
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\test_audit_fabrication.py": "82b4b4d0e89cb50f8bd8b231479db3c5feef05393ee3503ae55eed10bf0ab511",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\audit_fabrication.py": "184ec57c04e3cbd58b8162244e3ce25e1bd5a97b8e2e1d769ddd50611bcc67ba",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+    "D:\\robot_hand\\cad\\articulation_drive_v2\\verify.py": "79a0b66b8c5ede499e870e954b32ac0d2e679c4f96a9e3e0bf4d0fdca44680f3"
+  },
+  "inputs_unchanged": true,
+  "scope": "Small synthetic native solids only; no hand CAD load, fabrication release, force or lifetime assessment."
+}

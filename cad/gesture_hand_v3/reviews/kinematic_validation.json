@@ -1,0 +1,1583 @@
+{
+  "gestures": 9,
+  "transitions": 20,
+  "path_samples_at_5deg": 808,
+  "fk_pose_count": 75,
+  "max_xml_body_position_difference_mm": 4.2746250983327627e-10,
+  "max_xml_rotation_component_difference": 2.637889906509372e-13,
+  "max_xml_tip_difference_mm": 4.274628737411976e-10,
+  "accepted_33_fist_frames_exact": true,
+  "accepted_frames_location": "reference.authored_fist_path",
+  "candidate_fist_frames": 33,
+  "candidate_first_four_finger_frames_exact": true,
+  "candidate_thumb_correction_explicit": true,
+  "all_transition_endpoints_match": true,
+  "range_clipping_rejected": true,
+  "shape_category_checks": [
+    {
+      "gesture": "open",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "fist",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "v_sign",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "scissors",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "thumb_up",
+      "extension_categories_match": true,
+      "thumb_up_rule": {
+        "ip_absolute_max_deg": 5,
+        "distal_world_y_min": 0.7071067811865476,
+        "whole_thumb_extension_ratio_is_not_this_rule": true,
+        "manufacturing_or_naturalness_requirement": false
+      }
+    },
+    {
+      "gesture": "middle_finger",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "mountain",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "rock_thumb_folded",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    },
+    {
+      "gesture": "rock_thumb_extended",
+      "extension_categories_match": true,
+      "thumb_up_rule": null
+    }
+  ],
+  "shape_metrics": {
+    "open": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            270.6337948079327,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              189.74712242140902,
+              8.0
+            ],
+            [
+              58.5,
+              232.80715401061929,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 157.4250127180154,
+          "extension_ratio": 1.0000000000000004,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            299.7244992125984,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              207.986237095818,
+              8.0
+            ],
+            [
+              19.5,
+              258.6462295776726,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 177.60819999999998,
+          "extension_ratio": 1.0,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            281.44660173145917,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              191.2090913858845,
+              8.0
+            ],
+            [
+              -19.5,
+              240.5607361697649,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 169.83507544144726,
+          "extension_ratio": 0.9999999999999998,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            229.1463130548421,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              156.41757337333416,
+              8.0
+            ],
+            [
+              -58.5,
+              191.26195103555926,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 135.72183325750186,
+          "extension_ratio": 0.9999999999999998,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            183.29256421657308,
+            110.30651675104181,
+            29.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              99.24488287878447,
+              51.45569670927469,
+              29.0
+            ],
+            [
+              140.20248509323406,
+              80.134518526827,
+              29.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 167.6032736214928,
+          "extension_ratio": 1.0,
+          "distal_direction_world": [
+            0.8191520442889918,
+            0.5735764363510459,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        }
+      },
+      "index_middle_distal_angle_deg": 0.0,
+      "index_middle_tip_separation_mm": 48.65458953438654,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "fist": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            72.7398777647463,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              113.20878208991729,
+              84.53834033149171
+            ],
+            [
+              58.5,
+              72.7398777647463,
+              69.8266407973134
+            ]
+          ],
+          "root_to_tip_distance_mm": 47.05031580425199,
+          "extension_ratio": 0.2988744608744609,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            75.91953125514864,
+            32.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              122.11629921259842,
+              93.86993788321958
+            ],
+            [
+              19.5,
+              75.91953125514866,
+              73.07826963492579
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.05901814013071,
+          "extension_ratio": 0.2931115688359587,
+          "distal_direction_world": [
+            0.0,
+            -3.459457966827204e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            58.5977462582481,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              93.42447979734024,
+              70.99309357599392
+            ],
+            [
+              -58.5,
+              58.59774625824811,
+              69.88436201928285
+            ]
+          ],
+          "root_to_tip_distance_mm": 42.2954060035239,
+          "extension_ratio": 0.3116330290298821,
+          "distal_direction_world": [
+            0.0,
+            -1.8755568205119558e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            5.755932909350143,
+            73.96095592748827,
+            100.9025435858913
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              72.69415738843554,
+              34.45295677683195,
+              84.68801106263055
+            ],
+            [
+              53.54264729429758,
+              63.762178472835046,
+              120.38379771440044
+            ]
+          ],
+          "root_to_tip_distance_mm": 101.80438634666666,
+          "extension_ratio": 0.6074128753390391,
+          "distal_direction_world": [
+            -0.9084361313479662,
+            0.19388104109334708,
+            -0.3703429993480376
+          ],
+          "flexion_sum_deg": 187.9931012732166
+        }
+      },
+      "index_middle_distal_angle_deg": 0.0,
+      "index_middle_tip_separation_mm": 39.129403219561475,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "v_sign": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            91.23050057120984,
+            267.1936805755329,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              74.41321575070555,
+              188.07457604931338,
+              8.0
+            ],
+            [
+              83.36589972508438,
+              230.19364263582128,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 157.42501271801538,
+          "extension_ratio": 1.0000000000000002,
+          "distal_direction_world": [
+            0.20791169081775937,
+            0.9781476007338056,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            -17.426821165098758,
+            295.84333391324833,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              1.6466360242838505,
+              206.1097729282306,
+              8.0
+            ],
+            [
+              -8.886168669433518,
+              255.6627230275493,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 177.6082,
+          "extension_ratio": 1.0000000000000002,
+          "distal_direction_world": [
+            -0.20791169081775918,
+            0.9781476007338057,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            58.5977462582481,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              93.42447979734024,
+              70.99309357599392
+            ],
+            [
+              -58.5,
+              58.59774625824811,
+              69.88436201928285
+            ]
+          ],
+          "root_to_tip_distance_mm": 42.2954060035239,
+          "extension_ratio": 0.3116330290298821,
+          "distal_direction_world": [
+            0.0,
+            -1.8755568205119558e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            10.885474925117272,
+            76.02101132907217,
+            91.21885584129365
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              77.12075396387992,
+              33.038580606056456,
+              82.85719224802632
+            ],
+            [
+              56.89374597200553,
+              65.9184460451529,
+              114.6342688348296
+            ]
+          ],
+          "root_to_tip_distance_mm": 94.49531286417835,
+          "extension_ratio": 0.563803503489926,
+          "distal_direction_world": [
+            -0.8746275256163919,
+            0.19205202620301423,
+            -0.4451322395260362
+          ],
+          "flexion_sum_deg": 192.9931012732166
+        }
+      },
+      "index_middle_distal_angle_deg": 23.99999999999999,
+      "index_middle_tip_separation_mm": 112.37088681361803,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "scissors": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            55.75255469465067,
+            270.6098182159906,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              57.16422177649968,
+              189.73546526145475,
+              8.0
+            ],
+            [
+              56.412720604002516,
+              232.78893859928803,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 157.4250127180154,
+          "extension_ratio": 1.0000000000000004,
+          "distal_direction_world": [
+            -0.017452406437283578,
+            0.9998476951563912,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            22.599690492994338,
+            299.69744862347375,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              20.998637056682238,
+              207.973158688358,
+              8.0
+            ],
+            [
+              21.882775835585292,
+              258.62543540798043,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 177.60819999999995,
+          "extension_ratio": 0.9999999999999999,
+          "distal_direction_world": [
+            0.017452406437283487,
+            0.9998476951563912,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            58.5977462582481,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              93.42447979734024,
+              70.99309357599392
+            ],
+            [
+              -58.5,
+              58.59774625824811,
+              69.88436201928285
+            ]
+          ],
+          "root_to_tip_distance_mm": 42.2954060035239,
+          "extension_ratio": 0.3116330290298821,
+          "distal_direction_world": [
+            0.0,
+            -1.8755568205119558e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            10.885474925117272,
+            76.02101132907217,
+            91.21885584129365
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              77.12075396387992,
+              33.038580606056456,
+              82.85719224802632
+            ],
+            [
+              56.89374597200553,
+              65.9184460451529,
+              114.6342688348296
+            ]
+          ],
+          "root_to_tip_distance_mm": 94.49531286417835,
+          "extension_ratio": 0.563803503489926,
+          "distal_direction_world": [
+            -0.8746275256163919,
+            0.19205202620301423,
+            -0.4451322395260362
+          ],
+          "flexion_sum_deg": 192.9931012732166
+        }
+      },
+      "index_middle_distal_angle_deg": 2.0000000000003118,
+      "index_middle_tip_separation_mm": 44.104451560991045,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "thumb_up": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            72.7398777647463,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              113.20878208991729,
+              84.53834033149171
+            ],
+            [
+              58.5,
+              72.7398777647463,
+              69.8266407973134
+            ]
+          ],
+          "root_to_tip_distance_mm": 47.05031580425199,
+          "extension_ratio": 0.2988744608744609,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            75.91953125514864,
+            32.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              122.11629921259842,
+              93.86993788321958
+            ],
+            [
+              19.5,
+              75.91953125514866,
+              73.07826963492579
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.05901814013071,
+          "extension_ratio": 0.2931115688359587,
+          "distal_direction_world": [
+            0.0,
+            -3.459457966827204e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            58.5977462582481,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              93.42447979734024,
+              70.99309357599392
+            ],
+            [
+              -58.5,
+              58.59774625824811,
+              69.88436201928285
+            ]
+          ],
+          "root_to_tip_distance_mm": 42.2954060035239,
+          "extension_ratio": 0.3116330290298821,
+          "distal_direction_world": [
+            0.0,
+            -1.8755568205119558e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            92.40933801386889,
+            145.11423140893163,
+            104.30528273910924
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              89.19009658526386,
+              57.363324931720555,
+              51.23130931616846
+            ],
+            [
+              90.75887763628613,
+              100.12556018014322,
+              77.09499355821936
+            ]
+          ],
+          "root_to_tip_distance_mm": 158.01980428512687,
+          "extension_ratio": 0.9428205122173879,
+          "distal_direction_world": [
+            0.0313756210204456,
+            0.8552447049684532,
+            0.517273684841018
+          ],
+          "flexion_sum_deg": 60.0
+        }
+      },
+      "index_middle_distal_angle_deg": 0.0,
+      "index_middle_tip_separation_mm": 39.129403219561475,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "middle_finger": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            72.7398777647463,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              113.20878208991729,
+              84.53834033149171
+            ],
+            [
+              58.5,
+              72.7398777647463,
+              69.8266407973134
+            ]
+          ],
+          "root_to_tip_distance_mm": 47.05031580425199,
+          "extension_ratio": 0.2988744608744609,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            299.7244992125984,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              207.986237095818,
+              8.0
+            ],
+            [
+              19.5,
+              258.6462295776726,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 177.60819999999998,
+          "extension_ratio": 1.0,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            58.5977462582481,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              93.42447979734024,
+              70.99309357599392
+            ],
+            [
+              -58.5,
+              58.59774625824811,
+              69.88436201928285
+            ]
+          ],
+          "root_to_tip_distance_mm": 42.2954060035239,
+          "extension_ratio": 0.3116330290298821,
+          "distal_direction_world": [
+            0.0,
+            -1.8755568205119558e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            10.885474925117272,
+            76.02101132907217,
+            91.21885584129365
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              77.12075396387992,
+              33.038580606056456,
+              82.85719224802632
+            ],
+            [
+              56.89374597200553,
+              65.9184460451529,
+              114.6342688348296
+            ]
+          ],
+          "root_to_tip_distance_mm": 94.49531286417835,
+          "extension_ratio": 0.563803503489926,
+          "distal_direction_world": [
+            -0.8746275256163919,
+            0.19205202620301423,
+            -0.4451322395260362
+          ],
+          "flexion_sum_deg": 192.9931012732166
+        }
+      },
+      "index_middle_distal_angle_deg": 90.0,
+      "index_middle_tip_separation_mm": 231.55780784466052,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "mountain": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            72.7398777647463,
+            32.00000000000001
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              113.20878208991729,
+              84.53834033149171
+            ],
+            [
+              58.5,
+              72.7398777647463,
+              69.8266407973134
+            ]
+          ],
+          "root_to_tip_distance_mm": 47.05031580425199,
+          "extension_ratio": 0.2988744608744609,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            299.7244992125984,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              207.986237095818,
+              8.0
+            ],
+            [
+              19.5,
+              258.6462295776726,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 177.60819999999998,
+          "extension_ratio": 1.0,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            229.1463130548421,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              156.41757337333416,
+              8.0
+            ],
+            [
+              -58.5,
+              191.26195103555926,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 135.72183325750186,
+          "extension_ratio": 0.9999999999999998,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            175.0128094830892,
+            104.50897007212886,
+            86.32369566587423
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              96.03382353580372,
+              49.20728875168085,
+              51.23130931616846
+            ],
+            [
+              134.52138010180659,
+              76.15656598646866,
+              68.3323164824519
+            ]
+          ],
+          "root_to_tip_distance_mm": 167.6032736214928,
+          "extension_ratio": 1.0,
+          "distal_direction_world": [
+            0.7697511313200575,
+            0.5389855446957562,
+            0.34202014332566855
+          ],
+          "flexion_sum_deg": 20.0
+        }
+      },
+      "index_middle_distal_angle_deg": 90.0,
+      "index_middle_tip_separation_mm": 231.55780784466052,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "rock_thumb_folded": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            270.6337948079327,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              189.74712242140902,
+              8.0
+            ],
+            [
+              58.5,
+              232.80715401061929,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 157.4250127180154,
+          "extension_ratio": 1.0000000000000004,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            75.91953125514864,
+            32.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              122.11629921259842,
+              93.86993788321958
+            ],
+            [
+              19.5,
+              75.91953125514866,
+              73.07826963492579
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.05901814013071,
+          "extension_ratio": 0.2931115688359587,
+          "distal_direction_world": [
+            0.0,
+            -3.459457966827204e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            229.1463130548421,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              156.41757337333416,
+              8.0
+            ],
+            [
+              -58.5,
+              191.26195103555926,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 135.72183325750186,
+          "extension_ratio": 0.9999999999999998,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            5.755932909350143,
+            73.96095592748827,
+            100.9025435858913
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              72.69415738843554,
+              34.45295677683195,
+              84.68801106263055
+            ],
+            [
+              53.54264729429758,
+              63.762178472835046,
+              120.38379771440044
+            ]
+          ],
+          "root_to_tip_distance_mm": 101.80438634666666,
+          "extension_ratio": 0.6074128753390391,
+          "distal_direction_world": [
+            -0.9084361313479662,
+            0.19388104109334708,
+            -0.3703429993480376
+          ],
+          "flexion_sum_deg": 187.9931012732166
+        }
+      },
+      "index_middle_distal_angle_deg": 90.00000000000003,
+      "index_middle_tip_separation_mm": 200.02660930711957,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    },
+    "rock_thumb_extended": {
+      "digits": {
+        "index": {
+          "tip_world_mm": [
+            58.5,
+            270.6337948079327,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              58.5,
+              113.20878208991729,
+              8.0
+            ],
+            [
+              58.5,
+              189.74712242140902,
+              8.0
+            ],
+            [
+              58.5,
+              232.80715401061929,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 157.4250127180154,
+          "extension_ratio": 1.0000000000000004,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "middle": {
+          "tip_world_mm": [
+            19.5,
+            75.91953125514864,
+            32.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              19.5,
+              122.11629921259842,
+              8.0
+            ],
+            [
+              19.5,
+              122.11629921259842,
+              93.86993788321958
+            ],
+            [
+              19.5,
+              75.91953125514866,
+              73.07826963492579
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.05901814013071,
+          "extension_ratio": 0.2931115688359587,
+          "distal_direction_world": [
+            0.0,
+            -3.459457966827204e-16,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "ring": {
+          "tip_world_mm": [
+            -19.5,
+            64.50366346765107,
+            32.000000000000014
+          ],
+          "joint_centres_world_mm": [
+            [
+              -19.5,
+              111.61152629001191,
+              8.0
+            ],
+            [
+              -19.5,
+              111.61152629001191,
+              87.5975650958726
+            ],
+            [
+              -19.5,
+              64.50366346765107,
+              72.8858655616943
+            ]
+          ],
+          "root_to_tip_distance_mm": 52.86918516196715,
+          "extension_ratio": 0.3112972100995383,
+          "distal_direction_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "flexion_sum_deg": 270.0
+        },
+        "little": {
+          "tip_world_mm": [
+            -58.5,
+            229.1463130548421,
+            8.0
+          ],
+          "joint_centres_world_mm": [
+            [
+              -58.5,
+              93.42447979734024,
+              8.0
+            ],
+            [
+              -58.5,
+              156.41757337333416,
+              8.0
+            ],
+            [
+              -58.5,
+              191.26195103555926,
+              8.0
+            ]
+          ],
+          "root_to_tip_distance_mm": 135.72183325750186,
+          "extension_ratio": 0.9999999999999998,
+          "distal_direction_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "flexion_sum_deg": 0.0
+        },
+        "thumb": {
+          "tip_world_mm": [
+            175.0128094830892,
+            104.50897007212886,
+            86.32369566587423
+          ],
+          "joint_centres_world_mm": [
+            [
+              46.0,
+              14.173228346456693,
+              29.0
+            ],
+            [
+              96.03382353580372,
+              49.20728875168085,
+              51.23130931616846
+            ],
+            [
+              134.52138010180659,
+              76.15656598646866,
+              68.3323164824519
+            ]
+          ],
+          "root_to_tip_distance_mm": 167.6032736214928,
+          "extension_ratio": 1.0,
+          "distal_direction_world": [
+            0.7697511313200575,
+            0.5389855446957562,
+            0.34202014332566855
+          ],
+          "flexion_sum_deg": 20.0
+        }
+      },
+      "index_middle_distal_angle_deg": 90.00000000000003,
+      "index_middle_tip_separation_mm": 200.02660930711957,
+      "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
+    }
+  },
+  "status": "kinematic_shape_consistency_only",
+  "collision_passed": false,
+  "naturalness_approved": false,
+  "source_sha256": {
+    "cad/accepted_form_v1/design.json": "afd3a06e4435bb2194c0822f328c5492d4452415addfd1e02e6ce20c7e5aebb1",
+    "cad/accepted_form_v1/motion.json": "68516653a5bb4c6e5d4205f6936839b1fd44a3208c535d670b4affb35817cf78",
+    "cad/accepted_form_v1/preview.xml": "e13be8ca28a332b95664975c328a9cb3f6e9817c4a9a811f766643b46e8fa96c",
+    "cad/gesture_hand_v3/poses.py": "6c960ab6d30d8aa3cd244718590eadb0899a466dbaf046daf8942cb8188ad9e7"
+  },
+  "poses_sha256": "54ce13b0ee182218be0fccc12b4bbbcf795bea529e623d90e04d74d80435fc3a"
+}
