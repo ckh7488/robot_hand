@@ -1,0 +1,1555 @@
+{
+  "status": "CONSTRUCTION CANDIDATE - NOT FABRICATION PASS",
+  "valid_brep_count": 223,
+  "total_shapes": 223,
+  "component_checks": [
+    {
+      "name": "Palm_back_chassis",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 294704.5737912913
+    },
+    {
+      "name": "Palm_front_cover",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 42907.35153065767
+    },
+    {
+      "name": "Palm_cover_screws",
+      "valid": true,
+      "solid_count": 5,
+      "volume_mm3": 709.803590170444
+    },
+    {
+      "name": "Palm_cover_nuts",
+      "valid": true,
+      "solid_count": 5,
+      "volume_mm3": 229.5442199270847
+    },
+    {
+      "name": "Thumb_internal_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9656.391498787372
+    },
+    {
+      "name": "Palm_thumb_mount_screws",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 312.19576995048567
+    },
+    {
+      "name": "Palm_thumb_mount_nuts",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 91.81768797073386
+    },
+    {
+      "name": "Palm_saddle_mount_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 680.9402076655875
+    },
+    {
+      "name": "Palm_saddle_mount_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 183.63537594158112
+    },
+    {
+      "name": "Index_root_cartridge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9603.092128162718
+    },
+    {
+      "name": "Index_root_mount_screws",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 312.1957699504859
+    },
+    {
+      "name": "Index_root_mount_nuts",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 91.81768797071796
+    },
+    {
+      "name": "index_root_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079759
+    },
+    {
+      "name": "index_root_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830269
+    },
+    {
+      "name": "index_root_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.3628240155402
+    },
+    {
+      "name": "index_root_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457658
+    },
+    {
+      "name": "index_root_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344367
+    },
+    {
+      "name": "index_root_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944734
+    },
+    {
+      "name": "index_root_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.7505809637455
+    },
+    {
+      "name": "index_root_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.3628240155401
+    },
+    {
+      "name": "index_root_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.5748083645132
+    },
+    {
+      "name": "index_root_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.0920198512137
+    },
+    {
+      "name": "index_spread_carrier",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11345.294335678127
+    },
+    {
+      "name": "index_mcp_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079806
+    },
+    {
+      "name": "index_mcp_fixed_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830264
+    },
+    {
+      "name": "index_mcp_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554014
+    },
+    {
+      "name": "index_mcp_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457651
+    },
+    {
+      "name": "index_mcp_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344342
+    },
+    {
+      "name": "index_mcp_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944747
+    },
+    {
+      "name": "index_mcp_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.7505809637423
+    },
+    {
+      "name": "index_mcp_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554013
+    },
+    {
+      "name": "index_mcp_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457691
+    },
+    {
+      "name": "index_mcp_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.0920198512134
+    },
+    {
+      "name": "Middle_root_cartridge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9603.092128162712
+    },
+    {
+      "name": "Middle_root_mount_screws",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 312.1957699504859
+    },
+    {
+      "name": "Middle_root_mount_nuts",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 91.81768797071798
+    },
+    {
+      "name": "middle_root_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.96401107976
+    },
+    {
+      "name": "middle_root_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830278
+    },
+    {
+      "name": "middle_root_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554014
+    },
+    {
+      "name": "middle_root_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457658
+    },
+    {
+      "name": "middle_root_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344342
+    },
+    {
+      "name": "middle_root_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944757
+    },
+    {
+      "name": "middle_root_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.7505809637432
+    },
+    {
+      "name": "middle_root_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554013
+    },
+    {
+      "name": "middle_root_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836451316
+    },
+    {
+      "name": "middle_root_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121334
+    },
+    {
+      "name": "middle_spread_carrier",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11345.29433567812
+    },
+    {
+      "name": "middle_mcp_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079777
+    },
+    {
+      "name": "middle_mcp_fixed_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.188201183025
+    },
+    {
+      "name": "middle_mcp_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554013
+    },
+    {
+      "name": "middle_mcp_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457646
+    },
+    {
+      "name": "middle_mcp_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.9106078434434
+    },
+    {
+      "name": "middle_mcp_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944759
+    },
+    {
+      "name": "middle_mcp_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.750580963745
+    },
+    {
+      "name": "middle_mcp_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554016
+    },
+    {
+      "name": "middle_mcp_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457682
+    },
+    {
+      "name": "middle_mcp_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121342
+    },
+    {
+      "name": "Ring_root_cartridge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9603.092128162716
+    },
+    {
+      "name": "Ring_root_mount_screws",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 312.19576995048595
+    },
+    {
+      "name": "Ring_root_mount_nuts",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 91.81768797071801
+    },
+    {
+      "name": "ring_root_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079763
+    },
+    {
+      "name": "ring_root_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830276
+    },
+    {
+      "name": "ring_root_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554014
+    },
+    {
+      "name": "ring_root_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457653
+    },
+    {
+      "name": "ring_root_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.9106078434436
+    },
+    {
+      "name": "ring_root_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.589888794475
+    },
+    {
+      "name": "ring_root_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.7505809637432
+    },
+    {
+      "name": "ring_root_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554013
+    },
+    {
+      "name": "ring_root_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836451315
+    },
+    {
+      "name": "ring_root_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121337
+    },
+    {
+      "name": "ring_spread_carrier",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11345.294335678122
+    },
+    {
+      "name": "ring_mcp_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079768
+    },
+    {
+      "name": "ring_mcp_fixed_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.188201183027
+    },
+    {
+      "name": "ring_mcp_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554011
+    },
+    {
+      "name": "ring_mcp_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.5748083645765
+    },
+    {
+      "name": "ring_mcp_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344336
+    },
+    {
+      "name": "ring_mcp_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944745
+    },
+    {
+      "name": "ring_mcp_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.7505809637432
+    },
+    {
+      "name": "ring_mcp_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554013
+    },
+    {
+      "name": "ring_mcp_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.5748083645768
+    },
+    {
+      "name": "ring_mcp_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121334
+    },
+    {
+      "name": "Little_root_cartridge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9603.09212816272
+    },
+    {
+      "name": "Little_root_mount_screws",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 312.1957699504858
+    },
+    {
+      "name": "Little_root_mount_nuts",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 91.81768797071781
+    },
+    {
+      "name": "little_root_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079766
+    },
+    {
+      "name": "little_root_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830266
+    },
+    {
+      "name": "little_root_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554017
+    },
+    {
+      "name": "little_root_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457661
+    },
+    {
+      "name": "little_root_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344327
+    },
+    {
+      "name": "little_root_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944734
+    },
+    {
+      "name": "little_root_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.750580963745
+    },
+    {
+      "name": "little_root_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.3628240155401
+    },
+    {
+      "name": "little_root_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836451322
+    },
+    {
+      "name": "little_root_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.0920198512137
+    },
+    {
+      "name": "little_spread_carrier",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11345.294335678123
+    },
+    {
+      "name": "little_mcp_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079783
+    },
+    {
+      "name": "little_mcp_fixed_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830255
+    },
+    {
+      "name": "little_mcp_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554018
+    },
+    {
+      "name": "little_mcp_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457641
+    },
+    {
+      "name": "little_mcp_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.9106078434433
+    },
+    {
+      "name": "little_mcp_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944759
+    },
+    {
+      "name": "little_mcp_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.7505809637464
+    },
+    {
+      "name": "little_mcp_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554023
+    },
+    {
+      "name": "little_mcp_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457702
+    },
+    {
+      "name": "little_mcp_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121328
+    },
+    {
+      "name": "thumb_root_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079777
+    },
+    {
+      "name": "thumb_root_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830317
+    },
+    {
+      "name": "thumb_root_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554001
+    },
+    {
+      "name": "thumb_root_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.5748083645767
+    },
+    {
+      "name": "thumb_root_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344327
+    },
+    {
+      "name": "thumb_root_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.589888794474
+    },
+    {
+      "name": "thumb_root_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.750580963738
+    },
+    {
+      "name": "thumb_root_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401554004
+    },
+    {
+      "name": "thumb_root_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836451322
+    },
+    {
+      "name": "thumb_root_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121328
+    },
+    {
+      "name": "thumb_spread_carrier",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11345.294335678125
+    },
+    {
+      "name": "thumb_mcp_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.96401107977
+    },
+    {
+      "name": "thumb_mcp_fixed_frame",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.188201183028
+    },
+    {
+      "name": "thumb_mcp_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.3628240155398
+    },
+    {
+      "name": "thumb_mcp_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.574808364577
+    },
+    {
+      "name": "thumb_mcp_base_body_tap",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.9106078434432
+    },
+    {
+      "name": "thumb_mcp_rotor",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.589888794474
+    },
+    {
+      "name": "thumb_mcp_hinge",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2526.750580963738
+    },
+    {
+      "name": "thumb_mcp_output_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553964
+    },
+    {
+      "name": "thumb_mcp_output_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457688
+    },
+    {
+      "name": "thumb_mcp_output_hinge_tap",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 183.09201985121322
+    },
+    {
+      "name": "Palm_wrist_saddle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 73405.22888907057
+    },
+    {
+      "name": "index_light_link_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 14303.95487513586
+    },
+    {
+      "name": "index_light_link_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10744.29307389167
+    },
+    {
+      "name": "index_shaft_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.25660088821155
+    },
+    {
+      "name": "index_pulley_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.6225186822471
+    },
+    {
+      "name": "index_light_link_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7399.128462710318
+    },
+    {
+      "name": "index_shaft_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.2566008882128
+    },
+    {
+      "name": "index_pulley_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.622518682247
+    },
+    {
+      "name": "index_remote_pip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079757
+    },
+    {
+      "name": "index_remote_pip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944732
+    },
+    {
+      "name": "index_remote_pip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139632
+    },
+    {
+      "name": "index_remote_pip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.36416800722
+    },
+    {
+      "name": "index_remote_dip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079832
+    },
+    {
+      "name": "index_remote_dip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944738
+    },
+    {
+      "name": "index_remote_dip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139635
+    },
+    {
+      "name": "index_remote_dip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.3641680072196
+    },
+    {
+      "name": "index_pip_flexor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 69.07277721528773
+    },
+    {
+      "name": "index_pip_extensor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 69.07277721528769
+    },
+    {
+      "name": "index_dip_flexor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 61.55306489320199
+    },
+    {
+      "name": "index_dip_extensor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 61.55306489320206
+    },
+    {
+      "name": "middle_light_link_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 15023.954875135862
+    },
+    {
+      "name": "middle_light_link_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10744.293073891675
+    },
+    {
+      "name": "middle_shaft_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.25660088821155
+    },
+    {
+      "name": "middle_pulley_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.6225186822471
+    },
+    {
+      "name": "middle_light_link_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7687.128462710318
+    },
+    {
+      "name": "middle_shaft_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.2566008882128
+    },
+    {
+      "name": "middle_pulley_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.622518682247
+    },
+    {
+      "name": "middle_remote_pip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079797
+    },
+    {
+      "name": "middle_remote_pip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944734
+    },
+    {
+      "name": "middle_remote_pip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139635
+    },
+    {
+      "name": "middle_remote_pip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.36416800722
+    },
+    {
+      "name": "middle_remote_dip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079812
+    },
+    {
+      "name": "middle_remote_dip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944736
+    },
+    {
+      "name": "middle_remote_dip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139637
+    },
+    {
+      "name": "middle_remote_dip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.36416800722
+    },
+    {
+      "name": "middle_pip_flexor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 59.513772179320426
+    },
+    {
+      "name": "middle_pip_extensor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 59.51377217932037
+    },
+    {
+      "name": "middle_dip_flexor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 65.12936422796734
+    },
+    {
+      "name": "middle_dip_extensor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 65.12936422796737
+    },
+    {
+      "name": "ring_light_link_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 13871.95487513586
+    },
+    {
+      "name": "ring_light_link_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10744.29307389167
+    },
+    {
+      "name": "ring_shaft_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.25660088821155
+    },
+    {
+      "name": "ring_pulley_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.6225186822471
+    },
+    {
+      "name": "ring_light_link_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7399.128462710318
+    },
+    {
+      "name": "ring_shaft_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.2566008882128
+    },
+    {
+      "name": "ring_pulley_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.622518682247
+    },
+    {
+      "name": "ring_remote_pip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079785
+    },
+    {
+      "name": "ring_remote_pip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944732
+    },
+    {
+      "name": "ring_remote_pip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.266693813963
+    },
+    {
+      "name": "ring_remote_pip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.36416800722
+    },
+    {
+      "name": "ring_remote_dip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079801
+    },
+    {
+      "name": "ring_remote_dip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944732
+    },
+    {
+      "name": "ring_remote_dip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139635
+    },
+    {
+      "name": "ring_remote_dip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.36416800722
+    },
+    {
+      "name": "ring_pip_flexor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 55.5799677561461
+    },
+    {
+      "name": "ring_pip_extensor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 55.57996775614603
+    },
+    {
+      "name": "ring_dip_flexor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 61.550769415396125
+    },
+    {
+      "name": "ring_dip_extensor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 61.550769415396175
+    },
+    {
+      "name": "little_light_link_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 12863.954875135863
+    },
+    {
+      "name": "little_light_link_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10456.29307389167
+    },
+    {
+      "name": "little_shaft_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.25660088821155
+    },
+    {
+      "name": "little_pulley_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.6225186822471
+    },
+    {
+      "name": "little_light_link_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 6823.12846271032
+    },
+    {
+      "name": "little_shaft_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.25660088821155
+    },
+    {
+      "name": "little_pulley_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.622518682247
+    },
+    {
+      "name": "little_remote_pip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079783
+    },
+    {
+      "name": "little_remote_pip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944732
+    },
+    {
+      "name": "little_remote_pip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139635
+    },
+    {
+      "name": "little_remote_pip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.3641680072205
+    },
+    {
+      "name": "little_remote_dip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079814
+    },
+    {
+      "name": "little_remote_dip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944727
+    },
+    {
+      "name": "little_remote_dip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139637
+    },
+    {
+      "name": "little_remote_dip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.3641680072205
+    },
+    {
+      "name": "little_pip_flexor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 50.840557893663195
+    },
+    {
+      "name": "little_pip_extensor_route",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 50.84055789366313
+    },
+    {
+      "name": "little_dip_flexor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 55.99755929041736
+    },
+    {
+      "name": "little_dip_extensor_route",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 55.9975592904174
+    },
+    {
+      "name": "thumb_light_link_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 15335.812727370221
+    },
+    {
+      "name": "thumb_light_link_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10456.293073891673
+    },
+    {
+      "name": "thumb_shaft_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.2566008882118
+    },
+    {
+      "name": "thumb_pulley_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.6225186822469
+    },
+    {
+      "name": "thumb_light_link_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 6823.1284627103205
+    },
+    {
+      "name": "thumb_shaft_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 427.2566008882118
+    },
+    {
+      "name": "thumb_pulley_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 561.6225186822478
+    },
+    {
+      "name": "thumb_remote_mcp_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079795
+    },
+    {
+      "name": "thumb_remote_mcp_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.5898887944716
+    },
+    {
+      "name": "thumb_remote_mcp_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139635
+    },
+    {
+      "name": "thumb_remote_mcp_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.3641680072205
+    },
+    {
+      "name": "thumb_remote_ip_motor",
+      "valid": true,
+      "solid_count": 12,
+      "volume_mm3": 14753.964011079805
+    },
+    {
+      "name": "thumb_remote_ip_rotor_visual",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 1110.589888794473
+    },
+    {
+      "name": "thumb_remote_ip_dual_spool",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1417.2666938139632
+    },
+    {
+      "name": "thumb_remote_ip_mount_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3737.364168007221
+    },
+    {
+      "name": "thumb_moving_motor_crossbar",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3864.0
+    },
+    {
+      "name": "thumb_mcp_flexor_route",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9.543489193145543
+    },
+    {
+      "name": "thumb_mcp_extensor_route",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9.54348919314554
+    },
+    {
+      "name": "thumb_ip_flexor_route",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 23.534171316700473
+    },
+    {
+      "name": "thumb_ip_extensor_route",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 23.534171316700462
+    }
+  ],
+  "open_pose_exact_new_cross_body_overlap_pairs": [
+    {
+      "a": "Palm_back_chassis",
+      "b": "index_remote_pip_motor",
+      "overlap_mm3": 311.3033332588624,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "index_remote_pip_mount_plate",
+      "overlap_mm3": 428.5933163997225,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "ring_remote_dip_motor",
+      "overlap_mm3": 173.72923177222287,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "ring_remote_dip_rotor_visual",
+      "overlap_mm3": 256.6163431285119,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "ring_remote_dip_dual_spool",
+      "overlap_mm3": 13.696839465350346,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "ring_remote_dip_mount_plate",
+      "overlap_mm3": 169.64600329384885,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "little_remote_pip_motor",
+      "overlap_mm3": 52.81771350635003,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "little_remote_pip_mount_plate",
+      "overlap_mm3": 240.2895150118478,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "little_remote_dip_motor",
+      "overlap_mm3": 20.986336634679787,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "little_remote_dip_rotor_visual",
+      "overlap_mm3": 35.66661574681337,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_back_chassis",
+      "b": "little_remote_dip_mount_plate",
+      "overlap_mm3": 29.906648339672866,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "index_mcp_output_screws",
+      "b": "index_light_link_1",
+      "overlap_mm3": 0.538933010248085,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "middle_mcp_output_screws",
+      "b": "middle_light_link_1",
+      "overlap_mm3": 0.5389330102480883,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "ring_mcp_output_screws",
+      "b": "ring_light_link_1",
+      "overlap_mm3": 0.5389330102480872,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Little_root_cartridge",
+      "b": "little_remote_dip_mount_plate",
+      "overlap_mm3": 22.50000000000003,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "little_mcp_output_screws",
+      "b": "little_light_link_1",
+      "overlap_mm3": 0.538933010248085,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_root_motor",
+      "b": "middle_remote_pip_mount_plate",
+      "overlap_mm3": 12.304534482365181,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_spread_carrier",
+      "b": "thumb_remote_mcp_mount_plate",
+      "overlap_mm3": 37.50000000000041,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_mcp_output_screws",
+      "b": "thumb_light_link_1",
+      "overlap_mm3": 0.5389330102481308,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "Palm_wrist_saddle",
+      "b": "index_remote_pip_mount_plate",
+      "overlap_mm3": 74.99999999999999,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "ring_remote_pip_motor",
+      "b": "little_remote_pip_dual_spool",
+      "overlap_mm3": 509.89798648625367,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "ring_remote_pip_rotor_visual",
+      "b": "little_remote_pip_dual_spool",
+      "overlap_mm3": 464.67534309662534,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "ring_remote_pip_mount_plate",
+      "b": "little_remote_pip_mount_plate",
+      "overlap_mm3": 120.0,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_light_link_2",
+      "overlap_mm3": 1185.280327722732,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_shaft_1",
+      "overlap_mm3": 171.69201970631883,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_pulley_1",
+      "overlap_mm3": 23.361018908189262,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_remote_mcp_rotor_visual",
+      "overlap_mm3": 14.137166940812406,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_remote_mcp_mount_plate",
+      "overlap_mm3": 117.6149703739887,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_remote_ip_motor",
+      "overlap_mm3": 164.91961374015975,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_remote_ip_mount_plate",
+      "overlap_mm3": 35.999999999999986,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_1",
+      "b": "thumb_moving_motor_crossbar",
+      "overlap_mm3": 96.00000000000007,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_light_link_2",
+      "b": "thumb_remote_mcp_rotor_visual",
+      "overlap_mm3": 1.4531525195963633,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    },
+    {
+      "a": "thumb_shaft_1",
+      "b": "thumb_remote_ip_motor",
+      "overlap_mm3": 0.04753539132299121,
+      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
+    }
+  ],
+  "overlap_scope": "All new-component pairs, including same rigid body; legacy-only pairs excluded. Field name retained for review compatibility.",
+  "exact_candidate_pairs_tested": 184,
+  "limitations": [
+    "Only neutral pose; no continuous swept collision proof",
+    "Reported same-body overlaps may include unresolved mounting contacts; not blanket-exempted",
+    "Cable route solids are envelopes only, excluded from clash and mass checks",
+    "Mounting screws and tensioners for new components not detailed"
+  ],
+  "actuator_count": 20,
+  "independent_joint_count": 20
+}

@@ -1,0 +1,52 @@
+{
+  "revision": "remote_drive_v1.2",
+  "status": "Parametric construction candidate; not a fabrication release or validated transmission",
+  "units": "mm, degree, kg, kg*m^2",
+  "baseline": "cad/modular_roots_v9/design.json",
+  "scope": "Full five-finger 20-axis hand, original palm and wrist mounting interface; forearm not redesigned",
+  "hand": {
+    "palm_width": 232,
+    "palm_length": 195,
+    "root_axis_offset_z": 32,
+    "fingers": [
+      {"name":"index","root":[72,162,-24],"base_rpy":[0,0,0],"links":[65,50,32]},
+      {"name":"middle","root":[24,172,-24],"base_rpy":[0,0,0],"links":[70,50,34]},
+      {"name":"ring","root":[-24,166,-24],"base_rpy":[0,0,0],"links":[62,50,32]},
+      {"name":"little","root":[-72,151,-24],"base_rpy":[0,0,0],"links":[55,48,28]},
+      {"name":"thumb","root":[62,46,-24],"base_rpy":[0,0,-50],"links":[65,48,28],"mcp_mount_yaw":35}
+    ]
+  },
+  "links": {"width_mm":22,"depth_mm":18,"wall_mm":2,"center_x_mm":-14.5,"joint_bore_radius_mm":2.1,"pin_radius_mm":2,"pulley_radius_mm":8,"pulley_width_mm":3,"pulley_side_offset_mm":15},
+  "remote_motors": {
+    "model":"XL330-M077",
+    "body_mass_kg":0.018,
+    "palm_rows_y_mm":[65,110],
+    "palm_motor_z_mm":-24,
+    "palm_motor_origin_x_offset_mm":14.4,
+    "palm_placement_overrides_mm":{"index_pip":[14.4,25,-24],"little_pip":[-40.6,65,-24]},
+    "thumb_local_origins_mm":[[25.4,48,0],[-55.4,48,0]],
+    "thumb_local_rotations_deg":[[0,0,0],[0,180,0]],
+    "thumb_parent_joint":"thumb_opposition",
+    "spool_radius_mm":8,
+    "spool_width_mm":6,
+    "spool_center_x_mm":4,
+    "mount_thickness_mm":3,
+    "cable_diameter_mm":0.6,
+    "preload_N":1.5,
+    "preload_status":"Design target only; tensioner and cable terminals not detailed"
+  },
+  "materials":{"printed_density_kg_per_mm3":0.00000125,"steel_density_kg_per_mm3":0.00000785,"motor_mass_basis":"18g total including visual rotor; rotor visual object has zero added mass"},
+  "joint_ranges_deg":{"spread":[-22,22],"mcp":[-20,85],"pip":[0,100],"dip":[0,80],"thumb_base_sweep":[-60,60],"thumb_opposition":[-20,100],"thumb_mcp":[-20,105],"thumb_ip":[0,90]},
+  "transmission": {
+    "type":"Opposed dual-tendon, one spool per remote joint",
+    "ratio_motor_to_joint":1,
+    "nonthumb_pip_coefficients":{"mcp":1,"pip":1},
+    "nonthumb_dip_coefficients":{"mcp":1,"pip":1,"dip":1},
+    "thumb_mcp_coefficients":{"thumb_mcp":1},
+    "thumb_ip_coefficients":{"thumb_mcp":1,"thumb_ip":1},
+    "spread_coefficient":0,
+    "mapping_status":"Constant-Jacobian concept for simulation; exact 3D routing, spread compensation, tangent contact and constant preload are NOT validated",
+    "routes_status":"Two explicit route polylines per remote axis are assembly envelopes, not a manufacturing-ready continuous cable layout"
+  },
+  "open_issues":["Exact cable terminals, wraps and tension adjustment","Pulley tangent paths across spread and flex joints","Joint shafts/bearings and shell-to-horn fasteners need manufacturing detail","Sweep collisions, cable bending radii and assembly access","Measured motor output response, friction, cable compliance and thermal derating","No fixed 112mm palm shrink or DIP coupling introduced"]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "generated",
+  "revision": "remote_drive_v1.2",
+  "cad_kernel": "CadQuery 2.8.0",
+  "actuators": 20,
+  "joints": 20,
+  "mass_kg": 1.4465642425609166,
+  "shape_count": 223,
+  "overlap_pairs": 33,
+  "design_sha256": "4a53d4600b4753a03eefc84ba5791e54e0500de206805f305fa154e7943d45d7",
+  "generator_sha256": "c816d166f045ee05755b06acd26c69624b90d9b74594626d5c931ff1894e654f"
+}

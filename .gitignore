@@ -12,3 +12,9 @@ mpl_config/
 /cad_review_state.json
 
 /cad/assembly_fixes_v13/reviews/*.npz
+
+# New candidate native assemblies are committed as lossless ZIP archives.
+/cad/remote_drive_v1/generated/remote_drive_v1_full_hand.step
+/cad/remote_drive_v1/generated/remote_drive_v1_full_hand.stl
+/cad/remote_drive_v1/assembly.step
+/cad/remote_drive_v1/assembly.stl

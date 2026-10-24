@@ -1,17 +1,22 @@
 {
-  "id": "CP003",
-  "candidate": "cad/assembly_fixes_v13",
+  "id": "CP004",
+  "candidate": "cad/remote_drive_v1",
+  "simulation": "sim/remote_drive_v1",
   "baseline": "cad/modular_roots_v9",
-  "manifest": "checkpoints/CP003.manifest.json",
+  "manifest": "checkpoints/CP004.manifest.json",
   "manufacturing_release": false,
   "motor_performance_validated": false,
-  "status": "Documentation-only README reorganization verified from a clean worktree. V13 CAD and analysis code are unchanged. Full-fist endpoint still fails 1mm clearance; no manufacturing or actuation approval.",
-  "documentation_only": true,
+  "status": "First remote-drive construction and full-hand dynamics candidate. Preserve original dimensions and 20 independent axes. Physical construction blockers and tracking failures remain; no 100 ms hardware pass.",
+  "documentation_only": false,
   "previous_design_checkpoint": "CP002",
-  "design_review_target": "f4739db35b04d6cb49bbf2847512059a9295778a",
-  "design_review_report": "docs/reviews/CP002_f4739db.md",
-  "post_commit_review_target": "f3081cfce36c6d1dc57e44a534f643befb26ff7f",
-  "post_commit_review_report": "docs/reviews/CP003_f3081cf.md",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_scope": "Documentation links and core read-only checks; FreeCAD geometry and motion were not rerun."
+  "previous_checkpoint": "CP003",
+  "archive_branch": "archive/direct-drive-v13",
+  "archive_sha": "accd6c8d8d9791828233e9461ef1b1e8dccc8b0b",
+  "tracking_requirement_ms": {
+    "target": 50,
+    "upper_limit": 100,
+    "boundary": "Robot controller received target to actual joint motion; upstream sensing excluded"
+  },
+  "post_commit_results_reproduced": false,
+  "post_commit_review_scope": "Pending exact-SHA clean checkout review of CAD solids/mass/frames, simulation consistency and results, frozen evidence, and checkpoint manifest."
 }

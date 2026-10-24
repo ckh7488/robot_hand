@@ -16,7 +16,9 @@ python cad/modular_roots_v9/kinematics_numpy.py
 python tools/check_checkpoint.py
 ~~~
 
-FreeCAD 전용 Python에서 tools/review_cad_checkpoint.py도 실행합니다. 이 검사는 원본 STEP에서 차집합을 재계산하고 저장된 조립의 실제 형상과 배치를 비교합니다.
+V12·V13 형상을 변경하는 회차에서는 FreeCAD 전용 Python에서 tools/review_cad_checkpoint.py도 실행합니다. 이 검사는 원본 STEP에서 차집합을 재계산하고 저장된 조립의 실제 형상과 배치를 비교합니다. 새 remote_drive_v1 후보에는 해당 후보의 CAD 재생성·재수입과 시뮬레이션 검사를 사용하며, 과거 검사 통과를 새 후보의 성능 검증으로 대체하지 않습니다.
+
+현재 원위 모터 재배치 후보는 CadQuery/OpenCascade 형상과 MuJoCo 동역학을 함께 관리합니다. 각 후보 폴더의 실행 설명과 실제 사용 버전을 기록합니다. CAD 생성 입력·질량/관성 계약·모터 전달비·시험 명령이 같은 체크포인트에 포함되어야 하며, 단순 캐시나 원본 작업 폴더를 참조하는 결과는 재현 증거로 인정하지 않습니다.
 
 분석 Python과 FreeCAD Python은 별도 환경입니다. Windows에서는 각 pythonw.exe를 숨김으로 실행하고 표준 출력을 로그 파일로 받습니다. PowerShell Start-Process를 쓰는 경우 -WindowStyle Hidden이 필요합니다. GUI나 FreeCADCmd 콘솔을 띄우지 않습니다.
 

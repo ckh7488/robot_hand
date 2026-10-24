@@ -1,0 +1,60 @@
+"""Build a portable, offline trajectory viewer from saved simulation outputs.
+
+This displays joint-center kinematics, not CAD collision or hardware evidence.
+"""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+ap = argparse.ArgumentParser()
+ap.add_argument('--results', type=Path, default=ROOT/'sim/remote_drive_v1/results')
+ap.add_argument('--output', type=Path)
+a = ap.parse_args()
+files = list(sorted(a.results.glob('*_trajectory.json')))
+assert files, 'No trajectories found'
+traces = [json.loads(f.read_text(encoding='utf-8')) for f in files]
+for trace in traces:
+    n = len(trace['time_s'])
+    assert n > 1 and len(trace['joint_names']) == 20
+    assert len(trace['command_deg']) == len(trace['actual_deg']) == n
+    assert all(len(row) == 20 for key in ['command_deg', 'actual_deg'] for row in trace[key])
+report = json.loads((a.results/'report.json').read_text(encoding='utf-8'))
+payload = dict(design=json.loads((ROOT/'cad/remote_drive_v1/design.json').read_text(encoding='utf-8')),
+               traces=traces, cases=report['cases'], engine=report['engine'],
+               source_hashes={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in files})
+HTML = r'''<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Robot Hand · 추종 시뮬레이션</title>
+<style>
+:root{color-scheme:light;--ink:#152b38;--muted:#536a77;--paper:#f4f6f7;--line:#d7e0e5;--actual:#007f89;--target:#bd7621}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,'Malgun Gothic',sans-serif}main{max-width:1320px;margin:auto;padding:32px}header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--actual);font-weight:750}h1{font-size:30px;line-height:1.2;margin:8px 0 12px}p{margin:8px 0;color:var(--muted)}.notice{padding:11px 16px;background:#fff3da;border:1px solid #e5ce99;border-radius:8px;color:#745521;font-size:13px}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0}button,select{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink)}button{cursor:pointer;background:var(--ink);color:white}input[type=range]{flex:1;min-width:160px;accent-color:var(--actual)}.time{font-variant-numeric:tabular-nums;min-width:70px}.grid{display:grid;grid-template-columns:1.15fr 1fr;gap:18px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:20px;overflow:hidden}h2{font-size:16px;margin:0 0 10px}.legend{display:flex;gap:20px;font-size:13px;margin-bottom:10px}.target{color:var(--target)}.actual{color:var(--actual)}canvas{width:100%;display:block}#hand{height:410px;cursor:grab}#plot{height:260px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.metric{background:#edf3f5;padding:12px;border-radius:8px}.metric span{display:block;color:var(--muted);font-size:12px}.metric strong{font-size:23px;font-variant-numeric:tabular-nums}.small{font-size:12px;color:var(--muted)}.verdict{font-size:13px;color:#8b3f2a;margin:10px 0}table{border-collapse:collapse;width:100%;font-size:13px;margin-top:16px}th,td{border-bottom:1px solid var(--line);padding:6px;text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}tbody tr{cursor:pointer}tbody tr.selected{background:#e3f1f1}footer{font-size:12px;color:var(--muted);margin-top:20px}@media(max-width:850px){main{padding:18px}.grid{grid-template-columns:1fr}h1{font-size:24px}#hand{height:340px}.metrics{gap:6px}.metric{padding:9px}.metric strong{font-size:19px}}
+</style><main><header><div class="eyebrow">ROBOT HAND / REMOTE DRIVE</div><h1>목표 움직임과 로봇의 추종 비교</h1><p>같은 각도 명령을 기존 직결 구조와 모터 재배치 구조에 재생한 계산 결과입니다.</p><div class="notice">실측 전 모델입니다. 그림은 관절 중심을 연결한 표시이며, 실제 CAD 외피·줄 경로·충돌을 재현하지 않습니다. 손목·팔은 고정되어 있습니다.</div></header>
+<div class="controls"><label>구조 <select id="variant"></select></label><button id="play">일시정지</button><label>재생 <select id="speed"><option value="0.25">0.25배</option><option value="0.5">0.5배</option><option value="1" selected>실시간</option></select></label><input id="time" type="range" min="0" step="1" value="0" aria-label="시뮬레이션 시간"><output class="time" id="stamp"></output><button id="reset">처음으로</button></div>
+<div class="grid"><section class="card"><h2>다섯 손가락 · 급반전 시험</h2><div class="legend"><span class="target">┄ 목표 자세</span><span class="actual">━ 계산된 실제 자세</span></div><canvas id="hand"></canvas><p class="small">드래그하여 시점을 바꿀 수 있습니다. 표시에는 100Hz로 추출한 각도를 사용합니다. 아래 지연은 원래 물리 계산 시간간격으로 평가한 결과입니다.</p><div class="metrics"><div class="metric"><span>도달한 사건 중 최대 지연</span><strong id="lag"></strong></div><div class="metric"><span>미도달 사건</span><strong id="missing"></strong></div><div class="metric"><span>전체 동작 최대 각도 오차</span><strong id="error"></strong></div></div><p class="verdict" id="verdict"></p><p class="small">미도달 사건이 있으면 유효 사건의 최대 지연만으로 100ms 이내라고 판정하지 않습니다. 16축 비교안은 20모터 CAD의 질량을 유지한 가상 끝마디 연동 연구입니다.</p></section>
+<section class="card"><h2>같은 시간축의 목표각과 실제각</h2><label>관절 <select id="joint"></select></label><canvas id="plot"></canvas><p class="small">시간축을 옮겨 맞추지 않은 원시 각도입니다. 표의 행을 눌러 관절을 선택할 수 있습니다.</p><table><thead><tr><th>관절</th><th>목표 °</th><th>실제 °</th><th>오차 °</th></tr></thead><tbody id="rows"></tbody></table></section></div>
+<footer id="source"></footer></main><script id="data" type="application/json">__PAYLOAD__</script><script>
+'use strict';
+const data=JSON.parse(document.getElementById('data').textContent),$=id=>document.getElementById(id),names={baseline20:'기존 직결 20축',remote20:'모터 재배치 20축',remote16:'16축 가상 연동 비교'};
+let tr=data.traces.find(t=>t.variant==='remote20')||data.traces[0],frame=0,joint=5,playing=true,elapsed=0,last=performance.now(),yaw=-.5,pitch=.45;
+for(const t of data.traces){const o=new Option(names[t.variant]||t.variant,t.variant);$('variant').add(o)}$('variant').value=tr.variant;
+const labels=['벌림','뿌리 굽힘','가운데 굽힘','끝 굽힘'],fn=['검지','중지','약지','소지'];const jl=tr.joint_names.map((n,i)=>i<16?fn[Math.floor(i/4)]+' '+labels[i%4]:['엄지 뿌리 회전','엄지 대립','엄지 뿌리 굽힘','엄지 끝 굽힘'][i-16]);
+jl.forEach((n,i)=>$('joint').add(new Option(n,i)));$('joint').value=joint;
+function metrics(){const m=data.cases[tr.variant+'/'+tr.case];$('lag').textContent=m.valid_event_max_ms===null?'미확정':m.valid_event_max_ms.toFixed(1)+'ms';$('missing').textContent=m.missing_events+' / '+m.event_count;$('error').textContent=m.raw_max_error_deg.toFixed(1)+'°';$('verdict').textContent=m.simulated_100ms_event_budget_met?'이 모델의 사건 지연 기준은 충족했습니다. 실제 하드웨어 통과를 뜻하지 않습니다.':'이 시험에서는 100ms 사건 지연 기준을 충족하지 못했습니다. 미도달·반전·자세 오차를 함께 확인해야 합니다.';$('source').textContent=data.engine+' · '+tr.case+' · 입력장치 지연 제외 · 원본 결과: report.json / *_trajectory.json';$('time').max=tr.time_s.length-1;}
+function resize(c){const d=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;if(c.width!==Math.round(w*d)||c.height!==Math.round(h*d)){c.width=Math.round(w*d);c.height=Math.round(h*d)}const ctx=c.getContext('2d');ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,w,h);return[ctx,w,h]}
+const mm=(a,b)=>[0,1,2].flatMap(i=>[0,1,2].map(j=>[0,1,2].reduce((s,k)=>s+a[i*3+k]*b[k*3+j],0)));
+const mv=(a,b)=>[0,1,2].map(i=>a[i*3]*b[0]+a[i*3+1]*b[1]+a[i*3+2]*b[2]);const add=(a,b)=>a.map((x,i)=>x+b[i]);const rad=x=>x*Math.PI/180;
+const rx=d=>{let c=Math.cos(rad(d)),s=Math.sin(rad(d));return[1,0,0,0,c,-s,0,s,c]},ry=d=>{let c=Math.cos(rad(d)),s=Math.sin(rad(d));return[c,0,s,0,1,0,-s,0,c]},rz=d=>{let c=Math.cos(rad(d)),s=Math.sin(rad(d));return[c,-s,0,s,c,0,0,0,1]};
+function fk(q){return data.design.hand.fingers.map((f,i)=>{let p=f.root.slice(),R=mm(mm(rz(f.base_rpy[2]),ry(f.base_rpy[1])),rx(f.base_rpy[0])),ps=[p];R=mm(R,rz(-q[i*4]));p=add(p,mv(R,[0,0,data.design.hand.root_axis_offset_z]));ps.push(p);for(let k=0;k<3;k++){if(i===4&&k===1)R=mm(R,rz(f.mcp_mount_yaw));R=mm(R,rx(q[i*4+k+1]));p=add(p,mv(R,[0,f.links[k],0]));ps.push(p)}return ps})}
+function hand(){const[c,w,h]=resize($('hand'));const sc=Math.min(w/480,h/440),cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);const project=p=>{let x=p[0],y=p[1]-160,z=p[2],u=cy*x+sy*z,v=-sy*x+cy*z;return[w/2+sc*u,h*.53-sc*(cp*y-sp*v)]};function line(ps,color,dashed,width){c.beginPath();ps.map(project).forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dashed?[5,5]:[]);c.lineCap='round';c.stroke();c.setLineDash([])}line([[-116,0,-24],[-116,195,-24],[116,195,-24],[116,0,-24],[-116,0,-24]],'#c5d0d7',false,1.5);const target=fk(tr.command_deg[frame]),actual=fk(tr.actual_deg[frame]);target.forEach(ps=>line(ps,'#bd7621',true,3));actual.forEach(ps=>{line(ps,'#007f89',false,5);ps.slice(1).forEach(p=>{const[x,y]=project(p);c.beginPath();c.arc(x,y,3.2,0,Math.PI*2);c.fillStyle='#164d53';c.fill()})});c.font='12px system-ui';c.fillStyle='#607581';c.fillText('고정 손바닥 / 관절 중심 표시',14,h-14)}
+function plot(){const[c,w,h]=resize($('plot')),l=45,r=w-12,t=25,b=h-32,vals=tr.command_deg.map(x=>x[joint]).concat(tr.actual_deg.map(x=>x[joint]));let lo=Math.min(...vals)-5,hi=Math.max(...vals)+5;const x=i=>l+(r-l)*tr.time_s[i]/tr.time_s.at(-1),y=v=>b-(b-t)*(v-lo)/(hi-lo);c.font='11px system-ui';c.lineWidth=1;for(let i=0;i<=4;i++){let v=lo+(hi-lo)*i/4,Y=y(v);c.strokeStyle='#e6ecef';c.beginPath();c.moveTo(l,Y);c.lineTo(r,Y);c.stroke();c.fillStyle='#536a77';c.fillText(v.toFixed(0),5,Y+4)}for(let k=0;k<=4;k++){let X=l+(r-l)*k/4;c.fillText((tr.time_s.at(-1)*k/4).toFixed(2)+'s',X-12,h-10)}for(const[key,color,dash]of[['command_deg','#bd7621',[5,4]],['actual_deg','#007f89',[]]]){c.strokeStyle=color;c.lineWidth=2;c.setLineDash(dash);c.beginPath();tr[key].forEach((v,i)=>i?c.lineTo(x(i),y(v[joint])):c.moveTo(x(i),y(v[joint])));c.stroke()}c.setLineDash([]);c.strokeStyle='#263e4b';c.beginPath();c.moveTo(x(frame),t);c.lineTo(x(frame),b);c.stroke()}
+jl.forEach((label,i)=>{let row=document.createElement('tr');row.innerHTML='<td></td><td></td><td></td><td></td>';row.children[0].textContent=label;row.onclick=()=>{joint=i;$('joint').value=i;draw()};$('rows').appendChild(row)});
+function draw(){hand();plot();$('time').value=frame;$('stamp').textContent=tr.time_s[frame].toFixed(2)+' s';[...$('rows').children].forEach((r,i)=>{const q=tr.command_deg[frame][i],a=tr.actual_deg[frame][i];r.className=i===joint?'selected':'';r.children[1].textContent=q.toFixed(1);r.children[2].textContent=a.toFixed(1);r.children[3].textContent=(a-q).toFixed(1)})}
+$('variant').onchange=()=>{tr=data.traces.find(t=>t.variant===$('variant').value);elapsed=0;frame=0;metrics();draw()};$('joint').onchange=()=>{joint=+$('joint').value;draw()};$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'일시정지':'재생'};$('reset').onclick=()=>{elapsed=0;frame=0;draw()};$('time').oninput=()=>{frame=+$('time').value;elapsed=tr.time_s[frame];playing=false;$('play').textContent='재생';draw()};
+let drag=null;$('hand').onpointerdown=e=>{drag=[e.clientX,e.clientY];$('hand').setPointerCapture(e.pointerId)};$('hand').onpointermove=e=>{if(drag){yaw+=(e.clientX-drag[0])*.01;pitch=Math.max(-1.2,Math.min(1.2,pitch+(e.clientY-drag[1])*.01));drag=[e.clientX,e.clientY];draw()}};$('hand').onpointerup=()=>drag=null;
+function tick(now){if(playing){elapsed+=Math.max(0,(now-last)/1000)*+$('speed').value;elapsed%=tr.time_s.at(-1);frame=Math.max(0,Math.min(tr.time_s.length-1,Math.round(elapsed/(tr.time_s[1]-tr.time_s[0]))));draw()}last=now;requestAnimationFrame(tick)}window.onresize=draw;metrics();draw();requestAnimationFrame(tick);
+</script></html>'''
+text = HTML.replace('__PAYLOAD__', json.dumps(payload, ensure_ascii=False, separators=(',', ':'), allow_nan=False).replace('</', '<\\/'))
+out = a.output or a.results/'viewer.html'
+out.parent.mkdir(parents=True, exist_ok=True)
+out.write_text(text, encoding='utf-8')
+print(json.dumps({'output':str(out),'trajectories':len(traces),'display':'joint-center FK; no collision or hardware validation'}))
