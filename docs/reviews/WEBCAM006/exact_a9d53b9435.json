@@ -1,0 +1,36 @@
+{
+  "sha": "a9d53b9435888efb2e6bbb67bb800000945ad143",
+  "unit_tests": 75,
+  "unit_tests_passed": true,
+  "manifest_files": 41,
+  "exact_raw_coordinates": true,
+  "exact_screen_pixels": true,
+  "explicit_captures": 2,
+  "displayed_frames": 4,
+  "frozen_form_report_equal": true,
+  "source_unchanged": true,
+  "scope": "Same agent in a fresh exact-SHA archive. Not an independent audit or live hand accuracy acceptance.",
+  "live_marked_case_checks": [
+    {
+      "case_id": "case_0001",
+      "seq": 778,
+      "detection_present": true
+    },
+    {
+      "case_id": "case_0002",
+      "seq": 945,
+      "detection_present": true
+    },
+    {
+      "case_id": "case_0003",
+      "seq": 1066,
+      "detection_present": true
+    },
+    {
+      "case_id": "case_0004",
+      "seq": 1202,
+      "detection_present": true
+    }
+  ],
+  "private_pixels_and_coordinates_committed": false
+}
