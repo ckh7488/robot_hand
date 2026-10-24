@@ -1,0 +1,1055 @@
+{
+  "scope": "READ-ONLY CP006 mount planning from CP005 commit25ba8cd01c07ff9b0efdf65212911e6e629b3270; options unverified; no candidate regeneration",
+  "source_hashes": {
+    "cad/remote_drive_v1/design.json": "acf9159246c43acb24bc5d5524fa34b0a498e23e599f468b5c6f0bf43a68ad0c",
+    "cad/remote_drive_v1/generated/placements_mass_inertia.json": "e3fec888bde206b7ff30092694bfc223345342076f7fb00d34e331ab8dc7e006",
+    "cad/modular_roots_v9/build_candidate.py": "f9d8998b2b44331edc79885c9e582adee0cfae54ad3d6b53e50c10b6c631eac4",
+    "cad/modular_roots_v9/parts/Palm_back_chassis.step": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429",
+    "cad/modular_roots_v9/parts/M077_stator.step": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+    "cad/modular_roots_v9/parts/S101_relief.step": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec"
+  },
+  "units": "mm",
+  "current_plate_to_motor_gap_mm": 1.5,
+  "plate_motor_gap_basis": {
+    "canonical_motor_bounds_mm": [
+      -28.8,
+      -24.500000000000068,
+      -10.000000000000002,
+      -2.999999928018835,
+      9.500000000000066,
+      10.000000000000066
+    ],
+    "canonical_plate_bounds_mm": [
+      -30.4,
+      -27.5,
+      -14.5,
+      1.6000000000000014,
+      12.5,
+      -11.5
+    ]
+  },
+  "actual_vendor_cylinder_matches": [
+    {
+      "radius_mm": 0.8,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        7.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -21.5,
+        7.5,
+        -8.8,
+        -6.5,
+        8.3,
+        -7.199999999999997
+      ]
+    },
+    {
+      "radius_mm": 0.8,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        7.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -21.5,
+        6.7,
+        -8.8,
+        -6.5,
+        7.5,
+        -7.199999999999997
+      ]
+    },
+    {
+      "radius_mm": 0.8,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        -22.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -21.5,
+        -22.5,
+        -8.8,
+        -6.5,
+        -21.7,
+        -7.199999999999997
+      ]
+    },
+    {
+      "radius_mm": 0.8,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        -22.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -21.5,
+        -23.3,
+        -8.8,
+        -6.5,
+        -22.5,
+        -7.199999999999997
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        -1.0,
+        0.0,
+        2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        7.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -6.5,
+        7.5,
+        -9.0,
+        -3.0,
+        8.5,
+        -7.0
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        -1.0,
+        0.0,
+        2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        7.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -6.5,
+        6.5,
+        -9.0,
+        -3.0,
+        7.5,
+        -7.0
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        -1.0,
+        0.0,
+        2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        -22.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -6.5,
+        -22.5,
+        -9.0,
+        -3.0,
+        -21.5,
+        -7.0
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        -1.0,
+        0.0,
+        2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -6.5,
+        -22.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -6.5,
+        -23.5,
+        -9.0,
+        -3.0,
+        -22.5,
+        -7.0
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -21.5,
+        7.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -26.0,
+        7.5,
+        -9.0,
+        -21.5,
+        8.5,
+        -6.999999999999999
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -21.5,
+        7.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -26.0,
+        6.5,
+        -9.0,
+        -21.5,
+        7.5,
+        -6.999999999999999
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -21.5,
+        -22.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -26.0,
+        -22.5,
+        -9.0,
+        -21.5,
+        -21.5,
+        -6.999999999999999
+      ]
+    },
+    {
+      "radius_mm": 1.0,
+      "axis_local": [
+        1.0,
+        0.0,
+        -2.22044604925E-16
+      ],
+      "axis_point_local_mm": [
+        -21.5,
+        -22.5,
+        -8.0
+      ],
+      "face_bounds_mm": [
+        -26.0,
+        -23.5,
+        -9.0,
+        -21.5,
+        -22.5,
+        -6.999999999999999
+      ]
+    }
+  ],
+  "modeled_body_TAP_screw_axes_from_V9_source": {
+    "frame": "canonical motor, shaft+X",
+    "lines_yz_mm": [
+      [
+        7.5,
+        -8
+      ],
+      [
+        -22.5,
+        -8
+      ]
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "modeled_head_seats_x_mm": [
+      -27.3,
+      -1.7
+    ],
+    "size": "M2 TAP8 envelopes; screw length/engagement must be rechecked in new bracket"
+  },
+  "S101_candidate": {
+    "source": "cad/modular_roots_v9/parts/S101_relief.step",
+    "bounds_mm": [
+      -28.80000000057,
+      -24.500000000001286,
+      -13.0000001,
+      -0.1999999994291117,
+      9.500000000001284,
+      -6.0
+    ],
+    "intersection_with_existing_generic_plate_mm3": 823.666146567759,
+    "status": "Reuse option only; interference and attachment compatibility not approved"
+  },
+  "fixed_plate_locations": [
+    {
+      "name": "index_remote_pip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/index_remote_pip_mount_plate.step",
+      "center_world_mm": [
+        -24.0,
+        42.5,
+        -3.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        -40.0,
+        22.5,
+        -4.5,
+        -8.0,
+        62.5,
+        -1.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 53.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            -37.0,
+            27.5,
+            -3.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9780375889463508,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -37.0,
+            57.5,
+            -3.0
+          ],
+          "floor_8mm_foot_material_fraction": 1.0000000000000004,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -11.0,
+            27.5,
+            -3.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.7153962970588444,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -11.0,
+            57.5,
+            -3.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9152101285922951,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "index_remote_dip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/index_remote_dip_mount_plate.step",
+      "center_world_mm": [
+        72.0,
+        102.5,
+        -37.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        56.0,
+        82.5,
+        -38.5,
+        88.0,
+        122.5,
+        -35.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 19.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            59.00000000000001,
+            87.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.7008031493621867,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            59.00000000000001,
+            117.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.23215603270880072,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            85.0,
+            87.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            85.0,
+            117.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "middle_remote_pip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/middle_remote_pip_mount_plate.step",
+      "center_world_mm": [
+        24.0,
+        57.5,
+        -37.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        8.0,
+        37.5,
+        -38.5,
+        40.00000000000057,
+        77.5,
+        -35.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 19.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            11.0,
+            42.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9888538470917893,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            11.0,
+            72.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 1.0000000000000002,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            37.0,
+            42.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            37.0,
+            72.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9999999999999996,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "middle_remote_dip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/middle_remote_dip_mount_plate.step",
+      "center_world_mm": [
+        24.0,
+        102.5,
+        -37.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        8.0,
+        82.5,
+        -38.5,
+        40.0,
+        122.5,
+        -35.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 19.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            11.0,
+            87.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.5901972849531486,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            11.0,
+            117.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.35284737324401955,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            37.0,
+            87.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.01346347497371489,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            37.0,
+            117.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.5401471686244915,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "ring_remote_pip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/ring_remote_pip_mount_plate.step",
+      "center_world_mm": [
+        -24.0,
+        57.5,
+        -37.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        -40.0,
+        37.5,
+        -38.5,
+        -8.0,
+        77.5,
+        -35.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 19.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            -37.0,
+            42.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 1.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -37.0,
+            72.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9608142477866288,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -11.0,
+            42.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.6978256521172642,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -11.0,
+            72.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9999999999999998,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "ring_remote_dip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/ring_remote_dip_mount_plate.step",
+      "center_world_mm": [
+        -17.0,
+        92.5,
+        -11.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        -33.0,
+        72.5,
+        -12.5,
+        -1.0,
+        112.5,
+        -9.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 45.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            -30.0,
+            77.5,
+            -11.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -30.0,
+            107.5,
+            -11.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.28690523385906846,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -4.0,
+            77.5,
+            -11.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.20680874424646828,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -4.0,
+            107.5,
+            -11.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.7059517526166692,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "little_remote_pip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/little_remote_pip_mount_plate.step",
+      "center_world_mm": [
+        -55.00000000000001,
+        75.5,
+        13.000000000000002
+      ],
+      "normal_world": [
+        1.2246467991473532E-16,
+        0.0,
+        -1.0
+      ],
+      "bounds_mm": [
+        -71.0,
+        55.5,
+        11.499999999999996,
+        -39.0,
+        95.5,
+        14.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 69.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        1.2246467991473532E-16,
+        0.0,
+        -1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            -42.00000000000001,
+            60.5,
+            13.000000000000004
+          ],
+          "floor_8mm_foot_material_fraction": 1.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -42.00000000000001,
+            90.5,
+            13.000000000000004
+          ],
+          "floor_8mm_foot_material_fraction": 1.0000000000000018,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -68.00000000000001,
+            60.5,
+            13.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -68.00000000000001,
+            90.5,
+            13.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    },
+    {
+      "name": "little_remote_dip_mount_plate",
+      "saved_step": "cad/remote_drive_v1/generated/parts/little_remote_dip_mount_plate.step",
+      "center_world_mm": [
+        -62.0,
+        80.5,
+        -37.0
+      ],
+      "normal_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_mm": [
+        -78.0,
+        60.5,
+        -38.5,
+        -46.0,
+        100.5,
+        -35.5
+      ],
+      "nominal_vertical_gap_from_floor_top_to_plate_bottom_mm": 19.5,
+      "generic_plate_holes_diameter_mm": 3.3,
+      "hole_axes_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "holes": [
+        {
+          "center_world_mm": [
+            -75.0,
+            65.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.0,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -75.0,
+            95.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.1357027272347006,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -49.0,
+            65.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.42863209040215755,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        },
+        {
+          "center_world_mm": [
+            -49.0,
+            95.5,
+            -37.0
+          ],
+          "floor_8mm_foot_material_fraction": 0.9999999999999998,
+          "note": "Geometric floor-material screen only; no fixture/support/fastener/access validation"
+        }
+      ]
+    }
+  ],
+  "existing_chassis_features": {
+    "floor_z_mm": [
+      -63,
+      -58
+    ],
+    "floor_is_pocketed_not_continuous": true,
+    "cover_bosses_xy_mm": [
+      [
+        -39,
+        15
+      ],
+      [
+        -62,
+        48
+      ],
+      [
+        -86,
+        98
+      ],
+      [
+        -40,
+        106
+      ],
+      [
+        2,
+        121
+      ]
+    ],
+    "cover_boss_radius_mm": 6,
+    "cover_boss_nut_slot_z_mm": [
+      17.35,
+      20.05
+    ],
+    "cover_is_nonstructural_skin_mm": 2.4,
+    "saddle_bolt_axes_xy_mm": [
+      [
+        -32,
+        8
+      ],
+      [
+        -32,
+        28
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        28
+      ]
+    ],
+    "root_cartridge_bolt_axes_xy_mm": [
+      [
+        97,
+        138
+      ],
+      [
+        97,
+        166
+      ],
+      [
+        49,
+        148
+      ],
+      [
+        49,
+        176
+      ],
+      [
+        1,
+        142
+      ],
+      [
+        1,
+        170
+      ],
+      [
+        -47,
+        127
+      ],
+      [
+        -47,
+        155
+      ]
+    ],
+    "floor_load_rails": {
+      "width_mm": 16,
+      "endpoints_xy_mm": [
+        [
+          [
+            8,
+            22
+          ],
+          [
+            90,
+            147
+          ]
+        ],
+        [
+          [
+            -3,
+            22
+          ],
+          [
+            42,
+            157
+          ]
+        ],
+        [
+          [
+            -20,
+            22
+          ],
+          [
+            -6,
+            151
+          ]
+        ],
+        [
+          [
+            -32,
+            22
+          ],
+          [
+            -54,
+            136
+          ]
+        ]
+      ]
+    },
+    "cross_ribs": {
+      "y_ranges_mm": [
+        [
+          30,
+          34
+        ],
+        [
+          83,
+          87
+        ]
+      ],
+      "z_range_mm": [
+        -58,
+        -49
+      ]
+    }
+  },
+  "planning_status": "FINAL READ-ONLY PLANNING NOTE; all design options unverified; no repository changes or CAD regeneration",
+  "key_findings": [
+    "Motor-to-cradle attachment is missing before cradle-to-chassis support can be designed. Actual vendor STEP cylindrical mounting lines run along canonical X at (y,z)=(7.5,-8) and (-22.5,-8), with radii0.8/1.0mm. These do not align with current generic plate holes along Z.",
+    "Current motor and plate are separated by1.5mm. The plate is not a modeled motor bracket. M2 TAP8 identification/head seats are from retained V9 hardware code; the cylindrical STEP measurements independently establish the axes, not thread specification or tightening engagement.",
+    "S101_relief is a reuse candidate, but inserting it at the current motor transform overlaps the generic plate by823.666147mm3. It requires a redesigned adapter/base, not simply another part added to the present assembly.",
+    "The chassis floor has windows and load rails. An8mm-diameter nominal foot at many current plate-hole XY projections has no floor material; straight standoffs at all32 holes are not viable without a new supported footprint.",
+    "Index PIP and ring DIP plates are elevated; their straight support columns may cross lower motors. Little PIP has its plate above the motor. These require lateral/bridged support or a newly validated bank orientation, not an assumed vertical post."
+  ],
+  "unverified_support_options": [
+    {
+      "option": "A",
+      "concept": "Reuse aligned S101 frame plus new adapter with correct factory base pattern and explicit M2 body/base screws, then a removable internal bridge tied to existing saddle and root-cartridge bolt lands.",
+      "basis": "Existing fastening geometry gives a concrete motor-to-cradle interface; saddle/root anchors already exist.",
+      "limits": "Existing bolt grips, nut access, frame collisions and multi-axis tendon loads need new checks; root removal must remain possible."
+    },
+    {
+      "option": "B",
+      "concept": "Custom side-ear cradle matching actual motor X-axis mounting lines, supported on a new subframe over retained16mm floor rails and cross ribs.",
+      "basis": "Allows integrated supports rather than eight independent tall posts.",
+      "limits": "No support geometry or screw access proven. New candidate chassis holes/inserts may be needed; frozen V9 source must remain immutable."
+    },
+    {
+      "option": "C",
+      "concept": "Local bridge/clamp connections to existing cover bosses for raised banks.",
+      "basis": "Existing6mm-radius boss cylinders are physical locations.",
+      "limits": "Avoid nut-loading slots atZ17.35–20.05 and existing cover screws. Do not use the2.4mm nonstructural cover skin as the motor load path. Clamp/preload/strength unverified."
+    }
+  ],
+  "required_geometry_tests": [
+    "Show an explicit connection graph for every fixed motor: vendor mounting holes -> cradle -> adapter/support -> actual chassis anchor. No floating plate or missing fastener may count as mounted.",
+    "Remeasure saved STEP cylinder axes and hole-to-screw alignment; derive screw grip/engagement and bottoming margins from actual purchased screw/thread geometry. M3 generic plate holes cannot stand in for M2 vendor attachments.",
+    "Exactly one connected solid per manufactured new part; valid BReps; explicit mating-only exemptions for intended bearing/fastener interfaces, never blanket same-body collision suppression.",
+    "Check exact neutral overlaps including frame/motor/fasteners/supports and lower stacked motors. Then articulated finger and thumb ranges plus relevant compound poses; neutral clearance alone is insufficient.",
+    "Sweep screw insertion and real driver/bit envelopes along both motor X directions and plate/support Z directions. Include spool removal/order, nut insertion, root-cartridge removal, cover removal and wrist-saddle access.",
+    "Verify actual bearing/contact areas against pocketed floor/rails, not only floor height. The current8mm foot fractions are a screening measurement, not a load-bearing pass.",
+    "Check power/communication connector withdrawal envelopes, cable bend radius, tendon guides and spool-side clearance separately from rigid-part collision.",
+    "Recompute whole physical bounds, mass/COM/full tensors and source hashes; support stiffness and combined tendon reactions require a separate structural check and bench confirmation."
+  ],
+  "source_references": [
+    "cad/remote_drive_v1/generate.py:169-189 (motor and generic plate)",
+    "cad/remote_drive_v1/generated/placements_mass_inertia.json (actual eight plate placements)",
+    "cad/remote_drive_v1/generated/parts/*_remote_*_mount_plate.step (saved world-coordinate plates)",
+    "cad/modular_roots_v9/parts/M077_stator.step (measured vendor cylinder surfaces)",
+    "cad/modular_roots_v9/parts/S101_relief.step (measured candidate frame and overlap)",
+    "cad/modular_roots_v9/build_candidate.py:119-165 (vendor normalization and modeled M2 TAP hardware)",
+    "cad/modular_roots_v9/build_candidate.py:229-278 (cover bosses, saddle holes, floor windows/rails)",
+    "work/cp005_mechanical_plan/scope_mounts.py (read-only measurement reproduction)"
+  ]
+}

@@ -1,0 +1,1346 @@
+{
+  "target_sha": "25ba8cd01c07ff9b0efdf65212911e6e629b3270",
+  "clean_checkout_at_review": true,
+  "review_tool_sha256": "d425bb06346470ff52c34ed496f853b4da776a22d71e8177f05827275583f755",
+  "review_tool_within_target_checkout": true,
+  "frozen_hashes_checked": 222,
+  "preserved_dimensions": [
+    "palm_width",
+    "palm_length",
+    "root_axis_offset_z",
+    "fingers"
+  ],
+  "joint_count": 20,
+  "motor_count": 20,
+  "relocated_motor_count": 10,
+  "joint_frame_max_error_mm_or_unitless": 0.0,
+  "body_count": 21,
+  "massive_component_count": 183,
+  "saved_STEP_remeasured_component_count": 183,
+  "unique_STEP_files_read": 80,
+  "part_max_volume_error_mm3": 4.622052074410021e-09,
+  "part_max_com_error_mm": 8.412825991399586e-12,
+  "part_max_inertia_error_kg_m2": 3.2708177258224808e-18,
+  "body_max_mass_error_kg": 0.0,
+  "body_max_com_error_mm": 8.78941364135244e-12,
+  "body_max_inertia_error_kg_m2": 6.965998958219366e-18,
+  "hand_assumed_mass_kg": 1.4409381681450186,
+  "numerical_contract_consistency_passed": true,
+  "manufacturing_release": false,
+  "physical_latency_validated": false,
+  "scope": "Independent saved STEP mass-property remeasurement and contract aggregation; preserved geometry inputs, declared joint frames, motor body membership, positive inertias and frozen evidence. Complete mating-bore/pin alignment and assembly feasibility are not established. No whole-range collision, cable-routing validation, motor calibration or hardware performance approval.",
+  "simulation_report_review": {
+    "source_hash_count": 11,
+    "remote20_bidirectional_joint_coverage": 20,
+    "CAD_mass_and_transmission_match": true,
+    "event_summary_reaggregation": [
+      {
+        "case": "baseline20/small5",
+        "event_count": 240,
+        "missing_events": 23,
+        "valid_event_max_ms": 76.52860985210359,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/small10",
+        "event_count": 240,
+        "missing_events": 12,
+        "valid_event_max_ms": 65.04558681132322,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/large45",
+        "event_count": 240,
+        "missing_events": 10,
+        "valid_event_max_ms": 243.61996363606076,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 12,
+        "valid_event_max_ms": 230.14203982269032,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/upstream_hold",
+        "event_count": 60,
+        "missing_events": 5,
+        "valid_event_max_ms": 238.23097988295282,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 52,
+        "valid_event_max_ms": 120.58979996033992,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/independent_distal",
+        "event_count": 60,
+        "missing_events": 0,
+        "valid_event_max_ms": 8.870083068495793,
+        "simulated_100ms_event_budget_met": true
+      },
+      {
+        "case": "remote20/small5",
+        "event_count": 240,
+        "missing_events": 17,
+        "valid_event_max_ms": 65.58799877474242,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/small10",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 43.42845251758831,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/large45",
+        "event_count": 240,
+        "missing_events": 9,
+        "valid_event_max_ms": 136.48704059849902,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 112.88554395258177,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/upstream_hold",
+        "event_count": 60,
+        "missing_events": 2,
+        "valid_event_max_ms": 39.985982146144124,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 99.67705146240246,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/independent_distal",
+        "event_count": 60,
+        "missing_events": 0,
+        "valid_event_max_ms": 8.03024500734928,
+        "simulated_100ms_event_budget_met": true
+      },
+      {
+        "case": "remote16/small5",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 65.4443757942268,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/small10",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 42.240142311540495,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/large45",
+        "event_count": 240,
+        "missing_events": 9,
+        "valid_event_max_ms": 136.66491090705168,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 112.88554395258177,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/upstream_hold",
+        "event_count": 60,
+        "missing_events": 2,
+        "valid_event_max_ms": 40.741124664187886,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 23,
+        "valid_event_max_ms": 99.67705146240246,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/independent_distal",
+        "event_count": 60,
+        "missing_events": 0,
+        "valid_event_max_ms": 8.441670346400088,
+        "simulated_100ms_event_budget_met": true
+      },
+      {
+        "case": "sensitivity/horizontal_gravity",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 107.39071537911227,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/higher_cable_friction",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 100.72490498952725,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/soft_cable",
+        "event_count": 240,
+        "missing_events": 40,
+        "valid_event_max_ms": 91.51701929559053,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/low_preload",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 98.90082888117013,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/mass_1_5x",
+        "event_count": 240,
+        "missing_events": 57,
+        "valid_event_max_ms": 96.31004175754305,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/reduced_upstream_coupling",
+        "event_count": 240,
+        "missing_events": 29,
+        "valid_event_max_ms": 98.22736835440615,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/negative_upstream_coupling",
+        "event_count": 240,
+        "missing_events": 46,
+        "valid_event_max_ms": 114.74568262527607,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/slow_command_bus",
+        "event_count": 240,
+        "missing_events": 22,
+        "valid_event_max_ms": 91.21344280731869,
+        "simulated_100ms_event_budget_met": false
+      }
+    ],
+    "additive_metric_review": {
+      "baseline20/small5": {
+        "classification_counts": {
+          "reached": 213,
+          "early_crossing": 4,
+          "preexisting_level": 15,
+          "never_reached": 8
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 4.134205864613806
+      },
+      "baseline20/small10": {
+        "classification_counts": {
+          "reached": 224,
+          "early_crossing": 4,
+          "preexisting_level": 11,
+          "never_reached": 1
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 10.756743132280459
+      },
+      "baseline20/large45": {
+        "classification_counts": {
+          "reached": 196,
+          "early_crossing": 34,
+          "preexisting_level": 7,
+          "never_reached": 3
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 53.778456913118276
+      },
+      "baseline20/fast90_150ms": {
+        "classification_counts": {
+          "reached": 218,
+          "early_crossing": 10,
+          "preexisting_level": 12,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 97.87533915428841
+      },
+      "baseline20/upstream_hold": {
+        "classification_counts": {
+          "reached": 53,
+          "early_crossing": 2,
+          "preexisting_level": 5,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 40,
+        "all_axis_holds": 2,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 79.28823415107516
+      },
+      "baseline20/rapid_reversal": {
+        "classification_counts": {
+          "reached": 175,
+          "early_crossing": 13,
+          "preexisting_level": 34,
+          "never_reached": 18
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 105.0096913369756
+      },
+      "baseline20/independent_distal": {
+        "classification_counts": {
+          "reached": 60,
+          "early_crossing": 0,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 4.88594909351373
+      },
+      "remote20/small5": {
+        "classification_counts": {
+          "reached": 218,
+          "early_crossing": 5,
+          "preexisting_level": 13,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 3.03679767598702
+      },
+      "remote20/small10": {
+        "classification_counts": {
+          "reached": 230,
+          "early_crossing": 3,
+          "preexisting_level": 6,
+          "never_reached": 1
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 5.003051071291261
+      },
+      "remote20/large45": {
+        "classification_counts": {
+          "reached": 215,
+          "early_crossing": 16,
+          "preexisting_level": 5,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 4.705108137506947
+      },
+      "remote20/fast90_150ms": {
+        "classification_counts": {
+          "reached": 212,
+          "early_crossing": 21,
+          "preexisting_level": 7,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 61.649608473102134
+      },
+      "remote20/upstream_hold": {
+        "classification_counts": {
+          "reached": 51,
+          "early_crossing": 7,
+          "preexisting_level": 2,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 40,
+        "all_axis_holds": 2,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 43.93580940173
+      },
+      "remote20/rapid_reversal": {
+        "classification_counts": {
+          "reached": 212,
+          "early_crossing": 9,
+          "preexisting_level": 14,
+          "never_reached": 5
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 98.92646702664584
+      },
+      "remote20/independent_distal": {
+        "classification_counts": {
+          "reached": 60,
+          "early_crossing": 0,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 2.4511346249934185
+      },
+      "remote16/small5": {
+        "classification_counts": {
+          "reached": 216,
+          "early_crossing": 5,
+          "preexisting_level": 15,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 8.881784197001252e-16,
+        "task_raw_max_error_deg": 3.03679767598702
+      },
+      "remote16/small10": {
+        "classification_counts": {
+          "reached": 230,
+          "early_crossing": 3,
+          "preexisting_level": 6,
+          "never_reached": 1
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 1.7763568394002505e-15,
+        "task_raw_max_error_deg": 5.0030510712912575
+      },
+      "remote16/large45": {
+        "classification_counts": {
+          "reached": 215,
+          "early_crossing": 16,
+          "preexisting_level": 5,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 7.105427357601002e-15,
+        "task_raw_max_error_deg": 4.705108137506947
+      },
+      "remote16/fast90_150ms": {
+        "classification_counts": {
+          "reached": 209,
+          "early_crossing": 24,
+          "preexisting_level": 7,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 1.4210854715202004e-14,
+        "task_raw_max_error_deg": 61.649608473102134
+      },
+      "remote16/upstream_hold": {
+        "classification_counts": {
+          "reached": 51,
+          "early_crossing": 7,
+          "preexisting_level": 2,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 40,
+        "all_axis_holds": 2,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 3.552713678800501e-15,
+        "task_raw_max_error_deg": 43.93580940173
+      },
+      "remote16/rapid_reversal": {
+        "classification_counts": {
+          "reached": 207,
+          "early_crossing": 10,
+          "preexisting_level": 16,
+          "never_reached": 7
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 7.105427357601002e-15,
+        "task_raw_max_error_deg": 98.92646702664585
+      },
+      "remote16/independent_distal": {
+        "classification_counts": {
+          "reached": 60,
+          "early_crossing": 0,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 59.99999999999999,
+        "task_raw_max_error_deg": 60.2690015309366
+      },
+      "sensitivity/horizontal_gravity": {
+        "classification_counts": {
+          "reached": 224,
+          "early_crossing": 9,
+          "preexisting_level": 5,
+          "never_reached": 2
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 74.25419851513124
+      },
+      "sensitivity/higher_cable_friction": {
+        "classification_counts": {
+          "reached": 210,
+          "early_crossing": 11,
+          "preexisting_level": 14,
+          "never_reached": 5
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 99.34813726780838
+      },
+      "sensitivity/soft_cable": {
+        "classification_counts": {
+          "reached": 177,
+          "early_crossing": 23,
+          "preexisting_level": 26,
+          "never_reached": 14
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 99.47530773881586
+      },
+      "sensitivity/low_preload": {
+        "classification_counts": {
+          "reached": 210,
+          "early_crossing": 11,
+          "preexisting_level": 14,
+          "never_reached": 5
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 98.7241721773497
+      },
+      "sensitivity/mass_1_5x": {
+        "classification_counts": {
+          "reached": 142,
+          "early_crossing": 41,
+          "preexisting_level": 45,
+          "never_reached": 12
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 94.58752802739498
+      },
+      "sensitivity/reduced_upstream_coupling": {
+        "classification_counts": {
+          "reached": 164,
+          "early_crossing": 47,
+          "preexisting_level": 21,
+          "never_reached": 8
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 99.46138945729682
+      },
+      "sensitivity/negative_upstream_coupling": {
+        "classification_counts": {
+          "reached": 182,
+          "early_crossing": 12,
+          "preexisting_level": 27,
+          "never_reached": 19
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 111.3522429763337
+      },
+      "sensitivity/slow_command_bus": {
+        "classification_counts": {
+          "reached": 210,
+          "early_crossing": 8,
+          "preexisting_level": 16,
+          "never_reached": 6
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 96.63036662291069
+      }
+    },
+    "command_contract_review": {
+      "cases_with_identical_requested_tasks": 7,
+      "reconstructed_runs": [
+        {
+          "case": "baseline20/small5",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "baseline20/small10",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "baseline20/large45",
+          "reconstructed_command_samples": 16001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 201
+        },
+        {
+          "case": "baseline20/fast90_150ms",
+          "reconstructed_command_samples": 12801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 161
+        },
+        {
+          "case": "baseline20/upstream_hold",
+          "reconstructed_command_samples": 9201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 116
+        },
+        {
+          "case": "baseline20/rapid_reversal",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 111
+        },
+        {
+          "case": "baseline20/independent_distal",
+          "reconstructed_command_samples": 18001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 226
+        },
+        {
+          "case": "remote20/small5",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote20/small10",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote20/large45",
+          "reconstructed_command_samples": 16001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 201
+        },
+        {
+          "case": "remote20/fast90_150ms",
+          "reconstructed_command_samples": 12801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 161
+        },
+        {
+          "case": "remote20/upstream_hold",
+          "reconstructed_command_samples": 9201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 116
+        },
+        {
+          "case": "remote20/rapid_reversal",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 111
+        },
+        {
+          "case": "remote20/independent_distal",
+          "reconstructed_command_samples": 18001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 226
+        },
+        {
+          "case": "remote16/small5",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 8.881784197001252e-16,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote16/small10",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 1.7763568394002505e-15,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote16/large45",
+          "reconstructed_command_samples": 16001,
+          "projection_loss_max_deg": 7.105427357601002e-15,
+          "display_samples_checked": 201
+        },
+        {
+          "case": "remote16/fast90_150ms",
+          "reconstructed_command_samples": 12801,
+          "projection_loss_max_deg": 1.4210854715202004e-14,
+          "display_samples_checked": 161
+        },
+        {
+          "case": "remote16/upstream_hold",
+          "reconstructed_command_samples": 9201,
+          "projection_loss_max_deg": 3.552713678800501e-15,
+          "display_samples_checked": 116
+        },
+        {
+          "case": "remote16/rapid_reversal",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 7.105427357601002e-15,
+          "display_samples_checked": 111
+        },
+        {
+          "case": "remote16/independent_distal",
+          "reconstructed_command_samples": 18001,
+          "projection_loss_max_deg": 59.99999999999999,
+          "display_samples_checked": 226
+        },
+        {
+          "case": "sensitivity/horizontal_gravity",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/higher_cable_friction",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/soft_cable",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/low_preload",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/mass_1_5x",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/reduced_upstream_coupling",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/negative_upstream_coupling",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/slow_command_bus",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        }
+      ],
+      "scope": "Independent command reconstruction from committed endpoints/times, exact full-rate projection-loss arithmetic, and rounded display-trace consistency. Decimated actual angles do not revalidate fine-rate events or sustained settling."
+    },
+    "model_test_evidence_review": {
+      "producer_test_passed": true,
+      "producer_tests_run": 12,
+      "source_hashes_current": true,
+      "small_motion_numerical_evidence": {
+        "coarse_dt_s": 0.000125,
+        "fine_dt_s": 6.25e-05,
+        "declared_max_difference_limit_deg": 0.02,
+        "full_trajectory_max_difference_deg": 0.018853313931690333,
+        "hold_quality_rows": 80,
+        "hold_quality_classifications_stable": true,
+        "changed_hold_classifications": [],
+        "criterion": "Both maximum angle difference<=0.02deg and all hold-quality statuses identical; fixed before run"
+      },
+      "scope": "Freshness and stated-threshold consistency of producer test results; tests are not rerun by this reviewer."
+    },
+    "scope": "Checks committed event arithmetic/coverage and CAD-to-simulation data consistency; does not independently replay or calibrate the dynamics engine."
+  },
+  "compiled_model_frame_review": {
+    "poses": 13,
+    "joints_per_pose": 20,
+    "max_position_error_m": 4.0245584642661925e-14,
+    "max_rotation_matrix_error": 6.124545315344676e-13,
+    "max_axis_error": 6.120659534758488e-13,
+    "max_COM_error_m": 4.73232564246473e-14,
+    "max_world_inertia_error_kg_m2": 1.633559281767616e-14,
+    "scope": "Independent CAD parent-frame/axis composition versus compiled MuJoCo model at neutral and 12 non-neutral poses; includes body COM and rotated inertia, not integrated trajectory or physical calibration."
+  },
+  "actual_parent_bore_review": {
+    "joints_examined": 10,
+    "misaligned_parent_bores": 0,
+    "unidentified_parent_bores": 0,
+    "misaligned_child_bores": 0,
+    "misaligned_shafts": 0,
+    "unidentified_child_bores": 0,
+    "unidentified_shafts": 0,
+    "measurements": [
+      {
+        "joint": "index_pip",
+        "parent": "index_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "index_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "index_dip",
+        "parent": "index_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "index_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "middle_pip",
+        "parent": "middle_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "middle_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "middle_dip",
+        "parent": "middle_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "middle_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "ring_pip",
+        "parent": "ring_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "ring_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "ring_dip",
+        "parent": "ring_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "ring_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "little_pip",
+        "parent": "little_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "little_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "little_dip",
+        "parent": "little_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "little_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "thumb_mcp",
+        "parent": "thumb_opposition",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 6.228351168147128e-12,
+        "best_parent_component": "thumb_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.0468070854585676e-11,
+          "best_component": "thumb_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.5557333199467394e-11,
+          "best_component": "thumb_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "thumb_ip",
+        "parent": "thumb_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 7.721379091663039e-12,
+        "best_parent_component": "thumb_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.460964682564736e-11,
+          "best_component": "thumb_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.4853007712645194e-11,
+          "best_component": "thumb_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      }
+    ],
+    "scope": "Saved STEP parent/child cylindrical bores and shaft nominal axes near distal hinge anchors at neutral pose only. Agreement within0.1deg/0.001mm is a numerical geometry check, not manufacturing tolerance approval. Aligned does not validate bearing fits, pin retention, horn coupling, swept clearance or assembly feasibility."
+  },
+  "physical_assembly_envelope_review": {
+    "physical_components_checked": 203,
+    "min_mm": [
+      -116.0,
+      -81.0,
+      -71.0
+    ],
+    "max_mm": [
+      134.89546743299883,
+      326.0,
+      30.0
+    ],
+    "extent_mm": [
+      250.89546743299883,
+      407.0,
+      101.0
+    ],
+    "declared_bounds_present": true,
+    "new_component_solid_counts": [
+      {
+        "name": "index_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "index_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "index_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "index_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "index_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "index_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "index_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "little_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "little_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "little_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "little_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "little_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "little_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "little_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_mcp_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_mcp_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_ip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_ip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_moving_motor_crossbar",
+        "solid_count": 1
+      }
+    ],
+    "new_components_not_single_solid": [],
+    "scope": "Saved physical STEP solids at neutral pose, exact-surface bounds without triangulation, including motor rotors; cable envelopes excluded. This is an assembly envelope, not a swept volume, attachment proof or manufacturing release."
+  },
+  "mechanical_blockers_detected": [],
+  "mechanical_blocker_list_scope": "The legacy field above lists nominal hinge-axis defects only; an empty list is not construction approval.",
+  "unresolved_construction_scope": [
+    "Rigid motor-to-body attachment is a dynamics assumption; new raised or rotated motor plates require physical supports, fasteners and verified load paths.",
+    "Nominal bore and pin axes do not establish fits, retention, horn engagement, structural strength or access for assembly.",
+    "Continuous swept clearance and functional tendon routing, wraps, tensioners and terminals remain unvalidated."
+  ]
+}

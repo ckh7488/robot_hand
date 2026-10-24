@@ -17,6 +17,8 @@
     "upper_limit": 100,
     "boundary": "Robot controller received target to actual joint motion; upstream sensing excluded"
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_scope": "Pending CP005 source freeze, commit and exact-SHA clean checkout reproduction."
+  "post_commit_results_reproduced": true,
+  "post_commit_review_scope": "Exact-SHA clean checkout: saved STEP solids/mass/inertia/hinges and exact bounds, 13 model poses, independent command/metric review, 12 tests, 21 motion plus 8 sensitivity cases exactly reproduced. No full CAD regeneration, fabrication or physical latency approval.",
+  "post_commit_review_target": "25ba8cd01c07ff9b0efdf65212911e6e629b3270",
+  "post_commit_review_report": "docs/reviews/CP005_25ba8cd.md"
 }

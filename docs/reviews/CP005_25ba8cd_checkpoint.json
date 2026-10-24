@@ -1,0 +1,43 @@
+{
+  "checkpoint": "CP005",
+  "manifest_files_checked": 975,
+  "V9_frozen_hashes_checked": 222,
+  "FK": {
+    "poses": 6,
+    "parts_per_pose": 251,
+    "max_position_error_mm": 5.684341886080802e-14,
+    "max_rotation_matrix_error": 5.053215498074303e-16,
+    "passed": true
+  },
+  "local_import": "cad\\modular_roots_v9\\kinematics_numpy.py",
+  "meshes": [
+    {
+      "file": "cad/audit_fixes_v12/parts/Thumb_metacarpal_tool_access.stl",
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 19763.412468365856
+    },
+    {
+      "file": "cad/service_loops_v11/parts/Little_root_cable_saddle.stl",
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 13428.008001286558
+    },
+    {
+      "file": "cad/service_loops_v11/parts/Little_MCP_link_cable_saddle.stl",
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 12829.788806481685
+    }
+  ],
+  "loop_curves_recomputed": 123,
+  "loop_max_length_error_mm": 2.1282162379065994e-06,
+  "loop_min_dense_sampled_radius_mm": 10.138420561491937,
+  "manufacturing_release": false,
+  "scope": "Read-only hashes, fixed-pose FK, watertight candidate meshes and geometric curve quadrature. No global collision, cable dynamics, FDM strength or motor-performance approval.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.4.2",
+    "trimesh": "5.1.1"
+  }
+}
