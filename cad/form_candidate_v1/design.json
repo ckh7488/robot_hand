@@ -1,0 +1,25 @@
+{
+  "revision": "form_candidate_v1",
+  "status": "Exterior proportion CAD study; not a production assembly or latency result",
+  "units": "mm",
+  "reference": "cad/modular_roots_v9/reviews/whole_hand_forearm.png",
+  "palm_target_envelope_mm": [180, 150],
+  "reference_palm_envelope_mm": [232, 195],
+  "palm_back_z_mm": -44,
+  "palm_cover_front_z_mm": 14,
+  "fingers": [
+    {"name": "index", "root": [58.5, 117, 8], "links": [65, 50, 32]},
+    {"name": "middle", "root": [19.5, 127, 8], "links": [70, 50, 34]},
+    {"name": "ring", "root": [-19.5, 121, 8], "links": [62, 50, 32]},
+    {"name": "little", "root": [-58.5, 106, 8], "links": [55, 48, 28]}
+  ],
+  "thumb": {"root": [46, 34, 8], "links": [50, 45, 28], "base_yaw_deg": -40, "second_yaw_deg": 25, "metacarpal_form": "hollow_thenar_with_oblique_distal_fork"},
+  "actuator_packaging": {
+    "independent_axes_target": 20,
+    "root_actuators_to_fit_in_palm_or_wrist": 10,
+    "distal_actuators_to_fit_in_forearm": 10,
+    "installed_actuators_in_this_cad": 0,
+    "status": "Space and cable route study required; motors are deliberately not represented as fitted behind the covers"
+  },
+  "performance": {"robot_latency_goal_ms": 50, "robot_latency_limit_ms": 100, "new_geometry_tested": false}
+}

@@ -1,0 +1,29 @@
+{
+  "status": "CAD exterior study only",
+  "new_hand_part_count": 120,
+  "all_exported_shapes_valid": true,
+  "new_hand_volume_mm3": 489097.627553485,
+  "palm_width_reduction_percent": 22.413793103448278,
+  "palm_length_reduction_percent": 23.076923076923073,
+  "middle_link_sum_mm": 154,
+  "middle_to_palm_length_ratio": 1.0266666666666666,
+  "old_middle_to_palm_length_ratio": 0.7897435897435897,
+  "actuators_installed": 0,
+  "root_motor_packaging_checked": false,
+  "continuous_clearance_checked": false,
+  "cable_routes_checked": false,
+  "dynamics_tested": false,
+  "limitations": [
+    "No full motor arrangement behind palm covers. Ten root motors and ten forearm motors still need placement.",
+    "Joint bores and passive exterior housings are represented; complete transmission, bearings, tolerances and fastening are unfinished.",
+    "V9 arm is a reused reference, with nominal arm motor envelopes and unverified new hand interface.",
+    "Hollow exterior solid volumes are not whole-robot mass or inertia results.",
+    "No previous latency number is transferred to this geometry."
+  ],
+  "input_sha256": {
+    "design.json": "c8a3f91584984cdeba0cad41942efb56bbb8f1cc8d108333e5539dbcbea99651",
+    "build.py": "991882f019eca17f87392a63971ca2adcc447199cea30f3766d3c04fe7cae359",
+    "lightweight_digits.py": "a21fbb715b15471af15a46aa81c0e4b9d5ea22dd9f7d149c0909c8e8a59a51f0",
+    "lightweight_thumb.py": "15dde4e5038f4256ec2b7e8655daff73bda9e93be542770560632a7354ddb21a"
+  }
+}
