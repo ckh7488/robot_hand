@@ -1,12 +1,17 @@
 {
   "status": "generated",
-  "revision": "remote_drive_v1.2",
+  "revision": "remote_drive_v1.3",
   "cad_kernel": "CadQuery 2.8.0",
   "actuators": 20,
   "joints": 20,
-  "mass_kg": 1.4465642425609166,
+  "mass_kg": 1.4409381681450186,
   "shape_count": 223,
-  "overlap_pairs": 33,
-  "design_sha256": "4a53d4600b4753a03eefc84ba5791e54e0500de206805f305fa154e7943d45d7",
-  "generator_sha256": "c816d166f045ee05755b06acd26c69624b90d9b74594626d5c931ff1894e654f"
+  "overlap_pairs": 0,
+  "design_sha256": "acf9159246c43acb24bc5d5524fa34b0a498e23e599f468b5c6f0bf43a68ad0c",
+  "generator_sha256": "3d065912d86debb965f478ba8faceb650885a6f930a3c6c9d79d68a493a4f965",
+  "input_hash_guard": {
+    "captured_before_read": true,
+    "end_check_passed": true,
+    "checked_files": 35
+  }
 }

@@ -769,7 +769,7 @@
       "name": "index_light_link_1",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 14303.95487513586
+      "volume_mm3": 13696.41594212561
     },
     {
       "name": "index_light_link_2",
@@ -811,13 +811,13 @@
       "name": "index_remote_pip_motor",
       "valid": true,
       "solid_count": 12,
-      "volume_mm3": 14753.964011079757
+      "volume_mm3": 14753.96401107977
     },
     {
       "name": "index_remote_pip_rotor_visual",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 1110.5898887944732
+      "volume_mm3": 1110.589888794473
     },
     {
       "name": "index_remote_pip_dual_spool",
@@ -859,13 +859,13 @@
       "name": "index_pip_flexor_route",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 69.07277721528773
+      "volume_mm3": 67.2112264089
     },
     {
       "name": "index_pip_extensor_route",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 69.07277721528769
+      "volume_mm3": 67.21122640890003
     },
     {
       "name": "index_dip_flexor_route",
@@ -883,7 +883,7 @@
       "name": "middle_light_link_1",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 15023.954875135862
+      "volume_mm3": 14416.415942125599
     },
     {
       "name": "middle_light_link_2",
@@ -943,7 +943,7 @@
       "name": "middle_remote_pip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3722.096178369701
     },
     {
       "name": "middle_remote_dip_motor",
@@ -997,7 +997,7 @@
       "name": "ring_light_link_1",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 13871.95487513586
+      "volume_mm3": 13264.4159421256
     },
     {
       "name": "ring_light_link_2",
@@ -1063,25 +1063,25 @@
       "name": "ring_remote_dip_motor",
       "valid": true,
       "solid_count": 12,
-      "volume_mm3": 14753.964011079801
+      "volume_mm3": 14753.964011079788
     },
     {
       "name": "ring_remote_dip_rotor_visual",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 1110.5898887944732
+      "volume_mm3": 1110.5898887944725
     },
     {
       "name": "ring_remote_dip_dual_spool",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 1417.2666938139635
+      "volume_mm3": 1417.2666938139637
     },
     {
       "name": "ring_remote_dip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3737.3641680072205
     },
     {
       "name": "ring_pip_flexor_route",
@@ -1099,19 +1099,19 @@
       "name": "ring_dip_flexor_route",
       "valid": true,
       "solid_count": 4,
-      "volume_mm3": 61.550769415396125
+      "volume_mm3": 66.0769921986542
     },
     {
       "name": "ring_dip_extensor_route",
       "valid": true,
       "solid_count": 4,
-      "volume_mm3": 61.550769415396175
+      "volume_mm3": 66.07699219865422
     },
     {
       "name": "little_light_link_1",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 12863.954875135863
+      "volume_mm3": 12256.415942125604
     },
     {
       "name": "little_light_link_2",
@@ -1153,7 +1153,7 @@
       "name": "little_remote_pip_motor",
       "valid": true,
       "solid_count": 12,
-      "volume_mm3": 14753.964011079783
+      "volume_mm3": 14753.964011079814
     },
     {
       "name": "little_remote_pip_rotor_visual",
@@ -1165,25 +1165,25 @@
       "name": "little_remote_pip_dual_spool",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 1417.2666938139635
+      "volume_mm3": 1417.2666938139632
     },
     {
       "name": "little_remote_pip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.3641680072205
+      "volume_mm3": 3737.36416800722
     },
     {
       "name": "little_remote_dip_motor",
       "valid": true,
       "solid_count": 12,
-      "volume_mm3": 14753.964011079814
+      "volume_mm3": 14753.964011079823
     },
     {
       "name": "little_remote_dip_rotor_visual",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 1110.5898887944727
+      "volume_mm3": 1110.5898887944738
     },
     {
       "name": "little_remote_dip_dual_spool",
@@ -1195,37 +1195,37 @@
       "name": "little_remote_dip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.3641680072205
+      "volume_mm3": 3737.36416800722
     },
     {
       "name": "little_pip_flexor_route",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 50.840557893663195
+      "volume_mm3": 44.994658673235456
     },
     {
       "name": "little_pip_extensor_route",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 50.84055789366313
+      "volume_mm3": 44.994658673235556
     },
     {
       "name": "little_dip_flexor_route",
       "valid": true,
       "solid_count": 4,
-      "volume_mm3": 55.99755929041736
+      "volume_mm3": 62.363351896434466
     },
     {
       "name": "little_dip_extensor_route",
       "valid": true,
       "solid_count": 4,
-      "volume_mm3": 55.9975592904174
+      "volume_mm3": 62.363351896434494
     },
     {
       "name": "thumb_light_link_1",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 15335.812727370221
+      "volume_mm3": 12656.376916330344
     },
     {
       "name": "thumb_light_link_2",
@@ -1267,13 +1267,13 @@
       "name": "thumb_remote_mcp_motor",
       "valid": true,
       "solid_count": 12,
-      "volume_mm3": 14753.964011079795
+      "volume_mm3": 14753.964011079763
     },
     {
       "name": "thumb_remote_mcp_rotor_visual",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 1110.5898887944716
+      "volume_mm3": 1110.5898887944745
     },
     {
       "name": "thumb_remote_mcp_dual_spool",
@@ -1291,259 +1291,60 @@
       "name": "thumb_remote_ip_motor",
       "valid": true,
       "solid_count": 12,
-      "volume_mm3": 14753.964011079805
+      "volume_mm3": 14753.964011079765
     },
     {
       "name": "thumb_remote_ip_rotor_visual",
       "valid": true,
       "solid_count": 3,
-      "volume_mm3": 1110.589888794473
+      "volume_mm3": 1110.5898887944727
     },
     {
       "name": "thumb_remote_ip_dual_spool",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 1417.2666938139632
+      "volume_mm3": 1417.2666938139635
     },
     {
       "name": "thumb_remote_ip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.364168007221
+      "volume_mm3": 3737.3641680072205
     },
     {
       "name": "thumb_moving_motor_crossbar",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3864.0
+      "volume_mm3": 4488.000000000001
     },
     {
       "name": "thumb_mcp_flexor_route",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 9.543489193145543
+      "volume_mm3": 11.475982761589623
     },
     {
       "name": "thumb_mcp_extensor_route",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 9.54348919314554
+      "volume_mm3": 11.475982761589616
     },
     {
       "name": "thumb_ip_flexor_route",
       "valid": true,
       "solid_count": 2,
-      "volume_mm3": 23.534171316700473
+      "volume_mm3": 24.103330560214616
     },
     {
       "name": "thumb_ip_extensor_route",
       "valid": true,
       "solid_count": 2,
-      "volume_mm3": 23.534171316700462
+      "volume_mm3": 24.103330560214605
     }
   ],
-  "open_pose_exact_new_cross_body_overlap_pairs": [
-    {
-      "a": "Palm_back_chassis",
-      "b": "index_remote_pip_motor",
-      "overlap_mm3": 311.3033332588624,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "index_remote_pip_mount_plate",
-      "overlap_mm3": 428.5933163997225,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "ring_remote_dip_motor",
-      "overlap_mm3": 173.72923177222287,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "ring_remote_dip_rotor_visual",
-      "overlap_mm3": 256.6163431285119,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "ring_remote_dip_dual_spool",
-      "overlap_mm3": 13.696839465350346,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "ring_remote_dip_mount_plate",
-      "overlap_mm3": 169.64600329384885,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "little_remote_pip_motor",
-      "overlap_mm3": 52.81771350635003,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "little_remote_pip_mount_plate",
-      "overlap_mm3": 240.2895150118478,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "little_remote_dip_motor",
-      "overlap_mm3": 20.986336634679787,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "little_remote_dip_rotor_visual",
-      "overlap_mm3": 35.66661574681337,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_back_chassis",
-      "b": "little_remote_dip_mount_plate",
-      "overlap_mm3": 29.906648339672866,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "index_mcp_output_screws",
-      "b": "index_light_link_1",
-      "overlap_mm3": 0.538933010248085,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "middle_mcp_output_screws",
-      "b": "middle_light_link_1",
-      "overlap_mm3": 0.5389330102480883,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "ring_mcp_output_screws",
-      "b": "ring_light_link_1",
-      "overlap_mm3": 0.5389330102480872,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Little_root_cartridge",
-      "b": "little_remote_dip_mount_plate",
-      "overlap_mm3": 22.50000000000003,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "little_mcp_output_screws",
-      "b": "little_light_link_1",
-      "overlap_mm3": 0.538933010248085,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_root_motor",
-      "b": "middle_remote_pip_mount_plate",
-      "overlap_mm3": 12.304534482365181,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_spread_carrier",
-      "b": "thumb_remote_mcp_mount_plate",
-      "overlap_mm3": 37.50000000000041,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_mcp_output_screws",
-      "b": "thumb_light_link_1",
-      "overlap_mm3": 0.5389330102481308,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "Palm_wrist_saddle",
-      "b": "index_remote_pip_mount_plate",
-      "overlap_mm3": 74.99999999999999,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "ring_remote_pip_motor",
-      "b": "little_remote_pip_dual_spool",
-      "overlap_mm3": 509.89798648625367,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "ring_remote_pip_rotor_visual",
-      "b": "little_remote_pip_dual_spool",
-      "overlap_mm3": 464.67534309662534,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "ring_remote_pip_mount_plate",
-      "b": "little_remote_pip_mount_plate",
-      "overlap_mm3": 120.0,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_light_link_2",
-      "overlap_mm3": 1185.280327722732,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_shaft_1",
-      "overlap_mm3": 171.69201970631883,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_pulley_1",
-      "overlap_mm3": 23.361018908189262,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_remote_mcp_rotor_visual",
-      "overlap_mm3": 14.137166940812406,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_remote_mcp_mount_plate",
-      "overlap_mm3": 117.6149703739887,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_remote_ip_motor",
-      "overlap_mm3": 164.91961374015975,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_remote_ip_mount_plate",
-      "overlap_mm3": 35.999999999999986,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_1",
-      "b": "thumb_moving_motor_crossbar",
-      "overlap_mm3": 96.00000000000007,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_light_link_2",
-      "b": "thumb_remote_mcp_rotor_visual",
-      "overlap_mm3": 1.4531525195963633,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    },
-    {
-      "a": "thumb_shaft_1",
-      "b": "thumb_remote_ip_motor",
-      "overlap_mm3": 0.04753539132299121,
-      "note": "May include intended joint interfaces; unresolved until mating map and swept checks"
-    }
-  ],
+  "open_pose_exact_new_cross_body_overlap_pairs": [],
   "overlap_scope": "All new-component pairs, including same rigid body; legacy-only pairs excluded. Field name retained for review compatibility.",
-  "exact_candidate_pairs_tested": 184,
+  "exact_candidate_pairs_tested": 161,
   "limitations": [
     "Only neutral pose; no continuous swept collision proof",
     "Reported same-body overlaps may include unresolved mounting contacts; not blanket-exempted",
@@ -1551,5 +1352,690 @@
     "Mounting screws and tensioners for new components not detailed"
   ],
   "actuator_count": 20,
-  "independent_joint_count": 20
+  "independent_joint_count": 20,
+  "physical_assembly_bounds_mm": {
+    "min": [
+      -116.0,
+      -81.0,
+      -71.0
+    ],
+    "max": [
+      134.89546743300468,
+      326.0,
+      30.0
+    ],
+    "scope": "Exact OCC bounding boxes of all physical components; cable-route envelopes excluded"
+  },
+  "manufactured_connected_solid_check": {
+    "required_count_per_component": 1,
+    "component_count": 56,
+    "passed": true,
+    "enforcement": "Generator rejects a disconnected new manufactured component before mass/export; no exceptions in this candidate"
+  },
+  "distal_hinge_axis_checks": {
+    "scope": "In-memory OCC cylinder self-check; saved STEP independently remeasured by review tool",
+    "passed": true,
+    "joints": [
+      {
+        "joint": "index_pip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "index_light_link_1",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                45.5,
+                227.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "index_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                50.5,
+                227.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "index_shaft_1",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                40.5,
+                227.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "index_dip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "index_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                45.5,
+                277.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "index_light_link_3",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                50.5,
+                277.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "index_shaft_2",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                40.5,
+                277.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "middle_pip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "middle_light_link_1",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -2.5,
+                242.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "middle_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                2.5,
+                242.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "middle_shaft_1",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -7.5,
+                242.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "middle_dip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "middle_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -2.5,
+                292.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "middle_light_link_3",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                2.5,
+                292.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "middle_shaft_2",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -7.5,
+                292.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "ring_pip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "ring_light_link_1",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -50.5,
+                228.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "ring_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -45.5,
+                228.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "ring_shaft_1",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -55.5,
+                228.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "ring_dip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "ring_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -50.5,
+                278.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "ring_light_link_3",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -45.5,
+                278.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "ring_shaft_2",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -55.5,
+                278.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "little_pip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "little_light_link_1",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -98.5,
+                206.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "little_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -93.5,
+                206.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "little_shaft_1",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -103.5,
+                206.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "little_dip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "little_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -98.5,
+                254.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "little_light_link_3",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -93.5,
+                254.0,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "little_shaft_2",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 0.0,
+              "axis_world": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "point_world_mm": [
+                -103.5,
+                254.0,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "thumb_mcp",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "thumb_light_link_1",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 4.440892098500626e-16,
+              "axis_world": [
+                0.9659258262890684,
+                -0.2588190451025208,
+                0.0
+              ],
+              "point_world_mm": [
+                103.58251927927648,
+                89.98115651299648,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "thumb_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 3.552713678800501e-15,
+              "axis_world": [
+                0.9659258262890683,
+                -0.25881904510252074,
+                0.0
+              ],
+              "point_world_mm": [
+                91.0254835375186,
+                93.34580409932924,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "thumb_shaft_1",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 4.440892098500626e-15,
+              "axis_world": [
+                0.9659258262890683,
+                -0.25881904510252074,
+                0.0
+              ],
+              "point_world_mm": [
+                81.36622527462792,
+                95.93399455035446,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "joint": "thumb_ip",
+        "surface_checks": [
+          {
+            "role": "parent_bore",
+            "component": "thumb_light_link_2",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 2.6645352591003757e-15,
+              "axis_world": [
+                0.9659258262890683,
+                -0.25881904510252074,
+                0.0
+              ],
+              "point_world_mm": [
+                98.61916857099426,
+                141.00433898671713,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "child_bore",
+            "component": "thumb_light_link_3",
+            "nominal_radius_mm": 2.1,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 1.509903313490213e-14,
+              "axis_world": [
+                0.9659258262890683,
+                -0.25881904510252074,
+                0.0
+              ],
+              "point_world_mm": [
+                103.4487977024396,
+                139.71024376120454,
+                8.0
+              ]
+            },
+            "passed": true
+          },
+          {
+            "role": "pin",
+            "component": "thumb_shaft_2",
+            "nominal_radius_mm": 2,
+            "best_surface": {
+              "axis_error_deg": 0.0,
+              "line_distance_mm": 9.769962616701378e-15,
+              "axis_world": [
+                0.9659258262890683,
+                -0.25881904510252074,
+                0.0
+              ],
+              "point_world_mm": [
+                93.78953943954892,
+                142.29843421222972,
+                8.0
+              ]
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    ]
+  }
 }

@@ -7,9 +7,22 @@ import unittest
 import numpy as np
 import mujoco
 from model import HERE, CAD, NAMES, ALIASES, build_model, cable_forces, motor_torque, slew_pwm, run_simulation
-from evaluate import scenario, evaluate, first_crossing
+from evaluate import scenario, evaluate, first_crossing, project_reference
 
 DETAILS={}
+
+
+def synthetic_trace(time,command_deg,actual_deg,requested_deg=None):
+    command=np.asarray(command_deg)
+    actual=np.asarray(actual_deg)
+    if command.ndim==1:command=np.repeat(command[:,None],20,axis=1)
+    if actual.ndim==1:actual=np.repeat(actual[:,None],20,axis=1)
+    zeros=np.zeros_like(command)
+    return dict(time=time,command=np.deg2rad(command),q=np.deg2rad(actual),
+        requested=np.deg2rad(command if requested_deg is None else requested_deg),
+        v=np.deg2rad(np.gradient(actual,time,axis=0)),motor_speed=zeros,saturation=zeros.astype(bool),
+        peak_tension=np.zeros(len(time)),slack=np.zeros(len(time),bool),
+        joint_ranges=np.deg2rad(np.repeat([[-180,180]],20,axis=0)))
 
 
 class ModelConsistency(unittest.TestCase):
@@ -100,6 +113,29 @@ class ModelConsistency(unittest.TestCase):
         self.assertLess(rms,1.0)
         self.assertLess(maximum,5.0)
 
+    def test_small_motion_time_step_and_quality_classification_stability(self):
+        # Declared before execution: numerical error <=20% of the0.1degree minimum band.
+        threshold=.02
+        values={};qualities={}
+        for dt in [.000125,.0000625]:
+            s=build_model(overrides={"dt_s":dt})
+            t,c,moves=scenario("small5",dt)
+            values[dt]=run_simulation(s,t,c)
+            qualities[dt]=evaluate(values[dt],moves,s["active"])["hold_quality"]
+        error=np.rad2deg(values[.000125]["q"]-values[.0000625]["q"][::2])
+        maximum=float(np.max(np.abs(error)))
+        first={(r["move"],r["joint"]):r["status"] for r in qualities[.000125]}
+        second={(r["move"],r["joint"]):r["status"] for r in qualities[.0000625]}
+        changed=[dict(move=key[0],joint=key[1],status_125us=first[key],status_62_5us=second[key])
+                 for key in first if first[key]!=second[key]]
+        DETAILS["small5_time_step_quality"]=dict(coarse_dt_s=.000125,fine_dt_s=.0000625,
+            declared_max_difference_limit_deg=threshold,full_trajectory_max_difference_deg=maximum,
+            hold_quality_rows=len(first),hold_quality_classifications_stable=not changed,
+            changed_hold_classifications=changed,
+            criterion="Both maximum angle difference<=0.02deg and all hold-quality statuses identical; fixed before run")
+        self.assertLessEqual(maximum,threshold)
+        self.assertEqual(first,second)
+
     def test_late_rebound_is_not_early_settling(self):
         t=np.arange(0,.801,.001);x=np.minimum(t/.1,1)*10
         q=np.repeat(x[:,None],20,axis=1)
@@ -112,6 +148,69 @@ class ModelConsistency(unittest.TestCase):
         move=dict(start=0,end=.1,hold_end=.8,q0=np.zeros(20),q1=np.full(20,10))
         r=evaluate(trace,[move],list(range(20)))
         self.assertTrue(all(x["settle_after_command_end_ms"]>=399 for x in r["settling"]))
+
+    def test_known_delay_and_preexisting_recross_classification(self):
+        t=np.arange(0,1.001,.001)
+        c=np.interp(t,[0,.1,.3,.5,.7,1],[0,0,10,10,0,0])
+        q=np.interp(t-.04,t,c)
+        moves=[dict(start=.1,end=.3,hold_end=.5,q0=np.zeros(20),q1=np.full(20,10)),
+               dict(start=.5,end=.7,hold_end=1.,q0=np.full(20,10),q1=np.zeros(20))]
+        r=evaluate(synthetic_trace(t,c,q),moves,list(range(20)))
+        self.assertEqual(r["missing_events"],0)
+        self.assertTrue(all(abs(e["lag_ms"]-40)<1e-9 for e in r["events"]))
+        self.assertEqual(set(e["direction"] for e in r["events"]),{-1,1})
+        # A preexisting level can recross later, but cannot become a measured first response.
+        t=np.arange(0,.601,.001);c=np.minimum(t/.4,1)*10
+        q=np.interp(t,[0,.1,.2,.6],[6,4,6,6])
+        move=dict(start=0,end=.4,hold_end=.6,q0=np.zeros(20),q1=np.full(20,10))
+        r=evaluate(synthetic_trace(t,c,q),[move],list(range(20)))
+        event=next(e for e in r["events"] if e["fraction"]==.5)
+        self.assertEqual(event["classification"],"preexisting_level")
+        self.assertAlmostEqual(event["later_directional_crossing_s"],.15)
+        self.assertIsNone(event["lag_ms"]);self.assertFalse(event["timing_identifiable"])
+        self.assertEqual(r["event_classification_counts"]["never_reached"],20)
+        self.assertEqual(r["indeterminate_events"],r["missing_events"])
+        self.assertFalse(r["simulated_100ms_event_budget_met"])
+
+    def test_small_motion_requires_amplitude_scaled_hold_accuracy(self):
+        t=np.arange(0,.601,.001);c=np.minimum(t/.1,1)*.6
+        move=dict(start=0,end=.1,hold_end=.6,q0=np.zeros(20),q1=np.full(20,.6))
+        r=evaluate(synthetic_trace(t,c,np.zeros_like(t)),[move],list(range(20)))
+        self.assertEqual(r["unsettled_holds"],0)  # Old3degree criterion was too broad for this task.
+        self.assertEqual(r["unsettled_quality_holds"],20)
+        self.assertTrue(all(x["tolerance_deg"]==.1 for x in r["hold_quality"]))
+        self.assertEqual(r["event_classification_counts"]["never_reached"],60)
+
+    def test_independent_distal_projection_preserves_requested_task(self):
+        t,requested,moves=scenario("independent_distal",.001)
+        saved=requested.copy();saved_moves=[m["q1"].copy() for m in moves]
+        feasible,projected=project_reference(requested,moves,True)
+        self.assertTrue(np.array_equal(requested,saved))
+        self.assertTrue(all(np.array_equal(m["q1"],old) for m,old in zip(moves,saved_moves)))
+        self.assertAlmostEqual(float(np.max(np.abs(np.rad2deg(requested-feasible)))),60.)
+        self.assertTrue(np.allclose(feasible[:,[3,7,11,15]],.8*feasible[:,[2,6,10,14]]))
+        self.assertFalse(np.allclose(requested[:,3],.8*requested[:,2]))
+        trace=synthetic_trace(t,np.rad2deg(feasible),np.rad2deg(feasible),np.rad2deg(requested))
+        r=evaluate(trace,projected,list(range(20)))
+        self.assertAlmostEqual(r["raw_max_error_deg"],0)
+        self.assertAlmostEqual(r["projection_loss_max_deg"],60)
+        self.assertAlmostEqual(r["task_raw_max_error_deg"],60)
+        self.assertTrue(r["simulated_100ms_event_budget_met"])  # Event-only pass cannot imply task fidelity.
+
+    def test_endpoint_overshoot_and_reversal_start_excursion_are_separate(self):
+        t=np.arange(0,1.001,.001)
+        c=np.interp(t,[0,.2,.5,.7,1],[0,45,45,0,0])
+        q=np.interp(t,[0,.2,.5,.55,.7,1],[0,45,45,50,0,0])
+        moves=[dict(start=0,end=.2,hold_end=.5,q0=np.zeros(20),q1=np.full(20,45)),
+               dict(start=.5,end=.7,hold_end=1.,q0=np.full(20,45),q1=np.zeros(20))]
+        r=evaluate(synthetic_trace(t,c,q),moves,list(range(20)))
+        self.assertAlmostEqual(r["max_wrong_way_excursion_deg"],5)
+        self.assertAlmostEqual(r["soft_joint_limit_max_overshoot_deg"],0)
+        self.assertAlmostEqual(r["max_endpoint_overshoot_deg"],0)
+        q=np.interp(t,[0,.2,.3,.5,.7,1],[0,45,50,45,0,0])
+        r=evaluate(synthetic_trace(t,c,q),moves,list(range(20)))
+        self.assertAlmostEqual(r["max_endpoint_overshoot_deg"],5)
+        self.assertAlmostEqual(r["soft_joint_limit_max_overshoot_deg"],0)
 
 
 if __name__=="__main__":

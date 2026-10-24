@@ -1,19 +1,29 @@
 {
   "passed": true,
-  "tests": 7,
+  "tests": 12,
   "source_hashes": {
     "model.py": "ef827a1875969ca28fbbb020eb348226c24e88a1679e7358edaf94afaa60bbbb",
-    "evaluate.py": "b1188563cf45310c984958125a7f42d16f5e76bcc77c01f02d8f4d9955ab9d30",
-    "test_model.py": "ec816d85b1cbe8851071cd73bb533f7e4c18d9c0d3aa4e1eebd6e6ad838fc4f4",
-    "simulation_contract.json": "8bace88f5424874fdf525ba067f0f0b54cd68b343000cfe6c7f8998095f4616d"
+    "evaluate.py": "bbccd9165a26e4bc850d9f60655a0a2de18b19ef87164728f5b0439ab8b6b4a8",
+    "test_model.py": "a572e913459458d0e0fc3715c354e46a68009b727abdf0d244cb12acafb03426",
+    "simulation_contract.json": "6d3bec63e1ca5ec5de05951f16158691b907231bf3092eea02f291507f32e879"
   },
   "details": {
     "coordinate_max_position_error_m": 3.980149543281186e-14,
     "coordinate_max_rotation_error": 6.120659534758488e-13,
-    "gravity_gradient_max_error_Nm": 6.497493168500235e-11,
+    "gravity_gradient_max_error_Nm": 7.255694309260541e-11,
     "zero_to_full_PWM_s": 0.018125,
-    "time_step_125_vs62_5us_rmse_deg": 0.08146334827715139,
-    "time_step_125_vs62_5us_max_deg": 0.7804950809998719
+    "small5_time_step_quality": {
+      "coarse_dt_s": 0.000125,
+      "fine_dt_s": 6.25e-05,
+      "declared_max_difference_limit_deg": 0.02,
+      "full_trajectory_max_difference_deg": 0.018853313931690333,
+      "hold_quality_rows": 80,
+      "hold_quality_classifications_stable": true,
+      "changed_hold_classifications": [],
+      "criterion": "Both maximum angle difference<=0.02deg and all hold-quality statuses identical; fixed before run"
+    },
+    "time_step_125_vs62_5us_rmse_deg": 0.09443718219823163,
+    "time_step_125_vs62_5us_max_deg": 1.1752063351904682
   },
   "failures": [],
   "errors": []

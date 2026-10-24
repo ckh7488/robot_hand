@@ -97,7 +97,7 @@ def part_properties_from_step(root, directory, p, cache):
             source = "cad/modular_roots_v9/parts/M077_stator.step"
         elif source == "visual rotor; mass already included in motor":
             source = "cad/modular_roots_v9/parts/M077_rotor.step"
-        filename = (root / source).resolve()
+        filename = (root / source.replace("\\", "/")).resolve()
         assert filename.is_relative_to(root), f"External source: {source}"
         placement = np.asarray(p["transform_world"])
     if filename not in cache:
@@ -116,6 +116,271 @@ def part_properties_from_step(root, directory, p, cache):
         center = R @ center + placement[:3, 3]
         tensor = R @ tensor @ R.T
     return volume, center, tensor
+
+
+def review_physical_envelope(root, directory, parts):
+    """Reread physical geometry including zero-added-mass motor rotor visuals."""
+    import cadquery as cq
+    from OCP.gp import gp_Trsf
+    from OCP.BRepBuilderAPI import BRepBuilderAPI_Transform
+    from OCP.Bnd import Bnd_Box
+    from OCP.BRepBndLib import BRepBndLib
+
+    source_cache, boxes, new_part_counts = {}, [], []
+    for part in parts:
+        if part["route"]:
+            continue
+        source = part.get("source")
+        if source is None:
+            path = directory / "generated/parts" / (part["name"] + ".step")
+        else:
+            source = {"V9 vendor XL330-M077 STEP": "cad/modular_roots_v9/parts/M077_stator.step",
+                      "visual rotor; mass already included in motor": "cad/modular_roots_v9/parts/M077_rotor.step"}.get(source, source)
+            path = (root / source.replace("\\", "/")).resolve()
+            assert path.is_relative_to(root), source
+        if path not in source_cache:
+            source_cache[path] = cq.importers.importStep(str(path)).val()
+        shape = source_cache[path]
+        if source is not None:
+            transform = gp_Trsf()
+            transform.SetValues(*[float(x) for x in np.asarray(part["transform_world"])[:3, :4].ravel()])
+            shape = cq.Shape.cast(BRepBuilderAPI_Transform(shape.wrapped, transform, True).Shape())
+        else:
+            solid_count = len(shape.Solids())
+            new_part_counts.append({"name": part["name"], "solid_count": solid_count})
+            assert solid_count == 1, f"New manufactured component is not one connected solid: {part['name']} ({solid_count} solids)"
+        bounds = Bnd_Box()
+        BRepBndLib.AddOptimal_s(shape.wrapped, bounds, False, False)
+        coordinates = bounds.Get()
+        boxes.append((coordinates[:3], coordinates[3:]))
+    minimum = np.min([row[0] for row in boxes], axis=0)
+    maximum = np.max([row[1] for row in boxes], axis=0)
+    declared = read(directory / "reviews/geometry.json").get("physical_assembly_bounds_mm")
+    if declared is not None:
+        assert np.max(abs(minimum - declared["min"])) < 1e-5, "Assembly minimum bounds differ from saved solids"
+        assert np.max(abs(maximum - declared["max"])) < 1e-5, "Assembly maximum bounds differ from saved solids"
+    return {"physical_components_checked": len(boxes), "min_mm": minimum.tolist(), "max_mm": maximum.tolist(),
+            "extent_mm": (maximum - minimum).tolist(), "declared_bounds_present": declared is not None,
+            "new_component_solid_counts": new_part_counts,
+            "new_components_not_single_solid": [row for row in new_part_counts if row["solid_count"] != 1],
+            "scope": "Saved physical STEP solids at neutral pose, exact-surface bounds without triangulation, including motor rotors; cable envelopes excluded. "
+                     "This is an assembly envelope, not a swept volume, attachment proof or manufacturing release."}
+
+
+def review_additive_metrics(metrics, label, names):
+    """CP005 audit without importing the producer's evaluator; CP004 is unchanged."""
+    if "event_classification_counts" not in metrics:
+        return None
+    categories = ["reached", "early_crossing", "preexisting_level", "never_reached"]
+    counts = dict.fromkeys(categories, 0)
+    cutoff = metrics["early_crossing_cutoff_ms"]
+    for event in metrics["events"]:
+        difference = event["command_end_deg"] - event["command_start_deg"]
+        assert abs(abs(difference) - event["motion_amplitude_deg"]) < 1e-8, label
+        assert event["direction"] * difference > 0, label
+        threshold = event["command_start_deg"] + event["fraction"] * difference
+        assert abs(threshold - event["threshold_deg"]) < 1e-8, label
+        assert abs(event["actual_start_deg"] - event["command_start_deg"] - event["actual_start_error_deg"]) < 1e-8, label
+        past = bool(event["direction"] * (event["actual_start_deg"] - threshold) >= 0)
+        assert past == event["initially_past_threshold"], label
+        identifiable = event["actual_event_s"] is not None
+        assert identifiable == event["timing_identifiable"], label
+        expected = ("preexisting_level" if past else "never_reached" if not identifiable else
+                    "early_crossing" if event["lag_ms"] < cutoff else "reached")
+        assert event["classification"] == expected, label
+        legacy = "missing" if not identifiable else "anticipatory" if expected == "early_crossing" else "reached"
+        assert event["status"] == legacy, label
+        if past:
+            assert not identifiable and event["lag_ms"] is None, label
+        if not past:
+            assert event["later_directional_crossing_s"] is None, label
+        counts[expected] += 1
+    assert counts == metrics["event_classification_counts"], label
+    assert metrics["indeterminate_events"] == counts["preexisting_level"] + counts["never_reached"], label
+    assert metrics["indeterminate_events"] == metrics["missing_events"], label
+
+    params = metrics["hold_quality_parameters"]
+    quality = metrics["hold_quality"]
+    assert metrics["unsettled_quality_holds"] == sum(x["status"] == "unsettled" for x in quality), label
+    groups = {}
+    metadata = metrics["command_generation"]
+    for row in quality:
+        assert row["joint"] in names and row["motion_amplitude_deg"] >= 0, label
+        expected_band = max(params["minimum_tolerance_deg"], min(params["maximum_tolerance_deg"],
+                            params["relative_amplitude_fraction"] * row["motion_amplitude_deg"]))
+        assert abs(row["tolerance_deg"] - expected_band) < 1e-10, label
+        assert row["max_hold_error_deg"] + 1e-10 >= abs(row["final_error_deg"]), label
+        if row["status"] == "settled":
+            assert row["settle_after_command_end_ms"] is not None, label
+            assert abs(row["final_error_deg"]) <= expected_band + 1e-10, label
+        else:
+            assert row["status"] == "unsettled" and row["settle_after_command_end_ms"] is None, label
+        assert row["joint"] not in groups.setdefault(row["move"], set()), label
+        groups[row["move"]].add(row["joint"])
+    assert all(joints == set(names) for joints in groups.values()), f"Incomplete stationary-axis hold coverage: {label}"
+    expected_holds = {i for i, move in enumerate(metadata["moves"])
+                      if move["hold_end_s"] - move["end_s"] >= params["minimum_observed_hold_s"]}
+    assert set(groups) == expected_holds, f"Missing qualifying hold: {label}"
+    motion = metrics["motion_excursions"]
+    for row in motion:
+        assert row["joint"] in names and row["endpoint_overshoot_deg"] >= 0 and row["wrong_way_excursion_deg"] >= 0, label
+        assert row["window_end_s"] > row["window_start_s"], label
+    for aggregate, field in [("max_endpoint_overshoot_deg", "endpoint_overshoot_deg"),
+                             ("max_wrong_way_excursion_deg", "wrong_way_excursion_deg")]:
+        assert abs(metrics[aggregate] - max((x[field] for x in motion), default=0.0)) < 1e-10, label
+    joint_rows = metrics["per_joint"]
+    for prefix, per_joint_prefix in [("dynamic_raw", "raw"), ("task_raw", "task_raw"), ("projection_loss", "projection_loss")]:
+        max_field = prefix + ("_max_error_deg" if prefix.endswith("raw") else "_max_deg")
+        per_max = per_joint_prefix + ("_max_error_deg" if per_joint_prefix.endswith("raw") else "_max_deg")
+        assert abs(metrics[max_field] - max(x[per_max] for x in joint_rows)) < 1e-8, label
+        rms = math.sqrt(sum(x[per_joint_prefix + "_rmse_deg"] ** 2 for x in joint_rows) / len(joint_rows))
+        assert abs(metrics[prefix + "_rmse_deg"] - rms) < 1e-8, label
+    # Task error = dynamic error + reference projection error; verify norm bounds.
+    for dynamic, task, projection in [("dynamic_raw_max_error_deg", "task_raw_max_error_deg", "projection_loss_max_deg"),
+                                      ("dynamic_raw_rmse_deg", "task_raw_rmse_deg", "projection_loss_rmse_deg")]:
+        a, b, c = metrics[dynamic], metrics[task], metrics[projection]
+        assert abs(a - c) - 1e-8 <= b <= a + c + 1e-8, label
+    assert set(metrics["commanded_joint_names"]) | set(metrics["held_joint_names"]) == set(names), label
+    assert not set(metrics["commanded_joint_names"]) & set(metrics["held_joint_names"]), label
+    expected_events, expected_excursions = set(), set()
+    for mi, move in enumerate(metadata["moves"]):
+        for j, name in enumerate(names):
+            if abs(move["feasible_q1_deg"][j] - move["feasible_q0_deg"][j]) >= .1:
+                expected_excursions.add((mi, name))
+                expected_events.update((mi, name, fraction) for fraction in [.1, .5, .9])
+    actual_events = {(row["move"], row["joint"], row["fraction"]) for row in metrics["events"]}
+    assert actual_events == expected_events and len(actual_events) == len(metrics["events"]), label
+    actual_excursions = {(row["move"], row["joint"]) for row in motion}
+    assert actual_excursions == expected_excursions and len(actual_excursions) == len(motion), label
+    for row in metrics["events"]:
+        move, j = metadata["moves"][row["move"]], names.index(row["joint"])
+        assert abs(row["command_start_deg"] - move["feasible_q0_deg"][j]) < 1e-8, label
+        assert abs(row["command_end_deg"] - move["feasible_q1_deg"][j]) < 1e-8, label
+        # An inverse minimum-jerk solve independently checks reference event time.
+        lo, hi = 0., 1.
+        for unused in range(50):
+            s = (lo + hi) / 2
+            if s ** 3 * (10 + s * (-15 + 6 * s)) < row["fraction"]:
+                lo = s
+            else:
+                hi = s
+        expected_time = move["start_s"] + (lo + hi) / 2 * (move["end_s"] - move["start_s"])
+        assert abs(row["command_event_s"] - expected_time) <= metadata["physics_dt_s"], label
+    for row in quality + motion:
+        move, j = metadata["moves"][row["move"]], names.index(row["joint"])
+        assert abs(row["motion_amplitude_deg"] - abs(move["feasible_q1_deg"][j] - move["feasible_q0_deg"][j])) < 1e-8, label
+    return {"classification_counts": counts, "hold_rows_checked": len(quality), "all_axis_holds": len(groups),
+            "motion_excursions_checked": len(motion), "projection_loss_max_deg": metrics["projection_loss_max_deg"],
+            "task_raw_max_error_deg": metrics["task_raw_max_error_deg"]}
+
+
+def reconstruct_commands(metadata, times):
+    """Evaluate the declared endpoint/time contract, independent of scenario()."""
+    assert metadata["kind"] == "piecewise_minimum_jerk" and metadata["angle_units"] == "deg"
+    arrays = []
+    for prefix in ["requested", "feasible"]:
+        result = np.repeat(np.asarray(metadata["initial_" + prefix + "_deg"])[None, :], len(times), axis=0)
+        last_end = -math.inf
+        for move in metadata["moves"]:
+            start, end, hold = move["start_s"], move["end_s"], move["hold_end_s"]
+            assert last_end <= start + 1e-10 and start < end <= hold, "Inconsistent segment time metadata"
+            last_end = end
+            mask = times >= start
+            s = np.clip((times[mask] - start) / (end - start), 0, 1)
+            blend = s ** 3 * (10 + s * (-15 + 6 * s))
+            q0, q1 = np.asarray(move[prefix + "_q0_deg"]), np.asarray(move[prefix + "_q1_deg"])
+            result[mask] = q0 + blend[:, None] * (q1 - q0)
+        arrays.append(result)
+    return arrays
+
+
+def review_command_contracts(root, report, names):
+    if not any("command_generation" in value for value in report["cases"].values()):
+        return None
+    signatures, rows = {}, []
+    all_runs = dict(report["cases"])
+    all_runs.update({"sensitivity/" + key: value for key, value in report.get("sensitivities", {}).items()})
+    for key, metrics in all_runs.items():
+        meta = metrics["command_generation"]
+        dt = meta["physics_dt_s"]
+        assert dt > 0 and meta["time_end_s"] > dt, key
+        count = round(meta["time_end_s"] / dt) + 1
+        assert abs((count - 1) * dt - meta["time_end_s"]) < 1e-8, key
+        time = np.arange(count) * dt
+        requested, feasible = reconstruct_commands(meta, time)
+        assert requested.shape == feasible.shape == (count, len(names)), key
+        policy = meta["reference_policy"]
+        expected = requested.copy()
+        if policy == "virtual16_nonthumb_DIP_equals_0.8_PIP":
+            expected[:, [3, 7, 11, 15]] = .8 * expected[:, [2, 6, 10, 14]]
+        else:
+            assert policy == "independent20", key
+        assert np.max(abs(feasible - expected)) < 1e-9, key
+        projection = feasible - requested
+        assert abs(float(np.max(abs(projection))) - metrics["projection_loss_max_deg"]) < 1e-8, key
+        assert abs(float(np.sqrt(np.mean(projection ** 2))) - metrics["projection_loss_rmse_deg"]) < 1e-8, key
+        for j, row in enumerate(metrics["per_joint"]):
+            assert row["joint"] == names[j], key
+            assert abs(float(np.max(abs(projection[:, j]))) - row["projection_loss_max_deg"]) < 1e-8, key
+            assert abs(float(np.sqrt(np.mean(projection[:, j] ** 2))) - row["projection_loss_rmse_deg"]) < 1e-8, key
+        summary = {"case": key, "reconstructed_command_samples": count,
+                   "projection_loss_max_deg": metrics["projection_loss_max_deg"]}
+        if not key.startswith("sensitivity/"):
+            variant, case = key.split("/", 1)
+            signature = {"initial_requested_deg": meta["initial_requested_deg"], "time_end_s": meta["time_end_s"],
+                         "moves": [{k: v for k, v in move.items() if not k.startswith("feasible_")} for move in meta["moves"]]}
+            if case in signatures:
+                assert signature == signatures[case], f"Requested task changed between variants: {case}"
+            signatures[case] = signature
+            displayed = read(root / "sim/remote_drive_v1/results" / f"{variant}_{case}_trajectory.json")
+            finite_tree(displayed, key + "_trajectory")
+            assert displayed["joint_names"] == names and displayed["command_generation"] == meta, key
+            assert displayed["variant"] == variant and displayed["case"] == case, key
+            sample_time = np.asarray(displayed["time_s"])
+            assert sample_time[0] == 0 and np.all(np.diff(sample_time) > 0), key
+            rq, fq = reconstruct_commands(meta, sample_time)
+            assert np.max(abs(rq - displayed["requested_deg"])) < 1e-3, key
+            assert np.max(abs(fq - displayed["command_deg"])) < 1e-3, key
+            actual = np.asarray(displayed["actual_deg"])
+            assert actual.shape == rq.shape, key
+            # Decimated/rounded samples only give lower bounds on full-rate peaks.
+            assert float(np.max(abs(actual - rq))) <= metrics["task_raw_max_error_deg"] + 1e-3, key
+            assert float(np.max(abs(actual - fq))) <= metrics["dynamic_raw_max_error_deg"] + 1e-3, key
+            for event in metrics["events"]:
+                start = meta["moves"][event["move"]]["start_s"]
+                samples = np.flatnonzero(abs(sample_time - start) < 1e-9)
+                if len(samples):
+                    j = names.index(event["joint"])
+                    assert abs(actual[samples[0], j] - event["actual_start_deg"]) < 1e-3, key
+            if case == "independent_distal":
+                assert np.max(abs(requested[:, [3, 7, 11, 15]] - .8 * requested[:, [2, 6, 10, 14]])) > 1.0, key
+                assert (metrics["projection_loss_max_deg"] > 1.0) == (variant == "remote16"), key
+            summary["display_samples_checked"] = len(sample_time)
+        rows.append(summary)
+    return {"cases_with_identical_requested_tasks": len(signatures), "reconstructed_runs": rows,
+            "scope": "Independent command reconstruction from committed endpoints/times, exact full-rate projection-loss arithmetic, "
+                     "and rounded display-trace consistency. Decimated actual angles do not revalidate fine-rate events or sustained settling."}
+
+
+def review_model_test_evidence(root):
+    evidence = read(root / "sim/remote_drive_v1/results/model_consistency.json")
+    finite_tree(evidence, "model_consistency")
+    paths = {name: root / "sim/remote_drive_v1" / name for name in ["model.py", "evaluate.py", "test_model.py"]}
+    paths["simulation_contract.json"] = root / "cad/remote_drive_v1/simulation_contract.json"
+    for name, value in evidence["source_hashes"].items():
+        assert digest(paths[name]) == value, f"Stale consistency-test evidence: {name}"
+    small = evidence["details"].get("small5_time_step_quality")
+    if small is not None:
+        assert small["coarse_dt_s"] == .000125 and small["fine_dt_s"] == .0000625
+        assert small["declared_max_difference_limit_deg"] == .02
+        assert small["hold_quality_rows"] == 80
+        assert small["hold_quality_classifications_stable"] == (not small["changed_hold_classifications"])
+        if evidence["passed"]:
+            assert small["full_trajectory_max_difference_deg"] <= small["declared_max_difference_limit_deg"]
+            assert small["hold_quality_classifications_stable"]
+    return {"producer_test_passed": evidence["passed"], "producer_tests_run": evidence["tests"],
+            "source_hashes_current": True, "small_motion_numerical_evidence": small,
+            "scope": "Freshness and stated-threshold consistency of producer test results; tests are not rerun by this reviewer."}
 
 
 def review_simulation(root, contract, design):
@@ -153,8 +418,10 @@ def review_simulation(root, contract, design):
             A[row, names.index(upstream)] = coefficient * route["joint_radius_mm"] / route["spool_radius_mm"]
     assert np.allclose(A, remote["motor_angle_from_joint_angle_matrix"], atol=1e-12), "CAD and simulation transmission differ"
 
-    summaries, coverage = [], set()
-    for key, metrics in report["cases"].items():
+    summaries, coverage, additions = [], set(), {}
+    runs = dict(report["cases"])
+    runs.update({"sensitivity/" + key: value for key, value in report.get("sensitivities", {}).items()})
+    for key, metrics in runs.items():
         events = metrics["events"]
         assert metrics["event_count"] == len(events), key
         missing = sum(e["status"] == "missing" for e in events)
@@ -185,10 +452,16 @@ def review_simulation(root, contract, design):
         summaries.append({"case": key, "event_count": len(events), "missing_events": missing,
                           "valid_event_max_ms": metrics["valid_event_max_ms"],
                           "simulated_100ms_event_budget_met": metrics["simulated_100ms_event_budget_met"]})
+        additive = review_additive_metrics(metrics, key, names)
+        if additive is not None:
+            additions[key] = additive
     assert coverage == {(name, sign) for name in names for sign in [-1, 1]}, "Incomplete bidirectional full-hand cases"
     return {"source_hash_count": len(report["source_hashes"]),
             "remote20_bidirectional_joint_coverage": len(coverage) // 2,
             "CAD_mass_and_transmission_match": True, "event_summary_reaggregation": summaries,
+            "additive_metric_review": additions,
+            "command_contract_review": review_command_contracts(root, report, names),
+            "model_test_evidence_review": review_model_test_evidence(root),
             "scope": "Checks committed event arithmetic/coverage and CAD-to-simulation data consistency; "
                      "does not independently replay or calibrate the dynamics engine."}
 
@@ -251,11 +524,11 @@ def review_model_frames(root, contract):
 
 
 def review_parent_bores(directory, contract, parts, design):
-    """Measure actual cylindrical parent bores near each distal declared hinge.
+    """Measure actual parent/child bore and shaft axes near each distal hinge.
 
     Geometric mismatches are reported as construction failures, not made into
     exceptions that would hide the rest of the checkpoint's numerical review.
-    This deliberately does not establish child/pin fit or full assembly validity.
+    Nominal axis agreement does not establish tolerance, bearing or assembly fit.
     """
     import cadquery as cq
     from OCP.BRepAdaptor import BRepAdaptor_Surface
@@ -263,13 +536,8 @@ def review_parent_bores(directory, contract, parts, design):
 
     radius = design["links"]["joint_bore_radius_mm"]
     cache, measurements = {}, []
-    for joint in contract["joints"]:
-        candidates = [p for p in parts if p["body"] == joint["parent_joint"] and "_light_link_" in p["name"]]
-        if not candidates:
-            continue
-        T = np.asarray(joint["frame_world"])
-        expected_axis = T[:3, :3] @ joint["axis_local"]
-        origin = T[:3, 3]
+
+    def measure(candidates, wanted_radius, origin, expected_axis):
         measured = []
         for part in candidates:
             path = directory / "generated/parts" / (part["name"] + ".step")
@@ -281,32 +549,54 @@ def review_parent_bores(directory, contract, parts, design):
                     if surface.GetType() != GeomAbs_Cylinder:
                         continue
                     cylinder = surface.Cylinder()
-                    if abs(cylinder.Radius() - radius) > 1e-5:
-                        continue
                     axis = cylinder.Axis()
                     p, d = axis.Location(), axis.Direction()
-                    cylinders.append((np.array([p.X(), p.Y(), p.Z()]), np.array([d.X(), d.Y(), d.Z()])))
+                    cylinders.append((cylinder.Radius(), np.array([p.X(), p.Y(), p.Z()]), np.array([d.X(), d.Y(), d.Z()])))
                 cache[path] = cylinders
-            for center, axis in cache[path]:
+            for cylinder_radius, center, axis in cache[path]:
+                if abs(cylinder_radius - wanted_radius) > 1e-5:
+                    continue
                 distance = float(np.linalg.norm(np.cross(origin - center, axis)))
                 if distance > .25:
                     continue
                 angle = math.degrees(math.acos(float(np.clip(abs(axis @ expected_axis), 0, 1))))
                 measured.append((angle, distance, part["name"]))
         best = min(measured) if measured else None
+        return {"radius_mm": wanted_radius, "nearby_cylindrical_faces": len(measured),
+                "axis_angle_error_deg": None if best is None else best[0],
+                "axis_line_distance_mm": None if best is None else best[1],
+                "best_component": None if best is None else best[2],
+                "status": "no_nearby_bore_identified" if best is None else
+                          "misaligned" if best[0] > .1 or best[1] > .001 else "aligned_at_neutral"}
+
+    for joint in contract["joints"]:
+        parents = [p for p in parts if p["body"] == joint["parent_joint"] and "_light_link_" in p["name"]]
+        if not parents:
+            continue
+        T = np.asarray(joint["frame_world"])
+        expected_axis = T[:3, :3] @ joint["axis_local"]
+        origin = T[:3, 3]
+        parent = measure(parents, radius, origin, expected_axis)
+        children = [p for p in parts if p["body"] == joint["name"] and "_light_link_" in p["name"]]
+        shafts = [p for p in parts if p["body"] == joint["name"] and "_shaft_" in p["name"]]
         measurements.append({"joint": joint["name"], "parent": joint["parent_joint"],
-                             "bore_radius_mm": radius, "nearby_cylindrical_bore_faces": len(measured),
-                             "axis_angle_error_deg": None if best is None else best[0],
-                             "axis_line_distance_mm": None if best is None else best[1],
-                             "best_parent_component": None if best is None else best[2],
-                             "status": "no_nearby_bore_identified" if best is None else
-                                       "misaligned" if best[0] > .1 else "aligned_at_neutral"})
+                             "bore_radius_mm": radius, "nearby_cylindrical_bore_faces": parent["nearby_cylindrical_faces"],
+                             "axis_angle_error_deg": parent["axis_angle_error_deg"],
+                             "axis_line_distance_mm": parent["axis_line_distance_mm"],
+                             "best_parent_component": parent["best_component"], "status": parent["status"],
+                             "child_bore": measure(children, radius, origin, expected_axis),
+                             "shaft": measure(shafts, design["links"]["pin_radius_mm"], origin, expected_axis)})
     return {"joints_examined": len(measurements),
             "misaligned_parent_bores": sum(x["status"] == "misaligned" for x in measurements),
             "unidentified_parent_bores": sum(x["status"] == "no_nearby_bore_identified" for x in measurements),
+            "misaligned_child_bores": sum(x["child_bore"]["status"] == "misaligned" for x in measurements),
+            "misaligned_shafts": sum(x["shaft"]["status"] == "misaligned" for x in measurements),
+            "unidentified_child_bores": sum(x["child_bore"]["status"] == "no_nearby_bore_identified" for x in measurements),
+            "unidentified_shafts": sum(x["shaft"]["status"] == "no_nearby_bore_identified" for x in measurements),
             "measurements": measurements,
-            "scope": "Saved STEP cylindrical parent bores near distal hinge anchors at neutral pose only. "
-                     "Aligned does not validate child/pin fit, bearings, horn coupling, swept clearance or assembly feasibility."}
+            "scope": "Saved STEP parent/child cylindrical bores and shaft nominal axes near distal hinge anchors at neutral pose only. "
+                     "Agreement within0.1deg/0.001mm is a numerical geometry check, not manufacturing tolerance approval. "
+                     "Aligned does not validate bearing fits, pin retention, horn coupling, swept clearance or assembly feasibility."}
 
 
 def review(root, geometry, simulation, model_frames):
@@ -410,6 +700,8 @@ def review(root, geometry, simulation, model_frames):
     sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, **git_flags).decode().strip()
     dirty = subprocess.check_output(["git", "status", "--porcelain"], cwd=root, **git_flags).decode().strip()
     result = {"target_sha": sha, "clean_checkout_at_review": not dirty,
+            "review_tool_sha256": digest(Path(__file__)),
+            "review_tool_within_target_checkout": Path(__file__).resolve().is_relative_to(root),
             "frozen_hashes_checked": frozen_count, "preserved_dimensions": preserved,
             "joint_count": len(joints), "motor_count": len(motor_names),
             "relocated_motor_count": len(remote), "joint_frame_max_error_mm_or_unitless": max_frame_error,
@@ -431,8 +723,15 @@ def review(root, geometry, simulation, model_frames):
         result["compiled_model_frame_review"] = review_model_frames(root, contract)
     if geometry:
         result["actual_parent_bore_review"] = review_parent_bores(directory, contract, parts, design)
+        result["physical_assembly_envelope_review"] = review_physical_envelope(root, directory, parts)
         result["mechanical_blockers_detected"] = [x for x in result["actual_parent_bore_review"]["measurements"]
-                                                 if x["status"] != "aligned_at_neutral"]
+                                                 if any(y != "aligned_at_neutral" for y in
+                                                        [x["status"], x["child_bore"]["status"], x["shaft"]["status"]])]
+        result["mechanical_blocker_list_scope"] = "The legacy field above lists nominal hinge-axis defects only; an empty list is not construction approval."
+        result["unresolved_construction_scope"] = [
+            "Rigid motor-to-body attachment is a dynamics assumption; new raised or rotated motor plates require physical supports, fasteners and verified load paths.",
+            "Nominal bore and pin axes do not establish fits, retention, horn engagement, structural strength or access for assembly.",
+            "Continuous swept clearance and functional tendon routing, wraps, tensioners and terminals remain unvalidated."]
     return result
 
 
