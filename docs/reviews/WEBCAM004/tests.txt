@@ -1,0 +1,51 @@
+test_calibration_uses_new_fist_and_persists_occluded_tip_ratio (test_articulation.ArticulatedCad.test_calibration_uses_new_fist_and_persists_occluded_tip_ratio) ... ok
+test_complete_fist_reaches_palm_and_bends_both_thumb_joints (test_articulation.ArticulatedCad.test_complete_fist_reaches_palm_and_bends_both_thumb_joints) ... ok
+test_crossing_thumb_moves_above_folded_fingers (test_articulation.ArticulatedCad.test_crossing_thumb_moves_above_folded_fingers) ... ok
+test_every_cad_part_is_present (test_articulation.ArticulatedCad.test_every_cad_part_is_present) ... ok
+test_fist_reaches_named_commands_and_tips_curl_back (test_articulation.ArticulatedCad.test_fist_reaches_named_commands_and_tips_curl_back) ... ok
+test_joint_moves_only_correct_finger_and_keeps_palm_fixed (test_articulation.ArticulatedCad.test_joint_moves_only_correct_finger_and_keeps_palm_fixed) ... ok
+test_mirror_and_camera_rotation_preserve_thumb_target (test_articulation.ArticulatedCad.test_mirror_and_camera_rotation_preserve_thumb_target) ... ok
+test_neutral_meshes_match_original_stl_bounds (test_articulation.ArticulatedCad.test_neutral_meshes_match_original_stl_bounds) ... ok
+test_open_hand_does_not_trigger_fist_wrap (test_articulation.ArticulatedCad.test_open_hand_does_not_trigger_fist_wrap) ... ok
+test_optimizer_chain_agrees_with_loaded_cad_joints (test_articulation.ArticulatedCad.test_optimizer_chain_agrees_with_loaded_cad_joints) ... ok
+test_root_has_two_perpendicular_axes_and_distal_joints_curl_inward (test_articulation.ArticulatedCad.test_root_has_two_perpendicular_axes_and_distal_joints_curl_inward) ... ok
+test_every_cad_part_is_present (test_cad.CadMapping.test_every_cad_part_is_present) ... ok
+test_fist_reaches_named_commands_and_tips_curl_back (test_cad.CadMapping.test_fist_reaches_named_commands_and_tips_curl_back) ... ok
+test_joint_moves_only_correct_finger_and_keeps_palm_fixed (test_cad.CadMapping.test_joint_moves_only_correct_finger_and_keeps_palm_fixed) ... ok
+test_neutral_meshes_match_original_stl_bounds (test_cad.CadMapping.test_neutral_meshes_match_original_stl_bounds) ... ok
+test_invalid_fist_does_not_create_large_gain (test_pipeline.Pipeline.test_invalid_fist_does_not_create_large_gain) ... ok
+test_one_occluded_tip_does_not_discard_other_finger_calibration (test_pipeline.Pipeline.test_one_occluded_tip_does_not_discard_other_finger_calibration) ... ok
+test_open_then_fist_calibration_reaches_robot_range (test_pipeline.Pipeline.test_open_then_fist_calibration_reaches_robot_range) ... ok
+test_tracking_loss_holds_pose_and_recovers (test_pipeline.Pipeline.test_tracking_loss_holds_pose_and_recovers) ... ok
+test_actual_mediapipe_fists_and_mirrors_have_positive_curl (test_pipeline.RealLandmarks.test_actual_mediapipe_fists_and_mirrors_have_positive_curl) ... ok
+test_collapsed_palm_is_rejected (test_pipeline.RealLandmarks.test_collapsed_palm_is_rejected) ... ok
+test_deep_flexion_does_not_reverse_distal_joints (test_pipeline.RealLandmarks.test_deep_flexion_does_not_reverse_distal_joints) ... ok
+test_planar_and_thumb_analytic_derivatives_match_central_difference (test_position.Derivatives.test_planar_and_thumb_analytic_derivatives_match_central_difference) ... ok
+test_camera_rotation_and_left_hand_preserve_result (test_position.PositionMapping.test_camera_rotation_and_left_hand_preserve_result) ... ok
+test_changed_geometry_requires_new_open_calibration (test_position.PositionMapping.test_changed_geometry_requires_new_open_calibration) ... ok
+test_hook_without_root_flexion_does_not_activate_palm_contact_correction (test_position.PositionMapping.test_hook_without_root_flexion_does_not_activate_palm_contact_correction) ... ok
+test_individual_fingers_and_distal_motion_are_not_one_fist_animation (test_position.PositionMapping.test_individual_fingers_and_distal_motion_are_not_one_fist_animation) ... ok
+test_old_individual_angle_gain_does_not_scale_position_command (test_position.PositionMapping.test_old_individual_angle_gain_does_not_scale_position_command) ... ok
+test_open_is_straight_and_fist_tip_targets_remain_near_palm (test_position.PositionMapping.test_open_is_straight_and_fist_tip_targets_remain_near_palm) ... ok
+test_position_calibration_capture_persists_geometry_profile (test_position.PositionMapping.test_position_calibration_capture_persists_geometry_profile) ... ok
+test_previously_unobservable_dip_is_declared_estimated (test_position.PositionMapping.test_previously_unobservable_dip_is_declared_estimated) ... ok
+test_profile_rejects_invalid_coordinates (test_position.PositionMapping.test_profile_rejects_invalid_coordinates) ... ok
+test_spread_and_root_only_flexion_do_not_turn_into_a_fist (test_position.PositionMapping.test_spread_and_root_only_flexion_do_not_turn_into_a_fist) ... ok
+test_unreliable_distal_landmark_has_less_influence_than_347_percent_gain (test_position.PositionMapping.test_unreliable_distal_landmark_has_less_influence_than_347_percent_gain) ... ok
+test_one_euro_tracks_step_and_smooths_noise (test_retarget.Filter.test_one_euro_tracks_step_and_smooths_noise) ... ok
+test_any_camera_orientation (test_retarget.Retarget.test_any_camera_orientation) ... ok
+test_calibration_zeroes_open_hand (test_retarget.Retarget.test_calibration_zeroes_open_hand) ... ok
+test_left_hand_gives_same_anatomical_angles (test_retarget.Retarget.test_left_hand_gives_same_anatomical_angles) ... ok
+test_no_bias_at_straight_joints (test_retarget.Retarget.test_no_bias_at_straight_joints) ... ok
+test_noise_sensitivity_reported (test_retarget.Retarget.test_noise_sensitivity_reported) ... ok
+test_round_trip_right_hand (test_retarget.Retarget.test_round_trip_right_hand) ... ok
+test_wrong_handedness_only_flips_out_of_plane_signs (test_retarget.Retarget.test_wrong_handedness_only_flips_out_of_plane_signs) ... ok
+test_crossing_thumb_moves_above_folded_fingers (test_thumb.ThumbGeometry.test_crossing_thumb_moves_above_folded_fingers) ... ok
+test_mirror_and_camera_rotation_preserve_thumb_target (test_thumb.ThumbGeometry.test_mirror_and_camera_rotation_preserve_thumb_target) ... ok
+test_open_hand_does_not_trigger_fist_wrap (test_thumb.ThumbGeometry.test_open_hand_does_not_trigger_fist_wrap) ... ok
+test_optimizer_chain_agrees_with_loaded_cad_joints (test_thumb.ThumbGeometry.test_optimizer_chain_agrees_with_loaded_cad_joints) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 13.875s
+
+OK

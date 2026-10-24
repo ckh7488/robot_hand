@@ -30,27 +30,33 @@ def main(argv=None):
     ap.add_argument('--beta', type=float, default=0.025)
     ap.add_argument('--min-cutoff', type=float, default=2.0)
     ap.add_argument('--swap-handedness', action='store_true', help='diagnostic override only')
+    ap.add_argument('--retarget', choices=('position', 'angles'), default='position')
+    ap.add_argument('--full-quality', action='store_true', help='full-size CAD render with shadows')
     a = ap.parse_args(argv)
     if a.calibration is None:
-        a.calibration = PROJECT / ('calibration_articulation_v1.json' if a.cad == 'webcam_articulation_v1' else 'calibration_v3.json')
+        a.calibration = PROJECT / (f'calibration_pose_v2_{a.cad}.json' if a.retarget == 'position' else
+            'calibration_articulation_v1.json' if a.cad == 'webcam_articulation_v1' else 'calibration_v3.json')
     robot = tracker = source = ui = log = None
     error = None
     try:
         robot = CadHand(a.repo, whole=a.whole, cad=a.cad)
-        pipeline = PosePipeline(robot.design, robot.ranges, a.calibration, a.beta, a.min_cutoff)
+        pipeline = PosePipeline(robot.design, robot.ranges, a.calibration, a.beta, a.min_cutoff, a.retarget)
         log = SessionLog(a.log_dir, dict(
             source=a.source, requested_fps=a.fps, cad_source=str(robot.source),
             cad_hashes=robot.hashes, preview='kinematic', calibration=str(a.calibration),
             calibration_snapshot=dict(offset_deg=pipeline.calibration.offset,
                                       gain=pipeline.calibration.gain,
                                       estimated_dip_indices=pipeline.calibration.coupled_dips,
-                                      estimated_dip_ratios=pipeline.calibration.dip_ratios),
+                                      estimated_dip_ratios=pipeline.calibration.dip_ratios,
+                                      position_profile=pipeline.calibration.position_profile),
+            finger_mapping=a.retarget, render_quality='full' if a.full_quality else 'fast',
             thumb_mapping='position_fit_with_design_joint_frames',
             filter=dict(beta=a.beta, min_cutoff=a.min_cutoff)))
         if a.source == 'synthetic':
             source = SyntheticSource(fps=a.fps, noise_m=0)
         else:
             import cv2
+            cv2.setNumThreads(1)
             from .tracker import HandTracker
             tracker = HandTracker(a.model)
             source = LatestFrameCamera(int(a.source), a.width, a.height, a.fps, backend=cv2.CAP_DSHOW if sys.platform == 'win32' else None) if a.source.isdigit() else VideoFileSource(a.source)
@@ -93,7 +99,8 @@ def main(argv=None):
                 log.event('calibration_finished', message=pipeline.message,
                           offset_deg=pipeline.calibration.offset, gain=pipeline.calibration.gain,
                           estimated_dip_indices=pipeline.calibration.coupled_dips,
-                          estimated_dip_ratios=pipeline.calibration.dip_ratios)
+                          estimated_dip_ratios=pipeline.calibration.dip_ratios,
+                          position_profile=pipeline.calibration.position_profile)
             if testing:
                 pose['command_deg'] = pipeline.fist.copy()
             robot.set(pose['command_deg'])
@@ -102,8 +109,15 @@ def main(argv=None):
             previous_loop = command_time
             timing = dict(camera_fps=source.measured_fps(), processing_fps=processing_fps, track_ms=(tracking_end - tracking_start) * 1000, age_ms=(command_time - captured) * 1000)
             mode = 'test' if testing else 'live'
+            render_start = time.perf_counter()
+            rendered = robot.render(view, width=880 if a.full_quality else 660,
+                                    height=760 if a.full_quality else 570, fast=not a.full_quality) if ui else None
+            render_end = time.perf_counter()
+            key = ui.show(image, detection, rendered, pose, pipeline, timing, mode, view, debug) if ui else 255
+            timing.update(map_ms=(command_time-tracking_end)*1000,
+                          render_ms=(render_end-render_start)*1000,
+                          ui_ms=(time.perf_counter()-render_end)*1000)
             log.frame(seq, captured, command_time, detection, pose, robot.angles, timing, mode)
-            key = ui.show(image, detection, robot.render(view), pose, pipeline, timing, mode, view, debug) if ui else 255
             if key in (ord('q'), 27):
                 break
             elif key in (ord('1'), ord('2'), ord('3')):

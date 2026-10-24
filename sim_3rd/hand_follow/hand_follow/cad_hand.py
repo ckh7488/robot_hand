@@ -145,7 +145,7 @@ class CadHand:
     def angles(self):
         return np.degrees(self.data.qpos[self.addresses]).copy()
 
-    def render(self, view=0, width=880, height=760, axes=False, *, focus=None, distance=None):
+    def render(self, view=0, width=880, height=760, axes=False, *, focus=None, distance=None, fast=False):
         if self.renderer is None:
             self.renderer = mujoco.Renderer(self.model, height=height, width=width)
         cam = mujoco.MjvCamera()
@@ -157,6 +157,7 @@ class CadHand:
             cam.distance = distance
         cam.azimuth, cam.elevation = [(95, -72), (135, -32), (180, -5)][view % 3]
         self.renderer.update_scene(self.data, cam)
+        self.renderer.scene.flags[mujoco.mjtRndFlag.mjRND_SHADOW] = not fast
         if axes:
             colors = [(1., .3, .3, 1), (.3, 1., .3, 1), (.35, .6, 1., 1), (1., .8, .2, 1)]
             for name, color in zip(NAMES[16:], colors):

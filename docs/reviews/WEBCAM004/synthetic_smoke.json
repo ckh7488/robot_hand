@@ -1,0 +1,9 @@
+{
+  "state": "stopped",
+  "pid": 10400,
+  "frames": 76,
+  "hand_frames": 76,
+  "updated_at": 1792856311.136726,
+  "error": null,
+  "median_frame_age_ms": 41.38750006677583
+}

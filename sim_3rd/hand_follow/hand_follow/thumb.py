@@ -44,6 +44,31 @@ def smoothstep(value):
     return t * t * (3 - 2 * t)
 
 
+def chain_jacobian(config, angles):
+    """Joint points and exact per-degree position derivatives of the four axes."""
+    base = rz(config.get('base_yaw_deg', 0) - angles[0])
+    root = np.array(config['root'], float)
+    points = [root + base @ config.get('flexion_offset', [0, 0, 0])]
+    origins = [root, points[0]]
+    axes = [np.array([0., 0., -1.]), base[:, 0]]
+    rotation = base @ rx(angles[1])
+    for i, length in enumerate(config['links']):
+        if i:
+            if i == 1:
+                rotation = rotation @ rz(config.get('second_yaw_deg', 0)) @ ry(config.get('second_roll_deg', 0))
+            origins.append(points[-1])
+            axes.append(rotation[:, 0])
+            rotation = rotation @ rx(angles[i + 1])
+        points.append(points[-1] + rotation @ [0, length, 0])
+    points = np.array(points)
+    jacobian = np.zeros((3, 3, 4))
+    for point in range(1, 4):
+        active = point + 1
+        jacobian[point-1, :, :active] = np.cross(
+            np.array(axes[:active]), points[point]-np.array(origins[:active])).T * (np.pi/180)
+    return points, jacobian
+
+
 class ThumbRetargeter:
     def __init__(self, design, ranges):
         self.design = design
@@ -87,12 +112,26 @@ class ThumbRetargeter:
         seed = np.clip(initial if self.previous is None else self.previous, lower + 1e-6, upper - 1e-6)
         weights = np.array([.10, .25, 2.0])[:, None]
 
+        cache = [None, None, None]
+
+        def evaluate(angles):
+            if cache[0] is None or not np.array_equal(cache[0], angles):
+                points, jacobian = chain_jacobian(thumb, angles)
+                cache[:] = [angles.copy(), points, jacobian]
+            return cache[1], cache[2]
+
         def residual(angles):
-            positional = ((chain(thumb, angles)[1:] - target) * weights / 50).ravel()
+            points, _ = evaluate(angles)
+            positional = ((points[1:] - target) * weights / 50).ravel()
             # Small regularizer resolves redundant solutions without hiding tip error.
             return np.r_[positional, (angles - seed) / 180 * .03]
 
-        fit = least_squares(residual, seed, bounds=(lower, upper), max_nfev=16,
+        def jacobian(angles):
+            _, derivative = evaluate(angles)
+            return np.vstack(((derivative * weights[:, :, None] / 50).reshape(9, 4),
+                              np.eye(4) * (.03/180)))
+
+        fit = least_squares(residual, seed, jac=jacobian, bounds=(lower, upper), max_nfev=16,
                             ftol=2e-4, xtol=2e-4, gtol=2e-4)
         if not np.isfinite(fit.x).all():
             raise ValueError('Thumb fit produced invalid angles')

@@ -5,13 +5,14 @@ import numpy as np
 from .retarget import Calibration, raw_angles
 from .filters import OneEuro
 from .thumb import ThumbRetargeter
+from .fingers import FingerRetargeter, observations
 
 FLEX = np.array([i for i in range(16) if i % 4 != 0])
 FIST = np.array([0, 80, 95, 70] * 4 + [-55, 50, 0, 0], float)
 
 
 class PosePipeline:
-    def __init__(self, design, ranges, calibration_path, beta=.025, min_cutoff=2.0):
+    def __init__(self, design, ranges, calibration_path, beta=.025, min_cutoff=2.0, retarget_mode='angles'):
         self.design = design
         self.ranges = ranges
         self.fist = np.asarray(design.get('fist_deg', FIST), float)
@@ -29,6 +30,14 @@ class PosePipeline:
         self.samples = []
         self.message = ''
         self.thumb = ThumbRetargeter(design, ranges) if 'fingers' in design else None
+        self.fingers = FingerRetargeter(design, ranges) if retarget_mode == 'position' and 'fingers' in design else None
+        self.retarget_mode = retarget_mode
+        if self.fingers and self.calibration.position_profile.get('cad_signature') != self.fingers.signature:
+            self.calibration = Calibration()
+            self.open_calibrated = self.fist_calibrated = False
+            self.message = 'C 편 손 → V 주먹으로 손끝 위치를 보정하세요'
+        elif self.fingers:
+            self.fist_calibrated = 'fist_tips' in self.calibration.position_profile
 
     def start_calibration(self, kind):
         if kind == 'fist' and not self.open_calibrated:
@@ -46,9 +55,11 @@ class PosePipeline:
         self.filter.reset()
         if self.thumb:
             self.thumb.reset()
+        if self.fingers:
+            self.fingers.reset()
         self.message = '보정을 초기화했습니다'
 
-    def _capture(self, raw, now):
+    def _capture(self, raw, now, observed=None):
         if self.capture_kind is None:
             return
         elapsed = now - self.capture_started
@@ -59,11 +70,11 @@ class PosePipeline:
         # Give the user half a second to release the key before collecting.
         if elapsed < .5:
             return
-        self.samples.append((now, raw.copy()))
-        self.samples = [(stamp, value) for stamp, value in self.samples if now - stamp <= 1.4]
+        self.samples.append((now, raw.copy(), observed))
+        self.samples = [sample for sample in self.samples if now - sample[0] <= 1.4]
         if elapsed < 1.8 or len(self.samples) < 8:
             return
-        samples = np.asarray([value for stamp, value in self.samples])
+        samples = np.asarray([sample[1] for sample in self.samples])
         med = np.median(samples, axis=0)
         # Median absolute deviation rejects transition outliers without allowing
         # continuously moving hands to define an endpoint.
@@ -77,6 +88,9 @@ class PosePipeline:
                 return
             self.calibration = Calibration()
             self.calibration.capture_open_hand(med)
+            if self.fingers and all(sample[2] is not None for sample in self.samples):
+                self.calibration.position_profile = dict(schema=1, cad_signature=self.fingers.signature,
+                    open_tips=np.median([sample[2]['tips'] for sample in self.samples], axis=0).tolist())
             self.open_calibrated, self.fist_calibrated = True, False
             self.message = '편 손 보정 완료 · 필요하면 V로 주먹 보정'
         else:
@@ -92,6 +106,10 @@ class PosePipeline:
             self.calibration.dip_ratios = {i: float(self.fist[i] / self.fist[i - 1]) for i in self.calibration.coupled_dips}
             observed = np.array([i for i in FLEX if i not in self.calibration.coupled_dips])
             self.calibration.gain[observed] = np.clip(self.fist[observed] / movement[observed], .5, 4)
+            if self.fingers and self.calibration.position_profile and all(sample[2] is not None for sample in self.samples):
+                self.calibration.position_profile['fist_tips'] = np.median(
+                    [sample[2]['tips'] for sample in self.samples], axis=0).tolist()
+                self.calibration.position_profile['fist_flex_deg'] = med[:16].reshape(4,4)[:,1:].tolist()
             self.fist_calibrated = True
             self.message = '주먹 보정 완료'
             if self.calibration.coupled_dips:
@@ -101,6 +119,8 @@ class PosePipeline:
         self.calibration_path.parent.mkdir(parents=True, exist_ok=True)
         self.calibration.save(self.calibration_path)
         self.filter.reset()
+        if self.fingers:
+            self.fingers.reset()
         self.capture_kind = None
 
     def update(self, detection, capture_time, now=None):
@@ -113,6 +133,8 @@ class PosePipeline:
                 self.filter.reset()
                 if self.thumb:
                     self.thumb.reset()
+                if self.fingers:
+                    self.fingers.reset()
             if self.capture_kind and now - self.capture_started > 5:
                 self.capture_kind = None
                 self.message = '보정 실패: 손이 보이지 않습니다'
@@ -128,17 +150,28 @@ class PosePipeline:
             self.filter.reset()
             if self.thumb:
                 self.thumb.reset()
+            if self.fingers:
+                self.fingers.reset()
         self.last_hand, self.last_seen = detection['handedness'], now
-        self._capture(raw, now)
+        try:
+            observed = observations(detection['world'], detection['handedness']) if self.fingers else None
+        except ValueError as exc:
+            result['warning'] = str(exc)
+            return result
+        self._capture(raw, now, observed)
         result['estimated_joints'] = self.calibration.coupled_dips.copy()
         mapped = self.calibration.apply(raw)
         # Spread is poorly observed when the proximal bone faces the camera.
         # Progressively relax it toward neutral in a closed fist, without
         # coupling the four fingers' flexion or the PIP/DIP commands.
-        for offset in range(0, 16, 4):
-            closure = max(np.clip((raw[offset + 1] - 45) / 35, 0, 1),
-                          np.clip((mapped[offset + 2] - 45) / 40, 0, 1))
-            mapped[offset] *= 1 - closure
+        if self.fingers:
+            mapped[:16], result['finger_fit'] = self.fingers.solve(observed, raw, self.calibration)
+            result['estimated_joints'] = result['finger_fit']['estimated_joints']
+        else:
+            for offset in range(0, 16, 4):
+                closure = max(np.clip((raw[offset + 1] - 45) / 35, 0, 1),
+                              np.clip((mapped[offset + 2] - 45) / 40, 0, 1))
+                mapped[offset] *= 1 - closure
         if self.thumb:
             try:
                 mapped[16:], result['thumb_fit'] = self.thumb.solve(

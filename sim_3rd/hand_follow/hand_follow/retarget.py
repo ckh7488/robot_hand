@@ -133,6 +133,7 @@ class Calibration:
     gain: np.ndarray = field(default_factory=lambda: np.ones(20))
     coupled_dips: list = field(default_factory=list)
     dip_ratios: dict = field(default_factory=dict)
+    position_profile: dict = field(default_factory=dict)
 
     def apply(self, raw):
         mapped = self.gain * (raw - self.offset)
@@ -152,7 +153,8 @@ class Calibration:
     def save(self, path):
         Path(path).write_text(json.dumps({"names": NAMES, "offset_deg": self.offset.tolist(),
                                           "gain": self.gain.tolist(), "estimated_dip_indices": self.coupled_dips,
-                                          "estimated_dip_ratios": self.dip_ratios}, indent=1), encoding="utf-8")
+                                          "estimated_dip_ratios": self.dip_ratios,
+                                          "position_profile": self.position_profile}, indent=1), encoding="utf-8")
 
     @classmethod
     def load(cls, path):
@@ -168,4 +170,18 @@ class Calibration:
         ratios = {int(i): float(r) for i, r in d.get('estimated_dip_ratios', {}).items()}
         if any(i not in (3, 7, 11, 15) or not np.isfinite(r) or not 0 < r <= 2 for i, r in ratios.items()):
             raise ValueError('Invalid estimated DIP ratio')
-        return cls(offset, gain, sorted(set(estimated)), ratios)
+        profile = d.get('position_profile', {})
+        if profile:
+            if not isinstance(profile, dict) or profile.get('schema') != 1 or not isinstance(profile.get('cad_signature'), str):
+                raise ValueError('Invalid position calibration profile')
+            for key in ('open_tips', 'fist_tips'):
+                if key == 'fist_tips' and key not in profile:
+                    continue
+                values = np.asarray(profile.get(key), float)
+                if values.shape != (4, 3) or not np.isfinite(values).all() or np.max(np.abs(values)) > 2:
+                    raise ValueError('Invalid normalized fingertip calibration')
+            if 'fist_flex_deg' in profile:
+                values = np.asarray(profile['fist_flex_deg'], float)
+                if values.shape != (4,3) or not np.isfinite(values).all() or np.max(np.abs(values)) > 180:
+                    raise ValueError('Invalid fist flexion calibration')
+        return cls(offset, gain, sorted(set(estimated)), ratios, profile)
