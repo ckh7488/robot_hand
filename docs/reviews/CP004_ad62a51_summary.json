@@ -1,0 +1,10 @@
+{
+  "readme_links": 28,
+  "cad_archive_crc": true,
+  "viewer_trace_hashes": true,
+  "full_simulation_reproduced": true,
+  "target_sha": "ad62a517b4fdd19bc434448ccb4da079ddfcc37c",
+  "git_status": "",
+  "manufacturing_release": false,
+  "physical_latency_validated": false
+}

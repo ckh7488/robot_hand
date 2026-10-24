@@ -1,0 +1,294 @@
+{
+  "target_sha": "ad62a517b4fdd19bc434448ccb4da079ddfcc37c",
+  "clean_checkout_at_review": true,
+  "frozen_hashes_checked": 222,
+  "preserved_dimensions": [
+    "palm_width",
+    "palm_length",
+    "root_axis_offset_z",
+    "fingers"
+  ],
+  "joint_count": 20,
+  "motor_count": 20,
+  "relocated_motor_count": 10,
+  "joint_frame_max_error_mm_or_unitless": 0.0,
+  "body_count": 21,
+  "massive_component_count": 183,
+  "saved_STEP_remeasured_component_count": 183,
+  "unique_STEP_files_read": 80,
+  "part_max_volume_error_mm3": 4.622052074410021e-09,
+  "part_max_com_error_mm": 8.412825991399586e-12,
+  "part_max_inertia_error_kg_m2": 3.2708177258224808e-18,
+  "body_max_mass_error_kg": 0.0,
+  "body_max_com_error_mm": 8.78941364135244e-12,
+  "body_max_inertia_error_kg_m2": 5.204170427930421e-18,
+  "hand_assumed_mass_kg": 1.4465642425609166,
+  "numerical_contract_consistency_passed": true,
+  "manufacturing_release": false,
+  "physical_latency_validated": false,
+  "scope": "Independent saved STEP mass-property remeasurement and contract aggregation; preserved geometry inputs, declared joint frames, motor body membership, positive inertias and frozen evidence. Complete mating-bore/pin alignment and assembly feasibility are not established. No whole-range collision, cable-routing validation, motor calibration or hardware performance approval.",
+  "simulation_report_review": {
+    "source_hash_count": 11,
+    "remote20_bidirectional_joint_coverage": 20,
+    "CAD_mass_and_transmission_match": true,
+    "event_summary_reaggregation": [
+      {
+        "case": "baseline20/small5",
+        "event_count": 240,
+        "missing_events": 23,
+        "valid_event_max_ms": 76.52860985210359,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/small10",
+        "event_count": 240,
+        "missing_events": 12,
+        "valid_event_max_ms": 65.04558681132322,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/large45",
+        "event_count": 240,
+        "missing_events": 10,
+        "valid_event_max_ms": 243.61996363606076,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 12,
+        "valid_event_max_ms": 230.14203982269032,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/upstream_hold",
+        "event_count": 60,
+        "missing_events": 5,
+        "valid_event_max_ms": 238.23097988295282,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 52,
+        "valid_event_max_ms": 120.58979996033992,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/small5",
+        "event_count": 240,
+        "missing_events": 18,
+        "valid_event_max_ms": 66.06554737083292,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/small10",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 43.46048392090718,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/large45",
+        "event_count": 240,
+        "missing_events": 9,
+        "valid_event_max_ms": 138.07721053738132,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 8,
+        "valid_event_max_ms": 118.41851939505443,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/upstream_hold",
+        "event_count": 60,
+        "missing_events": 2,
+        "valid_event_max_ms": 40.09110776472768,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 99.7700586257404,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/small5",
+        "event_count": 240,
+        "missing_events": 20,
+        "valid_event_max_ms": 65.91218629684991,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/small10",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 42.441327589996966,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/large45",
+        "event_count": 240,
+        "missing_events": 9,
+        "valid_event_max_ms": 138.3382492896428,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 118.41851939506198,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/upstream_hold",
+        "event_count": 60,
+        "missing_events": 2,
+        "valid_event_max_ms": 40.8481102754632,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 23,
+        "valid_event_max_ms": 99.77005862574029,
+        "simulated_100ms_event_budget_met": false
+      }
+    ],
+    "scope": "Checks committed event arithmetic/coverage and CAD-to-simulation data consistency; does not independently replay or calibrate the dynamics engine."
+  },
+  "compiled_model_frame_review": {
+    "poses": 13,
+    "joints_per_pose": 20,
+    "max_position_error_m": 4.0245584642661925e-14,
+    "max_rotation_matrix_error": 6.124545315344676e-13,
+    "max_axis_error": 6.120659534758488e-13,
+    "max_COM_error_m": 5.0459636469213365e-14,
+    "max_world_inertia_error_kg_m2": 1.0831844890809162e-11,
+    "scope": "Independent CAD parent-frame/axis composition versus compiled MuJoCo model at neutral and 12 non-neutral poses; includes body COM and rotated inertia, not integrated trajectory or physical calibration."
+  },
+  "actual_parent_bore_review": {
+    "joints_examined": 10,
+    "misaligned_parent_bores": 1,
+    "unidentified_parent_bores": 0,
+    "measurements": [
+      {
+        "joint": "index_pip",
+        "parent": "index_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "index_light_link_1",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "index_dip",
+        "parent": "index_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "index_light_link_2",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "middle_pip",
+        "parent": "middle_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "middle_light_link_1",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "middle_dip",
+        "parent": "middle_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "middle_light_link_2",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "ring_pip",
+        "parent": "ring_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "ring_light_link_1",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "ring_dip",
+        "parent": "ring_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "ring_light_link_2",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "little_pip",
+        "parent": "little_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "little_light_link_1",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "little_dip",
+        "parent": "little_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "little_light_link_2",
+        "status": "aligned_at_neutral"
+      },
+      {
+        "joint": "thumb_mcp",
+        "parent": "thumb_opposition",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 34.99999999998058,
+        "axis_line_distance_mm": 3.47455397786689e-12,
+        "best_parent_component": "thumb_light_link_1",
+        "status": "misaligned"
+      },
+      {
+        "joint": "thumb_ip",
+        "parent": "thumb_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 7.721379091663039e-12,
+        "best_parent_component": "thumb_light_link_2",
+        "status": "aligned_at_neutral"
+      }
+    ],
+    "scope": "Saved STEP cylindrical parent bores near distal hinge anchors at neutral pose only. Aligned does not validate child/pin fit, bearings, horn coupling, swept clearance or assembly feasibility."
+  },
+  "mechanical_blockers_detected": [
+    {
+      "joint": "thumb_mcp",
+      "parent": "thumb_opposition",
+      "bore_radius_mm": 2.1,
+      "nearby_cylindrical_bore_faces": 2,
+      "axis_angle_error_deg": 34.99999999998058,
+      "axis_line_distance_mm": 3.47455397786689e-12,
+      "best_parent_component": "thumb_light_link_1",
+      "status": "misaligned"
+    }
+  ]
+}

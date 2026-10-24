@@ -17,6 +17,8 @@
     "upper_limit": 100,
     "boundary": "Robot controller received target to actual joint motion; upstream sensing excluded"
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_scope": "Pending exact-SHA clean checkout review of CAD solids/mass/frames, simulation consistency and results, frozen evidence, and checkpoint manifest."
+  "post_commit_results_reproduced": true,
+  "post_commit_review_scope": "Exact-SHA clean checkout: saved STEP mass/inertia and joint axes, 13 compiled-model poses, 7 consistency tests, 18 motion cases plus 8 sensitivities exactly reproduced, frozen evidence and manifest. No full CAD regeneration, fabrication or physical latency approval.",
+  "post_commit_review_target": "ad62a517b4fdd19bc434448ccb4da079ddfcc37c",
+  "post_commit_review_report": "docs/reviews/CP004_ad62a51.md"
 }
