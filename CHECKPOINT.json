@@ -23,7 +23,8 @@
     "passed": 1,
     "pairs": 6
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "77c4405f902e9786a9107422757a66075ea332cd",
+  "post_commit_review_report": "docs/reviews/DRIVE001_77c4405.md",
+  "post_commit_review_scope": "Exact-commit new hand mass/inertia/20-axis contract, adapter tests, finite middle tendon ends, neutral motor packaging and saved parts, plus one small5 baseline motion. No full 17-case/convergence replay, continuous clearance or physical acceptance."
 }

@@ -1,0 +1,24 @@
+{
+  "target_sha": "77c4405f902e9786a9107422757a66075ea332cd",
+  "fresh_root": "D:\\Codex-work\\robot-hand-workspace\\work\\form_drive_v1\\review_77c4405f902e",
+  "passed": false,
+  "reviewer_script_sha256": "ae806e1c471a45fea61e4a380a7eb11eb404d91a5577f657609aa69f5f1500e7",
+  "reviewer_script_committed_with_candidate": false,
+  "candidate_source": "git archive of exact target commit",
+  "working_tree_inputs_copied": false,
+  "same_agent_fresh_copy_review": true,
+  "subprocess_console_windows_disabled": true,
+  "steps": [],
+  "execution_environment": {
+    "PYTHONPATH": "D:/Codex-work/robot-hand-workspace/work/audit_deps;D:/Codex-work/robot-hand-cache/2026-10-24/cad_deps",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "TEMP": "D:\\Codex-work\\robot-hand-workspace\\work\\form_drive_v1\\review_77c4405f902e\\_review\\tmp",
+    "TMP": "D:\\Codex-work\\robot-hand-workspace\\work\\form_drive_v1\\review_77c4405f902e\\_review\\tmp"
+  },
+  "python_executable": "C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\pythonw.exe",
+  "error": "FileNotFoundError: [WinError 206] 파일 이름이나 확장명이 너무 깁니다",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\work\\form_drive_v1\\fresh_review.py\", line 415, in main\n    raw_tree = git_capture(repo, [\"ls-tree\", \"-r\", \"-z\", \"--full-tree\", commit, \"--\", *paths])\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Codex-work\\robot-hand-workspace\\work\\form_drive_v1\\fresh_review.py\", line 75, in git_capture\n    result = subprocess.run([GIT, *arguments], cwd=repo, capture_output=True,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\subprocess.py\", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\subprocess.py\", line 1538, in _execute_child\n    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [WinError 206] 파일 이름이나 확장명이 너무 깁니다\n",
+  "scope": "Exact-commit reproduction only; known collisions and tracking/convergence limitations remain limitations. No git mutation, push, hardware action, whole 17-case or continuous-clearance rerun."
+}
