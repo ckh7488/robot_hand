@@ -1,0 +1,9 @@
+{
+  "meshes": 124,
+  "joints": 20,
+  "poses": 33,
+  "max_fk_error_mm": 4.2746287142700464e-10,
+  "manifest_files": 132,
+  "portable_assets": true,
+  "scope": "Visual form and finite pose consistency only; no manufacturing/collision validation"
+}

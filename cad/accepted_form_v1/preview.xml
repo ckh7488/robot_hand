@@ -1,0 +1,358 @@
+<mujoco model="CAD hand pose preview">
+  <compiler angle="radian" autolimits="true" />
+  <option gravity="0 0 0" />
+  <visual>
+    <global offwidth="1000" offheight="900" />
+    <headlight ambient=".5 .5 .5" diffuse=".6 .6 .6" specular=".15 .15 .15" />
+    <quality shadowsize="2048" />
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="flat" rgb1=".075 .10 .14" rgb2=".075 .10 .14" width="256" height="1536" />
+    <mesh name="part0" file="meshes/000.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part1" file="meshes/001.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part2" file="meshes/002.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part3" file="meshes/003.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part4" file="meshes/004.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part5" file="meshes/005.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part6" file="meshes/006.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part7" file="meshes/007.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part8" file="meshes/008.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part9" file="meshes/009.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part10" file="meshes/010.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part11" file="meshes/011.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part12" file="meshes/012.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part13" file="meshes/013.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part14" file="meshes/014.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part15" file="meshes/015.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part16" file="meshes/016.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part17" file="meshes/017.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part18" file="meshes/018.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part19" file="meshes/019.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part20" file="meshes/020.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part21" file="meshes/021.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part22" file="meshes/022.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part23" file="meshes/023.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part24" file="meshes/024.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part25" file="meshes/025.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part26" file="meshes/026.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part27" file="meshes/027.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part28" file="meshes/028.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part29" file="meshes/029.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part30" file="meshes/030.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part31" file="meshes/031.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part32" file="meshes/032.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part33" file="meshes/033.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part34" file="meshes/034.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part35" file="meshes/035.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part36" file="meshes/036.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part37" file="meshes/037.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part38" file="meshes/038.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part39" file="meshes/039.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part40" file="meshes/040.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part41" file="meshes/041.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part42" file="meshes/042.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part43" file="meshes/043.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part44" file="meshes/044.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part45" file="meshes/045.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part46" file="meshes/046.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part47" file="meshes/047.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part48" file="meshes/048.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part49" file="meshes/049.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part50" file="meshes/050.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part51" file="meshes/051.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part52" file="meshes/052.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part53" file="meshes/053.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part54" file="meshes/054.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part55" file="meshes/055.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part56" file="meshes/056.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part57" file="meshes/057.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part58" file="meshes/058.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part59" file="meshes/059.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part60" file="meshes/060.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part61" file="meshes/061.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part62" file="meshes/062.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part63" file="meshes/063.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part64" file="meshes/064.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part65" file="meshes/065.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part66" file="meshes/066.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part67" file="meshes/067.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part68" file="meshes/068.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part69" file="meshes/069.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part70" file="meshes/070.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part71" file="meshes/071.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part72" file="meshes/072.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part73" file="meshes/073.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part74" file="meshes/074.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part75" file="meshes/075.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part76" file="meshes/076.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part77" file="meshes/077.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part78" file="meshes/078.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part79" file="meshes/079.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part80" file="meshes/080.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part81" file="meshes/081.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part82" file="meshes/082.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part83" file="meshes/083.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part84" file="meshes/084.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part85" file="meshes/085.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part86" file="meshes/086.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part87" file="meshes/087.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part88" file="meshes/088.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part89" file="meshes/089.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part90" file="meshes/090.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part91" file="meshes/091.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part92" file="meshes/092.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part93" file="meshes/093.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part94" file="meshes/094.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part95" file="meshes/095.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part96" file="meshes/096.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part97" file="meshes/097.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part98" file="meshes/098.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part99" file="meshes/099.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part100" file="meshes/100.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part101" file="meshes/101.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part102" file="meshes/102.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part103" file="meshes/103.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part104" file="meshes/104.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part105" file="meshes/105.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part106" file="meshes/106.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part107" file="meshes/107.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part108" file="meshes/108.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part109" file="meshes/109.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part110" file="meshes/110.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part111" file="meshes/111.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part112" file="meshes/112.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part113" file="meshes/113.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part114" file="meshes/114.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part115" file="meshes/115.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part116" file="meshes/116.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part117" file="meshes/117.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part118" file="meshes/118.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part119" file="meshes/119.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part120" file="meshes/120.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part121" file="meshes/121.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part122" file="meshes/122.stl" scale=".001 .001 .001" maxhullvert="64" />
+    <mesh name="part123" file="meshes/123.stl" scale=".001 .001 .001" maxhullvert="64" />
+  </asset>
+  <worldbody>
+    <light pos=".3 .4 .8" diffuse=".6 .6 .6" />
+    <body name="index_spread" pos="0.0585 0.11320878209 0.008" quat="1 0 0 0">
+      <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+      <joint name="index_spread" type="hinge" axis="0 0 -1" range="-0.383972435439 0.383972435439" />
+      <body name="index_mcp" pos="0 0 0" quat="1 0 0 0">
+        <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+        <joint name="index_mcp" type="hinge" axis="1 0 0" range="-0.349065850399 1.57079632679" />
+        <site name="index_mcp_tip" pos="0 0.0765383403315 0" size=".001" rgba="0 0 0 0" />
+        <body name="index_pip" pos="0 0.0765383403315 0" quat="1 0 0 0">
+          <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+          <joint name="index_pip" type="hinge" axis="1 0 0" range="0 2.35619449019" />
+          <site name="index_pip_tip" pos="0 0.0430600315892 0" size=".001" rgba="0 0 0 0" />
+          <body name="index_dip" pos="0 0.0430600315892 0" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+            <joint name="index_dip" type="hinge" axis="1 0 0" range="0 1.57079632679" />
+            <site name="index_dip_tip" pos="0 0.0378266407973 0" size=".001" rgba="0 0 0 0" />
+            <geom name="index_segment3_tip_core" type="mesh" mesh="part37" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+            <geom name="index_segment3_proximal_bushing" type="mesh" mesh="part38" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+            <geom name="index_segment3_rounded_tip_cap" type="mesh" mesh="part39" pos="0 0 0" quat="1 0 0 0" rgba="0.91 0.66 0.25 1" contype="0" conaffinity="0" group="0" />
+          </body>
+          <geom name="index_segment2_segment_shell" type="mesh" mesh="part31" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+          <geom name="index_segment2_proximal_bushing" type="mesh" mesh="part32" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="index_segment2_distal_left_bushing" type="mesh" mesh="part33" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="index_segment2_distal_right_bushing" type="mesh" mesh="part34" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="index_segment2_dark_faceplate" type="mesh" mesh="part35" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="index_joint_pin_2" type="mesh" mesh="part40" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        </body>
+        <geom name="index_segment1_segment_shell" type="mesh" mesh="part25" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+        <geom name="index_segment1_proximal_bushing" type="mesh" mesh="part26" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="index_segment1_distal_left_bushing" type="mesh" mesh="part27" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="index_segment1_distal_right_bushing" type="mesh" mesh="part28" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="index_segment1_dark_faceplate" type="mesh" mesh="part29" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="index_joint_pin_1" type="mesh" mesh="part36" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        <geom name="index_segment1_palmar_transition" type="mesh" mesh="part120" pos="0 0 0" quat="1 0 0 0" rgba="0.89 0.9 0.88 1" contype="0" conaffinity="0" group="0" />
+      </body>
+      <geom name="index_spread_ring" type="mesh" mesh="part22" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+      <geom name="index_root_fork_-13" type="mesh" mesh="part23" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="index_root_fork_13" type="mesh" mesh="part24" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="index_joint_pin_0" type="mesh" mesh="part30" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    </body>
+    <body name="middle_spread" pos="0.0195 0.122116299213 0.008" quat="1 0 0 0">
+      <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+      <joint name="middle_spread" type="hinge" axis="0 0 -1" range="-0.383972435439 0.383972435439" />
+      <body name="middle_mcp" pos="0 0 0" quat="1 0 0 0">
+        <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+        <joint name="middle_mcp" type="hinge" axis="1 0 0" range="-0.349065850399 1.57079632679" />
+        <site name="middle_mcp_tip" pos="0 0.0858699378832 0" size=".001" rgba="0 0 0 0" />
+        <body name="middle_pip" pos="0 0.0858699378832 0" quat="1 0 0 0">
+          <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+          <joint name="middle_pip" type="hinge" axis="1 0 0" range="0 2.35619449019" />
+          <site name="middle_pip_tip" pos="0 0.0506599924819 0" size=".001" rgba="0 0 0 0" />
+          <body name="middle_dip" pos="0 0.0506599924819 0" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+            <joint name="middle_dip" type="hinge" axis="1 0 0" range="0 1.57079632679" />
+            <site name="middle_dip_tip" pos="0 0.0410782696349 0" size=".001" rgba="0 0 0 0" />
+            <geom name="middle_segment3_tip_core" type="mesh" mesh="part57" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+            <geom name="middle_segment3_proximal_bushing" type="mesh" mesh="part58" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+            <geom name="middle_segment3_rounded_tip_cap" type="mesh" mesh="part59" pos="0 0 0" quat="1 0 0 0" rgba="0.91 0.66 0.25 1" contype="0" conaffinity="0" group="0" />
+          </body>
+          <geom name="middle_segment2_segment_shell" type="mesh" mesh="part51" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+          <geom name="middle_segment2_proximal_bushing" type="mesh" mesh="part52" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="middle_segment2_distal_left_bushing" type="mesh" mesh="part53" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="middle_segment2_distal_right_bushing" type="mesh" mesh="part54" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="middle_segment2_dark_faceplate" type="mesh" mesh="part55" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="middle_joint_pin_2" type="mesh" mesh="part60" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        </body>
+        <geom name="middle_segment1_segment_shell" type="mesh" mesh="part45" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+        <geom name="middle_segment1_proximal_bushing" type="mesh" mesh="part46" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="middle_segment1_distal_left_bushing" type="mesh" mesh="part47" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="middle_segment1_distal_right_bushing" type="mesh" mesh="part48" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="middle_segment1_dark_faceplate" type="mesh" mesh="part49" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="middle_joint_pin_1" type="mesh" mesh="part56" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        <geom name="middle_segment1_palmar_transition" type="mesh" mesh="part121" pos="0 0 0" quat="1 0 0 0" rgba="0.89 0.9 0.88 1" contype="0" conaffinity="0" group="0" />
+      </body>
+      <geom name="middle_spread_ring" type="mesh" mesh="part42" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+      <geom name="middle_root_fork_-13" type="mesh" mesh="part43" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="middle_root_fork_13" type="mesh" mesh="part44" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="middle_joint_pin_0" type="mesh" mesh="part50" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    </body>
+    <body name="ring_spread" pos="-0.0195 0.11161152629 0.008" quat="1 0 0 0">
+      <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+      <joint name="ring_spread" type="hinge" axis="0 0 -1" range="-0.383972435439 0.383972435439" />
+      <body name="ring_mcp" pos="0 0 0" quat="1 0 0 0">
+        <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+        <joint name="ring_mcp" type="hinge" axis="1 0 0" range="-0.349065850399 1.57079632679" />
+        <site name="ring_mcp_tip" pos="0 0.0795975650959 0" size=".001" rgba="0 0 0 0" />
+        <body name="ring_pip" pos="0 0.0795975650959 0" quat="1 0 0 0">
+          <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+          <joint name="ring_pip" type="hinge" axis="1 0 0" range="0 2.35619449019" />
+          <site name="ring_pip_tip" pos="0 0.0493516447839 0" size=".001" rgba="0 0 0 0" />
+          <body name="ring_dip" pos="0 0.0493516447839 0" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+            <joint name="ring_dip" type="hinge" axis="1 0 0" range="0 1.57079632679" />
+            <site name="ring_dip_tip" pos="0 0.0408858655617 0" size=".001" rgba="0 0 0 0" />
+            <geom name="ring_segment3_tip_core" type="mesh" mesh="part77" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+            <geom name="ring_segment3_proximal_bushing" type="mesh" mesh="part78" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+            <geom name="ring_segment3_rounded_tip_cap" type="mesh" mesh="part79" pos="0 0 0" quat="1 0 0 0" rgba="0.91 0.66 0.25 1" contype="0" conaffinity="0" group="0" />
+          </body>
+          <geom name="ring_segment2_segment_shell" type="mesh" mesh="part71" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+          <geom name="ring_segment2_proximal_bushing" type="mesh" mesh="part72" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="ring_segment2_distal_left_bushing" type="mesh" mesh="part73" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="ring_segment2_distal_right_bushing" type="mesh" mesh="part74" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="ring_segment2_dark_faceplate" type="mesh" mesh="part75" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="ring_joint_pin_2" type="mesh" mesh="part80" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        </body>
+        <geom name="ring_segment1_segment_shell" type="mesh" mesh="part65" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+        <geom name="ring_segment1_proximal_bushing" type="mesh" mesh="part66" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="ring_segment1_distal_left_bushing" type="mesh" mesh="part67" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="ring_segment1_distal_right_bushing" type="mesh" mesh="part68" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="ring_segment1_dark_faceplate" type="mesh" mesh="part69" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="ring_joint_pin_1" type="mesh" mesh="part76" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        <geom name="ring_segment1_palmar_transition" type="mesh" mesh="part122" pos="0 0 0" quat="1 0 0 0" rgba="0.89 0.9 0.88 1" contype="0" conaffinity="0" group="0" />
+      </body>
+      <geom name="ring_spread_ring" type="mesh" mesh="part62" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+      <geom name="ring_root_fork_-13" type="mesh" mesh="part63" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="ring_root_fork_13" type="mesh" mesh="part64" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="ring_joint_pin_0" type="mesh" mesh="part70" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    </body>
+    <body name="little_spread" pos="-0.0585 0.0934244797973 0.008" quat="1 0 0 0">
+      <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+      <joint name="little_spread" type="hinge" axis="0 0 -1" range="-0.383972435439 0.383972435439" />
+      <body name="little_mcp" pos="0 0 0" quat="1 0 0 0">
+        <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+        <joint name="little_mcp" type="hinge" axis="1 0 0" range="-0.349065850399 1.57079632679" />
+        <site name="little_mcp_tip" pos="0 0.062993093576 0" size=".001" rgba="0 0 0 0" />
+        <body name="little_pip" pos="0 0.062993093576 0" quat="1 0 0 0">
+          <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+          <joint name="little_pip" type="hinge" axis="1 0 0" range="0 2.35619449019" />
+          <site name="little_pip_tip" pos="0 0.0348443776622 0" size=".001" rgba="0 0 0 0" />
+          <body name="little_dip" pos="0 0.0348443776622 0" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+            <joint name="little_dip" type="hinge" axis="1 0 0" range="0 1.57079632679" />
+            <site name="little_dip_tip" pos="0 0.0378843620193 0" size=".001" rgba="0 0 0 0" />
+            <geom name="little_segment3_tip_core" type="mesh" mesh="part97" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+            <geom name="little_segment3_proximal_bushing" type="mesh" mesh="part98" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+            <geom name="little_segment3_rounded_tip_cap" type="mesh" mesh="part99" pos="0 0 0" quat="1 0 0 0" rgba="0.91 0.66 0.25 1" contype="0" conaffinity="0" group="0" />
+          </body>
+          <geom name="little_segment2_segment_shell" type="mesh" mesh="part91" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+          <geom name="little_segment2_proximal_bushing" type="mesh" mesh="part92" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="little_segment2_distal_left_bushing" type="mesh" mesh="part93" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="little_segment2_distal_right_bushing" type="mesh" mesh="part94" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="little_segment2_dark_faceplate" type="mesh" mesh="part95" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="little_joint_pin_2" type="mesh" mesh="part100" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        </body>
+        <geom name="little_segment1_segment_shell" type="mesh" mesh="part85" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+        <geom name="little_segment1_proximal_bushing" type="mesh" mesh="part86" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="little_segment1_distal_left_bushing" type="mesh" mesh="part87" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="little_segment1_distal_right_bushing" type="mesh" mesh="part88" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="little_segment1_dark_faceplate" type="mesh" mesh="part89" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="little_joint_pin_1" type="mesh" mesh="part96" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        <geom name="little_segment1_palmar_transition" type="mesh" mesh="part123" pos="0 0 0" quat="1 0 0 0" rgba="0.89 0.9 0.88 1" contype="0" conaffinity="0" group="0" />
+      </body>
+      <geom name="little_spread_ring" type="mesh" mesh="part82" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+      <geom name="little_root_fork_-13" type="mesh" mesh="part83" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="little_root_fork_13" type="mesh" mesh="part84" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+      <geom name="little_joint_pin_0" type="mesh" mesh="part90" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    </body>
+    <body name="thumb_base_sweep" pos="0.046 0.0141732283465 0.008" quat="0.887010833178 0 0 -0.461748613235">
+      <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+      <joint name="thumb_base_sweep" type="hinge" axis="0 0 -1" range="-1.1344640138 0.959931088597" />
+      <body name="thumb_opposition" pos="0 0 0.021" quat="1 0 0 0">
+        <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+        <joint name="thumb_opposition" type="hinge" axis="1 0 0" range="0 1.4835298642" />
+        <site name="thumb_opposition_tip" pos="0 0.065 0" size=".001" rgba="0 0 0 0" />
+        <body name="thumb_mcp" pos="0 0.065 0" quat="0.843391445813 0 -0.537299608347 0">
+          <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+          <joint name="thumb_mcp" type="hinge" axis="1 0 0" range="0 1.4835298642" />
+          <site name="thumb_mcp_tip" pos="0 0.05 0" size=".001" rgba="0 0 0 0" />
+          <body name="thumb_ip" pos="0 0.05 0" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass=".01" diaginertia=".00001 .00001 .00001" />
+            <joint name="thumb_ip" type="hinge" axis="1 0 0" range="0 1.4835298642" />
+            <site name="thumb_ip_tip" pos="0 0.0526032736215 0" size=".001" rgba="0 0 0 0" />
+            <geom name="thumb_segment3_tip_core" type="mesh" mesh="part116" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.58 0.64 1" contype="0" conaffinity="0" group="0" />
+            <geom name="thumb_segment3_proximal_bushing" type="mesh" mesh="part117" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+            <geom name="thumb_segment3_rounded_tip_cap" type="mesh" mesh="part118" pos="0 0 0" quat="1 0 0 0" rgba="0.91 0.66 0.25 1" contype="0" conaffinity="0" group="0" />
+          </body>
+          <geom name="thumb_segment2_segment_shell" type="mesh" mesh="part110" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.58 0.64 1" contype="0" conaffinity="0" group="0" />
+          <geom name="thumb_segment2_proximal_bushing" type="mesh" mesh="part111" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="thumb_segment2_distal_left_bushing" type="mesh" mesh="part112" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="thumb_segment2_distal_right_bushing" type="mesh" mesh="part113" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="thumb_segment2_dark_faceplate" type="mesh" mesh="part114" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+          <geom name="thumb_joint_pin_2" type="mesh" mesh="part119" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+        </body>
+        <geom name="thumb_segment1_thenar_shell" type="mesh" mesh="part105" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.58 0.64 1" contype="0" conaffinity="0" group="0" />
+        <geom name="thumb_segment1_proximal_bushing" type="mesh" mesh="part106" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="thumb_segment1_distal_left_bushing" type="mesh" mesh="part107" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="thumb_segment1_distal_right_bushing" type="mesh" mesh="part108" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+        <geom name="thumb_joint_pin_1" type="mesh" mesh="part115" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+      </body>
+      <geom name="thumb_spread_ring" type="mesh" mesh="part102" pos="0 0 0" quat="1 0 0 0" rgba="0.27 0.31 0.37 1" contype="0" conaffinity="0" group="0" />
+      <geom name="thumb_root_fork_-13" type="mesh" mesh="part103" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.58 0.64 1" contype="0" conaffinity="0" group="0" />
+      <geom name="thumb_root_fork_13" type="mesh" mesh="part104" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.58 0.64 1" contype="0" conaffinity="0" group="0" />
+      <geom name="thumb_joint_pin_0" type="mesh" mesh="part109" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    </body>
+    <geom name="Palm_tapered_chassis" type="mesh" mesh="part0" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_screw_-44_33" type="mesh" mesh="part1" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_screw_16_29" type="mesh" mesh="part2" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_screw_-54_78" type="mesh" mesh="part3" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_screw_46_88" type="mesh" mesh="part4" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_screw_-18_104" type="mesh" mesh="part5" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_screw_15_10" type="mesh" mesh="part6" pos="0 0 0" quat="1 0 0 0" rgba="0.52 0.54 0.58 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Palm_shaped_front_cover" type="mesh" mesh="part7" pos="0 0 0" quat="1 0 0 0" rgba="0.89 0.9 0.88 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Palm_side_web_-71" type="mesh" mesh="part8" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Palm_side_web_71" type="mesh" mesh="part9" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_post_-44_33" type="mesh" mesh="part10" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_post_16_29" type="mesh" mesh="part11" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_post_-54_78" type="mesh" mesh="part12" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_post_46_88" type="mesh" mesh="part13" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_post_-18_104" type="mesh" mesh="part14" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Cover_post_15_10" type="mesh" mesh="part15" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Wrist_bridge_post_-32_8" type="mesh" mesh="part16" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Wrist_bridge_post_-32_28" type="mesh" mesh="part17" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Wrist_bridge_post_8_8" type="mesh" mesh="part18" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Wrist_bridge_post_8_28" type="mesh" mesh="part19" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="Wrist_bridge_plate" type="mesh" mesh="part20" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="index_spread_housing" type="mesh" mesh="part21" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="middle_spread_housing" type="mesh" mesh="part41" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="ring_spread_housing" type="mesh" mesh="part61" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="little_spread_housing" type="mesh" mesh="part81" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.38 0.56 1" contype="0" conaffinity="0" group="0" />
+    <geom name="thumb_spread_housing" type="mesh" mesh="part101" pos="0 0 0" quat="1 0 0 0" rgba="0.22 0.58 0.64 1" contype="0" conaffinity="0" group="0" />
+  </worldbody>
+</mujoco>

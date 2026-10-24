@@ -1,0 +1,498 @@
+{
+  "meshes/000.stl": {
+    "part": "Palm_tapered_chassis",
+    "frame": "world"
+  },
+  "meshes/001.stl": {
+    "part": "Cover_screw_-44_33",
+    "frame": "world"
+  },
+  "meshes/002.stl": {
+    "part": "Cover_screw_16_29",
+    "frame": "world"
+  },
+  "meshes/003.stl": {
+    "part": "Cover_screw_-54_78",
+    "frame": "world"
+  },
+  "meshes/004.stl": {
+    "part": "Cover_screw_46_88",
+    "frame": "world"
+  },
+  "meshes/005.stl": {
+    "part": "Cover_screw_-18_104",
+    "frame": "world"
+  },
+  "meshes/006.stl": {
+    "part": "Cover_screw_15_10",
+    "frame": "world"
+  },
+  "meshes/007.stl": {
+    "part": "Palm_shaped_front_cover",
+    "frame": "world"
+  },
+  "meshes/008.stl": {
+    "part": "Palm_side_web_-71",
+    "frame": "world"
+  },
+  "meshes/009.stl": {
+    "part": "Palm_side_web_71",
+    "frame": "world"
+  },
+  "meshes/010.stl": {
+    "part": "Cover_post_-44_33",
+    "frame": "world"
+  },
+  "meshes/011.stl": {
+    "part": "Cover_post_16_29",
+    "frame": "world"
+  },
+  "meshes/012.stl": {
+    "part": "Cover_post_-54_78",
+    "frame": "world"
+  },
+  "meshes/013.stl": {
+    "part": "Cover_post_46_88",
+    "frame": "world"
+  },
+  "meshes/014.stl": {
+    "part": "Cover_post_-18_104",
+    "frame": "world"
+  },
+  "meshes/015.stl": {
+    "part": "Cover_post_15_10",
+    "frame": "world"
+  },
+  "meshes/016.stl": {
+    "part": "Wrist_bridge_post_-32_8",
+    "frame": "world"
+  },
+  "meshes/017.stl": {
+    "part": "Wrist_bridge_post_-32_28",
+    "frame": "world"
+  },
+  "meshes/018.stl": {
+    "part": "Wrist_bridge_post_8_8",
+    "frame": "world"
+  },
+  "meshes/019.stl": {
+    "part": "Wrist_bridge_post_8_28",
+    "frame": "world"
+  },
+  "meshes/020.stl": {
+    "part": "Wrist_bridge_plate",
+    "frame": "world"
+  },
+  "meshes/021.stl": {
+    "part": "index_spread_housing",
+    "frame": "world"
+  },
+  "meshes/022.stl": {
+    "part": "index_spread_ring",
+    "frame": "index_spread"
+  },
+  "meshes/023.stl": {
+    "part": "index_root_fork_-13",
+    "frame": "index_spread"
+  },
+  "meshes/024.stl": {
+    "part": "index_root_fork_13",
+    "frame": "index_spread"
+  },
+  "meshes/025.stl": {
+    "part": "index_segment1_segment_shell",
+    "frame": "index_mcp"
+  },
+  "meshes/026.stl": {
+    "part": "index_segment1_proximal_bushing",
+    "frame": "index_mcp"
+  },
+  "meshes/027.stl": {
+    "part": "index_segment1_distal_left_bushing",
+    "frame": "index_mcp"
+  },
+  "meshes/028.stl": {
+    "part": "index_segment1_distal_right_bushing",
+    "frame": "index_mcp"
+  },
+  "meshes/029.stl": {
+    "part": "index_segment1_dark_faceplate",
+    "frame": "index_mcp"
+  },
+  "meshes/030.stl": {
+    "part": "index_joint_pin_0",
+    "frame": "index_spread"
+  },
+  "meshes/031.stl": {
+    "part": "index_segment2_segment_shell",
+    "frame": "index_pip"
+  },
+  "meshes/032.stl": {
+    "part": "index_segment2_proximal_bushing",
+    "frame": "index_pip"
+  },
+  "meshes/033.stl": {
+    "part": "index_segment2_distal_left_bushing",
+    "frame": "index_pip"
+  },
+  "meshes/034.stl": {
+    "part": "index_segment2_distal_right_bushing",
+    "frame": "index_pip"
+  },
+  "meshes/035.stl": {
+    "part": "index_segment2_dark_faceplate",
+    "frame": "index_pip"
+  },
+  "meshes/036.stl": {
+    "part": "index_joint_pin_1",
+    "frame": "index_mcp"
+  },
+  "meshes/037.stl": {
+    "part": "index_segment3_tip_core",
+    "frame": "index_dip"
+  },
+  "meshes/038.stl": {
+    "part": "index_segment3_proximal_bushing",
+    "frame": "index_dip"
+  },
+  "meshes/039.stl": {
+    "part": "index_segment3_rounded_tip_cap",
+    "frame": "index_dip"
+  },
+  "meshes/040.stl": {
+    "part": "index_joint_pin_2",
+    "frame": "index_pip"
+  },
+  "meshes/041.stl": {
+    "part": "middle_spread_housing",
+    "frame": "world"
+  },
+  "meshes/042.stl": {
+    "part": "middle_spread_ring",
+    "frame": "middle_spread"
+  },
+  "meshes/043.stl": {
+    "part": "middle_root_fork_-13",
+    "frame": "middle_spread"
+  },
+  "meshes/044.stl": {
+    "part": "middle_root_fork_13",
+    "frame": "middle_spread"
+  },
+  "meshes/045.stl": {
+    "part": "middle_segment1_segment_shell",
+    "frame": "middle_mcp"
+  },
+  "meshes/046.stl": {
+    "part": "middle_segment1_proximal_bushing",
+    "frame": "middle_mcp"
+  },
+  "meshes/047.stl": {
+    "part": "middle_segment1_distal_left_bushing",
+    "frame": "middle_mcp"
+  },
+  "meshes/048.stl": {
+    "part": "middle_segment1_distal_right_bushing",
+    "frame": "middle_mcp"
+  },
+  "meshes/049.stl": {
+    "part": "middle_segment1_dark_faceplate",
+    "frame": "middle_mcp"
+  },
+  "meshes/050.stl": {
+    "part": "middle_joint_pin_0",
+    "frame": "middle_spread"
+  },
+  "meshes/051.stl": {
+    "part": "middle_segment2_segment_shell",
+    "frame": "middle_pip"
+  },
+  "meshes/052.stl": {
+    "part": "middle_segment2_proximal_bushing",
+    "frame": "middle_pip"
+  },
+  "meshes/053.stl": {
+    "part": "middle_segment2_distal_left_bushing",
+    "frame": "middle_pip"
+  },
+  "meshes/054.stl": {
+    "part": "middle_segment2_distal_right_bushing",
+    "frame": "middle_pip"
+  },
+  "meshes/055.stl": {
+    "part": "middle_segment2_dark_faceplate",
+    "frame": "middle_pip"
+  },
+  "meshes/056.stl": {
+    "part": "middle_joint_pin_1",
+    "frame": "middle_mcp"
+  },
+  "meshes/057.stl": {
+    "part": "middle_segment3_tip_core",
+    "frame": "middle_dip"
+  },
+  "meshes/058.stl": {
+    "part": "middle_segment3_proximal_bushing",
+    "frame": "middle_dip"
+  },
+  "meshes/059.stl": {
+    "part": "middle_segment3_rounded_tip_cap",
+    "frame": "middle_dip"
+  },
+  "meshes/060.stl": {
+    "part": "middle_joint_pin_2",
+    "frame": "middle_pip"
+  },
+  "meshes/061.stl": {
+    "part": "ring_spread_housing",
+    "frame": "world"
+  },
+  "meshes/062.stl": {
+    "part": "ring_spread_ring",
+    "frame": "ring_spread"
+  },
+  "meshes/063.stl": {
+    "part": "ring_root_fork_-13",
+    "frame": "ring_spread"
+  },
+  "meshes/064.stl": {
+    "part": "ring_root_fork_13",
+    "frame": "ring_spread"
+  },
+  "meshes/065.stl": {
+    "part": "ring_segment1_segment_shell",
+    "frame": "ring_mcp"
+  },
+  "meshes/066.stl": {
+    "part": "ring_segment1_proximal_bushing",
+    "frame": "ring_mcp"
+  },
+  "meshes/067.stl": {
+    "part": "ring_segment1_distal_left_bushing",
+    "frame": "ring_mcp"
+  },
+  "meshes/068.stl": {
+    "part": "ring_segment1_distal_right_bushing",
+    "frame": "ring_mcp"
+  },
+  "meshes/069.stl": {
+    "part": "ring_segment1_dark_faceplate",
+    "frame": "ring_mcp"
+  },
+  "meshes/070.stl": {
+    "part": "ring_joint_pin_0",
+    "frame": "ring_spread"
+  },
+  "meshes/071.stl": {
+    "part": "ring_segment2_segment_shell",
+    "frame": "ring_pip"
+  },
+  "meshes/072.stl": {
+    "part": "ring_segment2_proximal_bushing",
+    "frame": "ring_pip"
+  },
+  "meshes/073.stl": {
+    "part": "ring_segment2_distal_left_bushing",
+    "frame": "ring_pip"
+  },
+  "meshes/074.stl": {
+    "part": "ring_segment2_distal_right_bushing",
+    "frame": "ring_pip"
+  },
+  "meshes/075.stl": {
+    "part": "ring_segment2_dark_faceplate",
+    "frame": "ring_pip"
+  },
+  "meshes/076.stl": {
+    "part": "ring_joint_pin_1",
+    "frame": "ring_mcp"
+  },
+  "meshes/077.stl": {
+    "part": "ring_segment3_tip_core",
+    "frame": "ring_dip"
+  },
+  "meshes/078.stl": {
+    "part": "ring_segment3_proximal_bushing",
+    "frame": "ring_dip"
+  },
+  "meshes/079.stl": {
+    "part": "ring_segment3_rounded_tip_cap",
+    "frame": "ring_dip"
+  },
+  "meshes/080.stl": {
+    "part": "ring_joint_pin_2",
+    "frame": "ring_pip"
+  },
+  "meshes/081.stl": {
+    "part": "little_spread_housing",
+    "frame": "world"
+  },
+  "meshes/082.stl": {
+    "part": "little_spread_ring",
+    "frame": "little_spread"
+  },
+  "meshes/083.stl": {
+    "part": "little_root_fork_-13",
+    "frame": "little_spread"
+  },
+  "meshes/084.stl": {
+    "part": "little_root_fork_13",
+    "frame": "little_spread"
+  },
+  "meshes/085.stl": {
+    "part": "little_segment1_segment_shell",
+    "frame": "little_mcp"
+  },
+  "meshes/086.stl": {
+    "part": "little_segment1_proximal_bushing",
+    "frame": "little_mcp"
+  },
+  "meshes/087.stl": {
+    "part": "little_segment1_distal_left_bushing",
+    "frame": "little_mcp"
+  },
+  "meshes/088.stl": {
+    "part": "little_segment1_distal_right_bushing",
+    "frame": "little_mcp"
+  },
+  "meshes/089.stl": {
+    "part": "little_segment1_dark_faceplate",
+    "frame": "little_mcp"
+  },
+  "meshes/090.stl": {
+    "part": "little_joint_pin_0",
+    "frame": "little_spread"
+  },
+  "meshes/091.stl": {
+    "part": "little_segment2_segment_shell",
+    "frame": "little_pip"
+  },
+  "meshes/092.stl": {
+    "part": "little_segment2_proximal_bushing",
+    "frame": "little_pip"
+  },
+  "meshes/093.stl": {
+    "part": "little_segment2_distal_left_bushing",
+    "frame": "little_pip"
+  },
+  "meshes/094.stl": {
+    "part": "little_segment2_distal_right_bushing",
+    "frame": "little_pip"
+  },
+  "meshes/095.stl": {
+    "part": "little_segment2_dark_faceplate",
+    "frame": "little_pip"
+  },
+  "meshes/096.stl": {
+    "part": "little_joint_pin_1",
+    "frame": "little_mcp"
+  },
+  "meshes/097.stl": {
+    "part": "little_segment3_tip_core",
+    "frame": "little_dip"
+  },
+  "meshes/098.stl": {
+    "part": "little_segment3_proximal_bushing",
+    "frame": "little_dip"
+  },
+  "meshes/099.stl": {
+    "part": "little_segment3_rounded_tip_cap",
+    "frame": "little_dip"
+  },
+  "meshes/100.stl": {
+    "part": "little_joint_pin_2",
+    "frame": "little_pip"
+  },
+  "meshes/101.stl": {
+    "part": "thumb_spread_housing",
+    "frame": "world"
+  },
+  "meshes/102.stl": {
+    "part": "thumb_spread_ring",
+    "frame": "thumb_base_sweep"
+  },
+  "meshes/103.stl": {
+    "part": "thumb_root_fork_-13",
+    "frame": "thumb_base_sweep"
+  },
+  "meshes/104.stl": {
+    "part": "thumb_root_fork_13",
+    "frame": "thumb_base_sweep"
+  },
+  "meshes/105.stl": {
+    "part": "thumb_segment1_thenar_shell",
+    "frame": "thumb_opposition"
+  },
+  "meshes/106.stl": {
+    "part": "thumb_segment1_proximal_bushing",
+    "frame": "thumb_opposition"
+  },
+  "meshes/107.stl": {
+    "part": "thumb_segment1_distal_left_bushing",
+    "frame": "thumb_opposition"
+  },
+  "meshes/108.stl": {
+    "part": "thumb_segment1_distal_right_bushing",
+    "frame": "thumb_opposition"
+  },
+  "meshes/109.stl": {
+    "part": "thumb_joint_pin_0",
+    "frame": "thumb_base_sweep"
+  },
+  "meshes/110.stl": {
+    "part": "thumb_segment2_segment_shell",
+    "frame": "thumb_mcp"
+  },
+  "meshes/111.stl": {
+    "part": "thumb_segment2_proximal_bushing",
+    "frame": "thumb_mcp"
+  },
+  "meshes/112.stl": {
+    "part": "thumb_segment2_distal_left_bushing",
+    "frame": "thumb_mcp"
+  },
+  "meshes/113.stl": {
+    "part": "thumb_segment2_distal_right_bushing",
+    "frame": "thumb_mcp"
+  },
+  "meshes/114.stl": {
+    "part": "thumb_segment2_dark_faceplate",
+    "frame": "thumb_mcp"
+  },
+  "meshes/115.stl": {
+    "part": "thumb_joint_pin_1",
+    "frame": "thumb_opposition"
+  },
+  "meshes/116.stl": {
+    "part": "thumb_segment3_tip_core",
+    "frame": "thumb_ip"
+  },
+  "meshes/117.stl": {
+    "part": "thumb_segment3_proximal_bushing",
+    "frame": "thumb_ip"
+  },
+  "meshes/118.stl": {
+    "part": "thumb_segment3_rounded_tip_cap",
+    "frame": "thumb_ip"
+  },
+  "meshes/119.stl": {
+    "part": "thumb_joint_pin_2",
+    "frame": "thumb_mcp"
+  },
+  "meshes/120.stl": {
+    "part": "index_segment1_palmar_transition",
+    "frame": "index_mcp"
+  },
+  "meshes/121.stl": {
+    "part": "middle_segment1_palmar_transition",
+    "frame": "middle_mcp"
+  },
+  "meshes/122.stl": {
+    "part": "ring_segment1_palmar_transition",
+    "frame": "ring_mcp"
+  },
+  "meshes/123.stl": {
+    "part": "little_segment1_palmar_transition",
+    "frame": "little_mcp"
+  }
+}
