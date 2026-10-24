@@ -1,0 +1,6116 @@
+{
+  "target_sha": "8f63fca2cb72c11b96b5594d91a3407a7921bbf5",
+  "clean_checkout_at_review": true,
+  "review_tool_sha256": "1a80ee6cf6e91f75ab11d9256b345e4d31c307a46e21718ac56bab881956049e",
+  "review_tool_within_target_checkout": true,
+  "frozen_hashes_checked": 222,
+  "preserved_dimensions": [
+    "palm_width",
+    "palm_length",
+    "root_axis_offset_z",
+    "fingers"
+  ],
+  "joint_count": 20,
+  "motor_count": 20,
+  "relocated_motor_count": 10,
+  "joint_frame_max_error_mm_or_unitless": 0.0,
+  "body_count": 21,
+  "massive_component_count": 215,
+  "saved_STEP_remeasured_component_count": 215,
+  "unique_STEP_files_read": 80,
+  "part_max_volume_error_mm3": 4.622052074410021e-09,
+  "part_max_com_error_mm": 8.412825991399586e-12,
+  "part_max_inertia_error_kg_m2": 3.2708177258224808e-18,
+  "body_max_mass_error_kg": 0.0,
+  "body_max_com_error_mm": 8.78941364135244e-12,
+  "body_max_inertia_error_kg_m2": 6.965998958219366e-18,
+  "hand_assumed_mass_kg": 1.4729968016588673,
+  "numerical_contract_consistency_passed": true,
+  "manufacturing_release": false,
+  "physical_latency_validated": false,
+  "scope": "Independent saved STEP mass-property remeasurement and contract aggregation; preserved geometry inputs, declared joint frames, motor body membership, positive inertias and frozen evidence. Complete mating-bore/pin alignment and assembly feasibility are not established. No whole-range collision, cable-routing validation, motor calibration or hardware performance approval.",
+  "simulation_report_review": {
+    "source_hash_count": 11,
+    "remote20_bidirectional_joint_coverage": 20,
+    "CAD_mass_and_transmission_match": true,
+    "event_summary_reaggregation": [
+      {
+        "case": "baseline20/small5",
+        "event_count": 240,
+        "missing_events": 23,
+        "valid_event_max_ms": 76.52860985210359,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/small10",
+        "event_count": 240,
+        "missing_events": 12,
+        "valid_event_max_ms": 65.04558681132322,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/large45",
+        "event_count": 240,
+        "missing_events": 10,
+        "valid_event_max_ms": 243.61996363606076,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 12,
+        "valid_event_max_ms": 230.14203982269032,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/upstream_hold",
+        "event_count": 60,
+        "missing_events": 5,
+        "valid_event_max_ms": 238.23097988295282,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 52,
+        "valid_event_max_ms": 120.58979996033992,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "baseline20/independent_distal",
+        "event_count": 60,
+        "missing_events": 0,
+        "valid_event_max_ms": 8.870083068495793,
+        "simulated_100ms_event_budget_met": true
+      },
+      {
+        "case": "remote20/small5",
+        "event_count": 240,
+        "missing_events": 17,
+        "valid_event_max_ms": 65.58799877474242,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/small10",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 43.42845251758831,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/large45",
+        "event_count": 240,
+        "missing_events": 9,
+        "valid_event_max_ms": 136.48704059849902,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 112.88554395258177,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/upstream_hold",
+        "event_count": 60,
+        "missing_events": 2,
+        "valid_event_max_ms": 39.985982146144124,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 99.67705146240246,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote20/independent_distal",
+        "event_count": 60,
+        "missing_events": 0,
+        "valid_event_max_ms": 8.03024500734928,
+        "simulated_100ms_event_budget_met": true
+      },
+      {
+        "case": "remote16/small5",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 65.4443757942268,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/small10",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 42.240142311540495,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/large45",
+        "event_count": 240,
+        "missing_events": 9,
+        "valid_event_max_ms": 136.66491090705168,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/fast90_150ms",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 112.88554395258177,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/upstream_hold",
+        "event_count": 60,
+        "missing_events": 2,
+        "valid_event_max_ms": 40.741124664187886,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/rapid_reversal",
+        "event_count": 240,
+        "missing_events": 23,
+        "valid_event_max_ms": 99.67705146240246,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "remote16/independent_distal",
+        "event_count": 60,
+        "missing_events": 0,
+        "valid_event_max_ms": 8.441670346400088,
+        "simulated_100ms_event_budget_met": true
+      },
+      {
+        "case": "sensitivity/horizontal_gravity",
+        "event_count": 240,
+        "missing_events": 7,
+        "valid_event_max_ms": 107.39071537911227,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/higher_cable_friction",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 100.72490498952725,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/soft_cable",
+        "event_count": 240,
+        "missing_events": 40,
+        "valid_event_max_ms": 91.51701929559053,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/low_preload",
+        "event_count": 240,
+        "missing_events": 19,
+        "valid_event_max_ms": 98.90082888117013,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/mass_1_5x",
+        "event_count": 240,
+        "missing_events": 57,
+        "valid_event_max_ms": 96.31004175754305,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/reduced_upstream_coupling",
+        "event_count": 240,
+        "missing_events": 29,
+        "valid_event_max_ms": 98.22736835440615,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/negative_upstream_coupling",
+        "event_count": 240,
+        "missing_events": 46,
+        "valid_event_max_ms": 114.74568262527607,
+        "simulated_100ms_event_budget_met": false
+      },
+      {
+        "case": "sensitivity/slow_command_bus",
+        "event_count": 240,
+        "missing_events": 22,
+        "valid_event_max_ms": 91.21344280731869,
+        "simulated_100ms_event_budget_met": false
+      }
+    ],
+    "additive_metric_review": {
+      "baseline20/small5": {
+        "classification_counts": {
+          "reached": 213,
+          "early_crossing": 4,
+          "preexisting_level": 15,
+          "never_reached": 8
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 4.134205864613806
+      },
+      "baseline20/small10": {
+        "classification_counts": {
+          "reached": 224,
+          "early_crossing": 4,
+          "preexisting_level": 11,
+          "never_reached": 1
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 10.756743132280459
+      },
+      "baseline20/large45": {
+        "classification_counts": {
+          "reached": 196,
+          "early_crossing": 34,
+          "preexisting_level": 7,
+          "never_reached": 3
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 53.778456913118276
+      },
+      "baseline20/fast90_150ms": {
+        "classification_counts": {
+          "reached": 218,
+          "early_crossing": 10,
+          "preexisting_level": 12,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 97.87533915428841
+      },
+      "baseline20/upstream_hold": {
+        "classification_counts": {
+          "reached": 53,
+          "early_crossing": 2,
+          "preexisting_level": 5,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 40,
+        "all_axis_holds": 2,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 79.28823415107516
+      },
+      "baseline20/rapid_reversal": {
+        "classification_counts": {
+          "reached": 175,
+          "early_crossing": 13,
+          "preexisting_level": 34,
+          "never_reached": 18
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 105.0096913369756
+      },
+      "baseline20/independent_distal": {
+        "classification_counts": {
+          "reached": 60,
+          "early_crossing": 0,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 4.88594909351373
+      },
+      "remote20/small5": {
+        "classification_counts": {
+          "reached": 218,
+          "early_crossing": 5,
+          "preexisting_level": 13,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 3.03679767598702
+      },
+      "remote20/small10": {
+        "classification_counts": {
+          "reached": 230,
+          "early_crossing": 3,
+          "preexisting_level": 6,
+          "never_reached": 1
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 5.003051071291261
+      },
+      "remote20/large45": {
+        "classification_counts": {
+          "reached": 215,
+          "early_crossing": 16,
+          "preexisting_level": 5,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 4.705108137506947
+      },
+      "remote20/fast90_150ms": {
+        "classification_counts": {
+          "reached": 212,
+          "early_crossing": 21,
+          "preexisting_level": 7,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 61.649608473102134
+      },
+      "remote20/upstream_hold": {
+        "classification_counts": {
+          "reached": 51,
+          "early_crossing": 7,
+          "preexisting_level": 2,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 40,
+        "all_axis_holds": 2,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 43.93580940173
+      },
+      "remote20/rapid_reversal": {
+        "classification_counts": {
+          "reached": 212,
+          "early_crossing": 9,
+          "preexisting_level": 14,
+          "never_reached": 5
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 98.92646702664584
+      },
+      "remote20/independent_distal": {
+        "classification_counts": {
+          "reached": 60,
+          "early_crossing": 0,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 2.4511346249934185
+      },
+      "remote16/small5": {
+        "classification_counts": {
+          "reached": 216,
+          "early_crossing": 5,
+          "preexisting_level": 15,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 8.881784197001252e-16,
+        "task_raw_max_error_deg": 3.03679767598702
+      },
+      "remote16/small10": {
+        "classification_counts": {
+          "reached": 230,
+          "early_crossing": 3,
+          "preexisting_level": 6,
+          "never_reached": 1
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 1.7763568394002505e-15,
+        "task_raw_max_error_deg": 5.0030510712912575
+      },
+      "remote16/large45": {
+        "classification_counts": {
+          "reached": 215,
+          "early_crossing": 16,
+          "preexisting_level": 5,
+          "never_reached": 4
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 7.105427357601002e-15,
+        "task_raw_max_error_deg": 4.705108137506947
+      },
+      "remote16/fast90_150ms": {
+        "classification_counts": {
+          "reached": 209,
+          "early_crossing": 24,
+          "preexisting_level": 7,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 1.4210854715202004e-14,
+        "task_raw_max_error_deg": 61.649608473102134
+      },
+      "remote16/upstream_hold": {
+        "classification_counts": {
+          "reached": 51,
+          "early_crossing": 7,
+          "preexisting_level": 2,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 40,
+        "all_axis_holds": 2,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 3.552713678800501e-15,
+        "task_raw_max_error_deg": 43.93580940173
+      },
+      "remote16/rapid_reversal": {
+        "classification_counts": {
+          "reached": 207,
+          "early_crossing": 10,
+          "preexisting_level": 16,
+          "never_reached": 7
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 7.105427357601002e-15,
+        "task_raw_max_error_deg": 98.92646702664585
+      },
+      "remote16/independent_distal": {
+        "classification_counts": {
+          "reached": 60,
+          "early_crossing": 0,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "hold_rows_checked": 80,
+        "all_axis_holds": 4,
+        "motion_excursions_checked": 20,
+        "projection_loss_max_deg": 59.99999999999999,
+        "task_raw_max_error_deg": 60.2690015309366
+      },
+      "sensitivity/horizontal_gravity": {
+        "classification_counts": {
+          "reached": 224,
+          "early_crossing": 9,
+          "preexisting_level": 5,
+          "never_reached": 2
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 74.25419851513124
+      },
+      "sensitivity/higher_cable_friction": {
+        "classification_counts": {
+          "reached": 210,
+          "early_crossing": 11,
+          "preexisting_level": 14,
+          "never_reached": 5
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 99.34813726780838
+      },
+      "sensitivity/soft_cable": {
+        "classification_counts": {
+          "reached": 177,
+          "early_crossing": 23,
+          "preexisting_level": 26,
+          "never_reached": 14
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 99.47530773881586
+      },
+      "sensitivity/low_preload": {
+        "classification_counts": {
+          "reached": 210,
+          "early_crossing": 11,
+          "preexisting_level": 14,
+          "never_reached": 5
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 98.7241721773497
+      },
+      "sensitivity/mass_1_5x": {
+        "classification_counts": {
+          "reached": 142,
+          "early_crossing": 41,
+          "preexisting_level": 45,
+          "never_reached": 12
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 94.58752802739498
+      },
+      "sensitivity/reduced_upstream_coupling": {
+        "classification_counts": {
+          "reached": 164,
+          "early_crossing": 47,
+          "preexisting_level": 21,
+          "never_reached": 8
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 99.46138945729682
+      },
+      "sensitivity/negative_upstream_coupling": {
+        "classification_counts": {
+          "reached": 182,
+          "early_crossing": 12,
+          "preexisting_level": 27,
+          "never_reached": 19
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 111.3522429763337
+      },
+      "sensitivity/slow_command_bus": {
+        "classification_counts": {
+          "reached": 210,
+          "early_crossing": 8,
+          "preexisting_level": 16,
+          "never_reached": 6
+        },
+        "hold_rows_checked": 20,
+        "all_axis_holds": 1,
+        "motion_excursions_checked": 80,
+        "projection_loss_max_deg": 0.0,
+        "task_raw_max_error_deg": 96.63036662291069
+      }
+    },
+    "command_contract_review": {
+      "cases_with_identical_requested_tasks": 7,
+      "reconstructed_runs": [
+        {
+          "case": "baseline20/small5",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "baseline20/small10",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "baseline20/large45",
+          "reconstructed_command_samples": 16001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 201
+        },
+        {
+          "case": "baseline20/fast90_150ms",
+          "reconstructed_command_samples": 12801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 161
+        },
+        {
+          "case": "baseline20/upstream_hold",
+          "reconstructed_command_samples": 9201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 116
+        },
+        {
+          "case": "baseline20/rapid_reversal",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 111
+        },
+        {
+          "case": "baseline20/independent_distal",
+          "reconstructed_command_samples": 18001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 226
+        },
+        {
+          "case": "remote20/small5",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote20/small10",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote20/large45",
+          "reconstructed_command_samples": 16001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 201
+        },
+        {
+          "case": "remote20/fast90_150ms",
+          "reconstructed_command_samples": 12801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 161
+        },
+        {
+          "case": "remote20/upstream_hold",
+          "reconstructed_command_samples": 9201,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 116
+        },
+        {
+          "case": "remote20/rapid_reversal",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 111
+        },
+        {
+          "case": "remote20/independent_distal",
+          "reconstructed_command_samples": 18001,
+          "projection_loss_max_deg": 0.0,
+          "display_samples_checked": 226
+        },
+        {
+          "case": "remote16/small5",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 8.881784197001252e-16,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote16/small10",
+          "reconstructed_command_samples": 11201,
+          "projection_loss_max_deg": 1.7763568394002505e-15,
+          "display_samples_checked": 141
+        },
+        {
+          "case": "remote16/large45",
+          "reconstructed_command_samples": 16001,
+          "projection_loss_max_deg": 7.105427357601002e-15,
+          "display_samples_checked": 201
+        },
+        {
+          "case": "remote16/fast90_150ms",
+          "reconstructed_command_samples": 12801,
+          "projection_loss_max_deg": 1.4210854715202004e-14,
+          "display_samples_checked": 161
+        },
+        {
+          "case": "remote16/upstream_hold",
+          "reconstructed_command_samples": 9201,
+          "projection_loss_max_deg": 3.552713678800501e-15,
+          "display_samples_checked": 116
+        },
+        {
+          "case": "remote16/rapid_reversal",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 7.105427357601002e-15,
+          "display_samples_checked": 111
+        },
+        {
+          "case": "remote16/independent_distal",
+          "reconstructed_command_samples": 18001,
+          "projection_loss_max_deg": 59.99999999999999,
+          "display_samples_checked": 226
+        },
+        {
+          "case": "sensitivity/horizontal_gravity",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/higher_cable_friction",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/soft_cable",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/low_preload",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/mass_1_5x",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/reduced_upstream_coupling",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/negative_upstream_coupling",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        },
+        {
+          "case": "sensitivity/slow_command_bus",
+          "reconstructed_command_samples": 8801,
+          "projection_loss_max_deg": 0.0
+        }
+      ],
+      "scope": "Independent command reconstruction from committed endpoints/times, exact full-rate projection-loss arithmetic, and rounded display-trace consistency. Decimated actual angles do not revalidate fine-rate events or sustained settling."
+    },
+    "model_test_evidence_review": {
+      "producer_test_passed": true,
+      "producer_tests_run": 16,
+      "source_hashes_current": true,
+      "small_motion_numerical_evidence": {
+        "coarse_dt_s": 0.000125,
+        "fine_dt_s": 6.25e-05,
+        "declared_max_difference_limit_deg": 0.02,
+        "full_trajectory_max_difference_deg": 0.018853313931690333,
+        "hold_quality_rows": 80,
+        "hold_quality_classifications_stable": true,
+        "changed_hold_classifications": [],
+        "criterion": "Both maximum angle difference<=0.02deg and all hold-quality statuses identical; fixed before run"
+      },
+      "scope": "Freshness and stated-threshold consistency of producer test results; tests are not rerun by this reviewer."
+    },
+    "thumb_diagnostic_review": {
+      "cases_checked": [
+        {
+          "case": "whole_hand_nominal",
+          "full_rate_samples_checked": 8801,
+          "idealized_actuator": false,
+          "raw_max_error_deg": 98.9264670266458,
+          "applied_limiter_fractions": {
+            "applied_current_clipped_fraction": 0.641745256220884,
+            "applied_voltage_clipped_fraction": 0.6072037268492216,
+            "applied_slew_limited_fraction": 0.21520281786160664
+          }
+        },
+        {
+          "case": "opposition_only_nominal",
+          "full_rate_samples_checked": 8801,
+          "idealized_actuator": false,
+          "raw_max_error_deg": 89.30676234546677,
+          "applied_limiter_fractions": {
+            "applied_current_clipped_fraction": 0.6369730712419043,
+            "applied_voltage_clipped_fraction": 0.5353937052607658,
+            "applied_slew_limited_fraction": 0.1946369730712419
+          }
+        },
+        {
+          "case": "opposition_only_zero_gravity",
+          "full_rate_samples_checked": 8801,
+          "idealized_actuator": false,
+          "raw_max_error_deg": 6.90051752869057,
+          "applied_limiter_fractions": {
+            "applied_current_clipped_fraction": 0.13600727190092035,
+            "applied_voltage_clipped_fraction": 0.0,
+            "applied_slew_limited_fraction": 0.09260311328258153
+          }
+        },
+        {
+          "case": "opposition_only_no_pwm_slew",
+          "full_rate_samples_checked": 8801,
+          "idealized_actuator": false,
+          "raw_max_error_deg": 74.01909222420981,
+          "applied_limiter_fractions": {
+            "applied_current_clipped_fraction": 0.5932280422679241,
+            "applied_voltage_clipped_fraction": 0.4763095102829224,
+            "applied_slew_limited_fraction": 0.0
+          }
+        },
+        {
+          "case": "opposition_only_ideal_torque",
+          "full_rate_samples_checked": 8801,
+          "idealized_actuator": true,
+          "raw_max_error_deg": 6.819466054862618,
+          "applied_limiter_fractions": {
+            "applied_current_clipped_fraction": 0.0,
+            "applied_voltage_clipped_fraction": 0.0,
+            "applied_slew_limited_fraction": 0.0
+          }
+        },
+        {
+          "case": "opposition_only_ideal_torque_critical_damping",
+          "full_rate_samples_checked": 8801,
+          "idealized_actuator": true,
+          "raw_max_error_deg": 5.241760221774898,
+          "applied_limiter_fractions": {
+            "applied_current_clipped_fraction": 0.0,
+            "applied_voltage_clipped_fraction": 0.0,
+            "applied_slew_limited_fraction": 0.0
+          }
+        }
+      ],
+      "source_hash_count": 11,
+      "instrumented_nominal_metrics_identical": true,
+      "damping_rule_arithmetic_checked": true,
+      "scope": "Independent full-rate axis17 command/held-controller/PWM/torque/power/limiter arithmetic and reported aggregate checks. No new trajectory integration, coupled damping optimum, physical actuator or hardware-performance approval."
+    },
+    "scope": "Checks committed event arithmetic/coverage and CAD-to-simulation data consistency; does not independently replay or calibrate the dynamics engine."
+  },
+  "compiled_model_frame_review": {
+    "poses": 13,
+    "joints_per_pose": 20,
+    "max_position_error_m": 4.0245584642661925e-14,
+    "max_rotation_matrix_error": 6.124545315344676e-13,
+    "max_axis_error": 6.120659534758488e-13,
+    "max_COM_error_m": 4.73232564246473e-14,
+    "max_world_inertia_error_kg_m2": 1.633559281767616e-14,
+    "scope": "Independent CAD parent-frame/axis composition versus compiled MuJoCo model at neutral and 12 non-neutral poses; includes body COM and rotated inertia, not integrated trajectory or physical calibration."
+  },
+  "actual_parent_bore_review": {
+    "joints_examined": 10,
+    "misaligned_parent_bores": 0,
+    "unidentified_parent_bores": 0,
+    "misaligned_child_bores": 0,
+    "misaligned_shafts": 0,
+    "unidentified_child_bores": 0,
+    "unidentified_shafts": 0,
+    "measurements": [
+      {
+        "joint": "index_pip",
+        "parent": "index_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "index_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "index_dip",
+        "parent": "index_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "index_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "index_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "middle_pip",
+        "parent": "middle_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "middle_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "middle_dip",
+        "parent": "middle_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "middle_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "middle_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "ring_pip",
+        "parent": "ring_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "ring_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "ring_dip",
+        "parent": "ring_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "ring_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "ring_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "little_pip",
+        "parent": "little_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "little_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "little_dip",
+        "parent": "little_pip",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 0.0,
+        "best_parent_component": "little_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 0.0,
+          "best_component": "little_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "thumb_mcp",
+        "parent": "thumb_opposition",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 6.228351168147128e-12,
+        "best_parent_component": "thumb_light_link_1",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.0468070854585676e-11,
+          "best_component": "thumb_light_link_2",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.5557333199467394e-11,
+          "best_component": "thumb_shaft_1",
+          "status": "aligned_at_neutral"
+        }
+      },
+      {
+        "joint": "thumb_ip",
+        "parent": "thumb_mcp",
+        "bore_radius_mm": 2.1,
+        "nearby_cylindrical_bore_faces": 2,
+        "axis_angle_error_deg": 0.0,
+        "axis_line_distance_mm": 7.721379091663039e-12,
+        "best_parent_component": "thumb_light_link_2",
+        "status": "aligned_at_neutral",
+        "child_bore": {
+          "radius_mm": 2.1,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.460964682564736e-11,
+          "best_component": "thumb_light_link_3",
+          "status": "aligned_at_neutral"
+        },
+        "shaft": {
+          "radius_mm": 2,
+          "nearby_cylindrical_faces": 1,
+          "axis_angle_error_deg": 0.0,
+          "axis_line_distance_mm": 1.4853007712645194e-11,
+          "best_component": "thumb_shaft_2",
+          "status": "aligned_at_neutral"
+        }
+      }
+    ],
+    "scope": "Saved STEP parent/child cylindrical bores and shaft nominal axes near distal hinge anchors at neutral pose only. Agreement within0.1deg/0.001mm is a numerical geometry check, not manufacturing tolerance approval. Aligned does not validate bearing fits, pin retention, horn coupling, swept clearance or assembly feasibility."
+  },
+  "physical_assembly_envelope_review": {
+    "physical_components_checked": 235,
+    "min_mm": [
+      -116.0,
+      -81.0,
+      -71.0
+    ],
+    "max_mm": [
+      134.89546743299883,
+      326.0,
+      30.0
+    ],
+    "extent_mm": [
+      250.89546743299883,
+      407.0,
+      101.0
+    ],
+    "declared_bounds_present": true,
+    "new_component_solid_counts": [
+      {
+        "name": "index_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "index_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "index_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "index_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "index_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "index_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "index_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "index_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "middle_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "ring_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "little_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "little_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "little_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "little_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "little_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "little_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "little_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_pip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_pip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_dip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "little_remote_dip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_light_link_1",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_light_link_2",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_shaft_1",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_pulley_1",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_light_link_3",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_shaft_2",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_pulley_2",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_mcp_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_mcp_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_ip_dual_spool",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_remote_ip_mount_plate",
+        "solid_count": 1
+      },
+      {
+        "name": "thumb_moving_motor_crossbar",
+        "solid_count": 1
+      }
+    ],
+    "new_components_not_single_solid": [],
+    "scope": "Saved physical STEP solids at neutral pose, exact-surface bounds without triangulation, including motor rotors; cable envelopes excluded. This is an assembly envelope, not a swept volume, attachment proof or manufacturing release."
+  },
+  "palm_motor_mounting_review": {
+    "motor_to_adapter_modules_checked": 8,
+    "body_axis_lines_checked": 16,
+    "base_axis_lines_checked": 32,
+    "modules": [
+      {
+        "motor": "index_remote_pip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              -9.6,
+              57.5,
+              2.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.500000000000002
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125004e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -25.999999999999993
+                  ],
+                  [
+                    -3.0,
+                    -1.6999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621839999e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.699999999999998,
+                    -1.6999999999999975
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052499e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.499999999999993,
+                  -27.299999999999997
+                ],
+                [
+                  -1.6999999999999993,
+                  -0.4999999999999982
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000043,
+              1.3000000000000007
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              -9.6,
+              27.5,
+              2.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.500000000000002
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125004e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -25.999999999999993
+                  ],
+                  [
+                    -3.0,
+                    -1.6999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621839999e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.699999999999998,
+                    -1.6999999999999975
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052499e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.499999999999993,
+                  -27.299999999999997
+                ],
+                [
+                  -1.6999999999999993,
+                  -0.4999999999999982
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000043,
+              1.3000000000000007
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              -29.756854249492378,
+              29.34314575050762,
+              -3.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -1.7763568394002505e-15,
+                    1.2
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.366278231418014e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.406973349600686e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.366278231418014e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.366278231418014e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.366278231418014e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -29.756854249492378,
+              55.65685424949238,
+              -3.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -8.881784197001252e-16,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.366278231418014e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4075369960193564e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4110443677450984e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -18.443145750507618,
+              29.34314575050762,
+              -3.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -3.9968028886505635e-15,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.626498006845226e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4110443677450984e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -18.443145750507618,
+              55.65685424949238,
+              -3.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.626675916146442e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.426239537211127e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172926998,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "index_remote_pip_motor",
+            "b": "index_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "index_remote_pip_body_screws",
+            "b": "index_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "index_remote_pip_cradle",
+            "b": "index_remote_pip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260229
+          },
+          {
+            "a": "index_remote_pip_base_screws",
+            "b": "index_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "index_remote_pip_base_nuts",
+            "b": "index_remote_pip_mount_plate",
+            "minimum_distance_mm": 8.881784197001252e-16,
+            "coincident_planar_contact_area_mm2": 40.220317398827355
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "index_remote_pip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "index_remote_dip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              86.4,
+              117.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621839999e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.700000000000003,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052499e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.299999999999997
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.2999999999999972,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.200000000000003
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              86.4,
+              87.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621839999e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.700000000000003,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052499e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.299999999999997
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.2999999999999972,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.200000000000003
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              66.24314575050762,
+              89.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3763268231535897e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3763268231535897e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3763268231535897e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.3763268231535897e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              66.24314575050762,
+              115.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3763268231535897e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.418059508355651e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              77.55685424949239,
+              89.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -7.105427357601002e-15,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.418059508355651e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              77.55685424949239,
+              115.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.426239537211127e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172927025,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927067,
+        "seating_contacts": [
+          {
+            "a": "index_remote_dip_motor",
+            "b": "index_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "index_remote_dip_body_screws",
+            "b": "index_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "index_remote_dip_cradle",
+            "b": "index_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260224
+          },
+          {
+            "a": "index_remote_dip_base_screws",
+            "b": "index_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "index_remote_dip_base_nuts",
+            "b": "index_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 40.22031739882753
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "index_remote_dip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "middle_remote_pip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              38.4,
+              72.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.39488462184e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -19.3
+                  ],
+                  [
+                    -9.7,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.2854608750525e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.3
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525005e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000007,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.1999999999999993,
+              3.1999999999999993
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              38.4,
+              42.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.39488462184e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -19.3
+                  ],
+                  [
+                    -9.7,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.2854608750525e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.3
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525005e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000007,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.1999999999999993,
+              3.1999999999999993
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              18.24314575050762,
+              44.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.3713062711703605e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              18.24314575050762,
+              70.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4110443677450984e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              29.55685424949238,
+              44.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -7.105427357601002e-15,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.376231353587555e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4174983152910802e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              29.55685424949238,
+              70.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.376231353587555e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.401176479601198e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172927012,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "middle_remote_pip_motor",
+            "b": "middle_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "middle_remote_pip_body_screws",
+            "b": "middle_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "middle_remote_pip_cradle",
+            "b": "middle_remote_pip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260229
+          },
+          {
+            "a": "middle_remote_pip_base_screws",
+            "b": "middle_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "middle_remote_pip_base_nuts",
+            "b": "middle_remote_pip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 40.220317398827355
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "middle_remote_pip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "middle_remote_dip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              38.4,
+              117.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.39488462184e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -19.3
+                  ],
+                  [
+                    -9.7,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.2854608750525e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.3
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525005e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000007,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.1999999999999993,
+              3.1999999999999993
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              38.4,
+              87.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.39488462184e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -19.3
+                  ],
+                  [
+                    -9.7,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.2854608750525e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.3
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525005e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000007,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.1999999999999993,
+              3.1999999999999993
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              18.24314575050762,
+              89.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.3713062711703605e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              18.24314575050762,
+              115.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4110443677450984e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              29.55685424949238,
+              89.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -7.105427357601002e-15,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.376231353587555e-13
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4174983152910802e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              29.55685424949238,
+              115.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4169422141355013e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.401176479601198e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172927002,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "middle_remote_dip_motor",
+            "b": "middle_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "middle_remote_dip_body_screws",
+            "b": "middle_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "middle_remote_dip_cradle",
+            "b": "middle_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260226
+          },
+          {
+            "a": "middle_remote_dip_base_screws",
+            "b": "middle_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "middle_remote_dip_base_nuts",
+            "b": "middle_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 40.220317398827355
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "middle_remote_dip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "ring_remote_pip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              -9.6,
+              72.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.500000000000002
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125004e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -25.999999999999993
+                  ],
+                  [
+                    -3.0,
+                    -1.6999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621839999e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.699999999999998,
+                    -1.6999999999999975
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052499e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.499999999999993,
+                  -27.299999999999997
+                ],
+                [
+                  -1.6999999999999993,
+                  -0.4999999999999982
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000043,
+              1.3000000000000007
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              -9.6,
+              42.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.500000000000002
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125004e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -25.999999999999993
+                  ],
+                  [
+                    -3.0,
+                    -1.6999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621839999e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.699999999999998,
+                    -1.6999999999999975
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052499e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.499999999999993,
+                  -27.299999999999997
+                ],
+                [
+                  -1.6999999999999993,
+                  -0.4999999999999982
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000043,
+              1.3000000000000007
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              -29.756854249492378,
+              44.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4075369960193564e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.3713062711703605e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              -29.756854249492378,
+              70.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4075369960193564e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4110443677450984e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              -18.443145750507618,
+              44.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -7.105427357601002e-15,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.626675916146442e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.418059508355651e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              -18.443145750507618,
+              70.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.626675916146442e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.426239537211127e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.426239537211127e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172927016,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "ring_remote_pip_motor",
+            "b": "ring_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "ring_remote_pip_body_screws",
+            "b": "ring_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "ring_remote_pip_cradle",
+            "b": "ring_remote_pip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260229
+          },
+          {
+            "a": "ring_remote_pip_base_screws",
+            "b": "ring_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "ring_remote_pip_base_nuts",
+            "b": "ring_remote_pip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 40.220317398827355
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "ring_remote_pip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "ring_remote_dip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              -2.6,
+              107.5,
+              -6.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -26.0
+                  ],
+                  [
+                    -3.0000000000000004,
+                    -1.6999999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.39488462184e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -19.3
+                  ],
+                  [
+                    -9.7,
+                    -1.6999999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.2854608750525e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.3
+                ],
+                [
+                  -1.6999999999999997,
+                  -0.49999999999999956
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525005e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000007,
+              1.3000000000000007
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.1999999999999993,
+              3.1999999999999993
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              -2.6,
+              77.5,
+              -6.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -26.0
+                  ],
+                  [
+                    -3.0000000000000004,
+                    -1.6999999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.39488462184e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.3,
+                    -19.3
+                  ],
+                  [
+                    -9.7,
+                    -1.6999999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.2854608750525e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.3
+                ],
+                [
+                  -1.6999999999999997,
+                  -0.49999999999999956
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.0618177144525005e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.3000000000000007,
+              1.3000000000000007
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.1999999999999993,
+              3.1999999999999993
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              -22.75685424949238,
+              79.34314575050762,
+              -11.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -1.7763568394002505e-15,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8000000000000007,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.3713062711703605e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -22.75685424949238,
+              105.65685424949238,
+              -11.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8000000000000007,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3713062711703605e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4110443677450984e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4110443677450984e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -11.44314575050762,
+              79.34314575050762,
+              -11.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -3.552713678800501e-15,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8000000000000007,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.630224133057172e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4174983152910802e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -11.44314575050762,
+              105.65685424949238,
+              -11.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174983152910802e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.8000000000000007,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.985793094707958e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.800000000000001,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.8000000000000007
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.401176479601198e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.401176479601198e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172927028,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "ring_remote_dip_motor",
+            "b": "ring_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "ring_remote_dip_body_screws",
+            "b": "ring_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "ring_remote_dip_cradle",
+            "b": "ring_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260226
+          },
+          {
+            "a": "ring_remote_dip_base_screws",
+            "b": "ring_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "ring_remote_dip_base_nuts",
+            "b": "ring_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 40.22031739882739
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "ring_remote_dip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "little_remote_pip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              -69.4,
+              90.5,
+              8.0
+            ],
+            "axis_world": [
+              -1.0,
+              0.0,
+              -1.2246467991473532e-16
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.472695125667204e-16
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394936387933762e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.699999999999996,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.87267235800664e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.299999999999997
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.852389797324271e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.2999999999999972,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              -69.4,
+              60.5,
+              8.0
+            ],
+            "axis_world": [
+              -1.0,
+              0.0,
+              -1.2246467991473532e-16
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.5,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.472695125667204e-16
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -26.0
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394936387933762e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.299999999999997,
+                    -19.299999999999997
+                  ],
+                  [
+                    -9.699999999999996,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.87267235800664e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.5,
+                  -27.299999999999997
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.852389797324271e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.2999999999999972,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              -49.24314575050762,
+              62.34314575050762,
+              13.000000000000002
+            ],
+            "axis_world": [
+              1.2246467991473532e-16,
+              0.0,
+              -1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -1.7763568394005427e-15,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3763268231535897e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999999,
+                    1.776356839401184e-15
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.634237131765555e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.8000000000000025,
+                    1.1999999999999975
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3759111898355887e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.4,
+                    -2.8000000000000025
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.375859239269789e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.376430739479404e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -49.24314575050762,
+              88.65685424949238,
+              13.000000000000002
+            ],
+            "axis_world": [
+              1.2246467991473532e-16,
+              0.0,
+              -1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.9237506603401944e-28,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3763268231535897e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999999,
+                    1.776356839401184e-15
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.634237131765555e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.8000000000000025,
+                    1.1999999999999975
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4174791272852595e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.4,
+                    -2.8000000000000025
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.41740657990458e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4182046041855502e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -60.55685424949239,
+              62.34314575050762,
+              13.000000000000002
+            ],
+            "axis_world": [
+              1.2246467991473532e-16,
+              0.0,
+              -1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -3.552713678800454e-15,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999999,
+                    1.7763568394005427e-15
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4185189792549374e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999999,
+                    1.200000000000001
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.41815285382311e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999997,
+                    -2.799999999999999
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4181645318005197e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.418036193754336e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          },
+          {
+            "point_world_mm": [
+              -60.55685424949239,
+              88.65685424949238,
+              13.000000000000002
+            ],
+            "axis_world": [
+              1.2246467991473532e-16,
+              0.0,
+              -1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    4.6988849898324556e-29,
+                    1.1999999999999993
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.418059508355651e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999999,
+                    1.7763568394005427e-15
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4185189792549374e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999999,
+                    1.200000000000001
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.430397717070179e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999997,
+                    -2.799999999999999
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.430917713064586e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.1999999999999993,
+                  1.8000000000000007
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.425200489463196e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.40000000000000213
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172927023,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "little_remote_pip_motor",
+            "b": "little_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "little_remote_pip_body_screws",
+            "b": "little_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "little_remote_pip_cradle",
+            "b": "little_remote_pip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260222
+          },
+          {
+            "a": "little_remote_pip_base_screws",
+            "b": "little_remote_pip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "little_remote_pip_base_nuts",
+            "b": "little_remote_pip_mount_plate",
+            "minimum_distance_mm": 1.7763568394002505e-15,
+            "coincident_planar_contact_area_mm2": 40.220317398827284
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "little_remote_pip_mount_plate -> actual chassis rail/anchor"
+      },
+      {
+        "motor": "little_remote_dip_motor",
+        "body_axes": [
+          {
+            "point_world_mm": [
+              -47.6,
+              95.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.500000000000007,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -26.000000000000007
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621840001e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -19.300000000000004
+                  ],
+                  [
+                    -9.699999999999996,
+                    -1.6999999999999957
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052501e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.500000000000007,
+                  -27.300000000000004
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.061817714452501e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.2999999999999972,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          },
+          {
+            "point_world_mm": [
+              -47.6,
+              65.5,
+              -32.0
+            ],
+            "axis_world": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "surfaces": {
+              "_motor": {
+                "radius_mm": 0.8,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -21.500000000000007,
+                    -6.5
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 1.4432899320125e-15
+              },
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -26.000000000000007
+                  ],
+                  [
+                    -3.0,
+                    -1.7000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 6.394884621840001e-15
+              },
+              "_body_screws": {
+                "radius_mm": 0.95,
+                "face_count": 2,
+                "intervals_mm": [
+                  [
+                    -27.300000000000004,
+                    -19.300000000000004
+                  ],
+                  [
+                    -9.699999999999996,
+                    -1.6999999999999957
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 4.285460875052501e-15
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.75,
+              "face_count": 2,
+              "intervals_mm": [
+                [
+                  -28.500000000000007,
+                  -27.300000000000004
+                ],
+                [
+                  -1.7000000000000028,
+                  -0.5
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 6.061817714452501e-15
+            },
+            "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+            "actual_cradle_grips_mm": [
+              1.2999999999999972,
+              1.2999999999999972
+            ],
+            "actual_small_pilot_intrusions_mm": [
+              2.200000000000003,
+              3.1999999999999957
+            ],
+            "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."
+          }
+        ],
+        "base_axes": [
+          {
+            "point_world_mm": [
+              -67.75685424949238,
+              67.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3662932292827163e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.404029757452561e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3662932292827163e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3662932292827163e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 3.3662932292827163e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              -67.75685424949238,
+              93.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 3.3662932292827163e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.404029757452561e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.404029757452561e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.404029757452561e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.404029757452561e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              -56.443145750507625,
+              67.34314575050762,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -7.105427357601002e-15,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4169422141355013e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.633772354150791e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4169422141355013e-12
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4169422141355013e-12
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 2.4169422141355013e-12
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          },
+          {
+            "point_world_mm": [
+              -56.443145750507625,
+              93.65685424949238,
+              -37.0
+            ],
+            "axis_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surfaces": {
+              "_cradle": {
+                "radius_mm": 1.025,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    0.0,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 2.4169422141355013e-12
+              },
+              "_mount_plate": {
+                "radius_mm": 1.1,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -2.799999999999997,
+                    0.0
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 7.633772354150791e-12
+              },
+              "_base_screws": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.799999999999997,
+                    1.2000000000000028
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.376231353587555e-13
+              },
+              "_base_nuts": {
+                "radius_mm": 1.0,
+                "face_count": 1,
+                "intervals_mm": [
+                  [
+                    -4.399999999999999,
+                    -2.799999999999997
+                  ]
+                ],
+                "max_axis_angle_error_deg": 0.0,
+                "max_axis_line_distance_mm": 5.376231353587555e-13
+              }
+            },
+            "screw_head_surfaces": {
+              "radius_mm": 1.5,
+              "face_count": 1,
+              "intervals_mm": [
+                [
+                  1.2000000000000028,
+                  1.8000000000000043
+                ]
+              ],
+              "max_axis_angle_error_deg": 0.0,
+              "max_axis_line_distance_mm": 5.376231353587555e-13
+            },
+            "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+            "actual_nominal_tip_beyond_nut_mm": 0.3999999999999986
+          }
+        ],
+        "actual_thread_envelope_volume_mm3": 8.906415172926973,
+        "analytical_pilot_intrusion_volume_mm3": 8.906415172927057,
+        "seating_contacts": [
+          {
+            "a": "little_remote_dip_motor",
+            "b": "little_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "little_remote_dip_body_screws",
+            "b": "little_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "little_remote_dip_cradle",
+            "b": "little_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 519.3024597260227
+          },
+          {
+            "a": "little_remote_dip_base_screws",
+            "b": "little_remote_dip_cradle",
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "a": "little_remote_dip_base_nuts",
+            "b": "little_remote_dip_mount_plate",
+            "minimum_distance_mm": 0.0,
+            "coincident_planar_contact_area_mm2": 40.22031739882741
+          }
+        ],
+        "complete_chain_to_chassis": false,
+        "unresolved_edge": "little_remote_dip_mount_plate -> actual chassis rail/anchor"
+      }
+    ],
+    "complete_chassis_load_path_count": 0,
+    "unresolved_chassis_paths": 8,
+    "manufacturing_ready": false,
+    "scope": "Saved STEP axis, axial envelope, fastener-head direction, nominal seating-area and narrow thread-intrusion checks. Eight adapter-to-chassis connections remain absent; no supported-foot, structural, thread-strength, tool-access or physical-performance approval."
+  },
+  "mechanical_blockers_detected": [],
+  "mechanical_blocker_list_scope": "The legacy field above lists nominal hinge-axis defects only; an empty list is not construction approval.",
+  "unresolved_construction_scope": [
+    "Rigid motor-to-body attachment is a dynamics assumption; new raised or rotated motor plates require physical supports, fasteners and verified load paths.",
+    "Nominal bore and pin axes do not establish fits, retention, horn engagement, structural strength or access for assembly.",
+    "Continuous swept clearance and functional tendon routing, wraps, tensioners and terminals remain unvalidated."
+  ],
+  "sampled_mount_sweep_review": {
+    "available": true,
+    "poses": 13,
+    "joint_names": [
+      "index_spread",
+      "index_mcp",
+      "index_pip",
+      "index_dip",
+      "middle_spread",
+      "middle_mcp",
+      "middle_pip",
+      "middle_dip",
+      "ring_spread",
+      "ring_mcp",
+      "ring_pip",
+      "ring_dip",
+      "little_spread",
+      "little_mcp",
+      "little_pip",
+      "little_dip",
+      "thumb_base_sweep",
+      "thumb_opposition",
+      "thumb_mcp",
+      "thumb_ip"
+    ],
+    "joint_ranges_deg": [
+      [
+        -22,
+        22
+      ],
+      [
+        -20,
+        85
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        -22,
+        22
+      ],
+      [
+        -20,
+        85
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        -22,
+        22
+      ],
+      [
+        -20,
+        85
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        -22,
+        22
+      ],
+      [
+        -20,
+        85
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        -60,
+        60
+      ],
+      [
+        -20,
+        100
+      ],
+      [
+        -20,
+        105
+      ],
+      [
+        0,
+        90
+      ]
+    ],
+    "pose_angles_deg": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        7.95832184524185,
+        31.84771073563616,
+        38.59329939319264,
+        50.20035226829621,
+        4.498367638860827,
+        -1.3538777850907873,
+        68.74814513220929,
+        34.16983810185709,
+        -5.757157307755627,
+        31.810969352319706,
+        84.05662566472466,
+        39.53262538375645,
+        -12.88894451872103,
+        24.935348100596773,
+        53.37517248172636,
+        52.100692348419074,
+        24.443899524343067,
+        49.99301485245819,
+        58.89571025913625,
+        31.255605503769065
+      ],
+      [
+        11.1357480926641,
+        1.365405019135374,
+        60.889978093362046,
+        65.16139923897825,
+        12.549561012520371,
+        40.084649419647356,
+        34.24356472089942,
+        55.598866716338996,
+        3.573966525320807,
+        55.5489083743766,
+        68.7946913420325,
+        13.539824776040465,
+        -5.990990929647927,
+        9.65918094125639,
+        70.2382647965969,
+        27.890558520883875,
+        14.206811068063951,
+        47.83683457422869,
+        59.42933977099784,
+        45.048793001269196
+      ],
+      [
+        1.9790965299369934,
+        8.058241158909986,
+        39.87585577273193,
+        67.0257501606542,
+        -6.21265553227493,
+        44.244162636232296,
+        76.05112772026261,
+        51.67689266595353,
+        -14.661595305352359,
+        62.983836505245044,
+        46.15978439159705,
+        22.254086322413656,
+        11.854858330148407,
+        21.349554888580133,
+        78.35519440033859,
+        66.39424697730568,
+        35.109183774803064,
+        73.37363838141931,
+        64.75744930494619,
+        43.43145255936641
+      ],
+      [
+        -6.351235159091066,
+        20.710954639694645,
+        81.24371128132468,
+        45.75728538534646,
+        10.492230645146845,
+        7.167179181241408,
+        25.12159579878905,
+        58.50522775620948,
+        -10.743470124406384,
+        47.0392095941963,
+        62.33933751440766,
+        67.97128545871485,
+        14.872277733406719,
+        27.68620708580532,
+        34.42967378135672,
+        17.05858679777358,
+        29.729732683364723,
+        3.4102433108531733,
+        34.64765113743236,
+        37.99415137448867
+      ],
+      [
+        -9.947677451695544,
+        22.278889283192186,
+        49.36045836492412,
+        25.548031131313962,
+        -13.671672706526252,
+        6.863367943060266,
+        37.10664770936409,
+        12.503883582539498,
+        -8.358434323785103,
+        65.69003308083988,
+        31.312452698643547,
+        57.52422881543745,
+        -9.544319213967297,
+        61.76480134185522,
+        52.68800711762751,
+        46.81621162827452,
+        32.11564441356329,
+        10.863179198902948,
+        20.065257779919513,
+        60.55140223157024
+      ],
+      [
+        -12.396569694512552,
+        8.273783394151357,
+        65.82771409129576,
+        53.51277158157221,
+        -12.684350345342692,
+        40.84899816580605,
+        22.913273488979886,
+        58.36102826523493,
+        -5.670997122164312,
+        8.03710376901715,
+        26.507447861265597,
+        43.35782747784241,
+        -6.11170590147517,
+        13.560823728259408,
+        46.80888809789527,
+        45.86215033417797,
+        -30.585516549127924,
+        36.01531840435497,
+        39.473375157563915,
+        38.80667401519921
+      ],
+      [
+        -3.8667300627605723,
+        29.177842129514637,
+        75.35682686550375,
+        63.78944211831985,
+        13.055443801838786,
+        56.19054275967667,
+        51.41502406390273,
+        44.126816991188804,
+        10.060188641493323,
+        27.605263448813822,
+        82.37014614448276,
+        32.31626068463874,
+        6.242877171151902,
+        14.516680182811081,
+        50.498771699646355,
+        35.96903631303744,
+        22.972291083939034,
+        53.37071776002751,
+        24.86321110846514,
+        42.28979376146682
+      ],
+      [
+        -14.451964333657864,
+        23.194957742805904,
+        51.9790834358093,
+        58.171178033427566,
+        -0.2530797146078078,
+        55.12360907272454,
+        84.5265677015938,
+        49.256141421697336,
+        -12.080462414479596,
+        15.504961456586376,
+        46.10238595229639,
+        31.936720170612077,
+        8.379639542782163,
+        24.367885248959123,
+        56.28620603283278,
+        17.077572376354187,
+        23.952563043312544,
+        64.50367493967691,
+        51.225598159208126,
+        60.59547493828003
+      ],
+      [
+        -2.459837091917309,
+        8.904473598761268,
+        72.08804796283293,
+        37.20666721482285,
+        4.994212615026062,
+        41.67253428571679,
+        49.7687749392754,
+        46.004950203012285,
+        -9.13554715224388,
+        62.05734573250975,
+        15.103892645988767,
+        27.572837977204532,
+        -12.052950442827546,
+        42.317177491424815,
+        22.32344642879745,
+        32.00543858208821,
+        1.1193635470534529,
+        30.245968255496106,
+        60.32052388386554,
+        43.258672463445194
+      ],
+      [
+        1.6932430590600462,
+        54.631525361283934,
+        68.37543606021796,
+        59.21900940348347,
+        3.9699023737838766,
+        11.066156482987717,
+        19.32149712601074,
+        40.825699243357555,
+        -12.352998982816422,
+        11.509551623511008,
+        32.9202163379628,
+        65.47674173132972,
+        9.617318337868886,
+        21.41340622958142,
+        59.78178306062053,
+        62.22679819163288,
+        21.11921949858477,
+        66.32314556925044,
+        30.8704512276703,
+        25.14458949637652
+      ],
+      [
+        -8.107735584642235,
+        39.116405387341146,
+        25.26398696677278,
+        49.26806277262238,
+        11.415122282751312,
+        30.52434865304253,
+        76.92821610350993,
+        40.91596938220565,
+        6.982100292473981,
+        17.851536963098265,
+        41.89122861887085,
+        67.54099900155057,
+        -9.872701364091416,
+        35.824700246480056,
+        29.946455770734563,
+        29.58320525055065,
+        -29.218097767983803,
+        64.08989151839079,
+        74.01769342493411,
+        42.380281891181816
+      ],
+      [
+        4.947138322677358,
+        13.009803159066262,
+        21.026072883689736,
+        50.40188740355892,
+        -14.527164933657959,
+        56.53767578246598,
+        51.51741087680834,
+        59.211337566463584,
+        -4.725570762621917,
+        -1.6521012246284672,
+        24.067360330340687,
+        47.902846842779866,
+        -11.29753375631593,
+        19.88158825747414,
+        62.03406811127102,
+        14.688377151505836,
+        -25.259189226870472,
+        29.472763193970412,
+        6.506379767012812,
+        51.724470956260724
+      ]
+    ],
+    "seed": 20261024,
+    "generation_rule": "Neutral pose then 12 NumPy default_rng uniform fractions [.15,.85) of each declared joint range, in joint_names order.",
+    "fixed_mount_components": [
+      "index_remote_pip_cradle",
+      "index_remote_pip_body_screws",
+      "index_remote_pip_base_screws",
+      "index_remote_pip_base_nuts",
+      "index_remote_pip_mount_plate",
+      "index_remote_dip_cradle",
+      "index_remote_dip_body_screws",
+      "index_remote_dip_base_screws",
+      "index_remote_dip_base_nuts",
+      "index_remote_dip_mount_plate",
+      "middle_remote_pip_cradle",
+      "middle_remote_pip_body_screws",
+      "middle_remote_pip_base_screws",
+      "middle_remote_pip_base_nuts",
+      "middle_remote_pip_mount_plate",
+      "middle_remote_dip_cradle",
+      "middle_remote_dip_body_screws",
+      "middle_remote_dip_base_screws",
+      "middle_remote_dip_base_nuts",
+      "middle_remote_dip_mount_plate",
+      "ring_remote_pip_cradle",
+      "ring_remote_pip_body_screws",
+      "ring_remote_pip_base_screws",
+      "ring_remote_pip_base_nuts",
+      "ring_remote_pip_mount_plate",
+      "ring_remote_dip_cradle",
+      "ring_remote_dip_body_screws",
+      "ring_remote_dip_base_screws",
+      "ring_remote_dip_base_nuts",
+      "ring_remote_dip_mount_plate",
+      "little_remote_pip_cradle",
+      "little_remote_pip_body_screws",
+      "little_remote_pip_base_screws",
+      "little_remote_pip_base_nuts",
+      "little_remote_pip_mount_plate",
+      "little_remote_dip_cradle",
+      "little_remote_dip_body_screws",
+      "little_remote_dip_base_screws",
+      "little_remote_dip_base_nuts",
+      "little_remote_dip_mount_plate"
+    ],
+    "moving_components": [
+      "index_root_rotor",
+      "index_root_hinge",
+      "index_root_output_screws",
+      "index_root_output_nuts",
+      "index_root_output_hinge_tap",
+      "index_spread_carrier",
+      "index_mcp_motor",
+      "index_mcp_fixed_frame",
+      "index_mcp_base_screws",
+      "index_mcp_base_nuts",
+      "index_mcp_base_body_tap",
+      "index_mcp_rotor",
+      "index_mcp_hinge",
+      "index_mcp_output_screws",
+      "index_mcp_output_nuts",
+      "index_mcp_output_hinge_tap",
+      "middle_root_rotor",
+      "middle_root_hinge",
+      "middle_root_output_screws",
+      "middle_root_output_nuts",
+      "middle_root_output_hinge_tap",
+      "middle_spread_carrier",
+      "middle_mcp_motor",
+      "middle_mcp_fixed_frame",
+      "middle_mcp_base_screws",
+      "middle_mcp_base_nuts",
+      "middle_mcp_base_body_tap",
+      "middle_mcp_rotor",
+      "middle_mcp_hinge",
+      "middle_mcp_output_screws",
+      "middle_mcp_output_nuts",
+      "middle_mcp_output_hinge_tap",
+      "ring_root_rotor",
+      "ring_root_hinge",
+      "ring_root_output_screws",
+      "ring_root_output_nuts",
+      "ring_root_output_hinge_tap",
+      "ring_spread_carrier",
+      "ring_mcp_motor",
+      "ring_mcp_fixed_frame",
+      "ring_mcp_base_screws",
+      "ring_mcp_base_nuts",
+      "ring_mcp_base_body_tap",
+      "ring_mcp_rotor",
+      "ring_mcp_hinge",
+      "ring_mcp_output_screws",
+      "ring_mcp_output_nuts",
+      "ring_mcp_output_hinge_tap",
+      "little_root_rotor",
+      "little_root_hinge",
+      "little_root_output_screws",
+      "little_root_output_nuts",
+      "little_root_output_hinge_tap",
+      "little_spread_carrier",
+      "little_mcp_motor",
+      "little_mcp_fixed_frame",
+      "little_mcp_base_screws",
+      "little_mcp_base_nuts",
+      "little_mcp_base_body_tap",
+      "little_mcp_rotor",
+      "little_mcp_hinge",
+      "little_mcp_output_screws",
+      "little_mcp_output_nuts",
+      "little_mcp_output_hinge_tap",
+      "thumb_root_rotor",
+      "thumb_root_hinge",
+      "thumb_root_output_screws",
+      "thumb_root_output_nuts",
+      "thumb_root_output_hinge_tap",
+      "thumb_spread_carrier",
+      "thumb_mcp_motor",
+      "thumb_mcp_fixed_frame",
+      "thumb_mcp_base_screws",
+      "thumb_mcp_base_nuts",
+      "thumb_mcp_base_body_tap",
+      "thumb_mcp_rotor",
+      "thumb_mcp_hinge",
+      "thumb_mcp_output_screws",
+      "thumb_mcp_output_nuts",
+      "thumb_mcp_output_hinge_tap",
+      "index_light_link_1",
+      "index_light_link_2",
+      "index_shaft_1",
+      "index_pulley_1",
+      "index_light_link_3",
+      "index_shaft_2",
+      "index_pulley_2",
+      "middle_light_link_1",
+      "middle_light_link_2",
+      "middle_shaft_1",
+      "middle_pulley_1",
+      "middle_light_link_3",
+      "middle_shaft_2",
+      "middle_pulley_2",
+      "ring_light_link_1",
+      "ring_light_link_2",
+      "ring_shaft_1",
+      "ring_pulley_1",
+      "ring_light_link_3",
+      "ring_shaft_2",
+      "ring_pulley_2",
+      "little_light_link_1",
+      "little_light_link_2",
+      "little_shaft_1",
+      "little_pulley_1",
+      "little_light_link_3",
+      "little_shaft_2",
+      "little_pulley_2",
+      "thumb_light_link_1",
+      "thumb_light_link_2",
+      "thumb_shaft_1",
+      "thumb_pulley_1",
+      "thumb_light_link_3",
+      "thumb_shaft_2",
+      "thumb_pulley_2",
+      "thumb_remote_mcp_motor",
+      "thumb_remote_mcp_rotor_visual",
+      "thumb_remote_mcp_dual_spool",
+      "thumb_remote_mcp_mount_plate",
+      "thumb_remote_ip_motor",
+      "thumb_remote_ip_rotor_visual",
+      "thumb_remote_ip_dual_spool",
+      "thumb_remote_ip_mount_plate",
+      "thumb_moving_motor_crossbar"
+    ],
+    "exact_tests_per_pose": [
+      5,
+      13,
+      5,
+      15,
+      15,
+      15,
+      5,
+      11,
+      11,
+      5,
+      9,
+      5,
+      5
+    ],
+    "exact_candidate_pairs_tested": 119,
+    "overlap_threshold_mm3": 0.01,
+    "overlaps": [],
+    "boolean_errors": [],
+    "sampled_mount_clearance_passed": true,
+    "maximum_overlap_mm3": 0.0,
+    "elapsed_seconds": 12.375,
+    "scope": "Saved STEP fixed cradle/adapter/fastener vs moving physical body components at 13 declared poses. Conservative transformed AABB broadphase then exact intersections; no mating exclusions in this cross-body set. Not continuous sweep, self-collision of all moving bodies, support strength, tool access or fabrication approval."
+  }
+}

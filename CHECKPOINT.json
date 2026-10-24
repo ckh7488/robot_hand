@@ -17,6 +17,8 @@
     "upper_limit": 100,
     "boundary": "Robot controller received target to actual joint motion; upstream sensing excluded"
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_scope": "Pending CP006 source freeze, commit and exact-SHA clean checkout reproduction."
+  "post_commit_results_reproduced": true,
+  "post_commit_review_scope": "Exact-SHA clean checkout: saved STEP and 8 motor mounting modules; 13 mount poses/119 exact pairs; 16 model tests; 21 motion plus 8 sensitivity cases, 6 diagnostic cases and 45 static postures exactly reproduced. All eight chassis supports still missing. No full CAD regeneration, continuous collision, fabrication or physical latency approval.",
+  "post_commit_review_target": "8f63fca2cb72c11b96b5594d91a3407a7921bbf5",
+  "post_commit_review_report": "docs/reviews/CP006_8f63fca.md"
 }
