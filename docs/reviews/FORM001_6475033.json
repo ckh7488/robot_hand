@@ -1,0 +1,84 @@
+{
+  "target_sha": "6475033ddaca54767eeba6b396a8c677fe0f8465",
+  "passed": true,
+  "fresh_copy_source": "git archive of committed candidate and ten frozen arm mesh dependencies",
+  "working_tree_inputs_copied": false,
+  "part_count": 120,
+  "max_part_volume_difference_mm3": 0,
+  "max_part_bounds_difference_mm": 0,
+  "roundtrip": {
+    "passed": true,
+    "checks": {
+      "thumb_actual_brep_distal_bore_axes_match_child": true,
+      "source_hashes_match": true,
+      "all_mesh_hashes_match": true,
+      "new_parts_single_solids": true,
+      "step_valid": true,
+      "step_solid_count_matches": true,
+      "step_volume_relative_error_below_1e_6": true,
+      "step_bounds_error_below_0_01_mm": true
+    },
+    "step_solid_count": 120,
+    "thumb_distal_bore_axes": {
+      "passed": true,
+      "matching_cylindrical_faces": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            0.9063077870366499,
+            0.42261826174069944,
+            0.0
+          ],
+          "distance_to_distal_joint_axis_mm": 1.2560739669470201e-15,
+          "absolute_direction_dot": 1.0,
+          "axis_error_deg": 0.0,
+          "face_axial_center_mm": 10.5
+        },
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            0.9063077870366499,
+            0.42261826174069944,
+            0.0
+          ],
+          "distance_to_distal_joint_axis_mm": 2.6645352591003757e-15,
+          "absolute_direction_dot": 1.0,
+          "axis_error_deg": 0.0,
+          "face_axial_center_mm": -10.421878434752628
+        }
+      ],
+      "maximum_axis_error_deg": 0.0,
+      "maximum_axis_distance_mm": 2.6645352591003757e-15,
+      "both_fork_sides_found": true,
+      "required_axis": [
+        0.9063077870366499,
+        0.42261826174069944,
+        0
+      ],
+      "required_joint_mm": [
+        0,
+        50.0,
+        0
+      ],
+      "structural_body_solid_count": 1,
+      "manufacturing_approved": false
+    },
+    "step_volume_relative_error": 7.942272135221855e-12,
+    "step_bounds_max_error_mm": 5.6701310313655995e-12,
+    "step_bounds_mm": [
+      [
+        -90.0,
+        -3.4301450568818836e-12,
+        -63.0
+      ],
+      [
+        109.14071677578,
+        281.0,
+        21.000000100000687
+      ]
+    ],
+    "step_sha256": "6a371f91e8fe4d29efcd9a2ecfd37088677599c6556928b303248723ff48bf19",
+    "scope": "Export/import integrity only; no motors fitted and no assembly, clearance or latency approval."
+  },
+  "scope": "New hand CAD source rebuild and STEP integrity only; no motors fitted, no clearance/dynamics approval."
+}
