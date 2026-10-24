@@ -17,7 +17,8 @@
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "661e19ced68b64daefd0600060219c84fc0a0694",
+  "post_commit_review_report": "docs/reviews/DRIVE002_661e19ced68b/review.json",
+  "post_commit_reproduction_scope": "Rebuilt CAD, mass tensors, open/fist/counterexample and root interfaces; regenerated contract; actual adapter and protocol tests. Four dynamics cases, full 13-pose path, packaging and render not reexecuted."
 }

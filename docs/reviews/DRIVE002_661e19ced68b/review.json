@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "target_sha": "661e19ced68b64daefd0600060219c84fc0a0694",
+  "started_utc": "2026-10-24T15:46:06.603217+00:00",
+  "completed": true,
+  "reproduction_passed": true,
+  "hardware_approved": false,
+  "manufacturing_approved": false,
+  "review_kind": "Same-agent fresh-copy reproduction, not external audit",
+  "steps": [
+    {
+      "label": "git_resolve_commit",
+      "argv": [
+        "C:/Program Files/Git/cmd/git.exe",
+        "rev-parse",
+        "--verify",
+        "661e19ced68b64daefd0600060219c84fc0a0694^{commit}"
+      ],
+      "cwd": "D:\\robot_hand",
+      "started_utc": "2026-10-24T15:46:06.608217+00:00",
+      "stdout": "logs\\git_resolve_commit.stdout.log",
+      "stderr": "logs\\git_resolve_commit.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:46:06.716216+00:00",
+      "elapsed_s": 0.10899999993853271
+    },
+    {
+      "label": "git_tree",
+      "argv": [
+        "C:/Program Files/Git/cmd/git.exe",
+        "ls-tree",
+        "-r",
+        "-l",
+        "-z",
+        "--full-tree",
+        "661e19ced68b64daefd0600060219c84fc0a0694"
+      ],
+      "cwd": "D:\\robot_hand",
+      "started_utc": "2026-10-24T15:46:06.718218+00:00",
+      "stdout": "logs\\git_tree.stdout.log",
+      "stderr": "logs\\git_tree.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:46:07.333034+00:00",
+      "elapsed_s": 0.625
+    },
+    {
+      "label": "git_archive",
+      "argv": [
+        "C:/Program Files/Git/cmd/git.exe",
+        "archive",
+        "--format=tar",
+        "--output=D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\input_commit.tar",
+        "661e19ced68b64daefd0600060219c84fc0a0694"
+      ],
+      "cwd": "D:\\robot_hand",
+      "started_utc": "2026-10-24T15:46:09.879591+00:00",
+      "stdout": "logs\\git_archive.stdout.log",
+      "stderr": "logs\\git_archive.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:46:13.758334+00:00",
+      "elapsed_s": 3.875
+    },
+    {
+      "label": "rebuild_cad",
+      "argv": [
+        "C:/Users/c/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\cad\\articulation_drive_v2\\build.py"
+      ],
+      "cwd": "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository",
+      "started_utc": "2026-10-24T15:47:03.446843+00:00",
+      "stdout": "logs\\rebuild_cad.stdout.log",
+      "stderr": "logs\\rebuild_cad.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:47:31.276173+00:00",
+      "elapsed_s": 27.82799999997951
+    },
+    {
+      "label": "verify_core_geometry",
+      "argv": [
+        "C:/Users/c/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\cad\\articulation_drive_v2\\verify.py",
+        "--poses",
+        "core",
+        "--output",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\evidence\\fresh_core_geometry.json"
+      ],
+      "cwd": "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository",
+      "started_utc": "2026-10-24T15:47:31.366172+00:00",
+      "stdout": "logs\\verify_core_geometry.stdout.log",
+      "stderr": "logs\\verify_core_geometry.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:48:30.844917+00:00",
+      "elapsed_s": 59.46799999999348
+    },
+    {
+      "label": "regenerate_contract",
+      "argv": [
+        "C:/Users/c/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\sim\\articulation_drive_v2\\build_contract.py",
+        "--cad-root",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\cad\\articulation_drive_v2",
+        "--step",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\cad\\articulation_drive_v2\\generated\\hand.step",
+        "--transmission",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\sim\\articulation_drive_v2\\transmission.json",
+        "--scope",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\sim\\articulation_drive_v2\\scope.json",
+        "--repo-root",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository",
+        "--output",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\cad\\articulation_drive_v2\\generated\\dynamics_contract.json"
+      ],
+      "cwd": "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository",
+      "started_utc": "2026-10-24T15:48:30.910918+00:00",
+      "stdout": "logs\\regenerate_contract.stdout.log",
+      "stderr": "logs\\regenerate_contract.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:48:31.995062+00:00",
+      "elapsed_s": 1.0790000000270084
+    },
+    {
+      "label": "adapter_tests",
+      "argv": [
+        "C:/Users/c/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\sim\\articulation_drive_v2\\test_adapter.py",
+        "--reference-root",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\sim\\form_drive_v1\\reference_06b9ab4",
+        "--contract",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\cad\\articulation_drive_v2\\generated\\dynamics_contract.json",
+        "--output",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\evidence\\adapter_tests.json"
+      ],
+      "cwd": "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository",
+      "started_utc": "2026-10-24T15:48:32.016060+00:00",
+      "stdout": "logs\\adapter_tests.stdout.log",
+      "stderr": "logs\\adapter_tests.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:48:36.130964+00:00",
+      "elapsed_s": 4.109000000054948
+    },
+    {
+      "label": "protocol_tests",
+      "argv": [
+        "C:/Users/c/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository\\sim\\articulation_drive_v2\\test_screen.py",
+        "--output",
+        "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\evidence\\protocol_tests.json"
+      ],
+      "cwd": "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\repository",
+      "started_utc": "2026-10-24T15:48:36.144967+00:00",
+      "stdout": "logs\\protocol_tests.stdout.log",
+      "stderr": "logs\\protocol_tests.stderr.log",
+      "status": "completed",
+      "returncode": 0,
+      "ended_utc": "2026-10-24T15:48:42.221284+00:00",
+      "elapsed_s": 6.078000000095926
+    }
+  ],
+  "checks": {
+    "disk_headroom": {
+      "passed": true,
+      "available_bytes": 313513156608,
+      "required_bytes": 2118401005,
+      "rule": "2.5 times archived tracked bytes plus 512 MiB for fresh CAD and logs"
+    },
+    "archive": {
+      "passed": true,
+      "commit": "661e19ced68b64daefd0600060219c84fc0a0694",
+      "files": 2259,
+      "bytes": 632612037,
+      "archive_sha256": "9aa01d3ce8c0d43d3374a7dada47a91cba041648166e650c2b6b1a5a0906d2ab",
+      "all_files_verified_against_git_blob": true,
+      "note": "No checkout, hooks, untracked files, working-tree edits or source checkout outputs are used"
+    },
+    "manifest": {
+      "passed": true,
+      "id": "DRIVE002",
+      "manifest_path": "checkpoints/DRIVE002.manifest.json",
+      "manifest_sha256": "02863cd77fa2d8a4c797aeedcefa81f897304050e0896cb622c3ebb23a40a5bd",
+      "file_count": 1008,
+      "bytes": 234924056,
+      "failures": []
+    },
+    "frozen_222_before": {
+      "passed": true,
+      "declarations": 222,
+      "unique_files": 222,
+      "index_sha256": "ce33b645bba1d747cc80a6e99ea1b9a184982a3dadbead6e114346c10a58ae89",
+      "failures": []
+    },
+    "executed_source_manifest_coverage": {
+      "passed": true,
+      "uncovered": [],
+      "required_paths": [
+        "tools/review_articulation_checkpoint.py",
+        "cad/articulation_drive_v2/build.py",
+        "cad/articulation_drive_v2/root_module.py",
+        "cad/articulation_drive_v2/verify.py",
+        "cad/form_drive_v1/exterior.py",
+        "sim/articulation_drive_v2/model_adapter.py",
+        "sim/articulation_drive_v2/build_contract.py",
+        "sim/articulation_drive_v2/test_adapter.py",
+        "sim/articulation_drive_v2/test_screen.py",
+        "sim/articulation_drive_v2/run_screen.py",
+        "sim/articulation_drive_v2/scope.json",
+        "sim/articulation_drive_v2/transmission.json",
+        "sim/form_drive_v1/model_adapter.py",
+        "sim/articulation_drive_v2/reference_webcam_31ba43f/provenance.json",
+        "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/cad_hand.py",
+        "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/retarget.py",
+        "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/__init__.py"
+      ]
+    },
+    "runner_matches_checkpoint": {
+      "passed": true,
+      "actual_sha256": "2940195c74e96720e500714b14863b35f8e6b398f00eb7bf62bcc4303944e794",
+      "committed_sha256": "2940195c74e96720e500714b14863b35f8e6b398f00eb7bf62bcc4303944e794"
+    },
+    "cad_build_guard": {
+      "passed": true,
+      "part_count": 190
+    },
+    "exact_cad_mass_tensors": {
+      "passed": true,
+      "part_count": 190,
+      "comparisons": {
+        "mass_kg": {
+          "passed": true,
+          "atol": 1e-12,
+          "rtol": 1e-09,
+          "numeric_values_compared": 190,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "com_world_mm": {
+          "passed": true,
+          "atol": 1e-07,
+          "rtol": 1e-10,
+          "numeric_values_compared": 570,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "inertia_com_world_kg_m2": {
+          "passed": true,
+          "atol": 1e-13,
+          "rtol": 1e-08,
+          "numeric_values_compared": 1710,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "volume_mm3": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-09,
+          "numeric_values_compared": 190,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "bbox_mm": {
+          "passed": true,
+          "atol": 1e-06,
+          "rtol": 1e-10,
+          "numeric_values_compared": 1140,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "remaining_fields": {
+          "passed": true,
+          "atol": 1e-12,
+          "rtol": 1e-09,
+          "numeric_values_compared": 192,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        }
+      },
+      "note": "Exact BRep mass-property method, declared numerical tolerance; STEP bytes/timestamps need not reproduce"
+    },
+    "scene_geometry": {
+      "passed": true,
+      "atol": 1e-06,
+      "rtol": 1e-09,
+      "numeric_values_compared": 2430,
+      "max_absolute_difference": 0.0,
+      "max_difference_at": null,
+      "differences": []
+    },
+    "generated_design": {
+      "passed": true,
+      "atol": 0.0,
+      "rtol": 0.0,
+      "numeric_values_compared": 168,
+      "max_absolute_difference": 0.0,
+      "max_difference_at": null,
+      "differences": []
+    },
+    "core_geometry_reproduction": {
+      "passed": true,
+      "comparisons": {
+        "parts": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-09,
+          "numeric_values_compared": 760,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "mesh_topology": {
+          "passed": true,
+          "atol": 0.0,
+          "rtol": 0.0,
+          "numeric_values_compared": 950,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "assembly_roundtrip": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-09,
+          "numeric_values_compared": 571,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "finite_root_and_mount_geometry": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-08,
+          "numeric_values_compared": 3388,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "open": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-08,
+          "numeric_values_compared": 493,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "fist": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-08,
+          "numeric_values_compared": 516,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "index_spread_minus22_others_open": {
+          "passed": true,
+          "atol": 1e-05,
+          "rtol": 1e-08,
+          "numeric_values_compared": 685,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        }
+      },
+      "preserved_failures": {
+        "open": {
+          "overlaps": 0,
+          "different_body_overlaps": 0,
+          "boolean_failures": 0
+        },
+        "fist": {
+          "overlaps": 0,
+          "different_body_overlaps": 0,
+          "boolean_failures": 0
+        },
+        "index_spread_minus22_others_open": {
+          "overlaps": 21,
+          "different_body_overlaps": 21,
+          "boolean_failures": 0
+        }
+      },
+      "note": "Reproducing unresolved overlaps is not a clearance or fabrication pass"
+    },
+    "new_contract_reproduction": {
+      "passed": true,
+      "bodies": 21,
+      "joints": 20,
+      "comparisons": {
+        "mass_kg": {
+          "passed": true,
+          "atol": 1e-12,
+          "rtol": 1e-09,
+          "numeric_values_compared": 21,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "com_local_mm": {
+          "passed": true,
+          "atol": 1e-07,
+          "rtol": 1e-10,
+          "numeric_values_compared": 63,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "inertia_com_local_kg_m2": {
+          "passed": true,
+          "atol": 1e-13,
+          "rtol": 1e-08,
+          "numeric_values_compared": 189,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        },
+        "frames_joints_routing_scope": {
+          "passed": true,
+          "atol": 1e-09,
+          "rtol": 1e-10,
+          "numeric_values_compared": 1581,
+          "max_absolute_difference": 0.0,
+          "max_difference_at": null,
+          "differences": []
+        }
+      },
+      "baseline_contract_sha256": "a5a12a12ce296dbcdf96afb636668e325357492e4fb3d8727e1d504cba3e3bdd",
+      "fresh_contract_sha256": "90cf1404aded9890fc0435a13f1aece9308e9fc1d30d76aeb75999a0d8c00b51",
+      "hash_difference_expected_for_regenerated_native_STEP": true
+    },
+    "adapter_tests": {
+      "passed": true,
+      "tests_run": 13,
+      "skipped": 0,
+      "evidence": {
+        "new_compiled_model": {
+          "contract_sha256": "90cf1404aded9890fc0435a13f1aece9308e9fc1d30d76aeb75999a0d8c00b51",
+          "pose_count": 28,
+          "max_position_difference_m": 5.793976409762536e-14,
+          "max_rotation_component_difference": 1.1296102941926733e-12,
+          "max_full_inertia_component_difference_kg_m2": 4.7255968127317416e-17,
+          "simulation_stepped": false
+        },
+        "webcam_frame_comparison": {
+          "pose_count": 28,
+          "joints_per_pose": 20,
+          "max_position_difference_m": 5.793976409762536e-14,
+          "max_rotation_component_difference": 1.1296102941926733e-12,
+          "max_axis_component_difference": 1.1296102941926733e-12,
+          "scope": "Kinematics only; mixed poses have no collision acceptance"
+        }
+      }
+    },
+    "protocol_tests": {
+      "passed": true,
+      "tests_run": 5
+    },
+    "frozen_222_after": {
+      "passed": true,
+      "declarations": 222,
+      "unique_files": 222,
+      "index_sha256": "ce33b645bba1d747cc80a6e99ea1b9a184982a3dadbead6e114346c10a58ae89",
+      "failures": []
+    }
+  },
+  "errors": [],
+  "scope": {
+    "rebuilt": [
+      "Saved source hand to complete new CAD",
+      "Exact part mass and full inertia tensors",
+      "Three all-part core poses and finite root/mount geometry",
+      "New 20-axis dynamics contract",
+      "Adapter/compiled-model tests and command/metric protocol tests"
+    ],
+    "not_reexecuted": [
+      "Four dynamics cases",
+      "Timestep-convergence physics runs",
+      "13-pose full path",
+      "Motor packaging screen",
+      "Continuous assembly or motion",
+      "Hardware latency/strength"
+    ]
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "child_python": "C:/Users/c/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "pythonpath": "D:/Codex-work/robot-hand-workspace/work/audit_deps;D:/Codex-work/robot-hand-cache/2026-10-24/cad_deps",
+    "subprocess_console_hidden": true,
+    "blas_openmp_threads": 1,
+    "temp_directory": "D:\\Codex-work\\robot-hand-workspace\\work\\reviews\\DRIVE002_661e19ced68b\\temp"
+  },
+  "runner": {
+    "path": "D:\\robot_hand\\tools\\review_articulation_checkpoint.py",
+    "sha256": "2940195c74e96720e500714b14863b35f8e6b398f00eb7bf62bcc4303944e794"
+  },
+  "preserved_baseline": [
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 1013,
+      "sha256": "00bbe0453fd001c3e3e0f311d6b3179d3be9e525e4b3f74b99b640c8a679dc37"
+    },
+    {
+      "path": "checkpoints/DRIVE002.manifest.json",
+      "bytes": 194677,
+      "sha256": "02863cd77fa2d8a4c797aeedcefa81f897304050e0896cb622c3ebb23a40a5bd"
+    },
+    {
+      "path": "cad/articulation_drive_v2/design.json",
+      "bytes": 4335,
+      "sha256": "3016ba3242d3e15c1b3ce183307e1de2511e659b2a74514635d150177b1f9363"
+    },
+    {
+      "path": "cad/articulation_drive_v2/generated/scene.json",
+      "bytes": 177511,
+      "sha256": "202f85228570a858b7586346274cdab257475a247fca1c1442d5139d93e2a209"
+    },
+    {
+      "path": "cad/articulation_drive_v2/generated/mass_inertia.json",
+      "bytes": 190487,
+      "sha256": "cb75b70bef0226e214d6a9090289d9a3f56f739953a1cec6ebba9d621344dbcf"
+    },
+    {
+      "path": "cad/articulation_drive_v2/generated/build_report.json",
+      "bytes": 99853,
+      "sha256": "588cb53ff66fd2f3e8d7732d16f93c0194a168111c968677c55903e7705a6ab4"
+    },
+    {
+      "path": "cad/articulation_drive_v2/generated/assembly_review.json",
+      "bytes": 3150267,
+      "sha256": "12a9ae3c86a592fa29514d2337658f4458fd5985a54b36b31d95abf3bd44c175"
+    },
+    {
+      "path": "cad/articulation_drive_v2/generated/dynamics_contract.json",
+      "bytes": 85195,
+      "sha256": "a5a12a12ce296dbcdf96afb636668e325357492e4fb3d8727e1d504cba3e3bdd"
+    },
+    {
+      "path": "sim/articulation_drive_v2/results/drive002/summary.json",
+      "bytes": 9006,
+      "sha256": "ccc01fe8b4d782fe1ad9ceda9e4740379adee4932fa787a3cdaf99e7791b0beb"
+    }
+  ],
+  "preserved_dynamics_not_reexecuted": {
+    "source": "sim/articulation_drive_v2/results/drive002/summary.json",
+    "cases": [
+      {
+        "label": "small5_125us",
+        "scenario": "small5",
+        "dt_s": 0.000125,
+        "finite": true,
+        "status": "completed_diagnostic_not_hardware_approval",
+        "event_count": 240,
+        "event_classification_counts": {
+          "reached": 235,
+          "early_crossing": 0,
+          "preexisting_level": 4,
+          "never_reached": 1
+        },
+        "missing_events": 5,
+        "anticipatory_events": 0,
+        "valid_event_max_ms": 78.28639098371949,
+        "raw_max_error_deg": 4.277770246988894,
+        "unsettled_quality_holds": 56,
+        "simulated_100ms_event_budget_met": false,
+        "max_tendon_tension_N": 6.359070477498401
+      },
+      {
+        "label": "small5_62.5us",
+        "scenario": "small5",
+        "dt_s": 6.25e-05,
+        "finite": true,
+        "status": "completed_diagnostic_not_hardware_approval",
+        "event_count": 240,
+        "event_classification_counts": {
+          "reached": 235,
+          "early_crossing": 0,
+          "preexisting_level": 4,
+          "never_reached": 1
+        },
+        "missing_events": 5,
+        "anticipatory_events": 0,
+        "valid_event_max_ms": 78.08632476352773,
+        "raw_max_error_deg": 4.289497418674775,
+        "unsettled_quality_holds": 56,
+        "simulated_100ms_event_budget_met": false,
+        "max_tendon_tension_N": 6.372539675541033
+      },
+      {
+        "label": "cad_fist_125us",
+        "scenario": "cad_fist",
+        "dt_s": 0.000125,
+        "finite": true,
+        "status": "completed_diagnostic_not_hardware_approval",
+        "event_count": 102,
+        "event_classification_counts": {
+          "reached": 100,
+          "early_crossing": 2,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "missing_events": 0,
+        "anticipatory_events": 2,
+        "valid_event_max_ms": 26.88515024865923,
+        "raw_max_error_deg": 21.063208907605613,
+        "unsettled_quality_holds": 23,
+        "simulated_100ms_event_budget_met": false,
+        "max_tendon_tension_N": 16.01776825181811
+      },
+      {
+        "label": "cad_fist_62.5us",
+        "scenario": "cad_fist",
+        "dt_s": 6.25e-05,
+        "finite": true,
+        "status": "completed_diagnostic_not_hardware_approval",
+        "event_count": 102,
+        "event_classification_counts": {
+          "reached": 100,
+          "early_crossing": 2,
+          "preexisting_level": 0,
+          "never_reached": 0
+        },
+        "missing_events": 0,
+        "anticipatory_events": 2,
+        "valid_event_max_ms": 26.91398220161434,
+        "raw_max_error_deg": 21.129851660040956,
+        "unsettled_quality_holds": 23,
+        "simulated_100ms_event_budget_met": false,
+        "max_tendon_tension_N": 16.020515049035264
+      }
+    ],
+    "convergence": [
+      {
+        "scenario": "small5",
+        "passed": false,
+        "status": "numerical_confidence_failed",
+        "max_angle_difference_deg": 0.021403439489391104,
+        "per_joint_max_angle_difference_deg": [
+          0.00739597055967993,
+          0.010055437227491332,
+          0.009190363076205599,
+          0.005367598238007201,
+          0.0011177006463903786,
+          0.012418332369095106,
+          0.01660542809744445,
+          0.005737068779647657,
+          0.0018796535826924275,
+          0.011966348363601937,
+          0.0146487139544012,
+          0.007906979153529137,
+          0.008392746268550038,
+          0.009879693376205922,
+          0.010561164738577473,
+          0.018877677297010863,
+          0.01855401560245361,
+          0.008163122859304572,
+          0.021403439489391104,
+          0.013888751142244193
+        ],
+        "max_event_lag_difference_ms": 0.2000662201917578,
+        "angle_limit_deg": 0.02,
+        "event_identity_identical": true,
+        "event_classifications_identical": true,
+        "lag_availability_identical": true,
+        "hold_quality_classifications_identical": true
+      },
+      {
+        "scenario": "cad_fist",
+        "passed": true,
+        "status": "converged_under_declared_test",
+        "max_angle_difference_deg": 0.09094412842658635,
+        "per_joint_max_angle_difference_deg": [
+          1.3723742496644132e-05,
+          0.05281399131449462,
+          0.01798526998209337,
+          0.006568848335864027,
+          1.127497982839097e-05,
+          0.09094412842658635,
+          0.01829829082640125,
+          0.008128675327259676,
+          1.5251982708631169e-05,
+          0.040700278451816514,
+          0.021510949435143086,
+          0.004218130842471865,
+          1.9790859906317175e-05,
+          0.01415434464790129,
+          0.02046157564303446,
+          0.0035996817373233265,
+          0.08528903352043707,
+          0.07809677422597444,
+          0.02533980276451521,
+          0.018976436321769766
+        ],
+        "max_event_lag_difference_ms": 0.20289804018663915,
+        "angle_limit_deg": 1.0,
+        "event_identity_identical": true,
+        "event_classifications_identical": true,
+        "lag_availability_identical": true,
+        "hold_quality_classifications_identical": true
+      }
+    ],
+    "numerical_results_reproduced_by_this_run": false
+  },
+  "source_end_guard": {
+    "passed": true,
+    "files": 1766,
+    "changed": [],
+    "permitted_output_scope": [
+      "cad/articulation_drive_v2/generated/",
+      "cad/articulation_drive_v2/design.json"
+    ],
+    "note": "All other tracked bytes, including source webcam, sim_3rd and frozen evidence, remain unchanged"
+  },
+  "ended_utc": "2026-10-24T15:48:48.340656+00:00"
+}
