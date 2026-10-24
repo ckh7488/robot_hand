@@ -122,7 +122,7 @@ class ShapeMapping(unittest.TestCase):
             ui=PreviewUI(headless=True)
             image=ui.compose(None,None,np.zeros((570,660,3),np.uint8),actual,restored,
                 dict(camera_fps=30,processing_fps=30,track_ms=10,age_ms=20),'live',0,True)
-            self.assertEqual(image.shape,(900,1440,3))
+            self.assertEqual(image.shape,(900,1680,3))
 
     def test_unreliable_thumb_hold_does_not_stop_other_fingers(self):
         with tempfile.TemporaryDirectory() as tmp:

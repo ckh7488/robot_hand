@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "displayed_frames": 4,
+  "explicit_captures": 2,
+  "exact_raw_coordinates": true,
+  "exact_screen_pixels": true,
+  "raw_review": {
+    "case_id": "case_0001",
+    "seq": 1,
+    "case_sha256": "6c6c1096732143ef4e544ab88ef8e5fa864c731a2ff766e5cb84877b831795e0",
+    "detected": true,
+    "scope": "Original detector points, no CAD, angle calibration, smoothing or bone normalization.",
+    "render": "mediapipe_raw_3d.png"
+  },
+  "scope": "Synthetic app integration; not live hand accuracy or physical camera timing."
+}

@@ -136,8 +136,8 @@ def main(argv=None):
             timing = dict(camera_fps=source.measured_fps(), processing_fps=processing_fps, track_ms=(tracking_end - tracking_start) * 1000, age_ms=(command_time - captured) * 1000)
             mode = 'test' if testing else 'live'
             render_start = time.perf_counter()
-            rendered = robot.render(view, width=880 if a.full_quality else 660,
-                                    height=760 if a.full_quality else 570, fast=not a.full_quality) if ui else None
+            rendered = robot.render(view, width=532 if a.full_quality else 426,
+                                    height=620 if a.full_quality else 496, fast=not a.full_quality) if ui else None
             render_end = time.perf_counter()
             key = ui.show(image, detection, rendered, pose, pipeline, timing, mode, view, debug) if ui else 255
             timing.update(map_ms=(command_time-tracking_end)*1000,
