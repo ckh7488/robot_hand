@@ -1,0 +1,88 @@
+{
+  "input_sha256": {
+    "cad\\webcam_articulation_v1\\design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad\\webcam_articulation_v1\\generated\\scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331",
+    "cad\\webcam_articulation_v1\\generated\\hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "cad\\webcam_articulation_v1\\build.py": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3",
+    "cad\\webcam_articulation_v1\\digits.py": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626",
+    "cad\\webcam_articulation_v1\\thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad\\webcam_articulation_v1\\manufacturing_audit.py": "d76e561afcf59c2f873576b60cd13341be8fd97ac2473b313f9aade7336afd5f"
+  },
+  "root_mm": [
+    58.5,
+    117.0,
+    8.0
+  ],
+  "sections": [
+    {
+      "title": "1. \uc9c0\uc9c0\uc0b4\uc774 \ud540 \uad6c\uba4d\uc744 \ub9c9\uc74c",
+      "subtitle": "\ud540\uacfc \uc9c0\uc9c0\ub300 \uacb9\uce68 18.85 mm\u00b3 / \ud55c\ucabd",
+      "axis": 0,
+      "offset": 13,
+      "extent": [
+        -10,
+        10,
+        -11,
+        10
+      ],
+      "names": [
+        "index_root_fork_13",
+        "index_joint_pin_0"
+      ],
+      "labels": [
+        "\uad00\uc808 \uc9c0\uc9c0\ub300",
+        "\uad00\uc808 \ud540"
+      ]
+    },
+    {
+      "title": "2. \ud68c\uc804 \ubc1b\uce68\uacfc \uad7d\ud798 \ub9c8\ub514\uac00 \ucda9\ub3cc",
+      "subtitle": "\ud3b8 \uc190\uc5d0\uc11c\ub3c4 \ubc1b\uce68\u2013\ub9c8\ub514 \uacb9\uce68 \uc57d631 mm\u00b3",
+      "axis": 0,
+      "offset": 0,
+      "extent": [
+        -19,
+        25,
+        -12,
+        15
+      ],
+      "names": [
+        "index_spread_housing",
+        "index_segment1_segment_shell",
+        "index_segment1_proximal_bushing",
+        "index_spread_ring",
+        "index_joint_pin_0"
+      ],
+      "labels": [
+        "\uace0\uc815 \ubc1b\uce68",
+        "\uc6c0\uc9c1\uc774\ub294 \ub9c8\ub514",
+        "\ubd80\uc2f1",
+        "\ud68c\uc804 \ub9c1",
+        "\ud540"
+      ]
+    },
+    {
+      "title": "3. \ud68c\uc804 \ub9c1\uacfc \uc591\ucabd \uc9c0\uc9c0\ub300\uac00 \ub5a8\uc5b4\uc9d0",
+      "subtitle": "\uc591\ucabd \ubaa8\ub450 1.00 mm \ud2c8 \u00b7 \uc5f0\uacb0\ubd80 \uc5c6\uc74c",
+      "axis": 2,
+      "offset": -3.5,
+      "extent": [
+        -18,
+        18,
+        -13,
+        13
+      ],
+      "names": [
+        "index_root_fork_-13",
+        "index_spread_ring",
+        "index_root_fork_13"
+      ],
+      "labels": [
+        "\uc67c\ucabd \uc9c0\uc9c0\ub300",
+        "\ud68c\uc804 \ub9c1",
+        "\uc624\ub978\ucabd \uc9c0\uc9c0\ub300"
+      ]
+    }
+  ],
+  "tessellation_tolerance_mm": 0.02,
+  "method": "BRep common with a plane; planar intersections shown in red; volumes from separate solid Boolean intersections"
+}

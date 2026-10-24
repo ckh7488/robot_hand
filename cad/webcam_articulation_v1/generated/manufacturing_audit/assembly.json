@@ -1,0 +1,3649 @@
+{
+  "input_sha256": {
+    "cad\\webcam_articulation_v1\\design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad\\webcam_articulation_v1\\generated\\scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331",
+    "cad\\webcam_articulation_v1\\generated\\hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "cad\\webcam_articulation_v1\\build.py": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3",
+    "cad\\webcam_articulation_v1\\digits.py": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626",
+    "cad\\webcam_articulation_v1\\thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad\\webcam_articulation_v1\\manufacturing_audit.py": "d76e561afcf59c2f873576b60cd13341be8fd97ac2473b313f9aade7336afd5f"
+  },
+  "completed": true,
+  "scope": "All 120 separate hand components; no pair exemptions",
+  "cases": {
+    "open": {
+      "angles_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_phase_candidates": 253,
+      "overlaps": [
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_spread_housing",
+          "volume_mm3": 525.9347194646058,
+          "same_simulator_body": true,
+          "center_mm": [
+            62.688421285974,
+            126.42394789344921,
+            0.5
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_spread_ring",
+          "volume_mm3": 21.483588986667332,
+          "same_simulator_body": false,
+          "center_mm": [
+            62.19161281153364,
+            125.3061288259575,
+            3.499999999999996
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_root_fork_13",
+          "volume_mm3": 32.8967018717346,
+          "same_simulator_body": false,
+          "center_mm": [
+            71.65146632915149,
+            121.66093228374994,
+            2.412657122144526
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 263.329793756571,
+          "same_simulator_body": false,
+          "center_mm": [
+            57.09661361505318,
+            129.1263624577191,
+            -0.719512032541395
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 272.23116113350034,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.613221084676375,
+            145.59776479445324,
+            -0.7160406261472432
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 336.987990428712,
+          "same_simulator_body": false,
+          "center_mm": [
+            -16.80027579615216,
+            141.42704851313096,
+            -0.563998612385956
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_spread_housing",
+          "volume_mm3": 123.9833207242894,
+          "same_simulator_body": true,
+          "center_mm": [
+            -68.30400620549464,
+            116.19616645371327,
+            0.4999999999999999
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 6.926439756418038,
+          "same_simulator_body": false,
+          "center_mm": [
+            -72.1541325471445,
+            112.04159046966652,
+            3.0522632534923253
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 348.32607129884525,
+          "same_simulator_body": false,
+          "center_mm": [
+            -57.30540792019521,
+            125.59916751063516,
+            -0.778788487974055
+          ]
+        },
+        {
+          "a": "Palm_side_web_-71",
+          "b": "little_spread_housing",
+          "volume_mm3": 38.141558409531356,
+          "same_simulator_body": true,
+          "center_mm": [
+            -70.58767583351933,
+            97.9379277401744,
+            0.4999999999999999
+          ]
+        },
+        {
+          "a": "Palm_side_web_-71",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 26.034751739772712,
+          "same_simulator_body": false,
+          "center_mm": [
+            -71.24999999999979,
+            98.84666246835889,
+            4.230999205187292
+          ]
+        },
+        {
+          "a": "Cover_post_-18_104",
+          "b": "ring_spread_housing",
+          "volume_mm3": 96.44774477236066,
+          "same_simulator_body": true,
+          "center_mm": [
+            -18.266819994629135,
+            107.02395993913011,
+            0.49999999999999994
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_root_fork_-13",
+          "volume_mm3": 167.99379437686616,
+          "same_simulator_body": false,
+          "center_mm": [
+            45.5203269742806,
+            115.84264429762678,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_root_fork_13",
+          "volume_mm3": 167.99379437686494,
+          "same_simulator_body": false,
+          "center_mm": [
+            71.47967302571939,
+            115.8426442976268,
+            0.6709084980658507
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 630.5831277086613,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.50000414259949,
+            122.15179801752281,
+            0.684814943899612
+          ]
+        },
+        {
+          "a": "index_spread_ring",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 486.64797575545714,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.50000005607178,
+            117.0000001197495,
+            4.483129445862968
+          ]
+        },
+        {
+          "a": "index_spread_ring",
+          "b": "index_segment1_proximal_bushing",
+          "volume_mm3": 42.58761056988623,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.499999685035526,
+            116.99999979849804,
+            5.4335622747518375
+          ]
+        },
+        {
+          "a": "index_root_fork_-13",
+          "b": "index_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            45.5,
+            117.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "index_root_fork_13",
+          "b": "index_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            71.5,
+            117.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_root_fork_-13",
+          "volume_mm3": 167.99379437686622,
+          "same_simulator_body": false,
+          "center_mm": [
+            6.520326974280599,
+            125.84264429762679,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_root_fork_13",
+          "volume_mm3": 167.99379437666343,
+          "same_simulator_body": false,
+          "center_mm": [
+            32.47967302571823,
+            125.8426442976199,
+            0.6709084980643358
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 631.0362242940905,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.500004144036243,
+            132.15710998151988,
+            0.6874965356171567
+          ]
+        },
+        {
+          "a": "middle_spread_ring",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 486.64797574431793,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.500000056080626,
+            127.00000011974895,
+            4.483129445843608
+          ]
+        },
+        {
+          "a": "middle_spread_ring",
+          "b": "middle_segment1_proximal_bushing",
+          "volume_mm3": 42.587610568393394,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.499999684908246,
+            126.99999979857677,
+            5.4335622747567145
+          ]
+        },
+        {
+          "a": "middle_root_fork_-13",
+          "b": "middle_joint_pin_0",
+          "volume_mm3": 18.849555921538762,
+          "same_simulator_body": true,
+          "center_mm": [
+            6.5,
+            127.00000000000001,
+            7.151173636843225
+          ]
+        },
+        {
+          "a": "middle_root_fork_13",
+          "b": "middle_joint_pin_0",
+          "volume_mm3": 18.849555921538762,
+          "same_simulator_body": true,
+          "center_mm": [
+            32.5,
+            127.00000000000001,
+            7.151173636843225
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_root_fork_-13",
+          "volume_mm3": 167.99379437686616,
+          "same_simulator_body": false,
+          "center_mm": [
+            -32.47967302571941,
+            119.84264429762678,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_root_fork_13",
+          "volume_mm3": 167.99379437666337,
+          "same_simulator_body": false,
+          "center_mm": [
+            -6.520326974281765,
+            119.84264429761991,
+            0.6709084980643357
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 630.2821772024084,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.499995814586356,
+            126.14829476455255,
+            0.6829517463459494
+          ]
+        },
+        {
+          "a": "ring_spread_ring",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 486.64797574424847,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.499999943919352,
+            121.00000011974868,
+            4.48312944584357
+          ]
+        },
+        {
+          "a": "ring_spread_ring",
+          "b": "ring_segment1_proximal_bushing",
+          "volume_mm3": 42.58761056532206,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.50000031530709,
+            120.99999979858302,
+            5.433562274772277
+          ]
+        },
+        {
+          "a": "ring_root_fork_-13",
+          "b": "ring_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -32.5,
+            121.00000000000001,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "ring_root_fork_13",
+          "b": "ring_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -6.5,
+            121.00000000000001,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 167.99379437686613,
+          "same_simulator_body": false,
+          "center_mm": [
+            -71.47967302571944,
+            104.84264429762678,
+            0.6709084980658475
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_root_fork_13",
+          "volume_mm3": 167.99379437666343,
+          "same_simulator_body": false,
+          "center_mm": [
+            -45.52032697428175,
+            104.84264429761993,
+            0.6709084980643358
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 629.4804913138196,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.49999582160065,
+            111.13908111764363,
+            0.6776142285426383
+          ]
+        },
+        {
+          "a": "little_spread_ring",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 486.64797575545697,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.49999994392822,
+            106.0000001197495,
+            4.48312944586297
+          ]
+        },
+        {
+          "a": "little_spread_ring",
+          "b": "little_segment1_proximal_bushing",
+          "volume_mm3": 42.587610569886245,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.50000031496445,
+            105.99999979849801,
+            5.4335622747518375
+          ]
+        },
+        {
+          "a": "little_root_fork_-13",
+          "b": "little_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -71.5,
+            106.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "little_root_fork_13",
+          "b": "little_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -45.50000000000001,
+            106.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "thumb_spread_ring",
+          "b": "thumb_root_fork_-13",
+          "volume_mm3": 51.64357824089786,
+          "same_simulator_body": true,
+          "center_mm": [
+            34.90471619353366,
+            40.91725315993257,
+            6.0000000000000355
+          ]
+        },
+        {
+          "a": "thumb_spread_ring",
+          "b": "thumb_root_fork_13",
+          "volume_mm3": 51.64357824090585,
+          "same_simulator_body": true,
+          "center_mm": [
+            54.73884035513972,
+            24.274446891204356,
+            6.0000000000001
+          ]
+        },
+        {
+          "a": "thumb_root_fork_-13",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 18.8495559215404,
+          "same_simulator_body": true,
+          "center_mm": [
+            36.04142223945366,
+            42.35623892592335,
+            28.151173636843225
+          ]
+        },
+        {
+          "a": "thumb_root_fork_13",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 18.84955592154071,
+          "same_simulator_body": true,
+          "center_mm": [
+            55.958577760541125,
+            25.643761074066834,
+            28.15117363684323
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_segment1_proximal_bushing",
+          "volume_mm3": 44.11267324537815,
+          "same_simulator_body": true,
+          "center_mm": [
+            47.151813072487045,
+            35.37267736713589,
+            29.00000000000073
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_segment1_distal_left_bushing",
+          "volume_mm3": 0.7005118803794954,
+          "same_simulator_body": true,
+          "center_mm": [
+            71.59361780195621,
+            71.11969953916248,
+            19.545507901192593
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 27.64601535156269,
+          "same_simulator_body": false,
+          "center_mm": [
+            46.5456150690101,
+            34.65023871866511,
+            29.000000000000696
+          ]
+        }
+      ]
+    },
+    "fist": {
+      "angles_deg": [
+        0.0,
+        80.0,
+        128.7017363341432,
+        61.29826366585681,
+        0.0,
+        80.0,
+        132.59728432008603,
+        57.40271567991397,
+        0.0,
+        80.0,
+        124.90794676120265,
+        65.09205323879735,
+        0.0,
+        80.0,
+        122.23619166944468,
+        67.76380833055532,
+        4.36319691,
+        41.77009943,
+        34.46484045,
+        51.76072322
+      ],
+      "broad_phase_candidates": 279,
+      "overlaps": [
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_spread_housing",
+          "volume_mm3": 525.9347194646058,
+          "same_simulator_body": true,
+          "center_mm": [
+            62.688421285974,
+            126.42394789344921,
+            0.5
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_spread_ring",
+          "volume_mm3": 21.483588986667332,
+          "same_simulator_body": false,
+          "center_mm": [
+            62.19161281153364,
+            125.3061288259575,
+            3.499999999999996
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_root_fork_13",
+          "volume_mm3": 32.8967018717346,
+          "same_simulator_body": false,
+          "center_mm": [
+            71.65146632915149,
+            121.66093228374994,
+            2.412657122144526
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 2.145746602434888,
+          "same_simulator_body": false,
+          "center_mm": [
+            65.5793354075354,
+            123.16281297221207,
+            3.4649336789790532
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_spread_housing",
+          "volume_mm3": 123.9833207242894,
+          "same_simulator_body": true,
+          "center_mm": [
+            -68.30400620549464,
+            116.19616645371327,
+            0.4999999999999999
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 6.926439756418038,
+          "same_simulator_body": false,
+          "center_mm": [
+            -72.1541325471445,
+            112.04159046966652,
+            3.0522632534923253
+          ]
+        },
+        {
+          "a": "Palm_side_web_-71",
+          "b": "little_spread_housing",
+          "volume_mm3": 38.141558409531356,
+          "same_simulator_body": true,
+          "center_mm": [
+            -70.58767583351933,
+            97.9379277401744,
+            0.4999999999999999
+          ]
+        },
+        {
+          "a": "Palm_side_web_-71",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 26.034751739772712,
+          "same_simulator_body": false,
+          "center_mm": [
+            -71.24999999999979,
+            98.84666246835889,
+            4.230999205187292
+          ]
+        },
+        {
+          "a": "Cover_post_-18_104",
+          "b": "ring_spread_housing",
+          "volume_mm3": 96.44774477236066,
+          "same_simulator_body": true,
+          "center_mm": [
+            -18.266819994629135,
+            107.02395993913011,
+            0.49999999999999994
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_root_fork_-13",
+          "volume_mm3": 167.99379437686616,
+          "same_simulator_body": false,
+          "center_mm": [
+            45.5203269742806,
+            115.84264429762678,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_root_fork_13",
+          "volume_mm3": 167.99379437686494,
+          "same_simulator_body": false,
+          "center_mm": [
+            71.47967302571939,
+            115.8426442976268,
+            0.6709084980658507
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 279.75581503583805,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.50002049776758,
+            117.00000667754736,
+            1.858010732824815
+          ]
+        },
+        {
+          "a": "index_spread_ring",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 486.6479757458531,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.50000005608039,
+            117.00000011976397,
+            4.483129445844136
+          ]
+        },
+        {
+          "a": "index_spread_ring",
+          "b": "index_segment1_proximal_bushing",
+          "volume_mm3": 42.587610566809445,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.49999968482039,
+            116.99999979850381,
+            5.433562274767589
+          ]
+        },
+        {
+          "a": "index_root_fork_-13",
+          "b": "index_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            45.5,
+            117.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "index_root_fork_13",
+          "b": "index_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            71.5,
+            117.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_root_fork_-13",
+          "volume_mm3": 167.99379437686622,
+          "same_simulator_body": false,
+          "center_mm": [
+            6.520326974280599,
+            125.84264429762679,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_root_fork_13",
+          "volume_mm3": 167.99379437666343,
+          "same_simulator_body": false,
+          "center_mm": [
+            32.47967302571823,
+            125.8426442976199,
+            0.6709084980643358
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 279.75581500163844,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.500020497593034,
+            127.00000667767284,
+            1.8580107328829114
+          ]
+        },
+        {
+          "a": "middle_spread_ring",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 486.6479757077383,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.50000005607737,
+            127.00000011962038,
+            4.483129445822168
+          ]
+        },
+        {
+          "a": "middle_spread_ring",
+          "b": "middle_segment1_proximal_bushing",
+          "volume_mm3": 42.58761056681568,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.49999968482064,
+            126.99999979850374,
+            5.433562274767537
+          ]
+        },
+        {
+          "a": "middle_root_fork_-13",
+          "b": "middle_joint_pin_0",
+          "volume_mm3": 18.849555921538762,
+          "same_simulator_body": true,
+          "center_mm": [
+            6.5,
+            127.00000000000001,
+            7.151173636843225
+          ]
+        },
+        {
+          "a": "middle_root_fork_13",
+          "b": "middle_joint_pin_0",
+          "volume_mm3": 18.849555921538762,
+          "same_simulator_body": true,
+          "center_mm": [
+            32.5,
+            127.00000000000001,
+            7.151173636843225
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_root_fork_-13",
+          "volume_mm3": 167.99379437686616,
+          "same_simulator_body": false,
+          "center_mm": [
+            -32.47967302571941,
+            119.84264429762678,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_root_fork_13",
+          "volume_mm3": 167.99379437666337,
+          "same_simulator_body": false,
+          "center_mm": [
+            -6.520326974281765,
+            119.84264429761991,
+            0.6709084980643357
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 279.7558150343945,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.499979502226118,
+            121.00000667755096,
+            1.8580107328204485
+          ]
+        },
+        {
+          "a": "ring_spread_ring",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 486.64797575510437,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.499999943939343,
+            121.0000001197629,
+            4.483129445861466
+          ]
+        },
+        {
+          "a": "ring_spread_ring",
+          "b": "ring_segment1_proximal_bushing",
+          "volume_mm3": 42.58761056708331,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.50000031519579,
+            120.99999979851184,
+            5.433562274770512
+          ]
+        },
+        {
+          "a": "ring_root_fork_-13",
+          "b": "ring_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -32.5,
+            121.00000000000001,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "ring_root_fork_13",
+          "b": "ring_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -6.5,
+            121.00000000000001,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 167.99379437686613,
+          "same_simulator_body": false,
+          "center_mm": [
+            -71.47967302571944,
+            104.84264429762678,
+            0.6709084980658475
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_root_fork_13",
+          "volume_mm3": 167.99379437666343,
+          "same_simulator_body": false,
+          "center_mm": [
+            -45.52032697428175,
+            104.84264429761993,
+            0.6709084980643358
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 279.75581503583095,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.499979502232435,
+            106.00000667754735,
+            1.8580107328248427
+          ]
+        },
+        {
+          "a": "little_spread_ring",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 486.64797574403894,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.499999943930504,
+            106.00000011976275,
+            4.483129445842126
+          ]
+        },
+        {
+          "a": "little_spread_ring",
+          "b": "little_segment1_proximal_bushing",
+          "volume_mm3": 42.5876105668107,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.500000315179605,
+            105.99999979850378,
+            5.433562274767553
+          ]
+        },
+        {
+          "a": "little_root_fork_-13",
+          "b": "little_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -71.5,
+            106.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "little_root_fork_13",
+          "b": "little_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -45.50000000000001,
+            106.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "thumb_spread_ring",
+          "b": "thumb_root_fork_-13",
+          "volume_mm3": 51.643578240897824,
+          "same_simulator_body": true,
+          "center_mm": [
+            35.46312698944251,
+            41.74131908553165,
+            6.000000000000036
+          ]
+        },
+        {
+          "a": "thumb_spread_ring",
+          "b": "thumb_root_fork_13",
+          "volume_mm3": 51.64357824090586,
+          "same_simulator_body": true,
+          "center_mm": [
+            53.973607497429725,
+            23.637794756831163,
+            6.000000000000102
+          ]
+        },
+        {
+          "a": "thumb_root_fork_-13",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 18.8495559215409,
+          "same_simulator_body": true,
+          "center_mm": [
+            36.70601464315207,
+            43.08965544928199,
+            28.151173636843225
+          ]
+        },
+        {
+          "a": "thumb_root_fork_13",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 18.849555921540222,
+          "same_simulator_body": true,
+          "center_mm": [
+            55.29398535684196,
+            24.910344550708665,
+            28.151173636843225
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_segment1_proximal_bushing",
+          "volume_mm3": 44.112673245376236,
+          "same_simulator_body": true,
+          "center_mm": [
+            46.93444722102513,
+            34.95545302431212,
+            30.19366428180232
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_segment1_distal_left_bushing",
+          "volume_mm3": 0.7005118803795741,
+          "same_simulator_body": true,
+          "center_mm": [
+            70.7697808768928,
+            65.41098444363772,
+            51.849525126553324
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 27.646015351533187,
+          "same_simulator_body": false,
+          "center_mm": [
+            46.44264863557866,
+            34.45259910679328,
+            29.56544003106983
+          ]
+        }
+      ]
+    },
+    "index_spread_minus22_others_open": {
+      "angles_deg": [
+        -22.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_phase_candidates": 303,
+      "overlaps": [
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_spread_housing",
+          "volume_mm3": 525.9347194646058,
+          "same_simulator_body": true,
+          "center_mm": [
+            62.688421285974,
+            126.42394789344921,
+            0.5
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_spread_ring",
+          "volume_mm3": 21.483588986667407,
+          "same_simulator_body": false,
+          "center_mm": [
+            62.19161281153363,
+            125.30612882595749,
+            3.4999999999999947
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_root_fork_13",
+          "volume_mm3": 119.23862116038528,
+          "same_simulator_body": false,
+          "center_mm": [
+            70.20848047746694,
+            122.93981685857882,
+            0.7947954794144938
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 420.7670061143853,
+          "same_simulator_body": false,
+          "center_mm": [
+            47.89865287455188,
+            133.2891916861949,
+            -0.642505365261236
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 272.23116113350034,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.613221084676375,
+            145.59776479445324,
+            -0.7160406261472432
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 336.987990428712,
+          "same_simulator_body": false,
+          "center_mm": [
+            -16.80027579615216,
+            141.42704851313096,
+            -0.563998612385956
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_spread_housing",
+          "volume_mm3": 123.9833207242894,
+          "same_simulator_body": true,
+          "center_mm": [
+            -68.30400620549464,
+            116.19616645371327,
+            0.4999999999999999
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 6.926439756418038,
+          "same_simulator_body": false,
+          "center_mm": [
+            -72.1541325471445,
+            112.04159046966652,
+            3.0522632534923253
+          ]
+        },
+        {
+          "a": "Palm_tapered_chassis",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 348.32607129884525,
+          "same_simulator_body": false,
+          "center_mm": [
+            -57.30540792019521,
+            125.59916751063516,
+            -0.778788487974055
+          ]
+        },
+        {
+          "a": "Palm_side_web_-71",
+          "b": "little_spread_housing",
+          "volume_mm3": 38.141558409531356,
+          "same_simulator_body": true,
+          "center_mm": [
+            -70.58767583351933,
+            97.9379277401744,
+            0.4999999999999999
+          ]
+        },
+        {
+          "a": "Palm_side_web_-71",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 26.034751739772712,
+          "same_simulator_body": false,
+          "center_mm": [
+            -71.24999999999979,
+            98.84666246835889,
+            4.230999205187292
+          ]
+        },
+        {
+          "a": "Cover_post_-18_104",
+          "b": "ring_spread_housing",
+          "volume_mm3": 96.44774477236066,
+          "same_simulator_body": true,
+          "center_mm": [
+            -18.266819994629135,
+            107.02395993913011,
+            0.49999999999999994
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_root_fork_-13",
+          "volume_mm3": 167.993794376868,
+          "same_simulator_body": false,
+          "center_mm": [
+            46.89900981003343,
+            111.06464738295156,
+            0.6709084980658468
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_root_fork_13",
+          "volume_mm3": 167.99379437752788,
+          "same_simulator_body": false,
+          "center_mm": [
+            70.96809634404251,
+            120.78918957459592,
+            0.6709084980696042
+          ]
+        },
+        {
+          "a": "index_spread_housing",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 630.5834568570699,
+          "same_simulator_body": false,
+          "center_mm": [
+            56.570107730628244,
+            121.77666353801925,
+            0.6848146990432933
+          ]
+        },
+        {
+          "a": "index_spread_ring",
+          "b": "index_segment1_segment_shell",
+          "volume_mm3": 486.6479757082848,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.500000007198494,
+            117.00000013190947,
+            4.483129445823775
+          ]
+        },
+        {
+          "a": "index_spread_ring",
+          "b": "index_segment1_proximal_bushing",
+          "volume_mm3": 42.587610566665774,
+          "same_simulator_body": false,
+          "center_mm": [
+            58.49999978329464,
+            116.99999969498128,
+            5.433562274824189
+          ]
+        },
+        {
+          "a": "index_root_fork_-13",
+          "b": "index_joint_pin_0",
+          "volume_mm3": 18.849555921538705,
+          "same_simulator_body": true,
+          "center_mm": [
+            46.44660989063177,
+            112.13011428559315,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "index_root_fork_13",
+          "b": "index_joint_pin_0",
+          "volume_mm3": 18.849555921540468,
+          "same_simulator_body": true,
+          "center_mm": [
+            70.55339010936815,
+            121.86988571440682,
+            7.151173636843234
+          ]
+        },
+        {
+          "a": "index_segment1_segment_shell",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 326.68419588731376,
+          "same_simulator_body": false,
+          "center_mm": [
+            30.210111988852454,
+            158.5533759887303,
+            1.3458700232622693
+          ]
+        },
+        {
+          "a": "index_segment2_segment_shell",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 531.7283401327722,
+          "same_simulator_body": false,
+          "center_mm": [
+            26.73518899280878,
+            182.81476135943217,
+            2.97778913200148
+          ]
+        },
+        {
+          "a": "index_segment2_segment_shell",
+          "b": "middle_segment1_distal_left_bushing",
+          "volume_mm3": 0.3878918594416677,
+          "same_simulator_body": false,
+          "center_mm": [
+            10.603185649782315,
+            199.9658820609219,
+            8.000000018225577
+          ]
+        },
+        {
+          "a": "index_segment2_segment_shell",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 1447.5801590462527,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.445910244734193,
+            208.5513108321415,
+            5.744132322240927
+          ]
+        },
+        {
+          "a": "index_segment2_segment_shell",
+          "b": "middle_segment2_proximal_bushing",
+          "volume_mm3": 41.93510866802456,
+          "same_simulator_body": false,
+          "center_mm": [
+            13.466290654254088,
+            196.66945560892853,
+            7.999997207806445
+          ]
+        },
+        {
+          "a": "index_segment2_segment_shell",
+          "b": "middle_joint_pin_1",
+          "volume_mm3": 29.329406903460065,
+          "same_simulator_body": false,
+          "center_mm": [
+            13.046499818154754,
+            196.9585546195749,
+            8.000000041852033
+          ]
+        },
+        {
+          "a": "index_segment2_proximal_bushing",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 34.90210949696938,
+          "same_simulator_body": false,
+          "center_mm": [
+            31.936420429648475,
+            175.45761081084058,
+            7.3848894963152
+          ]
+        },
+        {
+          "a": "index_segment2_distal_left_bushing",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 19.828664069272357,
+          "same_simulator_body": false,
+          "center_mm": [
+            6.7076973031418055,
+            217.5920480268926,
+            7.999999835793554
+          ]
+        },
+        {
+          "a": "index_segment2_dark_faceplate",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 0.21962210566913679,
+          "same_simulator_body": false,
+          "center_mm": [
+            13.920958919460714,
+            207.41058204252104,
+            18.94947311056994
+          ]
+        },
+        {
+          "a": "index_segment2_dark_faceplate",
+          "b": "middle_segment2_dark_faceplate",
+          "volume_mm3": 31.93239472515092,
+          "same_simulator_body": false,
+          "center_mm": [
+            23.502645185883388,
+            210.00052671666012,
+            19.68357526146498
+          ]
+        },
+        {
+          "a": "index_joint_pin_1",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 29.100014738958198,
+          "same_simulator_body": false,
+          "center_mm": [
+            31.910215024806536,
+            176.21016063980272,
+            7.961568968483245
+          ]
+        },
+        {
+          "a": "index_segment3_tip_core",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 567.6479350959945,
+          "same_simulator_body": false,
+          "center_mm": [
+            9.090556775751246,
+            233.05938697800917,
+            6.900554811087467
+          ]
+        },
+        {
+          "a": "index_segment3_tip_core",
+          "b": "middle_segment3_tip_core",
+          "volume_mm3": 409.51357585218295,
+          "same_simulator_body": false,
+          "center_mm": [
+            15.380600471658582,
+            246.67093575680332,
+            7.889391586925311
+          ]
+        },
+        {
+          "a": "index_segment3_tip_core",
+          "b": "middle_segment3_proximal_bushing",
+          "volume_mm3": 43.318911521992305,
+          "same_simulator_body": false,
+          "center_mm": [
+            16.042361179917727,
+            247.02218987967697,
+            8.000000913085483
+          ]
+        },
+        {
+          "a": "index_segment3_tip_core",
+          "b": "middle_joint_pin_2",
+          "volume_mm3": 27.4636427528365,
+          "same_simulator_body": false,
+          "center_mm": [
+            16.066654582883253,
+            246.99722036642842,
+            8.000000085476943
+          ]
+        },
+        {
+          "a": "index_segment3_proximal_bushing",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 22.85898533083102,
+          "same_simulator_body": false,
+          "center_mm": [
+            8.227270532081347,
+            221.11127418325165,
+            8.000001453991255
+          ]
+        },
+        {
+          "a": "index_segment3_rounded_tip_cap",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 72.97767939252083,
+          "same_simulator_body": false,
+          "center_mm": [
+            8.857049477193321,
+            252.41527575072405,
+            7.257938940616841
+          ]
+        },
+        {
+          "a": "index_segment3_rounded_tip_cap",
+          "b": "middle_segment3_tip_core",
+          "volume_mm3": 314.18982660953776,
+          "same_simulator_body": false,
+          "center_mm": [
+            16.413346223414553,
+            251.69624056953566,
+            7.162605506589841
+          ]
+        },
+        {
+          "a": "index_segment3_rounded_tip_cap",
+          "b": "middle_segment3_proximal_bushing",
+          "volume_mm3": 32.01984776822611,
+          "same_simulator_body": false,
+          "center_mm": [
+            18.495011356885797,
+            247.84664431883166,
+            7.999999919087862
+          ]
+        },
+        {
+          "a": "index_segment3_rounded_tip_cap",
+          "b": "middle_joint_pin_2",
+          "volume_mm3": 26.03445083143633,
+          "same_simulator_body": false,
+          "center_mm": [
+            18.367264182169503,
+            247.1869005598375,
+            8.000003765104317
+          ]
+        },
+        {
+          "a": "index_joint_pin_2",
+          "b": "middle_segment2_segment_shell",
+          "volume_mm3": 25.507515715622166,
+          "same_simulator_body": false,
+          "center_mm": [
+            7.845479514392049,
+            220.43738131007143,
+            8.000000109776815
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_root_fork_-13",
+          "volume_mm3": 167.99379437686622,
+          "same_simulator_body": false,
+          "center_mm": [
+            6.520326974280599,
+            125.84264429762679,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_root_fork_13",
+          "volume_mm3": 167.99379437666343,
+          "same_simulator_body": false,
+          "center_mm": [
+            32.47967302571823,
+            125.8426442976199,
+            0.6709084980643358
+          ]
+        },
+        {
+          "a": "middle_spread_housing",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 631.0362242940905,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.500004144036243,
+            132.15710998151988,
+            0.6874965356171567
+          ]
+        },
+        {
+          "a": "middle_spread_ring",
+          "b": "middle_segment1_segment_shell",
+          "volume_mm3": 486.64797574431793,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.500000056080626,
+            127.00000011974895,
+            4.483129445843608
+          ]
+        },
+        {
+          "a": "middle_spread_ring",
+          "b": "middle_segment1_proximal_bushing",
+          "volume_mm3": 42.587610568393394,
+          "same_simulator_body": false,
+          "center_mm": [
+            19.499999684908246,
+            126.99999979857677,
+            5.4335622747567145
+          ]
+        },
+        {
+          "a": "middle_root_fork_-13",
+          "b": "middle_joint_pin_0",
+          "volume_mm3": 18.849555921538762,
+          "same_simulator_body": true,
+          "center_mm": [
+            6.5,
+            127.00000000000001,
+            7.151173636843225
+          ]
+        },
+        {
+          "a": "middle_root_fork_13",
+          "b": "middle_joint_pin_0",
+          "volume_mm3": 18.849555921538762,
+          "same_simulator_body": true,
+          "center_mm": [
+            32.5,
+            127.00000000000001,
+            7.151173636843225
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_root_fork_-13",
+          "volume_mm3": 167.99379437686616,
+          "same_simulator_body": false,
+          "center_mm": [
+            -32.47967302571941,
+            119.84264429762678,
+            0.6709084980658474
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_root_fork_13",
+          "volume_mm3": 167.99379437666337,
+          "same_simulator_body": false,
+          "center_mm": [
+            -6.520326974281765,
+            119.84264429761991,
+            0.6709084980643357
+          ]
+        },
+        {
+          "a": "ring_spread_housing",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 630.2821772024084,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.499995814586356,
+            126.14829476455255,
+            0.6829517463459494
+          ]
+        },
+        {
+          "a": "ring_spread_ring",
+          "b": "ring_segment1_segment_shell",
+          "volume_mm3": 486.64797574424847,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.499999943919352,
+            121.00000011974868,
+            4.48312944584357
+          ]
+        },
+        {
+          "a": "ring_spread_ring",
+          "b": "ring_segment1_proximal_bushing",
+          "volume_mm3": 42.58761056532206,
+          "same_simulator_body": false,
+          "center_mm": [
+            -19.50000031530709,
+            120.99999979858302,
+            5.433562274772277
+          ]
+        },
+        {
+          "a": "ring_root_fork_-13",
+          "b": "ring_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -32.5,
+            121.00000000000001,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "ring_root_fork_13",
+          "b": "ring_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -6.5,
+            121.00000000000001,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_root_fork_-13",
+          "volume_mm3": 167.99379437686613,
+          "same_simulator_body": false,
+          "center_mm": [
+            -71.47967302571944,
+            104.84264429762678,
+            0.6709084980658475
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_root_fork_13",
+          "volume_mm3": 167.99379437666343,
+          "same_simulator_body": false,
+          "center_mm": [
+            -45.52032697428175,
+            104.84264429761993,
+            0.6709084980643358
+          ]
+        },
+        {
+          "a": "little_spread_housing",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 629.4804913138196,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.49999582160065,
+            111.13908111764363,
+            0.6776142285426383
+          ]
+        },
+        {
+          "a": "little_spread_ring",
+          "b": "little_segment1_segment_shell",
+          "volume_mm3": 486.64797575545697,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.49999994392822,
+            106.0000001197495,
+            4.48312944586297
+          ]
+        },
+        {
+          "a": "little_spread_ring",
+          "b": "little_segment1_proximal_bushing",
+          "volume_mm3": 42.587610569886245,
+          "same_simulator_body": false,
+          "center_mm": [
+            -58.50000031496445,
+            105.99999979849801,
+            5.4335622747518375
+          ]
+        },
+        {
+          "a": "little_root_fork_-13",
+          "b": "little_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -71.5,
+            106.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "little_root_fork_13",
+          "b": "little_joint_pin_0",
+          "volume_mm3": 18.849555921538755,
+          "same_simulator_body": true,
+          "center_mm": [
+            -45.50000000000001,
+            106.0,
+            7.151173636843224
+          ]
+        },
+        {
+          "a": "thumb_spread_ring",
+          "b": "thumb_root_fork_-13",
+          "volume_mm3": 51.64357824089786,
+          "same_simulator_body": true,
+          "center_mm": [
+            34.90471619353366,
+            40.91725315993257,
+            6.0000000000000355
+          ]
+        },
+        {
+          "a": "thumb_spread_ring",
+          "b": "thumb_root_fork_13",
+          "volume_mm3": 51.64357824090585,
+          "same_simulator_body": true,
+          "center_mm": [
+            54.73884035513972,
+            24.274446891204356,
+            6.0000000000001
+          ]
+        },
+        {
+          "a": "thumb_root_fork_-13",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 18.8495559215404,
+          "same_simulator_body": true,
+          "center_mm": [
+            36.04142223945366,
+            42.35623892592335,
+            28.151173636843225
+          ]
+        },
+        {
+          "a": "thumb_root_fork_13",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 18.84955592154071,
+          "same_simulator_body": true,
+          "center_mm": [
+            55.958577760541125,
+            25.643761074066834,
+            28.15117363684323
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_segment1_proximal_bushing",
+          "volume_mm3": 44.11267324537815,
+          "same_simulator_body": true,
+          "center_mm": [
+            47.151813072487045,
+            35.37267736713589,
+            29.00000000000073
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_segment1_distal_left_bushing",
+          "volume_mm3": 0.7005118803794954,
+          "same_simulator_body": true,
+          "center_mm": [
+            71.59361780195621,
+            71.11969953916248,
+            19.545507901192593
+          ]
+        },
+        {
+          "a": "thumb_segment1_thenar_shell",
+          "b": "thumb_joint_pin_0",
+          "volume_mm3": 27.64601535156269,
+          "same_simulator_body": false,
+          "center_mm": [
+            46.5456150690101,
+            34.65023871866511,
+            29.000000000000696
+          ]
+        }
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "Palm_tapered_chassis",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 178813.1744000023
+    },
+    {
+      "name": "Cover_screw_-44_33",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45.16072159663165
+    },
+    {
+      "name": "Cover_screw_16_29",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45.1607215966317
+    },
+    {
+      "name": "Cover_screw_-54_78",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45.160721596631625
+    },
+    {
+      "name": "Cover_screw_46_88",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45.16072159663162
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45.16072159663166
+    },
+    {
+      "name": "Cover_screw_15_10",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45.16072159663167
+    },
+    {
+      "name": "Palm_shaped_front_cover",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 41907.91368007626
+    },
+    {
+      "name": "Palm_side_web_-71",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7920.0
+    },
+    {
+      "name": "Palm_side_web_71",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7920.0
+    },
+    {
+      "name": "Cover_post_-44_33",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3172.3802615950412
+    },
+    {
+      "name": "Cover_post_16_29",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3172.380261595042
+    },
+    {
+      "name": "Cover_post_-54_78",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3172.380261595042
+    },
+    {
+      "name": "Cover_post_46_88",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3172.380261595042
+    },
+    {
+      "name": "Cover_post_-18_104",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3172.380261595043
+    },
+    {
+      "name": "Cover_post_15_10",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3172.380261595043
+    },
+    {
+      "name": "Wrist_bridge_post_-32_8",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1289.3096250332799
+    },
+    {
+      "name": "Wrist_bridge_post_-32_28",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1289.30962503328
+    },
+    {
+      "name": "Wrist_bridge_post_8_8",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1289.30962503328
+    },
+    {
+      "name": "Wrist_bridge_post_8_28",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1289.3096250332799
+    },
+    {
+      "name": "Wrist_bridge_plate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7198.732755698005
+    },
+    {
+      "name": "index_spread_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3522.5107628376327
+    },
+    {
+      "name": "index_spread_ring",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 888.2853228025338
+    },
+    {
+      "name": "index_root_fork_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344606
+    },
+    {
+      "name": "index_root_fork_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344606
+    },
+    {
+      "name": "index_segment1_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11068.698707295718
+    },
+    {
+      "name": "index_segment1_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921166
+    },
+    {
+      "name": "index_segment1_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "index_segment1_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "index_segment1_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 461.1109048904393
+    },
+    {
+      "name": "index_joint_pin_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122817655
+    },
+    {
+      "name": "index_segment2_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10090.645254568568
+    },
+    {
+      "name": "index_segment2_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921166
+    },
+    {
+      "name": "index_segment2_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "index_segment2_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "index_segment2_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 489.2192437500037
+    },
+    {
+      "name": "index_joint_pin_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281769
+    },
+    {
+      "name": "index_segment3_tip_core",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 5235.258910089737
+    },
+    {
+      "name": "index_segment3_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921166
+    },
+    {
+      "name": "index_segment3_rounded_tip_cap",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3459.271333166879
+    },
+    {
+      "name": "index_joint_pin_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281769
+    },
+    {
+      "name": "middle_spread_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3522.510762837633
+    },
+    {
+      "name": "middle_spread_ring",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 888.2853228025335
+    },
+    {
+      "name": "middle_root_fork_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344606
+    },
+    {
+      "name": "middle_root_fork_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344606
+    },
+    {
+      "name": "middle_segment1_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11896.336549155236
+    },
+    {
+      "name": "middle_segment1_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921143
+    },
+    {
+      "name": "middle_segment1_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922676
+    },
+    {
+      "name": "middle_segment1_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922675
+    },
+    {
+      "name": "middle_segment1_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 552.3681379694148
+    },
+    {
+      "name": "middle_joint_pin_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122817655
+    },
+    {
+      "name": "middle_segment2_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10090.645254568557
+    },
+    {
+      "name": "middle_segment2_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921143
+    },
+    {
+      "name": "middle_segment2_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922676
+    },
+    {
+      "name": "middle_segment2_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922675
+    },
+    {
+      "name": "middle_segment2_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 489.2192437500004
+    },
+    {
+      "name": "middle_joint_pin_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281768
+    },
+    {
+      "name": "middle_segment3_tip_core",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 5495.0029037487675
+    },
+    {
+      "name": "middle_segment3_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921143
+    },
+    {
+      "name": "middle_segment3_rounded_tip_cap",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3459.271333166879
+    },
+    {
+      "name": "middle_joint_pin_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281768
+    },
+    {
+      "name": "ring_spread_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3522.5107628376336
+    },
+    {
+      "name": "ring_spread_ring",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 888.2853228025333
+    },
+    {
+      "name": "ring_root_fork_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344608
+    },
+    {
+      "name": "ring_root_fork_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344608
+    },
+    {
+      "name": "ring_segment1_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10571.937063795222
+    },
+    {
+      "name": "ring_segment1_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921143
+    },
+    {
+      "name": "ring_segment1_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922675
+    },
+    {
+      "name": "ring_segment1_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922678
+    },
+    {
+      "name": "ring_segment1_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 406.21545685727017
+    },
+    {
+      "name": "ring_joint_pin_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122817667
+    },
+    {
+      "name": "ring_segment2_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10090.64525456737
+    },
+    {
+      "name": "ring_segment2_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921143
+    },
+    {
+      "name": "ring_segment2_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922675
+    },
+    {
+      "name": "ring_segment2_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922678
+    },
+    {
+      "name": "ring_segment2_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 489.2192437500007
+    },
+    {
+      "name": "ring_joint_pin_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281769
+    },
+    {
+      "name": "ring_segment3_tip_core",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 5235.258910090072
+    },
+    {
+      "name": "ring_segment3_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921143
+    },
+    {
+      "name": "ring_segment3_rounded_tip_cap",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3459.271333166879
+    },
+    {
+      "name": "ring_joint_pin_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281769
+    },
+    {
+      "name": "little_spread_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3522.5107628376327
+    },
+    {
+      "name": "little_spread_ring",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 888.2853228025335
+    },
+    {
+      "name": "little_root_fork_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344606
+    },
+    {
+      "name": "little_root_fork_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 758.7831578344606
+    },
+    {
+      "name": "little_segment1_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9414.11554128212
+    },
+    {
+      "name": "little_segment1_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921166
+    },
+    {
+      "name": "little_segment1_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "little_segment1_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "little_segment1_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 277.5723592177261
+    },
+    {
+      "name": "little_joint_pin_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122817644
+    },
+    {
+      "name": "little_segment2_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9763.355852637475
+    },
+    {
+      "name": "little_segment2_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921166
+    },
+    {
+      "name": "little_segment2_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "little_segment2_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792269
+    },
+    {
+      "name": "little_segment2_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 453.26587500003683
+    },
+    {
+      "name": "little_joint_pin_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122817667
+    },
+    {
+      "name": "little_segment3_tip_core",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 4715.961177402238
+    },
+    {
+      "name": "little_segment3_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782921166
+    },
+    {
+      "name": "little_segment3_rounded_tip_cap",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3459.2713331668783
+    },
+    {
+      "name": "little_joint_pin_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122817667
+    },
+    {
+      "name": "thumb_spread_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3522.510762837634
+    },
+    {
+      "name": "thumb_spread_ring",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1969.7785938008437
+    },
+    {
+      "name": "thumb_root_fork_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1109.783157834433
+    },
+    {
+      "name": "thumb_root_fork_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1109.7831578344787
+    },
+    {
+      "name": "thumb_segment1_thenar_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11982.841194322917
+    },
+    {
+      "name": "thumb_segment1_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.8399278292334
+    },
+    {
+      "name": "thumb_segment1_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922838
+    },
+    {
+      "name": "thumb_segment1_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137920974
+    },
+    {
+      "name": "thumb_joint_pin_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.50598122819
+    },
+    {
+      "name": "thumb_segment2_segment_shell",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9271.738314069466
+    },
+    {
+      "name": "thumb_segment2_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782920717
+    },
+    {
+      "name": "thumb_segment2_distal_left_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.1741313792063
+    },
+    {
+      "name": "thumb_segment2_distal_right_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 68.17413137922202
+    },
+    {
+      "name": "thumb_segment2_dark_faceplate",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 399.32652857094195
+    },
+    {
+      "name": "thumb_joint_pin_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281734
+    },
+    {
+      "name": "thumb_segment3_tip_core",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 4715.961177402018
+    },
+    {
+      "name": "thumb_segment3_proximal_bushing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 328.83992782923053
+    },
+    {
+      "name": "thumb_segment3_rounded_tip_cap",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3459.2713331671544
+    },
+    {
+      "name": "thumb_joint_pin_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 429.5059812281615
+    }
+  ],
+  "mesh_topology": [
+    {
+      "name": "Palm_tapered_chassis",
+      "triangles": 116,
+      "vertices": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_screw_-44_33",
+      "triangles": 516,
+      "vertices": 260,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_screw_16_29",
+      "triangles": 516,
+      "vertices": 260,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_screw_-54_78",
+      "triangles": 516,
+      "vertices": 260,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_screw_46_88",
+      "triangles": 516,
+      "vertices": 260,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "triangles": 516,
+      "vertices": 260,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_screw_15_10",
+      "triangles": 516,
+      "vertices": 260,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Palm_shaped_front_cover",
+      "triangles": 3524,
+      "vertices": 1754,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Palm_side_web_-71",
+      "triangles": 12,
+      "vertices": 8,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Palm_side_web_71",
+      "triangles": 12,
+      "vertices": 8,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_post_-44_33",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_post_16_29",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_post_-54_78",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_post_46_88",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_post_-18_104",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Cover_post_15_10",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Wrist_bridge_post_-32_8",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Wrist_bridge_post_-32_28",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Wrist_bridge_post_8_8",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Wrist_bridge_post_8_28",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "Wrist_bridge_plate",
+      "triangles": 2044,
+      "vertices": 1016,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_spread_housing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_spread_ring",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_root_fork_-13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_root_fork_13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment1_segment_shell",
+      "triangles": 3298,
+      "vertices": 1643,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment1_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment1_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment1_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment1_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_joint_pin_0",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment2_segment_shell",
+      "triangles": 3266,
+      "vertices": 1627,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment2_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment2_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment2_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment2_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_joint_pin_1",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment3_tip_core",
+      "triangles": 1120,
+      "vertices": 558,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment3_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_segment3_rounded_tip_cap",
+      "triangles": 9988,
+      "vertices": 4992,
+      "boundary_edges": 8,
+      "nonmanifold_edges": 8,
+      "degenerate_triangles": 8,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "index_joint_pin_2",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_spread_housing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_spread_ring",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_root_fork_-13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_root_fork_13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment1_segment_shell",
+      "triangles": 3298,
+      "vertices": 1643,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment1_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment1_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment1_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment1_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_joint_pin_0",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment2_segment_shell",
+      "triangles": 3266,
+      "vertices": 1627,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment2_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment2_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment2_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment2_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_joint_pin_1",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment3_tip_core",
+      "triangles": 1120,
+      "vertices": 558,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment3_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_segment3_rounded_tip_cap",
+      "triangles": 9988,
+      "vertices": 4992,
+      "boundary_edges": 8,
+      "nonmanifold_edges": 8,
+      "degenerate_triangles": 8,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "middle_joint_pin_2",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_spread_housing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_spread_ring",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_root_fork_-13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_root_fork_13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment1_segment_shell",
+      "triangles": 3298,
+      "vertices": 1643,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment1_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment1_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment1_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment1_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_joint_pin_0",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment2_segment_shell",
+      "triangles": 3266,
+      "vertices": 1627,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment2_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment2_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment2_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment2_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_joint_pin_1",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment3_tip_core",
+      "triangles": 1120,
+      "vertices": 558,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment3_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_segment3_rounded_tip_cap",
+      "triangles": 9988,
+      "vertices": 4992,
+      "boundary_edges": 8,
+      "nonmanifold_edges": 8,
+      "degenerate_triangles": 8,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "ring_joint_pin_2",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_spread_housing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_spread_ring",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_root_fork_-13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_root_fork_13",
+      "triangles": 1032,
+      "vertices": 516,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment1_segment_shell",
+      "triangles": 3294,
+      "vertices": 1641,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment1_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment1_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment1_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment1_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_joint_pin_0",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment2_segment_shell",
+      "triangles": 3266,
+      "vertices": 1627,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment2_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment2_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment2_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment2_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_joint_pin_1",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment3_tip_core",
+      "triangles": 1120,
+      "vertices": 558,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment3_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_segment3_rounded_tip_cap",
+      "triangles": 9988,
+      "vertices": 4992,
+      "boundary_edges": 8,
+      "nonmanifold_edges": 8,
+      "degenerate_triangles": 8,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "little_joint_pin_2",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_spread_housing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_spread_ring",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_root_fork_-13",
+      "triangles": 684,
+      "vertices": 342,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_root_fork_13",
+      "triangles": 684,
+      "vertices": 342,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment1_thenar_shell",
+      "triangles": 3398,
+      "vertices": 1691,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment1_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment1_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment1_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_joint_pin_0",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment2_segment_shell",
+      "triangles": 3258,
+      "vertices": 1623,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment2_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment2_distal_left_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment2_distal_right_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment2_dark_faceplate",
+      "triangles": 28,
+      "vertices": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_joint_pin_1",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment3_tip_core",
+      "triangles": 1120,
+      "vertices": 558,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment3_proximal_bushing",
+      "triangles": 1008,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_segment3_rounded_tip_cap",
+      "triangles": 9988,
+      "vertices": 4992,
+      "boundary_edges": 8,
+      "nonmanifold_edges": 8,
+      "degenerate_triangles": 8,
+      "coordinate_welding": "exact float32 coordinates"
+    },
+    {
+      "name": "thumb_joint_pin_2",
+      "triangles": 1004,
+      "vertices": 504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "coordinate_welding": "exact float32 coordinates"
+    }
+  ]
+}

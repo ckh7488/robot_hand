@@ -1,0 +1,1462 @@
+{
+  "input_sha256": {
+    "cad\\webcam_articulation_v1\\design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad\\webcam_articulation_v1\\generated\\scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331",
+    "cad\\webcam_articulation_v1\\generated\\hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "cad\\webcam_articulation_v1\\build.py": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3",
+    "cad\\webcam_articulation_v1\\digits.py": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626",
+    "cad\\webcam_articulation_v1\\thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad\\webcam_articulation_v1\\manufacturing_audit.py": "d76e561afcf59c2f873576b60cd13341be8fd97ac2473b313f9aade7336afd5f"
+  },
+  "roots": [
+    {
+      "finger": "index",
+      "housing_to_palm_gap_mm": 0.0,
+      "housing_palm_overlap_mm3": 525.9347194646058,
+      "forks": [
+        {
+          "side": -13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        },
+        {
+          "side": 13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "finger": "middle",
+      "housing_to_palm_gap_mm": 0.43086488296528214,
+      "housing_palm_overlap_mm3": 0.0,
+      "forks": [
+        {
+          "side": -13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        },
+        {
+          "side": 13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "finger": "ring",
+      "housing_to_palm_gap_mm": 0.0,
+      "housing_palm_overlap_mm3": 96.44774477236065,
+      "forks": [
+        {
+          "side": -13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        },
+        {
+          "side": 13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "finger": "little",
+      "housing_to_palm_gap_mm": 0.0,
+      "housing_palm_overlap_mm3": 162.12487913382054,
+      "forks": [
+        {
+          "side": -13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        },
+        {
+          "side": 13,
+          "ring_to_fork_gap_mm": 1.0,
+          "ring_fork_overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "finger": "thumb",
+      "housing_to_palm_gap_mm": 2.5241632632864834,
+      "housing_palm_overlap_mm3": 0.0,
+      "forks": [
+        {
+          "side": -13,
+          "ring_to_fork_gap_mm": 0.0,
+          "ring_fork_overlap_mm3": 51.64357824089787
+        },
+        {
+          "side": 13,
+          "ring_to_fork_gap_mm": 0.0,
+          "ring_fork_overlap_mm3": 51.64357824090584
+        }
+      ]
+    }
+  ],
+  "attachments": [
+    {
+      "part": "index_segment1_dark_faceplate",
+      "host": "index_segment1_segment_shell",
+      "gap_mm": 0.12179805157237786,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "index_segment2_dark_faceplate",
+      "host": "index_segment2_segment_shell",
+      "gap_mm": 0.09247110729274965,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "index_segment3_rounded_tip_cap",
+      "host": "index_segment3_tip_core",
+      "gap_mm": 0.47302949810487227,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "middle_segment1_dark_faceplate",
+      "host": "middle_segment1_segment_shell",
+      "gap_mm": 0.12831551297185362,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "middle_segment2_dark_faceplate",
+      "host": "middle_segment2_segment_shell",
+      "gap_mm": 0.09247110729274965,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "middle_segment3_rounded_tip_cap",
+      "host": "middle_segment3_tip_core",
+      "gap_mm": 0.5232166435699412,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "ring_segment1_dark_faceplate",
+      "host": "ring_segment1_segment_shell",
+      "gap_mm": 0.11728600681114727,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "ring_segment2_dark_faceplate",
+      "host": "ring_segment2_segment_shell",
+      "gap_mm": 0.09247110729274965,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "ring_segment3_rounded_tip_cap",
+      "host": "ring_segment3_tip_core",
+      "gap_mm": 0.47302949810487227,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "little_segment1_dark_faceplate",
+      "host": "little_segment1_segment_shell",
+      "gap_mm": 0.10441866524022035,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "little_segment2_dark_faceplate",
+      "host": "little_segment2_segment_shell",
+      "gap_mm": 0.08681205089126805,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "little_segment3_rounded_tip_cap",
+      "host": "little_segment3_tip_core",
+      "gap_mm": 0.33259505261886874,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "thumb_segment2_dark_faceplate",
+      "host": "thumb_segment2_segment_shell",
+      "gap_mm": 0.07711138952119047,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    },
+    {
+      "part": "thumb_segment3_rounded_tip_cap",
+      "host": "thumb_segment3_tip_core",
+      "gap_mm": 0.3325950526144871,
+      "overlap_mm3": 0.0,
+      "fastening_definition_present": false
+    }
+  ],
+  "hinges": [
+    {
+      "finger": "index",
+      "segment": 1,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            41.9,
+            117.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            43.0,
+            117.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            50.3,
+            117.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            49.3,
+            117.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "index",
+      "segment": 2,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            41.9,
+            182.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            43.0,
+            182.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            50.3,
+            182.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            49.3,
+            182.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "index",
+      "segment": 3,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            41.9,
+            232.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            43.0,
+            232.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            50.3,
+            232.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            49.3,
+            232.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "middle",
+      "segment": 1,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            2.9,
+            127.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            4.0,
+            127.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            11.3,
+            127.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            10.3,
+            127.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "middle",
+      "segment": 2,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            2.9,
+            197.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            4.0,
+            197.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            11.3,
+            197.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            10.3,
+            197.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "middle",
+      "segment": 3,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            2.9,
+            247.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            4.0,
+            247.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            11.3,
+            247.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            10.3,
+            247.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "ring",
+      "segment": 1,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -36.1,
+            121.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -35.0,
+            121.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -27.7,
+            121.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -28.7,
+            121.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "ring",
+      "segment": 2,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -36.1,
+            183.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -35.0,
+            183.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -27.7,
+            183.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -28.7,
+            183.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "ring",
+      "segment": 3,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -36.1,
+            233.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -35.0,
+            233.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -27.7,
+            233.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -28.7,
+            233.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "little",
+      "segment": 1,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -75.1,
+            106.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -74.0,
+            106.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -66.7,
+            106.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -67.7,
+            106.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "little",
+      "segment": 2,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -75.1,
+            161.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -74.0,
+            161.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -66.7,
+            161.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -67.7,
+            161.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "little",
+      "segment": 3,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -75.1,
+            209.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -74.0,
+            209.0,
+            8.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -66.7,
+            209.0,
+            8.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_mm": [
+            -67.7,
+            209.0,
+            8.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "thumb",
+      "segment": 1,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            0.7660444431187603,
+            -0.6427876096867989,
+            0.0
+          ],
+          "point_mm": [
+            33.283662244225,
+            44.670274320797,
+            29.0
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            0.7660444431187603,
+            -0.6427876096867989,
+            0.0
+          ],
+          "point_mm": [
+            34.126311131656,
+            43.963207950141,
+            29.0
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            0.7660444431187603,
+            -0.6427876096867989,
+            0.0
+          ],
+          "point_mm": [
+            39.718435566424,
+            39.27085839943,
+            29.0
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            0.7660444431187603,
+            -0.6427876096867989,
+            0.0
+          ],
+          "point_mm": [
+            38.952391123305,
+            39.913646009116,
+            29.0
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "thumb",
+      "segment": 2,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            71.362963449293,
+            74.117957628063,
+            13.955290735192
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            71.812003132338,
+            73.997637807621,
+            14.952229300932
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            74.791993756178,
+            73.199151726511,
+            21.568276146299
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            74.383775862501,
+            73.308533381458,
+            20.661968359263
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    },
+    {
+      "finger": "thumb",
+      "segment": 3,
+      "pin_cylinders": [
+        {
+          "radius_mm": 3.4,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            83.009820478907,
+            117.58461981107,
+            13.955290735192
+          ]
+        },
+        {
+          "radius_mm": 2.0,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            83.458860161951,
+            117.46429999062,
+            14.952229300932
+          ]
+        }
+      ],
+      "proximal_bushing_cylinders": [
+        {
+          "radius_mm": 3.35,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            86.438850785791,
+            116.66581390951,
+            21.568276146299
+          ]
+        },
+        {
+          "radius_mm": 2.2,
+          "axis": [
+            0.4082178936768091,
+            -0.10938165494694885,
+            0.9063077870365762
+          ],
+          "point_mm": [
+            86.030632892114,
+            116.77519556446,
+            20.661968359263
+          ]
+        }
+      ],
+      "shaft_nominal_diameter_mm": 4,
+      "bushing_id_mm": 4.4,
+      "bushing_od_mm": 6.7,
+      "housing_bore_mm": 6.8,
+      "diametral_shaft_clearance_mm": 0.4,
+      "diametral_bushing_housing_clearance_mm": 0.1,
+      "positive_pin_retention_defined": false,
+      "bushing_retention_defined": false
+    }
+  ],
+  "cover_fasteners": [
+    {
+      "name": "Cover_screw_-44_33",
+      "z_bounds_mm": [
+        14.0,
+        15.4
+      ],
+      "cover_z_bounds_mm": [
+        10.5,
+        14
+      ],
+      "modeled_shank_length_mm": 0,
+      "thread_or_nut_defined": false
+    },
+    {
+      "name": "Cover_screw_16_29",
+      "z_bounds_mm": [
+        14.0,
+        15.4
+      ],
+      "cover_z_bounds_mm": [
+        10.5,
+        14
+      ],
+      "modeled_shank_length_mm": 0,
+      "thread_or_nut_defined": false
+    },
+    {
+      "name": "Cover_screw_-54_78",
+      "z_bounds_mm": [
+        14.0,
+        15.4
+      ],
+      "cover_z_bounds_mm": [
+        10.5,
+        14
+      ],
+      "modeled_shank_length_mm": 0,
+      "thread_or_nut_defined": false
+    },
+    {
+      "name": "Cover_screw_46_88",
+      "z_bounds_mm": [
+        14.0,
+        15.4
+      ],
+      "cover_z_bounds_mm": [
+        10.5,
+        14
+      ],
+      "modeled_shank_length_mm": 0,
+      "thread_or_nut_defined": false
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "z_bounds_mm": [
+        14.0,
+        15.4
+      ],
+      "cover_z_bounds_mm": [
+        10.5,
+        14
+      ],
+      "modeled_shank_length_mm": 0,
+      "thread_or_nut_defined": false
+    },
+    {
+      "name": "Cover_screw_15_10",
+      "z_bounds_mm": [
+        14.0,
+        15.4
+      ],
+      "cover_z_bounds_mm": [
+        10.5,
+        14
+      ],
+      "modeled_shank_length_mm": 0,
+      "thread_or_nut_defined": false
+    }
+  ],
+  "drive_integration": {
+    "current_installed_actuators": 0,
+    "separate_drive_source": [
+      "cad/form_candidate_v1/design.json",
+      "cad/form_candidate_v1/generated/scene.json",
+      "cad/form_candidate_v1/generated/hand_form_candidate.step",
+      "cad/form_drive_v1/generated/exterior_mass_inertia.json",
+      "cad/form_drive_v1/exterior.py"
+    ],
+    "separate_drive_thumb": {
+      "root": [
+        46,
+        34,
+        8
+      ],
+      "links": [
+        50,
+        45,
+        28
+      ],
+      "base_yaw_deg": -40,
+      "second_yaw_deg": 25,
+      "metacarpal_form": "hollow_thenar_with_oblique_distal_fork"
+    },
+    "current_thumb": {
+      "root": [
+        46,
+        34,
+        8
+      ],
+      "links": [
+        50,
+        45,
+        28
+      ],
+      "base_yaw_deg": -40,
+      "second_yaw_deg": 25,
+      "metacarpal_form": "hollow_thenar_with_oblique_distal_fork",
+      "second_roll_deg": -65,
+      "flexion_offset": [
+        0,
+        0,
+        21
+      ]
+    },
+    "separate_drive_ranges": {
+      "index_spread": [
+        -45,
+        45
+      ],
+      "index_mcp": [
+        -5,
+        100
+      ],
+      "index_pip": [
+        -5,
+        100
+      ],
+      "index_dip": [
+        -5,
+        100
+      ],
+      "middle_spread": [
+        -45,
+        45
+      ],
+      "middle_mcp": [
+        -5,
+        100
+      ],
+      "middle_pip": [
+        -5,
+        100
+      ],
+      "middle_dip": [
+        -5,
+        100
+      ],
+      "ring_spread": [
+        -45,
+        45
+      ],
+      "ring_mcp": [
+        -5,
+        100
+      ],
+      "ring_pip": [
+        -5,
+        100
+      ],
+      "ring_dip": [
+        -5,
+        100
+      ],
+      "little_spread": [
+        -45,
+        45
+      ],
+      "little_mcp": [
+        -5,
+        100
+      ],
+      "little_pip": [
+        -5,
+        100
+      ],
+      "little_dip": [
+        -5,
+        100
+      ],
+      "thumb_base_sweep": [
+        -45,
+        45
+      ],
+      "thumb_opposition": [
+        -5,
+        100
+      ],
+      "thumb_mcp": [
+        -5,
+        100
+      ],
+      "thumb_ip": [
+        -5,
+        100
+      ]
+    },
+    "current_fist_deg": [
+      0,
+      80,
+      128.7017363341432,
+      61.29826366585681,
+      0,
+      80,
+      132.59728432008603,
+      57.40271567991397,
+      0,
+      80,
+      124.90794676120265,
+      65.09205323879735,
+      0,
+      80,
+      122.23619166944468,
+      67.76380833055532,
+      4.36319691,
+      41.77009943,
+      34.46484045,
+      51.76072322
+    ],
+    "transmission_status": "assumed_not_validated",
+    "limitations": [
+      "Spread +Z reference at the root disk center plane (root z - 7.5 mm); flex +X at root.",
+      "Pin0 follows spread, pin1 follows proximal link, pin2 follows middle link; retention is unfinished.",
+      "Separate link fascia, bushings and tip caps are assumed rigidly retained to their listed body.",
+      "The fixed palm is the test base. The reused arm reference is excluded from moving dynamics.",
+      "No contact/collision forces or validated joint travel in dynamics.",
+      "All 20 remote motor paths are assumed compliant pull-pull cables; no finished routing or motor-to-joint fastening.",
+      "Spread cable cross-coupling is assumed zero; spatial thumb transmission is unvalidated.",
+      "Material density and cable/motor/controller parameters are unmeasured. No physical latency approval.",
+      "Missing moving transmission mass makes this an incomplete assembly screening model."
+    ]
+  }
+}

@@ -1,5 +1,7 @@
 # 웹캠 관절 수정 후보
 
+**제작성 검토 결과: 현재 상태로 제작·조립 불가.** 전체120부품을 포함하자 핀 구멍 막힘, 회전부 간섭, 끊어진 연결, 체결·구동 누락과 국소 얇은 형상이 확인됐다. 아래의13자세 검사는 제한된 외피 검사이며 이 판정을 대체하지 않는다. [측정 보고서](generated/manufacturing_audit/manufacturability_review.html) · [검토 체크포인트](../../checkpoints/WEBCAM003.md).
+
 원본 `cad/form_candidate_v1`은 외형 기준으로 보존한다. 이 후보는 같은 손바닥 비율과 손가락 길이를 유지하며, 주먹과 엄지 굽힘을 실제 관절 형상에 반영한다. 구동 설계 중인 `cad/form_drive_v1`과 별개다.
 
 ## 변경
@@ -25,3 +27,11 @@ CadQuery/OCP, NumPy, SciPy 환경에서 `build.py`로 STEP·STL120개·scene·de
 `sim_3rd/hand_follow/render_model_review.py`: 동일 CAD의 편 손, 주먹 정면·사선·측면 및 관절 축 이미지를 만든다.
 
 웹캠 앱의 새 기본 CAD이며, 이전 보정과 구별해 `calibration_articulation_v1.json`을 사용한다. 원본 CAD와 비교하려면 `--cad form_candidate_v1`을 지정한다.
+
+## 제작성 검사 재현
+
+`manufacturing_audit.py`는 저장 STEP120부품과 STL을 다시 읽어 편 손·주먹·검지 벌림−22도 자세의 모든 부품 쌍, 뿌리 연결과 부싱/핀/체결 정보를 검사한다. 같은 시뮬레이터 강체 내부도 제외하지 않는다. `geometry` 또는 `interfaces`로 단계별 실행할 수 있다.
+
+`wall_screen.py`는24개 외피/코어/장식판에서 면적0.25mm² 이상인 면마다5개 UV 위치의 국소 법선 두께를 표본 검사한다. 얇은 판2mm와 원통 슬리브1.15mm를 먼저 검증한다. 전역 최소나 구조 강도 검사가 아니다. `recheck_wall_points.py`는 완료된 결과 중 각 부품의 가장 얇은3개 위치를 STEP에서 재측정한다.
+
+`mesh_cleanup_screen.py`는 원본 STL을 바꾸지 않고 퇴화 삼각형만 제거했을 때의 위상을 비교한다. `render_manufacturing_sections.py`는 실제 STEP의 단면을 그리고, `make_manufacturing_report.py`는 완료 여부·입력 해시와 뿌리 핀 교차의 해석값6πmm³를 대조한 뒤 HTML/JSON 판정을 만든다. 모든 결과는 `generated/manufacturing_audit/`에 저장한다. 기존 CAD/보정/앱은 이번 감사에서 변경하지 않는다.
