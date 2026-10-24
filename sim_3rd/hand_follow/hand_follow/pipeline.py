@@ -14,6 +14,7 @@ class PosePipeline:
     def __init__(self, design, ranges, calibration_path, beta=.025, min_cutoff=2.0):
         self.design = design
         self.ranges = ranges
+        self.fist = np.asarray(design.get('fist_deg', FIST), float)
         self.calibration_path = Path(calibration_path)
         self.calibration = Calibration.load(self.calibration_path) if self.calibration_path.exists() else Calibration()
         self.open_calibrated = self.calibration_path.exists()
@@ -87,9 +88,10 @@ class PosePipeline:
             # An occluded DIP can have nearly identical open/fist depth. Do
             # not reject all useful joints or amplify that noise without bound.
             # Only these unobservable DIPs use a declared PIP-based estimate.
-            self.calibration.coupled_dips = [i for i in (3, 7, 11, 15) if movement[i] < FIST[i] / 4]
+            self.calibration.coupled_dips = [i for i in (3, 7, 11, 15) if movement[i] < self.fist[i] / 4]
+            self.calibration.dip_ratios = {i: float(self.fist[i] / self.fist[i - 1]) for i in self.calibration.coupled_dips}
             observed = np.array([i for i in FLEX if i not in self.calibration.coupled_dips])
-            self.calibration.gain[observed] = np.clip(FIST[observed] / movement[observed], .5, 4)
+            self.calibration.gain[observed] = np.clip(self.fist[observed] / movement[observed], .5, 4)
             self.fist_calibrated = True
             self.message = '주먹 보정 완료'
             if self.calibration.coupled_dips:

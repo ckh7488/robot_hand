@@ -1,4 +1,4 @@
-"""Articulate the actual form_candidate_v1 CAD meshes, in metres.
+"""Articulate the selected CAD's actual meshes and joint frames, in metres.
 
 This is a kinematic preview, not a motor or collision simulation. The source
 STLs are in their assembled neutral world pose. Each geom is transformed into
@@ -29,9 +29,13 @@ def _rz(degrees):
     return Rotation.from_euler('z', degrees, degrees=True).as_matrix()
 
 
+def _ry(degrees):
+    return Rotation.from_euler('y', degrees, degrees=True).as_matrix()
+
+
 class CadHand:
-    def __init__(self, repo, whole=False):
-        self.source = Path(repo) / 'cad' / 'form_candidate_v1'
+    def __init__(self, repo, whole=False, cad='form_candidate_v1'):
+        self.source = Path(repo) / 'cad' / cad
         design_path = self.source / 'design.json'
         scene_path = self.source / 'generated' / 'scene.json'
         self.design = json.loads(design_path.read_text(encoding='utf-8'))
@@ -54,6 +58,8 @@ class CadHand:
         self.neutral_frames = {'world': (np.zeros(3), np.eye(3))}
         bodies = {'world': world}
         limits = joint_ranges()
+        if 'joint_ranges_deg' in self.design:
+            limits = np.array([self.design['joint_ranges_deg'][n if n.startswith('thumb') else n.split('_', 1)[1]] for n in NAMES], float)
         configs = [*self.design['fingers'], dict(self.design['thumb'], name='thumb')]
         for fi, config in enumerate(configs):
             name = config['name']
@@ -64,11 +70,14 @@ class CadHand:
                 joint = NAMES[4 * fi + ji]
                 relative_pos = origin if ji == 0 else np.zeros(3)
                 relative_rotation = rotation if ji == 0 else np.eye(3)
+                if ji == 1:
+                    relative_pos = np.asarray(config.get('flexion_offset', [0, 0, 0]), float) / 1000
+                    origin += rotation @ relative_pos
                 if ji >= 2:
                     relative_pos = np.array([0, config['links'][ji - 2] / 1000, 0])
                     origin = origin + rotation @ relative_pos
                     if ji == 2:
-                        relative_rotation = _rz(config.get('second_yaw_deg', 0))
+                        relative_rotation = _rz(config.get('second_yaw_deg', 0)) @ _ry(config.get('second_roll_deg', 0))
                         rotation = rotation @ relative_rotation
                 body = ET.SubElement(parent, 'body', name=joint,
                                      pos=_fmt(relative_pos), quat=_quat(relative_rotation))
@@ -136,14 +145,31 @@ class CadHand:
     def angles(self):
         return np.degrees(self.data.qpos[self.addresses]).copy()
 
-    def render(self, view=0, width=880, height=760):
+    def render(self, view=0, width=880, height=760, axes=False, *, focus=None, distance=None):
         if self.renderer is None:
             self.renderer = mujoco.Renderer(self.model, height=height, width=width)
         cam = mujoco.MjvCamera()
         cam.lookat[:] = [0.025, .14, .015] if not self.whole else [0, -.07, -.025]
         cam.distance = .53 if not self.whole else 1.05
+        if focus is not None:
+            cam.lookat[:] = focus
+        if distance is not None:
+            cam.distance = distance
         cam.azimuth, cam.elevation = [(95, -72), (135, -32), (180, -5)][view % 3]
         self.renderer.update_scene(self.data, cam)
+        if axes:
+            colors = [(1., .3, .3, 1), (.3, 1., .3, 1), (.35, .6, 1., 1), (1., .8, .2, 1)]
+            for name, color in zip(NAMES[16:], colors):
+                jid = self.model.joint(name).id
+                scene = self.renderer.scene
+                geom = scene.geoms[scene.ngeom]
+                mujoco.mjv_initGeom(geom, mujoco.mjtGeom.mjGEOM_ARROW,
+                                   np.zeros(3), np.zeros(3), np.eye(3).ravel(), np.array(color))
+                origin = self.data.xanchor[jid]
+                mujoco.mjv_connector(geom, mujoco.mjtGeom.mjGEOM_ARROW, .002,
+                                     origin - .055 * self.data.xaxis[jid],
+                                     origin + .055 * self.data.xaxis[jid])
+                scene.ngeom += 1
         for eye in self.renderer.scene.camera:
             forward = np.asarray(eye.forward)
             up = np.array([0., 1., 0.])

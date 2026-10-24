@@ -1,0 +1,16 @@
+{
+  "source": "cad/form_candidate_v1",
+  "relief_method": "Filled child-link envelope, polygonal arcs at <=3 degrees; verified separately in sampled poses",
+  "changes": [
+    "Thumb root gimbal height21 mm; distal frame roll-65 degrees",
+    "Narrow proximal necks and hinge sweep relief",
+    "Palm cover root clearances"
+  ],
+  "continuous_clearance_verified": false,
+  "part_count": 120,
+  "all_valid": true,
+  "source_sha256": {
+    "design.json": "c8a3f91584984cdeba0cad41942efb56bbb8f1cc8d108333e5539dbcbea99651",
+    "hand_form_candidate.step": "4cf0922e300944899335e8f7cd30f59ee1fd610b0be1910e69d3bc97fda4e5ba"
+  }
+}

@@ -132,11 +132,12 @@ class Calibration:
     offset: np.ndarray = field(default_factory=lambda: np.zeros(20))
     gain: np.ndarray = field(default_factory=lambda: np.ones(20))
     coupled_dips: list = field(default_factory=list)
+    dip_ratios: dict = field(default_factory=dict)
 
     def apply(self, raw):
         mapped = self.gain * (raw - self.offset)
         for joint in self.coupled_dips:
-            mapped[joint] = mapped[joint - 1] * (70 / 95)
+            mapped[joint] = mapped[joint - 1] * self.dip_ratios.get(joint, 70 / 95)
         return mapped
 
     def capture_open_hand(self, raw, keep_thumb_base=True):
@@ -150,7 +151,8 @@ class Calibration:
 
     def save(self, path):
         Path(path).write_text(json.dumps({"names": NAMES, "offset_deg": self.offset.tolist(),
-                                          "gain": self.gain.tolist(), "estimated_dip_indices": self.coupled_dips}, indent=1), encoding="utf-8")
+                                          "gain": self.gain.tolist(), "estimated_dip_indices": self.coupled_dips,
+                                          "estimated_dip_ratios": self.dip_ratios}, indent=1), encoding="utf-8")
 
     @classmethod
     def load(cls, path):
@@ -163,4 +165,7 @@ class Calibration:
         estimated = d.get('estimated_dip_indices', [])
         if not isinstance(estimated, list) or any(type(i) is not int or i not in (3, 7, 11, 15) for i in estimated):
             raise ValueError('Invalid estimated DIP indices')
-        return cls(offset, gain, sorted(set(estimated)))
+        ratios = {int(i): float(r) for i, r in d.get('estimated_dip_ratios', {}).items()}
+        if any(i not in (3, 7, 11, 15) or not np.isfinite(r) or not 0 < r <= 2 for i, r in ratios.items()):
+            raise ValueError('Invalid estimated DIP ratio')
+        return cls(offset, gain, sorted(set(estimated)), ratios)

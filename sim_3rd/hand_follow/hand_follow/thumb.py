@@ -20,14 +20,20 @@ def rx(degrees):
     return np.array([[1, 0, 0], [0, c, -s], [0, s, c]])
 
 
+def ry(degrees):
+    c, s = np.cos(np.radians(degrees)), np.sin(np.radians(degrees))
+    return np.array([[c, 0, s], [0, 1, 0], [-s, 0, c]])
+
+
 def chain(config, angles):
     """Four joint/tip positions in CAD millimetres; same frames as CadHand."""
-    points = [np.array(config['root'], float)]
+    base = rz(config.get('base_yaw_deg', 0) - angles[0])
+    points = [np.array(config['root'], float) + base @ config.get('flexion_offset', [0, 0, 0])]
     rotation = rz(config.get('base_yaw_deg', 0) - angles[0]) @ rx(angles[1])
     for i, length in enumerate(config['links']):
         if i:
             if i == 1:
-                rotation = rotation @ rz(config.get('second_yaw_deg', 0))
+                rotation = rotation @ rz(config.get('second_yaw_deg', 0)) @ ry(config.get('second_roll_deg', 0))
             rotation = rotation @ rx(angles[i + 1])
         points.append(points[-1] + rotation @ [0, length, 0])
     return np.array(points)
@@ -56,7 +62,7 @@ class ThumbRetargeter:
         if np.any(lengths < 1):
             raise ValueError('Degenerate thumb landmarks')
         target = np.cumsum(directions / lengths[:, None] * np.array(thumb['links'])[:, None], axis=0)
-        target += thumb['root']
+        target += chain(thumb, np.zeros(4))[0]
 
         # Preserve relative contact location as the thumb crosses folded fingers.
         # Bone directions alone put a human-size thumb inside this wider CAD palm.

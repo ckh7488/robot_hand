@@ -1,0 +1,3736 @@
+{
+  "hand": [
+    {
+      "name": "Palm_tapered_chassis",
+      "asset": "Palm_tapered_chassis",
+      "mesh": "generated/meshes/Palm_tapered_chassis.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 178813.17440000133,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -90.0,
+          -3.4301450568818836e-12,
+          -44.0
+        ],
+        [
+          90.00000000000004,
+          150.0,
+          4.0
+        ]
+      ],
+      "sha256_stl": "d0cdbb3eaf1f91098ff26fca542ef7f302d8a99e0f50f6791867e9bde4632f3a"
+    },
+    {
+      "name": "Cover_screw_-44_33",
+      "asset": "Cover_screw_-44_33",
+      "mesh": "generated/meshes/Cover_screw_-44_33.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663165,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -47.3,
+          29.7,
+          14.0
+        ],
+        [
+          -40.7,
+          36.3,
+          15.4
+        ]
+      ],
+      "sha256_stl": "25616edc35630eeab996a1cf5c7fb80f064cf3aa0ad5878568ddb1df6999f96c"
+    },
+    {
+      "name": "Cover_screw_16_29",
+      "asset": "Cover_screw_16_29",
+      "mesh": "generated/meshes/Cover_screw_16_29.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.1607215966317,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          12.7,
+          25.7,
+          14.0
+        ],
+        [
+          19.3,
+          32.3,
+          15.4
+        ]
+      ],
+      "sha256_stl": "330e954d27c94197cbf10349dc4420bc2801c56af68a65b43256a5ad1619cddd"
+    },
+    {
+      "name": "Cover_screw_-54_78",
+      "asset": "Cover_screw_-54_78",
+      "mesh": "generated/meshes/Cover_screw_-54_78.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.160721596631625,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -57.3,
+          74.7,
+          14.0
+        ],
+        [
+          -50.7,
+          81.3,
+          15.4
+        ]
+      ],
+      "sha256_stl": "43a452c9e00661e758adaa9cb61060db3fbabb3ceb578c39d2aa48d12937d239"
+    },
+    {
+      "name": "Cover_screw_46_88",
+      "asset": "Cover_screw_46_88",
+      "mesh": "generated/meshes/Cover_screw_46_88.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663162,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          42.7,
+          84.7,
+          14.0
+        ],
+        [
+          49.3,
+          91.3,
+          15.4
+        ]
+      ],
+      "sha256_stl": "a4d5b7c3e50d6ccb6730c31dfca315d84ce9f1c92b0b241a2b950b07ce383818"
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "asset": "Cover_screw_-18_104",
+      "mesh": "generated/meshes/Cover_screw_-18_104.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663166,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -21.3,
+          100.7,
+          14.0
+        ],
+        [
+          -14.7,
+          107.3,
+          15.4
+        ]
+      ],
+      "sha256_stl": "ee94ef17965e2c648d40d6f72982b836f371be7df133b5eb73ba7a46f53a40d6"
+    },
+    {
+      "name": "Cover_screw_15_10",
+      "asset": "Cover_screw_15_10",
+      "mesh": "generated/meshes/Cover_screw_15_10.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663167,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          11.7,
+          6.7,
+          14.0
+        ],
+        [
+          18.3,
+          13.3,
+          15.4
+        ]
+      ],
+      "sha256_stl": "e6303c47e4a5397af694a18e317c565984d2b8dff175928ebb60c20c1e298fe4"
+    },
+    {
+      "name": "Palm_shaped_front_cover",
+      "asset": "Palm_shaped_front_cover",
+      "mesh": "generated/meshes/Palm_shaped_front_cover.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.89,
+        0.9,
+        0.88
+      ],
+      "role": "new_palm_cover",
+      "volume_mm3": 41907.91368007666,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -78.0,
+          0.0,
+          10.5
+        ],
+        [
+          78.0,
+          117.56859789843459,
+          14.0
+        ]
+      ],
+      "sha256_stl": "012f438138f4628e9b44da926faa335274fe536cbf222b6e544b6f2964e76237"
+    },
+    {
+      "name": "Palm_side_web_-71",
+      "asset": "Palm_side_web_-71",
+      "mesh": "generated/meshes/Palm_side_web_-71.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 7920.0,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -72.5,
+          44.5,
+          -40.0
+        ],
+        [
+          -69.5,
+          99.5,
+          8.0
+        ]
+      ],
+      "sha256_stl": "3722d09655d8359289e284e01863bf1266f26ca3c57dbaad583ef11ada65edd0"
+    },
+    {
+      "name": "Palm_side_web_71",
+      "asset": "Palm_side_web_71",
+      "mesh": "generated/meshes/Palm_side_web_71.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 7920.0,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          69.5,
+          44.5,
+          -40.0
+        ],
+        [
+          72.5,
+          99.5,
+          8.0
+        ]
+      ],
+      "sha256_stl": "78f6dc86e5367b8cbf09edc1003bb75dd4f45639308056497af2ad1733930e4d"
+    },
+    {
+      "name": "Cover_post_-44_33",
+      "asset": "Cover_post_-44_33",
+      "mesh": "generated/meshes/Cover_post_-44_33.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.3802615950412,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -48.8,
+          28.2,
+          -40.5
+        ],
+        [
+          -39.2,
+          37.8,
+          10.5
+        ]
+      ],
+      "sha256_stl": "4b2d345656ddfc6f55fb1cde1b729f4214566d1c4638d717cb66d6d09845b59f"
+    },
+    {
+      "name": "Cover_post_16_29",
+      "asset": "Cover_post_16_29",
+      "mesh": "generated/meshes/Cover_post_16_29.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595042,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          11.2,
+          24.2,
+          -40.5
+        ],
+        [
+          20.8,
+          33.8,
+          10.5
+        ]
+      ],
+      "sha256_stl": "66885144a33e7dbbe7af3d7c73dddda3f0cd447a86746c8e0420a7e24ff23956"
+    },
+    {
+      "name": "Cover_post_-54_78",
+      "asset": "Cover_post_-54_78",
+      "mesh": "generated/meshes/Cover_post_-54_78.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595042,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -58.8,
+          73.2,
+          -40.5
+        ],
+        [
+          -49.2,
+          82.8,
+          10.5
+        ]
+      ],
+      "sha256_stl": "2ace5f2008cfe2cc69e19e378258a65fa25d040924c11a87982f1ecfcb8b2906"
+    },
+    {
+      "name": "Cover_post_46_88",
+      "asset": "Cover_post_46_88",
+      "mesh": "generated/meshes/Cover_post_46_88.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595042,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          41.2,
+          83.2,
+          -40.5
+        ],
+        [
+          50.8,
+          92.8,
+          10.5
+        ]
+      ],
+      "sha256_stl": "bf916a4ba5425f2e713b93303382aaea97f5226b5f9d51a9524f5a7bd2f16a5a"
+    },
+    {
+      "name": "Cover_post_-18_104",
+      "asset": "Cover_post_-18_104",
+      "mesh": "generated/meshes/Cover_post_-18_104.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595043,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -22.8,
+          99.2,
+          -40.5
+        ],
+        [
+          -13.2,
+          108.8,
+          10.5
+        ]
+      ],
+      "sha256_stl": "09d11f41bd10ca2b92bea04e560f8744f183919ab863a3cda07a5f0d96780169"
+    },
+    {
+      "name": "Cover_post_15_10",
+      "asset": "Cover_post_15_10",
+      "mesh": "generated/meshes/Cover_post_15_10.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595043,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          10.2,
+          5.2,
+          -40.5
+        ],
+        [
+          19.8,
+          14.8,
+          10.5
+        ]
+      ],
+      "sha256_stl": "61e2f2e8f9d71235bf426ebedf0fae82b8c30675ebecf1e3bbdd82264b588530"
+    },
+    {
+      "name": "Wrist_bridge_post_-32_8",
+      "asset": "Wrist_bridge_post_-32_8",
+      "mesh": "generated/meshes/Wrist_bridge_post_-32_8.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.3096250332799,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -37.5,
+          2.5,
+          -59.0
+        ],
+        [
+          -26.5,
+          13.5,
+          -44.0
+        ]
+      ],
+      "sha256_stl": "1feeb42f1fbbeeb80168f29bdd9932ce4d150d97bc36c01620e079b8936c6a80"
+    },
+    {
+      "name": "Wrist_bridge_post_-32_28",
+      "asset": "Wrist_bridge_post_-32_28",
+      "mesh": "generated/meshes/Wrist_bridge_post_-32_28.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.30962503328,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -37.5,
+          22.5,
+          -59.0
+        ],
+        [
+          -26.5,
+          33.5,
+          -44.0
+        ]
+      ],
+      "sha256_stl": "27badb14fa268c729378e2fd39ecbc7c862e157a0434d8282a6b1a1032b4d7e4"
+    },
+    {
+      "name": "Wrist_bridge_post_8_8",
+      "asset": "Wrist_bridge_post_8_8",
+      "mesh": "generated/meshes/Wrist_bridge_post_8_8.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.30962503328,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          2.5,
+          2.5,
+          -59.0
+        ],
+        [
+          13.5,
+          13.5,
+          -44.0
+        ]
+      ],
+      "sha256_stl": "da1cb8322f112876c54c9d672035f03ef4d9ae9ca668bb2a419decb4cdc3dd63"
+    },
+    {
+      "name": "Wrist_bridge_post_8_28",
+      "asset": "Wrist_bridge_post_8_28",
+      "mesh": "generated/meshes/Wrist_bridge_post_8_28.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.3096250332799,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          2.5,
+          22.5,
+          -59.0
+        ],
+        [
+          13.5,
+          33.5,
+          -44.0
+        ]
+      ],
+      "sha256_stl": "a36086dba27fc78dd220cd1fb0cce95d6cde06870ecd6945d1d340e0369ecdb0"
+    },
+    {
+      "name": "Wrist_bridge_plate",
+      "asset": "Wrist_bridge_plate",
+      "mesh": "generated/meshes/Wrist_bridge_plate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 7198.732755698005,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -39.0,
+          1.0,
+          -63.0
+        ],
+        [
+          15.0,
+          35.0,
+          -59.0
+        ]
+      ],
+      "sha256_stl": "d1e71d0e8ba9e0307e685d5489b7696f75d897d51c00b53b811b60db4a770c72"
+    },
+    {
+      "name": "index_spread_housing",
+      "asset": "index_spread_housing",
+      "mesh": "generated/meshes/index_spread_housing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 3522.5107628376327,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          43.0,
+          101.5,
+          -2.0
+        ],
+        [
+          74.0,
+          132.5,
+          3.0
+        ]
+      ],
+      "sha256_stl": "b2d37d034494e9c17449f8da103591d1959e1ecdba5e70e5fd946c10e8ecfe83"
+    },
+    {
+      "name": "index_spread_ring",
+      "asset": "index_spread_ring",
+      "mesh": "generated/meshes/index_spread_ring.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_joint",
+      "volume_mm3": 888.2853228025338,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          48.0,
+          106.5,
+          3.0
+        ],
+        [
+          69.0,
+          127.5,
+          6.0
+        ]
+      ],
+      "sha256_stl": "e12e388dceaf4283d7a70cf1b4dc4b79c2b051a3c55256869806ad8a6ab39741"
+    },
+    {
+      "name": "index_root_fork_-13",
+      "asset": "index_root_fork_-13",
+      "mesh": "generated/meshes/index_root_fork_-13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344606,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          44.0,
+          108.5,
+          -3.0
+        ],
+        [
+          47.0,
+          125.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "ba072264cc6aa76c54b5aa9cda5809cce7529489a94186f50bfba8b332e3c891"
+    },
+    {
+      "name": "index_root_fork_13",
+      "asset": "index_root_fork_13",
+      "mesh": "generated/meshes/index_root_fork_13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344606,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          70.0,
+          108.5,
+          -3.0
+        ],
+        [
+          73.0,
+          125.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "f727d6f0fc7ce3333a6aae11abc4c0bac3ff3560e38db16cba85fce0e7c98dfa"
+    },
+    {
+      "name": "index_segment1_segment_shell",
+      "asset": "index_segment1_segment_shell",
+      "mesh": "generated/meshes/index_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 11068.698714083626,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          44.299999899999996,
+          108.9999999,
+          -3.3000001000000005
+        ],
+        [
+          72.7000001,
+          190.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "330afb7eaaba9af35f3434b6e39ca238678ce275c5153d446f007e106d8ed6b7"
+    },
+    {
+      "name": "index_segment1_proximal_bushing",
+      "asset": "index_segment1_proximal_bushing",
+      "mesh": "generated/meshes/index_segment1_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.8399278292047,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          50.3,
+          113.65,
+          4.65
+        ],
+        [
+          66.7,
+          120.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "cfa2b735ddbccf0273210e271cc6a040a9d58aeba2626f33c07bea599e3ab5e4"
+    },
+    {
+      "name": "index_segment1_distal_left_bushing",
+      "asset": "index_segment1_distal_left_bushing",
+      "mesh": "generated/meshes/index_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922534,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          46.3,
+          178.65,
+          4.65
+        ],
+        [
+          49.7,
+          185.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "38af7d3e22f5b208b2e59c56d866e9bb64734ffed4fc35d482979679f08c9b79"
+    },
+    {
+      "name": "index_segment1_distal_right_bushing",
+      "asset": "index_segment1_distal_right_bushing",
+      "mesh": "generated/meshes/index_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922534,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          67.3,
+          178.65,
+          4.65
+        ],
+        [
+          70.7,
+          185.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "58cacb0d7d3847fbcc0bb76f9ee877958453259980135ff726afbe7253a3072e"
+    },
+    {
+      "name": "index_segment1_dark_faceplate",
+      "asset": "index_segment1_dark_faceplate",
+      "mesh": "generated/meshes/index_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 461.11090489039736,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          48.09090899090909,
+          126.9999999,
+          19.142085905120233
+        ],
+        [
+          68.9090910090909,
+          152.6852698183855,
+          20.50909100909091
+        ]
+      ],
+      "sha256_stl": "6969d56255f048fce1ca29f1bf113c5555e0b0e0f81b6b7cc973b9aee89a6dca"
+    },
+    {
+      "name": "index_joint_pin_0",
+      "asset": "index_joint_pin_0",
+      "mesh": "generated/meshes/index_joint_pin_0.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          41.9,
+          113.6,
+          4.6
+        ],
+        [
+          74.0,
+          120.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "34dfcf2f156daf66a7eb31246d54340d91e492a020a55a23fa6ef39f750b4d97"
+    },
+    {
+      "name": "index_segment2_segment_shell",
+      "asset": "index_segment2_segment_shell",
+      "mesh": "generated/meshes/index_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10090.64525456798,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          44.299999899999996,
+          173.9999999,
+          -3.3000001000000005
+        ],
+        [
+          72.7000001,
+          240.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "cddb0269e07760ad7931fce3b2e0603802abee7c5506c4cc991dbd009e94cb12"
+    },
+    {
+      "name": "index_segment2_proximal_bushing",
+      "asset": "index_segment2_proximal_bushing",
+      "mesh": "generated/meshes/index_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921155,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          50.3,
+          178.65,
+          4.65
+        ],
+        [
+          66.7,
+          185.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "e7b3dcf17be54c699ae502a2f7576c4a17f609f0dd4219391edba0954cbc4bab"
+    },
+    {
+      "name": "index_segment2_distal_left_bushing",
+      "asset": "index_segment2_distal_left_bushing",
+      "mesh": "generated/meshes/index_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922681,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          46.3,
+          228.65,
+          4.65
+        ],
+        [
+          49.7,
+          235.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "cd0a9364ebe7560854859beb4b9736defce6a2f6b07078ceb496a7f66c9174b6"
+    },
+    {
+      "name": "index_segment2_distal_right_bushing",
+      "asset": "index_segment2_distal_right_bushing",
+      "mesh": "generated/meshes/index_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922681,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          67.3,
+          228.65,
+          4.65
+        ],
+        [
+          70.7,
+          235.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "09e583c49fb6c8d72b50515247d686ebb3fd44a0ef68090c063f2aeb401936c6"
+    },
+    {
+      "name": "index_segment2_dark_faceplate",
+      "asset": "index_segment2_dark_faceplate",
+      "mesh": "generated/meshes/index_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 489.2192437500021,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          48.1249999,
+          191.9999999,
+          18.8962499
+        ],
+        [
+          68.8750001,
+          219.1500001,
+          20.475000100000003
+        ]
+      ],
+      "sha256_stl": "360c33eeb614cd611e76fa1b1f2de60bc29b52c2ab3ccea182899f6f59cf683b"
+    },
+    {
+      "name": "index_joint_pin_1",
+      "asset": "index_joint_pin_1",
+      "mesh": "generated/meshes/index_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          41.9,
+          178.6,
+          4.6
+        ],
+        [
+          74.0,
+          185.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "fb170bd12a8f24339f68dc9e78075c099db099b88eebca4484c84f5a560dc740"
+    },
+    {
+      "name": "index_segment3_tip_core",
+      "asset": "index_segment3_tip_core",
+      "mesh": "generated/meshes/index_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 5235.258910089319,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          47.9999999,
+          223.9999999,
+          -1.3000001000000012
+        ],
+        [
+          69.0000001,
+          260.0000001,
+          17.0000001
+        ]
+      ],
+      "sha256_stl": "5d9b70d0e4b87a093a89d4ba6e11ecd8b4cfc3290088c9827437a44d6b9d49c3"
+    },
+    {
+      "name": "index_segment3_proximal_bushing",
+      "asset": "index_segment3_proximal_bushing",
+      "mesh": "generated/meshes/index_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.8399278292044,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          50.3,
+          228.65,
+          4.65
+        ],
+        [
+          66.7,
+          235.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "2bc8b4f67a46bcf1620e0925e85a459ad45f03aa053d5959b706b1aa3c269066"
+    },
+    {
+      "name": "index_segment3_rounded_tip_cap",
+      "asset": "index_segment3_rounded_tip_cap",
+      "mesh": "generated/meshes/index_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.2713331667624,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          45.5,
+          250.0,
+          -3.0
+        ],
+        [
+          71.5,
+          264.0,
+          19.0
+        ]
+      ],
+      "sha256_stl": "8ecb7d840a49cb50d3637ba943f96f08c595a76cdc4d5cf191831eed49a67d42"
+    },
+    {
+      "name": "index_joint_pin_2",
+      "asset": "index_joint_pin_2",
+      "mesh": "generated/meshes/index_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          41.9,
+          228.6,
+          4.6
+        ],
+        [
+          74.0,
+          235.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "35e358b674652312e12f735998c455b222e6f8bd2c04a78f34d6aa340914b746"
+    },
+    {
+      "name": "middle_spread_housing",
+      "asset": "middle_spread_housing",
+      "mesh": "generated/meshes/middle_spread_housing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 3522.510762837633,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          4.0,
+          111.5,
+          -2.0
+        ],
+        [
+          35.0,
+          142.5,
+          3.0
+        ]
+      ],
+      "sha256_stl": "251361d709e3c90fa7d6379bcc35e2af6327a6a4516ebfddf21117621a6703c2"
+    },
+    {
+      "name": "middle_spread_ring",
+      "asset": "middle_spread_ring",
+      "mesh": "generated/meshes/middle_spread_ring.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_joint",
+      "volume_mm3": 888.2853228025335,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          9.0,
+          116.5,
+          3.0
+        ],
+        [
+          30.0,
+          137.5,
+          6.0
+        ]
+      ],
+      "sha256_stl": "b9d1700129356d7c31fd3937fafaf6475a3d5898f0bb7b8a2c9e258d3d3a3d65"
+    },
+    {
+      "name": "middle_root_fork_-13",
+      "asset": "middle_root_fork_-13",
+      "mesh": "generated/meshes/middle_root_fork_-13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344606,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          5.0,
+          118.5,
+          -3.0
+        ],
+        [
+          8.0,
+          135.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "4afa509ac10136c33298fd7fd800b92f784155c20a20373dd03b9ad1516e5104"
+    },
+    {
+      "name": "middle_root_fork_13",
+      "asset": "middle_root_fork_13",
+      "mesh": "generated/meshes/middle_root_fork_13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344606,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          31.0,
+          118.5,
+          -3.0
+        ],
+        [
+          34.0,
+          135.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "7afa6e25d3b0383e84e5a81491db0eb7a2711481b1dba9f1e7d4f16bfecabb40"
+    },
+    {
+      "name": "middle_segment1_segment_shell",
+      "asset": "middle_segment1_segment_shell",
+      "mesh": "generated/meshes/middle_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 11896.336548981191,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          5.2999999,
+          118.9999999,
+          -3.3000001000000005
+        ],
+        [
+          33.700000100000004,
+          205.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "bb0c1b3cff9fb41ed63a206a2b4460b5ce73e0f2c866445a02144cdc513c9f7d"
+    },
+    {
+      "name": "middle_segment1_proximal_bushing",
+      "asset": "middle_segment1_proximal_bushing",
+      "mesh": "generated/meshes/middle_segment1_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.8399278292044,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          11.3,
+          123.65,
+          4.65
+        ],
+        [
+          27.7,
+          130.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "7cfb7b6320148f400b1300bad0e608e073a3752004cd529c883410352efc9fcf"
+    },
+    {
+      "name": "middle_segment1_distal_left_bushing",
+      "asset": "middle_segment1_distal_left_bushing",
+      "mesh": "generated/meshes/middle_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922529,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          7.300000000000001,
+          193.65,
+          4.65
+        ],
+        [
+          10.700000000000001,
+          200.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "09ebfd38381493deccba211d252c8c88557dbb25128e934d3eecf5b753208cd2"
+    },
+    {
+      "name": "middle_segment1_distal_right_bushing",
+      "asset": "middle_segment1_distal_right_bushing",
+      "mesh": "generated/meshes/middle_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922532,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          28.3,
+          193.65,
+          4.65
+        ],
+        [
+          31.700000000000003,
+          200.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "9407dcab299123303dc2509f4b7b383ca2c9c24a35cb0a81aaf600050a01eccb"
+    },
+    {
+      "name": "middle_segment1_dark_faceplate",
+      "asset": "middle_segment1_dark_faceplate",
+      "mesh": "generated/meshes/middle_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 552.3681379694041,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          9.083333233333335,
+          136.9999999,
+          19.1046209894321
+        ],
+        [
+          29.916666766666665,
+          167.72273473407364,
+          20.516666766666667
+        ]
+      ],
+      "sha256_stl": "c6aa1d5d862559a0661af1481eb0f9080262a91ce3ab02773ee2c0d053625472"
+    },
+    {
+      "name": "middle_joint_pin_0",
+      "asset": "middle_joint_pin_0",
+      "mesh": "generated/meshes/middle_joint_pin_0.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          2.8999999999999986,
+          123.6,
+          4.6
+        ],
+        [
+          35.0,
+          130.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "b8e43c0595cc51dc146a10432d7de1ab7db1b04addadd2da8af076813fe81022"
+    },
+    {
+      "name": "middle_segment2_segment_shell",
+      "asset": "middle_segment2_segment_shell",
+      "mesh": "generated/meshes/middle_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10090.645254567973,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          5.2999999,
+          188.9999999,
+          -3.3000001000000005
+        ],
+        [
+          33.700000100000004,
+          255.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "965b85616cd670f3929fa421b1e8c82d06b223d80aef9206affcf83115918dde"
+    },
+    {
+      "name": "middle_segment2_proximal_bushing",
+      "asset": "middle_segment2_proximal_bushing",
+      "mesh": "generated/meshes/middle_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          11.3,
+          193.65,
+          4.65
+        ],
+        [
+          27.7,
+          200.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "c65bb2b8dc67c2607df78a17bcb4ff4574f7d1623222d622013ad3b69da676d3"
+    },
+    {
+      "name": "middle_segment2_distal_left_bushing",
+      "asset": "middle_segment2_distal_left_bushing",
+      "mesh": "generated/meshes/middle_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922674,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          7.300000000000001,
+          243.65,
+          4.65
+        ],
+        [
+          10.7,
+          250.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "77f4e8cc0be57fc23eff3f744842f0a5df24b4c9c0a97249094b3dd47db822f0"
+    },
+    {
+      "name": "middle_segment2_distal_right_bushing",
+      "asset": "middle_segment2_distal_right_bushing",
+      "mesh": "generated/meshes/middle_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          28.3,
+          243.65,
+          4.65
+        ],
+        [
+          31.7,
+          250.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "c793562cde003f576f8ae4219beca18c49fba9478ab4fbbf2c8b4756bc0f2203"
+    },
+    {
+      "name": "middle_segment2_dark_faceplate",
+      "asset": "middle_segment2_dark_faceplate",
+      "mesh": "generated/meshes/middle_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 489.21924375000197,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          9.1249999,
+          206.9999999,
+          18.8962499
+        ],
+        [
+          29.875000100000005,
+          234.1500001,
+          20.475000100000003
+        ]
+      ],
+      "sha256_stl": "3390d35ebbffb33f7ed93d4f52a874444158c8c692fb14641aaaee5f3fb930bf"
+    },
+    {
+      "name": "middle_joint_pin_1",
+      "asset": "middle_joint_pin_1",
+      "mesh": "generated/meshes/middle_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          2.8999999999999986,
+          193.6,
+          4.6
+        ],
+        [
+          35.0,
+          200.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "431efc7c6e19a00ebdd8e629dab55cd04b5412d38a9058d2467ef56124f2bb28"
+    },
+    {
+      "name": "middle_segment3_tip_core",
+      "asset": "middle_segment3_tip_core",
+      "mesh": "generated/meshes/middle_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 5495.002903748497,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          8.9999999,
+          238.9999999,
+          -1.3000001000000012
+        ],
+        [
+          30.000000100000005,
+          277.0000001,
+          17.0000001
+        ]
+      ],
+      "sha256_stl": "3b77f39aa7ca696128e47301b1ff1697adaf7b2857ea2ff2a584aad8abf0bde2"
+    },
+    {
+      "name": "middle_segment3_proximal_bushing",
+      "asset": "middle_segment3_proximal_bushing",
+      "mesh": "generated/meshes/middle_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782920427,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          11.3,
+          243.65,
+          4.65
+        ],
+        [
+          27.7,
+          250.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "319c295a92ef305ca18ef989de70ea17defbdede6fac6d586c28ec1e9b583591"
+    },
+    {
+      "name": "middle_segment3_rounded_tip_cap",
+      "asset": "middle_segment3_rounded_tip_cap",
+      "mesh": "generated/meshes/middle_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.2713331667633,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          6.5,
+          267.0,
+          -3.0
+        ],
+        [
+          32.5,
+          281.0,
+          19.0
+        ]
+      ],
+      "sha256_stl": "a2f02e618b6d7b9c84d61337f697f3ef8a28b60e2c6fca4ddd0df32a2707f2c9"
+    },
+    {
+      "name": "middle_joint_pin_2",
+      "asset": "middle_joint_pin_2",
+      "mesh": "generated/meshes/middle_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          2.8999999999999986,
+          243.6,
+          4.6
+        ],
+        [
+          35.0,
+          250.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "f0fa9e3d9b2b754ae65370ae6b7766f8df6dac50439786e4d97794e308d953d7"
+    },
+    {
+      "name": "ring_spread_housing",
+      "asset": "ring_spread_housing",
+      "mesh": "generated/meshes/ring_spread_housing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 3522.5107628376336,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -35.0,
+          105.5,
+          -2.0
+        ],
+        [
+          -4.0,
+          136.5,
+          3.0
+        ]
+      ],
+      "sha256_stl": "61edc50d45a692986da6e61262bf9cad4f95b188e7debab2fd3e72f3c272d333"
+    },
+    {
+      "name": "ring_spread_ring",
+      "asset": "ring_spread_ring",
+      "mesh": "generated/meshes/ring_spread_ring.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_joint",
+      "volume_mm3": 888.2853228025333,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -30.0,
+          110.5,
+          3.0
+        ],
+        [
+          -9.0,
+          131.5,
+          6.0
+        ]
+      ],
+      "sha256_stl": "fefb72db4c97bed21130c3ad061cc034ef2eba7f4c76d131e98c074b7a55255d"
+    },
+    {
+      "name": "ring_root_fork_-13",
+      "asset": "ring_root_fork_-13",
+      "mesh": "generated/meshes/ring_root_fork_-13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344608,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -34.0,
+          112.5,
+          -3.0
+        ],
+        [
+          -31.0,
+          129.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "b17bca347174d81190c14cf171e95912046c3d0cd7d140be32186bd5eba76f35"
+    },
+    {
+      "name": "ring_root_fork_13",
+      "asset": "ring_root_fork_13",
+      "mesh": "generated/meshes/ring_root_fork_13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344608,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -8.0,
+          112.5,
+          -3.0
+        ],
+        [
+          -5.0,
+          129.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "b3745e0a044904af57a274061feb150d9a6f5b68cb8e08997eda0fb3dc72428b"
+    },
+    {
+      "name": "ring_segment1_segment_shell",
+      "asset": "ring_segment1_segment_shell",
+      "mesh": "generated/meshes/ring_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10571.937063781888,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -33.700000100000004,
+          112.9999999,
+          -3.3000001000000005
+        ],
+        [
+          -5.2999999,
+          191.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "b479ddc6cbfa52bb814127161049f10ba291406370bc7c65f1f9ee7e3a52f3e5"
+    },
+    {
+      "name": "ring_segment1_proximal_bushing",
+      "asset": "ring_segment1_proximal_bushing",
+      "mesh": "generated/meshes/ring_segment1_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -27.7,
+          117.65,
+          4.65
+        ],
+        [
+          -11.3,
+          124.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "188f7fe09ecd653fa2040e0c6d8402133e150d2ca15659da53f32881cb1d541d"
+    },
+    {
+      "name": "ring_segment1_distal_left_bushing",
+      "asset": "ring_segment1_distal_left_bushing",
+      "mesh": "generated/meshes/ring_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -31.700000000000003,
+          179.65,
+          4.65
+        ],
+        [
+          -28.3,
+          186.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "488e2aeff49ed552e93b3fb8d47d04d95acaa2d6327814baf446b9da30e85965"
+    },
+    {
+      "name": "ring_segment1_distal_right_bushing",
+      "asset": "ring_segment1_distal_right_bushing",
+      "mesh": "generated/meshes/ring_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922674,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -10.7,
+          179.65,
+          4.65
+        ],
+        [
+          -7.3,
+          186.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "48e6f9baa0504b06d636a54f85557af6476bf1166e913f0e5d9caaf0789d21d1"
+    },
+    {
+      "name": "ring_segment1_dark_faceplate",
+      "asset": "ring_segment1_dark_faceplate",
+      "mesh": "generated/meshes/ring_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 406.2154568571859,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -29.903846253840005,
+          130.9999999,
+          19.16809096424499
+        ],
+        [
+          -9.096153746154,
+          153.659264759261,
+          20.503846253846003
+        ]
+      ],
+      "sha256_stl": "35d33f7ae01652f0bfb834a632c55647b63fe89c85a40aec7eea273a00f3e5e0"
+    },
+    {
+      "name": "ring_joint_pin_0",
+      "asset": "ring_joint_pin_0",
+      "mesh": "generated/meshes/ring_joint_pin_0.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -36.1,
+          117.6,
+          4.6
+        ],
+        [
+          -4.0,
+          124.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "309389951741263cc30ba0706bcce6a76f0a225f95ef0c9fe111e6616c829ccb"
+    },
+    {
+      "name": "ring_segment2_segment_shell",
+      "asset": "ring_segment2_segment_shell",
+      "mesh": "generated/meshes/ring_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10090.645254567973,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -33.700000100000004,
+          174.9999999,
+          -3.3000001000000005
+        ],
+        [
+          -5.2999999,
+          241.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "2b334a9dba9976e83931fff1d03c682fcff4268c70675e8b3b1dfb3e1f9b2343"
+    },
+    {
+      "name": "ring_segment2_proximal_bushing",
+      "asset": "ring_segment2_proximal_bushing",
+      "mesh": "generated/meshes/ring_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -27.7,
+          179.65,
+          4.65
+        ],
+        [
+          -11.3,
+          186.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "8eb8d4da11ff5e24a7074712772241749b1b349ebcaa3f38b1bc28649ff90f78"
+    },
+    {
+      "name": "ring_segment2_distal_left_bushing",
+      "asset": "ring_segment2_distal_left_bushing",
+      "mesh": "generated/meshes/ring_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -31.700000000000003,
+          229.65,
+          4.65
+        ],
+        [
+          -28.3,
+          236.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "e53c4f1deedcc6c693144f5cabeda2124b0dde30edc0ed4cdb49ee69e31b3c64"
+    },
+    {
+      "name": "ring_segment2_distal_right_bushing",
+      "asset": "ring_segment2_distal_right_bushing",
+      "mesh": "generated/meshes/ring_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922674,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -10.7,
+          229.65,
+          4.65
+        ],
+        [
+          -7.3,
+          236.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "fb76cf5ac54c7450963f9095ef20db76f4c65d77250160ec3079d003ffd5fee3"
+    },
+    {
+      "name": "ring_segment2_dark_faceplate",
+      "asset": "ring_segment2_dark_faceplate",
+      "mesh": "generated/meshes/ring_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 489.2192437500018,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -29.875000100000005,
+          192.9999999,
+          18.8962499
+        ],
+        [
+          -9.1249999,
+          220.1500001,
+          20.475000100000003
+        ]
+      ],
+      "sha256_stl": "54814b1d372cc3fc0b32d248bc143864329e0caf92f3d599c20feea90c2f05fa"
+    },
+    {
+      "name": "ring_joint_pin_1",
+      "asset": "ring_joint_pin_1",
+      "mesh": "generated/meshes/ring_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -36.1,
+          179.6,
+          4.6
+        ],
+        [
+          -4.0,
+          186.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "9b218426434d99790b445840d5e28228ffea7a88d261bab016caf8cf57a9c3f6"
+    },
+    {
+      "name": "ring_segment3_tip_core",
+      "asset": "ring_segment3_tip_core",
+      "mesh": "generated/meshes/ring_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 5235.258910089319,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -30.000000100000005,
+          224.9999999,
+          -1.3000001000000012
+        ],
+        [
+          -8.9999999,
+          261.0000001,
+          17.0000001
+        ]
+      ],
+      "sha256_stl": "2bff9b255f90a3382f60aebc8caeb0f06d05050b8821e8641d8fe179d276d193"
+    },
+    {
+      "name": "ring_segment3_proximal_bushing",
+      "asset": "ring_segment3_proximal_bushing",
+      "mesh": "generated/meshes/ring_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782920427,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -27.7,
+          229.65,
+          4.65
+        ],
+        [
+          -11.3,
+          236.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "d6f52363118bd14fa293cf6750227f6013afc874036af72000c6c62b143c93c1"
+    },
+    {
+      "name": "ring_segment3_rounded_tip_cap",
+      "asset": "ring_segment3_rounded_tip_cap",
+      "mesh": "generated/meshes/ring_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.2713331667624,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -32.5,
+          251.0,
+          -3.0
+        ],
+        [
+          -6.5,
+          265.0,
+          19.0
+        ]
+      ],
+      "sha256_stl": "11bdf03626550e63d8172c81725457f2bb36194b2df378388a434a91c8147d58"
+    },
+    {
+      "name": "ring_joint_pin_2",
+      "asset": "ring_joint_pin_2",
+      "mesh": "generated/meshes/ring_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -36.1,
+          229.6,
+          4.6
+        ],
+        [
+          -4.0,
+          236.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "22346db8fe5d42e3c57cda56fae866d6a94b3681521c3014d537d90359056601"
+    },
+    {
+      "name": "little_spread_housing",
+      "asset": "little_spread_housing",
+      "mesh": "generated/meshes/little_spread_housing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 3522.5107628376327,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -74.0,
+          90.5,
+          -2.0
+        ],
+        [
+          -43.0,
+          121.5,
+          3.0
+        ]
+      ],
+      "sha256_stl": "c30ce8576536f7da6b159aecd259d8726983f50f4bf4afc460816e45b53e3d44"
+    },
+    {
+      "name": "little_spread_ring",
+      "asset": "little_spread_ring",
+      "mesh": "generated/meshes/little_spread_ring.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_joint",
+      "volume_mm3": 888.2853228025335,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -69.0,
+          95.5,
+          3.0
+        ],
+        [
+          -48.0,
+          116.5,
+          6.0
+        ]
+      ],
+      "sha256_stl": "2a64396bcf5ec19196df37dfed531beb0423bb074a6064ade81e20542b55cf08"
+    },
+    {
+      "name": "little_root_fork_-13",
+      "asset": "little_root_fork_-13",
+      "mesh": "generated/meshes/little_root_fork_-13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344606,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -73.0,
+          97.5,
+          -3.0
+        ],
+        [
+          -70.0,
+          114.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "31a86bf66ccbfcc635e716ca1913d69802cc46860a40be94c4324f003c12683e"
+    },
+    {
+      "name": "little_root_fork_13",
+      "asset": "little_root_fork_13",
+      "mesh": "generated/meshes/little_root_fork_13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_joint",
+      "volume_mm3": 758.7831578344606,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -47.0,
+          97.5,
+          -3.0
+        ],
+        [
+          -44.0,
+          114.5,
+          16.5
+        ]
+      ],
+      "sha256_stl": "1bc16f079d90d4b0db551dabc658edd16c52ca6c9c1cca7f400af01af1264a24"
+    },
+    {
+      "name": "little_segment1_segment_shell",
+      "asset": "little_segment1_segment_shell",
+      "mesh": "generated/meshes/little_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 9414.135460192156,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -72.7000001,
+          97.9999999,
+          -3.3000001000000005
+        ],
+        [
+          -44.299999899999996,
+          169.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "49ae6739e62d6e8a2bf685d85347badbe0c39e504a829e7e02157a24b7a08da2"
+    },
+    {
+      "name": "little_segment1_proximal_bushing",
+      "asset": "little_segment1_proximal_bushing",
+      "mesh": "generated/meshes/little_segment1_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921155,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -66.7,
+          102.65,
+          4.65
+        ],
+        [
+          -50.3,
+          109.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "7de50ba2724b5eb35da59cd53de714218e4c681f669107c3714958fafd969262"
+    },
+    {
+      "name": "little_segment1_distal_left_bushing",
+      "asset": "little_segment1_distal_left_bushing",
+      "mesh": "generated/meshes/little_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922681,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -70.7,
+          157.65,
+          4.65
+        ],
+        [
+          -67.3,
+          164.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "3cfae6bed6e92798a2a5067caa29d76329584c3f55d63212e06a468c262d2502"
+    },
+    {
+      "name": "little_segment1_distal_right_bushing",
+      "asset": "little_segment1_distal_right_bushing",
+      "mesh": "generated/meshes/little_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922681,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -49.7,
+          157.65,
+          4.65
+        ],
+        [
+          -46.3,
+          164.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "342bdf062b889c67c2d82d5440550ac7c707764235d073be40907ae742cc4b92"
+    },
+    {
+      "name": "little_segment1_dark_faceplate",
+      "asset": "little_segment1_dark_faceplate",
+      "mesh": "generated/meshes/little_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 277.57235921762674,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -68.88888898888,
+          115.9999999,
+          19.242559997193
+        ],
+        [
+          -48.111111011111,
+          131.584795726313,
+          20.488888988889002
+        ]
+      ],
+      "sha256_stl": "4f31f21e7ef7c097d0542a77139abd09b1e7d70ae9f362b7b2a704437fa7ec77"
+    },
+    {
+      "name": "little_joint_pin_0",
+      "asset": "little_joint_pin_0",
+      "mesh": "generated/meshes/little_joint_pin_0.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -75.1,
+          102.6,
+          4.6
+        ],
+        [
+          -43.0,
+          109.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "effc3b50b0d528d39c9c9e8887b0f5048541820f1825a666b645a2d292edb690"
+    },
+    {
+      "name": "little_segment2_segment_shell",
+      "asset": "little_segment2_segment_shell",
+      "mesh": "generated/meshes/little_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 9763.355852636501,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -72.7000001,
+          152.9999999,
+          -3.3000001000000005
+        ],
+        [
+          -44.299999899999996,
+          217.0000001,
+          19.2000001
+        ]
+      ],
+      "sha256_stl": "2e24dc6b2de39a7c0685523d411e952cb6dc6fb7397b7559cab2e666daa6b27c"
+    },
+    {
+      "name": "little_segment2_proximal_bushing",
+      "asset": "little_segment2_proximal_bushing",
+      "mesh": "generated/meshes/little_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921155,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -66.7,
+          157.65,
+          4.65
+        ],
+        [
+          -50.3,
+          164.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "467d77d5fe62de091b7a426c895e0857b0b4e105c898d6bc669849d66011ffc0"
+    },
+    {
+      "name": "little_segment2_distal_left_bushing",
+      "asset": "little_segment2_distal_left_bushing",
+      "mesh": "generated/meshes/little_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922681,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -70.7,
+          205.65,
+          4.65
+        ],
+        [
+          -67.3,
+          212.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "e1953286c42434b59feacdb388e5089f9035090a90a1f4584f824682adc15304"
+    },
+    {
+      "name": "little_segment2_distal_right_bushing",
+      "asset": "little_segment2_distal_right_bushing",
+      "mesh": "generated/meshes/little_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922681,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -49.7,
+          205.65,
+          4.65
+        ],
+        [
+          -46.3,
+          212.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "e4dd970ad4ab8909039e3f939c0a975f0bcf368110b611c77e477f39034bbc4f"
+    },
+    {
+      "name": "little_segment2_dark_faceplate",
+      "asset": "little_segment2_dark_faceplate",
+      "mesh": "generated/meshes/little_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 453.2658749999807,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -68.86842115262999,
+          170.9999999,
+          18.906578847368
+        ],
+        [
+          -48.131578847368,
+          196.1500001,
+          20.468421152632
+        ]
+      ],
+      "sha256_stl": "16929db5a23036a6c731d2802518c12d1e334b81e4f9e147d528875677959426"
+    },
+    {
+      "name": "little_joint_pin_1",
+      "asset": "little_joint_pin_1",
+      "mesh": "generated/meshes/little_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -75.1,
+          157.6,
+          4.6
+        ],
+        [
+          -43.0,
+          164.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "446d449a70914e4ca220739a33236de9246fa3aefde273756920763141229d31"
+    },
+    {
+      "name": "little_segment3_tip_core",
+      "asset": "little_segment3_tip_core",
+      "mesh": "generated/meshes/little_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 4715.961177402098,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -69.0000001,
+          200.9999999,
+          -1.3000001000000012
+        ],
+        [
+          -47.9999999,
+          233.0000001,
+          17.0000001
+        ]
+      ],
+      "sha256_stl": "f82f3236dcd87b56df7e27ea32afab8a4dc4aaab6696fbe74d7c7600717e944f"
+    },
+    {
+      "name": "little_segment3_proximal_bushing",
+      "asset": "little_segment3_proximal_bushing",
+      "mesh": "generated/meshes/little_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.8399278292044,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -66.7,
+          205.65,
+          4.65
+        ],
+        [
+          -50.3,
+          212.35,
+          11.35
+        ]
+      ],
+      "sha256_stl": "378b41481effa62a05e82f785a0476b5f22d1f216eaa903fa8f58aad3a24a28c"
+    },
+    {
+      "name": "little_segment3_rounded_tip_cap",
+      "asset": "little_segment3_rounded_tip_cap",
+      "mesh": "generated/meshes/little_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.271333166763,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -71.5,
+          223.0,
+          -3.0
+        ],
+        [
+          -45.5,
+          237.0,
+          19.0
+        ]
+      ],
+      "sha256_stl": "887da061538a150a6de798c49b3e043748d2a7d0b900df08e2928a69ea6c848f"
+    },
+    {
+      "name": "little_joint_pin_2",
+      "asset": "little_joint_pin_2",
+      "mesh": "generated/meshes/little_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281819,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          -75.1,
+          205.6,
+          4.6
+        ],
+        [
+          -43.0,
+          212.4,
+          11.4
+        ]
+      ],
+      "sha256_stl": "1f3a0e9739104dfe5c619a52f9047f7bd4c5db1d588f2b1f6b93847e840250af"
+    },
+    {
+      "name": "thumb_spread_housing",
+      "asset": "thumb_spread_housing",
+      "mesh": "generated/meshes/thumb_spread_housing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_joint",
+      "volume_mm3": 3522.510762837634,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          30.5,
+          18.5,
+          -2.0
+        ],
+        [
+          61.5,
+          49.5,
+          3.0
+        ]
+      ],
+      "sha256_stl": "b22a2d884bc0b4a62b93cd950bc8461f10f6ee2931351cd29f22b771c63b435a"
+    },
+    {
+      "name": "thumb_spread_ring",
+      "asset": "thumb_spread_ring",
+      "mesh": "generated/meshes/thumb_spread_ring.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_joint",
+      "volume_mm3": 1969.7785938008008,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          31.0,
+          19.0,
+          4.0
+        ],
+        [
+          61.0,
+          49.0,
+          7.0
+        ]
+      ],
+      "sha256_stl": "1beeef6f9c0722cfbe84738979f5ac9908e4a9552afb2b088b6fc0812f1a7f7b"
+    },
+    {
+      "name": "thumb_root_fork_-13",
+      "asset": "thumb_root_fork_-13",
+      "mesh": "generated/meshes/thumb_root_fork_-13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_joint",
+      "volume_mm3": 1109.7831578344828,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          29.428660892437428,
+          34.88067974488375,
+          5.0
+        ],
+        [
+          42.65418358646765,
+          49.83179810696464,
+          37.5
+        ]
+      ],
+      "sha256_stl": "8f5bbdceaad24be556536ee23f239d7c38c8579670a0d30c2ce18ebc26fc9e5b"
+    },
+    {
+      "name": "thumb_root_fork_13",
+      "asset": "thumb_root_fork_13",
+      "mesh": "generated/meshes/thumb_root_fork_13.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_joint",
+      "volume_mm3": 1109.7831578344865,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          49.345816413530315,
+          18.16820189303374,
+          5.0
+        ],
+        [
+          62.57133910756065,
+          33.11932025511455,
+          37.5
+        ]
+      ],
+      "sha256_stl": "ab149fd3325be3790d26ab0ed72c6599e1156841ca21c2476011f917f759a397"
+    },
+    {
+      "name": "thumb_segment1_thenar_shell",
+      "asset": "thumb_segment1_thenar_shell",
+      "mesh": "generated/meshes/thumb_segment1_thenar_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 11982.841193948405,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          34.72934347755586,
+          22.729343477555858,
+          14.320742099893907
+        ],
+        [
+          90.34107138784344,
+          81.566800721188,
+          43.25663953836539
+        ]
+      ],
+      "sha256_stl": "70e214cad96559cf358d0ad65bbb51c88f9aa5a44520e0331906a1bef346673d"
+    },
+    {
+      "name": "thumb_segment1_proximal_bushing",
+      "asset": "thumb_segment1_proximal_bushing",
+      "mesh": "generated/meshes/thumb_segment1_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 328.8399278292047,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          37.56509707397448,
+          26.162892716121803,
+          25.65
+        ],
+        [
+          54.43490292602552,
+          41.8371072838782,
+          32.35
+        ]
+      ],
+      "sha256_stl": "d0af03740f120e30d446d2b10980bba7f1d5a783e9c4bd95e883740045ece3ff"
+    },
+    {
+      "name": "thumb_segment1_distal_left_bushing",
+      "asset": "thumb_segment1_distal_left_bushing",
+      "mesh": "generated/meshes/thumb_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137922537,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          70.10095903134886,
+          69.93488130326699,
+          16.52727382132153
+        ],
+        [
+          77.60522617009362,
+          76.96657776250973,
+          22.440262650908824
+        ]
+      ],
+      "sha256_stl": "720af63992b05eaef2e605c2b2cb5ced743befa97d409682f21048782e12b03a"
+    },
+    {
+      "name": "thumb_segment1_distal_right_bushing",
+      "asset": "thumb_segment1_distal_right_bushing",
+      "mesh": "generated/meshes/thumb_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137922539,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          78.6735347985603,
+          67.63786654938806,
+          35.55973734909118
+        ],
+        [
+          86.17780193730506,
+          74.66956300863082,
+          41.47272617867847
+        ]
+      ],
+      "sha256_stl": "bdd1294b61690a2ac69fe15880a33f3a748c018b813f7afba3273e3ab7b58429"
+    },
+    {
+      "name": "thumb_joint_pin_0",
+      "asset": "thumb_joint_pin_0",
+      "mesh": "generated/meshes/thumb_joint_pin_0.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281822,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          31.098184371290728,
+          22.504703163620682,
+          25.6
+        ],
+        [
+          59.15926408771724,
+          47.274825427401076,
+          32.4
+        ]
+      ],
+      "sha256_stl": "14f88fba950e235eaa44930a64bdf4cd1b6bd75463537cfa4425770e3a680de2"
+    },
+    {
+      "name": "thumb_segment2_segment_shell",
+      "asset": "thumb_segment2_segment_shell",
+      "mesh": "generated/meshes/thumb_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 9271.738314071405,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          67.45757900465247,
+          63.47517021049626,
+          11.988770359020714
+        ],
+        [
+          101.98792851745687,
+          125.03346290419606,
+          46.01122964097929
+        ]
+      ],
+      "sha256_stl": "ae00c69bcad8a4799caded66cf2d8b7dbf038fdc355158c9e59fc222c830541b"
+    },
+    {
+      "name": "thumb_segment2_proximal_bushing",
+      "asset": "thumb_segment2_proximal_bushing",
+      "mesh": "generated/meshes/thumb_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 328.8399278292122,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          71.7338306060558,
+          68.07539316917453,
+          20.15250496946813
+        ],
+        [
+          84.54493036259812,
+          76.52905114272326,
+          37.847495030531874
+        ]
+      ],
+      "sha256_stl": "1fca53bdae1d23672797e3032cefb6fe6376bfd114a26350d2b1677677625021"
+    },
+    {
+      "name": "thumb_segment2_distal_left_bushing",
+      "asset": "thumb_segment2_distal_left_bushing",
+      "mesh": "generated/meshes/thumb_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137922688,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          81.74781606096231,
+          113.40154348627506,
+          16.52727382132153
+        ],
+        [
+          89.25208319970706,
+          120.43323994551781,
+          22.44026265090882
+        ]
+      ],
+      "sha256_stl": "b896ffefba1469518f6c658cab1fbabec99b54845fe7e559535b60cfd154ddde"
+    },
+    {
+      "name": "thumb_segment2_distal_right_bushing",
+      "asset": "thumb_segment2_distal_right_bushing",
+      "mesh": "generated/meshes/thumb_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137922685,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          90.32039182817373,
+          111.10452873239613,
+          35.55973734909118
+        ],
+        [
+          97.82465896691848,
+          118.13622519163889,
+          41.47272617867847
+        ]
+      ],
+      "sha256_stl": "e4fb2218821a4a75c295561f57893839870f27f4c4ac6ee2a3a49c696c4fdb32"
+    },
+    {
+      "name": "thumb_segment2_dark_faceplate",
+      "asset": "thumb_segment2_dark_faceplate",
+      "mesh": "generated/meshes/thumb_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 399.32652857139914,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          65.65552451327858,
+          83.55596185873353,
+          24.56089304135882
+        ],
+        [
+          80.80540281510717,
+          107.17760812952164,
+          43.58798264415996
+        ]
+      ],
+      "sha256_stl": "0cabbb5d1ff91759a8fde7f9c4448d2111e5e347074c9a063cbb0df09a2738e8"
+    },
+    {
+      "name": "thumb_joint_pin_1",
+      "asset": "thumb_joint_pin_1",
+      "mesh": "generated/meshes/thumb_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.50598122818246,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          68.25915607305001,
+          68.61880685280643,
+          12.518388645273232
+        ],
+        [
+          86.29252688116527,
+          77.49755703556158,
+          43.89300722254947
+        ]
+      ],
+      "sha256_stl": "798a28b3f1f03a5e3910e0241cc98922c5439bfb445c532cd724e9d3656c572a"
+    },
+    {
+      "name": "thumb_segment3_tip_core",
+      "asset": "thumb_segment3_tip_core",
+      "mesh": "generated/meshes/thumb_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 4715.9611774021,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          79.21741808513086,
+          106.94183239350434,
+          16.483178477756205
+        ],
+        [
+          106.51197736654555,
+          141.76834423051392,
+          41.516821522243795
+        ]
+      ],
+      "sha256_stl": "3bebd958c9b4e895b909bee95db4db9147635d645a744b41a263bef69738fb56"
+    },
+    {
+      "name": "thumb_segment3_proximal_bushing",
+      "asset": "thumb_segment3_proximal_bushing",
+      "mesh": "generated/meshes/thumb_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 328.83992782920484,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          83.38068763566923,
+          111.5420553521826,
+          20.15250496946813
+        ],
+        [
+          96.19178739221154,
+          119.99571332573133,
+          37.847495030531874
+        ]
+      ],
+      "sha256_stl": "8346d312248621f9829b1438b5c2732674213e304be445f2baa2c46c1e8d5ea6"
+    },
+    {
+      "name": "thumb_segment3_rounded_tip_cap",
+      "asset": "thumb_segment3_rounded_tip_cap",
+      "mesh": "generated/meshes/thumb_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 3459.271333166762,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          79.55811052254631,
+          125.90937191108105,
+          13.227049986930556
+        ],
+        [
+          110.88476439964036,
+          146.19728147097373,
+          44.77295001306945
+        ]
+      ],
+      "sha256_stl": "e382609cf0b62fd358ee5d841017708c90ffdf654bc9c892a2f3e7fe48ce7416"
+    },
+    {
+      "name": "thumb_joint_pin_2",
+      "asset": "thumb_joint_pin_2",
+      "mesh": "generated/meshes/thumb_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281825,
+      "valid": true,
+      "solid_count": 1,
+      "bbox_mm": [
+        [
+          79.90601310266344,
+          112.08546903581448,
+          12.518388645273232
+        ],
+        [
+          97.93938391077869,
+          120.96421921856964,
+          43.89300722254947
+        ]
+      ],
+      "sha256_stl": "f4db0bb4567025b9ebcf145a370b19eb39f363b45cd3a262c132f0e1544bbfcf"
+    }
+  ],
+  "arm_reference": [
+    {
+      "name": "AK_elbow_flex",
+      "asset": "AK_elbow_flex",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_elbow_flex.stl",
+      "mesh_units": "m",
+      "sha256_stl": "f4d0de2be857a058282069834fdfdf22a5f9af25dae866595ad5e1692859fb70",
+      "reference_only": true
+    },
+    {
+      "name": "AK_forearm_roll",
+      "asset": "AK_forearm_roll",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_forearm_roll.stl",
+      "mesh_units": "m",
+      "sha256_stl": "e173a2bf5c2e0072a6cf42566c000d52dd12b192c0906b476467d0e886b3be50",
+      "reference_only": true
+    },
+    {
+      "name": "AK_wrist_flex",
+      "asset": "AK_wrist_flex",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_wrist_flex.stl",
+      "mesh_units": "m",
+      "sha256_stl": "3816312eeb4d620de62c9e0d3ccec8d2126f5fb8603698d610e8a25bea8bd703",
+      "reference_only": true
+    },
+    {
+      "name": "AK_wrist_deviation",
+      "asset": "AK_wrist_deviation",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_wrist_deviation.stl",
+      "mesh_units": "m",
+      "sha256_stl": "476a59c49e6da0c8c104538260d496f63b117b80136ce3e8a759e5eda7d35b28",
+      "reference_only": true
+    },
+    {
+      "name": "Elbow_fixed_cradle",
+      "asset": "Elbow_fixed_cradle",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Elbow_fixed_cradle.stl",
+      "mesh_units": "m",
+      "sha256_stl": "7cd3338ccb3557262673a448c34511ffa7bc69ae83db9a0375266ef64ddac01d",
+      "reference_only": true
+    },
+    {
+      "name": "Elbow_roll_carrier",
+      "asset": "Elbow_roll_carrier",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Elbow_roll_carrier.stl",
+      "mesh_units": "m",
+      "sha256_stl": "3a5f9e56da8beea4a942a2c0c70a22b797447e25a7b92fb358fc1654bc649097",
+      "reference_only": true
+    },
+    {
+      "name": "Forearm_box_beam",
+      "asset": "Forearm_box_beam",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Forearm_box_beam.stl",
+      "mesh_units": "m",
+      "sha256_stl": "fc2f294f0a23d66d36dd5defdf80981a88812ae9e60db765a8a3af722be7bf4d",
+      "reference_only": true
+    },
+    {
+      "name": "Roll_output_flange",
+      "asset": "Roll_output_flange",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Roll_output_flange.stl",
+      "mesh_units": "m",
+      "sha256_stl": "8f0b26b51796ab796c5af2779997a06d8a17f89cff6e5e330d2cfdcdb327f0c3",
+      "reference_only": true
+    },
+    {
+      "name": "Wrist_box_carrier",
+      "asset": "Wrist_box_carrier",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Wrist_box_carrier.stl",
+      "mesh_units": "m",
+      "sha256_stl": "37cdc51a9ed6d6a76c07eff1c4a44b21d8e3f627dfc74369d595496cd6c22b41",
+      "reference_only": true
+    },
+    {
+      "name": "Palm_wrist_saddle",
+      "asset": "Palm_wrist_saddle",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Palm_wrist_saddle.stl",
+      "mesh_units": "m",
+      "sha256_stl": "420ea2c3c674cdf7ab04ff879718ce867e75b4d718495d7bbc22277a5650ddf7",
+      "reference_only": true
+    }
+  ]
+}

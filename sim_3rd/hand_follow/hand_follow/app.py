@@ -7,7 +7,7 @@ import traceback
 import numpy as np
 from .cad_hand import CadHand
 from .diagnostics import SessionLog
-from .pipeline import PosePipeline, FIST
+from .pipeline import PosePipeline
 from .sources import LatestFrameCamera, VideoFileSource, SyntheticSource
 PROJECT = Path(__file__).resolve().parents[1]
 
@@ -15,12 +15,15 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--repo', type=Path, default=PROJECT.parents[1])
     ap.add_argument('--source', default='0')
+    ap.add_argument('--cad', default='webcam_articulation_v1',
+                    choices=('webcam_articulation_v1', 'form_candidate_v1'))
     ap.add_argument('--fps', type=int, default=30)
     ap.add_argument('--width', type=int, default=640)
     ap.add_argument('--height', type=int, default=480)
     ap.add_argument('--model', type=Path, default=PROJECT / 'models' / 'hand_landmarker.task')
     ap.add_argument('--log-dir', type=Path, default=Path('D:/Codex-work/robot-hand-workspace/work/hand_follow_sessions'))
-    ap.add_argument('--calibration', type=Path, default=PROJECT / 'calibration_v3.json')
+    ap.add_argument('--calibration', type=Path,
+                    help='optional profile; the new CAD uses a separate default profile')
     ap.add_argument('--no-gui', action='store_true')
     ap.add_argument('--whole', action='store_true', help='include reference forearm')
     ap.add_argument('--seconds', type=float, default=0)
@@ -28,18 +31,21 @@ def main(argv=None):
     ap.add_argument('--min-cutoff', type=float, default=2.0)
     ap.add_argument('--swap-handedness', action='store_true', help='diagnostic override only')
     a = ap.parse_args(argv)
+    if a.calibration is None:
+        a.calibration = PROJECT / ('calibration_articulation_v1.json' if a.cad == 'webcam_articulation_v1' else 'calibration_v3.json')
     robot = tracker = source = ui = log = None
     error = None
     try:
-        robot = CadHand(a.repo, whole=a.whole)
+        robot = CadHand(a.repo, whole=a.whole, cad=a.cad)
         pipeline = PosePipeline(robot.design, robot.ranges, a.calibration, a.beta, a.min_cutoff)
         log = SessionLog(a.log_dir, dict(
             source=a.source, requested_fps=a.fps, cad_source=str(robot.source),
             cad_hashes=robot.hashes, preview='kinematic', calibration=str(a.calibration),
             calibration_snapshot=dict(offset_deg=pipeline.calibration.offset,
                                       gain=pipeline.calibration.gain,
-                                      estimated_dip_indices=pipeline.calibration.coupled_dips),
-            thumb_mapping='position_fit_outside_fist_v1',
+                                      estimated_dip_indices=pipeline.calibration.coupled_dips,
+                                      estimated_dip_ratios=pipeline.calibration.dip_ratios),
+            thumb_mapping='position_fit_with_design_joint_frames',
             filter=dict(beta=a.beta, min_cutoff=a.min_cutoff)))
         if a.source == 'synthetic':
             source = SyntheticSource(fps=a.fps, noise_m=0)
@@ -86,9 +92,10 @@ def main(argv=None):
             if capturing and pipeline.capture_kind is None:
                 log.event('calibration_finished', message=pipeline.message,
                           offset_deg=pipeline.calibration.offset, gain=pipeline.calibration.gain,
-                          estimated_dip_indices=pipeline.calibration.coupled_dips)
+                          estimated_dip_indices=pipeline.calibration.coupled_dips,
+                          estimated_dip_ratios=pipeline.calibration.dip_ratios)
             if testing:
-                pose['command_deg'] = FIST.copy()
+                pose['command_deg'] = pipeline.fist.copy()
             robot.set(pose['command_deg'])
             command_time = time.perf_counter()
             processing_fps = 0.9 * processing_fps + 0.1 / max(command_time - previous_loop, 0.001)
