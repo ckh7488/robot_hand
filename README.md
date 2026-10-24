@@ -1,58 +1,112 @@
-# Robot hand — CAD 검토와 체크포인트
+# Robot Hand
 
-사람의 손과 팔 동작을 빠르게 따라 하는 3D 프린트 로봇 손을 설계하는 저장소입니다. 손가락 20축과 팔 4축을 검토합니다. **현재는 조립·배선·구동 검토용 후보이며, 제작 승인이나 실시간 추종 성능을 검증한 완성품이 아닙니다.**
+**사람의 손과 팔 동작을 빠르게 따라 하는 3D 프린트 로봇 손·전완을 만드는 프로젝트입니다.**
 
-**[진행 흐름만 보기 → PROGRESS.md](PROGRESS.md)**
+손가락 20축과 팔 4축을 갖춘 구조를 설계하며, CAD 모델과 함께 조립성, 관절 간섭, 배선 공간, 구동계 검토 자료를 관리합니다. 실제 손의 움직임보다 여유 있는 구동 속도, 직접 출력하고 조립할 수 있는 구조, 약 500만 원의 예산을 목표로 합니다.
 
-![덮개 나사 수정 후보](cad/assembly_fixes_v13/reviews/cover_fix_preview.png)
+![로봇 손·손목·전완의 정면, 사선, 측면 CAD 배치](cad/modular_roots_v9/reviews/whole_hand_forearm.png)
 
-## 지금 볼 것
+*V9 기준의 손·전완 전체 배치입니다. 현재 손 조립 수정 후보는 V13이며, 팔 모터는 외곽 모델로 표현되어 있습니다.*
 
-- [CP002 덮개 나사 수정과 남은 문제](checkpoints/CP002.md)
-- [CP001 커밋 후 재검토](docs/reviews/CP001_c738a40.md)
-- [V13 손 조립 후보](cad/assembly_fixes_v13/V13_hand_packaging.FCStd) — 덮개와 나사 5개만 V12에서 변경.
-- [V12 손 전체 CAD](cad/audit_fixes_v12/V12_hand_packaging.FCStd) — FreeCAD 1.0에서 열기. 엄지 공구 통로 수정 기준이며 팔 전체 조립 파일은 아닙니다.
-- [V9 손+전완 전체 CAD](cad/modular_roots_v9/hand_forearm_v9.FCStd) / [STEP](cad/modular_roots_v9/hand_forearm_v9.step) — 독립 감사를 받은 동결 기준본.
-- [V12 엄지 수정 부품 STEP](cad/audit_fixes_v12/parts/Thumb_metacarpal_tool_access.step)
-- [독립 V9 감사 보고서](cad/audit_fixes_v12/received_audit/V9_audit_package/V9_audit_report.md)
-- [커밋 후 재검토 절차](docs/CHECKPOINT_WORKFLOW.md)
+> 현재는 CAD 설계와 조립·배선·구동 검토 단계입니다. 제작 승인과 실제 하드웨어의 실시간 추종 성능 검증은 아직 완료하지 않았습니다.
 
-## 버전 구분
+[프로젝트 구성](#프로젝트-구성) · [CAD 살펴보기](#cad-살펴보기) · [검토 방법](#검토-방법) · [다음 개발 과제](#다음-개발-과제) · [개정 이력](#개정-이력)
 
-| 폴더 | 역할 | 현재 해석 |
+## 프로젝트 구성
+
+| 항목 | 내용 |
+| --- | --- |
+| 손 | 다섯 손가락에 총 20축을 배치한 모터 직결 구조 |
+| 팔 | 팔꿈치 굽힘, 전완 회전, 손목 굽힘·편위의 4축 |
+| 기구 | 3D 프린트 부품, 분리 가능한 손가락 뿌리 모듈, 모터 프레임과 체결 부품 |
+| 설계 자료 | FreeCAD 조립 파일, STEP·STL 부품, 형상 생성·검사 코드와 검토 결과 |
+| 목표 예산 | 약 500만 원. 구동계 변경을 반영한 최종 부품 목록(BOM)은 미확정 |
+
+V9 기준 손바닥 폭은 **232 mm**, 손 질량은 CAD와 밀도 가정으로 계산한 **약 1.335 kg**입니다. 현재 설계는 모터를 직접 배치한 큰 구조이며, 질량은 실물 측정값이 아닙니다.
+
+## CAD 살펴보기
+
+저장소를 내려받은 뒤 `.FCStd` 파일은 **FreeCAD 1.0**에서, `.step` 파일은 STEP을 지원하는 CAD 도구에서 열 수 있습니다. 형상을 살펴보는 데에는 Python 분석 환경을 설치할 필요가 없습니다.
+
+| 살펴볼 내용 | 파일 | 범위 |
 | --- | --- | --- |
-| cad/modular_roots_v9 | 동결된 감사 기준본 | 해시 222개 보존. 팔 모터 부족 등 알려진 미달 항목 포함 |
-| cad/wiring_access_v10 | 고정 출선과 엄지 채널 후보 | 완성된 전기 배선 아님 |
-| cad/service_loops_v11 | 새끼손가락 가이드·기하 루프 후보 | 실제 전선 유연체/수명 시뮬레이션 아님 |
-| cad/audit_fixes_v12 | 엄지 공구 통로 수정 기준 | 엄지 공구 통로 수정, 오차 여유 및 구동 대안 검토 |
-| cad/assembly_fixes_v13 | 현재 덮개 체결 후보 | 감사의 깊은 주먹 t=.99 접촉 해소. t=1은 덮개 여유 0.665mm로 미달 |
+| 현재 손 조립 | [V13 FreeCAD](cad/assembly_fixes_v13/V13_hand_packaging.FCStd) | V12에서 덮개와 덮개 나사 5개를 수정한 후보 |
+| 손·전완 전체 구조 | [V9 FreeCAD](cad/modular_roots_v9/hand_forearm_v9.FCStd) · [STEP](cad/modular_roots_v9/hand_forearm_v9.step) | 독립 감사를 받은 동결 기준본. 알려진 미해결 항목 포함 |
+| 엄지 공구 통로 수정 | [V12 FreeCAD](cad/audit_fixes_v12/V12_hand_packaging.FCStd) · [수정 부품 STEP](cad/audit_fixes_v12/parts/Thumb_metacarpal_tool_access.step) | V13의 바탕이 되는 손 조립 |
 
-V9 손은 약 1.335 kg이며, 손바닥 폭 232 mm인 큰 직결 구동 구조입니다. 이전 소형 상자 모델의 속도·토크 결과는 이 CAD에 적용하지 않습니다. XL330-M077이 목표 속도를 충족한다는 실측 근거는 아직 없습니다.
+V12·V13 파일은 **손 조립**입니다. 손목·전완을 포함한 전체 구조는 V9 파일에서 확인하세요. V10·V11의 배선 자료는 별도 후보 연구이며, 완성된 전체 하네스를 뜻하지 않습니다.
 
-## 검토 환경과 빠른 확인
+## 저장소 구조
 
-분석 환경: Python 3.12, requirements-audit.txt의 버전. CAD 검사는 FreeCAD 1.0에 포함된 별도 Python 환경에서 실행합니다. Windows에서는 pythonw.exe와 숨김 실행을 사용합니다. FreeCADCmd 창을 열지 않습니다.
+```text
+cad/
+├── index_joint_v1/       # 초기 단일 관절의 체결·배선 연구
+├── modular_roots_v8/     # V9 검토에 사용한 이전 기준 자료
+├── modular_roots_v9/     # 동결된 손·전완 CAD와 감사 기준 자료
+├── wiring_access_v10/    # 모터 출선 경로와 엄지 배선 채널 후보
+├── service_loops_v11/    # 전선 가이드와 관절 사이 여유 루프 후보
+├── audit_fixes_v12/      # 엄지 공구 통로 수정과 감사 후속 검토
+└── assembly_fixes_v13/   # 현재 덮개 체결 수정 후보
+tools/                   # 체크포인트·형상·오프라인 자세 검사
+sources/                 # 제조사 CAD와 규격 원본
+docs/                    # 작업 절차, 입력 설명, 커밋 후 검토 기록
+checkpoints/             # 변경 단위별 상세 기록과 파일 해시 목록
+PROGRESS.md              # 작업 진행 요약
+```
 
-명령을 실행할 환경이 준비되었다면 다음 읽기 전용 검사부터 시작합니다.
+현재 손의 치수와 기준 자세는 [V9 설계 입력](cad/modular_roots_v9/design.json)에 있습니다. 루트의 `robot_config.json`은 이전 모델의 호환 입력도 포함하므로, 현재 CAD의 질량·속도 근거로 사용하지 않습니다. 자세한 입력 관계는 [생성기 입력 안내](docs/GENERATOR_INPUTS.md)를 참고하세요.
 
-~~~text
+## 검토 방법
+
+### 환경
+
+- 분석 기준 환경: **Python 3.12**, [requirements-audit.txt](requirements-audit.txt)의 패키지 버전.
+- 정확한 CAD 형상 재검사: **FreeCAD 1.0에 포함된 별도 Python 환경**.
+- Windows의 분석·CAD 작업은 `pythonw.exe`를 숨김으로 실행하고 결과를 로그로 받습니다. 실행 방식은 [검토 절차](docs/CHECKPOINT_WORKFLOW.md)에 정리되어 있습니다.
+
+### 기본 확인
+
+분석 환경을 준비한 후 저장소 루트에서 아래 검사를 실행합니다. 아래 `python`은 분석용 인터프리터를 뜻하며, Windows에서는 위의 숨김 실행 방식을 적용합니다.
+
+```text
 python verify_audit_evidence.py --full
 python cad/modular_roots_v9/kinematics_numpy.py
 python tools/check_checkpoint.py
 python tools/test_offline_pose_guard.py
-~~~
+```
 
-이 검사는 저장된 증거의 보존·일관성과 일부 형상을 확인합니다. 전체 동역학, 모든 조립 순서, 모든 연속 자세의 충돌을 승인하는 검사는 아닙니다. 정확한 CAD 재검사와 깨끗한 커밋 사본 검토는 docs/CHECKPOINT_WORKFLOW.md를 따릅니다.
+이 검사는 동결 자료의 보존, 저장 결과의 일관성, 기준 자세의 관절 배치, 일부 출력 형상과 오프라인 제한 코드의 동작을 확인합니다. 전체 동역학이나 모든 연속 자세의 충돌을 검증하는 절차는 아닙니다.
 
-safe_joint_limits.json과 tools/offline_pose_guard.py는 V9의 네 벌림 관절 오차 상자에 대한 부분 오프라인 검사입니다. 전체 관절 제한이 아니며 V13이나 실물 구동을 승인하지 않습니다.
+[safe_joint_limits.json](safe_joint_limits.json)과 [오프라인 자세 검사](tools/offline_pose_guard.py)는 **V9의 네 벌림 관절에 대한 제한된 오차 범위**만 다룹니다. 전체 관절 한계나 V13·실물 구동 승인으로 사용할 수 없습니다. 동결된 V9 자료와 기존 검사 결과는 덮어쓰지 않고, 재계산은 [별도 작업 사본에서 진행](docs/CHECKPOINT_WORKFLOW.md)합니다.
 
-## 다음 설계 우선순위
+## 다음 개발 과제
 
-1. 팔 구동: 실제 관성·속도·열·추가 부품 질량을 포함해 감속/중력 보상/모터 교체 중 선택.
-2. 대표 손가락 실측: 정지 처짐, 실제 하중에서의 속도, 전류 제한과 전선 저항 토크.
-3. 동시에 변하는 벌림 관절의 오차 여유 확보와 전체 관절 한계 작성.
-4. 20개 모터 전체 배선·너트 유지·공구 접근·FDM 동하중 검토.
+| 과제 | 현재 상태와 다음 작업 |
+| --- | --- |
+| 손가락 간섭 여유 | V13에서 감사의 깊은 주먹 자세 `t=.99`의 덮개 나사 접촉을 해소했습니다. 최대 주먹 `t=1`의 덮개 간격은 약 **0.665 mm**로, 목표 **1 mm**에 미달합니다. |
+| 조립·배선 | 너트 낙하 방지, 공구 접근, 20개 모터 전체 연결과 전원 분배, 전선의 반복 굽힘 검토가 남아 있습니다. |
+| 관절 제한 | 여러 벌림 관절이 동시에 변할 때의 오차 여유를 확보하고, 나머지 관절까지 한계를 정해야 합니다. |
+| 팔 구동계 | 현재 모터 구성의 부족을 해결하기 위해 실제 관성·속도·열·추가 질량을 반영해 감속, 중력 보상, 모터 교체를 검토해야 합니다. |
+| 실물 검증 | 대표 손가락의 하중별 속도·처짐·전류·온도와 배선 저항 토크, FDM 출력물의 체결 강도·반복 하중을 확인해야 합니다. |
 
-500만 원 목표 예산은 유지하지만, 수정된 구동계를 포함한 최종 BOM은 아직 확정하지 않았습니다.
+위 `t`는 시간이 아닌 주먹 경로의 매개변수입니다. XL330-M077의 목표 속도 충족 여부는 아직 실측하지 않았으며, 이전 소형 상자 모델의 속도·토크 결과는 현재 CAD에 적용하지 않습니다.
 
-제조사 CAD와 규격의 출처는 각 sources 폴더에 보존합니다. 이 저장소에 별도의 일괄 라이선스를 부여하지 않습니다. [최초 가져오기 범위](docs/IMPORT_SCOPE.json)를 참고하세요.
+## 자료 출처와 이용 범위
+
+제조사 CAD와 규격 출처는 루트 및 각 CAD 폴더의 `sources/`에 보존합니다. 이 저장소에는 별도의 일괄 라이선스를 부여하지 않았습니다. 이전 작업 자료에서 가져온 범위와 제외 항목은 [최초 가져오기 기록](docs/IMPORT_SCOPE.json)에 정리되어 있습니다.
+
+## 개정 이력
+
+설계 버전은 변경 내용을 기준으로 구분합니다. **V9는 보존 기준본이고, V13은 현재 손 조립 후보**입니다. 버전 번호가 올라갔다고 전체 구조의 검증이 완료된 것은 아닙니다.
+
+| 버전 | 주요 변경 | 기록 |
+| --- | --- | --- |
+| V9 | 손·전완 모듈 구조를 감사 기준본으로 동결. 형상·코드·결과 해시 222개 보존 | [독립 감사 보고서](cad/audit_fixes_v12/received_audit/V9_audit_package/V9_audit_report.md) |
+| V10 | 모터 고정 출선 경로와 엄지 배선 채널 후보 추가 | [배선 검토](cad/wiring_access_v10/README.txt) |
+| V11 | 새끼손가락 전선 가이드와 기하학적 여유 루프 후보 추가 | [루프 검토](cad/service_loops_v11/README.txt) |
+| V12 | 엄지 공구 통로 수정, 벌림 오차 여유와 구동 대안 검토 | [CP001](checkpoints/CP001.md) · [커밋 후 재검토](docs/reviews/CP001_c738a40.md) |
+| V13 | 덮개 나사 5개 매립과 제한된 V9 오프라인 자세 검사 추가 | [CP002](checkpoints/CP002.md) · [커밋 후 재검토](docs/reviews/CP002_f4739db.md) |
+
+- **2026-10-24 · README 정리:** 프로젝트 소개와 전체 CAD 이미지를 앞에 배치하고, 파일 안내·검토 방법·개발 과제·개정 이력 순서로 재구성했습니다. CAD와 검사 코드는 변경하지 않았습니다.
+
+작업별 진행 상황은 [PROGRESS.md](PROGRESS.md), 상세 변경과 재검토 근거는 [체크포인트](checkpoints/)와 [검토 기록](docs/reviews/)에서 확인할 수 있습니다.
