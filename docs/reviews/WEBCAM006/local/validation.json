@@ -1,0 +1,17 @@
+{
+  "unit_tests": 75,
+  "unit_tests_passed": true,
+  "synthetic_frames": 4,
+  "explicit_captures": 2,
+  "exact_raw_coordinates": true,
+  "exact_screen_pixels": true,
+  "accepted_form_manifest_files": 132,
+  "accepted_form_poses": 33,
+  "live_initial_run": {
+    "frames": 713,
+    "hand_frames": 8,
+    "error": null,
+    "marked_cases": 0
+  },
+  "scope": "Code, same-frame capture, and frozen form checks; no live pose accuracy acceptance."
+}

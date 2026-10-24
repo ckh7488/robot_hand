@@ -184,4 +184,9 @@ class Calibration:
                 values = np.asarray(profile['fist_flex_deg'], float)
                 if values.shape != (4,3) or not np.isfinite(values).all() or np.max(np.abs(values)) > 180:
                     raise ValueError('Invalid fist flexion calibration')
+            for key in ('thumb_open_directions','thumb_fist_directions'):
+                if key in profile:
+                    values=np.asarray(profile[key],float)
+                    if values.shape!=(3,3) or not np.isfinite(values).all() or np.max(np.abs(np.linalg.norm(values,axis=1)-1))>.01:
+                        raise ValueError('Invalid thumb direction calibration')
         return cls(offset, gain, sorted(set(estimated)), ratios, profile)

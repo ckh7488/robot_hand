@@ -1,4 +1,4 @@
-"""Session diagnostics: numeric inputs and commands, never webcam pixels."""
+"""Continuous numeric diagnostics; explicit still captures live in captures.py."""
 import csv
 import datetime
 import json
@@ -33,7 +33,8 @@ class SessionLog:
         self.details = (self.directory / 'landmarks.jsonl').open('w', encoding='utf-8')
         self.events = (self.directory / 'events.jsonl').open('w', encoding='utf-8')
         metadata = dict(metadata, pid=os.getpid(), started=datetime.datetime.now().isoformat(),
-                        image_recording=False, joint_names=NAMES, log_schema=3)
+                        image_recording=False, user_requested_stills=True,
+                        joint_names=NAMES, log_schema=4)
         (self.directory / 'session.json').write_text(json.dumps(metadata, indent=2, default=plain), encoding='utf-8')
         (root / 'latest_session.json').write_text(json.dumps({'directory': str(self.directory), 'pid': os.getpid()}), encoding='utf-8')
         self.event('started')

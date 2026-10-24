@@ -8,6 +8,7 @@ import traceback
 import numpy as np
 from .cad_hand import CadHand
 from .diagnostics import SessionLog
+from .captures import PoseCaseRecorder, capture_displayed_frame, calibration_snapshot
 from .pipeline import PosePipeline
 from .sources import LatestFrameCamera, VideoFileSource, SyntheticSource
 PROJECT = Path(__file__).resolve().parents[1]
@@ -33,7 +34,8 @@ def main(argv=None):
     ap.add_argument('--beta', type=float)
     ap.add_argument('--min-cutoff', type=float)
     ap.add_argument('--swap-handedness', action='store_true', help='diagnostic override only')
-    ap.add_argument('--retarget', choices=('position', 'angles'), default='position')
+    ap.add_argument('--retarget', choices=('shape', 'position', 'angles'), default='shape',
+                    help='shape is an experimental joint-posture comparison, not an accepted replacement')
     ap.add_argument('--full-quality', action='store_true', help='full-size CAD render with shadows')
     ap.add_argument('--stabilize-motion', action='store_true',
                     help='experimental motion smoothing; reduces jumps but adds response delay')
@@ -51,7 +53,8 @@ def main(argv=None):
             signature = hashlib.sha256((a.form_preview / 'design.json').read_bytes()).hexdigest()[:16]
             a.calibration = PROJECT / f'calibration_preview_{a.retarget}_{signature}.json'
         else:
-            a.calibration = PROJECT / (f'calibration_pose_v2_{a.cad}.json' if a.retarget == 'position' else
+            a.calibration = PROJECT / (f'calibration_shape_{a.cad}.json' if a.retarget == 'shape' else
+                f'calibration_pose_v2_{a.cad}.json' if a.retarget == 'position' else
                 'calibration_articulation_v1.json' if a.cad == 'webcam_articulation_v1' else 'calibration_v3.json')
     robot = tracker = source = ui = log = None
     error = None
@@ -68,16 +71,13 @@ def main(argv=None):
             code_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path(__file__).parent.glob('*.py')},
             cad_hashes=robot.hashes, preview='proportion_mesh' if a.form_preview else 'kinematic',
             calibration=str(a.calibration),
-            calibration_snapshot=dict(offset_deg=pipeline.calibration.offset,
-                                      gain=pipeline.calibration.gain,
-                                      estimated_dip_indices=pipeline.calibration.coupled_dips,
-                                      estimated_dip_ratios=pipeline.calibration.dip_ratios,
-                                      position_profile=pipeline.calibration.position_profile),
+            calibration_snapshot=calibration_snapshot(pipeline.calibration),
             finger_mapping=a.retarget, render_quality='full' if a.full_quality else 'fast',
-            thumb_mapping='position_fit_with_design_joint_frames',
+            thumb_mapping='calibrated_posture_and_independent_features' if a.retarget=='shape' else 'position_fit_with_design_joint_frames',
             motion_stabilization=a.stabilize_motion,
             tracking_revision='legacy' if a.legacy_tracking else 'geometric_consistency_and_continuity_v1',
             filter=dict(beta=a.beta, min_cutoff=a.min_cutoff)))
+        cases = PoseCaseRecorder(log.directory)
         if a.source == 'synthetic':
             source = SyntheticSource(fps=a.fps, noise_m=0)
         else:
@@ -146,6 +146,11 @@ def main(argv=None):
             log.frame(seq, captured, command_time, detection, pose, robot.angles, timing, mode)
             if key in (ord('q'), 27):
                 break
+            elif key in (ord('s'), ord('S')) and ui:
+                capture_displayed_frame(cases, log, ui, pipeline, seq=seq,
+                    captured=captured, command_time=command_time, detection=detection,
+                    pose=pose, actual=robot.angles, timing=timing, mode=mode, view=view,
+                    camera_bgr=image, robot_rgb=rendered)
             elif key in (ord('1'), ord('2'), ord('3')):
                 view = key - ord('1')
             elif key in (ord('c'), ord('v')) and (not testing):

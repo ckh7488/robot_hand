@@ -15,14 +15,18 @@ class PreviewUI:
         self.fonts = {s: ImageFont.truetype(str(font), s) if font.exists() else ImageFont.load_default() for s in (14, 16, 19, 25)}
         self.action = None
         self.text_cache = {}
-        self.background = Image.new('RGB', (1440, 840), (20, 26, 36))
+        self.background = Image.new('RGB', (1440, 900), (20, 26, 36))
         self.static_ready = False
         self.timing_label_time = 0.
         self.display_timing = None
-        self.buttons = [(24, 680, 187, 724, 'C', '편 손 보정'), (199, 680, 362, 724, 'V', '주먹 보정'), (374, 680, 537, 724, 'T', '모델 테스트')]
+        self.capture_count = 0
+        self.notice, self.notice_until = '', 0.
+        self.last_canvas = None
+        self.buttons = [(24, 680, 187, 724, 'C', '편 손 보정'), (199, 680, 362, 724, 'V', '주먹 보정'),
+                        (374, 680, 537, 724, 'T', '모델 테스트'), (24, 736, 537, 780, 'S', '오류 자세 저장')]
         if not headless:
             cv2.namedWindow(TITLE, cv2.WINDOW_NORMAL)
-            cv2.resizeWindow(TITLE, 1368, 798)
+            cv2.resizeWindow(TITLE, 1368, 855)
             cv2.setMouseCallback(TITLE, self._mouse)
 
     def _mouse(self, event, x, y, flags, parameter):
@@ -30,6 +34,9 @@ class PreviewUI:
             for x1, y1, x2, y2, key, _ in self.buttons:
                 if x1 <= x <= x2 and y1 <= y <= y2:
                     self.action = ord(key.lower())
+
+    def notify(self, message, duration=4):
+        self.notice, self.notice_until = message, time.perf_counter()+duration
 
     def compose(self, frame, detection, rendered, pose, pipeline, timing, mode, view, debug=False):
         now = time.perf_counter()
@@ -73,8 +80,11 @@ class PreviewUI:
                 self.background.paste(label, (x+left, y+top), label)
         text(24, 19, '로봇 손 따라 하기', 25, '#f2f6fc', static=True)
         text(254, 28, '웹캠 → 손 관절 → CAD', 16, '#8ea3b9', static=True)
-        text(580, 25, pipeline.design.get('preview_label', '실제 CAD 120부품 / 20관절'), 19, '#e4edf7', static=True)
+        heading = '마디 자세 맞춤 · 웹캠 시험' if pipeline.retarget_mode == 'shape' else pipeline.design.get('preview_label', '실제 CAD 120부품 / 20관절')
+        text(580, 25, heading, 19, '#e4edf7', static=True)
         label = '모델 주먹 테스트 · 카메라 추종 일시정지' if mode == 'test' else '손 인식 중' if pose['tracked'] else '손이 보이지 않음 · 마지막 자세 유지'
+        if now < self.notice_until:
+            label = self.notice
         text(24, 78, label, 16, '#62dbc2' if pose['tracked'] and mode != 'test' else '#e8bc70')
         text(24, 510, '카메라', 19, static=True)
         text(277, 510, '화면', 19, static=True)
@@ -99,9 +109,10 @@ class PreviewUI:
             message = (f'{names} 끝마디 위치로 보완 중' if pose.get('finger_fit') else
                        f'{names} 끝마디는 가림으로 추정 중 · X 초기화')
         text(24, 650, message[:43], 14, '#e8bc70' if pose['warning'] else '#92b6c9')
-        text(24, 743, '1 정면  2 사선  3 측면   H 손 재선택', 14, static=True)
-        text(24, 770, 'X 보정 초기화   F 필터   D 진단   Q 종료', 14, static=True)
-        text(24, 801, '수치 로그 자동 기록 · 카메라 영상은 저장하지 않습니다', 14, '#788ea4', static=True)
+        text(400, 748, f'{self.capture_count}건 저장', 16, '#62dbc2')
+        text(24, 800, '1 정면  2 사선  3 측면   H 손 재선택', 14, static=True)
+        text(24, 825, 'X 보정 초기화   F 필터   D 진단   Q 종료', 14, static=True)
+        text(24, 856, '평소 수치만 기록 · S를 누를 때만 사진 저장', 14, '#788ea4', static=True)
         text(584, 788, '화면은 관절 자세 미리보기입니다', 14, '#8ea3b9')
         text(1210, 788, ['정면', '사선', '측면'][view % 3], 14, '#8ea3b9')
         if debug and pose['raw_deg'] is not None:
@@ -109,10 +120,13 @@ class PreviewUI:
             text(594, 102, '검지: 인식각 → 보정각 → 적용각 (벌림 / 뿌리 / 가운데 / 끝)', 16)
             for y, key in [(131, 'raw_deg'), (155, 'mapped_deg'), (179, 'command_deg')]:
                 text(594, y, key + '   ' + '  '.join((f'{v:6.1f}' for v in pose[key][:4])), 16)
-            limited=set(pose['clipped_joints']) | set(pose.get('finger_fit',{}).get('active_limits',[]))
+            limited=(set(pose['clipped_joints']) | set(pose.get('finger_fit',{}).get('active_limits',[])) |
+                     set(pose.get('shape_fit',{}).get('active_limits',[])) | set(pose.get('thumb_fit',{}).get('active_limits',[])))
             text(1100, 151, f"관절 제한 {len(limited)}개", 16)
-            if pose.get('thumb_fit'):
+            if 'tip_error_mm' in pose.get('thumb_fit',{}):
                 text(1100, 179, f"엄지 위치 오차 {pose['thumb_fit']['tip_error_mm']:.0f} mm", 16)
+            elif pose.get('thumb_fit',{}).get('estimated_root_posture'):
+                text(1100,179,'엄지 뿌리 자세 보완',16)
         self.static_ready = True
         canvas = np.array(image)
         # Changing ASCII counters do not need expensive Korean glyph layout
@@ -127,6 +141,7 @@ class PreviewUI:
 
     def show(self, *args, **kwargs):
         image = self.compose(*args, **kwargs)
+        self.last_canvas = image
         cv2.imshow(TITLE, cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
         key = cv2.waitKey(1) & 255
         if self.action is not None:

@@ -72,8 +72,10 @@ class HandTracker:
             self.label = max(set(self.label_votes), key=self.label_votes.count)
         world = np.array([[p.x, p.y, p.z] for p in res.hand_world_landmarks[index]])
         image = np.array([[p.x, p.y] for p in res.hand_landmarks[index]])
+        normalized = np.array([[p.x, p.y, p.z] for p in res.hand_landmarks[index]])
         self.palm_width = float(np.linalg.norm(image[5]-image[17]))
-        return dict(world=world, image=image, handedness=self.label, detected_handedness=cat.category_name, score=cat.score)
+        return dict(world=world, image=image, normalized=normalized, handedness=self.label,
+                    detected_handedness=cat.category_name, score=cat.score)
 
     def close(self):
         self.det.close()

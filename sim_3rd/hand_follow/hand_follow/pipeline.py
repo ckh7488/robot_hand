@@ -5,10 +5,11 @@ import numpy as np
 from .retarget import Calibration, raw_angles
 from .filters import OneEuro
 from .thumb import ThumbRetargeter
-from .fingers import FingerRetargeter, observations
+from .fingers import FingerRetargeter, observations, geometry_signature
 from .motion import MotionStabilizer
 from .observation import ObservationGuard
 from .continuity import ContinuousPoseFilter
+from .shape import ShapeRetargeter, thumb_directions, unit, geometry_signature as shape_signature
 
 FLEX = np.array([i for i in range(16) if i % 4 != 0])
 FIST = np.array([0, 80, 95, 70] * 4 + [-55, 50, 0, 0], float)
@@ -23,7 +24,7 @@ class PosePipeline:
         self.calibration = Calibration.load(self.calibration_path) if self.calibration_path.exists() else Calibration()
         self.open_calibrated = self.calibration_path.exists()
         self.fist_calibrated = bool(np.any(np.abs(self.calibration.gain - 1) > .01))
-        self.robust = retarget_mode == 'position' if robust is None else robust
+        self.robust = retarget_mode in ('position','shape') if robust is None else robust
         beta = (.012 if self.robust else .025) if beta is None else beta
         min_cutoff = (2.5 if self.robust else 2.) if min_cutoff is None else min_cutoff
         self.filter = OneEuro(20, min_cutoff, beta)
@@ -42,12 +43,14 @@ class PosePipeline:
         self.message = ''
         self.thumb = ThumbRetargeter(design, ranges) if 'fingers' in design else None
         self.fingers = FingerRetargeter(design, ranges) if retarget_mode == 'position' and 'fingers' in design else None
+        self.shape = ShapeRetargeter(design, ranges) if retarget_mode == 'shape' and 'fingers' in design else None
+        self.signature = shape_signature(design) if self.shape else geometry_signature(design) if self.fingers else None
         self.retarget_mode = retarget_mode
-        if self.fingers and self.calibration.position_profile.get('cad_signature') != self.fingers.signature:
+        if self.signature and self.calibration.position_profile.get('cad_signature') != self.signature:
             self.calibration = Calibration()
             self.open_calibrated = self.fist_calibrated = False
-            self.message = 'C 편 손 → V 주먹으로 손끝 위치를 보정하세요'
-        elif self.fingers:
+            self.message = 'C 편 손 → V 주먹으로 마디 자세를 보정하세요' if self.shape else 'C 편 손 → V 주먹으로 손끝 위치를 보정하세요'
+        elif self.signature:
             self.fist_calibrated = 'fist_tips' in self.calibration.position_profile
 
     def start_calibration(self, kind):
@@ -57,6 +60,8 @@ class PosePipeline:
             return
         self.capture_kind, self.capture_started, self.samples = kind, time.perf_counter(), []
         self.message = '손가락을 붙여 편 손을 유지하세요' if kind == 'open' else '주먹을 쥔 상태를 유지하세요'
+        if self.shape:
+            self.message = '엄지도 펴고 편 손을 유지하세요' if kind == 'open' else '엄지를 감싼 주먹을 유지하세요'
 
     def reselect_hand(self):
         """Forget observation identity, preserving the displayed pose on return."""
@@ -79,6 +84,8 @@ class PosePipeline:
             self.thumb.reset()
         if self.fingers:
             self.fingers.reset()
+        if self.shape:
+            self.shape.reset()
         self.message = '보정을 초기화했습니다'
 
     def _capture(self, raw, now, observed=None):
@@ -110,9 +117,12 @@ class PosePipeline:
                 return
             self.calibration = Calibration()
             self.calibration.capture_open_hand(med)
-            if self.fingers and all(sample[2] is not None for sample in self.samples):
-                self.calibration.position_profile = dict(schema=1, cad_signature=self.fingers.signature,
+            if self.signature and all(sample[2] is not None for sample in self.samples):
+                self.calibration.position_profile = dict(schema=1, cad_signature=self.signature,
                     open_tips=np.median([sample[2]['tips'] for sample in self.samples], axis=0).tolist())
+                if all('thumb_directions' in sample[2] for sample in self.samples):
+                    self.calibration.position_profile['thumb_open_directions'] = unit(np.median(
+                        [sample[2]['thumb_directions'] for sample in self.samples],axis=0)).tolist()
             self.open_calibrated, self.fist_calibrated = True, False
             self.message = '편 손 보정 완료 · 필요하면 V로 주먹 보정'
         else:
@@ -128,10 +138,13 @@ class PosePipeline:
             self.calibration.dip_ratios = {i: float(self.fist[i] / self.fist[i - 1]) for i in self.calibration.coupled_dips}
             observed = np.array([i for i in FLEX if i not in self.calibration.coupled_dips])
             self.calibration.gain[observed] = np.clip(self.fist[observed] / movement[observed], .5, 4)
-            if self.fingers and self.calibration.position_profile and all(sample[2] is not None for sample in self.samples):
+            if self.signature and self.calibration.position_profile and all(sample[2] is not None for sample in self.samples):
                 self.calibration.position_profile['fist_tips'] = np.median(
                     [sample[2]['tips'] for sample in self.samples], axis=0).tolist()
                 self.calibration.position_profile['fist_flex_deg'] = med[:16].reshape(4,4)[:,1:].tolist()
+                if all('thumb_directions' in sample[2] for sample in self.samples):
+                    self.calibration.position_profile['thumb_fist_directions'] = unit(np.median(
+                        [sample[2]['thumb_directions'] for sample in self.samples],axis=0)).tolist()
             self.fist_calibrated = True
             self.message = '주먹 보정 완료'
             if self.calibration.coupled_dips:
@@ -143,6 +156,8 @@ class PosePipeline:
         self.filter.reset()
         if self.fingers:
             self.fingers.reset()
+        if self.shape:
+            self.shape.reset()
         self.capture_kind = None
 
     def update(self, detection, capture_time, now=None):
@@ -192,11 +207,15 @@ class PosePipeline:
                 self.thumb.reset()
             if self.fingers:
                 self.fingers.reset()
+            if self.shape:
+                self.shape.reset()
         self.last_hand, self.last_seen = detection['handedness'], now
         dt = None if self.previous_capture is None else max(.001, min(.1, capture_time-self.previous_capture))
         self.previous_capture = capture_time
         try:
-            observed = observations(world, detection['handedness']) if self.fingers else None
+            observed = observations(world, detection['handedness']) if self.signature else None
+            if observed is not None:
+                observed['thumb_directions'] = thumb_directions(world,detection['handedness'])
         except ValueError as exc:
             if self.continuity:
                 self.continuity.hold(capture_time)
@@ -213,7 +232,11 @@ class PosePipeline:
         # Spread is poorly observed when the proximal bone faces the camera.
         # Progressively relax it toward neutral in a closed fist, without
         # coupling the four fingers' flexion or the PIP/DIP commands.
-        if self.fingers:
+        if self.shape:
+            mapped[:16] = self.shape.fingers(raw,self.calibration)
+            result['shape_fit'] = dict(mode='independent_joint_bends',
+                estimated_joints=self.calibration.coupled_dips.copy(),active_limits=self.shape.finger_limits.copy())
+        elif self.fingers:
             mapped[:16], result['finger_fit'] = self.fingers.solve(observed, raw, self.calibration, continuous=self.robust)
             result['estimated_joints'] = result['finger_fit']['estimated_joints']
         else:
@@ -226,9 +249,12 @@ class PosePipeline:
                 mapped[4*finger:4*finger+4] = self.last_mapped[4*finger:4*finger+4]
         if self.thumb and 4 not in quality['held_fingers']:
             try:
-                mapped[16:], result['thumb_fit'] = self.thumb.solve(
-                    world, detection['handedness'],
-                    np.clip(mapped, *self.ranges.T), raw[16:], dt=(dt or 1/30) if self.robust or self.motion else None)
+                if self.shape:
+                    mapped[16:], result['thumb_fit'] = self.shape.thumb(world,detection['handedness'],self.calibration)
+                else:
+                    mapped[16:], result['thumb_fit'] = self.thumb.solve(
+                        world, detection['handedness'],
+                        np.clip(mapped, *self.ranges.T), raw[16:], dt=(dt or 1/30) if self.robust or self.motion else None)
             except ValueError as exc:
                 if self.continuity:
                     self.continuity.hold(capture_time)
@@ -241,6 +267,8 @@ class PosePipeline:
             self.fingers.previous = mapped[:16].copy()
         if self.thumb:
             self.thumb.previous = mapped[16:].copy()
+        if self.shape:
+            self.shape.previous = mapped[16:].copy()
         if self.motion:
             filtered = self.motion(mapped, capture_time, smooth=self.filter_on)
             result['motion'] = dict(limited_joints=self.motion.limited_joints,
@@ -252,7 +280,7 @@ class PosePipeline:
             filtered = self.filter(mapped, capture_time) if self.filter_on else mapped.copy()
         command = np.clip(filtered, *self.ranges.T)
         clipped = np.flatnonzero(np.abs(command - filtered) > .1).tolist()
-        warning = ''
+        warning = result.get('thumb_fit',{}).get('warning','')
         if result.get('thumb_fit', {}).get('tip_error_mm', 0) > 25:
             warning = '엄지 목표가 CAD 가동 범위를 벗어남'
         if np.sum(raw[[2, 6, 10, 14]] < -25) >= 3:
