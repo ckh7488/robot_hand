@@ -1,0 +1,40 @@
+{
+  "scope": "Coordinate/mass-contract consistency only; no assembly or latency approval",
+  "tests_run": 13,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "evidence": {
+    "new_compiled_model": {
+      "contract_sha256": "a5a12a12ce296dbcdf96afb636668e325357492e4fb3d8727e1d504cba3e3bdd",
+      "pose_count": 28,
+      "max_position_difference_m": 5.793976409762536e-14,
+      "max_rotation_component_difference": 1.1296102941926733e-12,
+      "max_full_inertia_component_difference_kg_m2": 4.7255968127317416e-17,
+      "simulation_stepped": false
+    },
+    "webcam_frame_comparison": {
+      "pose_count": 28,
+      "joints_per_pose": 20,
+      "max_position_difference_m": 5.793976409762536e-14,
+      "max_rotation_component_difference": 1.1296102941926733e-12,
+      "max_axis_component_difference": 1.1296102941926733e-12,
+      "scope": "Kinematics only; mixed poses have no collision acceptance"
+    }
+  },
+  "source_sha256": {
+    "sim/articulation_drive_v2/test_adapter.py": "af1b9af7e47d19ad1e32d796fdab2e074001f1b34e77b395b4326bb678e74792",
+    "sim/articulation_drive_v2/model_adapter.py": "669901a5845da32f0d12c7d778ab579f76f72f0e59e4f0d843e3b52035963593",
+    "sim/articulation_drive_v2/build_contract.py": "ca0e6e420f322b02dded868131393fd3f16ca35109900447238d0443a4f7b8ab",
+    "sim/form_drive_v1/model_adapter.py": "6499f8cac525c77e1ee01a76bb4deced9d4a7f64de4aa619709a18d9d8c777b4",
+    "sim/articulation_drive_v2/reference_webcam_31ba43f/provenance.json": "7176413b140cdcf6678cb95b37d41e3117b12208c6c5c8c5dbf31cd7f8308e36",
+    "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/cad_hand.py": "38a512c236a46e3480c59f22719bc4caeb92dd4ffa2cef06caa0b71ee3bc07b9",
+    "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/retarget.py": "f52a6872497a5764444283ebf8257ce890f84c90282081ca4c868582bc57fbfc",
+    "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cad/webcam_articulation_v1/design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad/webcam_articulation_v1/generated/scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331"
+  },
+  "actual_contract_sha256": "a5a12a12ce296dbcdf96afb636668e325357492e4fb3d8727e1d504cba3e3bdd",
+  "details": []
+}

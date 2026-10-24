@@ -1,0 +1,22 @@
+{
+  "mass_scope": {
+    "included": "Every explicit scene.hand component of cad/articulation_drive_v2, including the new root assembly, aggregated by its declared rigid body using exact OCP solid volume, COM and full inertia with assumed material densities.",
+    "fixed_base": "Palm is fixed to the world. Its CAD mass is reported in the contract but does not move in this hand-only dynamics model.",
+    "excluded": "Reference arm, installed motor chassis, tendons, pulley/drive routing, wiring and any fasteners or retention parts absent from the hand CAD are excluded.",
+    "actuator_location_assumption": "All twenty equivalent actuators are fixed off the moving links. No complete installed twenty-motor assembly is represented or approved.",
+    "rotor_model": "Each compliant cable has the unchanged CP006 scalar equivalent rotor inertia. The compiler's fixed-location 1 g rotor-body dummy is not physical motor chassis mass.",
+    "measurement_status": "CAD plus assumed density; no measured mass, friction, backlash, damping, motor curve or sensor accuracy. Rigid grouping is not evidence of a physical attachment. Overlapping unfinished exterior parts are counted independently, so this is not an assembled hardware mass prediction."
+  },
+  "limitations": [
+    "The saved source CAD has remaining fabrication blockers; successful model compilation does not imply motion is mechanically possible.",
+    "New thumb axes and deep fist ranges are used; old geometry and old mass results are not substituted.",
+    "Twenty cable actuators with identity motor-angle mapping are an explicitly ideal-decoupled diagnostic assumption, not a routed transmission or selected design.",
+    "Motor, friction, compliance, PWM and controller parameters are uncalibrated comparison assumptions.",
+    "Finite-timestep convergence, missing/early events and tracking/hold errors must be reported together.",
+    "No camera or perception delay is included. Hardware50/100ms performance remains unverified.",
+    "Remaining intersections, disconnected interfaces, retention and strength must be checked separately. Intersecting volumes are counted as separate components, not boolean-unioned physical material.",
+    "No collision forces, contacts, cable bend geometry, external loads or wrist/arm motion are modeled. Requested fist poses and ranges are not automatically safe assembled travel.",
+    "The identity tendon Jacobian cannot establish packaging or physical removal of upstream motion and torque coupling. Actual transmission and missing assembly mass may change joint loads.",
+    "Current-derived torque limits and software PD are uncalibrated assumptions, not validated XL330 behavior."
+  ]
+}

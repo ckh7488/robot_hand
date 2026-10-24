@@ -1,0 +1,29 @@
+{
+  "reference_commit": "31ba43fd4ab6393945a612b46c7b279de11a5267",
+  "extraction": "git show <exact commit>:<path>; original bytes, no newline or source edits",
+  "purpose": "Read-only kinematic reference isolated from concurrent active webcam-app changes",
+  "source_repository": "This repository, same license scope",
+  "files": [
+    {
+      "source_path": "sim_3rd/hand_follow/hand_follow/cad_hand.py",
+      "snapshot_path": "hand_follow/cad_hand.py",
+      "git_blob": "c3dc91c20cba7324493a8a146aae83037f8c1fd8",
+      "size_bytes": 9146,
+      "sha256": "38a512c236a46e3480c59f22719bc4caeb92dd4ffa2cef06caa0b71ee3bc07b9"
+    },
+    {
+      "source_path": "sim_3rd/hand_follow/hand_follow/retarget.py",
+      "snapshot_path": "hand_follow/retarget.py",
+      "git_blob": "ea4aca55368b1ed60a7f455443c901005e3e04c9",
+      "size_bytes": 8556,
+      "sha256": "f52a6872497a5764444283ebf8257ce890f84c90282081ca4c868582bc57fbfc"
+    },
+    {
+      "source_path": "sim_3rd/hand_follow/hand_follow/__init__.py",
+      "snapshot_path": "hand_follow/__init__.py",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,777 @@
+{
+  "input_sha256": {
+    "cad/articulation_drive_v2/design.json": "3016ba3242d3e15c1b3ce183307e1de2511e659b2a74514635d150177b1f9363",
+    "cad/articulation_drive_v2/generated/parts/Cover_post_-18_104.step": "824d70d2ef03811c0b619f5c25e70c88742862c205402e0025b9e99d4d7167c4",
+    "cad/articulation_drive_v2/generated/parts/Cover_post_-44_33.step": "aea13910465004f0adc325ab69bd1cea5362c7b9e28428c26887e4ce9605e1a8",
+    "cad/articulation_drive_v2/generated/parts/Cover_post_-54_78.step": "d680c379b07ab5c4d2c3be8950beda1db09b1c582dee978e1482161b0043b2d5",
+    "cad/articulation_drive_v2/generated/parts/Cover_post_15_10.step": "edceaea4a3615fbc01eb0d4be074c39fa6318b459868f6f0fb468cac300bc36e",
+    "cad/articulation_drive_v2/generated/parts/Cover_post_16_29.step": "138c8959d47c41fafa46c553e2fbc69c8fe2ac1e508e30e43fdacc08e581a835",
+    "cad/articulation_drive_v2/generated/parts/Cover_post_46_88.step": "de118ea78fc2a9377c3c9d01adfd9ac764645c70027c0a56048e72a9141d06ee",
+    "cad/articulation_drive_v2/generated/parts/Cover_screw_-18_104.step": "6ac22dcaf824eddb820fde961d30b5c1914a6eac27bb0f17eda3c9ab6f69b9c7",
+    "cad/articulation_drive_v2/generated/parts/Cover_screw_-44_33.step": "6ba61a1669617632311f2770a8c2cae87eb6755a05c63eb128e749e07301767e",
+    "cad/articulation_drive_v2/generated/parts/Cover_screw_-54_78.step": "1faa908f90ba476a9e2c27195e70595b91f644b9c805c5d25320ee5dfed22416",
+    "cad/articulation_drive_v2/generated/parts/Cover_screw_15_10.step": "d488c14baa28fde74ca7d9ba1d7a1aa8d7546c9a18885c29842417950f38fa0b",
+    "cad/articulation_drive_v2/generated/parts/Cover_screw_16_29.step": "293488b0441ac5db288f596cb8de1e903b3ebff6d5a3a54e3b80a14b2929aade",
+    "cad/articulation_drive_v2/generated/parts/Cover_screw_46_88.step": "8e3ca56d0eeb557650bc1c26242ec4dbb10035e51c6bba676c818d2f4372f842",
+    "cad/articulation_drive_v2/generated/parts/index_flex_left_pin_washer.step": "511d664ad599092c4f033c9455774e65c1b9a883b33ec0769e91444f308d1f00",
+    "cad/articulation_drive_v2/generated/parts/index_flex_left_thrust_washer.step": "e5228824a6853ee4f49e055513928b7a55034a6d84e5e6669342c325666b755c",
+    "cad/articulation_drive_v2/generated/parts/index_flex_retaining_clip.step": "f8f6acffef31caf6d4a6832c29646b1a07f7b1dd79733f01bb582d1a9453253a",
+    "cad/articulation_drive_v2/generated/parts/index_flex_right_pin_washer.step": "202b6042d9a0cd1d5b4fe35c27539602f64758828c38b2e5fd01f8bd1428ef02",
+    "cad/articulation_drive_v2/generated/parts/index_flex_right_thrust_washer.step": "48bc32b003de4d9338824f6182d4369e68f463454282bfd35a935983017a3d46",
+    "cad/articulation_drive_v2/generated/parts/index_joint_pin_1.step": "75c9eb44698c22ea780f76d6bdb9b35f91f0487581b29e0df9af14eb65cd0cb2",
+    "cad/articulation_drive_v2/generated/parts/index_joint_pin_2.step": "92a5c0cf7b263c6bb2a382a17aff5cd00a909b73ed5dd3215ff3a301e31fc56c",
+    "cad/articulation_drive_v2/generated/parts/index_root_fixed_housing.step": "50c372c6679745dd1e7077f30491a65ced51fa7a89ebb9d42b056350da521a57",
+    "cad/articulation_drive_v2/generated/parts/index_root_flex_pin.step": "fbf8714c9cffafaa709c1a84238ba19602eff69a02df0c6575efce70316e1b4b",
+    "cad/articulation_drive_v2/generated/parts/index_root_mount_1_bolt.step": "b61e521b453d304986233055b34d0d9375793ff6cb776349ea3a38ea2ab82b2c",
+    "cad/articulation_drive_v2/generated/parts/index_root_mount_1_nut.step": "05d78705d2567951b2a0e0f9b281b943a9dec761a9ea7024f1986194af150513",
+    "cad/articulation_drive_v2/generated/parts/index_root_mount_1_washer.step": "9ed2e94cad2c4df51f429022e73c77d195e372bc07f52fe306b7f1d7f681e2e4",
+    "cad/articulation_drive_v2/generated/parts/index_root_mount_2_bolt.step": "145a94305009942f06786f2c677e3a46cd7bc060f8584b262100ba4fb1c8f3d1",
+    "cad/articulation_drive_v2/generated/parts/index_root_mount_2_nut.step": "86147bca882827e8854ec74110d54be73a7429957081edaaf4486e1d1bf9d6ed",
+    "cad/articulation_drive_v2/generated/parts/index_root_mount_2_washer.step": "80ea8e9ef0b33fe8d6d78adb17618dd97e9ac4d86dc6777fb73afe583ec9008a",
+    "cad/articulation_drive_v2/generated/parts/index_root_proximal_left_bushing.step": "28084b977ce46ef90a1df1376ba48c1c9792614e5c49ed1dc3ea3ad17edca66a",
+    "cad/articulation_drive_v2/generated/parts/index_root_proximal_right_bushing.step": "0972c54db3e9cfb3c43ff7e09644bad0b79d215c0014943212615e294beae8b4",
+    "cad/articulation_drive_v2/generated/parts/index_root_spread_carrier.step": "30e73ec51f7490165793e1926e82f52fc5cf62650f92efc2ae2dd53cd00e18b5",
+    "cad/articulation_drive_v2/generated/parts/index_segment1_dark_faceplate.step": "4141eb430c2dae001c148e73558ec2b0db256619e0175acddd77f30dc3e0da3f",
+    "cad/articulation_drive_v2/generated/parts/index_segment1_distal_left_bushing.step": "ae6d9048f5a2d5823ac36963082ca9e2ad5061b809e0d8ffbcc06feef9e547fb",
+    "cad/articulation_drive_v2/generated/parts/index_segment1_distal_right_bushing.step": "0af99850c9885dd01d48ad46810fcb6e33d2e337b22e67fbb78e4023e324702c",
+    "cad/articulation_drive_v2/generated/parts/index_segment1_segment_shell.step": "da3c65d7ca33179b779e2a0ff8a6f12b2b742ac07a818a14760cf199b74d830a",
+    "cad/articulation_drive_v2/generated/parts/index_segment2_dark_faceplate.step": "aebcb50cba78a2920bb1bae7abf041ce50ae2a56d612335920573962139e67a3",
+    "cad/articulation_drive_v2/generated/parts/index_segment2_distal_left_bushing.step": "18318ed39e2c095417232a3c49dd102a42b60843f5cef782ef558c38ed9f455b",
+    "cad/articulation_drive_v2/generated/parts/index_segment2_distal_right_bushing.step": "6325a3bcf969e598c4edb59b863c6da7f3cf79740de8c16e397635eb07958eb1",
+    "cad/articulation_drive_v2/generated/parts/index_segment2_proximal_bushing.step": "be632334b11a7256fbcd7389edffebc8974265280a508ea4bfc32ac08f26ec95",
+    "cad/articulation_drive_v2/generated/parts/index_segment2_segment_shell.step": "ce7388ce352a17106ca6f4bc508c46676377390dac53387ce2d5455834b09614",
+    "cad/articulation_drive_v2/generated/parts/index_segment3_proximal_bushing.step": "ab9a19943d0a577acc05c9a320a5d0483eb77bea4e6176bee30243f6b01f2692",
+    "cad/articulation_drive_v2/generated/parts/index_segment3_rounded_tip_cap.step": "b4e3ae33e9e61988006892163ce38564c4e5c412e1311d21a542f2575403b5c2",
+    "cad/articulation_drive_v2/generated/parts/index_segment3_tip_core.step": "0ed2ab7ede8a87c1d65482cf6565e1815deb4338bb1208e234bf36a90b39d446",
+    "cad/articulation_drive_v2/generated/parts/index_spread_lower_bushing.step": "48cd481c36f7c53c0f53f7b144566702d307a07082fb9df49f7b14e5df4772ca",
+    "cad/articulation_drive_v2/generated/parts/index_spread_lower_washer.step": "a36d7453ada90bdec2142483bdc7a1461869b9bc0af19016348e5cd36f0dc748",
+    "cad/articulation_drive_v2/generated/parts/index_spread_retaining_clip.step": "7d481eed54509cf46bf9739374f4c288df72880db6d06bfee14d9c10a670ebfe",
+    "cad/articulation_drive_v2/generated/parts/index_spread_upper_bushing.step": "69a5f8c91c8d8d11366fe69caa44846d63ca295e2db8ae5e3781d0b77b63457f",
+    "cad/articulation_drive_v2/generated/parts/little_flex_left_pin_washer.step": "9b166e8ff03c10396797002173ec38694b244ebe8c802a78f5db862ff2b0532b",
+    "cad/articulation_drive_v2/generated/parts/little_flex_left_thrust_washer.step": "e59e2c74d1bbc0e966aee7b1dbebd30b7be3146111e631303420dc2d92ed61b4",
+    "cad/articulation_drive_v2/generated/parts/little_flex_retaining_clip.step": "75a79f372157b8de25a53df3b1135e4c73f51791d670a893becac441575be669",
+    "cad/articulation_drive_v2/generated/parts/little_flex_right_pin_washer.step": "6bf1aa059f4bcce8d96500b2b1489b0a6c3a60bbd93a8e8e102c8dd7bf8ecddf",
+    "cad/articulation_drive_v2/generated/parts/little_flex_right_thrust_washer.step": "c7ce1eee1dc78ead4b422fa260d7a0b00617aab33c9408c1d3a4db5416042bf6",
+    "cad/articulation_drive_v2/generated/parts/little_joint_pin_1.step": "7d2fa3727f08516cf5c3d607c856225d5c95d8372d289beca57a11bf637322c2",
+    "cad/articulation_drive_v2/generated/parts/little_joint_pin_2.step": "6ab7c571f4cfff307b917eac86a3a54b5bde6533091e4511d0b5d85dc5e3038d",
+    "cad/articulation_drive_v2/generated/parts/little_root_fixed_housing.step": "ec90207474e7ce3baf81c68170b38e4d583b3e464e726b61460ea52baedb0b0a",
+    "cad/articulation_drive_v2/generated/parts/little_root_flex_pin.step": "f424db8c72f6fc04da5426f7f2ffc1373e5db9d779a35d0a0410a20668f46933",
+    "cad/articulation_drive_v2/generated/parts/little_root_mount_1_bolt.step": "78f68fe8949906a8530e5f536bf3b9cc0e2e89b9fd555092bf85e43dd80ec4dd",
+    "cad/articulation_drive_v2/generated/parts/little_root_mount_1_nut.step": "fe284f3eb02a339c5e5c3a1810797690cc062dd4e2149f8adcdf1ed2345e92aa",
+    "cad/articulation_drive_v2/generated/parts/little_root_mount_1_washer.step": "c5c3376e1d3bc93bb2d765d56f0c38cdb0dba1e5f187e90850062dae110d3e0a",
+    "cad/articulation_drive_v2/generated/parts/little_root_mount_2_bolt.step": "dce4e7eb1e2651367b78e85de5919a203b28df15d457e300f3ad3303ee3712d8",
+    "cad/articulation_drive_v2/generated/parts/little_root_mount_2_nut.step": "be4c241bd661a49d0197430340cd4ccee2d563b58c5afe6dfebe21239e044ce5",
+    "cad/articulation_drive_v2/generated/parts/little_root_mount_2_washer.step": "e48751395803dc2ce7e46efe9993ff8297ff7af12c72c96504e796556aa0a689",
+    "cad/articulation_drive_v2/generated/parts/little_root_proximal_left_bushing.step": "091b94c21d6dc0d96774e2b574351f785a6c02551d7ee81fbfb25a2ed7bf0937",
+    "cad/articulation_drive_v2/generated/parts/little_root_proximal_right_bushing.step": "9187930031a3c544e1b579041a9bbfaabbdef9833233d9c2384c813a59704a8c",
+    "cad/articulation_drive_v2/generated/parts/little_root_spread_carrier.step": "2db8455f03ba5c6d5586fa640efe39a70033f1c66dfed8d725524cbde2b0f289",
+    "cad/articulation_drive_v2/generated/parts/little_segment1_dark_faceplate.step": "1d586914c2d1c2c49c7ab101ec1887f4c456ffb77f936b22d7305a727608f6d3",
+    "cad/articulation_drive_v2/generated/parts/little_segment1_distal_left_bushing.step": "eee6e0358d88084b219701e521b1aef91a973955cd87f81682c4bdf807dae6bb",
+    "cad/articulation_drive_v2/generated/parts/little_segment1_distal_right_bushing.step": "7ea3b4df7aab13be51f2a8f2dc5b50804a92b05ec9763a053c006040b8b8d8fa",
+    "cad/articulation_drive_v2/generated/parts/little_segment1_segment_shell.step": "a4a661fe3e45c0d5c1c8c1b43a2ebe376f2bab8e5b439a2ac0b7864a29f97306",
+    "cad/articulation_drive_v2/generated/parts/little_segment2_dark_faceplate.step": "f33571300a98075b11b711044949a2cbb78e97b91269011af601fc8b0260c9b4",
+    "cad/articulation_drive_v2/generated/parts/little_segment2_distal_left_bushing.step": "6c9c5ff1401400a6f5205f304073d1b7b47e5083a8b0f348093248ce79ba8145",
+    "cad/articulation_drive_v2/generated/parts/little_segment2_distal_right_bushing.step": "613832eb782eb2f557d4dd32804f771789998e0900842ae9aa4024164c8d73f7",
+    "cad/articulation_drive_v2/generated/parts/little_segment2_proximal_bushing.step": "6e31b48a19bc1e4df76134eea60971ba376bd0f9ac371a9c88740a814d5252cb",
+    "cad/articulation_drive_v2/generated/parts/little_segment2_segment_shell.step": "38ce13356142e9fdce7655b2c30e97a4fbfcdd4fd2d63ac328bbb58d6aef7d6f",
+    "cad/articulation_drive_v2/generated/parts/little_segment3_proximal_bushing.step": "1acd2a182167693eb195f1d850e349344e8bf6d498bb92ba4b5625c1e74dbb8f",
+    "cad/articulation_drive_v2/generated/parts/little_segment3_rounded_tip_cap.step": "2ec125ca0890837728f9ed56b0c142d331894b74924b9a559f474e13469f6e76",
+    "cad/articulation_drive_v2/generated/parts/little_segment3_tip_core.step": "bb5ac46ca9ca207e4b30ea3d370ec268d0d35b2dc2ef8de0d3d164e8979de394",
+    "cad/articulation_drive_v2/generated/parts/little_spread_lower_bushing.step": "2a067aca6eb097e9fc733b45360639f9f07257a155baae7403944b00cf37bd17",
+    "cad/articulation_drive_v2/generated/parts/little_spread_lower_washer.step": "6051809d10446ff635ab84030d447ac6fadf00fa754bac079749b50c2b571b3e",
+    "cad/articulation_drive_v2/generated/parts/little_spread_retaining_clip.step": "d8ff53fc7775d6666acfe3418332cbd5ca2e5996eeaa3ce0d0f15355980c5599",
+    "cad/articulation_drive_v2/generated/parts/little_spread_upper_bushing.step": "a633fd80e2270c0ae230d67e539c7c41d6a63e142d1a8ea9c9b7dccddba34db5",
+    "cad/articulation_drive_v2/generated/parts/middle_flex_left_pin_washer.step": "330a7a890abd9d0241079df44b2473c1c8145f24d305835f569efe4d9a2d9a83",
+    "cad/articulation_drive_v2/generated/parts/middle_flex_left_thrust_washer.step": "95deddb557f36eebbb57dd9f108e93fd0c373619dea24cb2720670787fc41a75",
+    "cad/articulation_drive_v2/generated/parts/middle_flex_retaining_clip.step": "b6d947356dcde0cf6ab0412879cce34135a84b9d25facffd5953a97c18f4a328",
+    "cad/articulation_drive_v2/generated/parts/middle_flex_right_pin_washer.step": "16ce8de2089dbdd0284037c40cf3861796f94948b75b6e3350be165c3566e104",
+    "cad/articulation_drive_v2/generated/parts/middle_flex_right_thrust_washer.step": "322268b98d5d8373a5df14f76490e0da75eafbebc2d8c84eb343b8b88bc390d8",
+    "cad/articulation_drive_v2/generated/parts/middle_joint_pin_1.step": "0f87cf5b7e8184761675ff83c3390dcab701f2f8db4ac7dc0c0d181271e62a99",
+    "cad/articulation_drive_v2/generated/parts/middle_joint_pin_2.step": "3333ce32e3c8bf8d5d01802e884691883ef1861754faf4581f1e3980df9e2821",
+    "cad/articulation_drive_v2/generated/parts/middle_root_fixed_housing.step": "31d1c6894ca0119bdef8a93a2812444bcda54936c6dc76c9f42cfecd5efe8ad4",
+    "cad/articulation_drive_v2/generated/parts/middle_root_flex_pin.step": "90b5113da1540a9596783b53eb520cb54adb57dbce94164bb68cbba227274f34",
+    "cad/articulation_drive_v2/generated/parts/middle_root_mount_1_bolt.step": "4040e10ef42e666fa86a19bdbc343842f0286d90874ca1b12cffb8064d9d437c",
+    "cad/articulation_drive_v2/generated/parts/middle_root_mount_1_nut.step": "54756085870be236b8c70c3b0f983f7f572c5c93c862f044f79a76035eec34e1",
+    "cad/articulation_drive_v2/generated/parts/middle_root_mount_1_washer.step": "f12368fd4c618cfd98f4cd3a8f7b98a10ba95672a65747afcc0fc54c238d5561",
+    "cad/articulation_drive_v2/generated/parts/middle_root_mount_2_bolt.step": "fae2a8152357a69775ba46784c9113884f1fbf134dc1a58b7da99aee5f75ba9b",
+    "cad/articulation_drive_v2/generated/parts/middle_root_mount_2_nut.step": "9f2ab907461005f247b4209c9896dd0df90faa81abad04f47cb986d76cb89bd5",
+    "cad/articulation_drive_v2/generated/parts/middle_root_mount_2_washer.step": "b2b0af5b36b31fb06677a0df9b6b7b97263f72bac0356d694053e61d3c8350b8",
+    "cad/articulation_drive_v2/generated/parts/middle_root_proximal_left_bushing.step": "ff3e30569380ab0419eebfbe2c7c0cdca742d4761c41441dde8cadb659ea256c",
+    "cad/articulation_drive_v2/generated/parts/middle_root_proximal_right_bushing.step": "0b2c9e67733085414c533b2e197ffeb7bd1681bbeed659137d506ed25f4ba689",
+    "cad/articulation_drive_v2/generated/parts/middle_root_spread_carrier.step": "c0ee05f7cde8705df8fd1a9f86b9b062db9489da515d9b500689a6927634f7a6",
+    "cad/articulation_drive_v2/generated/parts/middle_segment1_dark_faceplate.step": "cd3aea030b4b0b286b2b5a0be745efc138858d15b343fc518f799b17274b3a28",
+    "cad/articulation_drive_v2/generated/parts/middle_segment1_distal_left_bushing.step": "4048e4b93ecd72126687851cc8a2c628b73ee9f3472b27c9f54963cf65cc9cf1",
+    "cad/articulation_drive_v2/generated/parts/middle_segment1_distal_right_bushing.step": "cd31318f615c62e96f7e703637d3563498b8eb15712da430fbbf583611f349aa",
+    "cad/articulation_drive_v2/generated/parts/middle_segment1_segment_shell.step": "2968edde13b8e468d42eb02b8a954a5f80d75bd0e6acccdb2ecec2239473e8b7",
+    "cad/articulation_drive_v2/generated/parts/middle_segment2_dark_faceplate.step": "b4817b46daf6a9a8596b6901656feb0e6d68ae1f4740498d7f87a86ee30ada25",
+    "cad/articulation_drive_v2/generated/parts/middle_segment2_distal_left_bushing.step": "63a153a58cff422c50596e58875ba6e48bb8142637b779d6177ffbe7f901f865",
+    "cad/articulation_drive_v2/generated/parts/middle_segment2_distal_right_bushing.step": "85d1382cfdfcbc07953907fece163eadcd0be888f41a3870cf8dce1a6e2e69c5",
+    "cad/articulation_drive_v2/generated/parts/middle_segment2_proximal_bushing.step": "5f349cbb32cbdb6ab22962908ac4a2915db49359fe82737cb46d967761490f7c",
+    "cad/articulation_drive_v2/generated/parts/middle_segment2_segment_shell.step": "fbdbd7dd4356746d25f9a83718423f24aee34f8385b39310073fb52c4f5aa36b",
+    "cad/articulation_drive_v2/generated/parts/middle_segment3_proximal_bushing.step": "0e9f19acbeaebf370e604ca4e1c95240a5e215dc57993623d4ee573140a67010",
+    "cad/articulation_drive_v2/generated/parts/middle_segment3_rounded_tip_cap.step": "5b91b2f456fd2ead690f2a484e1b40a96085e478e9d126092e564d6e1e6b028e",
+    "cad/articulation_drive_v2/generated/parts/middle_segment3_tip_core.step": "2b79141605b8a1df278f3a0e8b4e71cb14fca68b34cfee6b6263c18202ec7e3b",
+    "cad/articulation_drive_v2/generated/parts/middle_spread_lower_bushing.step": "a5f29046d9cba470192834984d6017e8a5e0835e48cca5d05aa42d9f6718b09e",
+    "cad/articulation_drive_v2/generated/parts/middle_spread_lower_washer.step": "dbbb4ee378c8c526cbc614a84866f36a299dd13a8466ba240ae7e730147d1f9f",
+    "cad/articulation_drive_v2/generated/parts/middle_spread_retaining_clip.step": "ae65908a5e69f13a53f5f8cce67884a2251d4d7afd8a00a3b1c45ffa8c4aa35f",
+    "cad/articulation_drive_v2/generated/parts/middle_spread_upper_bushing.step": "60ff30625babd4c4fcdeae953d4165b90c3d9c1c768d688a6d1a97a0ef515875",
+    "cad/articulation_drive_v2/generated/parts/Palm_shaped_front_cover.step": "1908b43ff183897c87a0cb85afd7ec38bcbd1000153adce6cfa2d98597007178",
+    "cad/articulation_drive_v2/generated/parts/Palm_side_web_-71.step": "2cd0d2b6cf542f8ad8ea756f190a00acb8b86da18417f7d292278373f49b4866",
+    "cad/articulation_drive_v2/generated/parts/Palm_side_web_71.step": "f84e8210f38a37ac1c14e882fb1bb28d12ce520a3d03ca6f2e17a6945e323492",
+    "cad/articulation_drive_v2/generated/parts/Palm_tapered_chassis.step": "b267516d2893bc91e3fe64b8b11c933fc257b7effd4997e0cbe5b1f3c529ad94",
+    "cad/articulation_drive_v2/generated/parts/ring_flex_left_pin_washer.step": "8e0333cc14ecedc60f1e9b838b0e2a214f590e578cf93f5a5f1afaa54076d11f",
+    "cad/articulation_drive_v2/generated/parts/ring_flex_left_thrust_washer.step": "ce2a2e6106ddb0b4182af3cdedbb63153bd5cf523b6390b93b675f014c464ef1",
+    "cad/articulation_drive_v2/generated/parts/ring_flex_retaining_clip.step": "fda5ac66cc80602e2cf394e64ce53ae79c16201124242ffd25da3c3399bdcbd3",
+    "cad/articulation_drive_v2/generated/parts/ring_flex_right_pin_washer.step": "10e654adc6612f3dceba19fccda4aa23ff0f3fda663f391847b2bfe1e610844b",
+    "cad/articulation_drive_v2/generated/parts/ring_flex_right_thrust_washer.step": "cb2fab714f7f1a57de87bead807016b149250dedb2c53325fe491c73d836ebee",
+    "cad/articulation_drive_v2/generated/parts/ring_joint_pin_1.step": "43dac31bb80aaa29ba8546aa0fa7c2b2462b889d31fa28363de040e04583a07b",
+    "cad/articulation_drive_v2/generated/parts/ring_joint_pin_2.step": "82a2a47b3be0c2c923521ec6cd33b1a2a38ea7cb2d768031a27f3e2b437fc083",
+    "cad/articulation_drive_v2/generated/parts/ring_root_fixed_housing.step": "4215b9ec7b6ac8b2f924a278f1324a00ddc0c3f46ad2b8c312f4918f461732aa",
+    "cad/articulation_drive_v2/generated/parts/ring_root_flex_pin.step": "87c76ab5bcb80c2da562d88338e47075581246ea6dbd7a646be5c7445ce69558",
+    "cad/articulation_drive_v2/generated/parts/ring_root_mount_1_bolt.step": "8b7584764f7756be0e51aea9569761259bdc1e592dfc7fada827150bc8c3b05e",
+    "cad/articulation_drive_v2/generated/parts/ring_root_mount_1_nut.step": "a4181163b8b1f16a1156e582108bf0d26eb00947f27064aae58434fa6a2529e3",
+    "cad/articulation_drive_v2/generated/parts/ring_root_mount_1_washer.step": "de5c3324daafad17f1957df1a0f13a70cf907513bb5f8a6ef2a6f124ae8bea2f",
+    "cad/articulation_drive_v2/generated/parts/ring_root_mount_2_bolt.step": "af6b676edca53b67dde9e8b11d9de4fcd9f6285ed1460b784b8705974f4fd729",
+    "cad/articulation_drive_v2/generated/parts/ring_root_mount_2_nut.step": "9df1d832d2020dd95fdd08d340ef6466d29988042f3b565ce38f8442977e516c",
+    "cad/articulation_drive_v2/generated/parts/ring_root_mount_2_washer.step": "e22f344f2ea8b39d162e8e9e0a89f8b56969095b3d89293c00bc57919d7c655a",
+    "cad/articulation_drive_v2/generated/parts/ring_root_proximal_left_bushing.step": "3c57f2c0bb54f512438b8c1b572ff4ab8b0e6c2059da172c1dfcea3567f2401d",
+    "cad/articulation_drive_v2/generated/parts/ring_root_proximal_right_bushing.step": "45a998ce85c7faefb265580c96a09c33b162e1c749b47ed3b8e6630a3a51993c",
+    "cad/articulation_drive_v2/generated/parts/ring_root_spread_carrier.step": "51660f2ecd4476d345496abe3c88f02cb1bc0e70e2d154a9868f27bea29df282",
+    "cad/articulation_drive_v2/generated/parts/ring_segment1_dark_faceplate.step": "e892b9f22ede8afad4998d08d3d73e525cb85f8cf6a05733f33f55853edb6d68",
+    "cad/articulation_drive_v2/generated/parts/ring_segment1_distal_left_bushing.step": "a056429ce50bc1dc2eda7ad36149affb056175dcc5a53006f41e24b66d5ee3d4",
+    "cad/articulation_drive_v2/generated/parts/ring_segment1_distal_right_bushing.step": "84b4f4f2fff76c5ea2739358f0f5c6b0dbe5f59247178174ab5a90a6ecb92939",
+    "cad/articulation_drive_v2/generated/parts/ring_segment1_segment_shell.step": "11957bb72628f14a147271353a017cf9a18b1c1085884d5d87cc9e60d5211b69",
+    "cad/articulation_drive_v2/generated/parts/ring_segment2_dark_faceplate.step": "0b23cfc4b1b614d1c1a81ac2ec1105fdfc9a12081cef9fb16444bb94d7bcc1ca",
+    "cad/articulation_drive_v2/generated/parts/ring_segment2_distal_left_bushing.step": "b094df444a89922e8ac6e0c1c6ff50b37a0dbb7ab39c0f520e9b44e3a1a59aac",
+    "cad/articulation_drive_v2/generated/parts/ring_segment2_distal_right_bushing.step": "a9621f675faea5bb6ea107d952f6aac7a557d2c6356871a5f5f5aab33f900bbd",
+    "cad/articulation_drive_v2/generated/parts/ring_segment2_proximal_bushing.step": "223e88bbaa2824e717f17985e7cda9f3e4265bbfff75503d581b7530070b2807",
+    "cad/articulation_drive_v2/generated/parts/ring_segment2_segment_shell.step": "b5511c0f78b4cb09ff4245fcffc567986bd33c93248684eafe10166755a271de",
+    "cad/articulation_drive_v2/generated/parts/ring_segment3_proximal_bushing.step": "6f48a20e6f1c6398e2276134653260374de47c99d79e1777ec008d7a50448ccc",
+    "cad/articulation_drive_v2/generated/parts/ring_segment3_rounded_tip_cap.step": "e3c012dad965900a3bb607349f8b1185092ed499c7eac8c68edb7410534dbfd0",
+    "cad/articulation_drive_v2/generated/parts/ring_segment3_tip_core.step": "13e9e5dcff7f70f6b4467d5d1244ad3ae99ab9f175486f2cf65acc7b89e1f4a0",
+    "cad/articulation_drive_v2/generated/parts/ring_spread_lower_bushing.step": "3ca46ac376ed162a405dcc7864d7efb7f965d49de483fd60e05ea81ea62e22b7",
+    "cad/articulation_drive_v2/generated/parts/ring_spread_lower_washer.step": "ecbc5c6f80f7fd48e227ee1c2d9575ceaa38b0deb93dede76bfa95a292d1f997",
+    "cad/articulation_drive_v2/generated/parts/ring_spread_retaining_clip.step": "888fb9063991a62508a455c4e234bb89c4cb616ac47bc492b7f88d71fc86afab",
+    "cad/articulation_drive_v2/generated/parts/ring_spread_upper_bushing.step": "3d576cd4f72dc61af4e06c24791a7b945222be3c2dc5bbb3c72aeac7d57293a8",
+    "cad/articulation_drive_v2/generated/parts/thumb_flex_left_pin_washer.step": "351aff2cc979b05e733d58b3da31d6b07954f8cdfb6718be1a4b63d6f6361876",
+    "cad/articulation_drive_v2/generated/parts/thumb_flex_left_thrust_washer.step": "d25a436e945b053f269a43ed6409d27e36d978c55907688df4ca230036962538",
+    "cad/articulation_drive_v2/generated/parts/thumb_flex_retaining_clip.step": "cf60eb677274d46e09558f4ed7e872b9d517276728d9d12ea76eea2df925315c",
+    "cad/articulation_drive_v2/generated/parts/thumb_flex_right_pin_washer.step": "f8ef4c7d78488be70ebf2627c0c3bd65847b61f3f3a02ccf1ed84199565328a3",
+    "cad/articulation_drive_v2/generated/parts/thumb_flex_right_thrust_washer.step": "e6150c9852cb4f8b10e10c21a77fa29f221e3417c4638df3d0d166f87cd63247",
+    "cad/articulation_drive_v2/generated/parts/thumb_joint_pin_1.step": "56e9862fef659a0e7f4592f30d23082b1e0bf7b2c6cd2a38e9c238c0a984a337",
+    "cad/articulation_drive_v2/generated/parts/thumb_joint_pin_2.step": "68d130545421500a888fb4cc951b60951e3ff566f62cacfd1977d2f2ad45c7bf",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_fixed_housing.step": "82dab811535b6df3cd6b3ac18b102346ac7f1701ed683e5ede0a622896a2e588",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_flex_pin.step": "dfc438cd0681de71ee9625eda0a1513aabf6e945aa9d19c91e566b87eb923451",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_mount_1_bolt.step": "8ac82508f88119543bd8f9c9e53a022581cb3f5fb0befe7b3694e30801733ba5",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_mount_1_nut.step": "e7ef7a87be2097b63a1d2ed2f326482b374f9c5825ba4e538f3d09bcd42882c4",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_mount_1_washer.step": "8ef3070c10c82c3c1144002877f73ed363999618bccf6e14ddda7485ec05d77b",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_mount_2_bolt.step": "97d0fb81e4b1990f4a61aa109c2f79b055291e7c0f0175dfd4a27c66d2805fb8",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_mount_2_nut.step": "1a096600680c2093a0b9900894ca199fb52014519e54db4923b30f9ec6c0d64d",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_mount_2_washer.step": "5119239b4b5c2f88264123b40f392ec1fe1637c33f45251fc53528a5dd87ab0c",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_proximal_left_bushing.step": "b22a2119b65d35433ad55dbe71038d0bbf58377f6f8ecf685dcf265c5709434e",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_proximal_right_bushing.step": "0729ac72fd64d18eb7887a3e5ce42bb0137f0e9a102409341a8ca39edecbef77",
+    "cad/articulation_drive_v2/generated/parts/thumb_root_spread_carrier.step": "be745e2ceea27e625058076abb64f8b06fdc2431927ce2de637da9d2177a9612",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment1_distal_left_bushing.step": "ba31f2a92135b65ac86ff1293de330f83ea47d7e9d8af3064fabb5e923b8f36a",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment1_distal_right_bushing.step": "e1d208c83d5dbd58fa5a5f5c7b97aa6d7b169ffc24129d9088b7ac816bea5401",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment1_thenar_shell.step": "69b8b2162c3fdb3cc0b28bde1df0143e797a44c5bc19fec376c03f2fad327481",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment2_dark_faceplate.step": "5cab10f3e8be2f30931b500de7144941ddc0641afafb2a60914d2d523d48aedd",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment2_distal_left_bushing.step": "595d72d41d29bbae754f99c7df0fd5c291e6f157e366f3ddf809e7bfd6d27ab3",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment2_distal_right_bushing.step": "e674463829a7c3df963ee2647b833543e678f72ddb5adedc54f639a782ecf138",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment2_proximal_bushing.step": "5cc4a2b347de82f2591cdb8593cb7325e4738d861fc509ad069f3f619aaa2a24",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment2_segment_shell.step": "5b78c4118cadb0b37cdb3b00071cfdc35c1550cbb59909870ebb8cbab22bc775",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment3_proximal_bushing.step": "aa3ee77bab90db5cd41eb2fcaaaa7187ded89bfe1ef1304ab4d0e416b950ab74",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment3_rounded_tip_cap.step": "cbfcb7d2ad105bf08dd16e7379003cab79a45cb4519ba0bc22cf3df093a1ccc6",
+    "cad/articulation_drive_v2/generated/parts/thumb_segment3_tip_core.step": "89c20cb094b26cd291b6b100382b4c7a304c696aa0013ac5f196ab556996893b",
+    "cad/articulation_drive_v2/generated/parts/thumb_spread_lower_bushing.step": "c8c543770a333138c4e1529f5d6ace33d7d74bd14e142757dc324b75552e8609",
+    "cad/articulation_drive_v2/generated/parts/thumb_spread_lower_washer.step": "cf2f8dac948df3074fd155f2386bc92cc4b9edcb9d268ac864109884e67672ec",
+    "cad/articulation_drive_v2/generated/parts/thumb_spread_retaining_clip.step": "26e46bf07e367bbe13cbb1cb1a05133e0ffe015f5634a9f2bfde9a7daa5d5f12",
+    "cad/articulation_drive_v2/generated/parts/thumb_spread_upper_bushing.step": "6cb76091451f775edc56e5df5cd9564563dca180fbb88fcef528bee819e9c13f",
+    "cad/articulation_drive_v2/generated/parts/Wrist_bridge_plate.step": "80c5cfd44d3d645e2b8013787bdc467f3ea045947c1e44d39b6e11e575119fca",
+    "cad/articulation_drive_v2/generated/parts/Wrist_bridge_post_-32_28.step": "a70fc9277e1c5877f3aa3868b55ab2898526778c04c245e8b17fdce9474ddac3",
+    "cad/articulation_drive_v2/generated/parts/Wrist_bridge_post_-32_8.step": "7332cde634ab8f3697c3ba0e5a4141fa0cfac0fdad887acbffa64d416dedb1be",
+    "cad/articulation_drive_v2/generated/parts/Wrist_bridge_post_8_28.step": "dd64434f0f43c9831db44f75abfee414c7b0eedd50299237202e3e16192253c2",
+    "cad/articulation_drive_v2/generated/parts/Wrist_bridge_post_8_8.step": "64caa8bfcb4d8b0ddb383be0957bfb63b804495cf213538168ae859045491fc3",
+    "cad/articulation_drive_v2/generated/scene.json": "202f85228570a858b7586346274cdab257475a247fca1c1442d5139d93e2a209",
+    "cad/articulation_drive_v2/packaging_screen.py": "d983e8daa9e230f499243bd5b81ac045c7d7a5b662da8e3c4b4089369c5a1ffc",
+    "cad/articulation_drive_v2/render.py": "b1aa42601a4c3ca8d572d3edc96949a7e0b3de3b7983beab8e453ee9bdc92c05",
+    "cad/form_drive_v1/generated/packaging/parts/Forearm_twenty_axis_module_rack.step": "ea6ad3f0b6e57f372a9172d254a5c8a7bce1843505209cd26cf644bd88a97dcd",
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_adapter.step": "20587ff548dfeb1d1c979f1c81cfdf0b5978fbd15082d737c5009aad100950b9",
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_nut_1.step": "d85b3fa018c43d994f172b9738e9a9bf58e24d73a803022fd5b4411f5da7d44d",
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_nut_2.step": "95862a954a0af306371cd1e5bc0835dbea0db68e029eb57ec582b087354f2235",
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_screw_1.step": "bb98628e3676ec2c2addcb2f52c04d7fd81e61fd57d97541a30f93d6e0d91c75",
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_screw_2.step": "0cc298038f49c9f5d0e452b76fcea6b1df14ef38c6e3079729e5045b4121e96c",
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_spool.step": "bd2873ec5bef3856b31cb3a643975df2efe5162f2f733bb10acef244b8b764c2",
+    "cad/form_drive_v1/generated/packaging/parts/index_mcp_actuator_adapter.step": "5230d76cd82108e7e69976da3a9bb1ba8e28988626786279f5a4bc036d58de5e",
+    "cad/form_drive_v1/generated/packaging/parts/index_mcp_actuator_spool.step": "36ddf8b1c06394bba23cf9b9a936bf2208b8ffdc0ba43494f833d38df3687a21",
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_adapter.step": "55b8ebe944381aecee83d2edeb0eed27f4157af82ef3d3ac8e830c57b8050039",
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_nut_1.step": "d81dac159716ac3d453095813e31ddf9a460d7ada2fd24d59e7c1b7ed3b6157d",
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_nut_2.step": "6425e9e06e07bc969e05bba6667e5537322200cba2a294ed88cfb71f7eb74a0a",
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_screw_1.step": "57524a037a1bf831b05e23ce04daa8ce03ed20bf96b649289e65d822f5d832c0",
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_screw_2.step": "88a678a86662192b97e27d1be6f47331a1576be898b58affcbb4a2f41bc360c0",
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_spool.step": "a28efc52f61a7a4bcfcb221ade54ad89d08843eddfb33631ef82257d2bab294f",
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_adapter.step": "5a56cac32bf9711e4cf4c1b6ba5d51b31700829f8205eda3c74fbe31c7211eec",
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_nut_1.step": "879eb3e680ee4d34154e6e076d22777bb124067cc695ff083e4119cada56bb42",
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_nut_2.step": "f27d9e852931c51756f7dfd1f9e39f3c719472288e1223602a53963a766c2636",
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_screw_1.step": "e0399d1bafac8851e16124046a246579bddc69f3cc7334018e9edb22a85df4bb",
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_screw_2.step": "17ee1276f1d8ade1e1fb107fe7aaf7ed70b818bfe58beafcfd4fb9d33817efa7",
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_spool.step": "f3f9bfe10404602ae9b39a6ee58462ce59978f270ec98d0fc0a6ab1822fc3bca",
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_adapter.step": "c31d769c184c7a97298e33bb365a46d53b3c1d2f800125fa77c3830badb3e9e1",
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_nut_1.step": "00064999bcfcb5e06efd402df10eb427e2d69f0d1431cd3a0779ce6ee602a5d9",
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_nut_2.step": "bd1425f00012e249245c2d1d7d10fd3e605793e2b8851969454ce5f6101ab384",
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_screw_1.step": "3b68c5f8e5665988ca023eae468eb725d7b780a47f7b574dbf5262e23c92c622",
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_screw_2.step": "c00be1cce6015a4b349da0443fea38a5e824019787fc652da3b1bff62a4fd55d",
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_spool.step": "2055af65617b7d1b310eb9b84ecc1c2b82fa72b153756405c93ec5af77b17560",
+    "cad/form_drive_v1/generated/packaging/parts/little_mcp_actuator_adapter.step": "4e2ff607efd8efe7107f7971eefc2de71f4490e704d82741fe73e6ae08db53ab",
+    "cad/form_drive_v1/generated/packaging/parts/little_mcp_actuator_spool.step": "85079e1f393561401816d2fe8976374ad0f471a331d7d8144f7399ff62de56e3",
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_adapter.step": "fa75d2ce0be12f4c3794bf539d4a35065d32ec7f95935e82f83b09083b658e6e",
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_nut_1.step": "325f092956353cd8bb356da7fcecaea3440453aa80f0bc8b12382cc6975a5e86",
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_nut_2.step": "1f635a9695640d8432bd4f49a34f397d32c8d99adf4099826b0e5df2d51a4e07",
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_screw_1.step": "37aa72d9bba3fe238871ab6c6358db5c3caebd951e8a779d26f030d2dda39888",
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_screw_2.step": "46b4771aadc0aeb5176176d647481050036c6f57f859c47aaae303836917e7f0",
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_spool.step": "7957b4f8ed2589352eb91fe6d6f682a99a89dc914ee189ebb36b6e473863c7c7",
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_adapter.step": "62aed096b33dc74057baf94b5737ee536fc24773a8da53f4140c81ccc61bf73e",
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_nut_1.step": "7f7283cf92ba3f346580589445bf8ae8139d734003f20187bdd5793a6824fe1c",
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_nut_2.step": "0affb62231f5e6ae80bf6d0114125e896702a7286ddb8ddde26386af9d5c7a86",
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_screw_1.step": "42511a5b83a891b4ae32a571ab92c771844bb10f0520c444a64ac62fb66cbbec",
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_screw_2.step": "a2c202cf606658ddbc4929fd121b81d6bfbf810490b6dd0eb5334225014e2ab4",
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_spool.step": "f2d847fc87655e615a31fa8878d95fe1f6b86eceecdc9acc51554a365509709b",
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_adapter.step": "0b19d33b4197e2f27b5cb721643f8357d46b5acd30955fdd89d9488e94e5236c",
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_nut_1.step": "e006188c86a8387e8543cb71ea53f0e055a914689ceb129fcb75e54be28076a8",
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_nut_2.step": "4e4f2d4764ca57b57eebc84f22873136ad88aa9ca1470c561ccda2cb0efe7020",
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_screw_1.step": "f34ed02983f5861a96482ce8cf6320c1c7a8e718bbe44fb6a0c86f9eff0b20dc",
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_screw_2.step": "6d5dfaede04cfd4d87085b8116d7cd7a0316dea1888419317b97c8579d83780b",
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_spool.step": "79bb228c7e58077b099d0dc77f1b7b10a9bf9f9e24603383b39379d1949b20d3",
+    "cad/form_drive_v1/generated/packaging/parts/middle_mcp_actuator_adapter.step": "cfc557f565ee89f925dd8e70ec58311321f5033f3a95438c9cb20bc3cc7ec5b2",
+    "cad/form_drive_v1/generated/packaging/parts/middle_mcp_actuator_spool.step": "1d368a486ebe1ea75e8561c674f4374943b0df839cbd6907907841980fc6f7db",
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_adapter.step": "9fd4041051028ce8e12db186dfcb882d0229cb6e6c376917e0b930d06f8f3d8a",
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_nut_1.step": "4815faf5151af74f23b496354907d7aea0785db50d13c9b6763c58c642da1d99",
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_nut_2.step": "5c9fbc4657d4cb4298770e7c6276e2f85bde83f047aa202cb4487db5f9a8bbfe",
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_screw_1.step": "9844488027b4753daa0587fdde08a1239f27b6804ae6ad550f37053f38c39ed3",
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_screw_2.step": "c84d3cb3bf0de1323b86a4235fa2f4dbf3fe5265bfa6d9cbdf178caa2a7d756f",
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_spool.step": "9a490e1c152c2dde7deb1e777e34c817acd542f26d2e685b0d25b0c1710283af",
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_adapter.step": "862ea1a75b20e26ce85302f4559ae0b9ab8d858ac2e646dabcec900f05421040",
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_nut_1.step": "096b63b9699aca77b25e2c0c02ac6bc89f1f21c5e8efd3ab160137a25e7568fb",
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_nut_2.step": "61deffe9f4fbdd335fccfdbc4ad320dcf8fffc25677d1c811ce6c4c8aa740bf6",
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_screw_1.step": "47c53b8dfab9f9472a47724e73b2a315d32c5b604fdcc8e5db243dee4bbea189",
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_screw_2.step": "c5b750078053ed47749a8750e444187d98d0fcf7eabd0cdd840f5878d889ae03",
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_spool.step": "9c16b6212c7b1ccd3a63e8ca880e59df1e03b389acac38ec4b6f4d03c429edf1",
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_adapter.step": "e3ca2da7a0693165e0e2d834387bd93c2e10542512fffa261f6d1e1d145930ba",
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_nut_1.step": "0e0f2f148c11ab6e5f9d02e6f444f27ec7851e9ee5b9f5228001c81ea42bd7d7",
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_nut_2.step": "923b03415a1dd4885288ebd7885c3ae06b387c3b29b12af10f2948b847b54967",
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_screw_1.step": "affb0131459c8bf45a9e702a2fbd653f53c4680406f34abe161bc49affc8c9e1",
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_screw_2.step": "150348e5e96c9b92dc1a085477c92cf2f22f1e1e98e02084d5938e39ef102e0e",
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_spool.step": "37b582f1de68c00d3fa4b3523991bac3e5209ba29c1dc0acaa7e333932d2347e",
+    "cad/form_drive_v1/generated/packaging/parts/ring_mcp_actuator_adapter.step": "a779fe702c2d71020f0588a2f73c3cac7a68a33429aa7c5820b0d4bd3d989df9",
+    "cad/form_drive_v1/generated/packaging/parts/ring_mcp_actuator_spool.step": "abe0ba3e68337485ae6be3bf93b0201a037506498d3676d4f32d2a460b6d2a71",
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_adapter.step": "0c7244c538901ddb6090d4ac62547af26db4ba6e402e689fdac9ed6b60f142fc",
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_nut_1.step": "fddf3bcc25fc640541aba2de84416cb08d446db7fdc7f52347b6e99086e34a7c",
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_nut_2.step": "5c62724ecce906ed0bd9a25e55e67b1a139c8cb26f46cdb70efa5d3b432af2ec",
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_screw_1.step": "f94534ccd1c3559f78b4168b5fe00a9c701269cdfc7d64ea9b58bdb5e75af92d",
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_screw_2.step": "c49dff296cb31fc36014c24598464d5e2241e457569e0bf79926db2a6e32cf68",
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_spool.step": "4b0091f1b8c839fbaff67d8e281c0534e5a44234b41f98ba9719cc901d75803d",
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_adapter.step": "0bc6a1475ed5c6ab67270ec2ce79aafc67221f5128b2e5a1d4b815663b117056",
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_nut_1.step": "b10c01313ea856b9131d637d1f8f2ef2c8d57b5be939c272fd0b7292a3b95d37",
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_nut_2.step": "695ac909a92e62218792fddf3ef9b78207835d5f5b569a1d19cca80be436e576",
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_screw_1.step": "f56cd1bd8fa541c551d42060ea6cce7e2e06a413191dd24061939f7e37fc8b67",
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_screw_2.step": "4f4e89cdffea21ef31e43f2a324f5ab5d08ce1af7f07442b6c5b5be9c9753af0",
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_spool.step": "15c6b561cbc6a6be771a44f636b608db647920045d3497349385873cc257f5fa",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_base_sweep_actuator_adapter.step": "9f55bcec2f144de084ec9c93286ee82e6841e85ebddf95ced7dfa4574e532da5",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_base_sweep_actuator_spool.step": "e929e244ebe4366a3b50c4696ee99ef36dd9de495b1fb428393186bfa8c1db19",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_adapter.step": "a81e1cce31e72ad48ecbe69cfb13119b0afdaad82c9c3c7cb622b253f14cc8a3",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_nut_1.step": "d0b1b462997b017145dc5de08dcb7d8cebc137072079aea4a63d4d03ff5097b2",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_nut_2.step": "7f4257cb8c91fcf8f474c58f127015983eba33f7f110e40c0affad79c2ab0567",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_screw_1.step": "50b82b26a0d2974e6cb1c9db059e0ebaecf303435c360162ba6629476f273fef",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_screw_2.step": "b650ee8f34510553c0144c3135bf3a51c1b9835787cd268f3b0e942d4ae56a8a",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_spool.step": "86ecba9cf9767e661996dad02977f1cb0e86e0172376d1c6442238609968c9ca",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_adapter.step": "841a728ea02653ad9e7c1122e9798ca0a20ad96eccdfce586f5397411db1bab4",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_nut_1.step": "f841d3df1a08dc131dbf0fe6d044be124f6cc0b94090dcf62deecb8e3f3321cb",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_nut_2.step": "163ca6d144b70af6d4d6427c782fe7667a6cf0c332c13da8b0d8bfc53d517557",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_screw_1.step": "238cc62b25c1821c7727aa78bd8ee4bf70257584364fd2fa6dd6396d071c08a8",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_screw_2.step": "da4d9273cce41b5dff831f7a25a8a6263c325ef8d70463ba55caa08e007b188b",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_spool.step": "d47813872e3e8958a43e2a95e16fec586b8e658be50f7e41d6536765f5cd56aa",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_opposition_actuator_adapter.step": "9253aee0465b4c15de3926bdf25ac233809b4fd9ab1c2ae189ae1227d8778f0a",
+    "cad/form_drive_v1/generated/packaging/parts/thumb_opposition_actuator_spool.step": "ae991e2b40eada049304642f6e6c34ae5373393f02068ee522263eda583c3bee",
+    "cad/form_drive_v1/generated/packaging/placements_mass_inertia.json": "f52825cea6b1ca938056f6400587c03a60876ee1fc7c0a3985ba75181f9931d2",
+    "cad/modular_roots_v9/parts/M077_rotor.step": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+    "cad/modular_roots_v9/parts/M077_stator.step": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+    "cad/modular_roots_v9/parts/M2_base_nuts.step": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f",
+    "cad/modular_roots_v9/parts/M2_base_screws.step": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856",
+    "cad/modular_roots_v9/parts/M2_body_TAP8.step": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a",
+    "cad/modular_roots_v9/parts/S101_relief.step": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec",
+    "cad/webcam_articulation_v1/thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad/webcam_articulation_v1/verify.py": "c9c97710519c130f6e5079520e07f9d28240c5279f9f02d39db3e750be869ff0"
+  },
+  "inputs_unchanged": true,
+  "checked_motor_count": 20,
+  "checked_motor_modules": [
+    "index_dip_actuator",
+    "index_mcp_actuator",
+    "index_pip_actuator",
+    "index_spread_actuator",
+    "little_dip_actuator",
+    "little_mcp_actuator",
+    "little_pip_actuator",
+    "little_spread_actuator",
+    "middle_dip_actuator",
+    "middle_mcp_actuator",
+    "middle_pip_actuator",
+    "middle_spread_actuator",
+    "ring_dip_actuator",
+    "ring_mcp_actuator",
+    "ring_pip_actuator",
+    "ring_spread_actuator",
+    "thumb_base_sweep_actuator",
+    "thumb_ip_actuator",
+    "thumb_mcp_actuator",
+    "thumb_opposition_actuator"
+  ],
+  "motor_component_count": 40,
+  "saved_packaging_components": 217,
+  "cases": [
+    {
+      "pose": "open",
+      "angles_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exact_pairs": 98,
+      "overlaps": [
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 247.56222276607
+        },
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_cradle",
+          "volume_mm3": 91.64443632439092
+        },
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_body_screws",
+          "volume_mm3": 11.594708281609382
+        },
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 250.99249694531815
+        },
+        {
+          "hand": "ring_root_spread_carrier",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 0.09877729696816358
+        },
+        {
+          "hand": "ring_root_mount_1_bolt",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 17.35283125597666
+        },
+        {
+          "hand": "ring_root_mount_1_nut",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 13.554794345713216
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 210.89383521810183
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 95.39233434928575
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_cradle",
+          "volume_mm3": 76.04943516308603
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 268.5782322471565
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 299.2372888146902
+        },
+        {
+          "hand": "little_root_spread_carrier",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 766.2407056381625
+        },
+        {
+          "hand": "little_root_spread_carrier",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 28.522135428427994
+        },
+        {
+          "hand": "little_spread_lower_bushing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 132.78945311019635
+        },
+        {
+          "hand": "little_spread_lower_bushing",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 47.596888123455045
+        },
+        {
+          "hand": "little_spread_lower_bushing",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 4.423340019984273
+        },
+        {
+          "hand": "little_spread_upper_bushing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 138.36338942846658
+        },
+        {
+          "hand": "little_spread_upper_bushing",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 9.531439780792114
+        },
+        {
+          "hand": "little_spread_upper_bushing",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 0.034741871236962145
+        },
+        {
+          "hand": "little_spread_lower_washer",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 29.387186724368014
+        },
+        {
+          "hand": "little_spread_lower_washer",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 11.467871225235966
+        },
+        {
+          "hand": "little_spread_lower_washer",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 3.8996737985191685
+        },
+        {
+          "hand": "little_spread_retaining_clip",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 24.977841341977037
+        },
+        {
+          "hand": "little_spread_retaining_clip",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 14.243797652740147
+        },
+        {
+          "hand": "little_spread_retaining_clip",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 0.1346705815863476
+        },
+        {
+          "hand": "little_root_mount_2_bolt",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 2.8274333882308027
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 234.22965258565037
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_cradle",
+          "volume_mm3": 91.78272211252731
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_body_screws",
+          "volume_mm3": 21.614050452517837
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_adapter",
+          "volume_mm3": 207.73351220401526
+        },
+        {
+          "hand": "thumb_root_spread_carrier",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 594.1875630673678
+        },
+        {
+          "hand": "thumb_spread_lower_bushing",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 175.5929383247979
+        },
+        {
+          "hand": "thumb_spread_upper_bushing",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 8.458609338391398
+        },
+        {
+          "hand": "thumb_spread_lower_washer",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 41.61001858660062
+        },
+        {
+          "hand": "thumb_spread_retaining_clip",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 45.71271292607119
+        },
+        {
+          "hand": "thumb_root_mount_1_bolt",
+          "packaging": "index_mcp_actuator_adapter",
+          "volume_mm3": 56.54866776461623
+        },
+        {
+          "hand": "thumb_root_mount_1_nut",
+          "packaging": "index_mcp_actuator_adapter",
+          "volume_mm3": 20.99383530583167
+        }
+      ],
+      "boolean_errors": []
+    },
+    {
+      "pose": "fist",
+      "angles_deg": [
+        0.0,
+        80.0,
+        128.7017363341432,
+        61.29826366585681,
+        0.0,
+        80.0,
+        132.59728432008603,
+        57.40271567991397,
+        0.0,
+        80.0,
+        124.90794676120265,
+        65.09205323879735,
+        0.0,
+        80.0,
+        122.23619166944468,
+        67.76380833055532,
+        4.36319691,
+        41.77009943,
+        34.46484045,
+        51.76072322
+      ],
+      "exact_pairs": 98,
+      "overlaps": [
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 247.56222276607
+        },
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_cradle",
+          "volume_mm3": 91.64443632439092
+        },
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_body_screws",
+          "volume_mm3": 11.594708281609382
+        },
+        {
+          "hand": "ring_root_fixed_housing",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 250.99249694531815
+        },
+        {
+          "hand": "ring_root_spread_carrier",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 0.09877729696816358
+        },
+        {
+          "hand": "ring_root_mount_1_bolt",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 17.35283125597666
+        },
+        {
+          "hand": "ring_root_mount_1_nut",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 13.554794345713216
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 210.89383521810183
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 95.39233434928575
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_cradle",
+          "volume_mm3": 76.04943516308603
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 268.5782322471565
+        },
+        {
+          "hand": "little_root_fixed_housing",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 299.2372888146902
+        },
+        {
+          "hand": "little_root_spread_carrier",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 766.2407056381625
+        },
+        {
+          "hand": "little_root_spread_carrier",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 28.522135428427994
+        },
+        {
+          "hand": "little_spread_lower_bushing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 132.78945311019635
+        },
+        {
+          "hand": "little_spread_lower_bushing",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 47.596888123455045
+        },
+        {
+          "hand": "little_spread_lower_bushing",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 4.423340019984273
+        },
+        {
+          "hand": "little_spread_upper_bushing",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 138.36338942846658
+        },
+        {
+          "hand": "little_spread_upper_bushing",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 9.531439780792114
+        },
+        {
+          "hand": "little_spread_upper_bushing",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 0.034741871236962145
+        },
+        {
+          "hand": "little_spread_lower_washer",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 29.387186724368014
+        },
+        {
+          "hand": "little_spread_lower_washer",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 11.467871225235966
+        },
+        {
+          "hand": "little_spread_lower_washer",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 3.8996737985191685
+        },
+        {
+          "hand": "little_spread_retaining_clip",
+          "packaging": "little_mcp_actuator_motor",
+          "volume_mm3": 24.977841341977037
+        },
+        {
+          "hand": "little_spread_retaining_clip",
+          "packaging": "little_mcp_actuator_rotor",
+          "volume_mm3": 14.243797652740147
+        },
+        {
+          "hand": "little_spread_retaining_clip",
+          "packaging": "little_mcp_actuator_spool",
+          "volume_mm3": 0.1346705815863476
+        },
+        {
+          "hand": "little_root_mount_2_bolt",
+          "packaging": "little_mcp_actuator_adapter",
+          "volume_mm3": 2.8274333882308027
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 234.22965258565037
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_cradle",
+          "volume_mm3": 91.78272211252731
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_body_screws",
+          "volume_mm3": 21.614050452517837
+        },
+        {
+          "hand": "thumb_root_fixed_housing",
+          "packaging": "index_mcp_actuator_adapter",
+          "volume_mm3": 207.73351220401526
+        },
+        {
+          "hand": "thumb_root_spread_carrier",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 594.187563075623
+        },
+        {
+          "hand": "thumb_spread_lower_bushing",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 175.5929383247979
+        },
+        {
+          "hand": "thumb_spread_upper_bushing",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 8.458609338391398
+        },
+        {
+          "hand": "thumb_spread_lower_washer",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 41.610018586600624
+        },
+        {
+          "hand": "thumb_spread_retaining_clip",
+          "packaging": "index_mcp_actuator_motor",
+          "volume_mm3": 45.71271292607121
+        },
+        {
+          "hand": "thumb_root_mount_1_bolt",
+          "packaging": "index_mcp_actuator_adapter",
+          "volume_mm3": 56.54866776461623
+        },
+        {
+          "hand": "thumb_root_mount_1_nut",
+          "packaging": "index_mcp_actuator_adapter",
+          "volume_mm3": 20.99383530583167
+        }
+      ],
+      "boolean_errors": []
+    }
+  ],
+  "scope": "Existing DRIVE001 static packaging versus new hand only, open and fist poses.",
+  "passed": false,
+  "limitations": [
+    "This does not install motors or validate tendon transmission.",
+    "Hand base and forearm are fixed relative to one another for this comparison.",
+    "Packaging self-interference, arm motion, continuous hand motion, fastening strength and full joint ranges are outside this screen."
+  ]
+}

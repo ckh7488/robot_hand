@@ -1,0 +1,262 @@
+{
+  "revision": "articulation_drive_v2",
+  "status": "Root assembly repair candidate; remaining fabrication and drive blockers are reported",
+  "units": "mm",
+  "reference": "cad/modular_roots_v9/reviews/whole_hand_forearm.png",
+  "palm_target_envelope_mm": [
+    180,
+    150
+  ],
+  "reference_palm_envelope_mm": [
+    232,
+    195
+  ],
+  "palm_back_z_mm": -44,
+  "palm_cover_front_z_mm": 14,
+  "fingers": [
+    {
+      "name": "index",
+      "root": [
+        58.5,
+        117,
+        8
+      ],
+      "links": [
+        65,
+        50,
+        32
+      ]
+    },
+    {
+      "name": "middle",
+      "root": [
+        19.5,
+        127,
+        8
+      ],
+      "links": [
+        70,
+        50,
+        34
+      ]
+    },
+    {
+      "name": "ring",
+      "root": [
+        -19.5,
+        121,
+        8
+      ],
+      "links": [
+        62,
+        50,
+        32
+      ]
+    },
+    {
+      "name": "little",
+      "root": [
+        -58.5,
+        106,
+        8
+      ],
+      "links": [
+        55,
+        48,
+        28
+      ]
+    }
+  ],
+  "thumb": {
+    "root": [
+      46,
+      34,
+      8
+    ],
+    "links": [
+      50,
+      45,
+      28
+    ],
+    "base_yaw_deg": -40,
+    "second_yaw_deg": 25,
+    "metacarpal_form": "hollow_thenar_with_oblique_distal_fork",
+    "second_roll_deg": -65,
+    "flexion_offset": [
+      0,
+      0,
+      21
+    ]
+  },
+  "actuator_packaging": {
+    "independent_axes_target": 20,
+    "root_actuators_to_fit_in_palm_or_wrist": 10,
+    "distal_actuators_to_fit_in_forearm": 10,
+    "installed_actuators_in_this_cad": 0,
+    "status": "Space and cable route study required; motors are deliberately not represented as fitted behind the covers"
+  },
+  "performance": {
+    "robot_latency_goal_ms": 50,
+    "robot_latency_limit_ms": 100,
+    "new_geometry_tested": false
+  },
+  "joint_ranges_deg": {
+    "spread": [
+      -22,
+      22
+    ],
+    "mcp": [
+      -20,
+      90
+    ],
+    "pip": [
+      0,
+      135
+    ],
+    "dip": [
+      0,
+      90
+    ],
+    "thumb_base_sweep": [
+      -65,
+      55
+    ],
+    "thumb_opposition": [
+      0,
+      85
+    ],
+    "thumb_mcp": [
+      0,
+      85
+    ],
+    "thumb_ip": [
+      0,
+      85
+    ]
+  },
+  "fist_deg": [
+    0,
+    80,
+    128.7017363341432,
+    61.29826366585681,
+    0,
+    80,
+    132.59728432008603,
+    57.40271567991397,
+    0,
+    80,
+    124.90794676120265,
+    65.09205323879735,
+    0,
+    80,
+    122.23619166944468,
+    67.76380833055532,
+    4.36319691,
+    41.77009943,
+    34.46484045,
+    51.76072322
+  ],
+  "fist_path": [
+    {
+      "fraction": 0,
+      "angles_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fraction": 0.2,
+      "angles_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        41.77009943,
+        0,
+        0
+      ]
+    },
+    {
+      "fraction": 0.75,
+      "angles_deg": [
+        0,
+        80,
+        128.7017363341432,
+        61.29826366585681,
+        0,
+        80,
+        132.59728432008603,
+        57.40271567991397,
+        0,
+        80,
+        124.90794676120265,
+        65.09205323879735,
+        0,
+        80,
+        122.23619166944468,
+        67.76380833055532,
+        35,
+        41.77009943,
+        0,
+        0
+      ]
+    },
+    {
+      "fraction": 1,
+      "angles_deg": [
+        0,
+        80,
+        128.7017363341432,
+        61.29826366585681,
+        0,
+        80,
+        132.59728432008603,
+        57.40271567991397,
+        0,
+        80,
+        124.90794676120265,
+        65.09205323879735,
+        0,
+        80,
+        122.23619166944468,
+        67.76380833055532,
+        4.36319691,
+        41.77009943,
+        34.46484045,
+        51.76072322
+      ]
+    }
+  ],
+  "source_candidate": "cad/webcam_articulation_v1"
+}

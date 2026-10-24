@@ -1,0 +1,126 @@
+[
+  {
+    "path": "cad/articulation_drive_v2/design.json",
+    "sha256": "3016ba3242d3e15c1b3ce183307e1de2511e659b2a74514635d150177b1f9363"
+  },
+  {
+    "path": "cad/articulation_drive_v2/generated/scene.json",
+    "sha256": "202f85228570a858b7586346274cdab257475a247fca1c1442d5139d93e2a209"
+  },
+  {
+    "path": "cad/articulation_drive_v2/generated/mass_inertia.json",
+    "sha256": "cb75b70bef0226e214d6a9090289d9a3f56f739953a1cec6ebba9d621344dbcf"
+  },
+  {
+    "path": "cad/articulation_drive_v2/generated/hand.step",
+    "sha256": "6d771764fbf7a9244c169b7d208616cb5c0afb7542ea40b074436b73437e9b19"
+  },
+  {
+    "path": "cad/articulation_drive_v2/generated/build_report.json",
+    "sha256": "588cb53ff66fd2f3e8d7732d16f93c0194a168111c968677c55903e7705a6ab4"
+  },
+  {
+    "path": "cad/webcam_articulation_v1/design.json",
+    "sha256": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae"
+  },
+  {
+    "path": "cad/webcam_articulation_v1/build.py",
+    "sha256": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3"
+  },
+  {
+    "path": "cad/webcam_articulation_v1/digits.py",
+    "sha256": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626"
+  },
+  {
+    "path": "cad/webcam_articulation_v1/thumb_shell.py",
+    "sha256": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39"
+  },
+  {
+    "path": "cad/webcam_articulation_v1/generated/scene.json",
+    "sha256": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331"
+  },
+  {
+    "path": "cad/webcam_articulation_v1/generated/hand_articulation_candidate.step",
+    "sha256": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc"
+  },
+  {
+    "path": "cad/articulation_drive_v2/build.py",
+    "sha256": "9c7b17971ee2492799182a52ab7783e85e2ffb70234900d1905d949c96753fc0"
+  },
+  {
+    "path": "cad/articulation_drive_v2/root_module.py",
+    "sha256": "bb446a195ec50bde6d0f6b05a5ea1c3f0401bc2418bb317bc89d61021563b033"
+  },
+  {
+    "path": "cad/form_drive_v1/exterior.py",
+    "sha256": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab"
+  },
+  {
+    "path": "sim/articulation_drive_v2/build_contract.py",
+    "sha256": "ca0e6e420f322b02dded868131393fd3f16ca35109900447238d0443a4f7b8ab"
+  },
+  {
+    "path": "sim/articulation_drive_v2/model_adapter.py",
+    "sha256": "669901a5845da32f0d12c7d778ab579f76f72f0e59e4f0d843e3b52035963593"
+  },
+  {
+    "path": "sim/articulation_drive_v2/scope.json",
+    "sha256": "79d413cc53d9dbf0aff0786b938c023834005eac1423ca1808a5949e749558ec"
+  },
+  {
+    "path": "sim/articulation_drive_v2/transmission.json",
+    "sha256": "895862cc3930c8759518d0564859fc18e44dfa9d8e5abae08a9370443c7f9ac5"
+  },
+  {
+    "path": "cad/articulation_drive_v2/generated/dynamics_contract.json",
+    "sha256": "a5a12a12ce296dbcdf96afb636668e325357492e4fb3d8727e1d504cba3e3bdd"
+  },
+  {
+    "path": "sim/articulation_drive_v2/parameters.json",
+    "sha256": "8f3f76f3eb81faea9d0a3286595652469f714324182dd11522f87189af02bb74"
+  },
+  {
+    "path": "sim/articulation_drive_v2/run_screen.py",
+    "sha256": "b6d19e8fc31b96279738c2839d01432c5903be3c61041b4fc846d0f33148505c"
+  },
+  {
+    "path": "sim/articulation_drive_v2/test_adapter.py",
+    "sha256": "af1b9af7e47d19ad1e32d796fdab2e074001f1b34e77b395b4326bb678e74792"
+  },
+  {
+    "path": "sim/articulation_drive_v2/test_screen.py",
+    "sha256": "77c7a7b4f6a7814bf15fd430b645b7918b15ca35b4d88462147a0dbe0e47b42d"
+  },
+  {
+    "path": "sim/form_drive_v1/model_adapter.py",
+    "sha256": "6499f8cac525c77e1ee01a76bb4deced9d4a7f64de4aa619709a18d9d8c777b4"
+  },
+  {
+    "path": "sim/form_drive_v1/results/drive001/parameters.json",
+    "sha256": "ba4040f441feed2b7f4a62f0b5e1de2fb62b0a45b05c1235bec7fd9854019e26"
+  },
+  {
+    "path": "sim/articulation_drive_v2/reference_webcam_31ba43f/provenance.json",
+    "sha256": "7176413b140cdcf6678cb95b37d41e3117b12208c6c5c8c5dbf31cd7f8308e36"
+  },
+  {
+    "path": "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/cad_hand.py",
+    "sha256": "38a512c236a46e3480c59f22719bc4caeb92dd4ffa2cef06caa0b71ee3bc07b9"
+  },
+  {
+    "path": "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/retarget.py",
+    "sha256": "f52a6872497a5764444283ebf8257ce890f84c90282081ca4c868582bc57fbfc"
+  },
+  {
+    "path": "sim/articulation_drive_v2/reference_webcam_31ba43f/hand_follow/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "sim/form_drive_v1/reference_06b9ab4/sim/remote_drive_v1/model.py",
+    "sha256": "2e76245ad8a43de53c9b204862508f37a80c62fab14ff91354b3e6ec27d6e128"
+  },
+  {
+    "path": "sim/form_drive_v1/reference_06b9ab4/sim/remote_drive_v1/evaluate.py",
+    "sha256": "bbccd9165a26e4bc850d9f60655a0a2de18b19ef87164728f5b0439ab8b6b4a8"
+  }
+]

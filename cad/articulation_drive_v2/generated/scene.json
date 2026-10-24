@@ -1,0 +1,6468 @@
+{
+  "hand": [
+    {
+      "name": "Palm_tapered_chassis",
+      "step": "generated/parts/Palm_tapered_chassis.step",
+      "step_index": 0,
+      "sha256_step": "b267516d2893bc91e3fe64b8b11c933fc257b7effd4997e0cbe5b1f3c529ad94",
+      "mesh": "generated/meshes/Palm_tapered_chassis.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c071cdabcfdc4c2008dcbf07ed51e7c52b211a6fba3f916e225fe5eee334e759",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 168637.92959883407,
+      "bbox_mm": [
+        [
+          -90.0,
+          -1.3720580227527535e-11,
+          -44.0
+        ],
+        [
+          90.00000000000004,
+          150.0,
+          4.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "articulation_drive_v2_interface_repair"
+    },
+    {
+      "name": "Cover_screw_-44_33",
+      "step": "generated/parts/Cover_screw_-44_33.step",
+      "step_index": 1,
+      "sha256_step": "6ba61a1669617632311f2770a8c2cae87eb6755a05c63eb128e749e07301767e",
+      "mesh": "generated/meshes/Cover_screw_-44_33.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "25616edc35630eeab996a1cf5c7fb80f064cf3aa0ad5878568ddb1df6999f96c",
+      "body": "palm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663165,
+      "bbox_mm": [
+        [
+          -47.3,
+          29.7,
+          14.0
+        ],
+        [
+          -40.7,
+          36.3,
+          15.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_screw_16_29",
+      "step": "generated/parts/Cover_screw_16_29.step",
+      "step_index": 2,
+      "sha256_step": "293488b0441ac5db288f596cb8de1e903b3ebff6d5a3a54e3b80a14b2929aade",
+      "mesh": "generated/meshes/Cover_screw_16_29.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "330e954d27c94197cbf10349dc4420bc2801c56af68a65b43256a5ad1619cddd",
+      "body": "palm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.1607215966317,
+      "bbox_mm": [
+        [
+          12.7,
+          25.7,
+          14.0
+        ],
+        [
+          19.3,
+          32.3,
+          15.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_screw_-54_78",
+      "step": "generated/parts/Cover_screw_-54_78.step",
+      "step_index": 3,
+      "sha256_step": "1faa908f90ba476a9e2c27195e70595b91f644b9c805c5d25320ee5dfed22416",
+      "mesh": "generated/meshes/Cover_screw_-54_78.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "43a452c9e00661e758adaa9cb61060db3fbabb3ceb578c39d2aa48d12937d239",
+      "body": "palm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.160721596631625,
+      "bbox_mm": [
+        [
+          -57.3,
+          74.7,
+          14.0
+        ],
+        [
+          -50.7,
+          81.3,
+          15.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_screw_46_88",
+      "step": "generated/parts/Cover_screw_46_88.step",
+      "step_index": 4,
+      "sha256_step": "8e3ca56d0eeb557650bc1c26242ec4dbb10035e51c6bba676c818d2f4372f842",
+      "mesh": "generated/meshes/Cover_screw_46_88.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "a4d5b7c3e50d6ccb6730c31dfca315d84ce9f1c92b0b241a2b950b07ce383818",
+      "body": "palm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663162,
+      "bbox_mm": [
+        [
+          42.7,
+          84.7,
+          14.0
+        ],
+        [
+          49.3,
+          91.3,
+          15.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "step": "generated/parts/Cover_screw_-18_104.step",
+      "step_index": 5,
+      "sha256_step": "6ac22dcaf824eddb820fde961d30b5c1914a6eac27bb0f17eda3c9ab6f69b9c7",
+      "mesh": "generated/meshes/Cover_screw_-18_104.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "9564066a197759bc2a14a63366be0a450192462e45db48ed767f1daa4146b883",
+      "body": "palm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663165,
+      "bbox_mm": [
+        [
+          -21.3,
+          90.7,
+          14.0
+        ],
+        [
+          -14.7,
+          97.3,
+          15.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "articulation_drive_v2_interface_repair"
+    },
+    {
+      "name": "Cover_screw_15_10",
+      "step": "generated/parts/Cover_screw_15_10.step",
+      "step_index": 6,
+      "sha256_step": "d488c14baa28fde74ca7d9ba1d7a1aa8d7546c9a18885c29842417950f38fa0b",
+      "mesh": "generated/meshes/Cover_screw_15_10.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e6303c47e4a5397af694a18e317c565984d2b8dff175928ebb60c20c1e298fe4",
+      "body": "palm",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_fastener",
+      "volume_mm3": 45.16072159663167,
+      "bbox_mm": [
+        [
+          11.7,
+          6.7,
+          14.0
+        ],
+        [
+          18.3,
+          13.3,
+          15.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Palm_shaped_front_cover",
+      "step": "generated/parts/Palm_shaped_front_cover.step",
+      "step_index": 7,
+      "sha256_step": "1908b43ff183897c87a0cb85afd7ec38bcbd1000153adce6cfa2d98597007178",
+      "mesh": "generated/meshes/Palm_shaped_front_cover.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ae3058bdb412cd2cf91ceacc80ac93b094a4f2dee5f077f1a6ffa17235aec11e",
+      "body": "palm",
+      "color": [
+        0.89,
+        0.9,
+        0.88
+      ],
+      "role": "new_palm_cover",
+      "volume_mm3": 41872.2880193846,
+      "bbox_mm": [
+        [
+          -78.0,
+          0.0,
+          10.5
+        ],
+        [
+          78.0,
+          117.5685978984352,
+          14.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "articulation_drive_v2_interface_repair"
+    },
+    {
+      "name": "Palm_side_web_-71",
+      "step": "generated/parts/Palm_side_web_-71.step",
+      "step_index": 8,
+      "sha256_step": "2cd0d2b6cf542f8ad8ea756f190a00acb8b86da18417f7d292278373f49b4866",
+      "mesh": "generated/meshes/Palm_side_web_-71.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "02a229228013104df22b39d51a313ddac705247a2e16ae633438db9218fff302",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 6336.0,
+      "bbox_mm": [
+        [
+          -72.5,
+          44.5,
+          -40.0
+        ],
+        [
+          -69.5,
+          88.5,
+          8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "articulation_drive_v2_interface_repair"
+    },
+    {
+      "name": "Palm_side_web_71",
+      "step": "generated/parts/Palm_side_web_71.step",
+      "step_index": 9,
+      "sha256_step": "f84e8210f38a37ac1c14e882fb1bb28d12ce520a3d03ca6f2e17a6945e323492",
+      "mesh": "generated/meshes/Palm_side_web_71.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "78f6dc86e5367b8cbf09edc1003bb75dd4f45639308056497af2ad1733930e4d",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 7920.0,
+      "bbox_mm": [
+        [
+          69.5,
+          44.5,
+          -40.0
+        ],
+        [
+          72.5,
+          99.5,
+          8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_post_-44_33",
+      "step": "generated/parts/Cover_post_-44_33.step",
+      "step_index": 10,
+      "sha256_step": "aea13910465004f0adc325ab69bd1cea5362c7b9e28428c26887e4ce9605e1a8",
+      "mesh": "generated/meshes/Cover_post_-44_33.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4b2d345656ddfc6f55fb1cde1b729f4214566d1c4638d717cb66d6d09845b59f",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.3802615950412,
+      "bbox_mm": [
+        [
+          -48.8,
+          28.2,
+          -40.5
+        ],
+        [
+          -39.2,
+          37.8,
+          10.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_post_16_29",
+      "step": "generated/parts/Cover_post_16_29.step",
+      "step_index": 11,
+      "sha256_step": "138c8959d47c41fafa46c553e2fbc69c8fe2ac1e508e30e43fdacc08e581a835",
+      "mesh": "generated/meshes/Cover_post_16_29.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "66885144a33e7dbbe7af3d7c73dddda3f0cd447a86746c8e0420a7e24ff23956",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595042,
+      "bbox_mm": [
+        [
+          11.2,
+          24.2,
+          -40.5
+        ],
+        [
+          20.8,
+          33.8,
+          10.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_post_-54_78",
+      "step": "generated/parts/Cover_post_-54_78.step",
+      "step_index": 12,
+      "sha256_step": "d680c379b07ab5c4d2c3be8950beda1db09b1c582dee978e1482161b0043b2d5",
+      "mesh": "generated/meshes/Cover_post_-54_78.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2ace5f2008cfe2cc69e19e378258a65fa25d040924c11a87982f1ecfcb8b2906",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595042,
+      "bbox_mm": [
+        [
+          -58.8,
+          73.2,
+          -40.5
+        ],
+        [
+          -49.2,
+          82.8,
+          10.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_post_46_88",
+      "step": "generated/parts/Cover_post_46_88.step",
+      "step_index": 13,
+      "sha256_step": "de118ea78fc2a9377c3c9d01adfd9ac764645c70027c0a56048e72a9141d06ee",
+      "mesh": "generated/meshes/Cover_post_46_88.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "bf916a4ba5425f2e713b93303382aaea97f5226b5f9d51a9524f5a7bd2f16a5a",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595042,
+      "bbox_mm": [
+        [
+          41.2,
+          83.2,
+          -40.5
+        ],
+        [
+          50.8,
+          92.8,
+          10.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Cover_post_-18_104",
+      "step": "generated/parts/Cover_post_-18_104.step",
+      "step_index": 14,
+      "sha256_step": "824d70d2ef03811c0b619f5c25e70c88742862c205402e0025b9e99d4d7167c4",
+      "mesh": "generated/meshes/Cover_post_-18_104.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "7aa789f4402167b5cac56b0fd34986a00b9aaeb88b0437789b0f3cf61f92cfb0",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595043,
+      "bbox_mm": [
+        [
+          -22.8,
+          89.2,
+          -40.5
+        ],
+        [
+          -13.2,
+          98.8,
+          10.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "articulation_drive_v2_interface_repair"
+    },
+    {
+      "name": "Cover_post_15_10",
+      "step": "generated/parts/Cover_post_15_10.step",
+      "step_index": 15,
+      "sha256_step": "edceaea4a3615fbc01eb0d4be074c39fa6318b459868f6f0fb468cac300bc36e",
+      "mesh": "generated/meshes/Cover_post_15_10.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "61e2f2e8f9d71235bf426ebedf0fae82b8c30675ebecf1e3bbdd82264b588530",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_palm",
+      "volume_mm3": 3172.380261595043,
+      "bbox_mm": [
+        [
+          10.2,
+          5.2,
+          -40.5
+        ],
+        [
+          19.8,
+          14.8,
+          10.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Wrist_bridge_post_-32_8",
+      "step": "generated/parts/Wrist_bridge_post_-32_8.step",
+      "step_index": 16,
+      "sha256_step": "7332cde634ab8f3697c3ba0e5a4141fa0cfac0fdad887acbffa64d416dedb1be",
+      "mesh": "generated/meshes/Wrist_bridge_post_-32_8.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "1feeb42f1fbbeeb80168f29bdd9932ce4d150d97bc36c01620e079b8936c6a80",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.3096250332799,
+      "bbox_mm": [
+        [
+          -37.5,
+          2.5,
+          -59.0
+        ],
+        [
+          -26.5,
+          13.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Wrist_bridge_post_-32_28",
+      "step": "generated/parts/Wrist_bridge_post_-32_28.step",
+      "step_index": 17,
+      "sha256_step": "a70fc9277e1c5877f3aa3868b55ab2898526778c04c245e8b17fdce9474ddac3",
+      "mesh": "generated/meshes/Wrist_bridge_post_-32_28.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "27badb14fa268c729378e2fd39ecbc7c862e157a0434d8282a6b1a1032b4d7e4",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.30962503328,
+      "bbox_mm": [
+        [
+          -37.5,
+          22.5,
+          -59.0
+        ],
+        [
+          -26.5,
+          33.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Wrist_bridge_post_8_8",
+      "step": "generated/parts/Wrist_bridge_post_8_8.step",
+      "step_index": 18,
+      "sha256_step": "64caa8bfcb4d8b0ddb383be0957bfb63b804495cf213538168ae859045491fc3",
+      "mesh": "generated/meshes/Wrist_bridge_post_8_8.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "da1cb8322f112876c54c9d672035f03ef4d9ae9ca668bb2a419decb4cdc3dd63",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.30962503328,
+      "bbox_mm": [
+        [
+          2.5,
+          2.5,
+          -59.0
+        ],
+        [
+          13.5,
+          13.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Wrist_bridge_post_8_28",
+      "step": "generated/parts/Wrist_bridge_post_8_28.step",
+      "step_index": 19,
+      "sha256_step": "dd64434f0f43c9831db44f75abfee414c7b0eedd50299237202e3e16192253c2",
+      "mesh": "generated/meshes/Wrist_bridge_post_8_28.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "a36086dba27fc78dd220cd1fb0cce95d6cde06870ecd6945d1d340e0369ecdb0",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 1289.3096250332799,
+      "bbox_mm": [
+        [
+          2.5,
+          22.5,
+          -59.0
+        ],
+        [
+          13.5,
+          33.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "Wrist_bridge_plate",
+      "step": "generated/parts/Wrist_bridge_plate.step",
+      "step_index": 20,
+      "sha256_step": "80c5cfd44d3d645e2b8013787bdc467f3ea045947c1e44d39b6e11e575119fca",
+      "mesh": "generated/meshes/Wrist_bridge_plate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d1e71d0e8ba9e0307e685d5489b7696f75d897d51c00b53b811b60db4a770c72",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_wrist_interface",
+      "volume_mm3": 7198.732755698005,
+      "bbox_mm": [
+        [
+          -39.0,
+          1.0,
+          -63.0
+        ],
+        [
+          15.0,
+          35.0,
+          -59.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment1_segment_shell",
+      "step": "generated/parts/index_segment1_segment_shell.step",
+      "step_index": 21,
+      "sha256_step": "da3c65d7ca33179b779e2a0ff8a6f12b2b742ac07a818a14760cf199b74d830a",
+      "mesh": "generated/meshes/index_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c41c73ead481e27c0beabd1711b1be6f45475429854231d4ea5a239006e25cb3",
+      "body": "index_mcp",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 11068.698707295718,
+      "bbox_mm": [
+        [
+          44.299999899999996,
+          108.9999999,
+          -3.3000000999999997
+        ],
+        [
+          72.7000001,
+          190.0000001,
+          19.200000100000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment1_distal_left_bushing",
+      "step": "generated/parts/index_segment1_distal_left_bushing.step",
+      "step_index": 22,
+      "sha256_step": "ae6d9048f5a2d5823ac36963082ca9e2ad5061b809e0d8ffbcc06feef9e547fb",
+      "mesh": "generated/meshes/index_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ba3fd20e804caa9de9c900d03179cdd741c6a57a258e2a40e2636738296d42a9",
+      "body": "index_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          46.3,
+          178.65,
+          4.65
+        ],
+        [
+          49.7,
+          185.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment1_distal_right_bushing",
+      "step": "generated/parts/index_segment1_distal_right_bushing.step",
+      "step_index": 23,
+      "sha256_step": "0af99850c9885dd01d48ad46810fcb6e33d2e337b22e67fbb78e4023e324702c",
+      "mesh": "generated/meshes/index_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c07a95c687b9ceaaf94baa5dcd63f9c08a334c525deea73c60f402fd9225ce07",
+      "body": "index_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          67.3,
+          178.65,
+          4.65
+        ],
+        [
+          70.7,
+          185.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment1_dark_faceplate",
+      "step": "generated/parts/index_segment1_dark_faceplate.step",
+      "step_index": 24,
+      "sha256_step": "4141eb430c2dae001c148e73558ec2b0db256619e0175acddd77f30dc3e0da3f",
+      "mesh": "generated/meshes/index_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "dc39ce5ae553fe8cc10687c8be4bf51ae2567038f088b8794dc05fc2eef5bdd8",
+      "body": "index_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 461.1109048904393,
+      "bbox_mm": [
+        [
+          48.090908990909,
+          126.9999999,
+          19.14208590512
+        ],
+        [
+          68.909091009091,
+          152.68526981838,
+          20.509091009091005
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment2_segment_shell",
+      "step": "generated/parts/index_segment2_segment_shell.step",
+      "step_index": 25,
+      "sha256_step": "ce7388ce352a17106ca6f4bc508c46676377390dac53387ce2d5455834b09614",
+      "mesh": "generated/meshes/index_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "a7eda213e8cd3dfc5fa1d514e4db5629bc4985195d3b2838cbc5bd976a28a19c",
+      "body": "index_pip",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10090.645254568568,
+      "bbox_mm": [
+        [
+          44.299999899999996,
+          173.9999999,
+          -3.3000000999999997
+        ],
+        [
+          72.7000001,
+          240.0000001,
+          19.200000100000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment2_proximal_bushing",
+      "step": "generated/parts/index_segment2_proximal_bushing.step",
+      "step_index": 26,
+      "sha256_step": "be632334b11a7256fbcd7389edffebc8974265280a508ea4bfc32ac08f26ec95",
+      "mesh": "generated/meshes/index_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e7b3dcf17be54c699ae502a2f7576c4a17f609f0dd4219391edba0954cbc4bab",
+      "body": "index_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921166,
+      "bbox_mm": [
+        [
+          50.3,
+          178.65,
+          4.65
+        ],
+        [
+          66.7,
+          185.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment2_distal_left_bushing",
+      "step": "generated/parts/index_segment2_distal_left_bushing.step",
+      "step_index": 27,
+      "sha256_step": "18318ed39e2c095417232a3c49dd102a42b60843f5cef782ef558c38ed9f455b",
+      "mesh": "generated/meshes/index_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ed3675d987146929bab5dcbc15b8c653628366e40ec054df859fda3a5123bf77",
+      "body": "index_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          46.3,
+          228.65,
+          4.65
+        ],
+        [
+          49.7,
+          235.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment2_distal_right_bushing",
+      "step": "generated/parts/index_segment2_distal_right_bushing.step",
+      "step_index": 28,
+      "sha256_step": "6325a3bcf969e598c4edb59b863c6da7f3cf79740de8c16e397635eb07958eb1",
+      "mesh": "generated/meshes/index_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "29f40a8254ef9acc850613cf0a27a6394c88914a5a1504b4c98bcfb309cb1021",
+      "body": "index_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          67.3,
+          228.65,
+          4.65
+        ],
+        [
+          70.7,
+          235.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment2_dark_faceplate",
+      "step": "generated/parts/index_segment2_dark_faceplate.step",
+      "step_index": 29,
+      "sha256_step": "aebcb50cba78a2920bb1bae7abf041ce50ae2a56d612335920573962139e67a3",
+      "mesh": "generated/meshes/index_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "36ce84dfd50e8fc7758817058849a23bfa68cfe66d484b18963ddea47fa91056",
+      "body": "index_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 489.2192437500037,
+      "bbox_mm": [
+        [
+          48.1249999,
+          191.9999999,
+          18.896249899999997
+        ],
+        [
+          68.8750001,
+          219.1500001,
+          20.475000100000003
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_joint_pin_1",
+      "step": "generated/parts/index_joint_pin_1.step",
+      "step_index": 30,
+      "sha256_step": "75c9eb44698c22ea780f76d6bdb9b35f91f0487581b29e0df9af14eb65cd0cb2",
+      "mesh": "generated/meshes/index_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "fb170bd12a8f24339f68dc9e78075c099db099b88eebca4484c84f5a560dc740",
+      "body": "index_mcp",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281769,
+      "bbox_mm": [
+        [
+          41.9,
+          178.6,
+          4.6
+        ],
+        [
+          74.0,
+          185.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment3_tip_core",
+      "step": "generated/parts/index_segment3_tip_core.step",
+      "step_index": 31,
+      "sha256_step": "0ed2ab7ede8a87c1d65482cf6565e1815deb4338bb1208e234bf36a90b39d446",
+      "mesh": "generated/meshes/index_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "79ff6a2180fc8947ce030157287c880fe819d8a486bfe4eac8e4463fcc928bcb",
+      "body": "index_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 5235.258910089737,
+      "bbox_mm": [
+        [
+          47.9999999,
+          223.9999999,
+          -1.3000001000009618
+        ],
+        [
+          69.0000001,
+          260.0000001000001,
+          17.000000100000005
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment3_proximal_bushing",
+      "step": "generated/parts/index_segment3_proximal_bushing.step",
+      "step_index": 32,
+      "sha256_step": "ab9a19943d0a577acc05c9a320a5d0483eb77bea4e6176bee30243f6b01f2692",
+      "mesh": "generated/meshes/index_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2bc8b4f67a46bcf1620e0925e85a459ad45f03aa053d5959b706b1aa3c269066",
+      "body": "index_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921166,
+      "bbox_mm": [
+        [
+          50.3,
+          228.65,
+          4.65
+        ],
+        [
+          66.7,
+          235.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_segment3_rounded_tip_cap",
+      "step": "generated/parts/index_segment3_rounded_tip_cap.step",
+      "step_index": 33,
+      "sha256_step": "b4e3ae33e9e61988006892163ce38564c4e5c412e1311d21a542f2575403b5c2",
+      "mesh": "generated/meshes/index_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "7f7080772084d1ac5b4eb9318699af44ad1eb655962891817b7762a7a0a9d1b3",
+      "body": "index_dip",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.271333166879,
+      "bbox_mm": [
+        [
+          45.5,
+          250.0,
+          -3.0
+        ],
+        [
+          71.5,
+          264.0,
+          19.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_joint_pin_2",
+      "step": "generated/parts/index_joint_pin_2.step",
+      "step_index": 34,
+      "sha256_step": "92a5c0cf7b263c6bb2a382a17aff5cd00a909b73ed5dd3215ff3a301e31fc56c",
+      "mesh": "generated/meshes/index_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "35e358b674652312e12f735998c455b222e6f8bd2c04a78f34d6aa340914b746",
+      "body": "index_pip",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281769,
+      "bbox_mm": [
+        [
+          41.9,
+          228.6,
+          4.6
+        ],
+        [
+          74.0,
+          235.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment1_segment_shell",
+      "step": "generated/parts/middle_segment1_segment_shell.step",
+      "step_index": 35,
+      "sha256_step": "2968edde13b8e468d42eb02b8a954a5f80d75bd0e6acccdb2ecec2239473e8b7",
+      "mesh": "generated/meshes/middle_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "281be23a6b001d599c3683adaf6b7d081e31b058fbbc3a1704f588de1c1198f8",
+      "body": "middle_mcp",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 11896.336549155236,
+      "bbox_mm": [
+        [
+          5.2999998999999995,
+          118.9999999,
+          -3.3000000999999997
+        ],
+        [
+          33.700000100000004,
+          205.0000001,
+          19.200000100000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment1_distal_left_bushing",
+      "step": "generated/parts/middle_segment1_distal_left_bushing.step",
+      "step_index": 36,
+      "sha256_step": "4048e4b93ecd72126687851cc8a2c628b73ee9f3472b27c9f54963cf65cc9cf1",
+      "mesh": "generated/meshes/middle_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "09ebfd38381493deccba211d252c8c88557dbb25128e934d3eecf5b753208cd2",
+      "body": "middle_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922676,
+      "bbox_mm": [
+        [
+          7.3,
+          193.65,
+          4.65
+        ],
+        [
+          10.7,
+          200.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment1_distal_right_bushing",
+      "step": "generated/parts/middle_segment1_distal_right_bushing.step",
+      "step_index": 37,
+      "sha256_step": "cd31318f615c62e96f7e703637d3563498b8eb15712da430fbbf583611f349aa",
+      "mesh": "generated/meshes/middle_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "1ee986d5d0cf5176c9edbaae365e8dc3c555aa9b81556ddbeca4bf8c99204724",
+      "body": "middle_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "bbox_mm": [
+        [
+          28.3,
+          193.65,
+          4.65
+        ],
+        [
+          31.7,
+          200.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment1_dark_faceplate",
+      "step": "generated/parts/middle_segment1_dark_faceplate.step",
+      "step_index": 38,
+      "sha256_step": "cd3aea030b4b0b286b2b5a0be745efc138858d15b343fc518f799b17274b3a28",
+      "mesh": "generated/meshes/middle_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "fee21dfa4ebdaa5014c96b4319980ee6401459b0394b6b3690bc93e871e40082",
+      "body": "middle_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 552.3681379694148,
+      "bbox_mm": [
+        [
+          9.083333233333,
+          136.9999999,
+          19.104620989432
+        ],
+        [
+          29.916666766667,
+          167.72273473407,
+          20.516666766667
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment2_segment_shell",
+      "step": "generated/parts/middle_segment2_segment_shell.step",
+      "step_index": 39,
+      "sha256_step": "fbdbd7dd4356746d25f9a83718423f24aee34f8385b39310073fb52c4f5aa36b",
+      "mesh": "generated/meshes/middle_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d6b2aea3ce71b0bc2f008dfcaa97d3a9fbf7e19aac3cb7895eb429d8a3c432b1",
+      "body": "middle_pip",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10090.645254568557,
+      "bbox_mm": [
+        [
+          5.2999998999999995,
+          188.9999999,
+          -3.3000000999999997
+        ],
+        [
+          33.700000100000004,
+          255.0000001,
+          19.200000100000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment2_proximal_bushing",
+      "step": "generated/parts/middle_segment2_proximal_bushing.step",
+      "step_index": 40,
+      "sha256_step": "5f349cbb32cbdb6ab22962908ac4a2915db49359fe82737cb46d967761490f7c",
+      "mesh": "generated/meshes/middle_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c65bb2b8dc67c2607df78a17bcb4ff4574f7d1623222d622013ad3b69da676d3",
+      "body": "middle_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "bbox_mm": [
+        [
+          11.3,
+          193.65,
+          4.65
+        ],
+        [
+          27.7,
+          200.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment2_distal_left_bushing",
+      "step": "generated/parts/middle_segment2_distal_left_bushing.step",
+      "step_index": 41,
+      "sha256_step": "63a153a58cff422c50596e58875ba6e48bb8142637b779d6177ffbe7f901f865",
+      "mesh": "generated/meshes/middle_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "86c06c8b25a9ec74ad91ab05ad4863b3fb114d2ca2cfe0eb3f59c2a9b674d420",
+      "body": "middle_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922676,
+      "bbox_mm": [
+        [
+          7.3,
+          243.65,
+          4.65
+        ],
+        [
+          10.7,
+          250.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment2_distal_right_bushing",
+      "step": "generated/parts/middle_segment2_distal_right_bushing.step",
+      "step_index": 42,
+      "sha256_step": "85d1382cfdfcbc07953907fece163eadcd0be888f41a3870cf8dce1a6e2e69c5",
+      "mesh": "generated/meshes/middle_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "a9397f4f4ab8380e5f0f788ffd28f0ae255e3cf253ce297d9934f77abb82b4b8",
+      "body": "middle_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "bbox_mm": [
+        [
+          28.3,
+          243.65,
+          4.65
+        ],
+        [
+          31.7,
+          250.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment2_dark_faceplate",
+      "step": "generated/parts/middle_segment2_dark_faceplate.step",
+      "step_index": 43,
+      "sha256_step": "b4817b46daf6a9a8596b6901656feb0e6d68ae1f4740498d7f87a86ee30ada25",
+      "mesh": "generated/meshes/middle_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "bbd437887b70a53745c6a65cdfd0023531f3a7ad567746e5f7ce027fc7fdf5e0",
+      "body": "middle_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 489.2192437500004,
+      "bbox_mm": [
+        [
+          9.124999899999999,
+          206.9999999,
+          18.896249899999997
+        ],
+        [
+          29.875000100000005,
+          234.15000010000003,
+          20.475000100000003
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_joint_pin_1",
+      "step": "generated/parts/middle_joint_pin_1.step",
+      "step_index": 44,
+      "sha256_step": "0f87cf5b7e8184761675ff83c3390dcab701f2f8db4ac7dc0c0d181271e62a99",
+      "mesh": "generated/meshes/middle_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4fc3d8fe34568a3a7b8cda16e7ca374d165828c95b050e4530eb06dab77e3a71",
+      "body": "middle_mcp",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281768,
+      "bbox_mm": [
+        [
+          2.9,
+          193.6,
+          4.6
+        ],
+        [
+          35.0,
+          200.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment3_tip_core",
+      "step": "generated/parts/middle_segment3_tip_core.step",
+      "step_index": 45,
+      "sha256_step": "2b79141605b8a1df278f3a0e8b4e71cb14fca68b34cfee6b6263c18202ec7e3b",
+      "mesh": "generated/meshes/middle_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "94eeac713be846f68b8ad0fdc74a8d9ad1b6d6131954f4112a368359d6cfdea5",
+      "body": "middle_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 5495.0029037487675,
+      "bbox_mm": [
+        [
+          8.9999999,
+          238.9999999,
+          -1.3000001000009618
+        ],
+        [
+          30.0000001,
+          277.0000001,
+          17.0000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment3_proximal_bushing",
+      "step": "generated/parts/middle_segment3_proximal_bushing.step",
+      "step_index": 46,
+      "sha256_step": "0e9f19acbeaebf370e604ca4e1c95240a5e215dc57993623d4ee573140a67010",
+      "mesh": "generated/meshes/middle_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "281c7621df024adfe34dcfaf2e551f5f41765f3fd2c3711392abf1a1ff1844df",
+      "body": "middle_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "bbox_mm": [
+        [
+          11.3,
+          243.65,
+          4.65
+        ],
+        [
+          27.7,
+          250.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_segment3_rounded_tip_cap",
+      "step": "generated/parts/middle_segment3_rounded_tip_cap.step",
+      "step_index": 47,
+      "sha256_step": "5b91b2f456fd2ead690f2a484e1b40a96085e478e9d126092e564d6e1e6b028e",
+      "mesh": "generated/meshes/middle_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "423936b6adfd3b475cfd6ac1089436e844cee58ae5972879026d4dd6d69bd186",
+      "body": "middle_dip",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.271333166879,
+      "bbox_mm": [
+        [
+          6.5,
+          267.0,
+          -3.0
+        ],
+        [
+          32.5,
+          281.0,
+          19.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "middle_joint_pin_2",
+      "step": "generated/parts/middle_joint_pin_2.step",
+      "step_index": 48,
+      "sha256_step": "3333ce32e3c8bf8d5d01802e884691883ef1861754faf4581f1e3980df9e2821",
+      "mesh": "generated/meshes/middle_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "07b8e4aa97783a80c09196a1d2b66c2d378f51e57b9b72567784287cd2f8689a",
+      "body": "middle_pip",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281768,
+      "bbox_mm": [
+        [
+          2.9,
+          243.6,
+          4.6
+        ],
+        [
+          35.0,
+          250.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment1_segment_shell",
+      "step": "generated/parts/ring_segment1_segment_shell.step",
+      "step_index": 49,
+      "sha256_step": "11957bb72628f14a147271353a017cf9a18b1c1085884d5d87cc9e60d5211b69",
+      "mesh": "generated/meshes/ring_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "cbba3e81c9fc5dd812227877874ade02686f7c1bcd5c867627f30b2e2ff3be0d",
+      "body": "ring_mcp",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10571.937063795222,
+      "bbox_mm": [
+        [
+          -33.700000100000004,
+          112.9999999,
+          -3.3000000999999997
+        ],
+        [
+          -5.2999998999999995,
+          191.0000001,
+          19.2000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment1_distal_left_bushing",
+      "step": "generated/parts/ring_segment1_distal_left_bushing.step",
+      "step_index": 50,
+      "sha256_step": "a056429ce50bc1dc2eda7ad36149affb056175dcc5a53006f41e24b66d5ee3d4",
+      "mesh": "generated/meshes/ring_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d46b9215f11bf06d8240907b7016660ba50e590dc5ffa68f16214498b2ae4ceb",
+      "body": "ring_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "bbox_mm": [
+        [
+          -31.7,
+          179.65,
+          4.65
+        ],
+        [
+          -28.3,
+          186.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment1_distal_right_bushing",
+      "step": "generated/parts/ring_segment1_distal_right_bushing.step",
+      "step_index": 51,
+      "sha256_step": "84b4f4f2fff76c5ea2739358f0f5c6b0dbe5f59247178174ab5a90a6ecb92939",
+      "mesh": "generated/meshes/ring_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "20d78161fca8a7e9e9a94411cfbcb213969bfef6dfa6eb1e798f74b4ea6ec82d",
+      "body": "ring_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922678,
+      "bbox_mm": [
+        [
+          -10.7,
+          179.65,
+          4.65
+        ],
+        [
+          -7.3,
+          186.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment1_dark_faceplate",
+      "step": "generated/parts/ring_segment1_dark_faceplate.step",
+      "step_index": 52,
+      "sha256_step": "e892b9f22ede8afad4998d08d3d73e525cb85f8cf6a05733f33f55853edb6d68",
+      "mesh": "generated/meshes/ring_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "9521843fc523955b278c5573f66fdd1ef6d9386cf0178ea0f881c80fd4689374",
+      "body": "ring_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 406.21545685727017,
+      "bbox_mm": [
+        [
+          -29.90384625384,
+          130.9999999,
+          19.168090964245
+        ],
+        [
+          -9.096153746154,
+          153.65926475926005,
+          20.503846253846
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment2_segment_shell",
+      "step": "generated/parts/ring_segment2_segment_shell.step",
+      "step_index": 53,
+      "sha256_step": "b5511c0f78b4cb09ff4245fcffc567986bd33c93248684eafe10166755a271de",
+      "mesh": "generated/meshes/ring_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3d9c00177f917c2c2a91cc1b3f2b7cbfda5015f21335c260e17f4ff592f2281b",
+      "body": "ring_pip",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 10090.64525456737,
+      "bbox_mm": [
+        [
+          -33.700000100000004,
+          174.9999999,
+          -3.3000000999999997
+        ],
+        [
+          -5.2999998999999995,
+          241.0000001,
+          19.2000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment2_proximal_bushing",
+      "step": "generated/parts/ring_segment2_proximal_bushing.step",
+      "step_index": 54,
+      "sha256_step": "223e88bbaa2824e717f17985e7cda9f3e4265bbfff75503d581b7530070b2807",
+      "mesh": "generated/meshes/ring_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8eb8d4da11ff5e24a7074712772241749b1b349ebcaa3f38b1bc28649ff90f78",
+      "body": "ring_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "bbox_mm": [
+        [
+          -27.7,
+          179.65,
+          4.65
+        ],
+        [
+          -11.3,
+          186.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment2_distal_left_bushing",
+      "step": "generated/parts/ring_segment2_distal_left_bushing.step",
+      "step_index": 55,
+      "sha256_step": "b094df444a89922e8ac6e0c1c6ff50b37a0dbb7ab39c0f520e9b44e3a1a59aac",
+      "mesh": "generated/meshes/ring_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "289b79893573e1e34f3b0a27f63de1591ccd758229659f42dee0d626ae50a1ea",
+      "body": "ring_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922675,
+      "bbox_mm": [
+        [
+          -31.7,
+          229.65,
+          4.65
+        ],
+        [
+          -28.3,
+          236.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment2_distal_right_bushing",
+      "step": "generated/parts/ring_segment2_distal_right_bushing.step",
+      "step_index": 56,
+      "sha256_step": "a9621f675faea5bb6ea107d952f6aac7a557d2c6356871a5f5f5aab33f900bbd",
+      "mesh": "generated/meshes/ring_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ac1eedb6ccbf30fc5d4102f8b9612123335bde492926ec70474d8c6e4d963f5a",
+      "body": "ring_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.17413137922678,
+      "bbox_mm": [
+        [
+          -10.7,
+          229.65,
+          4.65
+        ],
+        [
+          -7.3,
+          236.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment2_dark_faceplate",
+      "step": "generated/parts/ring_segment2_dark_faceplate.step",
+      "step_index": 57,
+      "sha256_step": "0b23cfc4b1b614d1c1a81ac2ec1105fdfc9a12081cef9fb16444bb94d7bcc1ca",
+      "mesh": "generated/meshes/ring_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "76fed54442bf0ca406e8db7a4e0e7e924922c655d2a4fa67ac32699b9d87dc87",
+      "body": "ring_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 489.2192437500007,
+      "bbox_mm": [
+        [
+          -29.875000100000005,
+          192.9999999,
+          18.896249899999997
+        ],
+        [
+          -9.124999899999999,
+          220.1500001,
+          20.475000100000003
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_joint_pin_1",
+      "step": "generated/parts/ring_joint_pin_1.step",
+      "step_index": 58,
+      "sha256_step": "43dac31bb80aaa29ba8546aa0fa7c2b2462b889d31fa28363de040e04583a07b",
+      "mesh": "generated/meshes/ring_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "9b218426434d99790b445840d5e28228ffea7a88d261bab016caf8cf57a9c3f6",
+      "body": "ring_mcp",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281769,
+      "bbox_mm": [
+        [
+          -36.1,
+          179.6,
+          4.6
+        ],
+        [
+          -4.0,
+          186.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment3_tip_core",
+      "step": "generated/parts/ring_segment3_tip_core.step",
+      "step_index": 59,
+      "sha256_step": "13e9e5dcff7f70f6b4467d5d1244ad3ae99ab9f175486f2cf65acc7b89e1f4a0",
+      "mesh": "generated/meshes/ring_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "84fdfaddaa7de83036f92f9c8cd298eff45c4c52533c7b8f38eb3d4f6e956499",
+      "body": "ring_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 5235.258910090072,
+      "bbox_mm": [
+        [
+          -30.0000001,
+          224.9999999,
+          -1.3000001000009618
+        ],
+        [
+          -8.9999999,
+          261.0000001000005,
+          17.0000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment3_proximal_bushing",
+      "step": "generated/parts/ring_segment3_proximal_bushing.step",
+      "step_index": 60,
+      "sha256_step": "6f48a20e6f1c6398e2276134653260374de47c99d79e1777ec008d7a50448ccc",
+      "mesh": "generated/meshes/ring_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2ba3d36c81b9ce44a4d2c26c323dfa45816048d8e83a3ccc2cd67c4d7ecdca95",
+      "body": "ring_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921143,
+      "bbox_mm": [
+        [
+          -27.7,
+          229.65,
+          4.65
+        ],
+        [
+          -11.3,
+          236.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_segment3_rounded_tip_cap",
+      "step": "generated/parts/ring_segment3_rounded_tip_cap.step",
+      "step_index": 61,
+      "sha256_step": "e3c012dad965900a3bb607349f8b1185092ed499c7eac8c68edb7410534dbfd0",
+      "mesh": "generated/meshes/ring_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d906def6e44cbc23545108e2de7b997c28d0ff10c314234f5a6d05785b759527",
+      "body": "ring_dip",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.271333166879,
+      "bbox_mm": [
+        [
+          -32.5,
+          251.0,
+          -3.0
+        ],
+        [
+          -6.5,
+          265.0,
+          19.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "ring_joint_pin_2",
+      "step": "generated/parts/ring_joint_pin_2.step",
+      "step_index": 62,
+      "sha256_step": "82a2a47b3be0c2c923521ec6cd33b1a2a38ea7cb2d768031a27f3e2b437fc083",
+      "mesh": "generated/meshes/ring_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "22346db8fe5d42e3c57cda56fae866d6a94b3681521c3014d537d90359056601",
+      "body": "ring_pip",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281769,
+      "bbox_mm": [
+        [
+          -36.1,
+          229.6,
+          4.6
+        ],
+        [
+          -4.0,
+          236.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment1_segment_shell",
+      "step": "generated/parts/little_segment1_segment_shell.step",
+      "step_index": 63,
+      "sha256_step": "a4a661fe3e45c0d5c1c8c1b43a2ebe376f2bab8e5b439a2ac0b7864a29f97306",
+      "mesh": "generated/meshes/little_segment1_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "bd3f4e2c797101567419adc32b61a2d3bfb43ed55b7b10b6e4e4da5e1ff3ccc9",
+      "body": "little_mcp",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 9414.11554128212,
+      "bbox_mm": [
+        [
+          -72.7000001,
+          97.9999999,
+          -3.3000000999999997
+        ],
+        [
+          -44.299999899999996,
+          169.0000001,
+          19.200000100000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment1_distal_left_bushing",
+      "step": "generated/parts/little_segment1_distal_left_bushing.step",
+      "step_index": 64,
+      "sha256_step": "eee6e0358d88084b219701e521b1aef91a973955cd87f81682c4bdf807dae6bb",
+      "mesh": "generated/meshes/little_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3cc4ef59baf772cd749470096fe78d5e9884db243aeec213884602afe51ce367",
+      "body": "little_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          -70.7,
+          157.65,
+          4.65
+        ],
+        [
+          -67.3,
+          164.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment1_distal_right_bushing",
+      "step": "generated/parts/little_segment1_distal_right_bushing.step",
+      "step_index": 65,
+      "sha256_step": "7ea3b4df7aab13be51f2a8f2dc5b50804a92b05ec9763a053c006040b8b8d8fa",
+      "mesh": "generated/meshes/little_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3f4f4fc56b60bdc2182cdef00cba87bdf08ddeaa3d91379bd97fb1f879760209",
+      "body": "little_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          -49.7,
+          157.65,
+          4.65
+        ],
+        [
+          -46.3,
+          164.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment1_dark_faceplate",
+      "step": "generated/parts/little_segment1_dark_faceplate.step",
+      "step_index": 66,
+      "sha256_step": "1d586914c2d1c2c49c7ab101ec1887f4c456ffb77f936b22d7305a727608f6d3",
+      "mesh": "generated/meshes/little_segment1_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "38c645720b8e8c0d247d8957e52b61968d8053739655ee8d09cb34e9e56fef73",
+      "body": "little_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 277.5723592177261,
+      "bbox_mm": [
+        [
+          -68.88888898888,
+          115.9999999,
+          19.242559997193
+        ],
+        [
+          -48.11111101111,
+          131.58479572631,
+          20.488888988889002
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment2_segment_shell",
+      "step": "generated/parts/little_segment2_segment_shell.step",
+      "step_index": 67,
+      "sha256_step": "38ce13356142e9fdce7655b2c30e97a4fbfcdd4fd2d63ac328bbb58d6aef7d6f",
+      "mesh": "generated/meshes/little_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f9517b20a3eabd8e266f980f4db3f5c1e79c092e7b20fb65249c49ddfd8fc212",
+      "body": "little_pip",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "new_finger",
+      "volume_mm3": 9763.355852637475,
+      "bbox_mm": [
+        [
+          -72.7000001,
+          152.9999999,
+          -3.3000000999999997
+        ],
+        [
+          -44.299999899999996,
+          217.0000001,
+          19.200000100000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment2_proximal_bushing",
+      "step": "generated/parts/little_segment2_proximal_bushing.step",
+      "step_index": 68,
+      "sha256_step": "6e31b48a19bc1e4df76134eea60971ba376bd0f9ac371a9c88740a814d5252cb",
+      "mesh": "generated/meshes/little_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "467d77d5fe62de091b7a426c895e0857b0b4e105c898d6bc669849d66011ffc0",
+      "body": "little_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921166,
+      "bbox_mm": [
+        [
+          -66.7,
+          157.65,
+          4.65
+        ],
+        [
+          -50.3,
+          164.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment2_distal_left_bushing",
+      "step": "generated/parts/little_segment2_distal_left_bushing.step",
+      "step_index": 69,
+      "sha256_step": "6c9c5ff1401400a6f5205f304073d1b7b47e5083a8b0f348093248ce79ba8145",
+      "mesh": "generated/meshes/little_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "750c1ff72b3a8b49de09b0382943bcce39a3fe4120e5f97c9af1219d40e79e62",
+      "body": "little_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          -70.7,
+          205.65,
+          4.65
+        ],
+        [
+          -67.3,
+          212.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment2_distal_right_bushing",
+      "step": "generated/parts/little_segment2_distal_right_bushing.step",
+      "step_index": 70,
+      "sha256_step": "613832eb782eb2f557d4dd32804f771789998e0900842ae9aa4024164c8d73f7",
+      "mesh": "generated/meshes/little_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "699ca300326b17fa27a26ce4e5b68e6b32819a54042f6dda49f27961ac7dfaf0",
+      "body": "little_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 68.1741313792269,
+      "bbox_mm": [
+        [
+          -49.7,
+          205.65,
+          4.65
+        ],
+        [
+          -46.3,
+          212.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment2_dark_faceplate",
+      "step": "generated/parts/little_segment2_dark_faceplate.step",
+      "step_index": 71,
+      "sha256_step": "f33571300a98075b11b711044949a2cbb78e97b91269011af601fc8b0260c9b4",
+      "mesh": "generated/meshes/little_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4b2454ee31f01c85396cac987a697a4710902edda9d360861e68c5eeb05a6721",
+      "body": "little_pip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 453.26587500003683,
+      "bbox_mm": [
+        [
+          -68.86842115262999,
+          170.9999999,
+          18.906578847368
+        ],
+        [
+          -48.13157884736,
+          196.1500001,
+          20.468421152632004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_joint_pin_1",
+      "step": "generated/parts/little_joint_pin_1.step",
+      "step_index": 72,
+      "sha256_step": "7d2fa3727f08516cf5c3d607c856225d5c95d8372d289beca57a11bf637322c2",
+      "mesh": "generated/meshes/little_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c70449e8e20e519b1650018daaf168c39af1c44b34080627c8cdb9fff8aff89a",
+      "body": "little_mcp",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.50598122817667,
+      "bbox_mm": [
+        [
+          -75.1,
+          157.6,
+          4.6
+        ],
+        [
+          -43.0,
+          164.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment3_tip_core",
+      "step": "generated/parts/little_segment3_tip_core.step",
+      "step_index": 73,
+      "sha256_step": "bb5ac46ca9ca207e4b30ea3d370ec268d0d35b2dc2ef8de0d3d164e8979de394",
+      "mesh": "generated/meshes/little_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c97c1a6314bf45930d498a99bbfd06ff7b2b55634ac1be1435e995f0cb3e4ba3",
+      "body": "little_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 4715.961177402238,
+      "bbox_mm": [
+        [
+          -69.0000001,
+          200.9999999,
+          -1.3000001000009618
+        ],
+        [
+          -47.9999999,
+          233.0000001000001,
+          17.0000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment3_proximal_bushing",
+      "step": "generated/parts/little_segment3_proximal_bushing.step",
+      "step_index": 74,
+      "sha256_step": "1acd2a182167693eb195f1d850e349344e8bf6d498bb92ba4b5625c1e74dbb8f",
+      "mesh": "generated/meshes/little_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "378b41481effa62a05e82f785a0476b5f22d1f216eaa903fa8f58aad3a24a28c",
+      "body": "little_dip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_finger",
+      "volume_mm3": 328.83992782921166,
+      "bbox_mm": [
+        [
+          -66.7,
+          205.65,
+          4.65
+        ],
+        [
+          -50.3,
+          212.35,
+          11.35
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_segment3_rounded_tip_cap",
+      "step": "generated/parts/little_segment3_rounded_tip_cap.step",
+      "step_index": 75,
+      "sha256_step": "2ec125ca0890837728f9ed56b0c142d331894b74924b9a559f474e13469f6e76",
+      "mesh": "generated/meshes/little_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "02a33570b2b34d5e2b879cfe58fae09a2f2e1142729555ba83234aef8c7b117b",
+      "body": "little_dip",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_finger",
+      "volume_mm3": 3459.2713331668783,
+      "bbox_mm": [
+        [
+          -71.5,
+          223.0,
+          -3.0
+        ],
+        [
+          -45.5,
+          237.0,
+          19.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "little_joint_pin_2",
+      "step": "generated/parts/little_joint_pin_2.step",
+      "step_index": 76,
+      "sha256_step": "6ab7c571f4cfff307b917eac86a3a54b5bde6533091e4511d0b5d85dc5e3038d",
+      "mesh": "generated/meshes/little_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3156223a76bcf6d3213de0516ef723cc07fa1ab50d3ca5a92dababdcce5f0be3",
+      "body": "little_pip",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.50598122817667,
+      "bbox_mm": [
+        [
+          -75.1,
+          205.6,
+          4.6
+        ],
+        [
+          -43.0,
+          212.4,
+          11.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment1_thenar_shell",
+      "step": "generated/parts/thumb_segment1_thenar_shell.step",
+      "step_index": 77,
+      "sha256_step": "69b8b2162c3fdb3cc0b28bde1df0143e797a44c5bc19fec376c03f2fad327481",
+      "mesh": "generated/meshes/thumb_segment1_thenar_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ca1bcd6408d99d7b15706b0bce4722e2b58b8cabf157de5254eec2d45708cd5f",
+      "body": "thumb_opposition",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 11901.9823924763,
+      "bbox_mm": [
+        [
+          34.729343477553606,
+          22.729343477557915,
+          14.320742099894
+        ],
+        [
+          90.34107138784339,
+          81.56680072118742,
+          43.25663953836686
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "articulation_drive_v2_interface_repair"
+    },
+    {
+      "name": "thumb_segment1_distal_left_bushing",
+      "step": "generated/parts/thumb_segment1_distal_left_bushing.step",
+      "step_index": 78,
+      "sha256_step": "ba31f2a92135b65ac86ff1293de330f83ea47d7e9d8af3064fabb5e923b8f36a",
+      "mesh": "generated/meshes/thumb_segment1_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c1f8d325444cc305943097507a4c6d68ec58db90bca558002646ec162efbd3e9",
+      "body": "thumb_opposition",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137922838,
+      "bbox_mm": [
+        [
+          70.10095903134918,
+          69.93488130326699,
+          16.527273821321124
+        ],
+        [
+          77.60522617009383,
+          76.96657776251001,
+          22.44026265090887
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment1_distal_right_bushing",
+      "step": "generated/parts/thumb_segment1_distal_right_bushing.step",
+      "step_index": 79,
+      "sha256_step": "e1d208c83d5dbd58fa5a5f5c7b97aa6d7b169ffc24129d9088b7ac816bea5401",
+      "mesh": "generated/meshes/thumb_segment1_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8e8091579763e7bf2df976444d01e11679ec34ae498e4ae66b40e28fc33f624a",
+      "body": "thumb_opposition",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137920974,
+      "bbox_mm": [
+        [
+          78.67353479856017,
+          67.63786654938798,
+          35.55973734909112
+        ],
+        [
+          86.17780193730484,
+          74.669563008631,
+          41.472726178678876
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment2_segment_shell",
+      "step": "generated/parts/thumb_segment2_segment_shell.step",
+      "step_index": 80,
+      "sha256_step": "5b78c4118cadb0b37cdb3b00071cfdc35c1550cbb59909870ebb8cbab22bc775",
+      "mesh": "generated/meshes/thumb_segment2_segment_shell.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e83d42f5315978710ffacb7bd499644e1f111ccef72c109e9939b9341db21274",
+      "body": "thumb_mcp",
+      "color": [
+        0.22,
+        0.58,
+        0.64
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 9271.738314069466,
+      "bbox_mm": [
+        [
+          67.45757900465065,
+          63.47517021049658,
+          11.988770359018789
+        ],
+        [
+          101.98792851745638,
+          125.03346290418942,
+          46.01122964098121
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment2_proximal_bushing",
+      "step": "generated/parts/thumb_segment2_proximal_bushing.step",
+      "step_index": 81,
+      "sha256_step": "5cc4a2b347de82f2591cdb8593cb7325e4738d861fc509ad069f3f619aaa2a24",
+      "mesh": "generated/meshes/thumb_segment2_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "9e8f866778090dd1ece27d0951a213de2f579e7eeb44b48c37e25f4f0c4c1afe",
+      "body": "thumb_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 328.83992782920717,
+      "bbox_mm": [
+        [
+          71.73383060605617,
+          68.07539316917499,
+          20.152504969467124
+        ],
+        [
+          84.54493036259782,
+          76.529051142723,
+          37.847495030532876
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment2_distal_left_bushing",
+      "step": "generated/parts/thumb_segment2_distal_left_bushing.step",
+      "step_index": 82,
+      "sha256_step": "595d72d41d29bbae754f99c7df0fd5c291e6f157e366f3ddf809e7bfd6d27ab3",
+      "mesh": "generated/meshes/thumb_segment2_distal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "6779a1f2114aa7ecbe30469863e944694beec1c3ac3b9a691674a12db44d99f3",
+      "body": "thumb_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.1741313792063,
+      "bbox_mm": [
+        [
+          81.74781606096217,
+          113.401543486268,
+          16.527273821321124
+        ],
+        [
+          89.25208319970683,
+          120.43323994551201,
+          22.44026265090887
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment2_distal_right_bushing",
+      "step": "generated/parts/thumb_segment2_distal_right_bushing.step",
+      "step_index": 83,
+      "sha256_step": "e674463829a7c3df963ee2647b833543e678f72ddb5adedc54f639a782ecf138",
+      "mesh": "generated/meshes/thumb_segment2_distal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3e2d4c4a27dd67d7ad5fabf1a3ec7fb62330c870610bcb0f7c67ed6717f1aea4",
+      "body": "thumb_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 68.17413137922202,
+      "bbox_mm": [
+        [
+          90.32039182817417,
+          111.10452873238799,
+          35.55973734909112
+        ],
+        [
+          97.82465896691883,
+          118.13622519163201,
+          41.472726178678876
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment2_dark_faceplate",
+      "step": "generated/parts/thumb_segment2_dark_faceplate.step",
+      "step_index": 84,
+      "sha256_step": "5cab10f3e8be2f30931b500de7144941ddc0641afafb2a60914d2d523d48aedd",
+      "mesh": "generated/meshes/thumb_segment2_dark_faceplate.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "16a2daabf39a748d2e7f50772e05d43f74b707b7057942066ddb1027eb080deb",
+      "body": "thumb_mcp",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 399.32652857094195,
+      "bbox_mm": [
+        [
+          65.6555245132768,
+          83.55596185872687,
+          24.560893041358728
+        ],
+        [
+          80.80540281510703,
+          107.17760812952,
+          43.58798264416027
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_joint_pin_1",
+      "step": "generated/parts/thumb_joint_pin_1.step",
+      "step_index": 85,
+      "sha256_step": "56e9862fef659a0e7f4592f30d23082b1e0bf7b2c6cd2a38e9c238c0a984a337",
+      "mesh": "generated/meshes/thumb_joint_pin_1.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "aee4a28c0f14de84260c6dcc3bf2c33cc04b2f5644413567f48ad86526204a13",
+      "body": "thumb_opposition",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281734,
+      "bbox_mm": [
+        [
+          68.25915607304997,
+          68.61880685280615,
+          12.518388645273085
+        ],
+        [
+          86.29252688116486,
+          77.49755703556175,
+          43.89300722254972
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment3_tip_core",
+      "step": "generated/parts/thumb_segment3_tip_core.step",
+      "step_index": 86,
+      "sha256_step": "89c20cb094b26cd291b6b100382b4c7a304c696aa0013ac5f196ab556996893b",
+      "mesh": "generated/meshes/thumb_segment3_tip_core.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "1ee53cfe319bfb164ddef17dfbbe4cb84429778e9ae878927513fe1d54d48578",
+      "body": "thumb_ip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 4715.961177402018,
+      "bbox_mm": [
+        [
+          79.21741808513161,
+          106.94183239350058,
+          16.483178477755043
+        ],
+        [
+          106.51197736654629,
+          141.76834423051756,
+          41.516821522244
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment3_proximal_bushing",
+      "step": "generated/parts/thumb_segment3_proximal_bushing.step",
+      "step_index": 87,
+      "sha256_step": "aa3ee77bab90db5cd41eb2fcaaaa7187ded89bfe1ef1304ab4d0e416b950ab74",
+      "mesh": "generated/meshes/thumb_segment3_proximal_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "86a1c17bfb480798dee5b75725fad6720ae56ca3b12b345ad2a26aaa61691c9f",
+      "body": "thumb_ip",
+      "color": [
+        0.27,
+        0.31,
+        0.37
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 328.83992782923053,
+      "bbox_mm": [
+        [
+          83.38068763566918,
+          111.54205535217798,
+          20.152504969467124
+        ],
+        [
+          96.19178739221182,
+          119.99571332572202,
+          37.847495030532876
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_segment3_rounded_tip_cap",
+      "step": "generated/parts/thumb_segment3_rounded_tip_cap.step",
+      "step_index": 88,
+      "sha256_step": "cbfcb7d2ad105bf08dd16e7379003cab79a45cb4519ba0bc22cf3df093a1ccc6",
+      "mesh": "generated/meshes/thumb_segment3_rounded_tip_cap.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "48a7f76c7180c4a82c9e8fbf8243a8423d0d0cd48d524d723b7e9c25aca9d7ec",
+      "body": "thumb_ip",
+      "color": [
+        0.91,
+        0.66,
+        0.25
+      ],
+      "role": "new_thumb",
+      "volume_mm3": 3459.2713331671544,
+      "bbox_mm": [
+        [
+          79.558110522546,
+          125.90937191108,
+          13.227049986931
+        ],
+        [
+          110.88476439964,
+          146.19728147097,
+          44.772950013069
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "thumb_joint_pin_2",
+      "step": "generated/parts/thumb_joint_pin_2.step",
+      "step_index": 89,
+      "sha256_step": "68d130545421500a888fb4cc951b60951e3ff566f62cacfd1977d2f2ad45c7bf",
+      "mesh": "generated/meshes/thumb_joint_pin_2.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "a01ecc82ff59cdc9fb146f339bbad8c243a9f4e146a29be987df61233bd2546a",
+      "body": "thumb_mcp",
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "role": "provisional_joint_pin",
+      "volume_mm3": 429.5059812281615,
+      "bbox_mm": [
+        [
+          79.90601310266396,
+          112.08546903581015,
+          12.518388645273085
+        ],
+        [
+          97.93938391077886,
+          120.96421921856876,
+          43.89300722254972
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "webcam_articulation_v1_saved_STEP"
+    },
+    {
+      "name": "index_root_fixed_housing",
+      "step": "generated/parts/index_root_fixed_housing.step",
+      "step_index": 90,
+      "sha256_step": "50c372c6679745dd1e7077f30491a65ced51fa7a89ebb9d42b056350da521a57",
+      "mesh": "generated/meshes/index_root_fixed_housing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "573f9cfe46dca23db342ff127c8c67d6cfe22c450aac1512ecae7a89a6c934b0",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "root_fixed_housing",
+      "volume_mm3": 7722.982631933266,
+      "bbox_mm": [
+        [
+          43.0,
+          101.5,
+          -40.5
+        ],
+        [
+          74.0,
+          132.5,
+          -8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_spread_carrier",
+      "step": "generated/parts/index_root_spread_carrier.step",
+      "step_index": 91,
+      "sha256_step": "30e73ec51f7490165793e1926e82f52fc5cf62650f92efc2ae2dd53cd00e18b5",
+      "mesh": "generated/meshes/index_root_spread_carrier.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "805d83724a38e625b2b8f7e8589b5f85aa208a56978bb56eaa87edf299c88488",
+      "body": "index_spread",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "integral_root_carrier",
+      "volume_mm3": 4624.129067786799,
+      "bbox_mm": [
+        [
+          44.5,
+          103.0,
+          -17.0
+        ],
+        [
+          72.5,
+          131.0,
+          15.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_spread_lower_bushing",
+      "step": "generated/parts/index_spread_lower_bushing.step",
+      "step_index": 92,
+      "sha256_step": "48cd481c36f7c53c0f53f7b144566702d307a07082fb9df49f7b14e5df4772ca",
+      "mesh": "generated/meshes/index_spread_lower_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "45d7c092b35132cbbc754ba5d408638f1deacf3dc581c861deebf485d4cc51d5",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.8508766495954,
+      "bbox_mm": [
+        [
+          49.0,
+          107.5,
+          -14.5
+        ],
+        [
+          68.0,
+          126.5,
+          -11.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_spread_upper_bushing",
+      "step": "generated/parts/index_spread_upper_bushing.step",
+      "step_index": 93,
+      "sha256_step": "69a5f8c91c8d8d11366fe69caa44846d63ca295e2db8ae5e3781d0b77b63457f",
+      "mesh": "generated/meshes/index_spread_upper_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e59c6df0dd4980ce18be1b784827dd2ea3ec9dfc493fded91024d8743246323d",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.8508766495955,
+      "bbox_mm": [
+        [
+          49.0,
+          107.5,
+          -11.0
+        ],
+        [
+          68.0,
+          126.5,
+          -7.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_spread_lower_washer",
+      "step": "generated/parts/index_spread_lower_washer.step",
+      "step_index": 94,
+      "sha256_step": "a36d7453ada90bdec2142483bdc7a1461869b9bc0af19016348e5cd36f0dc748",
+      "mesh": "generated/meshes/index_spread_lower_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f6fd51668bbf8c62b3687480be3fed370d44de32d5b29486d5ad269496f759ed",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "spread_thrust_washer",
+      "volume_mm3": 83.31503717320132,
+      "bbox_mm": [
+        [
+          49.0,
+          107.5,
+          -15.0
+        ],
+        [
+          68.0,
+          126.5,
+          -14.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_spread_retaining_clip",
+      "step": "generated/parts/index_spread_retaining_clip.step",
+      "step_index": 95,
+      "sha256_step": "7d481eed54509cf46bf9739374f4c288df72880db6d06bfee14d9c10a670ebfe",
+      "mesh": "generated/meshes/index_spread_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4c0820cd13b6242e1fcee1a96ecc031a9dd04508b4681a32cd6b248b8db102a0",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 79.07873100918786,
+      "bbox_mm": [
+        [
+          50.5,
+          109.0,
+          -15.899999999999999
+        ],
+        [
+          66.01248960065836,
+          125.0,
+          -15.099999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_flex_pin",
+      "step": "generated/parts/index_root_flex_pin.step",
+      "step_index": 96,
+      "sha256_step": "fbf8714c9cffafaa709c1a84238ba19602eff69a02df0c6575efce70316e1b4b",
+      "mesh": "generated/meshes/index_root_flex_pin.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "bec29200a311dadd6cc5a073993735097fbc2d5476f92b48c9304bab98294d83",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "headed_grooved_flex_pin",
+      "volume_mm3": 442.80120133817394,
+      "bbox_mm": [
+        [
+          42.5,
+          113.5,
+          4.5
+        ],
+        [
+          73.9,
+          120.5,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_flex_left_pin_washer",
+      "step": "generated/parts/index_flex_left_pin_washer.step",
+      "step_index": 97,
+      "sha256_step": "511d664ad599092c4f033c9455774e65c1b9a883b33ec0769e91444f308d1f00",
+      "mesh": "generated/meshes/index_flex_left_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "741337d6d8852a260c57e685b18bfc14a1e534515a1de1c4c40f6ad1a4bc00d4",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.80586030093314,
+      "bbox_mm": [
+        [
+          44.5,
+          113.3,
+          4.3
+        ],
+        [
+          45.5,
+          120.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_flex_right_pin_washer",
+      "step": "generated/parts/index_flex_right_pin_washer.step",
+      "step_index": 98,
+      "sha256_step": "202b6042d9a0cd1d5b4fe35c27539602f64758828c38b2e5fd01f8bd1428ef02",
+      "mesh": "generated/meshes/index_flex_right_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "9d29aede008cfa60d3112afced4ce970506c13798c8f3059fd349dae447942c7",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.80586030093314,
+      "bbox_mm": [
+        [
+          71.5,
+          113.3,
+          4.3
+        ],
+        [
+          72.5,
+          120.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_flex_retaining_clip",
+      "step": "generated/parts/index_flex_retaining_clip.step",
+      "step_index": 99,
+      "sha256_step": "f8f6acffef31caf6d4a6832c29646b1a07f7b1dd79733f01bb582d1a9453253a",
+      "mesh": "generated/meshes/index_flex_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "9da4ad04e3f466a03d084e0739bc88ef4ec4c1c323b171a63ec4889adbc7c59d",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 17.385589320114363,
+      "bbox_mm": [
+        [
+          72.65,
+          113.5,
+          4.5
+        ],
+        [
+          73.35000000000001,
+          120.24961536185438,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_proximal_left_bushing",
+      "step": "generated/parts/index_root_proximal_left_bushing.step",
+      "step_index": 100,
+      "sha256_step": "28084b977ce46ef90a1df1376ba48c1c9792614e5c49ed1dc3ea3ad17edca66a",
+      "mesh": "generated/meshes/index_root_proximal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "6de22f027c14ced8ea56c46f3e6ed89e4c294c4142a886b21b53dffc62850714",
+      "body": "index_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.59891155995984,
+      "bbox_mm": [
+        [
+          49.9,
+          112.5,
+          3.5
+        ],
+        [
+          58.5,
+          121.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_proximal_right_bushing",
+      "step": "generated/parts/index_root_proximal_right_bushing.step",
+      "step_index": 101,
+      "sha256_step": "0972c54db3e9cfb3c43ff7e09644bad0b79d215c0014943212615e294beae8b4",
+      "mesh": "generated/meshes/index_root_proximal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e4f7f76b6b25d3d34360708a9800622fd713d50d62b6202ff89eb0a02ff56754",
+      "body": "index_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.5989115599598,
+      "bbox_mm": [
+        [
+          58.5,
+          112.5,
+          3.5
+        ],
+        [
+          67.1,
+          121.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_flex_left_thrust_washer",
+      "step": "generated/parts/index_flex_left_thrust_washer.step",
+      "step_index": 102,
+      "sha256_step": "e5228824a6853ee4f49e055513928b7a55034a6d84e5e6669342c325666b755c",
+      "mesh": "generated/meshes/index_flex_left_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "69144e6076785cfc1159c4e4934c0ce1cd76071e1fbdcf734f645057f1349610",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.71291306419923,
+      "bbox_mm": [
+        [
+          49.5,
+          112.2,
+          3.2
+        ],
+        [
+          49.85,
+          121.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_flex_right_thrust_washer",
+      "step": "generated/parts/index_flex_right_thrust_washer.step",
+      "step_index": 103,
+      "sha256_step": "48bc32b003de4d9338824f6182d4369e68f463454282bfd35a935983017a3d46",
+      "mesh": "generated/meshes/index_flex_right_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f408ffc991b2ed05cea106e7486c4a58aa17035689f28ef12abbe0e63e8114b8",
+      "body": "index_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199093,
+      "bbox_mm": [
+        [
+          67.15,
+          112.2,
+          3.2
+        ],
+        [
+          67.5,
+          121.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_mount_1_bolt",
+      "step": "generated/parts/index_root_mount_1_bolt.step",
+      "step_index": 104,
+      "sha256_step": "b61e521b453d304986233055b34d0d9375793ff6cb776349ea3a38ea2ab82b2c",
+      "mesh": "generated/meshes/index_root_mount_1_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "0542a2d728e24bd3a712ee0eed1031713bbd14909738fcc75038c5ab826d734a",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.54334121140704,
+      "bbox_mm": [
+        [
+          45.65,
+          106.15,
+          -47.5
+        ],
+        [
+          51.35,
+          111.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_mount_1_washer",
+      "step": "generated/parts/index_root_mount_1_washer.step",
+      "step_index": 105,
+      "sha256_step": "9ed2e94cad2c4df51f429022e73c77d195e372bc07f52fe306b7f1d7f681e2e4",
+      "mesh": "generated/meshes/index_root_mount_1_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4a5ed34978510a615dbc4cfa743d0024f7c08c95b2ee9e7eab6345cab4645dc2",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.96576200353838,
+      "bbox_mm": [
+        [
+          45.0,
+          105.5,
+          -44.5
+        ],
+        [
+          52.0,
+          112.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_mount_1_nut",
+      "step": "generated/parts/index_root_mount_1_nut.step",
+      "step_index": 106,
+      "sha256_step": "05d78705d2567951b2a0e0f9b281b943a9dec761a9ea7024f1986194af150513",
+      "mesh": "generated/meshes/index_root_mount_1_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "a9c5758b252c89ce4dba24f524f330097548496c119d61917bcd2ce47908f17a",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.891956489991436,
+      "bbox_mm": [
+        [
+          45.325,
+          106.25036934298441,
+          -37.1
+        ],
+        [
+          51.675000000000004,
+          111.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_mount_2_bolt",
+      "step": "generated/parts/index_root_mount_2_bolt.step",
+      "step_index": 107,
+      "sha256_step": "145a94305009942f06786f2c677e3a46cd7bc060f8584b262100ba4fb1c8f3d1",
+      "mesh": "generated/meshes/index_root_mount_2_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "bec53828c46dc0fec7a4461d0c044ebfaaf884c6493f145afa29061007d7bba7",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.54334121140704,
+      "bbox_mm": [
+        [
+          65.65,
+          106.15,
+          -47.5
+        ],
+        [
+          71.35,
+          111.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_mount_2_washer",
+      "step": "generated/parts/index_root_mount_2_washer.step",
+      "step_index": 108,
+      "sha256_step": "80ea8e9ef0b33fe8d6d78adb17618dd97e9ac4d86dc6777fb73afe583ec9008a",
+      "mesh": "generated/meshes/index_root_mount_2_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f6dec9e4cf505daa0b6fd608abbff9f791e2020e1e6c33ae5d71b5a997b12c6a",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.965762003538366,
+      "bbox_mm": [
+        [
+          65.0,
+          105.5,
+          -44.5
+        ],
+        [
+          72.0,
+          112.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "index_root_mount_2_nut",
+      "step": "generated/parts/index_root_mount_2_nut.step",
+      "step_index": 109,
+      "sha256_step": "86147bca882827e8854ec74110d54be73a7429957081edaaf4486e1d1bf9d6ed",
+      "mesh": "generated/meshes/index_root_mount_2_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4ec89c83bd5c811ab06f563ab18640012ef62caf0322ca5a204bf29e98439e60",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.89195648999152,
+      "bbox_mm": [
+        [
+          65.32499999999999,
+          106.25036934298441,
+          -37.1
+        ],
+        [
+          71.67500000000001,
+          111.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_fixed_housing",
+      "step": "generated/parts/middle_root_fixed_housing.step",
+      "step_index": 110,
+      "sha256_step": "31d1c6894ca0119bdef8a93a2812444bcda54936c6dc76c9f42cfecd5efe8ad4",
+      "mesh": "generated/meshes/middle_root_fixed_housing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "85ece7b6ceddbc98b69c7b8372d293fe3a96defe94b66ba13b5516580fdbb995",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "root_fixed_housing",
+      "volume_mm3": 7722.982631933264,
+      "bbox_mm": [
+        [
+          4.0,
+          111.5,
+          -40.5
+        ],
+        [
+          35.0,
+          142.5,
+          -8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_spread_carrier",
+      "step": "generated/parts/middle_root_spread_carrier.step",
+      "step_index": 111,
+      "sha256_step": "c0ee05f7cde8705df8fd1a9f86b9b062db9489da515d9b500689a6927634f7a6",
+      "mesh": "generated/meshes/middle_root_spread_carrier.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c9041ea92e9174cf369ccb5f7a1c3981e004568b5f74478e17500d189e3fe483",
+      "body": "middle_spread",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "integral_root_carrier",
+      "volume_mm3": 4624.1290677868,
+      "bbox_mm": [
+        [
+          5.5,
+          113.0,
+          -17.0
+        ],
+        [
+          33.5,
+          141.0,
+          15.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_spread_lower_bushing",
+      "step": "generated/parts/middle_spread_lower_bushing.step",
+      "step_index": 112,
+      "sha256_step": "a5f29046d9cba470192834984d6017e8a5e0835e48cca5d05aa42d9f6718b09e",
+      "mesh": "generated/meshes/middle_spread_lower_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8cbed0b36e0298d48072a5a05dc5adab6cd261566ae8a3cfc117723540b81b94",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.8508766495962,
+      "bbox_mm": [
+        [
+          10.0,
+          117.5,
+          -14.5
+        ],
+        [
+          29.0,
+          136.5,
+          -11.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_spread_upper_bushing",
+      "step": "generated/parts/middle_spread_upper_bushing.step",
+      "step_index": 113,
+      "sha256_step": "60ff30625babd4c4fcdeae953d4165b90c3d9c1c768d688a6d1a97a0ef515875",
+      "mesh": "generated/meshes/middle_spread_upper_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "882fc4b60d2e55e6c5db9a09b403178fe281c3db5b6823ab9c94a944c3e9fd73",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.8508766495962,
+      "bbox_mm": [
+        [
+          10.0,
+          117.5,
+          -11.0
+        ],
+        [
+          29.0,
+          136.5,
+          -7.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_spread_lower_washer",
+      "step": "generated/parts/middle_spread_lower_washer.step",
+      "step_index": 114,
+      "sha256_step": "dbbb4ee378c8c526cbc614a84866f36a299dd13a8466ba240ae7e730147d1f9f",
+      "mesh": "generated/meshes/middle_spread_lower_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "07d42d716db3bed776f64e6e0e72f136a0b2849ac3024d20654bef9eed05ba20",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "spread_thrust_washer",
+      "volume_mm3": 83.31503717320129,
+      "bbox_mm": [
+        [
+          10.0,
+          117.5,
+          -15.0
+        ],
+        [
+          29.0,
+          136.5,
+          -14.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_spread_retaining_clip",
+      "step": "generated/parts/middle_spread_retaining_clip.step",
+      "step_index": 115,
+      "sha256_step": "ae65908a5e69f13a53f5f8cce67884a2251d4d7afd8a00a3b1c45ffa8c4aa35f",
+      "mesh": "generated/meshes/middle_spread_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "7e7b00dc98bf54675ac384ac36f64c46aff7e029f1619a27147616d8913b1fa7",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 79.0787310091879,
+      "bbox_mm": [
+        [
+          11.5,
+          119.0,
+          -15.899999999999999
+        ],
+        [
+          27.01248960065836,
+          135.0,
+          -15.099999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_flex_pin",
+      "step": "generated/parts/middle_root_flex_pin.step",
+      "step_index": 116,
+      "sha256_step": "90b5113da1540a9596783b53eb520cb54adb57dbce94164bb68cbba227274f34",
+      "mesh": "generated/meshes/middle_root_flex_pin.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c701ca949a895385e8713cd834c495307130f0472191aba2ac6d4c813bb370d2",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "headed_grooved_flex_pin",
+      "volume_mm3": 442.80120133817405,
+      "bbox_mm": [
+        [
+          3.5,
+          123.5,
+          4.5
+        ],
+        [
+          34.9,
+          130.5,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_flex_left_pin_washer",
+      "step": "generated/parts/middle_flex_left_pin_washer.step",
+      "step_index": 117,
+      "sha256_step": "330a7a890abd9d0241079df44b2473c1c8145f24d305835f569efe4d9a2d9a83",
+      "mesh": "generated/meshes/middle_flex_left_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "54c95098b5033bba2003acfa1e0ce87e3ef84459ded15cb8fbabf81f98f1e34c",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.805860300933148,
+      "bbox_mm": [
+        [
+          5.5,
+          123.3,
+          4.3
+        ],
+        [
+          6.5,
+          130.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_flex_right_pin_washer",
+      "step": "generated/parts/middle_flex_right_pin_washer.step",
+      "step_index": 118,
+      "sha256_step": "16ce8de2089dbdd0284037c40cf3861796f94948b75b6e3350be165c3566e104",
+      "mesh": "generated/meshes/middle_flex_right_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "81a966933c6280df9dccb4878a1b5da65530caaffb8075cbeb836b2a5d78184a",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.805860300933148,
+      "bbox_mm": [
+        [
+          32.5,
+          123.3,
+          4.3
+        ],
+        [
+          33.5,
+          130.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_flex_retaining_clip",
+      "step": "generated/parts/middle_flex_retaining_clip.step",
+      "step_index": 119,
+      "sha256_step": "b6d947356dcde0cf6ab0412879cce34135a84b9d25facffd5953a97c18f4a328",
+      "mesh": "generated/meshes/middle_flex_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "246564f948f71b1f84cf3a03007bc8a3e97f3ba5fb82daba9e5effc179bafe26",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 17.385589320114455,
+      "bbox_mm": [
+        [
+          33.65,
+          123.5,
+          4.5
+        ],
+        [
+          34.35,
+          130.24961536185438,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_proximal_left_bushing",
+      "step": "generated/parts/middle_root_proximal_left_bushing.step",
+      "step_index": 120,
+      "sha256_step": "ff3e30569380ab0419eebfbe2c7c0cdca742d4761c41441dde8cadb659ea256c",
+      "mesh": "generated/meshes/middle_root_proximal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3ad0a64413ddd0de170987b8c28704d32cc659c311ef24c0c94c0b2efe3a765f",
+      "body": "middle_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.59891155995984,
+      "bbox_mm": [
+        [
+          10.9,
+          122.5,
+          3.5
+        ],
+        [
+          19.5,
+          131.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_proximal_right_bushing",
+      "step": "generated/parts/middle_root_proximal_right_bushing.step",
+      "step_index": 121,
+      "sha256_step": "0b2c9e67733085414c533b2e197ffeb7bd1681bbeed659137d506ed25f4ba689",
+      "mesh": "generated/meshes/middle_root_proximal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2562fe6091b058464837e708c27f7659abbaebc69970e54df07f0ec36282b326",
+      "body": "middle_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.5989115599599,
+      "bbox_mm": [
+        [
+          19.5,
+          122.5,
+          3.5
+        ],
+        [
+          28.1,
+          131.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_flex_left_thrust_washer",
+      "step": "generated/parts/middle_flex_left_thrust_washer.step",
+      "step_index": 122,
+      "sha256_step": "95deddb557f36eebbb57dd9f108e93fd0c373619dea24cb2720670787fc41a75",
+      "mesh": "generated/meshes/middle_flex_left_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "433218929349164764ddd9c90f355891f027d9968c2afa6b4eac64f1a4f232e2",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199192,
+      "bbox_mm": [
+        [
+          10.5,
+          122.2,
+          3.2
+        ],
+        [
+          10.85,
+          131.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_flex_right_thrust_washer",
+      "step": "generated/parts/middle_flex_right_thrust_washer.step",
+      "step_index": 123,
+      "sha256_step": "322268b98d5d8373a5df14f76490e0da75eafbebc2d8c84eb343b8b88bc390d8",
+      "mesh": "generated/meshes/middle_flex_right_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "5f51036d0ef0c21e91a0123e9b32bb227413f5bce1a7534e4e321ef8176ea61a",
+      "body": "middle_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.71291306419923,
+      "bbox_mm": [
+        [
+          28.15,
+          122.2,
+          3.2
+        ],
+        [
+          28.5,
+          131.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_mount_1_bolt",
+      "step": "generated/parts/middle_root_mount_1_bolt.step",
+      "step_index": 124,
+      "sha256_step": "4040e10ef42e666fa86a19bdbc343842f0286d90874ca1b12cffb8064d9d437c",
+      "mesh": "generated/meshes/middle_root_mount_1_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2548557ac97a274ea4c7a542c762eb8b4f61d3593c84dfcbf5c978ebedde8bed",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.54334121140707,
+      "bbox_mm": [
+        [
+          6.65,
+          116.15,
+          -47.5
+        ],
+        [
+          12.35,
+          121.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_mount_1_washer",
+      "step": "generated/parts/middle_root_mount_1_washer.step",
+      "step_index": 125,
+      "sha256_step": "f12368fd4c618cfd98f4cd3a8f7b98a10ba95672a65747afcc0fc54c238d5561",
+      "mesh": "generated/meshes/middle_root_mount_1_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "18e8e49d0f5967172a8e1f7f7e1a938b37dd7f16f14f278c2f668d60e83dc5c6",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.965762003538376,
+      "bbox_mm": [
+        [
+          6.0,
+          115.5,
+          -44.5
+        ],
+        [
+          13.0,
+          122.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_mount_1_nut",
+      "step": "generated/parts/middle_root_mount_1_nut.step",
+      "step_index": 126,
+      "sha256_step": "54756085870be236b8c70c3b0f983f7f572c5c93c862f044f79a76035eec34e1",
+      "mesh": "generated/meshes/middle_root_mount_1_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "119de41164ab3ed2643f2b9c80d6c5326801538ce812bd176468bf466af46960",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.89195648999144,
+      "bbox_mm": [
+        [
+          6.324999999999999,
+          116.25036934298441,
+          -37.1
+        ],
+        [
+          12.675,
+          121.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_mount_2_bolt",
+      "step": "generated/parts/middle_root_mount_2_bolt.step",
+      "step_index": 127,
+      "sha256_step": "fae2a8152357a69775ba46784c9113884f1fbf134dc1a58b7da99aee5f75ba9b",
+      "mesh": "generated/meshes/middle_root_mount_2_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "eb3b9f8c2e438ed203ec4ab8b1a50c2ac06f767756c3a58006e88c809722b179",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.5433412114071,
+      "bbox_mm": [
+        [
+          26.65,
+          116.15,
+          -47.5
+        ],
+        [
+          32.35,
+          121.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_mount_2_washer",
+      "step": "generated/parts/middle_root_mount_2_washer.step",
+      "step_index": 128,
+      "sha256_step": "b2b0af5b36b31fb06677a0df9b6b7b97263f72bac0356d694053e61d3c8350b8",
+      "mesh": "generated/meshes/middle_root_mount_2_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d4137ba49aed4fa6f279a0587a6d8ce9384069ac77f91c2f83975c90d7e1a0de",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.96576200353838,
+      "bbox_mm": [
+        [
+          26.0,
+          115.5,
+          -44.5
+        ],
+        [
+          33.0,
+          122.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "middle_root_mount_2_nut",
+      "step": "generated/parts/middle_root_mount_2_nut.step",
+      "step_index": 129,
+      "sha256_step": "9f2ab907461005f247b4209c9896dd0df90faa81abad04f47cb986d76cb89bd5",
+      "mesh": "generated/meshes/middle_root_mount_2_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8fc787c27b4540e3a816a0178ae3a8397dc60ea179f8e0e7a69ceed3ae181abe",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.89195648999143,
+      "bbox_mm": [
+        [
+          26.325,
+          116.25036934298441,
+          -37.1
+        ],
+        [
+          32.675000000000004,
+          121.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_fixed_housing",
+      "step": "generated/parts/ring_root_fixed_housing.step",
+      "step_index": 130,
+      "sha256_step": "4215b9ec7b6ac8b2f924a278f1324a00ddc0c3f46ad2b8c312f4918f461732aa",
+      "mesh": "generated/meshes/ring_root_fixed_housing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b7dcb61b75f91b7334eba47d84a0455cb68079501bf54e673c05460252adab74",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "root_fixed_housing",
+      "volume_mm3": 7722.982631933266,
+      "bbox_mm": [
+        [
+          -35.0,
+          105.5,
+          -40.5
+        ],
+        [
+          -4.0,
+          136.5,
+          -8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_spread_carrier",
+      "step": "generated/parts/ring_root_spread_carrier.step",
+      "step_index": 131,
+      "sha256_step": "51660f2ecd4476d345496abe3c88f02cb1bc0e70e2d154a9868f27bea29df282",
+      "mesh": "generated/meshes/ring_root_spread_carrier.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "89a8600d402b80d0d5223bd16c360f1fe48ceb0aa378c567dd99ab4169ae1548",
+      "body": "ring_spread",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "integral_root_carrier",
+      "volume_mm3": 4624.129067786799,
+      "bbox_mm": [
+        [
+          -33.5,
+          107.0,
+          -17.0
+        ],
+        [
+          -5.5,
+          135.0,
+          15.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_spread_lower_bushing",
+      "step": "generated/parts/ring_spread_lower_bushing.step",
+      "step_index": 132,
+      "sha256_step": "3ca46ac376ed162a405dcc7864d7efb7f965d49de483fd60e05ea81ea62e22b7",
+      "mesh": "generated/meshes/ring_spread_lower_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "89881eeb60d98296414daf37386dd75ae0d66cc25589760bb0e3016cd1882518",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.85087664959616,
+      "bbox_mm": [
+        [
+          -29.0,
+          111.5,
+          -14.5
+        ],
+        [
+          -10.0,
+          130.5,
+          -11.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_spread_upper_bushing",
+      "step": "generated/parts/ring_spread_upper_bushing.step",
+      "step_index": 133,
+      "sha256_step": "3d576cd4f72dc61af4e06c24791a7b945222be3c2dc5bbb3c72aeac7d57293a8",
+      "mesh": "generated/meshes/ring_spread_upper_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "aa45973369c97a8e74198da1766a10b96da18060eb114901f9525a74ae77aa8a",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.8508766495961,
+      "bbox_mm": [
+        [
+          -29.0,
+          111.5,
+          -11.0
+        ],
+        [
+          -10.0,
+          130.5,
+          -7.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_spread_lower_washer",
+      "step": "generated/parts/ring_spread_lower_washer.step",
+      "step_index": 134,
+      "sha256_step": "ecbc5c6f80f7fd48e227ee1c2d9575ceaa38b0deb93dede76bfa95a292d1f997",
+      "mesh": "generated/meshes/ring_spread_lower_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f220511409e6ace5b2c8a99efed1b6af38f20a970b2c3c4e5ca85e5976303656",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "spread_thrust_washer",
+      "volume_mm3": 83.31503717320128,
+      "bbox_mm": [
+        [
+          -29.0,
+          111.5,
+          -15.0
+        ],
+        [
+          -10.0,
+          130.5,
+          -14.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_spread_retaining_clip",
+      "step": "generated/parts/ring_spread_retaining_clip.step",
+      "step_index": 135,
+      "sha256_step": "888fb9063991a62508a455c4e234bb89c4cb616ac47bc492b7f88d71fc86afab",
+      "mesh": "generated/meshes/ring_spread_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2feaf3f5cac8d00401c251e438a08f6a04bf530a04cc66ac0d8420a5be6ad603",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 79.07873100918786,
+      "bbox_mm": [
+        [
+          -27.5,
+          113.0,
+          -15.899999999999999
+        ],
+        [
+          -11.987510399341641,
+          129.0,
+          -15.099999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_flex_pin",
+      "step": "generated/parts/ring_root_flex_pin.step",
+      "step_index": 136,
+      "sha256_step": "87c76ab5bcb80c2da562d88338e47075581246ea6dbd7a646be5c7445ce69558",
+      "mesh": "generated/meshes/ring_root_flex_pin.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "c8bcd110e3eaef7d6b758ca04b25531620165a0889cc3b17d1cc72cebab06f27",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "headed_grooved_flex_pin",
+      "volume_mm3": 442.80120133817405,
+      "bbox_mm": [
+        [
+          -35.5,
+          117.5,
+          4.5
+        ],
+        [
+          -4.100000000000001,
+          124.5,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_flex_left_pin_washer",
+      "step": "generated/parts/ring_flex_left_pin_washer.step",
+      "step_index": 137,
+      "sha256_step": "8e0333cc14ecedc60f1e9b838b0e2a214f590e578cf93f5a5f1afaa54076d11f",
+      "mesh": "generated/meshes/ring_flex_left_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "038db6711fbdf5b8ffcbfdfbae3d5cbbb4b943b72f8c06874d7b1a0ac9696b2f",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.80586030093314,
+      "bbox_mm": [
+        [
+          -33.5,
+          117.3,
+          4.3
+        ],
+        [
+          -32.5,
+          124.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_flex_right_pin_washer",
+      "step": "generated/parts/ring_flex_right_pin_washer.step",
+      "step_index": 138,
+      "sha256_step": "10e654adc6612f3dceba19fccda4aa23ff0f3fda663f391847b2bfe1e610844b",
+      "mesh": "generated/meshes/ring_flex_right_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "82d2ec33342e8fed20d72c07b28960cf9fcc0efded58b97580f4ecab088cfd1f",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.80586030093314,
+      "bbox_mm": [
+        [
+          -6.5,
+          117.3,
+          4.3
+        ],
+        [
+          -5.5,
+          124.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_flex_retaining_clip",
+      "step": "generated/parts/ring_flex_retaining_clip.step",
+      "step_index": 139,
+      "sha256_step": "fda5ac66cc80602e2cf394e64ce53ae79c16201124242ffd25da3c3399bdcbd3",
+      "mesh": "generated/meshes/ring_flex_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ddf2a2dbd5b94b7cafaed6e168acf4699adc64594e4dda62054456fd01e1af6d",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 17.38558932011443,
+      "bbox_mm": [
+        [
+          -5.35,
+          117.5,
+          4.5
+        ],
+        [
+          -4.65,
+          124.24961536185438,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_proximal_left_bushing",
+      "step": "generated/parts/ring_root_proximal_left_bushing.step",
+      "step_index": 140,
+      "sha256_step": "3c57f2c0bb54f512438b8c1b572ff4ab8b0e6c2059da172c1dfcea3567f2401d",
+      "mesh": "generated/meshes/ring_root_proximal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "530286ec040588cd94d483fc655e5ea78a83e5740aae32d4671b25152f6b4b7d",
+      "body": "ring_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.5989115599599,
+      "bbox_mm": [
+        [
+          -28.1,
+          116.5,
+          3.5
+        ],
+        [
+          -19.5,
+          125.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_proximal_right_bushing",
+      "step": "generated/parts/ring_root_proximal_right_bushing.step",
+      "step_index": 141,
+      "sha256_step": "45a998ce85c7faefb265580c96a09c33b162e1c749b47ed3b8e6630a3a51993c",
+      "mesh": "generated/meshes/ring_root_proximal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4dc7ae1d17c88d63cf0422d15f4f55abf10d0bb156de48c4a2c485c7d781c33e",
+      "body": "ring_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.59891155995984,
+      "bbox_mm": [
+        [
+          -19.5,
+          116.5,
+          3.5
+        ],
+        [
+          -10.9,
+          125.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_flex_left_thrust_washer",
+      "step": "generated/parts/ring_flex_left_thrust_washer.step",
+      "step_index": 142,
+      "sha256_step": "ce2a2e6106ddb0b4182af3cdedbb63153bd5cf523b6390b93b675f014c464ef1",
+      "mesh": "generated/meshes/ring_flex_left_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4ed65a242e60561635c30c179d0d246ed9005e282b3b739ead6c222d4f26bffb",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199235,
+      "bbox_mm": [
+        [
+          -28.5,
+          116.2,
+          3.2
+        ],
+        [
+          -28.15,
+          125.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_flex_right_thrust_washer",
+      "step": "generated/parts/ring_flex_right_thrust_washer.step",
+      "step_index": 143,
+      "sha256_step": "cb2fab714f7f1a57de87bead807016b149250dedb2c53325fe491c73d836ebee",
+      "mesh": "generated/meshes/ring_flex_right_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "acb8159c0858f77e94839bfb6174598cfca62918a0d11bb26af0d234e0e0f918",
+      "body": "ring_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199196,
+      "bbox_mm": [
+        [
+          -10.85,
+          116.2,
+          3.2
+        ],
+        [
+          -10.5,
+          125.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_mount_1_bolt",
+      "step": "generated/parts/ring_root_mount_1_bolt.step",
+      "step_index": 144,
+      "sha256_step": "8b7584764f7756be0e51aea9569761259bdc1e592dfc7fada827150bc8c3b05e",
+      "mesh": "generated/meshes/ring_root_mount_1_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e1aabf12ef99385e3b9658363b8a622a35d7c17266114874f15170837a7475be",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.54334121140704,
+      "bbox_mm": [
+        [
+          -32.35,
+          110.15,
+          -47.5
+        ],
+        [
+          -26.65,
+          115.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_mount_1_washer",
+      "step": "generated/parts/ring_root_mount_1_washer.step",
+      "step_index": 145,
+      "sha256_step": "de5c3324daafad17f1957df1a0f13a70cf907513bb5f8a6ef2a6f124ae8bea2f",
+      "mesh": "generated/meshes/ring_root_mount_1_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "cc850beaa7c459f2463cda666f49c44a8c0e7032f2ea14752f02ffc86c015270",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.96576200353838,
+      "bbox_mm": [
+        [
+          -33.0,
+          109.5,
+          -44.5
+        ],
+        [
+          -26.0,
+          116.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_mount_1_nut",
+      "step": "generated/parts/ring_root_mount_1_nut.step",
+      "step_index": 146,
+      "sha256_step": "a4181163b8b1f16a1156e582108bf0d26eb00947f27064aae58434fa6a2529e3",
+      "mesh": "generated/meshes/ring_root_mount_1_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f0df57f732f0fc605f24c64f2cb0b838cc2bbaead24af149edec03f1b14b12b7",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.89195648999144,
+      "bbox_mm": [
+        [
+          -32.675,
+          110.25036934298441,
+          -37.1
+        ],
+        [
+          -26.325,
+          115.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_mount_2_bolt",
+      "step": "generated/parts/ring_root_mount_2_bolt.step",
+      "step_index": 147,
+      "sha256_step": "af6b676edca53b67dde9e8b11d9de4fcd9f6285ed1460b784b8705974f4fd729",
+      "mesh": "generated/meshes/ring_root_mount_2_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "81ec90c16d07256e1ca5067a2a5cae56d8505615450f161d34129ddc7e9d937d",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.5433412114071,
+      "bbox_mm": [
+        [
+          -12.35,
+          110.15,
+          -47.5
+        ],
+        [
+          -6.65,
+          115.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_mount_2_washer",
+      "step": "generated/parts/ring_root_mount_2_washer.step",
+      "step_index": 148,
+      "sha256_step": "e22f344f2ea8b39d162e8e9e0a89f8b56969095b3d89293c00bc57919d7c655a",
+      "mesh": "generated/meshes/ring_root_mount_2_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "decce0219b0114675cf047ecaddbcd625a0379af156f468afa8b139047f436a3",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.965762003538373,
+      "bbox_mm": [
+        [
+          -13.0,
+          109.5,
+          -44.5
+        ],
+        [
+          -6.0,
+          116.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "ring_root_mount_2_nut",
+      "step": "generated/parts/ring_root_mount_2_nut.step",
+      "step_index": 149,
+      "sha256_step": "9df1d832d2020dd95fdd08d340ef6466d29988042f3b565ce38f8442977e516c",
+      "mesh": "generated/meshes/ring_root_mount_2_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "60ef96f0864dc2b3f6a6fdf409dee75e3547b569a0261d43ddc05265cda91926",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.89195648999145,
+      "bbox_mm": [
+        [
+          -12.675,
+          110.25036934298441,
+          -37.1
+        ],
+        [
+          -6.324999999999999,
+          115.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_fixed_housing",
+      "step": "generated/parts/little_root_fixed_housing.step",
+      "step_index": 150,
+      "sha256_step": "ec90207474e7ce3baf81c68170b38e4d583b3e464e726b61460ea52baedb0b0a",
+      "mesh": "generated/meshes/little_root_fixed_housing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8af90e69b66650427e2482fcb4ae568bfd8524d59402ab237920f9bcb6c4dbd8",
+      "body": "palm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "root_fixed_housing",
+      "volume_mm3": 7722.982631933266,
+      "bbox_mm": [
+        [
+          -74.0,
+          90.5,
+          -40.5
+        ],
+        [
+          -43.0,
+          121.5,
+          -8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_spread_carrier",
+      "step": "generated/parts/little_root_spread_carrier.step",
+      "step_index": 151,
+      "sha256_step": "2db8455f03ba5c6d5586fa640efe39a70033f1c66dfed8d725524cbde2b0f289",
+      "mesh": "generated/meshes/little_root_spread_carrier.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "579815ad60d8181594cac1e65f0f3d23ddacabbfc3eef30ebe5c64af6e8e01f3",
+      "body": "little_spread",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "integral_root_carrier",
+      "volume_mm3": 4624.129067786798,
+      "bbox_mm": [
+        [
+          -72.5,
+          92.0,
+          -17.0
+        ],
+        [
+          -44.5,
+          120.0,
+          15.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_spread_lower_bushing",
+      "step": "generated/parts/little_spread_lower_bushing.step",
+      "step_index": 152,
+      "sha256_step": "2a067aca6eb097e9fc733b45360639f9f07257a155baae7403944b00cf37bd17",
+      "mesh": "generated/meshes/little_spread_lower_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "44970c3fb8c879fd721974dac1fdf4939bcb87b95c0a64ac45c36ab851336511",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.85087664959633,
+      "bbox_mm": [
+        [
+          -68.0,
+          96.5,
+          -14.5
+        ],
+        [
+          -49.0,
+          115.5,
+          -11.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_spread_upper_bushing",
+      "step": "generated/parts/little_spread_upper_bushing.step",
+      "step_index": 153,
+      "sha256_step": "a633fd80e2270c0ae230d67e539c7c41d6a63e142d1a8ea9c9b7dccddba34db5",
+      "mesh": "generated/meshes/little_spread_upper_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3447f8955887cdf21d432e13e45fb75d52ce35a0c469cc05c58a122dbc3de438",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.8508766495964,
+      "bbox_mm": [
+        [
+          -68.0,
+          96.5,
+          -11.0
+        ],
+        [
+          -49.0,
+          115.5,
+          -7.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_spread_lower_washer",
+      "step": "generated/parts/little_spread_lower_washer.step",
+      "step_index": 154,
+      "sha256_step": "6051809d10446ff635ab84030d447ac6fadf00fa754bac079749b50c2b571b3e",
+      "mesh": "generated/meshes/little_spread_lower_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d13ba694807be6c2df5d83c0f1e556e1bf7ab35940f4e1b3f0ed4bd35f7a22e3",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "spread_thrust_washer",
+      "volume_mm3": 83.3150371732013,
+      "bbox_mm": [
+        [
+          -68.0,
+          96.5,
+          -15.0
+        ],
+        [
+          -49.0,
+          115.5,
+          -14.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_spread_retaining_clip",
+      "step": "generated/parts/little_spread_retaining_clip.step",
+      "step_index": 155,
+      "sha256_step": "d8ff53fc7775d6666acfe3418332cbd5ca2e5996eeaa3ce0d0f15355980c5599",
+      "mesh": "generated/meshes/little_spread_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b3bb3e8ef4e3190f966915a45959e18fa12acdf99cfaa691dd4fc08d435ea285",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 79.07873100918789,
+      "bbox_mm": [
+        [
+          -66.5,
+          98.0,
+          -15.899999999999999
+        ],
+        [
+          -50.98751039934164,
+          114.0,
+          -15.099999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_flex_pin",
+      "step": "generated/parts/little_root_flex_pin.step",
+      "step_index": 156,
+      "sha256_step": "f424db8c72f6fc04da5426f7f2ffc1373e5db9d779a35d0a0410a20668f46933",
+      "mesh": "generated/meshes/little_root_flex_pin.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "cfacdaef1c7d1980228f51ab7604606f8631ed0f0b08e519349fe0b92c3bb3b2",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "headed_grooved_flex_pin",
+      "volume_mm3": 442.801201338174,
+      "bbox_mm": [
+        [
+          -74.5,
+          102.5,
+          4.5
+        ],
+        [
+          -43.1,
+          109.5,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_flex_left_pin_washer",
+      "step": "generated/parts/little_flex_left_pin_washer.step",
+      "step_index": 157,
+      "sha256_step": "9b166e8ff03c10396797002173ec38694b244ebe8c802a78f5db862ff2b0532b",
+      "mesh": "generated/meshes/little_flex_left_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ba41ee1232ece45721588d48da702f0a8912144a6457f014bf118cadf8e2b703",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.80586030093314,
+      "bbox_mm": [
+        [
+          -72.5,
+          102.3,
+          4.3
+        ],
+        [
+          -71.5,
+          109.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_flex_right_pin_washer",
+      "step": "generated/parts/little_flex_right_pin_washer.step",
+      "step_index": 158,
+      "sha256_step": "6bf1aa059f4bcce8d96500b2b1489b0a6c3a60bbd93a8e8e102c8dd7bf8ecddf",
+      "mesh": "generated/meshes/little_flex_right_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f77f954342ad88d9add039954ba0a3f2ba954fceb104bc49f3350ed0d18dba81",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.80586030093314,
+      "bbox_mm": [
+        [
+          -45.5,
+          102.3,
+          4.3
+        ],
+        [
+          -44.5,
+          109.7,
+          11.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_flex_retaining_clip",
+      "step": "generated/parts/little_flex_retaining_clip.step",
+      "step_index": 159,
+      "sha256_step": "75a79f372157b8de25a53df3b1135e4c73f51791d670a893becac441575be669",
+      "mesh": "generated/meshes/little_flex_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "85c251ba979a3acdcc7dcc1f00720c14378a1694295d7b73766cf6a5ac66531d",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 17.38558932011445,
+      "bbox_mm": [
+        [
+          -44.35,
+          102.5,
+          4.5
+        ],
+        [
+          -43.65,
+          109.24961536185438,
+          11.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_proximal_left_bushing",
+      "step": "generated/parts/little_root_proximal_left_bushing.step",
+      "step_index": 160,
+      "sha256_step": "091b94c21d6dc0d96774e2b574351f785a6c02551d7ee81fbfb25a2ed7bf0937",
+      "mesh": "generated/meshes/little_root_proximal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "749ee3ceff90ce3e25231873d6f33c0fb941e01b6210994688311c3f934992c3",
+      "body": "little_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.59891155995982,
+      "bbox_mm": [
+        [
+          -67.1,
+          101.5,
+          3.5
+        ],
+        [
+          -58.5,
+          110.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_proximal_right_bushing",
+      "step": "generated/parts/little_root_proximal_right_bushing.step",
+      "step_index": 161,
+      "sha256_step": "9187930031a3c544e1b579041a9bbfaabbdef9833233d9c2384c813a59704a8c",
+      "mesh": "generated/meshes/little_root_proximal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b1be1828092477bcb6d88ac84cf4bc60e12fce4dc6c17006508a6d3e0d57b654",
+      "body": "little_mcp",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.59891155995987,
+      "bbox_mm": [
+        [
+          -58.5,
+          101.5,
+          3.5
+        ],
+        [
+          -49.9,
+          110.5,
+          12.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_flex_left_thrust_washer",
+      "step": "generated/parts/little_flex_left_thrust_washer.step",
+      "step_index": 162,
+      "sha256_step": "e59e2c74d1bbc0e966aee7b1dbebd30b7be3146111e631303420dc2d92ed61b4",
+      "mesh": "generated/meshes/little_flex_left_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "6981d8d525aa621f39a8dd55bcbbc0be988292724133be0f1b76a409b84b1158",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199093,
+      "bbox_mm": [
+        [
+          -67.5,
+          101.2,
+          3.2
+        ],
+        [
+          -67.15,
+          110.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_flex_right_thrust_washer",
+      "step": "generated/parts/little_flex_right_thrust_washer.step",
+      "step_index": 163,
+      "sha256_step": "c7ce1eee1dc78ead4b422fa260d7a0b00617aab33c9408c1d3a4db5416042bf6",
+      "mesh": "generated/meshes/little_flex_right_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ab4facb2c7564b9dc22c51f4fbd1c1e83e4a1d27638724ccc07314f57cae5877",
+      "body": "little_spread",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.71291306419923,
+      "bbox_mm": [
+        [
+          -49.85,
+          101.2,
+          3.2
+        ],
+        [
+          -49.5,
+          110.8,
+          12.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_mount_1_bolt",
+      "step": "generated/parts/little_root_mount_1_bolt.step",
+      "step_index": 164,
+      "sha256_step": "78f68fe8949906a8530e5f536bf3b9cc0e2e89b9fd555092bf85e43dd80ec4dd",
+      "mesh": "generated/meshes/little_root_mount_1_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "ad4db679ddc9cfd3a187c44b5638efbd05f7412011ab4e7dd4697e4449848659",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.543341211407,
+      "bbox_mm": [
+        [
+          -71.35,
+          95.15,
+          -47.5
+        ],
+        [
+          -65.65,
+          100.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_mount_1_washer",
+      "step": "generated/parts/little_root_mount_1_washer.step",
+      "step_index": 165,
+      "sha256_step": "c5c3376e1d3bc93bb2d765d56f0c38cdb0dba1e5f187e90850062dae110d3e0a",
+      "mesh": "generated/meshes/little_root_mount_1_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "380c85c3edd37001f4acf85f9ea0f18537f66d7f6403fe59d8d9172beb1337f8",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.965762003538366,
+      "bbox_mm": [
+        [
+          -72.0,
+          94.5,
+          -44.5
+        ],
+        [
+          -65.0,
+          101.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_mount_1_nut",
+      "step": "generated/parts/little_root_mount_1_nut.step",
+      "step_index": 166,
+      "sha256_step": "fe284f3eb02a339c5e5c3a1810797690cc062dd4e2149f8adcdf1ed2345e92aa",
+      "mesh": "generated/meshes/little_root_mount_1_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e671b6fd632c2c03b1f211a70fe876c88e4f4fc4e46c2a5a427656f1f7e840dc",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.89195648999152,
+      "bbox_mm": [
+        [
+          -71.67500000000001,
+          95.25036934298441,
+          -37.1
+        ],
+        [
+          -65.32499999999999,
+          100.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_mount_2_bolt",
+      "step": "generated/parts/little_root_mount_2_bolt.step",
+      "step_index": 167,
+      "sha256_step": "dce4e7eb1e2651367b78e85de5919a203b28df15d457e300f3ad3303ee3712d8",
+      "mesh": "generated/meshes/little_root_mount_2_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2fe752d8eb47de1d08f0e778e79f2e555978466c11b88b9c87fc5e870b01b6f5",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.54334121140707,
+      "bbox_mm": [
+        [
+          -51.35,
+          95.15,
+          -47.5
+        ],
+        [
+          -45.65,
+          100.85,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_mount_2_washer",
+      "step": "generated/parts/little_root_mount_2_washer.step",
+      "step_index": 168,
+      "sha256_step": "e48751395803dc2ce7e46efe9993ff8297ff7af12c72c96504e796556aa0a689",
+      "mesh": "generated/meshes/little_root_mount_2_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b94961f03bc1c67e33e180db14717a870a90c1aabf33c0c54e9a4e7ec7619520",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.965762003538382,
+      "bbox_mm": [
+        [
+          -52.0,
+          94.5,
+          -44.5
+        ],
+        [
+          -45.0,
+          101.5,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "little_root_mount_2_nut",
+      "step": "generated/parts/little_root_mount_2_nut.step",
+      "step_index": 169,
+      "sha256_step": "be4c241bd661a49d0197430340cd4ccee2d563b58c5afe6dfebe21239e044ce5",
+      "mesh": "generated/meshes/little_root_mount_2_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e53b482a831cc1afa33d454cf57bce5088c45a25442a145d42a4387f47af8aed",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.891956489991436,
+      "bbox_mm": [
+        [
+          -51.675,
+          95.25036934298441,
+          -37.1
+        ],
+        [
+          -45.324999999999996,
+          100.74963065701559,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_fixed_housing",
+      "step": "generated/parts/thumb_root_fixed_housing.step",
+      "step_index": 170,
+      "sha256_step": "82dab811535b6df3cd6b3ac18b102346ac7f1701ed683e5ede0a622896a2e588",
+      "mesh": "generated/meshes/thumb_root_fixed_housing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "dc698297c04b2d9e8d836f867ba849f50e73ff98f0d451414f29649525150444",
+      "body": "palm",
+      "color": [
+        0.18,
+        0.48,
+        0.46
+      ],
+      "role": "root_fixed_housing",
+      "volume_mm3": 7722.982631933264,
+      "bbox_mm": [
+        [
+          26.15309442729032,
+          14.399608094155194,
+          -40.5
+        ],
+        [
+          61.5,
+          49.5,
+          -8.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_spread_carrier",
+      "step": "generated/parts/thumb_root_spread_carrier.step",
+      "step_index": 171,
+      "sha256_step": "be745e2ceea27e625058076abb64f8b06fdc2431927ce2de637da9d2177a9612",
+      "mesh": "generated/meshes/thumb_root_spread_carrier.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2cd157889eb01ff5d5e5339363ed38d3d8bf21047da9f741fec83a03ea0b4ab3",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.18,
+        0.48,
+        0.46
+      ],
+      "role": "integral_root_carrier",
+      "volume_mm3": 5968.1290677868155,
+      "bbox_mm": [
+        [
+          30.899121361960972,
+          19.515405529123164,
+          -17.0
+        ],
+        [
+          60.77948483319576,
+          48.10157224931735,
+          36.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_spread_lower_bushing",
+      "step": "generated/parts/thumb_spread_lower_bushing.step",
+      "step_index": 172,
+      "sha256_step": "c8c543770a333138c4e1529f5d6ace33d7d74bd14e142757dc324b75552e8609",
+      "mesh": "generated/meshes/thumb_spread_lower_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "3f04e739a5939ddb0cbbf95747570a866de52338c23ea56a0b14f80f3bfb0892",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.85087664959616,
+      "bbox_mm": [
+        [
+          36.5,
+          24.5,
+          -14.5
+        ],
+        [
+          55.5,
+          43.5,
+          -11.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_spread_upper_bushing",
+      "step": "generated/parts/thumb_spread_upper_bushing.step",
+      "step_index": 173,
+      "sha256_step": "6cb76091451f775edc56e5df5cd9564563dca180fbb88fcef528bee819e9c13f",
+      "mesh": "generated/meshes/thumb_spread_upper_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "1b467edb1411aa6b2bb932bd76cbc08e9251711868f14a58be03447002b38f84",
+      "body": "palm",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "split_spread_bushing",
+      "volume_mm3": 351.85087664959616,
+      "bbox_mm": [
+        [
+          36.5,
+          24.5,
+          -11.0
+        ],
+        [
+          55.5,
+          43.5,
+          -7.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_spread_lower_washer",
+      "step": "generated/parts/thumb_spread_lower_washer.step",
+      "step_index": 174,
+      "sha256_step": "cf2f8dac948df3074fd155f2386bc92cc4b9edcb9d268ac864109884e67672ec",
+      "mesh": "generated/meshes/thumb_spread_lower_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "4644c98709b9cc4645cda0ae52154a514aa569dacd3561347906e34522e1749e",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "spread_thrust_washer",
+      "volume_mm3": 83.31503717320135,
+      "bbox_mm": [
+        [
+          36.5,
+          24.5,
+          -15.0
+        ],
+        [
+          55.5,
+          43.5,
+          -14.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_spread_retaining_clip",
+      "step": "generated/parts/thumb_spread_retaining_clip.step",
+      "step_index": 175,
+      "sha256_step": "26e46bf07e367bbe13cbb1cb1a05133e0ffe015f5634a9f2bfde9a7daa5d5f12",
+      "mesh": "generated/meshes/thumb_spread_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "2df0334d31cb1d9aba67ee3a812d459d5b4f29072c3898599ce45070e985686c",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 79.07873100918789,
+      "bbox_mm": [
+        [
+          38.0,
+          26.0,
+          -15.899999999999999
+        ],
+        [
+          54.0,
+          42.0,
+          -15.099999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_flex_pin",
+      "step": "generated/parts/thumb_root_flex_pin.step",
+      "step_index": 176,
+      "sha256_step": "dfc438cd0681de71ee9625eda0a1513aabf6e945aa9d19c91e566b87eb923451",
+      "mesh": "generated/meshes/thumb_root_flex_pin.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b2c2b55dc23aec8205ecab5380448b80c7a07f1d6031e79f586fe817a018cacd",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "headed_grooved_flex_pin",
+      "volume_mm3": 442.8012013381743,
+      "bbox_mm": [
+        [
+          31.493532276193466,
+          22.568981924589337,
+          25.5
+        ],
+        [
+          59.08265964340534,
+          46.96575730590105,
+          32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_flex_left_pin_washer",
+      "step": "generated/parts/thumb_flex_left_pin_washer.step",
+      "step_index": 177,
+      "sha256_step": "351aff2cc979b05e733d58b3da31d6b07954f8cdfb6718be1a4b63d6f6361876",
+      "mesh": "generated/meshes/thumb_flex_left_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "cdc02c756990c7b62bf0e045c0ff49f99a6ba6aca8b55ea506f5c192fcf70a32",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.805860300933112,
+      "bbox_mm": [
+        [
+          32.89706364049412,
+          39.521874486384796,
+          25.3
+        ],
+        [
+          38.41973639529348,
+          45.833390975151765,
+          32.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_flex_right_pin_washer",
+      "step": "generated/parts/thumb_flex_right_pin_washer.step",
+      "step_index": 178,
+      "sha256_step": "f8ef4c7d78488be70ebf2627c0c3bd65847b61f3f3a02ccf1ed84199565328a3",
+      "mesh": "generated/meshes/thumb_flex_right_pin_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "f2f7e212ef7ccb0cee6d5ba0e22f399798df6a94f5fc877f6c09554e20676452",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "pin_washer",
+      "volume_mm3": 29.805860300933123,
+      "bbox_mm": [
+        [
+          53.58026360470652,
+          22.16660902484823,
+          25.3
+        ],
+        [
+          59.10293635950588,
+          28.478125513615208,
+          32.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_flex_retaining_clip",
+      "step": "generated/parts/thumb_flex_retaining_clip.step",
+      "step_index": 179,
+      "sha256_step": "cf60eb677274d46e09558f4ed7e872b9d517276728d9d12ea76eea2df925315c",
+      "mesh": "generated/meshes/thumb_flex_retaining_clip.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d0e621f3eb9edc47fbfc866c850fc5da8e9b6125b758987780f1b16239faa666",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_spring_clip",
+      "volume_mm3": 17.385589320114423,
+      "bbox_mm": [
+        [
+          54.58977223623066,
+          21.773448445238472,
+          25.5
+        ],
+        [
+          59.46457247116387,
+          27.393905113158088,
+          32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_proximal_left_bushing",
+      "step": "generated/parts/thumb_root_proximal_left_bushing.step",
+      "step_index": 180,
+      "sha256_step": "b22a2119b65d35433ad55dbe71038d0bbf58377f6f8ecf685dcf265c5709434e",
+      "mesh": "generated/meshes/thumb_root_proximal_left_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d07d1eb72c759e2edae60d625b5725201c906e1c2c6e450d6c71670b88f65184",
+      "body": "thumb_opposition",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.59891155996002,
+      "bbox_mm": [
+        [
+          36.51947354558736,
+          31.410769782257855,
+          24.5
+        ],
+        [
+          48.172622120740506,
+          42.975173437339635,
+          33.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_proximal_right_bushing",
+      "step": "generated/parts/thumb_root_proximal_right_bushing.step",
+      "step_index": 181,
+      "sha256_step": "0729ac72fd64d18eb7887a3e5ce42bb0137f0e9a102409341a8ca39edecbef77",
+      "mesh": "generated/meshes/thumb_root_proximal_right_bushing.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8b86218b0d3565b88700fda633022c3895bf9ce0cfdc83d00cf4b4a321fed5f9",
+      "body": "thumb_opposition",
+      "color": [
+        0.62,
+        0.45,
+        0.2
+      ],
+      "role": "flanged_proximal_bushing",
+      "volume_mm3": 215.5989115599601,
+      "bbox_mm": [
+        [
+          43.827377879259494,
+          25.024826562660362,
+          24.5
+        ],
+        [
+          55.48052645441264,
+          36.58923021774215,
+          33.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_flex_left_thrust_washer",
+      "step": "generated/parts/thumb_flex_left_thrust_washer.step",
+      "step_index": 182,
+      "sha256_step": "d25a436e945b053f269a43ed6409d27e36d978c55907688df4ca230036962538",
+      "mesh": "generated/meshes/thumb_flex_left_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b6c7c709a8ba6050b99a19d5d971c7907f4c15b2187742ce5149ca510c1cc7ac",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199164,
+      "bbox_mm": [
+        [
+          36.020219485433806,
+          35.88309949681747,
+          24.2
+        ],
+        [
+          42.45909609351623,
+          43.462101814149946,
+          33.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_flex_right_thrust_washer",
+      "step": "generated/parts/thumb_flex_right_thrust_washer.step",
+      "step_index": 183,
+      "sha256_step": "e6150c9852cb4f8b10e10c21a77fa29f221e3417c4638df3d0d166f87cd63247",
+      "mesh": "generated/meshes/thumb_flex_right_thrust_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "e809a172344b08a3d7457e8719de134850fc491d9a0be01de53f866b3faaa974",
+      "body": "thumb_base_sweep",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "flex_thrust_washer",
+      "volume_mm3": 20.712913064199167,
+      "bbox_mm": [
+        [
+          49.54090390648377,
+          24.53789818585005,
+          24.2
+        ],
+        [
+          55.979780514566194,
+          32.11690050318253,
+          33.8
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_mount_1_bolt",
+      "step": "generated/parts/thumb_root_mount_1_bolt.step",
+      "step_index": 184,
+      "sha256_step": "8ac82508f88119543bd8f9c9e53a022581cb3f5fb0befe7b3694e30801733ba5",
+      "mesh": "generated/meshes/thumb_root_mount_1_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "7baa15c8143522e4c7b4507984aa749a1ced123f4e09e5ccddb4b2ac16a2be69",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.5433412114071,
+      "bbox_mm": [
+        [
+          30.347254691317907,
+          31.449520551913565,
+          -47.5
+        ],
+        [
+          36.04725469131791,
+          37.14952055191357,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_mount_1_washer",
+      "step": "generated/parts/thumb_root_mount_1_washer.step",
+      "step_index": 185,
+      "sha256_step": "8ef3070c10c82c3c1144002877f73ed363999618bccf6e14ddda7485ec05d77b",
+      "mesh": "generated/meshes/thumb_root_mount_1_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "8b5341c82faecefb268d175f28417204aacd74853acba83528e8065ee97f2006",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.96576200353838,
+      "bbox_mm": [
+        [
+          29.69725469131791,
+          30.799520551913567,
+          -44.5
+        ],
+        [
+          36.69725469131791,
+          37.79952055191357,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_mount_1_nut",
+      "step": "generated/parts/thumb_root_mount_1_nut.step",
+      "step_index": 186,
+      "sha256_step": "e7ef7a87be2097b63a1d2ed2f326482b374f9c5825ba4e538f3d09bcd42882c4",
+      "mesh": "generated/meshes/thumb_root_mount_1_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "07c327311152fa255a96edc2ed13454c4de141311818dcbb6774c5ad02d84ba8",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.891956489991536,
+      "bbox_mm": [
+        [
+          30.213730620322647,
+          31.172755936099808,
+          -37.1
+        ],
+        [
+          36.18077876231317,
+          37.42628516772733,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_mount_2_bolt",
+      "step": "generated/parts/thumb_root_mount_2_bolt.step",
+      "step_index": 187,
+      "sha256_step": "97d0fb81e4b1990f4a61aa109c2f79b055291e7c0f0175dfd4a27c66d2805fb8",
+      "mesh": "generated/meshes/thumb_root_mount_2_bolt.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "b417e3075e180ac5988feff65075f81672188215e02e15b1642eb312844e821e",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_M3x12_socket_bolt",
+      "volume_mm3": 151.543341211407,
+      "bbox_mm": [
+        [
+          45.66814355369746,
+          18.593768358182782,
+          -47.5
+        ],
+        [
+          51.368143553697465,
+          24.293768358182785,
+          -32.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_mount_2_washer",
+      "step": "generated/parts/thumb_root_mount_2_washer.step",
+      "step_index": 188,
+      "sha256_step": "5119239b4b5c2f88264123b40f392ec1fe1637c33f45251fc53528a5dd87ab0c",
+      "mesh": "generated/meshes/thumb_root_mount_2_washer.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "5fb5626d125f9fabaa8aa2014257313079915cb870c829d7699996b1c949591f",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "mount_washer",
+      "volume_mm3": 14.965762003538378,
+      "bbox_mm": [
+        [
+          45.01814355369746,
+          17.943768358182783,
+          -44.5
+        ],
+        [
+          52.01814355369746,
+          24.943768358182783,
+          -44.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    },
+    {
+      "name": "thumb_root_mount_2_nut",
+      "step": "generated/parts/thumb_root_mount_2_nut.step",
+      "step_index": 189,
+      "sha256_step": "1a096600680c2093a0b9900894ca199fb52014519e54db4923b30f9ec6c0d64d",
+      "mesh": "generated/meshes/thumb_root_mount_2_nut.stl",
+      "mesh_units": "mm",
+      "sha256_stl": "d7a3d447de9e3e9b41246d1cdd64a05cbe8dbb5dca77dd438a754466a9fa0607",
+      "body": "palm",
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "role": "nominal_captive_M3_nut",
+      "volume_mm3": 45.891956489991514,
+      "bbox_mm": [
+        [
+          45.534619482702205,
+          18.317003742369025,
+          -37.1
+        ],
+        [
+          51.50166762469272,
+          24.570532973996546,
+          -34.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "source": "root_repair_candidate"
+    }
+  ],
+  "arm_reference": [
+    {
+      "name": "AK_elbow_flex",
+      "asset": "AK_elbow_flex",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_elbow_flex.stl",
+      "mesh_units": "m",
+      "sha256_stl": "f4d0de2be857a058282069834fdfdf22a5f9af25dae866595ad5e1692859fb70",
+      "reference_only": true
+    },
+    {
+      "name": "AK_forearm_roll",
+      "asset": "AK_forearm_roll",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_forearm_roll.stl",
+      "mesh_units": "m",
+      "sha256_stl": "e173a2bf5c2e0072a6cf42566c000d52dd12b192c0906b476467d0e886b3be50",
+      "reference_only": true
+    },
+    {
+      "name": "AK_wrist_flex",
+      "asset": "AK_wrist_flex",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_wrist_flex.stl",
+      "mesh_units": "m",
+      "sha256_stl": "3816312eeb4d620de62c9e0d3ccec8d2126f5fb8603698d610e8a25bea8bd703",
+      "reference_only": true
+    },
+    {
+      "name": "AK_wrist_deviation",
+      "asset": "AK_wrist_deviation",
+      "color": [
+        0.23,
+        0.25,
+        0.29
+      ],
+      "role": "arm_motor_nominal",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/AK_wrist_deviation.stl",
+      "mesh_units": "m",
+      "sha256_stl": "476a59c49e6da0c8c104538260d496f63b117b80136ce3e8a759e5eda7d35b28",
+      "reference_only": true
+    },
+    {
+      "name": "Elbow_fixed_cradle",
+      "asset": "Elbow_fixed_cradle",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Elbow_fixed_cradle.stl",
+      "mesh_units": "m",
+      "sha256_stl": "7cd3338ccb3557262673a448c34511ffa7bc69ae83db9a0375266ef64ddac01d",
+      "reference_only": true
+    },
+    {
+      "name": "Elbow_roll_carrier",
+      "asset": "Elbow_roll_carrier",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Elbow_roll_carrier.stl",
+      "mesh_units": "m",
+      "sha256_stl": "3a5f9e56da8beea4a942a2c0c70a22b797447e25a7b92fb358fc1654bc649097",
+      "reference_only": true
+    },
+    {
+      "name": "Forearm_box_beam",
+      "asset": "Forearm_box_beam",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Forearm_box_beam.stl",
+      "mesh_units": "m",
+      "sha256_stl": "fc2f294f0a23d66d36dd5defdf80981a88812ae9e60db765a8a3af722be7bf4d",
+      "reference_only": true
+    },
+    {
+      "name": "Roll_output_flange",
+      "asset": "Roll_output_flange",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Roll_output_flange.stl",
+      "mesh_units": "m",
+      "sha256_stl": "8f0b26b51796ab796c5af2779997a06d8a17f89cff6e5e330d2cfdcdb327f0c3",
+      "reference_only": true
+    },
+    {
+      "name": "Wrist_box_carrier",
+      "asset": "Wrist_box_carrier",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Wrist_box_carrier.stl",
+      "mesh_units": "m",
+      "sha256_stl": "37cdc51a9ed6d6a76c07eff1c4a44b21d8e3f627dfc74369d595496cd6c22b41",
+      "reference_only": true
+    },
+    {
+      "name": "Palm_wrist_saddle",
+      "asset": "Palm_wrist_saddle",
+      "color": [
+        0.36,
+        0.43,
+        0.52
+      ],
+      "role": "arm_packaging",
+      "parent": "arm",
+      "pos_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh": "../modular_roots_v9/meshes/Palm_wrist_saddle.stl",
+      "mesh_units": "m",
+      "sha256_stl": "420ea2c3c674cdf7ab04ff879718ce867e75b4d718495d7bbc22277a5650ddf7",
+      "reference_only": true
+    }
+  ],
+  "source_sha256": {
+    "cad/webcam_articulation_v1/design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad/webcam_articulation_v1/build.py": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3",
+    "cad/webcam_articulation_v1/digits.py": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626",
+    "cad/webcam_articulation_v1/thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad/webcam_articulation_v1/generated/scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331",
+    "cad/webcam_articulation_v1/generated/hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "cad/articulation_drive_v2/build.py": "9c7b17971ee2492799182a52ab7783e85e2ffb70234900d1905d949c96753fc0",
+    "cad/articulation_drive_v2/root_module.py": "bb446a195ec50bde6d0f6b05a5ea1c3f0401bc2418bb317bc89d61021563b033",
+    "cad/form_drive_v1/exterior.py": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab"
+  },
+  "inputs_unchanged": true
+}

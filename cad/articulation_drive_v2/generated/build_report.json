@@ -1,0 +1,4197 @@
+{
+  "source_sha256": {
+    "cad/webcam_articulation_v1/design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad/webcam_articulation_v1/build.py": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3",
+    "cad/webcam_articulation_v1/digits.py": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626",
+    "cad/webcam_articulation_v1/thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad/webcam_articulation_v1/generated/scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331",
+    "cad/webcam_articulation_v1/generated/hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "cad/articulation_drive_v2/build.py": "9c7b17971ee2492799182a52ab7783e85e2ffb70234900d1905d949c96753fc0",
+    "cad/articulation_drive_v2/root_module.py": "bb446a195ec50bde6d0f6b05a5ea1c3f0401bc2418bb317bc89d61021563b033",
+    "cad/form_drive_v1/exterior.py": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab"
+  },
+  "inputs_unchanged": true,
+  "part_count": 190,
+  "removed_parts": [
+    "index_joint_pin_0",
+    "index_root_fork_-13",
+    "index_root_fork_13",
+    "index_segment1_proximal_bushing",
+    "index_spread_housing",
+    "index_spread_ring",
+    "little_joint_pin_0",
+    "little_root_fork_-13",
+    "little_root_fork_13",
+    "little_segment1_proximal_bushing",
+    "little_spread_housing",
+    "little_spread_ring",
+    "middle_joint_pin_0",
+    "middle_root_fork_-13",
+    "middle_root_fork_13",
+    "middle_segment1_proximal_bushing",
+    "middle_spread_housing",
+    "middle_spread_ring",
+    "ring_joint_pin_0",
+    "ring_root_fork_-13",
+    "ring_root_fork_13",
+    "ring_segment1_proximal_bushing",
+    "ring_spread_housing",
+    "ring_spread_ring",
+    "thumb_joint_pin_0",
+    "thumb_root_fork_-13",
+    "thumb_root_fork_13",
+    "thumb_segment1_proximal_bushing",
+    "thumb_spread_housing",
+    "thumb_spread_ring"
+  ],
+  "added_parts": [
+    "index_root_fixed_housing",
+    "index_root_spread_carrier",
+    "index_spread_lower_bushing",
+    "index_spread_upper_bushing",
+    "index_spread_lower_washer",
+    "index_spread_retaining_clip",
+    "index_root_flex_pin",
+    "index_flex_left_pin_washer",
+    "index_flex_right_pin_washer",
+    "index_flex_retaining_clip",
+    "index_root_proximal_left_bushing",
+    "index_root_proximal_right_bushing",
+    "index_flex_left_thrust_washer",
+    "index_flex_right_thrust_washer",
+    "index_root_mount_1_bolt",
+    "index_root_mount_1_washer",
+    "index_root_mount_1_nut",
+    "index_root_mount_2_bolt",
+    "index_root_mount_2_washer",
+    "index_root_mount_2_nut",
+    "middle_root_fixed_housing",
+    "middle_root_spread_carrier",
+    "middle_spread_lower_bushing",
+    "middle_spread_upper_bushing",
+    "middle_spread_lower_washer",
+    "middle_spread_retaining_clip",
+    "middle_root_flex_pin",
+    "middle_flex_left_pin_washer",
+    "middle_flex_right_pin_washer",
+    "middle_flex_retaining_clip",
+    "middle_root_proximal_left_bushing",
+    "middle_root_proximal_right_bushing",
+    "middle_flex_left_thrust_washer",
+    "middle_flex_right_thrust_washer",
+    "middle_root_mount_1_bolt",
+    "middle_root_mount_1_washer",
+    "middle_root_mount_1_nut",
+    "middle_root_mount_2_bolt",
+    "middle_root_mount_2_washer",
+    "middle_root_mount_2_nut",
+    "ring_root_fixed_housing",
+    "ring_root_spread_carrier",
+    "ring_spread_lower_bushing",
+    "ring_spread_upper_bushing",
+    "ring_spread_lower_washer",
+    "ring_spread_retaining_clip",
+    "ring_root_flex_pin",
+    "ring_flex_left_pin_washer",
+    "ring_flex_right_pin_washer",
+    "ring_flex_retaining_clip",
+    "ring_root_proximal_left_bushing",
+    "ring_root_proximal_right_bushing",
+    "ring_flex_left_thrust_washer",
+    "ring_flex_right_thrust_washer",
+    "ring_root_mount_1_bolt",
+    "ring_root_mount_1_washer",
+    "ring_root_mount_1_nut",
+    "ring_root_mount_2_bolt",
+    "ring_root_mount_2_washer",
+    "ring_root_mount_2_nut",
+    "little_root_fixed_housing",
+    "little_root_spread_carrier",
+    "little_spread_lower_bushing",
+    "little_spread_upper_bushing",
+    "little_spread_lower_washer",
+    "little_spread_retaining_clip",
+    "little_root_flex_pin",
+    "little_flex_left_pin_washer",
+    "little_flex_right_pin_washer",
+    "little_flex_retaining_clip",
+    "little_root_proximal_left_bushing",
+    "little_root_proximal_right_bushing",
+    "little_flex_left_thrust_washer",
+    "little_flex_right_thrust_washer",
+    "little_root_mount_1_bolt",
+    "little_root_mount_1_washer",
+    "little_root_mount_1_nut",
+    "little_root_mount_2_bolt",
+    "little_root_mount_2_washer",
+    "little_root_mount_2_nut",
+    "thumb_root_fixed_housing",
+    "thumb_root_spread_carrier",
+    "thumb_spread_lower_bushing",
+    "thumb_spread_upper_bushing",
+    "thumb_spread_lower_washer",
+    "thumb_spread_retaining_clip",
+    "thumb_root_flex_pin",
+    "thumb_flex_left_pin_washer",
+    "thumb_flex_right_pin_washer",
+    "thumb_flex_retaining_clip",
+    "thumb_root_proximal_left_bushing",
+    "thumb_root_proximal_right_bushing",
+    "thumb_flex_left_thrust_washer",
+    "thumb_flex_right_thrust_washer",
+    "thumb_root_mount_1_bolt",
+    "thumb_root_mount_1_washer",
+    "thumb_root_mount_1_nut",
+    "thumb_root_mount_2_bolt",
+    "thumb_root_mount_2_washer",
+    "thumb_root_mount_2_nut"
+  ],
+  "source_step_mapping": [
+    {
+      "name": "Palm_tapered_chassis",
+      "volume_error_mm3": 9.604264050722122e-10,
+      "bbox_error_mm": 1.0290435170645651e-11
+    },
+    {
+      "name": "Cover_screw_-44_33",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_screw_16_29",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_screw_-54_78",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_screw_46_88",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_screw_-18_104",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_screw_15_10",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Palm_shaped_front_cover",
+      "volume_error_mm3": 4.001776687800884e-10,
+      "bbox_error_mm": 6.110667527536862e-13
+    },
+    {
+      "name": "Palm_side_web_-71",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Palm_side_web_71",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_post_-44_33",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_post_16_29",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_post_-54_78",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_post_46_88",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_post_-18_104",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Cover_post_15_10",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Wrist_bridge_post_-32_8",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Wrist_bridge_post_-32_28",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Wrist_bridge_post_8_8",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Wrist_bridge_post_8_28",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "Wrist_bridge_plate",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_spread_housing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_spread_ring",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_root_fork_-13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_root_fork_13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment1_segment_shell",
+      "volume_error_mm3": 6.787908205296844e-06,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "index_segment1_proximal_bushing",
+      "volume_error_mm3": 6.934897101018578e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment1_distal_left_bushing",
+      "volume_error_mm3": 1.5631940186722204e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment1_distal_right_bushing",
+      "volume_error_mm3": 1.5631940186722204e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment1_dark_faceplate",
+      "volume_error_mm3": 4.1950443119276315e-11,
+      "bbox_error_mm": 5.5138116294983774e-12
+    },
+    {
+      "name": "index_joint_pin_0",
+      "volume_error_mm3": 5.343281372915953e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment2_segment_shell",
+      "volume_error_mm3": 5.875335773453116e-10,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "index_segment2_proximal_bushing",
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment2_distal_left_bushing",
+      "volume_error_mm3": 9.947598300641403e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment2_distal_right_bushing",
+      "volume_error_mm3": 9.947598300641403e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment2_dark_faceplate",
+      "volume_error_mm3": 1.6484591469634324e-12,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "index_joint_pin_1",
+      "volume_error_mm3": 5.002220859751105e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment3_tip_core",
+      "volume_error_mm3": 4.1745806811377406e-10,
+      "bbox_error_mm": 9.605649609056854e-13
+    },
+    {
+      "name": "index_segment3_proximal_bushing",
+      "volume_error_mm3": 7.275957614183426e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_segment3_rounded_tip_cap",
+      "volume_error_mm3": 1.1641532182693481e-10,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "index_joint_pin_2",
+      "volume_error_mm3": 5.002220859751105e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_spread_housing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_spread_ring",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_root_fork_-13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_root_fork_13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_segment1_segment_shell",
+      "volume_error_mm3": 1.7404454411007464e-07,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "middle_segment1_proximal_bushing",
+      "volume_error_mm3": 7.048583938740194e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_segment1_distal_left_bushing",
+      "volume_error_mm3": 1.4779288903810084e-12,
+      "bbox_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "middle_segment1_distal_right_bushing",
+      "volume_error_mm3": 1.4352963262354024e-12,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "middle_segment1_dark_faceplate",
+      "volume_error_mm3": 1.0686562745831907e-11,
+      "bbox_error_mm": 3.637978807091713e-12
+    },
+    {
+      "name": "middle_joint_pin_0",
+      "volume_error_mm3": 5.343281372915953e-12,
+      "bbox_error_mm": 1.3322676295501878e-15
+    },
+    {
+      "name": "middle_segment2_segment_shell",
+      "volume_error_mm3": 5.838955985382199e-10,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "middle_segment2_proximal_bushing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_segment2_distal_left_bushing",
+      "volume_error_mm3": 2.842170943040401e-14,
+      "bbox_error_mm": 8.881784197001252e-16
+    },
+    {
+      "name": "middle_segment2_distal_right_bushing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_segment2_dark_faceplate",
+      "volume_error_mm3": 1.5916157281026244e-12,
+      "bbox_error_mm": 2.842170943040401e-14
+    },
+    {
+      "name": "middle_joint_pin_1",
+      "volume_error_mm3": 5.115907697472721e-12,
+      "bbox_error_mm": 1.3322676295501878e-15
+    },
+    {
+      "name": "middle_segment3_tip_core",
+      "volume_error_mm3": 2.701199264265597e-10,
+      "bbox_error_mm": 9.605649609056854e-13
+    },
+    {
+      "name": "middle_segment3_proximal_bushing",
+      "volume_error_mm3": 7.16227077646181e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_segment3_rounded_tip_cap",
+      "volume_error_mm3": 1.1550582712516189e-10,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "middle_joint_pin_2",
+      "volume_error_mm3": 5.115907697472721e-12,
+      "bbox_error_mm": 1.3322676295501878e-15
+    },
+    {
+      "name": "ring_spread_housing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_spread_ring",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_root_fork_-13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_root_fork_13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment1_segment_shell",
+      "volume_error_mm3": 1.3333192327991128e-08,
+      "bbox_error_mm": 8.881784197001252e-16
+    },
+    {
+      "name": "ring_segment1_proximal_bushing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment1_distal_left_bushing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "ring_segment1_distal_right_bushing",
+      "volume_error_mm3": 4.263256414560601e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment1_dark_faceplate",
+      "volume_error_mm3": 8.424194675171748e-11,
+      "bbox_error_mm": 9.379164112033322e-13
+    },
+    {
+      "name": "ring_joint_pin_0",
+      "volume_error_mm3": 5.229594535194337e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment2_segment_shell",
+      "volume_error_mm3": 6.039044819772243e-10,
+      "bbox_error_mm": 8.881784197001252e-16
+    },
+    {
+      "name": "ring_segment2_proximal_bushing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment2_distal_left_bushing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "ring_segment2_distal_right_bushing",
+      "volume_error_mm3": 4.263256414560601e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment2_dark_faceplate",
+      "volume_error_mm3": 1.0800249583553523e-12,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "ring_joint_pin_1",
+      "volume_error_mm3": 5.002220859751105e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment3_tip_core",
+      "volume_error_mm3": 7.530616130679846e-10,
+      "bbox_error_mm": 9.605649609056854e-13
+    },
+    {
+      "name": "ring_segment3_proximal_bushing",
+      "volume_error_mm3": 7.16227077646181e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_segment3_rounded_tip_cap",
+      "volume_error_mm3": 1.1641532182693481e-10,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "ring_joint_pin_2",
+      "volume_error_mm3": 5.002220859751105e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_spread_housing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_spread_ring",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_root_fork_-13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_root_fork_13",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment1_segment_shell",
+      "volume_error_mm3": 0.019918910034903092,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "little_segment1_proximal_bushing",
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment1_distal_left_bushing",
+      "volume_error_mm3": 9.947598300641403e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment1_distal_right_bushing",
+      "volume_error_mm3": 9.947598300641403e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment1_dark_faceplate",
+      "volume_error_mm3": 9.936229616869241e-11,
+      "bbox_error_mm": 2.9842794901924208e-12
+    },
+    {
+      "name": "little_joint_pin_0",
+      "volume_error_mm3": 5.4569682106375694e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment2_segment_shell",
+      "volume_error_mm3": 9.731593308970332e-10,
+      "bbox_error_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "little_segment2_proximal_bushing",
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment2_distal_left_bushing",
+      "volume_error_mm3": 9.947598300641403e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment2_distal_right_bushing",
+      "volume_error_mm3": 9.947598300641403e-14,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment2_dark_faceplate",
+      "volume_error_mm3": 5.610445441561751e-11,
+      "bbox_error_mm": 8.000711204658728e-12
+    },
+    {
+      "name": "little_joint_pin_1",
+      "volume_error_mm3": 5.229594535194337e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment3_tip_core",
+      "volume_error_mm3": 1.4006218407303095e-10,
+      "bbox_error_mm": 9.605649609056854e-13
+    },
+    {
+      "name": "little_segment3_proximal_bushing",
+      "volume_error_mm3": 7.275957614183426e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_segment3_rounded_tip_cap",
+      "volume_error_mm3": 1.1550582712516189e-10,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "little_joint_pin_2",
+      "volume_error_mm3": 5.229594535194337e-12,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "thumb_spread_housing",
+      "volume_error_mm3": 0.0,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "thumb_spread_ring",
+      "volume_error_mm3": 4.297362465877086e-11,
+      "bbox_error_mm": 0.0
+    },
+    {
+      "name": "thumb_root_fork_-13",
+      "volume_error_mm3": 4.979483492206782e-11,
+      "bbox_error_mm": 2.1387336346379016e-12
+    },
+    {
+      "name": "thumb_root_fork_13",
+      "volume_error_mm3": 7.73070496506989e-12,
+      "bbox_error_mm": 2.1387336346379016e-12
+    },
+    {
+      "name": "thumb_segment1_thenar_shell",
+      "volume_error_mm3": 3.745117282960564e-07,
+      "bbox_error_mm": 2.2524204723595176e-12
+    },
+    {
+      "name": "thumb_segment1_proximal_bushing",
+      "volume_error_mm3": 2.864908310584724e-11,
+      "bbox_error_mm": 1.2576606422953773e-12
+    },
+    {
+      "name": "thumb_segment1_distal_left_bushing",
+      "volume_error_mm3": 3.0127011996228248e-12,
+      "bbox_error_mm": 4.050093593832571e-13
+    },
+    {
+      "name": "thumb_segment1_distal_right_bushing",
+      "volume_error_mm3": 1.5646151041437406e-11,
+      "bbox_error_mm": 4.050093593832571e-13
+    },
+    {
+      "name": "thumb_joint_pin_0",
+      "volume_error_mm3": 7.844391802791506e-12,
+      "bbox_error_mm": 8.455458555545192e-13
+    },
+    {
+      "name": "thumb_segment2_segment_shell",
+      "volume_error_mm3": 1.939042704179883e-09,
+      "bbox_error_mm": 6.636469151999336e-12
+    },
+    {
+      "name": "thumb_segment2_proximal_bushing",
+      "volume_error_mm3": 5.002220859751105e-12,
+      "bbox_error_mm": 1.0054179711005418e-12
+    },
+    {
+      "name": "thumb_segment2_distal_left_bushing",
+      "volume_error_mm3": 2.05773176276125e-11,
+      "bbox_error_mm": 7.062794793455396e-12
+    },
+    {
+      "name": "thumb_segment2_distal_right_bushing",
+      "volume_error_mm3": 4.831690603168681e-12,
+      "bbox_error_mm": 8.142819751810748e-12
+    },
+    {
+      "name": "thumb_segment2_dark_faceplate",
+      "volume_error_mm3": 4.5719161789747886e-10,
+      "bbox_error_mm": 6.650680006714538e-12
+    },
+    {
+      "name": "thumb_joint_pin_1",
+      "volume_error_mm3": 9.038103598868474e-12,
+      "bbox_error_mm": 4.121147867408581e-13
+    },
+    {
+      "name": "thumb_segment3_tip_core",
+      "volume_error_mm3": 8.185452315956354e-11,
+      "bbox_error_mm": 3.765876499528531e-12
+    },
+    {
+      "name": "thumb_segment3_proximal_bushing",
+      "volume_error_mm3": 2.5693225325085223e-11,
+      "bbox_error_mm": 9.308109838457312e-12
+    },
+    {
+      "name": "thumb_segment3_rounded_tip_cap",
+      "volume_error_mm3": 3.9244696381501853e-10,
+      "bbox_error_mm": 3.723243935382925e-12
+    },
+    {
+      "name": "thumb_joint_pin_2",
+      "volume_error_mm3": 2.1032064978498966e-11,
+      "bbox_error_mm": 4.334310688136611e-12
+    }
+  ],
+  "root_module": {
+    "schema_version": "articulation_drive_v2.root_module.v1",
+    "modules": 5,
+    "new_part_count": 100,
+    "removed_names": [
+      "index_spread_housing",
+      "index_spread_ring",
+      "index_root_fork_-13",
+      "index_root_fork_13",
+      "index_joint_pin_0",
+      "index_segment1_proximal_bushing",
+      "middle_spread_housing",
+      "middle_spread_ring",
+      "middle_root_fork_-13",
+      "middle_root_fork_13",
+      "middle_joint_pin_0",
+      "middle_segment1_proximal_bushing",
+      "ring_spread_housing",
+      "ring_spread_ring",
+      "ring_root_fork_-13",
+      "ring_root_fork_13",
+      "ring_joint_pin_0",
+      "ring_segment1_proximal_bushing",
+      "little_spread_housing",
+      "little_spread_ring",
+      "little_root_fork_-13",
+      "little_root_fork_13",
+      "little_joint_pin_0",
+      "little_segment1_proximal_bushing",
+      "thumb_spread_housing",
+      "thumb_spread_ring",
+      "thumb_root_fork_-13",
+      "thumb_root_fork_13",
+      "thumb_joint_pin_0",
+      "thumb_segment1_proximal_bushing"
+    ],
+    "clearance_probes": [
+      {
+        "id": "index_left_finite_pin_clearance",
+        "origin_mm": [
+          45.5,
+          117.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "index_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "index_right_finite_pin_clearance",
+        "origin_mm": [
+          67.5,
+          117.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "index_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "index_spread_journal_clearance",
+        "origin_mm": [
+          58.5,
+          117.0,
+          -14
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6,
+        "length_mm": 6,
+        "against_parts": [
+          "index_spread_lower_bushing",
+          "index_spread_upper_bushing"
+        ],
+        "scope": "Spread shaft insertion envelope"
+      },
+      {
+        "id": "index_root_mount_1_driver_access",
+        "origin_mm": [
+          48.5,
+          109.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "index_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "index_root_mount_2_driver_access",
+        "origin_mm": [
+          68.5,
+          109.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "index_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "middle_left_finite_pin_clearance",
+        "origin_mm": [
+          6.5,
+          127.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "middle_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "middle_right_finite_pin_clearance",
+        "origin_mm": [
+          28.5,
+          127.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "middle_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "middle_spread_journal_clearance",
+        "origin_mm": [
+          19.5,
+          127.0,
+          -14
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6,
+        "length_mm": 6,
+        "against_parts": [
+          "middle_spread_lower_bushing",
+          "middle_spread_upper_bushing"
+        ],
+        "scope": "Spread shaft insertion envelope"
+      },
+      {
+        "id": "middle_root_mount_1_driver_access",
+        "origin_mm": [
+          9.5,
+          119.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "middle_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "middle_root_mount_2_driver_access",
+        "origin_mm": [
+          29.5,
+          119.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "middle_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "ring_left_finite_pin_clearance",
+        "origin_mm": [
+          -32.5,
+          121.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "ring_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "ring_right_finite_pin_clearance",
+        "origin_mm": [
+          -10.5,
+          121.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "ring_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "ring_spread_journal_clearance",
+        "origin_mm": [
+          -19.5,
+          121.0,
+          -14
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6,
+        "length_mm": 6,
+        "against_parts": [
+          "ring_spread_lower_bushing",
+          "ring_spread_upper_bushing"
+        ],
+        "scope": "Spread shaft insertion envelope"
+      },
+      {
+        "id": "ring_root_mount_1_driver_access",
+        "origin_mm": [
+          -29.5,
+          113.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "ring_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "ring_root_mount_2_driver_access",
+        "origin_mm": [
+          -9.5,
+          113.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "ring_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "little_left_finite_pin_clearance",
+        "origin_mm": [
+          -71.5,
+          106.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "little_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "little_right_finite_pin_clearance",
+        "origin_mm": [
+          -49.5,
+          106.0,
+          8
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "little_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "little_spread_journal_clearance",
+        "origin_mm": [
+          -58.5,
+          106.0,
+          -14
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6,
+        "length_mm": 6,
+        "against_parts": [
+          "little_spread_lower_bushing",
+          "little_spread_upper_bushing"
+        ],
+        "scope": "Spread shaft insertion envelope"
+      },
+      {
+        "id": "little_root_mount_1_driver_access",
+        "origin_mm": [
+          -68.5,
+          98.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "little_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "little_root_mount_2_driver_access",
+        "origin_mm": [
+          -48.5,
+          98.0,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "little_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "thumb_left_finite_pin_clearance",
+        "origin_mm": [
+          36.04142223945328,
+          42.35623892592501,
+          29
+        ],
+        "direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "thumb_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "thumb_right_finite_pin_clearance",
+        "origin_mm": [
+          52.8943999880708,
+          28.214911512821146,
+          29
+        ],
+        "direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 4,
+        "against_parts": [
+          "thumb_root_spread_carrier"
+        ],
+        "scope": "Actual fork wall, including final-cut web"
+      },
+      {
+        "id": "thumb_source_eye_final_pin_clearance",
+        "origin_mm": [
+          39.87164445504818,
+          39.14230087749232,
+          29
+        ],
+        "direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2,
+        "length_mm": 16,
+        "against_parts": [
+          "thumb_segment1_thenar_shell"
+        ],
+        "scope": "Inherited thenar web final bore, cut in candidate copy after all source unions"
+      },
+      {
+        "id": "thumb_spread_journal_clearance",
+        "origin_mm": [
+          46.0,
+          34.0,
+          -14
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6,
+        "length_mm": 6,
+        "against_parts": [
+          "thumb_spread_lower_bushing",
+          "thumb_spread_upper_bushing"
+        ],
+        "scope": "Spread shaft insertion envelope"
+      },
+      {
+        "id": "thumb_root_mount_1_driver_access",
+        "origin_mm": [
+          33.19725469131791,
+          34.29952055191357,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "thumb_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      },
+      {
+        "id": "thumb_root_mount_2_driver_access",
+        "origin_mm": [
+          48.51814355369747,
+          21.443768358182783,
+          -67.5
+        ],
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 1.25,
+        "length_mm": 20,
+        "against_parts": [
+          "Palm_tapered_chassis",
+          "thumb_root_fixed_housing"
+        ],
+        "scope": "Axial tool approach only; hand/wrist/system access not approved"
+      }
+    ],
+    "cylinder_interfaces": [
+      {
+        "id": "index_spread_lower_bushing_journal",
+        "part": "index_spread_lower_bushing",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -22,
+          -19
+        ]
+      },
+      {
+        "id": "index_spread_upper_bushing_journal",
+        "part": "index_spread_upper_bushing",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -19,
+          -16
+        ]
+      },
+      {
+        "id": "index_root_proximal_left_bushing_journal",
+        "part": "index_root_proximal_left_bushing",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          -8,
+          0
+        ]
+      },
+      {
+        "id": "index_root_proximal_right_bushing_journal",
+        "part": "index_root_proximal_right_bushing",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": "index_left_fork_bore",
+        "part": "index_root_spread_carrier",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          -13,
+          -9
+        ]
+      },
+      {
+        "id": "index_right_fork_bore",
+        "part": "index_root_spread_carrier",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          9,
+          13
+        ]
+      },
+      {
+        "id": "index_actual_flex_pin",
+        "part": "index_root_flex_pin",
+        "axis_origin_mm": [
+          58.5,
+          117.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "span_mm": [
+          -14,
+          14.1
+        ]
+      },
+      {
+        "id": "middle_spread_lower_bushing_journal",
+        "part": "middle_spread_lower_bushing",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -22,
+          -19
+        ]
+      },
+      {
+        "id": "middle_spread_upper_bushing_journal",
+        "part": "middle_spread_upper_bushing",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -19,
+          -16
+        ]
+      },
+      {
+        "id": "middle_root_proximal_left_bushing_journal",
+        "part": "middle_root_proximal_left_bushing",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          -8,
+          0
+        ]
+      },
+      {
+        "id": "middle_root_proximal_right_bushing_journal",
+        "part": "middle_root_proximal_right_bushing",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": "middle_left_fork_bore",
+        "part": "middle_root_spread_carrier",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          -13,
+          -9
+        ]
+      },
+      {
+        "id": "middle_right_fork_bore",
+        "part": "middle_root_spread_carrier",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          9,
+          13
+        ]
+      },
+      {
+        "id": "middle_actual_flex_pin",
+        "part": "middle_root_flex_pin",
+        "axis_origin_mm": [
+          19.5,
+          127.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "span_mm": [
+          -14,
+          14.1
+        ]
+      },
+      {
+        "id": "ring_spread_lower_bushing_journal",
+        "part": "ring_spread_lower_bushing",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -22,
+          -19
+        ]
+      },
+      {
+        "id": "ring_spread_upper_bushing_journal",
+        "part": "ring_spread_upper_bushing",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -19,
+          -16
+        ]
+      },
+      {
+        "id": "ring_root_proximal_left_bushing_journal",
+        "part": "ring_root_proximal_left_bushing",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          -8,
+          0
+        ]
+      },
+      {
+        "id": "ring_root_proximal_right_bushing_journal",
+        "part": "ring_root_proximal_right_bushing",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": "ring_left_fork_bore",
+        "part": "ring_root_spread_carrier",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          -13,
+          -9
+        ]
+      },
+      {
+        "id": "ring_right_fork_bore",
+        "part": "ring_root_spread_carrier",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          9,
+          13
+        ]
+      },
+      {
+        "id": "ring_actual_flex_pin",
+        "part": "ring_root_flex_pin",
+        "axis_origin_mm": [
+          -19.5,
+          121.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "span_mm": [
+          -14,
+          14.1
+        ]
+      },
+      {
+        "id": "little_spread_lower_bushing_journal",
+        "part": "little_spread_lower_bushing",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -22,
+          -19
+        ]
+      },
+      {
+        "id": "little_spread_upper_bushing_journal",
+        "part": "little_spread_upper_bushing",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -19,
+          -16
+        ]
+      },
+      {
+        "id": "little_root_proximal_left_bushing_journal",
+        "part": "little_root_proximal_left_bushing",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          -8,
+          0
+        ]
+      },
+      {
+        "id": "little_root_proximal_right_bushing_journal",
+        "part": "little_root_proximal_right_bushing",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": "little_left_fork_bore",
+        "part": "little_root_spread_carrier",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          -13,
+          -9
+        ]
+      },
+      {
+        "id": "little_right_fork_bore",
+        "part": "little_root_spread_carrier",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          9,
+          13
+        ]
+      },
+      {
+        "id": "little_actual_flex_pin",
+        "part": "little_root_flex_pin",
+        "axis_origin_mm": [
+          -58.5,
+          106.0,
+          8
+        ],
+        "axis_direction": [
+          1.0,
+          0.0,
+          0
+        ],
+        "radius_mm": 2,
+        "span_mm": [
+          -14,
+          14.1
+        ]
+      },
+      {
+        "id": "thumb_spread_lower_bushing_journal",
+        "part": "thumb_spread_lower_bushing",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -22,
+          -19
+        ]
+      },
+      {
+        "id": "thumb_spread_upper_bushing_journal",
+        "part": "thumb_spread_upper_bushing",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          8
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "radius_mm": 6.025,
+        "span_mm": [
+          -19,
+          -16
+        ]
+      },
+      {
+        "id": "thumb_root_proximal_left_bushing_journal",
+        "part": "thumb_root_proximal_left_bushing",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          29
+        ],
+        "axis_direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          -8,
+          0
+        ]
+      },
+      {
+        "id": "thumb_root_proximal_right_bushing_journal",
+        "part": "thumb_root_proximal_right_bushing",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          29
+        ],
+        "axis_direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2.015,
+        "span_mm": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": "thumb_left_fork_bore",
+        "part": "thumb_root_spread_carrier",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          29
+        ],
+        "axis_direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          -13,
+          -9
+        ]
+      },
+      {
+        "id": "thumb_right_fork_bore",
+        "part": "thumb_root_spread_carrier",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          29
+        ],
+        "axis_direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2.05,
+        "span_mm": [
+          9,
+          13
+        ]
+      },
+      {
+        "id": "thumb_actual_flex_pin",
+        "part": "thumb_root_flex_pin",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          29
+        ],
+        "axis_direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 2,
+        "span_mm": [
+          -14,
+          14.1
+        ]
+      },
+      {
+        "id": "thumb_source_eye_final_bore",
+        "part": "thumb_segment1_thenar_shell",
+        "axis_origin_mm": [
+          46.0,
+          34.0,
+          29
+        ],
+        "axis_direction": [
+          0.766044443118978,
+          -0.6427876096865393,
+          0
+        ],
+        "radius_mm": 3.4,
+        "span_mm": [
+          -8,
+          8
+        ]
+      }
+    ],
+    "solid_connections": [
+      {
+        "id": "index_integral_ring_forks_shaft",
+        "part_names": [
+          "index_root_spread_carrier"
+        ],
+        "method": "One fused BRep solid, with final pin bore cut after union"
+      },
+      {
+        "id": "index_integral_housing_two_mount_legs",
+        "part_names": [
+          "index_root_fixed_housing"
+        ],
+        "method": "One fused BRep solid"
+      },
+      {
+        "id": "middle_integral_ring_forks_shaft",
+        "part_names": [
+          "middle_root_spread_carrier"
+        ],
+        "method": "One fused BRep solid, with final pin bore cut after union"
+      },
+      {
+        "id": "middle_integral_housing_two_mount_legs",
+        "part_names": [
+          "middle_root_fixed_housing"
+        ],
+        "method": "One fused BRep solid"
+      },
+      {
+        "id": "ring_integral_ring_forks_shaft",
+        "part_names": [
+          "ring_root_spread_carrier"
+        ],
+        "method": "One fused BRep solid, with final pin bore cut after union"
+      },
+      {
+        "id": "ring_integral_housing_two_mount_legs",
+        "part_names": [
+          "ring_root_fixed_housing"
+        ],
+        "method": "One fused BRep solid"
+      },
+      {
+        "id": "little_integral_ring_forks_shaft",
+        "part_names": [
+          "little_root_spread_carrier"
+        ],
+        "method": "One fused BRep solid, with final pin bore cut after union"
+      },
+      {
+        "id": "little_integral_housing_two_mount_legs",
+        "part_names": [
+          "little_root_fixed_housing"
+        ],
+        "method": "One fused BRep solid"
+      },
+      {
+        "id": "thumb_integral_ring_forks_shaft",
+        "part_names": [
+          "thumb_root_spread_carrier"
+        ],
+        "method": "One fused BRep solid, with final pin bore cut after union"
+      },
+      {
+        "id": "thumb_integral_housing_two_mount_legs",
+        "part_names": [
+          "thumb_root_fixed_housing"
+        ],
+        "method": "One fused BRep solid"
+      }
+    ],
+    "seating_interfaces": [
+      {
+        "id": "index_upper_spread_thrust",
+        "parts": [
+          "index_root_spread_carrier",
+          "index_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          58.5,
+          117.0,
+          -7.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 169.48696016576082
+      },
+      {
+        "id": "index_upper_bush_housing",
+        "parts": [
+          "index_root_fixed_housing",
+          "index_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          58.5,
+          117.0,
+          -8
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 79.94567905222623
+      },
+      {
+        "id": "index_root_mount_1_leg_floor_seat",
+        "parts": [
+          "index_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          48.5,
+          109.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "index_root_mount_2_leg_floor_seat",
+        "parts": [
+          "index_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          68.5,
+          109.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "middle_upper_spread_thrust",
+        "parts": [
+          "middle_root_spread_carrier",
+          "middle_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          19.5,
+          127.0,
+          -7.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 169.48696016576082
+      },
+      {
+        "id": "middle_upper_bush_housing",
+        "parts": [
+          "middle_root_fixed_housing",
+          "middle_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          19.5,
+          127.0,
+          -8
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 79.94567905222623
+      },
+      {
+        "id": "middle_root_mount_1_leg_floor_seat",
+        "parts": [
+          "middle_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          9.5,
+          119.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "middle_root_mount_2_leg_floor_seat",
+        "parts": [
+          "middle_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          29.5,
+          119.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "ring_upper_spread_thrust",
+        "parts": [
+          "ring_root_spread_carrier",
+          "ring_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          -19.5,
+          121.0,
+          -7.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 169.48696016576082
+      },
+      {
+        "id": "ring_upper_bush_housing",
+        "parts": [
+          "ring_root_fixed_housing",
+          "ring_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          -19.5,
+          121.0,
+          -8
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 79.94567905222623
+      },
+      {
+        "id": "ring_root_mount_1_leg_floor_seat",
+        "parts": [
+          "ring_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          -29.5,
+          113.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "ring_root_mount_2_leg_floor_seat",
+        "parts": [
+          "ring_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          -9.5,
+          113.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "little_upper_spread_thrust",
+        "parts": [
+          "little_root_spread_carrier",
+          "little_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          -58.5,
+          106.0,
+          -7.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 169.48696016576082
+      },
+      {
+        "id": "little_upper_bush_housing",
+        "parts": [
+          "little_root_fixed_housing",
+          "little_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          -58.5,
+          106.0,
+          -8
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 79.94567905222623
+      },
+      {
+        "id": "little_root_mount_1_leg_floor_seat",
+        "parts": [
+          "little_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          -68.5,
+          98.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "little_root_mount_2_leg_floor_seat",
+        "parts": [
+          "little_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          -48.5,
+          98.0,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": 0,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "thumb_upper_spread_thrust",
+        "parts": [
+          "thumb_root_spread_carrier",
+          "thumb_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          46.0,
+          34.0,
+          -7.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 169.48696016576082
+      },
+      {
+        "id": "thumb_upper_bush_housing",
+        "parts": [
+          "thumb_root_fixed_housing",
+          "thumb_spread_upper_bushing"
+        ],
+        "plane_origin_mm": [
+          46.0,
+          34.0,
+          -8
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "nominal_contact_area_mm2": 79.94567905222623
+      },
+      {
+        "id": "thumb_root_mount_1_leg_floor_seat",
+        "parts": [
+          "thumb_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          33.19725469131791,
+          34.29952055191357,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": -40,
+        "nominal_contact_area_mm2": 90.9207972311255
+      },
+      {
+        "id": "thumb_root_mount_2_leg_floor_seat",
+        "parts": [
+          "thumb_root_fixed_housing",
+          "Palm_tapered_chassis"
+        ],
+        "plane_origin_mm": [
+          48.51814355369747,
+          21.443768358182783,
+          -40.5
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "patch_rectangle_mm": [
+          10,
+          10
+        ],
+        "patch_yaw_deg": -40,
+        "nominal_contact_area_mm2": 90.9207972311255
+      }
+    ],
+    "mount_interfaces": [
+      {
+        "id": "index_root_mount_1",
+        "axis_point_mm": [
+          48.5,
+          109.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "index_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "index_root_mount_1_bolt",
+        "nut": "index_root_mount_1_nut",
+        "washer": "index_root_mount_1_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "index_root_mount_2",
+        "axis_point_mm": [
+          68.5,
+          109.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "index_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "index_root_mount_2_bolt",
+        "nut": "index_root_mount_2_nut",
+        "washer": "index_root_mount_2_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "middle_root_mount_1",
+        "axis_point_mm": [
+          9.5,
+          119.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "middle_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "middle_root_mount_1_bolt",
+        "nut": "middle_root_mount_1_nut",
+        "washer": "middle_root_mount_1_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "middle_root_mount_2",
+        "axis_point_mm": [
+          29.5,
+          119.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "middle_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "middle_root_mount_2_bolt",
+        "nut": "middle_root_mount_2_nut",
+        "washer": "middle_root_mount_2_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "ring_root_mount_1",
+        "axis_point_mm": [
+          -29.5,
+          113.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "ring_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "ring_root_mount_1_bolt",
+        "nut": "ring_root_mount_1_nut",
+        "washer": "ring_root_mount_1_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "ring_root_mount_2",
+        "axis_point_mm": [
+          -9.5,
+          113.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "ring_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "ring_root_mount_2_bolt",
+        "nut": "ring_root_mount_2_nut",
+        "washer": "ring_root_mount_2_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "little_root_mount_1",
+        "axis_point_mm": [
+          -68.5,
+          98.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "little_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "little_root_mount_1_bolt",
+        "nut": "little_root_mount_1_nut",
+        "washer": "little_root_mount_1_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "little_root_mount_2",
+        "axis_point_mm": [
+          -48.5,
+          98.0,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "little_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "little_root_mount_2_bolt",
+        "nut": "little_root_mount_2_nut",
+        "washer": "little_root_mount_2_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "thumb_root_mount_1",
+        "axis_point_mm": [
+          33.19725469131791,
+          34.29952055191357,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "thumb_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "thumb_root_mount_1_bolt",
+        "nut": "thumb_root_mount_1_nut",
+        "washer": "thumb_root_mount_1_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      },
+      {
+        "id": "thumb_root_mount_2",
+        "axis_point_mm": [
+          48.51814355369747,
+          21.443768358182783,
+          -44
+        ],
+        "axis_direction": [
+          0,
+          0,
+          1
+        ],
+        "housing": "thumb_root_fixed_housing",
+        "chassis": "Palm_tapered_chassis",
+        "bolt": "thumb_root_mount_2_bolt",
+        "nut": "thumb_root_mount_2_nut",
+        "washer": "thumb_root_mount_2_washer",
+        "shaft_radius_mm": 1.5,
+        "clearance_radius_mm": 1.7,
+        "nut_bore_radius_mm": 1.5,
+        "housing_bore_span_z_mm": [
+          -40.5,
+          -37.1
+        ],
+        "floor_span_z_mm": [
+          -44,
+          -40.5
+        ],
+        "shaft_span_z_mm": [
+          -44.5,
+          -32.5
+        ],
+        "nut_span_z_mm": [
+          -37.1,
+          -34.7
+        ],
+        "nut_engagement_mm": 2.4,
+        "tip_beyond_nut_mm": 2.2,
+        "thread_geometry": "Nominal cylinders only; helical thread and purchase specification unverified"
+      }
+    ],
+    "assembly_translation_probes": [
+      {
+        "id": "index_root_mount_1_rear_nut_insertion",
+        "moving_part": "index_root_mount_1_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "index_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "index",
+          "leg_local_x_mm": -10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "index_root_mount_2_rear_nut_insertion",
+        "moving_part": "index_root_mount_2_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "index_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "index",
+          "leg_local_x_mm": 10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "middle_root_mount_1_rear_nut_insertion",
+        "moving_part": "middle_root_mount_1_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "middle_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "middle",
+          "leg_local_x_mm": -10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "middle_root_mount_2_rear_nut_insertion",
+        "moving_part": "middle_root_mount_2_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "middle_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "middle",
+          "leg_local_x_mm": 10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "ring_root_mount_1_rear_nut_insertion",
+        "moving_part": "ring_root_mount_1_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "ring_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "ring",
+          "leg_local_x_mm": -10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "ring_root_mount_2_rear_nut_insertion",
+        "moving_part": "ring_root_mount_2_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "ring_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "ring",
+          "leg_local_x_mm": 10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "little_root_mount_1_rear_nut_insertion",
+        "moving_part": "little_root_mount_1_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "little_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "little",
+          "leg_local_x_mm": -10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "little_root_mount_2_rear_nut_insertion",
+        "moving_part": "little_root_mount_2_nut",
+        "translations_world_mm": [
+          [
+            0.0,
+            -9.0,
+            0
+          ],
+          [
+            0.0,
+            -8.5,
+            0
+          ],
+          [
+            0.0,
+            -8.0,
+            0
+          ],
+          [
+            0.0,
+            -7.5,
+            0
+          ],
+          [
+            0.0,
+            -7.0,
+            0
+          ],
+          [
+            0.0,
+            -6.5,
+            0
+          ],
+          [
+            0.0,
+            -6.0,
+            0
+          ],
+          [
+            0.0,
+            -5.5,
+            0
+          ],
+          [
+            0.0,
+            -5.0,
+            0
+          ],
+          [
+            0.0,
+            -4.5,
+            0
+          ],
+          [
+            0.0,
+            -4.0,
+            0
+          ],
+          [
+            0.0,
+            -3.5,
+            0
+          ],
+          [
+            0.0,
+            -3.0,
+            0
+          ],
+          [
+            0.0,
+            -2.5,
+            0
+          ],
+          [
+            0.0,
+            -2.0,
+            0
+          ],
+          [
+            0.0,
+            -1.5,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            0.0,
+            -0.5,
+            0
+          ],
+          [
+            -0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "little_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "little",
+          "leg_local_x_mm": 10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "thumb_root_mount_1_rear_nut_insertion",
+        "moving_part": "thumb_root_mount_1_nut",
+        "translations_world_mm": [
+          [
+            -5.785088487178854,
+            -6.894399988070802,
+            0
+          ],
+          [
+            -5.463694682335584,
+            -6.5113777665113135,
+            0
+          ],
+          [
+            -5.142300877492314,
+            -6.128355544951824,
+            0
+          ],
+          [
+            -4.820907072649044,
+            -5.745333323392335,
+            0
+          ],
+          [
+            -4.499513267805774,
+            -5.362311101832846,
+            0
+          ],
+          [
+            -4.178119462962505,
+            -4.979288880273357,
+            0
+          ],
+          [
+            -3.8567256581192355,
+            -4.596266658713868,
+            0
+          ],
+          [
+            -3.5353318532759657,
+            -4.213244437154379,
+            0
+          ],
+          [
+            -3.2139380484326963,
+            -3.83022221559489,
+            0
+          ],
+          [
+            -2.892544243589427,
+            -3.447199994035401,
+            0
+          ],
+          [
+            -2.571150438746157,
+            -3.064177772475912,
+            0
+          ],
+          [
+            -2.249756633902887,
+            -2.681155550916423,
+            0
+          ],
+          [
+            -1.9283628290596178,
+            -2.298133329356934,
+            0
+          ],
+          [
+            -1.6069690242163481,
+            -1.915111107797445,
+            0
+          ],
+          [
+            -1.2855752193730785,
+            -1.532088886237956,
+            0
+          ],
+          [
+            -0.9641814145298089,
+            -1.149066664678467,
+            0
+          ],
+          [
+            -0.6427876096865393,
+            -0.766044443118978,
+            0
+          ],
+          [
+            -0.3213938048432696,
+            -0.383022221559489,
+            0
+          ],
+          [
+            0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "thumb_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "thumb",
+          "leg_local_x_mm": -10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      },
+      {
+        "id": "thumb_root_mount_2_rear_nut_insertion",
+        "moving_part": "thumb_root_mount_2_nut",
+        "translations_world_mm": [
+          [
+            -5.785088487178854,
+            -6.894399988070802,
+            0
+          ],
+          [
+            -5.463694682335584,
+            -6.5113777665113135,
+            0
+          ],
+          [
+            -5.142300877492314,
+            -6.128355544951824,
+            0
+          ],
+          [
+            -4.820907072649044,
+            -5.745333323392335,
+            0
+          ],
+          [
+            -4.499513267805774,
+            -5.362311101832846,
+            0
+          ],
+          [
+            -4.178119462962505,
+            -4.979288880273357,
+            0
+          ],
+          [
+            -3.8567256581192355,
+            -4.596266658713868,
+            0
+          ],
+          [
+            -3.5353318532759657,
+            -4.213244437154379,
+            0
+          ],
+          [
+            -3.2139380484326963,
+            -3.83022221559489,
+            0
+          ],
+          [
+            -2.892544243589427,
+            -3.447199994035401,
+            0
+          ],
+          [
+            -2.571150438746157,
+            -3.064177772475912,
+            0
+          ],
+          [
+            -2.249756633902887,
+            -2.681155550916423,
+            0
+          ],
+          [
+            -1.9283628290596178,
+            -2.298133329356934,
+            0
+          ],
+          [
+            -1.6069690242163481,
+            -1.915111107797445,
+            0
+          ],
+          [
+            -1.2855752193730785,
+            -1.532088886237956,
+            0
+          ],
+          [
+            -0.9641814145298089,
+            -1.149066664678467,
+            0
+          ],
+          [
+            -0.6427876096865393,
+            -0.766044443118978,
+            0
+          ],
+          [
+            -0.3213938048432696,
+            -0.383022221559489,
+            0
+          ],
+          [
+            0.0,
+            0.0,
+            0
+          ]
+        ],
+        "against_parts": [
+          "thumb_root_fixed_housing"
+        ],
+        "sample_spacing_mm": 0.5,
+        "sample_count": 19,
+        "scope": "Rear insertion before module is mounted in palm; full system access excluded",
+        "continuous_generator_sweep": {
+          "finger": "thumb",
+          "leg_local_x_mm": 10,
+          "translation_local_y_mm": [
+            -9,
+            0
+          ]
+        }
+      }
+    ],
+    "axes_preserved": true,
+    "spread_axis_sign": -1,
+    "thumb_root_lift_mm": 21,
+    "palm_modification_api": "apply_palm_mounts(parts,design)",
+    "assembly_sequence": [
+      "Preassemble each root outside the palm; insert two spread half-bushings from opposite housing faces.",
+      "Position the closed lower washer from the open front before inserting the carrier shaft; temporary support is required.",
+      "Lower the integral carrier shaft through bushings and the pre-positioned washer; install the external groove clip from the open front with its mouth initially facing the shaft.",
+      "Install two proximal flanged bushes in the existing segment1 eye; place thrust washers in fork.",
+      "Insert headed flex pin through final bores, fit opposite washer and groove clip.",
+      "Slide two M3 nuts through rear leg slots before palm installation; place feet on drilled palm floor and fasten from below."
+    ],
+    "nominal_fits": {
+      "flex_shaft_diameter_mm": 4,
+      "flex_fork_bore_mm": 4.1,
+      "flex_bush_ID_mm": 4.03,
+      "proximal_bush_OD_mm": 6.76,
+      "preserved_eye_bore_mm": 6.8,
+      "spread_shaft_mm": 12,
+      "spread_bush_ID_mm": 12.05
+    },
+    "manufacturing_release": false,
+    "complete_drive": false,
+    "limitations": [
+      "Custom bushing and retainer geometries are concept envelopes, not selected catalog parts.",
+      "Nominal clearances do not specify manufacturing tolerances, process capability or bearing service life.",
+      "Pin anti-rotation, spring-clip stress, bolt preload/thread tolerances and access with the full wrist are unvalidated.",
+      "Clip orientation and elastic installation, temporary washer support and nominal retainer endplay remain assembly engineering tasks.",
+      "Palm wall relief and ten new floor holes weaken the original palm; no strength or fatigue approval.",
+      "Distal hinges, appearance plates, caps, whole-hand collisions and motor/tendon transmission remain separate work."
+    ]
+  },
+  "palm_mounts": {
+    "status": "Candidate-only explicit source interface repairs",
+    "cuts": [
+      {
+        "finger": "index",
+        "root_relief_radius_mm": 16.2,
+        "relief_world_z_mm": [
+          -15,
+          17
+        ],
+        "floor_hole_radius_mm": 1.7,
+        "proximal_shell_upper_relief": {
+          "radius_mm": 32,
+          "world_z_mm": [
+            -4,
+            5
+          ]
+        }
+      },
+      {
+        "finger": "middle",
+        "root_relief_radius_mm": 16.2,
+        "relief_world_z_mm": [
+          -15,
+          17
+        ],
+        "floor_hole_radius_mm": 1.7,
+        "proximal_shell_upper_relief": {
+          "radius_mm": 32,
+          "world_z_mm": [
+            -4,
+            5
+          ]
+        }
+      },
+      {
+        "finger": "ring",
+        "root_relief_radius_mm": 16.2,
+        "relief_world_z_mm": [
+          -15,
+          17
+        ],
+        "floor_hole_radius_mm": 1.7,
+        "proximal_shell_upper_relief": {
+          "radius_mm": 32,
+          "world_z_mm": [
+            -4,
+            5
+          ]
+        }
+      },
+      {
+        "finger": "little",
+        "root_relief_radius_mm": 16.2,
+        "relief_world_z_mm": [
+          -15,
+          17
+        ],
+        "floor_hole_radius_mm": 1.7,
+        "proximal_shell_upper_relief": {
+          "radius_mm": 32,
+          "world_z_mm": [
+            -4,
+            5
+          ]
+        }
+      },
+      {
+        "finger": "thumb",
+        "root_relief_radius_mm": 16.2,
+        "relief_world_z_mm": [
+          -15,
+          17
+        ],
+        "floor_hole_radius_mm": 1.7,
+        "proximal_shell_upper_relief": null
+      }
+    ],
+    "modified_parts": [
+      {
+        "name": "Palm_tapered_chassis",
+        "change": "Root pockets, shallow proximal-shell clearance and ten floor bores",
+        "original_volume_mm3": 178813.1744000023,
+        "new_volume_mm3": 168637.92959883407,
+        "one_valid_solid": true
+      },
+      {
+        "name": "Cover_screw_-18_104",
+        "change": "Retained identity relocated with mating cover passage from XY(-18,104) to(-18,94); screw remains a provisional head",
+        "original_volume_mm3": 45.16072159663166,
+        "new_volume_mm3": 45.16072159663165,
+        "one_valid_solid": true
+      },
+      {
+        "name": "Palm_shaped_front_cover",
+        "change": "New passage at(-18,94); old(-18,104) hole lies entirely in the existing R19 root opening",
+        "original_volume_mm3": 41907.91368007626,
+        "new_volume_mm3": 41872.2880193846,
+        "one_valid_solid": true
+      },
+      {
+        "name": "Palm_side_web_-71",
+        "change": "Shortened front end from Y99.5 to Y88.5 to clear little-root hardware; original remaining web retained",
+        "original_volume_mm3": 7920.0,
+        "new_volume_mm3": 6336.0,
+        "one_valid_solid": true
+      },
+      {
+        "name": "Cover_post_-18_104",
+        "change": "Retained identity relocated with mating cover passage from XY(-18,104) to(-18,94); screw remains a provisional head",
+        "original_volume_mm3": 3172.380261595043,
+        "new_volume_mm3": 3172.380261595043,
+        "one_valid_solid": true
+      },
+      {
+        "name": "thumb_segment1_thenar_shell",
+        "change": "Final proximal R3.4 bore and two inherited distal R3.4 sleeve bores recut after all source unions",
+        "original_volume_mm3": 11982.841194322917,
+        "new_volume_mm3": 11901.9823924763,
+        "one_valid_solid": true
+      }
+    ],
+    "modified_names": [
+      "Palm_tapered_chassis",
+      "Cover_screw_-18_104",
+      "Palm_shaped_front_cover",
+      "Palm_side_web_-71",
+      "Cover_post_-18_104",
+      "thumb_segment1_thenar_shell"
+    ],
+    "original_volume_mm3": 178813.1744000023,
+    "new_volume_mm3": 168637.92959883407,
+    "one_valid_solid": true,
+    "strength_approved": false,
+    "limitations": [
+      "Shallow wall relief and shortened web require structural review.",
+      "Moved cover post has a matching passage but inherited screw geometry is still a head envelope, not a complete threaded fastener.",
+      "These are local interface changes; all-motion finger-to-finger clearance and fabrication remain unapproved."
+    ]
+  },
+  "all_parts_valid_single_solid": true,
+  "manufacture_approved": false,
+  "motor_performance_validated": false
+}

@@ -1,0 +1,15 @@
+{
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "No physics integration; command/metric protocol only",
+  "source_sha256": {
+    "sim/articulation_drive_v2/test_screen.py": "77c7a7b4f6a7814bf15fd430b645b7918b15ca35b4d88462147a0dbe0e47b42d",
+    "sim/articulation_drive_v2/run_screen.py": "b6d19e8fc31b96279738c2839d01432c5903be3c61041b4fc846d0f33148505c",
+    "sim/articulation_drive_v2/model_adapter.py": "669901a5845da32f0d12c7d778ab579f76f72f0e59e4f0d843e3b52035963593",
+    "sim/articulation_drive_v2/parameters.json": "8f3f76f3eb81faea9d0a3286595652469f714324182dd11522f87189af02bb74",
+    "sim/articulation_drive_v2/transmission.json": "895862cc3930c8759518d0564859fc18e44dfa9d8e5abae08a9370443c7f9ac5"
+  },
+  "details": []
+}
