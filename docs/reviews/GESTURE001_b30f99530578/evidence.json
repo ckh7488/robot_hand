@@ -1,0 +1,53 @@
+{
+  "id": "GESTURE001",
+  "target_sha": "b30f9953057858a3ef3347f281cd12719ecc12d3",
+  "recorded_utc": "2026-10-24T18:14:15.440738+00:00",
+  "scope": "Exact committed archive and manifest/frozen evidence; all CAD and mass tensors rebuilt; open, fist and thumb-up exact collision results and individual nominal fabrication interfaces rerun. Other six endpoints, transitions, renderer and dynamics not rerun. Existing failure outcomes are retained; this is same-task reproduction, not external independent audit or manufacturing/performance approval.",
+  "manufacturing_approved": false,
+  "motor_performance_validated": false,
+  "checkpoint_manifest_sha256": "4f268df7d1d36ab3ee8fc83eed78dbd0051fd6e013939961b6006f2693f36c0d",
+  "reviewer_sha256": "721ed83049651c5d9707a8008cfd77aab5abb1fc85424b0d95ecba5fb805434c",
+  "reviewer_source_unchanged": true,
+  "writer_sha256": "8584fa1c3d9aa3ff3acd451d85e89eeb1839b207522a0161b1dc38705780a2cd",
+  "commands_reexecuted": [
+    "archive",
+    "rebuild",
+    "core_collisions",
+    "interfaces"
+  ],
+  "part_count": 349,
+  "core_gestures": [
+    "open",
+    "fist",
+    "thumb_up"
+  ],
+  "interface_checks": 1519,
+  "frozen_files_checked": 222,
+  "manifest_files_checked": 1225,
+  "files": {
+    "README.md": {
+      "bytes": 1340,
+      "sha256": "c561b3ce4d8b0eefcd3e0c4c3bd85b8548eaf2f6c1bdb82c9cbc72f86969f546"
+    },
+    "core_collisions.json": {
+      "bytes": 2908921,
+      "sha256": "19ec20942cdcc6a00d9eed9f0724b27353c1b0154fec81a0a06bfc93e2c07afe"
+    },
+    "interfaces.json": {
+      "bytes": 1540827,
+      "sha256": "ffb0ff9a79fe32ddec0fa43e2fab036b4261f1b6cc61a3710e0b8c3c697cc5f2"
+    },
+    "review.json": {
+      "bytes": 182791,
+      "sha256": "2c80a3c4a42c89d47369f70328317c78fe725725c88bafc12cc265c0c62e3732"
+    },
+    "review_commit.py": {
+      "bytes": 9770,
+      "sha256": "721ed83049651c5d9707a8008cfd77aab5abb1fc85424b0d95ecba5fb805434c"
+    },
+    "save_review.py": {
+      "bytes": 19634,
+      "sha256": "8584fa1c3d9aa3ff3acd451d85e89eeb1839b207522a0161b1dc38705780a2cd"
+    }
+  }
+}

@@ -12,7 +12,8 @@
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "b30f9953057858a3ef3347f281cd12719ecc12d3",
+  "post_commit_review_report": "docs/reviews/GESTURE001_b30f99530578/review.json",
+  "post_commit_reproduction_scope": "Exact committed archive and manifest/frozen evidence; all CAD and mass tensors rebuilt; open, fist and thumb-up exact collision results and individual nominal fabrication interfaces rerun. Other six endpoints, transitions, renderer and dynamics not rerun. Existing failure outcomes are retained; this is same-task reproduction, not external independent audit or manufacturing/performance approval."
 }
