@@ -1,0 +1,49 @@
+{
+  "target_sha": "286b14bd9bc8765f77070640a74cb83d5ba304f5",
+  "scope": "git archive of sim_3rd/hand_pose_compare",
+  "same_agent_clean_copy": true,
+  "independent_audit": false,
+  "display_tests": 3,
+  "display_tests_passed": true,
+  "private_cases": 5,
+  "results": [
+    {
+      "case_id": "case_0001",
+      "max_joint_difference_m": 0.0,
+      "max_vertex_difference_m": 0.0,
+      "mesh_png_identical": true,
+      "median_elapsed_ms": 194.3761999718845
+    },
+    {
+      "case_id": "case_0002",
+      "max_joint_difference_m": 0.0,
+      "max_vertex_difference_m": 0.0,
+      "mesh_png_identical": true,
+      "median_elapsed_ms": 207.91350002400577
+    },
+    {
+      "case_id": "case_0003",
+      "max_joint_difference_m": 9.313225746154785e-10,
+      "max_vertex_difference_m": 3.725290298461914e-09,
+      "mesh_png_identical": true,
+      "median_elapsed_ms": 215.60339990537614
+    },
+    {
+      "case_id": "case_0004",
+      "max_joint_difference_m": 0.0,
+      "max_vertex_difference_m": 0.0,
+      "mesh_png_identical": true,
+      "median_elapsed_ms": 206.76269999239594
+    },
+    {
+      "case_id": "case_0005",
+      "max_joint_difference_m": 0.0,
+      "max_vertex_difference_m": 0.0,
+      "mesh_png_identical": true,
+      "median_elapsed_ms": 191.00390002131462
+    }
+  ],
+  "upstream_files_checked": 49,
+  "weight_files_checked": 4,
+  "passed": true
+}
