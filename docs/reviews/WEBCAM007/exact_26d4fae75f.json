@@ -1,0 +1,41 @@
+{
+  "sha": "26d4fae75fdc9c59199caab96af0c50ed07d3107",
+  "unit_tests": 77,
+  "passed": true,
+  "manifest_files": 46,
+  "source_unchanged": true,
+  "frozen_form_hashes_verified": true,
+  "preview": {
+    "passed": true,
+    "raw_panel_equals_same_frame": true,
+    "camera_basis_max_error_m": 5.195268340529857e-09,
+    "raw_drawing_mean_ms": 8.33704199991189,
+    "views": [
+      "view_1.png",
+      "view_2.png",
+      "view_3.png"
+    ],
+    "canvas_size": [
+      1680,
+      900
+    ],
+    "scope": "Synthetic data and display integrity, not detector or robot pose accuracy."
+  },
+  "capture": {
+    "passed": true,
+    "displayed_frames": 4,
+    "explicit_captures": 2,
+    "exact_raw_coordinates": true,
+    "exact_screen_pixels": true,
+    "raw_review": {
+      "case_id": "case_0001",
+      "seq": 1,
+      "case_sha256": "63d0c75000df73e99f14b94e711b4ea7454738d24ec0b5c2c5a61eb61adeecbb",
+      "detected": true,
+      "scope": "Original detector points, no CAD, angle calibration, smoothing or bone normalization.",
+      "render": "mediapipe_raw_3d.png"
+    },
+    "scope": "Synthetic app integration; not live hand accuracy or physical camera timing."
+  },
+  "scope": "Same agent, clean exact-SHA archive; not independent audit or pose accuracy acceptance."
+}
