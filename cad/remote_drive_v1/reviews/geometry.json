@@ -1,7 +1,7 @@
 {
   "status": "CONSTRUCTION CANDIDATE - NOT FABRICATION PASS",
-  "valid_brep_count": 223,
-  "total_shapes": 223,
+  "valid_brep_count": 255,
+  "total_shapes": 255,
   "component_checks": [
     {
       "name": "Palm_back_chassis",
@@ -826,10 +826,34 @@
       "volume_mm3": 1417.2666938139632
     },
     {
+      "name": "index_remote_pip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.188201183028
+    },
+    {
+      "name": "index_remote_pip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344313
+    },
+    {
+      "name": "index_remote_pip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553993
+    },
+    {
+      "name": "index_remote_pip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457691
+    },
+    {
       "name": "index_remote_pip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3541.425136358551
     },
     {
       "name": "index_remote_dip_motor",
@@ -850,10 +874,34 @@
       "volume_mm3": 1417.2666938139635
     },
     {
+      "name": "index_remote_dip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830269
+    },
+    {
+      "name": "index_remote_dip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344322
+    },
+    {
+      "name": "index_remote_dip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553994
+    },
+    {
+      "name": "index_remote_dip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457708
+    },
+    {
       "name": "index_remote_dip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.3641680072196
+      "volume_mm3": 3541.4251363585463
     },
     {
       "name": "index_pip_flexor_route",
@@ -940,10 +988,34 @@
       "volume_mm3": 1417.2666938139635
     },
     {
+      "name": "middle_remote_pip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830278
+    },
+    {
+      "name": "middle_remote_pip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344316
+    },
+    {
+      "name": "middle_remote_pip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553986
+    },
+    {
+      "name": "middle_remote_pip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.574808364577
+    },
+    {
       "name": "middle_remote_pip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3722.096178369701
+      "volume_mm3": 3527.175012696862
     },
     {
       "name": "middle_remote_dip_motor",
@@ -964,10 +1036,34 @@
       "volume_mm3": 1417.2666938139637
     },
     {
+      "name": "middle_remote_dip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830262
+    },
+    {
+      "name": "middle_remote_dip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344316
+    },
+    {
+      "name": "middle_remote_dip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553986
+    },
+    {
+      "name": "middle_remote_dip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457701
+    },
+    {
       "name": "middle_remote_dip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3541.4251363585468
     },
     {
       "name": "middle_pip_flexor_route",
@@ -1054,10 +1150,34 @@
       "volume_mm3": 1417.266693813963
     },
     {
+      "name": "ring_remote_pip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830285
+    },
+    {
+      "name": "ring_remote_pip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344316
+    },
+    {
+      "name": "ring_remote_pip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553984
+    },
+    {
+      "name": "ring_remote_pip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457702
+    },
+    {
       "name": "ring_remote_pip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3541.4251363585468
     },
     {
       "name": "ring_remote_dip_motor",
@@ -1078,10 +1198,34 @@
       "volume_mm3": 1417.2666938139637
     },
     {
+      "name": "ring_remote_dip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830269
+    },
+    {
+      "name": "ring_remote_dip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344313
+    },
+    {
+      "name": "ring_remote_dip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553993
+    },
+    {
+      "name": "ring_remote_dip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457694
+    },
+    {
       "name": "ring_remote_dip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.3641680072205
+      "volume_mm3": 3541.425136358551
     },
     {
       "name": "ring_pip_flexor_route",
@@ -1168,10 +1312,34 @@
       "volume_mm3": 1417.2666938139632
     },
     {
+      "name": "little_remote_pip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.188201183026
+    },
+    {
+      "name": "little_remote_pip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344313
+    },
+    {
+      "name": "little_remote_pip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553991
+    },
+    {
+      "name": "little_remote_pip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457682
+    },
+    {
       "name": "little_remote_pip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3541.425136358551
     },
     {
       "name": "little_remote_dip_motor",
@@ -1192,10 +1360,34 @@
       "volume_mm3": 1417.2666938139637
     },
     {
+      "name": "little_remote_dip_cradle",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1531.1882011830276
+    },
+    {
+      "name": "little_remote_dip_body_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 136.91060784344313
+    },
+    {
+      "name": "little_remote_dip_base_screws",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 92.36282401553986
+    },
+    {
+      "name": "little_remote_dip_base_nuts",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 68.57480836457687
+    },
+    {
       "name": "little_remote_dip_mount_plate",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 3737.36416800722
+      "volume_mm3": 3541.4251363585468
     },
     {
       "name": "little_pip_flexor_route",
@@ -1343,13 +1535,88 @@
     }
   ],
   "open_pose_exact_new_cross_body_overlap_pairs": [],
-  "overlap_scope": "All new-component pairs, including same rigid body; legacy-only pairs excluded. Field name retained for review compatibility.",
-  "exact_candidate_pairs_tested": 161,
+  "intended_thread_envelope_intersections": [
+    {
+      "a": "index_remote_pip_motor",
+      "b": "index_remote_pip_body_screws",
+      "overlap_mm3": 8.906415172926998,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "index_remote_dip_motor",
+      "b": "index_remote_dip_body_screws",
+      "overlap_mm3": 8.906415172927025,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "middle_remote_pip_motor",
+      "b": "middle_remote_pip_body_screws",
+      "overlap_mm3": 8.906415172927012,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "middle_remote_dip_motor",
+      "b": "middle_remote_dip_body_screws",
+      "overlap_mm3": 8.906415172927002,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "ring_remote_pip_motor",
+      "b": "ring_remote_pip_body_screws",
+      "overlap_mm3": 8.906415172927016,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "ring_remote_dip_motor",
+      "b": "ring_remote_dip_body_screws",
+      "overlap_mm3": 8.906415172927028,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "little_remote_pip_motor",
+      "b": "little_remote_pip_body_screws",
+      "overlap_mm3": 8.906415172927023,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    },
+    {
+      "a": "little_remote_dip_motor",
+      "b": "little_remote_dip_body_screws",
+      "overlap_mm3": 8.906415172926973,
+      "type": "self_tapping_thread_envelope",
+      "rationale": "Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.",
+      "expected_overlap_mm3": 8.906415172927,
+      "tolerance_mm3": 0.05
+    }
+  ],
+  "overlap_scope": "All new-component pairs, including same rigid body and remote cradle hardware; legacy-only pairs excluded. Only own motor/visual rotor and listed own pilot-hole/thread-envelope pairs exempt. Field name retained for review compatibility.",
+  "exact_candidate_pairs_tested": 280,
   "limitations": [
     "Only neutral pose; no continuous swept collision proof",
-    "Reported same-body overlaps may include unresolved mounting contacts; not blanket-exempted",
+    "Eight palm motor-to-cradle and cradle-to-adapter fasteners modeled; adapter-to-chassis supports absent",
     "Cable route solids are envelopes only, excluded from clash and mass checks",
-    "Mounting screws and tensioners for new components not detailed"
+    "Thumb moving motor fasteners, tendon attachments and tensioners not detailed",
+    "Thread geometry, torque, fit, stiffness and practical tool access remain unvalidated"
   ],
   "actuator_count": 20,
   "independent_joint_count": 20,
@@ -2037,5 +2304,11 @@
         "passed": true
       }
     ]
+  },
+  "palm_motor_mounting": {
+    "module_count": 8,
+    "motor_to_adapter_axes_passed": true,
+    "complete_chassis_load_path_count": 0,
+    "details": "reviews/mounting.json"
   }
 }

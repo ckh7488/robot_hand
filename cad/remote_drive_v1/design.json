@@ -1,5 +1,5 @@
 {
-  "revision": "remote_drive_v1.3",
+  "revision": "remote_drive_v1.4",
   "status": "Parametric construction candidate; not a fabrication release or validated transmission",
   "units": "mm, degree, kg, kg*m^2",
   "baseline": "cad/modular_roots_v9/design.json",
@@ -37,6 +37,27 @@
     "preload_status":"Design target only; tensioner and cable terminals not detailed"
   },
   "materials":{"printed_density_kg_per_mm3":0.00000125,"steel_density_kg_per_mm3":0.00000785,"motor_mass_basis":"18g total including visual rotor; rotor visual object has zero added mass"},
+  "palm_motor_mounts": {
+    "stage":"Motor-to-cradle and cradle-to-adapter construction; adapter-to-chassis supports incomplete",
+    "cradle_asset":"S101_relief",
+    "body_screw_asset":"M2_body_TAP8",
+    "base_screw_asset":"M2_base_screws",
+    "base_nut_asset":"M2_base_nuts",
+    "adapter_dimensions_mm":[32,40,2.8],
+    "adapter_center_local_mm":[-14.4,-7.5,-14.4],
+    "adapter_hole_radius_mm":1.1,
+    "base_hole_xy_local_mm":[[-20.15685424949238,-20.65685424949238],[-20.15685424949238,5.65685424949238],[-8.84314575050762,-20.65685424949238],[-8.84314575050762,5.65685424949238]],
+    "body_axis_yz_local_mm":[[7.5,-8],[-22.5,-8]],
+    "body_head_seat_x_local_mm":[-27.3,-1.7],
+    "body_screw_nominal_length_mm":8,
+    "base_screw_underhead_z_mm":-11.8,
+    "base_screw_nominal_length_mm":6,
+    "adapter_top_z_mm":-13,
+    "adapter_bottom_z_mm":-15.8,
+    "base_nut_z_mm":[-17.4,-15.8],
+    "hardware_limitations":"Retained vendor and V9 hardware envelopes; thread forms, tightening torque, tolerance and screw procurement specifications not independently validated",
+    "support_status":"All eight adapters still require a modeled load-bearing connection to the actual pocketed chassis rails/anchors; no floating part is treated as supported"
+  },
   "joint_ranges_deg":{"spread":[-22,22],"mcp":[-20,85],"pip":[0,100],"dip":[0,80],"thumb_base_sweep":[-60,60],"thumb_opposition":[-20,100],"thumb_mcp":[-20,105],"thumb_ip":[0,90]},
   "transmission": {
     "type":"Opposed dual-tendon, one spool per remote joint",

@@ -14,8 +14,15 @@ ap.add_argument('--output', type=Path)
 a = ap.parse_args()
 files = list(sorted(a.results.glob('*_trajectory.json')))
 assert files, 'No trajectories found'
+input_files = [*files, a.results/'report.json', ROOT/'cad/remote_drive_v1/design.json', Path(__file__).resolve()]
+input_hashes = {f: hashlib.sha256(f.read_bytes()).hexdigest() for f in input_files}
 all_traces = [json.loads(f.read_text(encoding='utf-8')) for f in files]
-traces = list({(t['variant'], t['case']): t for t in all_traces}.values())
+unique_traces = {}
+for trace in all_traces:
+    key = (trace['variant'], trace['case'])
+    assert key not in unique_traces or unique_traces[key] == trace, f'Conflicting trajectory aliases: {key}'
+    unique_traces[key] = trace
+traces = list(unique_traces.values())
 for trace in traces:
     n = len(trace['time_s'])
     assert n > 1 and len(trace['joint_names']) == 20
@@ -26,8 +33,15 @@ for trace in traces:
     else:
         trace['requested_deg'] = trace['command_deg']
 report = json.loads((a.results/'report.json').read_text(encoding='utf-8'))
+assert set(report['cases']) == {f"{t['variant']}/{t['case']}" for t in traces}, 'Report and display cases differ'
+for relative, expected in report['source_hashes'].items():
+    source = (ROOT/relative).resolve()
+    assert source.is_relative_to(ROOT), relative
+    assert hashlib.sha256(source.read_bytes()).hexdigest() == expected, f'Stale simulation source: {relative}'
+    input_hashes[source] = expected
 payload = dict(design=json.loads((ROOT/'cad/remote_drive_v1/design.json').read_text(encoding='utf-8')),
                traces=traces, cases=report['cases'], engine=report['engine'],
+               repository_source_hashes={**report['source_hashes'], 'tools/build_remote_viewer.py': input_hashes[Path(__file__).resolve()]},
                source_hashes={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in [*files, a.results/'report.json']})
 HTML = r'''<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Robot Hand · 추종 시뮬레이션</title>
@@ -83,5 +97,7 @@ function tick(now){if(playing){elapsed+=Math.max(0,(now-last)/1000)*+$('speed').
 text = HTML.replace('__PAYLOAD__', json.dumps(payload, ensure_ascii=False, separators=(',', ':'), allow_nan=False).replace('</', '<\\/'))
 out = a.output or a.results/'viewer.html'
 out.parent.mkdir(parents=True, exist_ok=True)
+for source, expected in input_hashes.items():
+    assert hashlib.sha256(source.read_bytes()).hexdigest() == expected, f'Input changed while building viewer: {source}'
 out.write_text(text, encoding='utf-8')
 print(json.dumps({'output':str(out),'trajectories':len(traces),'display':'joint-center FK; no collision or hardware validation'}))

@@ -1,5 +1,5 @@
 {
-  "revision": "remote_drive_v1.3",
+  "revision": "remote_drive_v1.4",
   "scope": "Full five-finger 20-axis hand, original palm and wrist mounting interface; forearm not redesigned",
   "geometry_status": "Parametric construction candidate; not a fabrication release or validated transmission",
   "units": {
@@ -2655,27 +2655,27 @@
           1.0
         ]
       ],
-      "mass_kg": 0.9106634129657002,
+      "mass_kg": 0.9427220464795488,
       "com_local_mm": [
-        -0.3808265139944599,
-        74.76412673993117,
-        -27.658744724462714
+        -0.6209605109182527,
+        74.82190956557803,
+        -27.512442928683164
       ],
       "inertia_com_local_kg_m2": [
         [
-          0.004067862238803198,
-          -1.5168413603948617e-05,
-          0.00025667790813958976
+          0.00409969440812635,
+          -2.615650604826858e-05,
+          0.00027041954807502025
         ],
         [
-          -1.5168413603948617e-05,
-          0.003225186513909943,
-          0.0005829462452956968
+          -2.615650604826858e-05,
+          0.003298816818046822,
+          0.0005858289480870394
         ],
         [
-          0.00025667790813958976,
-          0.0005829462452956968,
-          0.005794360676243177
+          0.00027041954807502025,
+          0.0005858289480870394,
+          0.005875048025068347
         ]
       ],
       "component_names": [
@@ -2728,27 +2728,59 @@
         "Palm_wrist_saddle",
         "index_remote_pip_motor",
         "index_remote_pip_dual_spool",
+        "index_remote_pip_cradle",
+        "index_remote_pip_body_screws",
+        "index_remote_pip_base_screws",
+        "index_remote_pip_base_nuts",
         "index_remote_pip_mount_plate",
         "index_remote_dip_motor",
         "index_remote_dip_dual_spool",
+        "index_remote_dip_cradle",
+        "index_remote_dip_body_screws",
+        "index_remote_dip_base_screws",
+        "index_remote_dip_base_nuts",
         "index_remote_dip_mount_plate",
         "middle_remote_pip_motor",
         "middle_remote_pip_dual_spool",
+        "middle_remote_pip_cradle",
+        "middle_remote_pip_body_screws",
+        "middle_remote_pip_base_screws",
+        "middle_remote_pip_base_nuts",
         "middle_remote_pip_mount_plate",
         "middle_remote_dip_motor",
         "middle_remote_dip_dual_spool",
+        "middle_remote_dip_cradle",
+        "middle_remote_dip_body_screws",
+        "middle_remote_dip_base_screws",
+        "middle_remote_dip_base_nuts",
         "middle_remote_dip_mount_plate",
         "ring_remote_pip_motor",
         "ring_remote_pip_dual_spool",
+        "ring_remote_pip_cradle",
+        "ring_remote_pip_body_screws",
+        "ring_remote_pip_base_screws",
+        "ring_remote_pip_base_nuts",
         "ring_remote_pip_mount_plate",
         "ring_remote_dip_motor",
         "ring_remote_dip_dual_spool",
+        "ring_remote_dip_cradle",
+        "ring_remote_dip_body_screws",
+        "ring_remote_dip_base_screws",
+        "ring_remote_dip_base_nuts",
         "ring_remote_dip_mount_plate",
         "little_remote_pip_motor",
         "little_remote_pip_dual_spool",
+        "little_remote_pip_cradle",
+        "little_remote_pip_body_screws",
+        "little_remote_pip_base_screws",
+        "little_remote_pip_base_nuts",
         "little_remote_pip_mount_plate",
         "little_remote_dip_motor",
         "little_remote_dip_dual_spool",
+        "little_remote_dip_cradle",
+        "little_remote_dip_body_screws",
+        "little_remote_dip_base_screws",
+        "little_remote_dip_base_nuts",
         "little_remote_dip_mount_plate"
       ]
     }

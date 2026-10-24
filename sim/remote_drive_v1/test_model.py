@@ -6,8 +6,9 @@ from pathlib import Path
 import unittest
 import numpy as np
 import mujoco
-from model import HERE, CAD, NAMES, ALIASES, build_model, cable_forces, motor_torque, slew_pwm, run_simulation
+from model import HERE, ROOT, CAD, NAMES, ALIASES, build_model, cable_forces, motor_torque, slew_pwm, run_simulation
 from evaluate import scenario, evaluate, first_crossing, project_reference
+from run_thumb_diagnostics import damping_rule
 
 DETAILS={}
 
@@ -26,6 +27,76 @@ def synthetic_trace(time,command_deg,actual_deg,requested_deg=None):
 
 
 class ModelConsistency(unittest.TestCase):
+    @staticmethod
+    def diagnostic_step():
+        t=np.arange(0,.200125,.000125)
+        command=np.zeros((len(t),20))
+        command[(t>=.02)&(t<.10),17]=np.deg2rad(30)
+        return t,command
+
+    def test_instrumentation_preserves_nominal_forces_exactly(self):
+        system=build_model();t,command=self.diagnostic_step()
+        plain=run_simulation(system,t,command)
+        logged=run_simulation(system,t,command,record_diagnostics=True)
+        fields=["q","v","motor_pos","motor_speed","torque","saturation","peak_tension","slack"]
+        for field in fields:self.assertTrue(np.array_equal(plain[field],logged[field]),field)
+        period=round(system["config"]["controller_period_s"]/system["config"]["dt_s"])
+        between=np.arange(1,len(t))%period!=0
+        for field in ["motor_target_rad","motor_velocity_target_rad_s","pd_request_Nm","pwm_request_raw","pwm_request_clipped"]:
+            self.assertTrue(np.array_equal(logged["diagnostics"][field][1:][between],logged["diagnostics"][field][:-1][between]),field)
+        DETAILS["nominal_instrumentation_exact_equality"]=dict(passed=True,fields=fields,
+            controller_requests_held_between_updates=True,test_motion="30degree opposition step and return; other axes commanded hold")
+
+    def test_diagnostic_clipping_and_power_identities(self):
+        system=build_model();cfg=system["config"];t,command=self.diagnostic_step()
+        trace=run_simulation(system,t,command,record_diagnostics=True);log=trace["diagnostics"]
+        omega=trace["motor_speed"];w0=cfg["no_load_rpm"]*2*np.pi/60
+        unlimited=cfg["stall_torque_Nm"]*(log["pwm_applied"]-omega/w0)
+        cap=cfg["stall_torque_Nm"]*cfg["current_limit_A"]/cfg["stall_current_A"]
+        self.assertTrue(np.array_equal(log["current_clipped"],np.abs(unlimited)>cap))
+        self.assertTrue(np.array_equal(log["voltage_clipped"],np.abs(log["pwm_request_raw"])>1))
+        self.assertTrue(np.array_equal(log["slew_limited"],np.abs(log["pwm_request_clipped"]-log["pwm_applied"])>1e-12))
+        self.assertTrue(np.array_equal(trace["saturation"],(np.abs(unlimited)>=cap)|(np.abs(log["pwm_request_clipped"])>=.999)))
+        self.assertTrue(np.array_equal(log["envelope_torque_current_limited_Nm"],np.clip(unlimited,-cap,cap)))
+        self.assertTrue(np.allclose(log["pd_request_Nm"],log["pd_position_component_Nm"]+log["pd_velocity_component_Nm"],atol=1e-14))
+        self.assertTrue(np.array_equal(trace["torque"],log["electrical_torque_applied_Nm"]-cfg["motor_viscous_Nm_s_per_rad"]*omega))
+        self.assertTrue(np.array_equal(log["net_shaft_power_W"],trace["torque"]*omega))
+        self.assertTrue(np.array_equal(log["braking"],log["net_shaft_power_W"] < -1e-12))
+        self.assertTrue(np.allclose(log["electrical_mechanical_power_W"]-log["net_shaft_power_W"],cfg["motor_viscous_Nm_s_per_rad"]*omega**2,atol=1e-14))
+        counts={key:int(np.sum(log[key][:,17])) for key in ["current_clipped","voltage_clipped","slew_limited","braking"]}
+        self.assertTrue(all(count>0 for count in counts.values()))
+        DETAILS["diagnostic_classification_step_counts"]=counts
+
+    def test_ideal_diagnostics_are_explicit_and_axis_limited(self):
+        system=build_model();cfg=system["config"];t,command=self.diagnostic_step()
+        with self.assertRaises(ValueError):run_simulation(system,t,command,diagnostic={"actuator_mode":"ideal_pd_torque"})
+        ideal=run_simulation(system,t,command,True,dict(axis=17,actuator_mode="ideal_pd_torque"))
+        log=ideal["diagnostics"];others=np.arange(20)!=17
+        self.assertTrue(np.array_equal(log["electrical_torque_applied_Nm"][:,17],log["pd_request_Nm"][:,17]))
+        self.assertTrue(np.array_equal(log["electrical_torque_applied_Nm"][:,others],log["envelope_torque_current_limited_Nm"][:,others]))
+        for field in ["applied_current_clipped","applied_voltage_clipped","applied_slew_limited"]:
+            self.assertFalse(np.any(log[field][:,17]))
+        self.assertFalse(ideal["diagnostic_options"]["nominal_force_path"])
+        self.assertTrue(ideal["diagnostic_options"]["ideal_envelope_signals_counterfactual"])
+        bypass=run_simulation(system,t,command,True,dict(axis=17,actuator_mode="no_pwm_slew"))
+        log=bypass["diagnostics"]
+        self.assertTrue(np.array_equal(log["pwm_applied"][:,17],log["pwm_request_clipped"][:,17]))
+        self.assertFalse(np.any(log["applied_slew_limited"][:,17]))
+        limit=cfg["pwm_slope_register"]*cfg["pwm_slope_mV_per_ms"]/cfg["voltage_V"]*cfg["dt_s"]
+        self.assertLessEqual(np.max(np.abs(np.diff(log["pwm_applied"][:,others],axis=0))),limit+1e-12)
+        self.assertGreater(np.max(np.abs(np.diff(log["pwm_applied"][:,17]))),limit)
+
+    def test_predeclared_damping_rule_does_not_mutate_nominal_gain(self):
+        system=build_model();nominal=system["config"]["kd_Nm_s_per_rad"]
+        rule=damping_rule(system)
+        self.assertEqual(len(rule["samples"]),10)
+        maximum=max(x["locked_other_coordinates_inertia_kg_m2"] for x in rule["samples"])
+        self.assertAlmostEqual(rule["kd_override_Nm_s_per_rad"],2*np.sqrt(system["config"]["kp_Nm_per_rad"]*maximum))
+        self.assertTrue(all(x["free_other_coordinates_inertia_kg_m2"]>0 for x in rule["samples"]))
+        self.assertEqual(system["config"]["kd_Nm_s_per_rad"],nominal)
+        self.assertTrue(rule["declared_before_trajectory_runs"])
+        DETAILS["diagnostic_damping_rule"]=rule
+
     def test_cad_mass_units_and_coordinates(self):
         s=build_model(); m,d=s["model"],s["data"]
         contract=json.loads((CAD/"simulation_contract.json").read_text())
@@ -217,11 +288,19 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("--output",type=Path,default=HERE/"results")
     args=parser.parse_args()
+    paths=[HERE/name for name in ["model.py","evaluate.py","test_model.py","run_suite.py","run_thumb_diagnostics.py"]]
+    paths += [ROOT/name for name in ["cad/remote_drive_v1/design.json","cad/remote_drive_v1/simulation_contract.json",
+        "cad/modular_roots_v9/design.json","cad/modular_roots_v9/mass_screen.json","cad/modular_roots_v9/scene.json",
+        "cad/modular_roots_v9/cad_manifest.json","cad/modular_roots_v9/kinematics_numpy.py"]]
+    hashes={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
     suite=unittest.defaultTestLoader.loadTestsFromTestCase(ModelConsistency)
     result=unittest.TextTestRunner(verbosity=2).run(suite)
+    changed=[p.relative_to(ROOT).as_posix() for p in paths if hashlib.sha256(p.read_bytes()).hexdigest()!=hashes[p.relative_to(ROOT).as_posix()]]
+    passed=result.wasSuccessful() and not changed
     out=args.output;out.mkdir(parents=True,exist_ok=True)
-    (out/"model_consistency.json").write_text(json.dumps(dict(passed=result.wasSuccessful(),tests=result.testsRun,
+    (out/"model_consistency.json").write_text(json.dumps(dict(passed=passed,tests=result.testsRun,
         source_hashes={str(p.name):hashlib.sha256(p.read_bytes()).hexdigest() for p in
                        [HERE/"model.py",HERE/"evaluate.py",HERE/"test_model.py",CAD/"simulation_contract.json"]},
+        all_input_hashes=hashes,input_hash_guard=dict(passed=not changed,changed_inputs=changed),
         details=DETAILS,failures=[str(x[1]) for x in result.failures],errors=[str(x[1]) for x in result.errors]),indent=2))
-    raise SystemExit(0 if result.wasSuccessful() else 1)
+    raise SystemExit(0 if passed else 1)

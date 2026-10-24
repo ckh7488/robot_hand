@@ -118,34 +118,245 @@ def part_properties_from_step(root, directory, p, cache):
     return volume, center, tensor
 
 
-def review_physical_envelope(root, directory, parts):
-    """Reread physical geometry including zero-added-mass motor rotor visuals."""
-    import cadquery as cq
-    from OCP.gp import gp_Trsf
-    from OCP.BRepBuilderAPI import BRepBuilderAPI_Transform
-    from OCP.Bnd import Bnd_Box
-    from OCP.BRepBndLib import BRepBndLib
+class SavedGeometry:
+    """Actual saved STEP geometry, without importing the candidate generator."""
+    def __init__(self, root, directory, parts):
+        self.root, self.directory = root, directory
+        self.parts = {part["name"]: part for part in parts}
+        self.sources, self.world = {}, {}
 
-    source_cache, boxes, new_part_counts = {}, [], []
-    for part in parts:
-        if part["route"]:
-            continue
+    def get(self, name):
+        import cadquery as cq
+        from OCP.gp import gp_Trsf
+        from OCP.BRepBuilderAPI import BRepBuilderAPI_Transform
+        if name in self.world:
+            return self.world[name]
+        part = self.parts[name]
+        assert not part["route"], f"Route envelope is not a physical component: {name}"
         source = part.get("source")
         if source is None:
-            path = directory / "generated/parts" / (part["name"] + ".step")
+            path = self.directory / "generated/parts" / (name + ".step")
         else:
             source = {"V9 vendor XL330-M077 STEP": "cad/modular_roots_v9/parts/M077_stator.step",
                       "visual rotor; mass already included in motor": "cad/modular_roots_v9/parts/M077_rotor.step"}.get(source, source)
-            path = (root / source.replace("\\", "/")).resolve()
-            assert path.is_relative_to(root), source
-        if path not in source_cache:
-            source_cache[path] = cq.importers.importStep(str(path)).val()
-        shape = source_cache[path]
+            path = (self.root / source.replace("\\", "/")).resolve()
+            assert path.is_relative_to(self.root), source
+        if path not in self.sources:
+            self.sources[path] = cq.importers.importStep(str(path)).val()
+            assert self.sources[path].isValid(), str(path)
+        shape = self.sources[path]
         if source is not None:
             transform = gp_Trsf()
             transform.SetValues(*[float(x) for x in np.asarray(part["transform_world"])[:3, :4].ravel()])
             shape = cq.Shape.cast(BRepBuilderAPI_Transform(shape.wrapped, transform, True).Shape())
+        self.world[name] = shape
+        return shape
+
+
+def saved_cylindrical_faces(shape):
+    """World axes and trimmed axial endpoints of exact cylindrical STEP faces."""
+    from OCP.BRepAdaptor import BRepAdaptor_Surface
+    from OCP.GeomAbs import GeomAbs_Cylinder
+    result = []
+    for face in shape.Faces():
+        surface = BRepAdaptor_Surface(face.wrapped, True)
+        if surface.GetType() != GeomAbs_Cylinder:
+            continue
+        cylinder = surface.Cylinder()
+        point, direction = cylinder.Location(), cylinder.Axis().Direction()
+        origin = np.array([point.X(), point.Y(), point.Z()])
+        axis = np.array([direction.X(), direction.Y(), direction.Z()])
+        low, high = surface.FirstVParameter(), surface.LastVParameter()
+        assert math.isfinite(low) and math.isfinite(high), "Unbounded cylindrical physical face"
+        result.append({"radius_mm": cylinder.Radius(), "point_world_mm": origin.tolist(),
+                       "axis_world": axis.tolist(), "axial_endpoints_world_mm":
+                       [(origin + low * axis).tolist(), (origin + high * axis).tolist()]})
+    return result
+
+
+def merged_intervals(intervals, tolerance=1e-6):
+    merged = []
+    for low, high in sorted(intervals):
+        if merged and low <= merged[-1][1] + tolerance:
+            merged[-1][1] = max(merged[-1][1], high)
         else:
+            merged.append([float(low), float(high)])
+    return merged
+
+
+def matched_axis_intervals(faces, point, direction, radius):
+    point, direction = np.asarray(point), np.asarray(direction)
+    assert abs(np.linalg.norm(direction) - 1) < 1e-9
+    matches, intervals = [], []
+    for row in faces:
+        if abs(row["radius_mm"] - radius) > 1e-5:
+            continue
+        axis, origin = np.asarray(row["axis_world"]), np.asarray(row["point_world_mm"])
+        angle = math.degrees(math.acos(float(np.clip(abs(axis @ direction), 0, 1))))
+        distance = float(np.linalg.norm(np.cross(point - origin, axis)))
+        if angle > 1e-4 or distance > 1e-4:
+            continue
+        values = (np.asarray(row["axial_endpoints_world_mm"]) - point) @ direction
+        intervals.append([float(min(values)), float(max(values))])
+        matches.append({"angle_error_deg": angle, "axis_distance_mm": distance})
+    assert matches, f"No actual cylinder of radius {radius} on required physical axis"
+    return {"radius_mm": radius, "face_count": len(matches), "intervals_mm": merged_intervals(intervals),
+            "max_axis_angle_error_deg": max(x["angle_error_deg"] for x in matches),
+            "max_axis_line_distance_mm": max(x["axis_distance_mm"] for x in matches)}
+
+
+def interval_overlap_length(first, second):
+    return sum(max(0., min(a[1], b[1]) - max(a[0], b[0])) for a in first for b in second)
+
+
+def planar_contact_area(first, second):
+    """Sum intersections of coincident planar faces, not solid-common volume."""
+    from OCP.BRepAdaptor import BRepAdaptor_Surface
+    from OCP.GeomAbs import GeomAbs_Plane
+    def planes(shape):
+        result = []
+        for face in shape.Faces():
+            surface = BRepAdaptor_Surface(face.wrapped, True)
+            if surface.GetType() == GeomAbs_Plane:
+                plane = surface.Plane(); p, n = plane.Location(), plane.Axis().Direction()
+                result.append((face, np.array([p.X(), p.Y(), p.Z()]), np.array([n.X(), n.Y(), n.Z()])))
+        return result
+    area = 0.
+    for a, pa, na in planes(first):
+        for b, pb, nb in planes(second):
+            if abs(abs(na @ nb) - 1) < 1e-9 and abs((pa - pb) @ na) < 1e-5:
+                area += a.intersect(b).Area()
+    return float(area)
+
+
+def review_motor_mounting(root, directory, parts, design, geometry):
+    """CP006 motor-to-adapter evidence; never infer missing chassis supports."""
+    if "palm_motor_mounts" not in design:
+        return None
+    declared = read(directory / "reviews/mounting.json")
+    finite_tree(declared, "mounting")
+    mc = design["palm_motor_mounts"]
+    modules = {row["motor"]: row for row in declared["modules"]}
+    motors = [p for p in parts if p["body"] == "palm" and "_remote_" in p["name"] and p["name"].endswith("_motor")]
+    assert len(motors) == len(modules) == declared["motor_count"] == 8
+    assert set(modules) == {p["name"] for p in motors}
+    overlap_report = read(directory / "reviews/geometry.json").get("intended_thread_envelope_intersections", [])
+    allowed_pairs = {frozenset([row["a"], row["b"]]): row for row in overlap_report}
+    assert len(allowed_pairs) == len(overlap_report) == 8, "Missing or excess thread-envelope exceptions"
+    rows = []
+    for motor in motors:
+        name = motor["name"][:-len("_motor")]
+        row = modules[motor["name"]]
+        names = {suffix: name + suffix for suffix in ["_motor", "_body_screws", "_cradle", "_base_screws", "_base_nuts", "_mount_plate"]}
+        assert set(row["nodes"]) == set(names.values())
+        assert all(geometry.parts[n]["body"] == "palm" for n in names.values())
+        expected_edges = {(names["_motor"], names["_cradle"], (names["_body_screws"],)),
+                          (names["_cradle"], names["_mount_plate"], (names["_base_screws"], names["_base_nuts"]))}
+        assert {(e["from"], e["to"], tuple(e["fasteners"])) for e in row["edges"]} == expected_edges
+        assert not row["complete_chain_to_chassis"] and row["chassis_anchor_edges"] == [], "Undemonstrated chassis attachment claim"
+        F = np.asarray(motor["transform_world"])
+        assert np.max(abs(F - row["frame_world"])) < 1e-9
+        surfaces = {suffix: saved_cylindrical_faces(geometry.get(n)) for suffix, n in names.items()}
+        body_rows, base_rows, pilot_volume = [], [], 0.
+        for axis_index, (y, z) in enumerate(mc["body_axis_yz_local_mm"]):
+            point = (F @ [0., y, z, 1.])[:3]; axis = F[:3, 0]
+            found = {suffix: matched_axis_intervals(surfaces[suffix], point, axis, radius)
+                     for suffix, radius in [("_motor", .8), ("_cradle", 1.025), ("_body_screws", .95)]}
+            shafts = found["_body_screws"]["intervals_mm"]
+            cradle = found["_cradle"]["intervals_mm"]; pilot = found["_motor"]["intervals_mm"]
+            assert len(shafts) == len(cradle) == 2, name
+            length = mc["body_screw_nominal_length_mm"]
+            left, right = mc["body_head_seat_x_local_mm"]
+            assert np.allclose(shafts, [[left, left + length], [right - length, right]], atol=1e-5, rtol=0), name
+            heads = matched_axis_intervals(surfaces["_body_screws"], point, axis, 1.75)
+            assert np.asarray(heads["intervals_mm"]).shape == (2, 2), name
+            assert np.allclose(heads["intervals_mm"], [[left - 1.2, left], [right, right + 1.2]], atol=1e-5, rtol=0), name
+            grips = [interval_overlap_length([shaft], cradle) for shaft in shafts]
+            penetrations = [interval_overlap_length([shaft], pilot) for shaft in shafts]
+            assert np.allclose(grips, [1.3, 1.3], atol=1e-5, rtol=0), name
+            declared_axis = row["body_interfaces"][axis_index]
+            assert np.max(abs(point - declared_axis["axis_point_world_mm"])) < 1e-6
+            assert np.max(abs(axis - declared_axis["axis_world"])) < 1e-9
+            assert abs(declared_axis["nominal_motor_penetration_each_mm"] - (length - grips[0])) < 1e-5
+            pilot_volume += math.pi * (.95 ** 2 - .8 ** 2) * sum(penetrations)
+            body_rows.append({"point_world_mm": point.tolist(), "axis_world": axis.tolist(), "surfaces": found,
+                              "screw_head_surfaces": heads, "head_and_shaft_directions": "Opposed outer heads; both stems point into the motor",
+                              "actual_cradle_grips_mm": grips, "actual_small_pilot_intrusions_mm": penetrations,
+                              "scope": "Nominal cylindrical envelopes; motor-body penetration is not thread engagement or pullout strength."})
+        for axis_index, (x, y) in enumerate(mc["base_hole_xy_local_mm"]):
+            top, bottom = mc["adapter_top_z_mm"], mc["adapter_bottom_z_mm"]
+            point = (F @ [x, y, top, 1.])[:3]; axis = F[:3, 2]
+            found = {suffix: matched_axis_intervals(surfaces[suffix], point, axis, radius)
+                     for suffix, radius in [("_cradle", 1.025), ("_mount_plate", mc["adapter_hole_radius_mm"]),
+                                            ("_base_screws", 1.), ("_base_nuts", 1.)]}
+            expected = {"_cradle": [[0., mc["base_screw_underhead_z_mm"] - top]],
+                        "_mount_plate": [[bottom - top, 0.]],
+                        "_base_screws": [[mc["base_screw_underhead_z_mm"] - mc["base_screw_nominal_length_mm"] - top,
+                                           mc["base_screw_underhead_z_mm"] - top]],
+                        "_base_nuts": [[a - top for a in mc["base_nut_z_mm"]]]}
+            for suffix, interval in expected.items():
+                assert np.asarray(found[suffix]["intervals_mm"]).shape == np.asarray(interval).shape, (name, suffix)
+                assert np.allclose(found[suffix]["intervals_mm"], interval, atol=1e-5, rtol=0), (name, suffix)
+            heads = matched_axis_intervals(surfaces["_base_screws"], point, axis, 1.5)
+            seat = mc["base_screw_underhead_z_mm"] - top
+            assert np.asarray(heads["intervals_mm"]).shape == (1, 2), name
+            assert np.allclose(heads["intervals_mm"], [[seat, seat + .6]], atol=1e-5, rtol=0), name
+            tip = found["_base_nuts"]["intervals_mm"][0][0] - found["_base_screws"]["intervals_mm"][0][0]
+            declared_axis = row["base_interfaces"][axis_index]
+            assert abs(tip - declared_axis["nominal_tip_beyond_nut_mm"]) < 1e-5
+            assert abs((mc["base_screw_underhead_z_mm"] - bottom) - declared_axis["total_grip_mm"]) < 1e-5
+            base_rows.append({"point_world_mm": point.tolist(), "axis_world": axis.tolist(), "surfaces": found,
+                              "screw_head_surfaces": heads, "head_and_shaft_direction": "Head above cradle; stem passes through cradle, adapter and nut in motor-local -Z",
+                              "actual_nominal_tip_beyond_nut_mm": tip})
+        actual_overlap = geometry.get(names["_motor"]).intersect(geometry.get(names["_body_screws"])).Volume()
+        exception = allowed_pairs[frozenset([names["_motor"], names["_body_screws"]])]
+        assert exception["type"] == "self_tapping_thread_envelope"
+        assert abs(actual_overlap - pilot_volume) < 1e-5, f"Unexplained motor/screw intrusion: {name}"
+        assert abs(actual_overlap - exception["overlap_mm3"]) < 1e-5
+        assert abs(actual_overlap - exception["expected_overlap_mm3"]) <= exception["tolerance_mm3"]
+        contacts = []
+        expected_contacts = {frozenset([names[a], names[b]]) for a, b in
+                             [("_motor", "_cradle"), ("_body_screws", "_cradle"), ("_cradle", "_mount_plate"),
+                              ("_base_screws", "_cradle"), ("_base_nuts", "_mount_plate")]}
+        assert len(row["nominal_seating_distances"]) == 5
+        assert {frozenset([c["a"], c["b"]]) for c in row["nominal_seating_distances"]} == expected_contacts
+        for contact in row["nominal_seating_distances"]:
+            a, b = contact["a"], contact["b"]
+            assert a in names.values() and b in names.values()
+            distance = geometry.get(a).distance(geometry.get(b))
+            assert distance < 1e-5 and abs(distance - contact["minimum_surface_distance_mm"]) < 1e-5, (a, b)
+            measured = {"a": a, "b": b, "minimum_distance_mm": distance}
+            if {a, b} in [{names["_cradle"], names["_mount_plate"]}, {names["_base_nuts"], names["_mount_plate"]}]:
+                area = planar_contact_area(geometry.get(a), geometry.get(b))
+                assert area > .1, f"No measured seating face area: {a}, {b}"
+                measured["coincident_planar_contact_area_mm2"] = area
+            contacts.append(measured)
+        assert row["stage_axes_passed"]
+        rows.append({"motor": motor["name"], "body_axes": body_rows, "base_axes": base_rows,
+                     "actual_thread_envelope_volume_mm3": actual_overlap, "analytical_pilot_intrusion_volume_mm3": pilot_volume,
+                     "seating_contacts": contacts, "complete_chain_to_chassis": False,
+                     "unresolved_edge": row["unresolved_edge"]})
+    assert declared["stage_axes_passed"] and not declared["all_chassis_load_paths_complete"]
+    assert declared["complete_chassis_load_path_count"] == 0 and not declared["manufacturing_ready"]
+    return {"motor_to_adapter_modules_checked": len(rows), "body_axis_lines_checked": sum(len(r["body_axes"]) for r in rows),
+            "base_axis_lines_checked": sum(len(r["base_axes"]) for r in rows), "modules": rows,
+            "complete_chassis_load_path_count": 0, "unresolved_chassis_paths": len(rows), "manufacturing_ready": False,
+            "scope": "Saved STEP axis, axial envelope, fastener-head direction, nominal seating-area and narrow thread-intrusion checks. "
+                     "Eight adapter-to-chassis connections remain absent; no supported-foot, structural, thread-strength, tool-access or physical-performance approval."}
+
+
+def review_physical_envelope(root, directory, parts, saved_geometry=None):
+    """Reread physical geometry including zero-added-mass motor rotor visuals."""
+    from OCP.Bnd import Bnd_Box
+    from OCP.BRepBndLib import BRepBndLib
+
+    saved_geometry = saved_geometry or SavedGeometry(root, directory, parts)
+    boxes, new_part_counts = [], []
+    for part in parts:
+        if part["route"]:
+            continue
+        shape = saved_geometry.get(part["name"])
+        if part.get("source") is None:
             solid_count = len(shape.Solids())
             new_part_counts.append({"name": part["name"], "solid_count": solid_count})
             assert solid_count == 1, f"New manufactured component is not one connected solid: {part['name']} ({solid_count} solids)"
@@ -369,6 +580,11 @@ def review_model_test_evidence(root):
     paths["simulation_contract.json"] = root / "cad/remote_drive_v1/simulation_contract.json"
     for name, value in evidence["source_hashes"].items():
         assert digest(paths[name]) == value, f"Stale consistency-test evidence: {name}"
+    if "all_input_hashes" in evidence:
+        for name, value in evidence["all_input_hashes"].items():
+            path = (root / name).resolve()
+            assert path.is_relative_to(root) and digest(path) == value, f"Stale test input: {name}"
+        assert evidence["input_hash_guard"] == {"passed": True, "changed_inputs": []}
     small = evidence["details"].get("small5_time_step_quality")
     if small is not None:
         assert small["coarse_dt_s"] == .000125 and small["fine_dt_s"] == .0000625
@@ -381,6 +597,138 @@ def review_model_test_evidence(root):
     return {"producer_test_passed": evidence["passed"], "producer_tests_run": evidence["tests"],
             "source_hashes_current": True, "small_motion_numerical_evidence": small,
             "scope": "Freshness and stated-threshold consistency of producer test results; tests are not rerun by this reviewer."}
+
+
+def review_thumb_diagnostics(root, nominal_report, directory=None):
+    """Recompute actuator identities and axis metrics from lossless full-rate CSV."""
+    import csv
+    import gzip
+    directory = directory or root / "sim/remote_drive_v1/results/thumb_diagnostics"
+    if not (directory / "report.json").exists():
+        return None
+    report = read(directory / "report.json"); finite_tree(report, "thumb_diagnostics")
+    for name, expected in report["source_hashes"].items():
+        path = (root / name).resolve()
+        assert path.is_relative_to(root) and digest(path) == expected, f"Stale diagnostic input: {name}"
+    names, axis = report["joint_names"], report["axis"]
+    assert axis == 17 and names[axis] == report["joint"] == "thumb_opposition"
+    expected_cases = ["whole_hand_nominal", "opposition_only_nominal", "opposition_only_zero_gravity",
+                      "opposition_only_no_pwm_slew", "opposition_only_ideal_torque",
+                      "opposition_only_ideal_torque_critical_damping"]
+    assert list(report["cases"]) == expected_cases and report["case_count"] == 6
+    assert report["cases"]["whole_hand_nominal"]["metrics"] == nominal_report["cases"]["remote20/rapid_reversal"], "Instrumented nominal case changed metrics"
+    rule = report["damping_rule"]
+    assert rule["declared_before_trajectory_runs"]
+    assert [row["opposition_deg"] for row in rule["samples"]] == list(range(0, 46, 5))
+    selected = max(row["locked_other_coordinates_inertia_kg_m2"] for row in rule["samples"])
+    assert abs(selected - rule["selected_inertia_kg_m2"]) < 1e-12
+    assert abs(2 * math.sqrt(rule["kp_Nm_per_rad"] * selected) - rule["kd_override_Nm_s_per_rad"]) < 1e-12
+    for sample in rule["samples"]:
+        q = np.asarray(sample["joint_angles_deg"])
+        assert abs(q[axis] - sample["opposition_deg"]) < 1e-10 and not np.any(np.delete(q, axis))
+        assert 0 < sample["free_other_coordinates_inertia_kg_m2"] <= sample["locked_other_coordinates_inertia_kg_m2"] + 1e-12
+    checked = []
+    nominal_cfg = report["cases"]["whole_hand_nominal"]["parameters"]
+    for case, row in report["cases"].items():
+        assert row["diagnostic_only"] and not row["physical_acceptance_eligible"]
+        cfg, options, metrics, summary, curve = [row[key] for key in ["parameters", "actuator_options", "metrics", "summary", "curve"]]
+        assert options["axis"] == axis and options["joint"] == names[axis] and options["motor_viscosity_retained"]
+        ideal = "ideal_torque" in case
+        bypass = case.endswith("no_pwm_slew")
+        assert options["actuator_mode"] == ("ideal_pd_torque" if ideal else "no_pwm_slew" if bypass else "nominal")
+        assert options["ideal_envelope_signals_counterfactual"] == ideal
+        override = rule["kd_override_Nm_s_per_rad"] if case.endswith("critical_damping") else None
+        assert options["kd_override_Nm_s_per_rad"] == override
+        assert options["nominal_force_path"] == (not ideal and not bypass and override is None)
+        for key, value in cfg.items():
+            assert value == ([0., 0., 0.] if key == "gravity_m_s2" and case.endswith("zero_gravity") else nominal_cfg[key]), (case, key)
+        path = (directory / curve["path"]).resolve()
+        assert path.is_relative_to(directory) and digest(path) == curve["sha256"], case
+        with gzip.open(path, "rt", encoding="utf-8", newline="") as stream:
+            reader = csv.DictReader(stream); assert reader.fieldnames == curve["columns"]
+            records = list(reader)
+        trace = {key: np.asarray([float(record[key]) for record in records]) for key in curve["columns"]}
+        assert all(np.isfinite(value).all() for value in trace.values()) and len(records) == curve["samples"], case
+        t = trace["time_s"]; dt = cfg["dt_s"]; count = len(t)
+        assert t[0] == 0 and np.max(abs(np.diff(t) - dt)) < 1e-12
+        metadata = metrics["command_generation"]
+        requested, feasible = reconstruct_commands(metadata, t)
+        assert np.max(abs(requested - feasible)) < 1e-10
+        command = np.deg2rad(requested[:, axis])
+        assert np.max(abs(command - trace["requested_joint_angle_rad"])) < 1e-12
+        if case != "whole_hand_nominal":
+            assert not np.any(np.delete(requested, axis, axis=1)), case
+        theta, omega = trace["motor_position_rad"], trace["motor_speed_rad_s"]
+        assert np.array_equal(theta, trace["actual_joint_angle_rad"])
+        assert np.array_equal(omega, trace["actual_joint_velocity_rad_s"])
+        period, delay = max(1, round(cfg["controller_period_s"] / dt)), round(cfg["received_to_servo_s"] / dt)
+        update = np.arange(0, count, period); previous = command[0]
+        target = np.empty(count); speed_target = np.empty(count)
+        for step in update:
+            current = command[max(0, step - delay)]
+            target[step:step + period] = current
+            speed_target[step:step + period] = (current - previous) / (period * dt) * cfg["command_velocity_feedforward"]
+            previous = current
+        def close(key, expected, tolerance=1e-10):
+            assert np.max(abs(trace[key] - expected)) <= tolerance, (case, key)
+        close("motor_target_rad", target); close("motor_velocity_target_rad_s", speed_target)
+        p = cfg["kp_Nm_per_rad"] * (target[update] - theta[update])
+        kd = cfg["kd_Nm_s_per_rad"] if override is None else override
+        d = kd * (speed_target[update] - omega[update])
+        repeat = lambda values: np.repeat(values, period)[:count]
+        close("pd_position_component_Nm", repeat(p)); close("pd_velocity_component_Nm", repeat(d))
+        request = repeat(p + d); close("pd_request_Nm", request)
+        w0 = cfg["no_load_rpm"] * 2 * math.pi / 60
+        raw = repeat((p + d) / cfg["stall_torque_Nm"] + omega[update] / w0)
+        clipped = np.clip(raw, -1, 1)
+        close("pwm_request_raw", raw); close("pwm_request_clipped", clipped)
+        applied = np.empty(count); previous = 0.
+        increment = cfg["pwm_slope_register"] * cfg["pwm_slope_mV_per_ms"] / cfg["voltage_V"] * dt
+        for i, desired in enumerate(clipped):
+            previous = desired if bypass else previous + np.clip(desired - previous, -increment, increment)
+            applied[i] = previous
+        close("pwm_applied", applied)
+        unlimited = cfg["stall_torque_Nm"] * (applied - omega / w0)
+        cap = cfg["stall_torque_Nm"] * cfg["current_limit_A"] / cfg["stall_current_A"]
+        limited = np.clip(unlimited, -cap, cap)
+        electrical = request if ideal else limited
+        viscous = cfg["motor_viscous_Nm_s_per_rad"] * omega
+        net = electrical - viscous; power = net * omega
+        for key, expected in [("envelope_torque_unclipped_Nm", unlimited), ("envelope_torque_current_limited_Nm", limited),
+                              ("electrical_torque_applied_Nm", electrical), ("motor_viscous_torque_Nm", viscous),
+                              ("net_shaft_torque_Nm", net), ("electrical_mechanical_power_W", electrical * omega),
+                              ("net_shaft_power_W", power)]:
+            close(key, expected)
+        flags = {"current_clipped": abs(unlimited) > cap, "voltage_clipped": abs(raw) > 1,
+                 "slew_limited": abs(clipped - applied) > 1e-12, "braking": power < -1e-12,
+                 "legacy_saturation": (abs(unlimited) >= cap) | (abs(clipped) >= .999)}
+        for key in ["current_clipped", "voltage_clipped", "slew_limited"]:
+            flags["applied_" + key] = flags[key] & (not ideal)
+        for key, expected in flags.items():
+            assert np.array_equal(trace[key], expected), (case, key)
+            if key != "legacy_saturation":
+                assert abs(summary[key + "_fraction"] - np.mean(expected)) < 1e-12, (case, key)
+        assert abs(summary["positive_shaft_work_J"] - np.maximum(power[:-1], 0).sum() * dt) < 1e-10
+        assert abs(summary["signed_negative_shaft_work_J"] - np.minimum(power[:-1], 0).sum() * dt) < 1e-10
+        for key, expected in [("maximum_abs_pd_request_Nm", max(abs(request))),
+                              ("maximum_abs_net_shaft_torque_Nm", max(abs(net))),
+                              ("peak_commanded_motor_speed_rpm", max(abs(speed_target)) * 60 / (2 * math.pi))]:
+            assert abs(summary[key] - expected) < 1e-10, (case, key)
+        error_deg = np.rad2deg(theta - command)
+        assert abs(summary["axis_metrics"]["raw_max_error_deg"] - max(abs(error_deg))) < 1e-9
+        assert abs(summary["axis_metrics"]["raw_rmse_deg"] - np.sqrt(np.mean(error_deg ** 2))) < 1e-9
+        review_additive_metrics(metrics, "diagnostic/" + case, names)
+        events = [event for event in metrics["events"] if event["joint"] == names[axis]]
+        categories = {label: sum(e["classification"] == label for e in events) for label in
+                      ["reached", "early_crossing", "preexisting_level", "never_reached"]}
+        assert summary["axis_event_count"] == len(events) and summary["axis_event_classification_counts"] == categories
+        checked.append({"case": case, "full_rate_samples_checked": count, "idealized_actuator": ideal,
+                        "raw_max_error_deg": max(abs(error_deg)), "applied_limiter_fractions":
+                        {key: summary[key] for key in summary if key.startswith("applied_") and key.endswith("_fraction")}})
+    return {"cases_checked": checked, "source_hash_count": len(report["source_hashes"]),
+            "instrumented_nominal_metrics_identical": True, "damping_rule_arithmetic_checked": True,
+            "scope": "Independent full-rate axis17 command/held-controller/PWM/torque/power/limiter arithmetic and reported aggregate checks. "
+                     "No new trajectory integration, coupled damping optimum, physical actuator or hardware-performance approval."}
 
 
 def review_simulation(root, contract, design):
@@ -462,8 +810,84 @@ def review_simulation(root, contract, design):
             "additive_metric_review": additions,
             "command_contract_review": review_command_contracts(root, report, names),
             "model_test_evidence_review": review_model_test_evidence(root),
+            "thumb_diagnostic_review": review_thumb_diagnostics(root, report),
             "scope": "Checks committed event arithmetic/coverage and CAD-to-simulation data consistency; "
                      "does not independently replay or calibrate the dynamics engine."}
+
+
+def review_configurations(contract):
+    rng = np.random.default_rng(20261024)
+    ranges = np.deg2rad(np.asarray([row["range_deg"] for row in contract["joints"]]))
+    return [np.zeros(len(ranges))] + [ranges[:, 0] + rng.uniform(.15, .85, len(ranges)) *
+                                    np.diff(ranges, axis=1).ravel() for unused in range(12)]
+
+
+def review_mount_sweeps(root, directory, parts, contract, design, geometry):
+    """Bounded 13-pose screen; candidate collisions are reported, never exempted."""
+    if "palm_motor_mounts" not in design:
+        return {"available": False, "scope": "No CP006 palm motor cradle stage in this checkpoint."}
+    import itertools
+    import time
+    import cadquery as cq
+    from OCP.Bnd import Bnd_Box
+    from OCP.BRepBndLib import BRepBndLib
+    from OCP.gp import gp_Trsf
+    from OCP.BRepBuilderAPI import BRepBuilderAPI_Transform
+    started = time.monotonic()
+    fixed = [p for p in parts if p["body"] == "palm" and "_remote_" in p["name"] and
+             any(p["name"].endswith(suffix) for suffix in ["_cradle", "_body_screws", "_base_screws", "_base_nuts", "_mount_plate"])]
+    moving = [p for p in parts if p["body"] != "palm" and not p["route"]]
+    assert len(fixed) == 40, "Incomplete eight-module mounting sweep set"
+    boxes, corners = {}, {}
+    for part in fixed + moving:
+        box = Bnd_Box(); BRepBndLib.AddOptimal_s(geometry.get(part["name"]).wrapped, box, False, False)
+        bounds = box.Get(); boxes[part["name"]] = np.asarray([bounds[:3], bounds[3:]])
+        corners[part["name"]] = np.asarray(list(itertools.product(*zip(bounds[:3], bounds[3:]))))
+    neutral = {body["name"]: np.asarray(body["frame_world"]) for body in contract["bodies"]}
+    inverse = {name: np.linalg.inv(matrix) for name, matrix in neutral.items()}
+    poses, overlaps, errors, counts = review_configurations(contract), [], [], []
+    threshold = .01
+    for pose_index, q in enumerate(poses):
+        frames = {"palm": np.eye(4)}
+        for row, angle in zip(contract["joints"], q):
+            frames[row["name"]] = frames[row["parent_joint"]] @ np.asarray(row["frame_parent"]) @ frame(R=rotation(row["axis_local"], angle))
+        shifts = {name: frames[name] @ inverse[name] for name in frames}
+        tested = 0
+        for mobile in moving:
+            name = mobile["name"]; shift = shifts[mobile["body"]]
+            points = corners[name] @ shift[:3, :3].T + shift[:3, 3]
+            low, high = np.min(points, axis=0), np.max(points, axis=0)
+            candidates = [p for p in fixed if np.all(np.minimum(boxes[p["name"]][1], high) >
+                                                    np.maximum(boxes[p["name"]][0], low))]
+            if not candidates:
+                continue
+            transform = gp_Trsf(); transform.SetValues(*[float(x) for x in shift[:3, :4].ravel()])
+            shape = cq.Shape.cast(BRepBuilderAPI_Transform(geometry.get(name).wrapped, transform, True).Shape())
+            for stationary in candidates:
+                tested += 1
+                try:
+                    volume = float(geometry.get(stationary["name"]).intersect(shape).Volume())
+                    assert math.isfinite(volume)
+                    if volume > threshold:
+                        overlaps.append({"pose": pose_index, "fixed_part": stationary["name"], "moving_part": name,
+                                         "moving_body": mobile["body"], "overlap_mm3": volume})
+                except Exception as error:
+                    errors.append({"pose": pose_index, "fixed_part": stationary["name"], "moving_part": name,
+                                   "error": str(error)})
+        counts.append(tested)
+    return {"available": True, "poses": len(poses), "joint_names": [r["name"] for r in contract["joints"]],
+            "joint_ranges_deg": [r["range_deg"] for r in contract["joints"]],
+            "pose_angles_deg": [np.rad2deg(q).tolist() for q in poses], "seed": 20261024,
+            "generation_rule": "Neutral pose then 12 NumPy default_rng uniform fractions [.15,.85) of each declared joint range, in joint_names order.",
+            "fixed_mount_components": [p["name"] for p in fixed], "moving_components": [p["name"] for p in moving],
+            "exact_tests_per_pose": counts, "exact_candidate_pairs_tested": sum(counts),
+            "overlap_threshold_mm3": threshold, "overlaps": overlaps, "boolean_errors": errors,
+            "sampled_mount_clearance_passed": not overlaps and not errors,
+            "maximum_overlap_mm3": max((r["overlap_mm3"] for r in overlaps), default=0.),
+            "elapsed_seconds": time.monotonic() - started,
+            "scope": "Saved STEP fixed cradle/adapter/fastener vs moving physical body components at 13 declared poses. "
+                     "Conservative transformed AABB broadphase then exact intersections; no mating exclusions in this cross-body set. "
+                     "Not continuous sweep, self-collision of all moving bodies, support strength, tool access or fabrication approval."}
 
 
 def review_model_frames(root, contract):
@@ -481,11 +905,7 @@ def review_model_frames(root, contract):
     rows = contract["joints"]
     bodies = {b["name"]: b for b in contract["bodies"]}
     assert list(candidate.NAMES) == [r["name"] for r in rows]
-    rng = np.random.default_rng(20261024)
-    configurations = [np.zeros(20)]
-    ranges = np.deg2rad(np.asarray([r["range_deg"] for r in rows]))
-    for unused in range(12):
-        configurations.append(ranges[:, 0] + rng.uniform(.15, .85, 20) * np.diff(ranges, axis=1).ravel())
+    configurations = review_configurations(contract)
     max_position = max_rotation = max_axis = max_com = max_inertia = 0.0
     for q in configurations:
         mujoco.mj_resetData(model, data)
@@ -599,7 +1019,7 @@ def review_parent_bores(directory, contract, parts, design):
                      "Aligned does not validate bearing fits, pin retention, horn coupling, swept clearance or assembly feasibility."}
 
 
-def review(root, geometry, simulation, model_frames):
+def review(root, geometry, simulation, model_frames, mount_sweeps=False):
     directory = root / "cad/remote_drive_v1"
     design = read(directory / "design.json")
     baseline = read(root / "cad/modular_roots_v9/design.json")
@@ -721,9 +1141,11 @@ def review(root, geometry, simulation, model_frames):
         result["simulation_report_review"] = review_simulation(root, contract, design)
     if model_frames:
         result["compiled_model_frame_review"] = review_model_frames(root, contract)
+    saved_geometry = SavedGeometry(root, directory, parts) if geometry or mount_sweeps else None
     if geometry:
         result["actual_parent_bore_review"] = review_parent_bores(directory, contract, parts, design)
-        result["physical_assembly_envelope_review"] = review_physical_envelope(root, directory, parts)
+        result["physical_assembly_envelope_review"] = review_physical_envelope(root, directory, parts, saved_geometry)
+        result["palm_motor_mounting_review"] = review_motor_mounting(root, directory, parts, design, saved_geometry)
         result["mechanical_blockers_detected"] = [x for x in result["actual_parent_bore_review"]["measurements"]
                                                  if any(y != "aligned_at_neutral" for y in
                                                         [x["status"], x["child_bore"]["status"], x["shaft"]["status"]])]
@@ -732,6 +1154,8 @@ def review(root, geometry, simulation, model_frames):
             "Rigid motor-to-body attachment is a dynamics assumption; new raised or rotated motor plates require physical supports, fasteners and verified load paths.",
             "Nominal bore and pin axes do not establish fits, retention, horn engagement, structural strength or access for assembly.",
             "Continuous swept clearance and functional tendon routing, wraps, tensioners and terminals remain unvalidated."]
+    if mount_sweeps:
+        result["sampled_mount_sweep_review"] = review_mount_sweeps(root, directory, parts, contract, design, saved_geometry)
     return result
 
 
@@ -742,8 +1166,9 @@ if __name__ == "__main__":
     parser.add_argument("--geometry", action="store_true", help="Reread saved STEP using CadQuery/OCP")
     parser.add_argument("--simulation", action="store_true", help="Audit committed report arithmetic and CAD integration")
     parser.add_argument("--model-frames", action="store_true", help="Check compiled MuJoCo frames/inertias at 13 poses")
+    parser.add_argument("--mount-sweeps", action="store_true", help="Screen new fixed mounts against moving STEP bodies at the same 13 poses")
     args = parser.parse_args()
-    result = review(args.root.resolve(), args.geometry, args.simulation, args.model_frames)
+    result = review(args.root.resolve(), args.geometry, args.simulation, args.model_frames, args.mount_sweeps)
     text = json.dumps(result, indent=2, allow_nan=False)
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

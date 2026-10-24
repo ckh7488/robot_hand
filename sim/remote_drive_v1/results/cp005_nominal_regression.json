@@ -1,0 +1,10 @@
+{
+  "reference_commit": "25ba8cd01c07ff9b0efdf65212911e6e629b3270",
+  "reference_contract_sha256": "6d3bec63e1ca5ec5de05951f16158691b907231bf3092eea02f291507f32e879",
+  "final_contract_sha256": "553fd265bf56ab62b7a5b0315e34b1cb2fadafff286f970e41ee0dfedce25ca7",
+  "cases_exact_equal": true,
+  "sensitivities_exact_equal": true,
+  "all_display_traces_exact_equal_to_initial_replay": true,
+  "display_trace_count": 24,
+  "report_sha256": "8a410be07b8e12b56c02e8e36db2f6c82691f797005b4cc54f43489d8ae3f43a"
+}

@@ -41,7 +41,7 @@ OUT=ROOTOUT/'generated'; OUT.mkdir(parents=True,exist_ok=True); (OUT/'parts').mk
 (ROOTOUT/'images').mkdir(exist_ok=True); (ROOTOUT/'reviews').mkdir(exist_ok=True)
 SCENE=json.loads((BASE/'scene.json').read_text())['Open']
 MASS={x['name']:x['mass_kg'] for x in json.loads((BASE/'mass_screen.json').read_text())['items']}
-ASSETS={}; PARTS=[]; BODIES={}; JOINTS=[]; ROUTES=[]; COLORS={'printed':(0.68,0.75,0.82),'motor':(0.16,0.20,0.25),'steel':(0.55,0.57,0.6),'pulley':(0.84,0.42,0.11),'route':(0.50,0.23,0.78),'mount':(0.14,0.50,0.49)}
+ASSETS={}; PARTS=[]; BODIES={}; JOINTS=[]; ROUTES=[]; MOUNTS=[]; COLORS={'printed':(0.68,0.75,0.82),'motor':(0.16,0.20,0.25),'steel':(0.55,0.57,0.6),'pulley':(0.84,0.42,0.11),'route':(0.50,0.23,0.78),'mount':(0.14,0.50,0.49)}
 
 def r(axis,a):
     a=math.radians(a); c,s=math.cos(a),math.sin(a)
@@ -173,10 +173,22 @@ def remote_motor(nm,bodyname,frame):
     spool=ring(sp['spool_radius_mm'],sp['spool_width_mm'],sc)
     for x in [sc[0]-sp['spool_width_mm']/2,sc[0]+sp['spool_width_mm']/2]:spool=spool.fuse(ring(sp['spool_radius_mm']+1,1,[x,0,0]))
     add(nm+'_dual_spool',spool,bodyname,'pulley',origin=frame)
-    # Solid mounting plate with four through holes, kept distinct from vendor body.
-    plate=box(32,40,3,(-14.4,-7.5,-13))
-    for x in [-27.4,-1.4]:
-        for y in [-22.5,7.5]:plate=plate.cut(cyl(1.65,5,(x,y,-16),(0,0,1)))
+    # Palm motors use the actual S101 body-side interface, then a properly
+    # registered adapter. The prior horizontal plate did not attach to a motor.
+    if bodyname=='palm':
+        mc=C['palm_motor_mounts']
+        for suffix,key,kind,mass_name in [('cradle','cradle_asset','mount','index_mcp_fixed_frame'),('body_screws','body_screw_asset','steel','index_mcp_base_body_tap'),('base_screws','base_screw_asset','steel','index_mcp_base_screws'),('base_nuts','base_nut_asset','steel','index_mcp_base_nuts')]:
+            asset_name=mc[key]
+            add(nm+'_'+suffix,asset(asset_name),bodyname,kind,MASS[mass_name],frame,'cad/modular_roots_v9/parts/'+asset_name+'.step')
+        plate=box(*mc['adapter_dimensions_mm'],mc['adapter_center_local_mm'])
+        for x,y in mc['base_hole_xy_local_mm']:
+            plate=plate.cut(cyl(mc['adapter_hole_radius_mm'],mc['adapter_dimensions_mm'][2]+2,(x,y,mc['adapter_bottom_z_mm']-1),(0,0,1)))
+        MOUNTS.append({'name':nm,'frame_world':frame.tolist()})
+    else:
+        # The moving thumb mounts are outside this palm-cradle checkpoint.
+        plate=box(32,40,3,(-14.4,-7.5,-13))
+        for x in [-27.4,-1.4]:
+            for y in [-22.5,7.5]:plate=plate.cut(cyl(1.65,5,(x,y,-16),(0,0,1)))
     relief_fragment_volume=0
     if nm=='middle_remote_pip':
         # Local relief around the preserved thumb root housing; no source edit.
@@ -255,7 +267,7 @@ def aggregate():
 def geometry_check():
     checks=[{'name':p['name'],'valid':p['shape'].isValid(),'solid_count':len(p['shape'].Solids()),'volume_mm3':p['volume_mm3']} for p in PARTS]
     # Exact overlap screening between new component envelopes and retained hardware.
-    candidates=[p for p in PARTS if not p['route']]; clashes=[];tested=0
+    candidates=[p for p in PARTS if not p['route']]; clashes=[];intended=[];tested=0
     # OCC's tight bounds on vendor BReps are expensive; calculate once per part.
     bounds={p['name']:exact_bounds(p['shape']) for p in candidates}
     for i,a in enumerate(candidates):
@@ -272,13 +284,20 @@ def geometry_check():
             if tested%50==0:print('Exact candidate overlap checks:',tested,flush=True)
             try:
                 vol=a['shape'].intersect(b['shape']).Volume()
-                if vol>0.01:clashes.append({'a':a['name'],'b':b['name'],'overlap_mm3':vol,'note':'May include intended joint interfaces; unresolved until mating map and swept checks'})
+                if vol>0.01:
+                    expected=next((m for m in MOUNTS if {a['name'],b['name']}=={m['name']+'_body_screws',m['name']+'_motor'}),None)
+                    # Only the named self-tapping screw shafts in their own
+                    # vendor body are exempt. Excess intrusion still fails.
+                    if expected and abs(vol-8.906415172927)<0.05:
+                        intended.append({'a':a['name'],'b':b['name'],'overlap_mm3':vol,'type':'self_tapping_thread_envelope','rationale':'Four retained M2 TAP8 shaft envelopes intersect their own factory pilot holes; nominal shaft radius 0.95 mm, factory pilot surface radius 0.8 mm. Helical threads are not modeled.','expected_overlap_mm3':8.906415172927,'tolerance_mm3':0.05})
+                    else:clashes.append({'a':a['name'],'b':b['name'],'overlap_mm3':vol,'note':'Unintended/unresolved solid intersection; not an approved contact'})
             except Exception as e:clashes.append({'a':a['name'],'b':b['name'],'error':str(e)})
-    report={'status':'CONSTRUCTION CANDIDATE - NOT FABRICATION PASS','valid_brep_count':sum(x['valid'] for x in checks),'total_shapes':len(checks),'component_checks':checks,'open_pose_exact_new_cross_body_overlap_pairs':clashes,'overlap_scope':'All new-component pairs, including same rigid body; legacy-only pairs excluded. Field name retained for review compatibility.','exact_candidate_pairs_tested':tested,'limitations':['Only neutral pose; no continuous swept collision proof','Reported same-body overlaps may include unresolved mounting contacts; not blanket-exempted','Cable route solids are envelopes only, excluded from clash and mass checks','Mounting screws and tensioners for new components not detailed'],'actuator_count':sum(p['name'].endswith('_motor') for p in PARTS),'independent_joint_count':len(JOINTS)}
+    report={'status':'CONSTRUCTION CANDIDATE - NOT FABRICATION PASS','valid_brep_count':sum(x['valid'] for x in checks),'total_shapes':len(checks),'component_checks':checks,'open_pose_exact_new_cross_body_overlap_pairs':clashes,'intended_thread_envelope_intersections':intended,'overlap_scope':'All new-component pairs, including same rigid body and remote cradle hardware; legacy-only pairs excluded. Only own motor/visual rotor and listed own pilot-hole/thread-envelope pairs exempt. Field name retained for review compatibility.','exact_candidate_pairs_tested':tested,'limitations':['Only neutral pose; no continuous swept collision proof','Eight palm motor-to-cradle and cradle-to-adapter fasteners modeled; adapter-to-chassis supports absent','Cable route solids are envelopes only, excluded from clash and mass checks','Thumb moving motor fasteners, tendon attachments and tensioners not detailed','Thread geometry, torque, fit, stiffness and practical tool access remain unvalidated'],'actuator_count':sum(p['name'].endswith('_motor') for p in PARTS),'independent_joint_count':len(JOINTS)}
     report['physical_assembly_bounds_mm']={'min':[min(getattr(b,k) for b in bounds.values()) for k in ['xmin','ymin','zmin']],'max':[max(getattr(b,k) for b in bounds.values()) for k in ['xmax','ymax','zmax']],'scope':'Exact OCC bounding boxes of all physical components; cable-route envelopes excluded'}
     manufactured=[p for p in PARTS if p['source'] is None and not p['route']]
     report['manufactured_connected_solid_check']={'required_count_per_component':1,'component_count':len(manufactured),'passed':all(len(p['shape'].Solids())==1 for p in manufactured),'enforcement':'Generator rejects a disconnected new manufactured component before mass/export; no exceptions in this candidate'}
     report['distal_hinge_axis_checks']=hinge_axis_check()
+    report['palm_motor_mounting']=mounting_check()
     (ROOTOUT/'reviews'/'geometry.json').write_text(json.dumps(report,indent=2),encoding='utf8');return report
 
 def hinge_axis_check():
@@ -308,6 +327,63 @@ def hinge_axis_check():
                 item['surface_checks'].append({'role':label,'component':name,'nominal_radius_mm':radius,'best_surface':best,'passed':bool(best and best['axis_error_deg']<1e-4 and best['line_distance_mm']<1e-4)})
             item['passed']=all(c['passed'] for c in item['surface_checks']);rows.append(item)
     return {'scope':'In-memory OCC cylinder self-check; saved STEP independently remeasured by review tool','passed':all(x['passed'] for x in rows),'joints':rows}
+
+def mounting_check():
+    """Check actual cylinder axes and explicit, incomplete attachment graph.
+
+    Minimum distance is recorded separately from face contact/load capacity.
+    No adapter-to-chassis edge is invented from proximity or a shared body ID.
+    """
+    mc=C['palm_motor_mounts'];lookup={p['name']:p for p in PARTS};rows=[]
+    def driver_screen(n,F):
+        paths=[]
+        def screen(label,local_start,local_axis,targets):
+            bit=transform(cyl(1.5,30,local_start,local_axis),F);ab=exact_bounds(bit);hits=[]
+            for target in targets:
+                shape=lookup[n+target]['shape'];bb=exact_bounds(shape)
+                if min(ab.xmax,bb.xmax)<=max(ab.xmin,bb.xmin) or min(ab.ymax,bb.ymax)<=max(ab.ymin,bb.ymin) or min(ab.zmax,bb.zmax)<=max(ab.zmin,bb.zmin):continue
+                volume=bit.intersect(shape).Volume()
+                if volume>.01:hits.append({'component':n+target,'overlap_mm3':volume})
+            return {'label':label,'origin_world_mm':(F@np.r_[local_start,1])[:3].tolist(),'axis_world':(F[:3,:3]@local_axis).tolist(),'driver_radius_mm':1.5,'straight_length_mm':30,'checked_components':[n+t for t in targets],'blockers':hits,'clear_in_declared_subset':not hits}
+        for x,y in mc['base_hole_xy_local_mm']:
+            p=[x,y,-11.2+1e-4]
+            paths.append(screen('base screw before motor installation',p,[0,0,1],['_cradle','_mount_plate','_base_nuts']))
+            paths.append(screen('same base screw with motor present',p,[0,0,1],['_motor']))
+        for side,x in zip([-1,1],mc['body_head_seat_x_local_mm']):
+            for y,z in mc['body_axis_yz_local_mm']:
+                paths.append(screen('body screw after base assembly, before spool/chassis installation',[x+side*(1.2+1e-4),y,z],[side,0,0],['_motor','_cradle','_mount_plate','_base_screws','_base_nuts']))
+        return {'scope':'30 mm long, diameter 3 mm straight driver envelope inside this module only; handle, screw insertion/removal sweep and neighboring assembly are NOT validated','required_order':'Fasten cradle to adapter before installing motor; fit side body screws before spool and final chassis assembly','preassembly_subset_clear':all(p['clear_in_declared_subset'] for p in paths if p['label']!='same base screw with motor present'),'paths':paths}
+    def axis_surface(name,radius,point,direction):
+        choices=[]
+        for face in lookup[name]['shape'].Faces():
+            s=BRepAdaptor_Surface(face.wrapped)
+            if s.GetType()!=GeomAbs_Cylinder:continue
+            c=s.Cylinder()
+            if abs(c.Radius()-radius)>1e-5:continue
+            a=c.Axis().Direction();p=c.Axis().Location();a=np.array([a.X(),a.Y(),a.Z()]);p=np.array([p.X(),p.Y(),p.Z()])
+            error=math.degrees(math.acos(float(np.clip(abs(a@direction),-1,1))))
+            distance=float(np.linalg.norm(np.cross(point-p,a)))
+            b=exact_bounds(face)
+            choices.append({'axis_error_deg':error,'line_distance_mm':distance,'radius_mm':c.Radius(),'point_world_mm':p.tolist(),'axis_world':a.tolist(),'surface_bounds_mm':[getattr(b,k) for k in ['xmin','ymin','zmin','xmax','ymax','zmax']]})
+        best=min(choices,key=lambda c:c['line_distance_mm']+c['axis_error_deg']) if choices else None
+        return {'component':name,'required_radius_mm':radius,'best_surface':best,'passed':bool(best and best['line_distance_mm']<1e-4 and best['axis_error_deg']<1e-4)}
+    for m in MOUNTS:
+        n=m['name'];F=np.array(m['frame_world']);point=lambda p:(F@np.r_[p,1])[:3];body_interfaces=[];base_interfaces=[]
+        for y,z in mc['body_axis_yz_local_mm']:
+            p=point([0,y,z]);direction=F[:3,0]
+            surfaces=[axis_surface(n+s,rad,p,direction) for s,rad in [('_motor',.8),('_cradle',1.025),('_body_screws',.95)]]
+            body_interfaces.append({'axis_point_world_mm':p.tolist(),'axis_world':direction.tolist(),'surface_checks':surfaces,'passed':all(x['passed'] for x in surfaces),'head_seats_local_x_mm':mc['body_head_seat_x_local_mm'],'screws_on_axis':2,'nominal_shaft_length_each_mm':8,'nominal_cradle_grip_each_mm':1.3,'nominal_motor_penetration_each_mm':6.7,'engagement_status':'Axial envelopes only; factory pilot thread formation and pullout strength not validated'})
+        for x,y in mc['base_hole_xy_local_mm']:
+            p=point([x,y,-13]);direction=F[:3,2]
+            surfaces=[axis_surface(n+s,rad,p,direction) for s,rad in [('_cradle',1.025),('_mount_plate',mc['adapter_hole_radius_mm']),('_base_screws',1),('_base_nuts',1)]]
+            base_interfaces.append({'axis_point_world_mm':p.tolist(),'axis_world':direction.tolist(),'surface_checks':surfaces,'passed':all(x['passed'] for x in surfaces),'cradle_grip_mm':1.2,'adapter_grip_mm':mc['adapter_dimensions_mm'][2],'total_grip_mm':4,'screw_underhead_to_tip_mm':6,'nut_thickness_mm':1.6,'nominal_tip_beyond_nut_mm':.4,'engagement_status':'Nominal envelope dimensions; threads, torque, tolerance and fastener specification not validated'})
+        pairs=[(n+'_motor',n+'_cradle'),(n+'_body_screws',n+'_cradle'),(n+'_cradle',n+'_mount_plate'),(n+'_base_screws',n+'_cradle'),(n+'_base_nuts',n+'_mount_plate')]
+        contacts=[{'a':a,'b':b,'minimum_surface_distance_mm':lookup[a]['shape'].distance(lookup[b]['shape']),'type':'nominal seating contact; minimum distance alone does not establish bearing area or stiffness'} for a,b in pairs]
+        rows.append({'motor':n+'_motor','frame_world':m['frame_world'],'nodes':[n+s for s in ['_motor','_body_screws','_cradle','_base_screws','_base_nuts','_mount_plate']],'edges':[{'from':n+'_motor','to':n+'_cradle','fasteners':[n+'_body_screws'],'type':'factory pilot-hole side screws'},{'from':n+'_cradle','to':n+'_mount_plate','fasteners':[n+'_base_screws',n+'_base_nuts'],'type':'through screws and underside nuts'}],'body_interfaces':body_interfaces,'base_interfaces':base_interfaces,'nominal_seating_distances':contacts,'driver_screen':driver_screen(n,F),'stage_axes_passed':all(x['passed'] for x in body_interfaces+base_interfaces),'complete_chain_to_chassis':False,'chassis_anchor_edges':[],'unresolved_edge':n+'_mount_plate -> actual chassis rail/anchor','assembly_access_status':'Module preassembly has bounded driver tests below; no assembled-hand driver, full screw insertion, nut-loading or connector-removal sweep has passed'})
+    report={'revision':C['revision'],'scope':'Eight palm-fixed motor-to-S101-cradle-to-adapter interfaces; actual OCC cylinder self-check. Independent review reopens saved STEP.','motor_count':len(rows),'stage_axes_passed':all(x['stage_axes_passed'] for x in rows),'complete_chassis_load_path_count':0,'all_chassis_load_paths_complete':False,'manufacturing_ready':False,'modules':rows,'limitations':[mc['hardware_limitations'],mc['support_status'],'Vendor frame material uses the retained V9 mass estimate','No support stiffness, tendon reaction load, screw tightening or continuous motion test','Moving thumb mount fasteners unchanged and incomplete']}
+    (ROOTOUT/'reviews'/'mounting.json').write_text(json.dumps(report,indent=2),encoding='utf8')
+    if not report['stage_axes_passed']:raise ValueError('Palm mounting cylinder axes failed; see reviews/mounting.json')
+    return {'module_count':len(rows),'motor_to_adapter_axes_passed':report['stage_axes_passed'],'complete_chassis_load_path_count':0,'details':'reviews/mounting.json'}
 
 def export():
     assembly=cq.Assembly(name='Remote_drive_v1_full_hand')
