@@ -1,0 +1,66 @@
+{
+  "target_sha": "13589f288a4caf4abe6040cc74a5069ae174d51e",
+  "input_sha256": {
+    "design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331"
+  },
+  "tested_poses": 13,
+  "structural_clashes": 0,
+  "fist_fingertip_gap_mm": {
+    "index": 1.9999999999998863,
+    "middle": 1.9999999999999432,
+    "ring": 1.9999999999999432,
+    "little": 1.9999999999999023
+  },
+  "maximum_gap_difference_mm": 0.0,
+  "actual_thumb_distal_bores": {
+    "passed": true,
+    "matching_cylindrical_faces": [
+      {
+        "radius_mm": 3.4,
+        "axis": [
+          0.3830222215597605,
+          0.17860619515652235,
+          0.9063077870365762
+        ],
+        "distance_to_distal_joint_axis_mm": 4.297016580220681e-12,
+        "absolute_direction_dot": 1.0,
+        "axis_error_deg": 0.0,
+        "face_axial_center_mm": -10.476082158733927
+      },
+      {
+        "radius_mm": 3.4,
+        "axis": [
+          0.3830222215597605,
+          0.17860619515652235,
+          0.9063077870365762
+        ],
+        "distance_to_distal_joint_axis_mm": 2.7631293802814563e-12,
+        "absolute_direction_dot": 1.0,
+        "axis_error_deg": 0.0,
+        "face_axial_center_mm": 10.499999999999321
+      }
+    ],
+    "maximum_axis_error_deg": 0.0,
+    "maximum_axis_distance_mm": 4.297016580220681e-12,
+    "both_fork_sides_found": true,
+    "required_axis": [
+      0.383022221559489,
+      0.17860619515673035,
+      0.9063077870366499
+    ],
+    "required_joint_mm": [
+      0,
+      50.0,
+      0
+    ],
+    "structural_body_solid_count": 1,
+    "manufacturing_approved": false
+  },
+  "scope": "STEP structural inter-body checks in sampled poses; not full configuration-space clearance",
+  "excluded": "Bearings, pins, screws, fascia attachments, same-body mating parts, rear palm and motor hardware",
+  "full_cad_regeneration": false,
+  "full_configuration_space_clearance": false,
+  "independent_audit": false
+}
