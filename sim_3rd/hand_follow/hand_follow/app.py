@@ -66,7 +66,7 @@ def main(argv=None):
         seq = -1
         started = last_frame = time.perf_counter()
         previous_loop = started
-        processing_fps, view, debug, testing = (float(a.fps), 1, False, False)
+        processing_fps, view, debug, testing = (float(a.fps), 0, False, False)
         while not a.seconds or time.perf_counter() - started < a.seconds:
             if (log.directory / 'stop.request').exists():
                 break

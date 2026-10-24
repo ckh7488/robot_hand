@@ -1,0 +1,114 @@
+{
+  "target_sha": "251358e5f2847ae09def226425defd3376e3e2b9",
+  "archive_sha256": "4bda8bf97118641523124d4e94a26cf4ded524ac39e3a5b9781487f3942e320d",
+  "source_files_unchanged": 284,
+  "same_agent_review": true,
+  "tests": 46,
+  "matched_replay_fields": [
+    "frames",
+    "closed_frames",
+    "calibration_samples",
+    "source_sha256",
+    "evaluator_sha256",
+    "design_sha256",
+    "input_sha256",
+    "closed_active_limit_fraction",
+    "adjacent_closed_pairs",
+    "closed_before_median",
+    "closed_after_median",
+    "finger_tip_error_mm_p50_p90",
+    "before_closed_step_p95_deg",
+    "after_closed_step_p95_deg"
+  ],
+  "synthetic": {
+    "state": "stopped",
+    "pid": 6380,
+    "frames": 121,
+    "hand_frames": 121,
+    "updated_at": 1792856562.687989,
+    "error": null,
+    "median_frame_age_ms": 11.923099984414876
+  },
+  "preview": {
+    "scope": "Paired preview-only benchmark. Excludes camera, tracking and window display.",
+    "columns": [
+      "render_ms",
+      "compose_ms",
+      "total_ms"
+    ],
+    "blocks": [
+      {
+        "mode": "before",
+        "median_ms": [
+          5.48115000128746,
+          21.43215003889054,
+          27.584300027228892
+        ]
+      },
+      {
+        "mode": "after",
+        "median_ms": [
+          3.1708500464446843,
+          13.872799987439066,
+          16.839849995449185
+        ]
+      },
+      {
+        "mode": "after",
+        "median_ms": [
+          3.016349975951016,
+          12.781650002580136,
+          15.509799937717617
+        ]
+      },
+      {
+        "mode": "before",
+        "median_ms": [
+          5.81144995521754,
+          20.193399977870286,
+          24.613199988380075
+        ]
+      }
+    ],
+    "baseline_ui_sha256": "40c2bb5492a74732df56e5f3cca19597685ca4f1691508a750fdf024dbc43a0b",
+    "source_sha256": {
+      "ui.py": "33a5f3b0409861f764e199724162d41bae52d0b3ae183af4320d36087dfca9d7",
+      "cad_hand.py": "7cedc82c8781498345860af4240a9ac1e196e9f73b05a9017da907a64baffdf4"
+    },
+    "samples_per_mode": 40,
+    "default_opencv_threads": 8,
+    "results": {
+      "before": {
+        "median_ms": [
+          5.7696999865584075,
+          20.67805005935952,
+          27.090100047644228
+        ],
+        "p90_ms": [
+          7.635179976932705,
+          27.066659985575825,
+          32.96543002361432
+        ]
+      },
+      "after": {
+        "median_ms": [
+          3.0722999945282936,
+          13.117649999912828,
+          15.953050053212792
+        ],
+        "p90_ms": [
+          4.686279944144189,
+          15.222960035316646,
+          19.579200074076653
+        ]
+      }
+    }
+  },
+  "live_user_quality": "awaiting user feedback; live preview is a separate process, not measured by these checks",
+  "exclusions": [
+    "Physical CAD manufacturability or collisions",
+    "Stationary jitter or anatomical ground truth",
+    "Motor performance",
+    "Timing equality under different system load"
+  ]
+}
