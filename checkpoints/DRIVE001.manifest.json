@@ -1,0 +1,2940 @@
+{
+  "id": "DRIVE001",
+  "created_utc": "2026-10-24T14:10:42.422830+00:00",
+  "scope": "New form-drive candidate, unchanged exterior, declared vendor and frozen V9 evidence dependencies, and selected documentation. Excludes unrelated unfinished CP007/webcam/scale work, PROGRESS.md, CHECKPOINT.json, this manifest and later review artifacts.",
+  "frozen_evidence_hashes_checked": 222,
+  "files": {
+    "AGENTS.md": {
+      "bytes": 5849,
+      "sha256": "dc01ef954f784de0f406ab6c2d2815d1ccf5b9f33be20db459915d300a9f53bd"
+    },
+    "AUDIT_EVIDENCE_INDEX.json": {
+      "bytes": 27704,
+      "sha256": "ce33b645bba1d747cc80a6e99ea1b9a184982a3dadbead6e114346c10a58ae89"
+    },
+    "README.md": {
+      "bytes": 10508,
+      "sha256": "05118bb636a42fe7577a97549b9a965416fd9cdb20b975c0b587e0ab97b700d6"
+    },
+    "background_tasks.pyw": {
+      "bytes": 2627,
+      "sha256": "f836765628bc17be5aaf2cce37b6d337429fa08230730b2d928f644e12bc6ad4"
+    },
+    "cad/form_candidate_v1/README.md": {
+      "bytes": 4396,
+      "sha256": "c575b2f0e98ef605e46da0ce4e63bb90f9520888c127304b43048a6c55b23352"
+    },
+    "cad/form_candidate_v1/build.py": {
+      "bytes": 8468,
+      "sha256": "991882f019eca17f87392a63971ca2adcc447199cea30f3766d3c04fe7cae359"
+    },
+    "cad/form_candidate_v1/design.json": {
+      "bytes": 1254,
+      "sha256": "c8a3f91584984cdeba0cad41942efb56bbb8f1cc8d108333e5539dbcbea99651"
+    },
+    "cad/form_candidate_v1/generated/geometry_review.json": {
+      "bytes": 1517,
+      "sha256": "49343e1a30ae937b4724b6740f886792f06cca2782377e407b7b1f84f5595e92"
+    },
+    "cad/form_candidate_v1/generated/hand_form_candidate.step": {
+      "bytes": 6215394,
+      "sha256": "4cf0922e300944899335e8f7cd30f59ee1fd610b0be1910e69d3bc97fda4e5ba"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_post_-18_104.stl": {
+      "bytes": 42084,
+      "sha256": "63557e1b0de7728ac6547e8001819b3bdc57b26eedc14b81c2d835317be6e72a"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_post_-44_33.stl": {
+      "bytes": 42084,
+      "sha256": "48719faa57d5063d637462f669fc239ded4834a8a56fb92894d84268e5c477e5"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_post_-54_78.stl": {
+      "bytes": 42084,
+      "sha256": "c87b759a711942285ac03dac24020fb98bcad4f19153753958183f8ca966ea27"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_post_15_10.stl": {
+      "bytes": 42084,
+      "sha256": "c616f49d9d2a2cf25a14fd992edec2c8b0cee6d8195e7f9d18b50ab240a4c28e"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_post_16_29.stl": {
+      "bytes": 42084,
+      "sha256": "2f327076f75d12b32de1d4bf72405746c51ace4ae414f87da971d60abfe57a97"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_post_46_88.stl": {
+      "bytes": 42084,
+      "sha256": "48d3f8169d36fbfc14b678fcb1810a30aefbfd0c72c40ef91384b5a9337e61bd"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_screw_-18_104.stl": {
+      "bytes": 21684,
+      "sha256": "03e15e9609264122aa3444d432636af5ed7078ac75c3e8476a3bcdc96ededd71"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_screw_-44_33.stl": {
+      "bytes": 21684,
+      "sha256": "12645dbe9c4e7c265040407d40cd8320a6c67e334c5da164fbf09fb431a0f0f7"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_screw_-54_78.stl": {
+      "bytes": 21684,
+      "sha256": "1db94f439fb3ac66481d1127c2721a4301d71c3eab087e5f81b4870786f15423"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_screw_15_10.stl": {
+      "bytes": 21684,
+      "sha256": "9872afd7477392bad0aecab9a5c5ea629a42e115bd3c390bf2031707b62069a5"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_screw_16_29.stl": {
+      "bytes": 21684,
+      "sha256": "37ddecd155817835d881ad01a2a6a9b81d5471034244ea261890a23960e83595"
+    },
+    "cad/form_candidate_v1/generated/meshes/Cover_screw_46_88.stl": {
+      "bytes": 21684,
+      "sha256": "78c0442a099a161dd9dcac9dc9e7e5bb7f22ad8fed75f5bb9776be1b5dbd1b73"
+    },
+    "cad/form_candidate_v1/generated/meshes/Palm_shaped_front_cover.stl": {
+      "bytes": 129884,
+      "sha256": "ec8ca0c4437231d148c1c9d200f87da1db8987839adcd6d4afbde4436da9bfe4"
+    },
+    "cad/form_candidate_v1/generated/meshes/Palm_side_web_-71.stl": {
+      "bytes": 684,
+      "sha256": "3722d09655d8359289e284e01863bf1266f26ca3c57dbaad583ef11ada65edd0"
+    },
+    "cad/form_candidate_v1/generated/meshes/Palm_side_web_71.stl": {
+      "bytes": 684,
+      "sha256": "78f6dc86e5367b8cbf09edc1003bb75dd4f45639308056497af2ad1733930e4d"
+    },
+    "cad/form_candidate_v1/generated/meshes/Palm_tapered_chassis.stl": {
+      "bytes": 5884,
+      "sha256": "ed4172ae0291a4e1ca56e23c3a8fa5e3f2eba688118ee1c9f520275b702a4eb6"
+    },
+    "cad/form_candidate_v1/generated/meshes/Wrist_bridge_plate.stl": {
+      "bytes": 85484,
+      "sha256": "19cb1f60f7226fbf04f0eafb7ab8284c37aba8ab6c91ea834afed31f0ec3484a"
+    },
+    "cad/form_candidate_v1/generated/meshes/Wrist_bridge_post_-32_28.stl": {
+      "bytes": 42084,
+      "sha256": "08808a73a79a9799930052e01c59837e22a41f5d29939394654e2e808055bc8c"
+    },
+    "cad/form_candidate_v1/generated/meshes/Wrist_bridge_post_-32_8.stl": {
+      "bytes": 42084,
+      "sha256": "804b7dd22d24f8ef2e5f2ef97afce962c0eac48c937328958054d802e8ade7fa"
+    },
+    "cad/form_candidate_v1/generated/meshes/Wrist_bridge_post_8_28.stl": {
+      "bytes": 42084,
+      "sha256": "49dd2f4c0d793ddea2c109f832598871dd0c36e79cd614a64fe71ed1b300ccde"
+    },
+    "cad/form_candidate_v1/generated/meshes/Wrist_bridge_post_8_8.stl": {
+      "bytes": 42084,
+      "sha256": "3de0c847123ab13c3de7a82eb2b57ebe63f242953d6a2165768fee8678222c1c"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_joint_pin_0.stl": {
+      "bytes": 41884,
+      "sha256": "47dbaf37c95f6aad39f36c05016f622fb52e37a6a3f6483b198f5d1f8484f86b"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_joint_pin_1.stl": {
+      "bytes": 41884,
+      "sha256": "adcfdc55862b91c5c0c22e940248dde788facab03321e89a18373cdd6d7617ac"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_joint_pin_2.stl": {
+      "bytes": 41884,
+      "sha256": "d95c26c006a3d90dcc26e3b0d4ec61e006a88a9ca1b771fedfd9bc21d84feae2"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_root_fork_-13.stl": {
+      "bytes": 43684,
+      "sha256": "cbc71c79e390711ec2570f6789eb231d200dd3d996875e6f1e68e2a3409ccbf1"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_root_fork_13.stl": {
+      "bytes": 43684,
+      "sha256": "1d4cd876990634487ed5d605f50f7ebc12c5c22c415e1812dae1167aa73e9950"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment1_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "70c0bf93a166d38c05e8ea18527567d3980223150d7c7e0273b650ae09e808ff"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment1_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "6f071167e42e0089909c89d7f36e2fa5b0c941e6202ae0f2a3f0983f04dd97d5"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment1_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "125f44dd70fe03d7a2ee9a80a38358cb0574193d5e89e28172d4e499b6044173"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment1_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "5e9542dbad944615a52d590eff3c485a3efd53e7e2204a9fd7890cb38f693cfe"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment1_segment_shell.stl": {
+      "bytes": 139084,
+      "sha256": "092234575a4939eb140f952a12586ddf1e1bcb8bcdf6dfe1d0e756e3f864695f"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment2_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "fcbe4487b47a60c4fdcd520362363e124178e6c419ff459e18648716e29cd812"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment2_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "318fe4d6eaba7e7cb9568d482ad7811b11f691768be7b566fefda3c35f0622cb"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment2_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "162636e2ccb0b170cb2db003c4bee27af391009fa2bf8718c14efff4d2039139"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment2_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "c26716c19f8c6c5318ed5aa9717e64037342b0330fe8fac465044801c4a555bb"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment2_segment_shell.stl": {
+      "bytes": 139084,
+      "sha256": "583f138f24892f32903f9bf8390011e90b17b02256c4bef33d7e0a33012daf69"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment3_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "a7a95eda7381de17a4edb49453920bd39a2349f3d08360166bb27cb8257535db"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment3_rounded_tip_cap.stl": {
+      "bytes": 353884,
+      "sha256": "24e56b9485b56b32f4722f0b1f0c3ce4fae19d445de3826e30ffe5eea34d104e"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_segment3_tip_core.stl": {
+      "bytes": 45884,
+      "sha256": "03228ac09b5ec05018c17e313d0c195a60b8c647462d526cc329568e22b4bf6b"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_spread_housing.stl": {
+      "bytes": 42084,
+      "sha256": "4a0b54bcb79d8b57cd064e818e4d272ab364aff45f8013ecb14e19d060f4611e"
+    },
+    "cad/form_candidate_v1/generated/meshes/index_spread_ring.stl": {
+      "bytes": 42084,
+      "sha256": "60f3e5d441dc8b6c576c455467e64c4a7350c0aa101142e693bfd51bf634b7ab"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_joint_pin_0.stl": {
+      "bytes": 41884,
+      "sha256": "7ba4fd62b1244e75d68adfaf1805fc3dc57b604e58d49b465f4c8b93b229a737"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_joint_pin_1.stl": {
+      "bytes": 41884,
+      "sha256": "a4cb4713ed175033b1f73b44886ba5f58a67c4330bfd2a8ff15429e83f472132"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_joint_pin_2.stl": {
+      "bytes": 41884,
+      "sha256": "d143105d4b3c32765717784787b0db8dbb0714f0764bb633a0d54a3fe0f6a674"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_root_fork_-13.stl": {
+      "bytes": 43684,
+      "sha256": "ff693074a8e7b6fe2bc7be7da8091315780f52eb6bc150e5b5990af4fcb50b6a"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_root_fork_13.stl": {
+      "bytes": 43684,
+      "sha256": "0965ca1d118ede7e8a02b91466e837baf9f9748904017e3c442722fea556ff12"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment1_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "46e310b8d9d1ba49029a0ef2d6f09ab80fc66300ef0e2cbe6e6d8bdb6230f69a"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment1_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "a42ffe44f40d7eb3baab635c30c362591ff1a75ccf841b52695d8732a35fe2e4"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment1_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "2332985fe3e5a7a74c69fd67f67cf8e5db67dc0619779892f726b5d1218113c0"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment1_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "62140e87c32e11349e12f13ec4343cea75a8c35fa56ef4b7aba76673e12614be"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment1_segment_shell.stl": {
+      "bytes": 139484,
+      "sha256": "316ddb206d1836c88effda0f618933932e55164b7e3729022c6c66d1debeb148"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment2_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "877658e9b3dec36594b0954d85e94e9003d95cb688488ec06132f1a7388fa7f6"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment2_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "712b3b415a979f69faa0d643f78d88385b46757a366bd5e19973c5732f0aa5f0"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment2_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "04795eb6781eb109a0d6fe8e1b7917addbf5dedf6f431e150e0156daf06bddcb"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment2_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "d749f105effe90f5636c146afcaa05183694a8977b7ddfbe10d63033ff38aef3"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment2_segment_shell.stl": {
+      "bytes": 139484,
+      "sha256": "42c28721cd9d2cf9b35dd4e0d34fba4e0caa5813dbcf45de3c111608ee4418ab"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment3_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "016ec4c20b5d350cd29dee4bc1e133d23fa46c8a2511cdf2c16c090637a270f1"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment3_rounded_tip_cap.stl": {
+      "bytes": 353884,
+      "sha256": "878ff07a1a704d59b80e09bc99ba1f6fb2b9133c826ad47f3622e165e51d20cc"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_segment3_tip_core.stl": {
+      "bytes": 45884,
+      "sha256": "17aa60ef522996cdfc4012bfd73d92fb4ba00a20d250d61c721a7f32cca5def2"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_spread_housing.stl": {
+      "bytes": 42084,
+      "sha256": "c746b8cbcda2d79494ef55f275e53eaa92c2f7309c5fba0a11e395c190acd4df"
+    },
+    "cad/form_candidate_v1/generated/meshes/little_spread_ring.stl": {
+      "bytes": 42084,
+      "sha256": "84ba0b779ec5562696b7676c3066b03d0daf755a86e0ab28e57c4b7988462781"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_joint_pin_0.stl": {
+      "bytes": 41884,
+      "sha256": "9f8d5d7ab1730101b83853f50c1b564f5f54772bc31431a482e38f279167a8bb"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_joint_pin_1.stl": {
+      "bytes": 41884,
+      "sha256": "87ecbdd727a7f686219b0a9177ed062564dd1b6407d4d8248ff0dc450beac988"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_joint_pin_2.stl": {
+      "bytes": 41884,
+      "sha256": "b68dfdcbfeeb77d8bf69acc66a25f410fd68602955b6328fd23ad7606e1d0fbe"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_root_fork_-13.stl": {
+      "bytes": 43684,
+      "sha256": "95f2d703c4db9517c87037dbb520da8d7f38272b55809e9395e54ea98e9884f2"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_root_fork_13.stl": {
+      "bytes": 43684,
+      "sha256": "eb25c6087bca54f8dd1c6c1a25ca532bdcf7e6bf5398521f255275a83f2a1944"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment1_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "79411538b6a92ed1ef460c727b199c1d7227c9d9131ae0580355ff76a5ddbcf4"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment1_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "4164523422408516ef29688478ef94f6e1a8781dce8934557e35367efbb8c105"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment1_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "15ad7e03b9165ea82fbe00e5af2f34c1872234bbc4467a05c084ee29bb3870b1"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment1_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "b14387e0e133a109fd7365a0aa6310398aac65c9dfbebd08205fff855ed68e95"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment1_segment_shell.stl": {
+      "bytes": 139084,
+      "sha256": "4c95f794f2bd966d6b4ae9e3552ba7fc8af6a5bfe3ea7b81aa827f7bfd70c8c0"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment2_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "0a2dfb9f7136f011541e86135e42414d56e5e218fb0f427372e18486c4818e1f"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment2_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "4643ab34981e2593cd675249ff0db5d29adef5595ede2ec9deda6c9a331714dd"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment2_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "ddc22cb165fe36702f97a7b94e014f6656d517abc8bf61bae8d49358fb9d2724"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment2_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "6357d2620d9034ba6b943b429b6f862b59f0624e0130d409a9db149ef0397095"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment2_segment_shell.stl": {
+      "bytes": 139084,
+      "sha256": "353f32c68a4195d540885d022f4b5069cd0268be23dd9f7891970b75fb34dbde"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment3_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "2e8345c816fcc06e94529a7c1209854eb11374ca9ff19eb002df7bf90f453b35"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment3_rounded_tip_cap.stl": {
+      "bytes": 353884,
+      "sha256": "c5930b727867740a4b9bccfe57963fce4748c2dccef5f2b321dc68d6716397cf"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_segment3_tip_core.stl": {
+      "bytes": 45884,
+      "sha256": "0fde9b753322a6a3a6cb7cdf4ffccef5c97dda4dd5fc6b75ded04cda34550564"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_spread_housing.stl": {
+      "bytes": 42084,
+      "sha256": "635d98c7b9d30b9617596c0eb4ed29a2c338fab7f8222bcb97cfc8596b479c07"
+    },
+    "cad/form_candidate_v1/generated/meshes/middle_spread_ring.stl": {
+      "bytes": 42084,
+      "sha256": "d145c72f24b4b3783521da27d9392896c5beaebbcbe87a621e896f5988aa3fd4"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_joint_pin_0.stl": {
+      "bytes": 41884,
+      "sha256": "a988ef8acb3b0d8d0a36de96568361bc02207bbb0ba3fbc640deff2de60ae534"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_joint_pin_1.stl": {
+      "bytes": 41884,
+      "sha256": "3dd558cd06e6714c7fca657505b86b10a4a589e54f9f199006fa29d3d576bde6"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_joint_pin_2.stl": {
+      "bytes": 41884,
+      "sha256": "9755eb6312f38abcbb9da01ab27c7f41a7d50d64777edf4a1e581d6b3bde8e2b"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_root_fork_-13.stl": {
+      "bytes": 43684,
+      "sha256": "24f793764353eebbe7598d00ef2aa6a86f46f323dfa1d7e8589727b4ca1de5c2"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_root_fork_13.stl": {
+      "bytes": 43684,
+      "sha256": "7d855ee5b94494346f3870d32257438fbd83d3a2d8ef395fb733817d7b9d0693"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment1_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "b43a5892f0be50ba6b87f699ec6b1b7c9149734681109e1f8209aafa7013992d"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment1_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "a1543ea8b7263e6660de0cb443dab576cd5e426c4d8d9830c71c79511bf7ce15"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment1_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "ba26d283a1171074ba0f8daaccdc041efdfa3ca760b5304e7559c588519a360b"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment1_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "a10829d2cd96dcbc11d2d894c57eca6cb941b38578c9f5b80232cebe84efa809"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment1_segment_shell.stl": {
+      "bytes": 139084,
+      "sha256": "8bb08b3cd7f602d9afb2d4c2109b4b5c79c1630b850773c0b95f2ed5aa01a219"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment2_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "d50d5ccbac03412fb3779e5f5011313fec1669dce89f8d62c298cb47f26876bd"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment2_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "527a752c69e7dd85bba1bd329f23ed05a7e04d4d5144e5fb036bea450a273118"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment2_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "feedc9ebe79bbb770804ae47dd64e61a9e41494493a2c89071b84b078b8ada88"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment2_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "46dd3be3a53d5964e482a4f4cdfd2dd513dc7f2d70c08e4cd3c49ed1445e79c0"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment2_segment_shell.stl": {
+      "bytes": 139084,
+      "sha256": "180dff6ce6bff0a42a03517d79fbf0b8a535dec9ac6c13d2599fd61aa97628ce"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment3_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "7b99701d50185e1060914de7dda6b2671c0d7ccba80b73b425c24276e7410343"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment3_rounded_tip_cap.stl": {
+      "bytes": 353884,
+      "sha256": "53b275c66a22e0c662e8bf9105487a7b0791eeac7d0b3e690a8911782c7dbafa"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_segment3_tip_core.stl": {
+      "bytes": 45884,
+      "sha256": "b1033b663f97df0df63fe30403fbac6bd88e299531841ad7236ab49e6785f74d"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_spread_housing.stl": {
+      "bytes": 42084,
+      "sha256": "aacd6752ecbe4ead09724d6d47e41a1143da87635dcc69889cfd25a351a33b27"
+    },
+    "cad/form_candidate_v1/generated/meshes/ring_spread_ring.stl": {
+      "bytes": 42084,
+      "sha256": "6ee8c3ef554b1ebce231378474ab8d55fd54badc592af443fc23e6a795072473"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_joint_pin_0.stl": {
+      "bytes": 41884,
+      "sha256": "d0f248ba6c3fe3453fecb7cec24b1edbe9756957f0997bcfd01d5e6bad273885"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_joint_pin_1.stl": {
+      "bytes": 41884,
+      "sha256": "e39ccdcea7049aed415c4617efda138048aeb23721e50fcb40efa2fc2f512d50"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_joint_pin_2.stl": {
+      "bytes": 41884,
+      "sha256": "95180b1bb3af3d2eb3185c7813a79d9fe3b93e9ec305fd326fdab218b54b24f5"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_root_fork_-13.stl": {
+      "bytes": 43684,
+      "sha256": "10fbef85a57f7aebb0dd4bd4d1d567bbee7bfdfbbbfd0eb528aa12f88389aa5b"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_root_fork_13.stl": {
+      "bytes": 43684,
+      "sha256": "4cae0a248edbc342bb457f7d97e4e232135118f2dd5ac267cad82bb170414ed3"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment1_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "e23894cd58449df7593f285e53b116032e69c2d5108ebcd80eb3d1481f18ef7e"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment1_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "90201c25b758020a778715a4ad115103697b67554271a9429665e8442b184458"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment1_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "92a2a7bab2316b1898fef34f13d54fafc9fbc57385880f5f3ce25fa934fa2108"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment1_thenar_shell.stl": {
+      "bytes": 130884,
+      "sha256": "606804250f01a2055d0b48eda289c604e3854d33e7a1fe393efe9de60cd2a58e"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment2_dark_faceplate.stl": {
+      "bytes": 1484,
+      "sha256": "c82205d8d3649711a4941a94905b473e0ae9371180dce34af52a06ef6e9d6d67"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment2_distal_left_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "97cceff8885e4e18776b1df818a1844dcbece8fc2ca7044d0424aa75a337ad47"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment2_distal_right_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "485d8e88b6dafc873133559d9f4104086d16393b26137e2c2b6a597d620c3a50"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment2_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "ce8cb677225ec7e62eaa1e7612ae2b90ce80be883cf427c7fdc1657b2818c30a"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment2_segment_shell.stl": {
+      "bytes": 139484,
+      "sha256": "3d2fa286c4ba3bb78bff629c503af0945ea7702fd4762d2c0aaf71c02338af2e"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment3_proximal_bushing.stl": {
+      "bytes": 42084,
+      "sha256": "c8c6b8bc9f921a364fa1acb328bfbeccf3276249387b7231feae27392e29ec74"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment3_rounded_tip_cap.stl": {
+      "bytes": 353884,
+      "sha256": "431991c3cac8e70131904bfc6a66c0ce6574ef91b1c90d94e9f5ac54a69c7bb5"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_segment3_tip_core.stl": {
+      "bytes": 45884,
+      "sha256": "4589a42c515df7d3d383f9e534c909590a8afba1d02aff5f7f4ea423aa40cd1e"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_spread_housing.stl": {
+      "bytes": 42084,
+      "sha256": "7f87d1463600aa3635bbb17e35a5532b0c39e626f043e7342f42c5a76d38b9c8"
+    },
+    "cad/form_candidate_v1/generated/meshes/thumb_spread_ring.stl": {
+      "bytes": 42084,
+      "sha256": "1598f9acc56262aaac91d2ef908961e7a4e3d7425128943cbf8a0e933c07c8ba"
+    },
+    "cad/form_candidate_v1/generated/robot_hand_new_proportions_hand.png": {
+      "bytes": 630882,
+      "sha256": "b0b516ebac8e6dfb4b4d54fd89a0d0e8b7fd39b19bcf030c5a4975e260dc8077"
+    },
+    "cad/form_candidate_v1/generated/robot_hand_new_proportions_whole.png": {
+      "bytes": 357591,
+      "sha256": "41470b8a5d9d7043ec00c3eeac07382c740a3efa5601fbe07734e076e3d65bf4"
+    },
+    "cad/form_candidate_v1/generated/scene.json": {
+      "bytes": 121279,
+      "sha256": "b61e17800760892edc0df4c6b5ca796482ccaeb823916649efd080b8e67b96de"
+    },
+    "cad/form_candidate_v1/generated/step_roundtrip_review.json": {
+      "bytes": 2043,
+      "sha256": "8421089e9ab1c936ae264965657edc2cc6b7d43fb1786c86a46eeaa2dbd92ca4"
+    },
+    "cad/form_candidate_v1/lightweight_digits.py": {
+      "bytes": 9578,
+      "sha256": "a21fbb715b15471af15a46aa81c0e4b9d5ea22dd9f7d149c0909c8e8a59a51f0"
+    },
+    "cad/form_candidate_v1/lightweight_thumb.py": {
+      "bytes": 9726,
+      "sha256": "15dde4e5038f4256ec2b7e8655daff73bda9e93be542770560632a7354ddb21a"
+    },
+    "cad/form_candidate_v1/render.py": {
+      "bytes": 4291,
+      "sha256": "d0ad618445be536c44e4475505b64d1c472cf5c6c570dcc737384878913e8dfe"
+    },
+    "cad/form_candidate_v1/verify.py": {
+      "bytes": 2793,
+      "sha256": "30dcc17cd01833e7a9fc96c1559a1f10bc811c92f149b3186c73c42096a7d8e8"
+    },
+    "cad/form_drive_v1/README.md": {
+      "bytes": 5514,
+      "sha256": "1dc988fa952855cef6ab6337d4cfd676ea56fc573af1a65e0a5ed36eba01fb4c"
+    },
+    "cad/form_drive_v1/actuator_packaging.py": {
+      "bytes": 15133,
+      "sha256": "23412633a9c9e4caabf909ca3b5419ee0a2a962af69a4d03fc3fb08fecfc490c"
+    },
+    "cad/form_drive_v1/assembly.step.zip": {
+      "bytes": 2471963,
+      "sha256": "dc45dc246b8b651f63bc14ccf4379a8b2dcd048a40e9970cd97849ba87c0312d"
+    },
+    "cad/form_drive_v1/build_contract.py": {
+      "bytes": 4420,
+      "sha256": "4d0133be0f9353a74dc8615a593a842ecbaede847722f7016095270e45dfb69d"
+    },
+    "cad/form_drive_v1/exterior.py": {
+      "bytes": 5326,
+      "sha256": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab"
+    },
+    "cad/form_drive_v1/generated/dynamics_contract.json": {
+      "bytes": 49479,
+      "sha256": "f6635831bd8aa258a799f845861d63e63037395a634e579125d951d3e5914ab5"
+    },
+    "cad/form_drive_v1/generated/exterior_mass_inertia.json": {
+      "bytes": 115696,
+      "sha256": "ad898c2f7f4e7a62703c599b6b474200ccc0df4388c0c86492610bcd21c09641"
+    },
+    "cad/form_drive_v1/generated/history/packaging_horizontal/geometry.json": {
+      "bytes": 5472,
+      "sha256": "fa1d14efb3022d852bdaf57e23226fd939c0b5435046ff37cb2ae72771948d00"
+    },
+    "cad/form_drive_v1/generated/history/packaging_horizontal/layout.json": {
+      "bytes": 19512,
+      "sha256": "3e048b224ee66db5f69a7f34a405b829ea6e737146ea01e9e862e0d9018d76f2"
+    },
+    "cad/form_drive_v1/generated/history/packaging_horizontal/little_shift_probe.json": {
+      "bytes": 136,
+      "sha256": "e62c3180ba3e62bdb0d7a5cddf4e60f2cc5e0ed2fbf583b9a0f7686bd5f31772"
+    },
+    "cad/form_drive_v1/generated/history/packaging_initial/actuator_packaging.py": {
+      "bytes": 14607,
+      "sha256": "37d962b9c10ceb1fcf9264a102b59133ed3732dff2a54742a7930a3908884c42"
+    },
+    "cad/form_drive_v1/generated/history/packaging_initial/geometry.json": {
+      "bytes": 5978,
+      "sha256": "2fdd3fa0af935ef38b51dac0b5e351855b586668d1a7aaa7f419693925e19f73"
+    },
+    "cad/form_drive_v1/generated/history/packaging_initial/layout.json": {
+      "bytes": 18725,
+      "sha256": "ee4ab90ce599b2cc07a49490e16442eab96e20944b7a04159209a724ffcadab7"
+    },
+    "cad/form_drive_v1/generated/packaging/assembly_export.json": {
+      "bytes": 552,
+      "sha256": "4d500fca33a352545cdf1c40c409f3d4bd92a9dc945f6f818bbd6fbdb9e0ce05"
+    },
+    "cad/form_drive_v1/generated/packaging/geometry.json": {
+      "bytes": 5315,
+      "sha256": "e672b721853d33196d79b02c950ba5dc21b8339115ddf893c97bef0a22c2223d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/Forearm_twenty_axis_module_rack.stl": {
+      "bytes": 251684,
+      "sha256": "42e0af0edf69eeb63374055cc20177ae5865f2175027a3b85bc001852c14397d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "42caf952e5f802fde03f45a7823087060c4642a1cc5f272a634c5bb69cf192c4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "d910ffcfc4f1c51ef06f855159a65bf129a16080588a97ec30bc1ba11229ba8f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e9cb8b260d9ddc9bd059e0a1f9a003427be90472311c6a186971cbea43170e95"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "33569613a01df011bd0fcf1a79e8fdd292d079d512f72ad2884a090b0ea9feab"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "29efe941824fa6b29c1b5390835b0aef5a81dd0b9cc5a5c122db7dfa34642de9"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "3dfb15d2220c10c314f543fd9aa4fdbdc711b7653338510a8b849d02d63e5bd2"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "bc2a2739b8f8c6d007848161e7f54d3789b4d4575df5c7dba9b9a72f89fb1f1f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "1b52c586704cf958fd56c657c46f7c69c4d4ddc42dc5c5d13845671b51d69307"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "fa9436c87aea0fe0a9f0b320cd5729fc0232634c11e0f55c2826635419d871c9"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "cfc267438243682a45b0f4b6b7830ad9f3fd38c9064eed6e350330b93440009e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "0fb9564706e60bd39b9db713b54f95c924fa1570da217ac64ec7db3a6af6b78a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_dip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "15b4b4af64766443eb4e7f67adaa10d3c72dda13e13dfcfd8e9728fd3ac836c9"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_adapter.stl": {
+      "bytes": 38284,
+      "sha256": "ef9490595e7050b46add2fc0518515f8184ee988a7dd0e816417826f151c3bd8"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "ed0a572aa8a36371946d544dc2f5baf11df1c8837e008939e9ee33aa896c19ab"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "2f80d835bdf40ddd4f074fbf90bc9f21f16233b1bf654d0d358efb4287276bab"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e5382380e67785df149ddbcc44f119b98fe361abdb6c5051f636dc41ed5e87fd"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "060d19223ff2282f737674d70ee6054299d0672d1d5ba4ae7ad30890f42e0a8f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "a791260c8785276096aa0c40939221dc26fb6c5d37291e566affd4a09a1e199b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "d7ce9d4f4990f043130c8c084a8be08145b3f5322a54381af57addf45e33ff86"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_mcp_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "fc887b9e83d14e743af9e055f6ec3d4fc794ca2965e2b5a71cb0766acf5982c9"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "8759dc309f7bc729b5902231df331568ca67104a0fb1eeb918781ee3f1df7d50"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "b79a6f7e1b9c6f1f63177c77b76125bcc7de5cd7fe51e6286340d18848e1688b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e3b717bcbc8e0b37f5716e7058dd7c02fa1db4067ed3e0414b8bc385acaa5862"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e0a48363059102c3f5aaf80873fa5c33248642310c89baad51e7278da2a3b30f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "b35f5af24323e785ee285ffb09383f6e1d20bfc6b048dd998bb01236ae559819"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "88a1161e83316f964316fb84b6655029b71daf31bd83c3d521fc6ed961aa1457"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "54274e150e9cfb8f9e1e907593d7ace31bf38e0651c08eea09de6101c04bff56"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "075fe56704b348a1ae24902a8dd8a6b4d7150215a8a334660e741005746ee3be"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "5451f3dcae8e9444e0556a8debf6904a621081e7e73531b097df2a4fc7cf2773"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "d06ebff1064bde6063a96fdbff9cf3815f630ff4fdc954a87c1b6f3ed906ad54"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "629b8942247a72db90e9287251bb700200e3c4620106d9215ba6fa1c6ceaf898"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_pip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "fa97b1335fd59609a0ca25f0f762019e19a2b1a291a433869090f7eb9e70f158"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "930219ccbd42e6fc26e108935620e9adce619879f742214564771a094e29ee12"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "fa5babfb58fa604ff8118effa2eda8d7eb2fff75912ce3545827e099f2e7cad1"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "d7175723ebb430eafc9f08c04770ac457ea243db5c7ffb110fc8b332c3da7cfa"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "77ce84299da03e3fc8ff2250e66897a0f8003ef9ee0a1a0a771ce988a2726f03"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "b5be62b74b5122f8b30c9113191f41311ba43c07fba18e8db9d17b5011cf7023"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "e0cca031e8435e4594219b87665161fc518f4a966b9441e7e7f4d0d14514ab42"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "817cdb82c4bc0b447d90f7414d9b13ca20d8a89ce86bed713c7f4f7e7df7002b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "e80bfaae7737fb1059b09b30464c656cb3ceed40a4145a8e44facc4506ca951c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "68ec410fd65c568ef3ce98fc5254c310d9a4626214eed8201f8867e8fe082d1f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "5e02cae82c7eda0548b0ce04356566c34859a4a832a2fb8a4e91f57b1569dca8"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "4133ab1251b1ac52d73a2f744db4e71a5a585201cc78a584b6ac1b131c542b57"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/index_spread_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "0c66f59a8bdc55b6ee27e3963d7ee331e2ea63b7b88f49c0aa550004132f35f4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "ed6a6a0b42c03eff39f07bee3bb4889f1c6b19698cf2ac1e1b10b9067dc80be6"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "213a9d5d5885cb0336a720541fae503fcb6e15cb943a57e9ce3165d0019ff861"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "d006768047473f920bb331c8e1747469d13abe8f8ced06a0813b393293ade918"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "a4e1d721a7e61777e58f06ca14c1c4753afea3caa8eeb3c97327e9879c54ddc5"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "031d10f0ab84802c5fcc5e4a1d00fb59db31ebe96c1ca0435c4ca0921b986c41"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "73e1c1a88fb1f8af2a31b00ad996e91a870ed54fada1487f201011dec3e72103"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "4138daaad04b83376f177f79b73c40d1786ee55c3742bbff497503e244503db4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "021bee415c5156cba16359cec2e96f21098bc1e639b950a09a8407dd9b22ee96"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "e38464a0ccaf5bbd109966a2505365076ceb4add917764c7827c17e230f05d25"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "63d67337782d2f3b7eecd594cd54b80d9c572f51caa756dbbb751e5d54c09ed0"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "93603544efbfcfdfd5b1aa8ea027eacb71e865911dd5091d82beebf17c3f844b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_dip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "3ae91c381647ff6280cd0d8981a4d32d5f2495b704c34de9e0a0adf04f2b1e57"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_adapter.stl": {
+      "bytes": 38284,
+      "sha256": "89e583fcd7bd64ee841fb7288d0bfd70e089c468c3d58d5beacfd27d3fb68c8a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "a74e8e636e24083150cd34011e41fb1a4dc37df78e986c95fd426a7f79c35565"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e7bdbf01a6ecc51ca07caa6d1ebed9f4cbd02d141c1996168ac282e9b50fc02c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "56c9f57ba32f66408a5a42d04a937f6ce7f351cebb2f4c819e6edb9b1979bdb4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "dfeee560d4c5d0f6cc36c981969a3276494e70573185407f6a18a3ea3316a531"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "0c67633943bb1ec15ebe553eac981c978ed6f0cd63dfa84103e0b833903d453a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "0bc38710a77cca353579b17e57d19513a83d4496d438a53f4c300b3e10117c3b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_mcp_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "6b8139364520ebed8f514aa3f5c7f4147f2f98c01f42e61c9d02c5bc1d32919d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "a59a04fcdbcb6c5534ac42ca1f6b04fcd0fe97caaa08237ab1f3666e3aa1c8e0"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "bc4cae5a8f73fda5bd205794367ebc2ceb73e84e5214d4a6db94f0ef1bc6f342"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "ba52ab2e54e93fc4377f2a8d99eac053ec62480cd5b67c9c071dbd384941b2d0"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e0c8ea26038754595e4de5fb6e78c2c4d662282f3314fc149d150f2d0fef2b8d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "02ca3d9601ca8a2423d8a2a1f8a3c6e440ce29e0921d863ae95ef16c0064b44b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "50cf77be9c49c1d7bbe0bc3e9074d9abe8f9639dfc27a511326ed1fc771a68d3"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "5a31445321d1c5d4bfa95dfff66f88e77dee9df657b5c75553ea43fbbbea8b6b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "5a71aa7f9a125c9e858efd975965e4a4bdd2b46ab46df3e51253fce164e4d1ac"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "2429ca13cd6a5589976c5b0f676bf375ed99be0b8106e6b3451d3bdd6be8b3cb"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "58028d39fc1f69e003810c243d3bdb46e5f3982b25209cff02e76f4cd6447001"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "fbc9a63507cccce7839650676458c35b8bfc99e6378fd64ca50f8aa576ecf4fb"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_pip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "e96025a51fb57ddd2bfaaee9a71d6d4982d2923eb7c4b27d6518665d357c14fd"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "9207f94a7ab112c9516a4a979b5a42e9293f3758c3986210ed9730ed71b57317"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "ad2ec603b9aa2a781e7a35a035a04e37eb697563de96245ba560f7e18b03323e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "c864ad7d11f3b75e4f6aabe8a204e22f5bf68929aeaa0206dbad3cda964214fc"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "80ed164eded06ec5db1b8ad56e8d505cd03e6e101d5e411e7de568920a96ae39"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "54ac53c6eaf6c5cfd1082fdb4e89d9bd9109266010e509be4a9dde52500710a6"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "dcaf53bc087499d2bcbf1e476d152298615ec3d2e8356f8b0584fe28583c7f17"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "e5bc9215477b93e8de0272078282632473dc14777d987bb2110ae54c6ce73c76"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "32e3bd4f31f41f884dfc23480a4934e0a3140719a6c260b01177a8a8d0f60bfd"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "c3cec42d338b7f37f645fb046249a621abad764c7c23b343eb8da4892cbff025"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "c69ad8a9fcf9dff052b6c42c09464d8b0f96da3d5f21ab69aafb08f2c6a93675"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "10600a1f9fea2b8810bb95e3eb03cbe2f889f679529fef966566525cc104b33c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/little_spread_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "979aa0548f0f1da3bc35f438358e05f105c0e82ae49e1a70f55dd071e9ec7f69"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "8c1fc93b7e2745bd7aba8c8714e8ed27e032ea54e822d4cfe72ba35201b5976f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "3d47085f6514d3b51eb3cd9ab1bed06ff2e52c133e7f88f0fe33d09cc8ae91d7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "7c8f51556ee6ad5f31e03b82bec18d7a831e20009415ffa938212f8e89b6763d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "f1cb5ef2deb6422899eb2684e132dd103a99b21953c11478797df206c550a99d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "6628860dfbeda3e3bd01f95d4b9c2a90a92bb84d1797213e5ddbe1010581ce59"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "185cc71306df1797ac58ee71f9b7db3a35046ee7708d6f5b126b7063ac3a55ef"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "eb0adef84512f29dc9c38f246f018fec1437efe1111adaf0375cb5903fa8e87e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "a1acffa1de13c60a052fc76783039d8ac07358496b994c8160c76483f9062e76"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "e6ac2473b00dea27d1b26970a2577f7bbee3844de9736fc34f42d43281aa36af"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "52879ce514524a4b5040a52c209bc2471bbd3d23ae0f041fdfae1a987e60d93e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "2124a7ee77a363e5eca79e3d5251a09a135c287a51945c0d2c22ce3c1b7ee5dc"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_dip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "2f615cbb2a76b0c667bb8cd6900604da479c059e7475764777b41bb3f75ee77b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_adapter.stl": {
+      "bytes": 35484,
+      "sha256": "4658e951bd061391c7039ea06eec09b16caf32747f47ccb9e71b9405972f467a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "46bd57656050642ba9434d779a59e7f9acb5a3ee52f203ba6c80dd617f1bff4f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "4db378fdd1dad32cc6c0afae2cb02c20eee629af46b314865267b2875eb96500"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "6b6235d9363937caa3784be27ac1d9a9a149e730f5c3f96af73810b2d372fc36"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "1d7a9ee475ef3dc6810c991b177924c284948bc2a5affe9eceb854519f70fc5b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "cd85b363ac364d0a30b6b88dbd2121f1452a5313ee929ed0406aac60e46ccee2"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "ddd7e3eaffdc2717a31743472cbebfa675fef22563bd114f936c29827e0d034b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_mcp_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "e238149efb2b04d6809d6c13960b9d9f34c5b3b1e6a1adc18eb9039ab76a0add"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "bdec7edf31b94efba865c4220a2a6ed50e50c48f324c9548bf4568648cffd2b8"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "b6aa6c5f52b8c1d49142faff0d9f69e59f5592ac4ea376b877df325f9d23854c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "c37219b908b60859746283fa1b501852133ff3dcb6be731c5ad21fdf9b21fc02"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "592ca87152be218b1c20f87e6b390c546585634f94118a194356808ccd18d655"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "0ccadcd646da08d566d9777bd6cf7c0990f2c3f0ad5ce06fc3a7105bdc94362c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "9a2e9e56a25f8d0a47151b1dbc5ba085b8dcf6948df23a196a1a6ee6dac688a7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "4dae2fd1c990cd5fdb36e8558fec2f97f4d2adfa67154940eb4535e2d543cf8a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "cf251e7eed8512ca9d16ef6ee1adabe28898c8e62cae0355370d5a2dd4bc3873"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "4d3d40c097f753663dbbbae0e8f3065e4b6af474ca3b9ded128b86c1442c46c1"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "ea8d7797e91df32849ca054949fe6c539e3e67e1e8648645f39ec968dee90541"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "3204867bbf0db02499f20f2e13a1d3a98bf1b98bf5b95c1b4d5ad92ac8e6479e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_pip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "d2bc6e67f04306b1c3fc2b9f7a16638a704bee1ed2bb1605b8d0443e37f8f507"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "ef1714b1a2195314c2a0dba07a1338f6f2680c0b21f505e2bde207a2208e19c7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "d4d5b72345ae432e9ab825e5c5b99cfb9247e92561a5603cbe11afb142f8b3d7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e4ab05c2f05fd56a53b2f99bb2331f5ae8c91ab05ce7920d0077daea99ded847"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "8f87a4d845e1fd88ab139c326381f52023565c80e03a2e3d06260b194f39721e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "8edd1261ce61815dca49ab7eb32aed940426b628b20db8d8098200acadd5cee3"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "e08ec951897cad4c22933cfe5be89f6cd24001e16dd76b64c758f5fb3d03a6fd"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "b35fadc7137dcae56e2e020ac015f4dc40cba77cf6881fdebf7ccb2c9e1fe184"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "0afc39f9d75b53031124d7c8bf000e4ba94f08021cb1855adbca105b4a7f773e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "04c9796f85a20940e5b9f657b9d843f2d1d3cee43523708d11ec47eb1162d5ee"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "1954dfd0ac4cd56721caf3a7afad1994a5c12976787ff070bd4c404268ae628e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "33e1db077a9fa8cdabd789ef4871cd3f99fad317c8478cdd9492c41413855d84"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/middle_spread_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "2e82bdad0451f98c507f38e4d349a7bd7db1b928f87a5f6583bdb8480d64826e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "fcebdc210f94b5ed9d614ca2d75964ad4da36ef42cb06aa3d50823a9b5a06503"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "d1de5e5dcea869ed298b09e274a6ecfa9d990e06f2dd5d9276277019c0c96b28"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "0b5265f160ee3212453ded61a291edd80724023a64300e6415407ec97fa932a1"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "974ebaacef4844676da593ba49078400db017fdd1c06c6ebf561df05dc87cf6c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "657750081eac2f00dff3ba791181c61d360dfb69cff9df20c5dbca5b4d21ed60"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "8447b2f951b9fabb6f94007abd7e6ad3ee6d26113581fab5c849f2c649cd5176"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "f24245a6d5c2d6c371d4a146f8c478a9398a496074b00cbaa0c1aa7779ac2f6a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "263c052e1f737294ec872a812acd39f9ddaa18be85f5b1844a7f964308a37ed4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "d7d0423052a4ea3804af6724bfb6cdad74181a32cb017423e4380262dedd3eca"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "4eaf3a77f771c1d8a8b780a698d26f7c861dfa28a82eee981061c4ad4fcf8916"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "733c499315c937f0a074d6772b0669778c5d7bba5ee6f19dcd527e77f76427ba"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_dip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "8d5c64ca2f65ef4e74184505b9333227f72f83ef99ee53d521f3bcdd4e9a9710"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_adapter.stl": {
+      "bytes": 35484,
+      "sha256": "9b289ff326f8f413e2a439422e98e1a775d169dcb15765c0a072e9b30022fdd4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "3f9c55306424f27a3180c0d57c5658041152bc44ea6c249d7bf3cc7bec851b98"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "320ceb90d822afd5ed9da0336527b3aab1f3ca33d5397bebb9bad76e52e628f7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "5ce3d7eed70ba29fc02b4c514b9a7dc64e5948adee7e1f48045893c00fe03623"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "0ec1b32590da36cdec884632e8fa7c47701a350357d93995c69df975a8f9ebac"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "cbed9d73560e07c0813352da84056efbf46be3539eefca9f59640b6f2c69772d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "f98ddfc9b27908fc06fae46d1041f1b795896d76ffd55976ff032440fb4cffe7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_mcp_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "111f7f339c2823a57f27226cc6568ad084791db1c9e7c9f3676d4d3c321afcfd"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "eb5db81831d64726a99f2f664204b245ee54ea054b8e8fe4d5816ff83596f13c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "3c56bbbfce5f385c294149d1239cfa6b55eb41ee5b2c5fce83391e240da9d593"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e14cd86217077f3c62195faa689d84988759b6f3aeb7bf7f893c715fae5ad926"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "d5e0aab1a0cadeb49d6af4103d273bda9d832c185da771bc735a1740d05d681b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "aca183185bc851946e4cf9ce78d09aff85aa3e2c8a13bd00eeb928596aea5f47"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "09456a5ed09a5f426b7dc3e9e33ecece4846c79b1aaaec457a7653fe26b40a17"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "584191c56c0e13d2dc88291908a9439fc676687b07b81b9948f82e1ebfdd68d4"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "ab2021ee21aa8e9245143a2d91668c9e1cf835a83e2966568272981e445c07da"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "5bca3c6080742fd7921358f2c3cc343b7f709590da11fae453ddd44cd43a1686"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "aa076dda861bc007ac6f82e50c7652a3afc0d399aa5867a7f1f452dac4a0e67c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "245f49c8e4decd321858a4fe6be63b739bfb55bd93df3269c13f404d333d4d03"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_pip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "a3e3342db0589fba9e0bba8e2349a9b6cde0f8194e2598899ad654af10dbe487"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "904fcf9501385c1017c86002de6ddbc9284818985a3384a2f5c8f55fa2c7565d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "99352bddcc19b2b37da3a0f26d23c6b732ef140282919063285100e6368c1cc1"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "980343390fa8e6145f138b3ebaa4216082f17d302c871220bf33808a5dd35d23"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "8af55c74eda4413b580db4b2be305a86a20700e027f74fa1601bb7af10680114"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "1cf523d1216d094c0dd8abba8d8e4606b94279d8cf99f044022190e8af1a62ef"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "8764c41105884560cd3b36017c8f37fbf725ff18b4f4d7975013180bc4b5159f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "74083037205a21b1d849cfbff4ef6169bd92d9a9bebb7bfe33a1272b8a8dacca"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "aa3c227e11963445a4ecdbef96f08205a7377ef3c5f986580ca96432c18bd48e"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "63c44dcc311c116ad10716386f0f9b0938972244d983e543fc28a20a0c7fa91f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "52214dd1ed93f21dfbc3bb722d9240f4d2998be920fef1385a520d0b1a77c6bc"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "0ef428dbdb24813ad65141fc3a3f33d2a31433021c6ed146951675e1f2f147cf"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/ring_spread_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "8105e02f644ce38858316f3c0119e48cd77b440e892ca32bd10e3105be4f243a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_adapter.stl": {
+      "bytes": 35484,
+      "sha256": "df30928ed300f2e29e06455709e81776af20627ba06f58856b9b165c5a7da21b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "e5af1cbb7628ad751c6feeb6efc0271d6a8835bee09e12850e66207ed39ba698"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "3872403cbdd06c616dcb6e1b3e2bbb0a25cdcd8ad251cb2f0c39bad82c6b0783"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "e43b514710d0b7d896f5f9568b02208c102d17109b519021ae831c0ec57c941b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "812d1f8ed7bbd5807cffe1c3605bfc5abc3b03cfb9a687ad6bb1c41efd6c8c23"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "79e4a6c24b266d58f5cbecaedc47d5371dc39f8d99d6860a7db457a39f369fd9"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "3a0b228917d963b429c1bfeeca8db6404c51befb8e6fef0e35f74986fa052c3b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_base_sweep_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "2930b495c0b07a28150ec09843839b07b5ddc231b37b4a64c81487fb2b2048f7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "298aaca1b86027bb695a54edb9fb9f0c1ac13b1c26a26486a45d0f775b1f817f"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "6fdcb738bab2cacabd8dcd7bb5b636f99e331763851c9900ac1a740862e221f6"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "31b020aee8d257cd453fc7fc00a713dec26c3ac34f08f97948958a21e6850bba"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "eff3491b34b7fc08ba2f2b2fedbc3f9210c33ee62dea412fa489908e0f3bc267"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "f9767335e06c3a0ec1df5c466e5367927a8bf361d78abd5d8e97937a01525aa7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "8fca76840c3ce6a820b9704204922629c14867683ea278b1dfad52c7c2f0fdea"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "cc33dbb2b38fc7e16a3fde6cdb1c98a53c84a49abc2e0ca7073c2f9857002821"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "ba0bac7ddca3e03f35158393e3872bcbf34166fb1ccc51fa5e5e3b0b2471cebf"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "08b6bae78355b6ae26cbd0df30683c7f9e3eb53c99718ad82c109857c9933e38"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "9a56df15e7575f6a4316985608a3a8be49fa936667e8ffba25775a0409a3963b"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "7138d58dbc7a2d2e88e17053d26e8c874964043bddb0a26efdcaa5e3f81ab02a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_ip_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "ac47a090ee8b280b2a202dff3fddf02197e5b79cd8b48fc6bf7b46f7fad82cf8"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_adapter.stl": {
+      "bytes": 53084,
+      "sha256": "a0b6d5873b35ab9e1cba848139c77ad392f607ecf69fa6e7de3cd9b7e5e3231a"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "56d20fe506f96c535b4357f2e892d5b9a0f72d47b5012d95a602a0f3aef2d50d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "75ff58d1f693c19b4bb818168966fd720aa6a5415465b7ed1d2dcd941742d7ca"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "c7d3a61caef859204bcd9207b7fe7f637286583eed3a72a074241bc515961189"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "cddb8c9ac49f9a9d64bde2c53601505f38259ef86a96e45d4bf7a2542a8d1627"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "1389bf558ef0d7c0986485cfd186db63b0cda30d96b35564885c78262301f6bd"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_rack_nut_1.stl": {
+      "bytes": 9684,
+      "sha256": "c07db6706a77acc9953a2058bf14bec16d394fba57b8c01d1d0d55e3674d0653"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_rack_nut_2.stl": {
+      "bytes": 9684,
+      "sha256": "23b2dfb5336e7ccb4e0031515dfac4881cb7ccfa4d818116aa261ed3ae81ab61"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_rack_screw_1.stl": {
+      "bytes": 16684,
+      "sha256": "83e3d74961a91616dd39e5778815fae923a31b272b1a5dc677a63d73bae46f6c"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_rack_screw_2.stl": {
+      "bytes": 16684,
+      "sha256": "ad20254b6578846cc091e174f9d6f7c408a9cb440a5bf34243382136d3dda94d"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "20154ebc50327e2a0cba62bc1e620fbd45a4adc63ec913c7fa3ed7df9a7a7cc7"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_mcp_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "d8b2dffa94f042391f052f2b27490447a711565ffb523a70926d016a1a965061"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_adapter.stl": {
+      "bytes": 35484,
+      "sha256": "ab47d1b5a5e92a93df0f1b0c1d200bacf0b1aaaf30b3c0e36926b48a040c8564"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_base_nuts.stl": {
+      "bytes": 38484,
+      "sha256": "97332f5bfd463f161d1d407a78ab32326df9b8e40752aea5775d681ec1e07d66"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_base_screws.stl": {
+      "bytes": 66484,
+      "sha256": "39a7da37035e1e84a7c2f7b0be7f13139c1699bd0d047533561984d45ca3c194"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_body_screws.stl": {
+      "bytes": 66484,
+      "sha256": "0333e1ce14d85ca37d01e556fbd5f9bc3513ab5289aa4be8eef519dbac4f33dc"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_cradle.stl": {
+      "bytes": 528884,
+      "sha256": "8eaac601f05daf7229147178f606f05570a7bfe94b9f9fc472fa817d8f6d4555"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_motor.stl": {
+      "bytes": 1000684,
+      "sha256": "97d08478ef05549eb6c106f3af668b7f744dbbf2d4e1e0bcd66c8ee4987d68af"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_rotor.stl": {
+      "bytes": 429884,
+      "sha256": "af8439c8b125e6ce2c87658325feeb4ad23a56a754c2bb1e911d1a33f6b553de"
+    },
+    "cad/form_drive_v1/generated/packaging/meshes/thumb_opposition_actuator_spool.stl": {
+      "bytes": 33684,
+      "sha256": "d4a5295372e1e2445d72219268c7edd92478797235e464a0eb9a6f3c51e7efd7"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/Forearm_twenty_axis_module_rack.step": {
+      "bytes": 282703,
+      "sha256": "ea6ad3f0b6e57f372a9172d254a5c8a7bce1843505209cd26cf644bd88a97dcd"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_adapter.step": {
+      "bytes": 51914,
+      "sha256": "20587ff548dfeb1d1c979f1c81cfdf0b5978fbd15082d737c5009aad100950b9"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_nut_1.step": {
+      "bytes": 26977,
+      "sha256": "d85b3fa018c43d994f172b9738e9a9bf58e24d73a803022fd5b4411f5da7d44d"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_nut_2.step": {
+      "bytes": 26969,
+      "sha256": "95862a954a0af306371cd1e5bc0835dbea0db68e029eb57ec582b087354f2235"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_screw_1.step": {
+      "bytes": 9536,
+      "sha256": "bb98628e3676ec2c2addcb2f52c04d7fd81e61fd57d97541a30f93d6e0d91c75"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_rack_screw_2.step": {
+      "bytes": 9521,
+      "sha256": "0cc298038f49c9f5d0e452b76fcea6b1df14ef38c6e3079729e5045b4121e96c"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_dip_actuator_spool.step": {
+      "bytes": 17066,
+      "sha256": "bd2873ec5bef3856b31cb3a643975df2efe5162f2f733bb10acef244b8b764c2"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_mcp_actuator_adapter.step": {
+      "bytes": 87690,
+      "sha256": "5230d76cd82108e7e69976da3a9bb1ba8e28988626786279f5a4bc036d58de5e"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_mcp_actuator_spool.step": {
+      "bytes": 17003,
+      "sha256": "36ddf8b1c06394bba23cf9b9a936bf2208b8ffdc0ba43494f833d38df3687a21"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_adapter.step": {
+      "bytes": 51974,
+      "sha256": "55b8ebe944381aecee83d2edeb0eed27f4157af82ef3d3ac8e830c57b8050039"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_nut_1.step": {
+      "bytes": 26998,
+      "sha256": "d81dac159716ac3d453095813e31ddf9a460d7ada2fd24d59e7c1b7ed3b6157d"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_nut_2.step": {
+      "bytes": 26990,
+      "sha256": "6425e9e06e07bc969e05bba6667e5537322200cba2a294ed88cfb71f7eb74a0a"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_screw_1.step": {
+      "bytes": 9542,
+      "sha256": "57524a037a1bf831b05e23ce04daa8ce03ed20bf96b649289e65d822f5d832c0"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_rack_screw_2.step": {
+      "bytes": 9527,
+      "sha256": "88a678a86662192b97e27d1be6f47331a1576be898b58affcbb4a2f41bc360c0"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_pip_actuator_spool.step": {
+      "bytes": 17110,
+      "sha256": "a28efc52f61a7a4bcfcb221ade54ad89d08843eddfb33631ef82257d2bab294f"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_adapter.step": {
+      "bytes": 51924,
+      "sha256": "5a56cac32bf9711e4cf4c1b6ba5d51b31700829f8205eda3c74fbe31c7211eec"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_nut_1.step": {
+      "bytes": 26990,
+      "sha256": "879eb3e680ee4d34154e6e076d22777bb124067cc695ff083e4119cada56bb42"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_nut_2.step": {
+      "bytes": 26970,
+      "sha256": "f27d9e852931c51756f7dfd1f9e39f3c719472288e1223602a53963a766c2636"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_screw_1.step": {
+      "bytes": 9527,
+      "sha256": "e0399d1bafac8851e16124046a246579bddc69f3cc7334018e9edb22a85df4bb"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_rack_screw_2.step": {
+      "bytes": 9512,
+      "sha256": "17ee1276f1d8ade1e1fb107fe7aaf7ed70b818bfe58beafcfd4fb9d33817efa7"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/index_spread_actuator_spool.step": {
+      "bytes": 17110,
+      "sha256": "f3f9bfe10404602ae9b39a6ee58462ce59978f270ec98d0fc0a6ab1822fc3bca"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_adapter.step": {
+      "bytes": 51949,
+      "sha256": "c31d769c184c7a97298e33bb365a46d53b3c1d2f800125fa77c3830badb3e9e1"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_nut_1.step": {
+      "bytes": 26977,
+      "sha256": "00064999bcfcb5e06efd402df10eb427e2d69f0d1431cd3a0779ce6ee602a5d9"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_nut_2.step": {
+      "bytes": 26977,
+      "sha256": "bd1425f00012e249245c2d1d7d10fd3e605793e2b8851969454ce5f6101ab384"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_screw_1.step": {
+      "bytes": 9536,
+      "sha256": "3b68c5f8e5665988ca023eae468eb725d7b780a47f7b574dbf5262e23c92c622"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_rack_screw_2.step": {
+      "bytes": 9536,
+      "sha256": "c00be1cce6015a4b349da0443fea38a5e824019787fc652da3b1bff62a4fd55d"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_dip_actuator_spool.step": {
+      "bytes": 17094,
+      "sha256": "2055af65617b7d1b310eb9b84ecc1c2b82fa72b153756405c93ec5af77b17560"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_mcp_actuator_adapter.step": {
+      "bytes": 87903,
+      "sha256": "4e2ff607efd8efe7107f7971eefc2de71f4490e704d82741fe73e6ae08db53ab"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_mcp_actuator_spool.step": {
+      "bytes": 17053,
+      "sha256": "85079e1f393561401816d2fe8976374ad0f471a331d7d8144f7399ff62de56e3"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_adapter.step": {
+      "bytes": 52009,
+      "sha256": "fa75d2ce0be12f4c3794bf539d4a35065d32ec7f95935e82f83b09083b658e6e"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_nut_1.step": {
+      "bytes": 26998,
+      "sha256": "325f092956353cd8bb356da7fcecaea3440453aa80f0bc8b12382cc6975a5e86"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_nut_2.step": {
+      "bytes": 26998,
+      "sha256": "1f635a9695640d8432bd4f49a34f397d32c8d99adf4099826b0e5df2d51a4e07"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_screw_1.step": {
+      "bytes": 9542,
+      "sha256": "37aa72d9bba3fe238871ab6c6358db5c3caebd951e8a779d26f030d2dda39888"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_rack_screw_2.step": {
+      "bytes": 9542,
+      "sha256": "46b4771aadc0aeb5176176d647481050036c6f57f859c47aaae303836917e7f0"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_pip_actuator_spool.step": {
+      "bytes": 17138,
+      "sha256": "7957b4f8ed2589352eb91fe6d6f682a99a89dc914ee189ebb36b6e473863c7c7"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_adapter.step": {
+      "bytes": 51875,
+      "sha256": "62aed096b33dc74057baf94b5737ee536fc24773a8da53f4140c81ccc61bf73e"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_nut_1.step": {
+      "bytes": 26969,
+      "sha256": "7f7283cf92ba3f346580589445bf8ae8139d734003f20187bdd5793a6824fe1c"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_nut_2.step": {
+      "bytes": 26969,
+      "sha256": "0affb62231f5e6ae80bf6d0114125e896702a7286ddb8ddde26386af9d5c7a86"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_screw_1.step": {
+      "bytes": 9521,
+      "sha256": "42511a5b83a891b4ae32a571ab92c771844bb10f0520c444a64ac62fb66cbbec"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_rack_screw_2.step": {
+      "bytes": 9521,
+      "sha256": "a2c202cf606658ddbc4929fd121b81d6bfbf810490b6dd0eb5334225014e2ab4"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/little_spread_actuator_spool.step": {
+      "bytes": 17066,
+      "sha256": "f2d847fc87655e615a31fa8878d95fe1f6b86eceecdc9acc51554a365509709b"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_adapter.step": {
+      "bytes": 51949,
+      "sha256": "0b19d33b4197e2f27b5cb721643f8357d46b5acd30955fdd89d9488e94e5236c"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_nut_1.step": {
+      "bytes": 26977,
+      "sha256": "e006188c86a8387e8543cb71ea53f0e055a914689ceb129fcb75e54be28076a8"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_nut_2.step": {
+      "bytes": 26977,
+      "sha256": "4e4f2d4764ca57b57eebc84f22873136ad88aa9ca1470c561ccda2cb0efe7020"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_screw_1.step": {
+      "bytes": 9536,
+      "sha256": "f34ed02983f5861a96482ce8cf6320c1c7a8e718bbe44fb6a0c86f9eff0b20dc"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_rack_screw_2.step": {
+      "bytes": 9536,
+      "sha256": "6d5dfaede04cfd4d87085b8116d7cd7a0316dea1888419317b97c8579d83780b"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_dip_actuator_spool.step": {
+      "bytes": 17094,
+      "sha256": "79bb228c7e58077b099d0dc77f1b7b10a9bf9f9e24603383b39379d1949b20d3"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_mcp_actuator_adapter.step": {
+      "bytes": 37548,
+      "sha256": "cfc557f565ee89f925dd8e70ec58311321f5033f3a95438c9cb20bc3cc7ec5b2"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_mcp_actuator_spool.step": {
+      "bytes": 17018,
+      "sha256": "1d368a486ebe1ea75e8561c674f4374943b0df839cbd6907907841980fc6f7db"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_adapter.step": {
+      "bytes": 52009,
+      "sha256": "9fd4041051028ce8e12db186dfcb882d0229cb6e6c376917e0b930d06f8f3d8a"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_nut_1.step": {
+      "bytes": 26998,
+      "sha256": "4815faf5151af74f23b496354907d7aea0785db50d13c9b6763c58c642da1d99"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_nut_2.step": {
+      "bytes": 26998,
+      "sha256": "5c9fbc4657d4cb4298770e7c6276e2f85bde83f047aa202cb4487db5f9a8bbfe"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_screw_1.step": {
+      "bytes": 9542,
+      "sha256": "9844488027b4753daa0587fdde08a1239f27b6804ae6ad550f37053f38c39ed3"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_rack_screw_2.step": {
+      "bytes": 9542,
+      "sha256": "c84d3cb3bf0de1323b86a4235fa2f4dbf3fe5265bfa6d9cbdf178caa2a7d756f"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_pip_actuator_spool.step": {
+      "bytes": 17138,
+      "sha256": "9a490e1c152c2dde7deb1e777e34c817acd542f26d2e685b0d25b0c1710283af"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_adapter.step": {
+      "bytes": 51864,
+      "sha256": "862ea1a75b20e26ce85302f4559ae0b9ab8d858ac2e646dabcec900f05421040"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_nut_1.step": {
+      "bytes": 26969,
+      "sha256": "096b63b9699aca77b25e2c0c02ac6bc89f1f21c5e8efd3ab160137a25e7568fb"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_nut_2.step": {
+      "bytes": 26949,
+      "sha256": "61deffe9f4fbdd335fccfdbc4ad320dcf8fffc25677d1c811ce6c4c8aa740bf6"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_screw_1.step": {
+      "bytes": 9521,
+      "sha256": "47c53b8dfab9f9472a47724e73b2a315d32c5b604fdcc8e5db243dee4bbea189"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_rack_screw_2.step": {
+      "bytes": 9506,
+      "sha256": "c5b750078053ed47749a8750e444187d98d0fcf7eabd0cdd840f5878d889ae03"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/middle_spread_actuator_spool.step": {
+      "bytes": 17066,
+      "sha256": "9c16b6212c7b1ccd3a63e8ca880e59df1e03b389acac38ec4b6f4d03c429edf1"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_adapter.step": {
+      "bytes": 51949,
+      "sha256": "e3ca2da7a0693165e0e2d834387bd93c2e10542512fffa261f6d1e1d145930ba"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_nut_1.step": {
+      "bytes": 26977,
+      "sha256": "0e0f2f148c11ab6e5f9d02e6f444f27ec7851e9ee5b9f5228001c81ea42bd7d7"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_nut_2.step": {
+      "bytes": 26977,
+      "sha256": "923b03415a1dd4885288ebd7885c3ae06b387c3b29b12af10f2948b847b54967"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_screw_1.step": {
+      "bytes": 9536,
+      "sha256": "affb0131459c8bf45a9e702a2fbd653f53c4680406f34abe161bc49affc8c9e1"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_rack_screw_2.step": {
+      "bytes": 9536,
+      "sha256": "150348e5e96c9b92dc1a085477c92cf2f22f1e1e98e02084d5938e39ef102e0e"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_dip_actuator_spool.step": {
+      "bytes": 17094,
+      "sha256": "37b582f1de68c00d3fa4b3523991bac3e5209ba29c1dc0acaa7e333932d2347e"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_mcp_actuator_adapter.step": {
+      "bytes": 37508,
+      "sha256": "a779fe702c2d71020f0588a2f73c3cac7a68a33429aa7c5820b0d4bd3d989df9"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_mcp_actuator_spool.step": {
+      "bytes": 17044,
+      "sha256": "abe0ba3e68337485ae6be3bf93b0201a037506498d3676d4f32d2a460b6d2a71"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_adapter.step": {
+      "bytes": 52009,
+      "sha256": "0c7244c538901ddb6090d4ac62547af26db4ba6e402e689fdac9ed6b60f142fc"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_nut_1.step": {
+      "bytes": 26998,
+      "sha256": "fddf3bcc25fc640541aba2de84416cb08d446db7fdc7f52347b6e99086e34a7c"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_nut_2.step": {
+      "bytes": 26998,
+      "sha256": "5c62724ecce906ed0bd9a25e55e67b1a139c8cb26f46cdb70efa5d3b432af2ec"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_screw_1.step": {
+      "bytes": 9542,
+      "sha256": "f94534ccd1c3559f78b4168b5fe00a9c701269cdfc7d64ea9b58bdb5e75af92d"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_rack_screw_2.step": {
+      "bytes": 9542,
+      "sha256": "c49dff296cb31fc36014c24598464d5e2241e457569e0bf79926db2a6e32cf68"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_pip_actuator_spool.step": {
+      "bytes": 17138,
+      "sha256": "4b0091f1b8c839fbaff67d8e281c0534e5a44234b41f98ba9719cc901d75803d"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_adapter.step": {
+      "bytes": 51935,
+      "sha256": "0bc6a1475ed5c6ab67270ec2ce79aafc67221f5128b2e5a1d4b815663b117056"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_nut_1.step": {
+      "bytes": 26990,
+      "sha256": "b10c01313ea856b9131d637d1f8f2ef2c8d57b5be939c272fd0b7292a3b95d37"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_nut_2.step": {
+      "bytes": 26990,
+      "sha256": "695ac909a92e62218792fddf3ef9b78207835d5f5b569a1d19cca80be436e576"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_screw_1.step": {
+      "bytes": 9527,
+      "sha256": "f56cd1bd8fa541c551d42060ea6cce7e2e06a413191dd24061939f7e37fc8b67"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_rack_screw_2.step": {
+      "bytes": 9527,
+      "sha256": "4f4e89cdffea21ef31e43f2a324f5ab5d08ce1af7f07442b6c5b5be9c9753af0"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/ring_spread_actuator_spool.step": {
+      "bytes": 17110,
+      "sha256": "15c6b561cbc6a6be771a44f636b608db647920045d3497349385873cc257f5fa"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_base_sweep_actuator_adapter.step": {
+      "bytes": 37525,
+      "sha256": "9f55bcec2f144de084ec9c93286ee82e6841e85ebddf95ced7dfa4574e532da5"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_base_sweep_actuator_spool.step": {
+      "bytes": 17036,
+      "sha256": "e929e244ebe4366a3b50c4696ee99ef36dd9de495b1fb428393186bfa8c1db19"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_adapter.step": {
+      "bytes": 51949,
+      "sha256": "a81e1cce31e72ad48ecbe69cfb13119b0afdaad82c9c3c7cb622b253f14cc8a3"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_nut_1.step": {
+      "bytes": 26977,
+      "sha256": "d0b1b462997b017145dc5de08dcb7d8cebc137072079aea4a63d4d03ff5097b2"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_nut_2.step": {
+      "bytes": 26977,
+      "sha256": "7f4257cb8c91fcf8f474c58f127015983eba33f7f110e40c0affad79c2ab0567"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_screw_1.step": {
+      "bytes": 9536,
+      "sha256": "50b82b26a0d2974e6cb1c9db059e0ebaecf303435c360162ba6629476f273fef"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_rack_screw_2.step": {
+      "bytes": 9536,
+      "sha256": "b650ee8f34510553c0144c3135bf3a51c1b9835787cd268f3b0e942d4ae56a8a"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_ip_actuator_spool.step": {
+      "bytes": 17094,
+      "sha256": "86ecba9cf9767e661996dad02977f1cb0e86e0172376d1c6442238609968c9ca"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_adapter.step": {
+      "bytes": 52009,
+      "sha256": "841a728ea02653ad9e7c1122e9798ca0a20ad96eccdfce586f5397411db1bab4"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_nut_1.step": {
+      "bytes": 26998,
+      "sha256": "f841d3df1a08dc131dbf0fe6d044be124f6cc0b94090dcf62deecb8e3f3321cb"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_nut_2.step": {
+      "bytes": 26998,
+      "sha256": "163ca6d144b70af6d4d6427c782fe7667a6cf0c332c13da8b0d8bfc53d517557"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_screw_1.step": {
+      "bytes": 9542,
+      "sha256": "238cc62b25c1821c7727aa78bd8ee4bf70257584364fd2fa6dd6396d071c08a8"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_rack_screw_2.step": {
+      "bytes": 9542,
+      "sha256": "da4d9273cce41b5dff831f7a25a8a6263c325ef8d70463ba55caa08e007b188b"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_mcp_actuator_spool.step": {
+      "bytes": 17138,
+      "sha256": "d47813872e3e8958a43e2a95e16fec586b8e658be50f7e41d6536765f5cd56aa"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_opposition_actuator_adapter.step": {
+      "bytes": 37499,
+      "sha256": "9253aee0465b4c15de3926bdf25ac233809b4fd9ab1c2ae189ae1227d8778f0a"
+    },
+    "cad/form_drive_v1/generated/packaging/parts/thumb_opposition_actuator_spool.step": {
+      "bytes": 16989,
+      "sha256": "ae991e2b40eada049304642f6e6c34ae5373393f02068ee522263eda583c3bee"
+    },
+    "cad/form_drive_v1/generated/packaging/placements_mass_inertia.json": {
+      "bytes": 326730,
+      "sha256": "f52825cea6b1ca938056f6400587c03a60876ee1fc7c0a3985ba75181f9931d2"
+    },
+    "cad/form_drive_v1/generated/packaging/scene.json": {
+      "bytes": 190057,
+      "sha256": "23476354fc736f640e0c1b738f8248299caf45b56438b1a0e20e671a8c5e72ee"
+    },
+    "cad/form_drive_v1/generated/render_review.json": {
+      "bytes": 53032,
+      "sha256": "c522e45bf772af6c6fea21ee204b5f7babe9de6b4efb0443d232e0b5d2e31e1a"
+    },
+    "cad/form_drive_v1/generated/robot_hand_drive001_cutaway.png": {
+      "bytes": 469345,
+      "sha256": "375815a23bbc85a7a4f9410c6a2e563e452a794f3986a231e888e3d57bf0d8c6"
+    },
+    "cad/form_drive_v1/generated/robot_hand_drive001_whole.png": {
+      "bytes": 446901,
+      "sha256": "4fb2770f52ad2a2719e6a59672be3cbc909c3d76079ee9f012fbf98b2b8c1bc3"
+    },
+    "cad/form_drive_v1/generated/tendon_route_study.json": {
+      "bytes": 241101,
+      "sha256": "63fc519a4a13381232e43d455a49df7c68ad08e57123239aaf9e835aa33c86c0"
+    },
+    "cad/form_drive_v1/layout.json": {
+      "bytes": 19956,
+      "sha256": "4304dac20b4c389f8a6fdee9c2bce3a9b82b81d39fb45527d4f85479b1b86e78"
+    },
+    "cad/form_drive_v1/render.py": {
+      "bytes": 5394,
+      "sha256": "e21f88b2196100649e65492eec1f8e641dde8f37a169886418ea5b1d0a946b98"
+    },
+    "cad/form_drive_v1/tendon_route_study.py": {
+      "bytes": 24865,
+      "sha256": "7fbbe019464fb9497ad4cd2741011b4e625336ad32915986a3e2b78a234475f4"
+    },
+    "cad/modular_roots_v8/cad_manifest.json": {
+      "bytes": 18425,
+      "sha256": "9c61c68c92a23aaedebbb5cbfcaae8e5bdcb891d7083649dca24356c71167866"
+    },
+    "cad/modular_roots_v8/collision_meshes.npz": {
+      "bytes": 3050011,
+      "sha256": "e6df0d2ab2f884a87c39ce0adcef62669fe681cec978b23ab7aa7dfccd8720fd"
+    },
+    "cad/modular_roots_v8/design.json": {
+      "bytes": 7588,
+      "sha256": "1e9b2f44597a81c68886d0db9b29961b14c690f8a59c7f37bf902557d4af033e"
+    },
+    "cad/modular_roots_v8/kinematics_numpy.py": {
+      "bytes": 4658,
+      "sha256": "fdbe1f7e3b546b9fd43e04eed441883a89f66b221d0789311fe5c0b55b168a76"
+    },
+    "cad/modular_roots_v8/mesh_collision.py": {
+      "bytes": 4098,
+      "sha256": "fd6c9d03f5c24d4250548cda5dca8cc857d32d24bfda8dfc36e0138dc5d2785e"
+    },
+    "cad/modular_roots_v8/parts/AK_elbow_flex.step": {
+      "bytes": 3793,
+      "sha256": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01"
+    },
+    "cad/modular_roots_v8/parts/AK_forearm_roll.step": {
+      "bytes": 3730,
+      "sha256": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36"
+    },
+    "cad/modular_roots_v8/parts/AK_wrist_deviation.step": {
+      "bytes": 3521,
+      "sha256": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256"
+    },
+    "cad/modular_roots_v8/parts/AK_wrist_flex.step": {
+      "bytes": 3775,
+      "sha256": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243"
+    },
+    "cad/modular_roots_v8/parts/Compact_root.step": {
+      "bytes": 122185,
+      "sha256": "fc52c4a0a3c3484508114d1f1b2071ec53fd4cf0edfc70debc9236f1e1165758"
+    },
+    "cad/modular_roots_v8/parts/Elbow_fixed_cradle.step": {
+      "bytes": 12313,
+      "sha256": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6"
+    },
+    "cad/modular_roots_v8/parts/Elbow_roll_carrier.step": {
+      "bytes": 19209,
+      "sha256": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156"
+    },
+    "cad/modular_roots_v8/parts/Flex_link_48.step": {
+      "bytes": 105818,
+      "sha256": "9760a610b868906f8e2a53f272390ab0e29c74a193c10baf21c8cfb2e1829568"
+    },
+    "cad/modular_roots_v8/parts/Flex_link_50.step": {
+      "bytes": 105818,
+      "sha256": "2e6172fbb8fa47cb678d505e8d4ffb019ae9329c80883ffe8faa2e5265dca140"
+    },
+    "cad/modular_roots_v8/parts/Flex_link_55.step": {
+      "bytes": 105818,
+      "sha256": "906978e842fb2e2c7faa39544d923fc580e63e2da393994e97b4f5a24428773d"
+    },
+    "cad/modular_roots_v8/parts/Flex_link_62.step": {
+      "bytes": 105818,
+      "sha256": "684874af1b86962539df60cf33f4c0bf4a51a2f18950701d3a57fe4b28793531"
+    },
+    "cad/modular_roots_v8/parts/Flex_link_65.step": {
+      "bytes": 105818,
+      "sha256": "23b5936203ea702ca0813437e5f0d8182925961e911e9733e337bf8a0d1d0ce9"
+    },
+    "cad/modular_roots_v8/parts/Flex_link_70.step": {
+      "bytes": 105818,
+      "sha256": "46bfaf90a9bbb640c25556be0f9ee2c5720b4a28f71400c14d3563c70ba83b9b"
+    },
+    "cad/modular_roots_v8/parts/Forearm_box_beam.step": {
+      "bytes": 20921,
+      "sha256": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365"
+    },
+    "cad/modular_roots_v8/parts/H101_vendor.step": {
+      "bytes": 1132192,
+      "sha256": "148c51ba09bab3ce46f0db8cf8bfeab2e1edd65f691d908eb8520e7117b1af67"
+    },
+    "cad/modular_roots_v8/parts/M077_rotor.step": {
+      "bytes": 166449,
+      "sha256": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5"
+    },
+    "cad/modular_roots_v8/parts/M077_stator.step": {
+      "bytes": 869765,
+      "sha256": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5"
+    },
+    "cad/modular_roots_v8/parts/M2_base_nuts.step": {
+      "bytes": 44320,
+      "sha256": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f"
+    },
+    "cad/modular_roots_v8/parts/M2_base_screws.step": {
+      "bytes": 17466,
+      "sha256": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856"
+    },
+    "cad/modular_roots_v8/parts/M2_body_TAP8.step": {
+      "bytes": 17492,
+      "sha256": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a"
+    },
+    "cad/modular_roots_v8/parts/M2_hinge_TAP4.step": {
+      "bytes": 33899,
+      "sha256": "81574ad7817f887b4d5b589da1a178acdc9bb24832f3024cca0bbe41817e8726"
+    },
+    "cad/modular_roots_v8/parts/M2_output_nuts.step": {
+      "bytes": 46308,
+      "sha256": "743276ff606a9f92edca270bf2f65bf7975260a9f2a1dc8dd8240001949c853f"
+    },
+    "cad/modular_roots_v8/parts/M2_output_screws.step": {
+      "bytes": 18154,
+      "sha256": "075237c118d956b4a8c197204629c98152ed896f39dd461c4228c96ee732b2da"
+    },
+    "cad/modular_roots_v8/parts/M2_root_output_nuts.step": {
+      "bytes": 48040,
+      "sha256": "62d7f47eb7614675835d3c3767ee891a89f940b2ed5b5cf85d9d88766b80efc7"
+    },
+    "cad/modular_roots_v8/parts/M3_cover_nuts.step": {
+      "bytes": 52409,
+      "sha256": "bddcb14b37f46e6380044ed7134849d35572ef1de5a02aad6deb82af082d6a93"
+    },
+    "cad/modular_roots_v8/parts/M3_cover_screws.step": {
+      "bytes": 19750,
+      "sha256": "44f16ccfdf3f2da1fbf33f2f85639600bad249e65e4770fe5c58c0848659b7de"
+    },
+    "cad/modular_roots_v8/parts/M3_root_mount_nuts.step": {
+      "bytes": 21696,
+      "sha256": "81788484fb6ea1f6469e31d8273d12b50dc55f1243df0ec30041f37996b5d032"
+    },
+    "cad/modular_roots_v8/parts/M3_root_mount_screws.step": {
+      "bytes": 8782,
+      "sha256": "3a8564baa2d8aa32f77204b3bac4128947ecc1989f786f774956258303ff56ba"
+    },
+    "cad/modular_roots_v8/parts/M3_saddle_mount_nuts.step": {
+      "bytes": 41654,
+      "sha256": "01c7ae1e9fc35ca5a5a8cda51ea259dbab8ec129fe2a0d3e9ced2e0cdc1f094e"
+    },
+    "cad/modular_roots_v8/parts/M3_saddle_mount_screws.step": {
+      "bytes": 16070,
+      "sha256": "4405108299722709d4ab9464ec8080741547f715e7cf7da6894a0c6ca65f97b0"
+    },
+    "cad/modular_roots_v8/parts/M3_thumb_mount_nuts.step": {
+      "bytes": 23498,
+      "sha256": "ba9619f59f9c53e6f0d84966abda4e5130e76536b302939864f7f14258aba7cf"
+    },
+    "cad/modular_roots_v8/parts/M3_thumb_mount_screws.step": {
+      "bytes": 9484,
+      "sha256": "1f56712246780475a6104efebae9b98b4671fb0166ccac36064f532ecbbe97ce"
+    },
+    "cad/modular_roots_v8/parts/Palm_back_chassis.step": {
+      "bytes": 688423,
+      "sha256": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429"
+    },
+    "cad/modular_roots_v8/parts/Palm_front_cover.step": {
+      "bytes": 51923,
+      "sha256": "0116f22f492541a36ec6038b65ef6176ba0744875587a5ad5d6cdacfda2fa417"
+    },
+    "cad/modular_roots_v8/parts/Palm_wrist_saddle.step": {
+      "bytes": 44008,
+      "sha256": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c"
+    },
+    "cad/modular_roots_v8/parts/Roll_output_flange.step": {
+      "bytes": 3678,
+      "sha256": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d"
+    },
+    "cad/modular_roots_v8/parts/Root_cartridge.step": {
+      "bytes": 101619,
+      "sha256": "73b9e4a31f83ec3b2b705242de9e3c926e2ebf81306d9948751d37f0843d2f8c"
+    },
+    "cad/modular_roots_v8/parts/S101_relief.step": {
+      "bytes": 927234,
+      "sha256": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec"
+    },
+    "cad/modular_roots_v8/parts/Thumb_internal_cradle.step": {
+      "bytes": 120733,
+      "sha256": "18e2bf3670dee94ce5864f415eea5cba8e2ba84146e490cfee1c782b26f6fc9c"
+    },
+    "cad/modular_roots_v8/parts/Thumb_metacarpal.step": {
+      "bytes": 117476,
+      "sha256": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb"
+    },
+    "cad/modular_roots_v8/parts/Tip_28.step": {
+      "bytes": 55762,
+      "sha256": "4c17fc40b7c0ad40362a0e52605126b81aa9bc734cbdc60c8b723aa3ef16965b"
+    },
+    "cad/modular_roots_v8/parts/Tip_32.step": {
+      "bytes": 105872,
+      "sha256": "54473e906898321eb7362890031dc912e9030e4321b3240746a0f78dc94d1f54"
+    },
+    "cad/modular_roots_v8/parts/Tip_34.step": {
+      "bytes": 105872,
+      "sha256": "f4aec04f8cd6e8926102745e2872a703b0048c996b42d649d8a9e08da76afd68"
+    },
+    "cad/modular_roots_v8/parts/Wrist_box_carrier.step": {
+      "bytes": 27611,
+      "sha256": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f"
+    },
+    "cad/modular_roots_v8/reviews/mesh_transitions.json": {
+      "bytes": 7311,
+      "sha256": "1271e34b0cadacffaee47304e31d2400c3af873704c46e741913eabfe05dd490"
+    },
+    "cad/modular_roots_v8/scan_mesh_motion.py": {
+      "bytes": 3656,
+      "sha256": "67a8c7f517901c644f557f8267b912d1acb46134d69ea0867379244b97ce5beb"
+    },
+    "cad/modular_roots_v8/scene.json": {
+      "bytes": 1050519,
+      "sha256": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e"
+    },
+    "cad/modular_roots_v9/arm_packaging_review.json": {
+      "bytes": 1646,
+      "sha256": "4fa4db43e4479b296b5282e3c6ed310f6b37c08ed0a09c5891ec32de29ee3d56"
+    },
+    "cad/modular_roots_v9/assembly_reference_parts.json": {
+      "bytes": 829,
+      "sha256": "71ba46b95e267afcad0fb93f82d34433b54557d618de90ff8b571c56edd86e3f"
+    },
+    "cad/modular_roots_v9/build_candidate.py": {
+      "bytes": 31712,
+      "sha256": "f9d8998b2b44331edc79885c9e582adee0cfae54ad3d6b53e50c10b6c631eac4"
+    },
+    "cad/modular_roots_v9/cad_manifest.json": {
+      "bytes": 19191,
+      "sha256": "35df66dfcd299a2cda94c1355b65ac5f05117e7827e5c86b3c602079da0b72ad"
+    },
+    "cad/modular_roots_v9/cad_viewer.py": {
+      "bytes": 6262,
+      "sha256": "54bda5053523e215fa8cf9882f323156e1216a1f8f709a8be727ba10936ddb3e"
+    },
+    "cad/modular_roots_v9/collision_mesh_manifest.json": {
+      "bytes": 8417,
+      "sha256": "1f3da9c3115207c7a04dcd04819e4a3ff2695bae6f4bf1613e11c152dd8e7665"
+    },
+    "cad/modular_roots_v9/collision_meshes.npz": {
+      "bytes": 3050087,
+      "sha256": "e68c92ea217631dcf14c97926509a1cc6c1474e47de8eed43dcfd304bb02486a"
+    },
+    "cad/modular_roots_v9/design.json": {
+      "bytes": 8477,
+      "sha256": "5fd76e966a29733b9897a050108ac4c2835359b8a4bdeb0f7eb2ed100252f296"
+    },
+    "cad/modular_roots_v9/electrical_layout_requirements.json": {
+      "bytes": 3198,
+      "sha256": "89ecdc27d5b5eab81641a0ff481d44a060efe5e77c672ec98330c6100efe64cd"
+    },
+    "cad/modular_roots_v9/geometry_review.json": {
+      "bytes": 7527,
+      "sha256": "0acdd3769eb5f61ce7b5cf9334f5e511e0f83f0da11f491c160afd27b22cf275"
+    },
+    "cad/modular_roots_v9/hand_forearm_v9.FCStd": {
+      "bytes": 11017323,
+      "sha256": "a3a2a0c2f143fd2663d76d68a11826b398b964cd0dd97156a985c75fe5cd295c"
+    },
+    "cad/modular_roots_v9/hand_forearm_v9.step": {
+      "bytes": 77074343,
+      "sha256": "ee270c6966c7fec6a366359b5b1ca4d389d77f3bb396611af7c0e057b9770c93"
+    },
+    "cad/modular_roots_v9/hardware_bench_plan.json": {
+      "bytes": 14647,
+      "sha256": "2d36edb43fe0b07aac0c3ebc461d72dfd13544ee73478c007c7b3ba4e7a97b17"
+    },
+    "cad/modular_roots_v9/joint_convention.json": {
+      "bytes": 4080,
+      "sha256": "7687f7e1256bfbccac7416b8c37e0022ba1fdbc15f8b5407d031e0f4b75c598d"
+    },
+    "cad/modular_roots_v9/kinematics_numpy.py": {
+      "bytes": 4690,
+      "sha256": "c079db1873b9d63f8a21c0868cdca5481dfbe73cf04d1608817c1d7603465bde"
+    },
+    "cad/modular_roots_v9/make_bench_plan.py": {
+      "bytes": 5528,
+      "sha256": "dd481b5398b5471d31d85e80d155de5f55b7d87d738068f1305bef341b01aea2"
+    },
+    "cad/modular_roots_v9/make_collision_meshes.py": {
+      "bytes": 816,
+      "sha256": "548b8badbba32bb9e091fb71736b67b2e38c5f387d28b1a69c978e7b1fdd844e"
+    },
+    "cad/modular_roots_v9/make_display_section.py": {
+      "bytes": 495,
+      "sha256": "0d425dc5c373d42f8a22385d82689e35911cf5961bc8339751e7ccfd9a4b214a"
+    },
+    "cad/modular_roots_v9/mass_screen.json": {
+      "bytes": 52704,
+      "sha256": "f6efcd4ad690ded6a018f1a03f7e9bd4cfab4842dc9450230bd07f395b2aa3fa"
+    },
+    "cad/modular_roots_v9/mesh_collision.py": {
+      "bytes": 4098,
+      "sha256": "fd6c9d03f5c24d4250548cda5dca8cc857d32d24bfda8dfc36e0138dc5d2785e"
+    },
+    "cad/modular_roots_v9/meshes/AK_elbow_flex.stl": {
+      "bytes": 25084,
+      "sha256": "f4d0de2be857a058282069834fdfdf22a5f9af25dae866595ad5e1692859fb70"
+    },
+    "cad/modular_roots_v9/meshes/AK_forearm_roll.stl": {
+      "bytes": 25084,
+      "sha256": "e173a2bf5c2e0072a6cf42566c000d52dd12b192c0906b476467d0e886b3be50"
+    },
+    "cad/modular_roots_v9/meshes/AK_wrist_deviation.stl": {
+      "bytes": 25084,
+      "sha256": "476a59c49e6da0c8c104538260d496f63b117b80136ce3e8a759e5eda7d35b28"
+    },
+    "cad/modular_roots_v9/meshes/AK_wrist_flex.stl": {
+      "bytes": 25084,
+      "sha256": "3816312eeb4d620de62c9e0d3ccec8d2126f5fb8603698d610e8a25bea8bd703"
+    },
+    "cad/modular_roots_v9/meshes/Compact_root.stl": {
+      "bytes": 458084,
+      "sha256": "52d5d70950705a5ef5c58f209c57cfa4c0cc495c4f557535706c51d1d898c508"
+    },
+    "cad/modular_roots_v9/meshes/Display_palm_cutaway.stl": {
+      "bytes": 59084,
+      "sha256": "3eca861f5ad79afe863c6fa25b9830c7f9d6bdeed8ee402a2874f9813975bab8"
+    },
+    "cad/modular_roots_v9/meshes/Elbow_fixed_cradle.stl": {
+      "bytes": 1484,
+      "sha256": "7cd3338ccb3557262673a448c34511ffa7bc69ae83db9a0375266ef64ddac01d"
+    },
+    "cad/modular_roots_v9/meshes/Elbow_roll_carrier.stl": {
+      "bytes": 2684,
+      "sha256": "3a5f9e56da8beea4a942a2c0c70a22b797447e25a7b92fb358fc1654bc649097"
+    },
+    "cad/modular_roots_v9/meshes/Flex_link_48.stl": {
+      "bytes": 380084,
+      "sha256": "b50eb8334eb7322e407e23f90703cd27edb4cb09d964bb3b32ecaa38e5e53bfe"
+    },
+    "cad/modular_roots_v9/meshes/Flex_link_50.stl": {
+      "bytes": 380084,
+      "sha256": "6b4b85fc769a727d6d0c4d51940b082c78de94fe0740704f01efcbac9e9d1d24"
+    },
+    "cad/modular_roots_v9/meshes/Flex_link_55.stl": {
+      "bytes": 380084,
+      "sha256": "492c4469019e1a7193985dd3d742d8f31a81795a5528afab03627c0b7d52338d"
+    },
+    "cad/modular_roots_v9/meshes/Flex_link_62.stl": {
+      "bytes": 380084,
+      "sha256": "1fee5255e073abe1e4ae3f80840a7fcd4de57f96212630b873ca7ff0df5b20db"
+    },
+    "cad/modular_roots_v9/meshes/Flex_link_65.stl": {
+      "bytes": 380084,
+      "sha256": "451071fdda9a9c3e33def84d7bea413133a9e6dc048d266d19cab0534ad97af0"
+    },
+    "cad/modular_roots_v9/meshes/Flex_link_70.stl": {
+      "bytes": 380084,
+      "sha256": "6bd7b34eb0f42876f0e8b84c63c7b3d1fdeb7cc7b66ba450ffca5d9c9ca444e8"
+    },
+    "cad/modular_roots_v9/meshes/Forearm_box_beam.stl": {
+      "bytes": 24684,
+      "sha256": "fc2f294f0a23d66d36dd5defdf80981a88812ae9e60db765a8a3af722be7bf4d"
+    },
+    "cad/modular_roots_v9/meshes/H101_vendor.stl": {
+      "bytes": 2299684,
+      "sha256": "20b7c94f17e77811256ba606f7393d879a5ae6ba753696aaccce4cadec6c3739"
+    },
+    "cad/modular_roots_v9/meshes/M077_rotor.stl": {
+      "bytes": 2326384,
+      "sha256": "e802758a39f51dd2eecbf6821368339fc13ad71c0aedc68fb17c4fe3c7689d39"
+    },
+    "cad/modular_roots_v9/meshes/M077_stator.stl": {
+      "bytes": 4767684,
+      "sha256": "5fbe855b2a803d80efd9983e9c3e4160bc551b506202d83beb6728157d084716"
+    },
+    "cad/modular_roots_v9/meshes/M2_base_nuts.stl": {
+      "bytes": 105684,
+      "sha256": "4746dbad949a0ac93f5ea975e5a5d25082b60739a32d18b2b5f9a7efaf7927a7"
+    },
+    "cad/modular_roots_v9/meshes/M2_base_screws.stl": {
+      "bytes": 200884,
+      "sha256": "b63da49f59a666e1fd56d9e896989819e57510ab90cec8921518a735942cbbb7"
+    },
+    "cad/modular_roots_v9/meshes/M2_body_TAP8.stl": {
+      "bytes": 200884,
+      "sha256": "b14137771bbf352bac3f27bb3a8e330514a4c5e140ab3886386bb4236aec22cf"
+    },
+    "cad/modular_roots_v9/meshes/M2_hinge_TAP4.stl": {
+      "bytes": 401684,
+      "sha256": "01fefc26040efc1f9cf8ea2e76a293d6d6eeb57aad73b12e019c277cc505c131"
+    },
+    "cad/modular_roots_v9/meshes/M2_output_nuts.stl": {
+      "bytes": 105684,
+      "sha256": "b44e7f23da9711fd4623f0ef2cd23cff78868b0b7bd50c4ac2dbdcd6f8a2220b"
+    },
+    "cad/modular_roots_v9/meshes/M2_output_screws.stl": {
+      "bytes": 200884,
+      "sha256": "73a0d388f4f1a89c819dceeafe409ed105517ce668bde26317872e6b6b589f71"
+    },
+    "cad/modular_roots_v9/meshes/M2_root_output_nuts.stl": {
+      "bytes": 105684,
+      "sha256": "d1c6e64badd749bcf7ea3a6982b154b0524f4e9476fa13049ee74ea1efd1e61f"
+    },
+    "cad/modular_roots_v9/meshes/M3_cover_nuts.stl": {
+      "bytes": 132084,
+      "sha256": "9951f65c52ac73c396b84a4e14ea516f0a8fbbea3a9bb732b41f6ad28380e11a"
+    },
+    "cad/modular_roots_v9/meshes/M3_cover_screws.stl": {
+      "bytes": 251084,
+      "sha256": "cf9822251947915ee63d4faf8b07e62ef7f91271cc74d2a77fa474434455575a"
+    },
+    "cad/modular_roots_v9/meshes/M3_root_mount_nuts.stl": {
+      "bytes": 52884,
+      "sha256": "920edfaf6451aff592824214912b110337f59e2171b4b411957a6c8cb6e3b844"
+    },
+    "cad/modular_roots_v9/meshes/M3_root_mount_screws.stl": {
+      "bytes": 100484,
+      "sha256": "2f8b10fde665bb582d744355762a58294e19d04d94ac549916078d591a29491c"
+    },
+    "cad/modular_roots_v9/meshes/M3_saddle_mount_nuts.stl": {
+      "bytes": 105684,
+      "sha256": "d0f2f1401fd4da6c8e24d43b84ed6f74fef3b68433ed7426971b5ebbbb077b76"
+    },
+    "cad/modular_roots_v9/meshes/M3_saddle_mount_screws.stl": {
+      "bytes": 200884,
+      "sha256": "6ae6afbe77890c3474ea0f59e83e7cacca0ee2201f3ef0ebfeac3c9e9d1300af"
+    },
+    "cad/modular_roots_v9/meshes/M3_thumb_mount_nuts.stl": {
+      "bytes": 52884,
+      "sha256": "2825a850da20fd4f7719e0106a7b3b40b11200ef379240f6be23d476235ee315"
+    },
+    "cad/modular_roots_v9/meshes/M3_thumb_mount_screws.stl": {
+      "bytes": 100484,
+      "sha256": "f30fd99e28b75a7e4f06b0d7c10d7fbc1afec14faee0f5d2579a3686419a2e87"
+    },
+    "cad/modular_roots_v9/meshes/Palm_back_chassis.stl": {
+      "bytes": 1699784,
+      "sha256": "fd9ddef02fd42faeaf27d99286dd0eea8fb588b515eaf10a773efbf4055b007b"
+    },
+    "cad/modular_roots_v9/meshes/Palm_front_cover.stl": {
+      "bytes": 424284,
+      "sha256": "d8aabd0c5c87ed8e4575db2d7b6fe4dff4dc6dd12f5d58a388a2595051e36a92"
+    },
+    "cad/modular_roots_v9/meshes/Palm_wrist_saddle.stl": {
+      "bytes": 156884,
+      "sha256": "420ea2c3c674cdf7ab04ff879718ce867e75b4d718495d7bbc22277a5650ddf7"
+    },
+    "cad/modular_roots_v9/meshes/Roll_output_flange.stl": {
+      "bytes": 25084,
+      "sha256": "8f0b26b51796ab796c5af2779997a06d8a17f89cff6e5e330d2cfdcdb327f0c3"
+    },
+    "cad/modular_roots_v9/meshes/Root_cartridge.stl": {
+      "bytes": 289384,
+      "sha256": "d29a0f8a5d66dcccdb11fad2ed7ad7e56b3e0776618a3774eb5b9a97192fe774"
+    },
+    "cad/modular_roots_v9/meshes/S101_relief.stl": {
+      "bytes": 1472184,
+      "sha256": "f59ee5c9c27a9c0897cb6c458e427f0195ebd5d95c0b5272bcfe7987e101e5dc"
+    },
+    "cad/modular_roots_v9/meshes/Thumb_internal_cradle.stl": {
+      "bytes": 313584,
+      "sha256": "b8f977d1f484a4e30b4f5d06764e9a5e7d34ba850e25f2b6b2aeceb5cd80b5cd"
+    },
+    "cad/modular_roots_v9/meshes/Thumb_metacarpal.stl": {
+      "bytes": 381484,
+      "sha256": "cafecc2513b2c7ebd4b1f2f33dd7866caf5abc1e6187e1ff8b6bf166bf677243"
+    },
+    "cad/modular_roots_v9/meshes/Tip_28.stl": {
+      "bytes": 235884,
+      "sha256": "675bd4990e97ad09ccd67f71aa8e7b424f26d8dbdfbe8b6b1adcf427832206ba"
+    },
+    "cad/modular_roots_v9/meshes/Tip_32.stl": {
+      "bytes": 243484,
+      "sha256": "7ce815df66e269fc432705eff01eed083c804ec4238926e47b7231918d96d653"
+    },
+    "cad/modular_roots_v9/meshes/Tip_34.stl": {
+      "bytes": 243484,
+      "sha256": "866bb37ee7bfd10cb646669ca6969bdd18dc7642c380de0da39603833e53037a"
+    },
+    "cad/modular_roots_v9/meshes/Wrist_box_carrier.stl": {
+      "bytes": 24084,
+      "sha256": "37cdc51a9ed6d6a76c07eff1c4a44b21d8e3f627dfc74369d595496cd6c22b41"
+    },
+    "cad/modular_roots_v9/parts/AK_elbow_flex.step": {
+      "bytes": 3793,
+      "sha256": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01"
+    },
+    "cad/modular_roots_v9/parts/AK_forearm_roll.step": {
+      "bytes": 3730,
+      "sha256": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36"
+    },
+    "cad/modular_roots_v9/parts/AK_wrist_deviation.step": {
+      "bytes": 3521,
+      "sha256": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256"
+    },
+    "cad/modular_roots_v9/parts/AK_wrist_flex.step": {
+      "bytes": 3775,
+      "sha256": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243"
+    },
+    "cad/modular_roots_v9/parts/Compact_root.step": {
+      "bytes": 122185,
+      "sha256": "dc6230b6e8542a9d300a8329b7d5bbd545d51b482adbd682d3c0d67b45fb31da"
+    },
+    "cad/modular_roots_v9/parts/Compact_root.stl": {
+      "bytes": 2381618,
+      "sha256": "3c72240c57e42f97fab5870ca07cb8febefcdf20b205c227619e85fb63405f3d"
+    },
+    "cad/modular_roots_v9/parts/Elbow_fixed_cradle.step": {
+      "bytes": 12313,
+      "sha256": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6"
+    },
+    "cad/modular_roots_v9/parts/Elbow_roll_carrier.step": {
+      "bytes": 19209,
+      "sha256": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_48.step": {
+      "bytes": 105818,
+      "sha256": "9760a610b868906f8e2a53f272390ab0e29c74a193c10baf21c8cfb2e1829568"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_48.stl": {
+      "bytes": 1976018,
+      "sha256": "e5289bbfd9b6ecd2c752161ce7940aabaacbbfa0e375893637e0016fe1e09df4"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_50.step": {
+      "bytes": 105818,
+      "sha256": "2e6172fbb8fa47cb678d505e8d4ffb019ae9329c80883ffe8faa2e5265dca140"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_50.stl": {
+      "bytes": 1976018,
+      "sha256": "5029c73b4927196189b203b97273f0fa6cb08365f4550543d27f8883e4b34e84"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_55.step": {
+      "bytes": 105818,
+      "sha256": "906978e842fb2e2c7faa39544d923fc580e63e2da393994e97b4f5a24428773d"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_55.stl": {
+      "bytes": 1976018,
+      "sha256": "9c9ea5ead1adb6f3d8829d3e24d8489c2bc431adbb7b75cc530dc6c5d879da89"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_62.step": {
+      "bytes": 105818,
+      "sha256": "684874af1b86962539df60cf33f4c0bf4a51a2f18950701d3a57fe4b28793531"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_62.stl": {
+      "bytes": 1976018,
+      "sha256": "c5e996579add5af84861c8e04b4dc0df84c4fc82fcff617ae5242bf96cf3c3a2"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_65.step": {
+      "bytes": 105818,
+      "sha256": "23b5936203ea702ca0813437e5f0d8182925961e911e9733e337bf8a0d1d0ce9"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_65.stl": {
+      "bytes": 1976018,
+      "sha256": "3baede5da3ab529319bc0f5154e06a32c8348361286b20ed814e8d056e6e2a30"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_70.step": {
+      "bytes": 105818,
+      "sha256": "46bfaf90a9bbb640c25556be0f9ee2c5720b4a28f71400c14d3563c70ba83b9b"
+    },
+    "cad/modular_roots_v9/parts/Flex_link_70.stl": {
+      "bytes": 1976018,
+      "sha256": "d6b0593f3bbcadc4a0e9f69ea0bdcbb724bc40aa4f8adfd95dc69ff1df81150e"
+    },
+    "cad/modular_roots_v9/parts/Forearm_box_beam.step": {
+      "bytes": 20921,
+      "sha256": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365"
+    },
+    "cad/modular_roots_v9/parts/H101_vendor.step": {
+      "bytes": 1132192,
+      "sha256": "148c51ba09bab3ce46f0db8cf8bfeab2e1edd65f691d908eb8520e7117b1af67"
+    },
+    "cad/modular_roots_v9/parts/M077_rotor.step": {
+      "bytes": 166449,
+      "sha256": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5"
+    },
+    "cad/modular_roots_v9/parts/M077_stator.step": {
+      "bytes": 869765,
+      "sha256": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5"
+    },
+    "cad/modular_roots_v9/parts/M2_base_nuts.step": {
+      "bytes": 44320,
+      "sha256": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f"
+    },
+    "cad/modular_roots_v9/parts/M2_base_screws.step": {
+      "bytes": 17466,
+      "sha256": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856"
+    },
+    "cad/modular_roots_v9/parts/M2_body_TAP8.step": {
+      "bytes": 17492,
+      "sha256": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a"
+    },
+    "cad/modular_roots_v9/parts/M2_hinge_TAP4.step": {
+      "bytes": 33899,
+      "sha256": "81574ad7817f887b4d5b589da1a178acdc9bb24832f3024cca0bbe41817e8726"
+    },
+    "cad/modular_roots_v9/parts/M2_output_nuts.step": {
+      "bytes": 46308,
+      "sha256": "743276ff606a9f92edca270bf2f65bf7975260a9f2a1dc8dd8240001949c853f"
+    },
+    "cad/modular_roots_v9/parts/M2_output_screws.step": {
+      "bytes": 18154,
+      "sha256": "075237c118d956b4a8c197204629c98152ed896f39dd461c4228c96ee732b2da"
+    },
+    "cad/modular_roots_v9/parts/M2_root_output_nuts.step": {
+      "bytes": 48040,
+      "sha256": "62d7f47eb7614675835d3c3767ee891a89f940b2ed5b5cf85d9d88766b80efc7"
+    },
+    "cad/modular_roots_v9/parts/M3_cover_nuts.step": {
+      "bytes": 52409,
+      "sha256": "bddcb14b37f46e6380044ed7134849d35572ef1de5a02aad6deb82af082d6a93"
+    },
+    "cad/modular_roots_v9/parts/M3_cover_screws.step": {
+      "bytes": 19750,
+      "sha256": "44f16ccfdf3f2da1fbf33f2f85639600bad249e65e4770fe5c58c0848659b7de"
+    },
+    "cad/modular_roots_v9/parts/M3_root_mount_nuts.step": {
+      "bytes": 21696,
+      "sha256": "81788484fb6ea1f6469e31d8273d12b50dc55f1243df0ec30041f37996b5d032"
+    },
+    "cad/modular_roots_v9/parts/M3_root_mount_screws.step": {
+      "bytes": 8782,
+      "sha256": "3a8564baa2d8aa32f77204b3bac4128947ecc1989f786f774956258303ff56ba"
+    },
+    "cad/modular_roots_v9/parts/M3_saddle_mount_nuts.step": {
+      "bytes": 41654,
+      "sha256": "01c7ae1e9fc35ca5a5a8cda51ea259dbab8ec129fe2a0d3e9ced2e0cdc1f094e"
+    },
+    "cad/modular_roots_v9/parts/M3_saddle_mount_screws.step": {
+      "bytes": 16070,
+      "sha256": "4405108299722709d4ab9464ec8080741547f715e7cf7da6894a0c6ca65f97b0"
+    },
+    "cad/modular_roots_v9/parts/M3_thumb_mount_nuts.step": {
+      "bytes": 23498,
+      "sha256": "ba9619f59f9c53e6f0d84966abda4e5130e76536b302939864f7f14258aba7cf"
+    },
+    "cad/modular_roots_v9/parts/M3_thumb_mount_screws.step": {
+      "bytes": 9484,
+      "sha256": "1f56712246780475a6104efebae9b98b4671fb0166ccac36064f532ecbbe97ce"
+    },
+    "cad/modular_roots_v9/parts/Palm_back_chassis.step": {
+      "bytes": 688423,
+      "sha256": "c58c09857511450c0e0a93a3dc864484e35cf0fedb929512d6a0cd0f40a53429"
+    },
+    "cad/modular_roots_v9/parts/Palm_back_chassis.stl": {
+      "bytes": 8838458,
+      "sha256": "d5507f67f51792a4b9a53e830add09b844f1defd359ffe8dd4f48889c68c7180"
+    },
+    "cad/modular_roots_v9/parts/Palm_front_cover.step": {
+      "bytes": 51923,
+      "sha256": "0116f22f492541a36ec6038b65ef6176ba0744875587a5ad5d6cdacfda2fa417"
+    },
+    "cad/modular_roots_v9/parts/Palm_front_cover.stl": {
+      "bytes": 2205858,
+      "sha256": "df507f2fe475add4ae86b8ff01474902cfe0e14cdaeff6d1c6344ca0f4c2a401"
+    },
+    "cad/modular_roots_v9/parts/Palm_wrist_saddle.step": {
+      "bytes": 44008,
+      "sha256": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c"
+    },
+    "cad/modular_roots_v9/parts/Roll_output_flange.step": {
+      "bytes": 3678,
+      "sha256": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d"
+    },
+    "cad/modular_roots_v9/parts/Root_cartridge.step": {
+      "bytes": 101629,
+      "sha256": "08b7dadcdd9ecb12130d7e4bafa022d66d70a19b8da3db01c98aa905468c4367"
+    },
+    "cad/modular_roots_v9/parts/Root_cartridge.stl": {
+      "bytes": 1504378,
+      "sha256": "421612e5daef6e638448f90df73215cb46719a1a6321fe7947138a29a4a9f43c"
+    },
+    "cad/modular_roots_v9/parts/S101_relief.step": {
+      "bytes": 927234,
+      "sha256": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec"
+    },
+    "cad/modular_roots_v9/parts/Thumb_internal_cradle.step": {
+      "bytes": 120733,
+      "sha256": "b7934a5e403c22a663e192bc09c29a9352e0d8dcd95a9befcfd9c2f002472247"
+    },
+    "cad/modular_roots_v9/parts/Thumb_internal_cradle.stl": {
+      "bytes": 1630218,
+      "sha256": "c9bcd2be10695624988810bf7a69b6998535dd59bd91dc124cf8ce21fdd77ab0"
+    },
+    "cad/modular_roots_v9/parts/Thumb_metacarpal.step": {
+      "bytes": 117476,
+      "sha256": "a2a8ca2689c0ded2ea093b8cb39ad6bc4e8a1412c831bf3d3a72a407020684eb"
+    },
+    "cad/modular_roots_v9/parts/Thumb_metacarpal.stl": {
+      "bytes": 1983298,
+      "sha256": "efa89fd09c971606151db2f7c3b25fcdf264189f60f8ebe3dd99852ca150968b"
+    },
+    "cad/modular_roots_v9/parts/Tip_28.step": {
+      "bytes": 55762,
+      "sha256": "4c17fc40b7c0ad40362a0e52605126b81aa9bc734cbdc60c8b723aa3ef16965b"
+    },
+    "cad/modular_roots_v9/parts/Tip_28.stl": {
+      "bytes": 1226178,
+      "sha256": "69b05268fc61d2b62dc7d992fd2db1ffecd8a51e3968506224a20f56c18af0d9"
+    },
+    "cad/modular_roots_v9/parts/Tip_32.step": {
+      "bytes": 105872,
+      "sha256": "54473e906898321eb7362890031dc912e9030e4321b3240746a0f78dc94d1f54"
+    },
+    "cad/modular_roots_v9/parts/Tip_32.stl": {
+      "bytes": 1265698,
+      "sha256": "8a41541efad82fe7e136847cf93e695ad56b3c4699ee9e9725c69b620cfee0f4"
+    },
+    "cad/modular_roots_v9/parts/Tip_34.step": {
+      "bytes": 105872,
+      "sha256": "f4aec04f8cd6e8926102745e2872a703b0048c996b42d649d8a9e08da76afd68"
+    },
+    "cad/modular_roots_v9/parts/Tip_34.stl": {
+      "bytes": 1265698,
+      "sha256": "cdbf1da81270fbbbcb2a1892151bcfc69a8256148cea85d81e3391673e975f89"
+    },
+    "cad/modular_roots_v9/parts/Wrist_box_carrier.step": {
+      "bytes": 27611,
+      "sha256": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f"
+    },
+    "cad/modular_roots_v9/probe_seat_mesh.py": {
+      "bytes": 539,
+      "sha256": "6554443083f7e72580ea74bb0d713002120479030a216e64866dbbe9f21d0e3c"
+    },
+    "cad/modular_roots_v9/render_assembly_progress.py": {
+      "bytes": 4645,
+      "sha256": "1f6f4791868dc4ce97a3cc386eab973950409a69fa2757511fdefe7fe82a6033"
+    },
+    "cad/modular_roots_v9/render_candidate.py": {
+      "bytes": 5083,
+      "sha256": "86bb12f9d2c5f6de9fe751fddca49bdace54eb117bf786b4affc70538e4a9002"
+    },
+    "cad/modular_roots_v9/render_cartridge.py": {
+      "bytes": 1715,
+      "sha256": "e930e5284fc09d2d6874d03567c4a67b61ba2535642a98142bfa1c6cfbf686fc"
+    },
+    "cad/modular_roots_v9/render_cartridge_mounted.py": {
+      "bytes": 2242,
+      "sha256": "0d7b05590b3b0db10a1438c25f07339dd39ec6d1b7986848fb2f78741bf6d300"
+    },
+    "cad/modular_roots_v9/render_critical_gap.py": {
+      "bytes": 2051,
+      "sha256": "252a4a89303f65c900ffe06570b004402210ffecc11b88b40cb5d777d23ed776"
+    },
+    "cad/modular_roots_v9/review_all_cartridge_nuts.py": {
+      "bytes": 1721,
+      "sha256": "baa7c59d09fa109418681a568b2c911ab65ab24f5b32dbd281fab603c1b91700"
+    },
+    "cad/modular_roots_v9/review_arm_and_roundtrip.py": {
+      "bytes": 3691,
+      "sha256": "0bb0d377359ca65669e8ee633dce6e8865fceff6af8ada2a95e52894354909da"
+    },
+    "cad/modular_roots_v9/review_cartridge_nuts.py": {
+      "bytes": 1292,
+      "sha256": "cd44cbcd1ba5fe53a8282be4119d4374ff1f96d92a5cd35ddb4f28baf81e3c5b"
+    },
+    "cad/modular_roots_v9/review_critical_gap.py": {
+      "bytes": 1103,
+      "sha256": "81feb78cd428e689d5ad451d8c183598bacba27beda70f7a54e81472f5c211c4"
+    },
+    "cad/modular_roots_v9/review_geometry.py": {
+      "bytes": 2736,
+      "sha256": "6e6993424b0938d1b20f950bfd25c13efa52b38d4f83cdac09193002c2302632"
+    },
+    "cad/modular_roots_v9/review_hand_fasteners.py": {
+      "bytes": 3077,
+      "sha256": "fb33cd8a717fe2eb2b2d65b2e2bf7e8a8827d2418c4eff897725b75c388afba1"
+    },
+    "cad/modular_roots_v9/review_head_envelopes.py": {
+      "bytes": 1383,
+      "sha256": "6a07bde817d041abdf9b44d72ce1eebe80050f4f92d354f4d5076ed3bd81f0a6"
+    },
+    "cad/modular_roots_v9/review_module_installation.py": {
+      "bytes": 3368,
+      "sha256": "5109b6ff64d69105e101b17d307bd66ec9a9099953f5dbc2d481c45213703c43"
+    },
+    "cad/modular_roots_v9/review_print_meshes.py": {
+      "bytes": 2049,
+      "sha256": "b52ee6594501342d7c0a8bf078f479d7b20f46967c822d6f48c230c9592c00cd"
+    },
+    "cad/modular_roots_v9/review_tracking_margin.py": {
+      "bytes": 1167,
+      "sha256": "da5bbb79bd66936e3e902abefdecfb165d2499e1a90dfaba89c6389940f5deb9"
+    },
+    "cad/modular_roots_v9/review_vertical_before_thumb.py": {
+      "bytes": 2154,
+      "sha256": "46325d5b8fef2f02d9c6300d31da9cfcf2fd6c3e4e14f0b58d7660e3e70e0ba5"
+    },
+    "cad/modular_roots_v9/review_vertical_insertion.py": {
+      "bytes": 2089,
+      "sha256": "85cb07b635f92e85f57d71786b9c4cca828c24595d47297242957dd155f3a208"
+    },
+    "cad/modular_roots_v9/reviews/all_cartridge_nut_insertion.json": {
+      "bytes": 2089,
+      "sha256": "b9bc21c8077dd74e8b6e388bc5bbd6da281b00496f3ae7f7f330039afe25cf4b"
+    },
+    "cad/modular_roots_v9/reviews/arm_gravity_grid.json": {
+      "bytes": 2697,
+      "sha256": "9a477e62b4858cd8c80827d0842507800eb86a9fa4227329aaf8124ff869173f"
+    },
+    "cad/modular_roots_v9/reviews/critical_gap.json": {
+      "bytes": 1263,
+      "sha256": "3073827c88822096b15e2907494beae55a944bf297033da5c9fbc4f10ec5ea70"
+    },
+    "cad/modular_roots_v9/reviews/hand_fasteners.json": {
+      "bytes": 2019,
+      "sha256": "5379ff52174470013141ffd84e79d1212b44b9f242635197f3d1d88717efeba0"
+    },
+    "cad/modular_roots_v9/reviews/mesh_named.json": {
+      "bytes": 4268,
+      "sha256": "ac1513934de62725a4f48af474d63ce4bd939a310507bdb177663e22667befa2"
+    },
+    "cad/modular_roots_v9/reviews/module_installation.json": {
+      "bytes": 2203,
+      "sha256": "32eb421fc7cf68a9c819ad14d609c58c2d1c4b1c70c82096bf67c4e2e71fa6c0"
+    },
+    "cad/modular_roots_v9/reviews/motion_budget.json": {
+      "bytes": 5867,
+      "sha256": "7a1647c08fd3981f66cc3b6503575a284d781b760d50c393d6a17126580e0365"
+    },
+    "cad/modular_roots_v9/reviews/print_mesh_review.json": {
+      "bytes": 9878,
+      "sha256": "b2a8e51cb5607b07186d6422825aa3254c4d786a39e8d086a6f4a5471bcffc03"
+    },
+    "cad/modular_roots_v9/reviews/subset_transfer.json": {
+      "bytes": 11845,
+      "sha256": "403d7738c52622e253284bf711ea38d32f31c2f46965c4e2ac156f757427ccfb"
+    },
+    "cad/modular_roots_v9/reviews/tracking_margin_probes.json": {
+      "bytes": 34049,
+      "sha256": "a35210296e8045892cb78f0130e2f0803f1507767437f7e70f68f95ea63bbc81"
+    },
+    "cad/modular_roots_v9/reviews/viewer_cad_alignment.json": {
+      "bytes": 1029,
+      "sha256": "44cdcf7c212618b00d81119ee5983b6fde6a3c88f9e1f9998824e1064a8144d3"
+    },
+    "cad/modular_roots_v9/scan_mesh_motion.py": {
+      "bytes": 3672,
+      "sha256": "3a200312259da2ca9d19a8dffb97c0390014d6984a0f42f2a0d7d67ee9c965e8"
+    },
+    "cad/modular_roots_v9/scene.json": {
+      "bytes": 1050519,
+      "sha256": "14cd8bff73578070c597b4ebc2afe3260afa7621d593ed11b1c81bd22ac6824e"
+    },
+    "cad/modular_roots_v9/screen_arm_gravity_grid.py": {
+      "bytes": 3049,
+      "sha256": "785d866eb8e488b8251eb6b065fcbe998afbb7cc687d446223deea6ab7fe047d"
+    },
+    "cad/modular_roots_v9/screen_hand_gravity.py": {
+      "bytes": 2595,
+      "sha256": "4944abe3762919ccc54e403f988c0cc817b7a3f5ad5d3b859397d1e69d72f634"
+    },
+    "cad/modular_roots_v9/screen_mass.py": {
+      "bytes": 2632,
+      "sha256": "28a7978624962947ba98a0ba13508b5c0bf9b360a1e604132d02a59820ec2936"
+    },
+    "cad/modular_roots_v9/screen_motion_budget.py": {
+      "bytes": 5464,
+      "sha256": "5a90648c3a65db78e3a6f607cf71e19222bed1f8f1f6caf4f5ed5464abd86d3d"
+    },
+    "cad/modular_roots_v9/structural_screen/mesh_sensitivity.json": {
+      "bytes": 1072,
+      "sha256": "2afb2f943d7e7e7c54dafc3558fbd1cf25f3c1410a44e2256ca5f3c41a1997b0"
+    },
+    "cad/modular_roots_v9/structural_screen/mount_deflection.json": {
+      "bytes": 9794,
+      "sha256": "55f6d2837a33c22e65c615499f6060df1f184838bbf90576ab35b7d498ab9b9c"
+    },
+    "cad/modular_roots_v9/structural_screen/refined/results.json": {
+      "bytes": 13482,
+      "sha256": "1b5f067c9151344dfe1dafee0ec4b3f99ad5bfb05a8c79f2c4c82dd4fcaec5e9"
+    },
+    "cad/modular_roots_v9/structural_screen/refined/setup.json": {
+      "bytes": 9708,
+      "sha256": "1bc207ce71572bdbb0f4055e670152ccece99d2fb3c8162d237c72324d952e7c"
+    },
+    "cad/modular_roots_v9/structural_screen/results.json": {
+      "bytes": 13477,
+      "sha256": "fc6e5efe68d4ed9d3e4b7f728be720ac8cba642c8414292bd6355a417c203658"
+    },
+    "cad/modular_roots_v9/structural_screen/setup.json": {
+      "bytes": 9708,
+      "sha256": "0dccdfaf46c4a134b97153a370d1522ef02687b9051c98375f8289d319784b2c"
+    },
+    "cad/modular_roots_v9/verify_cad_viewer.py": {
+      "bytes": 1181,
+      "sha256": "185fe63d168a9939d5bee9c720f4a69d2b25c186a9e8ebef70e411bc1b914f69"
+    },
+    "cad/modular_roots_v9/verify_subset_transfer.py": {
+      "bytes": 2958,
+      "sha256": "42059ab99a03986d23cd4e09361829f83e03e4d845b813ee5e3a958375c8e74a"
+    },
+    "checkpoints/DRIVE001.md": {
+      "bytes": 3619,
+      "sha256": "24c018b178f04105635d8c3d491cec57e799773e84a23bae038e11af81375b30"
+    },
+    "docs/CHECKPOINT_WORKFLOW.md": {
+      "bytes": 5308,
+      "sha256": "bcd9671ffb875ae1f91ca25d5bf40f31ec82af9792f5a8b7d27941e354c9de46"
+    },
+    "docs/FORM_REFERENCE.md": {
+      "bytes": 6036,
+      "sha256": "43d50205184a0aaaed27f0f5d65c9af0ca1b4d33f64ff68a3092a201c160e588"
+    },
+    "docs/REMOTE_DRIVE_PLAN.md": {
+      "bytes": 15217,
+      "sha256": "e1a2959e2b4bc0b7242689b1db5997ca60d346817b6fb22d306b1376596fd900"
+    },
+    "sim/form_drive_v1/README.md": {
+      "bytes": 5279,
+      "sha256": "a55e0deae06a3f761b4204aa989b90632fae46ebaf4a9402ee59241a64af1d69"
+    },
+    "sim/form_drive_v1/model_adapter.py": {
+      "bytes": 23424,
+      "sha256": "6499f8cac525c77e1ee01a76bb4deced9d4a7f64de4aa619709a18d9d8c777b4"
+    },
+    "sim/form_drive_v1/reference_06b9ab4/provenance.json": {
+      "bytes": 422,
+      "sha256": "c8c58129fa373d30edc6b6f1d937aee002a1d8a4c093adcdec3d257a0c038ed1"
+    },
+    "sim/form_drive_v1/reference_06b9ab4/sim/remote_drive_v1/evaluate.py": {
+      "bytes": 13859,
+      "sha256": "bbccd9165a26e4bc850d9f60655a0a2de18b19ef87164728f5b0439ab8b6b4a8"
+    },
+    "sim/form_drive_v1/reference_06b9ab4/sim/remote_drive_v1/model.py": {
+      "bytes": 23366,
+      "sha256": "2e76245ad8a43de53c9b204862508f37a80c62fab14ff91354b3e6ec27d6e128"
+    },
+    "sim/form_drive_v1/results/drive001/adapter_checks.json": {
+      "bytes": 820,
+      "sha256": "1eb2cd11c0fa6f5bf247a2918fa3939073644b96188b39a7f8f616a9dba71e01"
+    },
+    "sim/form_drive_v1/results/drive001/contract_coupling0.3.json": {
+      "bytes": 49479,
+      "sha256": "70068ca35ae047281b6052d20b930fbd4fb9effe3760c5651c2ed5a67ffe8315"
+    },
+    "sim/form_drive_v1/results/drive001/contract_coupling0.json": {
+      "bytes": 49479,
+      "sha256": "b2e92aaf24851517573a4f0d9a02f4826792b130285c71a48fb8dd0be139565b"
+    },
+    "sim/form_drive_v1/results/drive001/contract_coupling1.json": {
+      "bytes": 49479,
+      "sha256": "f6635831bd8aa258a799f845861d63e63037395a634e579125d951d3e5914ab5"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0.3_fast90_150ms_125us.json": {
+      "bytes": 247172,
+      "sha256": "cfce64006dbcc9f248b65bd21689f49e1fda34276266b5276778c4cf72e81331"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0.3_fast90_150ms_62.5us.json": {
+      "bytes": 247160,
+      "sha256": "9fa2bc662ee20169bf12ba127d120ba206bcf61a41e287cd1a766fbb77c292d8"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0.3_small5_125us.json": {
+      "bytes": 247288,
+      "sha256": "944d877648ea41874d125b74892bb63f81345a66e0d3c00ff93af028d81ac078"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0.3_small5_62.5us.json": {
+      "bytes": 247106,
+      "sha256": "afbd125d355a8bd46055dac6ed947d1594b7d7b0f07a029001189237b3f59ddd"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0_fast90_150ms_125us.json": {
+      "bytes": 246709,
+      "sha256": "ed5678c63771b161884a629e5f23f2567b92a560ac4db59aab286c56a6732fb4"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0_fast90_150ms_62.5us.json": {
+      "bytes": 246683,
+      "sha256": "4aafbeed85d3e4ef4f74045be7073830fe9b6bc6d904ceb01e15bd87419d1836"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0_small5_125us.json": {
+      "bytes": 247254,
+      "sha256": "88b2fa81ee98507dc4d008a8c438d9ecc817210dd27141dd75577ee936856ef8"
+    },
+    "sim/form_drive_v1/results/drive001/coupling0_small5_62.5us.json": {
+      "bytes": 247130,
+      "sha256": "9e8db7c1f4e87949f4d8fd79b26042d63ddb62b6f1d7d4aa67b1bee2517b280e"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_fast90_150ms_125us.json": {
+      "bytes": 247639,
+      "sha256": "19338af6131e55255b4de489833434a67adce6b96b3ee8f4de6e9c9d02fa79c6"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_fast90_150ms_62.5us.json": {
+      "bytes": 247645,
+      "sha256": "09f3a49cffd45c019b0e26dbaa1b3ebc9850b63c85b5f3ff0404b09f166c62ac"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_independent_distal_125us.json": {
+      "bytes": 91681,
+      "sha256": "a1a04a375b4dafd11c5d3c777b86fe7d599581dccc058fd1211d136339474788"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_large45_125us.json": {
+      "bytes": 246604,
+      "sha256": "bc0c4ec14ac1904896f39ebbf8c9fb9ec5b67d2cbd702679138decf0d5cb223e"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_rapid_reversal_125us.json": {
+      "bytes": 216943,
+      "sha256": "c204e74d316c778061c57fb94089165d9bd948a74c34b73957f3f02c9bd64adf"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_small10_125us.json": {
+      "bytes": 247696,
+      "sha256": "bb64bc302bb870dffa335f580f004a2a2f4dfcf3bef920bd3d6004fb0c8b34b4"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_small5_125us.json": {
+      "bytes": 247723,
+      "sha256": "e7bf15c1abf4cd00e09dde2fc97edc859b4374524a9f6a190ceaaba711584544"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_small5_62.5us.json": {
+      "bytes": 247635,
+      "sha256": "3a74cc6882f25094a04c2442bbe14775d98e14797c8f537dedf69bcd6d4bba82"
+    },
+    "sim/form_drive_v1/results/drive001/coupling1_upstream_hold_125us.json": {
+      "bytes": 79834,
+      "sha256": "b2d2453ff11101454721033f82e2cf368d73aee50aea81a6d7d2ead3b6410d02"
+    },
+    "sim/form_drive_v1/results/drive001/diagnostic_notes.md": {
+      "bytes": 6488,
+      "sha256": "0fb10f8edd41532a04e5712257594fcdacd7443c8bf1ee1bee61e92644aa5c6a"
+    },
+    "sim/form_drive_v1/results/drive001/input_manifest.json": {
+      "bytes": 1200,
+      "sha256": "bba243a7d6f853aff68eddd83be2a82688ef7135b220168cde0c32184a20d137"
+    },
+    "sim/form_drive_v1/results/drive001/parameters.json": {
+      "bytes": 1160,
+      "sha256": "ba4040f441feed2b7f4a62f0b5e1de2fb62b0a45b05c1235bec7fd9854019e26"
+    },
+    "sim/form_drive_v1/results/drive001/summary.json": {
+      "bytes": 12237,
+      "sha256": "b48ffe291ffc9fc8a1d46f19788685a3cdcbb222536c13798c04c7404190adbf"
+    },
+    "sim/form_drive_v1/run_screen.py": {
+      "bytes": 7016,
+      "sha256": "83f29a3aab1340e38ce672df03239f3815c35bdc8c1e34ae089e9d3a8e0d6a44"
+    },
+    "sim/form_drive_v1/test_adapter.py": {
+      "bytes": 12273,
+      "sha256": "5a091e58ae37cfdd083d41706969fcb88fffe652c4cc35d997b414b4c65198f1"
+    },
+    "tools/write_form_drive_checkpoint.py": {
+      "bytes": 4117,
+      "sha256": "234d7c5c4252365c67397dc1368341dcc780a99d3d4e240d42d91181a648c08e"
+    },
+    "verify_audit_evidence.py": {
+      "bytes": 2571,
+      "sha256": "09295412b2d850cd63ce16182c90b02aa83c6d369dbb0e1b1243aa1e46347198"
+    },
+    "write_audit_index.py": {
+      "bytes": 2021,
+      "sha256": "9262ad08a4e1d05ec65c3f135bb6aedd379ded928abc9e29d8552b4c3f5c7cc8"
+    }
+  }
+}

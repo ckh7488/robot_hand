@@ -1,24 +1,29 @@
 {
-  "id": "CP006",
-  "candidate": "cad/remote_drive_v1",
-  "simulation": "sim/remote_drive_v1",
+  "id": "DRIVE001",
+  "candidate": "cad/form_drive_v1",
+  "simulation": "sim/form_drive_v1",
   "baseline": "cad/modular_roots_v9",
-  "manifest": "checkpoints/CP006.manifest.json",
+  "exterior_reference": "cad/form_candidate_v1",
+  "simulation_results": "sim/form_drive_v1/results/drive001",
+  "manifest": "checkpoints/DRIVE001.manifest.json",
   "manufacturing_release": false,
   "motor_performance_validated": false,
-  "status": "Eight motor-to-cradle-to-adapter interfaces modeled and checked; all eight chassis supports remain incomplete. Nominal dynamics preserved; six thumb diagnostics and 45 static postures narrow model uncertainties. Physical 50/100ms performance unresolved.",
+  "status": "New 20-motor neutral packaging and exact exterior-inertia hand model. Assembly/routing unfinished; 17 conceptual runs do not establish 50/100ms performance.",
   "documentation_only": false,
-  "previous_design_checkpoint": "CP005",
-  "previous_checkpoint": "CP005",
+  "previous_checkpoint": "CP006",
+  "previous_form_reference_sha": "6475033ddaca54767eeba6b396a8c677fe0f8465",
   "archive_branch": "archive/direct-drive-v13",
   "archive_sha": "accd6c8d8d9791828233e9461ef1b1e8dccc8b0b",
   "tracking_requirement_ms": {
     "target": 50,
     "upper_limit": 100,
-    "boundary": "Robot controller received target to actual joint motion; upstream sensing excluded"
+    "boundary": "Robot target receipt to actual joint tracking; camera, perception and glove excluded"
   },
-  "post_commit_results_reproduced": true,
-  "post_commit_review_scope": "Exact-SHA clean checkout: saved STEP and 8 motor mounting modules; 13 mount poses/119 exact pairs; 16 model tests; 21 motion plus 8 sensitivity cases, 6 diagnostic cases and 45 static postures exactly reproduced. All eight chassis supports still missing. No full CAD regeneration, continuous collision, fabrication or physical latency approval.",
-  "post_commit_review_target": "8f63fca2cb72c11b96b5594d91a3407a7921bbf5",
-  "post_commit_review_report": "docs/reviews/CP006_8f63fca.md"
+  "numerical_convergence": {
+    "passed": 1,
+    "pairs": 6
+  },
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null
 }

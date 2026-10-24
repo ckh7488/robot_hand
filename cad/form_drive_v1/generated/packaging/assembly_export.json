@@ -1,0 +1,12 @@
+{
+  "status": "Neutral assembly from saved geometry; no new clearance or functional claim",
+  "assembly_step_zip": "cad/form_drive_v1/assembly.step.zip",
+  "zip_entry": "form_drive_v1_neutral.step",
+  "zip_sha256": "dc45dc246b8b651f63bc14ccf4379a8b2dcd048a40e9970cd97849ba87c0312d",
+  "raw_step_bytes": 15355083,
+  "zip_bytes": 2471963,
+  "source_guard_passed": true,
+  "approved_exterior_step_sha256": "4cf0922e300944899335e8f7cd30f59ee1fd610b0be1910e69d3bc97fda4e5ba",
+  "new_packaging_components": 217,
+  "arm_reference_included": false
+}

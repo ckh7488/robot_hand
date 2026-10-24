@@ -1,0 +1,8 @@
+{
+  "git_commit": "06b9ab4a867cede7d8ffce15a1ee70d90e3a193f",
+  "files_sha256": {
+    "sim/remote_drive_v1/model.py": "2e76245ad8a43de53c9b204862508f37a80c62fab14ff91354b3e6ec27d6e128",
+    "sim/remote_drive_v1/evaluate.py": "bbccd9165a26e4bc850d9f60655a0a2de18b19ef87164728f5b0439ab8b6b4a8"
+  },
+  "scope": "Unmodified reference dynamics and evaluator only; no legacy CAD properties are loaded into new adapter."
+}

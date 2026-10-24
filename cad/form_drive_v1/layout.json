@@ -1,0 +1,967 @@
+{
+  "schema_version": "form_drive_v1.actuator_layout.v1",
+  "status": "Neutral packaging construction candidate; not an assembled functional drive",
+  "units": "mm",
+  "exterior_reference": "cad/form_candidate_v1",
+  "unscaled_vendor_source": "cad/modular_roots_v9/parts",
+  "axis_count": 20,
+  "counts": {
+    "palm": 6,
+    "wrist": 4,
+    "forearm": 10
+  },
+  "motor": {
+    "asset": "M077_stator",
+    "rotor_asset": "M077_rotor",
+    "mass_kg_including_rotor": 0.018,
+    "stator_bbox_mm": [
+      25.8,
+      34,
+      20
+    ],
+    "model": "XL330-M077 vendor geometry; not final actuator performance selection"
+  },
+  "module": {
+    "canonical_reference_mm": [
+      -14.4,
+      -7.5,
+      -3.9
+    ],
+    "canonical_output_axis": [
+      1,
+      0,
+      0
+    ],
+    "cradle": "S101_relief",
+    "body_screws": "M2_body_TAP8",
+    "base_screws": "M2_base_screws",
+    "base_nuts": "M2_base_nuts",
+    "adapter_center_mm": [
+      -14.4,
+      -7.5,
+      -14.4
+    ],
+    "adapter_size_mm": [
+      32,
+      40,
+      2.8
+    ],
+    "adapter_hole_radius_mm": 1.1,
+    "base_hole_xy_mm": [
+      [
+        -20.15685424949238,
+        -20.65685424949238
+      ],
+      [
+        -20.15685424949238,
+        5.65685424949238
+      ],
+      [
+        -8.84314575050762,
+        -20.65685424949238
+      ],
+      [
+        -8.84314575050762,
+        5.65685424949238
+      ]
+    ],
+    "spool_radius_mm": 8,
+    "spool_width_mm": 6,
+    "spool_center_x_mm": 4,
+    "spool_hub_status": "0.5 mm nominal gap to rotor front; spline/horn/hub attachment not designed"
+  },
+  "supports": {
+    "palm_seat_z_mm": -40.5,
+    "palm_adapter_foot_length_mm": 3.5,
+    "palm_chassis_attachment": "Feet seat on cavity floor; matching chassis holes and fasteners absent",
+    "forearm_rail_z_mm": [
+      -76,
+      -73
+    ],
+    "forearm_rail_x_centers_mm": [
+      -49.4,
+      -9.4
+    ],
+    "forearm_rail_width_mm": 12,
+    "forearm_rail_y_mm": [
+      -297,
+      -1
+    ],
+    "forearm_post_xy_mm": [
+      [
+        -49.4,
+        -148
+      ],
+      [
+        -9.4,
+        -148
+      ],
+      [
+        -49.4,
+        -190
+      ],
+      [
+        -9.4,
+        -190
+      ]
+    ],
+    "forearm_nominal_beam_seat_z_mm": -44,
+    "forearm_chassis_attachment": "Rack has four nominal beam-face standoffs; attachment holes/clamps and strength not validated",
+    "module_to_rack_fastener": "Two modeled nominal M3x8 screw/nut envelopes per rear module; threads and driver access unvalidated",
+    "horizontal_palm_post_height_mm": 7.6
+  },
+  "modules": [
+    {
+      "name": "thumb_base_sweep_actuator",
+      "joint": "thumb_base_sweep",
+      "zone": "palm",
+      "rigid_body": "palm",
+      "module_envelope_center_mm": [
+        -20,
+        33,
+        -21
+      ],
+      "yaw_deg": 0,
+      "output_direction": "palm_front",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          -1,
+          -23.9
+        ],
+        [
+          0,
+          1,
+          0,
+          40.5
+        ],
+        [
+          1,
+          0,
+          0,
+          -6.6
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim",
+      "palm_mount_style": "vertical_foot"
+    },
+    {
+      "name": "index_mcp_actuator",
+      "joint": "index_mcp",
+      "zone": "palm",
+      "rigid_body": "palm",
+      "module_envelope_center_mm": [
+        46,
+        51,
+        -21
+      ],
+      "yaw_deg": 0,
+      "output_direction": "palm_lateral_positive_x",
+      "transform_world_mm": [
+        [
+          1,
+          0,
+          0,
+          60.4
+        ],
+        [
+          0,
+          1,
+          0,
+          58.5
+        ],
+        [
+          0,
+          0,
+          1,
+          -17.1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim",
+      "palm_mount_style": "horizontal_four_posts"
+    },
+    {
+      "name": "thumb_opposition_actuator",
+      "joint": "thumb_opposition",
+      "zone": "palm",
+      "rigid_body": "palm",
+      "module_envelope_center_mm": [
+        10,
+        57,
+        -21
+      ],
+      "yaw_deg": 0,
+      "output_direction": "palm_front",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          -1,
+          6.1
+        ],
+        [
+          0,
+          1,
+          0,
+          64.5
+        ],
+        [
+          1,
+          0,
+          0,
+          -6.6
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim",
+      "palm_mount_style": "vertical_foot"
+    },
+    {
+      "name": "ring_mcp_actuator",
+      "joint": "ring_mcp",
+      "zone": "palm",
+      "rigid_body": "palm",
+      "module_envelope_center_mm": [
+        -26,
+        69,
+        -21
+      ],
+      "yaw_deg": 90,
+      "output_direction": "palm_front",
+      "transform_world_mm": [
+        [
+          0,
+          -1,
+          0,
+          -33.5
+        ],
+        [
+          0,
+          0,
+          -1,
+          65.1
+        ],
+        [
+          1,
+          0,
+          0,
+          -6.6
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim",
+      "palm_mount_style": "vertical_foot"
+    },
+    {
+      "name": "middle_mcp_actuator",
+      "joint": "middle_mcp",
+      "zone": "palm",
+      "rigid_body": "palm",
+      "module_envelope_center_mm": [
+        18,
+        93,
+        -21
+      ],
+      "yaw_deg": 90,
+      "output_direction": "palm_front",
+      "transform_world_mm": [
+        [
+          0,
+          -1,
+          0,
+          10.5
+        ],
+        [
+          0,
+          0,
+          -1,
+          89.1
+        ],
+        [
+          1,
+          0,
+          0,
+          -6.6
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim",
+      "palm_mount_style": "vertical_foot"
+    },
+    {
+      "name": "little_mcp_actuator",
+      "joint": "little_mcp",
+      "zone": "palm",
+      "rigid_body": "palm",
+      "module_envelope_center_mm": [
+        -44,
+        99,
+        -21
+      ],
+      "yaw_deg": 90,
+      "output_direction": "palm_distal_positive_y",
+      "transform_world_mm": [
+        [
+          0,
+          -1,
+          0,
+          -51.5
+        ],
+        [
+          1,
+          0,
+          0,
+          113.4
+        ],
+        [
+          0,
+          0,
+          1,
+          -17.1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim",
+      "palm_mount_style": "horizontal_four_posts"
+    },
+    {
+      "name": "index_spread_actuator",
+      "joint": "index_spread",
+      "zone": "wrist",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -22,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -14.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "middle_spread_actuator",
+      "joint": "middle_spread",
+      "zone": "wrist",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -22,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -14.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "ring_spread_actuator",
+      "joint": "ring_spread",
+      "zone": "wrist",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -64,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -56.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "little_spread_actuator",
+      "joint": "little_spread",
+      "zone": "wrist",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -64,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -56.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "index_pip_actuator",
+      "joint": "index_pip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -106,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -98.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "index_dip_actuator",
+      "joint": "index_dip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -106,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -98.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "middle_pip_actuator",
+      "joint": "middle_pip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -148,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -140.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "middle_dip_actuator",
+      "joint": "middle_dip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -148,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -140.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "ring_pip_actuator",
+      "joint": "ring_pip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -190,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -182.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "ring_dip_actuator",
+      "joint": "ring_dip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -190,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -182.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "little_pip_actuator",
+      "joint": "little_pip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -232,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -224.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "little_dip_actuator",
+      "joint": "little_dip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -232,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -224.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "thumb_mcp_actuator",
+      "joint": "thumb_mcp",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        -35,
+        -274,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          -31.1
+        ],
+        [
+          0,
+          1,
+          0,
+          -266.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    },
+    {
+      "name": "thumb_ip_actuator",
+      "joint": "thumb_ip",
+      "zone": "forearm",
+      "rigid_body": "forearm",
+      "module_envelope_center_mm": [
+        5,
+        -274,
+        -95
+      ],
+      "yaw_deg": 0,
+      "output_direction": "forearm_back",
+      "transform_world_mm": [
+        [
+          0,
+          0,
+          1,
+          8.9
+        ],
+        [
+          0,
+          1,
+          0,
+          -266.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          -109.4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transmission_status": "Offset pull-pull transmission, guides and joint coupling not designed; no direct-drive claim"
+    }
+  ],
+  "screen_scope": [
+    "All 20 actual unscaled vendor motors, cradles, supplier fasteners and new holding geometry",
+    "Neutral pose only against approved exterior and original arm reference",
+    "Same-vendor module contacts excluded explicitly; all new-to-other-module and new-to-exterior positive volumes reported"
+  ],
+  "limitations": [
+    "No complete motor-to-joint transmission, cable sleeves, guides, bearings, electronics or wiring layout",
+    "Root axes 7.5 mm spacing is not compatible with old 32 mm direct motor module: all root motors require offset transmission",
+    "PIP/DIP independence, tendon length Jacobian and wrist crossing volume remain unvalidated",
+    "S101 and vendor fasteners retained at documented local coordinates; material and thread engagement not proven by placement",
+    "New rack increases forearm depth; no hand exterior geometry change",
+    "20 motors placed is not a functioning assembly, manufacturing approval or latency result"
+  ],
+  "light_search": {
+    "method": "Deterministic randomized rectangle packing; 1488 candidates; 2000 passes",
+    "maximum_found_palm": 7,
+    "selected_palm": 6,
+    "rejected_candidate_center_mm": [
+      8,
+      123,
+      -21
+    ],
+    "reason": "Top candidate left out to preserve clearance below new root joints; maximum found is not an impossibility proof for other layouts"
+  },
+  "correction_history": {
+    "initial_snapshot": "generated/history/packaging_initial",
+    "initial_neutral_interferences": 4,
+    "change": "Reorient two entire modules in the palm plane: index +X at [46,51,-21], little +Y at [-46,99,-21]. Retain unscaled motor and r8x6 spool. Four integrated 7.6 mm posts replace the two vertical feet.",
+    "scope": "No approved exterior geometry change; no new motor-to-joint transmission completion",
+    "final_clearance_correction": {
+      "module": "little_mcp_actuator",
+      "delta_world_mm": [
+        2,
+        0,
+        0
+      ],
+      "center_mm": [
+        -44,
+        99,
+        -21
+      ],
+      "previous_remaining_overlap_mm3": 0.2268494670818486,
+      "saved_step_probe_spool_to_exterior_clearance_mm": 1.1050925371917626,
+      "saved_step_probe": "generated/history/packaging_horizontal/little_shift_probe.json"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "status": "Neutral volume screen only; not assembly or fabrication approval",
+  "scope": "New 20-module solids versus one another, approved hand exterior, and neutral V9 arm reference",
+  "part_count": 217,
+  "motor_count": 20,
+  "exterior_count": 120,
+  "arm_reference_count": 10,
+  "exact_pairs": 247,
+  "excluded_preserved_vendor_internal_pairs": 300,
+  "exclusion_policy": "Both source vendor components inside the same motor module only; no new-part positive-overlap exemptions",
+  "unresolved_overlaps": [],
+  "boolean_failures": [],
+  "new_single_solid_parts": 97,
+  "all_new_parts_single_valid_solid": true,
+  "packaging_bbox_mm": [
+    [
+      -64.0,
+      -297.0,
+      -116.9
+    ],
+    [
+      67.9,
+      120.9,
+      0.9000000000000004
+    ]
+  ],
+  "reference_hand_arm_bbox_mm": [
+    [
+      -90.0,
+      -424.0,
+      -68.0
+    ],
+    [
+      109.14071677578568,
+      281.0,
+      65.0
+    ]
+  ],
+  "added_negative_z_protrusion_mm": 48.900000000000006,
+  "new_parts_neutral_volume_clear": true,
+  "fabrication_approval": false,
+  "motor_to_joint_transmissions_complete": false,
+  "palm_to_chassis_fasteners_complete": false,
+  "rear_rack_to_arm_fasteners_complete": false,
+  "minimum_clearance_tolerance_flexure_access_and_motion_checked": false,
+  "limitations": [
+    "No complete motor-to-joint transmission, cable sleeves, guides, bearings, electronics or wiring layout",
+    "Root axes 7.5 mm spacing is not compatible with old 32 mm direct motor module: all root motors require offset transmission",
+    "PIP/DIP independence, tendon length Jacobian and wrist crossing volume remain unvalidated",
+    "S101 and vendor fasteners retained at documented local coordinates; material and thread engagement not proven by placement",
+    "New rack increases forearm depth; no hand exterior geometry change",
+    "20 motors placed is not a functioning assembly, manufacturing approval or latency result"
+  ],
+  "source_sha256": {
+    "cad/form_drive_v1/actuator_packaging.py": "23412633a9c9e4caabf909ca3b5419ee0a2a962af69a4d03fc3fb08fecfc490c",
+    "cad/form_drive_v1/layout.json": "4304dac20b4c389f8a6fdee9c2bce3a9b82b81d39fb45527d4f85479b1b86e78",
+    "cad/form_drive_v1/exterior.py": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab",
+    "cad/form_candidate_v1/design.json": "c8a3f91584984cdeba0cad41942efb56bbb8f1cc8d108333e5539dbcbea99651",
+    "cad/form_candidate_v1/build.py": "991882f019eca17f87392a63971ca2adcc447199cea30f3766d3c04fe7cae359",
+    "cad/form_candidate_v1/lightweight_digits.py": "a21fbb715b15471af15a46aa81c0e4b9d5ea22dd9f7d149c0909c8e8a59a51f0",
+    "cad/form_candidate_v1/lightweight_thumb.py": "15dde4e5038f4256ec2b7e8655daff73bda9e93be542770560632a7354ddb21a",
+    "cad/form_candidate_v1/generated/scene.json": "b61e17800760892edc0df4c6b5ca796482ccaeb823916649efd080b8e67b96de",
+    "cad/modular_roots_v9/mass_screen.json": "f6efcd4ad690ded6a018f1a03f7e9bd4cfab4842dc9450230bd07f395b2aa3fa",
+    "cad/modular_roots_v9/parts/M077_stator.step": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+    "cad/modular_roots_v9/parts/M077_rotor.step": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+    "cad/modular_roots_v9/parts/S101_relief.step": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec",
+    "cad/modular_roots_v9/parts/M2_body_TAP8.step": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a",
+    "cad/modular_roots_v9/parts/M2_base_screws.step": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856",
+    "cad/modular_roots_v9/parts/M2_base_nuts.step": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f",
+    "cad/modular_roots_v9/parts/AK_elbow_flex.step": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01",
+    "cad/modular_roots_v9/parts/AK_forearm_roll.step": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36",
+    "cad/modular_roots_v9/parts/AK_wrist_flex.step": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243",
+    "cad/modular_roots_v9/parts/AK_wrist_deviation.step": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256",
+    "cad/modular_roots_v9/parts/Elbow_fixed_cradle.step": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6",
+    "cad/modular_roots_v9/parts/Elbow_roll_carrier.step": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156",
+    "cad/modular_roots_v9/parts/Forearm_box_beam.step": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365",
+    "cad/modular_roots_v9/parts/Roll_output_flange.step": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d",
+    "cad/modular_roots_v9/parts/Wrist_box_carrier.step": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f",
+    "cad/modular_roots_v9/parts/Palm_wrist_saddle.step": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c"
+  },
+  "input_start_end_hash_guard_passed": true,
+  "motor_mass_kg": 0.36,
+  "total_packaging_mass_kg": 0.6690961172316371,
+  "mass_scope": "Motor 18 g includes rotor; other parts fully solid polymer1.25/steel7.85 g/cm3 assumptions",
+  "module_counts": {
+    "palm": 6,
+    "wrist": 4,
+    "forearm": 10
+  }
+}

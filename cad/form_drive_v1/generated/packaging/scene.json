@@ -1,0 +1,10231 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "name": "thumb_base_sweep_actuator_motor",
+      "mesh": "meshes/thumb_base_sweep_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -33.90000000000007,
+          15.999999999999934,
+          -35.4
+        ],
+        [
+          -13.899999999999997,
+          50.000000000000064,
+          -9.599999928018836
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "79e4a6c24b266d58f5cbecaedc47d5371dc39f8d99d6860a7db457a39f369fd9"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_rotor",
+      "mesh": "meshes/thumb_base_sweep_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -31.9000001,
+          32.4999999,
+          -35.6
+        ],
+        [
+          -15.899999899999997,
+          48.5,
+          -6.599999899999997
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3a0b228917d963b429c1bfeeca8db6404c51befb8e6fef0e35f74986fa052c3b"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_cradle",
+      "mesh": "meshes/thumb_base_sweep_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -17.9,
+          15.999999999998716,
+          -35.40000000057
+        ],
+        [
+          -10.8999999,
+          50.000000000001286,
+          -6.799999999429112
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "812d1f8ed7bbd5807cffe1c3605bfc5abc3b03cfb9a687ad6bb1c41efd6c8c23"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_body_screws",
+      "mesh": "meshes/thumb_base_sweep_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -17.65,
+          16.25,
+          -35.1
+        ],
+        [
+          -14.149999999999999,
+          49.75,
+          -7.099999999999999
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e43b514710d0b7d896f5f9568b02208c102d17109b519021ae831c0ec57c941b"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_base_screws",
+      "mesh": "meshes/thumb_base_sweep_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -12.7,
+          18.34314575051,
+          -28.256854249489997
+        ],
+        [
+          -6.099999999999998,
+          47.656854249492,
+          -13.943145750507998
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3872403cbdd06c616dcb6e1b3e2bbb0a25cdcd8ad251cb2f0c39bad82c6b0783"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_base_nuts",
+      "mesh": "meshes/thumb_base_sweep_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -8.099999999999998,
+          17.84314575050993,
+          -29.06625532625
+        ],
+        [
+          -6.5,
+          48.15685424949207,
+          -13.133744673748373
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e5af1cbb7628ad751c6feeb6efc0271d6a8835bee09e12850e66207ed39ba698"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_adapter",
+      "mesh": "meshes/thumb_base_sweep_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -17.9,
+          13.0,
+          -40.5
+        ],
+        [
+          -8.099999999999998,
+          53.0,
+          -5.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "df30928ed300f2e29e06455709e81776af20627ba06f58856b9b165c5a7da21b"
+    },
+    {
+      "name": "thumb_base_sweep_actuator_spool",
+      "mesh": "meshes/thumb_base_sweep_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -32.9,
+          31.5,
+          -6.1
+        ],
+        [
+          -14.899999999999999,
+          49.5,
+          0.9000000000000004
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "2930b495c0b07a28150ec09843839b07b5ddc231b37b4a64c81487fb2b2048f7"
+    },
+    {
+      "name": "index_mcp_actuator_motor",
+      "mesh": "meshes/index_mcp_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          31.599999999999998,
+          33.999999999999936,
+          -27.1
+        ],
+        [
+          57.40000007198116,
+          68.00000000000006,
+          -7.099999999999936
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a791260c8785276096aa0c40939221dc26fb6c5d37291e566affd4a09a1e199b"
+    },
+    {
+      "name": "index_mcp_actuator_rotor",
+      "mesh": "meshes/index_mcp_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          31.4,
+          50.4999999,
+          -25.100000100000003
+        ],
+        [
+          60.40000010000001,
+          66.5,
+          -9.0999999
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d7ce9d4f4990f043130c8c084a8be08145b3f5322a54381af57addf45e33ff86"
+    },
+    {
+      "name": "index_mcp_actuator_cradle",
+      "mesh": "meshes/index_mcp_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          31.599999999429997,
+          33.999999999998714,
+          -30.100000100000003
+        ],
+        [
+          60.20000000057089,
+          68.00000000000128,
+          -23.1
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "060d19223ff2282f737674d70ee6054299d0672d1d5ba4ae7ad30890f42e0a8f"
+    },
+    {
+      "name": "index_mcp_actuator_body_screws",
+      "mesh": "meshes/index_mcp_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          31.899999999999995,
+          34.25,
+          -26.85
+        ],
+        [
+          59.9,
+          67.75,
+          -23.35
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e5382380e67785df149ddbcc44f119b98fe361abdb6c5051f636dc41ed5e87fd"
+    },
+    {
+      "name": "index_mcp_actuator_base_screws",
+      "mesh": "meshes/index_mcp_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          38.743145750509996,
+          36.343145750510004,
+          -34.900000000000006
+        ],
+        [
+          53.056854249492,
+          65.656854249492,
+          -28.3
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "2f80d835bdf40ddd4f074fbf90bc9f21f16233b1bf654d0d358efb4287276bab"
+    },
+    {
+      "name": "index_mcp_actuator_base_nuts",
+      "mesh": "meshes/index_mcp_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          37.93374467375,
+          35.84314575050993,
+          -34.5
+        ],
+        [
+          53.866255326251625,
+          66.15685424949207,
+          -32.900000000000006
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ed0a572aa8a36371946d544dc2f5baf11df1c8837e008939e9ee33aa896c19ab"
+    },
+    {
+      "name": "index_mcp_actuator_adapter",
+      "mesh": "meshes/index_mcp_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          30.0,
+          31.0,
+          -40.5
+        ],
+        [
+          62.0,
+          71.0,
+          -30.1
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ef9490595e7050b46add2fc0518515f8184ee988a7dd0e816417826f151c3bd8"
+    },
+    {
+      "name": "index_mcp_actuator_spool",
+      "mesh": "meshes/index_mcp_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          60.9,
+          49.5,
+          -26.1
+        ],
+        [
+          67.9,
+          67.5,
+          -8.100000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "fc887b9e83d14e743af9e055f6ec3d4fc794ca2965e2b5a71cb0766acf5982c9"
+    },
+    {
+      "name": "thumb_opposition_actuator_motor",
+      "mesh": "meshes/thumb_opposition_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -3.9000000000000665,
+          39.999999999999936,
+          -35.4
+        ],
+        [
+          16.1,
+          74.00000000000006,
+          -9.599999928018836
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "97d08478ef05549eb6c106f3af668b7f744dbbf2d4e1e0bcd66c8ee4987d68af"
+    },
+    {
+      "name": "thumb_opposition_actuator_rotor",
+      "mesh": "meshes/thumb_opposition_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -1.9000001000000022,
+          56.4999999,
+          -35.6
+        ],
+        [
+          14.1000001,
+          72.5,
+          -6.599999899999997
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "af8439c8b125e6ce2c87658325feeb4ad23a56a754c2bb1e911d1a33f6b553de"
+    },
+    {
+      "name": "thumb_opposition_actuator_cradle",
+      "mesh": "meshes/thumb_opposition_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          12.1,
+          39.999999999998714,
+          -35.40000000057
+        ],
+        [
+          19.100000100000003,
+          74.00000000000128,
+          -6.799999999429112
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8eaac601f05daf7229147178f606f05570a7bfe94b9f9fc472fa817d8f6d4555"
+    },
+    {
+      "name": "thumb_opposition_actuator_body_screws",
+      "mesh": "meshes/thumb_opposition_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          12.35,
+          40.25,
+          -35.1
+        ],
+        [
+          15.85,
+          73.75,
+          -7.099999999999999
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0333e1ce14d85ca37d01e556fbd5f9bc3513ab5289aa4be8eef519dbac4f33dc"
+    },
+    {
+      "name": "thumb_opposition_actuator_base_screws",
+      "mesh": "meshes/thumb_opposition_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          17.299999999999997,
+          42.343145750510004,
+          -28.256854249489997
+        ],
+        [
+          23.9,
+          71.656854249492,
+          -13.943145750507998
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "39a7da37035e1e84a7c2f7b0be7f13139c1699bd0d047533561984d45ca3c194"
+    },
+    {
+      "name": "thumb_opposition_actuator_base_nuts",
+      "mesh": "meshes/thumb_opposition_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          21.9,
+          41.84314575050993,
+          -29.06625532625
+        ],
+        [
+          23.5,
+          72.15685424949207,
+          -13.133744673748373
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "97332f5bfd463f161d1d407a78ab32326df9b8e40752aea5775d681ec1e07d66"
+    },
+    {
+      "name": "thumb_opposition_actuator_adapter",
+      "mesh": "meshes/thumb_opposition_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          12.099999999999998,
+          37.0,
+          -40.5
+        ],
+        [
+          21.900000000000002,
+          77.0,
+          -5.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ab47d1b5a5e92a93df0f1b0c1d200bacf0b1aaaf30b3c0e36926b48a040c8564"
+    },
+    {
+      "name": "thumb_opposition_actuator_spool",
+      "mesh": "meshes/thumb_opposition_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -2.9000000000000004,
+          55.5,
+          -6.1
+        ],
+        [
+          15.1,
+          73.5,
+          0.9000000000000004
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d4a5295372e1e2445d72219268c7edd92478797235e464a0eb9a6f3c51e7efd7"
+    },
+    {
+      "name": "ring_mcp_actuator_motor",
+      "mesh": "meshes/ring_mcp_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -43.000000000000064,
+          55.09999999999993,
+          -35.4
+        ],
+        [
+          -8.999999999999934,
+          75.1,
+          -9.599999928018836
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "cbed9d73560e07c0813352da84056efbf46be3539eefca9f59640b6f2c69772d"
+    },
+    {
+      "name": "ring_mcp_actuator_rotor",
+      "mesh": "meshes/ring_mcp_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -41.5,
+          57.09999989999999,
+          -35.6
+        ],
+        [
+          -25.4999999,
+          73.10000009999999,
+          -6.599999899999997
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "f98ddfc9b27908fc06fae46d1041f1b795896d76ffd55976ff032440fb4cffe7"
+    },
+    {
+      "name": "ring_mcp_actuator_cradle",
+      "mesh": "meshes/ring_mcp_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -43.000000000001286,
+          71.1,
+          -35.40000000057
+        ],
+        [
+          -8.999999999998716,
+          78.10000009999999,
+          -6.799999999429112
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0ec1b32590da36cdec884632e8fa7c47701a350357d93995c69df975a8f9ebac"
+    },
+    {
+      "name": "ring_mcp_actuator_body_screws",
+      "mesh": "meshes/ring_mcp_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -42.75,
+          71.35,
+          -35.1
+        ],
+        [
+          -9.25,
+          74.85,
+          -7.099999999999999
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "5ce3d7eed70ba29fc02b4c514b9a7dc64e5948adee7e1f48045893c00fe03623"
+    },
+    {
+      "name": "ring_mcp_actuator_base_screws",
+      "mesh": "meshes/ring_mcp_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -40.656854249492,
+          76.29999999999998,
+          -28.256854249489997
+        ],
+        [
+          -11.34314575051,
+          82.89999999999999,
+          -13.943145750507998
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "320ceb90d822afd5ed9da0336527b3aab1f3ca33d5397bebb9bad76e52e628f7"
+    },
+    {
+      "name": "ring_mcp_actuator_base_nuts",
+      "mesh": "meshes/ring_mcp_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -41.15685424949207,
+          80.89999999999999,
+          -29.06625532625
+        ],
+        [
+          -10.84314575050993,
+          82.5,
+          -13.133744673748373
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3f9c55306424f27a3180c0d57c5658041152bc44ea6c249d7bf3cc7bec851b98"
+    },
+    {
+      "name": "ring_mcp_actuator_adapter",
+      "mesh": "meshes/ring_mcp_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -46.0,
+          71.1,
+          -40.5
+        ],
+        [
+          -6.0,
+          80.89999999999999,
+          -5.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "9b289ff326f8f413e2a439422e98e1a775d169dcb15765c0a072e9b30022fdd4"
+    },
+    {
+      "name": "ring_mcp_actuator_spool",
+      "mesh": "meshes/ring_mcp_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -42.5,
+          56.099999999999994,
+          -6.1
+        ],
+        [
+          -24.5,
+          74.1,
+          0.9000000000000004
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "111f7f339c2823a57f27226cc6568ad084791db1c9e7c9f3676d4d3c321afcfd"
+    },
+    {
+      "name": "middle_mcp_actuator_motor",
+      "mesh": "meshes/middle_mcp_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          0.9999999999999338,
+          79.09999999999994,
+          -35.4
+        ],
+        [
+          35.000000000000064,
+          99.1,
+          -9.599999928018836
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "cd85b363ac364d0a30b6b88dbd2121f1452a5313ee929ed0406aac60e46ccee2"
+    },
+    {
+      "name": "middle_mcp_actuator_rotor",
+      "mesh": "meshes/middle_mcp_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          2.5,
+          81.0999999,
+          -35.6
+        ],
+        [
+          18.5000001,
+          97.10000009999999,
+          -6.599999899999997
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ddd7e3eaffdc2717a31743472cbebfa675fef22563bd114f936c29827e0d034b"
+    },
+    {
+      "name": "middle_mcp_actuator_cradle",
+      "mesh": "meshes/middle_mcp_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          0.9999999999987152,
+          95.1,
+          -35.40000000057
+        ],
+        [
+          35.000000000001286,
+          102.10000009999999,
+          -6.799999999429112
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "1d7a9ee475ef3dc6810c991b177924c284948bc2a5affe9eceb854519f70fc5b"
+    },
+    {
+      "name": "middle_mcp_actuator_body_screws",
+      "mesh": "meshes/middle_mcp_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          1.25,
+          95.35,
+          -35.1
+        ],
+        [
+          34.75,
+          98.85,
+          -7.099999999999999
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "6b6235d9363937caa3784be27ac1d9a9a149e730f5c3f96af73810b2d372fc36"
+    },
+    {
+      "name": "middle_mcp_actuator_base_screws",
+      "mesh": "meshes/middle_mcp_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          3.3431457505079996,
+          100.29999999999998,
+          -28.256854249489997
+        ],
+        [
+          32.656854249489996,
+          106.89999999999999,
+          -13.943145750507998
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4db378fdd1dad32cc6c0afae2cb02c20eee629af46b314865267b2875eb96500"
+    },
+    {
+      "name": "middle_mcp_actuator_base_nuts",
+      "mesh": "meshes/middle_mcp_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          2.8431457505079276,
+          104.89999999999999,
+          -29.06625532625
+        ],
+        [
+          33.15685424949007,
+          106.5,
+          -13.133744673748373
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "46bd57656050642ba9434d779a59e7f9acb5a3ee52f203ba6c80dd617f1bff4f"
+    },
+    {
+      "name": "middle_mcp_actuator_adapter",
+      "mesh": "meshes/middle_mcp_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -2.0,
+          95.1,
+          -40.5
+        ],
+        [
+          38.0,
+          104.89999999999999,
+          -5.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4658e951bd061391c7039ea06eec09b16caf32747f47ccb9e71b9405972f467a"
+    },
+    {
+      "name": "middle_mcp_actuator_spool",
+      "mesh": "meshes/middle_mcp_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          1.5,
+          80.1,
+          -6.1
+        ],
+        [
+          19.5,
+          98.1,
+          0.9000000000000004
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e238149efb2b04d6809d6c13960b9d9f34c5b3b1e6a1adc18eb9039ab76a0add"
+    },
+    {
+      "name": "little_mcp_actuator_motor",
+      "mesh": "meshes/little_mcp_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -61.000000000000064,
+          84.60000000000001,
+          -27.1
+        ],
+        [
+          -26.999999999999932,
+          110.40000007198117,
+          -7.099999999999936
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0c67633943bb1ec15ebe553eac981c978ed6f0cd63dfa84103e0b833903d453a"
+    },
+    {
+      "name": "little_mcp_actuator_rotor",
+      "mesh": "meshes/little_mcp_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -59.5,
+          84.4,
+          -25.100000100000003
+        ],
+        [
+          -43.4999999,
+          113.4000001,
+          -9.0999999
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0bc38710a77cca353579b17e57d19513a83d4496d438a53f4c300b3e10117c3b"
+    },
+    {
+      "name": "little_mcp_actuator_cradle",
+      "mesh": "meshes/little_mcp_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -61.000000000001286,
+          84.59999999943,
+          -30.100000100000003
+        ],
+        [
+          -26.999999999998714,
+          113.20000000057088,
+          -23.1
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "dfeee560d4c5d0f6cc36c981969a3276494e70573185407f6a18a3ea3316a531"
+    },
+    {
+      "name": "little_mcp_actuator_body_screws",
+      "mesh": "meshes/little_mcp_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -60.75,
+          84.9,
+          -26.85
+        ],
+        [
+          -27.25,
+          112.9,
+          -23.35
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "56c9f57ba32f66408a5a42d04a937f6ce7f351cebb2f4c819e6edb9b1979bdb4"
+    },
+    {
+      "name": "little_mcp_actuator_base_screws",
+      "mesh": "meshes/little_mcp_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -58.656854249492,
+          91.74314575051001,
+          -34.900000000000006
+        ],
+        [
+          -29.34314575051,
+          106.056854249492,
+          -28.3
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e7bdbf01a6ecc51ca07caa6d1ebed9f4cbd02d141c1996168ac282e9b50fc02c"
+    },
+    {
+      "name": "little_mcp_actuator_base_nuts",
+      "mesh": "meshes/little_mcp_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -59.15685424949207,
+          90.93374467375,
+          -34.5
+        ],
+        [
+          -28.84314575050993,
+          106.86625532625163,
+          -32.900000000000006
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a74e8e636e24083150cd34011e41fb1a4dc37df78e986c95fd426a7f79c35565"
+    },
+    {
+      "name": "little_mcp_actuator_adapter",
+      "mesh": "meshes/little_mcp_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -64.0,
+          83.0,
+          -40.5
+        ],
+        [
+          -24.0,
+          115.0,
+          -30.1
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "89e583fcd7bd64ee841fb7288d0bfd70e089c468c3d58d5beacfd27d3fb68c8a"
+    },
+    {
+      "name": "little_mcp_actuator_spool",
+      "mesh": "meshes/little_mcp_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "palm",
+      "bbox_mm": [
+        [
+          -60.5,
+          113.9,
+          -26.1
+        ],
+        [
+          -42.5,
+          120.9,
+          -8.100000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "6b8139364520ebed8f514aa3f5c7f4147f2f98c01f42e61c9d02c5bc1d32919d"
+    },
+    {
+      "name": "index_spread_actuator_motor",
+      "mesh": "meshes/index_spread_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -39.000000000000064,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -4.999999999999934,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e0cca031e8435e4594219b87665161fc518f4a966b9441e7e7f4d0d14514ab42"
+    },
+    {
+      "name": "index_spread_actuator_rotor",
+      "mesh": "meshes/index_spread_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -22.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -6.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4133ab1251b1ac52d73a2f744db4e71a5a585201cc78a584b6ac1b131c542b57"
+    },
+    {
+      "name": "index_spread_actuator_cradle",
+      "mesh": "meshes/index_spread_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -39.000000000001286,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -4.999999999998716,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "b5be62b74b5122f8b30c9113191f41311ba43c07fba18e8db9d17b5011cf7023"
+    },
+    {
+      "name": "index_spread_actuator_body_screws",
+      "mesh": "meshes/index_spread_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -38.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -5.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "77ce84299da03e3fc8ff2250e66897a0f8003ef9ee0a1a0a771ce988a2726f03"
+    },
+    {
+      "name": "index_spread_actuator_base_screws",
+      "mesh": "meshes/index_spread_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -36.656854249489996,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -7.3431457505080004,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d7175723ebb430eafc9f08c04770ac457ea243db5c7ffb110fc8b332c3da7cfa"
+    },
+    {
+      "name": "index_spread_actuator_base_nuts",
+      "mesh": "meshes/index_spread_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -37.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -6.8431457505079285,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "fa5babfb58fa604ff8118effa2eda8d7eb2fff75912ce3545827e099f2e7cad1"
+    },
+    {
+      "name": "index_spread_actuator_adapter",
+      "mesh": "meshes/index_spread_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -42.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -2.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "930219ccbd42e6fc26e108935620e9adce619879f742214564771a094e29ee12"
+    },
+    {
+      "name": "index_spread_actuator_spool",
+      "mesh": "meshes/index_spread_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -23.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -5.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0c66f59a8bdc55b6ee27e3963d7ee331e2ea63b7b88f49c0aa550004132f35f4"
+    },
+    {
+      "name": "middle_spread_actuator_motor",
+      "mesh": "meshes/middle_spread_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -39.000000000000064,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -4.999999999999934,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e08ec951897cad4c22933cfe5be89f6cd24001e16dd76b64c758f5fb3d03a6fd"
+    },
+    {
+      "name": "middle_spread_actuator_rotor",
+      "mesh": "meshes/middle_spread_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -22.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -6.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "33e1db077a9fa8cdabd789ef4871cd3f99fad317c8478cdd9492c41413855d84"
+    },
+    {
+      "name": "middle_spread_actuator_cradle",
+      "mesh": "meshes/middle_spread_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -39.000000000001286,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -4.999999999998716,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8edd1261ce61815dca49ab7eb32aed940426b628b20db8d8098200acadd5cee3"
+    },
+    {
+      "name": "middle_spread_actuator_body_screws",
+      "mesh": "meshes/middle_spread_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -38.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -5.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8f87a4d845e1fd88ab139c326381f52023565c80e03a2e3d06260b194f39721e"
+    },
+    {
+      "name": "middle_spread_actuator_base_screws",
+      "mesh": "meshes/middle_spread_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -36.656854249489996,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -7.3431457505080004,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e4ab05c2f05fd56a53b2f99bb2331f5ae8c91ab05ce7920d0077daea99ded847"
+    },
+    {
+      "name": "middle_spread_actuator_base_nuts",
+      "mesh": "meshes/middle_spread_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -37.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -6.8431457505079285,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d4d5b72345ae432e9ab825e5c5b99cfb9247e92561a5603cbe11afb142f8b3d7"
+    },
+    {
+      "name": "middle_spread_actuator_adapter",
+      "mesh": "meshes/middle_spread_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -42.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -2.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ef1714b1a2195314c2a0dba07a1338f6f2680c0b21f505e2bde207a2208e19c7"
+    },
+    {
+      "name": "middle_spread_actuator_spool",
+      "mesh": "meshes/middle_spread_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -23.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -5.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "2e82bdad0451f98c507f38e4d349a7bd7db1b928f87a5f6583bdb8480d64826e"
+    },
+    {
+      "name": "ring_spread_actuator_motor",
+      "mesh": "meshes/ring_spread_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -81.00000000000006,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -46.999999999999936,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8764c41105884560cd3b36017c8f37fbf725ff18b4f4d7975013180bc4b5159f"
+    },
+    {
+      "name": "ring_spread_actuator_rotor",
+      "mesh": "meshes/ring_spread_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -64.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -48.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0ef428dbdb24813ad65141fc3a3f33d2a31433021c6ed146951675e1f2f147cf"
+    },
+    {
+      "name": "ring_spread_actuator_cradle",
+      "mesh": "meshes/ring_spread_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -81.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -46.999999999998714,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "1cf523d1216d094c0dd8abba8d8e4606b94279d8cf99f044022190e8af1a62ef"
+    },
+    {
+      "name": "ring_spread_actuator_body_screws",
+      "mesh": "meshes/ring_spread_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -80.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -47.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8af55c74eda4413b580db4b2be305a86a20700e027f74fa1601bb7af10680114"
+    },
+    {
+      "name": "ring_spread_actuator_base_screws",
+      "mesh": "meshes/ring_spread_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -78.65685424949,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -49.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "980343390fa8e6145f138b3ebaa4216082f17d302c871220bf33808a5dd35d23"
+    },
+    {
+      "name": "ring_spread_actuator_base_nuts",
+      "mesh": "meshes/ring_spread_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -79.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -48.84314575050793,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "99352bddcc19b2b37da3a0f26d23c6b732ef140282919063285100e6368c1cc1"
+    },
+    {
+      "name": "ring_spread_actuator_adapter",
+      "mesh": "meshes/ring_spread_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -84.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -44.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "904fcf9501385c1017c86002de6ddbc9284818985a3384a2f5c8f55fa2c7565d"
+    },
+    {
+      "name": "ring_spread_actuator_spool",
+      "mesh": "meshes/ring_spread_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -65.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -47.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8105e02f644ce38858316f3c0119e48cd77b440e892ca32bd10e3105be4f243a"
+    },
+    {
+      "name": "little_spread_actuator_motor",
+      "mesh": "meshes/little_spread_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -81.00000000000006,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -46.999999999999936,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "dcaf53bc087499d2bcbf1e476d152298615ec3d2e8356f8b0584fe28583c7f17"
+    },
+    {
+      "name": "little_spread_actuator_rotor",
+      "mesh": "meshes/little_spread_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -64.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -48.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "10600a1f9fea2b8810bb95e3eb03cbe2f889f679529fef966566525cc104b33c"
+    },
+    {
+      "name": "little_spread_actuator_cradle",
+      "mesh": "meshes/little_spread_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -81.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -46.999999999998714,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "54ac53c6eaf6c5cfd1082fdb4e89d9bd9109266010e509be4a9dde52500710a6"
+    },
+    {
+      "name": "little_spread_actuator_body_screws",
+      "mesh": "meshes/little_spread_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -80.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -47.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "80ed164eded06ec5db1b8ad56e8d505cd03e6e101d5e411e7de568920a96ae39"
+    },
+    {
+      "name": "little_spread_actuator_base_screws",
+      "mesh": "meshes/little_spread_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -78.65685424949,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -49.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "c864ad7d11f3b75e4f6aabe8a204e22f5bf68929aeaa0206dbad3cda964214fc"
+    },
+    {
+      "name": "little_spread_actuator_base_nuts",
+      "mesh": "meshes/little_spread_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -79.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -48.84314575050793,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ad2ec603b9aa2a781e7a35a035a04e37eb697563de96245ba560f7e18b03323e"
+    },
+    {
+      "name": "little_spread_actuator_adapter",
+      "mesh": "meshes/little_spread_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -84.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -44.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "9207f94a7ab112c9516a4a979b5a42e9293f3758c3986210ed9730ed71b57317"
+    },
+    {
+      "name": "little_spread_actuator_spool",
+      "mesh": "meshes/little_spread_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -65.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -47.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "979aa0548f0f1da3bc35f438358e05f105c0e82ae49e1a70f55dd071e9ec7f69"
+    },
+    {
+      "name": "index_pip_actuator_motor",
+      "mesh": "meshes/index_pip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -123.00000000000006,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -88.99999999999994,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "88a1161e83316f964316fb84b6655029b71daf31bd83c3d521fc6ed961aa1457"
+    },
+    {
+      "name": "index_pip_actuator_rotor",
+      "mesh": "meshes/index_pip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -106.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -90.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "629b8942247a72db90e9287251bb700200e3c4620106d9215ba6fa1c6ceaf898"
+    },
+    {
+      "name": "index_pip_actuator_cradle",
+      "mesh": "meshes/index_pip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -123.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -88.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "b35f5af24323e785ee285ffb09383f6e1d20bfc6b048dd998bb01236ae559819"
+    },
+    {
+      "name": "index_pip_actuator_body_screws",
+      "mesh": "meshes/index_pip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -122.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -89.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e0a48363059102c3f5aaf80873fa5c33248642310c89baad51e7278da2a3b30f"
+    },
+    {
+      "name": "index_pip_actuator_base_screws",
+      "mesh": "meshes/index_pip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -120.65685424949,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -91.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e3b717bcbc8e0b37f5716e7058dd7c02fa1db4067ed3e0414b8bc385acaa5862"
+    },
+    {
+      "name": "index_pip_actuator_base_nuts",
+      "mesh": "meshes/index_pip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -121.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -90.84314575050793,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "b79a6f7e1b9c6f1f63177c77b76125bcc7de5cd7fe51e6286340d18848e1688b"
+    },
+    {
+      "name": "index_pip_actuator_adapter",
+      "mesh": "meshes/index_pip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -126.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -86.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8759dc309f7bc729b5902231df331568ca67104a0fb1eeb918781ee3f1df7d50"
+    },
+    {
+      "name": "index_pip_actuator_spool",
+      "mesh": "meshes/index_pip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -107.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -89.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "fa97b1335fd59609a0ca25f0f762019e19a2b1a291a433869090f7eb9e70f158"
+    },
+    {
+      "name": "index_dip_actuator_motor",
+      "mesh": "meshes/index_dip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -123.00000000000006,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -88.99999999999994,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3dfb15d2220c10c314f543fd9aa4fdbdc711b7653338510a8b849d02d63e5bd2"
+    },
+    {
+      "name": "index_dip_actuator_rotor",
+      "mesh": "meshes/index_dip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -106.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -90.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0fb9564706e60bd39b9db713b54f95c924fa1570da217ac64ec7db3a6af6b78a"
+    },
+    {
+      "name": "index_dip_actuator_cradle",
+      "mesh": "meshes/index_dip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -123.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -88.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "29efe941824fa6b29c1b5390835b0aef5a81dd0b9cc5a5c122db7dfa34642de9"
+    },
+    {
+      "name": "index_dip_actuator_body_screws",
+      "mesh": "meshes/index_dip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -122.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -89.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "33569613a01df011bd0fcf1a79e8fdd292d079d512f72ad2884a090b0ea9feab"
+    },
+    {
+      "name": "index_dip_actuator_base_screws",
+      "mesh": "meshes/index_dip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -120.65685424949,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -91.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e9cb8b260d9ddc9bd059e0a1f9a003427be90472311c6a186971cbea43170e95"
+    },
+    {
+      "name": "index_dip_actuator_base_nuts",
+      "mesh": "meshes/index_dip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -121.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -90.84314575050793,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d910ffcfc4f1c51ef06f855159a65bf129a16080588a97ec30bc1ba11229ba8f"
+    },
+    {
+      "name": "index_dip_actuator_adapter",
+      "mesh": "meshes/index_dip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -126.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -86.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "42caf952e5f802fde03f45a7823087060c4642a1cc5f272a634c5bb69cf192c4"
+    },
+    {
+      "name": "index_dip_actuator_spool",
+      "mesh": "meshes/index_dip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -107.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -89.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "15b4b4af64766443eb4e7f67adaa10d3c72dda13e13dfcfd8e9728fd3ac836c9"
+    },
+    {
+      "name": "middle_pip_actuator_motor",
+      "mesh": "meshes/middle_pip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -165.00000000000009,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -130.99999999999991,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "9a2e9e56a25f8d0a47151b1dbc5ba085b8dcf6948df23a196a1a6ee6dac688a7"
+    },
+    {
+      "name": "middle_pip_actuator_rotor",
+      "mesh": "meshes/middle_pip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -148.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -132.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3204867bbf0db02499f20f2e13a1d3a98bf1b98bf5b95c1b4d5ad92ac8e6479e"
+    },
+    {
+      "name": "middle_pip_actuator_cradle",
+      "mesh": "meshes/middle_pip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -165.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -130.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0ccadcd646da08d566d9777bd6cf7c0990f2c3f0ad5ce06fc3a7105bdc94362c"
+    },
+    {
+      "name": "middle_pip_actuator_body_screws",
+      "mesh": "meshes/middle_pip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -164.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -131.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "592ca87152be218b1c20f87e6b390c546585634f94118a194356808ccd18d655"
+    },
+    {
+      "name": "middle_pip_actuator_base_screws",
+      "mesh": "meshes/middle_pip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -162.65685424949,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -133.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "c37219b908b60859746283fa1b501852133ff3dcb6be731c5ad21fdf9b21fc02"
+    },
+    {
+      "name": "middle_pip_actuator_base_nuts",
+      "mesh": "meshes/middle_pip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -163.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -132.84314575050792,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "b6aa6c5f52b8c1d49142faff0d9f69e59f5592ac4ea376b877df325f9d23854c"
+    },
+    {
+      "name": "middle_pip_actuator_adapter",
+      "mesh": "meshes/middle_pip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -168.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -128.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "bdec7edf31b94efba865c4220a2a6ed50e50c48f324c9548bf4568648cffd2b8"
+    },
+    {
+      "name": "middle_pip_actuator_spool",
+      "mesh": "meshes/middle_pip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -149.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -131.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d2bc6e67f04306b1c3fc2b9f7a16638a704bee1ed2bb1605b8d0443e37f8f507"
+    },
+    {
+      "name": "middle_dip_actuator_motor",
+      "mesh": "meshes/middle_dip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -165.00000000000009,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -130.99999999999991,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "185cc71306df1797ac58ee71f9b7db3a35046ee7708d6f5b126b7063ac3a55ef"
+    },
+    {
+      "name": "middle_dip_actuator_rotor",
+      "mesh": "meshes/middle_dip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -148.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -132.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "2124a7ee77a363e5eca79e3d5251a09a135c287a51945c0d2c22ce3c1b7ee5dc"
+    },
+    {
+      "name": "middle_dip_actuator_cradle",
+      "mesh": "meshes/middle_dip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -165.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -130.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "6628860dfbeda3e3bd01f95d4b9c2a90a92bb84d1797213e5ddbe1010581ce59"
+    },
+    {
+      "name": "middle_dip_actuator_body_screws",
+      "mesh": "meshes/middle_dip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -164.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -131.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "f1cb5ef2deb6422899eb2684e132dd103a99b21953c11478797df206c550a99d"
+    },
+    {
+      "name": "middle_dip_actuator_base_screws",
+      "mesh": "meshes/middle_dip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -162.65685424949,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -133.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "7c8f51556ee6ad5f31e03b82bec18d7a831e20009415ffa938212f8e89b6763d"
+    },
+    {
+      "name": "middle_dip_actuator_base_nuts",
+      "mesh": "meshes/middle_dip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -163.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -132.84314575050792,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3d47085f6514d3b51eb3cd9ab1bed06ff2e52c133e7f88f0fe33d09cc8ae91d7"
+    },
+    {
+      "name": "middle_dip_actuator_adapter",
+      "mesh": "meshes/middle_dip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -168.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -128.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8c1fc93b7e2745bd7aba8c8714e8ed27e032ea54e822d4cfe72ba35201b5976f"
+    },
+    {
+      "name": "middle_dip_actuator_spool",
+      "mesh": "meshes/middle_dip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -149.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -131.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "2f615cbb2a76b0c667bb8cd6900604da479c059e7475764777b41bb3f75ee77b"
+    },
+    {
+      "name": "ring_pip_actuator_motor",
+      "mesh": "meshes/ring_pip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -207.00000000000009,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -172.99999999999991,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "09456a5ed09a5f426b7dc3e9e33ecece4846c79b1aaaec457a7653fe26b40a17"
+    },
+    {
+      "name": "ring_pip_actuator_rotor",
+      "mesh": "meshes/ring_pip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -190.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -174.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "245f49c8e4decd321858a4fe6be63b739bfb55bd93df3269c13f404d333d4d03"
+    },
+    {
+      "name": "ring_pip_actuator_cradle",
+      "mesh": "meshes/ring_pip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -207.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -172.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "aca183185bc851946e4cf9ce78d09aff85aa3e2c8a13bd00eeb928596aea5f47"
+    },
+    {
+      "name": "ring_pip_actuator_body_screws",
+      "mesh": "meshes/ring_pip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -206.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -173.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d5e0aab1a0cadeb49d6af4103d273bda9d832c185da771bc735a1740d05d681b"
+    },
+    {
+      "name": "ring_pip_actuator_base_screws",
+      "mesh": "meshes/ring_pip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -204.65685424949,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -175.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e14cd86217077f3c62195faa689d84988759b6f3aeb7bf7f893c715fae5ad926"
+    },
+    {
+      "name": "ring_pip_actuator_base_nuts",
+      "mesh": "meshes/ring_pip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -205.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -174.84314575050792,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3c56bbbfce5f385c294149d1239cfa6b55eb41ee5b2c5fce83391e240da9d593"
+    },
+    {
+      "name": "ring_pip_actuator_adapter",
+      "mesh": "meshes/ring_pip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -210.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -170.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "eb5db81831d64726a99f2f664204b245ee54ea054b8e8fe4d5816ff83596f13c"
+    },
+    {
+      "name": "ring_pip_actuator_spool",
+      "mesh": "meshes/ring_pip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -191.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -173.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a3e3342db0589fba9e0bba8e2349a9b6cde0f8194e2598899ad654af10dbe487"
+    },
+    {
+      "name": "ring_dip_actuator_motor",
+      "mesh": "meshes/ring_dip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -207.00000000000009,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -172.99999999999991,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8447b2f951b9fabb6f94007abd7e6ad3ee6d26113581fab5c849f2c649cd5176"
+    },
+    {
+      "name": "ring_dip_actuator_rotor",
+      "mesh": "meshes/ring_dip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -190.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -174.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "733c499315c937f0a074d6772b0669778c5d7bba5ee6f19dcd527e77f76427ba"
+    },
+    {
+      "name": "ring_dip_actuator_cradle",
+      "mesh": "meshes/ring_dip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -207.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -172.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "657750081eac2f00dff3ba791181c61d360dfb69cff9df20c5dbca5b4d21ed60"
+    },
+    {
+      "name": "ring_dip_actuator_body_screws",
+      "mesh": "meshes/ring_dip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -206.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -173.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "974ebaacef4844676da593ba49078400db017fdd1c06c6ebf561df05dc87cf6c"
+    },
+    {
+      "name": "ring_dip_actuator_base_screws",
+      "mesh": "meshes/ring_dip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -204.65685424949,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -175.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0b5265f160ee3212453ded61a291edd80724023a64300e6415407ec97fa932a1"
+    },
+    {
+      "name": "ring_dip_actuator_base_nuts",
+      "mesh": "meshes/ring_dip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -205.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -174.84314575050792,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d1de5e5dcea869ed298b09e274a6ecfa9d990e06f2dd5d9276277019c0c96b28"
+    },
+    {
+      "name": "ring_dip_actuator_adapter",
+      "mesh": "meshes/ring_dip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -210.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -170.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "fcebdc210f94b5ed9d614ca2d75964ad4da36ef42cb06aa3d50823a9b5a06503"
+    },
+    {
+      "name": "ring_dip_actuator_spool",
+      "mesh": "meshes/ring_dip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -191.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -173.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8d5c64ca2f65ef4e74184505b9333227f72f83ef99ee53d521f3bcdd4e9a9710"
+    },
+    {
+      "name": "little_pip_actuator_motor",
+      "mesh": "meshes/little_pip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -249.00000000000009,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -214.99999999999991,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "50cf77be9c49c1d7bbe0bc3e9074d9abe8f9639dfc27a511326ed1fc771a68d3"
+    },
+    {
+      "name": "little_pip_actuator_rotor",
+      "mesh": "meshes/little_pip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -232.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -216.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "fbc9a63507cccce7839650676458c35b8bfc99e6378fd64ca50f8aa576ecf4fb"
+    },
+    {
+      "name": "little_pip_actuator_cradle",
+      "mesh": "meshes/little_pip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -249.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -214.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "02ca3d9601ca8a2423d8a2a1f8a3c6e440ce29e0921d863ae95ef16c0064b44b"
+    },
+    {
+      "name": "little_pip_actuator_body_screws",
+      "mesh": "meshes/little_pip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -248.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -215.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e0c8ea26038754595e4de5fb6e78c2c4d662282f3314fc149d150f2d0fef2b8d"
+    },
+    {
+      "name": "little_pip_actuator_base_screws",
+      "mesh": "meshes/little_pip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -246.65685424949,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -217.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ba52ab2e54e93fc4377f2a8d99eac053ec62480cd5b67c9c071dbd384941b2d0"
+    },
+    {
+      "name": "little_pip_actuator_base_nuts",
+      "mesh": "meshes/little_pip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -247.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -216.84314575050792,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "bc4cae5a8f73fda5bd205794367ebc2ceb73e84e5214d4a6db94f0ef1bc6f342"
+    },
+    {
+      "name": "little_pip_actuator_adapter",
+      "mesh": "meshes/little_pip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -252.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -212.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a59a04fcdbcb6c5534ac42ca1f6b04fcd0fe97caaa08237ab1f3666e3aa1c8e0"
+    },
+    {
+      "name": "little_pip_actuator_spool",
+      "mesh": "meshes/little_pip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -233.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -215.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e96025a51fb57ddd2bfaaee9a71d6d4982d2923eb7c4b27d6518665d357c14fd"
+    },
+    {
+      "name": "little_dip_actuator_motor",
+      "mesh": "meshes/little_dip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -249.00000000000009,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -214.99999999999991,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "73e1c1a88fb1f8af2a31b00ad996e91a870ed54fada1487f201011dec3e72103"
+    },
+    {
+      "name": "little_dip_actuator_rotor",
+      "mesh": "meshes/little_dip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -232.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -216.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "93603544efbfcfdfd5b1aa8ea027eacb71e865911dd5091d82beebf17c3f844b"
+    },
+    {
+      "name": "little_dip_actuator_cradle",
+      "mesh": "meshes/little_dip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -249.00000000000128,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -214.99999999999872,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "031d10f0ab84802c5fcc5e4a1d00fb59db31ebe96c1ca0435c4ca0921b986c41"
+    },
+    {
+      "name": "little_dip_actuator_body_screws",
+      "mesh": "meshes/little_dip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -248.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -215.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a4e1d721a7e61777e58f06ca14c1c4753afea3caa8eeb3c97327e9879c54ddc5"
+    },
+    {
+      "name": "little_dip_actuator_base_screws",
+      "mesh": "meshes/little_dip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -246.65685424949,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -217.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d006768047473f920bb331c8e1747469d13abe8f8ced06a0813b393293ade918"
+    },
+    {
+      "name": "little_dip_actuator_base_nuts",
+      "mesh": "meshes/little_dip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -247.15685424949007,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -216.84314575050792,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "213a9d5d5885cb0336a720541fae503fcb6e15cb943a57e9ce3165d0019ff861"
+    },
+    {
+      "name": "little_dip_actuator_adapter",
+      "mesh": "meshes/little_dip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -252.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -212.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ed6a6a0b42c03eff39f07bee3bb4889f1c6b19698cf2ac1e1b10b9067dc80be6"
+    },
+    {
+      "name": "little_dip_actuator_spool",
+      "mesh": "meshes/little_dip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -233.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -215.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "3ae91c381647ff6280cd0d8981a4d32d5f2495b704c34de9e0a0adf04f2b1e57"
+    },
+    {
+      "name": "thumb_mcp_actuator_motor",
+      "mesh": "meshes/thumb_mcp_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -41.10000000000001,
+          -291.00000000000006,
+          -106.40000007198117
+        ],
+        [
+          -21.099999999999934,
+          -256.99999999999994,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "1389bf558ef0d7c0986485cfd186db63b0cda30d96b35564885c78262301f6bd"
+    },
+    {
+      "name": "thumb_mcp_actuator_rotor",
+      "mesh": "meshes/thumb_mcp_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -39.1000001,
+          -274.5000001,
+          -109.4000001
+        ],
+        [
+          -23.0999999,
+          -258.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "20154ebc50327e2a0cba62bc1e620fbd45a4adc63ec913c7fa3ed7df9a7a7cc7"
+    },
+    {
+      "name": "thumb_mcp_actuator_cradle",
+      "mesh": "meshes/thumb_mcp_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -44.1000001,
+          -291.0000000000013,
+          -109.20000000057088
+        ],
+        [
+          -37.1,
+          -256.9999999999987,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "cddb8c9ac49f9a9d64bde2c53601505f38259ef86a96e45d4bf7a2542a8d1627"
+    },
+    {
+      "name": "thumb_mcp_actuator_body_screws",
+      "mesh": "meshes/thumb_mcp_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.85,
+          -290.75,
+          -108.9
+        ],
+        [
+          -37.35,
+          -257.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "c7d3a61caef859204bcd9207b7fe7f637286583eed3a72a074241bc515961189"
+    },
+    {
+      "name": "thumb_mcp_actuator_base_screws",
+      "mesh": "meshes/thumb_mcp_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.900000000000006,
+          -288.65685424949,
+          -102.056854249492
+        ],
+        [
+          -42.3,
+          -259.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "75ff58d1f693c19b4bb818168966fd720aa6a5415465b7ed1d2dcd941742d7ca"
+    },
+    {
+      "name": "thumb_mcp_actuator_base_nuts",
+      "mesh": "meshes/thumb_mcp_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -48.5,
+          -289.15685424949004,
+          -102.86625532625163
+        ],
+        [
+          -46.900000000000006,
+          -258.8431457505079,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "56d20fe506f96c535b4357f2e892d5b9a0f72d47b5012d95a602a0f3aef2d50d"
+    },
+    {
+      "name": "thumb_mcp_actuator_adapter",
+      "mesh": "meshes/thumb_mcp_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.400000000000006,
+          -294.0,
+          -111.0
+        ],
+        [
+          -43.400000000000006,
+          -254.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a0b6d5873b35ab9e1cba848139c77ad392f607ecf69fa6e7de3cd9b7e5e3231a"
+    },
+    {
+      "name": "thumb_mcp_actuator_spool",
+      "mesh": "meshes/thumb_mcp_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -40.1,
+          -275.5,
+          -116.9
+        ],
+        [
+          -22.1,
+          -257.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d8b2dffa94f042391f052f2b27490447a711565ffb523a70926d016a1a965061"
+    },
+    {
+      "name": "thumb_ip_actuator_motor",
+      "mesh": "meshes/thumb_ip_actuator_motor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -1.1000000000000008,
+          -291.00000000000006,
+          -106.40000007198117
+        ],
+        [
+          18.90000000000007,
+          -256.99999999999994,
+          -80.60000000000001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "8fca76840c3ce6a820b9704204922629c14867683ea278b1dfad52c7c2f0fdea"
+    },
+    {
+      "name": "thumb_ip_actuator_rotor",
+      "mesh": "meshes/thumb_ip_actuator_rotor.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.17,
+        0.2,
+        0.24
+      ],
+      "role": "drive_motor",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          0.8999998999999986,
+          -274.5000001,
+          -109.4000001
+        ],
+        [
+          16.900000100000003,
+          -258.5,
+          -80.4
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "7138d58dbc7a2d2e88e17053d26e8c874964043bddb0a26efdcaa5e3f81ab02a"
+    },
+    {
+      "name": "thumb_ip_actuator_cradle",
+      "mesh": "meshes/thumb_ip_actuator_cradle.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.18,
+        0.46,
+        0.47
+      ],
+      "role": "drive_cradle",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -4.100000100000001,
+          -291.0000000000013,
+          -109.20000000057088
+        ],
+        [
+          2.900000000000001,
+          -256.9999999999987,
+          -80.59999999943
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "f9767335e06c3a0ec1df5c466e5367927a8bf361d78abd5d8e97937a01525aa7"
+    },
+    {
+      "name": "thumb_ip_actuator_body_screws",
+      "mesh": "meshes/thumb_ip_actuator_body_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.8499999999999999,
+          -290.75,
+          -108.9
+        ],
+        [
+          2.6500000000000004,
+          -257.25,
+          -80.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "eff3491b34b7fc08ba2f2b2fedbc3f9210c33ee62dea412fa489908e0f3bc267"
+    },
+    {
+      "name": "thumb_ip_actuator_base_screws",
+      "mesh": "meshes/thumb_ip_actuator_base_screws.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.9,
+          -288.65685424949,
+          -102.056854249492
+        ],
+        [
+          -2.299999999999999,
+          -259.343145750508,
+          -87.74314575051001
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "31b020aee8d257cd453fc7fc00a713dec26c3ac34f08f97948958a21e6850bba"
+    },
+    {
+      "name": "thumb_ip_actuator_base_nuts",
+      "mesh": "meshes/thumb_ip_actuator_base_nuts.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -8.499999999999998,
+          -289.15685424949004,
+          -102.86625532625163
+        ],
+        [
+          -6.9,
+          -258.8431457505079,
+          -86.93374467375
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "6fdcb738bab2cacabd8dcd7bb5b636f99e331763851c9900ac1a740862e221f6"
+    },
+    {
+      "name": "thumb_ip_actuator_adapter",
+      "mesh": "meshes/thumb_ip_actuator_adapter.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -15.4,
+          -294.0,
+          -111.0
+        ],
+        [
+          -3.4000000000000004,
+          -254.0,
+          -76.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "298aaca1b86027bb695a54edb9fb9f0c1ac13b1c26a26486a45d0f775b1f817f"
+    },
+    {
+      "name": "thumb_ip_actuator_spool",
+      "mesh": "meshes/thumb_ip_actuator_spool.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.85,
+        0.58,
+        0.21
+      ],
+      "role": "drive_spool",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -0.09999999999999964,
+          -275.5,
+          -116.9
+        ],
+        [
+          17.9,
+          -257.5,
+          -109.9
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ac47a090ee8b280b2a202dff3fddf02197e5b79cd8b48fc6bf7b46f7fad82cf8"
+    },
+    {
+      "name": "index_spread_actuator_rack_screw_1",
+      "mesh": "meshes/index_spread_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -37.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -32.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "68ec410fd65c568ef3ce98fc5254c310d9a4626214eed8201f8867e8fe082d1f"
+    },
+    {
+      "name": "index_spread_actuator_rack_nut_1",
+      "mesh": "meshes/index_spread_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -37.749630657015594,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -32.250369342984406,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "817cdb82c4bc0b447d90f7414d9b13ca20d8a89ce86bed713c7f4f7e7df7002b"
+    },
+    {
+      "name": "index_spread_actuator_rack_screw_2",
+      "mesh": "meshes/index_spread_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -11.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -6.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "5e02cae82c7eda0548b0ce04356566c34859a4a832a2fb8a4e91f57b1569dca8"
+    },
+    {
+      "name": "index_spread_actuator_rack_nut_2",
+      "mesh": "meshes/index_spread_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -11.749630657015594,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -6.250369342984407,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e80bfaae7737fb1059b09b30464c656cb3ceed40a4145a8e44facc4506ca951c"
+    },
+    {
+      "name": "middle_spread_actuator_rack_screw_1",
+      "mesh": "meshes/middle_spread_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -37.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -32.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "04c9796f85a20940e5b9f657b9d843f2d1d3cee43523708d11ec47eb1162d5ee"
+    },
+    {
+      "name": "middle_spread_actuator_rack_nut_1",
+      "mesh": "meshes/middle_spread_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -37.749630657015594,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -32.250369342984406,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "b35fadc7137dcae56e2e020ac015f4dc40cba77cf6881fdebf7ccb2c9e1fe184"
+    },
+    {
+      "name": "middle_spread_actuator_rack_screw_2",
+      "mesh": "meshes/middle_spread_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -11.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -6.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "1954dfd0ac4cd56721caf3a7afad1994a5c12976787ff070bd4c404268ae628e"
+    },
+    {
+      "name": "middle_spread_actuator_rack_nut_2",
+      "mesh": "meshes/middle_spread_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -11.749630657015594,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -6.250369342984407,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "0afc39f9d75b53031124d7c8bf000e4ba94f08021cb1855adbca105b4a7f773e"
+    },
+    {
+      "name": "ring_spread_actuator_rack_screw_1",
+      "mesh": "meshes/ring_spread_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -79.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -74.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "63c44dcc311c116ad10716386f0f9b0938972244d983e543fc28a20a0c7fa91f"
+    },
+    {
+      "name": "ring_spread_actuator_rack_nut_1",
+      "mesh": "meshes/ring_spread_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -79.74963065701559,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -74.25036934298441,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "74083037205a21b1d849cfbff4ef6169bd92d9a9bebb7bfe33a1272b8a8dacca"
+    },
+    {
+      "name": "ring_spread_actuator_rack_screw_2",
+      "mesh": "meshes/ring_spread_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -53.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -48.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "52214dd1ed93f21dfbc3bb722d9240f4d2998be920fef1385a520d0b1a77c6bc"
+    },
+    {
+      "name": "ring_spread_actuator_rack_nut_2",
+      "mesh": "meshes/ring_spread_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -53.749630657015594,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -48.250369342984406,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "aa3c227e11963445a4ecdbef96f08205a7377ef3c5f986580ca96432c18bd48e"
+    },
+    {
+      "name": "little_spread_actuator_rack_screw_1",
+      "mesh": "meshes/little_spread_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -79.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -74.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "c3cec42d338b7f37f645fb046249a621abad764c7c23b343eb8da4892cbff025"
+    },
+    {
+      "name": "little_spread_actuator_rack_nut_1",
+      "mesh": "meshes/little_spread_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -79.74963065701559,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -74.25036934298441,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e5bc9215477b93e8de0272078282632473dc14777d987bb2110ae54c6ce73c76"
+    },
+    {
+      "name": "little_spread_actuator_rack_screw_2",
+      "mesh": "meshes/little_spread_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -53.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -48.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "c69ad8a9fcf9dff052b6c42c09464d8b0f96da3d5f21ab69aafb08f2c6a93675"
+    },
+    {
+      "name": "little_spread_actuator_rack_nut_2",
+      "mesh": "meshes/little_spread_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -53.749630657015594,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -48.250369342984406,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "32e3bd4f31f41f884dfc23480a4934e0a3140719a6c260b01177a8a8d0f60bfd"
+    },
+    {
+      "name": "index_pip_actuator_rack_screw_1",
+      "mesh": "meshes/index_pip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -121.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -116.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "5451f3dcae8e9444e0556a8debf6904a621081e7e73531b097df2a4fc7cf2773"
+    },
+    {
+      "name": "index_pip_actuator_rack_nut_1",
+      "mesh": "meshes/index_pip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -121.74963065701559,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -116.25036934298441,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "54274e150e9cfb8f9e1e907593d7ace31bf38e0651c08eea09de6101c04bff56"
+    },
+    {
+      "name": "index_pip_actuator_rack_screw_2",
+      "mesh": "meshes/index_pip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -95.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -90.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d06ebff1064bde6063a96fdbff9cf3815f630ff4fdc954a87c1b6f3ed906ad54"
+    },
+    {
+      "name": "index_pip_actuator_rack_nut_2",
+      "mesh": "meshes/index_pip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -95.74963065701559,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -90.25036934298441,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "075fe56704b348a1ae24902a8dd8a6b4d7150215a8a334660e741005746ee3be"
+    },
+    {
+      "name": "index_dip_actuator_rack_screw_1",
+      "mesh": "meshes/index_dip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -121.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -116.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "fa9436c87aea0fe0a9f0b320cd5729fc0232634c11e0f55c2826635419d871c9"
+    },
+    {
+      "name": "index_dip_actuator_rack_nut_1",
+      "mesh": "meshes/index_dip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -121.74963065701559,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -116.25036934298441,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "bc2a2739b8f8c6d007848161e7f54d3789b4d4575df5c7dba9b9a72f89fb1f1f"
+    },
+    {
+      "name": "index_dip_actuator_rack_screw_2",
+      "mesh": "meshes/index_dip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -95.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -90.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "cfc267438243682a45b0f4b6b7830ad9f3fd38c9064eed6e350330b93440009e"
+    },
+    {
+      "name": "index_dip_actuator_rack_nut_2",
+      "mesh": "meshes/index_dip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -95.74963065701559,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -90.25036934298441,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "1b52c586704cf958fd56c657c46f7c69c4d4ddc42dc5c5d13845671b51d69307"
+    },
+    {
+      "name": "middle_pip_actuator_rack_screw_1",
+      "mesh": "meshes/middle_pip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -163.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -158.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4d3d40c097f753663dbbbae0e8f3065e4b6af474ca3b9ded128b86c1442c46c1"
+    },
+    {
+      "name": "middle_pip_actuator_rack_nut_1",
+      "mesh": "meshes/middle_pip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -163.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -158.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4dae2fd1c990cd5fdb36e8558fec2f97f4d2adfa67154940eb4535e2d543cf8a"
+    },
+    {
+      "name": "middle_pip_actuator_rack_screw_2",
+      "mesh": "meshes/middle_pip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -137.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -132.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ea8d7797e91df32849ca054949fe6c539e3e67e1e8648645f39ec968dee90541"
+    },
+    {
+      "name": "middle_pip_actuator_rack_nut_2",
+      "mesh": "meshes/middle_pip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -137.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -132.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "cf251e7eed8512ca9d16ef6ee1adabe28898c8e62cae0355370d5a2dd4bc3873"
+    },
+    {
+      "name": "middle_dip_actuator_rack_screw_1",
+      "mesh": "meshes/middle_dip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -163.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -158.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e6ac2473b00dea27d1b26970a2577f7bbee3844de9736fc34f42d43281aa36af"
+    },
+    {
+      "name": "middle_dip_actuator_rack_nut_1",
+      "mesh": "meshes/middle_dip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -163.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -158.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "eb0adef84512f29dc9c38f246f018fec1437efe1111adaf0375cb5903fa8e87e"
+    },
+    {
+      "name": "middle_dip_actuator_rack_screw_2",
+      "mesh": "meshes/middle_dip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -137.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -132.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "52879ce514524a4b5040a52c209bc2471bbd3d23ae0f041fdfae1a987e60d93e"
+    },
+    {
+      "name": "middle_dip_actuator_rack_nut_2",
+      "mesh": "meshes/middle_dip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -137.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -132.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "a1acffa1de13c60a052fc76783039d8ac07358496b994c8160c76483f9062e76"
+    },
+    {
+      "name": "ring_pip_actuator_rack_screw_1",
+      "mesh": "meshes/ring_pip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -205.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -200.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "5bca3c6080742fd7921358f2c3cc343b7f709590da11fae453ddd44cd43a1686"
+    },
+    {
+      "name": "ring_pip_actuator_rack_nut_1",
+      "mesh": "meshes/ring_pip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -205.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -200.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "584191c56c0e13d2dc88291908a9439fc676687b07b81b9948f82e1ebfdd68d4"
+    },
+    {
+      "name": "ring_pip_actuator_rack_screw_2",
+      "mesh": "meshes/ring_pip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -179.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -174.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "aa076dda861bc007ac6f82e50c7652a3afc0d399aa5867a7f1f452dac4a0e67c"
+    },
+    {
+      "name": "ring_pip_actuator_rack_nut_2",
+      "mesh": "meshes/ring_pip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -179.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -174.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ab2021ee21aa8e9245143a2d91668c9e1cf835a83e2966568272981e445c07da"
+    },
+    {
+      "name": "ring_dip_actuator_rack_screw_1",
+      "mesh": "meshes/ring_dip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -205.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -200.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "d7d0423052a4ea3804af6724bfb6cdad74181a32cb017423e4380262dedd3eca"
+    },
+    {
+      "name": "ring_dip_actuator_rack_nut_1",
+      "mesh": "meshes/ring_dip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -205.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -200.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "f24245a6d5c2d6c371d4a146f8c478a9398a496074b00cbaa0c1aa7779ac2f6a"
+    },
+    {
+      "name": "ring_dip_actuator_rack_screw_2",
+      "mesh": "meshes/ring_dip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -179.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -174.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4eaf3a77f771c1d8a8b780a698d26f7c861dfa28a82eee981061c4ad4fcf8916"
+    },
+    {
+      "name": "ring_dip_actuator_rack_nut_2",
+      "mesh": "meshes/ring_dip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -179.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -174.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "263c052e1f737294ec872a812acd39f9ddaa18be85f5b1844a7f964308a37ed4"
+    },
+    {
+      "name": "little_pip_actuator_rack_screw_1",
+      "mesh": "meshes/little_pip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -247.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -242.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "2429ca13cd6a5589976c5b0f676bf375ed99be0b8106e6b3451d3bdd6be8b3cb"
+    },
+    {
+      "name": "little_pip_actuator_rack_nut_1",
+      "mesh": "meshes/little_pip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -247.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -242.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "5a31445321d1c5d4bfa95dfff66f88e77dee9df657b5c75553ea43fbbbea8b6b"
+    },
+    {
+      "name": "little_pip_actuator_rack_screw_2",
+      "mesh": "meshes/little_pip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -221.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -216.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "58028d39fc1f69e003810c243d3bdb46e5f3982b25209cff02e76f4cd6447001"
+    },
+    {
+      "name": "little_pip_actuator_rack_nut_2",
+      "mesh": "meshes/little_pip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -221.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -216.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "5a71aa7f9a125c9e858efd975965e4a4bdd2b46ab46df3e51253fce164e4d1ac"
+    },
+    {
+      "name": "little_dip_actuator_rack_screw_1",
+      "mesh": "meshes/little_dip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -247.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -242.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "e38464a0ccaf5bbd109966a2505365076ceb4add917764c7827c17e230f05d25"
+    },
+    {
+      "name": "little_dip_actuator_rack_nut_1",
+      "mesh": "meshes/little_dip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -247.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -242.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "4138daaad04b83376f177f79b73c40d1786ee55c3742bbff497503e244503db4"
+    },
+    {
+      "name": "little_dip_actuator_rack_screw_2",
+      "mesh": "meshes/little_dip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -221.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -216.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "63d67337782d2f3b7eecd594cd54b80d9c572f51caa756dbbb751e5d54c09ed0"
+    },
+    {
+      "name": "little_dip_actuator_rack_nut_2",
+      "mesh": "meshes/little_dip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -221.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -216.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "021bee415c5156cba16359cec2e96f21098bc1e639b950a09a8407dd9b22ee96"
+    },
+    {
+      "name": "thumb_mcp_actuator_rack_screw_1",
+      "mesh": "meshes/thumb_mcp_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -289.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -284.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "83e3d74961a91616dd39e5778815fae923a31b272b1a5dc677a63d73bae46f6c"
+    },
+    {
+      "name": "thumb_mcp_actuator_rack_nut_1",
+      "mesh": "meshes/thumb_mcp_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -289.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -284.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "c07db6706a77acc9953a2058bf14bec16d394fba57b8c01d1d0d55e3674d0653"
+    },
+    {
+      "name": "thumb_mcp_actuator_rack_screw_2",
+      "mesh": "meshes/thumb_mcp_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -53.85,
+          -263.85,
+          -81.0
+        ],
+        [
+          -48.15,
+          -258.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ad20254b6578846cc091e174f9d6f7c408a9cb440a5bf34243382136d3dda94d"
+    },
+    {
+      "name": "thumb_mcp_actuator_rack_nut_2",
+      "mesh": "meshes/thumb_mcp_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -54.175,
+          -263.7496306570156,
+          -73.0
+        ],
+        [
+          -47.824999999999996,
+          -258.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "23b2dfb5336e7ccb4e0031515dfac4881cb7ccfa4d818116aa261ed3ae81ab61"
+    },
+    {
+      "name": "thumb_ip_actuator_rack_screw_1",
+      "mesh": "meshes/thumb_ip_actuator_rack_screw_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -289.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -284.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "08b6bae78355b6ae26cbd0df30683c7f9e3eb53c99718ad82c109857c9933e38"
+    },
+    {
+      "name": "thumb_ip_actuator_rack_nut_1",
+      "mesh": "meshes/thumb_ip_actuator_rack_nut_1.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -289.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -284.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "cc33dbb2b38fc7e16a3fde6cdb1c98a53c84a49abc2e0ca7073c2f9857002821"
+    },
+    {
+      "name": "thumb_ip_actuator_rack_screw_2",
+      "mesh": "meshes/thumb_ip_actuator_rack_screw_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -13.85,
+          -263.85,
+          -81.0
+        ],
+        [
+          -8.15,
+          -258.15,
+          -71.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "9a56df15e7575f6a4316985608a3a8be49fa936667e8ffba25775a0409a3963b"
+    },
+    {
+      "name": "thumb_ip_actuator_rack_nut_2",
+      "mesh": "meshes/thumb_ip_actuator_rack_nut_2.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.52,
+        0.55,
+        0.58
+      ],
+      "role": "drive_steel",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -14.175,
+          -263.7496306570156,
+          -73.0
+        ],
+        [
+          -7.824999999999999,
+          -258.2503693429844,
+          -70.6
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "ba0bac7ddca3e03f35158393e3872bcbf34166fb1ccc51fa5e5e3b0b2471cebf"
+    },
+    {
+      "name": "Forearm_twenty_axis_module_rack",
+      "mesh": "meshes/Forearm_twenty_axis_module_rack.stl",
+      "mesh_units": "mm",
+      "color": [
+        0.22,
+        0.38,
+        0.56
+      ],
+      "role": "drive_support",
+      "body": "forearm",
+      "bbox_mm": [
+        [
+          -55.4,
+          -297.0,
+          -76.0
+        ],
+        [
+          -3.3999999999999986,
+          -1.0,
+          -44.0
+        ]
+      ],
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "R": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "sha256_stl": "42e0af0edf69eeb63374055cc20177ae5865f2175027a3b85bc001852c14397d"
+    }
+  ],
+  "source_sha256": {
+    "cad/form_drive_v1/actuator_packaging.py": "23412633a9c9e4caabf909ca3b5419ee0a2a962af69a4d03fc3fb08fecfc490c",
+    "cad/form_drive_v1/layout.json": "4304dac20b4c389f8a6fdee9c2bce3a9b82b81d39fb45527d4f85479b1b86e78",
+    "cad/form_drive_v1/exterior.py": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab",
+    "cad/form_candidate_v1/design.json": "c8a3f91584984cdeba0cad41942efb56bbb8f1cc8d108333e5539dbcbea99651",
+    "cad/form_candidate_v1/build.py": "991882f019eca17f87392a63971ca2adcc447199cea30f3766d3c04fe7cae359",
+    "cad/form_candidate_v1/lightweight_digits.py": "a21fbb715b15471af15a46aa81c0e4b9d5ea22dd9f7d149c0909c8e8a59a51f0",
+    "cad/form_candidate_v1/lightweight_thumb.py": "15dde4e5038f4256ec2b7e8655daff73bda9e93be542770560632a7354ddb21a",
+    "cad/form_candidate_v1/generated/scene.json": "b61e17800760892edc0df4c6b5ca796482ccaeb823916649efd080b8e67b96de",
+    "cad/modular_roots_v9/mass_screen.json": "f6efcd4ad690ded6a018f1a03f7e9bd4cfab4842dc9450230bd07f395b2aa3fa",
+    "cad/modular_roots_v9/parts/M077_stator.step": "0127dce2cee5b2eee4192019040889279572909f0731a07ed5ef01cced34ace5",
+    "cad/modular_roots_v9/parts/M077_rotor.step": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+    "cad/modular_roots_v9/parts/S101_relief.step": "146a88c51e32c28b63b35a881a39b50090c5afb05ef86cc5d5d51f1c7b50c0ec",
+    "cad/modular_roots_v9/parts/M2_body_TAP8.step": "c19578bc7249bbff42aa3f1f98d5a16327900c836e5d9295d611c6390e82775a",
+    "cad/modular_roots_v9/parts/M2_base_screws.step": "2185d8d5122b6ed68ce2edda6a4ea2180c943b55c5df56641d27f2b46bc46856",
+    "cad/modular_roots_v9/parts/M2_base_nuts.step": "89196146803f30aff7299a1fcc0f7f007f45671f47edac4b9fcb23d56b6fe15f",
+    "cad/modular_roots_v9/parts/AK_elbow_flex.step": "5e4391eed77880738adf8e83ba61cf69ad44e9398ac40ea9d0141e1e90394a01",
+    "cad/modular_roots_v9/parts/AK_forearm_roll.step": "fbf2b25265fb8d40ad0d668b6123cc00984943abdcf49e5b6b13fe7706becf36",
+    "cad/modular_roots_v9/parts/AK_wrist_flex.step": "eb8ee6bf24d9031e1e0765564bb80baa48e819127dc7ee02b369980bac2f4243",
+    "cad/modular_roots_v9/parts/AK_wrist_deviation.step": "a807ea5073b27f929a557e63def4e1ec829864c215f750c138f3c3093e4ec256",
+    "cad/modular_roots_v9/parts/Elbow_fixed_cradle.step": "9b0f75433ac931a82fa58c175dbc750add7ffc5a3b8da92bbc931b46148b73e6",
+    "cad/modular_roots_v9/parts/Elbow_roll_carrier.step": "222dceb4067e45c46de64e2a9116bb331a6fda59e5bfe132bedc8211cef3f156",
+    "cad/modular_roots_v9/parts/Forearm_box_beam.step": "c5f408b9bae944bc6628bf26f05355821b2889b90f41ef8a07f12549a0201365",
+    "cad/modular_roots_v9/parts/Roll_output_flange.step": "a3847d2eac4bea34fcd0224808eca6c9fd96ab5258599a4dc7245d3b9d40839d",
+    "cad/modular_roots_v9/parts/Wrist_box_carrier.step": "9f29c5bc75deadfdf5e480bdacfabde6620ce0ccdbef16089cfa2d5cd994618f",
+    "cad/modular_roots_v9/parts/Palm_wrist_saddle.step": "16bd76d913fab5b36a4bda504711c01eba326099edba6491d30918e656ff110c"
+  }
+}

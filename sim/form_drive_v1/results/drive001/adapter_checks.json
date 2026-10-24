@@ -1,0 +1,19 @@
+{
+  "scope": "Adapter consistency only; no physical or trajectory performance assertion",
+  "tests_run": 13,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "reference_sha": "06b9ab4a867cede7d8ffce15a1ee70d90e3a193f",
+  "legacy_source_sha256": {
+    "sim/remote_drive_v1/model.py": "2e76245ad8a43de53c9b204862508f37a80c62fab14ff91354b3e6ec27d6e128",
+    "sim/remote_drive_v1/evaluate.py": "bbccd9165a26e4bc850d9f60655a0a2de18b19ef87164728f5b0439ab8b6b4a8"
+  },
+  "source_sha256": {
+    "test_adapter.py": "5a091e58ae37cfdd083d41706969fcb88fffe652c4cc35d997b414b4c65198f1",
+    "model_adapter.py": "6499f8cac525c77e1ee01a76bb4deced9d4a7f64de4aa619709a18d9d8c777b4"
+  },
+  "actual_contract_sha256": "f6635831bd8aa258a799f845861d63e63037395a634e579125d951d3e5914ab5",
+  "details": []
+}
