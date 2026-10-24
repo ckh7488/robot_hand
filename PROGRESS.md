@@ -7,6 +7,7 @@
 
 ## 2026-10-24 · 문서 정리
 
-- **CP003:** README를 소개·전체 CAD·파일 안내 중심으로 정리하고 개정 이력을 하단으로 이동 → 사전 문서·기본 검사 통과, 커밋 후 새 사본 재검토 예정 → CAD는 V13 유지.
+- **[CP003 · f3081cf](https://github.com/ckh7488/robot_hand/commit/f3081cfce36c6d1dc57e44a534f643befb26ff7f):** README를 소개·전체 CAD·파일 안내 중심으로 정리하고 개정 이력을 하단으로 이동 → 커밋·푸시 완료.
+- **[CP003 커밋 후 재검토](docs/reviews/CP003_f3081cf.md):** 새 사본에서 링크 29개와 기본 검사 재실행 → 모두 통과, CAD·코드 변경 없음 → 설계 과제는 위와 동일.
 
 상세: [현재 설계](checkpoints/CP002.md) · [문서 정리](checkpoints/CP003.md) · [재검토 근거](docs/reviews/)

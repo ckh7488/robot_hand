@@ -1,0 +1,46 @@
+{
+  "target_sha": "f3081cfce36c6d1dc57e44a534f643befb26ff7f",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.4.2",
+    "trimesh": "5.1.1",
+    "scipy": "1.18.1"
+  },
+  "documentation": {
+    "relative_links_checked": 24,
+    "toc_links_checked": 5,
+    "all_targets_exist": true,
+    "history_is_last_section": true,
+    "overview_image": "cad/modular_roots_v9/reviews/whole_hand_forearm.png",
+    "headings": [
+      "Robot Hand",
+      "프로젝트 구성",
+      "CAD 살펴보기",
+      "저장소 구조",
+      "검토 방법",
+      "환경",
+      "기본 확인",
+      "다음 개발 과제",
+      "자료 출처와 이용 범위",
+      "개정 이력"
+    ]
+  },
+  "frozen_hashes": 222,
+  "manifest_files": 855,
+  "FK": {
+    "poses": 6,
+    "parts_per_pose": 251,
+    "max_position_error_mm": 5.684341886080802e-14,
+    "max_rotation_matrix_error": 5.053215498074303e-16,
+    "passed": true
+  },
+  "candidate_meshes": 4,
+  "loop_curves": 123,
+  "guard_tests": 15,
+  "guard_passed": true,
+  "clean_checkout_after_checks": true,
+  "git_status": "",
+  "FreeCAD_geometry_rerun": false,
+  "manufacturing_release": false,
+  "scope": "Documentation links and existing read-only core checks. No new CAD geometry, motion, dynamics, or hardware approval."
+}
