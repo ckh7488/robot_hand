@@ -151,11 +151,14 @@ class CadHand:
         cam = mujoco.MjvCamera()
         cam.lookat[:] = [0.025, .14, .015] if not self.whole else [0, -.07, -.025]
         cam.distance = .53 if not self.whole else 1.05
+        if hasattr(self, 'camera_focus'):
+            cam.lookat[:] = self.camera_focus
+            cam.distance = self.camera_distance
         if focus is not None:
             cam.lookat[:] = focus
         if distance is not None:
             cam.distance = distance
-        cam.azimuth, cam.elevation = [(95, -72), (135, -32), (180, -5)][view % 3]
+        cam.azimuth, cam.elevation = getattr(self, 'camera_views', [(95, -72), (135, -32), (180, -5)])[view % 3]
         self.renderer.update_scene(self.data, cam)
         self.renderer.scene.flags[mujoco.mjtRndFlag.mjRND_SHADOW] = not fast
         if axes:

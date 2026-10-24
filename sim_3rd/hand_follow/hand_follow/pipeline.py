@@ -6,13 +6,16 @@ from .retarget import Calibration, raw_angles
 from .filters import OneEuro
 from .thumb import ThumbRetargeter
 from .fingers import FingerRetargeter, observations
+from .motion import MotionStabilizer
+from .observation import ObservationGuard
+from .continuity import ContinuousPoseFilter
 
 FLEX = np.array([i for i in range(16) if i % 4 != 0])
 FIST = np.array([0, 80, 95, 70] * 4 + [-55, 50, 0, 0], float)
 
 
 class PosePipeline:
-    def __init__(self, design, ranges, calibration_path, beta=.025, min_cutoff=2.0, retarget_mode='angles'):
+    def __init__(self, design, ranges, calibration_path, beta=None, min_cutoff=None, retarget_mode='angles', stabilize=False, robust=None):
         self.design = design
         self.ranges = ranges
         self.fist = np.asarray(design.get('fist_deg', FIST), float)
@@ -20,8 +23,16 @@ class PosePipeline:
         self.calibration = Calibration.load(self.calibration_path) if self.calibration_path.exists() else Calibration()
         self.open_calibrated = self.calibration_path.exists()
         self.fist_calibrated = bool(np.any(np.abs(self.calibration.gain - 1) > .01))
+        self.robust = retarget_mode == 'position' if robust is None else robust
+        beta = (.012 if self.robust else .025) if beta is None else beta
+        min_cutoff = (2.5 if self.robust else 2.) if min_cutoff is None else min_cutoff
         self.filter = OneEuro(20, min_cutoff, beta)
         self.filter_on = True
+        self.motion = MotionStabilizer(ranges) if stabilize else None
+        self.guard = ObservationGuard() if self.robust else None
+        self.continuity = ContinuousPoseFilter(ranges,min_cutoff,beta) if self.robust else None
+        self.last_mapped = np.zeros(20)
+        self.previous_capture = None
         self.command = np.zeros(20)
         self.last_seen = None
         self.last_hand = None
@@ -47,12 +58,23 @@ class PosePipeline:
         self.capture_kind, self.capture_started, self.samples = kind, time.perf_counter(), []
         self.message = '손가락을 붙여 편 손을 유지하세요' if kind == 'open' else '주먹을 쥔 상태를 유지하세요'
 
+    def reselect_hand(self):
+        """Forget observation identity, preserving the displayed pose on return."""
+        if self.guard:
+            self.guard.reset()
+        if self.continuity:
+            self.continuity.hold(self.previous_capture)
+        self.last_hand = None
+        self.filter.reset()
+
     def clear_calibration(self):
         self.calibration = Calibration()
         self.open_calibrated = self.fist_calibrated = False
         if self.calibration_path.exists():
             self.calibration_path.unlink()
         self.filter.reset()
+        if self.guard:
+            self.guard.reset()
         if self.thumb:
             self.thumb.reset()
         if self.fingers:
@@ -129,7 +151,11 @@ class PosePipeline:
                       mapped_deg=None, filtered_deg=None, clipped_joints=[], warning='',
                       estimated_joints=self.calibration.coupled_dips.copy())
         if detection is None:
-            if self.last_seen is None or now - self.last_seen > .25:
+            if self.continuity:
+                self.continuity.hold(capture_time if capture_time is not None else now)
+            if self.motion:
+                self.motion.hold(capture_time if capture_time is not None else now)
+            if not self.robust and (self.last_seen is None or now - self.last_seen > .25):
                 self.filter.reset()
                 if self.thumb:
                     self.thumb.reset()
@@ -140,47 +166,90 @@ class PosePipeline:
                 self.message = '보정 실패: 손이 보이지 않습니다'
             return result
         try:
+            if self.robust and self.previous_capture is not None and capture_time <= self.previous_capture:
+                result['warning'] = '오래된 입력 건너뜀'
+                return result
             thumb = self.design['thumb']
-            raw = raw_angles(detection['world'], detection['handedness'],
+            original_raw = raw_angles(detection['world'], detection['handedness'],
+                             thumb['base_yaw_deg'], thumb['second_yaw_deg'])
+            world = detection['world']
+            quality = dict(held_fingers=[])
+            if self.guard:
+                world, quality = self.guard.update(world, detection['handedness'], capture_time)
+                result['observation_quality'] = quality
+            raw = raw_angles(world, detection['handedness'],
                              thumb['base_yaw_deg'], thumb['second_yaw_deg'])
         except ValueError as exc:
+            if self.continuity:
+                self.continuity.hold(capture_time)
             result['warning'] = str(exc)
             return result
         if detection['handedness'] != self.last_hand:
             self.filter.reset()
+            if self.continuity:
+                self.continuity.hold(capture_time)
             if self.thumb:
                 self.thumb.reset()
             if self.fingers:
                 self.fingers.reset()
         self.last_hand, self.last_seen = detection['handedness'], now
+        dt = None if self.previous_capture is None else max(.001, min(.1, capture_time-self.previous_capture))
+        self.previous_capture = capture_time
         try:
-            observed = observations(detection['world'], detection['handedness']) if self.fingers else None
+            observed = observations(world, detection['handedness']) if self.fingers else None
         except ValueError as exc:
+            if self.continuity:
+                self.continuity.hold(capture_time)
             result['warning'] = str(exc)
             return result
-        self._capture(raw, now, observed)
+        # Unreliable fingers must not redefine the user's calibration endpoints.
+        if not quality['held_fingers']:
+            self._capture(raw, now, observed)
+        elif self.capture_kind and now-self.capture_started > 5:
+            self.capture_kind = None
+            self.message = '보정 실패: 손 좌표가 불안정합니다'
         result['estimated_joints'] = self.calibration.coupled_dips.copy()
         mapped = self.calibration.apply(raw)
         # Spread is poorly observed when the proximal bone faces the camera.
         # Progressively relax it toward neutral in a closed fist, without
         # coupling the four fingers' flexion or the PIP/DIP commands.
         if self.fingers:
-            mapped[:16], result['finger_fit'] = self.fingers.solve(observed, raw, self.calibration)
+            mapped[:16], result['finger_fit'] = self.fingers.solve(observed, raw, self.calibration, continuous=self.robust)
             result['estimated_joints'] = result['finger_fit']['estimated_joints']
         else:
             for offset in range(0, 16, 4):
                 closure = max(np.clip((raw[offset + 1] - 45) / 35, 0, 1),
                               np.clip((mapped[offset + 2] - 45) / 40, 0, 1))
                 mapped[offset] *= 1 - closure
-        if self.thumb:
+        for finger in quality['held_fingers']:
+            if finger < 4:
+                mapped[4*finger:4*finger+4] = self.last_mapped[4*finger:4*finger+4]
+        if self.thumb and 4 not in quality['held_fingers']:
             try:
                 mapped[16:], result['thumb_fit'] = self.thumb.solve(
-                    detection['world'], detection['handedness'],
-                    np.clip(mapped, *self.ranges.T), raw[16:])
+                    world, detection['handedness'],
+                    np.clip(mapped, *self.ranges.T), raw[16:], dt=(dt or 1/30) if self.robust or self.motion else None)
             except ValueError as exc:
+                if self.continuity:
+                    self.continuity.hold(capture_time)
                 result['warning'] = str(exc)
                 return result
-        filtered = self.filter(mapped, capture_time) if self.filter_on else mapped.copy()
+        for finger in quality['held_fingers']:
+            mapped[4*finger:4*finger+4] = self.last_mapped[4*finger:4*finger+4]
+        self.last_mapped = mapped.copy()
+        if self.fingers:
+            self.fingers.previous = mapped[:16].copy()
+        if self.thumb:
+            self.thumb.previous = mapped[16:].copy()
+        if self.motion:
+            filtered = self.motion(mapped, capture_time, smooth=self.filter_on)
+            result['motion'] = dict(limited_joints=self.motion.limited_joints,
+                                   velocity_deg_s=self.motion.velocity.copy())
+        elif self.continuity:
+            filtered = self.continuity(mapped, capture_time, smooth=self.filter_on)
+            result['confirmed_jump_joints'] = self.continuity.held_joints
+        else:
+            filtered = self.filter(mapped, capture_time) if self.filter_on else mapped.copy()
         command = np.clip(filtered, *self.ranges.T)
         clipped = np.flatnonzero(np.abs(command - filtered) > .1).tolist()
         warning = ''
@@ -188,7 +257,10 @@ class PosePipeline:
             warning = '엄지 목표가 CAD 가동 범위를 벗어남'
         if np.sum(raw[[2, 6, 10, 14]] < -25) >= 3:
             warning = '굽힘 방향 이상 · H로 손 재선택 / 진단 로그 확인'
+        if quality['held_fingers']:
+            names = '·'.join(['검지','중지','약지','소지','엄지'][i] for i in quality['held_fingers'])
+            warning = f'{names} 좌표 불안정 · 해당 손가락 유지'
         self.command = command
-        result.update(tracked=True, raw_deg=raw, mapped_deg=mapped, filtered_deg=filtered,
+        result.update(tracked=True, raw_deg=original_raw, accepted_raw_deg=raw, mapped_deg=mapped, filtered_deg=filtered,
                       command_deg=command.copy(), clipped_joints=clipped, warning=warning)
         return result

@@ -31,14 +31,13 @@ class HandTracker:
         self.last_ts = -1
         self.wrist = None
         self.label = None
-        self.pending_label = None
-        self.pending_count = 0
+        self.label_votes = []
         self.last_seen_ms = -10000
 
     def reset_selection(self):
         self.wrist = None
         self.label = None
-        self.pending_count = 0
+        self.label_votes = []
 
     def process(self, rgb, t_ms):
         """RGB input; handedness and world coordinates refer to this same image."""
@@ -55,20 +54,25 @@ class HandTracker:
         continuing = self.wrist is not None and t_ms - self.last_seen_ms < 800
         index = int(np.argmin([np.linalg.norm(w - self.wrist) for w in wrists])) if continuing else int(np.argmax([h[0].score for h in res.handedness]))
         cat = res.handedness[index][0]
+        if continuing:
+            # A different hand appearing elsewhere is not continuous identity.
+            previous_width = getattr(self, 'palm_width', .15)
+            continuing = np.linalg.norm(wrists[index]-self.wrist) < max(.12, previous_width*2.5)
         if not continuing:
-            self.label = cat.category_name
-            self.pending_count = 0
-        elif cat.category_name != self.label:
-            self.pending_count = self.pending_count + 1 if self.pending_label == cat.category_name else 1
-            self.pending_label = cat.category_name
-            if self.pending_count >= 5:
-                self.label = cat.category_name
-                self.pending_count = 0
-        else:
-            self.pending_count = 0
+            self.label = None
+            self.label_votes = []
+        # A continuously tracked physical hand cannot switch left/right when
+        # it rotates or closes. Re-select only after loss or the H command.
+        # Keep the classifier result separately in the log for diagnosis.
         self.wrist, self.last_seen_ms = wrists[index], t_ms
+        if self.label is None:
+            self.label_votes.append(cat.category_name)
+            if len(self.label_votes) < 3:
+                return None
+            self.label = max(set(self.label_votes), key=self.label_votes.count)
         world = np.array([[p.x, p.y, p.z] for p in res.hand_world_landmarks[index]])
         image = np.array([[p.x, p.y] for p in res.hand_landmarks[index]])
+        self.palm_width = float(np.linalg.norm(image[5]-image[17]))
         return dict(world=world, image=image, handedness=self.label, detected_handedness=cat.category_name, score=cat.score)
 
     def close(self):

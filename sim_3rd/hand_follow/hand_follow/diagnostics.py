@@ -33,7 +33,7 @@ class SessionLog:
         self.details = (self.directory / 'landmarks.jsonl').open('w', encoding='utf-8')
         self.events = (self.directory / 'events.jsonl').open('w', encoding='utf-8')
         metadata = dict(metadata, pid=os.getpid(), started=datetime.datetime.now().isoformat(),
-                        image_recording=False, joint_names=NAMES, log_schema=2)
+                        image_recording=False, joint_names=NAMES, log_schema=3)
         (self.directory / 'session.json').write_text(json.dumps(metadata, indent=2, default=plain), encoding='utf-8')
         (root / 'latest_session.json').write_text(json.dumps({'directory': str(self.directory), 'pid': os.getpid()}), encoding='utf-8')
         self.event('started')
@@ -52,10 +52,11 @@ class SessionLog:
         for angles in (pose['raw_deg'], pose['mapped_deg'], pose['command_deg'], actual):
             row.extend(np.round(angles, 3) if angles is not None else [''] * 20)
         self.csv.writerow(row)
-        if command_time - self.last_detail >= .1:
-            self.details.write(json.dumps(dict(seq=seq, elapsed_s=command_time - self.started, mode=mode,
-                                              detection=detection, pose=pose, actual_deg=actual, **timings), default=plain) + '\n')
-            self.last_detail = command_time
+        # Every processed sample is needed to distinguish a one-frame input
+        # outlier from mapping/filter behavior. Never record webcam pixels.
+        self.details.write(json.dumps(dict(seq=seq, elapsed_s=command_time - self.started,
+                                          capture_elapsed_s=captured-self.started, mode=mode,
+                                          detection=detection, pose=pose, actual_deg=actual, **timings), default=plain) + '\n')
         if command_time - self.last_flush >= 1:
             self.csv_file.flush(); self.details.flush()
             self.status('running', mode=mode, tracked=pose['tracked'], **timings)

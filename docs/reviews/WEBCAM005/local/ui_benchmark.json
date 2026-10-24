@@ -1,0 +1,14 @@
+{
+  "scope": "Paired UI composition benchmark; same rendered pixels, no camera/window.",
+  "samples_per_mode": 60,
+  "results": {
+    "before": {
+      "median_ms": 9.559750033076853,
+      "p95_ms": 12.093985016690567
+    },
+    "after": {
+      "median_ms": 9.822549996897578,
+      "p95_ms": 12.4611749954056
+    }
+  }
+}

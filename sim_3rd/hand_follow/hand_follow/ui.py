@@ -1,5 +1,6 @@
 """One window for webcam, CAD hand, calibration and diagnostics."""
 from pathlib import Path
+import time
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
@@ -16,6 +17,8 @@ class PreviewUI:
         self.text_cache = {}
         self.background = Image.new('RGB', (1440, 840), (20, 26, 36))
         self.static_ready = False
+        self.timing_label_time = 0.
+        self.display_timing = None
         self.buttons = [(24, 680, 187, 724, 'C', '편 손 보정'), (199, 680, 362, 724, 'V', '주먹 보정'), (374, 680, 537, 724, 'T', '모델 테스트')]
         if not headless:
             cv2.namedWindow(TITLE, cv2.WINDOW_NORMAL)
@@ -29,6 +32,11 @@ class PreviewUI:
                     self.action = ord(key.lower())
 
     def compose(self, frame, detection, rendered, pose, pipeline, timing, mode, view, debug=False):
+        now = time.perf_counter()
+        if self.display_timing is None or now-self.timing_label_time >= .25:
+            self.display_timing = dict(timing)
+            self.timing_label_time = now
+        timing = self.display_timing
         image = self.background.copy()
         if rendered.shape[:2] != (760, 880):
             rendered = cv2.resize(rendered, (880, 760), interpolation=cv2.INTER_LINEAR)
@@ -65,11 +73,13 @@ class PreviewUI:
                 self.background.paste(label, (x+left, y+top), label)
         text(24, 19, '로봇 손 따라 하기', 25, '#f2f6fc', static=True)
         text(254, 28, '웹캠 → 손 관절 → CAD', 16, '#8ea3b9', static=True)
-        text(580, 25, '실제 CAD 120부품 / 20관절', 19, '#e4edf7', static=True)
+        text(580, 25, pipeline.design.get('preview_label', '실제 CAD 120부품 / 20관절'), 19, '#e4edf7', static=True)
         label = '모델 주먹 테스트 · 카메라 추종 일시정지' if mode == 'test' else '손 인식 중' if pose['tracked'] else '손이 보이지 않음 · 마지막 자세 유지'
         text(24, 78, label, 16, '#62dbc2' if pose['tracked'] and mode != 'test' else '#e8bc70')
-        text(24, 510, f"카메라 {timing['camera_fps']:.1f} fps   화면 {timing['processing_fps']:.1f} fps", 19)
-        text(24, 540, f"손 인식 {timing['track_ms']:.0f} ms   입력→각도 {timing['age_ms']:.0f} ms", 16, '#8ea3b9')
+        text(24, 510, '카메라', 19, static=True)
+        text(277, 510, '화면', 19, static=True)
+        text(24, 540, '손 인식', 16, '#8ea3b9', static=True)
+        text(277, 540, '입력→각도', 16, '#8ea3b9', static=True)
         text(24, 576, '손가락 굽힘', 14, '#8ea3b9', static=True)
         for i, label in enumerate(['검지', '중지', '약지', '소지', '엄지']):
             x = 24 + i * 104
@@ -104,7 +114,16 @@ class PreviewUI:
             if pose.get('thumb_fit'):
                 text(1100, 179, f"엄지 위치 오차 {pose['thumb_fit']['tip_error_mm']:.0f} mm", 16)
         self.static_ready = True
-        return np.asarray(image)
+        canvas = np.array(image)
+        # Changing ASCII counters do not need expensive Korean glyph layout
+        # on every timing update. Cache Korean labels and draw digits directly.
+        for value, position, scale, color in (
+                (f"{timing['camera_fps']:.1f} fps", (102, 532), .55, (196,206,218)),
+                (f"{timing['processing_fps']:.1f} fps", (335, 532), .55, (196,206,218)),
+                (f"{timing['track_ms']:.0f} ms", (96, 559), .48, (142,163,185)),
+                (f"{timing['age_ms']:.0f} ms", (380, 559), .48, (142,163,185))):
+            cv2.putText(canvas,value,position,cv2.FONT_HERSHEY_SIMPLEX,scale,color,1,cv2.LINE_AA)
+        return canvas
 
     def show(self, *args, **kwargs):
         image = self.compose(*args, **kwargs)

@@ -74,11 +74,13 @@ class ThumbRetargeter:
         self.design = design
         self.limits = np.asarray(ranges)[16:]
         self.previous = None
+        self.previous_wrap = None
 
     def reset(self):
         self.previous = None
+        self.previous_wrap = None
 
-    def solve(self, world, handedness, finger_angles, initial):
+    def solve(self, world, handedness, finger_angles, initial, dt=None):
         p = np.asarray(world, float)
         q = (p - p[0]) @ palm_frame(p, handedness != 'Left') * 1000
         thumb = self.design['thumb']
@@ -101,6 +103,9 @@ class ThumbRetargeter:
         closure = smoothstep((np.median(finger_angles[[2, 6, 10, 14]]) - 35) / 45)
         across = smoothstep((q[5, 0] - q[4, 0]) / (width * .5))
         wrap = float(closure * across)
+        if dt is not None and self.previous_wrap is not None:
+            wrap = self.previous_wrap + dt/(.045+dt)*(wrap-self.previous_wrap)
+        self.previous_wrap = wrap
         relative = chains[0][1] + (q[2:5] - q[6]) * scale
         target = (1 - wrap) * target + wrap * relative
         # Approximate outer surface: folded index/middle hinges plus 22 mm for
@@ -110,7 +115,14 @@ class ThumbRetargeter:
 
         lower, upper = self.limits.T
         seed = np.clip(initial if self.previous is None else self.previous, lower + 1e-6, upper - 1e-6)
-        weights = np.array([.10, .25, 2.0])[:, None]
+        continuity = .03/180
+        if dt is not None and self.previous is not None:
+            # Retain the current inverse-kinematics branch when the tip has
+            # multiple solutions, instead of jumping to an equivalent pose.
+            step = np.array([480,480,600,600])*np.clip(dt,.015,.1)
+            lower, upper = np.maximum(lower,seed-step), np.minimum(upper,seed+step)
+            continuity = .18/30
+        weights = np.array([.35, .65, 2.0] if dt is not None else [.10, .25, 2.0])[:, None]
 
         cache = [None, None, None]
 
@@ -124,12 +136,12 @@ class ThumbRetargeter:
             points, _ = evaluate(angles)
             positional = ((points[1:] - target) * weights / 50).ravel()
             # Small regularizer resolves redundant solutions without hiding tip error.
-            return np.r_[positional, (angles - seed) / 180 * .03]
+            return np.r_[positional, (angles - seed) * continuity]
 
         def jacobian(angles):
             _, derivative = evaluate(angles)
             return np.vstack(((derivative * weights[:, :, None] / 50).reshape(9, 4),
-                              np.eye(4) * (.03/180)))
+                              np.eye(4) * continuity))
 
         fit = least_squares(residual, seed, jac=jacobian, bounds=(lower, upper), max_nfev=16,
                             ftol=2e-4, xtol=2e-4, gtol=2e-4)

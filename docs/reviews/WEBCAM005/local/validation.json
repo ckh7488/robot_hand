@@ -1,0 +1,9 @@
+{
+  "synthetic_state": "stopped",
+  "synthetic_error": null,
+  "tests": 61,
+  "test_result": "pass",
+  "scope": "Code behavior and synthetic application smoke test only",
+  "synthetic_frames": 151,
+  "synthetic_hand_frames": 151
+}
