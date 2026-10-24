@@ -1,0 +1,12 @@
+{
+  "sha": "c3d05a0783aaf7534297b2c3cebe7d4d317fa981",
+  "manifest_files": 26,
+  "tests": 61,
+  "tests_passed": true,
+  "replay_metrics_equal": true,
+  "replayed": 1494,
+  "tracked": 195,
+  "synthetic_frames": 121,
+  "source_unchanged": true,
+  "scope": "Same agent, fresh exact-SHA archive. Private recording supplied externally by hash. Not independent audit or user live acceptance."
+}
