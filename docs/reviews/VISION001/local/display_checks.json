@@ -1,0 +1,11 @@
+{
+  "tests": 3,
+  "passed": true,
+  "numpy": "1.26.4",
+  "pillow": "11.0.0",
+  "checks": [
+    "pairwise distances/chirality/input unchanged",
+    "invalid geometry rejected",
+    "z-buffer order-independent occlusion"
+  ]
+}

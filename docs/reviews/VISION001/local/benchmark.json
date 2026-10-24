@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "model": "WiLoR-mini",
+  "dtype": "float32",
+  "input": "unmodified saved BGR camera.png",
+  "selection": "largest independently detected hand; confidence >= 0.3",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce GTX 1080",
+  "torch": "2.5.0+cu118",
+  "checkpoint_keys": {
+    "missing": [],
+    "unexpected": [
+      "initialized",
+      "discriminator.D_conv1.weight",
+      "discriminator.D_conv1.bias",
+      "discriminator.D_conv2.weight",
+      "discriminator.D_conv2.bias",
+      "discriminator.pose_out.0.weight",
+      "discriminator.pose_out.0.bias",
+      "discriminator.pose_out.1.weight",
+      "discriminator.pose_out.1.bias",
+      "discriminator.pose_out.2.weight",
+      "discriminator.pose_out.2.bias",
+      "discriminator.pose_out.3.weight",
+      "discriminator.pose_out.3.bias",
+      "discriminator.pose_out.4.weight",
+      "discriminator.pose_out.4.bias",
+      "discriminator.pose_out.5.weight",
+      "discriminator.pose_out.5.bias",
+      "discriminator.pose_out.6.weight",
+      "discriminator.pose_out.6.bias",
+      "discriminator.pose_out.7.weight",
+      "discriminator.pose_out.7.bias",
+      "discriminator.pose_out.8.weight",
+      "discriminator.pose_out.8.bias",
+      "discriminator.pose_out.9.weight",
+      "discriminator.pose_out.9.bias",
+      "discriminator.pose_out.10.weight",
+      "discriminator.pose_out.10.bias",
+      "discriminator.pose_out.11.weight",
+      "discriminator.pose_out.11.bias",
+      "discriminator.pose_out.12.weight",
+      "discriminator.pose_out.12.bias",
+      "discriminator.pose_out.13.weight",
+      "discriminator.pose_out.13.bias",
+      "discriminator.pose_out.14.weight",
+      "discriminator.pose_out.14.bias",
+      "discriminator.betas_fc1.weight",
+      "discriminator.betas_fc1.bias",
+      "discriminator.betas_fc2.weight",
+      "discriminator.betas_fc2.bias",
+      "discriminator.betas_out.weight",
+      "discriminator.betas_out.bias",
+      "discriminator.D_alljoints_fc1.weight",
+      "discriminator.D_alljoints_fc1.bias",
+      "discriminator.D_alljoints_fc2.weight",
+      "discriminator.D_alljoints_fc2.bias",
+      "discriminator.D_alljoints_out.weight",
+      "discriminator.D_alljoints_out.bias"
+    ]
+  },
+  "comparison": "saved MediaPipe predictions from same image; no 3D ground truth",
+  "timing": "synchronized detector+pose including pre/postprocess; excludes disk IO/model loading",
+  "cold_first_inference_ms": 2086.8868000106886,
+  "cuda_peak_allocated_bytes": 3111918080,
+  "cuda_peak_reserved_bytes": 3546284032,
+  "cases": [
+    {
+      "status": "tracked",
+      "detection_ms": 20.023399963974953,
+      "pose_ms": 172.36269998829812,
+      "elapsed_ms": 192.38609995227307,
+      "repeated_elapsed_ms": [
+        192.38609995227307,
+        205.7681999867782,
+        200.59499994385988
+      ],
+      "median_elapsed_ms": 200.59499994385988,
+      "repeats_status": [
+        "tracked",
+        "tracked",
+        "tracked"
+      ],
+      "repeat_max_joint_difference_m": 0.0,
+      "case_id": "case_0001"
+    },
+    {
+      "status": "tracked",
+      "detection_ms": 20.805599982850254,
+      "pose_ms": 203.8996999617666,
+      "elapsed_ms": 224.70529994461685,
+      "repeated_elapsed_ms": [
+        224.70529994461685,
+        197.64679996296763,
+        190.42660004924983
+      ],
+      "median_elapsed_ms": 197.64679996296763,
+      "repeats_status": [
+        "tracked",
+        "tracked",
+        "tracked"
+      ],
+      "repeat_max_joint_difference_m": 0.0,
+      "case_id": "case_0002"
+    },
+    {
+      "status": "tracked",
+      "detection_ms": 18.500200007110834,
+      "pose_ms": 164.26790005061775,
+      "elapsed_ms": 182.7681000577286,
+      "repeated_elapsed_ms": [
+        182.7681000577286,
+        187.38570006098598,
+        186.9853000389412
+      ],
+      "median_elapsed_ms": 186.9853000389412,
+      "repeats_status": [
+        "tracked",
+        "tracked",
+        "tracked"
+      ],
+      "repeat_max_joint_difference_m": 9.313225746154785e-10,
+      "case_id": "case_0003"
+    },
+    {
+      "status": "tracked",
+      "detection_ms": 29.82029994018376,
+      "pose_ms": 178.37950005196035,
+      "elapsed_ms": 208.1997999921441,
+      "repeated_elapsed_ms": [
+        208.1997999921441,
+        196.78900006692857,
+        195.79660007730126
+      ],
+      "median_elapsed_ms": 196.78900006692857,
+      "repeats_status": [
+        "tracked",
+        "tracked",
+        "tracked"
+      ],
+      "repeat_max_joint_difference_m": 0.0,
+      "case_id": "case_0004"
+    },
+    {
+      "status": "tracked",
+      "detection_ms": 27.864999952726066,
+      "pose_ms": 177.74349998217076,
+      "elapsed_ms": 205.60849993489683,
+      "repeated_elapsed_ms": [
+        205.60849993489683,
+        195.605400018394,
+        194.3831000244245
+      ],
+      "median_elapsed_ms": 195.605400018394,
+      "repeats_status": [
+        "tracked",
+        "tracked",
+        "tracked"
+      ],
+      "repeat_max_joint_difference_m": 0.0,
+      "case_id": "case_0005"
+    }
+  ]
+}

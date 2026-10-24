@@ -1,0 +1,35 @@
+{
+  "wilor_source": "ebec42f94c389070cdd7dda6fd1bf0b4a659c960",
+  "chumpy_source": "580566eafc9ac68b2614b64d6f7aaa84eebb70da",
+  "compatibility_patch": null,
+  "weights": {
+    "repository": "warmshao/WiLoR-mini",
+    "revision": "b00adea9a6843bbb4c9042109c5eb29ab2a59dea",
+    "files": [
+      {
+        "file": "pretrained_models/mano_mean_params.npz",
+        "sha256": "efc0ec58e4a5cef78f3abfb4e8f91623b8950be9eff8b8e0dbb0d036ebc63988",
+        "size": 1178,
+        "source": "https://huggingface.co/warmshao/WiLoR-mini/resolve/b00adea9a6843bbb4c9042109c5eb29ab2a59dea/pretrained_models/mano_mean_params.npz"
+      },
+      {
+        "file": "pretrained_models/MANO_RIGHT.pkl",
+        "sha256": "45d60aa3b27ef9107a7afd4e00808f307fd91111e1cfa35afd5c4a62de264767",
+        "size": 3821356,
+        "source": "https://huggingface.co/warmshao/WiLoR-mini/resolve/b00adea9a6843bbb4c9042109c5eb29ab2a59dea/pretrained_models/MANO_RIGHT.pkl"
+      },
+      {
+        "file": "pretrained_models/wilor_final.ckpt",
+        "sha256": "3e97aafc7dd08d883a4cc5a027df61fdb6fda6136dbd1319405413862ada6bb2",
+        "size": 2564989533,
+        "source": "https://huggingface.co/warmshao/WiLoR-mini/resolve/b00adea9a6843bbb4c9042109c5eb29ab2a59dea/pretrained_models/wilor_final.ckpt"
+      },
+      {
+        "file": "pretrained_models/detector.pt",
+        "sha256": "5ef3df44e42d2db52d4ffe91f83a22ce9925e2acc9abebf453f2c5d22e380033",
+        "size": 53582271,
+        "source": "https://huggingface.co/warmshao/WiLoR-mini/resolve/b00adea9a6843bbb4c9042109c5eb29ab2a59dea/pretrained_models/detector.pt"
+      }
+    ]
+  }
+}
