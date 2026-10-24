@@ -1,0 +1,50 @@
+{
+  "target_sha": "f184f553e938232193c7ac2a4191b3a0a42d4e24",
+  "same_agent_clean_archive_review": true,
+  "independent_audit": false,
+  "archive_source": "git archive exact target SHA; code and CAD read from extracted copy",
+  "input_sha256": {
+    "cad\\webcam_articulation_v1\\design.json": "fd2e1c4a1d33eeb5dca88b44bc8ff34f9671e7501d39612dd6aab6a21e7a35ae",
+    "cad\\webcam_articulation_v1\\generated\\scene.json": "a1f4bddc7d28a40224be161a8fe96758e0d54540b4841ec8183ad57af8ef7331",
+    "cad\\webcam_articulation_v1\\generated\\hand_articulation_candidate.step": "31afbce4a99de405e90d360706d2befd62327764777fd3b17b2ccfc26a9641bc",
+    "cad\\webcam_articulation_v1\\build.py": "12fe7866627427cf3ec17f4b123b462e6a691e50c43b318dbab414843c4f14e3",
+    "cad\\webcam_articulation_v1\\digits.py": "a41ebebe18431f4b84dc2320a46ba9e66e2dfb639f9e0ecb57872842efed0626",
+    "cad\\webcam_articulation_v1\\thumb_shell.py": "68a5e19061e9f919a44214a0808d58f0f9def168ff68504c75fb3f9f45508f39",
+    "cad\\webcam_articulation_v1\\manufacturing_audit.py": "d76e561afcf59c2f873576b60cd13341be8fd97ac2473b313f9aade7336afd5f"
+  },
+  "supplementary_source_sha256": {
+    "cad\\webcam_articulation_v1\\verify.py": "c9c97710519c130f6e5079520e07f9d28240c5279f9f02d39db3e750be869ff0",
+    "cad\\form_candidate_v1\\build.py": "991882f019eca17f87392a63971ca2adcc447199cea30f3766d3c04fe7cae359",
+    "cad\\form_drive_v1\\generated\\dynamics_contract.json": "f6635831bd8aa258a799f845861d63e63037395a634e579125d951d3e5914ab5",
+    "cad\\webcam_articulation_v1\\make_manufacturing_report.py": "30d740ac6123974ccab4e5593730ee782b0d965abbba5f2e360fbe2adbf9246a",
+    "cad\\webcam_articulation_v1\\mesh_cleanup_screen.py": "4e5bef30ef9b225084ff5bd97dc98c480becf7a6c8dcea6a847035949a45c484",
+    "cad\\webcam_articulation_v1\\render_manufacturing_sections.py": "2de4f0f4c7d000c2b8d17cf7b825cce550527f9bb6c8ff6beb4f59f0dbb64046"
+  },
+  "all_pairs_cases": {
+    "open": {
+      "all_pairs": 47,
+      "different_bodies": 29
+    },
+    "fist": {
+      "all_pairs": 44,
+      "different_bodies": 26
+    },
+    "index_spread_minus22_others_open": {
+      "all_pairs": 68,
+      "different_bodies": 50
+    }
+  },
+  "regenerated_reports": [
+    "assembly.json",
+    "interfaces.json",
+    "mesh_cleanup.json",
+    "wall_point_recheck.json"
+  ],
+  "assembly_interfaces_mesh_max_numeric_difference": 0.0,
+  "wall_points": 72,
+  "wall_max_error_mm": 0.0,
+  "wall_scope": "Three stored thinnest locations per each of 24 parts; full UV scan not repeated",
+  "verdict": "NOT_READY_FOR_FABRICATION",
+  "cad_regenerated": false,
+  "continuous_motion_approved": false
+}
