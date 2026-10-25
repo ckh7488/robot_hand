@@ -35,3 +35,6 @@
 첫 안은 완성 자세에 충돌이 없어도 발 나사4개를 넣을 수 없었습니다. 발 구멍을 뒤로2mm·바깥으로1mm 옮기고 받침 폭을 늘려 수정했습니다. 손의 원래 부품은 바꾸지 않았습니다. [초기 실패와 수정 기록](reviews/development/README.md)을 보존하며, 위 최소 간격을 모든 공차·공구·강도의 보증으로 확대하지 않습니다.
 
 `build.py`는 새 출력 폴더에 생성하고 `audit.py --repo <저장소> --generated <저장 CAD 폴더> --output <새 JSON>`는 그 STEP를 다시 읽습니다. `render.py`는 저장 메시만 그립니다. 각 프로그램의 소스·입출력 해시는 보고서와 `THUMB_BENCH001_MANIFEST.json`에 연결합니다. 커밋 뒤 정확 SHA에서 수행하는 새 사본 검사는 별도 후속 기록으로 남깁니다.
+
+<!-- THUMB_BENCH001 exact-SHA review -->
+[정확한 커밋 재검사](EXACT_SHA_REVIEW.md) — 242a56a6b30e230e1d91db4db43ebb762b85d308

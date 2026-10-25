@@ -1,0 +1,65 @@
+{
+  "schema": "thumb_ip_bench_exact_sha_review.v1",
+  "completed": true,
+  "reproduction_passed": true,
+  "errors": [],
+  "target_sha": "242a56a6b30e230e1d91db4db43ebb762b85d308",
+  "baseline_sha": "a35750de1a1075e27ad14e15a89ddef26f767a48",
+  "manifest_sha256": "d62a9dc91b8eb08953afb4c5d9c1651f29cc20117b1c21737b76466d91634dc2",
+  "publication_helpers_sha256": {
+    "bench_checkpoint.py": "c17cdade983965d8515879111525ed761158f92dc2351448387f8df2219956a3",
+    "git_blob_batch.py": "28e37b501bac04630ffb953bfe6ccc1cb81674830e475834c539b0c8abd5f386"
+  },
+  "baseline_snapshot_sha256": "a3ff130a171057e70cc88baa67d919d4733a41594db80065f8d9214dbaa306d5",
+  "scope": "Exact committed saved-CAD bench audit replay only. No CAD rebuild, image rerender, whole-hand integration, continuous sweep, tolerance/load qualification, physical drive or latency approval.",
+  "comparison_absolute_tolerance": 1e-05,
+  "differences": [],
+  "original_audit": "cad/thumb_ip_bench_v1/reviews/saved_audit.json",
+  "original_audit_sha256": "2d309c4e5d98d8275b403c6260f74df8cbaa2c91bc1f0f89ed560a590715fe63",
+  "replay_audit_sha256": "2d309c4e5d98d8275b403c6260f74df8cbaa2c91bc1f0f89ed560a590715fe63",
+  "audit_summary": {
+    "parts": 124,
+    "poses": 9,
+    "collisions": 0,
+    "cord_part_checks": 11160,
+    "cord_collisions": 0,
+    "declared_contacts": 72,
+    "failed_contacts": 0,
+    "screw_access_paths": 14,
+    "nut_access_paths": 14,
+    "lateral_jaw_paths": 4,
+    "failed_final_envelope_containment": 0,
+    "blocked_assembly_paths": 0
+  },
+  "all_closure_inputs_unchanged": true,
+  "closure_files": 342,
+  "archives": [
+    {
+      "file": "archive_000.tar",
+      "bytes": 5324800,
+      "sha256": "3888951deb99d59ee3027d592d57ac449291f32559d3de2e3f07f1c08977ac73"
+    },
+    {
+      "file": "archive_001.tar",
+      "bytes": 3880960,
+      "sha256": "0a8984c2b0779db2b44170124545abad6436437dfcd03c3f5297c5b5719d5da0"
+    },
+    {
+      "file": "archive_002.tar",
+      "bytes": 29122560,
+      "sha256": "64953bf16e803ad7d3d49bc9e380286b55eb0452e5565c1e242ad63da32bbddf"
+    },
+    {
+      "file": "archive_003.tar",
+      "bytes": 5857280,
+      "sha256": "c691f09b2b333a11bbbd29430a1865267c5468df282597dd70ccde0cbda1b35b"
+    }
+  ],
+  "runtime": {
+    "python": "C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\pythonw.exe",
+    "pythonpath": "D:/Codex-work/robot-hand-workspace/work/audit_deps;D:/Codex-work/robot-hand-cache/2026-10-24/cad_deps",
+    "blas_threads": 1
+  },
+  "manufacturing_approved": false,
+  "measured_latency": false
+}
