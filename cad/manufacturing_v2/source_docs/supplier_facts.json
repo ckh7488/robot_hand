@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "retrieved_date": "2026-10-25",
+  "scope": "Official supplier/manufacturer dimension evidence; no purchase, vendor CAD claim or physical approval",
+  "screw": {
+    "supplier": "Accu",
+    "selected_sku": "SSCF-M2-4-A2",
+    "alternative_sku": "SSCF-M2-5-A2",
+    "product_urls": ["https://www.accu.co.uk/metric-cap-head-screws/3790-SSCF-M2-4-A2", "https://www.accu.co.uk/metric-cap-head-screws/3791-SSCF-M2-5-A2"],
+    "thread_nominal_mm": 2,
+    "pitch_mm": 0.4,
+    "underhead_lengths_mm": [4, 5],
+    "full_thread_catalogued": true,
+    "minimum_full_form_thread_length_mm": null,
+    "head_diameter_mm": 3.8,
+    "head_diameter_tolerance_mm": [-0.18, 0],
+    "head_height_mm": 2,
+    "head_height_tolerance_mm": [-0.14, 0],
+    "socket_AF_mm": 1.5,
+    "drive_depth_mm": 1,
+    "material": "A2 stainless steel, natural finish",
+    "supplier_standard_claim": ["DIN 912", "ISO 4762"],
+    "unreported": ["length tolerance", "thread tolerance class", "socket AF tolerance", "thread end lead/runout", "guaranteed full-form engagement length", "strength subclass"],
+    "availability": "Exact commercial SKU; current stock/delivery not confirmed"
+  },
+  "washer": {
+    "manufacturer": "KRAFTBERG",
+    "supplier": "TME",
+    "selected_sku": "K2.2/D9021-A2",
+    "product_url": "https://www.tme.eu/en/details/k2.2_d9021-a2/washers/kraftberg/",
+    "family_url": "https://www.tme.eu/html/EN/washers-din-9021-stainless-steel-a2/ramka_20921_EN_pelny.html",
+    "nominal_thread": "M2",
+    "ID_mm": 2.2,
+    "OD_mm": 7,
+    "thickness_mm": 0.8,
+    "material": "A2 stainless steel",
+    "supplier_standard_claim": ["DIN 9021", "ISO 7093"],
+    "ID_tolerance_mm": null,
+    "OD_tolerance_mm": null,
+    "thickness_tolerance_mm": null,
+    "unreported": ["hardness", "flatness", "retention/bending capacity"],
+    "broader_alternative": {"sku": "K2.7/D9021-A2", "nominal_thread": "M2.5", "ID_mm": 2.7, "OD_mm": 8, "thickness_mm": 0.8},
+    "custom_previous_proposal": {"standard_part": false, "ID_mm": 2.2, "OD_mm": 7.4, "thickness_mm": 0.6},
+    "availability": "Commercial catalog with 100-piece order multiplicity; region/date stock snapshots conflict, current stock not confirmed"
+  },
+  "tools": [
+    {"manufacturer": "Wera", "part_number": "05118066001", "type": "2054 Micro straight hex screwdriver", "socket_AF_mm": 1.5, "blade_length_mm": 60, "blade_diameter_mm": 3, "handle_length_mm": 97, "overall_size_mm": [157,13,13], "pdf": "wera_05118066001.pdf"},
+    {"manufacturer": "Wera", "part_number": "05118014001", "type": "2035 Micro flat screwdriver", "tip_thickness_mm": 0.8, "tip_width_mm": 4, "blade_length_mm": 80, "blade_diameter_mm": 4, "handle_length_mm": 97, "overall_size_mm": [177,13,13], "pdf": "wera_05118014001.pdf"},
+    {"manufacturer": "Wera", "part_number": "05059602001", "type": "840/4 Z separate bit", "socket_AF_mm": 1.5, "length_mm": 50, "blade_diameter_mm": 2, "drive": "1/4 inch hex, DIN ISO 1173-F 6.3", "overall_size_mm": [50,7,6], "pdf": "wera_05059602001.pdf"}
+  ],
+  "tool_unreported": ["reduced tip axial length", "taper and diameter transition profiles", "handle radial profile", "dimensional tolerances", "holder/handle of separate bit"],
+  "suggested_declared_approach_gauge_not_vendor_CAD": {"hex_blade_diameter_mm": 3.5, "flat_blade_diameter_mm": 4.5, "grip_diameter_mm": 20, "grip_length_mm": 97, "actual_engagement_profile_validated": false, "allowances_are_manufacturer_tolerances": false},
+  "nominal_stack": {"pin_end_mm": 13.15, "washer_span_mm": [13.15,13.95], "screw_head_span_mm": [13.95,15.95], "M2x4_tip_coordinate_mm": 9.95, "M2x4_length_inside_pin_mm": 3.2, "M2x5_length_inside_pin_mm": 4.2, "guaranteed_engagement": false},
+  "official_downloads": [
+    {"file": "accu_sscf_m2_4_a2.pdf", "url": "https://www.accu.co.uk/api/product-datasheet?id=3790"},
+    {"file": "accu_sscf_m2_5_a2.pdf", "url": "https://www.accu.co.uk/api/product-datasheet?id=3791"},
+    {"file": "westfield_din9021.pdf", "url": "https://www.westfieldfasteners.co.uk/Datasheets/Washer_od3nom_M.pdf"},
+    {"file": "wera_05118066001.pdf", "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05118066001.pdf"},
+    {"file": "wera_05118014001.pdf", "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05118014001.pdf"},
+    {"file": "wera_05059602001.pdf", "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05059602001.pdf"}
+  ]
+}

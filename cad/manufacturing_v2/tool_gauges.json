@@ -1,0 +1,35 @@
+{
+  "schema": "manufacturing_v2.declared_tool_gauges.v1",
+  "source": "source_docs/supplier_facts.json",
+  "approach_travel_mm": 30.0,
+  "hex_driver": {
+    "reference_part": "Wera 05118066001",
+    "tip_AF_mm": 1.5,
+    "tip_start_x_mm": 14.95,
+    "tip_end_x_mm": 16.05,
+    "shaft_radius_mm": 1.75,
+    "blade_length_mm": 60.0,
+    "handle_radius_mm": 10.0,
+    "handle_length_mm": 97.0
+  },
+  "counterhold_driver": {
+    "reference_part": "Wera 05118014001",
+    "tip_width_y_mm": 4.0,
+    "tip_thickness_z_mm": 0.8,
+    "tip_start_x_mm": -15.05,
+    "tip_end_x_mm": -14.2,
+    "shaft_radius_mm": 2.25,
+    "blade_length_mm": 80.0,
+    "handle_radius_mm": 10.0,
+    "handle_length_mm": 97.0
+  },
+  "nominal_axial_float_mm": 0.15,
+  "assumptions": [
+    "These are declared access gauges, not supplier tool CAD. Shaft/handle bounds include explicit design margins, not manufacturer tolerance claims.",
+    "The full 20mm-diameter handle gauge encloses the published13x13mm bounding cross-section, and is axisymmetric for grip rotation clearance.",
+    "Reduced tip length and transition profiles are unpublished. The assumed 1.10mm hex tip and0.85mm flat tip must be measured on the selected tools before assembly approval.",
+    "Nominal tip seating and a30mm straight approach are tested. Threaded screw installation must rotate and is not represented by pushing a cylinder through a smooth bore.",
+    "Human fingers, supports, torque, tool compliance, drive rounding, supplier tolerances and thread-locking procedures are not modeled.",
+    "Passive pin-cluster axial freedom is[-0.15,0]mm for the nominal stack, not a tolerance-approved range. Full-rotation/axial envelopes are conservative material proxies, not actual extra parts."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "manufacturing_v2.source_bindings.v1",
+  "files": {
+    "cad/manufacturing_v2/source_docs/supplier_facts.json": {
+      "bytes": 4445,
+      "sha256": "7d494468414aa30db4753a2752b8758172199a7f51a98efe65a1bf10b7fdb440"
+    },
+    "cad/manufacturing_v2/source_docs/original_download_provenance.json": {
+      "bytes": 1427,
+      "sha256": "d85e0549d084bafef7404f3186a54179ce7332051dbd99a291b077da34bf7404"
+    }
+  },
+  "note": "Selected dimensional facts from official sources; originals archived in D work, not vendor CAD. Availability, tolerances not supplied, actual tip transitions and physical approval remain unresolved."
+}

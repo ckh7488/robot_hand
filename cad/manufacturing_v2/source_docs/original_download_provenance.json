@@ -1,0 +1,38 @@
+[
+  {
+    "file": "accu_sscf_m2_4_a2.pdf",
+    "url": "https://www.accu.co.uk/api/product-datasheet?id=3790",
+    "bytes": 511933,
+    "sha256": "3e79f4115401d4a1536588a0eb54755afad12fb09dc8d1adb7186278b2846db9"
+  },
+  {
+    "file": "accu_sscf_m2_5_a2.pdf",
+    "url": "https://www.accu.co.uk/api/product-datasheet?id=3791",
+    "bytes": 511631,
+    "sha256": "5767219233db575ee83c7db90151a0b77216daa448c078bc67d4898d7b66c4f9"
+  },
+  {
+    "file": "westfield_din9021.pdf",
+    "url": "https://www.westfieldfasteners.co.uk/Datasheets/Washer_od3nom_M.pdf",
+    "bytes": 108682,
+    "sha256": "4ff2f2b280f4f1d850071550e33287aa55c636837b91e8c79c45f97f41c6f2ec"
+  },
+  {
+    "file": "wera_05118066001.pdf",
+    "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05118066001.pdf",
+    "bytes": 453842,
+    "sha256": "cdb89fb3365ebeed678fe79d5c8c2a6c9149bfb1938ac6a78f1ca50269a0c621"
+  },
+  {
+    "file": "wera_05118014001.pdf",
+    "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05118014001.pdf",
+    "bytes": 442441,
+    "sha256": "b6a3ede6c780d29b62b513d0a6543570005e24447288059c965fe66432a41758"
+  },
+  {
+    "file": "wera_05059602001.pdf",
+    "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05059602001.pdf",
+    "bytes": 376433,
+    "sha256": "57c89f5025ad21df99b9d3f3f92becfdf32fc75d5567dfa94df2c3214939dc89"
+  }
+]
