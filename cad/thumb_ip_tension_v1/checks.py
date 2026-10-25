@@ -1,0 +1,137 @@
+"""Nominal saved BRep contact patches and explicit assembly access checks."""
+import math
+import numpy as np
+from common import bounds,overlap
+
+LIMIT=1e-4
+
+def declared_in_frame(declaration,distance):
+    import copy
+    r=copy.deepcopy(declaration)
+    frame=r.get('access_frame',r.get('contact_frame','fixed'))
+    if frame not in ('fixed','carriage'): raise ValueError('Unsupported declaration frame '+frame)
+    if frame=='carriage':
+        shift=np.array([0,120.-distance,0])
+        for key in ('plane_origin_mm','underhead','upper_face','start_mm','end_mm','top','tool_origin_mm','tool_tip_mm'):
+            if key in r: r[key]=(np.asarray(r[key])+shift).tolist()
+        if 'patch_box_mm' in r: r['patch_box_mm']=[(np.asarray(p)+shift).tolist() for p in r['patch_box_mm']]
+    return r
+
+def contact_area(cq,geo,parts,declaration):
+    from OCP.BRep import BRep_Tool
+    from OCP.GeomLib import GeomLib_IsPlanarSurface
+    aa,bb=declaration['a'],declaration['b']
+    if aa==bb or aa not in parts or bb not in parts: raise ValueError('Invalid contact pair')
+    origin=np.asarray(declaration['plane_origin_mm'],dtype=float)
+    normal=np.asarray(declaration['normal'],dtype=float)
+    if origin.shape!=(3,) or not np.isfinite(origin).all() or abs(np.linalg.norm(normal)-1)>1e-9:
+        raise ValueError('Invalid contact plane')
+    minimum=float(declaration['minimum_area_mm2'])
+    if not math.isfinite(minimum) or minimum<=0: raise ValueError('Invalid minimum contact area')
+    def on_plane(face):
+        t=GeomLib_IsPlanarSurface(BRep_Tool.Surface_s(face.wrapped),1e-6)
+        if not t.IsPlanar(): return False
+        p=t.Plan(); loc=p.Location(); axis=p.Axis().Direction()
+        return abs(np.dot(np.array([loc.X(),loc.Y(),loc.Z()])-origin,normal))<1e-5 and abs(np.dot([axis.X(),axis.Y(),axis.Z()],normal))>1-1e-6
+    clip=None
+    if 'patch_box_mm' in declaration:
+        lo,hi=map(np.asarray,declaration['patch_box_mm']); clip=cq.Solid.makeBox(*(hi-lo),cq.Vector(*lo))
+    elif 'patch_radius_mm' in declaration:
+        clip=cq.Solid.makeCylinder(declaration['patch_radius_mm'],.2,cq.Vector(*(origin-.1*normal)),cq.Vector(*normal))
+    area=0.; count=0
+    for a in parts[aa].Faces():
+        if not on_plane(a): continue
+        ab=bounds(a)
+        for b in parts[bb].Faces():
+            bbx=bounds(b)
+            if not all(ab[i]<=bbx[i+3]+1e-6 and bbx[i]<=ab[i+3]+1e-6 for i in range(3)) or not on_plane(b): continue
+            hit=geo.boolean(cq,'common',a,b)
+            if clip is not None and hit.Faces(): hit=geo.boolean(cq,'common',hit,clip)
+            value=hit.Area()
+            if value>1e-6: area+=value; count+=1
+    return dict(declaration,actual_area_mm2=area,face_pairs=count,passed=area+1e-5>=minimum)
+
+def assembly_check(cq,geo,rows,parts,declaration):
+    """Explicit final containment + conservative continuous gauges or samples.
+
+    A tool exterior is not its internal drive, handle, torque or actual insertion
+    qualification. Staged exclusions are listed in every result.
+    """
+    d=declaration; name=d['part']; kind=d['kind']
+    if kind in ('countersunk_screw','driver_access'):
+        from access_extra import check
+        return check(cq,geo,rows,parts,d)
+    if name not in parts: raise ValueError('Missing assembly part '+name)
+    def positive(v):
+        v=float(v)
+        if not math.isfinite(v) or v<=0: raise ValueError('Nonpositive assembly dimension')
+        return v
+    def vector(v):
+        v=np.asarray(v,dtype=float)
+        if v.shape!=(3,) or not np.isfinite(v).all(): raise ValueError('Invalid assembly vector')
+        return v
+    def cylinder(a,b,r):
+        a=vector(a); delta=vector(b)-a
+        return cq.Solid.makeCylinder(positive(r),positive(np.linalg.norm(delta)),cq.Vector(*a),cq.Vector(*(delta/np.linalg.norm(delta))))
+    def volume(a,b): return geo.describe(geo.boolean(cq,'common',a,b))['volume_mm3']
+    def containment(envelope):
+        geo.require_solid(envelope,'final '+name)
+        v=geo.describe(geo.boolean(cq,'cut',parts[name],envelope))['volume_mm3']
+        return dict(actual_part=name,outside_volume_mm3=v,tolerance_mm3=LIMIT,passed=v<=LIMIT)
+    excluded={name,*d.get('stage_excluded',[])}
+    if kind=='axial_nut': excluded.add(d['mate_screw'])
+    if not excluded<=set(parts): raise ValueError('Unknown stage exclusion '+str(excluded-set(parts)))
+    if kind=='lateral_jaw':
+        if d.get('stage')!='parent_fixture_before_motor_module': raise ValueError('Missing explicit parent preassembly stage')
+        obstacles={n:s for n,s in parts.items() if n!=name and (rows[n]['origin_group']=='coupon' or rows[n]['role']=='custom_split_saddle' or n=='bench_common_plate' or n.startswith('bench_table_foot_'))}
+        if len(obstacles)!=50: raise ValueError('Missing parent/coupon/common/table obstacle')
+        excluded=set(parts)-set(obstacles)
+    else: obstacles={n:s for n,s in parts.items() if n not in excluded}
+    if not obstacles: raise ValueError('Empty assembly obstacle set')
+    boxes={n:bounds(s) for n,s in obstacles.items()}
+    hits=[]; checks=0; fit=None; shapes={}; travel=None
+    if kind in ('lateral_jaw','sampled_translation'):
+        start=vector(d['initial_translation_mm']); end=vector(d['final_translation_mm'])
+        distance=float(np.linalg.norm(end-start)); step=positive(d.get('maximum_step_mm',.5))
+        if np.linalg.norm(end)>1e-9 or distance<=1e-9 or not obstacles:
+            raise ValueError('Assembly must reach saved final pose from a nonzero offset with obstacles')
+        count=max(1,math.ceil(distance/step))
+        for index in range(count+1):
+            shape=parts[name].translate((start+(end-start)*index/count).tolist()); box=bounds(shape)
+            for other,obstacle in obstacles.items():
+                checks+=1
+                if overlap(box,boxes[other]):
+                    v=volume(shape,obstacle)
+                    if v>LIMIT: hits.append(dict(sample=index,obstacle=other,overlap_mm3=v))
+        return dict(d,checks=checks,collisions=hits,samples=count+1,maximum_step_mm=distance/count,
+            included_obstacles=sorted(obstacles),excluded_before_stage=sorted(excluded-{name}),
+            continuous_sweep=False,passed=not hits)
+    if kind=='axial_screw':
+        p=vector(d['underhead']); axis=vector(d['axis'])
+        if abs(np.linalg.norm(axis)-1)>1e-9: raise ValueError('Nonunit screw axis')
+        length=positive(d['length_mm']); hh=positive(d['head_height_mm']); sr=positive(d['shaft_radius_mm']); hr=positive(d['head_radius_mm'])
+        travel=max(length+10.,positive(d.get('entry_travel_mm',20.)))
+        fit=containment(geo.boolean(cq,'fuse',cylinder(p-length*axis,p,sr),cylinder(p,p+hh*axis,hr)))
+        shapes=dict(shaft=cylinder(p-length*axis,p+travel*axis,sr),head=cylinder(p,p+(travel+hh)*axis,hr),
+            driver=cylinder(p+(hh-.5)*axis,p+(hh+positive(d.get('driver_length_mm',40.)))*axis,positive(d.get('driver_radius_mm',2.))))
+    elif kind=='axial_nut':
+        p=vector(d['upper_face']); axis=vector(d['axis'])
+        if abs(np.linalg.norm(axis)-1)>1e-9: raise ValueError('Nonunit nut axis')
+        radius=positive(d['across_flats_mm'])/math.sqrt(3); h=positive(d.get('height_mm',3.2)); travel=positive(d.get('entry_travel_mm',30.))
+        fit=containment(cylinder(p,p+h*axis,radius))
+        shapes=dict(nut_outer_sweep=cylinder(p,p+(h+travel)*axis,radius),
+            socket_outer_sweep=cylinder(p,p+(positive(d['socket_length_mm'])+travel)*axis,positive(d['socket_max_dia_mm'])/2))
+    elif kind=='tool_cylinder':
+        shapes=dict(tool_exterior=cylinder(d['start_mm'],d['end_mm'],positive(d['radius_mm'])))
+    else: raise ValueError('Unimplemented access kind '+kind)
+    for label,shape in shapes.items():
+        box=bounds(shape)
+        for other,obstacle in obstacles.items():
+            checks+=1
+            if overlap(box,boxes[other]):
+                v=volume(shape,obstacle)
+                if v>LIMIT: hits.append(dict(envelope=label,obstacle=other,overlap_mm3=v))
+    return dict(d,checks=checks,collisions=hits,final_envelope_containment=fit,sweep_travel_mm=travel,
+        included_obstacles=sorted(obstacles),excluded_before_stage=sorted(excluded-{name}),
+        continuous_sweep=True,passed=not hits and (fit is None or fit['passed']),
+        scope='Conservative exterior envelope only. Internal drive/rod accommodation, handle and tightening are unqualified.')

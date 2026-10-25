@@ -1,0 +1,65 @@
+"""Independent named membership contract for the tension candidate."""
+from collections import Counter
+import json
+import math
+
+REMOVED={f'bench_motor_mount_{i}_{s}' for i in range(1,5) for s in ('spacer','upper_washer')}
+REPLACED={'drive_bench_baseplate','bench_common_plate'}
+UPDATED={f'bench_motor_mount_{i}_screw' for i in range(1,5)}
+
+def validate(scene,inherited,old_scene):
+    names={r['name'] for r in inherited}; original={r['name']:r for r in inherited}
+    new={f'tension_carrier_{side}_shoe' for side in ('left','right')}
+    new|={f'tension_carrier_lock_bridge_{i}' for i in range(1,5)}
+    new|={f'tension_carrier_shoe_mount_{i}_{s}' for i in range(1,5) for s in ('screw','nut','upper_washer','lower_washer')}
+    new|={f'tension_adjuster_mount_{i}_{s}' for i in (1,2) for s in ('screw','nut','upper_washer','lower_washer')}
+    new|={'tension_adjuster_'+s for s in ('post','head_cap','screw','thrust_washer','travelling_nut','nut_lid')}
+    new|={f'tension_adjuster_{kind}_{i}' for kind in ('nut_lid_screw','head_cap_screw','head_cap_nut') for i in (1,2)}
+    actual=[r['name'] for r in scene['parts']]
+    if len(actual)!=158 or len(new)!=42 or set(actual)!=(names-REMOVED)|new or len(set(actual))!=len(actual): raise ValueError('Expected exactly 158 named physical parts')
+    if set(scene['removed_source_parts'])!=REMOVED or set(scene['replaced_source_parts'])!=REPLACED or set(scene['source_row_updates'])!=UPDATED: raise ValueError('Source modification ledger differs')
+    for row in scene['parts']:
+        name=row['name']
+        if name in names-REMOVED-REPLACED:
+            for k in ('step','mesh','sha256_step','sha256_stl','volume_mm3'):
+                if row[k]!=original[name][k]: raise ValueError('Inherited physical geometry changed '+name+' '+k)
+        if name in UPDATED and scene['source_row_updates'][name]!=dict(body='fixed',neutral_translation_delta_mm=[0.,0.,1.1]): raise ValueError('Unexpected retained lock placement')
+    expected_contacts=[tuple(sorted((r['a'],r['b']))) for r in old_scene['contacts'] if not ({r['a'],r['b']}&REMOVED)]
+    def pair(a,b): expected_contacts.append(tuple(sorted((a,b))))
+    for side in ('left','right'):
+        for other in ('bench_common_plate','drive_bench_baseplate'): pair('tension_carrier_'+side+'_shoe',other)
+    for i in range(1,5):
+        bridge=f'tension_carrier_lock_bridge_{i}'; p=f'tension_carrier_shoe_mount_{i}'
+        pair(bridge,'drive_bench_baseplate'); pair(bridge,f'bench_motor_mount_{i}_screw')
+        pair(p+'_screw',p+'_upper_washer'); pair(p+'_upper_washer','tension_carrier_'+('left' if i in (1,3) else 'right')+'_shoe')
+        pair(p+'_nut',p+'_lower_washer'); pair(p+'_lower_washer','bench_common_plate')
+    for i in (1,2):
+        pair(f'tension_adjuster_head_cap_screw_{i}','tension_adjuster_head_cap')
+        pair(f'tension_adjuster_head_cap_nut_{i}','tension_adjuster_post')
+        p=f'tension_adjuster_mount_{i}'
+        pair(p+'_screw',p+'_upper_washer'); pair(p+'_upper_washer','tension_adjuster_post')
+        pair(p+'_nut',p+'_lower_washer'); pair(p+'_lower_washer','bench_common_plate'); pair('tension_adjuster_post','bench_common_plate')
+    for a,b in [('nut_lid','drive_bench_baseplate'),('head_cap','post'),('thrust_washer','post'),('screw','thrust_washer')]:
+        pair('tension_adjuster_'+a,b if b=='drive_bench_baseplate' else 'tension_adjuster_'+b)
+    got=[tuple(sorted((r['a'],r['b']))) for r in scene['contacts']]
+    if len(got)!=102 or Counter(got)!=Counter(expected_contacts): raise ValueError('Expected 102 named contact declarations')
+    signatures=set()
+    for r in scene['contacts']:
+        sig=(tuple(sorted((r['a'],r['b']))),tuple(r['plane_origin_mm']),tuple(r['normal']),json.dumps(r.get('patch_box_mm',r.get('patch_radius_mm')),sort_keys=True))
+        if sig in signatures: raise ValueError('Duplicate contact patch')
+        signatures.add(sig)
+        if not math.isfinite(r['minimum_area_mm2']) or r['minimum_area_mm2']<=0: raise ValueError('Invalid contact minimum')
+    expected_access={(r['part'],r['kind']) for r in old_scene['assembly'] if r['part'] not in UPDATED}
+    expected_access|={(n,'axial_screw') for n in UPDATED}
+    for prefix,indices in [('tension_carrier_shoe_mount_',range(1,5)),('tension_adjuster_mount_',range(1,3))]:
+        for i in indices:
+            expected_access.add((prefix+str(i)+'_screw','axial_screw')); expected_access.add((prefix+str(i)+'_nut','axial_nut'))
+    for i in (1,2):
+        expected_access.add((f'tension_adjuster_nut_lid_screw_{i}','countersunk_screw'))
+        expected_access.add((f'tension_adjuster_head_cap_screw_{i}','axial_screw'))
+        expected_access.add((f'tension_adjuster_head_cap_nut_{i}','sampled_translation'))
+    expected_access|={('tension_adjuster_'+n,'sampled_translation') for n in ('travelling_nut','nut_lid','thrust_washer','screw','head_cap')}
+    expected_access.add(('tension_adjuster_screw','driver_access'))
+    actual_access=[(r['part'],r['kind']) for r in scene['assembly']]
+    if len(actual_access)!=56 or set(actual_access)!=expected_access or len(set(actual_access))!=56: raise ValueError('Expected all 56 named assembly/tool declarations')
+    return dict(physical_parts=158,contacts=102,assembly_declarations=56,source_parts_removed=8,source_parts_replaced=2,new_parts=42,preserved_physical_files=114)

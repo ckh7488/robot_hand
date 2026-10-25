@@ -1,0 +1,109 @@
+"""Independent named membership contract for the tension candidate."""
+from collections import Counter
+import json
+import copy
+import math
+import numpy as np
+
+REMOVED={f'bench_motor_mount_{i}_{s}' for i in range(1,5) for s in ('spacer','upper_washer')}
+REPLACED={'drive_bench_baseplate','bench_common_plate'}
+UPDATED={f'bench_motor_mount_{i}_screw' for i in range(1,5)}
+
+def validate(scene,inherited,old_scene):
+    names={r['name'] for r in inherited}; original={r['name']:r for r in inherited}
+    new={f'tension_carrier_{side}_shoe' for side in ('left','right')}
+    new|={f'tension_carrier_lock_bridge_{i}' for i in range(1,5)}
+    new|={f'tension_carrier_shoe_mount_{i}_{s}' for i in range(1,5) for s in ('screw','nut','upper_washer','lower_washer')}
+    new|={f'tension_adjuster_mount_{i}_{s}' for i in (1,2) for s in ('screw','nut','upper_washer','lower_washer')}
+    new|={'tension_adjuster_'+s for s in ('post','head_cap','screw','thrust_washer','travelling_nut','nut_lid')}
+    new|={f'tension_adjuster_{kind}_{i}' for kind in ('nut_lid_screw','head_cap_screw','head_cap_nut') for i in (1,2)}
+    actual=[r['name'] for r in scene['parts']]
+    if len(actual)!=158 or len(new)!=42 or set(actual)!=(names-REMOVED)|new or len(set(actual))!=len(actual): raise ValueError('Expected exactly 158 named physical parts')
+    if set(scene['removed_source_parts'])!=REMOVED or set(scene['replaced_source_parts'])!=REPLACED or set(scene['source_row_updates'])!=UPDATED: raise ValueError('Source modification ledger differs')
+    for row in scene['parts']:
+        name=row['name']
+        if name in new|REPLACED:
+            expected_body='carriage' if name in {'drive_bench_baseplate','tension_adjuster_travelling_nut','tension_adjuster_nut_lid','tension_adjuster_nut_lid_screw_1','tension_adjuster_nut_lid_screw_2'} else 'adjuster_rotor' if name in {'tension_adjuster_screw','tension_adjuster_thrust_washer'} else 'fixed'
+            if row['body']!=expected_body: raise ValueError('New part body differs '+name)
+        if name in names-REMOVED-REPLACED:
+            for k in ('step','mesh','sha256_step','sha256_stl','volume_mm3'):
+                if row[k]!=original[name][k]: raise ValueError('Inherited physical geometry changed '+name+' '+k)
+            for k in ('body','location','origin_group'):
+                expected='fixed' if name in UPDATED and k=='body' else original[name][k]
+                if row[k]!=expected: raise ValueError('Inherited frame membership changed '+name+' '+k)
+            matrix=np.asarray(original[name]['neutral_matrix'],dtype=float).copy()
+            if name in UPDATED: matrix[:3,3]+=[0.,0.,1.1]
+            if not np.allclose(row['neutral_matrix'],matrix,atol=1e-10,rtol=0): raise ValueError('Inherited placement changed '+name)
+        if name in UPDATED and scene['source_row_updates'][name]!=dict(body='fixed',neutral_translation_delta_mm=[0.,0.,1.1]): raise ValueError('Unexpected retained lock placement')
+    if scene['thread_zones_motor_frame']!=old_scene['thread_zones_motor_frame']: raise ValueError('Inherited thread regions changed')
+    serialize=lambda d:json.dumps(d,sort_keys=True,separators=(',',':'))
+    retained_contact_counter=Counter(serialize(r) for r in old_scene['contacts'] if not ({r['a'],r['b']}&REMOVED))
+    if retained_contact_counter-Counter(serialize(r) for r in scene['contacts']): raise ValueError('Inherited contact content changed')
+    retained_access=[]
+    table_stage={'bench_common_plate'}|{n for n in actual if n.startswith('bench_table_foot_')}
+    for old in old_scene['assembly']:
+        if old['part'] in UPDATED: continue
+        d=copy.deepcopy(old)
+        if d['kind']=='lateral_jaw': d['stage']='parent_fixture_before_motor_module'
+        if d['part'].startswith('bench_table_foot_'):
+            d['stage_excluded']=sorted((set(actual)-table_stage)|set(d.get('stage_excluded',[])))
+            d['stage']='table_feet_before_complete_tension_module'
+        retained_access.append(d)
+    if Counter(serialize(r) for r in retained_access)-Counter(serialize(r) for r in scene['assembly']): raise ValueError('Inherited access content changed outside explicit table-foot stage update')
+    expected_contacts=[tuple(sorted((r['a'],r['b']))) for r in old_scene['contacts'] if not ({r['a'],r['b']}&REMOVED)]
+    def pair(a,b): expected_contacts.append(tuple(sorted((a,b))))
+    for side in ('left','right'):
+        for other in ('bench_common_plate','drive_bench_baseplate'): pair('tension_carrier_'+side+'_shoe',other)
+    for i in range(1,5):
+        bridge=f'tension_carrier_lock_bridge_{i}'; p=f'tension_carrier_shoe_mount_{i}'
+        pair(bridge,'drive_bench_baseplate'); pair(bridge,f'bench_motor_mount_{i}_screw')
+        pair(p+'_screw',p+'_upper_washer'); pair(p+'_upper_washer','tension_carrier_'+('left' if i in (1,3) else 'right')+'_shoe')
+        pair(p+'_nut',p+'_lower_washer'); pair(p+'_lower_washer','bench_common_plate')
+    for i in (1,2):
+        pair(f'tension_adjuster_head_cap_screw_{i}','tension_adjuster_head_cap')
+        pair(f'tension_adjuster_head_cap_nut_{i}','tension_adjuster_post')
+        p=f'tension_adjuster_mount_{i}'
+        pair(p+'_screw',p+'_upper_washer'); pair(p+'_upper_washer','tension_adjuster_post')
+        pair(p+'_nut',p+'_lower_washer'); pair(p+'_lower_washer','bench_common_plate'); pair('tension_adjuster_post','bench_common_plate')
+    for a,b in [('nut_lid','drive_bench_baseplate'),('head_cap','post'),('thrust_washer','post'),('screw','thrust_washer')]:
+        pair('tension_adjuster_'+a,b if b=='drive_bench_baseplate' else 'tension_adjuster_'+b)
+    got=[tuple(sorted((r['a'],r['b']))) for r in scene['contacts']]
+    if len(got)!=102 or Counter(got)!=Counter(expected_contacts): raise ValueError('Expected 102 named contact declarations')
+    signatures=set()
+    for r in scene['contacts']:
+        sig=(tuple(sorted((r['a'],r['b']))),tuple(r['plane_origin_mm']),tuple(r['normal']),json.dumps(r.get('patch_box_mm',r.get('patch_radius_mm')),sort_keys=True))
+        if sig in signatures: raise ValueError('Duplicate contact patch')
+        signatures.add(sig)
+        if not math.isfinite(r['minimum_area_mm2']) or r['minimum_area_mm2']<=0: raise ValueError('Invalid contact minimum')
+    expected_access={(r['part'],r['kind']) for r in old_scene['assembly'] if r['part'] not in UPDATED}
+    expected_access|={(n,'axial_screw') for n in UPDATED}
+    for prefix,indices in [('tension_carrier_shoe_mount_',range(1,5)),('tension_adjuster_mount_',range(1,3))]:
+        for i in indices:
+            expected_access.add((prefix+str(i)+'_screw','axial_screw')); expected_access.add((prefix+str(i)+'_nut','axial_nut'))
+    for i in (1,2):
+        expected_access.add((f'tension_adjuster_nut_lid_screw_{i}','countersunk_screw'))
+        expected_access.add((f'tension_adjuster_head_cap_screw_{i}','axial_screw'))
+        expected_access.add((f'tension_adjuster_head_cap_nut_{i}','sampled_translation'))
+    expected_access|={('tension_adjuster_'+n,'sampled_translation') for n in ('travelling_nut','nut_lid','thrust_washer','screw','head_cap')}
+    actual_access=[(r['part'],r['kind']) for r in scene['assembly']]
+    if len(actual_access)!=55 or set(actual_access)!=expected_access or len(set(actual_access))!=55: raise ValueError('Expected all 55 named assembly declarations and separate saved tool')
+    groups=scene.get('group_assembly',[])
+    if [(len(r['moving_parts']),len(r['installed_obstacles'])) for r in groups]!=[(37,1),(1,45),(1,46),(47,71)]: raise ValueError('Expected four explicitly staged module insertion declarations')
+    motor={n for n in names if original[n]['origin_group']=='motor'}|{'drive_bench_baseplate'}
+    adjuster={n for n in new if n.startswith('tension_adjuster_') and not n.startswith('tension_adjuster_mount_')}
+    travellers={n for n in adjuster if n in {'tension_adjuster_travelling_nut','tension_adjuster_nut_lid','tension_adjuster_nut_lid_screw_1','tension_adjuster_nut_lid_screw_2'}}
+    left='tension_carrier_left_shoe'; right='tension_carrier_right_shoe'
+    parent={n for n in names if original[n]['origin_group']=='coupon' or n.startswith('bench_parent_')}
+    if len(parent)!=54: raise ValueError('Parent fixture and coupon coverage differs')
+    expected_groups=[(motor|travellers,{'tension_adjuster_post'}),({left},motor|adjuster),({right},motor|adjuster|{left}),(motor|adjuster|{left,right},table_stage|parent)]
+    for d,(moving,installed) in zip(groups,expected_groups):
+        if set(d['moving_parts'])!=moving or set(d['installed_obstacles'])!=installed or set(d['absent_at_stage'])!=set(actual)-moving-installed: raise ValueError('Module insertion membership changed')
+    for i in (1,2):
+        name=f'tension_adjuster_head_cap_screw_{i}'
+        d=next(r for r in scene['assembly'] if r['part']==name)
+        expected=(set(actual)-(motor|adjuster))|{name,f'tension_adjuster_head_cap_nut_{i}'}
+        if set(d['stage_excluded'])!=expected or d['stage']!='cap_fasteners_before_shoes_common_plate_and_parent_fixture': raise ValueError('Cap assembly stage mismatch')
+    tools=scene.get('assembly_tools',[])
+    if len(tools)!=1 or tools[0]['name']!='tension_custom_adjustment_key' or tools[0]['body']!='adjuster_rotor': raise ValueError('Missing separate custom key')
+    if tools[0]['metadata']['included_in_physical_assembly'] or tools[0]['metadata']['included_in_assembly_mass']: raise ValueError('Tool counted as installed part')
+    return dict(physical_parts=158,contacts=102,assembly_declarations=55,separate_tools=1,group_assembly=4,source_parts_removed=8,source_parts_replaced=2,new_parts=42,preserved_physical_parts=114)

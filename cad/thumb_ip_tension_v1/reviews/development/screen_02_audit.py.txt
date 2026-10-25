@@ -1,0 +1,155 @@
+"""Reopen saved BReps and test declared adjustment/pose/assembly samples.
+
+This does not establish continuous motion, tolerances, loads or measured delay.
+"""
+from pathlib import Path
+import argparse
+import itertools
+import traceback
+import numpy as np
+from common import CAD,SOURCE,POSES,DISTANCES,Inputs,write_json,rigid,bounds,overlap,placed_matrix,source_rows,cord_segments
+from checks import LIMIT,contact_area,assembly_check,declared_in_frame
+
+def main():
+    ap=argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--repo',type=Path,default=Path(__file__).resolve().parents[2])
+    ap.add_argument('--generated',type=Path,required=True)
+    ap.add_argument('--output',type=Path,required=True)
+    ap.add_argument('--mode',choices=('fit','screen','full'),default='full')
+    a=ap.parse_args(); repo=a.repo.resolve(); generated=a.generated.resolve(); output=a.output.resolve()
+    if output.exists(): raise FileExistsError('Preserve earlier audit')
+    output.parent.mkdir(parents=True,exist_ok=True)
+    inputs=Inputs(repo,generated)
+    report=dict(schema='thumb_ip_tension_saved_audit.v1',completed=False,passed=False,mode=a.mode,errors=[],
+        source_sha256=inputs.hashes,cases=[],cord_checks=[],contacts=[],assembly=[],supplemental=[],
+        criteria=dict(overlap_limit_mm3=LIMIT,poses_deg=POSES if a.mode=='full' else [0.],
+            distances_mm=DISTANCES,adjustment_step_mm=.25,contact_area_tolerance_mm2=1e-5),
+        manufacturing_approved=False,measured_latency=False,continuous_motion_certified=False,
+        scope='Saved isolated thumb coupon and motor tension fixture only. Explicit samples, contact patches and staged access; no whole hand assembly certification.')
+    def save():
+        report['input_hash_guard']=inputs.guard(); write_json(output,report)
+    try:
+        import cadquery as cq
+        from cadquery.occ_impl.shapes import setThreads
+        setThreads(1)
+        inputs.bind(__file__); inputs.bind(repo/CAD/'common.py'); inputs.bind(repo/CAD/'checks.py'); inputs.bind(repo/CAD/'access_extra.py')
+        geo=inputs.module('_tension_audit_geometry',repo/SOURCE/'geometry.py')
+        routing=inputs.module('_tension_audit_route',repo/SOURCE/'routing.py')
+        joint=inputs.module('_tension_audit_joint',repo/SOURCE/'joint_drive.py')
+        build=inputs.read(generated/'build_report.json')
+        if not (build['completed'] and not build['errors'] and build['input_hash_guard']['passed']): raise ValueError('Incomplete build')
+        for key,sha in build['source_sha256'].items():
+            if not key.startswith('repo:'): raise ValueError('Unexpected build source root')
+            inputs.bind(repo/key[5:],sha)
+        for key,sha in build['generated_sha256'].items(): inputs.bind(generated/key,sha)
+        scene=inputs.read(generated/'scene.json')
+        if not (scene['detached_coupon'] and not scene['hand_geometry_modified'] and not scene['full_hand_integration'] and
+                scene['motor_rotation_per_ip_rotation']==.77 and scene['comparison_distance_range_mm']==[118.,122.]): raise ValueError('Scope/frame mismatch')
+        rows={r['name']:r for r in scene['parts']}
+        if len(rows)!=len(scene['parts']) or len(rows)!=build['part_count']: raise ValueError('Duplicate/missing part')
+        inherited,source_scene,_=source_rows(inputs)
+        coverage=inputs.module('_tension_audit_coverage',repo/CAD/'coverage.py')
+        report['coverage']=coverage.validate(scene,inherited,source_scene)
+        inherited_names={r['name'] for r in inherited}
+        removed=set(scene['removed_source_parts']); replaced=set(scene['replaced_source_parts'])
+        if (inherited_names-removed-replaced)-set(rows): raise ValueError('Lost inherited part')
+        if removed&set(rows): raise ValueError('Removed part reappeared')
+        native={}; validity={}
+        for name,row in rows.items():
+            shape=cq.importers.importStep(str(inputs.resolve_part(row))).val(); facts=geo.describe(shape)
+            expected=12 if name=='drive_m077_stator' else 1
+            if not (facts['valid'] and facts['bounded'] and facts['positive_solids'] and facts['solid_count']==expected and facts['volume_mm3']>0): raise ValueError('Invalid saved part '+name)
+            if abs(facts['volume_mm3']-row['volume_mm3'])>max(1e-5,row['volume_mm3']*1e-8): raise ValueError('Volume changed '+name)
+            t=np.asarray(row['neutral_matrix'])
+            if t.shape!=(4,4) or not np.isfinite(t).all() or not np.allclose(t[3],[0,0,0,1],atol=1e-9,rtol=0) or not np.allclose(t[:3,:3].T@t[:3,:3],np.eye(3),atol=1e-9,rtol=0) or abs(np.linalg.det(t[:3,:3])-1)>1e-9: raise ValueError('Nonrigid transform')
+            native[name]=shape; validity[name]=facts
+        report['native_validity']=validity
+        report['physical_part_count']=len(rows); report['native_solid_count']=sum(r['solid_count'] for r in validity.values())
+        for q,d in ((0.,118.),(15.,121.)):
+            body_deltas={}
+            for name,row in rows.items():
+                delta=placed_matrix(row,q,d)@np.linalg.inv(np.asarray(row['neutral_matrix']))
+                body=row['body']
+                if body in body_deltas and not np.allclose(delta,body_deltas[body],atol=1e-9,rtol=0): raise ValueError('Same-body invariance is not valid '+body)
+                body_deltas[body]=delta
+        blank_rows=scene.get('machining_blanks',[])
+        if len(blank_rows)!=1 or blank_rows[0]['name']!='tension_carrier_before_M2_tapping': raise ValueError('Missing separate pilot-drill reference')
+        report['machining_blank_validity']={}
+        for row in blank_rows:
+            shape=cq.importers.importStep(str(inputs.resolve_part(row))).val()
+            report['machining_blank_validity'][row['name']]=geo.require_solid(shape,row['name'])
+        def placed(q,d): return {n:rigid(cq,s,placed_matrix(rows[n],q,d)) for n,s in native.items()}
+        def volume(a,b): return geo.describe(geo.boolean(cq,'common',a,b))['volume_mm3']
+        zones={tuple(sorted(z['pair'])):z for z in scene['thread_zones_motor_frame']}
+        if len(zones)!=8: raise ValueError('Expected eight named original motor thread zones')
+        def thread_zone(pair,q,d):
+            z=zones[pair]; shape=cq.Solid.makeCylinder(z['radius_mm'],z['length_mm'],cq.Vector(*z['start_mm']),cq.Vector(*z['axis']))
+            bodies={rows[n]['body'] for n in pair}
+            if bodies=={'motor_output'}: shape=shape.rotate((0,0,0),(1,0,0),.77*q)
+            elif bodies!={'carriage'}: raise ValueError('Invalid thread pair frame')
+            return shape.translate((-6.,-d,0.))
+        cases=[(0.,120.)]
+        cases += [(q,d) for d in DISTANCES for q in (POSES if a.mode=='full' else [0.]) if (q,d)!=(0.,120.)]
+        if a.mode=='full': cases += [(0.,118.+i*.25) for i in range(17) if 118.+i*.25 not in DISTANCES]
+        for index,(q,d) in enumerate(cases):
+            parts=placed(q,d); boxes={n:bounds(s) for n,s in parts.items()}
+            case=dict(q_deg=q,distance_mm=d,checked_pairs=0,exact_pairs=0,invariant_pairs=0,collisions=[],declared_thread_contacts=[])
+            for n,m in itertools.combinations(sorted(parts),2):
+                if index and rows[n]['body']==rows[m]['body']:
+                    case['invariant_pairs']+=1; continue
+                case['checked_pairs']+=1
+                if not overlap(boxes[n],boxes[m]): continue
+                case['exact_pairs']+=1; hit=geo.boolean(cq,'common',parts[n],parts[m]); v=geo.describe(hit)['volume_mm3']
+                if v<=LIMIT: continue
+                if (n,m) in zones:
+                    outside=geo.describe(geo.boolean(cq,'cut',hit,thread_zone((n,m),q,d)))['volume_mm3']
+                    case['declared_thread_contacts'].append(dict(pair=[n,m],overlap_mm3=v,outside_mm3=outside))
+                    if outside<=LIMIT: continue
+                case['collisions'].append(dict(pair=[n,m],overlap_mm3=v))
+            report['cases'].append(case); print(dict(q=q,D=d,collisions=len(case['collisions']),exact=case['exact_pairs']),flush=True); save()
+        old=inputs.read(repo/SOURCE/'generated/build_report.json'); anchors=old['motor_interfaces']['anchors']
+        for q,d in cases:
+            parts=placed(q,d); boxes={n:bounds(s) for n,s in parts.items()}
+            for cord in cord_segments(cq,routing,joint,anchors,q,d):
+                box=bounds(cord['shape'])
+                for name,shape in parts.items():
+                    exact=overlap(box,boxes[name]); v=volume(cord['shape'],shape) if exact else 0.
+                    report['cord_checks'].append(dict(q_deg=q,distance_mm=d,track=cord['track'],segment=cord['segment'],part=name,exact=exact,overlap_mm3=v))
+            print(dict(cord_q=q,D=d,hits=sum(r['overlap_mm3']>LIMIT for r in report['cord_checks'])),flush=True); save()
+        for d in DISTANCES:
+            parts=placed(0.,d)
+            for declaration in scene['contacts']:
+                result=contact_area(cq,geo,parts,declared_in_frame(declaration,d)); result['distance_mm']=d
+                report['contacts'].append(result)
+            print(dict(contacts_D=d,failed=sum(not r['passed'] for r in report['contacts'])),flush=True); save()
+            for declaration in ([] if a.mode=='fit' else scene['assembly']):
+                result=assembly_check(cq,geo,rows,parts,declared_in_frame(declaration,d)); result['distance_mm']=d
+                report['assembly'].append(result)
+                print(dict(assembly_D=d,part=declaration['part'],passed=result['passed']),flush=True); save()
+        if a.mode!='fit':
+            extra=inputs.module('_tension_supplemental',repo/CAD/'supplemental.py')
+            report['supplemental']=extra.run(cq,geo,rows,placed,scene,DISTANCES)
+            print(dict(supplemental=len(report['supplemental']),failed=sum(not r['passed'] for r in report['supplemental'])),flush=True); save()
+            groups=inputs.module('_tension_group_access',repo/CAD/'group_access.py')
+            report['group_assembly']=groups.run(cq,geo,rows,placed(0.,120.),scene['group_assembly'])
+            print(dict(group_assembly=len(report['group_assembly']),failed=sum(not r['passed'] for r in report['group_assembly'])),flush=True); save()
+        report['summary']=dict(parts=len(rows),pose_adjustment_cases=len(report['cases']),
+            collisions=sum(len(c['collisions']) for c in report['cases']),cord_part_checks=len(report['cord_checks']),
+            cord_collisions=sum(r['overlap_mm3']>LIMIT for r in report['cord_checks']),
+            declared_contact_checks=len(report['contacts']),failed_contacts=sum(not r['passed'] for r in report['contacts']),
+            assembly_paths=len(report['assembly']),blocked_assembly_paths=sum(not r['passed'] for r in report['assembly']),
+            supplemental_checks=len(report['supplemental']),failed_supplemental=sum(not r['passed'] for r in report['supplemental']),
+            group_assembly_paths=len(report.get('group_assembly',[])),blocked_group_paths=sum(not r['passed'] for r in report.get('group_assembly',[])))
+        report['completed']=True
+        report['passed']=not any(report['summary'][k] for k in ('collisions','cord_collisions','failed_contacts','blocked_assembly_paths','failed_supplemental','blocked_group_paths'))
+        report['full_declared_suite_passed']=a.mode=='full' and report['passed']
+    except Exception as error:
+        report['errors'].append(dict(error=repr(error),traceback=traceback.format_exc()))
+    finally:
+        save()
+        if not report['input_hash_guard']['passed']:
+            report['completed']=False; report['passed']=False; save()
+    print({k:report[k] for k in ('completed','passed','errors')},flush=True)
+    return 0 if report['completed'] and report['passed'] and not report['errors'] else 1
+
+if __name__=='__main__': raise SystemExit(main())
