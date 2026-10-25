@@ -1,0 +1,94 @@
+{
+  "schema": "thumb_ip_tension_exact_sha_core_review.v1",
+  "completed": true,
+  "reproduction_passed": true,
+  "errors": [],
+  "target_sha": "94a3be61226582881542ee586e913a6f61c25d22",
+  "baseline_sha": "004f33f8f2e343d74636681ce473a8c586da8d9f",
+  "manifest_sha256": "907e397bb72f4e68ee97f727199e6d9a678b01bcd6046ab74e92c17749917189",
+  "publication_helpers_sha256": {
+    "tension_checkpoint_core_draft.py": "05cf11d9bc028b5f3441ee0a526ffd097963484d3cefebd731cc602e65c55672",
+    "git_blob_batch.py": "28e37b501bac04630ffb953bfe6ccc1cb81674830e475834c539b0c8abd5f386"
+  },
+  "baseline_snapshot_sha256": "2795086e4a47b02c6bc53b673448c952a3e601f27bf17670b062871c2a44d094",
+  "scope": "Original full 41-case/64780 cord-part report remains required and immutable. Exact-SHA core replay uses screen mode: qIP=0 at D120/118/122, 4740 cord-part checks, all 306 contacts, 165 assembly paths, 10 supplemental checks, 4 module paths and 6 key conditions. This is not a rerun of all 41 cases. No CAD rebuild, image rerender, whole-hand integration, continuous sweep, tolerance/load qualification, physical drive or latency approval.",
+  "comparison_absolute_tolerance": 1e-05,
+  "differences": [],
+  "original_audit": "cad/thumb_ip_tension_v1/reviews/saved_audit.json",
+  "original_audit_sha256": "698a4632a6ed8135449ae0f673cd30c644b7eb6baabc458ac0a3378261e1dffe",
+  "replay_audit_sha256": "cb0abc1bb32b40ebb3648c59393075da0fc1e72ba16289a76dbf86a10c26bed1",
+  "original_full_audit_summary": {
+    "parts": 158,
+    "pose_adjustment_cases": 41,
+    "collisions": 0,
+    "cord_part_checks": 64780,
+    "cord_collisions": 0,
+    "declared_contact_checks": 306,
+    "failed_contacts": 0,
+    "assembly_paths": 165,
+    "blocked_assembly_paths": 0,
+    "supplemental_checks": 10,
+    "failed_supplemental": 0,
+    "group_assembly_paths": 4,
+    "blocked_group_paths": 0,
+    "separate_key_access_passed": true
+  },
+  "core_replay_audit_summary": {
+    "parts": 158,
+    "pose_adjustment_cases": 3,
+    "collisions": 0,
+    "cord_part_checks": 4740,
+    "cord_collisions": 0,
+    "declared_contact_checks": 306,
+    "failed_contacts": 0,
+    "assembly_paths": 165,
+    "blocked_assembly_paths": 0,
+    "supplemental_checks": 10,
+    "failed_supplemental": 0,
+    "group_assembly_paths": 4,
+    "blocked_group_paths": 0,
+    "separate_key_access_passed": true
+  },
+  "original_full_declared_suite_passed": true,
+  "replay_mode": "screen",
+  "replay_full_declared_suite_passed": false,
+  "all_41_cases_replayed": false,
+  "comparison_reference": "in_memory_projection_of_committed_full_report",
+  "projection_stable_sha256": "0d6c3829633cfc7866105fdb1a48c6d1e4d6ee5e517b913e4194ac0badfe80a0",
+  "all_closure_inputs_unchanged": true,
+  "closure_files": 469,
+  "archives": [
+    {
+      "file": "archive_000.tar",
+      "bytes": 5150720,
+      "sha256": "73deda026bb3a900c9cbadd78959d167a0523b29f2df1ab36d824c4ea514c5fe"
+    },
+    {
+      "file": "archive_001.tar",
+      "bytes": 7516160,
+      "sha256": "b563f1e8e46c81c45b8abe7d4b7d2234a0807af5b3480c3e9c9e23fc5da2e525"
+    },
+    {
+      "file": "archive_002.tar",
+      "bytes": 26071040,
+      "sha256": "2c69a200baa47848f13e0f0da5a92cc62c4e1a1b8cdd9362c7cbdd942659e1a1"
+    },
+    {
+      "file": "archive_003.tar",
+      "bytes": 8734720,
+      "sha256": "e20ca877f9dd5b9a689ba8068dc18cb7ad20c3f8114efcab1f1190ba227ce70f"
+    },
+    {
+      "file": "archive_004.tar",
+      "bytes": 23777280,
+      "sha256": "e8d9bcc48863d4c0723bfcf9a3e6f2a291ac505aba88c03fe1c051fbb6931517"
+    }
+  ],
+  "runtime": {
+    "python": "C:\\Users\\c\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\pythonw.exe",
+    "pythonpath": "D:/Codex-work/robot-hand-workspace/work/audit_deps;D:/Codex-work/robot-hand-cache/2026-10-24/cad_deps",
+    "blas_threads": 1
+  },
+  "manufacturing_approved": false,
+  "measured_latency": false
+}
