@@ -1,0 +1,126 @@
+{
+  "id": "GESTURE002",
+  "target_sha": "832feba51f54be5a4300da6a53dcbc56505ec98c",
+  "recorded_utc": "2026-10-25T02:09:42.277467+00:00",
+  "scope": "Exact committed archive and manifest/frozen evidence; all CAD and mass tensors rebuilt; open, fist and thumb-up exact collisions, selected transition samples exact replay, and individual nominal fabrication interfaces rerun. Full original 2.5-degree sampling arithmetic/angle correspondence is reconciled. CAD replay selects recorded samples nearest path fractions 0/.25/.5/.75/1 on each path plus all authored waypoints of two staged thumb paths, with exact-angle deduplication. All 33 fist waypoints and complete 2.5-degree paths are not CAD-replayed; reverse directions, other six endpoints, proximity distances, renderer and dynamics are not rerun. Existing geometric failure outcomes are retained; Boolean failures cannot pass reproduction; this is same-task reproduction, not external independent audit or manufacturing/performance approval.",
+  "manufacturing_approved": false,
+  "motor_performance_validated": false,
+  "checkpoint_manifest_sha256": "f191eff9f16869cee47592666ad78776b05e10188d3f3b98c757a0c4c7c0edae",
+  "reviewer_sha256": "7bc6af97a54cb32dc1db813572945ce1fb2125760defeef7e3d93c38b6c53ca2",
+  "reviewer_source_unchanged": true,
+  "writer_sha256": "c03d460da7ab66529de8b2a2b2261cca950c2ec7875323dfb0802f496ae3f0c5",
+  "metadata_preparer_sha256": "3acd1da5a5fbf63a9eba18332d8fa5dfcaeaf5a5e6d32dafc3782c4ce7ed0fd1",
+  "batch_helper_sha256": "28e37b501bac04630ffb953bfe6ccc1cb81674830e475834c539b0c8abd5f386",
+  "commands_reexecuted": [
+    "archive",
+    "rebuild",
+    "core_collisions",
+    "core_transition_samples",
+    "interfaces"
+  ],
+  "part_count": 349,
+  "core_gestures": [
+    "open",
+    "fist",
+    "thumb_up"
+  ],
+  "selected_transition_samples": 14,
+  "transition_sample_reproduction_passed": true,
+  "full_transition_rerun": false,
+  "reverse_paths_executed": false,
+  "transition_selection": {
+    "catalog": "cad/gesture_hand_v3/core_paths.json",
+    "catalog_sha256": "da42c2d90bd044d2eb60fb3dbdc3848c151e49b7db4bd7f2cfa6f401d91a6deb",
+    "original_report": "cad/gesture_hand_v3/reviews/core_transitions.json",
+    "original_report_sha256": "cc52b062b9bcdc197d7f078f566debae96201c1463e70b7599a4e296c2486f4e",
+    "canonical_catalog": "cad/gesture_hand_v3/poses.json",
+    "canonical_catalog_sha256": "74b85ef6032e8a6886df2d8bb049957d360212e8dd1050a9b6c5a8a155c73331",
+    "forward_paths": [
+      "open__fist",
+      "open__thumb_up",
+      "fist__thumb_up"
+    ],
+    "segment_counts": {
+      "open__fist": 32,
+      "open__thumb_up": 3,
+      "fist__thumb_up": 3
+    },
+    "original_sample_counts": {
+      "open__fist": 74,
+      "open__thumb_up": 91,
+      "fist__thumb_up": 63
+    },
+    "original_maximum_joint_step_deg": 2.5,
+    "original_guarded_inputs_checked": 973,
+    "selection_policy": "path_quarters_plus_staged_thumb_waypoints_v1",
+    "requested_path_fractions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "authored_waypoint_paths": [
+      "open__thumb_up",
+      "fist__thumb_up"
+    ],
+    "authored_waypoint_counts": {
+      "open__thumb_up": 4,
+      "fist__thumb_up": 4
+    },
+    "full_original_arithmetic_reconciled": true,
+    "original_total_transition_samples": 228,
+    "original_total_observations": 231,
+    "original_unique_cases": 203,
+    "selection": "Nearest recorded path_fraction 0/.25/.5/.75/1 on each of three forward paths; ties choose the earlier fraction. Additionally every authored waypoint on the two staged thumb paths. Exact float.hex angle deduplication; no requirement to CAD-replay all 33 fist waypoints.",
+    "selected_transition_samples": 14,
+    "full_transition_rerun": false,
+    "reverse_paths_executed": false,
+    "scope": "Selected transition samples exact replay; no continuous-clearance, full-path replay, dynamics or manufacturing approval."
+  },
+  "interface_checks": 1519,
+  "frozen_files_checked": 222,
+  "manifest_files_checked": 1239,
+  "files": {
+    "README.md": {
+      "bytes": 2772,
+      "sha256": "891a69acdcadadb2c75fb27c3a21a098d5e32c7ee725524983308c560e3e96c0"
+    },
+    "core_collisions.json": {
+      "bytes": 2161921,
+      "sha256": "3c3d920e4828dd3ae8e5136a0d7d15a40054326d722534878fae7a46bf9ecbef"
+    },
+    "core_transition_samples.json": {
+      "bytes": 6851537,
+      "sha256": "9f5ed7e7cd3eff409a8f1dbd2e8c4e735bb1f1d95717d13327e134c9aa13ecc9"
+    },
+    "git_blob_batch.py": {
+      "bytes": 12279,
+      "sha256": "28e37b501bac04630ffb953bfe6ccc1cb81674830e475834c539b0c8abd5f386"
+    },
+    "interfaces.json": {
+      "bytes": 1097305,
+      "sha256": "d65ad514983831c910bb88f7f3cc53dbc5d0303f5fe0a9832d3a85ed68871d73"
+    },
+    "prepare_review_metadata.py": {
+      "bytes": 12467,
+      "sha256": "3acd1da5a5fbf63a9eba18332d8fa5dfcaeaf5a5e6d32dafc3782c4ce7ed0fd1"
+    },
+    "review.json": {
+      "bytes": 219288,
+      "sha256": "911dda1b443147002cc4c145a08d8213ff6f153576d916f517dd452de0725240"
+    },
+    "review_commit.py": {
+      "bytes": 27591,
+      "sha256": "7bc6af97a54cb32dc1db813572945ce1fb2125760defeef7e3d93c38b6c53ca2"
+    },
+    "save_review.py": {
+      "bytes": 26399,
+      "sha256": "c03d460da7ab66529de8b2a2b2261cca950c2ec7875323dfb0802f496ae3f0c5"
+    },
+    "selected_transition_poses.json": {
+      "bytes": 34835,
+      "sha256": "030c52033ec657583bb6a6ae83666b78e3c169feac3402298f33542f1ee7dad7"
+    }
+  }
+}

@@ -12,7 +12,8 @@
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "832feba51f54be5a4300da6a53dcbc56505ec98c",
+  "post_commit_review_report": "docs/reviews/GESTURE002_832feba51f54/review.json",
+  "post_commit_reproduction_scope": "Exact committed archive and manifest/frozen evidence; all CAD and mass tensors rebuilt; open, fist and thumb-up exact collisions, selected transition samples exact replay, and individual nominal fabrication interfaces rerun. Full original 2.5-degree sampling arithmetic/angle correspondence is reconciled. CAD replay selects recorded samples nearest path fractions 0/.25/.5/.75/1 on each path plus all authored waypoints of two staged thumb paths, with exact-angle deduplication. All 33 fist waypoints and complete 2.5-degree paths are not CAD-replayed; reverse directions, other six endpoints, proximity distances, renderer and dynamics are not rerun. Existing geometric failure outcomes are retained; Boolean failures cannot pass reproduction; this is same-task reproduction, not external independent audit or manufacturing/performance approval."
 }
