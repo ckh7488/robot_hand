@@ -1,0 +1,36 @@
+{
+  "schema": "manufacturing_v1.round_floating_distal_pin_patch.v1",
+  "base_candidate": "cad/gesture_hand_v3",
+  "expected_base_part_count": 349,
+  "expected_modified_part_count": 20,
+  "original_thumb_ip_range_deg": [0, 85],
+  "candidate_thumb_ip_range_deg": [-20, 85],
+  "target_thumb_ip_deg": -15,
+  "pin_kind": "round",
+  "pin_dimensions_mm": {
+    "shaft_radius": 2.0,
+    "shaft_span_x": [-13.0, 14.4],
+    "head_radius": 3.5,
+    "head_span_x": [-15.0, -13.0],
+    "groove_radius": 1.6,
+    "groove_span_x": [13.1, 13.9],
+    "old_flat_y": 1.7,
+    "old_flat_span_x": [-13.0, -9.0],
+    "left_parent_journal_radius": 2.015
+  },
+  "reference_insertion_travel_mm": 30.0,
+  "boolean_tolerance_mm": 0.000001,
+  "bidirectional_difference_limit_mm3": 0.00001,
+  "preserved_part_bounds_limit_mm": 0.00001,
+  "interpretation": {
+    "pin_rotation": "Passive floating clevis pin; free to rotate in both parent journals and the child journals.",
+    "body_assignment": "The existing parent body is a neutral placement and centreline-motion reference, not a rotational attachment or a solved pin friction model.",
+    "drive_assumption": "Actuation torque is applied to the child link or its pulley, not transmitted through a keyed hinge pin.",
+    "axial_retention": "Original head, groove, washers and nominal clip remain; their fit, spring installation, strength and pull-out retention are unapproved.",
+    "clip_rotation": "Clip rotation envelope and elastic installation require separate checks; its original display orientation is not a rotational constraint.",
+    "dynamics": "Pin spin, friction distribution, fretting and endplay dynamics are not modelled. Parent-body mass assignment is a geometric bookkeeping convention.",
+    "range": "The declared -20..85 degree thumb IP domain is exploratory; it does not establish tested physical travel or a hard stop. The requested pose is -15 degrees."
+  },
+  "manufacturing_approved": false,
+  "purchase_specification_complete": false
+}

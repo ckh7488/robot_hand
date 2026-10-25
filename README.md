@@ -6,17 +6,17 @@
 
 목표는 **로봇 자체의 추종 지연 50ms 이하, 정해진 시험 범위의 최대 지연 100ms 이하**입니다. 로봇 제어부가 목표 각도를 받은 뒤 실제 관절이 따라오는 과정이 대상입니다. 카메라·인식·장갑의 입력 지연은 이번 평가에서 제외합니다. 추종 지연은 90° 회전 전체를 끝내는 시간과 다릅니다.
 
-![엄지 끝마디를 팔목 쪽으로 젖힌 후보](cad/thumb_wrist_v1/generated/comparison.png)
+![수용한 손 모양을 유지한 제작 개선 후보](cad/manufacturing_v1/generated/whole_hand.png)
 
-*349개 부품의 형상과 길이는 유지합니다. 엄지는 손을 폈을 때의 위치로 두고 네 손가락만 쥔 뒤, 엄지 끝마디만 팔목 쪽으로15° 젖힌 후보입니다. [현재 엄지척 검토](cad/thumb_wrist_v1/README.md) · [수용한 외형 기준](cad/accepted_form_v1/README.md)*
+*왼쪽은 이전 형상, 오른쪽은 제작 개선 후보입니다. 손 비율·길이·관절축을 유지하고, 조립할 때 막히던 원위 핀10개와 부싱10개를 수정했습니다. 엄지는 펼친 위치를 유지한 채 끝마디만 팔목 쪽으로15° 젖힙니다. [현재 제작 검토](cad/manufacturing_v1/README.md) · [수용한 외형 기준](cad/accepted_form_v1/README.md)*
 
-[현재 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif) · [후보 확대](cad/thumb_wrist_v1/generated/candidate.png) · [이전 엄지척·세 전환 기록](cad/gesture_hand_v3/README.md)
+[핀·부싱 변경 확대](cad/manufacturing_v1/generated/pin_assembly.png) · [현재 전체 STEP](cad/manufacturing_v1/generated/hand.step) · [엄지 자세의 이전 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif)
 
-이번 후보는 원래 작성된 네 손가락 경로와 엄지 끝 젖히기를 연결한 한 정방향 경로를 검사합니다. IP 가동 범위를 기존0~85°에서 후보에 한해-20~85°로 확장하며, 목표는-15°입니다. 형상과 기존 기본 자세 파일은 보존합니다. [검사 범위와 결과](cad/thumb_wrist_v1/README.md)를 구분해 기록하며, GIF 재생시간은 실물 속도가 아닙니다.
+현재는 **실제로 제작하고 조립할 수 있는 CAD**를 만드는 단계입니다. 최종 위치의 겹침뿐 아니라 부품 삽입 경로·공구 접근·조립 순서·공차를 함께 확인합니다. 원위 관절은 원형 자유 회전 핀으로 바꾸었으며, 이후 구동 토크는 움직이는 링크나 풀리에 연결합니다.
 
-**현재 후보 검사 결과:** 349개 부품, 경로48표본과 세 끝자세(중복 제외43자세)에서 보고 기준 이상 겹침0건·연산 실패0건, 입력 해시 일치. 표본 간격은 각 관절 최대5°이며 연속 충돌이나 최소유격을 보증하는 결과는 아닙니다.
+**현재 후보 검사 결과:** 저장 CAD349개와 전체 STEP 재수입 대조, 핀10개의 관절 내부 삽입 경로 확보, 최신 엄지 자세를 포함한10개 정적 자세에서 보고 기준 이상 겹침0건·연산 실패0건. 손 전체 조립 후에는5개 핀의 경로를 옆 손가락이 막으므로 손가락 모듈을 먼저 조립하는 순서가 필요합니다. 클립의 탄성 설치·공차·공구 접근·강도와 실제 구동계는 남은 과제입니다. [검사 범위와 결과](cad/manufacturing_v1/README.md)
 
-이전 [9개 끝자세](cad/gesture_hand_v3/generated/gestures_oblique.png)와 GESTURE002의 세 정방향 경로228표본 검사 기록도 보존합니다. 이 결과를 새 엄지 후보 전체의 검증으로 승계하지 않습니다. 실제 모터·줄 구동과 속도는 아직 검증하지 않았습니다.
+이전 [엄지 후보의48개 경로 표본](cad/thumb_wrist_v1/README.md), [9개 끝자세](cad/gesture_hand_v3/generated/gestures_oblique.png), GESTURE002의 세 정방향 경로228표본 기록도 보존합니다. 해당 결과를 수정 형상의 모든 동작 검증으로 승계하지 않습니다. GIF 재생시간은 실물 속도가 아니며 실제 모터·줄 구동과100ms 성능은 아직 검증하지 않았습니다.
 
 > CAD와 시뮬레이션을 반복 개선하는 단계입니다. 제작 승인과 실제 하드웨어의 100ms 이하 성능 검증은 아직 완료하지 않았습니다.
 
@@ -43,8 +43,9 @@
 | --- | --- | --- |
 | 개발 기준 | [요구사항과 반복 순서](docs/REMOTE_DRIVE_PLAN.md) | 측정 경계, 설계 방향, 미확정 항목 |
 | 수용한 외형 | [FORM002](cad/accepted_form_v1/README.md) | 현재 손 비율·엄지·주먹의 시각 기준. 제조용 솔리드와 구분 |
-| 현재 엄지척 후보 | [thumb_wrist_v1](cad/thumb_wrist_v1/README.md) | 엄지의 펼친 위치를 유지하고 IP만 팔목 쪽으로15° 젖힘. 형상 불변, 후보 범위 확장·한 정방향 경로 검사 |
-| 현재 제작·자세 후보 | [gesture_hand_v3](cad/gesture_hand_v3/README.md) | FORM002 외형을 유지한349개 부품. 이전9끝자세 기록과 새 엄지척·세 전환 표본 검사를 구분 |
+| 현재 제작 후보 | [manufacturing_v1](cad/manufacturing_v1/README.md) | 349개 중 핀10개·부싱10개 수정. 실제 핀 삽입, 조립 순서와10정적 자세 검사 |
+| 현재 엄지 자세 기준 | [thumb_wrist_v1](cad/thumb_wrist_v1/README.md) | 엄지의 펼친 위치를 유지하고 IP만 팔목 쪽으로15° 젖힘. 원본 형상의 한 정방향 경로 검사 |
+| 이전 제작·자세 후보 | [gesture_hand_v3](cad/gesture_hand_v3/README.md) | FORM002 외형을 유지한349개 부품. 이전9끝자세 기록과 엄지척·세 전환 표본 검사를 구분 |
 | 현재 움직임 미리보기 | [엄지척 비교](cad/thumb_wrist_v1/generated/comparison.png) · [동작 GIF](cad/thumb_wrist_v1/generated/motion.gif) | 저장 CAD의 각도경로 렌더. 재생시간은 실제 속도·지연 측정이 아님 |
 | 이전 제작·구동 후보 | [articulation_drive_v2](cad/articulation_drive_v2/README.md) | 이전 엄지·주먹 형상의 뿌리 관절 개선과 실패 사례 보존 |
 | 이전 형상 동역학 | [articulation_drive_v2](sim/articulation_drive_v2/README.md) | 이전 축·질량/관성의20축 모델. FORM002의 성능 결과로 승계하지 않음 |
@@ -56,7 +57,7 @@
 | 진행 상황 | [PROGRESS.md](PROGRESS.md) | 회차별 변경·검사·다음 작업 |
 | 이전 직접 구동 구조 | [보존 브랜치](https://github.com/ckh7488/robot_hand/tree/archive/direct-drive-v13) | V9~V13 방향을 중단 상태로 보존 |
 
-이전 V9~V13 파일은 비교·감사 추적을 위해 main에도 보존합니다. 현재 외형·관절·주먹 기준은 accepted_form_v1(FORM002), 제작·자세 검토는 gesture_hand_v3입니다. form_candidate_v1, webcam_articulation_v1, articulation_drive_v2는 이전 단계이며 remote_drive_v1의 미완성 개선도 보존합니다. 과거 보고서의 통과 판정은 새 구조에 승계되지 않습니다. V9의 [설계 입력](cad/modular_roots_v9/design.json)은 처음 외형의 출처입니다.
+이전 V9~V13 파일은 비교·감사 추적을 위해 main에도 보존합니다. 현재 외형·관절·주먹 기준은 accepted_form_v1(FORM002), 엄지 자세는 thumb_wrist_v1, 제작 후보는 manufacturing_v1입니다. gesture_hand_v3와 form_candidate_v1, webcam_articulation_v1, articulation_drive_v2는 이전 단계이며 remote_drive_v1의 미완성 개선도 보존합니다. 과거 보고서의 통과 판정은 새 구조에 승계되지 않습니다. V9의 [설계 입력](cad/modular_roots_v9/design.json)은 처음 외형의 출처입니다.
 
 ## 성능 확인 방법
 
@@ -76,7 +77,7 @@
 
 ## 다음 개발 과제
 
-이번에는 팔목 쪽으로 끝마디를 젖힌 엄지척 후보의 결과·그림·커밋 재검토를 보여준 뒤 멈춥니다. 아래 항목은 이후 작업 목록이며 이번 단계에 모두 포함하지 않습니다.
+수용한 손 비율과 팔목 쪽으로 끝마디를 젖힌 엄지 자세를 유지하면서 실제 제작·조립·구동이 가능한 CAD로 개선합니다. 완성 위치의 겹침뿐 아니라 부품을 끼우는 경로, 공구 접근, 조립 순서와 공차를 확인합니다. 아래 과제는 단계별로 수정·검사·저장하며, 실제 구동계가 들어가기 전에는 속도 통과를 주장하지 않습니다.
 
 | 과제 | 확인할 내용 |
 | --- | --- |
@@ -96,6 +97,7 @@
 
 | 버전·날짜 | 주요 변경 | 기록 |
 | --- | --- | --- |
+| 제작 개선 1 · 2026-10-25 | 삽입이 막힌 원위 핀·부싱20부품 수정. 10핀 경로와10정적 자세 검사, 옆 손가락 때문에 필요한 사전 조립 순서 기록 | [manufacturing_v1](cad/manufacturing_v1/README.md) |
 | 엄지 끝 역방향 후보 · 2026-10-25 | 펼친 엄지를 유지한 채 네 손가락을 쥐고 IP만 팔목 쪽으로15° 젖힘. 동일349부품에 별도 자세·범위·검사·그림 추가 | [thumb_wrist_v1](cad/thumb_wrist_v1/README.md) |
 | 엄지척·전환 검토 · 2026-10-25 | 같은349개 부품에서 엄지를 곧게 펴고 검지 자세를 조정. 세 정방향 경로의 최종 표본 검사 결과는 세 정방향 경로 228표본의 보고 기준 이상 겹침0건·연산 실패0건, 입력 해시 일치 | [GESTURE002](checkpoints/GESTURE002.md) |
 | 손짓·제작성 검토 · 2026-10-25 | FORM002 비율을 유지한 관절·덮개·손끝 체결과 아홉 대표 자세 검사. 이번 결과를 보여준 뒤 추가 반복 중지 | [GESTURE001](checkpoints/GESTURE001.md) |
