@@ -1,0 +1,1607 @@
+{
+  "schema": "thumb_ip_bench_manifest.v1",
+  "baseline_sha": "a35750de1a1075e27ad14e15a89ddef26f767a48",
+  "manifest_path": "cad/thumb_ip_bench_v1/THUMB_BENCH001_MANIFEST.json",
+  "candidate_files": [
+    "cad/thumb_ip_bench_v1/ASSEMBLY.md",
+    "cad/thumb_ip_bench_v1/FABRICATION_SCOPE.md",
+    "cad/thumb_ip_bench_v1/README.md",
+    "cad/thumb_ip_bench_v1/audit.py",
+    "cad/thumb_ip_bench_v1/base.py",
+    "cad/thumb_ip_bench_v1/build.py",
+    "cad/thumb_ip_bench_v1/common.py",
+    "cad/thumb_ip_bench_v1/fixture.py",
+    "cad/thumb_ip_bench_v1/generated/bench_overview.png",
+    "cad/thumb_ip_bench_v1/generated/build_report.json",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_common_plate.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_common_plate.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_spacer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_spacer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_spacer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_spacer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_spacer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_spacer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_spacer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_spacer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_lower_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_lower_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_left.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_left.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_right.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_right.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_left.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_left.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_right.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_right.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_nut.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_nut.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_screw.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_screw.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_upper_washer.step",
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_upper_washer.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_free_span.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_free_span.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_free_span.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_free_span.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_free_span.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_free_span.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_free_span.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_free_span.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_tail.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_tail.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_wrap.step",
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_wrap.stl",
+    "cad/thumb_ip_bench_v1/generated/parts/drive_bench_baseplate.step",
+    "cad/thumb_ip_bench_v1/generated/parts/drive_bench_baseplate.stl",
+    "cad/thumb_ip_bench_v1/generated/render_report.json",
+    "cad/thumb_ip_bench_v1/generated/scene.json",
+    "cad/thumb_ip_bench_v1/render.py",
+    "cad/thumb_ip_bench_v1/reviews/development/MARGIN_REVIEW.md",
+    "cad/thumb_ip_bench_v1/reviews/development/README.md",
+    "cad/thumb_ip_bench_v1/reviews/development/audit_initial.py.txt",
+    "cad/thumb_ip_bench_v1/reviews/development/fixture_initial.py.txt",
+    "cad/thumb_ip_bench_v1/reviews/development/initial_assembly_audit.json",
+    "cad/thumb_ip_bench_v1/reviews/development/initial_build_report.json",
+    "cad/thumb_ip_bench_v1/reviews/saved_audit.json",
+    "cad/thumb_ip_bench_v1/source_docs/HPN-M4-A2.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/HPW-M4-A2.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/README.md",
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-20-A2.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-25-A2.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-40-A2.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-50-A2.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/WERA-05004504001.pdf",
+    "cad/thumb_ip_bench_v1/source_docs/downloads.json",
+    "cad/thumb_ip_bench_v1/source_docs/downloads_m4x50.json",
+    "cad/thumb_ip_bench_v1/source_docs/downloads_wera_tool.json",
+    "cad/thumb_ip_bench_v1/source_docs/facts.json",
+    "cad/thumb_ip_bench_v1/source_docs/wera_tool_facts.json"
+  ],
+  "files": {
+    "cad/accepted_form_v1/design.json": {
+      "bytes": 18188,
+      "sha256": "afd3a06e4435bb2194c0822f328c5492d4452415addfd1e02e6ce20c7e5aebb1"
+    },
+    "cad/accepted_form_v1/motion.json": {
+      "bytes": 18622,
+      "sha256": "68516653a5bb4c6e5d4205f6936839b1fd44a3208c535d670b4affb35817cf78"
+    },
+    "cad/accepted_form_v1/preview.xml": {
+      "bytes": 39031,
+      "sha256": "e13be8ca28a332b95664975c328a9cb3f6e9817c4a9a811f766643b46e8fa96c"
+    },
+    "cad/gesture_hand_v3/design.json": {
+      "bytes": 19495,
+      "sha256": "3ce5991fe6e794549cd61925cf936d6675c169d42568a79e156d4b8212abc12d"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_distal2_child_left_bushing.stl": {
+      "bytes": 72084,
+      "sha256": "6c8d7f8411ca41872dbcb9839aaa372b7ae17e31c468df42881381bf7ed9b252"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_distal2_child_right_bushing.stl": {
+      "bytes": 72084,
+      "sha256": "83b80226db7ea0ad6c1d635fe43619fcca8fddde885079450f104bb4f093b0a7"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_distal2_left_pin_washer.stl": {
+      "bytes": 50484,
+      "sha256": "885403206953cd971df1ac29eef6ac84636ffb17b5a90e42e9761f06478720ff"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_distal2_left_thrust_washer.stl": {
+      "bytes": 50484,
+      "sha256": "b2620a202017fa6bfc0ff2e2a0efe4f8cad64d22ad448ec4a56a944f9d3e21ce"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_distal2_right_pin_washer.stl": {
+      "bytes": 50484,
+      "sha256": "e29c02aaa81c98b59a00d5e569fe83db685e7f6582d0af1b156e6fddb74de0a0"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_distal2_right_thrust_washer.stl": {
+      "bytes": 50484,
+      "sha256": "560ad586224e4812ad3d00cf657bdd877b68f40b513392d1eec85b1e33a402c6"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate.stl": {
+      "bytes": 78384,
+      "sha256": "f2949a0bd069dce8bf850bbdc18054e5c5451e142bac2ce6fb219071b06905e5"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate_clamp1_bolt.stl": {
+      "bytes": 51484,
+      "sha256": "b17c7e77a2e4db79b4d05c7fe868d0bab48afde8d2c12ce6cb3b02c38a590e12"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate_clamp1_nut.stl": {
+      "bytes": 26484,
+      "sha256": "aff4028f9cfc02534a7d2379c769b811a7ccb8f2775bee4e06368fe501838286"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate_clamp1_washer.stl": {
+      "bytes": 53684,
+      "sha256": "c8f1d650946d888615fb11d9ca6b9aec4fd1a79dbc0d6ef6901af887e5a88fb5"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate_clamp2_bolt.stl": {
+      "bytes": 51484,
+      "sha256": "8c08ccba3818202b28a4668bbc4048f03cdca9a17530d40f4ad4e0962483981e"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate_clamp2_nut.stl": {
+      "bytes": 26484,
+      "sha256": "0ece6f4f60b2f651f36b2b9e281f569b4ac54b051fd0cc4fbc3389c0483bb5f6"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_dark_faceplate_clamp2_washer.stl": {
+      "bytes": 53684,
+      "sha256": "2227a7e7a67428a0d29cc58cac8df3196b112d61731656d7b40b9ffd83df3982"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment2_distal_right_bushing.stl": {
+      "bytes": 72084,
+      "sha256": "e4f29e6544d3f4bf2d4162a29d59c37655efc82abde04e76a49fad1b71ed2bfa"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment3_rounded_tip_cap.stl": {
+      "bytes": 600684,
+      "sha256": "78d3327db83b16f45d0e6e7f342c531c07778819177bf53f80768977a09850f5"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment3_rounded_tip_cap_clamp1_bolt.stl": {
+      "bytes": 51484,
+      "sha256": "47b87538187d85fdb5ec2064fe8a93ea3837354a86dcf5bf282085e024d4f6ea"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment3_rounded_tip_cap_clamp1_nut.stl": {
+      "bytes": 26484,
+      "sha256": "c515158ffda1a7ad5972b1a037928494ee724d26f024cf17739cc58c2572f212"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment3_rounded_tip_cap_clamp2_bolt.stl": {
+      "bytes": 51484,
+      "sha256": "0dbd0da0baa496e48bb63e2be3ee05375abc9452d1e246e9821fdc8e40ab7a0a"
+    },
+    "cad/gesture_hand_v3/generated/meshes/thumb_segment3_rounded_tip_cap_clamp2_nut.stl": {
+      "bytes": 26484,
+      "sha256": "5db108c1de7420cac3c298ba7702c176b971d588fd903a4c21a82644b1692dfc"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_distal2_child_left_bushing.step": {
+      "bytes": 20197,
+      "sha256": "dc2d5656f7c745dc05ea1a3f1f084793f72157a76283be759c926520d811ee89"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_distal2_child_right_bushing.step": {
+      "bytes": 18977,
+      "sha256": "ad168594432e0b50074e9c276e8d3b1145e01dd6d737d382a58de5273301cad5"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_distal2_left_pin_washer.step": {
+      "bytes": 10555,
+      "sha256": "8a79187620441d615a75e51497ab06f70322463be88045431ab494f4ae9885c2"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_distal2_left_thrust_washer.step": {
+      "bytes": 10554,
+      "sha256": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_distal2_right_pin_washer.step": {
+      "bytes": 10555,
+      "sha256": "dcada575fb240d7dd16c79c4ce2a19b83ee44b6384cab863d7c6e034eda861d0"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_distal2_right_thrust_washer.step": {
+      "bytes": 10551,
+      "sha256": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate.step": {
+      "bytes": 150365,
+      "sha256": "bdaccb1fbc965d885ccf7bfb204821383bcd2e58a0b0d51218cd1358abe511bf"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate_clamp1_bolt.step": {
+      "bytes": 34751,
+      "sha256": "05e1b85c225a5f69e278305cf734cac46c7b0f35d71331c7eccea01607c4e253"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate_clamp1_nut.step": {
+      "bytes": 29934,
+      "sha256": "52ee975688bf435e7d8bb3772ca042461e4a502770d753da15e44d6a35ca877b"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate_clamp1_washer.step": {
+      "bytes": 15319,
+      "sha256": "c023b23f0462ca397f971bad4672a5bb0d00304c09e1405a9b74915bf603c7f8"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate_clamp2_bolt.step": {
+      "bytes": 34733,
+      "sha256": "1363b41d433d1a52d3ef5a0e8ebe292545bd46b1ef266b5d484e66ef275b224b"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate_clamp2_nut.step": {
+      "bytes": 29931,
+      "sha256": "a77a67cc0df1846ccab3265db1efbd3fd40deb047fa811d039dc47f02d45adb8"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_dark_faceplate_clamp2_washer.step": {
+      "bytes": 15305,
+      "sha256": "bc2d0976406a3fe8c2b4c2465591b25c53822ba1b949aa790c31a259b487044b"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment2_distal_right_bushing.step": {
+      "bytes": 19024,
+      "sha256": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment3_rounded_tip_cap.step": {
+      "bytes": 162732,
+      "sha256": "4392261eed70be5bb2d1e57673050021785a31a8a7e1bc494ec7abff221980f9"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment3_rounded_tip_cap_clamp1_bolt.step": {
+      "bytes": 34427,
+      "sha256": "43f75313024e96a277d031aeec5cc43e04753d6603d0f73ac4578d0b6a60b767"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment3_rounded_tip_cap_clamp1_nut.step": {
+      "bytes": 30888,
+      "sha256": "a05e52c7e7affe3270397f314dfce1ee3bf06314bfc5043244fd383a811b38ee"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment3_rounded_tip_cap_clamp2_bolt.step": {
+      "bytes": 34474,
+      "sha256": "8d6baa57e940e4c58a3fd5231f49c1032f9287fccef7b587db7cf7d580390af9"
+    },
+    "cad/gesture_hand_v3/generated/parts/thumb_segment3_rounded_tip_cap_clamp2_nut.step": {
+      "bytes": 30914,
+      "sha256": "f95f2c567cb6a7ab70123191e25420aefc13fc973f1adc4f768dab2c668d55ca"
+    },
+    "cad/gesture_hand_v3/generated/scene.json": {
+      "bytes": 365011,
+      "sha256": "ca1411098b9a10ec7ca1036bfb14566299fd0da66e6a89dca401f8677210e12f"
+    },
+    "cad/gesture_hand_v3/poses.json": {
+      "bytes": 166654,
+      "sha256": "74b85ef6032e8a6886df2d8bb049957d360212e8dd1050a9b6c5a8a155c73331"
+    },
+    "cad/gesture_hand_v3/poses.py": {
+      "bytes": 23406,
+      "sha256": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f"
+    },
+    "cad/gesture_hand_v3/render_gestures.py": {
+      "bytes": 20189,
+      "sha256": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56"
+    },
+    "cad/manufacturing_v1/generated/meshes/thumb_segment2_distal_left_bushing.stl": {
+      "bytes": 72084,
+      "sha256": "b74c1fef36310528cb3f1112526e91ce390c492bcf8c76b4cb84d4d944874f1b"
+    },
+    "cad/manufacturing_v1/generated/parts/thumb_segment2_distal_left_bushing.step": {
+      "bytes": 20608,
+      "sha256": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc"
+    },
+    "cad/manufacturing_v1/render.py": {
+      "bytes": 18858,
+      "sha256": "43865e2ac4ec49d84d33d37b7cf9613e77352c472bb2cdf527c1d11351f8f02d"
+    },
+    "cad/manufacturing_v2/generated/meshes/thumb_distal2_retaining_screw.stl": {
+      "bytes": 51484,
+      "sha256": "8665d062f351d6c2a5abe35f7fa90c727e5e272006c48f45d9a09217f7645613"
+    },
+    "cad/manufacturing_v2/generated/meshes/thumb_distal2_retaining_washer.stl": {
+      "bytes": 50484,
+      "sha256": "cceecc63c1bc1e1455b8e6eb25a8843b8cf6f2321b313865621f49a96bd19f62"
+    },
+    "cad/manufacturing_v2/generated/meshes/thumb_joint_pin_2.stl": {
+      "bytes": 158134,
+      "sha256": "dfa7f44d5633fdb909b32a9f0c98cedfd3ecaca3bd313d0cf051c8c44feb1804"
+    },
+    "cad/manufacturing_v2/generated/parts/thumb_distal2_retaining_screw.step": {
+      "bytes": 34872,
+      "sha256": "91f3f2fd23005f3a676dc4b5947b65f92e0532ad10f41c4e0d6f344209a1e5bf"
+    },
+    "cad/manufacturing_v2/generated/parts/thumb_distal2_retaining_washer.step": {
+      "bytes": 10554,
+      "sha256": "50b692f03c788a6b8055a4af89345256e17a4161722af514833b84fd49a14004"
+    },
+    "cad/manufacturing_v2/generated/parts/thumb_joint_pin_2.step": {
+      "bytes": 39612,
+      "sha256": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4"
+    },
+    "cad/thumb_ip_bench_v1/ASSEMBLY.md": {
+      "bytes": 5829,
+      "sha256": "92657ab49286d0e51b1c2cb523d29a0d92c2e283743b329a195aa86981d556e1"
+    },
+    "cad/thumb_ip_bench_v1/FABRICATION_SCOPE.md": {
+      "bytes": 3913,
+      "sha256": "3486da95a13827c0f511e98cf49e86a0a9bfaf85a39e8ced1aeab84ec062af55"
+    },
+    "cad/thumb_ip_bench_v1/README.md": {
+      "bytes": 4811,
+      "sha256": "d0800c99e050ea58d0ef0119d990ede78155ef73f8ce147f372ff56b02e74583"
+    },
+    "cad/thumb_ip_bench_v1/audit.py": {
+      "bytes": 23705,
+      "sha256": "c0517b8c9ed4339eaf2bb06e71bda6be05900b859ac4aecb9c3dd474803dd997"
+    },
+    "cad/thumb_ip_bench_v1/base.py": {
+      "bytes": 18858,
+      "sha256": "ecddd59c5f6d9d203fb4155ca233612dff850286658d75f98b1bbc8cb97969b4"
+    },
+    "cad/thumb_ip_bench_v1/build.py": {
+      "bytes": 8243,
+      "sha256": "e318eda062b50bae9028c284ab998ad0025ec47b05a31eb139487671493eeeb4"
+    },
+    "cad/thumb_ip_bench_v1/common.py": {
+      "bytes": 12873,
+      "sha256": "afe1eacc169ef5d06e77148d2601692fa9ef32099e2db76d0d5fd80d68520716"
+    },
+    "cad/thumb_ip_bench_v1/fixture.py": {
+      "bytes": 14372,
+      "sha256": "2fd58d8a84776a203f941b72033f40277031263759e8f40ba5ac259506a9c0b9"
+    },
+    "cad/thumb_ip_bench_v1/generated/bench_overview.png": {
+      "bytes": 183523,
+      "sha256": "a3e4923068e9e72d23e3cf81d5c436917b82c938a7a90e029aea84f962b0cd7c"
+    },
+    "cad/thumb_ip_bench_v1/generated/build_report.json": {
+      "bytes": 111809,
+      "sha256": "30e15d62ae38873da6431f6f3a8371ce7ab5fe4aad4b921d00ce6fb744d6923f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_common_plate.step": {
+      "bytes": 96344,
+      "sha256": "020f1bb383e5323f4949751909433b0cfa53fe2ff11b74c4878e9542150a9949"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_common_plate.stl": {
+      "bytes": 298684,
+      "sha256": "1b27f10cb044dbd62655006b332451c3c2aa7b7c7e04a8e5bf7cb745a131d850"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_lower_washer.step": {
+      "bytes": 9347,
+      "sha256": "ce171cd4e20e740e4f5e98a82a31e9df6aa2bd6396927fccb1389a77e4355f85"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "4ff910027734dba7f2c045ffd3854dd09d3450a63f703e08bf84451e3e865b95"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_nut.step": {
+      "bytes": 27097,
+      "sha256": "80263a3b11928b958e0c1f9ca5c4d0810df67d80fd9bf4ade7d53be378f1ea83"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_nut.stl": {
+      "bytes": 22284,
+      "sha256": "4ce33dd6447e5e47eb4a313f95f6e04be624a6aa9b47e9403d02b43ddbae02c7"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_screw.step": {
+      "bytes": 32355,
+      "sha256": "4ee4ec7820f1ba0d3a6149b4dfd1fd94839b13bc89941559644c7dae348e505c"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_screw.stl": {
+      "bytes": 43084,
+      "sha256": "71b76426a9bb61118a7aec20f4b99890dcfc9cbd5ffaa22dfa5f68881164458c"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_spacer.step": {
+      "bytes": 9325,
+      "sha256": "066ba9cee672ced8bc8972368a553901a2d59582c3b3b9acba423549e6afe9d4"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_spacer.stl": {
+      "bytes": 42084,
+      "sha256": "4d50f872dbbcfd397aba9a3ddbde401de481a477a79e5fa7f9b2433ec0e04244"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_upper_washer.step": {
+      "bytes": 9340,
+      "sha256": "b7f4059bf1df2a481a382efbf893908d5dce22bf6fe8c6b32378fb6b9563619d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_1_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "29ab2ba4e7299399e87d7837eb0772a2cf6fb1e192481a24ea6935668ce6ece6"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_lower_washer.step": {
+      "bytes": 9325,
+      "sha256": "9b18908756a782c2b0441d8c54a0de7f7a32e8a65231635d103e206e1387af00"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "c8894606667677c4c59411400bcc2777da40aea0bdabc13792c7b748ab9d3c16"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_nut.step": {
+      "bytes": 26936,
+      "sha256": "72feb48a3eff7ae3026af313b5e0cf4446b3b683dda45cd5a894db8c2e49c1b2"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_nut.stl": {
+      "bytes": 22284,
+      "sha256": "d8d123a8f3b7524dd605f572c5e6ac4e408732bba649253aa534c6ce92aeb70f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_screw.step": {
+      "bytes": 32292,
+      "sha256": "632134347a284dfa86bfb4a71786c044e887ade543c8b71b35de6dc2d321cb0b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_screw.stl": {
+      "bytes": 43084,
+      "sha256": "cba85509dc4cf55f3b9df0c5a0f7d2b03ec01f410d640cbecdf81f9bd04d299d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_spacer.step": {
+      "bytes": 9303,
+      "sha256": "5ff0cd641600783f55707de8ec73813b264b861e72719852af42c56483e2177d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_spacer.stl": {
+      "bytes": 42084,
+      "sha256": "dbfddcf90344f37eb8a249dd19c6c6bacc22901242adeaca43ad6f9b03857787"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_upper_washer.step": {
+      "bytes": 9318,
+      "sha256": "71ea0445eba0a2752c86d343cfc605b9b401e5185e7d26dadaa0dec73c32c7da"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_2_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "92cce632c6a37ff4334750ceb8f1e0dc24995f3140dd4fa28667c55af5506f4b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_lower_washer.step": {
+      "bytes": 9333,
+      "sha256": "31e8ebe2341500701f22158d4f6351782ff1aadb2fa74d3b9210d558cafc41a2"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "9a5da81771fde2dc505125f4773ce65a7b4b443bfbad885bbb3cf00bf894a5e4"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_nut.step": {
+      "bytes": 26969,
+      "sha256": "14a10132485e851837b27e73a29588d55c96e6d295611adf5d296d3e9913f63d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_nut.stl": {
+      "bytes": 22284,
+      "sha256": "e952dafa2f588b2eb34b3504c3ef772ae5e00036ce65fe8a81d5c6b9e519d7c8"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_screw.step": {
+      "bytes": 32314,
+      "sha256": "1dd884691fc97fe088a27bc6ae94bfec3dbb841ccf98831c17f7eadef03750db"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_screw.stl": {
+      "bytes": 43084,
+      "sha256": "08b0f2cc8e167c889b5a04b609d1e9a7820f1fe35b49f98dac002ae867d48047"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_spacer.step": {
+      "bytes": 9311,
+      "sha256": "04f295239c2aeb9fc08c9003abbb63feaf71db93225190b6cca3f73189aec1b5"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_spacer.stl": {
+      "bytes": 42084,
+      "sha256": "7418136fa97559528eda685a6c6576a01615a7dead057cc1eaf2d3afba9ccf34"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_upper_washer.step": {
+      "bytes": 9326,
+      "sha256": "2826db27cc34796d7cf6e93982a51df2901b64b79963ec76ec0a242ce0f0b797"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_3_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "2f4967772e426e8e344ee0b1b3251e9e3bf90a6d4e2051d96215150a5ad50758"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_lower_washer.step": {
+      "bytes": 9311,
+      "sha256": "ffc4aabc074be905ae703159adecdee1c514e0804ecbe6b919786b195ce4283b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "98e0bf68b37d8a037b13c541b5e8c44e9face29d1fdcdb354811e1bf95c06c0c"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_nut.step": {
+      "bytes": 26994,
+      "sha256": "2d632c9a091565b736fa25cfe0552c43063d1d3edc1cfe2c133ba877a9e9ba1c"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_nut.stl": {
+      "bytes": 22284,
+      "sha256": "a7df1ef2488e61d1fba690cb2042cad0e1bfc2998c78cf9f57e1dca77612dff9"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_screw.step": {
+      "bytes": 32255,
+      "sha256": "dd2221200fd226911d17b95d1430d16fd3a4501f550172e64c6376ce0d6c0f86"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_screw.stl": {
+      "bytes": 43084,
+      "sha256": "1744f9d7fe0f36250835d17c0686f3737484167f62b54c7511e7f256b3f97cde"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_spacer.step": {
+      "bytes": 9289,
+      "sha256": "41c98050f90c408fa00d0d731e43bfa309a054688219b6898dd19d8c68fbcd21"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_spacer.stl": {
+      "bytes": 42084,
+      "sha256": "e80acd067a42b56d96a5c266129e1d102b2d953a611046b2e470565ca8682a17"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_upper_washer.step": {
+      "bytes": 9304,
+      "sha256": "8fce6207a4741f0f4df38652027532a88b953d8183d48c8f5466b449af924705"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_motor_mount_4_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "fe729ab2a7ea3244daffabe39aeb87485173df3745e1fe6e331e1772adff8cb1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_lower_washer.step": {
+      "bytes": 9487,
+      "sha256": "5d98e18b6c30ed65aab122bdd78b3b3a962c5b6c2e2dc55fb302c111043e96d9"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "7a49b0982d28a1d2e162e83b1c2112c2e0a6128983dbf16a1a0a3b748c60e58a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_nut.step": {
+      "bytes": 27519,
+      "sha256": "57f6e2ab0fa1abc9e7503aeb40bdc9182f91313c1947e1443b93bf0119995c88"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_nut.stl": {
+      "bytes": 22284,
+      "sha256": "7c12f6b5cd3c403342c693aeadd01dd60417f2ec719ac17b4adeff4422d753f8"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_screw.step": {
+      "bytes": 32873,
+      "sha256": "527e9ee4180c3df072f76f8e8c99db6f7916357a516518360ef90d2ede286238"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_screw.stl": {
+      "bytes": 43084,
+      "sha256": "4ab0d1edd93f2a442eb78ede128127d28603fec0c04fc28d047239f78de89a26"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_upper_washer.step": {
+      "bytes": 9473,
+      "sha256": "37eccb1e5fb912c492b53a37a523b4f2d81641e8d8aabc8278b156b2900aca29"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_1_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "0947b1a8994e551a757076e661bf1eda5dc84f3bc86d46e26209db74f4dc1077"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_lower_washer.step": {
+      "bytes": 9473,
+      "sha256": "b3d53f0bf57c5dc7946c55ccfe1bf64f7f5d60813572bfab993b809636cd0cd0"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "c773f6bf7f94bf215abdbfd011b30870c6b049d3b918164526c48863b299175e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_nut.step": {
+      "bytes": 27407,
+      "sha256": "fccf4a0521829fd0ddbc9d7c595f784819b7d9765e4c7869dc8a9abe9743d83e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_nut.stl": {
+      "bytes": 22284,
+      "sha256": "392f8cf3c8ab37d8ea2203c69ce6315c8e35c3b9c4eff2aad421369019cf8c70"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_screw.step": {
+      "bytes": 32857,
+      "sha256": "a4a35a277a8fe869b79501bc26a87eff64dbd4a9b737a8fb816930beb16f67a5"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_screw.stl": {
+      "bytes": 43084,
+      "sha256": "39ec313e30a9103706695836f5dc38c3d707b869b50bbef7ea8ebaf094209573"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_upper_washer.step": {
+      "bytes": 9459,
+      "sha256": "674563b9c2da4dedfe8eee87077c2be4024df673cc774afedc225122fba5a55a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_2_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "3b800c0b12de413d9d5b8050118f6977e4b7eb8afb881d9975a7a307a1f786ae"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_lower_washer.step": {
+      "bytes": 9487,
+      "sha256": "fc0d65160e1ad9ddf96e3f8811a90c2857833279916c1d7799e7088a71b1af4d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "5ee670eac4146d9edd5542569bc864cc5a1f4b4d5946b6c1d93833bd0fd1ea78"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_nut.step": {
+      "bytes": 27519,
+      "sha256": "1d7c297a92c23ed0ac026be23772ab7841825cf920ceafbf40fab9c9e319b92f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_nut.stl": {
+      "bytes": 22284,
+      "sha256": "51c810f7c011a71193e8305857a27a2df9def49962ea21a0d4b0e64c849b864b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_screw.step": {
+      "bytes": 32875,
+      "sha256": "2a557bf48b4609e92787a17d95af4289f45befcfdf810972b8ba950fec2a3844"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_screw.stl": {
+      "bytes": 43084,
+      "sha256": "10b581b58e17338b860afe6d2a9462ea9519126ece2786e7b663264a44d28299"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_upper_washer.step": {
+      "bytes": 9473,
+      "sha256": "bb19e4f2b8aad6f3349821b74a9abd273ee41fdafc88b6c5e8747ae2fb353d5d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_3_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "bd45dd5a3f6db1d540c86d7031f10362d8b1d6a4626c064ca858c9fe8d514db4"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_lower_washer.step": {
+      "bytes": 9473,
+      "sha256": "e2ae21c12786805498b5fa920a970ce1477e74afe0bf78db1d87350bd8947246"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_lower_washer.stl": {
+      "bytes": 42084,
+      "sha256": "f3230f9503463fb4559ead9550240f1c0ac64c7b9500bdd0b66a92392b06d620"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_nut.step": {
+      "bytes": 27509,
+      "sha256": "a6acaa2fd288abc731c67c1153c00ee29115de7fa079a3373218f74b68aed791"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_nut.stl": {
+      "bytes": 22284,
+      "sha256": "526b5f50ac0837f1785e9afe39964bef96ed7ef0eeed85d776606a6d9ab13941"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_screw.step": {
+      "bytes": 32859,
+      "sha256": "268cd259d070cdb850188777dfe8d015bc4e80f7b06d305a544eaa3138f70ae8"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_screw.stl": {
+      "bytes": 43084,
+      "sha256": "2cb43777c92b96a975387050ef230a278d0755f53e89c47b42a7937ee93d94b2"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_upper_washer.step": {
+      "bytes": 9459,
+      "sha256": "1cd33a7eb6e30e2f217b3ffd4f10bccdbd1ad443bef16064c71939b95bbc11cd"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_mount_4_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "212657f06ed3350040374a84cb28eddc130bbfca2ab374238b434b6ae5a58936"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_nut.step": {
+      "bytes": 26945,
+      "sha256": "b02e8beea2a14dd9671225ee6473272e5250ad914835b648858d97d7eb2518cc"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_nut.stl": {
+      "bytes": 22284,
+      "sha256": "c5c4e615d90a267bc0418a556fd9cb8b775ac40444464e0196df635946966447"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_screw.step": {
+      "bytes": 32509,
+      "sha256": "7582db4869340fb68ed6b95fbf79a76e2d0634d137778cff41b47e3350f3a289"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_clamp_screw.stl": {
+      "bytes": 43084,
+      "sha256": "f394daa668c63becf686b09f2caf0ad7ddea942054899645466bd42a054e2460"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_left.step": {
+      "bytes": 137635,
+      "sha256": "cf3702b20e9a5753b75c918fd4aa5313f83c2d02f543b25fde33680683514b0e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_left.stl": {
+      "bytes": 48784,
+      "sha256": "6bef99a6ca8a6b66ee60d106131363bcf9a5d1ca4bcdc55de44d5deb1cf17da2"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_right.step": {
+      "bytes": 137662,
+      "sha256": "da7f57c2641fcde474d8da383232c0e02cd8f72543d365b5bac121b76ae8402f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle1_right.stl": {
+      "bytes": 48784,
+      "sha256": "90f0a9ea8c739b42efc6d74f780e056e88407f13b1d028703ddc854128690576"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_nut.step": {
+      "bytes": 27031,
+      "sha256": "f605780f6cb9e412f8a2575191f55d939cfcdcb883c3386e0c9ea81081607de8"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_nut.stl": {
+      "bytes": 22284,
+      "sha256": "abc6c2c2af8992bbd3cd113a56c1e7de71a94f01b7d28fd3793576ac0ee78887"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_screw.step": {
+      "bytes": 32510,
+      "sha256": "7dd7057efbfeeb2bec724119252a9e3fcefb92e3d8bee83e7c691502beb9ea9e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_clamp_screw.stl": {
+      "bytes": 43084,
+      "sha256": "1b73cff6a83ff06903a623fc635827cb0788301eb48241be7b67e1eeba162faf"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_left.step": {
+      "bytes": 137829,
+      "sha256": "c12143d6aa84acb079c0bc3fe490742a28451c4b90bcf1d06250b81c461d8826"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_left.stl": {
+      "bytes": 48784,
+      "sha256": "252b90d26b613ddb9a376f781a8b4df43f81c028aa47c5908cd8c9f6a4de1a82"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_right.step": {
+      "bytes": 137674,
+      "sha256": "df278dbe14c81f3072a852651b17a16e2051718de4815120b2f1bb50efc13eda"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_parent_saddle2_right.stl": {
+      "bytes": 48784,
+      "sha256": "107400f357bbba1cb20bf0e88a388ca4bde0c58e03ac741d9b061b0f900f5c5a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1.step": {
+      "bytes": 23125,
+      "sha256": "4a1d853801bb553ee8af6ab1861d64b28ece9a8a53b7dc13f868f18228440ba1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1.stl": {
+      "bytes": 42884,
+      "sha256": "8587afb5e67e52f942198a31e2668e5f69432210b15b49a63155032f4f9719e0"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_nut.step": {
+      "bytes": 27080,
+      "sha256": "88df8d4c92a89073ff8ac017aa1737938039ce8ed068bfad05a8a990eee70710"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_nut.stl": {
+      "bytes": 22284,
+      "sha256": "4f810f35dd5ea7b66356194cd473d025dbe03042ed74f0f037a9b3d9c912f213"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_screw.step": {
+      "bytes": 32354,
+      "sha256": "06a26d2bb7c21555d91431a6258ccc99b39d48c7b811a29ec5f87f6124e21279"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_screw.stl": {
+      "bytes": 43084,
+      "sha256": "4f34569f8965fefd39a6218b3f4c4218ed41e85bf22f90a9c29835b90ffddc7b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_upper_washer.step": {
+      "bytes": 9333,
+      "sha256": "7a1ba11b96dc0c842a651ece98ed325441c3e1d471130aabbc8dae94904e2392"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_1_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "dcb2bd61ddfc51500c92f6ee11e73b1633e8b50501ddd5e6e7ee7331e35af20b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2.step": {
+      "bytes": 23086,
+      "sha256": "8b7fca1644f8bd6ccdfb984213704b0e6d933d9de33a12c09872ff4fa74a1699"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2.stl": {
+      "bytes": 42884,
+      "sha256": "48f05eb0032ffb56dcdabc946ed92c8f1d3a86b24a8342d365fd37fab59771bc"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_nut.step": {
+      "bytes": 27040,
+      "sha256": "fdb2969d2a0fa1478dde2e8efbed7bbc607b20dbd77db30d0fbd404439ac4410"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_nut.stl": {
+      "bytes": 22284,
+      "sha256": "72d90a5a13f9353f11261af7d1dd3315a3d1da38c800a856dba8404691d98596"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_screw.step": {
+      "bytes": 32339,
+      "sha256": "809e3d107b161acd62a710ce86d827be1c51b7337ced4905c288c208015edb3f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_screw.stl": {
+      "bytes": 43084,
+      "sha256": "a24417d1df8a8409d8d3b174861b2e84bdb7847ff240fe874750efd8e5a11a9d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_upper_washer.step": {
+      "bytes": 9319,
+      "sha256": "2d24011381bce300e15e919ebaf4f1ba73d537273a6ee2588777af25d12f6768"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_2_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "35923b92e32a9eb64a84e33f72becf811302238b77369f7fdd08459729130bc3"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3.step": {
+      "bytes": 23034,
+      "sha256": "f159671477a512674ee82bf662b961adab946cfd7c65013e1b164f1f783b5907"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3.stl": {
+      "bytes": 42884,
+      "sha256": "0a06f4ef11fdd56abf2babe7dec49c4753d36e58c4c9968761425c0c6e3267df"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_nut.step": {
+      "bytes": 27050,
+      "sha256": "8a5262fef8965012e47afb4828a610a34a4f18c59d3cb47e4552f5c88a973cf4"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_nut.stl": {
+      "bytes": 22284,
+      "sha256": "04b0e6a1190afae6db7df6c7fa7c829206991f6b610a54b561097bef95e610c6"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_screw.step": {
+      "bytes": 32199,
+      "sha256": "1938199f111609276aed1f52791753f56577e4ee2ce1ed346227c6c59e793f7e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_screw.stl": {
+      "bytes": 43084,
+      "sha256": "99b3706ed8f6811451db5dfb52ac7e500af835d83544513b13627700b4836cd1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_upper_washer.step": {
+      "bytes": 9291,
+      "sha256": "8c3d320a034ca29192e89d3de2cbd264dbee06c402a92f7caca11b171f9a949a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_3_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "cb60954c47c17f4db4bff9d06a6a165ba974b0af827696fc50242cb3572e176b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4.step": {
+      "bytes": 22995,
+      "sha256": "4e8829da4e77f2db18f8b484e321a3027ab71ee14518c6b546291502ac02e28a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4.stl": {
+      "bytes": 42884,
+      "sha256": "16cf33e797756d290d5b4dfdde19d6d93f431d06dbf15db4bfae2f0233611b26"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_nut.step": {
+      "bytes": 27008,
+      "sha256": "10e5ea3cfeae3a89e5c1149805f9885b9ce40f0ef1173a18f0eb3ea51515ee49"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_nut.stl": {
+      "bytes": 22284,
+      "sha256": "12bf4215d51036b04f0d88019b96d400710eaf1bf0a0540bf007be94f4300446"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_screw.step": {
+      "bytes": 32183,
+      "sha256": "02b2a4bd777a7d938cca5949bd67d2b0248db2ccddd4adb810edeffc76da0e64"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_screw.stl": {
+      "bytes": 43084,
+      "sha256": "4a69cf66beae2c70daa9d81cba415ef7ef2ae9f23ca5e1194740dae0a1a8f00b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_upper_washer.step": {
+      "bytes": 9277,
+      "sha256": "0e82bb516f3cbdc775d973ba21dbb65f009974c5b7503a6f5d417fc6fde6dd0d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/bench_table_foot_4_upper_washer.stl": {
+      "bytes": 42084,
+      "sha256": "4a02d8a7a63f9a1703c0fe2483afd3964585c374b3899e1d8bd8a4c00d95e19a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_free_span.step": {
+      "bytes": 6142,
+      "sha256": "572b18abefd9efeffc1f35212a8c4095b18ac4c71d490da439e56cdaa93e0781"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_free_span.stl": {
+      "bytes": 20884,
+      "sha256": "13e0789e45ce4daf7413616ca47edfa72492e13b8ca02d752f12c7809f9a87a1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_tail.step": {
+      "bytes": 6075,
+      "sha256": "7354fe4595deef376bb8d36121576920d47d8c81c2e359e024cfd823ed564d84"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_tail.stl": {
+      "bytes": 20884,
+      "sha256": "40838782e11ac5f75579845076dd2382cc3512acba193c3a3abc51873c401775"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_wrap.step": {
+      "bytes": 6054,
+      "sha256": "dd8f354b7290ba833bf85d4f6e26fb228ab527ba3b94320f55f8898275e6f79a"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_joint_wrap.stl": {
+      "bytes": 241384,
+      "sha256": "0a25c1fcf19a2209985d0e9bdbb2a3e81db1302dd07f84347204aef18484108f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_tail.step": {
+      "bytes": 6318,
+      "sha256": "d9324c4c325f5c3281245a7a5b41d56181c2de82b9ab7a58ddf33b21e3a6d5b8"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_tail.stl": {
+      "bytes": 20884,
+      "sha256": "b9185de48db37aa20475b50b10b2eb6c6f07c098c2fb0dff09aafae2020b65f9"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_wrap.step": {
+      "bytes": 6055,
+      "sha256": "94395ec2ca958df0a1dea51f1d073daab10075d3b73c36704aa45dee183482de"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_0_motor_wrap.stl": {
+      "bytes": 419884,
+      "sha256": "65f8f02cdf2de6dcb844cf7be1a22cdf7573ccbe8452d1f5e9ac543307968693"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_free_span.step": {
+      "bytes": 6129,
+      "sha256": "35c3fabe5891910b5073baecee256bd334832e4c76b636110dbc88e6a6306165"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_free_span.stl": {
+      "bytes": 20884,
+      "sha256": "73b30140b3e0e7e79914fbc32cd9b40b299a46657316c31de00cb6688ca88635"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_tail.step": {
+      "bytes": 6103,
+      "sha256": "f8ff6fef8cffb06d50ed944ef2685c11836b09b8e4d9b567dbe2520a89c57c6b"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_tail.stl": {
+      "bytes": 20884,
+      "sha256": "b525e76838f8100e47c4d199db8a40bb2c552e4747908eb38fbc0768e1feea69"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_wrap.step": {
+      "bytes": 6033,
+      "sha256": "9d283b356554a470e6530dd41964a1d6a56136fcbc37153c434ac06e461820f1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_joint_wrap.stl": {
+      "bytes": 335884,
+      "sha256": "c07d816e030c264d059e74d60267e3ce623ecd7f2a36c18c4725df1a4953ca75"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_tail.step": {
+      "bytes": 6292,
+      "sha256": "1887c72f78e321f5482cf4018da429677010a545b07885d8897ff9fccc87c228"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_tail.stl": {
+      "bytes": 20884,
+      "sha256": "2412ec96e7e03550e6ad48ee550d6ae2a5668f528bd6521f09537da9de05e231"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_wrap.step": {
+      "bytes": 6061,
+      "sha256": "b67e376d988d8aa1949e3ff6583ff6b4d1b4119dda4cc7b0ff2d5ac78e952a8e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q-15_cord_1_motor_wrap.stl": {
+      "bytes": 346384,
+      "sha256": "ad7c6f4084308766d833205b103d884999c8294ab6001c2ef0b2a67079873c29"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_free_span.step": {
+      "bytes": 6142,
+      "sha256": "6d3cae459150dddc5fa63faa89825c2b68d9f54242bd3bc44d70e4a173251457"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_free_span.stl": {
+      "bytes": 20884,
+      "sha256": "13e0789e45ce4daf7413616ca47edfa72492e13b8ca02d752f12c7809f9a87a1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_tail.step": {
+      "bytes": 5627,
+      "sha256": "c247544b5307f4ad7d5994d07e92e161ada92e28a1db3e9f9d47b1e4ec8d7e50"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_tail.stl": {
+      "bytes": 20884,
+      "sha256": "027dd9918e639379f6b981322cfb4b4ff1bd6a403e37589f79a50e858082f8a3"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_wrap.step": {
+      "bytes": 6008,
+      "sha256": "fc9ecd7f70b0f5bc2bb5fdf5179dfdc550e656dafa808bd0db34dd6dfb2baf9d"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_joint_wrap.stl": {
+      "bytes": 283384,
+      "sha256": "809627273daffd568ee9d9e3a27a4bf531d6b1cbe33a181d9d2d62832752ede0"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_tail.step": {
+      "bytes": 6119,
+      "sha256": "945b59bf29269f3fcb210883aefc7949a2dc505b52803d2cb3262d42d78ab601"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_tail.stl": {
+      "bytes": 20884,
+      "sha256": "0f4bce5c55e13302ec87a212166dd823994ffc2b0c1d8e1cfc80766d5cd0a1c9"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_wrap.step": {
+      "bytes": 5974,
+      "sha256": "be78b64fa4af5ceb95600c95ba29d01ca41365d8419edf6b729aeda734f07b88"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_0_motor_wrap.stl": {
+      "bytes": 388384,
+      "sha256": "c3331abc7e0afee71d7dbdacc98532974b9352f2eb3f5861326e382ef15f13df"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_free_span.step": {
+      "bytes": 6129,
+      "sha256": "e82cff5ee3f81b1cdad34accef90e605e7ca9b840eafccd643e2e04b8623109c"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_free_span.stl": {
+      "bytes": 20884,
+      "sha256": "73b30140b3e0e7e79914fbc32cd9b40b299a46657316c31de00cb6688ca88635"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_tail.step": {
+      "bytes": 5633,
+      "sha256": "03847fa180fb5b7877d1fea20f05a1967c031a74eaeda1fd5b02e5a775d970a9"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_tail.stl": {
+      "bytes": 20884,
+      "sha256": "78b428ff31c56d5faaa13dae09fb163b77f4ef553abfb883dabc5f2a88822e93"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_wrap.step": {
+      "bytes": 5837,
+      "sha256": "a0e0400435f1691cdc453e33043bd3f35a9a06249f859a841bbeedfd5f1527f1"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_joint_wrap.stl": {
+      "bytes": 283384,
+      "sha256": "402442d79b6de9f9c2033efa1ccdea0d3d3dc17eea4981afcf3bc88e7e449f2c"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_tail.step": {
+      "bytes": 6181,
+      "sha256": "2267f02f35e2966eebc7ac5f035e8286f5b60899422f1476a03a9f4b6ba3f184"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_tail.stl": {
+      "bytes": 20884,
+      "sha256": "ec4ddbb007b523fa3e40526df4756720088a0150eed608bd91d7bdaa35a888c8"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_wrap.step": {
+      "bytes": 5996,
+      "sha256": "1225d881fd4fe2d2d0ddf1a92d84fb9d18d5dd8a030bde03b53a4674e5c699e2"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/display_q0_cord_1_motor_wrap.stl": {
+      "bytes": 388384,
+      "sha256": "22e0fd0249d45fef0212efb43f9f611d6eade811c4123933f8f13dfb8128086f"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/drive_bench_baseplate.step": {
+      "bytes": 44945,
+      "sha256": "0ac45f35e9c1d559b1789805b4f9190181cc9623578638b0b80c382312abd67e"
+    },
+    "cad/thumb_ip_bench_v1/generated/parts/drive_bench_baseplate.stl": {
+      "bytes": 170284,
+      "sha256": "b3ac09b48aa9ebe68dcf74a37be9918766c4a0d3f84a040715999822073f50a5"
+    },
+    "cad/thumb_ip_bench_v1/generated/render_report.json": {
+      "bytes": 133870,
+      "sha256": "24e46f95fe1c5fb12f6340a7f5c9f0699f478747a86da159d74775fb5d2ef384"
+    },
+    "cad/thumb_ip_bench_v1/generated/scene.json": {
+      "bytes": 274407,
+      "sha256": "20141f16b827ab8bab9a9657aa041044c2293e064a99a183225a5ad67854c638"
+    },
+    "cad/thumb_ip_bench_v1/render.py": {
+      "bytes": 3800,
+      "sha256": "a135d7cae5c4d0e685af73ccc3769c98baeb1972fb66d1579b3f7fee13c1dfb6"
+    },
+    "cad/thumb_ip_bench_v1/reviews/development/MARGIN_REVIEW.md": {
+      "bytes": 4351,
+      "sha256": "e2e21ef8bac04178e18553520bc1b75833aaeca8c052568a7c4367b9833e147f"
+    },
+    "cad/thumb_ip_bench_v1/reviews/development/README.md": {
+      "bytes": 2149,
+      "sha256": "5ca386251858d20d25676a8eed573af29f51f8a3a488d3a1f40889b09e32ee0b"
+    },
+    "cad/thumb_ip_bench_v1/reviews/development/audit_initial.py.txt": {
+      "bytes": 22503,
+      "sha256": "3ab24faaa1e354e5c431153269da8893d208b7b086df05c42b6cf6d468c1f96d"
+    },
+    "cad/thumb_ip_bench_v1/reviews/development/fixture_initial.py.txt": {
+      "bytes": 14259,
+      "sha256": "45353a69c5a9fa6feac21d11bea0fd8486ed4bc4cb8f5c2ed005c44897c6b596"
+    },
+    "cad/thumb_ip_bench_v1/reviews/development/initial_assembly_audit.json": {
+      "bytes": 2306679,
+      "sha256": "e550a0416873379c1876298b95a90e5761d8d04739c8de6021efc840a1f939fc"
+    },
+    "cad/thumb_ip_bench_v1/reviews/development/initial_build_report.json": {
+      "bytes": 111775,
+      "sha256": "5ead2a5fcad9e1476d7c755a6bbfb6b7665074987b41d34715d7fedbe21f010e"
+    },
+    "cad/thumb_ip_bench_v1/reviews/saved_audit.json": {
+      "bytes": 2307588,
+      "sha256": "2d309c4e5d98d8275b403c6260f74df8cbaa2c91bc1f0f89ed560a590715fe63"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/HPN-M4-A2.pdf": {
+      "bytes": 405736,
+      "sha256": "2ae97994482bac10a88b75269e6297dadd417e147ecfc7b23f917fdef34c296a"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/HPW-M4-A2.pdf": {
+      "bytes": 382351,
+      "sha256": "6d017aa2fc1ae6ed43654aebb69309136f37673a7121d6bbfe28af40994bde33"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/README.md": {
+      "bytes": 2900,
+      "sha256": "f9f7ec50e1eacbabb7c9b0de357f9e741261bffe1b5ac445fa91d21a22156090"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-20-A2.pdf": {
+      "bytes": 487249,
+      "sha256": "cbf8b50e35bc613f9daea5f2f1e4eccc29f6a544ae106ffe45fb3f8c1cb1666f"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-25-A2.pdf": {
+      "bytes": 456473,
+      "sha256": "0c5d4eb50a0207bfa9d0497c0faa8535852070e2cded64e65b07f9830baf0027"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-40-A2.pdf": {
+      "bytes": 435313,
+      "sha256": "5347d96a9ff4e3fb2496355aead29d19051b5b2edb7bead6497f8fdb0908a6af"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/SSC-M4-50-A2.pdf": {
+      "bytes": 409449,
+      "sha256": "fe08d37724b1c790d4b31eabe2df13bf6d2eb40eaaefb1351a012ab87394df6d"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/WERA-05004504001.pdf": {
+      "bytes": 423233,
+      "sha256": "8845e15a0fa5a7b96b054e7e7148efde79477635771a2904588cfefc286f9565"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/downloads.json": {
+      "bytes": 2786,
+      "sha256": "4e83926beef9569135766b8deb0a196d63232aa8ffd718210ef297e9f89aa838"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/downloads_m4x50.json": {
+      "bytes": 689,
+      "sha256": "5defc7604bb1837d2ceeed187f3145b1e8b1e746df36d8c4052a2bb96dcfcadb"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/downloads_wera_tool.json": {
+      "bytes": 1732,
+      "sha256": "e39b3ed209718b4101bbfa025a954046f4383b91b6853457ddff3bdbbe6e69e3"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/facts.json": {
+      "bytes": 4369,
+      "sha256": "0033b43e96da6b9a9dc5689e876a95293c6fbee605b123d00de0a57c1df838b3"
+    },
+    "cad/thumb_ip_bench_v1/source_docs/wera_tool_facts.json": {
+      "bytes": 2656,
+      "sha256": "3ca144bf7b18949e10f6e09f5e7d863756412d82413761550473dc26d5c104c0"
+    },
+    "cad/thumb_ip_drive_v1/THUMB_DRIVE001_MANIFEST.json": {
+      "bytes": 184730,
+      "sha256": "974d5a8ac3e8f46f57f0d7a5abeb14fbfa301ac0e4b0e7533769a3557603ed4f"
+    },
+    "cad/thumb_ip_drive_v1/generated/build_report.json": {
+      "bytes": 383470,
+      "sha256": "ffc0db2db7d8fb38a6df41967f46eaa1bbef230aead3bb7f2aa0445c79a1eb04"
+    },
+    "cad/thumb_ip_drive_v1/generated/design.json": {
+      "bytes": 37466,
+      "sha256": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_baseplate.step": {
+      "bytes": 30166,
+      "sha256": "ba4f8eb5761a98cde98476fdc2012c4f212dd25064535bcb1912283babf05c03"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_baseplate.stl": {
+      "bytes": 85484,
+      "sha256": "6cd234e0aa0fe8c0accfb189809f04a736e94df098cee6f143630a550d696fb2"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_bracket.step": {
+      "bytes": 61591,
+      "sha256": "e4d5538b3254662f2d3f646247e4087c4970230294794f3d3d024aef347c4dfb"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_bracket.stl": {
+      "bytes": 254284,
+      "sha256": "1e519b2e0008267401da8365626ed4fe0eb32133edf7be6f16ac9d0dd2e83bb6"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_1.step": {
+      "bytes": 27056,
+      "sha256": "d5ace74d62e89df6cde188450e6cbac61079abecab5b5cd530cdc1c061568e4e"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_1.stl": {
+      "bytes": 22284,
+      "sha256": "2c47a1568e3f40db1219139f98de042948c718884e12b4cb9649fc37b731103f"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_2.step": {
+      "bytes": 27018,
+      "sha256": "e6f222a1e0f496ee9cd55655ad3b0e99555b496406e5b24f67a381fc29d16acc"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_2.stl": {
+      "bytes": 22284,
+      "sha256": "a82fd5e19d96a5614e0ef35544309dc9a1a2d7af83204cb80ad7da4bb0e9e776"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_3.step": {
+      "bytes": 26998,
+      "sha256": "74f675591e0c9e5d38f7f4657e1d553c7fbc055abc1ed12caf365d096fdc3531"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_3.stl": {
+      "bytes": 22284,
+      "sha256": "db5e52b3038c6ccd64e2784a645b338b4d2c10319789af81f9820609fc0e637c"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_4.step": {
+      "bytes": 27018,
+      "sha256": "8d081cd43a52df95f7fe772fb831e07470e4375f8c6f0655ba12ca6fee902cc9"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3_nut_4.stl": {
+      "bytes": 22284,
+      "sha256": "7bb5dd5724668402b918712bebbb4d84f2ad6a969689443ed2121b1e3dbd47c4"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_1.step": {
+      "bytes": 32367,
+      "sha256": "e625bc0ccbcf45da2205299b28750a8e380baa8d27e5f8b2de3af9c6ddd6c483"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_1.stl": {
+      "bytes": 43084,
+      "sha256": "d1893bedbe2194bbf8e95a16394d2da04ffd3d6b305f9f1bdd569ed02fdc783d"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_2.step": {
+      "bytes": 32313,
+      "sha256": "4007b62d4161c6e452a152c45f1eadb06028c060e1839fe660ca4780be0fd273"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_2.stl": {
+      "bytes": 43084,
+      "sha256": "1c8dd2dfa98bafc38fda5d848c48694bddf4de2fb7d07b6a11bd847251c98d1b"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_3.step": {
+      "bytes": 32266,
+      "sha256": "8fe228670724cdda1bd7c26222b4f9ea5a230b878630d22ff3859c3abe8f1049"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_3.stl": {
+      "bytes": 43084,
+      "sha256": "05aea43803f34f1bdc9d0fb7b68668fcb6d0a6bc5420be350912e689937d1956"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_4.step": {
+      "bytes": 32300,
+      "sha256": "6d1ec6085a7f16317af8de70916137f8a86b166d6eb22506cf27f7f060c5ca79"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_bench_m3x12_4.stl": {
+      "bytes": 43084,
+      "sha256": "99b9590ff19e06d4626002f140477b1ab398505d847a285aebf5ba5094b01c25"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_dual_groove_spool.step": {
+      "bytes": 564427,
+      "sha256": "24e032268405c66df57ec73312136a399f6fc460583916799c9a45108898fd85"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_dual_groove_spool.stl": {
+      "bytes": 3578784,
+      "sha256": "975c9dad5f370aea1c98421e95b01b0975ec10ac01b5466a79376f10fd1ba533"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m077_stator.step": {
+      "bytes": 2589250,
+      "sha256": "8968094cb8939dc13c118556d56b3172029e7258abe6e4d31e8b8a4f1708da3b"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m077_stator.stl": {
+      "bytes": 3804084,
+      "sha256": "335aa869aa8599dd978164cd2615081ffe49c8aea05b749e6fd02f9d2734dd64"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_1.step": {
+      "bytes": 27522,
+      "sha256": "445e503cfe0a90fadbf8a7872e537f8fe3f2838aef94d68eda703733dfa7b746"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_1.stl": {
+      "bytes": 22284,
+      "sha256": "e000af55d10b1a2eda9ff30fef3c68420f98026bd96d9320c4f03462aaff9de0"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_2.step": {
+      "bytes": 27478,
+      "sha256": "b55d0953e2cce54dc6149405fdd761c4304f9c8a4a03d0657c80c0c35154088f"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_2.stl": {
+      "bytes": 22284,
+      "sha256": "16e22536fde0d587f7b88783bf21f034bd862b3f1f3dfe467ae84032a6e52555"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_3.step": {
+      "bytes": 27532,
+      "sha256": "b008d0743072638f6c0e840758789c481c1f232c0c72670671d42ae0efa5a333"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_3.stl": {
+      "bytes": 22284,
+      "sha256": "243e99662babfd921da43362e5b25c924135ec0a9d4a088d793fdb9be7b33f5f"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_4.step": {
+      "bytes": 27488,
+      "sha256": "9caacc1f59683fe1d3319e2640af0f1f6f9b01173716e5ab9b8856fabb742040"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_nuts_4.stl": {
+      "bytes": 22284,
+      "sha256": "c9cef1ecce0deb189e75527959779e8114a33ef5d26bca54d994e1e9fb5f63c8"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_1.step": {
+      "bytes": 9850,
+      "sha256": "86e1ee82081f4e84b7cd8d566cc290d4dfa8631c852adf3fc04d2dea32f8cf37"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_1.stl": {
+      "bytes": 41884,
+      "sha256": "721f4869b60e80357922029bffe1ff92eeda58283b4f42154dee97b2d83b46ba"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_2.step": {
+      "bytes": 9835,
+      "sha256": "c63f76c6ef2adc6ae78b8f74ca1330ac75217ff98c0ddc387a65f8ffd34c6ed3"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_2.stl": {
+      "bytes": 41884,
+      "sha256": "688d73bf5ab8985a717749d191be8c921e9e24e79a2734ec94eb6f5e8dab4342"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_3.step": {
+      "bytes": 9850,
+      "sha256": "feebc4e5e40dcc4313836631d744e32d5c1f6fc786fe0bcc67fb259388f8da31"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_3.stl": {
+      "bytes": 41884,
+      "sha256": "ba8eaacaccff5b04fb61ecbf641d9ade4c3a830137c28b6cba84f57c8edcb2a9"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_4.step": {
+      "bytes": 9835,
+      "sha256": "1c945c1bc9516c69eca93dbc9b3a3f1bc8b3bec3cf18730e70447e5ea39a6c90"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_base_screws_4.stl": {
+      "bytes": 41884,
+      "sha256": "085e5aa200538f228315dbd1b491a6fba32ae51199a24c1e3ed4a2721898217b"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_1.step": {
+      "bytes": 9839,
+      "sha256": "5763954c1adc20974af4141ca9dc40629e5a552fc76d26a9e460fe76f244f5e1"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_1.stl": {
+      "bytes": 41884,
+      "sha256": "01850e15d19d38aa4a37e0fcce82966612512cf9571e6433aaa339dfa5574ed1"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_2.step": {
+      "bytes": 9869,
+      "sha256": "9ee65c54c0dfc8fbd348813b7f6ee5336e331bf73be09353c4d9ce3e087db427"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_2.stl": {
+      "bytes": 41884,
+      "sha256": "106ee56b51ade58c16856a4df924b5a050df9740e09bb4d1b0ad8ec1f83d3a2d"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_3.step": {
+      "bytes": 9854,
+      "sha256": "bcd81cc7694124945ddf3c087e0bef7157b16358c20c79fce89438e331e886df"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_3.stl": {
+      "bytes": 41884,
+      "sha256": "2e93fc35afbd159e3d30ae6cf8e89e68692460a395a9204754ba66e0dbf3013a"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_4.step": {
+      "bytes": 9884,
+      "sha256": "0976784d079763f19bc52671810d62f95dff0e8869d3a38a8871025a20dec4e5"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_m2_body_tap8_4.stl": {
+      "bytes": 41884,
+      "sha256": "c36a44d02c9dcaf706a68cb3aa221fa97785ffccecee0990bc044f3983ca5aea"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_metal_horn.step": {
+      "bytes": 694282,
+      "sha256": "485243ede08d007c4795d58dc423924f4a15870a0a215a549980193e8e396531"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_metal_horn.stl": {
+      "bytes": 530884,
+      "sha256": "b7d339c98547522471958a6a0447f02528af677c81afb579a8fcf7f177ca386b"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_rear_idler.step": {
+      "bytes": 102489,
+      "sha256": "e5c41ebfaee90b3541cd8c7864c1d1b8097bdad75150a6820272df3af63ad986"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_rear_idler.stl": {
+      "bytes": 499084,
+      "sha256": "2129c7489d611964d39f229a398aa08181148cc6e90778253635f102b1769014"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_s101_relief.step": {
+      "bytes": 2493430,
+      "sha256": "c4be0d1d99cf2d2f0de4f1e1f68204731b5c1af0ea54bfe15582962da548f44f"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_s101_relief.stl": {
+      "bytes": 1254984,
+      "sha256": "61b8ebe487e0911ce12a461df383b496590d97b8d3278e160b6c7d4054d7c2b6"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_1.step": {
+      "bytes": 32094,
+      "sha256": "6d155bb3b4b3e0bcd78af0d631c9e655e96c511f4eb78894bcb774b9663ee2ac"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_1.stl": {
+      "bytes": 43084,
+      "sha256": "8edc5733259e22ee30eb8f8760381ee8bd35f811ed0598d133f3877b5d9cd787"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_2.step": {
+      "bytes": 32461,
+      "sha256": "943f8ad71c6747bf847cde5575f4db0c441c668133267f334c32724bfbedb6e7"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_2.stl": {
+      "bytes": 43084,
+      "sha256": "02a9332a557b9b827313282b3f2b3d76e0d189329e7fdcd4081437f6324ae065"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_3.step": {
+      "bytes": 32144,
+      "sha256": "5b001f376a224f9d57e499f63d0da968357f7294cc058f9d2f2f0d8bbe36dab1"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_3.stl": {
+      "bytes": 43084,
+      "sha256": "113ec4b60492bf2e018b1d1b53bc5213d86ea977dea4fee2028f1fd7734b39d5"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_4.step": {
+      "bytes": 32512,
+      "sha256": "53046cd151103ab3477265a5380215c4755030a9a7cd6641791fe1d0f43772d6"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_spool_mount_m2x16_4.stl": {
+      "bytes": 43084,
+      "sha256": "32e4e0346b69d7dff3de6e41b418b05e0cfa5313510f06ffb73ea7b8a6c5c331"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_tendon_clamp_m2x3_1.step": {
+      "bytes": 32736,
+      "sha256": "9b20994167363b1fb0a1fe370b0e80288ceb326446267be24d583259bc7b5d03"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_tendon_clamp_m2x3_1.stl": {
+      "bytes": 48484,
+      "sha256": "ffce3f878f56dc615eb3560f6f10d47704676d6d7ef549a91aa9a4c6282ffbea"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_tendon_clamp_m2x3_2.step": {
+      "bytes": 32934,
+      "sha256": "ec2e32b1732cafeb9a024d07dd49477bc5719afdf6768b9e420e28f2f107b4ef"
+    },
+    "cad/thumb_ip_drive_v1/generated/motor/drive_tendon_clamp_m2x3_2.stl": {
+      "bytes": 48484,
+      "sha256": "e677ad82dbf581ec0fd907eb4d63f3c0fe7a9d23f111550f30909fec3f483e91"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp.step": {
+      "bytes": 31333,
+      "sha256": "ad81257c2b05b06c7ac6efcfd2ebd896abe1df20f275bf1d29db2a418d1fad38"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp.stl": {
+      "bytes": 95884,
+      "sha256": "5f47ac1902de2915256a7c53c72a4b936442def50d8cc2a36d992c2d222646d2"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_nut_1.step": {
+      "bytes": 31004,
+      "sha256": "762022725a7811b1e4279c09ccaa4f2c633ee1da48ec984a86fce9439f26134c"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_nut_1.stl": {
+      "bytes": 22284,
+      "sha256": "809a4e3a81622cc15325425a2352455c699a4b5dab20c66a2bdee94f731cbd35"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_nut_2.step": {
+      "bytes": 31053,
+      "sha256": "527b8f94352c0b851bdd3559d9d9bf168826dadf49678302753ccd700d11e515"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_nut_2.stl": {
+      "bytes": 22284,
+      "sha256": "286ab0a2749bbc49229727e5bc661970bd6f18eaff0150f9a70c8684775ab39a"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_screw_1.step": {
+      "bytes": 32852,
+      "sha256": "9ecd55788087eb555a527f4b9b6086211dc7f977be807328acb80e47fc7f7a31"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_screw_1.stl": {
+      "bytes": 48484,
+      "sha256": "8b47c83901e9b44bd04881e8edf0897a8e5b554c58f54f7a1823d69af18da8d1"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_screw_2.step": {
+      "bytes": 32935,
+      "sha256": "9b393e13b80836f8ba739d1ce52c1ccf686e470ddc0d7a63ec17254b5ef2e998"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_ip_tendon_clamp_screw_2.stl": {
+      "bytes": 48484,
+      "sha256": "fad975cea39c6d7237cf2bf0391451c82eca09c7e490ef6697c6abc78e059ff5"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_segment2_segment_shell.step": {
+      "bytes": 1445067,
+      "sha256": "3b10dbb560eb0c941589b5e1cecda11f467b098c2f14fc37f8b4bd66b0b317a4"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_segment2_segment_shell.stl": {
+      "bytes": 426484,
+      "sha256": "dad91c80539b90c606e0d88d6849210e89a6f8dff9328f0daab2ce428756a6bf"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_segment3_tip_core.step": {
+      "bytes": 944020,
+      "sha256": "2c76f6ce1980127cc7d961bce1220281deee7bccf09c6bb34a96e035c53599a6"
+    },
+    "cad/thumb_ip_drive_v1/generated/parts/thumb_segment3_tip_core.stl": {
+      "bytes": 1842984,
+      "sha256": "9a6cfc42a74b2f23bdfbac43bec645d86cad17e68068f197a4602e978b280204"
+    },
+    "cad/thumb_ip_drive_v1/generated/scene.json": {
+      "bytes": 396882,
+      "sha256": "0ad639d649ea782cf2a22a0f25234dc0f4c907e87a19a37fb25d6292075e0f42"
+    },
+    "cad/thumb_ip_drive_v1/geometry.py": {
+      "bytes": 2357,
+      "sha256": "dbc98a8dc12118ee91cbafd156632e9a6df2f1670310328901adb5bafd5816d9"
+    },
+    "cad/thumb_ip_drive_v1/joint_drive.py": {
+      "bytes": 11301,
+      "sha256": "4b73a446066d7ad1bc6687aed59d29351e5a3729092765c7d8fff1e8f641afc1"
+    },
+    "cad/thumb_ip_drive_v1/routing.py": {
+      "bytes": 2821,
+      "sha256": "bd39958e6d7cf1dd91db333a4fc790fa76acc0a4acaf14f6fde0506616036e07"
+    },
+    "cad/thumb_wrist_v1/profile.json": {
+      "bytes": 484,
+      "sha256": "0f6da63c2e07bab359a74579b18b886e4344a51e711b89d9d55b3ed88265de55"
+    },
+    "cad/thumb_wrist_v1/wrist_profile.py": {
+      "bytes": 4306,
+      "sha256": "bef1180bb5316ce7c32f4f227631630d308cc4d4e292edb4bd8543b14512cc8e"
+    }
+  },
+  "reports": {
+    "build": "cad/thumb_ip_bench_v1/generated/build_report.json",
+    "audit": "cad/thumb_ip_bench_v1/reviews/saved_audit.json",
+    "render": "cad/thumb_ip_bench_v1/generated/render_report.json"
+  },
+  "audit_summary": {
+    "parts": 124,
+    "poses": 9,
+    "collisions": 0,
+    "cord_part_checks": 11160,
+    "cord_collisions": 0,
+    "declared_contacts": 72,
+    "failed_contacts": 0,
+    "screw_access_paths": 14,
+    "nut_access_paths": 14,
+    "lateral_jaw_paths": 4,
+    "failed_final_envelope_containment": 0,
+    "blocked_assembly_paths": 0
+  },
+  "progress_lines": [
+    "- 실제 수정(THUMB_BENCH001): 손 형상을 유지한 엄지 IP 분리 시험대124부품을 구성하고, 막혔던 발 나사4개의 삽입 경로를 수정했다.",
+    "- 검사 결과: 저장 CAD9자세·줄/부품11,160건에서 충돌0, 접촉72개·조립 접근32개 통과. CAD·그림·제작품 목록을 저장하며 정확 SHA 재검사는 후속 기록으로 구분한다.",
+    "- 남은 일: 중앙 혼 고정나사·줄 예압/길이 조절·센서·테이블 고정·재질/공차/강도와 실물 지연. 로봇 단독50ms 목표·100ms 상한의 달성은 미검증이다."
+  ],
+  "commit_message": "checkpoint(THUMB_BENCH001): record detached thumb IP bench candidate",
+  "metadata_sha256": "bab2a7481494a8cf1f45594b211a3d6156c5921aa545a3da596d93511d1e3525",
+  "publication_helpers_sha256": {
+    "bench_checkpoint.py": "c17cdade983965d8515879111525ed761158f92dc2351448387f8df2219956a3",
+    "git_blob_batch.py": "28e37b501bac04630ffb953bfe6ccc1cb81674830e475834c539b0c8abd5f386"
+  },
+  "baseline_snapshot_sha256": "a3ff130a171057e70cc88baa67d919d4733a41594db80065f8d9214dbaa306d5",
+  "scope": "Exact committed saved-CAD bench audit replay only. No CAD rebuild, image rerender, whole-hand integration, continuous sweep, tolerance/load qualification, physical drive or latency approval.",
+  "remaining_limitations": [
+    "Detached one-axis coupon; no whole-hand integration or continuous sweep certification.",
+    "Central metal-horn retainer, independent tendon preload adjustment and joint sensing remain incomplete.",
+    "No physical fit/load/strength or measured 50/100 ms latency approval."
+  ]
+}

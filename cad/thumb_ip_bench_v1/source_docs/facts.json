@@ -1,0 +1,48 @@
+{
+  "schema": "thumb_ip_bench_m4_hardware_facts.v1",
+  "scope": "Official supplier dimensions for nominal fixture hardware CAD. No purchase, vendor CAD, thread-mesh, preload, strength or tool-access approval.",
+  "supplier": "Accu",
+  "material_finish": {"material": "Stainless steel A2", "finish": "Natural", "strength_class": null},
+  "socket_screws": {
+    "standard_supplier_label": "DIN 912 / ISO 4762",
+    "thread_diameter_mm": 4,
+    "thread_pitch_mm": 0.7,
+    "head_diameter_mm": {"supplier_value": 7, "lower": 6.78, "upper": 7},
+    "head_height_mm": {"supplier_value": 4, "lower": 3.82, "upper": 4},
+    "socket_across_flats_mm": 3,
+    "drive_depth_mm": 2,
+    "items": [
+      {"sku": "SSC-M4-20-A2", "product_id": 2828, "length_under_head_mm": 20, "full_thread": true, "thread_length_min_mm": null, "url": "https://www.accu.co.uk/metric-cap-head-screws/2828-SSC-M4-20-A2", "datasheet": "SSC-M4-20-A2.pdf"},
+      {"sku": "SSC-M4-25-A2", "product_id": 2830, "length_under_head_mm": 25, "full_thread": true, "thread_length_min_mm": null, "url": "https://www.accu.co.uk/metric-cap-head-screws/2830-SSC-M4-25-A2", "datasheet": "SSC-M4-25-A2.pdf"},
+      {"sku": "SSC-M4-40-A2", "product_id": 2833, "length_under_head_mm": 40, "full_thread": false, "thread_length_min_mm": 20, "selection": "historical research only; not used by current fixture", "url": "https://www.accu.co.uk/metric-cap-head-screws/2833-SSC-M4-40-A2", "datasheet": "SSC-M4-40-A2.pdf"},
+      {"sku": "SSC-M4-50-A2", "product_id": 2835, "length_under_head_mm": 50, "full_thread": false, "thread_length_min_mm": 20, "selection": "current cross-jaw candidate", "url": "https://www.accu.co.uk/metric-cap-head-screws/2835-SSC-M4-50-A2", "datasheet": "SSC-M4-50-A2.pdf"}
+    ],
+    "not_established_by_these_tables": ["length tolerance", "thread fit class", "exact runout and tip chamfer", "socket tolerance and corner radii", "A2-70 or other mechanical strength class", "tightening torque", "actual tool shaft/handle envelope"],
+    "full_thread_note": "Full thread is the supplier designation; it does not establish usable engagement through head runout and tip chamfer. M4x40 and M4x50 must not be treated as fully threaded fasteners.",
+    "cross_jaw_nominal_interval_check": {"source": "Parent-provided intended coordinates, not measured actual CAD", "under_head_x_mm": -22, "tip_x_mm": 28, "minimum_thread_interval_x_mm": [8,28], "nut_interval_x_mm": [22,25.2], "nut_distance_from_tip_mm": [2.8,6], "inside_nominal_minimum_thread_interval": true, "actual_tip_chamfer_runout_engagement_and_strength_verified": false}
+  },
+  "nut": {
+    "sku": "HPN-M4-A2", "product_id": 7890, "standard_supplier_label": "DIN 934",
+    "thread_diameter_mm": 4, "thread_pitch_mm": 0.7,
+    "across_flats_mm": {"supplier_value": 7, "lower": 6.78, "upper": 7},
+    "height_mm": {"supplier_value": 3.2, "lower": 2.9, "upper": 3.2},
+    "url": "https://www.accu.co.uk/hexagon-nuts/7890-HPN-M4-A2", "datasheet": "HPN-M4-A2.pdf",
+    "unconfirmed": ["thread fit class", "proof load/class", "actual wrench envelope", "chamfer geometry"]
+  },
+  "washer": {
+    "sku": "HPW-M4-A2", "product_id": 72488, "standard_supplier_label": "DIN 125", "form": "A",
+    "inner_diameter_mm": {"supplier_value": 4.3, "lower": 4.3, "upper": 4.48},
+    "outer_diameter_mm": {"supplier_value": 9, "lower": 8.7, "upper": 9},
+    "thickness_mm": {"supplier_value": 0.9, "lower": 0.7, "upper": 0.9},
+    "url": "https://www.accu.co.uk/metric-flat-washers/72488-HPW-M4-A2", "datasheet": "HPW-M4-A2.pdf",
+    "design_note": "Selected supplier explicitly specifies 0.9 +0/-0.2 mm. A 0.8 mm CAD body is the midpoint of this range, not the published dimension field; 1.0 mm is outside this range. Use 0.9 mm for maximum physical stack clearance and review minimum stack at 0.7 mm.",
+    "hardness_unconfirmed": true
+  },
+  "availability": {
+    "exact_catalog_skus_confirmed": true,
+    "live_stock_or_delivery_confirmed": false,
+    "reason": "Public page text mixes alternative dynamic inventory panels; no inventory, checkout, quote or account action was performed."
+  },
+  "cad_status": "Datasheets advertise CAD formats, but no vendor CAD file was downloaded. Any geometry built from these dimensions must be labelled nominal parametric geometry with simplified threads.",
+  "source_records": ["downloads.json", "downloads_m4x50.json"]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "official_tool_sources.v1",
+  "retrieved_utc": "2026-10-25T12:27:48.287750+00:00",
+  "completed": true,
+  "errors": [],
+  "prior_sources_sha256": {
+    "facts.json": "0033b43e96da6b9a9dc5689e876a95293c6fbee605b123d00de0a57c1df838b3",
+    "README.md": "f9f7ec50e1eacbabb7c9b0de357f9e741261bffe1b5ac445fa91d21a22156090",
+    "downloads.json": "4e83926beef9569135766b8deb0a196d63232aa8ffd718210ef297e9f89aa838",
+    "downloads_m4x50.json": "5defc7604bb1837d2ceeed187f3145b1e8b1e746df36d8c4052a2bb96dcfcadb",
+    "SSC-M4-20-A2.pdf": "cbf8b50e35bc613f9daea5f2f1e4eccc29f6a544ae106ffe45fb3f8c1cb1666f",
+    "SSC-M4-25-A2.pdf": "0c5d4eb50a0207bfa9d0497c0faa8535852070e2cded64e65b07f9830baf0027",
+    "SSC-M4-40-A2.pdf": "5347d96a9ff4e3fb2496355aead29d19051b5b2edb7bead6497f8fdb0908a6af",
+    "SSC-M4-50-A2.pdf": "fe08d37724b1c790d4b31eabe2df13bf6d2eb40eaaefb1351a012ab87394df6d",
+    "HPN-M4-A2.pdf": "2ae97994482bac10a88b75269e6297dadd417e147ecfc7b23f917fdef34c296a",
+    "HPW-M4-A2.pdf": "6d017aa2fc1ae6ed43654aebb69309136f37673a7121d6bbfe28af40994bde33"
+  },
+  "prior_sources_unchanged": true,
+  "files": [
+    {
+      "manufacturer": "Wera",
+      "sku": "05004504001",
+      "download_url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05004504001.pdf",
+      "product_url": "https://www.wera.de/de/werkzeuge/8790-hma-deep-steckschluesseleinsatz-mit-1-4-antrieb",
+      "resolved_url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05004504001.pdf",
+      "content_type": "application/pdf",
+      "file": "WERA-05004504001.pdf",
+      "bytes": 423233,
+      "sha256": "8845e15a0fa5a7b96b054e7e7148efde79477635771a2904588cfefc286f9565"
+    }
+  ]
+}

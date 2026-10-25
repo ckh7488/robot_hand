@@ -1,0 +1,53 @@
+{
+  "schema": "thumb_ip_bench_wera_tool_facts.v1",
+  "manufacturer": "Wera",
+  "part_number": "05004504001",
+  "article_number": "8790 HMA Deep",
+  "ean": "4013288210272",
+  "description": "7 mm deep socket with 1/4 inch drive",
+  "published_dimensions_mm": {
+    "hex_output_across_flats": 7,
+    "overall_length": 50,
+    "d1_outer_dimension": 10.8,
+    "d2_rear_diameter": 11.8
+  },
+  "drive_inches": "1/4",
+  "material_finish": "Matt-chromed chrome-vanadium",
+  "manufacturer_use_scope": "Manual and non-impact machine operation",
+  "source": {
+    "product_url": "https://www.wera.de/de/werkzeuge/8790-hma-deep-steckschluesseleinsatz-mit-1-4-antrieb",
+    "item_url": "https://www.wera.de/en/05004504001",
+    "pdf_url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05004504001.pdf",
+    "local_pdf": "WERA-05004504001.pdf",
+    "download_record": "downloads_wera_tool.json",
+    "pdf_row_page_one_based": 3,
+    "pdf_row_part_number": "05004504001",
+    "column_definition": "Product page identifies output size, overall length, d1 outside dimension and d2 rear diameter; PDF page 3 supplies the matching item row."
+  },
+  "planned_outer_clearance_gauge": {
+    "shape": "cylinder",
+    "diameter_mm": 11.8,
+    "length_mm": 50,
+    "basis": "Uniform cylinder using the larger of the two published outside dimensions over the full published length. Deliberately omits the reduced d1 section.",
+    "manufacturer_cad": false,
+    "actual_tolerance_bound_verified": false,
+    "purpose": "External straight-approach clearance around the socket body only"
+  },
+  "parent_proposed_counterbore": {
+    "diameter_mm": 12.4,
+    "nominal_diametral_gap_mm": 0.6,
+    "nominal_radial_gap_mm": 0.3,
+    "source": "Parent design instruction, not manufacturer specification or measured saved CAD",
+    "actual_cad_clearance_tested_by_this_research": false
+  },
+  "not_verified": [
+    "Manufacturing tolerances for the published outside dimensions",
+    "Internal hex length, bore diameter/depth and clearance around a protruding M4 bolt",
+    "Actual socket engagement depth on the nut",
+    "Connected extension, ratchet and handle envelope",
+    "Turning sweep, hand access and assembly feasibility",
+    "Tightening torque, preload, load capacity and material strength approval"
+  ],
+  "package_dimensions_note": "The PDF page 1 also reports 117x44x20 mm beside EAN; this is not used as the tool body dimensions. The tool body is specified by the 50 mm length and d1/d2 table.",
+  "scope": "Read-only official source research. No purchases, contact, CAD execution or repository modifications. Earlier hardware facts remain unchanged."
+}

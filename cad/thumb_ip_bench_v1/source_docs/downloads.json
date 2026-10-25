@@ -1,0 +1,68 @@
+{
+  "schema": "official_m4_sources.v1",
+  "retrieved_utc": "2026-10-25T12:25:10.153709+00:00",
+  "files": [
+    {
+      "supplier": "Accu",
+      "sku": "SSC-M4-20-A2",
+      "product_id": 2828,
+      "product_url": "https://www.accu.co.uk/metric-cap-head-screws/2828-SSC-M4-20-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=2828",
+      "file": "SSC-M4-20-A2.pdf",
+      "resolved_url": "https://www.accu.co.uk/api/product-datasheet?id=2828",
+      "content_type": "application/pdf",
+      "bytes": 487249,
+      "sha256": "cbf8b50e35bc613f9daea5f2f1e4eccc29f6a544ae106ffe45fb3f8c1cb1666f"
+    },
+    {
+      "supplier": "Accu",
+      "sku": "SSC-M4-25-A2",
+      "product_id": 2830,
+      "product_url": "https://www.accu.co.uk/metric-cap-head-screws/2830-SSC-M4-25-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=2830",
+      "file": "SSC-M4-25-A2.pdf",
+      "resolved_url": "https://www.accu.co.uk/api/product-datasheet?id=2830",
+      "content_type": "application/pdf",
+      "bytes": 456473,
+      "sha256": "0c5d4eb50a0207bfa9d0497c0faa8535852070e2cded64e65b07f9830baf0027"
+    },
+    {
+      "supplier": "Accu",
+      "sku": "SSC-M4-40-A2",
+      "product_id": 2833,
+      "product_url": "https://www.accu.co.uk/metric-cap-head-screws/2833-SSC-M4-40-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=2833",
+      "file": "SSC-M4-40-A2.pdf",
+      "resolved_url": "https://www.accu.co.uk/api/product-datasheet?id=2833",
+      "content_type": "application/pdf",
+      "bytes": 435313,
+      "sha256": "5347d96a9ff4e3fb2496355aead29d19051b5b2edb7bead6497f8fdb0908a6af"
+    },
+    {
+      "supplier": "Accu",
+      "sku": "HPN-M4-A2",
+      "product_id": 7890,
+      "product_url": "https://www.accu.co.uk/hexagon-nuts/7890-HPN-M4-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=7890",
+      "file": "HPN-M4-A2.pdf",
+      "resolved_url": "https://www.accu.co.uk/api/product-datasheet?id=7890",
+      "content_type": "application/pdf",
+      "bytes": 405736,
+      "sha256": "2ae97994482bac10a88b75269e6297dadd417e147ecfc7b23f917fdef34c296a"
+    },
+    {
+      "supplier": "Accu",
+      "sku": "HPW-M4-A2",
+      "product_id": 72488,
+      "product_url": "https://www.accu.co.uk/metric-flat-washers/72488-HPW-M4-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=72488",
+      "file": "HPW-M4-A2.pdf",
+      "resolved_url": "https://www.accu.co.uk/api/product-datasheet?id=72488",
+      "content_type": "application/pdf",
+      "bytes": 382351,
+      "sha256": "6d017aa2fc1ae6ed43654aebb69309136f37673a7121d6bbfe28af40994bde33"
+    }
+  ],
+  "errors": [],
+  "completed": true
+}

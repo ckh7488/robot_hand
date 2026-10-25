@@ -1,0 +1,20 @@
+{
+  "schema": "official_m4_sources.v1",
+  "retrieved_utc": "2026-10-25T12:26:17.783957+00:00",
+  "completed": true,
+  "errors": [],
+  "files": [
+    {
+      "supplier": "Accu",
+      "sku": "SSC-M4-50-A2",
+      "product_id": 2835,
+      "product_url": "https://www.accu.co.uk/metric-cap-head-screws/2835-SSC-M4-50-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=2835",
+      "resolved_url": "https://www.accu.co.uk/api/product-datasheet?id=2835",
+      "content_type": "application/pdf",
+      "file": "SSC-M4-50-A2.pdf",
+      "bytes": 409449,
+      "sha256": "fe08d37724b1c790d4b31eabe2df13bf6d2eb40eaaefb1351a012ab87394df6d"
+    }
+  ]
+}
