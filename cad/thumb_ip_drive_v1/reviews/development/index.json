@@ -1,0 +1,86 @@
+[
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\joint_probe_01\\report.json",
+    "stored_file": "invalid_child.json",
+    "sha256": "f58a7a706f1122e9495f483f9b8906b08141f16ec271709164000ab2f8f77690",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\joint_probe_02\\report.json",
+    "stored_file": "four_bolt_interference.json",
+    "sha256": "1d7f5f7e59ff2bcd34e0933228e34b040f73cb76fb9f881b9f8c57c4a7b45ce1",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\parent_passage_review\\report.json",
+    "stored_file": "closed_passage_thin_lip.json",
+    "sha256": "0fba4e8b46e86f1d340cdcc805b9f0c7230ba508c7f79180185ceaeca048bc8e",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\parent_passage_review\\open_slot_01\\report.json",
+    "stored_file": "open_slot_probe.json",
+    "sha256": "70ed71e40ea575b90bd97dee066a9a250e9a8f46b09df503aa7f0eb5b78711f2",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts_tool_access\\report.json",
+    "stored_file": "cap_support_cut_failure.json",
+    "sha256": "4c502d6530ca73a6408971f5f1f9fd0c28d39da8416fa5d1ddecd7f85384b93a",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\centerline_staged_insertion\\report.json",
+    "stored_file": "screw_entry_failure.json",
+    "sha256": "64c94d2519e749b376bb14b0791c55d07ccb0074c62b725743d67f2b3229bc0b",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\centerline_assembly_window\\report.json",
+    "stored_file": "assembly_window_probe.json",
+    "sha256": "929c911baf51ebaa3c5e92ac20f6e3ae94579743038bc87c52a61e7064954dfd",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\support_report.json",
+    "stored_file": "native_axial_support.json",
+    "sha256": "c7ce8c7a5b3f3c84a41e154ad5062f020c1a8826bb7352d42577c2cd1982c1e1",
+    "scope": "Historical intermediate probe. Not a final candidate approval or portable replay."
+  },
+  {
+    "original_path": "D:/Codex-work/robot-hand-workspace/work/thumb_ip_drive_v1/saved_audit_01.json",
+    "stored_file": "pre_exit_saved_audit.json",
+    "sha256": "4a79684c8b15090c8f6b2b7c7989087460ba9bc418f5946493dbb14cdec03d10",
+    "scope": "Failed intermediate candidate. Ten finite-cord/child intersections. completed=true, passed=false; no final approval."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\build_order\\result02\\report.json",
+    "stored_file": "exit_order_tail_failure.json",
+    "sha256": "23dd24c5c73e5efebefb4244ea0a7951df1bfeea448650052adaca63ff749b24",
+    "scope": "Historical local probe, not final whole-hand approval or portable replay. Final saved and assembly reports are separate."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\build_order_flat_tail\\result01\\report.json",
+    "stored_file": "flat_tail_local_probe.json",
+    "sha256": "695c85e6cd21ac534e46490699d9d285f548bf983ad6e2b42f02eba3ee9f372e",
+    "scope": "Historical local probe, not final whole-hand approval or portable replay. Final saved and assembly reports are separate."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\saved_audit_02.json",
+    "stored_file": "bench_fastener_span_failure.json",
+    "sha256": "f79b6c8f3c245239c77b022f25c9017c38953aa7227bd45d85496f99bd7efe27",
+    "scope": "Expanded v2 completed/failed: five fixed free-span collisions with drive_bench_m3x12_4; hand80 and motor1000 rotation pairs pass. Historical candidate only."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\motor_fix\\probe_01\\report.json",
+    "stored_file": "bench_fastener_relocation_probe.json",
+    "sha256": "699da99269706bf61f752f953711a9b1e9e41233a4eb4b356bded34ed12b67f0",
+    "scope": "Historical local motor probe; final saved whole-hand/motor and assembly reports remain separate. Not portable replay."
+  },
+  {
+    "original_path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\motor_fix\\seat4_01.json",
+    "stored_file": "bench_fastener_seat_probe.json",
+    "sha256": "28b26b152f7ba2bbed7a9d8c5616f8d4613f04dfd98cf338d572a45fee58331d",
+    "scope": "Historical local motor probe; final saved whole-hand/motor and assembly reports remain separate. Not portable replay."
+  }
+]

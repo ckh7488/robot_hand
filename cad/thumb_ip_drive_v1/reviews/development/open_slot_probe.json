@@ -1,0 +1,377 @@
+{
+  "schema": "thumb_ip_single_outward_slot_candidate.v1",
+  "completed": true,
+  "errors": [],
+  "source_sha256": {
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\parent_passage_review\\check_open_slot.py": "82a8117d06730abf8da0312bf5e2887a85be1c4ecdee26161c7a29052a2c7a6d",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\report.json": "dc22f9f2968fdce38821fa392e9ae3d6433a7a9068320f34e7e59f494024f858",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+    "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": "bdaccb1fbc965d885ccf7bfb204821383bcd2e58a0b0d51218cd1358abe511bf",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": "f18104311188c1d5c065bfecb88f171c7277a0aa025880e753dc77324ebc0e0d",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": "da106cf00c4cf0e174d741999cb969866d373856e224d282528682c396a9a199",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": "8a79187620441d615a75e51497ab06f70322463be88045431ab494f4ae9885c2",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": "dcada575fb240d7dd16c79c4ce2a19b83ee44b6384cab863d7c6e034eda861d0",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": "05e1b85c225a5f69e278305cf734cac46c7b0f35d71331c7eccea01607c4e253",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": "52ee975688bf435e7d8bb3772ca042461e4a502770d753da15e44d6a35ca877b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": "c023b23f0462ca397f971bad4672a5bb0d00304c09e1405a9b74915bf603c7f8",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": "1363b41d433d1a52d3ef5a0e8ebe292545bd46b1ef266b5d484e66ef275b224b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": "a77a67cc0df1846ccab3265db1efbd3fd40deb047fa811d039dc47f02d45adb8",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": "bc2d0976406a3fe8c2b4c2465591b25c53822ba1b949aa790c31a259b487044b",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": "50b692f03c788a6b8055a4af89345256e17a4161722af514833b84fd49a14004",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": "91f3f2fd23005f3a676dc4b5947b65f92e0532ad10f41c4e0d6f344209a1e5bf",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\passage_tool_0.step": "72fa39311dd4435395056fa3d193741fdf07a939f5716ef6942aa6a3146c60cd",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\cord_span_0.step": "f7fc0c18c722cf7b9d431393fbd042986ffa823340e7974d0fe0dbb8c671aca2",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\passage_tool_1.step": "81cf15b40bff7bd3c4f85c1a593f055a117f84c32f731f8c80662106f78b96ab",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\cord_span_1.step": "be652c247458dbab378c2365b9e2320f922518cfa519eedf84d1d9a14a38f1dd"
+  },
+  "stages": [
+    {
+      "stage": "slot_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9612.397950716888,
+      "bounded": true,
+      "infinite_states": [
+        "TopAbs_State.TopAbs_OUT"
+      ],
+      "cut_common_mm3": 111.59596020934795,
+      "signed_volume_change_mm3": 111.26260507261031
+    },
+    {
+      "stage": "slot_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9531.281775154292,
+      "bounded": true,
+      "infinite_states": [
+        "TopAbs_State.TopAbs_OUT"
+      ],
+      "cut_common_mm3": 80.61355550010246,
+      "signed_volume_change_mm3": 81.11617556259625
+    }
+  ],
+  "tracks": [
+    {
+      "index": 0,
+      "x_mm": -4.0,
+      "width_mm": 1.2,
+      "centre_z_at_y_endpoints_mm": [
+        -8.6024135745785,
+        -7.663074353712778
+      ],
+      "y_span_mm": [
+        -47.0,
+        2.0
+      ],
+      "polygon_yz_mm": [
+        [
+          -47.0,
+          -13.0
+        ],
+        [
+          2.0,
+          -13.0
+        ],
+        [
+          2.0,
+          -7.0630743537127785
+        ],
+        [
+          -47.0,
+          -8.002413574578501
+        ]
+      ],
+      "other_body_part_intersections": [],
+      "protected_zones": [
+        {
+          "id": "MCP_R5_5",
+          "centre_local_mm": [
+            0,
+            -50.0,
+            0
+          ],
+          "radius_mm": 5.5,
+          "tool_zone_overlap_mm3": 0,
+          "parent_material_removed_in_zone_mm3": 0
+        },
+        {
+          "id": "IP_R5_5",
+          "centre_local_mm": [
+            0,
+            0.0,
+            0
+          ],
+          "radius_mm": 5.5,
+          "tool_zone_overlap_mm3": 0,
+          "parent_material_removed_in_zone_mm3": 0
+        }
+      ],
+      "tool_bounds_mm": [
+        -4.6,
+        -47.0,
+        -13.0,
+        -3.3999999999999995,
+        2.0,
+        -7.0630743537127785
+      ],
+      "tool_material_remaining_mm3": 0,
+      "cord_intersection_mm3": 0
+    },
+    {
+      "index": 1,
+      "x_mm": 4.0,
+      "width_mm": 1.2,
+      "centre_z_at_y_endpoints_mm": [
+        8.602413574581965,
+        7.663074353716243
+      ],
+      "y_span_mm": [
+        -47.0,
+        2.0
+      ],
+      "polygon_yz_mm": [
+        [
+          -47.0,
+          8.002413574581965
+        ],
+        [
+          2.0,
+          7.063074353716243
+        ],
+        [
+          2.0,
+          13.0
+        ],
+        [
+          -47.0,
+          13.0
+        ]
+      ],
+      "other_body_part_intersections": [
+        {
+          "name": "thumb_segment2_dark_faceplate",
+          "intersection_mm3": 32.28220253284672,
+          "above_1e_5": true
+        }
+      ],
+      "protected_zones": [
+        {
+          "id": "MCP_R5_5",
+          "centre_local_mm": [
+            0,
+            -50.0,
+            0
+          ],
+          "radius_mm": 5.5,
+          "tool_zone_overlap_mm3": 0,
+          "parent_material_removed_in_zone_mm3": 0
+        },
+        {
+          "id": "IP_R5_5",
+          "centre_local_mm": [
+            0,
+            0.0,
+            0
+          ],
+          "radius_mm": 5.5,
+          "tool_zone_overlap_mm3": 0,
+          "parent_material_removed_in_zone_mm3": 0
+        }
+      ],
+      "tool_bounds_mm": [
+        3.4,
+        -47.0,
+        7.063074353716243,
+        4.6,
+        2.0,
+        13.0
+      ],
+      "tool_material_remaining_mm3": 0,
+      "cord_intersection_mm3": 0
+    }
+  ],
+  "contacts": [
+    {
+      "id": "left_fixed_thrust",
+      "plane_x_mm": -9,
+      "patch_radius_mm": 4.8,
+      "areas_mm2": {
+        "old": 36.83508595767294,
+        "new": 36.83508595767294
+      },
+      "change_mm2": 0.0
+    },
+    {
+      "id": "left_parent_flange",
+      "plane_x_mm": -12,
+      "patch_radius_mm": 4.5,
+      "areas_mm2": {
+        "old": 28.07003895503447,
+        "new": 28.07003895503447
+      },
+      "change_mm2": 0.0
+    },
+    {
+      "id": "right_fixed_thrust",
+      "plane_x_mm": 9,
+      "patch_radius_mm": 4.8,
+      "areas_mm2": {
+        "old": 36.835085688960845,
+        "new": 36.835085688960845
+      },
+      "change_mm2": 0.0
+    },
+    {
+      "id": "right_parent_flange",
+      "plane_x_mm": 12,
+      "patch_radius_mm": 4.5,
+      "areas_mm2": {
+        "old": 28.07003920840198,
+        "new": 28.07003920840198
+      },
+      "change_mm2": 0.0
+    }
+  ],
+  "manufacturing_approved": false,
+  "scope": "Work-only single candidate; original parent shell, same thumb_mcp rigid-body parts and saved straight cords. No whole hand or manufacturing approval.",
+  "frame": {
+    "origin": [
+      140.20248509323406,
+      80.134518526827,
+      29
+    ],
+    "yaw": -55,
+    "roll": -65
+  },
+  "parts_read": [
+    "thumb_segment2_segment_shell",
+    "thumb_segment2_distal_left_bushing",
+    "thumb_segment2_distal_right_bushing",
+    "thumb_segment2_dark_faceplate",
+    "thumb_joint_pin_2",
+    "thumb_distal1_child_left_bushing",
+    "thumb_distal1_child_right_bushing",
+    "thumb_distal2_left_pin_washer",
+    "thumb_distal2_right_pin_washer",
+    "thumb_distal2_left_thrust_washer",
+    "thumb_distal2_right_thrust_washer",
+    "thumb_segment2_dark_faceplate_clamp1_bolt",
+    "thumb_segment2_dark_faceplate_clamp1_nut",
+    "thumb_segment2_dark_faceplate_clamp1_washer",
+    "thumb_segment2_dark_faceplate_clamp2_bolt",
+    "thumb_segment2_dark_faceplate_clamp2_nut",
+    "thumb_segment2_dark_faceplate_clamp2_washer",
+    "thumb_distal2_retaining_washer",
+    "thumb_distal2_retaining_screw"
+  ],
+  "original": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 9723.660555789498,
+    "bounded": true,
+    "infinite_states": [
+      "TopAbs_State.TopAbs_OUT"
+    ]
+  },
+  "upper_lip_probe": {
+    "origin_mm": [
+      4,
+      -10,
+      7
+    ],
+    "end_mm": [
+      4,
+      -10,
+      13
+    ],
+    "remaining_edge_length_mm": 0
+  },
+  "final": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 9531.281775154292,
+    "bounded": true,
+    "infinite_states": [
+      "TopAbs_State.TopAbs_OUT"
+    ]
+  },
+  "signed_volume_loss_mm3": 192.37878063520657,
+  "sum_removed_region_integrals_mm3": 192.20951570945041,
+  "outside_source_material_added_mm3": 0,
+  "same_body_tool_clash_count": 1,
+  "output_step_sha256": "b3db516b6a5f8896ae76d48c7c6a1ec54bf938d096ab50e31be0ba3c9cd2377b",
+  "input_hash_guard": {
+    "start": {
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\parent_passage_review\\check_open_slot.py": "82a8117d06730abf8da0312bf5e2887a85be1c4ecdee26161c7a29052a2c7a6d",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\report.json": "dc22f9f2968fdce38821fa392e9ae3d6433a7a9068320f34e7e59f494024f858",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+      "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": "bdaccb1fbc965d885ccf7bfb204821383bcd2e58a0b0d51218cd1358abe511bf",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": "f18104311188c1d5c065bfecb88f171c7277a0aa025880e753dc77324ebc0e0d",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": "da106cf00c4cf0e174d741999cb969866d373856e224d282528682c396a9a199",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": "8a79187620441d615a75e51497ab06f70322463be88045431ab494f4ae9885c2",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": "dcada575fb240d7dd16c79c4ce2a19b83ee44b6384cab863d7c6e034eda861d0",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": "05e1b85c225a5f69e278305cf734cac46c7b0f35d71331c7eccea01607c4e253",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": "52ee975688bf435e7d8bb3772ca042461e4a502770d753da15e44d6a35ca877b",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": "c023b23f0462ca397f971bad4672a5bb0d00304c09e1405a9b74915bf603c7f8",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": "1363b41d433d1a52d3ef5a0e8ebe292545bd46b1ef266b5d484e66ef275b224b",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": "a77a67cc0df1846ccab3265db1efbd3fd40deb047fa811d039dc47f02d45adb8",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": "bc2d0976406a3fe8c2b4c2465591b25c53822ba1b949aa790c31a259b487044b",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": "50b692f03c788a6b8055a4af89345256e17a4161722af514833b84fd49a14004",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": "91f3f2fd23005f3a676dc4b5947b65f92e0532ad10f41c4e0d6f344209a1e5bf",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\passage_tool_0.step": "72fa39311dd4435395056fa3d193741fdf07a939f5716ef6942aa6a3146c60cd",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\cord_span_0.step": "f7fc0c18c722cf7b9d431393fbd042986ffa823340e7974d0fe0dbb8c671aca2",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\passage_tool_1.step": "81cf15b40bff7bd3c4f85c1a593f055a117f84c32f731f8c80662106f78b96ab",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\cord_span_1.step": "be652c247458dbab378c2365b9e2320f922518cfa519eedf84d1d9a14a38f1dd"
+    },
+    "end": {
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\parent_passage_review\\check_open_slot.py": "82a8117d06730abf8da0312bf5e2887a85be1c4ecdee26161c7a29052a2c7a6d",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\report.json": "dc22f9f2968fdce38821fa392e9ae3d6433a7a9068320f34e7e59f494024f858",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+      "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": "bdaccb1fbc965d885ccf7bfb204821383bcd2e58a0b0d51218cd1358abe511bf",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": "f18104311188c1d5c065bfecb88f171c7277a0aa025880e753dc77324ebc0e0d",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": "da106cf00c4cf0e174d741999cb969866d373856e224d282528682c396a9a199",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": "8a79187620441d615a75e51497ab06f70322463be88045431ab494f4ae9885c2",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": "dcada575fb240d7dd16c79c4ce2a19b83ee44b6384cab863d7c6e034eda861d0",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": "05e1b85c225a5f69e278305cf734cac46c7b0f35d71331c7eccea01607c4e253",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": "52ee975688bf435e7d8bb3772ca042461e4a502770d753da15e44d6a35ca877b",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": "c023b23f0462ca397f971bad4672a5bb0d00304c09e1405a9b74915bf603c7f8",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": "1363b41d433d1a52d3ef5a0e8ebe292545bd46b1ef266b5d484e66ef275b224b",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": "a77a67cc0df1846ccab3265db1efbd3fd40deb047fa811d039dc47f02d45adb8",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": "bc2d0976406a3fe8c2b4c2465591b25c53822ba1b949aa790c31a259b487044b",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": "50b692f03c788a6b8055a4af89345256e17a4161722af514833b84fd49a14004",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": "91f3f2fd23005f3a676dc4b5947b65f92e0532ad10f41c4e0d6f344209a1e5bf",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\passage_tool_0.step": "72fa39311dd4435395056fa3d193741fdf07a939f5716ef6942aa6a3146c60cd",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\cord_span_0.step": "f7fc0c18c722cf7b9d431393fbd042986ffa823340e7974d0fe0dbb8c671aca2",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\passage_tool_1.step": "81cf15b40bff7bd3c4f85c1a593f055a117f84c32f731f8c80662106f78b96ab",
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\parent_passage_01\\cord_span_1.step": "be652c247458dbab378c2365b9e2320f922518cfa519eedf84d1d9a14a38f1dd"
+    },
+    "passed": true
+  }
+}

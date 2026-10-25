@@ -1,0 +1,1983 @@
+{
+  "schema": "thumb_ip_support_native_read.v1",
+  "completed": true,
+  "errors": [],
+  "source_sha256": {
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\check_support.py": "5bb9f32ed5c6fe14d0e3859eba537d424b4e2527746401cbc25431b12705d323",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\build_report.json": "8bfbc7f6fa4f47ee9e51ce0410fd0095fb877dc60f40bf3be233f6c4515a5c10",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+    "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": "dc2d5656f7c745dc05ea1a3f1f084793f72157a76283be759c926520d811ee89",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": "ad168594432e0b50074e9c276e8d3b1145e01dd6d737d382a58de5273301cad5",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": "10aa891425c3173c9e0319de739d4db3289d922facc8c563f936c425cb094c3d",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4"
+  },
+  "parts": [
+    {
+      "key": "fork",
+      "name": "thumb_segment2_segment_shell",
+      "body": "thumb_mcp",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_segment2_segment_shell.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9723.660555789498,
+      "bounds_local_mm": [
+        [
+          -14.200000100007486,
+          -56.58523312542703,
+          -11.300000099999716
+        ],
+        [
+          14.200000100003852,
+          6.585233125416367,
+          11.572732522892474
+        ]
+      ]
+    },
+    {
+      "key": "parent_left",
+      "name": "thumb_segment2_distal_left_bushing",
+      "body": "thumb_mcp",
+      "source_step": "D:/robot_hand/cad/manufacturing_v1/generated/parts/thumb_segment2_distal_left_bushing.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 87.3557142355652,
+      "bounds_local_mm": [
+        [
+          -12.400000000002787,
+          -4.500000000006586,
+          -4.499999999999701
+        ],
+        [
+          -9.000000000000528,
+          4.49999999999931,
+          4.500000000004874
+        ]
+      ]
+    },
+    {
+      "key": "parent_right",
+      "name": "thumb_segment2_distal_right_bushing",
+      "body": "thumb_mcp",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_segment2_distal_right_bushing.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 87.35571423564275,
+      "bounds_local_mm": [
+        [
+          8.999999999997264,
+          -4.50000000000596,
+          -4.500000000000653
+        ],
+        [
+          12.40000000000082,
+          4.499999999999959,
+          4.500000000003937
+        ]
+      ]
+    },
+    {
+      "key": "washer_left",
+      "name": "thumb_distal2_left_thrust_washer",
+      "body": "thumb_mcp",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_distal2_left_thrust_washer.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 20.71291306423048,
+      "bounds_local_mm": [
+        [
+          -9.000000000003508,
+          -4.800000000007342,
+          -4.799999999996887
+        ],
+        [
+          -8.650000000000336,
+          4.799999999994739,
+          4.800000000004831
+        ]
+      ]
+    },
+    {
+      "key": "washer_right",
+      "name": "thumb_distal2_right_thrust_washer",
+      "body": "thumb_mcp",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_distal2_right_thrust_washer.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 20.712913064197615,
+      "bounds_local_mm": [
+        [
+          8.649999999997597,
+          -4.800000000007488,
+          -4.799999999998875
+        ],
+        [
+          8.999999999999323,
+          4.79999999999861,
+          4.800000000004582
+        ]
+      ]
+    },
+    {
+      "key": "child_left",
+      "name": "thumb_distal2_child_left_bushing",
+      "body": "thumb_ip",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_distal2_child_left_bushing.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 209.21312146684002,
+      "bounds_local_mm": [
+        [
+          -8.600000000002515,
+          -4.5000000000042935,
+          -4.4999999999993125
+        ],
+        [
+          5.664314318942584e-13,
+          4.499999999998562,
+          4.500000000003323
+        ]
+      ]
+    },
+    {
+      "key": "child_right",
+      "name": "thumb_distal2_child_right_bushing",
+      "body": "thumb_ip",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_distal2_child_right_bushing.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 209.21312146679372,
+      "bounds_local_mm": [
+        [
+          -1.752794900470933e-12,
+          -4.500000000005212,
+          -4.499999999998561
+        ],
+        [
+          8.599999999999518,
+          4.499999999997659,
+          4.500000000003546
+        ]
+      ]
+    },
+    {
+      "key": "child",
+      "name": "thumb_segment3_tip_core",
+      "body": "thumb_ip",
+      "source_step": "D:/robot_hand/cad/gesture_hand_v3/generated/parts/thumb_segment3_tip_core.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8653.590765242383,
+      "bounds_local_mm": [
+        [
+          -10.500000100004351,
+          -8.000000100007734,
+          -9.300000100001256
+        ],
+        [
+          10.500000100003682,
+          49.603273621492484,
+          9.000000100000989
+        ]
+      ]
+    },
+    {
+      "key": "pin",
+      "name": "thumb_joint_pin_2",
+      "body": "thumb_mcp",
+      "source_step": "D:/robot_hand/cad/manufacturing_v2/generated/parts/thumb_joint_pin_2.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 382.50251757461314,
+      "bounds_local_mm": [
+        [
+          -15.000000000001663,
+          -3.5000000000062306,
+          -3.499999999999031
+        ],
+        [
+          13.149999999998965,
+          3.4999999999962617,
+          3.500000000002779
+        ]
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "fixed_fork_left_thrust",
+      "parts": [
+        "thumb_segment2_segment_shell",
+        "thumb_distal2_left_thrust_washer"
+      ],
+      "plane_x_mm": [
+        -9,
+        -9
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.8,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 36.83508595767294,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          1.0
+        ],
+        [
+          -1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          -9.000000100479516,
+          -4.800000100007343,
+          -4.800000099995169
+        ],
+        [
+          -8.999999899997118,
+          4.8000000999926575,
+          4.800000100004831
+        ]
+      ]
+    },
+    {
+      "id": "parent_bush_left_thrust",
+      "parts": [
+        "thumb_segment2_distal_left_bushing",
+        "thumb_distal2_left_thrust_washer"
+      ],
+      "plane_x_mm": [
+        -9,
+        -9
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.8,
+      "required_for_local_contract": false,
+      "passed": true,
+      "area_mm2": 21.890044223317613,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          1.0
+        ],
+        [
+          -1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          -9.000000000003185,
+          -3.3800000000073425,
+          -3.37999999999517
+        ],
+        [
+          -9.000000000000528,
+          2.999999999994031,
+          3.380000000004831
+        ]
+      ]
+    },
+    {
+      "id": "parent_left_flange_seat",
+      "parts": [
+        "thumb_segment2_distal_left_bushing",
+        "thumb_segment2_segment_shell"
+      ],
+      "plane_x_mm": [
+        -12,
+        -12
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.5,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 28.07003895503449,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          1.0
+        ],
+        [
+          -1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          -12.000000133299304,
+          -4.50000010000069,
+          -4.500000099999701
+        ],
+        [
+          -11.99999989999924,
+          4.50000009999931,
+          4.5000001000003
+        ]
+      ]
+    },
+    {
+      "id": "child_left_flange_seat",
+      "parts": [
+        "thumb_distal2_child_left_bushing",
+        "thumb_segment3_tip_core"
+      ],
+      "plane_x_mm": [
+        -8,
+        -8
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.5,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 28.070060447343252,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          1.0
+        ],
+        [
+          -1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          -8.000000000002096,
+          -4.5000000000042935,
+          -4.499999999997227
+        ],
+        [
+          -7.999999999998282,
+          4.4999999999957065,
+          4.500000000002773
+        ]
+      ]
+    },
+    {
+      "id": "inner_left_gap_support",
+      "parts": [
+        "thumb_distal2_left_thrust_washer",
+        "thumb_distal2_child_left_bushing"
+      ],
+      "plane_x_mm": [
+        -8.65,
+        -8.6
+      ],
+      "axial_plane_gap_mm": 0.05000000000000071,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.8,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 50.41470810848221,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          1.0
+        ],
+        [
+          -1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          -8.650000000001892,
+          -4.500000000001438,
+          -4.4999999999993125
+        ],
+        [
+          -8.649999999999093,
+          4.499999999998562,
+          4.5000000000006875
+        ]
+      ]
+    },
+    {
+      "id": "fixed_fork_right_thrust",
+      "parts": [
+        "thumb_segment2_segment_shell",
+        "thumb_distal2_right_thrust_washer"
+      ],
+      "plane_x_mm": [
+        9,
+        9
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.8,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 36.835085688960845,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          -1.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          8.999999899996942,
+          -4.800000100007488,
+          -4.800000099995418
+        ],
+        [
+          9.000000101442053,
+          4.800000099992512,
+          4.800000100004582
+        ]
+      ]
+    },
+    {
+      "id": "parent_bush_right_thrust",
+      "parts": [
+        "thumb_segment2_distal_right_bushing",
+        "thumb_distal2_right_thrust_washer"
+      ],
+      "plane_x_mm": [
+        9,
+        9
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.8,
+      "required_for_local_contract": false,
+      "passed": true,
+      "area_mm2": 21.890044223312234,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          -1.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          8.999999999997264,
+          -3.380000000007488,
+          -3.379999999995418
+        ],
+        [
+          8.99999999999874,
+          2.9999999999930744,
+          3.380000000004583
+        ]
+      ]
+    },
+    {
+      "id": "parent_right_flange_seat",
+      "parts": [
+        "thumb_segment2_distal_right_bushing",
+        "thumb_segment2_segment_shell"
+      ],
+      "plane_x_mm": [
+        12,
+        12
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.5,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 28.07003920840199,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          -1.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          11.999999899997366,
+          -4.50000010000596,
+          -4.500000099996063
+        ],
+        [
+          12.000000100398184,
+          4.500000099994041,
+          4.500000100003938
+        ]
+      ]
+    },
+    {
+      "id": "child_right_flange_seat",
+      "parts": [
+        "thumb_distal2_child_right_bushing",
+        "thumb_segment3_tip_core"
+      ],
+      "plane_x_mm": [
+        8,
+        8
+      ],
+      "axial_plane_gap_mm": 0,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.5,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 28.070060447347082,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          -1.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          7.999999999998089,
+          -4.500000000002341,
+          -4.499999999998561
+        ],
+        [
+          8.000000000000133,
+          4.499999999997659,
+          4.500000000001439
+        ]
+      ]
+    },
+    {
+      "id": "inner_right_gap_support",
+      "parts": [
+        "thumb_distal2_right_thrust_washer",
+        "thumb_distal2_child_right_bushing"
+      ],
+      "plane_x_mm": [
+        8.65,
+        8.6
+      ],
+      "axial_plane_gap_mm": 0.05000000000000071,
+      "face_count": [
+        1,
+        1
+      ],
+      "contact_patch_radius_mm": 4.8,
+      "required_for_local_contract": true,
+      "passed": true,
+      "area_mm2": 50.414708108482166,
+      "opposed_face_normals": true,
+      "native_normal_x": [
+        [
+          -1.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "common_face_count": 1,
+      "measurement": "Actual native-face intersection clipped to the local disk; second face translated only for explicit parallel-face gap measurement",
+      "common_bounds_local_mm": [
+        [
+          8.649999999997114,
+          -4.500000000005212,
+          -4.499999999996454
+        ],
+        [
+          8.64999999999992,
+          4.499999999994788,
+          4.500000000003546
+        ]
+      ]
+    }
+  ],
+  "axial_vertices": [
+    {
+      "id": "nominal",
+      "shifts_mm": {
+        "bL": 0,
+        "c": 0,
+        "bR": 0,
+        "wL": 0,
+        "wR": 0
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 19,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    },
+    {
+      "id": "simplex_vertex_1",
+      "shifts_mm": {
+        "bL": 0.05,
+        "c": 0.05,
+        "bR": 0.05,
+        "wL": 0.1,
+        "wR": 0
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 20,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    },
+    {
+      "id": "simplex_vertex_2",
+      "shifts_mm": {
+        "bL": 0.05,
+        "c": 0.05,
+        "bR": 0.05,
+        "wL": 0,
+        "wR": 0
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 20,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    },
+    {
+      "id": "simplex_vertex_3",
+      "shifts_mm": {
+        "bL": -0.05,
+        "c": 0.05,
+        "bR": 0.05,
+        "wL": 0,
+        "wR": 0
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 20,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    },
+    {
+      "id": "simplex_vertex_4",
+      "shifts_mm": {
+        "bL": -0.05,
+        "c": -0.05,
+        "bR": 0.05,
+        "wL": 0,
+        "wR": 0
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 20,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    },
+    {
+      "id": "simplex_vertex_5",
+      "shifts_mm": {
+        "bL": -0.05,
+        "c": -0.05,
+        "bR": -0.05,
+        "wL": 0,
+        "wR": 0
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 20,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    },
+    {
+      "id": "simplex_vertex_6",
+      "shifts_mm": {
+        "bL": -0.05,
+        "c": -0.05,
+        "bR": -0.05,
+        "wL": 0,
+        "wR": -0.1
+      },
+      "pairs": [
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_right_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_segment_shell",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_distal2_left_thrust_washer"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment2_distal_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_distal2_child_left_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_left_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_right_thrust_washer",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_distal2_child_right_bushing"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_left_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_distal2_child_right_bushing",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        },
+        {
+          "parts": [
+            "thumb_segment3_tip_core",
+            "thumb_joint_pin_2"
+          ],
+          "volume_mm3": 0,
+          "above_threshold": false
+        }
+      ],
+      "exact_pair_count": 20,
+      "above_threshold_count": 0,
+      "errors": [],
+      "completed": true,
+      "sampled_clear": true
+    }
+  ],
+  "scope": "Nine saved thumb-IP parts only, native planar contact and six nominal axial vertices at the open joint angle. Not a whole-hand or continuous-path audit.",
+  "physical_freedom_complete": false,
+  "manufacturing_approved": false,
+  "thresholds": {
+    "positive_contact_area_mm2": 0.02,
+    "boolean_tolerance_mm": 1e-06,
+    "sampled_overlap_mm3": 0.0001
+  },
+  "frame": {
+    "origin": [
+      140.20248509323406,
+      80.134518526827,
+      29
+    ],
+    "yaw": -55,
+    "roll": -65
+  },
+  "scene_part_count": 359,
+  "case_A_fixed_fork_patch_present": true,
+  "axial_contact_model": {
+    "prerequisites": [
+      "Fixed fork/washer planar patches persist at the actual radial/tilt configuration",
+      "Parent fork and child eye retain their nominal rigid shapes and dimensions",
+      "Child bush flanges remain engaged with the child-body seating regions",
+      "Coaxial pin, bushes and washers; zero radial eccentricity/tilt in this model"
+    ],
+    "inequalities": [
+      "0 <= wL <= 0.05+bL",
+      "bR-0.05 <= wR <= 0",
+      "bL <= c <= bR"
+    ],
+    "implied_bounds_mm": {
+      "child": [
+        -0.05,
+        0.05
+      ],
+      "child_left_bush": [
+        -0.05,
+        0.05
+      ],
+      "child_right_bush": [
+        -0.05,
+        0.05
+      ],
+      "left_washer": [
+        0,
+        0.1
+      ],
+      "right_washer": [
+        -0.1,
+        0
+      ]
+    },
+    "child_bush_maximum_relative_outward_shift_mm": 0.1,
+    "nominal_child_bush_minimum_inserted_length_mm": 7.9,
+    "full_axial_simplex_collision_clearance_proved": false,
+    "real_freeplay_approved": false,
+    "exclusions": [
+      "radial/tilt freedom",
+      "manufacturing tolerances and elastic deformation",
+      "loads/contact pressure/strength/wear",
+      "whole-hand collision",
+      "continuous IP path",
+      "new drive-sector and cable-guide geometry"
+    ]
+  },
+  "all_required_planar_contacts_present": true,
+  "all_sampled_axial_vertices_clear": true,
+  "input_hash_guard": {
+    "start": {
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\check_support.py": "5bb9f32ed5c6fe14d0e3859eba537d424b4e2527746401cbc25431b12705d323",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\build_report.json": "8bfbc7f6fa4f47ee9e51ce0410fd0095fb877dc60f40bf3be233f6c4515a5c10",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+      "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": "dc2d5656f7c745dc05ea1a3f1f084793f72157a76283be759c926520d811ee89",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": "ad168594432e0b50074e9c276e8d3b1145e01dd6d737d382a58de5273301cad5",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": "10aa891425c3173c9e0319de739d4db3289d922facc8c563f936c425cb094c3d",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4"
+    },
+    "end": {
+      "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\support\\check_support.py": "5bb9f32ed5c6fe14d0e3859eba537d424b4e2527746401cbc25431b12705d323",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\build_report.json": "8bfbc7f6fa4f47ee9e51ce0410fd0095fb877dc60f40bf3be233f6c4515a5c10",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+      "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": "dc2d5656f7c745dc05ea1a3f1f084793f72157a76283be759c926520d811ee89",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": "ad168594432e0b50074e9c276e8d3b1145e01dd6d737d382a58de5273301cad5",
+      "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": "10aa891425c3173c9e0319de739d4db3289d922facc8c563f936c425cb094c3d",
+      "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4"
+    },
+    "passed": true
+  }
+}

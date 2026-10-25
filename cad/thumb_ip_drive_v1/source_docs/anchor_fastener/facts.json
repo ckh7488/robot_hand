@@ -1,0 +1,59 @@
+{
+  "schema": "thumb_ip_drive.anchor_fastener_source_facts.v1",
+  "status": "supplier_published_geometry_reference_only",
+  "retrieved_on": "2026-10-25",
+  "preferred_candidate": "SSK-M2-6-A2",
+  "sources": [
+    {
+      "supplier": "Accu",
+      "product_code": "SSK-M2-6-A2",
+      "product_url": "https://www.accu.co.uk/countersunk-socket-head-screws/5406-SSK-M2-6-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=5406",
+      "file": "accu_SSK-M2-6-A2_datasheet.pdf",
+      "bytes": 538637,
+      "sha256": "948a2a9179223fda0a0a3a8fe57551b8405f13d0ff2f574d99d4fe90a0c89afb",
+      "overall_length_mm": 6.0
+    },
+    {
+      "supplier": "Accu",
+      "product_code": "SSK-M2-5-A2",
+      "product_url": "https://www.accu.co.uk/countersunk-socket-head-screws/5405-SSK-M2-5-A2",
+      "download_url": "https://www.accu.co.uk/api/product-datasheet?id=5405",
+      "file": "accu_SSK-M2-5-A2_datasheet.pdf",
+      "bytes": 538642,
+      "sha256": "b26be92990ab39298b807e1071deab98c1d30d651ce4ae9807d4e02a348e19f0",
+      "overall_length_mm": 5.0
+    }
+  ],
+  "shared_published_dimensions": {
+    "standard_label": "ISO 10642",
+    "thread": "M2",
+    "thread_pitch_mm": 0.4,
+    "material": "Stainless steel A2; strength class not established by this table.",
+    "head_diameter_D_mm": 4.7,
+    "head_diameter_tolerance_mm": {"plus": 0.0, "minus": 1.0},
+    "countersunk_length_H_mm": 1.35,
+    "countersunk_included_angle_deg": 90.0,
+    "angle_tolerance_deg": {"plus": 2.0, "minus": 0.0},
+    "socket_J_across_flats_mm": 1.3,
+    "socket_depth_P_mm": 0.75,
+    "full_thread_as_listed": true,
+    "overall_length_includes_head": true,
+    "overall_length_datum": "The PDF section drawing places L from the flat top of the countersunk head to the screw tip.",
+    "additional_length_definition_url": "https://www.accu.co.uk/p/123-how-to-measure-a-screw"
+  },
+  "source_interpretation": [
+    "These are this supplier/SKU's posted dimensions, not a claim that every ISO10642 or DIN7991 M2 screw shares the same head envelope.",
+    "The saved PDFs both state D tolerance +0/-1 mm. A search index returned -1.04 mm for the 6 mm listing; the preserved PDF snapshot governs this fact record.",
+    "Do not substitute a DIN7991 D3.8 head or treat the entire nominal length as engaged thread.",
+    "Direct HTML downloads returned HTTP403. Original supplier technical-datasheet PDFs were obtained successfully and their drawing/values were visually inspected."
+  ],
+  "unverified": [
+    "Actual head/socket/tip transition geometry and batch tolerances beyond these published fields.",
+    "Effective complete-thread engagement, tightening torque, clamp preload, clamp wall strength and loosening resistance.",
+    "Rope-clamp friction, local rope damage and retained tensile load.",
+    "The proposed mating M2 nut AF4/1.6 mm thickness has not been independently established by a saved supplier source in this bounded search."
+  ],
+  "purchase_recommendation_confirmed": false,
+  "load_or_clamp_approved": false
+}

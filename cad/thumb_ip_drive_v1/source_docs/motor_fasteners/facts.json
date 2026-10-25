@@ -1,0 +1,69 @@
+{
+  "tail_clamp": {
+    "top_relief_range_deg": [
+      90,
+      120
+    ],
+    "flat_tip_tolerance_mm": [
+      -0.25,
+      0
+    ],
+    "standard": "DIN 913 / ISO 4026",
+    "modelled_socket_depth_mm": 0.8,
+    "sku": "SSF-M2-3-A2",
+    "thread_diameter_mm": 2,
+    "socket_depth_range_mm": [
+      0.8,
+      1.7
+    ],
+    "socket_af_mm": 0.9,
+    "material": "A2",
+    "flat_tip_diameter_mm": 1,
+    "tip_relief_included_angle_deg": 90,
+    "length_mm": 3,
+    "top_relief_modelled": false,
+    "pitch_mm": 0.4
+  },
+  "sources": [
+    {
+      "file": "motor_fasteners/accu_SSF-M2-3-A2.pdf",
+      "url": "https://www.accu.co.uk/api/product-datasheet?id=4495",
+      "bytes": 628486,
+      "sha256": "bf7a55e4a0a81ffd615639c60a109347e06d9ee29221351a99889f008a10c617",
+      "sku": "SSF-M2-3-A2",
+      "landing": "https://www.accu.co.uk/flat-point-set-screws/4495-SSF-M2-3-A2"
+    },
+    {
+      "file": "motor_fasteners/accu_SSC-M2-16-A2.pdf",
+      "url": "https://www.accu.co.uk/api/product-datasheet?id=2774",
+      "bytes": 460662,
+      "sha256": "30791cced8c1e6747c29281e1fdf48913d103708df89ffeee2456592e69a1cab",
+      "sku": "SSC-M2-16-A2",
+      "landing": "https://www.accu.co.uk/metric-cap-head-screws/2774-SSC-M2-16-A2"
+    }
+  ],
+  "spool_mount": {
+    "head_diameter_mm": 3.8,
+    "head_height_tolerance_mm": [
+      -0.14,
+      0
+    ],
+    "head_height_mm": 2,
+    "standard": "DIN 912 / ISO 4762",
+    "sku": "SSC-M2-16-A2",
+    "thread_diameter_mm": 2,
+    "socket_af_mm": 1.5,
+    "head_diameter_tolerance_mm": [
+      -0.18,
+      0
+    ],
+    "material": "A2",
+    "length_mm": 16,
+    "socket_depth_mm": 1,
+    "pitch_mm": 0.4,
+    "full_thread": true
+  },
+  "stock_or_delivery_verified": false,
+  "schema": "thumb_ip_drive_motor_fastener_sources.v1",
+  "scope": "Public supplier dimensions for nominal parametric geometry, not vendor CAD or procurement approval"
+}

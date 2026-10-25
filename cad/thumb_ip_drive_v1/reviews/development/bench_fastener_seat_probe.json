@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "passed": true,
+  "source_sha256": {
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\geometry.py": "dbc98a8dc12118ee91cbafd156632e9a6df2f1670310328901adb5bafd5816d9",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\motor_fix\\seat4.py": "cf4f84cc5624768446fdea39b931b275fefff72e7708d0371de27c08185acea4",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\motor_fix\\probe_01\\report.json": "699da99269706bf61f752f953711a9b1e9e41233a4eb4b356bded34ed12b67f0",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\motor_fix\\probe_01\\parts\\drive_bench_bracket.step": "ba13e011baf5589560339d09e78ca0399a3f1c9d560ba1bb255d36075d5a7118",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\motor_fix\\probe_01\\parts\\drive_bench_baseplate.step": "afed9454c9227bb2c297cd0f52a52a87fe1fdfc84b9801366bd04c426d9763ca"
+  },
+  "scope": "Only relocated fourth post/baseplate planar seat inside R3.55 at XY[-4,13], Z=-18.8",
+  "actual_area_mm2": 29.40530723760046,
+  "nominal_annular_area_mm2": 29.40530723760046,
+  "absolute_difference_mm2": 0.0,
+  "input_hash_guard": {
+    "passed": true
+  },
+  "strength_approved": false
+}

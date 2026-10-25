@@ -1,0 +1,1278 @@
+{
+  "completed": true,
+  "errors": [],
+  "source_sha256": {
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\joint_drive.py": "144f784334cf0455b11468d13851b05dc871c85dbd8a271ad3f8343e8ae3b4db",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\geometry.py": "dbc98a8dc12118ee91cbafd156632e9a6df2f1670310328901adb5bafd5816d9",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\build_joint_probe.py": "62773463b3b6a52d84f4d6baf717beaec5018b2b88a2caca9d668be67368ddb3",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+    "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": "bdaccb1fbc965d885ccf7bfb204821383bcd2e58a0b0d51218cd1358abe511bf",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": "10aa891425c3173c9e0319de739d4db3289d922facc8c563f936c425cb094c3d",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap.step": "4392261eed70be5bb2d1e57673050021785a31a8a7e1bc494ec7abff221980f9",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": "f18104311188c1d5c065bfecb88f171c7277a0aa025880e753dc77324ebc0e0d",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": "da106cf00c4cf0e174d741999cb969866d373856e224d282528682c396a9a199",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": "dc2d5656f7c745dc05ea1a3f1f084793f72157a76283be759c926520d811ee89",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": "ad168594432e0b50074e9c276e8d3b1145e01dd6d737d382a58de5273301cad5",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": "8a79187620441d615a75e51497ab06f70322463be88045431ab494f4ae9885c2",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": "dcada575fb240d7dd16c79c4ce2a19b83ee44b6384cab863d7c6e034eda861d0",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": "05e1b85c225a5f69e278305cf734cac46c7b0f35d71331c7eccea01607c4e253",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": "52ee975688bf435e7d8bb3772ca042461e4a502770d753da15e44d6a35ca877b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": "c023b23f0462ca397f971bad4672a5bb0d00304c09e1405a9b74915bf603c7f8",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": "1363b41d433d1a52d3ef5a0e8ebe292545bd46b1ef266b5d484e66ef275b224b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": "a77a67cc0df1846ccab3265db1efbd3fd40deb047fa811d039dc47f02d45adb8",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": "bc2d0976406a3fe8c2b4c2465591b25c53822ba1b949aa790c31a259b487044b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_bolt.step": "43f75313024e96a277d031aeec5cc43e04753d6603d0f73ac4578d0b6a60b767",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_nut.step": "a05e52c7e7affe3270397f314dfce1ee3bf06314bfc5043244fd383a811b38ee",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_bolt.step": "8d6baa57e940e4c58a3fd5231f49c1032f9287fccef7b587db7cf7d580390af9",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_nut.step": "f95f2c567cb6a7ab70123191e25420aefc13fc973f1adc4f768dab2c668d55ca",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": "50b692f03c788a6b8055a4af89345256e17a4161722af514833b84fd49a14004",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": "91f3f2fd23005f3a676dc4b5947b65f92e0532ad10f41c4e0d6f344209a1e5bf"
+  },
+  "frame": {
+    "origin": [
+      140.20248509323406,
+      80.134518526827,
+      29
+    ],
+    "yaw": -55,
+    "roll": -65
+  },
+  "probes": [
+    {
+      "ip_deg": -20,
+      "exact_pairs": 66,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900808
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.268155104520714
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321696484
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.683980701169133
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": -0.8726646259971648,
+          "wrap_rad": 0.6789638604223657,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            4.949464594586353,
+            -5.898542212016131
+          ],
+          "tail_end_mm": [
+            -4.0,
+            8.779686810181243,
+            -2.684604163583434
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 5.228021725252216
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": -0.8726646259971648,
+          "wrap_rad": 2.424293112416695,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            4.949464594586353,
+            -5.898542212016131
+          ],
+          "tail_end_mm": [
+            4.0,
+            1.1192423789914634,
+            -9.112480260448827
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 18.667056965608552
+        }
+      ]
+    },
+    {
+      "ip_deg": -15,
+      "exact_pairs": 64,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900335
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.26815510452056
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321695166
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.683980701169079
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": -0.7853981633974483,
+          "wrap_rad": 0.7662303230220822,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            5.444722215136417,
+            -5.444722215136417
+          ],
+          "tail_end_mm": [
+            -4.0,
+            8.980256121069154,
+            -1.909188309203679
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 5.8999734872700325
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": -0.7853981633974483,
+          "wrap_rad": 2.3370266498169787,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            5.444722215136417,
+            -5.444722215136417
+          ],
+          "tail_end_mm": [
+            4.0,
+            1.909188309203679,
+            -8.980256121069154
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 17.995105203590736
+        }
+      ]
+    },
+    {
+      "ip_deg": 0,
+      "exact_pairs": 68,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900765
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.268155104517756
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321698397
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.6839807011691335
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": -0.5235987755982988,
+          "wrap_rad": 1.0280297108212317,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            6.668395609140179,
+            -3.8499999999999996
+          ],
+          "tail_end_mm": [
+            -4.0,
+            9.168395609140179,
+            0.480127018922194
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 7.915828773323485
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": -0.5235987755982988,
+          "wrap_rad": 2.075227262017829,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            6.668395609140179,
+            -3.8499999999999996
+          ],
+          "tail_end_mm": [
+            4.0,
+            4.168395609140179,
+            -8.180127018922192
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 15.979249917537285
+        }
+      ]
+    },
+    {
+      "ip_deg": 15,
+      "exact_pairs": 58,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900863
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.268155104518163
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.36623532169725
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.6839807011690695
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": -0.2617993877991494,
+          "wrap_rad": 1.289829098620381,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            7.437628862425826,
+            -1.9929066472894097
+          ],
+          "tail_end_mm": [
+            -4.0,
+            8.73172408793843,
+            2.8367224841559318
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 9.931684059376934
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": -0.2617993877991494,
+          "wrap_rad": 1.8134278742186798,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            7.437628862425826,
+            -1.9929066472894097
+          ],
+          "tail_end_mm": [
+            4.0,
+            6.143533636913222,
+            -6.822535778734752
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 13.963394631483835
+        }
+      ]
+    },
+    {
+      "ip_deg": 30,
+      "exact_pairs": 51,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024899952
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.26815510452263
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321692704
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.683980701169089
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": 0.0,
+          "wrap_rad": 1.5516284864195304,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            7.7,
+            0.0
+          ],
+          "tail_end_mm": [
+            -4.0,
+            7.7,
+            5.0
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 11.947539345430386
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": 0.0,
+          "wrap_rad": 1.5516284864195304,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            7.7,
+            0.0
+          ],
+          "tail_end_mm": [
+            4.0,
+            7.7,
+            -5.0
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 11.947539345430386
+        }
+      ]
+    },
+    {
+      "ip_deg": 45,
+      "exact_pairs": 58,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900761
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.26815510452309
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321695264
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.6839807011690695
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": 0.2617993877991494,
+          "wrap_rad": 1.8134278742186798,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            7.437628862425826,
+            1.9929066472894097
+          ],
+          "tail_end_mm": [
+            -4.0,
+            6.143533636913222,
+            6.822535778734752
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 13.963394631483835
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": 0.2617993877991494,
+          "wrap_rad": 1.289829098620381,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            7.437628862425826,
+            1.9929066472894097
+          ],
+          "tail_end_mm": [
+            4.0,
+            8.73172408793843,
+            -2.8367224841559318
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 9.931684059376934
+        }
+      ]
+    },
+    {
+      "ip_deg": 60,
+      "exact_pairs": 68,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024899841
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.268155104518183
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321697369
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.683980701169088
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": 0.5235987755982988,
+          "wrap_rad": 2.075227262017829,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            6.668395609140179,
+            3.8499999999999996
+          ],
+          "tail_end_mm": [
+            -4.0,
+            4.168395609140179,
+            8.180127018922192
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 15.979249917537285
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": 0.5235987755982988,
+          "wrap_rad": 1.0280297108212317,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            6.668395609140179,
+            3.8499999999999996
+          ],
+          "tail_end_mm": [
+            4.0,
+            9.168395609140179,
+            -0.480127018922194
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 7.915828773323485
+        }
+      ]
+    },
+    {
+      "ip_deg": 75,
+      "exact_pairs": 64,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900534
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.268155104524975
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.3662353216925
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.683980701169131
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": 0.7853981633974483,
+          "wrap_rad": 2.3370266498169787,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            5.444722215136417,
+            5.444722215136417
+          ],
+          "tail_end_mm": [
+            -4.0,
+            1.909188309203679,
+            8.980256121069154
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 17.995105203590736
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": 0.7853981633974483,
+          "wrap_rad": 0.7662303230220822,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            5.444722215136417,
+            5.444722215136417
+          ],
+          "tail_end_mm": [
+            4.0,
+            8.980256121069154,
+            1.909188309203679
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 5.8999734872700325
+        }
+      ]
+    },
+    {
+      "ip_deg": 85,
+      "exact_pairs": 66,
+      "collisions": [
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 92.78867024900565
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_1",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.268155104525219
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_3",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 10.366235321690791
+        },
+        {
+          "parts": [
+            "thumb_ip_tendon_clamp_screw_4",
+            "thumb_segment3_tip_core"
+          ],
+          "volume_mm3": 4.683980701169182
+        }
+      ],
+      "tendons": [
+        {
+          "track_x_mm": -4.0,
+          "contact_angle_rad": -1.5516284864195304,
+          "anchor_angle_rad": 0.9599310885968813,
+          "wrap_rad": 2.5115595750164115,
+          "joint_contact_mm": [
+            -4.0,
+            0.14758333333333332,
+            -7.698585529804953
+          ],
+          "motor_contact_mm": [
+            -4.0,
+            -119.80833333333334,
+            -9.998163025720718
+          ],
+          "anchor_mm": [
+            -4.0,
+            4.416538559903055,
+            6.307470741025237
+          ],
+          "tail_end_mm": [
+            -4.0,
+            0.320778338458096,
+            9.175352922780467
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 19.339008727626368
+        },
+        {
+          "track_x_mm": 4.0,
+          "contact_angle_rad": 1.5516284864195304,
+          "anchor_angle_rad": 0.9599310885968813,
+          "wrap_rad": 0.5916973978226492,
+          "joint_contact_mm": [
+            4.0,
+            0.14758333333333332,
+            7.698585529804953
+          ],
+          "motor_contact_mm": [
+            4.0,
+            -119.80833333333334,
+            9.998163025720718
+          ],
+          "anchor_mm": [
+            4.0,
+            4.416538559903055,
+            6.307470741025237
+          ],
+          "tail_end_mm": [
+            4.0,
+            8.512298781348013,
+            3.439588559270007
+          ],
+          "exposed_straight_mm": 119.97795630864863,
+          "wrapped_joint_mm": 4.556069963234399
+        }
+      ]
+    }
+  ],
+  "parameters": {
+    "tendon_nominal_diameter_mm": 0.6,
+    "tendon_tracks_x_mm": [
+      -4.0,
+      4.0
+    ],
+    "tendon_centre_radius_mm": 7.7,
+    "groove_tool_radius_mm": 0.35,
+    "anchor_angle_deg": -30.0,
+    "tail_length_mm": 5.0,
+    "tail_cutter_start_overlap_mm": 0.5,
+    "boss_width_mm": 15.8,
+    "boss_radial_span_mm": [
+      5.0,
+      7.4
+    ],
+    "boss_tangent_span_mm": [
+      -5.5,
+      5.5
+    ],
+    "clamp_width_mm": 17.4,
+    "clamp_radial_span_mm": [
+      8.0,
+      10.0
+    ],
+    "clamp_tangent_span_mm": [
+      -5.5,
+      5.5
+    ],
+    "bolt_positions_xt_mm": [
+      [
+        -6.0,
+        -3.0
+      ],
+      [
+        -2.0,
+        3.0
+      ],
+      [
+        2.0,
+        -3.0
+      ],
+      [
+        6.0,
+        3.0
+      ]
+    ],
+    "bolt_major_diameter_mm": 2.0,
+    "bolt_length_including_head_mm": 6.0,
+    "bolt_head_diameter_mm": 4.7,
+    "bolt_head_height_mm": 1.35,
+    "bolt_socket_af_mm": 1.3,
+    "bolt_socket_depth_mm": 0.75,
+    "nut_af_mm": 4.0,
+    "nut_height_mm": 1.6,
+    "nut_radial_span_mm": [
+      4.2,
+      5.8
+    ],
+    "nut_slot_tangent_width_mm": 4.2,
+    "nut_slot_radial_span_mm": [
+      4.15,
+      5.85
+    ],
+    "clamp_fit_status": "nominal geometry; rope compression and retention unmeasured"
+  },
+  "limitations": [
+    "Candidate only; raw printed contact surfaces are not approved rope running surfaces.",
+    "The clamp is shown at nominal contact with undeformed 0.6 mm rope; clamp force, compression, slip and damage require tests.",
+    "All threads are smooth major-diameter envelopes; full thread fit, minimum engagement and tightening torque remain unverified.",
+    "Nut loading precedes hinge assembly. Actual side insertion, wrench access and full articulation must be checked.",
+    "Tendon surface quality, real diameter, bending fatigue, stiffness and creep remain unmeasured."
+  ],
+  "operation_journal": [
+    {
+      "stage": "boss_union",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8700.64845838343,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8682.54686434193,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8682.473270966426,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8664.3716884893,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8663.537451353326,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_4",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8647.723993000494,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_5",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8622.85582899227,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_6",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8609.014081582165,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_7",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8555.585876775545,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_8",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8539.77242013594,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_9",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8486.344238834943,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_10",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8472.502671324446,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_11",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8447.634491275054,
+      "bounded": true,
+      "positive_solids": true
+    }
+  ],
+  "parts": {
+    "thumb_ip_tendon_clamp": {
+      "volume_mm3": 322.60970275109753,
+      "bounds_mm": [
+        -8.700000100000004,
+        4.178203130275507,
+        -9.763139820814416,
+        8.700000100000004,
+        11.410254137844392,
+        0.7631398208144174
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "29c3692499e9b12f7d158e174dfc0f080e1256f7f5513f21e0abbf1163ae6799",
+      "stl_sha256": "7b70336c47b2c628242699887657e5d9b99d92032ed2c4f347026169fd55b7a7"
+    },
+    "thumb_ip_tendon_clamp_nut_1": {
+      "volume_mm3": 17.143702091137964,
+      "bounds_mm": [
+        -8.309401176758504,
+        1.1373065958946416,
+        -7.230127118922195,
+        -3.6905988232414946,
+        4.522947441949746,
+        -2.966025303784437
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "12f8ba9313ec4a7195dcb0d0378297075e4033e231e34b1b137237e8b8447c29",
+      "stl_sha256": "f4a29c4c0b0e73d5be93088120181580f55dccabdd9d6d8b51c0e4d456ce90c7"
+    },
+    "thumb_ip_tendon_clamp_nut_2": {
+      "volume_mm3": 17.14370209113796,
+      "bounds_mm": [
+        -4.309401176758505,
+        4.13730659589464,
+        -2.0339746962155623,
+        0.3094011767585052,
+        7.5229474419497455,
+        2.2301271189221956
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "d6d2ed23ef2dedf5cebf018904969e877e9a0fe21cef734b047fc45bb49ee5b4",
+      "stl_sha256": "0ebfef69fcd526acb4a8ecbacac07ab4fd758d414be9ffd744e12f1fddac5010"
+    },
+    "thumb_ip_tendon_clamp_nut_3": {
+      "volume_mm3": 17.14370209113796,
+      "bounds_mm": [
+        -0.30940117675850515,
+        1.1373065958946418,
+        -7.230127118922195,
+        4.309401176758505,
+        4.522947441949746,
+        -2.966025303784437
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "33fd2059ebff504a85a82097a43d6bb41f42b6b8f91ef1a589e7da1eba79622c",
+      "stl_sha256": "c45d48dc325184d2fa37db1281eeaa8ae2cbdd584b5e302d375bec2b7803c4dd"
+    },
+    "thumb_ip_tendon_clamp_nut_4": {
+      "volume_mm3": 17.143702091137968,
+      "bounds_mm": [
+        3.690598823241495,
+        4.13730659589464,
+        -2.0339746962155623,
+        8.309401176758504,
+        7.5229474419497455,
+        2.2301271189221956
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "c14d3591068b7621267d67b1e9db882ab885e50885aaa40bd8b97743c5b05cb4",
+      "stl_sha256": "4deedaaa4580fcc05f2c9c928d69ce0579a287cef2312ac1695e2a3e09d57daf"
+    },
+    "thumb_ip_tendon_clamp_screw_1": {
+      "volume_mm3": 26.053920008434712,
+      "bounds_mm": [
+        -8.360245352580307,
+        1.4638777312795053,
+        -9.64283335179377,
+        -3.639754647419694,
+        8.345762351170551,
+        -3.7316031398523792
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "1b1ab000c6ec15c319718dc1d84979329401fdf94c93277fa1614af7d0f8bafd",
+      "stl_sha256": "2d242ce8c92d79de2276494538fe43dbbb0e8d83ada5d3e9ca3c5303fd80482e"
+    },
+    "thumb_ip_tendon_clamp_screw_2": {
+      "volume_mm3": 26.053920008434716,
+      "bounds_mm": [
+        -4.360245352580306,
+        4.4638777312795055,
+        -4.4466809290871385,
+        0.3602453525803058,
+        11.34576235117055,
+        1.4645492828542523
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "ec171457468ee97f0a1abc3f22a4fddd80cfea3014c5e062d6ff0fbf2f9d083a",
+      "stl_sha256": "b9177d251c298f66a47eab3898a8ef124430b2318af3f0f33799199e7ddef638"
+    },
+    "thumb_ip_tendon_clamp_screw_3": {
+      "volume_mm3": 26.053920008434716,
+      "bounds_mm": [
+        -0.3602453525803065,
+        1.4638777312795057,
+        -9.64283335179377,
+        4.360245352580306,
+        8.345762351170551,
+        -3.7316031398523792
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "7d3859b1aa50f49ad2258db9322edc2404af57a7dfd94b8c0349e41d44aad27e",
+      "stl_sha256": "00b2d0398c8f60426f80d4beb600813bd6015235b56957426f13e31582df9213"
+    },
+    "thumb_ip_tendon_clamp_screw_4": {
+      "volume_mm3": 26.053920008434716,
+      "bounds_mm": [
+        3.639754647419694,
+        4.4638777312795055,
+        -4.4466809290871385,
+        8.360245352580307,
+        11.345762351170551,
+        1.4645492828542526
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "b576d932c15c14d3c0fb784c4580294bc70473b51a1b02504388e9891124a0b5",
+      "stl_sha256": "0cdbbe84b41d5cb4fb389a5077ad1ecb5f307254c1548cdf0627244097fe6a1b"
+    },
+    "thumb_segment2_segment_shell": {
+      "volume_mm3": 9723.660555789498,
+      "bounds_mm": [
+        -14.20000010001348,
+        -56.65964222288778,
+        -11.300000102415726,
+        14.200000100007284,
+        6.588516112983549,
+        11.573888337218632
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "c3cadf35c9ba57f48bf9bb86e86e8c52bf1b3b8f516e38d080f6331777056bde",
+      "stl_sha256": "21bb6a8af0b0b534f6b0f5705bd190f6cfe59c76d976858eabf08255cd794b7a"
+    },
+    "thumb_segment3_tip_core": {
+      "volume_mm3": 8447.634491275054,
+      "bounds_mm": [
+        -10.735578157980346,
+        -8.69904714560739,
+        -9.300000100005823,
+        10.735578157982804,
+        49.63885177946864,
+        9.000000100009213
+      ],
+      "valid": true,
+      "solids": 1,
+      "step_sha256": "47320150e5a67e61ffc1d3d37199b52d8c2bff236e785999f5bb8b593971b89f",
+      "stl_sha256": "597ee268fd96f4b4f6f9bbc02fb7f3b67533f31385d89bf3886f8e5c13016036"
+    }
+  },
+  "changed_names": [
+    "thumb_ip_tendon_clamp",
+    "thumb_ip_tendon_clamp_nut_1",
+    "thumb_ip_tendon_clamp_nut_2",
+    "thumb_ip_tendon_clamp_nut_3",
+    "thumb_ip_tendon_clamp_nut_4",
+    "thumb_ip_tendon_clamp_screw_1",
+    "thumb_ip_tendon_clamp_screw_2",
+    "thumb_ip_tendon_clamp_screw_3",
+    "thumb_ip_tendon_clamp_screw_4",
+    "thumb_segment3_tip_core"
+  ],
+  "child_change": {
+    "original_volume_mm3": 8653.590765242383,
+    "new_volume_mm3": 8447.634491275054,
+    "removed_mm3": 252.11409067322614,
+    "added_mm3": 46.157778981887176
+  },
+  "scoped_native_parts": 36,
+  "input_hash_guard": {
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": true,
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\joint_drive.py": true,
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\geometry.py": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\build_joint_probe.py": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_nut.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_nut.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": true
+  }
+}

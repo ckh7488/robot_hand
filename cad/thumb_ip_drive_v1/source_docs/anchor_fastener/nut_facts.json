@@ -1,0 +1,49 @@
+{
+  "schema": "thumb_ip_drive.anchor_nut_source_facts.v1",
+  "status": "supplier_published_geometry_reference_only",
+  "retrieved_on": "2026-10-25",
+  "candidate": "HPN-M2-A2",
+  "source": {
+    "supplier": "Accu",
+    "product_code": "HPN-M2-A2",
+    "product_url": "https://www.accu.co.uk/hexagon-nuts/7884-HPN-M2-A2",
+    "download_url": "https://www.accu.co.uk/api/product-datasheet?id=7884",
+    "file": "accu_HPN-M2-A2_datasheet.pdf",
+    "bytes": 405885,
+    "sha256": "0a4e19496da214bb269215b1ea54976a754a42e1aec433a138a9bccd279bec9d",
+    "page": 1,
+    "drawing_visually_inspected": true
+  },
+  "published_dimensions": {
+    "standard_label": "DIN 934",
+    "thread": "M2",
+    "thread_pitch_mm": 0.4,
+    "across_flats_J_mm": 4.0,
+    "across_flats_tolerance_mm": {"plus": 0.0, "minus": 0.18},
+    "nut_height_H_mm": 1.6,
+    "height_tolerance_mm": {"plus": 0.0, "minus": 0.25},
+    "material": "Stainless Steel (A2)",
+    "finish": "Natural"
+  },
+  "derived_size_intervals_mm": {
+    "across_flats": [3.82, 4.0],
+    "height": [1.35, 1.6],
+    "derivation": "Nominal value plus the supplier's stated asymmetric tolerance; not measured production dimensions."
+  },
+  "cad_comparison": {
+    "scope": "Nominal dimensions only; no CAD was modified or evaluated in this source retrieval.",
+    "reference_function": "cad/thumb_ip_drive_v1/joint_drive.py::make_anchor_nut",
+    "nominal_af_4_and_height_1_6_match": true,
+    "cad_thread_representation": "Smooth M2 major-diameter bore; not a female thread model.",
+    "interpretation": "The current 4.0 mm AF and 1.6 mm height are the upper bounds of the posted supplier tolerances, not guaranteed exact manufactured dimensions."
+  },
+  "unverified": [
+    "Thread tolerance class, strength/property class, proof load and tightening torque are not specified in this saved sheet.",
+    "Chamfer dimensions, across-corners bounds, thread entry/runout and effective fully formed thread length are not dimensioned.",
+    "A nominal 1.6 mm nut height does not establish 1.6 mm effective thread engagement.",
+    "Captive-pocket rotation/axial clearance at tolerance extremes, actual screw engagement, clamp preload and rope damage remain unverified."
+  ],
+  "relation_to_earlier_facts": "This additional source resolves the nut nominal-dimension evidence gap recorded in facts.json; that earlier six-file source snapshot is intentionally unchanged.",
+  "purchase_recommendation_confirmed": false,
+  "load_or_clamp_approved": false
+}

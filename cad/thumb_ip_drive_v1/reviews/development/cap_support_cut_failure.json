@@ -1,0 +1,473 @@
+{
+  "completed": true,
+  "errors": [],
+  "source_sha256": {
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\probe_tool_channels.py": "d38fcb7e05711043a3ff1948aa5be7b925a917b76aa94016c33d23443c188886",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\report.json": "55fdecbea82716eee59321c55fa39159a8f62bab8cbd6631a0d5d1aee7223e6b",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\joint_drive_two_bolts.py": "40804a998b87c0ea6f99854b5ee137313d110590e9a4f2daa520a0bbd2a86818",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\geometry.py": "dbc98a8dc12118ee91cbafd156632e9a6df2f1670310328901adb5bafd5816d9",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": "c1474cbb9ef47e70bcdef89023083af2c8a225f2ab1416003bfae8d2c0690f05",
+    "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": "4914a6cad7732299c2d24304d353cae4251ed467f41fbfd3118523ff0b608ddc",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": "ade4e6bf67c6c464fd5b4236f2ed644f8b87d2eb739871c8a48d9edc14512438",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": "bdaccb1fbc965d885ccf7bfb204821383bcd2e58a0b0d51218cd1358abe511bf",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": "10aa891425c3173c9e0319de739d4db3289d922facc8c563f936c425cb094c3d",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap.step": "4392261eed70be5bb2d1e57673050021785a31a8a7e1bc494ec7abff221980f9",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": "b2ad787f9b3fc4e03b72e4f56434069a005cc03395165465fa277ba34d2e61d4",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": "f18104311188c1d5c065bfecb88f171c7277a0aa025880e753dc77324ebc0e0d",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": "da106cf00c4cf0e174d741999cb969866d373856e224d282528682c396a9a199",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": "dc2d5656f7c745dc05ea1a3f1f084793f72157a76283be759c926520d811ee89",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": "ad168594432e0b50074e9c276e8d3b1145e01dd6d737d382a58de5273301cad5",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": "8a79187620441d615a75e51497ab06f70322463be88045431ab494f4ae9885c2",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": "dcada575fb240d7dd16c79c4ce2a19b83ee44b6384cab863d7c6e034eda861d0",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": "cf7fc948920570895b5d7e8631f71bd8992a70ba67836e8d382040f1d23b054e",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": "b79ddbbcc38b544af65ae45a6667814566cfaac6eb2ae647c23cd5f1fd8c0e28",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": "05e1b85c225a5f69e278305cf734cac46c7b0f35d71331c7eccea01607c4e253",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": "52ee975688bf435e7d8bb3772ca042461e4a502770d753da15e44d6a35ca877b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": "c023b23f0462ca397f971bad4672a5bb0d00304c09e1405a9b74915bf603c7f8",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": "1363b41d433d1a52d3ef5a0e8ebe292545bd46b1ef266b5d484e66ef275b224b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": "a77a67cc0df1846ccab3265db1efbd3fd40deb047fa811d039dc47f02d45adb8",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": "bc2d0976406a3fe8c2b4c2465591b25c53822ba1b949aa790c31a259b487044b",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_bolt.step": "43f75313024e96a277d031aeec5cc43e04753d6603d0f73ac4578d0b6a60b767",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_nut.step": "a05e52c7e7affe3270397f314dfce1ee3bf06314bfc5043244fd383a811b38ee",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_bolt.step": "8d6baa57e940e4c58a3fd5231f49c1032f9287fccef7b587db7cf7d580390af9",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_nut.step": "f95f2c567cb6a7ab70123191e25420aefc13fc973f1adc4f768dab2c668d55ca",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": "50b692f03c788a6b8055a4af89345256e17a4161722af514833b84fd49a14004",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": "91f3f2fd23005f3a676dc4b5947b65f92e0532ad10f41c4e0d6f344209a1e5bf",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_segment3_tip_core.step": "a727918db7233c08071e7fefac9e7baf88e1627718cce90c2cc13182f2096090",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_screw_2.step": "7c6b6c8e046ee60910478adc11037f41abaa02b86bec82eee760facf09d0c8d6",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_screw_1.step": "9b55d14c1f344cf2ccb1596b5c68e5c9bf1f5fcb7fd3bfc834f69dedff34e42e",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_nut_2.step": "5b956c9238255c00f5b0b5b676131324ecc511353ee76330be3c97e87de3c8e5",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_nut_1.step": "e0e51ecf966760f65e5ef061424b7b929b45951d1231f9484e7570d7aabebb1f",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp.step": "2d6be38b06504ff66e789497a17bcd45be651f5116c87597b37ac29bd3bb40d3"
+  },
+  "frame": {
+    "origin": [
+      140.20248509323406,
+      80.134518526827,
+      29
+    ],
+    "yaw": -55,
+    "roll": -65
+  },
+  "source_candidate_report": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\report.json",
+  "scope": "One two-bolt child with two 3.4mm axial tool channels, neutral local joint only. Exact native material checks; no strength, minimum-wall or full-motion acceptance.",
+  "channel_definition": {
+    "centres_x_t_mm": [
+      [
+        -1.8,
+        -3.0
+      ],
+      [
+        1.8,
+        3.0
+      ]
+    ],
+    "diameter_mm": 3.4,
+    "y_span_mm": [
+      15.0,
+      65.0
+    ]
+  },
+  "threshold_mm3": 1e-05,
+  "channels": [
+    {
+      "index": 1,
+      "removed_volume_mm3": 18.26246064051466,
+      "removed_bounds_mm": [
+        -3.5,
+        42.603273621481854,
+        -3.454599444561826,
+        -0.8740485766498143,
+        49.60327362148891,
+        -1.3
+      ],
+      "removed_pieces": [
+        {
+          "volume_mm3": 18.26246064051466,
+          "bounds_mm": [
+            -3.5,
+            42.603273621481854,
+            -3.454599444561826,
+            -0.8740485766498143,
+            49.60327362148891,
+            -1.3
+          ]
+        }
+      ],
+      "child_after": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 8437.535939014386,
+        "bounded": true,
+        "positive_solids": true
+      }
+    },
+    {
+      "index": 2,
+      "removed_volume_mm3": 25.87209584222453,
+      "removed_bounds_mm": [
+        0.8740485766520365,
+        42.60327362148311,
+        1.3,
+        3.5,
+        49.60327362149015,
+        4.374772708489173
+      ],
+      "removed_pieces": [
+        {
+          "volume_mm3": 25.87209584222453,
+          "bounds_mm": [
+            0.8740485766520365,
+            42.60327362148311,
+            1.3,
+            3.5,
+            49.60327362149015,
+            4.374772708489173
+          ]
+        }
+      ],
+      "child_after": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 8411.663840500814,
+        "bounded": true,
+        "positive_solids": true
+      }
+    }
+  ],
+  "child": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 8411.663840500814,
+    "bounded": true,
+    "positive_solids": true
+  },
+  "total_removed_mm3": 44.13456434893487,
+  "uninstalled_cap_assembly": [
+    "thumb_segment3_rounded_tip_cap",
+    "thumb_segment3_rounded_tip_cap_clamp1_bolt",
+    "thumb_segment3_rounded_tip_cap_clamp1_nut",
+    "thumb_segment3_rounded_tip_cap_clamp2_bolt",
+    "thumb_segment3_rounded_tip_cap_clamp2_nut"
+  ],
+  "native_local_parts": 27,
+  "channel_vs_other_parts": [
+    {
+      "channel": 1,
+      "exact_pairs": 0,
+      "intersections": [],
+      "clear": true
+    },
+    {
+      "channel": 2,
+      "exact_pairs": 0,
+      "intersections": [],
+      "clear": true
+    }
+  ],
+  "neutral_material_intersections": [],
+  "neutral_exact_pairs": 31,
+  "preservation_regions": {
+    "D_bore_and_flat": {
+      "old_material_mm3": 100.9068374337916,
+      "new_material_mm3": 100.90683743378456,
+      "removed_mm3": 0,
+      "added_mm3": 0,
+      "unchanged": true,
+      "removed_bounds_mm": null
+    },
+    "left_bushing_flange_seat": {
+      "old_material_mm3": 5.614012089706833,
+      "new_material_mm3": 5.61401208970788,
+      "removed_mm3": 0,
+      "added_mm3": 0,
+      "unchanged": true,
+      "removed_bounds_mm": null
+    },
+    "right_bushing_flange_seat": {
+      "old_material_mm3": 5.614012089389663,
+      "new_material_mm3": 5.614012089375061,
+      "removed_mm3": 0,
+      "added_mm3": 0,
+      "unchanged": true,
+      "removed_bounds_mm": null
+    },
+    "cap_clamp1_existing_boss": {
+      "old_material_mm3": 203.9965339472316,
+      "new_material_mm3": 185.73407330679376,
+      "removed_mm3": 18.26246064051466,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        -3.5,
+        42.603273621481854,
+        -3.454599444561826,
+        -0.8740485766498143,
+        49.60327362148891,
+        -1.3
+      ]
+    },
+    "cap_clamp1_existing_dorsal_rib": {
+      "old_material_mm3": 108.54578431705981,
+      "new_material_mm3": 108.54578431705981,
+      "removed_mm3": 0,
+      "added_mm3": 0,
+      "unchanged": true,
+      "removed_bounds_mm": null
+    },
+    "cap_clamp1_nut_seat_neighborhood": {
+      "old_material_mm3": 1.4983593391383523,
+      "new_material_mm3": 1.4550315308093493,
+      "removed_mm3": 0.043327808319625176,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        -3.3543480737604328,
+        47.403273621485994,
+        -2.311521920757651,
+        -1.9894380534071983,
+        47.50327362149279,
+        -1.3105879058319452
+      ]
+    },
+    "cap_clamp1_cap_seat_neighborhood": {
+      "old_material_mm3": 3.396061658371315,
+      "new_material_mm3": 3.0605768571316543,
+      "removed_mm3": 0.33548480124661423,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        -3.5,
+        49.50327362149279,
+        -3.454599444561826,
+        -0.8740485766498143,
+        49.60327362148891,
+        -1.3
+      ]
+    },
+    "cap_clamp2_existing_boss": {
+      "old_material_mm3": 203.99653394725382,
+      "new_material_mm3": 180.92013965778486,
+      "removed_mm3": 23.07639428960081,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        0.8740485766520365,
+        42.60327362148311,
+        1.3,
+        3.5,
+        49.60327362149015,
+        3.4545994445597326
+      ]
+    },
+    "cap_clamp2_existing_dorsal_rib": {
+      "old_material_mm3": 108.54578431700045,
+      "new_material_mm3": 99.59701550291312,
+      "removed_mm3": 8.948768814114423,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        2.799999999996671,
+        42.60327362148761,
+        1.625227291513248,
+        3.5,
+        49.40327362149279,
+        4.374772708489173
+      ]
+    },
+    "cap_clamp2_nut_seat_neighborhood": {
+      "old_material_mm3": 1.498359339126758,
+      "new_material_mm3": 1.4342355252887267,
+      "removed_mm3": 0.06412381376232415,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        1.989438053407198,
+        47.30327362149279,
+        1.310587905831945,
+        3.3543480737604314,
+        47.50327362149279,
+        2.31152192075765
+      ]
+    },
+    "cap_clamp2_cap_seat_neighborhood": {
+      "old_material_mm3": 3.3960616584052588,
+      "new_material_mm3": 3.060576857183494,
+      "removed_mm3": 0.33548480125011343,
+      "added_mm3": 0,
+      "unchanged": false,
+      "removed_bounds_mm": [
+        0.8740485766509205,
+        49.50327362149279,
+        1.3,
+        3.5,
+        49.60327362149015,
+        3.4545994445597863
+      ]
+    }
+  },
+  "distal_link_length_mm": 52.60327362149279,
+  "tool_approaches": [
+    {
+      "screw": 1,
+      "tip_AF_mm": 1.3,
+      "shaft_diameter_mm": 3.0,
+      "handle_diameter_mm": 12.0,
+      "components": {
+        "tip": {
+          "exact_pairs": 3,
+          "intersections": [],
+          "clear": true
+        },
+        "shaft": {
+          "exact_pairs": 1,
+          "intersections": [],
+          "clear": true
+        },
+        "handle": {
+          "exact_pairs": 0,
+          "intersections": [],
+          "clear": true
+        }
+      },
+      "clear": true
+    },
+    {
+      "screw": 2,
+      "tip_AF_mm": 1.3,
+      "shaft_diameter_mm": 3.0,
+      "handle_diameter_mm": 12.0,
+      "components": {
+        "tip": {
+          "exact_pairs": 3,
+          "intersections": [],
+          "clear": true
+        },
+        "shaft": {
+          "exact_pairs": 1,
+          "intersections": [],
+          "clear": true
+        },
+        "handle": {
+          "exact_pairs": 0,
+          "intersections": [],
+          "clear": true
+        }
+      },
+      "clear": true
+    }
+  ],
+  "screw_insertions": [
+    {
+      "screw": 1,
+      "radial_translation_mm": [
+        0.0,
+        30.0
+      ],
+      "filled_socket_continuous_envelope": true,
+      "exact_pairs": 6,
+      "intersections": [],
+      "clear": true
+    },
+    {
+      "screw": 2,
+      "radial_translation_mm": [
+        0.0,
+        30.0
+      ],
+      "filled_socket_continuous_envelope": true,
+      "exact_pairs": 6,
+      "intersections": [],
+      "clear": true
+    }
+  ],
+  "plate_insertions": [
+    {
+      "direction_x": -1.0,
+      "translation_mm": [
+        0.0,
+        -30.0
+      ],
+      "filled_hole_continuous_envelope": true,
+      "exact_pairs": 1,
+      "intersections": [],
+      "clear": true
+    },
+    {
+      "direction_x": 1.0,
+      "translation_mm": [
+        0.0,
+        30.0
+      ],
+      "filled_hole_continuous_envelope": true,
+      "exact_pairs": 1,
+      "intersections": [],
+      "clear": true
+    }
+  ],
+  "core_gate": {
+    "valid_single_positive_child": true,
+    "neutral_pairs_clear": true,
+    "channels_clear_of_other_installed_parts": true,
+    "tools_clear": true,
+    "screw_insertions_clear": true,
+    "plate_side_path_clear": true,
+    "bore_and_bushing_regions_unchanged": true,
+    "cap_attachment_regions_unchanged": false
+  },
+  "bounded_candidate_pass": false,
+  "limitations": [
+    "No minimum-wall search, load/deflection/fatigue or clamp-retention approval.",
+    "Protected-region volume comparisons detect local material changes; nonzero removal does not itself quantify remaining load capacity.",
+    "Cap, cap bolts and cap nuts are uninstalled for tooling and assembly paths; final neutral material pairs include them.",
+    "Long-range tool body is a nominal envelope, not a verified purchased tool.",
+    "No new pose or route sweep; only the authorized single neutral local candidate."
+  ],
+  "input_hash_guard": {
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\probe_tool_channels.py": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\report.json": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\joint_drive_two_bolts.py": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\geometry.py": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\design.json": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_segment_shell.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v1\\generated\\parts\\thumb_segment2_distal_left_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_distal_right_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_joint_pin_2.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_left_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal1_child_right_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_left_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_child_right_bushing.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_pin_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_pin_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_left_thrust_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_distal2_right_thrust_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_nut.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp1_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_nut.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment2_dark_faceplate_clamp2_washer.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp1_nut.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_bolt.step": true,
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_rounded_tip_cap_clamp2_nut.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_washer.step": true,
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\parts\\thumb_distal2_retaining_screw.step": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_segment3_tip_core.step": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_screw_2.step": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_screw_1.step": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_nut_2.step": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp_nut_1.step": true,
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\anchor_fit\\two_bolts\\thumb_ip_tendon_clamp.step": true
+  },
+  "inputs_unchanged": true,
+  "elapsed_s": 28.625
+}

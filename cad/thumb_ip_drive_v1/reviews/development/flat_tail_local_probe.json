@@ -1,0 +1,1559 @@
+{
+  "schema": "thumb_ip_exit_relief_probe.v1",
+  "completed": true,
+  "errors": [],
+  "source_sha256": {
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\build_order_flat_tail\\run.py": "cc2b77308a259013b343a26e69a23fb2c8c2bca01939c87eab3e055ca1afdacf",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\geometry.py": "dbc98a8dc12118ee91cbafd156632e9a6df2f1670310328901adb5bafd5816d9",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\build_order_flat_tail\\geometry.py": "dbc98a8dc12118ee91cbafd156632e9a6df2f1670310328901adb5bafd5816d9",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\joint_drive.py": "5b9037549e9bd88896d2503647a8cbd2526dd4b46331bf1f85df58fbd056798e",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\build_order_flat_tail\\joint_drive.py": "a186d4940506711916a62ac71ddd2ea7f80d7522881e8b70f6b64d9ad49bdd8b",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\routing.py": "bd39958e6d7cf1dd91db333a4fc790fa76acc0a4acaf14f6fde0506616036e07",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\geometry_audit.py": "c313660184166cce583447e486995c38d1f4d4d9ba1de41a00b559d5c84b1987",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\generated\\scene.json": "5790d81ade8abee78d09c2e9d20d312ce96c699a3d5c350a2bc7888b8d4db79e",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\generated\\design.json": "cfc0fe62c8b37c4d5a3e9ca97d22b725e24f198dfe38034a62cdf24239b0d6d1",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\generated\\build_report.json": "8f892831fb17e40d7fc357b22e046de358cdf1f8771b4a55f2514f057315554c",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\saved_audit_01.json": "4a79684c8b15090c8f6b2b7c7989087460ba9bc418f5946493dbb14cdec03d10",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\probe03\\report.json": "aaee00ac00ab87283bdd54a8946101bac4a755a98799f48267a887dfb219dbad",
+    "D:\\robot_hand\\cad\\thumb_ip_drive_v1\\generated\\parts\\thumb_segment3_tip_core.step": "eda432099cc21d4973989a663b7b97e23d31ba44dd17060b869c52c63cdea57b",
+    "D:\\robot_hand\\cad\\manufacturing_v2\\generated\\scene.json": "a4e839cacb303c4ad06eb0d3281124a13c9bb9e8b87d5ec0a6ec0c6b2429c664",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step": "10aa891425c3173c9e0319de739d4db3289d922facc8c563f936c425cb094c3d"
+  },
+  "coordinates": "Saved child in neutral thumb-IP local mm. X hinge axis; Y radial at anchor 0; Z tangent.",
+  "BRep_poses_deg": [
+    -20.0,
+    -15.0,
+    0.0,
+    45.0,
+    85.0
+  ],
+  "rope_diameter_mm": 0.6,
+  "threshold_mm3": 0.0001,
+  "manufacturing_approved": false,
+  "strength_approved": false,
+  "continuous_motion_approved": false,
+  "whole_hand_audit": false,
+  "candidates": [
+    {
+      "id": "outer_12",
+      "cutters": [
+        {
+          "track_x_mm": -4.0,
+          "width_mm": 0.8,
+          "inner_radius_mm": 7.4,
+          "outer_radius_mm": 12.0,
+          "angular_interval_deg": [
+            0.0,
+            -200.0
+          ],
+          "angle_reference": "0 is +Y, positive toward +Z",
+          "radial_extra_relief_mm": 0.0,
+          "volume_mm3": 124.60254595837914,
+          "bbox_local_mm": [
+            [
+              -4.4,
+              -12.0,
+              -11.999999999999998
+            ],
+            [
+              -3.6000000000000005,
+              12.0,
+              4.104241719908024
+            ]
+          ]
+        },
+        {
+          "track_x_mm": 4.0,
+          "width_mm": 0.8,
+          "inner_radius_mm": 7.4,
+          "outer_radius_mm": 12.0,
+          "angular_interval_deg": [
+            0.0,
+            180.0
+          ],
+          "angle_reference": "0 is +Y, positive toward +Z",
+          "radial_extra_relief_mm": 0.0,
+          "volume_mm3": 112.1422913625412,
+          "bbox_local_mm": [
+            [
+              3.6,
+              -12.000000000000002,
+              -1.9721522630525295e-31
+            ],
+            [
+              4.4,
+              12.0,
+              11.999999999999998
+            ]
+          ]
+        }
+      ],
+      "original_intersection_coverage": [
+        {
+          "q": -20.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0.0025229394061572616,
+          "intersection_bbox_child_local_mm": [
+            [
+              -4.3000001080501695,
+              0.18051099503557225,
+              -7.997963324758628
+            ],
+            [
+              -3.6999998895065556,
+              1.5105281348584805,
+              -7.841679533491366
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": -20.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0.002523000950863983,
+          "intersection_bbox_child_local_mm": [
+            [
+              3.6999998893129766,
+              -5.002712239464408,
+              6.242825480925528
+            ],
+            [
+              4.3000001087856266,
+              -3.892671930585472,
+              6.989070459484665
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": -15.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0.0025229424968084466,
+          "intersection_bbox_child_local_mm": [
+            [
+              -4.300000106106146,
+              -0.5172443271633255,
+              -8.00000009940482
+            ],
+            [
+              -3.699999889506558,
+              0.8200759020946364,
+              -7.920851337202137
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": -15.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0.0025229766885898064,
+          "intersection_bbox_child_local_mm": [
+            [
+              3.6999998893129757,
+              -4.43957731887381,
+              6.655084732410393
+            ],
+            [
+              4.3000001102689,
+              -3.2687215228291495,
+              7.301743657964265
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": 0.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0.002522942335547011,
+          "intersection_bbox_child_local_mm": [
+            [
+              -4.300000108460071,
+              -2.5658396901516776,
+              -7.8989501849845105
+            ],
+            [
+              -3.699999889506559,
+              -1.267512255777745,
+              -7.577365352163282
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": 0.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0.0025229610180265583,
+          "intersection_bbox_child_local_mm": [
+            [
+              3.699999889312976,
+              -2.5658396913217594,
+              7.577365351962125
+            ],
+            [
+              4.3000001080971995,
+              -1.2675122587322143,
+              7.898950184475261
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": 45.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0.002522942281391612,
+          "intersection_bbox_child_local_mm": [
+            [
+              -4.300000108460071,
+              -7.172329164238939,
+              -4.689134701127865
+            ],
+            [
+              -3.6999998895065582,
+              -6.481667637678965,
+              -3.543683829247542
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": 45.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0.002522960193439021,
+          "intersection_bbox_child_local_mm": [
+            [
+              3.699999896381218,
+              3.543683813583778,
+              6.481667570291149
+            ],
+            [
+              4.300000108182352,
+              4.689134774515975,
+              7.172329177144451
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": 85.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0.0025229423457532405,
+          "intersection_bbox_child_local_mm": [
+            [
+              -4.30000010846007,
+              -7.9793632761649365,
+              0.574250132169207
+            ],
+            [
+              -3.6999998895065573,
+              -7.77215884489986,
+              1.895664974040922
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        },
+        {
+          "q": 85.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0.4327370299150431,
+          "intersection_bbox_child_local_mm": [
+            [
+              3.699999891264541,
+              6.987505843067667,
+              1.9633005884384283
+            ],
+            [
+              4.30000010724037,
+              7.750000111161792,
+              6.3000001000029116
+            ]
+          ],
+          "outside_proposed_cut_mm3": 0
+        }
+      ],
+      "stages": [
+        {
+          "stage": "boss_union",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8722.498249701905,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "early_exit_after_boss_before_torus",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8682.954960752631,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_0",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8675.249011973683,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_1",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8675.027075870517,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_2",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8666.318708654606,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_3",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8665.16855088763,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_4",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8651.653503094089,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_5",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8584.647055964631,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_6",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8571.131980016195,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "cut_7",
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8504.751743965122,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "clamp_relief",
+          "removed_mm3": 98.2531378164822,
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8406.49860614864,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "lower_screw_head_relief",
+          "removed_mm3": 1.925591566350704,
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8404.573014582289,
+          "bounded": true,
+          "positive_solids": true
+        },
+        {
+          "stage": "upper_screw_entry_window",
+          "removed_mm3": 161.42395734241836,
+          "valid": true,
+          "solid_count": 1,
+          "volume_mm3": 8243.14905723987,
+          "bounded": true,
+          "positive_solids": true
+        }
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8243.14905723987,
+      "bounded": true,
+      "positive_solids": true,
+      "bbox_local_mm": [
+        [
+          -10.500000100004351,
+          -8.000000100010539,
+          -9.300000100001256
+        ],
+        [
+          10.500000100003682,
+          49.603273621492484,
+          9.000000100000989
+        ]
+      ],
+      "removed_material_check": {
+        "completed": true,
+        "volume_mm3": 18.953250302028138,
+        "area_mm2": 256.399830914156,
+        "bbox_mm": [
+          [
+            -4.400000100001818,
+            -8.000000100010539,
+            -8.556399298496908
+          ],
+          [
+            4.400000100001792,
+            10.513768503411296,
+            8.000000100001595
+          ]
+        ]
+      },
+      "gprop_volume_delta_mm3": 18.953256750215587,
+      "added_material_check": {
+        "completed": true,
+        "volume_mm3": 0,
+        "area_mm2": 0.0,
+        "bbox_mm": null
+      },
+      "protected_eye_radius_mm": 5.5,
+      "protected_eye_x_span_mm": [
+        -8.1,
+        8.1
+      ],
+      "protected_eye_removed": {
+        "completed": true,
+        "volume_mm3": 0,
+        "area_mm2": 0.0,
+        "bbox_mm": null
+      },
+      "protected_eye_added": {
+        "completed": true,
+        "volume_mm3": 0,
+        "area_mm2": 0.0,
+        "bbox_mm": null
+      },
+      "actual_bushing_flange_seats": [
+        {
+          "side": "left",
+          "plane_x_mm": -8.0,
+          "patch_radius_mm": 4.5,
+          "old_area_mm2": 28.070060447343238,
+          "new_area_mm2": 28.070060447343238,
+          "removed_area_mm2": 0.0,
+          "added_area_mm2": 0.0
+        },
+        {
+          "side": "right",
+          "plane_x_mm": 8.0,
+          "patch_radius_mm": 4.5,
+          "old_area_mm2": 28.070060447347075,
+          "new_area_mm2": 28.070060447347075,
+          "removed_area_mm2": 0.0,
+          "added_area_mm2": 0.0
+        }
+      ],
+      "tail_bed_protection": [
+        {
+          "track_x_mm": -4.0,
+          "tail_sign": 1,
+          "radial_interval_mm": [
+            5.0,
+            7.4
+          ],
+          "tangent_interval_mm": [
+            0.0,
+            5.0
+          ],
+          "removed": {
+            "completed": true,
+            "volume_mm3": 0,
+            "area_mm2": 0.0,
+            "bbox_mm": null
+          },
+          "added": {
+            "completed": true,
+            "volume_mm3": 0,
+            "area_mm2": 0.0,
+            "bbox_mm": null
+          }
+        },
+        {
+          "track_x_mm": 4.0,
+          "tail_sign": -1,
+          "radial_interval_mm": [
+            5.0,
+            7.4
+          ],
+          "tangent_interval_mm": [
+            -5.0,
+            0.0
+          ],
+          "removed": {
+            "completed": true,
+            "volume_mm3": 0,
+            "area_mm2": 0.0,
+            "bbox_mm": null
+          },
+          "added": {
+            "completed": true,
+            "volume_mm3": 0,
+            "area_mm2": 0.0,
+            "bbox_mm": null
+          }
+        }
+      ],
+      "rope_checks": [
+        {
+          "q": -20.0,
+          "track": 0,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -20.0,
+          "track": 0,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -20.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -20.0,
+          "track": 1,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -20.0,
+          "track": 1,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -20.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -15.0,
+          "track": 0,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -15.0,
+          "track": 0,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -15.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -15.0,
+          "track": 1,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -15.0,
+          "track": 1,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": -15.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 0.0,
+          "track": 0,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 0.0,
+          "track": 0,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 0.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 0.0,
+          "track": 1,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 0.0,
+          "track": 1,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 0.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 45.0,
+          "track": 0,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 45.0,
+          "track": 0,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 45.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 45.0,
+          "track": 1,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 45.0,
+          "track": 1,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 45.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 85.0,
+          "track": 0,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 85.0,
+          "track": 0,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 85.0,
+          "track": 0,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 85.0,
+          "track": 1,
+          "scope": "joint_wrap",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 85.0,
+          "track": 1,
+          "scope": "joint_tail",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        },
+        {
+          "q": 85.0,
+          "track": 1,
+          "scope": "free_span",
+          "overlap_mm3": 0,
+          "intersection_bbox_child_local_mm": null
+        }
+      ],
+      "rope_collision_count": 0,
+      "local_rope_and_interface_passed": true,
+      "nominal_local_gates_passed": true
+    }
+  ],
+  "native_before_drive_changes": {
+    "source": "D:\\robot_hand\\cad\\gesture_hand_v3\\generated\\parts\\thumb_segment3_tip_core.step",
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 8653.590765242383,
+    "bounded": true,
+    "positive_solids": true
+  },
+  "experiment": "Same early exit sector R7.4 / width0.8 / 0..-200 and 0..180 degrees, full-circle torus retained. Tail cylinder replaced by open flat-floor U slot: X width0.8, Y7.4..10, signed tangent[-0.5,5.8]. Working rope centre R7.7 and nominal0.6 clamp gap retained.",
+  "original": {
+    "name": "thumb_segment3_tip_core",
+    "body": "thumb_ip",
+    "frame": {
+      "origin": [
+        140.20248509323406,
+        80.134518526827,
+        29
+      ],
+      "yaw": -55,
+      "roll": -65
+    },
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 8262.102313990086,
+    "bounded": true,
+    "positive_solids": true,
+    "bbox_local_mm": [
+      [
+        -10.500000100004351,
+        -8.000000100007734,
+        -9.300000100001256
+      ],
+      [
+        10.500000100003682,
+        49.603273621492484,
+        9.000000100000989
+      ]
+    ]
+  },
+  "previous_failed_rows": [
+    {
+      "scope": "free_span",
+      "q_joint_deg": -20.0,
+      "track": 0,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025229394062458456
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": -20.0,
+      "track": 1,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025230009508616833
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": -15.0,
+      "track": 0,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.002522942497160361
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": -15.0,
+      "track": 1,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025229766885875456
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": 0.0,
+      "track": 0,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025229423356247097
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": 0.0,
+      "track": 1,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025229610180254923
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": 45.0,
+      "track": 0,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025229422813986364
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": 45.0,
+      "track": 1,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.0025229601934329705
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": 85.0,
+      "track": 0,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.00252294234628313
+    },
+    {
+      "scope": "free_span",
+      "q_joint_deg": 85.0,
+      "track": 1,
+      "part": "thumb_segment3_tip_core",
+      "overlap_mm3": 0.43273727425929537
+    }
+  ],
+  "baseline_rope_checks": [
+    {
+      "q": -20.0,
+      "track": 0,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -20.0,
+      "track": 0,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -20.0,
+      "track": 0,
+      "scope": "free_span",
+      "overlap_mm3": 0.0025229394061572616,
+      "intersection_bbox_child_local_mm": [
+        [
+          -4.3000001080501695,
+          0.18051099503557225,
+          -7.997963324758628
+        ],
+        [
+          -3.6999998895065556,
+          1.5105281348584805,
+          -7.841679533491366
+        ]
+      ]
+    },
+    {
+      "q": -20.0,
+      "track": 1,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -20.0,
+      "track": 1,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -20.0,
+      "track": 1,
+      "scope": "free_span",
+      "overlap_mm3": 0.002523000950863983,
+      "intersection_bbox_child_local_mm": [
+        [
+          3.6999998893129766,
+          -5.002712239464408,
+          6.242825480925528
+        ],
+        [
+          4.3000001087856266,
+          -3.892671930585472,
+          6.989070459484665
+        ]
+      ]
+    },
+    {
+      "q": -15.0,
+      "track": 0,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -15.0,
+      "track": 0,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -15.0,
+      "track": 0,
+      "scope": "free_span",
+      "overlap_mm3": 0.0025229424968084466,
+      "intersection_bbox_child_local_mm": [
+        [
+          -4.300000106106146,
+          -0.5172443271633255,
+          -8.00000009940482
+        ],
+        [
+          -3.699999889506558,
+          0.8200759020946364,
+          -7.920851337202137
+        ]
+      ]
+    },
+    {
+      "q": -15.0,
+      "track": 1,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -15.0,
+      "track": 1,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": -15.0,
+      "track": 1,
+      "scope": "free_span",
+      "overlap_mm3": 0.0025229766885898064,
+      "intersection_bbox_child_local_mm": [
+        [
+          3.6999998893129757,
+          -4.43957731887381,
+          6.655084732410393
+        ],
+        [
+          4.3000001102689,
+          -3.2687215228291495,
+          7.301743657964265
+        ]
+      ]
+    },
+    {
+      "q": 0.0,
+      "track": 0,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 0.0,
+      "track": 0,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 0.0,
+      "track": 0,
+      "scope": "free_span",
+      "overlap_mm3": 0.002522942335547011,
+      "intersection_bbox_child_local_mm": [
+        [
+          -4.300000108460071,
+          -2.5658396901516776,
+          -7.8989501849845105
+        ],
+        [
+          -3.699999889506559,
+          -1.267512255777745,
+          -7.577365352163282
+        ]
+      ]
+    },
+    {
+      "q": 0.0,
+      "track": 1,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 0.0,
+      "track": 1,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 0.0,
+      "track": 1,
+      "scope": "free_span",
+      "overlap_mm3": 0.0025229610180265583,
+      "intersection_bbox_child_local_mm": [
+        [
+          3.699999889312976,
+          -2.5658396913217594,
+          7.577365351962125
+        ],
+        [
+          4.3000001080971995,
+          -1.2675122587322143,
+          7.898950184475261
+        ]
+      ]
+    },
+    {
+      "q": 45.0,
+      "track": 0,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 45.0,
+      "track": 0,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 45.0,
+      "track": 0,
+      "scope": "free_span",
+      "overlap_mm3": 0.002522942281391612,
+      "intersection_bbox_child_local_mm": [
+        [
+          -4.300000108460071,
+          -7.172329164238939,
+          -4.689134701127865
+        ],
+        [
+          -3.6999998895065582,
+          -6.481667637678965,
+          -3.543683829247542
+        ]
+      ]
+    },
+    {
+      "q": 45.0,
+      "track": 1,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 45.0,
+      "track": 1,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 45.0,
+      "track": 1,
+      "scope": "free_span",
+      "overlap_mm3": 0.002522960193439021,
+      "intersection_bbox_child_local_mm": [
+        [
+          3.699999896381218,
+          3.543683813583778,
+          6.481667570291149
+        ],
+        [
+          4.300000108182352,
+          4.689134774515975,
+          7.172329177144451
+        ]
+      ]
+    },
+    {
+      "q": 85.0,
+      "track": 0,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 85.0,
+      "track": 0,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 85.0,
+      "track": 0,
+      "scope": "free_span",
+      "overlap_mm3": 0.0025229423457532405,
+      "intersection_bbox_child_local_mm": [
+        [
+          -4.30000010846007,
+          -7.9793632761649365,
+          0.574250132169207
+        ],
+        [
+          -3.6999998895065573,
+          -7.77215884489986,
+          1.895664974040922
+        ]
+      ]
+    },
+    {
+      "q": 85.0,
+      "track": 1,
+      "scope": "joint_wrap",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 85.0,
+      "track": 1,
+      "scope": "joint_tail",
+      "overlap_mm3": 0,
+      "intersection_bbox_child_local_mm": null
+    },
+    {
+      "q": 85.0,
+      "track": 1,
+      "scope": "free_span",
+      "overlap_mm3": 0.4327370299150431,
+      "intersection_bbox_child_local_mm": [
+        [
+          3.699999891264541,
+          6.987505843067667,
+          1.9633005884384283
+        ],
+        [
+          4.30000010724037,
+          7.750000111161792,
+          6.3000001000029116
+        ]
+      ]
+    }
+  ],
+  "baseline_checks_inherited_from": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\probe03\\report.json",
+  "active_candidate": {
+    "id": "outer_12",
+    "cutters": [
+      {
+        "track_x_mm": -4.0,
+        "width_mm": 0.8,
+        "inner_radius_mm": 7.4,
+        "outer_radius_mm": 12.0,
+        "angular_interval_deg": [
+          0.0,
+          -200.0
+        ],
+        "angle_reference": "0 is +Y, positive toward +Z",
+        "radial_extra_relief_mm": 0.0,
+        "volume_mm3": 124.60254595837914,
+        "bbox_local_mm": [
+          [
+            -4.4,
+            -12.0,
+            -11.999999999999998
+          ],
+          [
+            -3.6000000000000005,
+            12.0,
+            4.104241719908024
+          ]
+        ]
+      },
+      {
+        "track_x_mm": 4.0,
+        "width_mm": 0.8,
+        "inner_radius_mm": 7.4,
+        "outer_radius_mm": 12.0,
+        "angular_interval_deg": [
+          0.0,
+          180.0
+        ],
+        "angle_reference": "0 is +Y, positive toward +Z",
+        "radial_extra_relief_mm": 0.0,
+        "volume_mm3": 112.1422913625412,
+        "bbox_local_mm": [
+          [
+            3.6,
+            -12.000000000000002,
+            -1.9721522630525295e-31
+          ],
+          [
+            4.4,
+            12.0,
+            11.999999999999998
+          ]
+        ]
+      }
+    ],
+    "original_intersection_coverage": [
+      {
+        "q": -20.0,
+        "track": 0,
+        "scope": "free_span",
+        "overlap_mm3": 0.0025229394061572616,
+        "intersection_bbox_child_local_mm": [
+          [
+            -4.3000001080501695,
+            0.18051099503557225,
+            -7.997963324758628
+          ],
+          [
+            -3.6999998895065556,
+            1.5105281348584805,
+            -7.841679533491366
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": -20.0,
+        "track": 1,
+        "scope": "free_span",
+        "overlap_mm3": 0.002523000950863983,
+        "intersection_bbox_child_local_mm": [
+          [
+            3.6999998893129766,
+            -5.002712239464408,
+            6.242825480925528
+          ],
+          [
+            4.3000001087856266,
+            -3.892671930585472,
+            6.989070459484665
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": -15.0,
+        "track": 0,
+        "scope": "free_span",
+        "overlap_mm3": 0.0025229424968084466,
+        "intersection_bbox_child_local_mm": [
+          [
+            -4.300000106106146,
+            -0.5172443271633255,
+            -8.00000009940482
+          ],
+          [
+            -3.699999889506558,
+            0.8200759020946364,
+            -7.920851337202137
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": -15.0,
+        "track": 1,
+        "scope": "free_span",
+        "overlap_mm3": 0.0025229766885898064,
+        "intersection_bbox_child_local_mm": [
+          [
+            3.6999998893129757,
+            -4.43957731887381,
+            6.655084732410393
+          ],
+          [
+            4.3000001102689,
+            -3.2687215228291495,
+            7.301743657964265
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": 0.0,
+        "track": 0,
+        "scope": "free_span",
+        "overlap_mm3": 0.002522942335547011,
+        "intersection_bbox_child_local_mm": [
+          [
+            -4.300000108460071,
+            -2.5658396901516776,
+            -7.8989501849845105
+          ],
+          [
+            -3.699999889506559,
+            -1.267512255777745,
+            -7.577365352163282
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": 0.0,
+        "track": 1,
+        "scope": "free_span",
+        "overlap_mm3": 0.0025229610180265583,
+        "intersection_bbox_child_local_mm": [
+          [
+            3.699999889312976,
+            -2.5658396913217594,
+            7.577365351962125
+          ],
+          [
+            4.3000001080971995,
+            -1.2675122587322143,
+            7.898950184475261
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": 45.0,
+        "track": 0,
+        "scope": "free_span",
+        "overlap_mm3": 0.002522942281391612,
+        "intersection_bbox_child_local_mm": [
+          [
+            -4.300000108460071,
+            -7.172329164238939,
+            -4.689134701127865
+          ],
+          [
+            -3.6999998895065582,
+            -6.481667637678965,
+            -3.543683829247542
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": 45.0,
+        "track": 1,
+        "scope": "free_span",
+        "overlap_mm3": 0.002522960193439021,
+        "intersection_bbox_child_local_mm": [
+          [
+            3.699999896381218,
+            3.543683813583778,
+            6.481667570291149
+          ],
+          [
+            4.300000108182352,
+            4.689134774515975,
+            7.172329177144451
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": 85.0,
+        "track": 0,
+        "scope": "free_span",
+        "overlap_mm3": 0.0025229423457532405,
+        "intersection_bbox_child_local_mm": [
+          [
+            -4.30000010846007,
+            -7.9793632761649365,
+            0.574250132169207
+          ],
+          [
+            -3.6999998895065573,
+            -7.77215884489986,
+            1.895664974040922
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      },
+      {
+        "q": 85.0,
+        "track": 1,
+        "scope": "free_span",
+        "overlap_mm3": 0.4327370299150431,
+        "intersection_bbox_child_local_mm": [
+          [
+            3.699999891264541,
+            6.987505843067667,
+            1.9633005884384283
+          ],
+          [
+            4.30000010724037,
+            7.750000111161792,
+            6.3000001000029116
+          ]
+        ],
+        "outside_proposed_cut_mm3": 0
+      }
+    ],
+    "status": "cutters_ready_before_child_subtraction"
+  },
+  "build_order_journal": [
+    {
+      "stage": "boss_union",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8722.498249701905,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "early_exit_after_boss_before_torus",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8682.954960752631,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_0",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8675.249011973683,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8675.027075870517,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_2",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8666.318708654606,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_3",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8665.16855088763,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_4",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8651.653503094089,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_5",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8584.647055964631,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_6",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8571.131980016195,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "cut_7",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8504.751743965122,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "clamp_relief",
+      "removed_mm3": 98.2531378164822,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8406.49860614864,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "lower_screw_head_relief",
+      "removed_mm3": 1.925591566350704,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8404.573014582289,
+      "bounded": true,
+      "positive_solids": true
+    },
+    {
+      "stage": "upper_screw_entry_window",
+      "removed_mm3": 161.42395734241836,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8243.14905723987,
+      "bounded": true,
+      "positive_solids": true
+    }
+  ],
+  "candidate_export_before_comparison": {
+    "path": "D:\\Codex-work\\robot-hand-workspace\\work\\thumb_ip_drive_v1\\exit_relief\\build_order_flat_tail\\result01\\outer_12\\child_exit_relief.step",
+    "sha256": "fc275756a9a14c708194f8180f6a4715712bc293b78b88f6262f75de57995457",
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 8243.14905723987,
+    "bounded": true,
+    "positive_solids": true
+  },
+  "selected_candidate": "outer_12",
+  "candidate_for_root_local_review": "outer_12",
+  "limitations": [
+    "Saved child plus nominal finite 0.6 mm rope only, at five declared angles; not a continuous sweep or whole-hand inspection.",
+    "Protected regions and actual seats are reported separately; a failed Boolean comparison is not a preservation pass. No stress, fatigue, surface finish or minimum-wall qualification is made.",
+    "Open U channels remove an outer retaining lip. Tension, lateral escape, slack-line behaviour and rope wear are not verified.",
+    "The nominal R7.4 channel bottom and R7.7 working cord centre are retained; contact pressure, seating and friction are not inferred from the material intersection test.",
+    "Cut ends are sharp nominal geometry; practical chamfers/radii and fabrication tool access remain undeveloped.",
+    "Tail-side boss material is checked in the stated two local rectangular protection zones; clamp force and rope compression remain unmeasured.",
+    "The clamp entrance still has the nominal0.6 mm floor-to-plate gap. Physical slip, rope deformation, preload and edge finishing are not validated."
+  ],
+  "output_sha256": {
+    "original_child_local.step": "ba5af53b4aa724b854accdcf9e65f6414736e779c3cf31ba7ed8866c18cb3c2e",
+    "outer_12/child_exit_relief.step": "fc275756a9a14c708194f8180f6a4715712bc293b78b88f6262f75de57995457",
+    "outer_12/cutter_x-4.step": "efbeef0f43ea1432e68b62b8ec3ee1c4cd975447d8169bf809674d2cd2b5d006",
+    "outer_12/cutter_x4.step": "7b2a50d3373fcfba155c05e406fde2fe83799494fe12453003e70c6e03f1e5bf"
+  },
+  "input_hash_guard": {
+    "passed": true,
+    "changed": []
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "file": "hnx330_n101_official_product.html",
+    "url": "https://en.robotis.com/shop_en/item.php?it_id=903-0314-000",
+    "retrieved_utc": "2026-10-25T11:07:00.5992878Z",
+    "bytes": 56075,
+    "sha256": "9b0e799b8b15f3166821ec9429e8fa57ada8b6684db33c09c79b2f5e0cc2c351"
+  },
+  {
+    "file": "xl330_m077_official_product.html",
+    "url": "https://en.robotis.com/shop_en/item.php?it_id=902-0162-000",
+    "retrieved_utc": "2026-10-25T11:07:01.0480197Z",
+    "bytes": 78499,
+    "sha256": "f5ac629719fc52e2eab095962a9abc8daf49bd464a81b79c7ee7dac0d92c8222"
+  },
+  {
+    "file": "fpx330_h101_official_product.html",
+    "url": "https://en.robotis.com/shop_en/item.php?it_id=903-0302-000",
+    "retrieved_utc": "2026-10-25T11:07:01.4456985Z",
+    "bytes": 61670,
+    "sha256": "952f22a8ae9d4d340f35335ee4d92a7036d8adad51feb1bdc6f98b7a819b4ad4"
+  },
+  {
+    "file": "fpx330_h101_official_japan.html",
+    "url": "https://e-shop.robotis.co.jp/product.php?id=437",
+    "retrieved_utc": "2026-10-25T11:07:02.2114856Z",
+    "bytes": 76977,
+    "sha256": "e49cfc393f0812b0c19e32cfa16d173ad1898862086c0085c6dc12c4f7159012"
+  },
+  {
+    "file": "fpx330_h101_official_assembly.png",
+    "url": "https://en.robotis.com/data/item/explain/1893207946_5f761778_xl330_h101_ECA084EAB09CEB8F84.png",
+    "retrieved_utc": "2026-10-25T11:07:02.3788477Z",
+    "bytes": 579620,
+    "sha256": "2739edaf926a354b53f998fd1ecba51dc77a2fb8b8c9e1ab2fa4713b465b9b06"
+  },
+  {
+    "file": "x330_official_horn_screw.png",
+    "url": "https://emanual.robotis.com/assets/images/dxl/x/x330/x330_horn_screw.png",
+    "retrieved_utc": "2026-10-25T11:07:18.6387886Z",
+    "bytes": 57560,
+    "sha256": "0b25105a72e0506a55806438dee7c831530580e0257dfddf0e4000c6021c06f7"
+  },
+  {
+    "file": "robotis_us_nuts_screws.html",
+    "url": "https://robotis.us/collections/nuts-screws",
+    "retrieved_utc": "2026-10-25T11:07:19.1661632Z",
+    "bytes": 636620,
+    "sha256": "4b12f65fe44bac404ba13b92e3f22a5de8c98aae136b83d39b35887bbe8004c0"
+  },
+  {
+    "file": "bns30_official_product.html",
+    "url": "https://robotis.us/products/bioloid-premium-bolt-nut-set-bns-30",
+    "retrieved_utc": "2026-10-25T11:07:19.9361065Z",
+    "bytes": 508006,
+    "sha256": "d6bd4ae57b7a16a82dcc6ceb9b03c1c458dd71a177faed546efa228dffbe5bcb"
+  },
+  {
+    "file": "bns10_official_product.html",
+    "url": "https://robotis.us/products/bolt-nut-set-bns-10",
+    "retrieved_utc": "2026-10-25T11:07:20.8573881Z",
+    "bytes": 513965,
+    "sha256": "7ed0bf7fe56a6dc6541247788dbba856bf41b8536761159974dfde4d15782b47"
+  },
+  {
+    "file": "FPX330-H101.pdf",
+    "official_landing_url": "https://www.robotis.com/service/download.php?no=2016",
+    "url": "https://www.dropbox.com/scl/fi/sh1c6jnlwfzivh3cou5b0/fpx330-h101.pdf?rlkey=d6q47aq7djfc0i3g6fd8nlknc&dl=1",
+    "retrieved_utc": "2026-10-25T11:07:56.8741710Z",
+    "bytes": 113037,
+    "sha256": "3a2fea7f8002adc2e7e76b3f170a72aec9309e2bf5f26ee63b769980c34e775a"
+  },
+  {
+    "file": "FPX330-H101.step",
+    "official_landing_url": "https://www.robotis.com/service/download.php?no=2017",
+    "url": "https://www.dropbox.com/scl/fi/tl2hh62ikesv59918pase/fpx330-h101.stp?rlkey=4d1i8afwgeeklycky22xn96y3&dl=1",
+    "retrieved_utc": "2026-10-25T11:07:59.1580445Z",
+    "bytes": 1134483,
+    "sha256": "c284cc3a0d420c3ac8096ab4c74e8b3e01ec3379e5d565b409a3fea654170a21"
+  }
+]

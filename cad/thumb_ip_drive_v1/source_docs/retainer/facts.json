@@ -1,0 +1,40 @@
+{
+  "schema": "thumb_ip_drive_retainer_research.v1",
+  "researched_date": "2026-10-25",
+  "requested_part": "BHS_M2_6X06_TAP_K",
+  "manufacturer": "ROBOTIS",
+  "confirmed_supply_package": {
+    "name": "FPX330-H101 4PCS SET",
+    "sku": "903-0302-000",
+    "listed_screw": "BHS M2.6x6 TAP",
+    "quantity": 8,
+    "published_use": "idler",
+    "url": "https://en.robotis.com/shop_en/item.php?it_id=903-0302-000",
+    "exact_variant_equivalence_verified": false,
+    "difference": "Official H101 drawing and Japanese table say BTS rather than BHS; K suffix absent. No equivalence declaration found."
+  },
+  "hnx330_package_central_screw_listed": false,
+  "xl330_package_spare_central_screw_listed": false,
+  "xl330_factory_central_screw_identity_verified": false,
+  "exact_standalone_sku_found": false,
+  "exact_screw_dimensioned_drawing_found": false,
+  "exact_screw_cad_found": false,
+  "central_retention_complete": false,
+  "unknowns": [
+    "BHS versus BTS identity and K suffix",
+    "Head diameter and height",
+    "Drive type and tool dimensions",
+    "Thread form/pitch and point geometry",
+    "Tolerance/material and tightening procedure",
+    "Metal horn retainer engagement and tool clearance"
+  ],
+  "legacy_screw_policy": "Do not shorten or rename the old M2.6x8 geometry as a precise M2.6x6 replacement",
+  "existing_reference": {
+    "file": "cad/thumb_ip_drive_v1/source_docs/hnx330_n101_assembly.png",
+    "sha256": "6b0d79ef9ae1ba04a15c03f13ec98f8c32afd1b3c66416007cb2a223f9258c5a"
+  },
+  "frozen_inputs_unchanged": {
+    "cad/thumb_ip_drive_v1/motor_adapter.py": "ca10c6c49689af7bf693db92fef1abc0d6808c34c074c54f22be53ed5a63626f",
+    "cad/thumb_ip_drive_v1/source_docs/provenance.json": "bfa7eda3d6ae154a1b00220d279cb62aa224f215c4e06db74fb09ab88efb4ee5"
+  }
+}

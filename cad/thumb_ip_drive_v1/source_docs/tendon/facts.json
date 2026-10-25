@@ -1,0 +1,52 @@
+{
+  "schema": "thumb_ip_drive.tendon_source_facts.v1",
+  "status": "candidate_reference_only",
+  "retrieved_on": "2026-10-25",
+  "sources": {
+    "catalogue": {
+      "url": "https://www.liros.com/userdata/files/LIROS_rope_catalogue_2026_2027_eng___low_res.pdf",
+      "file": "liros_catalogue_2026_2027_eng.pdf",
+      "bytes": 23714552,
+      "sha256": "71075b0cbfb09f96629a247a072ddca03fabcb831280a10e701f209829d49939",
+      "printed_page": 53,
+      "pdf_page_index": 52,
+      "section": "LIROS DC",
+      "verification": "Relevant page rendered and visually read; table header and DC 000-0060 row checked. The separate DC Pro / SK99 table is not this candidate."
+    },
+    "general_guidance": {
+      "url": "https://www.liros.com/catalog/en/support/technical-info/",
+      "file": "liros_technical_info.html",
+      "bytes": 65861,
+      "sha256": "8583c53c15486477ba914b5863e6d27e0fbc7edc3e2f64e4d48e2c3663dc041b",
+      "section": "Safety instructions / Usage instructions"
+    }
+  },
+  "catalogue_facts": {
+    "manufacturer": "LIROS",
+    "reference_as_printed": "DC 000-0060",
+    "normalized_reference": "DC000-0060",
+    "approximate_diameter_mm": 0.60,
+    "diameter_qualifier": "Approximate catalogue diameter; no diameter tolerance or compressed cross-section supplied.",
+    "material": "Pre-stretched, coated Dyneema SK75",
+    "family_construction": "12- and 16-plaited; this row does not assign a specific braid count.",
+    "breaking_strength_as_published": {"value": 60, "unit": "kg", "column_heading": "Breaking strength kg"},
+    "breaking_strength_is_working_load": false,
+    "converted_force_N": null
+  },
+  "general_bending_guidance": {
+    "relation": "D/d > 10",
+    "D_definition": "Sheave diameter",
+    "d_definition": "Rope diameter",
+    "scope": "General LIROS redirection guidance, dependent on material; not a DC60 robotic-tendon fatigue qualification.",
+    "other_material_note": "The same source gives at least 15 for Vectran and aramids; that separate note is not substituted for SK75."
+  },
+  "unverified": [
+    "Clamp grip, local crushing/cutting, slip and pull-out strength for the proposed joint and motor terminations.",
+    "Friction and wear at actual guides, grooves and crossings.",
+    "Axial stiffness, creep, hysteresis, pretension relaxation and compressed diameter in this assembly.",
+    "Repeated bending lifetime, environmental effects and performance at the proposed speed and load.",
+    "Suitable working tension, safety factor and procurement suitability; the 60 kg breaking entry is not an approved load."
+  ],
+  "purchase_recommendation_confirmed": false,
+  "load_or_life_approved": false
+}

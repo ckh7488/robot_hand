@@ -1,0 +1,94 @@
+{
+  "schema": "thumb_ip_drive_vendor_sources.v1",
+  "scope": "Unmodified official reference PDF/STEP; not manufacturing approval",
+  "files": [
+    {
+      "sha256": "41b69529bcc290f8ee3e3d7ae1270c15cccffb39b2d2e5439cd6ae618b520a36",
+      "bytes": 196067,
+      "file": "HNX330-N101.pdf",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://www.dropbox.com/scl/fi/aw1bmzftsohk0iah1w9ue/HNX330-N101.pdf?rlkey=ega0yp5ufs5cc6p1fb2e8kabu&dl=1",
+      "official_landing_url": "https://www.robotis.com/service/download.php?no=2163"
+    },
+    {
+      "sha256": "ba3b0cb98bc66ee69d3c57891c3c169f54e2e270ffc235427220c1d5dfa6b692",
+      "bytes": 216163,
+      "file": "HNX330-N101.step",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://www.dropbox.com/scl/fi/wt1935y66yu0mjaholq6z/HNX330-N101.stp?rlkey=58x68we0y2uvm4wwjuoxq42rm&dl=1",
+      "official_landing_url": "https://www.robotis.com/service/download.php?no=2164"
+    },
+    {
+      "sha256": "948b707cb26a64501c03fc45b1a9557b69a554dd5d6934f02e8e6f86cf2b46c2",
+      "bytes": 149731,
+      "file": "XL330.pdf",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://www.dropbox.com/s/gxgye7wt5sbt4i4/XL,XC-330.pdf?dl=1",
+      "official_landing_url": "https://www.robotis.com/service/download.php?no=1986"
+    },
+    {
+      "sha256": "e2f7b060801a1d6a21f23bca2554f29a402f7d73b8498cb201c9e6adf3139eb6",
+      "bytes": 791238,
+      "file": "XL330.stp",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://www.dropbox.com/s/qlzmp8mlvzrxmzu/XL,XC-330.stp?dl=1",
+      "official_landing_url": "https://www.robotis.com/service/download.php?no=1987"
+    },
+    {
+      "sha256": "7afb735ac298f6cf7e9c20ccf9c7a28979cde99af48a11903becc9c06047a1bf",
+      "bytes": 129422,
+      "file": "XL330_XC330_horn.pdf",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://www.dropbox.com/s/1ibpv6gf61p9d9b/DC15_A01_HORN2.pdf?dl=1",
+      "official_landing_url": "https://www.robotis.com/service/download.php?no=2129"
+    },
+    {
+      "sha256": "6cdecfd2c32984188fbc8e3406e2e06a968790b70d632ca2ab398e2749af4ffd",
+      "bytes": 427725,
+      "file": "XL330_XC330_horn.step",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://www.dropbox.com/s/3xfjgxdnphxb237/DC15_A01_HORN2.stp?dl=1",
+      "official_landing_url": "https://www.robotis.com/service/download.php?no=2130"
+    },
+    {
+      "file": "hnx330_n101_assembly.png",
+      "bytes": 77473,
+      "sha256": "6b0d79ef9ae1ba04a15c03f13ec98f8c32afd1b3c66416007cb2a223f9258c5a",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://cdn.shopify.com/s/files/1/0770/5634/4204/files/1893207946_2866853d_20230714_143416_536946c5-a0c8-4f69-9973-152abb463eff.png?v=1785998716",
+      "official_landing_url": "https://en.robotis.com/shop_en/item.php?it_id=903-0314-000"
+    },
+    {
+      "file": "hnx330_n101_product.html",
+      "bytes": 56075,
+      "sha256": "c32bd3e2cd32f8e0ce207a591443035815b67614647882373c152e6fd77636a3",
+      "retrieved_date": "2026-10-25",
+      "resolved_download_url": "https://en.robotis.com/shop_en/item.php?it_id=903-0314-000",
+      "official_landing_url": "https://en.robotis.com/shop_en/item.php?it_id=903-0314-000"
+    },
+    {
+      "official_landing_url": "https://www.accu.co.uk/flat-point-set-screws/4495-SSF-M2-3-A2",
+      "file": "motor_fasteners/accu_SSF-M2-3-A2.pdf",
+      "sha256": "bf7a55e4a0a81ffd615639c60a109347e06d9ee29221351a99889f008a10c617",
+      "bytes": 628486,
+      "resolved_download_url": "https://www.accu.co.uk/api/product-datasheet?id=4495",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "official_landing_url": "https://www.accu.co.uk/metric-cap-head-screws/2774-SSC-M2-16-A2",
+      "file": "motor_fasteners/accu_SSC-M2-16-A2.pdf",
+      "sha256": "30791cced8c1e6747c29281e1fdf48913d103708df89ffeee2456592e69a1cab",
+      "bytes": 460662,
+      "resolved_download_url": "https://www.accu.co.uk/api/product-datasheet?id=2774",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "official_landing_url": "see nested primary sources",
+      "file": "motor_fasteners/facts.json",
+      "sha256": "ed337fc28a03ecc45d7faec0f957b4267d392334998e18b6ed8c45089669c158",
+      "bytes": 1965,
+      "resolved_download_url": "local factual transcription",
+      "retrieved_date": "2026-10-25"
+    }
+  ]
+}
