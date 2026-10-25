@@ -1,0 +1,10 @@
+{
+  "schema": "thumb_wrist_profile.v1",
+  "base_candidate": "cad/gesture_hand_v3",
+  "target_thumb_deg": [0, 0, 0, -15],
+  "exploratory_thumb_ip_range_deg": [-20, 85],
+  "maximum_sample_step_deg": 5,
+  "finger_closing_phase_end": 0.8,
+  "intent": "Keep the open-hand thumb base, opposition and MCP fixed; close four fingers using the accepted finger trajectory, then bend only the thumb tip toward the wrist.",
+  "status": "candidate_geometry_and_range_check_not_hardware_approval"
+}
