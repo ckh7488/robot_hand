@@ -1,0 +1,251 @@
+{
+  "target_commit": "faa5b3311b9f909ec771c934523d35c287f162ea",
+  "passed": true,
+  "meaning": "Core findings reproduced, including mechanical collisions. No whole-hand release.",
+  "whole_hand_motion_approved": false,
+  "independent_audit": false,
+  "clean_snapshot_method": "Exact committed blobs exported by git cat-file; all manifest inputs hashed before and after replay.",
+  "guarded_files": 787,
+  "source_manifest_sha256": "9def942b358ab80911ea1ef3741a72b1152e4699a7b23f206924232fb1042cb5",
+  "exact_replay_sha256": "ed49217ad56289e14b27095a0b7d4ba5ac58df8c106ab18ac890b38724ddef68",
+  "baseline_core_cases": 9,
+  "latest_hand_core_cases": 5,
+  "crossed_target": "margin_cross_1",
+  "crossed_path_replayed": false,
+  "selected_cross_target_gap": {
+    "goal_mm": 0.5,
+    "meets_half_mm_goal": true,
+    "nominal_gap_lower_bound_mm": 0.5,
+    "all_cross_digit_pairs": 5041,
+    "exact_near_results": [
+      {
+        "pair": [
+          "index_segment1_segment_shell",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 1.925896530980157
+      },
+      {
+        "pair": [
+          "index_segment1_distal_left_bushing",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 21.19928885581033
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 2.9325438274793068
+      },
+      {
+        "pair": [
+          "index_segment2_segment_shell",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 18.67641382592971
+      },
+      {
+        "pair": [
+          "index_segment2_dark_faceplate",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 20.576032000227272
+      },
+      {
+        "pair": [
+          "index_joint_pin_1",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 21.678141568119802
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 6.654791594517494
+      },
+      {
+        "pair": [
+          "index_root_spread_carrier",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 16.913407348468837
+      },
+      {
+        "pair": [
+          "index_root_flex_pin",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 15.474633334485103
+      },
+      {
+        "pair": [
+          "index_flex_left_pin_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 17.27339127232047
+      },
+      {
+        "pair": [
+          "index_root_proximal_left_bushing",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 22.07411530990384
+      },
+      {
+        "pair": [
+          "index_root_proximal_right_bushing",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 30.460676218628983
+      },
+      {
+        "pair": [
+          "index_flex_left_thrust_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 21.595632218591778
+      },
+      {
+        "pair": [
+          "index_distal1_child_left_bushing",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 21.97156276236073
+      },
+      {
+        "pair": [
+          "index_distal1_child_right_bushing",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 25.019204028534773
+      },
+      {
+        "pair": [
+          "index_distal1_left_pin_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 21.865865319526087
+      },
+      {
+        "pair": [
+          "index_distal1_left_thrust_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 21.594842121933944
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate_clamp1_bolt",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 13.370788729689544
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate_clamp1_nut",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 12.51431483528952
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate_clamp1_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 12.932868786299005
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate_clamp2_bolt",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 10.226534537963598
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate_clamp2_nut",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 11.20036040168175
+      },
+      {
+        "pair": [
+          "index_segment1_dark_faceplate_clamp2_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 10.027871448534361
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition_clamp1_bolt",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 19.398172395967226
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition_clamp1_nut",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 19.881353392715237
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition_clamp1_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 19.17853706117197
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition_clamp2_bolt",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 15.916245185778234
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition_clamp2_nut",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 15.840912160760432
+      },
+      {
+        "pair": [
+          "index_segment1_palmar_transition_clamp2_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 15.517157197368853
+      },
+      {
+        "pair": [
+          "index_segment2_dark_faceplate_clamp1_bolt",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 22.621597910517337
+      },
+      {
+        "pair": [
+          "index_segment2_dark_faceplate_clamp1_nut",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 26.16262165502477
+      },
+      {
+        "pair": [
+          "index_segment2_dark_faceplate_clamp1_washer",
+          "middle_segment1_segment_shell"
+        ],
+        "gap_mm": 23.35375744543262
+      }
+    ],
+    "scope": "Selected target only; no path clearance replay"
+  },
+  "full72_pose_suite_replayed": false,
+  "full108_transition_suite_replayed": false,
+  "preserved_preexisting_dirty_files": 187
+}
