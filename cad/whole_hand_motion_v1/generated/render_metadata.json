@@ -1,0 +1,131 @@
+{
+  "audit_sha256": "93ea7f4dd8a8bca1215530352a1af05384e8ce7b86de79a1a921801e9da4ce31",
+  "panels": [
+    {
+      "id": "gesture_thumb_up",
+      "red_parts": [],
+      "bounds": [
+        89,
+        268,
+        510,
+        567
+      ]
+    },
+    {
+      "id": "four_fingers_hook",
+      "red_parts": [],
+      "bounds": [
+        118,
+        158,
+        500,
+        567
+      ]
+    },
+    {
+      "id": "index_ordinary_extension_mcp",
+      "red_parts": [
+        "Palm_tapered_chassis",
+        "index_root_fixed_housing",
+        "index_root_spread_carrier",
+        "index_segment1_segment_shell"
+      ],
+      "bounds": [
+        137,
+        32,
+        500,
+        567
+      ]
+    },
+    {
+      "id": "four_fingers_extension",
+      "red_parts": [
+        "Palm_tapered_chassis",
+        "index_root_fixed_housing",
+        "index_root_spread_carrier",
+        "index_segment1_segment_shell",
+        "index_spread_upper_bushing",
+        "little_root_fixed_housing",
+        "little_root_spread_carrier",
+        "little_segment1_segment_shell",
+        "little_spread_upper_bushing",
+        "middle_root_fixed_housing",
+        "middle_root_spread_carrier",
+        "middle_segment1_segment_shell",
+        "middle_spread_upper_bushing",
+        "ring_root_fixed_housing",
+        "ring_root_spread_carrier",
+        "ring_segment1_segment_shell",
+        "ring_spread_upper_bushing"
+      ],
+      "bounds": [
+        137,
+        118,
+        500,
+        567
+      ]
+    },
+    {
+      "id": "index_pip_+135",
+      "red_parts": [
+        "index_segment1_segment_shell",
+        "index_segment2_dark_faceplate_clamp2_bolt"
+      ],
+      "bounds": [
+        137,
+        32,
+        500,
+        567
+      ]
+    },
+    {
+      "id": "four_fingers_curl",
+      "red_parts": [
+        "Palm_shaped_front_cover",
+        "little_segment3_rounded_tip_cap",
+        "little_segment3_rounded_tip_cap_clamp1_bolt",
+        "little_segment3_rounded_tip_cap_clamp1_nut",
+        "little_segment3_rounded_tip_cap_clamp2_bolt",
+        "little_segment3_rounded_tip_cap_clamp2_nut",
+        "little_segment3_tip_core"
+      ],
+      "bounds": [
+        93,
+        256,
+        500,
+        567
+      ]
+    },
+    {
+      "detail_id": "index_ordinary_extension_mcp",
+      "parts": [
+        "Palm_tapered_chassis",
+        "index_segment1_segment_shell"
+      ],
+      "overlap_mm3": 362.16555280563176
+    },
+    {
+      "detail_id": "four_fingers_extension",
+      "parts": [
+        "Palm_tapered_chassis",
+        "little_segment1_segment_shell"
+      ],
+      "overlap_mm3": 494.23160825793116
+    },
+    {
+      "detail_id": "index_pip_+135",
+      "parts": [
+        "index_segment1_segment_shell",
+        "index_segment2_dark_faceplate_clamp2_bolt"
+      ],
+      "overlap_mm3": 1.8665259033106212
+    },
+    {
+      "detail_id": "four_fingers_curl",
+      "parts": [
+        "Palm_shaped_front_cover",
+        "little_segment3_rounded_tip_cap"
+      ],
+      "overlap_mm3": 496.5546540274099
+    }
+  ]
+}

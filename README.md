@@ -6,19 +6,21 @@
 
 목표는 **로봇 자체의 추종 지연 50ms 이하, 정해진 시험 범위의 최대 지연 100ms 이하**입니다. 로봇 제어부가 목표 각도를 받은 뒤 실제 관절이 따라오는 과정이 대상입니다. 카메라·인식·장갑의 입력 지연은 이번 평가에서 제외합니다. 추종 지연은 90° 회전 전체를 끝내는 시간과 다릅니다.
 
-![수용한 손 모양을 유지한 엄지 구동 후보](cad/thumb_ip_drive_v1/generated/hand_candidate.png)
+![수용한 손 모양과 최신 엄지척](cad/manufacturing_v2/generated/whole_hand.png)
 
-*현재 후보의 편 손과 최신 엄지척입니다. 손 비율·길이·관절축을 유지하면서 엄지 끝마디에 두 줄 고정부와 조립 창을 추가했습니다. 엄지는 펼친 위치를 유지한 채 끝마디만 팔목 쪽으로15° 젖힙니다. [현재 구동·제작 검토](cad/thumb_ip_drive_v1/README.md) · [수용한 외형 기준](cad/accepted_form_v1/README.md)*
+*수용한 손 비율과 최신 엄지척입니다. 엄지는 펼친 위치를 유지한 채 끝마디만 팔목 쪽으로15° 젖힙니다. 이 두 자세가 보인다고 전체 가동 범위가 확보된 것은 아닙니다. [수용한 외형 기준](cad/accepted_form_v1/README.md) · [손 전체 운동 검사](cad/whole_hand_motion_v1/README.md)*
 
 [엄지 줄 고정부·모터 모듈 확대](cad/thumb_ip_drive_v1/generated/drive_details.png) · [현재 부품 STEP 목록](cad/thumb_ip_drive_v1/generated/scene.json) · [이전 제작 후보 전체 STEP](cad/manufacturing_v2/generated/hand.step) · [엄지 자세의 이전 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif)
 
-현재는 **실제로 제작하고 조립할 수 있는 CAD**를 만드는 단계입니다. 최종 위치의 겹침뿐 아니라 부품 삽입 경로·공구 접근·조립 순서·공차를 함께 확인합니다. 원위 관절은 원형 자유 회전 핀으로 바꾸었으며, 이후 구동 토크는 움직이는 링크나 풀리에 연결합니다.
+현재는 **손 전체가 사람다운 범위에서 실제로 움직일 수 있도록 CAD를 다듬는 단계**입니다. 359부품 제조 후보와 이후 엄지 구동부를 포함한364부품 후보의 범위를 넓혀 검사하니, 네 손가락 뿌리를 뒤로20° 젖히는 동작에서도 손가락 몸체와 받침·손바닥 프레임의 간섭이 확인되었습니다. 기존 대표 손짓의 끝자세 통과만으로 전체 운동을 승인할 수 없습니다. [발견된 문제와 검사 범위](cad/whole_hand_motion_v1/README.md)
 
-**현재 개발 범위:** 기존359부품 중 엄지 링크2개를 수정하고 고정판·나사·너트5개를 추가한364부품입니다. 손 밖의 별도 모터 모듈과 함께 저장 CAD의 간섭·줄 경로와 국부 조립을 검사합니다. 나사 머리가 들어가는 작은 창과 선조립 순서도 형상에 반영했습니다. 중앙 혼 고정나사, 예압·장력 조절과 완성 시험대는 남아 있으며 손 전체 모터 배치가 완성된 상태는 아닙니다. [검사 결과와 미완료 항목](cad/thumb_ip_drive_v1/README.md)
+**우선순위는 전체 손의 간섭 수정 → 운동 경로·여유 확인 → 조립성 → 구동 통합입니다.** 손 비율·길이·관절축을 보존하는 국부 수정을 우선 검토하며, 간섭을 숨기기 위해 필요한 운동 범위를 줄이지 않습니다. 추가 여유는 각도5°와 비접촉 외장 간격0.5mm를 설계 목표로 삼되, 아직 확보한 값은 아닙니다. [운동 요구사항](cad/whole_hand_motion_v1/REQUIREMENTS.md)
+
+엄지의 [두 줄 고정부 연구](cad/thumb_ip_drive_v1/README.md)와 [별도 장력 조절 시험대 CAD](cad/thumb_ip_tension_v1/README.md)는 보존합니다. 이 단품 연구로 전체 손의 간섭·조립·구동 문제가 해결된 것은 아니며, 손 전체의 모터·줄·배선 통합과 실물 시험은 남아 있습니다.
 
 이전 제작 후보에서는 저장 CAD359개와 전체 STEP 재수입 대조, 손가락별 삽입·공구 접근50건, 최신 엄지척을 포함한10개 정적 자세와 한 정방향 경로48표본을 확인했습니다. 손 전체 조립 뒤에는 일부 핀·체결·공구 경로가 막혀 손가락 모듈 선조립이 필요합니다. 그때 남은 공차·유격·강도 미검증 항목은 이번 후보에서도 해결되지 않았습니다. [이전 검사 범위](cad/manufacturing_v2/README.md)
 
-이전 [엄지 후보의 경로 기록](cad/thumb_wrist_v1/README.md), [9개 끝자세](cad/gesture_hand_v3/generated/gestures_oblique.png), GESTURE002의 세 정방향 경로228표본도 보존합니다. 현재 후보는 최신 엄지 경로48표본을 새로 검사했으며, 이전 형상의 나머지 전환 결과를 자동 승계하지 않습니다. GIF 재생시간은 실물 속도가 아니며 실제 모터·줄 구동과100ms 성능은 아직 검증하지 않았습니다.
+이전 [엄지 후보의 경로 기록](cad/thumb_wrist_v1/README.md), [9개 끝자세](cad/gesture_hand_v3/generated/gestures_oblique.png), GESTURE002의 세 정방향 경로228표본도 보존합니다. 엄지 구동 후보에서 확인한 최신 엄지 경로48표본은 이번의 넓힌 운동 범위에 자동 승계하지 않습니다. GIF 재생시간은 실물 속도가 아니며 실제 모터·줄 구동과100ms 성능은 아직 검증하지 않았습니다.
 
 > CAD와 시뮬레이션을 반복 개선하는 단계입니다. 제작 승인과 실제 하드웨어의 100ms 이하 성능 검증은 아직 완료하지 않았습니다.
 
@@ -45,6 +47,8 @@
 | --- | --- | --- |
 | 개발 기준 | [요구사항과 반복 순서](docs/REMOTE_DRIVE_PLAN.md) | 측정 경계, 설계 방향, 미확정 항목 |
 | 수용한 외형 | [FORM002](cad/accepted_form_v1/README.md) | 현재 손 비율·엄지·주먹의 시각 기준. 제조용 솔리드와 구분 |
+| 현재 우선 작업: 전체 손 운동 | [whole_hand_motion_v1](cad/whole_hand_motion_v1/README.md) | 359부품 제조 기준과 최신364부품 후보의 범위 확대 검사. 형상 수정·전체 가동 승인 전의 발견 자료 |
+| 별도 엄지 장력 시험대 | [thumb_ip_tension_v1](cad/thumb_ip_tension_v1/README.md) | 모터 이동/나사 조절/공구 접근의 단품 CAD 검사. 전체 손의 운동·구동 완료와 구분 |
 | 현재 엄지 구동 후보 | [thumb_ip_drive_v1](cad/thumb_ip_drive_v1/README.md) | 손364부품과 별도 모터 모듈. 실제 줄 고정·나사 삽입 창·열린 줄 홈, 제작·장력·성능은 검토 중 |
 | 원위 핀 제작 기준 | [manufacturing_v2](cad/manufacturing_v2/README.md) | 359부품. 원위 핀의 나사·규격 와셔 고정, 삽입과 양쪽 공구 접근, 자세·경로 표본 검사 |
 | 이전 핀 삽입 개선 | [manufacturing_v1](cad/manufacturing_v1/README.md) | 핀10개·부싱10개 수정으로 막힌 삽입 경로를 해결한349부품 기록 |
@@ -61,7 +65,7 @@
 | 진행 상황 | [PROGRESS.md](PROGRESS.md) | 회차별 변경·검사·다음 작업 |
 | 이전 직접 구동 구조 | [보존 브랜치](https://github.com/ckh7488/robot_hand/tree/archive/direct-drive-v13) | V9~V13 방향을 중단 상태로 보존 |
 
-이전 V9~V13 파일은 비교·감사 추적을 위해 main에도 보존합니다. 현재 외형·관절·주먹 기준은 accepted_form_v1(FORM002), 엄지 자세는 thumb_wrist_v1입니다. manufacturing_v2의 제작 구조 위에서 thumb_ip_drive_v1의 한 관절 구동을 개발합니다. manufacturing_v1, gesture_hand_v3와 form_candidate_v1, webcam_articulation_v1, articulation_drive_v2는 이전 단계이며 remote_drive_v1의 미완성 개선도 보존합니다. 변경한 부품과 새 운동 범위에는 과거 통과 판정을 자동 승계하지 않습니다. 출처·형상·상대 자세가 일치하는 불변 부품 쌍만 검사 보고서에 명시하여 승계합니다. V9의 [설계 입력](cad/modular_roots_v9/design.json)은 처음 외형의 출처입니다.
+이전 V9~V13 파일은 비교·감사 추적을 위해 main에도 보존합니다. 현재 외형·관절·주먹 기준은 accepted_form_v1(FORM002), 엄지 자세는 thumb_wrist_v1입니다. 지금은 manufacturing_v2의 제작 구조에서 손 전체 운동을 우선 검사하고, thumb_ip_drive_v1과 단품 시험대는 별도 구동 연구로 보존합니다. manufacturing_v1, gesture_hand_v3와 form_candidate_v1, webcam_articulation_v1, articulation_drive_v2는 이전 단계이며 remote_drive_v1의 미완성 개선도 보존합니다. 변경한 부품과 새 운동 범위에는 과거 통과 판정을 자동 승계하지 않습니다. 출처·형상·상대 자세가 일치하는 불변 부품 쌍만 검사 보고서에 명시하여 승계합니다. V9의 [설계 입력](cad/modular_roots_v9/design.json)은 처음 외형의 출처입니다.
 
 ## 성능 확인 방법
 
@@ -83,6 +87,8 @@
 
 수용한 손 비율과 팔목 쪽으로 끝마디를 젖힌 엄지 자세를 유지하면서 실제 제작·조립·구동이 가능한 CAD로 개선합니다. 완성 위치의 겹침뿐 아니라 부품을 끼우는 경로, 공구 접근, 조립 순서와 공차를 확인합니다. 아래 과제는 단계별로 수정·검사·저장하며, 실제 구동계가 들어가기 전에는 속도 통과를 주장하지 않습니다.
 
+지금은 [손 전체 운동 검사에서 발견한 뿌리 관절·손바닥·고정나사 간섭](cad/whole_hand_motion_v1/README.md)을 먼저 해결합니다. 단품 시험대의 후속 구동 작업보다 우선합니다.
+
 | 과제 | 확인할 내용 |
 | --- | --- |
 | 외형과 내부 배치 | 새 관절과 겹치는 기존 손바닥 모터를 손목·전완으로 옮길지 비교하고, 고정·정비 접근·후면 돌출을 함께 검토 |
@@ -101,6 +107,8 @@
 
 | 버전·날짜 | 주요 변경 | 기록 |
 | --- | --- | --- |
+| 전체 손 운동 재검토 · 2026-10-26 | 사람다운 운동과 여유 범위를 위한 검사 확대. 기존 끝자세 밖의 실제 간섭을 발견하여 전체 가동 미승인 상태를 명시 | [whole_hand_motion_v1](cad/whole_hand_motion_v1/README.md) |
+| 엄지 장력 시험대 · 2026-10-26 | 별도 시험대의 모터 이동·장력 조절·공구 접근 CAD와 유한 검사. 손 전체의 운동 승인과 구분 | [thumb_ip_tension_v1](cad/thumb_ip_tension_v1/README.md) |
 | 엄지 IP 구동 후보 · 2026-10-25 | 기존 손 비율을 유지한 두 줄 고정부·중앙 나사2개·조립 창·열린 줄 슬롯과 별도 모터 스풀. 실제 장력·완성 시험대·지연은 미검증 | [thumb_ip_drive_v1](cad/thumb_ip_drive_v1/README.md) |
 | 제작 개선 2 · 2026-10-25 | 원위 핀 나사·규격 와셔 고정과 양쪽 공구 접근. 손 비율을 유지한359부품, 탭 전 가공 형상과 조립 순서 기록 | [manufacturing_v2](cad/manufacturing_v2/README.md) |
 | 제작 개선 1 · 2026-10-25 | 삽입이 막힌 원위 핀·부싱20부품 수정. 10핀 경로와10정적 자세 검사, 옆 손가락 때문에 필요한 사전 조립 순서 기록 | [manufacturing_v1](cad/manufacturing_v1/README.md) |
