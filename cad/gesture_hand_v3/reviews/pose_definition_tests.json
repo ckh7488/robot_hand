@@ -2,7 +2,7 @@
   "completed": true,
   "tests": [
     {
-      "name": "Current catalog passes explicit reference/candidate/FK checks",
+      "name": "Current catalog passes reference/candidate/FK checks",
       "passed": true
     },
     {
@@ -11,34 +11,51 @@
       "rejection": "Authored reference fist path was altered"
     },
     {
-      "name": "Candidate cannot alter first four finger trajectory",
+      "name": "Candidate cannot alter four-finger fist trajectory",
       "passed": true,
       "rejection": "Candidate changed reference fractions or first-four-finger angles"
     },
     {
-      "name": "Bent IP is not hidden by thumb-up exemption",
+      "name": "Bent IP thumb-up rejected",
       "passed": true,
-      "rejection": "Thumb-up requires near-straight IP and distal direction within 45 degrees of +Y"
+      "rejection": "Thumb-up requires extension >=0.98, MCP/IP <=5deg, first link within 35deg of +Y and tip >=30mm above index joint centres"
     },
     {
-      "name": "Other extended digits retain 95 percent rule",
+      "name": "Previous 40-degree MCP dogleg rejected",
+      "passed": true,
+      "rejection": "Thumb-up requires extension >=0.98, MCP/IP <=5deg, first link within 35deg of +Y and tip >=30mm above index joint centres"
+    },
+    {
+      "name": "Other extended digits retain 95-percent rule",
       "passed": true,
       "rejection": "Extended digit is curled: mountain middle"
     },
     {
-      "name": "Only three declared gesture targets corrected",
+      "name": "Three corrected gesture targets are declared",
       "passed": true
     },
     {
-      "name": "fist retains original first four finger target",
+      "name": "fist retains original four-finger target",
       "passed": true
     },
     {
-      "name": "rock_thumb_folded retains original first four finger target",
+      "name": "rock_thumb_folded retains original four-finger target",
       "passed": true
     },
     {
-      "name": "thumb_up retains original first four finger target",
+      "name": "Thumb-up reference first16 remain authored fist",
+      "passed": true
+    },
+    {
+      "name": "Thumb-up explicitly changes index spread and DIP",
+      "passed": true
+    },
+    {
+      "name": "Thumb-up preserves middle/ring/little target",
+      "passed": true
+    },
+    {
+      "name": "Thumb-up metadata does not claim all fingers unchanged",
       "passed": true
     },
     {
@@ -46,15 +63,16 @@
       "passed": true
     },
     {
-      "name": "All source bytes unchanged by tests",
+      "name": "Source bytes unchanged by tests",
       "passed": true
     }
   ],
   "source_sha256": {
-    "D:\\robot_hand\\cad\\gesture_hand_v3\\poses.py": "6c960ab6d30d8aa3cd244718590eadb0899a466dbaf046daf8942cb8188ad9e7",
-    "D:\\robot_hand\\cad\\gesture_hand_v3\\poses.json": "54ce13b0ee182218be0fccc12b4bbbcf795bea529e623d90e04d74d80435fc3a",
+    "D:\\Codex-work\\robot-hand-workspace\\work\\gesture002\\thumb_pose_definition_tests.py": "6c17e0c90b245d5070b5109cfe6128e3f49083446826fa77a0a3b5690f7e211e",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f",
+    "D:\\robot_hand\\cad\\gesture_hand_v3\\poses.json": "74b85ef6032e8a6886df2d8bb049957d360212e8dd1050a9b6c5a8a155c73331",
     "D:\\robot_hand\\cad\\gesture_hand_v3\\render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56"
   },
   "inputs_unchanged": true,
-  "scope": "Small catalog/provenance rejection tests. No CAD geometry, path clearance or dynamics validation."
+  "scope": "Definition/provenance rejection checks only. No CAD, path clearance or dynamics validation."
 }

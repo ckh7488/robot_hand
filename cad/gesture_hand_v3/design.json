@@ -875,7 +875,7 @@
   "build_stage": "fabrication",
   "gesture_candidate_pose_catalog": {
     "path": "poses.json",
-    "sha256": "54ce13b0ee182218be0fccc12b4bbbcf795bea529e623d90e04d74d80435fc3a",
+    "sha256": "74b85ef6032e8a6886df2d8bb049957d360212e8dd1050a9b6c5a8a155c73331",
     "fist_deg": [
       0.0,
       90.0,
@@ -899,10 +899,10 @@
       78.6258631157869
     ],
     "thumb_up_deg": [
-      0.0,
+      8.0,
       90.0,
       109.97777233225946,
-      70.02222766774054,
+      90.0,
       0.0,
       90.0,
       114.23096594699132,
@@ -915,9 +915,9 @@
       90.0,
       91.82343229310811,
       88.17656770689189,
-      -10.0,
-      20.0,
-      40.0,
+      -28.0,
+      0.0,
+      0.0,
       0.0
     ],
     "reference_fields_notice": "Top-level fist_deg/fist_path remain the original accepted FORM002 reference. Current target gestures and candidate paths are defined separately in poses.json.",

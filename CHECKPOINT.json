@@ -1,10 +1,10 @@
 {
-  "id": "GESTURE001",
+  "id": "GESTURE002",
   "candidate": "cad/gesture_hand_v3",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/GESTURE001.manifest.json",
-  "previous_checkpoint": "DRIVE002",
-  "status": "Nine static gesture endpoints have no material intersection above the declared threshold; nominal attachment checks pass. Pause after showing this step. Transitions, manufacturing and hardware latency remain unapproved.",
+  "manifest": "checkpoints/GESTURE002.manifest.json",
+  "previous_checkpoint": "GESTURE001",
+  "status": "Unchanged349-part accepted hand; straight-thumb/index pose and three forward2.5-degree sampled paths (228 samples) checked. No manufacturing, continuous-motion or latency approval.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -12,8 +12,7 @@
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "b30f9953057858a3ef3347f281cd12719ecc12d3",
-  "post_commit_review_report": "docs/reviews/GESTURE001_b30f99530578/review.json",
-  "post_commit_reproduction_scope": "Exact committed archive and manifest/frozen evidence; all CAD and mass tensors rebuilt; open, fist and thumb-up exact collision results and individual nominal fabrication interfaces rerun. Other six endpoints, transitions, renderer and dynamics not rerun. Existing failure outcomes are retained; this is same-task reproduction, not external independent audit or manufacturing/performance approval."
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null
 }

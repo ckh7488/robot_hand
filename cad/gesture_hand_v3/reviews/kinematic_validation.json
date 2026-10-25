@@ -1,7 +1,7 @@
 {
   "gestures": 9,
   "transitions": 20,
-  "path_samples_at_5deg": 808,
+  "path_samples_at_5deg": 828,
   "fk_pose_count": 75,
   "max_xml_body_position_difference_mm": 4.2746250983327627e-10,
   "max_xml_rotation_component_difference": 2.637889906509372e-13,
@@ -38,10 +38,15 @@
       "gesture": "thumb_up",
       "extension_categories_match": true,
       "thumb_up_rule": {
-        "ip_absolute_max_deg": 5,
-        "distal_world_y_min": 0.7071067811865476,
-        "whole_thumb_extension_ratio_is_not_this_rule": true,
-        "manufacturing_or_naturalness_requirement": false
+        "extension_ratio_min": 0.98,
+        "mcp_ip_absolute_max_deg": 5,
+        "first_link_max_angle_from_world_plus_y_deg": 35,
+        "tip_above_index_joint_centres_min_mm": 30,
+        "evaluated_extension_ratio": 1.0,
+        "evaluated_tip_height_mm": 50.30005652861766,
+        "evaluated_first_link_angle_deg": 27.00000000000001,
+        "geometry_clearance_or_manufacturing_requirement": false,
+        "calibrated_photo_match": false
       }
     },
     {
@@ -738,9 +743,9 @@
       "digits": {
         "index": {
           "tip_world_mm": [
-            58.5,
-            72.7398777647463,
-            32.00000000000001
+            54.666446052580035,
+            85.93162840331881,
+            34.27620920513906
           ],
           "joint_centres_world_mm": [
             [
@@ -754,19 +759,19 @@
               84.53834033149171
             ],
             [
-              58.5,
-              72.7398777647463,
+              52.86781709260975,
+              73.13371835974283,
               69.8266407973134
             ]
           ],
-          "root_to_tip_distance_mm": 47.05031580425199,
-          "extension_ratio": 0.2988744608744609,
+          "root_to_tip_distance_mm": 38.06807611769115,
+          "extension_ratio": 0.2418172021105686,
           "distal_direction_world": [
-            0.0,
-            0.0,
-            -1.0
+            0.04754926480540226,
+            0.33833059911798835,
+            -0.9398252354118445
           ],
-          "flexion_sum_deg": 270.0
+          "flexion_sum_deg": 289.97777233225946
         },
         "middle": {
           "tip_world_mm": [
@@ -866,9 +871,9 @@
         },
         "thumb": {
           "tip_world_mm": [
-            92.40933801386889,
-            145.11423140893163,
-            104.30528273910924
+            122.0902939494055,
+            163.50883861853495,
+            29.0
           ],
           "joint_centres_world_mm": [
             [
@@ -877,28 +882,28 @@
               29.0
             ],
             [
-              89.19009658526386,
-              57.363324931720555,
-              51.23130931616846
+              75.50938248307054,
+              72.0886524187006,
+              29.0
             ],
             [
-              90.75887763628613,
-              100.12556018014322,
-              77.09499355821936
+              98.20890747004788,
+              116.63897862811899,
+              29.0
             ]
           ],
-          "root_to_tip_distance_mm": 158.01980428512687,
-          "extension_ratio": 0.9428205122173879,
+          "root_to_tip_distance_mm": 167.6032736214928,
+          "extension_ratio": 1.0,
           "distal_direction_world": [
-            0.0313756210204456,
-            0.8552447049684532,
-            0.517273684841018
+            0.45399049973954664,
+            0.8910065241883679,
+            0.0
           ],
-          "flexion_sum_deg": 60.0
+          "flexion_sum_deg": 0.0
         }
       },
-      "index_middle_distal_angle_deg": 0.0,
-      "index_middle_tip_separation_mm": 39.129403219561475,
+      "index_middle_distal_angle_deg": 19.97777233225947,
+      "index_middle_tip_separation_mm": 36.634712304302035,
       "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
     },
     "middle_finger": {
@@ -1577,7 +1582,7 @@
     "cad/accepted_form_v1/design.json": "afd3a06e4435bb2194c0822f328c5492d4452415addfd1e02e6ce20c7e5aebb1",
     "cad/accepted_form_v1/motion.json": "68516653a5bb4c6e5d4205f6936839b1fd44a3208c535d670b4affb35817cf78",
     "cad/accepted_form_v1/preview.xml": "e13be8ca28a332b95664975c328a9cb3f6e9817c4a9a811f766643b46e8fa96c",
-    "cad/gesture_hand_v3/poses.py": "6c960ab6d30d8aa3cd244718590eadb0899a466dbaf046daf8942cb8188ad9e7"
+    "cad/gesture_hand_v3/poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f"
   },
-  "poses_sha256": "54ce13b0ee182218be0fccc12b4bbbcf795bea529e623d90e04d74d80435fc3a"
+  "poses_sha256": "74b85ef6032e8a6886df2d8bb049957d360212e8dd1050a9b6c5a8a155c73331"
 }

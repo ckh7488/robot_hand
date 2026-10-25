@@ -63,7 +63,7 @@ def read_json(path):
 def write_json(path, value):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".partial")
-    temporary.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    temporary.write_text(json.dumps(value, separators=(",", ":"), allow_nan=False) + "\n", encoding="utf-8")
     temporary.replace(path)
 
 
@@ -360,6 +360,10 @@ def collect_inputs(repository, candidate, poses_path, accepted, scene, build, po
     for relative, sha in pose_document["reference"]["source_sha256"].items():
         path = inside(repository, relative); paths.add(path)
         if path in expected and expected[path] != sha: raise ValueError("Pose/reference hash conflict")
+        expected[path] = sha
+    for relative, sha in pose_document.get('study_scope', {}).get('source_sha256', {}).items():
+        path = inside(repository, relative); paths.add(path)
+        if path in expected and expected[path] != sha: raise ValueError('Study source hash conflict')
         expected[path] = sha
     start = {str(path): digest(path) for path in sorted(paths)}
     stale = [str(path) for path, sha in expected.items() if start[str(path)] != sha]

@@ -6,9 +6,15 @@
 
 목표는 **로봇 자체의 추종 지연 50ms 이하, 정해진 시험 범위의 최대 지연 100ms 이하**입니다. 로봇 제어부가 목표 각도를 받은 뒤 실제 관절이 따라오는 과정이 대상입니다. 카메라·인식·장갑의 입력 지연은 이번 평가에서 제외합니다. 추종 지연은 90° 회전 전체를 끝내는 시간과 다릅니다.
 
-![현재 손 형상으로 만든 아홉 가지 자세](cad/gesture_hand_v3/generated/gestures_oblique.png)
+![같은 손 형상에서 이전 엄지척과 새 엄지척 비교](cad/gesture_hand_v3/generated/motion_review/thumb_up_previous_vs_current.png)
 
-*사용자가 수용한 손의 비율과 엄지 형태를 유지하고, 내부 관절·덮개·손끝 체결을 다듬는 후보입니다. [현재 CAD와 자세 검사](cad/gesture_hand_v3/README.md) · [수용한 외형 기준](cad/accepted_form_v1/README.md)*
+*349개 부품의 형상과 길이는 유지하고, 엄지를 뿌리부터 곧게 편 자세로 바꿨습니다. 접힌 검지도 조금 벌리고 끝마디를 더 접었습니다. [현재 자세·전환 검토](cad/gesture_hand_v3/README.md) · [수용한 외형 기준](cad/accepted_form_v1/README.md)*
+
+[보 → 바위](cad/gesture_hand_v3/generated/motion_review/open__fist.gif) · [보 → 엄지척](cad/gesture_hand_v3/generated/motion_review/open__thumb_up.gif) · [바위 → 엄지척](cad/gesture_hand_v3/generated/motion_review/fist__thumb_up.gif) · [세 경로의 대표 자세](cad/gesture_hand_v3/generated/motion_review/core_paths_oblique.png)
+
+이번 한 단계는 새 엄지척과 위 세 정방향 전환의 표본 검사입니다. **최종 2.5° 간격 검사 결과: 세 정방향 경로 228표본의 보고 기준 이상 겹침0건·연산 실패0건, 입력 해시 일치.** GIF는 실제 CAD의 각도경로 미리보기이며 재생시간은 실물 속도가 아닙니다. 전체20개 전환이나 연속 충돌 안전을 확인한 결과로 확대하지 않습니다.
+
+새 엄지척을 포함한 [현재9개 끝자세](cad/gesture_hand_v3/generated/gestures_oblique.png)에서도 보고 기준 이상 겹침0건·연산 실패0건을 확인했습니다. 실제 모터·줄 구동과 속도는 아직 검증하지 않았습니다.
 
 > CAD와 시뮬레이션을 반복 개선하는 단계입니다. 제작 승인과 실제 하드웨어의 100ms 이하 성능 검증은 아직 완료하지 않았습니다.
 
@@ -35,7 +41,8 @@
 | --- | --- | --- |
 | 개발 기준 | [요구사항과 반복 순서](docs/REMOTE_DRIVE_PLAN.md) | 측정 경계, 설계 방향, 미확정 항목 |
 | 수용한 외형 | [FORM002](cad/accepted_form_v1/README.md) | 현재 손 비율·엄지·주먹의 시각 기준. 제조용 솔리드와 구분 |
-| 현재 제작·자세 후보 | [gesture_hand_v3](cad/gesture_hand_v3/README.md) | FORM002의 외형을 유지한 실제 관절·외피 체결과9개 손짓 검사 |
+| 현재 제작·자세 후보 | [gesture_hand_v3](cad/gesture_hand_v3/README.md) | FORM002 외형을 유지한349개 부품. 이전9끝자세 기록과 새 엄지척·세 전환 표본 검사를 구분 |
+| 현재 움직임 미리보기 | [엄지척 비교·경로 GIF](cad/gesture_hand_v3/generated/motion_review/render_report.json) · [대표 자세](cad/gesture_hand_v3/generated/motion_review/core_paths_oblique.png) | 저장 CAD의 각도경로 렌더. 재생시간은 실제 속도·지연 측정이 아님 |
 | 이전 제작·구동 후보 | [articulation_drive_v2](cad/articulation_drive_v2/README.md) | 이전 엄지·주먹 형상의 뿌리 관절 개선과 실패 사례 보존 |
 | 이전 형상 동역학 | [articulation_drive_v2](sim/articulation_drive_v2/README.md) | 이전 축·질량/관성의20축 모델. FORM002의 성능 결과로 승계하지 않음 |
 | 이전 모터 배치 | [form_drive_v1](cad/form_drive_v1/README.md) | DRIVE001의20개 모터·받침·후면 랙과 중지 줄 끝단 검토. 새 형상 통합 여부는 별도 검사 |
@@ -66,6 +73,8 @@
 
 ## 다음 개발 과제
 
+이번에는 엄지척과 세 전환의 결과·그림·커밋 재검토를 보여준 뒤 멈춥니다. 아래 항목은 이후 작업 목록이며 이번 단계에 모두 포함하지 않습니다.
+
 | 과제 | 확인할 내용 |
 | --- | --- |
 | 외형과 내부 배치 | 새 관절과 겹치는 기존 손바닥 모터를 손목·전완으로 옮길지 비교하고, 고정·정비 접근·후면 돌출을 함께 검토 |
@@ -84,6 +93,7 @@
 
 | 버전·날짜 | 주요 변경 | 기록 |
 | --- | --- | --- |
+| 엄지척·전환 검토 · 2026-10-25 | 같은349개 부품에서 엄지를 곧게 펴고 검지 자세를 조정. 세 정방향 경로의 최종 표본 검사 결과는 세 정방향 경로 228표본의 보고 기준 이상 겹침0건·연산 실패0건, 입력 해시 일치 | [GESTURE002](checkpoints/GESTURE002.md) |
 | 손짓·제작성 검토 · 2026-10-25 | FORM002 비율을 유지한 관절·덮개·손끝 체결과 아홉 대표 자세 검사. 이번 결과를 보여준 뒤 추가 반복 중지 | [GESTURE001](checkpoints/GESTURE001.md) |
 | 변경 CAD에서 재개 · 2026-10-25 | 새 엄지·주먹 형상을 유지한 뿌리 관절·핀 유지·손바닥 체결 수정, 새20축 모델과 간섭 재검사 | [DRIVE002](checkpoints/DRIVE002.md) |
 | 새 형상 구동 재개 · 2026-10-24 | 실제 모터20개 배치, 새 외형 질량·관성의20축 모델, 중지 줄 끝단 검토 | [DRIVE001](checkpoints/DRIVE001.md) |

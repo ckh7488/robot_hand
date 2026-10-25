@@ -3,11 +3,11 @@
   "status": "completed",
   "source_sha256": {
     "cad/gesture_hand_v3/render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56",
-    "cad/gesture_hand_v3/poses.py": "6c960ab6d30d8aa3cd244718590eadb0899a466dbaf046daf8942cb8188ad9e7",
-    "cad/gesture_hand_v3/poses.json": "54ce13b0ee182218be0fccc12b4bbbcf795bea529e623d90e04d74d80435fc3a",
-    "cad/gesture_hand_v3/generated/scene.json": "6e15e23541defda3304fc716cc498497e96908c3635d761379f8c592d096e0b5",
-    "cad/gesture_hand_v3/generated/build_report.json": "81fe5a5126c26230d1193dacab517d27d4ab0ffaca5b3be1d01cb7afb46563cb",
-    "cad/gesture_hand_v3/design.json": "9629d89546e55150cf1ea36d306af5000f6f372427de9d07108c829973147b21",
+    "cad/gesture_hand_v3/poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f",
+    "cad/gesture_hand_v3/poses.json": "74b85ef6032e8a6886df2d8bb049957d360212e8dd1050a9b6c5a8a155c73331",
+    "cad/gesture_hand_v3/generated/scene.json": "ca1411098b9a10ec7ca1036bfb14566299fd0da66e6a89dca401f8677210e12f",
+    "cad/gesture_hand_v3/generated/build_report.json": "ca5324b06d05d900d8a8b84f7d288863acc6b1b761cb9d0b6f2338a1d17cd8f0",
+    "cad/gesture_hand_v3/design.json": "3ce5991fe6e794549cd61925cf936d6675c169d42568a79e156d4b8212abc12d",
     "cad/accepted_form_v1/manifest.json": "7c3c14a69098ee11b2ddbc2f166385318604d302e85063428aeed89608245af6",
     "cad/accepted_form_v1/design.json": "afd3a06e4435bb2194c0822f328c5492d4452415addfd1e02e6ce20c7e5aebb1",
     "cad/accepted_form_v1/motion.json": "68516653a5bb4c6e5d4205f6936839b1fd44a3208c535d670b4affb35817cf78",
@@ -145,7 +145,7 @@
     "cad/gesture_hand_v3/source_native/generated/scene.json": "2f2d81de521972cdf630b854ae334f57391b1351fdd7491aaf54698d2172eb15",
     "cad/gesture_hand_v3/source_native/generated/hand_articulation_candidate.step": "698085a7a82f8933e33b18d86558bbe3e994f5fcd79131d4e4257c47e8ec2012",
     "cad/gesture_hand_v3/source_native/manifest.json": "fbfa634ee63c9e643dc193ef5709d9241a4f3b75608bd2923d99bdbc5e4b6374",
-    "cad/gesture_hand_v3/build.py": "f92ad3c2017cf2498a735ff7f57cf2349b2ae615c42054b95d30a14d7e118a56",
+    "cad/gesture_hand_v3/build.py": "68b70a9cf41e40c2023a640cc141af6901a4a31fdb5cd1896535dd0a4a020c30",
     "cad/form_drive_v1/exterior.py": "8662522fa5feca1a867443765bee7ae5349c6e14f96532194c51f676228f89ab",
     "cad/gesture_hand_v3/source_native/generated/meshes/Palm_tapered_chassis.stl": "98395a500cddcc09346cbb3ae77c1e247b32e539dd7bec572e09ed25f14711d3",
     "cad/gesture_hand_v3/source_native/generated/meshes/Cover_screw_-44_33.stl": "972d5e4300122c4f1fd07c196fa2e517b60bdb453c3cd44110bde9767f0611e1",
@@ -271,6 +271,8 @@
     "cad/gesture_hand_v3/source_native/generated/meshes/middle_segment1_palmar_transition.stl": "116dcda802bbd37d0bf0e3b102e692557aee115089b68875cd3781bc9b9a30b5",
     "cad/gesture_hand_v3/source_native/generated/meshes/ring_segment1_palmar_transition.stl": "46926a8e76f4eb77da13184c1820f3e7a7f564ca4a99919c37765194f52efb02",
     "cad/gesture_hand_v3/source_native/generated/meshes/little_segment1_palmar_transition.stl": "86fadab5b4d20a960cac13ea2f3503b15e0d075570871f31254b3076620d507d",
+    "cad/gesture_hand_v3/build_core_paths.py": "4e5bd85215c520657ce94399d7f89463b1bae60ea68a952a7c13505c70a3aa24",
+    "cad/gesture_hand_v3/core_paths.json": "da42c2d90bd044d2eb60fb3dbdc3848c151e49b7db4bd7f2cfa6f401d91a6deb",
     "cad/gesture_hand_v3/root_module.py": "b176862fc301af98d5b969fc132f1e5cf41da1f189cb2a24086f3b75decd65f2",
     "cad/gesture_hand_v3/fabrication_repairs.py": "b52fdb41a71552247408f4bc05062e550347b738689410f1d391f36ea99dfef6",
     "cad/gesture_hand_v3/generated/meshes/Palm_tapered_chassis.stl": "e8cc1a235120d5557bc03a2fb142f13f823730c9e35da466c66d9837dda65507",
@@ -622,7 +624,7 @@
     "cad/gesture_hand_v3/generated/meshes/Cover_nut_-18_104.stl": "795ce976a4fedb6b6957f3c3a21ce5e2fd5496518ebfb71f8ac1d09eb58c53b2",
     "cad/gesture_hand_v3/generated/meshes/Cover_seat_washer_15_10.stl": "49cf63751fc88ba402e9e5e7b1d46277eaf2f090bbfab3b2fdd2d63dc52db3f7",
     "cad/gesture_hand_v3/generated/meshes/Cover_nut_15_10.stl": "d4a74a720054b5d6e90ecac96795a58beb47aa1331e4d72dbbb1f753ef795f71",
-    "cad/gesture_hand_v3/generated/hand.step": "79c78abe4015daa849a1f9e3b84445fd14d097ccd41b09e21fe15a1c6c28a8f1"
+    "cad/gesture_hand_v3/generated/hand.step": "eef11608b99da634d0349c77d6e650b1340dee2d0d3e7d25ee3b3406be792fba"
   },
   "inputs_unchanged": true,
   "cad_stage": "fabrication",
@@ -855,10 +857,10 @@
       "gesture": "thumb_up",
       "view": "front",
       "angles_deg": [
-        0.0,
+        8.0,
         90.0,
         109.97777233225946,
-        70.02222766774054,
+        90.0,
         0.0,
         90.0,
         114.23096594699132,
@@ -871,18 +873,18 @@
         90.0,
         91.82343229310811,
         88.17656770689189,
-        -10.0,
-        20.0,
-        40.0,
+        -28.0,
+        0.0,
+        0.0,
         0.0
       ],
       "foreground_bounds_px": [
         62,
-        341,
-        459,
+        304,
+        521,
         662
       ],
-      "pose_origin": "thumb_only_corrected_candidate"
+      "pose_origin": "thumb_and_index_corrected_candidate"
     },
     {
       "source": "candidate",
@@ -1161,10 +1163,10 @@
       "gesture": "thumb_up",
       "view": "oblique",
       "angles_deg": [
-        0.0,
+        8.0,
         90.0,
         109.97777233225946,
-        70.02222766774054,
+        90.0,
         0.0,
         90.0,
         114.23096594699132,
@@ -1177,18 +1179,18 @@
         90.0,
         91.82343229310811,
         88.17656770689189,
-        -10.0,
-        20.0,
-        40.0,
+        -28.0,
+        0.0,
+        0.0,
         0.0
       ],
       "foreground_bounds_px": [
         105,
-        243,
+        238,
         508,
         662
       ],
-      "pose_origin": "thumb_only_corrected_candidate"
+      "pose_origin": "thumb_and_index_corrected_candidate"
     },
     {
       "source": "candidate",
@@ -1557,10 +1559,10 @@
     "수용 외형 FORM002": "body_local_mm"
   },
   "output_sha256": {
-    "gestures_front.png": "3ee4ab135caddd571b38059566975a1bc91a806b49c46847f097a1471fb5efc0",
-    "gestures_oblique.png": "f64bbf13ad570a74f6c3ba4f8b9c69440ae9f2aab498f1db9d4a1147a2c4215a",
-    "reference_comparison_front.png": "8c18ab459b04617d9ea62109c511082cdc10796a110e04455b0008548a63bb42",
-    "reference_comparison_oblique.png": "e76e7879b011cfd1feced0fc0f8cac9e1158b52bbd18a2dcb682fd283c54adb3"
+    "gestures_front.png": "7db1d8ff5691dbcef430b565d26af20a81be40e2e1894a08bde655ee6b62dcd7",
+    "gestures_oblique.png": "f1953466c17ba399a6b30d3b508f7fa50c6c9b7f355a939114faa504c8211fb3",
+    "reference_comparison_front.png": "0ed6555cdb7ffcef3d25961d0d9937890b04a3692fa60b492fee5f2d83f741a5",
+    "reference_comparison_oblique.png": "67c9bbad517978bb33d2f0c3798f55443c37cd2cbca09e13540b2cd38a2128eb"
   },
   "limitations": [
     "Actual saved CAD triangles are rigidly posed; no generative imagery or exterior replacement.",

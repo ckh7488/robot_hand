@@ -108,6 +108,8 @@ def main():
     paths=[FORM/'manifest.json',*[FORM/n for n in manifest],SOURCE/'design.json',SOURCE/'generated/scene.json',
         SOURCE/'generated/hand_articulation_candidate.step',SOURCE/'manifest.json',HERE/'build.py',HERE/'poses.py',HERE/'poses.json',ROOT/'cad/form_drive_v1/exterior.py']
     paths.extend(SOURCE/r['mesh'] for r in json.loads((SOURCE/'generated/scene.json').read_text())['hand'])
+    # Bind the bounded motion study to the same canonical pose definition.
+    paths.extend([HERE/'build_core_paths.py',HERE/'core_paths.json'])
     if args.stage!='baseline':paths.append(HERE/'root_module.py')
     if args.stage=='fabrication':paths.append(HERE/'fabrication_repairs.py')
     hashes=lambda:{x.relative_to(ROOT).as_posix():digest(x) for x in paths}

@@ -897,6 +897,28 @@
       0.0,
       0.0
     ],
+    "rejected_previous_thumb_up_candidate_angles_deg": [
+      0.0,
+      90.0,
+      109.97777233225946,
+      70.02222766774054,
+      0.0,
+      90.0,
+      114.23096594699132,
+      65.76903405300868,
+      0.0,
+      90.0,
+      107.34348905192036,
+      72.65651094807964,
+      0.0,
+      90.0,
+      91.82343229310811,
+      88.17656770689189,
+      -10.0,
+      20.0,
+      40.0,
+      0.0
+    ],
     "source_sha256": {
       "cad/accepted_form_v1/design.json": "afd3a06e4435bb2194c0822f328c5492d4452415addfd1e02e6ce20c7e5aebb1",
       "cad/accepted_form_v1/motion.json": "68516653a5bb4c6e5d4205f6936839b1fd44a3208c535d670b4affb35817cf78",
@@ -911,18 +933,31 @@
       0.0
     ],
     "thumb_up_angles_deg": [
-      -10.0,
-      20.0,
-      40.0,
+      -28.0,
+      0.0,
+      0.0,
       0.0
+    ],
+    "thumb_up_index_angles_deg": [
+      8.0,
+      90.0,
+      109.97777233225946,
+      90.0
+    ],
+    "thumb_up_index_delta_from_reference_deg": [
+      8.0,
+      0.0,
+      0.0,
+      19.977772332259462
     ],
     "affected_gestures": [
       "fist",
       "rock_thumb_folded",
       "thumb_up"
     ],
-    "first_four_finger_angles_unchanged": true,
-    "selection_basis": "Pose-only saved-STEP search before final fabrication repair; final all-part endpoint audit is separate.",
+    "first_four_finger_angles_unchanged": false,
+    "unchanged_finger_scope": "Fist/rock retain all four finger targets. Thumb-up changes only index spread and DIP; middle/ring/little retain the authored fist targets.",
+    "selection_basis": "Fist/rock corrections came from the earlier pose-only search. The straight thumb-up and adjusted index were selected by a separate all-349-part static check on the unchanged GESTURE001 saved CAD; endpoint/path evidence remains separately scoped.",
     "local_clearance_goal_is_manufacturing_requirement": false,
     "candidate_fist_path": "Original 33 fractions and finger angles; thumb delta multiplied by reference MCP angle / final reference MCP angle. Transition collision status remains unverified."
   },
@@ -1884,10 +1919,10 @@
       "id": "thumb_up",
       "label_ko": "엄지척",
       "angles_deg": [
-        0.0,
+        8.0,
         90.0,
         109.97777233225946,
-        70.02222766774054,
+        90.0,
         0.0,
         90.0,
         114.23096594699132,
@@ -1900,9 +1935,9 @@
         90.0,
         91.82343229310811,
         88.17656770689189,
-        -10.0,
-        20.0,
-        40.0,
+        -28.0,
+        0.0,
+        0.0,
         0.0
       ],
       "extended_digits": [
@@ -1914,15 +1949,15 @@
         "ring",
         "little"
       ],
-      "thumb_role": "raised_with_mcp_bend_and_straight_ip",
+      "thumb_role": "straight_from_root_with_index_clearance_adjustment",
       "status": "shape_candidate_not_collision_verified",
       "shape_metrics": {
         "digits": {
           "index": {
             "tip_world_mm": [
-              58.5,
-              72.7398777647463,
-              32.00000000000001
+              54.666446052580035,
+              85.93162840331881,
+              34.27620920513906
             ],
             "joint_centres_world_mm": [
               [
@@ -1936,19 +1971,19 @@
                 84.53834033149171
               ],
               [
-                58.5,
-                72.7398777647463,
+                52.86781709260975,
+                73.13371835974283,
                 69.8266407973134
               ]
             ],
-            "root_to_tip_distance_mm": 47.05031580425199,
-            "extension_ratio": 0.2988744608744609,
+            "root_to_tip_distance_mm": 38.06807611769115,
+            "extension_ratio": 0.2418172021105686,
             "distal_direction_world": [
-              0.0,
-              0.0,
-              -1.0
+              0.04754926480540226,
+              0.33833059911798835,
+              -0.9398252354118445
             ],
-            "flexion_sum_deg": 270.0
+            "flexion_sum_deg": 289.97777233225946
           },
           "middle": {
             "tip_world_mm": [
@@ -2048,9 +2083,9 @@
           },
           "thumb": {
             "tip_world_mm": [
-              92.40933801386889,
-              145.11423140893163,
-              104.30528273910924
+              122.0902939494055,
+              163.50883861853495,
+              29.0
             ],
             "joint_centres_world_mm": [
               [
@@ -2059,28 +2094,28 @@
                 29.0
               ],
               [
-                89.19009658526386,
-                57.363324931720555,
-                51.23130931616846
+                75.50938248307054,
+                72.0886524187006,
+                29.0
               ],
               [
-                90.75887763628613,
-                100.12556018014322,
-                77.09499355821936
+                98.20890747004788,
+                116.63897862811899,
+                29.0
               ]
             ],
-            "root_to_tip_distance_mm": 158.01980428512687,
-            "extension_ratio": 0.9428205122173879,
+            "root_to_tip_distance_mm": 167.6032736214928,
+            "extension_ratio": 1.0,
             "distal_direction_world": [
-              0.0313756210204456,
-              0.8552447049684532,
-              0.517273684841018
+              0.45399049973954664,
+              0.8910065241883679,
+              0.0
             ],
-            "flexion_sum_deg": 60.0
+            "flexion_sum_deg": 0.0
           }
         },
-        "index_middle_distal_angle_deg": 0.0,
-        "index_middle_tip_separation_mm": 39.129403219561475,
+        "index_middle_distal_angle_deg": 19.97777233225947,
+        "index_middle_tip_separation_mm": 36.634712304302035,
         "interpretation": "Shape indicators only; centerlines do not test shell collision, clearance or subjective naturalness."
       },
       "authored_reference_angles_deg": [
@@ -2105,7 +2140,7 @@
         0.0,
         0.0
       ],
-      "pose_origin": "thumb_only_corrected_candidate"
+      "pose_origin": "thumb_and_index_corrected_candidate"
     },
     {
       "id": "middle_finger",
@@ -5194,10 +5229,10 @@
         {
           "fraction": 0.75,
           "angles_deg": [
-            0.0,
+            8.0,
             90.0,
             109.97777233225946,
-            70.02222766774054,
+            90.0,
             0.0,
             90.0,
             114.23096594699132,
@@ -5220,10 +5255,10 @@
         {
           "fraction": 1.0,
           "angles_deg": [
-            0.0,
+            8.0,
             90.0,
             109.97777233225946,
-            70.02222766774054,
+            90.0,
             0.0,
             90.0,
             114.23096594699132,
@@ -5236,9 +5271,9 @@
             90.0,
             91.82343229310811,
             88.17656770689189,
-            -10.0,
-            20.0,
-            40.0,
+            -28.0,
+            0.0,
+            0.0,
             0.0
           ],
           "phase": "thumb_finish"
@@ -5255,10 +5290,10 @@
         {
           "fraction": 0.0,
           "angles_deg": [
-            0.0,
+            8.0,
             90.0,
             109.97777233225946,
-            70.02222766774054,
+            90.0,
             0.0,
             90.0,
             114.23096594699132,
@@ -5271,9 +5306,9 @@
             90.0,
             91.82343229310811,
             88.17656770689189,
-            -10.0,
-            20.0,
-            40.0,
+            -28.0,
+            0.0,
+            0.0,
             0.0
           ],
           "phase": "reverse_thumb_finish"
@@ -5281,10 +5316,10 @@
         {
           "fraction": 0.25,
           "angles_deg": [
-            0.0,
+            8.0,
             90.0,
             109.97777233225946,
-            70.02222766774054,
+            90.0,
             0.0,
             90.0,
             114.23096594699132,
@@ -6444,12 +6479,12 @@
           "phase": "unfold_thumb_candidate"
         },
         {
-          "fraction": 1.0,
+          "fraction": 0.65,
           "angles_deg": [
-            0.0,
+            8.0,
             90.0,
             109.97777233225946,
-            70.02222766774054,
+            90.0,
             0.0,
             90.0,
             114.23096594699132,
@@ -6462,15 +6497,41 @@
             90.0,
             91.82343229310811,
             88.17656770689189,
-            -10.0,
-            20.0,
-            40.0,
+            25.0,
+            55.0,
+            0.0,
+            0.0
+          ],
+          "phase": "index_clearance_pose"
+        },
+        {
+          "fraction": 1.0,
+          "angles_deg": [
+            8.0,
+            90.0,
+            109.97777233225946,
+            90.0,
+            0.0,
+            90.0,
+            114.23096594699132,
+            65.76903405300868,
+            0.0,
+            90.0,
+            107.34348905192036,
+            72.65651094807964,
+            0.0,
+            90.0,
+            91.82343229310811,
+            88.17656770689189,
+            -28.0,
+            0.0,
+            0.0,
             0.0
           ],
           "phase": "thumb_up"
         }
       ],
-      "method": "thumb_only_two_stage",
+      "method": "thumb_clear_then_index_adjust_then_thumb_raise",
       "status": "candidate_path_not_collision_verified"
     },
     {
@@ -6481,10 +6542,10 @@
         {
           "fraction": 0.0,
           "angles_deg": [
-            0.0,
+            8.0,
             90.0,
             109.97777233225946,
-            70.02222766774054,
+            90.0,
             0.0,
             90.0,
             114.23096594699132,
@@ -6497,12 +6558,38 @@
             90.0,
             91.82343229310811,
             88.17656770689189,
-            -10.0,
-            20.0,
-            40.0,
+            -28.0,
+            0.0,
+            0.0,
             0.0
           ],
           "phase": "reverse_thumb_up"
+        },
+        {
+          "fraction": 0.35,
+          "angles_deg": [
+            8.0,
+            90.0,
+            109.97777233225946,
+            90.0,
+            0.0,
+            90.0,
+            114.23096594699132,
+            65.76903405300868,
+            0.0,
+            90.0,
+            107.34348905192036,
+            72.65651094807964,
+            0.0,
+            90.0,
+            91.82343229310811,
+            88.17656770689189,
+            25.0,
+            55.0,
+            0.0,
+            0.0
+          ],
+          "phase": "reverse_index_clearance_pose"
         },
         {
           "fraction": 0.55,
@@ -6557,7 +6644,7 @@
           "phase": "reverse_fist"
         }
       ],
-      "method": "exact_reverse_of_thumb_path",
+      "method": "exact_reverse_of_thumb_and_index_path",
       "status": "candidate_path_not_collision_verified"
     }
   ],
@@ -6566,7 +6653,7 @@
     "Angles are not silently clipped. A range violation is an error.",
     "No collision, cable routing, torque, latency, contact force or naturalness approval is implied.",
     "The authored reference 33-frame fist is preserved separately; the candidate fist path changes only thumb angles and is not collision verified.",
-    "Authored fractions are not measured human timings. The thumb-up semantic rule permits MCP bend with straight IP; other extension rules are unchanged.",
+    "Authored fractions are not measured human timings. Thumb-up requires a nearly straight chain from the root, near-zero MCP/IP bend and explicit index adjustment; its shape criteria are not manufacturing or measured-human requirements.",
     "Staged thumb-clear paths are explicit candidates, not proven safe paths.",
     "The FORM002 visual meshes remain a read-only reference; parent CAD reconstruction is separate."
   ]

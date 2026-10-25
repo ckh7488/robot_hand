@@ -23,7 +23,8 @@ NAMES=[f"{f}_{j}" for f in DIGITS[:4] for j in ("spread","mcp","pip","dip")]+[
     "thumb_base_sweep","thumb_opposition","thumb_mcp","thumb_ip"]
 IDS=["open","fist","v_sign","scissors","thumb_up","middle_finger","mountain","rock_thumb_folded","rock_thumb_extended"]
 FIST_THUMB_CORRECTION_DEG=np.array([-6.,3.,-8.,0.])
-THUMB_UP_CANDIDATE_DEG=np.array([-10.,20.,40.,0.])
+THUMB_UP_CANDIDATE_DEG=np.array([-28.,0.,0.,0.])
+THUMB_UP_INDEX_CANDIDATE_DEG=np.array([8.,90.,109.97777233225946,90.])
 
 
 def digest(path):
@@ -115,9 +116,9 @@ def generate_catalog(design=None,motion=None):
         raise ValueError("Accepted design and motion paths disagree")
     zero=np.zeros(20);reference_fist=np.asarray(design["fist_deg"],float)
     fist=reference_fist.copy();fist[16:]+=FIST_THUMB_CORRECTION_DEG
-    # The thumb base moves outside the index finger, then MCP bends the distal
-    # chain upright. IP remains straight. This differs from a wholly straight
-    # thumb and does not relax the extension rule for the other gestures.
+    # A fully straight thumb is paired with a small index spread/DIP change.
+    # The former 40-degree MCP dogleg is retained only as rejected history.
+    # Other gesture targets and the exterior/kinematic geometry stay intact.
     extended_thumb=np.array([0.,20.,0.,0.])
     up_thumb=THUMB_UP_CANDIDATE_DEG.copy()
     specifications=[
@@ -125,7 +126,7 @@ def generate_catalog(design=None,motion=None):
         ("fist","바위",[],DIGITS,"folded_thumb_clearance_candidate",fist),
         ("v_sign","V",["index","middle"],["ring","little","thumb"],"folded",None),
         ("scissors","가위",["index","middle"],["ring","little","thumb"],"folded",None),
-        ("thumb_up","엄지척",["thumb"],DIGITS[:4],"raised_with_mcp_bend_and_straight_ip",None),
+        ("thumb_up","엄지척",["thumb"],DIGITS[:4],"straight_from_root_with_index_clearance_adjustment",None),
         ("middle_finger","가운데손가락",["middle"],["index","ring","little","thumb"],"across_folded_digits",None),
         ("mountain","산: 엄지·중지·새끼",["thumb","middle","little"],["index","ring"],"extended_sideways",None),
         ("rock_thumb_folded","록: 엄지 접기",["index","little"],["middle","ring","thumb"],"folded",None),
@@ -137,6 +138,7 @@ def generate_catalog(design=None,motion=None):
             for name in extended:
                 if name!="thumb":q[DIGITS.index(name)*4:DIGITS.index(name)*4+4]=0
             if "thumb" in extended:q[16:]=up_thumb if ident=="thumb_up" else extended_thumb
+            if ident=="thumb_up":q[:4]=THUMB_UP_INDEX_CANDIDATE_DEG
             if ident=="v_sign":q[0]=12.;q[4]=-12.
             if ident=="scissors":q[0]=-1.;q[4]=1.
             if ident=="rock_thumb_folded":q[16:]+=FIST_THUMB_CORRECTION_DEG
@@ -146,10 +148,12 @@ def generate_catalog(design=None,motion=None):
             shape_metrics=shape_metrics(design,q))
         if ident in ("fist","rock_thumb_folded","thumb_up"):
             original=q.copy()
-            if ident=="thumb_up":original[16:]=[-55.,45.,0.,0.]
+            if ident=="thumb_up":
+                original=reference_fist.copy()
+                original[16:]=[-55.,45.,0.,0.]
             else:original[16:]=reference_fist[16:]
             gesture["authored_reference_angles_deg"]=original.tolist()
-            gesture["pose_origin"]="thumb_only_corrected_candidate"
+            gesture["pose_origin"]="thumb_and_index_corrected_candidate" if ident=="thumb_up" else "thumb_only_corrected_candidate"
         gestures.append(gesture)
     byid={g["id"]:g for g in gestures}
     # Keep the complete authored path below in reference.authored_fist_path.
@@ -182,21 +186,29 @@ def generate_catalog(design=None,motion=None):
     add("v_sign","scissors",[waypoint(0,a,"v"),waypoint(1,b,"scissors")],"spread_only")
     add("scissors","v_sign",[waypoint(0,b,"scissors"),waypoint(1,a,"v")],"spread_only")
     lifted=fist.copy();lifted[16:]=[25.,55.,0.,0.]
+    # Unfold the thumb first, then adjust the index while the thumb is clear.
+    # The last leg raises the straight thumb without moving the other fingers.
+    adjusted=lifted.copy();adjusted[:16]=byid["thumb_up"]["angles_deg"][:16]
     path=[waypoint(0,fist,"fist"),waypoint(.45,lifted,"unfold_thumb_candidate"),
+          waypoint(.65,adjusted,"index_clearance_pose"),
           waypoint(1,byid["thumb_up"]["angles_deg"],"thumb_up")]
-    add("fist","thumb_up",path,"thumb_only_two_stage")
-    add("thumb_up","fist",_reverse(path),"exact_reverse_of_thumb_path")
+    add("fist","thumb_up",path,"thumb_clear_then_index_adjust_then_thumb_raise")
+    add("thumb_up","fist",_reverse(path),"exact_reverse_of_thumb_and_index_path")
     return dict(schema_version="gesture_hand_v3.poses.v1",joint_names=NAMES,units="degrees",
         reference=dict(name="accepted_form_v1 / FORM002",commit_prefix="a77ba87",
             authored_fist_deg=reference_fist.tolist(),authored_fist_path=copy.deepcopy(accepted),
             original_thumb_up_angles_deg=[*reference_fist[:16].tolist(),-55.,45.,0.,0.],
+            rejected_previous_thumb_up_candidate_angles_deg=[*reference_fist[:16].tolist(),-10.,20.,40.,0.],
             source_sha256={p.relative_to(ROOT).as_posix():digest(p) for p in [REFERENCE/"design.json",REFERENCE/"motion.json",REFERENCE/"preview.xml"]}),
         candidate_pose_corrections=dict(
             fist_and_rock_folded_thumb_delta_deg=FIST_THUMB_CORRECTION_DEG.tolist(),
             thumb_up_angles_deg=THUMB_UP_CANDIDATE_DEG.tolist(),
+            thumb_up_index_angles_deg=THUMB_UP_INDEX_CANDIDATE_DEG.tolist(),
+            thumb_up_index_delta_from_reference_deg=(THUMB_UP_INDEX_CANDIDATE_DEG-reference_fist[:4]).tolist(),
             affected_gestures=["fist","rock_thumb_folded","thumb_up"],
-            first_four_finger_angles_unchanged=True,
-            selection_basis="Pose-only saved-STEP search before final fabrication repair; final all-part endpoint audit is separate.",
+            first_four_finger_angles_unchanged=False,
+            unchanged_finger_scope="Fist/rock retain all four finger targets. Thumb-up changes only index spread and DIP; middle/ring/little retain the authored fist targets.",
+            selection_basis="Fist/rock corrections came from the earlier pose-only search. The straight thumb-up and adjusted index were selected by a separate all-349-part static check on the unchanged GESTURE001 saved CAD; endpoint/path evidence remains separately scoped.",
             local_clearance_goal_is_manufacturing_requirement=False,
             candidate_fist_path="Original 33 fractions and finger angles; thumb delta multiplied by reference MCP angle / final reference MCP angle. Transition collision status remains unverified."),
         kinematic_design={k:design[k] for k in ["units","fingers","thumb","joint_ranges_deg","palm_target_envelope_mm"]},
@@ -205,7 +217,7 @@ def generate_catalog(design=None,motion=None):
         limitations=["Angles are not silently clipped. A range violation is an error.",
             "No collision, cable routing, torque, latency, contact force or naturalness approval is implied.",
             "The authored reference 33-frame fist is preserved separately; the candidate fist path changes only thumb angles and is not collision verified.",
-            "Authored fractions are not measured human timings. The thumb-up semantic rule permits MCP bend with straight IP; other extension rules are unchanged.",
+            "Authored fractions are not measured human timings. Thumb-up requires a nearly straight chain from the root, near-zero MCP/IP bend and explicit index adjustment; its shape criteria are not manufacturing or measured-human requirements.",
             "Staged thumb-clear paths are explicit candidates, not proven safe paths.",
             "The FORM002 visual meshes remain a read-only reference; parent CAD reconstruction is separate."])
 
@@ -306,17 +318,26 @@ def validate_catalog(catalog):
         m=shapes[g["id"]]
         for digit in g["extended_digits"]:
             if g["id"]=="thumb_up" and digit=="thumb":
-                # Morphological indicator only: a bent MCP can point a straight
-                # distal thumb up without making the whole chain 95% straight.
-                if abs(g["angles_deg"][19])>5 or m["digits"][digit]["distal_direction_world"][1]<math.cos(math.radians(45)):
-                    raise ValueError("Thumb-up requires near-straight IP and distal direction within 45 degrees of +Y")
+                # Qualitative shape proxy only. This does not inspect STL/STEP,
+                # clearances, photographic camera pose or physical joint ROM.
+                thumb=m["digits"][digit]
+                centres=np.asarray(thumb["joint_centres_world_mm"])
+                first=centres[1]-centres[0];first/=np.linalg.norm(first)
+                index_joint_max_y=max(p[1] for p in m["digits"]["index"]["joint_centres_world_mm"])
+                tip_height=thumb["tip_world_mm"][1]-index_joint_max_y
+                if (thumb["extension_ratio"]<.98 or max(abs(g["angles_deg"][18]),abs(g["angles_deg"][19]))>5
+                        or first[1]<math.cos(math.radians(35)) or tip_height<30):
+                    raise ValueError("Thumb-up requires extension >=0.98, MCP/IP <=5deg, first link within 35deg of +Y and tip >=30mm above index joint centres")
                 continue
             if m["digits"][digit]["extension_ratio"]<.95:raise ValueError("Extended digit is curled: "+g["id"]+" "+digit)
         for digit in g["folded_digits"]:
             if digit!="thumb" and m["digits"][digit]["extension_ratio"]>.5:raise ValueError("Folded finger is too extended")
         semantic.append(dict(gesture=g["id"],extension_categories_match=True,
-            thumb_up_rule=(dict(ip_absolute_max_deg=5,distal_world_y_min=math.cos(math.radians(45)),
-                whole_thumb_extension_ratio_is_not_this_rule=True,manufacturing_or_naturalness_requirement=False)
+            thumb_up_rule=(dict(extension_ratio_min=.98,mcp_ip_absolute_max_deg=5,
+                first_link_max_angle_from_world_plus_y_deg=35,tip_above_index_joint_centres_min_mm=30,
+                evaluated_extension_ratio=thumb["extension_ratio"],evaluated_tip_height_mm=tip_height,
+                evaluated_first_link_angle_deg=math.degrees(math.acos(float(np.clip(first[1],-1,1)))),
+                geometry_clearance_or_manufacturing_requirement=False,calibrated_photo_match=False)
                 if g["id"]=="thumb_up" else None)))
     if shapes["v_sign"]["index_middle_distal_angle_deg"]<15 or shapes["scissors"]["index_middle_distal_angle_deg"]>5:
         raise ValueError("V/scissors distinction lost")
