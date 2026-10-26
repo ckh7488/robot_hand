@@ -1,0 +1,11 @@
+{
+  "target_commit": "04c49d8e59513533842ac3df63c4d184e05062d0",
+  "passed": true,
+  "input_files": 369,
+  "marker_count": 2,
+  "original_image_sha256": "0e478bcd8fda867d033e567222dd3a84a560a66eca5bd79da1b5a7fa2e4faea2",
+  "replayed_image_sha256": "0e478bcd8fda867d033e567222dd3a84a560a66eca5bd79da1b5a7fa2e4faea2",
+  "clean_checkout": true,
+  "scope": "Exact-SHA source/mesh hashes, world-to-image collision centroid markers and full image rerender. No CAD geometry or movement changes; no new collision, continuous or hardware approval.",
+  "independent_audit": false
+}
