@@ -1,0 +1,30 @@
+{
+  "initial_collision_report": "reviews/check.json",
+  "initial_report_completed": false,
+  "initial_rotations_completed": 37,
+  "initial_failed_spool_adapter_angles": [
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180
+  ],
+  "partial_assembly_preserved": {
+    "completed": true,
+    "CAD_export_only": true,
+    "original_collision_study_completed": false,
+    "original_rotations_completed": 37,
+    "original_spool_install_samples": 5,
+    "original_screw_install_samples": 5,
+    "source_hashes_verified": true,
+    "reason": "Original candidate already blocked in a full turn.Stopped later redundant assembly computation;raw completed=false partial report and source code preserved.Exported unchanged first CAD for failed-pair replay and actual common-shape illustration.",
+    "whole_design_passed": false
+  },
+  "correction": "Integral R9 axial neck2mm;drum/anchor bosses+X2mm,total web3.5mm and four M2x6/2.5mm nominal horn engagement preserved.No hand,motor,adapter/rack or angular range change.",
+  "original_raw_stock_internal_contact": "Every original rotation also records unchanged central retainer/source motor contact34.8464966mm3;baseline classification is assessment.json,not a removed collision.",
+  "selected_report": "selected/reviews/check.json",
+  "sweep_scope": "3conservative axisymmetric bounds for new7custom solids only,not complete stock motor/tendon/hand continuous movement."
+}

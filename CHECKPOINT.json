@@ -1,10 +1,10 @@
 {
-  "id": "BUS017",
-  "candidate": "cad/remote_bus_v1",
+  "id": "DRIVE018",
+  "candidate": "cad/motor_spool_coupling_v1/selected",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/BUS017.manifest.json",
-  "previous_checkpoint": "PALMLEAD016",
-  "status": "6wire extensions from2remote modules to2temporary connector spaces;static space and6continuous joins clear.Hand/motor/rack/mount/old48leads unchanged.Other14remote branches,new restraint,power/data bus/future board/dynamic arm/electrical/hardware remain incomplete.",
+  "manifest": "checkpoints/DRIVE018.manifest.json",
+  "previous_checkpoint": "BUS017",
+  "status": "One current thumbIP output coupling candidate:stock reference horn/retainer kept,dual groove drum with4nominal M2x6TAP fasteners and2tail clamps.Corrected actual rotating boss/adapter obstruction using integral axial neck.Hand/motor mounting/wires unchanged.Full hand tendon path,tension,physical strength and supplied fastener/driver unresolved.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "fc5f5ad8623d51e2cc255fae487cda4eceb3580e",
-  "post_commit_review_report": "docs/reviews/BUS017/README.md",
-  "post_commit_reproduction_scope": "Exact-SHA clean clone:360packaging/64old wire+plug/8new wire+temporaryspaces/10arm reimport;4native static groups,8analytic sourceSTEP comparisons,12span points,6continuity/fuse/measuredtangent and6terminationface distances;5savedhand-box poses14560pairs,364input hashes(no full hand native reimport).2935closure/222frozen hashes,zero differences,cleanclone,OCCpool1,sameagent.Render not rerun.Only2module/6wire runs;14branches/restraints/final bus/board/SKU/electrical/dynamicarm/physical incomplete.",
-  "next_stage": "Hand first:trace actual motor-output/hub/pulley/pull-pull tendon-to-finger connections and constraints;integrate/test representative joint then expand.Check actual local harness/connector dimensions,restraints and pinch/tension along natural hand paths.Keep existing16remote actuators as necessary hand-drive sources;defer elbowward electrical runs and board terminations.Preserve human form;no hand cuts for speculative small gaps.",
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Hand first:close this representative motor output coupling nominal space.Build two actual tendon routes from current thumbIP drum via wrist/parent guides to accepted thumbIP anchors,including length change under parent joints,pretension/adjustment and approach/release.Keep hand form/motor placement;verify actual local harness.Do not reopen tiny mount clearances or extend elbowward bus.No full hand/motor/cable/tendon approval yet.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -65,5 +65,9 @@
   "hand_status_report": "docs/HAND_INTEGRATION_STATUS.md",
   "priority_update_reviewed": true,
   "priority_update_review_target": "abad0a304a2ba24880034e247a5417eb2ae9d145",
-  "priority_update_review_report": "docs/reviews/HAND_SCOPE_20261027/README.md"
+  "priority_update_review_report": "docs/reviews/HAND_SCOPE_20261027/README.md",
+  "active_motor_coupling_scene": "cad/motor_spool_coupling_v1/selected/generated/scene.json",
+  "coupling_representative_motor": "thumb_ip_actuator",
+  "coupling_full_rotation_space_clear": true,
+  "coupling_physical_approved": false
 }

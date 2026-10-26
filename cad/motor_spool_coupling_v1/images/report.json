@@ -1,0 +1,41 @@
+{
+  "completed": true,
+  "input_sha256": {
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_motor.stl": "6478068e9580cf435edc0dec785ffab61b46dc8c4dd6667dc01f478218301306",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_cradle.stl": "6b9fa9797815988862350d891bc35f29b5ae044b67550efd2284318bb6dba474",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_body_screws.stl": "a98c5ad08468786c5848e69ea40b074d5f98c341eb63563f9b59c74ef6a49d76",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_base_screws.stl": "6bd1e0caefb9e22a683b97f9ea94ddec58a07290fa982d455cebcdadccec0c35",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_base_nuts.stl": "02a9531904e1bea26446ad6667346ad30ca256e230dc81b2ffe53d009606339a",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_adapter.stl": "6748de8f3e6b9e559db91d8b5775f601e667715be5d78f3dfb03a6bd8ead6d6d",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_rotor.stl": "340c22ac5573d0c5892abdeea554f6102adf7d488d9fc942c65c2daffa1dad58",
+    "cad/wiring_layout_v1/generated/parts/thumb_ip_actuator_spool.stl": "367babcdcc26c589db9d9a38f8a82c72908df8a10cba9200210678a50c2033ba",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_stock_output_horn.stl": "c792da51d55e2341d51f10e0627c67468a1b3ca7547f1d18b9c60de47b449f44",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_stock_central_retainer.stl": "14392261ac5f6774425555d8fc34a5f069e2aacf608d5aad457e701002633da0",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_stock_rear_idler.stl": "80b87edb2b69d275f79917cea43653818996791469426b8b359916851336ef89",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_two_tail_spool.stl": "8ff02ca7a046f0b8079be1ec941122ec28f231cc3959182ca2c898aed7487380",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_spool_tap6_1.stl": "7a92eaa167ff68570ee74462831514a75355653ab69e7d812d42b876094a3d92",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_spool_tap6_2.stl": "84ed15871c74912d650578a9dd50beddb1963f84d3fae6c906e409e43d90971b",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_spool_tap6_3.stl": "c8d442e86c41c07ed4e582acfa434afdee2688496d443cdb3188b90385d21414",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_spool_tap6_4.stl": "566cee6c21d0a77934c7de075b344e0e9dcf3e64b728bb94c9e7ed48528d0119",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_tail_clamp_1.stl": "c6b49eb3202734bd5004f6ce3006c23ba1f318cc4bcb7f6943aff487f481c0a5",
+    "cad/motor_spool_coupling_v1/generated/parts/thumb_ip_tail_clamp_2.stl": "548e16bebffc2e1ea0ecce99d174f1d8d1339f48a8046fe0ee0ce1257ce7c2b2",
+    "cad/motor_spool_coupling_v1/selected/generated/visual_evidence/first_tail_boss_adapter_common.stl": "95f4fad407d8a8307bd22be5d23643b242ece01e9f0277769fb14309ff98c591",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_stock_output_horn.stl": "c792da51d55e2341d51f10e0627c67468a1b3ca7547f1d18b9c60de47b449f44",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_stock_central_retainer.stl": "14392261ac5f6774425555d8fc34a5f069e2aacf608d5aad457e701002633da0",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_stock_rear_idler.stl": "80b87edb2b69d275f79917cea43653818996791469426b8b359916851336ef89",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_two_tail_spool.stl": "8f1b91d2adf6b98667c82b9ac522be6fdda0695fe9e25a673fd3630108dc0f9a",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_spool_tap6_1.stl": "7a92eaa167ff68570ee74462831514a75355653ab69e7d812d42b876094a3d92",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_spool_tap6_2.stl": "84ed15871c74912d650578a9dd50beddb1963f84d3fae6c906e409e43d90971b",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_spool_tap6_3.stl": "c8d442e86c41c07ed4e582acfa434afdee2688496d443cdb3188b90385d21414",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_spool_tap6_4.stl": "566cee6c21d0a77934c7de075b344e0e9dcf3e64b728bb94c9e7ed48528d0119",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_tail_clamp_1.stl": "cc2ffdf3d0280173fa9af3900e766dd90d432e6177d5092269810b5271fd73e8",
+    "cad/motor_spool_coupling_v1/selected/generated/parts/thumb_ip_tail_clamp_2.stl": "00dda1cd4222a8d54c66ee38716027f101d911145260ffe22d204975c6936bcf"
+  },
+  "actual_saved_meshes": true,
+  "simulation_steps": 0,
+  "output_sha256": {
+    "coupling.png": "a4c9b1eee02f8c79452d35093112ad899a177137be9f1984f0e0a66d0aadb60d",
+    "output_rotation.gif": "6d2ee95bbc01505120093c729764717c0cdeeebea3dd6433e3a881696b43b332"
+  },
+  "scope": "One current motor,transparent spool before/after and motor-output-only rotation,not a motor-driven hand or tendon dynamics."
+}

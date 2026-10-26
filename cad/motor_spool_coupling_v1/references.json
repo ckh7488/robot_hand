@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-10-27",
+  "primary_sources": [
+    {
+      "url": "https://robotis.us/dynamixel-xl330-m077-t/",
+      "fact": "Manufacturer package lists PHS M2x6 TAP for horn attachment;this does not verify the head/drive dimensions used in the nominal envelope."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ROBOTIS-GIT/emanual/master/_includes/en/dxl/drawing/x330_drawing.md",
+      "local_image": "cad/modular_roots_v9/sources/x330_horn_screw.png",
+      "sha256": "0b25105a72e0506a55806438dee7c831530580e0257dfddf0e4000c6021c06f7",
+      "fact": "Official horn screw illustration:penetration depends on mounting thickness;do not substitute a longer screw into the same thickness."
+    },
+    {
+      "local_step": "cad/modular_roots_v9/parts/M077_rotor.step",
+      "sha256": "6210cadf17f10112cfa28d1b9a4c97bb7575b910381ed92469743beb6b2b4fa5",
+      "fact": "Unscaled original3solids split without geometry alteration.Stock-reference horn has four R0.8 axial pilot holes on PCD12;factory retainer/reference internals not newly qualified."
+    },
+    {
+      "local_spec": "cad/thumb_ip_drive_v1/source_docs/motor_fasteners/facts.json",
+      "fact": "Existing supplier nominal dimensions for two M2x3 flat tip tendon clamps;no physical retention qualification."
+    }
+  ],
+  "assumptions": [
+    "Motor still XL330-M077 space-comparison candidate,not final motor selection.",
+    "PHS M2x6 head diameter4.2,height1.6 and illustrative cross-drive are nominal space assumptions,not verified exact supply CAD.",
+    "Drum material/finish,plastic horn thread life/strength,torque/tolerance,cord.6mm and grooveR10/anchors remain unqualified.",
+    "Stock central retainer is retained unchanged,not a guessed HNX330 metal-horn replacement."
+  ]
+}
