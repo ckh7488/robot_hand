@@ -1,0 +1,67 @@
+{
+  "completed": true,
+  "input_sha256": {
+    "cad/wire_guides_v1/render.py": "6539aa7ced9516c08e63674a6f4e75f2b911cf456d3e6eabcb5369597c7db12a",
+    "cad/wire_guides_v1/reviews/check.json": "a01ab5c8f1e2646bce2f902d3da0d082d4f14ac28e2e93e01b6d43f04d7f503c",
+    "cad/wire_guides_v1/generated/scene.json": "ad12ad120d2e26b21a2779fdd950698ef58aae771e8023cf9384374178116117",
+    "cad/remote_motor_lead_v2/generated/scene.json": "3a211c5e479cd195fecbc6f66d3ef5730746f8f9635df8e0b0a4a282417a80f0",
+    "cad/wiring_layout_v1/generated/packaging.json": "66d3ae93f44ae6919584f6157c86b8fe8572086e4443573cdaedfdee145f59b4",
+    "cad/gesture_hand_v3/render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56",
+    "cad/gesture_hand_v3/poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f",
+    "cad/functional_motion_v3/generated/catalog.json": "743c15cd203fc20e78b9b40a2e61bd4dca72f9c20c7127132ec18bf4844076f0",
+    "cad/wiring_layout_v1/generated/parts/Forearm_twenty_axis_module_rack.step": "b6635300873cb422898a16826087c0ee009cbfc9d6d37584952557750b8e5ab7",
+    "cad/wire_guides_v1/generated/visual_evidence/rack_local_visual_only.stl": "82877fe3c5d75b6c1286cbcbbf5b88bda563c0ee93107410fbff4f964f26d1dd",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_motor.stl": "4f9ebfddc297b41c4abd81f460f20e35b25e3a9b80c3e49583b845720d074031",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rotor.stl": "2e190a2724089913b3c0f8ea23e923f8e6d73fb1061b5a927d10950ece73e7bf",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_cradle.stl": "2f637ee86ea98422da037024d51b73c5cedd93efd669b9cef0cafda0479df2fb",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_body_screws.stl": "ca4eb7f33dd4be53bc5633308c07cdf4a637d49fc931b2ac94206ed7fb0e5e01",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_base_screws.stl": "85b65a5697d5d8625c9beb75b7db019dfc13eca56b0cb79f42990bd71fcb26ef",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_base_nuts.stl": "c8f677a37fdb10386da3fa7dccca48d8b6aa41ff9635269aa863bff514243a00",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_adapter.stl": "745b1396a370d2a71bdf662209e6719e304fb5d222d6451d242b84febc39b5bd",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_spool.stl": "fe17e13abad7fad88071398e36d461914a9a9c8ca4957511ce919347fe9a808d",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_screw_1.stl": "80d554f807dfe57bd18b7923ff4308db9ee58be8aa1b1f80559d19623170a930",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_nut_1.stl": "3e901476e584df477aff1b6eef929e6b09dd83e20f93e7952dafe42d77ffe2c0",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_screw_2.stl": "001db752afcb456af34797cba45ce88c2eed63cad0478d2c61480b8d871ef5b0",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_nut_2.stl": "620b821c835bcba45a4f95bdec603a4cfea8c50a775a91bf41425894d0e3da39",
+    "cad/remote_motor_lead_v1/generated/batch_parts/index_spread_actuator_lead1.stl": "164a6bb0c04bf3456ab70d32caf259db892c3a45d63a9e4b0dd54c7806254fe1",
+    "cad/remote_motor_lead_v1/generated/batch_parts/index_spread_actuator_lead2.stl": "0f23eaad7455d3ab3971f54be08826c6c20e831ea7cc36b03822ca6eb831ee54",
+    "cad/remote_motor_lead_v1/generated/batch_parts/index_spread_actuator_lead3.stl": "3c0fd2e9cafb36624e4fc1de3038fbea062fd7b62a5b996df4536d3f546ae91c",
+    "cad/remote_motor_lead_v1/generated/batch_parts/index_spread_actuator_plug_outer.stl": "6e5b66a85c47956a41935577033de028144855141d85d4bb6474b301376481e7",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_rack_screw_1.stl": "17af52537563bba0e389f4094e8d84837f1fdb772b7205b7b7cb8186e4b3f590",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_guide_spacer_1.stl": "6fa9093b5ab91418114da4104e30cf33629b4861d9773d7f2d63333ada6d8d0f",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_rack_screw_2.stl": "c050d7e07069141f0a2c43aac2c32a2b4e2417fa92287d00868b036b4e0b7f04",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_guide_spacer_2.stl": "eb161ec63e1f0ea44ed0111d956c6e8ff3f57c737a568717845c85a6a25ac6e1",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_wire_guide_base.stl": "40acc551997a49e01899fd08ba352453db064b44672055fa14bf0f1200e100a8",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_wire_guide_lid.stl": "ad03863c75b4b81c80b1acb82ba9c3ed5117cc9090d5f83ccb66015ba5cc2801",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_lid_screw_1.stl": "745832abbd6a7a703ce26c28fd7a6e11f982516cef8e2734d084d92ee63e599e",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_lid_nut_1.stl": "aabde3a92da1a30b8d7b76bef9bc9936d5a82230ccec9db051506f90bdd29781",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_lid_screw_2.stl": "60be938e667478afd9d1bec0a8c38009cad07f2f2a7fa4351991689ba06d7a42",
+    "cad/wire_guides_v1/generated/parts/index_spread_actuator_lid_nut_2.stl": "76b0d7ea8fd56be3b2c9b89fa1993cfa6ace3ab3eb5b689b7fb1fd2cf85961d7"
+  },
+  "outputs": {
+    "guides.png": "2b3dd8a1f7eca7cf380d4c59a796a3ed3ae502722d1903b2a180f729aeb33e82",
+    "lid_access.png": "f8aa07a0d5b50301c4ba4643aefd10beeabec755155f5c1ce1969f88b59da362"
+  },
+  "actual_saved_meshes": true,
+  "simulation_steps": 0,
+  "local_module": "index_spread_actuator",
+  "full_rack_used_in_audit": true,
+  "visual_only_rack_crop_mm": [
+    [
+      -85,
+      -44,
+      -112
+    ],
+    [
+      0,
+      -1,
+      -40
+    ]
+  ],
+  "open_lid_translation_mm": [
+    0,
+    0,
+    12
+  ],
+  "open_view_removed_kind": "M2x6_envelope"
+}
