@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": "ExactSHAcleanclone:10nativegroups/2failedopenposes;alloverlappairsmatch,9groupsdefaultnumericmatch.Onefirsthousing-wristdefaultcommonvolume differs0.000103900864mm3>1e-5,core_initial=falsepreserved.SamecloneboundedsourceSTEPonepairnativeintersections,adaptive1e-10metrics abs1e-5match(precision_pair=true).20newsourcefromsavedBeziercontrols/STEPmetricmatch,2endpoint-lengthconstraints;SLSQP/render/parent-wristmotionnotrerun.5056closure/222frozen,cleanclone,OCC1,sameagent.No sourceallBoolean equivalence,inheritedOFFSET024resolution orphysicalforce/wholehand approval.",
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "549b1eb527e5a287702e7061e09682d0ceea8877",
+  "post_commit_review_report": "docs/reviews/WRIST028/README.md",
+  "post_commit_reproduction_scope": "ExactSHAcleanclone:35nativegroups,10source/STEPadaptive1e-10metric signatures abs1e-5,3seats;current397hand/385packaging/64electrical/10neutralarm/10new.Originalstraight/bothcap failures,parentquarterlocalhousingblock reproduced;hardwareopen/fullparent and6service start/end12of30 selected only.5173closure/222frozen,cleanclone,OCC1,sameagent.Notremainingstatic/middle18service/render/fullhousing/threading,wristmotion/tension/friction/preload/load/manufacturing/physical or fullhand approval;inheritedOFFSET024/HOU027 anomaliesnotretested.",
   "next_stage": "Close6hardware8static/30assembly.Local45deg straight crossing blocked atparentquarter2pairs;unadopted,remaining3localparentposesnotrun.Do not repeat smallgap/oldhandpostures.Connect real motor terminal -> realguide bore -> thumbterminal using actual attachment/body frames;then fixedlength housing/parent-wrist approach-release,cordthreading/adjustment/pretension and pinch/pull risks.Local50.911688mmhousing notfull542mmroute;no repeatedfreeBezier/partialAABB/imaginarysupports,no handcut/ODreduction/anglelimits/elbowbus.Clip preloads/friction/sliding/load,supplier/manufacturing/exterior unverified.Inherited OFFSET024 andHOUSING027comparison caveats preserved.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -169,8 +169,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": false,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -184,7 +184,7 @@
   "distal_sheath_candidate_bench_tests": 4,
   "distal_sheath_candidate_service_report": "cad/distal_terminal_assembly_v1/reviews/selected_service.json",
   "inherited_OFFSET024_face_comparison_inconclusive": true,
-  "post_commit_review_core_passed": false,
+  "post_commit_review_core_passed": true,
   "post_commit_source_STEP_equivalence_retested": false,
   "inherited_OFFSET024_initial_core_passed": false,
   "inherited_OFFSET024_face_supplement_passed": false,
@@ -209,5 +209,6 @@
   "wrist_guide_hardware_sampled_assembly_clear": true,
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
-  "inherited_HOUSING027_precision_pair_passed": true
+  "inherited_HOUSING027_precision_pair_passed": true,
+  "post_commit_initial_execution_succeeded": false
 }

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Codex-work\robot-hand-workspace\reviews\WRIST028_549b1eb527e5\cad\wrist_housing_guide_v1\review_core.py", line 8, in <module>
+    from guide_service import sequence
+ImportError: cannot import name 'sequence' from 'guide_service' (D:\Codex-work\robot-hand-workspace\reviews\WRIST028_549b1eb527e5\cad\thumb_root_guide_v1\guide_service.py)
