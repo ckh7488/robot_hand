@@ -1,0 +1,35 @@
+{
+  "review_date": "2026-10-27",
+  "new_supplier_qualification": false,
+  "inputs": [
+    {
+      "path": "cad/motor_spool_coupling_v1/selected/generated/scene.json",
+      "sha256": "15868e1e5db2721af19553eeed5275be03e805196a9b27b8271d2eef30d71e5f",
+      "meaning": "Current one-motor output coupling and358retained packaging,not complete hand drive."
+    },
+    {
+      "path": "cad/thumb_ip_drive_v1/routing.py",
+      "sha256": "bd39958e6d7cf1dd91db333a4fc790fa76acc0a4acaf14f6fde0506616036e07",
+      "meaning": "Accepted local IP track/anchor geometry only.External120mm test bench and fixed-parent0.77ratio not used as full-hand transmission proof."
+    },
+    {
+      "path": "cad/thumb_ip_drive_v1/source_docs/tendon/facts.json",
+      "sha256": "f5141efe89461a969988e6e90b6cc8e859ab54f52af49a40e685ac6bc67ec0ab",
+      "meaning": "Previously saved LIROS supplier evidence;nominal0.6mm cord here remains a geometric assumption.R5guide fillets are not a selected guide/bend-life rating.No new supplier lookup/physical qualification in this round."
+    },
+    {
+      "path": "cad/palm_motor_layout_v1/reviews/check2.json",
+      "sha256": "da1f9a0ddf9eeb961dc309607f96ca2af79dff21ccb9eafd7de9266cab483847",
+      "meaning": "Existing pinch25 hand-angle input;object contact/forces not rechecked in this routing study."
+    }
+  ],
+  "assumptions": [
+    "Cord diameter0.6mm;motor track R10/joint trackR7.7;free guide fillet centerlineR5 are nominal geometry,not installed hardware or working-load/fatigue specifications.",
+    "Output rest phase-60deg and initial separate cable lengths are engineering candidates.No motor mount or finger angle changed.",
+    "17parent length samples are free-curve analytical measurements,not17native collision or force-dynamics samples.",
+    "Guide centers need actual support/axis constraints.Maximum drift relative to putative support body is11.612929398mm.",
+    "Common length residual and ideal2:1compensator travel are route-specific diagnostics,not actual tensioner specification or proof every possible route requires the same compensation.",
+    "Existing motor anchor entry changes tangent by26.565051177deg;nominal contact is not qualified cord retention/bend life.",
+    "Hand364/current368packaging and64old wire/connector envelopes,neutralarm10 used as obstacles.No new hand self-collision,object audit,wrist motion or powered hardware test."
+  ]
+}

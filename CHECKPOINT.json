@@ -1,10 +1,10 @@
 {
-  "id": "DRIVE018",
-  "candidate": "cad/motor_spool_coupling_v1/selected",
+  "id": "TENDON019",
+  "candidate": "cad/thumb_tendon_route_v1",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/DRIVE018.manifest.json",
-  "previous_checkpoint": "BUS017",
-  "status": "One current thumbIP output coupling candidate:stock reference horn/retainer kept,dual groove drum with4nominal M2x6TAP fasteners and2tail clamps.Corrected actual rotating boss/adapter obstruction using integral axial neck.Hand/motor mounting/wires unchanged.Full hand tendon path,tension,physical strength and supplied fastener/driver unresolved.",
+  "manifest": "checkpoints/TENDON019.manifest.json",
+  "previous_checkpoint": "DRIVE018",
+  "status": "One representative current thumbIP motor-to-tip two-cord free-guide routing study.UNADOPTED.Open/IP-only nominal snapshots clear,but4coupled parent poses still intersect thenar shell.No actual fixed guide hardware/tensioner/force equilibrium.Hand/motor/wiring geometry unchanged.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "3df1de2e6eacc6dddc0c578cbc8b258eb9d66d4f",
-  "post_commit_review_report": "docs/reviews/DRIVE018/README.md",
-  "post_commit_reproduction_scope": "Exact SHA clean clone:358retained+10selected/64wire+outerboxes/10neutralarm reimport;23native probes matched,9sourceSTEP signatures initially matched.One drum default integration/signature failed1e-5 absolute;preserved core_initial=false.Same unchanged clone adaptive integration epsilon1e-10 and type-constrained face/edge/vertex metric matching passed same1e-5 absolute;volume delta2.356e-8mm3.All10sourceSTEP signatures covered across original+supplement.5hand endpoint saved boxes/no full364nativeimport;3005closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all source poses/middle assembly/render replayed.No tendon-to-finger,pretension,supplied fastener/driver,strength,stock motor internals or whole hand physical approval.",
-  "next_stage": "Hand first:close this representative motor output coupling nominal space.Build two actual tendon routes from current thumbIP drum via wrist/parent guides to accepted thumbIP anchors,including length change under parent joints,pretension/adjustment and approach/release.Keep hand form/motor placement;verify actual local harness.Do not reopen tiny mount clearances or extend elbowward bus.No full hand/motor/cable/tendon approval yet.",
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Hand first:close free-curve waypoint search.Design actual thumb-root tendon guide axes/supports and path constraints on current bodies,then two-cord lengths/pretension/adjustment and coupled approach/release.Reproduce root-shell obstruction;natural hand inputs/motor mounts stay.Keep physical/SKU tests unresolved.No hand shaving,angle limiting,closed spool/wire micro-optimization or elbowward bus extension.No complete hand drive claim.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -70,6 +70,28 @@
   "coupling_representative_motor": "thumb_ip_actuator",
   "coupling_full_rotation_space_clear": true,
   "coupling_physical_approved": false,
-  "initial_core_passed": false,
-  "precision_supplement_passed": true
+  "previous_checkpoint_review": {
+    "post_commit_review_target": "3df1de2e6eacc6dddc0c578cbc8b258eb9d66d4f",
+    "post_commit_review_report": "docs/reviews/DRIVE018/README.md",
+    "initial_core_passed": false,
+    "precision_supplement_passed": true
+  },
+  "active_tendon_route_scene": "cad/thumb_tendon_route_v1/generated/calibrated_open/scene.json",
+  "active_tendon_route_is_unadopted_research": true,
+  "tendon_nominal_snapshot_count": 6,
+  "tendon_failed_snapshot_ids": [
+    "parent_mid",
+    "parent_quarter",
+    "parent_three_quarter",
+    "pinch25"
+  ],
+  "tendon_sampled_free_guide_envelopes_clear": false,
+  "tendon_guides_installed": false,
+  "tendon_tensioner_installed": false,
+  "tendon_force_equilibrium_validated": false,
+  "tendon_common_length_range_mm": [
+    -21.89816999574873,
+    15.513168087278757
+  ],
+  "tendon_putative_guide_center_max_drift_mm": 11.612929398163995
 }

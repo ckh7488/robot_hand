@@ -1,0 +1,14 @@
+{
+  "initial_native": "reviews/audit.json",
+  "initial_reports_completed": true,
+  "initial_rear_turn": "Two cord segments touch neighbouring little-spread output spool;one upper entry arc touches thumb faceplate.",
+  "front_neutral_correction": "Wrist turn moved forward and IP entry moved along the existing straight slot;neutral and IP-only poses clear,but parent-mid route crosses MCP shell/plate.",
+  "first_follow": "follow_parent.py/follow_audit.py:invalidR5fillet preflight on all attempted poses;zero native cases.Aggregation of empty length list also failed;completed=false retained in follow.json.",
+  "second_follow": "follow_parent2.py/follow2_audit.py:17geometric preflight samples,15valid/2motor-wrap failures.No full native cases run;follow2.json preserved.",
+  "rest_phase": "calibrated.py changes output shaft rest phase to-60deg and initial cut-length settings only.Keeps all existing hand angles and motor mounting.R5fillets and all17wraps then valid.",
+  "final_native": "reviews/calibrated.json:6snapshots,open/IP45clear;four coupled parent poses touch root shell.Candidate remains unadopted.",
+  "render_attempt1": "Proxy omitted MjData;stopped before any images.No CAD defect.Final render2 completed;empty images_attempt1 folder is not evidence.",
+  "source_scene": "generated/calibrated_open/scene.json",
+  "guide_hardware_installed": false,
+  "tensioner_installed": false
+}
