@@ -1,0 +1,41 @@
+{
+  "completed": true,
+  "source_reports": [
+    "reviews/probe.json",
+    "reviews/static.json",
+    "reviews/service.json",
+    "reviews/final_service.json",
+    "reviews/selected_service.json"
+  ],
+  "original_hand_geometry_unchanged": true,
+  "motor_positions_unchanged": true,
+  "electrical_paths_unchanged": true,
+  "execution_history": "First service invocation failed importing probe before any geometry/native test.Explicit local script path fixed it.The original service native run was deliberately stopped after four completed paths20samples to avoid repeatedly calculating identical obstacle bounds;completed=false preserved.service_resume.py verifies identical input hashes/moving transforms/absent-installed lists/pair counts and reuses only those20completed samples.material_cache.py caches the original bounds for unchanged shape objects;native Boolean,floor and tolerances unchanged.Remaining samples newly computed in final_service.json.No stopped partial path counted as completed.",
+  "old_upper_without_tip_straight_still_failed": true,
+  "old_upper_roll_poses_clear_deg": [
+    -2,
+    -0.5,
+    0,
+    0.5,
+    2
+  ],
+  "old_lower_existing_slot_bilateral_contact_at_deg": [
+    -0.5,
+    0.5
+  ],
+  "required_sampled_paths_clear": true,
+  "failed_paths": [],
+  "missing_hand_parts_finally_accounted_for": true,
+  "bilateral_5degree_key_stops": true,
+  "interpretation": "Upper round collar has no positive index;lower nominal slot blocks both tested roll signs.New custom tab/seat creates geometric stops at both5degree test signs.Not a zero-backlash,stiffness,6DOF or load/friction/fatigue approval.",
+  "limits": [
+    "Tubes OD1.2/ID0.8/R5 and formed integral flange/tab remain custom material/manufacturing assumptions.The old supplierPTFE dimensional reference does not certify rigidity or flange production.",
+    "Existing nominal1.2mm slots versus supplierOD tolerance remain unresolved.No arbitrary OD/radius shrinking or accepted hand cutting.",
+    "Child13part cap/bushings/tendonclamp are a reference subassembly,not a new approval of all its earlier internal assembly paths.",
+    "Manual support of carrier/skin/washers,unfastened socket halves/nuts/child washers is required.No physical jig,driver/hand access or preload strength verified.",
+    "Finite nominal assembly samples,not continuous collision,whole hand assembly,mechanical force transmission or physical integration.",
+    "New11 replaces prior11candidate rows;retainedhand362plus11=373,packaging368/electrical64unchanged.No duplicate old guide parts installed.",
+    "New guide protrusion remains candidate human-form envelope.No whole20motor/hand integration claim.",
+    "Motor-to-inlet/root conduit,full antagonistic length adjustment/pretension and powered movements remain absent."
+  ]
+}
