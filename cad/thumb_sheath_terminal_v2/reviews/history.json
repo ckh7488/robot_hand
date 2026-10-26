@@ -1,0 +1,43 @@
+{
+  "first_report": "reviews/static.json",
+  "first_completed": true,
+  "first_static_clear": false,
+  "first_fixed_failures": [
+    {
+      "lead": "distal_housing_keeper_1",
+      "part": "flanged_liner_1",
+      "material_intersection_mm3": 1.8818139995002365
+    },
+    {
+      "lead": "distal_housing_keeper_1",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 28.98313997198995
+    }
+  ],
+  "first_full_failures": [
+    {
+      "lead": "distal_housing_keeper_1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 64.07273402687667
+    },
+    {
+      "lead": "distal_housing_keeper_1",
+      "part": "flanged_liner_1",
+      "material_intersection_mm3": 1.881813999500234
+    },
+    {
+      "lead": "distal_housing_keeper_1",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 28.983139971989797
+    }
+  ],
+  "common_locations": "reviews/locations.json",
+  "missing_bore": "Prototype upper cap downstream bore ended at u=-3.99 instead of+4.01;copied construction cut omission corrected in selected_model.py.Not a defect in the accepted hand.",
+  "support_correction": "Replace broad plate by actual curved rib/three posts and short seat connection to avoid carrier wall/root.Upper port remains offset x14/u-17mm;original distal liner centerline preserved.",
+  "assembly_design": "Opened only new upper spigot half-socket radially so the existing formed liner remains installed.6finite upper cap entry samples,not full ferrule/shoe/bolt/housing assembly.",
+  "locate_input_error": "First locate selected design from hand geometry catalog,which has no design key;stopped before native intersections.Corrected to current guide DESIGN,locations.json/offset024-locate2 are completion evidence.",
+  "selected_report": "selected/reviews/static.json",
+  "selected_upper_entry": "selected/reviews/keeper_entry.json",
+  "hand_source_geometry_changed": false,
+  "motor_positions_changed": false
+}

@@ -1,0 +1,674 @@
+{
+  "parts": [
+    {
+      "name": "distal_housing_keeper_0",
+      "body": "thumb_mcp",
+      "role": "extended_outer_keeper_on_existing_carrier_and_M2_axis",
+      "color": [
+        0.22,
+        0.65,
+        0.5
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_keeper_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_keeper_0.stl",
+      "sha256_step": "d2d6ad8444a31fbd279b177d50665673f6223aa5291256759f81a17b51387253",
+      "sha256_stl": "cd12d452c0ebe0049e68faf1a576df2120b03146f3fb8732dac2c03458c49506",
+      "bbox_mm": [
+        [
+          110.60753702100921,
+          36.00101055542947,
+          9.9489237597146
+        ],
+        [
+          135.1144386383185,
+          57.80914088744465,
+          25.873161187245458
+        ]
+      ]
+    },
+    {
+      "name": "distal_housing_shoe_0",
+      "body": "thumb_mcp",
+      "role": "removable_inner_ferrule_capture_half",
+      "color": [
+        0.24,
+        0.53,
+        0.65
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_shoe_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_shoe_0.stl",
+      "sha256_step": "839b0726f169cbeb72c2d5433110b6291543f4f3acabc6c7db9484eed7a6ae03",
+      "sha256_stl": "db95af63ad11780deabe09198fa3c1d5cadc18f63de6410aba7cc38a88e2b7c9",
+      "bbox_mm": [
+        [
+          108.46577017210323,
+          39.791577889916795,
+          11.63908627112669
+        ],
+        [
+          122.65820574202966,
+          53.68183093566907,
+          25.20035203086556
+        ]
+      ]
+    },
+    {
+      "name": "distal_flanged_ferrule_0",
+      "body": "thumb_mcp",
+      "role": "custom_compression_end_stop_with_captured_axial_flange_not_housing_pullout_clamp",
+      "color": [
+        0.85,
+        0.64,
+        0.23
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_flanged_ferrule_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_flanged_ferrule_0.stl",
+      "sha256_step": "3bd15be805ce60fdcfff2c86212aff72e091d43fd0d9b996cfa520f68b8cf0af",
+      "sha256_stl": "ea670355918c257f33dac963b859bea6ee218f34b80b22f00ee52ad10de20fa5",
+      "bbox_mm": [
+        [
+          106.96245947272803,
+          37.48514432015526,
+          14.954472735175594
+        ],
+        [
+          121.44905511225204,
+          49.53696582678214,
+          20.170502505354477
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2x10_0_0",
+      "body": "thumb_mcp",
+      "role": "nominal_smooth_fastener_envelope_no_thread_drive_approval",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_0_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_0_0.stl",
+      "sha256_step": "a70b0666303c390e1983571c6e4539d8a76aa161db3e7b9b864c89bd16cef1de",
+      "sha256_stl": "d90d95f6f3c1e79ee3fd69a9dad1b05f0407394537666a7cbe59f334597ac228",
+      "bbox_mm": [
+        [
+          112.29386951025721,
+          42.32112184960894,
+          9.58508820203574
+        ],
+        [
+          120.7400760187705,
+          52.489433325551865,
+          16.945940788358442
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2_nut_0_0",
+      "body": "thumb_mcp",
+      "role": "nominal_M2_nut_no_threads",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_0_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_0_0.stl",
+      "sha256_step": "12e219d83d1daf1f0b1cbcc7f6d2cb12919164dfc22039f72afd6fc1fdccbbd9",
+      "sha256_stl": "34e70b8a14dd187b6fd123cbe5c9a22f7320560535693d19dede69c1fe9acae2",
+      "bbox_mm": [
+        [
+          111.45414620766894,
+          48.76924791483048,
+          13.100944560332609
+        ],
+        [
+          116.1077972887936,
+          53.09039350979678,
+          17.96415154100677
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2x10_0_1",
+      "body": "thumb_mcp",
+      "role": "nominal_smooth_fastener_envelope_no_thread_drive_approval",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_0_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_0_1.stl",
+      "sha256_step": "0b24439f36399c31dce4bb0f0873e7bf30ab15dd276d79f5a9934c839aacbd0c",
+      "sha256_stl": "161b6d39bc58ceca052f98fce0cbb75d7c67cd00e278eb20b8d1c53789785f50",
+      "bbox_mm": [
+        [
+          114.47550439881213,
+          39.205424332080156,
+          17.74185828536559
+        ],
+        [
+          122.92171090732543,
+          49.37373580802308,
+          25.102710871688288
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2_nut_0_1",
+      "body": "thumb_mcp",
+      "role": "nominal_M2_nut_no_threads",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_0_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_0_1.stl",
+      "sha256_step": "8a83294fa4c69dc5785aab788d9fade5e42a9e4b16b0e0ebc811f6c272128427",
+      "sha256_stl": "5c448a35c18b20931f78c67a3bdae649394e37b92187b0e32e409260ffd62462",
+      "bbox_mm": [
+        [
+          113.63578109622388,
+          45.6535503973017,
+          21.25771464366246
+        ],
+        [
+          118.28943217734854,
+          49.974695992267996,
+          26.12092162433662
+        ]
+      ]
+    },
+    {
+      "name": "distal_housing_keeper_1",
+      "body": "thumb_mcp",
+      "role": "integral_offset_channel_on_three_posts_and_curved_rib_with_open_radial_liner_seat",
+      "color": [
+        0.22,
+        0.65,
+        0.5
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_keeper_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_keeper_1.stl",
+      "sha256_step": "df88c325e57e5ad18f897f91a7f8b594ba823d458737c7b1b7706faf7558ed9e",
+      "sha256_stl": "5197a16856b3edb9bbcd007c6955c75e33fc598714e6aa6f20a89afdc6cc1a57",
+      "bbox_mm": [
+        [
+          80.53332812867095,
+          50.22946844764577,
+          35.752069960901146
+        ],
+        [
+          116.07170174504974,
+          84.43998883746899,
+          60.87708837574902
+        ]
+      ]
+    },
+    {
+      "name": "distal_housing_shoe_1",
+      "body": "thumb_mcp",
+      "role": "radially_removable_lower_half_of_offset_ferrule_seat",
+      "color": [
+        0.24,
+        0.53,
+        0.65
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_shoe_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_housing_shoe_1.stl",
+      "sha256_step": "12e1f9e4e6ef8e5eda4834d2ad4e752779deb584f727cdd0adaf2addbd0dfb8a",
+      "sha256_stl": "bb4fd07f2b349615f73d7ba266ecdad982acb3ac2ebf74e79cbbc31b79839e1d",
+      "bbox_mm": [
+        [
+          82.54949166411927,
+          47.21642425889816,
+          45.63376028794808
+        ],
+        [
+          96.00655666068977,
+          60.322337059428925,
+          59.18692586433693
+        ]
+      ]
+    },
+    {
+      "name": "distal_flanged_ferrule_1",
+      "body": "thumb_mcp",
+      "role": "same_nominal_ferrule_or_fastener_shifted_with_upper_port",
+      "color": [
+        0.85,
+        0.64,
+        0.23
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_flanged_ferrule_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_flanged_ferrule_1.stl",
+      "sha256_step": "48b8f98abfa9fc00febc4feebd6d2624eafa1de94cd630081afb0d1689dd66ed",
+      "sha256_stl": "b696fa875fb41eff2c9630e133371f57d21241d4f09ed534100ef355260dabad",
+      "bbox_mm": [
+        [
+          78.86169068099011,
+          48.025476749637726,
+          50.65550963010913
+        ],
+        [
+          93.53336857509919,
+          59.730120436427285,
+          55.87153940028802
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2x10_1_0",
+      "body": "thumb_mcp",
+      "role": "same_nominal_ferrule_or_fastener_shifted_with_upper_port",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_1_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_1_0.stl",
+      "sha256_step": "77f207c731bd4577e19e6f6f55950adc84f70592d11b8a5600bc1950e96f0fd1",
+      "sha256_stl": "93b247226f7c32bbcccf96ad24fc2ce6ed50c825f16f37562f732b22a51bbe86",
+      "bbox_mm": [
+        [
+          84.16056840478672,
+          52.4953260557848,
+          45.723301263775326
+        ],
+        [
+          92.31049770803826,
+          62.83924262640354,
+          53.084153850098026
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2_nut_1_0",
+      "body": "thumb_mcp",
+      "role": "same_nominal_ferrule_or_fastener_shifted_with_upper_port",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_1_0.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_1_0.stl",
+      "sha256_step": "b639b1085c91e690780296e917c60121d97377f5d39a34f3438d3f824397507c",
+      "sha256_stl": "0c06cffb62b427f0387e1e310218ebfc8e7cc90205b5427504c32c3b3a4f4a31",
+      "bbox_mm": [
+        [
+          88.50039948526492,
+          51.9357308988714,
+          44.705090511127
+        ],
+        [
+          93.18353822057968,
+          56.178191065343626,
+          49.56829749180115
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2x10_1_1",
+      "body": "thumb_mcp",
+      "role": "same_nominal_ferrule_or_fastener_shifted_with_upper_port",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_1_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2x10_1_1.stl",
+      "sha256_step": "5924fcf156981fb4b9afeb3c29af4beab7e945c4614ebb3440046119a089b461",
+      "sha256_stl": "ed91984d6c305749f34abbd14056fed88df56332fc1acec54f3315bfda067ab7",
+      "bbox_mm": [
+        [
+          86.34220329334165,
+          49.379628538256014,
+          53.88007134710517
+        ],
+        [
+          94.49213259659318,
+          59.72354510887475,
+          61.24092393342787
+        ]
+      ]
+    },
+    {
+      "name": "distal_shoe_M2_nut_1_1",
+      "body": "thumb_mcp",
+      "role": "same_nominal_ferrule_or_fastener_shifted_with_upper_port",
+      "color": [
+        0.48,
+        0.5,
+        0.54
+      ],
+      "step": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_1_1.step",
+      "mesh": "cad/thumb_sheath_terminal_v2/selected/generated/parts/distal_shoe_M2_nut_1_1.stl",
+      "sha256_step": "a7196c4792042f0ff95a2377501d4433c383ddc4723925b4a3ed8d4120e82cee",
+      "sha256_stl": "dafd324750fef53fc791afa09c10969565b60c2ab11ca125bcf16dd97d411ede",
+      "bbox_mm": [
+        [
+          90.68203437381986,
+          48.82003338134261,
+          52.86186059445684
+        ],
+        [
+          95.3651731091346,
+          53.06249354781484,
+          57.72506757513101
+        ]
+      ]
+    }
+  ],
+  "retained_guide_parts": [
+    {
+      "name": "guide_cover_M2x12_1",
+      "body": "thumb_mcp",
+      "role": "unchanged_nominal_extended_cover_bolt",
+      "color": [
+        0.3,
+        0.63,
+        0.35
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/guide_cover_M2x12_1.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/guide_cover_M2x12_1.stl",
+      "sha256_step": "9836646cddee35afe734da4b3228006ee137da7555173d424d386f5f4bbfbddc",
+      "sha256_stl": "49867df71bfb62ac86e02dde8682cbb1494a8377df1f81951037499676be89a8",
+      "bbox_mm": [
+        [
+          98.39287895766302,
+          62.43022102896822,
+          30.50008169838422
+        ],
+        [
+          107.73209482788549,
+          74.17281473430903,
+          38.70693533576953
+        ]
+      ]
+    },
+    {
+      "name": "guide_cover_M2x12_2",
+      "body": "thumb_mcp",
+      "role": "unchanged_nominal_extended_cover_bolt",
+      "color": [
+        0.3,
+        0.63,
+        0.35
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/guide_cover_M2x12_2.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/guide_cover_M2x12_2.stl",
+      "sha256_step": "2779bbc9a17f286ff8c704c7c37a64729bac3d8a99285ac2e0f451329343e1f6",
+      "sha256_stl": "016f259625b6e62451e1729c878b166155ab4c35488271c5e6c5a9e2af99c092",
+      "bbox_mm": [
+        [
+          115.433088403323,
+          73.81912345703205,
+          30.292752032945252
+        ],
+        [
+          124.77230427354526,
+          85.56171716237303,
+          38.49960567032934
+        ]
+      ]
+    },
+    {
+      "name": "flanged_liner_0",
+      "body": "thumb_mcp",
+      "role": "same_OD_ID_R5_liner_with_positive_index_tab",
+      "color": [
+        0.95,
+        0.55,
+        0.15
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/flanged_liner_0.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/flanged_liner_0.stl",
+      "sha256_step": "662e5e0b4e28f30695cc948b451334a979f7f49cb3a1081c9f8bbcbe4a79da70",
+      "sha256_stl": "8164276627806be6e27b9c4c4cf40b5631d058e9cac49cf11134f328fd4adf63",
+      "bbox_mm": [
+        [
+          117.49377464687758,
+          45.670260083883676,
+          16.184039581050442
+        ],
+        [
+          138.73388213257158,
+          72.7603092258429,
+          22.671380631832328
+        ]
+      ]
+    },
+    {
+      "name": "liner_keeper_M2x10_0",
+      "body": "thumb_mcp",
+      "role": "nominal_radial_M2x10_smooth_envelope_no_thread_drive_approval",
+      "color": [
+        0.3,
+        0.63,
+        0.35
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2x10_0.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2x10_0.stl",
+      "sha256_step": "ea0407040775dfec6ce0804a48e7faeea84961c190302aaed8b366ed9e2bb379",
+      "sha256_stl": "a0d9abc3561fa60d6f192b500caa18f29c00e12d67a81b1034c90b8a2e853d16",
+      "bbox_mm": [
+        [
+          124.95208558452711,
+          46.032397405842055,
+          19.202572257795943
+        ],
+        [
+          133.3982920930404,
+          56.200708881784976,
+          26.56342484411864
+        ]
+      ]
+    },
+    {
+      "name": "liner_keeper_M2_nut_0",
+      "body": "thumb_mcp",
+      "role": "nominal_radial_M2_nut_no_threads",
+      "color": [
+        0.35,
+        0.4,
+        0.43
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2_nut_0.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2_nut_0.stl",
+      "sha256_step": "12b7e5bf9210b938ce5919319077207bd8e3d7bedffeac5869358e55e4afe00d",
+      "sha256_stl": "48d40604896f79b794402a777d8ab3c3282f86db8a23d7ca69529ace0f9a95db",
+      "bbox_mm": [
+        [
+          124.11236228193884,
+          52.48052347106359,
+          22.71842861609281
+        ],
+        [
+          128.7660133630635,
+          56.801669066029895,
+          27.581635596766972
+        ]
+      ]
+    },
+    {
+      "name": "flanged_liner_1",
+      "body": "thumb_mcp",
+      "role": "same_OD_ID_R5_liner_with_positive_index_tab",
+      "color": [
+        0.95,
+        0.55,
+        0.15
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/flanged_liner_1.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/flanged_liner_1.stl",
+      "sha256_step": "67e75d5520e39a6d7372b06571cdeba145c301805dae1a051e5c67fc2022c789",
+      "sha256_stl": "80c3c4a0bca3e49c9fd5132fa127f68bf2fc54963df3d8f1c3841c00fa339bc7",
+      "bbox_mm": [
+        [
+          100.29104495588206,
+          70.25073214763258,
+          35.32861936816767
+        ],
+        [
+          132.52949759572834,
+          84.57597110483982,
+          42.88368018970632
+        ]
+      ]
+    },
+    {
+      "name": "liner_keeper_M2x10_1",
+      "body": "thumb_mcp",
+      "role": "nominal_radial_M2x10_smooth_envelope_no_thread_drive_approval",
+      "color": [
+        0.3,
+        0.63,
+        0.35
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2x10_1.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2x10_1.stl",
+      "sha256_step": "f22e9a394a72b091feeedfa8146322fbc984593ef5b961cac289f308e4545179",
+      "sha256_stl": "7d55df6b95e8eec843fb6ad6c2c7b5ae8a081c8c2624273cd17b268e1edb580c",
+      "bbox_mm": [
+        [
+          107.76662548331672,
+          70.20461529544751,
+          42.31226860032116
+        ],
+        [
+          115.91655478656824,
+          80.54853186606624,
+          49.67312118664386
+        ]
+      ]
+    },
+    {
+      "name": "liner_keeper_M2_nut_1",
+      "body": "thumb_mcp",
+      "role": "nominal_radial_M2_nut_no_threads",
+      "color": [
+        0.35,
+        0.4,
+        0.43
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2_nut_1.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/liner_keeper_M2_nut_1.stl",
+      "sha256_step": "0eebfae4843e00ba2f2391046969ef6ea690a11439df10230c3d65754f27eef6",
+      "sha256_stl": "86484cda1432446200d21a1986552cb37f03275b80fef869ef1aba2f8865ade9",
+      "bbox_mm": [
+        [
+          112.10645656379491,
+          69.64502013853411,
+          41.29405784767283
+        ],
+        [
+          116.78959529910965,
+          73.88748030500633,
+          46.15726482834698
+        ]
+      ]
+    },
+    {
+      "name": "paired_liner_carrier",
+      "body": "thumb_mcp",
+      "role": "same_mount_feet_bridge_with_two_open_radial_half_sockets",
+      "color": [
+        0.15,
+        0.6,
+        0.66
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/paired_liner_carrier.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/paired_liner_carrier.stl",
+      "sha256_step": "b17bfaa15966204629b7c5e126a2e0debc2bdd4a1a7ee8150da1597265ba96cb",
+      "sha256_stl": "0dd2b1bcf574613287418413ce65379b7dd1d0f63c4d72a7e95a0b572a773b2f",
+      "bbox_mm": [
+        [
+          97.90613782983291,
+          37.949838582933104,
+          13.120050701932115
+        ],
+        [
+          137.6464750006744,
+          85.54177088853076,
+          56.42375749902838
+        ]
+      ]
+    }
+  ],
+  "replaced_guide_parts": [
+    {
+      "name": "liner_flange_keeper_0",
+      "body": "thumb_mcp",
+      "role": "radially_removable_half_socket_cover",
+      "color": [
+        0.15,
+        0.6,
+        0.66
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/liner_flange_keeper_0.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/liner_flange_keeper_0.stl",
+      "sha256_step": "b931d299ce56978f20df8c2efd4e6767e41726446c354bcea18293c716ce8af1",
+      "sha256_stl": "cb80173ea81a94517879236debbf5888362d5d0ea723dff02cdbac571a186fb4",
+      "bbox_mm": [
+        [
+          123.10671328091533,
+          44.816517747449495,
+          11.429888190520028
+        ],
+        [
+          135.1144386383185,
+          57.28985796785651,
+          25.873161187245458
+        ]
+      ]
+    },
+    {
+      "name": "liner_flange_keeper_1",
+      "body": "thumb_mcp",
+      "role": "radially_removable_half_socket_cover",
+      "color": [
+        0.15,
+        0.6,
+        0.66
+      ],
+      "step": "cad/thumb_guide_assembly_v2/generated/parts/liner_flange_keeper_1.step",
+      "mesh": "cad/thumb_guide_assembly_v2/generated/parts/liner_flange_keeper_1.stl",
+      "sha256_step": "9464a8e440c8af61e2fc51b548a01a6799b92871289ed41bc6fc8d25b8486166",
+      "sha256_stl": "d531f060e227098504b04e42a592d8d92388ad3a7fd08f8191f44e9dbfab9035",
+      "bbox_mm": [
+        [
+          104.0301630852817,
+          72.10637075228334,
+          35.752069960901146
+        ],
+        [
+          116.07170174504974,
+          84.43998883746899,
+          50.19534295762657
+        ]
+      ]
+    }
+  ],
+  "base_hand_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
+  "excluded_original_hand_bolts": [
+    "thumb_segment2_dark_faceplate_clamp1_bolt",
+    "thumb_segment2_dark_faceplate_clamp2_bolt"
+  ],
+  "hypothetical_hand_rows": 385,
+  "baseline_hand_rows": 373,
+  "baseline_guide_scene": "cad/thumb_guide_assembly_v2/generated/parts/scene.json",
+  "packaging_scene": "cad/motor_tendon_terminal_v1/selected/generated/assembly_scene.json",
+  "packaging_rows": 373,
+  "housing_reference": "cad/thumb_sheath_terminal_v2/selected/generated/housing_reference/scene.json",
+  "cord_extension": "cad/thumb_sheath_terminal_v2/selected/generated/cord_extension/scene.json",
+  "static_geometry_selected": true,
+  "whole_distal_assembly_validated": false,
+  "installed": false,
+  "whole_hand_drive_complete": false
+}
