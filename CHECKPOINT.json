@@ -18,7 +18,7 @@
   "post_commit_review_target": "fc5f5ad8623d51e2cc255fae487cda4eceb3580e",
   "post_commit_review_report": "docs/reviews/BUS017/README.md",
   "post_commit_reproduction_scope": "Exact-SHA clean clone:360packaging/64old wire+plug/8new wire+temporaryspaces/10arm reimport;4native static groups,8analytic sourceSTEP comparisons,12span points,6continuity/fuse/measuredtangent and6terminationface distances;5savedhand-box poses14560pairs,364input hashes(no full hand native reimport).2935closure/222frozen hashes,zero differences,cleanclone,OCCpool1,sameagent.Render not rerun.Only2module/6wire runs;14branches/restraints/final bus/board/SKU/electrical/dynamicarm/physical incomplete.",
-  "next_stage": "Close two main-run geometry space;design real source-port/bus connection and required supports/axial restraint for remaining remote14modules;keep supplied harness/board/electrical/dynamic caveats.Then update3-4motion previews with actual candidate assembly.Do not reopen palm-tail or hand/mount microsearch.",
+  "next_stage": "Hand first:trace actual motor-output/hub/pulley/pull-pull tendon-to-finger connections and constraints;integrate/test representative joint then expand.Check actual local harness/connector dimensions,restraints and pinch/tension along natural hand paths.Keep existing16remote actuators as necessary hand-drive sources;defer elbowward electrical runs and board terminations.Preserve human form;no hand cuts for speculative small gaps.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -52,5 +52,17 @@
   "remaining_remote_branches": 14,
   "temporary_termination_spaces": 2,
   "complete_remote_bus": false,
-  "new_main_run_restraints_complete": false
+  "new_main_run_restraints_complete": false,
+  "active_work_scope": "Hand functional drive integration and local wiring before elbowward electrical extensions.",
+  "hand_system_complete": false,
+  "hand_drive_transmission_complete": false,
+  "combined_motor_wire_transmission_motion_validated": false,
+  "elbowward_wiring_deferred": true,
+  "existing_remote_actuators_retained_for_hand_drive": true,
+  "active_hand_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
+  "active_mount_scene": "cad/palm_motor_mount_v1/selected3/generated/scene.json",
+  "optional_deferred_bus_scene": "cad/remote_bus_v1/generated/scene.json",
+  "hand_status_report": "docs/HAND_INTEGRATION_STATUS.md",
+  "priority_update_reviewed": false,
+  "priority_update_review_target": null
 }
