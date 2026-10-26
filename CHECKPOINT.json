@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": "ExactSHA cleanclone:stored hand364minus2/originalguide11/new14/housing2,pack373/electrical64/neutralarm10;32native groups including selected22path ends,7criticalstarts,2bench endpoints and first blocked start;4776closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all84+4samples/render.No geometry regeneration or inherited OFFSET024 sourceSTEP comparison retry/resolution.No physical fixture/tool/threads/strength,longhousing/retention,cord threading,tension or wholehand approval.",
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "ffbe4b1ce3c70fdccde3147ff4e00d1d71ddb118",
+  "post_commit_review_report": "docs/reviews/RETAIN026/README.md",
+  "post_commit_reproduction_scope": "ExactSHAcleanclone:new26sourceSTEPadaptive1e-10/signaturesabs1e-5,41nativegroups:325internalpairs,open/full5groups,2originalfailedhandgroups,representativeassemblystart/end/worst,correctedbenchjawstart/end andupperkit/keeper/fastenerkeys.4912closure/222frozen,OCC1,cleanclone,sameagent.Notall8poses/allservice/render;noinheritedOFFSET024comparisontest/resolution.Nohousingdeformation/friction/pulloutforce,newferrulewholeassembly,longroute,tension/fullhand.",
   "next_stage": "Close selected8staticposes and upper90degreehousing-axisroll,nominal representative service69samples(49newupperbench/9partkit/keeper-fastenerorder+20same motor).Original24samplepostinstallfailurepreserved.Check lower replacement collar ferrule/remaining2clamps installation as needed before claiming wholeassembly;geometry unchanged hand/motor/rack/electric.Gripcontacts bothterminal/housing:jawclosure/deformation/pressure split,actualpulloutfriction and cordpinching unverified.Designsupportedconstant-length longhousing motor-wrist-thumb,cordthreading,lengthadjustment/pretension,parent-wrist grab/release.Do not restart solved microgaps,handpostures/elbowbus;inheritedOFFSET024comparisoninconclusive.No force/wholehand approval.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -169,8 +169,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": false,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -191,5 +191,6 @@
   "retention_nominal_service_representative_clear": true,
   "retention_nominal_service_representative_samples": 69,
   "retention_nominal_new_service_samples": 49,
-  "retention_nominal_reused_service_samples": 20
+  "retention_nominal_reused_service_samples": 20,
+  "post_commit_new26_shape_metrics_reproduced": true
 }
