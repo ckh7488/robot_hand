@@ -1,0 +1,26 @@
+{
+  "completed": true,
+  "original": {
+    "samples": 105,
+    "overlap_records": 24,
+    "operation_failures": 0
+  },
+  "final": {
+    "samples": 161,
+    "overlap_records": 0,
+    "operation_failures": 0
+  },
+  "reused_identical_samples": 45,
+  "newly_computed_samples": 116,
+  "preload_superset_samples_inherited": 5,
+  "robot_geometry_changed": false,
+  "representative_carriers": 6,
+  "representative_motor_units": 6,
+  "bench_units": 6,
+  "other10module_paths_unverified": true,
+  "fixtures_tools_strength_coupling_unverified": true,
+  "hand_motion_collisions_rerun": false,
+  "motion_previews": 4,
+  "previous_manifest_files_unchanged": 2564,
+  "frozen_files_unchanged": 222
+}

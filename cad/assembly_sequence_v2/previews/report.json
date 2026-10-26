@@ -1,0 +1,287 @@
+{
+  "completed": true,
+  "input_sha256": {
+    "cad/assembly_sequence_v2/motion_previews.py": "932923919e4ef0edce6b9a749a9e39bf987a8ddda2d1101a89215bab4dc261ad",
+    "checkpoints/ASSEMBLY012.manifest.json": "0a46bdf95554f0e9e76b549ef766ff59418aa5d3ec10d13c5994d98203940425",
+    "cad/functional_motion_v3/findings/count_one_motion.gif": "a3f3943f8a2988253818c6fb28da86186099401b2758611a312d0b441c55b3ca",
+    "cad/functional_motion_v3/reviews/motion_fix.json": "a3b9b214439691c0aca4264c641e8ac8fc0bd4397b190c38f8493ba75c7268b5",
+    "cad/posture_correction_v1/images/cross_motion.gif": "f4dfeb716f38d4ba52aa9fe0e3443bed8c8116dd72cdf9bd21cfa6756f5c17da",
+    "cad/posture_correction_v1/reviews/audit.json": "67d70e1091299f3a3f7beef12b3a373bb8bcf025a1154cb84440274eda29fd49",
+    "cad/object_pinch_v2/images/approach_release.gif": "6b296b51e20675cd693f59d6ffd8be6dfe8c3706fe83788945f68461ea528932",
+    "cad/object_pinch_v2/reviews/audit.json": "f98516ad4191d707ea3c3ea8bded94ccb2e2a56d3f884de362e55488e75c543a",
+    "cad/combined_pose_v1/images/example.gif": "faee3d72ed75d15b34becf1a3a883aaa402bb6dfd9010c9f224ffcda944efb36",
+    "cad/combined_pose_v1/reviews/audit.json": "021b48e364f414858c9e57418d281cb56baaca5912d48112d5fb0ede9d28e346"
+  },
+  "clips": [
+    {
+      "id": "01_index",
+      "title": "1 · 검지만 펴기",
+      "file": "cad/functional_motion_v3/findings/count_one_motion.gif",
+      "audit": "cad/functional_motion_v3/reviews/motion_fix.json",
+      "samples": 79,
+      "note": "엄지 자세와 접는 순서를 교정한 왕복 경로",
+      "output": "cad/assembly_sequence_v2/previews/01_index.gif",
+      "sha256": "a3f3943f8a2988253818c6fb28da86186099401b2758611a312d0b441c55b3ca",
+      "rendered_frames": 27,
+      "native_collision_reexecuted": false,
+      "hand_parts": 364
+    },
+    {
+      "id": "02_cross",
+      "title": "2 · 검지·중지 교차",
+      "file": "cad/posture_correction_v1/images/cross_motion.gif",
+      "audit": "cad/posture_correction_v1/reviews/audit.json",
+      "samples": 37,
+      "note": "중지가 앞에 오는 방향의 교차와 풀기",
+      "output": "cad/assembly_sequence_v2/previews/02_cross.gif",
+      "sha256": "f4dfeb716f38d4ba52aa9fe0e3443bed8c8116dd72cdf9bd21cfa6756f5c17da",
+      "rendered_frames": 19,
+      "native_collision_reexecuted": false,
+      "hand_parts": 364
+    },
+    {
+      "id": "03_ball",
+      "title": "3 · 고정된 공에 손끝 접근·풀기",
+      "file": "cad/object_pinch_v2/images/approach_release.gif",
+      "audit": "cad/object_pinch_v2/reviews/audit.json",
+      "samples": 33,
+      "note": "지지된25mm 공의 기하 접촉,파지력/들어 올리기 미검증",
+      "output": "cad/assembly_sequence_v2/previews/03_ball.gif",
+      "sha256": "6b296b51e20675cd693f59d6ffd8be6dfe8c3706fe83788945f68461ea528932",
+      "rendered_frames": 17,
+      "native_collision_reexecuted": false,
+      "hand_parts": 364
+    },
+    {
+      "id": "04_combined",
+      "title": "4 · 손끝 접근 + 중지 펴기",
+      "file": "cad/combined_pose_v1/images/example.gif",
+      "audit": "cad/combined_pose_v1/reviews/audit.json",
+      "samples": 45,
+      "note": "약지·새끼 접기를 함께 조합한 동작",
+      "output": "cad/assembly_sequence_v2/previews/04_combined.gif",
+      "sha256": "faee3d72ed75d15b34becf1a3a883aaa402bb6dfd9010c9f224ffcda944efb36",
+      "rendered_frames": 23,
+      "native_collision_reexecuted": false,
+      "hand_parts": 364
+    }
+  ],
+  "montage": {
+    "path": "cad/assembly_sequence_v2/previews/four_motions.gif",
+    "frames": 27,
+    "duration_per_frame_ms": 140,
+    "source_frame_indices": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        2,
+        3
+      ],
+      [
+        4,
+        3,
+        2,
+        3
+      ],
+      [
+        5,
+        3,
+        3,
+        4
+      ],
+      [
+        6,
+        4,
+        4,
+        5
+      ],
+      [
+        7,
+        5,
+        4,
+        6
+      ],
+      [
+        8,
+        6,
+        5,
+        7
+      ],
+      [
+        9,
+        6,
+        6,
+        8
+      ],
+      [
+        10,
+        7,
+        6,
+        8
+      ],
+      [
+        11,
+        8,
+        7,
+        9
+      ],
+      [
+        12,
+        8,
+        7,
+        10
+      ],
+      [
+        13,
+        9,
+        8,
+        11
+      ],
+      [
+        14,
+        10,
+        9,
+        12
+      ],
+      [
+        15,
+        10,
+        9,
+        13
+      ],
+      [
+        16,
+        11,
+        10,
+        14
+      ],
+      [
+        17,
+        12,
+        10,
+        14
+      ],
+      [
+        18,
+        12,
+        11,
+        15
+      ],
+      [
+        19,
+        13,
+        12,
+        16
+      ],
+      [
+        20,
+        14,
+        12,
+        17
+      ],
+      [
+        21,
+        15,
+        13,
+        18
+      ],
+      [
+        22,
+        15,
+        14,
+        19
+      ],
+      [
+        23,
+        16,
+        14,
+        19
+      ],
+      [
+        24,
+        17,
+        15,
+        20
+      ],
+      [
+        25,
+        17,
+        15,
+        21
+      ],
+      [
+        26,
+        18,
+        16,
+        22
+      ]
+    ],
+    "frame_pixel_MAE": [
+      1.9342427253723145,
+      1.949270486831665,
+      1.9666165113449097,
+      1.9765007495880127,
+      1.9726194143295288,
+      1.981106162071228,
+      1.9741191864013672,
+      1.966367483139038,
+      1.945393681526184,
+      1.9480010271072388,
+      1.9619452953338623,
+      1.9617817401885986,
+      1.954065203666687,
+      1.9454070329666138,
+      1.954062819480896,
+      1.9617806673049927,
+      1.961944818496704,
+      1.9480005502700806,
+      1.945393681526184,
+      1.966367483139038,
+      1.9741202592849731,
+      1.9811044931411743,
+      1.9726171493530273,
+      1.9764984846115112,
+      1.9666181802749634,
+      1.9492722749710083,
+      1.9342427253723145
+    ],
+    "source_time_resampled_for_comparison": true,
+    "physical_speed_claimed": false
+  },
+  "outputs": {
+    "cad/assembly_sequence_v2/previews/01_index.gif": "a3f3943f8a2988253818c6fb28da86186099401b2758611a312d0b441c55b3ca",
+    "cad/assembly_sequence_v2/previews/01_index.png": "a63256c3e5095b767f1dafb2b6cf0909b1d829458b56b6d642a692eee5f3ad5e",
+    "cad/assembly_sequence_v2/previews/02_cross.gif": "f4dfeb716f38d4ba52aa9fe0e3443bed8c8116dd72cdf9bd21cfa6756f5c17da",
+    "cad/assembly_sequence_v2/previews/02_cross.png": "b2d0f045e615223b4d64e8a0c3fbe771b998b1951b117ea67940a79799e6469e",
+    "cad/assembly_sequence_v2/previews/03_ball.gif": "6b296b51e20675cd693f59d6ffd8be6dfe8c3706fe83788945f68461ea528932",
+    "cad/assembly_sequence_v2/previews/03_ball.png": "34aecbd47d4e53ab11dc745399d35690cc89508eb7e1be2896bf098778eeaae6",
+    "cad/assembly_sequence_v2/previews/04_combined.gif": "faee3d72ed75d15b34becf1a3a883aaa402bb6dfd9010c9f224ffcda944efb36",
+    "cad/assembly_sequence_v2/previews/04_combined.png": "e14687001c582bb7e20294f8b9d182d91f700906126b28a6fe307989199ba134",
+    "cad/assembly_sequence_v2/previews/four_motions.gif": "4c658c7b24f70e86b4fcf4677b23e06b03d2a1cec3129c615a32526e78bf9d50",
+    "cad/assembly_sequence_v2/previews/qa_end.png": "35c17cd4d96a4eae6d9b5be290fcef9515ecda2206684257ab3c6b2260965833",
+    "cad/assembly_sequence_v2/previews/qa_middle.png": "2f2e1e1bb8fb3bd3b03a51e429c2033dc06d2ec3980a7c727b6d423fb4867cac",
+    "cad/assembly_sequence_v2/previews/qa_start.png": "35c17cd4d96a4eae6d9b5be290fcef9515ecda2206684257ab3c6b2260965833"
+  },
+  "geometry_changed": false,
+  "new_motion_created": false,
+  "collision_reexecuted": false,
+  "scope": "Existing hand-only CAD GIFs packaged for viewing. No motor/wiring animation or new collision,grasp force,unsupported hold,electrical or physical approval."
+}
