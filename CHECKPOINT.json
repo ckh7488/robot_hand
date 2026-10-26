@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "22d0ba2601660706161c1c8d0b6caf5a982296ef",
+  "post_commit_review_report": "docs/reviews/WIRE008/README.md",
+  "post_commit_reproduction_scope": "Exact-SHA clean clone: old open39clashes, proposed open/combined8clashes each and neutral reference arm screen; 1989 closure/222 frozen hashes. Reproduced failures, no motor/harness/physical approval.",
   "next_stage": "Correct fixed motor/module placement using actual overlap geometry; prepare verified remote motor leads with provisional board termination. Preserve solved hand postures; no hand cutting or unverified connector fit approval.",
   "candidate_adopted": false
 }
