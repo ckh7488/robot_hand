@@ -14,9 +14,9 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "15e82f22d48feb1df4f1fd4b8ebd0e77f1ae9581",
+  "post_commit_review_report": "docs/reviews/PINCH006/README.md",
+  "post_commit_reproduction_scope": "Clean exact-SHA clone; 6 core items including duplicate endpoint, full364hand/object checks and contacts; 1163 closure and 222 frozen hashes. No full-route/continuous/physical hold approval.",
   "next_stage": "Verify actual motor/connector layout, then electrical cable routing with provisional board termination."
 }
