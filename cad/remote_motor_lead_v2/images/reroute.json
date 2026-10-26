@@ -1,0 +1,56 @@
+{
+  "completed": true,
+  "input_sha256": {
+    "cad/remote_motor_lead_v2/render.py": "3d4432d18bd771b73960a8da35a60429cca07152a9411433a11df35c4bfdcf6d",
+    "cad/gesture_hand_v3/render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56",
+    "cad/gesture_hand_v3/poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f",
+    "cad/functional_motion_v3/generated/catalog.json": "743c15cd203fc20e78b9b40a2e61bd4dca72f9c20c7127132ec18bf4844076f0",
+    "cad/wiring_layout_v1/generated/packaging.json": "66d3ae93f44ae6919584f6157c86b8fe8572086e4443573cdaedfdee145f59b4",
+    "cad/remote_motor_lead_v1/generated/batch_scene.json": "2fe373ec7aadc564287b3a81440466e60f6ab037d487a25aade927ff94aaa5a3",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_motor.stl": "a94356c2deac598c834cbfe1dc1f8df9eeb9869991b9b04c77d76c5d9f2fba10",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_rotor.stl": "bcaf73807edea2fcf8f0c389dfb3eaecd101e09d73b9059def945649ad2a4cb8",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_cradle.stl": "f6f2e17a6896ef3459ce3c1239045b87655df579ac9bfc8e239b6980efe4c742",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_body_screws.stl": "ff62a0de0f343e0b70b7d3ebbfecdf786c0aef57ac9b2c1722c58b9914a184e7",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_base_screws.stl": "c2c8a1ace8d21100b9a8df0ac03515eec351aff3854484fa4711198cc2a08e94",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_base_nuts.stl": "737ff2140f15441574d6339bb5e909c3356d6ccdc2c1a4f545ef0bd3afe05d67",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_adapter.stl": "2905652b0faec565fa14dc5f42baa4337e88ea70fa9a73e24911635d2af5860f",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_spool.stl": "95ee832e5acee4af345f242d8e2262c2d0aa50751732af21ae2f54b4dbda26f5",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_rack_screw_1.stl": "4693a256a8a9c666a88f696b311745c788bfbc94fd51cd3fc612dd002d198383",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_rack_nut_1.stl": "029c707e4e82adcd89b45dcd0a62277d9cf298d99d9e6ae20baba849ebc4ed89",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_rack_screw_2.stl": "6fab57b3aaaae1bf82d919e997dfa76a5f0232d05023b229bbc0b52570ef892e",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_rack_nut_2.stl": "604e6ed6258d4f4da07b67e6b36a1f602e82ac21560180cbf720f4781e862211",
+    "cad/wiring_layout_v1/generated/parts/Forearm_twenty_axis_module_rack.step": "b6635300873cb422898a16826087c0ee009cbfc9d6d37584952557750b8e5ab7",
+    "cad/remote_motor_lead_v2/generated/visual_evidence/rack_crop.stl": "9bfc1223126eb564de88610c91bb5be48ef70c59e56fa2e4aac94175b6f1a726",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_lead1.stl": "16891fd11db1543d2fa569147e2bf6232493616ffe098e698b15bb89248607a3",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_lead1.step": "68d99d4ccc757596871d8e7df606c95bbeba885af7bc3910e515ab6b4574033c",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_lead2.stl": "498b5002dbf1ea4dc340868c2eb4649d975db4c089390d66a04402eb9ab43ec6",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_lead2.step": "ad2f719581eebe900ca7acbfdd08b7c295e3ee998439eb0ac992a5b749ebdcb2",
+    "cad/remote_motor_lead_v2/generated/visual_evidence/middle_pip_actuator_lead2_actual_common.stl": "c3bd0d23abe187e4310bade63a799c471c209fe3a15aa429814c2a5ce38eb9f0",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_lead3.stl": "d9ff0eadcb0c4e3a0fcf0318db814390f0928ff8504076cd9ad4004aee68f40c",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_lead3.step": "2134b24376a576412d036ba801e849b9d28d093e404f1abe8e4f921ac25f34ff",
+    "cad/remote_motor_lead_v2/generated/visual_evidence/middle_pip_actuator_lead3_actual_common.stl": "fe7ea32d75570f8bd748a5205ec0d06fed6325b0dbb00cc7e88a3f3343fa8a6f",
+    "cad/remote_motor_lead_v1/generated/batch_parts/middle_pip_actuator_plug_outer.stl": "a791638a5aa611f8ca89f5f32b35b2267813acb8bfd574ac71ac5a693e65d61d",
+    "cad/remote_motor_lead_v2/reviews/check.json": "33ec2f3d58ed54d529932af245261b820468e3c358fbec44ad4df80f5fde0834",
+    "cad/remote_motor_lead_v2/generated/scene.json": "3a211c5e479cd195fecbc6f66d3ef5730746f8f9635df8e0b0a4a282417a80f0",
+    "cad/remote_motor_lead_v2/generated/parts/middle_pip_actuator_lead1.stl": "b0d0c684ee1261d4f3ca7c4d31e9e46a2d3023258edeca1914d9075c0929a87d",
+    "cad/remote_motor_lead_v2/generated/parts/middle_pip_actuator_lead2.stl": "7715da573f14aaefaf05eca6e3b4214c7f88fcf57219882c1ffcd3b7b961a179",
+    "cad/remote_motor_lead_v2/generated/parts/middle_pip_actuator_lead3.stl": "af436c20294b667e8bba8565cb536769331f587848439dc2ce5295fd83c9e569"
+  },
+  "output_sha256": "5edeae5393ff4fe036e1e0a97d61d55fefdbeecb7eef7028e5461001fb437295",
+  "actual_saved_meshes": true,
+  "actual_common_material": [
+    {
+      "wire": "middle_pip_actuator_lead2",
+      "actual_common_mm3": 17.108639789171374
+    },
+    {
+      "wire": "middle_pip_actuator_lead3",
+      "actual_common_mm3": 17.108639789171374
+    }
+  ],
+  "transparent_visual_only": [
+    "rack_crop_visual_only"
+  ],
+  "full_rack_in_audit": true,
+  "simulation_steps": 0
+}
