@@ -1,0 +1,8 @@
+{
+  "initial_native": "reviews/check.json",
+  "initial_completed": false,
+  "interruption": "Missing optional hand metadata valid key after3completed native groups;not a geometry failure.",
+  "reuse": "Exact same new geometry/obstacles/source hashes:packaging,existing wires/outerboxes,neutral arm;new pair/continuity/hand-box/end-face checks calculated in resume.py.",
+  "source_survey_error": "First entry lacked script import path and stopped before geometry;survey2 completed.",
+  "render_errors": "Missing optional bbox_mm metadata,then wrong arm mesh path stopped before output.Arm reference meshes are in metres;final render exports separate mm meshes from existing STEP,includes all321forearm packaging/guide parts.Render3 is final."
+}

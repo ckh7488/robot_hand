@@ -12,7 +12,7 @@
 
 [엄지 줄 고정부·모터 모듈 확대](cad/thumb_ip_drive_v1/generated/drive_details.png) · [현재 부품 STEP 목록](cad/motion_clearance_v2/generated/assembly_catalog.json) · [현재 손 전체 STEP 압축](cad/motion_clearance_v2/generated/hand.step.zip) · [이전 제작 후보 전체 STEP](cad/manufacturing_v2/generated/hand.step) · [엄지 자세의 이전 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif)
 
-**배선 준비 현황:** [PALMLEAD016](cad/palm_motor_lead_v1/README.md)의 손바닥12전선 후보는 가정 케이블/커넥터 형상에서 겹침이 남아 미채택입니다. 손/모터/받침은 유지했고 실제 하네스 확인과 원격48선 버스/임시 보드 종단이 다음입니다. [기존 손동작4종](cad/assembly_sequence_v2/previews/four_motions.gif)은 손만의 CAD 영상입니다.
+**배선 준비 현황:** [BUS017](cad/remote_bus_v1/README.md)에서 기존48선을 유지하고 두 원격모터의6선을 임시 종단 공간까지 연장한 후보를 추가했습니다. 나머지14모터 연결·새 선 고정/당김 방지·전기/동적 배선·실제 구동은 미완입니다. 손바닥 출구는 실제 공급 하네스 확인 전 보류합니다. [기존 손동작4종](cad/assembly_sequence_v2/previews/four_motions.gif)은 손만의 CAD 영상입니다.
 
 현재는 **자연스러운 자세로 대표 동작을 정리하고 모터·배선 준비로 넘어가는 단계**입니다. 최신 [PINCH006](cad/object_pinch_v2/README.md)은 손364부품·축·길이를 유지한 채25mm 고정 지지 구의 양쪽 손끝 접근·풀기33표본에서 보고 기준 이상 관통0을 확인했습니다. 들어 올리기·파지 유지·실물 승인은 아닙니다. 이전 [POSTURE005](cad/posture_correction_v1/README.md)의 중지 앞쪽 교차와 빈손 손끝 모으기 결과도 보존합니다.
 

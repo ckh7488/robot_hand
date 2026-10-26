@@ -1,0 +1,32 @@
+{
+  "verified_utc_date": "2026-10-26",
+  "sources": [
+    {
+      "url": "https://e-shop.robotis.co.jp/product.php?id=221",
+      "facts": "ROBOTIS official Robot Cable-X3P180mm10pcs,903-0249-000;JST EH,XL330 compatible.",
+      "limitation": "No insulation OD/minimum bend/ampacity confirmation found here;180mm cable not selected for this368–376mm route."
+    },
+    {
+      "url": "https://emanual.robotis.com/docs/en/reference/dxl-selection-guide/",
+      "facts": "TTL3pin family supports daisy-chain concepts;allowable chain current requires product-specific connector information.",
+      "limitation": "This two-run space model is not a completed daisy chain or a validated power/data topology."
+    }
+  ],
+  "assumptions": {
+    "wire_OD_mm": 1.9,
+    "centreline_radii_mm": [
+      10,
+      12,
+      14
+    ],
+    "temporary_connector_region_mm": [
+      14,
+      20,
+      6
+    ]
+  },
+  "supplied_harness_selected": false,
+  "board_selected": false,
+  "electrical_connectivity_validated": false,
+  "inherited21AWG_vs_JST22AWG_issue": "Unresolved supplied harness/terminal combination;see wiring_layout_v1 references_current.json."
+}

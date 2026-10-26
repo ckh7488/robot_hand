@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "module": "index_spread_actuator",
+      "review_points_mm": [
+        [
+          -79.1,
+          -80,
+          -68.8
+        ],
+        [
+          -79.1,
+          -180,
+          -68.8
+        ],
+        [
+          -79.1,
+          -280,
+          -68.8
+        ]
+      ],
+      "installed": false,
+      "meaning": "Only candidate support locations,no clamp/bracket/tie/fastener or axial restraint yet."
+    },
+    {
+      "module": "middle_spread_actuator",
+      "review_points_mm": [
+        [
+          -39.1,
+          -80,
+          -68.8
+        ],
+        [
+          -39.1,
+          -180,
+          -68.8
+        ],
+        [
+          -39.1,
+          -280,
+          -68.8
+        ]
+      ],
+      "installed": false,
+      "meaning": "Only candidate support locations,no clamp/bracket/tie/fastener or axial restraint yet."
+    }
+  ],
+  "support_validated": false,
+  "free_long_runs_not_installed": true
+}
