@@ -1,0 +1,93 @@
+{
+  "completed": true,
+  "passed": true,
+  "target_commit": "5e5498dddd0c262d9f8841459ba319240c744a7a",
+  "initial_core_passed": false,
+  "initial_sha256": "3c16d753ef3d0f7c8e3fcc9b1b2bbd2d4914bbbf18d39ad20d7efcc51a9849ee",
+  "initial_preserved": true,
+  "comparison_code_sha256": "c6d1dfe27294a13dea1562d765fbeb276a75fd8339b2599de922fd17fd10ec70",
+  "OCC_pool_threads": 1,
+  "scope": "One failed original long_housing_0_3/Palm_wrist_saddle pair only;fresh source tube fromsavedBeziercontrols andsavedSTEP each nativeintersect samearm.No threshold/CAD/clone changes.No rerun9matchingnativegroups or20matchingselectedshapecomparisons.Not fullsourceBoolean equivalence or force/motion approval.",
+  "absolute_metric_tolerance": 1e-05,
+  "adaptive_relative_epsilon": 1e-10,
+  "whole_source_STEP_metrics": [
+    {
+      "values": [
+        875.1678197233123,
+        2070.7022269412982,
+        45.929410203697564,
+        -3.9163490414017477,
+        -16.580691371986966
+      ],
+      "default_volume_mm3": 875.1678197213092,
+      "adaptive_volume_error": 1.3428594874616568e-15,
+      "adaptive_surface_error": 7.290110148017521e-16,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "values": [
+        875.1678197233058,
+        2070.7022269413646,
+        45.92941020369424,
+        -3.916349041401859,
+        -16.58069137198826
+      ],
+      "default_volume_mm3": 875.167819721301,
+      "adaptive_volume_error": 5.126137175076465e-16,
+      "adaptive_surface_error": 4.860073432012375e-16,
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "common_source_STEP_metrics": [
+    {
+      "values": [
+        80.52125177717794,
+        215.1029267319219,
+        47.183717448132356,
+        -3.0506100179953157,
+        -6.593208044125351
+      ],
+      "default_volume_mm3": 80.52064973236902,
+      "adaptive_volume_error": 1.6182484592219665e-12,
+      "adaptive_surface_error": 1.618248459221965e-12,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "values": [
+        80.5212516400463,
+        215.10292665610706,
+        47.18371745333434,
+        -3.050610014226537,
+        -6.593208038087421
+      ],
+      "default_volume_mm3": 80.52075363323269,
+      "adaptive_volume_error": 1.6183448021426705e-12,
+      "adaptive_surface_error": 1.6183448021426705e-12,
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "whole_metric_delta": [
+    6.480149750132114e-12,
+    -6.639311322942376e-11,
+    3.325340003357269e-12,
+    1.1146639167236572e-13,
+    1.2931877790833823e-12
+  ],
+  "common_metric_delta": [
+    1.371316358245167e-07,
+    7.581485306218383e-08,
+    -5.2019828444827e-09,
+    -3.768778622514901e-09,
+    -6.03793015585552e-09
+  ],
+  "original_recorded_default_volume_mm3": 80.52064973236902,
+  "first_replay_default_volume_mm3": 80.52075363323269,
+  "checkout_clean": true,
+  "input_hash_guard": true,
+  "manifest_files": 5056,
+  "frozen_files": 222
+}
