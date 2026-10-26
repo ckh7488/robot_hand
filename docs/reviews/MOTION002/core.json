@@ -1,0 +1,2219 @@
+{
+  "target_commit": "ec6b58d21978ea2993bf67dc5f44b86fdb0464d0",
+  "passed": true,
+  "independent_audit": false,
+  "manifest_files_checked": 1062,
+  "input_hash_guard": true,
+  "remeasured_protected_support_removed_mm3": {
+    "floor": 0.0,
+    "index_rear_mount": 0.0,
+    "middle_rear_mount": 0.0,
+    "ring_rear_mount": 0.0,
+    "little_rear_mount": 0.0
+  },
+  "selected_full_hand_poses": 18,
+  "all_pair_scope_per_pose": 66066,
+  "cases": [
+    {
+      "id": "gesture_open",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1174,
+        "exact_boolean_calls": 1113,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 0,
+        "exact_boolean_seconds": 38.786345200012875,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 0,
+        "cross_body_collision_count": 0,
+        "collision_details": [],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": true,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 39.25736380000308
+      }
+    },
+    {
+      "id": "gesture_fist",
+      "result": {
+        "angles_deg": [
+          0.0,
+          90.0,
+          109.97777233225946,
+          70.02222766774054,
+          0.0,
+          90.0,
+          114.23096594699132,
+          65.76903405300868,
+          0.0,
+          90.0,
+          107.34348905192036,
+          72.65651094807964,
+          0.0,
+          90.0,
+          91.82343229310811,
+          88.17656770689189,
+          -2.2241778795507954,
+          58.95234539048951,
+          50.4148927669402,
+          78.6258631157869
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1186,
+        "exact_boolean_calls": 352,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 833,
+        "exact_boolean_seconds": 14.996156599998358,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 0,
+        "cross_body_collision_count": 0,
+        "collision_details": [],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": true,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 15.440380000000005
+      }
+    },
+    {
+      "id": "gesture_thumb_up",
+      "result": {
+        "angles_deg": [
+          0.0,
+          90.0,
+          109.97777233225946,
+          70.02222766774054,
+          0.0,
+          90.0,
+          114.23096594699132,
+          65.76903405300868,
+          0.0,
+          90.0,
+          107.34348905192036,
+          72.65651094807964,
+          0.0,
+          90.0,
+          91.82343229310811,
+          88.17656770689189,
+          0.0,
+          0.0,
+          0.0,
+          -15.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1164,
+        "exact_boolean_calls": 35,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1129,
+        "exact_boolean_seconds": 1.8281899000139674,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 0,
+        "cross_body_collision_count": 0,
+        "collision_details": [],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": true,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 2.174885800002812
+      }
+    },
+    {
+      "id": "index_pip_+135",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          135.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1192,
+        "exact_boolean_calls": 28,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1164,
+        "exact_boolean_seconds": 1.112223099986295,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 1,
+        "cross_body_collision_count": 1,
+        "collision_details": [
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_segment2_dark_faceplate_clamp2_bolt",
+            "body_a": "index_mcp",
+            "body_b": "index_pip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              2
+            ],
+            "material_intersection_mm3": 1.8665259033106212,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.500000000253166,
+              162.46279360377994,
+              16.6941837575039
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 1.4401042999998026
+      }
+    },
+    {
+      "id": "thumb_mcp_+90",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          90.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1173,
+        "exact_boolean_calls": 30,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1143,
+        "exact_boolean_seconds": 3.117607999993197,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 4,
+        "cross_body_collision_count": 4,
+        "collision_details": [
+          {
+            "a": "thumb_segment1_thenar_shell",
+            "b": "thumb_segment2_segment_shell",
+            "body_a": "thumb_opposition",
+            "body_b": "thumb_mcp",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              18
+            ],
+            "material_intersection_mm3": 32.776902164959395,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              85.47478440622474,
+              52.620178417988896,
+              33.00625691955084
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "thumb_segment1_thenar_shell",
+            "b": "thumb_segment2_dark_faceplate",
+            "body_a": "thumb_opposition",
+            "body_b": "thumb_mcp",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              18
+            ],
+            "material_intersection_mm3": 25.116476842492613,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              84.3918694983726,
+              51.725600201034,
+              33.730323583248335
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "thumb_segment1_thenar_shell",
+            "b": "thumb_segment2_dark_faceplate_clamp1_bolt",
+            "body_a": "thumb_opposition",
+            "body_b": "thumb_mcp",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              18
+            ],
+            "material_intersection_mm3": 2.1679379872301214,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              82.43207399828972,
+              52.265890452901985,
+              34.45234618623414
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "thumb_segment1_thenar_shell",
+            "b": "thumb_segment2_dark_faceplate_clamp1_washer",
+            "body_a": "thumb_opposition",
+            "body_b": "thumb_mcp",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              18
+            ],
+            "material_intersection_mm3": 0.8673551388294598,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              83.15992593194137,
+              52.53017199547486,
+              34.419997488801584
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 3.460678100000223
+      }
+    },
+    {
+      "id": "four_fingers_extension",
+      "result": {
+        "angles_deg": [
+          0.0,
+          -25.0,
+          -15.0,
+          -8.0,
+          0.0,
+          -25.0,
+          -15.0,
+          -8.0,
+          0.0,
+          -25.0,
+          -15.0,
+          -8.0,
+          0.0,
+          -25.0,
+          -15.0,
+          -8.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1257,
+        "exact_boolean_calls": 303,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 954,
+        "exact_boolean_seconds": 12.20149350000429,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 12,
+        "cross_body_collision_count": 12,
+        "collision_details": [
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_root_fixed_housing",
+            "body_a": "index_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1
+            ],
+            "material_intersection_mm3": 141.83277102101573,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.50000000083196,
+              125.81122370306718,
+              -8.977139962525825
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_root_spread_carrier",
+            "body_a": "index_mcp",
+            "body_b": "index_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              1
+            ],
+            "material_intersection_mm3": 310.18200185412866,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.50000000163771,
+              120.93227214527558,
+              -6.017692790509829
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_spread_upper_bushing",
+            "body_a": "index_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1
+            ],
+            "material_intersection_mm3": 7.90100730008837,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.5,
+              121.46610378190489,
+              -7.708692465314677
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_root_fixed_housing",
+            "body_a": "middle_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              4,
+              5
+            ],
+            "material_intersection_mm3": 141.80841378391165,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              19.500000005614986,
+              134.72315171537974,
+              -8.991991711618779
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_root_spread_carrier",
+            "body_a": "middle_mcp",
+            "body_b": "middle_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              5
+            ],
+            "material_intersection_mm3": 308.75178195837515,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              19.50000000292667,
+              129.8448226716407,
+              -6.014796273301677
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_spread_upper_bushing",
+            "body_a": "middle_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              4,
+              5
+            ],
+            "material_intersection_mm3": 7.901007300080309,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              19.499999999999993,
+              130.3736209045857,
+              -7.708692465314648
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_root_fixed_housing",
+            "body_a": "ring_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              8,
+              9
+            ],
+            "material_intersection_mm3": 141.83479749903228,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -19.499999998184453,
+              124.21557798223942,
+              -8.982483209570216
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_root_spread_carrier",
+            "body_a": "ring_mcp",
+            "body_b": "ring_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              9
+            ],
+            "material_intersection_mm3": 309.66543754156413,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -19.49999999822012,
+              119.33673185760959,
+              -6.016657379753637
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_spread_upper_bushing",
+            "body_a": "ring_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              8,
+              9
+            ],
+            "material_intersection_mm3": 7.9010073001268,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -19.500000000000004,
+              119.86884798200116,
+              -7.708692465314815
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_root_fixed_housing",
+            "body_a": "little_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13
+            ],
+            "material_intersection_mm3": 141.62636920773184,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.49999999702727,
+              106.0173905189734,
+              -8.946070243678516
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_root_spread_carrier",
+            "body_a": "little_mcp",
+            "body_b": "little_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              13
+            ],
+            "material_intersection_mm3": 313.3061886739945,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.49999999609465,
+              101.13992154704619,
+              -6.023730465817569
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_spread_upper_bushing",
+            "body_a": "little_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13
+            ],
+            "material_intersection_mm3": 7.901007300138802,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.5,
+              101.68180148933,
+              -7.708692465314856
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 12.570481200000359
+      }
+    },
+    {
+      "id": "four_fingers_curl",
+      "result": {
+        "angles_deg": [
+          0.0,
+          85.0,
+          110.0,
+          80.0,
+          0.0,
+          85.0,
+          110.0,
+          80.0,
+          0.0,
+          85.0,
+          110.0,
+          80.0,
+          0.0,
+          85.0,
+          110.0,
+          80.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1194,
+        "exact_boolean_calls": 232,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 962,
+        "exact_boolean_seconds": 7.855534399954195,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 6,
+        "cross_body_collision_count": 6,
+        "collision_details": [
+          {
+            "a": "Palm_shaped_front_cover",
+            "b": "little_segment3_tip_core",
+            "body_a": "palm",
+            "body_b": "little_dip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "material_intersection_mm3": 439.1490342727653,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.50000828274608,
+              65.81192648128734,
+              28.371919709989573
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "Palm_shaped_front_cover",
+            "b": "little_segment3_rounded_tip_cap",
+            "body_a": "palm",
+            "body_b": "little_dip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "material_intersection_mm3": 496.5546540274099,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.50110802013688,
+              64.57739911465212,
+              27.996518926420972
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "Palm_shaped_front_cover",
+            "b": "little_segment3_rounded_tip_cap_clamp1_bolt",
+            "body_a": "palm",
+            "body_b": "little_dip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "material_intersection_mm3": 11.037575595038781,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -62.49999999999997,
+              68.18716303234812,
+              28.249999990087538
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "Palm_shaped_front_cover",
+            "b": "little_segment3_rounded_tip_cap_clamp1_nut",
+            "body_a": "palm",
+            "body_b": "little_dip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "material_intersection_mm3": 8.879342233903994,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -62.49999999920656,
+              67.92602890865184,
+              29.581224271577504
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "Palm_shaped_front_cover",
+            "b": "little_segment3_rounded_tip_cap_clamp2_bolt",
+            "body_a": "palm",
+            "body_b": "little_dip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "material_intersection_mm3": 11.037575595038781,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -54.49999999999997,
+              68.18716303234812,
+              28.249999990087538
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "Palm_shaped_front_cover",
+            "b": "little_segment3_rounded_tip_cap_clamp2_nut",
+            "body_a": "palm",
+            "body_b": "little_dip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "material_intersection_mm3": 8.879342233904147,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -54.49999999920657,
+              67.92602890865183,
+              29.581224271577522
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 8.260157600001548
+      }
+    },
+    {
+      "id": "index_ordinary_extension_mcp",
+      "result": {
+        "angles_deg": [
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1190,
+        "exact_boolean_calls": 40,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1150,
+        "exact_boolean_seconds": 1.774287899992487,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 2,
+        "cross_body_collision_count": 2,
+        "collision_details": [
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_root_fixed_housing",
+            "body_a": "index_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1
+            ],
+            "material_intersection_mm3": 20.17590573523709,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.50000006108717,
+              127.30265869227829,
+              -8.333191213761916
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_root_spread_carrier",
+            "body_a": "index_mcp",
+            "body_b": "index_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              1
+            ],
+            "material_intersection_mm3": 295.71110481776526,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.50000000120878,
+              122.62836554785886,
+              -5.831215022583218
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 2.1402209000007133
+      }
+    },
+    {
+      "id": "middle_ordinary_extension_mcp",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1191,
+        "exact_boolean_calls": 34,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1157,
+        "exact_boolean_seconds": 1.4773515999913798,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 2,
+        "cross_body_collision_count": 2,
+        "collision_details": [
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_root_fixed_housing",
+            "body_a": "middle_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              4,
+              5
+            ],
+            "material_intersection_mm3": 20.982864652286803,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              19.500000027349653,
+              136.1947480446679,
+              -8.341389946395731
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_root_spread_carrier",
+            "body_a": "middle_mcp",
+            "body_b": "middle_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              5
+            ],
+            "material_intersection_mm3": 293.966885331226,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              19.500000000440036,
+              131.53501542957366,
+              -5.83035005525837
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 1.808613699999114
+      }
+    },
+    {
+      "id": "ring_ordinary_extension_mcp",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1189,
+        "exact_boolean_calls": 39,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1150,
+        "exact_boolean_seconds": 1.7665842000060366,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 2,
+        "cross_body_collision_count": 2,
+        "collision_details": [
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_root_fixed_housing",
+            "body_a": "ring_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              8,
+              9
+            ],
+            "material_intersection_mm3": 20.467119766269875,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -19.499999966794643,
+              125.69969525224296,
+              -8.336111670912688
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_root_spread_carrier",
+            "body_a": "ring_mcp",
+            "body_b": "ring_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              9
+            ],
+            "material_intersection_mm3": 295.0920222984931,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -19.499999999094808,
+              121.03082827965605,
+              -5.830924542599116
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 2.1095702000020538
+      }
+    },
+    {
+      "id": "little_ordinary_extension_mcp",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1196,
+        "exact_boolean_calls": 47,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1149,
+        "exact_boolean_seconds": 1.8359809999928984,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 2,
+        "cross_body_collision_count": 2,
+        "collision_details": [
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_root_fixed_housing",
+            "body_a": "little_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13
+            ],
+            "material_intersection_mm3": 18.4317210290319,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.50000001754022,
+              107.55598259026569,
+              -8.316432804022806
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_root_spread_carrier",
+            "body_a": "little_mcp",
+            "body_b": "little_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              13
+            ],
+            "material_intersection_mm3": 299.2078305094766,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -58.499999999351346,
+              102.8451187068527,
+              -5.832483101082384
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 2.1681419999986247
+      }
+    },
+    {
+      "id": "fan_1",
+      "result": {
+        "angles_deg": [
+          22.0,
+          0.0,
+          0.0,
+          0.0,
+          6.0,
+          0.0,
+          0.0,
+          0.0,
+          -8.0,
+          0.0,
+          0.0,
+          0.0,
+          -22.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1270,
+        "exact_boolean_calls": 273,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 993,
+        "exact_boolean_seconds": 6.401264399995853,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 1,
+        "cross_body_collision_count": 1,
+        "collision_details": [
+          {
+            "a": "Palm_tapered_chassis",
+            "b": "little_segment1_segment_shell",
+            "body_a": "palm",
+            "body_b": "little_mcp",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13
+            ],
+            "material_intersection_mm3": 3.792158402445605,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              -81.74790610935175,
+              117.16079978714127,
+              3.3153431714924624
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 6.749130799998966
+      }
+    },
+    {
+      "id": "gesture_open__gesture_fist@0.75",
+      "result": {
+        "angles_deg": [
+          0.0,
+          67.5,
+          82.4833292491946,
+          52.5166707508054,
+          0.0,
+          67.5,
+          85.67322446024349,
+          49.32677553975651,
+          0.0,
+          67.5,
+          80.50761678894027,
+          54.49238321105973,
+          0.0,
+          67.5,
+          68.86757421983108,
+          66.13242578016892,
+          -1.6681334096630964,
+          44.214259042867134,
+          37.81116957520515,
+          58.969397336840174
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1265,
+        "exact_boolean_calls": 385,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 879,
+        "exact_boolean_seconds": 15.304424199992354,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 1,
+        "cross_body_collision_count": 1,
+        "collision_details": [
+          {
+            "a": "index_segment3_rounded_tip_cap",
+            "b": "thumb_segment2_dark_faceplate_clamp2_bolt",
+            "body_a": "index_dip",
+            "body_b": "thumb_mcp",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              3,
+              16,
+              17,
+              18
+            ],
+            "material_intersection_mm3": 2.1760405451422176,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              70.40401434361256,
+              67.79908929929528,
+              95.68996200090682
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 15.682836100000713
+      }
+    },
+    {
+      "id": "gesture_open__gesture_middle_finger@0.75",
+      "result": {
+        "angles_deg": [
+          0.0,
+          67.5,
+          82.4833292491946,
+          52.5166707508054,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          67.5,
+          80.50761678894027,
+          54.49238321105973,
+          0.0,
+          67.5,
+          68.86757421983108,
+          66.13242578016892,
+          2.8318665903369036,
+          41.964259042867134,
+          43.81116957520515,
+          58.969397336840174
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1247,
+        "exact_boolean_calls": 99,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1148,
+        "exact_boolean_seconds": 5.083614800001669,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 8,
+        "cross_body_collision_count": 8,
+        "collision_details": [
+          {
+            "a": "index_segment2_segment_shell",
+            "b": "thumb_segment3_tip_core",
+            "body_a": "index_pip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 60.37073953472913,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              47.98621803377306,
+              101.79523956000621,
+              105.12648572388134
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment2_segment_shell",
+            "b": "thumb_segment3_rounded_tip_cap",
+            "body_a": "index_pip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 31.16329719256036,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              47.887084194274856,
+              106.79809401538643,
+              105.60491819475443
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment2_distal_left_bushing",
+            "b": "thumb_segment3_tip_core",
+            "body_a": "index_pip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 0.3006162572748426,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              46.2913814857467,
+              102.51365366593868,
+              103.57986798318818
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment2_distal_left_bushing",
+            "b": "thumb_segment3_rounded_tip_cap",
+            "body_a": "index_pip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 9.99465133545325,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              46.797572851086954,
+              104.421133871859,
+              102.69403142412773
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment3_tip_core",
+            "b": "thumb_segment3_tip_core",
+            "body_a": "index_dip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              3,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 391.1370276465499,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              58.574282670148186,
+              94.34135069507549,
+              103.21006928570783
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment3_tip_core",
+            "b": "thumb_segment3_rounded_tip_cap",
+            "body_a": "index_dip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              3,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 0.5159130585156074,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              50.68133049496335,
+              107.44196095986005,
+              107.56884302453408
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_joint_pin_2",
+            "b": "thumb_segment3_rounded_tip_cap",
+            "body_a": "index_pip",
+            "body_b": "thumb_ip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1,
+              2,
+              16,
+              17,
+              18,
+              19
+            ],
+            "material_intersection_mm3": 26.041603668610687,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              44.71002547064022,
+              104.20499781244929,
+              101.47121231707952
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "thumb_segment3_rounded_tip_cap",
+            "b": "index_distal2_left_pin_washer",
+            "body_a": "thumb_ip",
+            "body_b": "index_pip",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              16,
+              17,
+              18,
+              19,
+              0,
+              1,
+              2
+            ],
+            "material_intersection_mm3": 5.222211633181555,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": false,
+            "intersection_center_mm": [
+              45.79636281819172,
+              103.94935736955198,
+              101.99775512039767
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 5.491207499999291
+      }
+    },
+    {
+      "id": "index_mcp_-25",
+      "result": {
+        "angles_deg": [
+          0.0,
+          -25.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1190,
+        "exact_boolean_calls": 0,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1190,
+        "exact_boolean_seconds": 0.0,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 3,
+        "cross_body_collision_count": 3,
+        "collision_details": [
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_root_fixed_housing",
+            "body_a": "index_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1
+            ],
+            "material_intersection_mm3": 141.83277102101573,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              58.50000000083196,
+              125.81122370306718,
+              -8.977139962525825
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_root_spread_carrier",
+            "body_a": "index_mcp",
+            "body_b": "index_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              1
+            ],
+            "material_intersection_mm3": 310.18200185412866,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              58.50000000163771,
+              120.93227214527558,
+              -6.01769279050983
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "index_segment1_segment_shell",
+            "b": "index_spread_upper_bushing",
+            "body_a": "index_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              0,
+              1
+            ],
+            "material_intersection_mm3": 7.90100730008837,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              58.5,
+              121.46610378190489,
+              -7.708692465314677
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 0.37045130000115023
+      }
+    },
+    {
+      "id": "middle_mcp_-25",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -25.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1195,
+        "exact_boolean_calls": 0,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1195,
+        "exact_boolean_seconds": 0.0,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 3,
+        "cross_body_collision_count": 3,
+        "collision_details": [
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_root_fixed_housing",
+            "body_a": "middle_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              4,
+              5
+            ],
+            "material_intersection_mm3": 141.80841378391165,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              19.500000005614986,
+              134.72315171537974,
+              -8.99199171161878
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_root_spread_carrier",
+            "body_a": "middle_mcp",
+            "body_b": "middle_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              5
+            ],
+            "material_intersection_mm3": 308.75178195837515,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              19.50000000292667,
+              129.8448226716407,
+              -6.014796273301677
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "middle_segment1_segment_shell",
+            "b": "middle_spread_upper_bushing",
+            "body_a": "middle_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              4,
+              5
+            ],
+            "material_intersection_mm3": 7.901007300080309,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              19.499999999999993,
+              130.3736209045857,
+              -7.708692465314648
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 0.34341439999843715
+      }
+    },
+    {
+      "id": "ring_mcp_-25",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -25.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1190,
+        "exact_boolean_calls": 0,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1190,
+        "exact_boolean_seconds": 0.0,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 3,
+        "cross_body_collision_count": 3,
+        "collision_details": [
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_root_fixed_housing",
+            "body_a": "ring_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              8,
+              9
+            ],
+            "material_intersection_mm3": 141.83479749903228,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              -19.499999998184453,
+              124.21557798223942,
+              -8.982483209570216
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_root_spread_carrier",
+            "body_a": "ring_mcp",
+            "body_b": "ring_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              9
+            ],
+            "material_intersection_mm3": 309.66543754156413,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              -19.49999999822012,
+              119.33673185760959,
+              -6.016657379753637
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "ring_segment1_segment_shell",
+            "b": "ring_spread_upper_bushing",
+            "body_a": "ring_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              8,
+              9
+            ],
+            "material_intersection_mm3": 7.9010073001268,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              -19.500000000000004,
+              119.86884798200116,
+              -7.708692465314815
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 0.35088700000051176
+      }
+    },
+    {
+      "id": "little_mcp_-25",
+      "result": {
+        "angles_deg": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -25.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_pairs_in_scope": 66066,
+        "same_body_pairs_in_scope": 4852,
+        "aabb_candidates": 1195,
+        "exact_boolean_calls": 3,
+        "exact_distance_calls": 0,
+        "relative_configuration_cache_hits": 1192,
+        "exact_boolean_seconds": 0.11502150000160327,
+        "exact_distance_seconds": 0.0,
+        "clearance_reported": false,
+        "collision_count": 3,
+        "cross_body_collision_count": 3,
+        "collision_details": [
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_root_fixed_housing",
+            "body_a": "little_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13
+            ],
+            "material_intersection_mm3": 141.62636920773184,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              -58.49999999702727,
+              106.0173905189734,
+              -8.946070243678516
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_root_spread_carrier",
+            "body_a": "little_mcp",
+            "body_b": "little_spread",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              13
+            ],
+            "material_intersection_mm3": 313.3061886739945,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              -58.49999999609465,
+              101.13992154704619,
+              -6.023730465817568
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          },
+          {
+            "a": "little_segment1_segment_shell",
+            "b": "little_spread_upper_bushing",
+            "body_a": "little_mcp",
+            "body_b": "palm",
+            "same_simulator_body": false,
+            "relative_joint_indices": [
+              12,
+              13
+            ],
+            "material_intersection_mm3": 7.901007300138802,
+            "intersection_tested": true,
+            "near_distance_mm": null,
+            "collision": true,
+            "errors": [],
+            "reused_exact_relative_configuration": true,
+            "intersection_center_mm": [
+              -58.5,
+              101.68180148933,
+              -7.708692465314856
+            ],
+            "distance_status": "not_computed_explicit_skip_proximity"
+          }
+        ],
+        "operation_failures": [],
+        "minimum_computed_distance_mm": null,
+        "no_reportable_material_collision_and_no_operation_failure": false,
+        "proximity_is_not_a_clearance_pass": true,
+        "elapsed_s": 0.4428579000013997
+      }
+    }
+  ],
+  "recomputed_native_gap_samples": 20,
+  "gap_checks": [
+    {
+      "finger": "index",
+      "angle_deg": -25.0,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "index",
+      "angle_deg": -18.75,
+      "actual_gap_mm": 1.0188520455311167,
+      "expected_gap_mm": 1.0188520455311167
+    },
+    {
+      "finger": "index",
+      "angle_deg": -12.5,
+      "actual_gap_mm": 0.7026669478248484,
+      "expected_gap_mm": 0.7026669478248484
+    },
+    {
+      "finger": "index",
+      "angle_deg": -6.25,
+      "actual_gap_mm": 1.2542253791279716,
+      "expected_gap_mm": 1.2542253791279716
+    },
+    {
+      "finger": "index",
+      "angle_deg": 0.0,
+      "actual_gap_mm": 3.5000000600000023,
+      "expected_gap_mm": 3.5000000600000023
+    },
+    {
+      "finger": "middle",
+      "angle_deg": -25.0,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "middle",
+      "angle_deg": -18.75,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "middle",
+      "angle_deg": -12.5,
+      "actual_gap_mm": 1.3001790588098565,
+      "expected_gap_mm": 1.3001790588098565
+    },
+    {
+      "finger": "middle",
+      "angle_deg": -6.25,
+      "actual_gap_mm": 2.9266800217888336,
+      "expected_gap_mm": 2.9266800217888336
+    },
+    {
+      "finger": "middle",
+      "angle_deg": 0.0,
+      "actual_gap_mm": 5.24441827937109,
+      "expected_gap_mm": 5.24441827937109
+    },
+    {
+      "finger": "ring",
+      "angle_deg": -25.0,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "ring",
+      "angle_deg": -18.75,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "ring",
+      "angle_deg": -12.5,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "ring",
+      "angle_deg": -6.25,
+      "actual_gap_mm": 1.4612745929847222,
+      "expected_gap_mm": 1.4612745929847222
+    },
+    {
+      "finger": "ring",
+      "angle_deg": 0.0,
+      "actual_gap_mm": 3.500000060000001,
+      "expected_gap_mm": 3.500000060000001
+    },
+    {
+      "finger": "little",
+      "angle_deg": -25.0,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "little",
+      "angle_deg": -18.75,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "little",
+      "angle_deg": -12.5,
+      "actual_gap_mm": 0.7000000999999969,
+      "expected_gap_mm": 0.7000000999999969
+    },
+    {
+      "finger": "little",
+      "angle_deg": -6.25,
+      "actual_gap_mm": 1.6911426352757355,
+      "expected_gap_mm": 1.6911426352757355
+    },
+    {
+      "finger": "little",
+      "angle_deg": 0.0,
+      "actual_gap_mm": 3.5000000600000023,
+      "expected_gap_mm": 3.5000000600000023
+    }
+  ],
+  "all_recorded_interval_bound_arithmetic_rechecked": true,
+  "full180_cases_replayed": false,
+  "all_adaptive_native_distances_recomputed": false,
+  "renderer_replayed": false,
+  "clean_git_status": "",
+  "differences": [],
+  "elapsed_s": 242.51599999999962,
+  "meaning": "Selected exact-SHA findings, including remaining collisions, reproduced; same-agent core replay.",
+  "manufacturing_release": false,
+  "whole_hand_motion_approved": false
+}

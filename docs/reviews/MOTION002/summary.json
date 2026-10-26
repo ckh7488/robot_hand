@@ -1,0 +1,15 @@
+{
+  "target_commit": "ec6b58d21978ea2993bf67dc5f44b86fdb0464d0",
+  "passed": true,
+  "clean_git_status": "",
+  "selected_full_hand_poses": 18,
+  "recomputed_native_gap_samples": 20,
+  "assembly_valid_solids": 364,
+  "frozen_hashes": 222,
+  "independent_audit": false,
+  "full180_cases_replayed": false,
+  "all_adaptive_native_distances_recomputed": false,
+  "all_recorded_interval_bound_arithmetic_rechecked": true,
+  "whole_hand_motion_approved": false,
+  "manufacturing_release": false
+}

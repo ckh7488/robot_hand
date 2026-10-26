@@ -1,0 +1,46 @@
+{
+  "target_commit": "ec6b58d21978ea2993bf67dc5f44b86fdb0464d0",
+  "clean_path": "D:\\Codex-work\\robot-hand-workspace\\reviews\\MOTION002_ec6b58d21978",
+  "commands": [
+    {
+      "args": [
+        "clone",
+        "--no-hardlinks",
+        "--no-checkout",
+        "D:\\robot_hand",
+        "D:\\Codex-work\\robot-hand-workspace\\reviews\\MOTION002_ec6b58d21978"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Cloning into 'D:\\Codex-work\\robot-hand-workspace\\reviews\\MOTION002_ec6b58d21978'...\ndone.\n"
+    },
+    {
+      "args": [
+        "checkout",
+        "--detach",
+        "ec6b58d21978ea2993bf67dc5f44b86fdb0464d0"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "HEAD is now at ec6b58d checkpoint(MOTION002): relieve palm rim and retain unresolved root collisions\n"
+    },
+    {
+      "args": [
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "ec6b58d21978ea2993bf67dc5f44b86fdb0464d0\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}
