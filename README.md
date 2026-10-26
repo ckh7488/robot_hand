@@ -10,11 +10,11 @@
 
 *수용한 손 비율과 최신 엄지척입니다. 엄지는 펼친 위치를 유지한 채 끝마디만 팔목 쪽으로15° 젖힙니다. 이 두 자세가 보인다고 전체 가동 범위가 확보된 것은 아닙니다. [수용한 외형 기준](cad/accepted_form_v1/README.md) · [손 전체 운동 검사](cad/whole_hand_motion_v1/README.md)*
 
-[엄지 줄 고정부·모터 모듈 확대](cad/thumb_ip_drive_v1/generated/drive_details.png) · [현재 부품 STEP 목록](cad/thumb_ip_drive_v1/generated/scene.json) · [이전 제작 후보 전체 STEP](cad/manufacturing_v2/generated/hand.step) · [엄지 자세의 이전 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif)
+[엄지 줄 고정부·모터 모듈 확대](cad/thumb_ip_drive_v1/generated/drive_details.png) · [현재 부품 STEP 목록](cad/motion_clearance_v2/generated/assembly_catalog.json) · [현재 손 전체 STEP 압축](cad/motion_clearance_v2/generated/hand.step.zip) · [이전 제작 후보 전체 STEP](cad/manufacturing_v2/generated/hand.step) · [엄지 자세의 이전 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif)
 
-현재는 **손 전체가 사람다운 범위에서 실제로 움직일 수 있도록 CAD를 다듬는 단계**입니다. 359부품 제조 후보와 이후 엄지 구동부를 포함한364부품 후보의 범위를 넓혀 검사하니, 네 손가락 뿌리를 뒤로20° 젖히는 동작에서도 손가락 몸체와 받침·손바닥 프레임의 간섭이 확인되었습니다. 기존 대표 손짓의 끝자세 통과만으로 전체 운동을 승인할 수 없습니다. [발견된 문제와 검사 범위](cad/whole_hand_motion_v1/README.md)
+현재는 **손 전체가 사람다운 범위에서 실제로 움직일 수 있도록 CAD를 다듬는 단계**입니다. 최신 [MOTION002 후보](cad/motion_clearance_v2/README.md)는364부품 중 손바닥 프레임1개를 수정해 네 첫마디와 프레임 사이에서 뒤로25°까지의 공칭 여유를 확인했습니다. 다른 뿌리 받침 간섭은 남아 있고 전체 손은25/72자세·12/36전환에서 간섭하므로 전체 가동을 승인하지 않습니다. [이전 발견 자료](cad/whole_hand_motion_v1/README.md)
 
-**우선순위는 전체 손의 간섭 수정 → 운동 경로·여유 확인 → 조립성 → 구동 통합입니다.** 손 비율·길이·관절축을 보존하는 국부 수정을 우선 검토하며, 간섭을 숨기기 위해 필요한 운동 범위를 줄이지 않습니다. 추가 여유는 각도5°와 비접촉 외장 간격0.5mm를 설계 목표로 삼되, 아직 확보한 값은 아닙니다. [운동 요구사항](cad/whole_hand_motion_v1/REQUIREMENTS.md)
+**우선순위는 전체 손의 간섭 수정 → 운동 경로·여유 확인 → 조립성 → 구동 통합입니다.** 손 비율·길이·관절축을 보존하는 국부 수정을 우선 검토하며, 간섭을 숨기기 위해 필요한 운동 범위를 줄이지 않습니다. 전체 손의 여유 목표는 각도5°와 비접촉 외장 간격0.5mm입니다. 이번 프레임–첫마디의 국부 경로에서 확보한 결과를 다른 부품·각도·공차로 확대하지 않습니다. [운동 요구사항](cad/whole_hand_motion_v1/REQUIREMENTS.md)
 
 엄지의 [두 줄 고정부 연구](cad/thumb_ip_drive_v1/README.md)와 [별도 장력 조절 시험대 CAD](cad/thumb_ip_tension_v1/README.md)는 보존합니다. 이 단품 연구로 전체 손의 간섭·조립·구동 문제가 해결된 것은 아니며, 손 전체의 모터·줄·배선 통합과 실물 시험은 남아 있습니다.
 
@@ -47,7 +47,7 @@
 | --- | --- | --- |
 | 개발 기준 | [요구사항과 반복 순서](docs/REMOTE_DRIVE_PLAN.md) | 측정 경계, 설계 방향, 미확정 항목 |
 | 수용한 외형 | [FORM002](cad/accepted_form_v1/README.md) | 현재 손 비율·엄지·주먹의 시각 기준. 제조용 솔리드와 구분 |
-| 현재 우선 작업: 전체 손 운동 | [whole_hand_motion_v1](cad/whole_hand_motion_v1/README.md) | 359부품 제조 기준과 최신364부품 후보의 범위 확대 검사. 형상 수정·전체 가동 승인 전의 발견 자료 |
+| 현재 우선 작업: 전체 손 운동 | [MOTION002 프레임 수정](cad/motion_clearance_v2/README.md) · [기존 발견 자료](cad/whole_hand_motion_v1/README.md) | 364부품 중 프레임1개 수정. 국부 뒤로25° 공간과 전체 손의 미해결 간섭을 구분 |
 | 별도 엄지 장력 시험대 | [thumb_ip_tension_v1](cad/thumb_ip_tension_v1/README.md) | 모터 이동/나사 조절/공구 접근의 단품 CAD 검사. 전체 손의 운동·구동 완료와 구분 |
 | 현재 엄지 구동 후보 | [thumb_ip_drive_v1](cad/thumb_ip_drive_v1/README.md) | 손364부품과 별도 모터 모듈. 실제 줄 고정·나사 삽입 창·열린 줄 홈, 제작·장력·성능은 검토 중 |
 | 원위 핀 제작 기준 | [manufacturing_v2](cad/manufacturing_v2/README.md) | 359부품. 원위 핀의 나사·규격 와셔 고정, 삽입과 양쪽 공구 접근, 자세·경로 표본 검사 |

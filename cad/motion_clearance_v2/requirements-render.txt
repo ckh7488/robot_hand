@@ -1,0 +1,4 @@
+-r requirements-cad.txt
+mujoco==3.3.7
+scipy==1.18.1
+pillow==13.0.0

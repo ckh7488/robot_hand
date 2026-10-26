@@ -1,0 +1,90 @@
+{
+  "source_sha256": {
+    "cad/gesture_hand_v3/generated/meshes/Palm_tapered_chassis.stl": "e8cc1a235120d5557bc03a2fb142f13f823730c9e35da466c66d9837dda65507",
+    "cad/gesture_hand_v3/generated/meshes/index_segment1_segment_shell.stl": "c74713cc7910006867161492e04246413d9f3ae7533eebaf04195b01959a15d5",
+    "cad/motion_clearance_v2/generated/meshes/Palm_tapered_chassis.stl": "d672dfde51be22e32bd75fb780db7aa3c83d9465d312c0ce3c55dcc639e2f6c7"
+  },
+  "angles_deg": [
+    0.0,
+    -20.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "shown_parts": [
+    "Palm_tapered_chassis",
+    "index_segment1_segment_shell"
+  ],
+  "other_parts_hidden": true,
+  "synthetic_geometry": false,
+  "cameras": {
+    "detail": {
+      "position": [
+        640.9790813012787,
+        363.68209528268335,
+        -581.2629461386189
+      ],
+      "focus": [
+        -0.4698280587507021,
+        83.04819743767047,
+        -19.995150448593122
+      ],
+      "right": [
+        -0.658504607868518,
+        0.0,
+        -0.7525766947068778
+      ],
+      "up": [
+        -0.2353585297025658,
+        0.9498397805853549,
+        0.20593871348974505
+      ],
+      "parallel_scale_mm": 105.34384479882894,
+      "projected_union_bounds_mm": [
+        [
+          -61.664252922544804,
+          -19.18172017075911,
+          -48.96953842644558
+        ],
+        [
+          92.37878927526924,
+          168.93228839857827,
+          125.25521258702632
+        ]
+      ],
+      "framing_margin_fraction": 0.06,
+      "projection": "parallel"
+    }
+  },
+  "foreground_bounds": [
+    [
+      94,
+      37,
+      605,
+      662
+    ],
+    [
+      94,
+      37,
+      605,
+      662
+    ]
+  ],
+  "mujoco": "3.3.7",
+  "simulation_steps": 0
+}

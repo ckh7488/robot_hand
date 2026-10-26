@@ -1,10 +1,10 @@
 {
-  "id": "GESTURE002",
-  "candidate": "cad/gesture_hand_v3",
+  "id": "MOTION002",
+  "candidate": "cad/motion_clearance_v2",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/GESTURE002.manifest.json",
-  "previous_checkpoint": "GESTURE001",
-  "status": "Unchanged349-part accepted hand; straight-thumb/index pose and three forward2.5-degree sampled paths (228 samples) checked. No manufacturing, continuous-motion or latency approval.",
+  "manifest": "checkpoints/MOTION002.manifest.json",
+  "previous_checkpoint": "GESTURE002",
+  "status": "Palm-only relief meets scoped nominal extension goal; root collisions, whole-hand motion, assembly and strength remain unresolved. Exact-commit core replay pending.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -12,8 +12,7 @@
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "832feba51f54be5a4300da6a53dcbc56505ec98c",
-  "post_commit_review_report": "docs/reviews/GESTURE002_832feba51f54/review.json",
-  "post_commit_reproduction_scope": "Exact committed archive and manifest/frozen evidence; all CAD and mass tensors rebuilt; open, fist and thumb-up exact collisions, selected transition samples exact replay, and individual nominal fabrication interfaces rerun. Full original 2.5-degree sampling arithmetic/angle correspondence is reconciled. CAD replay selects recorded samples nearest path fractions 0/.25/.5/.75/1 on each path plus all authored waypoints of two staged thumb paths, with exact-angle deduplication. All 33 fist waypoints and complete 2.5-degree paths are not CAD-replayed; reverse directions, other six endpoints, proximity distances, renderer and dynamics are not rerun. Existing geometric failure outcomes are retained; Boolean failures cannot pass reproduction; this is same-task reproduction, not external independent audit or manufacturing/performance approval."
+  "baseline": "cad/thumb_ip_drive_v1",
+  "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
+  "post_commit_results_reproduced": false
 }
