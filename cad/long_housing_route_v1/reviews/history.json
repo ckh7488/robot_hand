@@ -1,0 +1,8 @@
+{
+  "first_partial": "Original completed=false report has one complete open native pose;19distinct reporting pairs:15packaging and4neutralwrist.Preserve first geometry and failed records.",
+  "stop": "Stopped owned build child after confirmed initial material blockage to avoid redundant remaining candidate positions.Did not count incomplete second pose export or unrecorded calculations.No native operation failure in recorded pose.",
+  "second": "Same500mmquintic family adds sampled signed-distance constraints of8actual blocking STEP AABBs;allactualobstacles retained in native test.Newopen pose still has6neutralwrist reporting pairs,so stop before parent/return poses.No solver failure or mechanical impossibility claim.",
+  "initialization": "No hand geometry,terminaloutlet/motor placement/angles or collision thresholds changed.No cableOD reduction,no physicalguide added,no earlierfailedfreewaypoint search resumed as support evidence.",
+  "mesh": "First native mesh export .05mm/.1rad retained,second .2mm/.35rad for visualization cost.GeometricSTEP/native reporting remain identical tolerances.",
+  "scope": "Onlytwoopenposition candidates have complete native results.Not entire approach/release,parent/wrist motion or source localcord/drive integration."
+}

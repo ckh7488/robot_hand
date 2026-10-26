@@ -1,0 +1,217 @@
+{
+  "completed": true,
+  "candidate_adopted": false,
+  "current_hand_rows": 397,
+  "current_packaging_rows": 385,
+  "electrical_rows": 64,
+  "neutral_arm_reference_rows": 10,
+  "physical_new_housings": 2,
+  "physical_new_cords": 2,
+  "CAD_sections_per_physical_line": 5,
+  "new_shapes_per_pose": 20,
+  "new_installed_guides": 0,
+  "actual_end_supports": "Existing nominal RETAIN026/TERMINAL022/OFFSET024 ends;onlythese4anchors.No actual intermediate hardware.",
+  "first": {
+    "pairs_in_scope": 17310,
+    "AABB_native_pairs": 459,
+    "overlap_records": 19,
+    "distinct_physical_line_part_pairs": 19,
+    "operation_failures": 0,
+    "overlaps": [
+      {
+        "group": "packaging",
+        "lead": "long_housing_0_2",
+        "part": "middle_spread_actuator_motor",
+        "material_intersection_mm3": 28.80972856090532
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_0_2",
+        "part": "middle_spread_actuator_cradle",
+        "material_intersection_mm3": 14.287729168342068
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_0_2",
+        "part": "middle_spread_actuator_body_screws",
+        "material_intersection_mm3": 14.64383267609471
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_0_2",
+        "part": "middle_spread_actuator_adapter",
+        "material_intersection_mm3": 5.890492603679572
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_0_2",
+        "part": "little_spread_actuator_adapter",
+        "material_intersection_mm3": 27.58059892351033
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_0_2",
+        "part": "middle_spread_actuator_motor",
+        "material_intersection_mm3": 0.8150946499478451
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_0_2",
+        "part": "middle_spread_actuator_cradle",
+        "material_intersection_mm3": 0.5080011544705187
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_0_2",
+        "part": "middle_spread_actuator_body_screws",
+        "material_intersection_mm3": 1.2705848346143886
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_0_2",
+        "part": "little_spread_actuator_adapter",
+        "material_intersection_mm3": 1.7283363261951228
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_1_2",
+        "part": "little_spread_actuator_adapter",
+        "material_intersection_mm3": 14.553721900922337
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_1_2",
+        "part": "Forearm_twenty_axis_module_rack",
+        "material_intersection_mm3": 17.461354583251946
+      },
+      {
+        "group": "packaging",
+        "lead": "long_housing_1_2",
+        "part": "little_spread_actuator_wire_guide_base",
+        "material_intersection_mm3": 12.463622924207145
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_1_2",
+        "part": "little_spread_actuator_adapter",
+        "material_intersection_mm3": 0.9307037651591521
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_1_2",
+        "part": "Forearm_twenty_axis_module_rack",
+        "material_intersection_mm3": 0.931049577813022
+      },
+      {
+        "group": "packaging",
+        "lead": "long_cord_1_2",
+        "part": "little_spread_actuator_wire_guide_base",
+        "material_intersection_mm3": 0.6203682350187181
+      },
+      {
+        "group": "arm",
+        "lead": "long_housing_0_3",
+        "part": "Palm_wrist_saddle",
+        "material_intersection_mm3": 80.52064973236902
+      },
+      {
+        "group": "arm",
+        "lead": "long_cord_0_3",
+        "part": "Palm_wrist_saddle",
+        "material_intersection_mm3": 3.9733570621869054
+      },
+      {
+        "group": "arm",
+        "lead": "long_housing_1_3",
+        "part": "Palm_wrist_saddle",
+        "material_intersection_mm3": 73.20456250200364
+      },
+      {
+        "group": "arm",
+        "lead": "long_cord_1_3",
+        "part": "Palm_wrist_saddle",
+        "material_intersection_mm3": 3.605158220839383
+      }
+    ]
+  },
+  "second": {
+    "pairs_in_scope": 17310,
+    "AABB_native_pairs": 208,
+    "overlap_records": 6,
+    "distinct_physical_line_part_pairs": 4,
+    "operation_failures": 0,
+    "overlaps": [
+      {
+        "group": "arm",
+        "lead": "long_housing_1_2",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 116.32227483111346
+      },
+      {
+        "group": "arm",
+        "lead": "long_housing_1_3",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 53.23060892082082
+      },
+      {
+        "group": "arm",
+        "lead": "long_housing_1_3",
+        "part": "Palm_wrist_saddle",
+        "material_intersection_mm3": 12.522753893331824
+      },
+      {
+        "group": "arm",
+        "lead": "long_cord_1_2",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 5.718971652091833
+      },
+      {
+        "group": "arm",
+        "lead": "long_cord_1_3",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 2.877924056932224
+      },
+      {
+        "group": "arm",
+        "lead": "long_cord_1_3",
+        "part": "Palm_wrist_saddle",
+        "material_intersection_mm3": 0.16618444023465262
+      }
+    ]
+  },
+  "first_complete_native_poses": 1,
+  "second_complete_native_poses": 1,
+  "first_report_completed": false,
+  "first_interrupted_after_static_block": true,
+  "unreported_partial_second_pose_is_not_completion": true,
+  "first_planned_poses": 9,
+  "second_planned_poses": 5,
+  "parent_wrist_motion_native_tested": false,
+  "hand_body_motor_rack_electrical_unchanged": true,
+  "inherited_geometry_files_unchanged": 4159,
+  "flex_length_candidate_mm": 500.0,
+  "full_seated_housing_length_mm": [
+    542.0,
+    542.0
+  ],
+  "middle_cord_centerline_length_mm": [
+    535.0,
+    538.0
+  ],
+  "model": "8parameter quintic Bezier,192point Gaussian quadrature with independent scipy quad validation;SLSQP minimum integral curvature squared atfixedendpositions/tangents/length.Samefamily second candidate adds41sample1.5mm AABB constraints of8actualfirstblocking solids.No intermediate supports implied.No calibration ofEI/gravity/friction/contact/tension/dynamics or inextensible physicalhousing.",
+  "second_keepout_names": [
+    "Forearm_twenty_axis_module_rack",
+    "Palm_wrist_saddle",
+    "little_spread_actuator_adapter",
+    "little_spread_actuator_wire_guide_base",
+    "middle_spread_actuator_adapter",
+    "middle_spread_actuator_body_screws",
+    "middle_spread_actuator_cradle",
+    "middle_spread_actuator_motor"
+  ],
+  "second_discrete_keepout_clear_does_not_equal_native_material_clear": true,
+  "force_or_strain_relief_approved": false,
+  "cord_inside_sheath_contact_centerline_is_approximation": true,
+  "old_local_cord_integration_or_threading_tested": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true
+}
