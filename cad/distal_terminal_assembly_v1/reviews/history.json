@@ -1,0 +1,9 @@
+{
+  "first_source": "service.py",
+  "first_report": "reviews/service.json",
+  "first_result": "16finite samples over4paths;upper shoe inward12mm start already intersects thenar shell/bushing/washers.Stop before downstream paths,completed=false.Not proof all approaches impossible.",
+  "correction": "Bench fit upper ferrule/shoe,place kit fromoutboardX20mm before upper keeper;then place keeper andrestore original/newfasteners.Lower ferrule threads axially first,shoe lateral at3mminward offset then radial.Two nuts ordered by entry side.",
+  "import_error": "Initial correct_order lacked phase import path:ModuleNotFoundError before geometry/native calculations;fixed for order2.No CAD defect.",
+  "finalization_error": "All22corrected paths completed,then set+set report aggregation raised TypeError.Raw corrected_service remains completed=false;finalize.py validates hashes/stage continuity/final union and adds completion/counts with0native reruns.Selected_service is the completed scoped report.No geometry/native results altered.",
+  "unchanged_old_curve_review": "OFFSET024 core_initial=false and face_supplement=false remain in docs/reviews/OFFSET024.Only saved STEP is used here;no retry/regeneration or all-equivalence claim."
+}

@@ -1,0 +1,19 @@
+{
+  "selected_report": "reviews/selected_service.json",
+  "history_reports": [
+    "reviews/service.json"
+  ],
+  "corrected_native_report": "reviews/corrected_service.json",
+  "completed": true,
+  "required_sequence_clear": true,
+  "raw_first_samples": 16,
+  "raw_first_completed": false,
+  "selected_new_samples": 84,
+  "bench_samples": 4,
+  "reused_native_samples": 0,
+  "previous_offset024_keeper6_not_reused": true,
+  "geometry_changed": false,
+  "geometry_catalog": "cad/thumb_sheath_terminal_v2/selected/generated/candidate_scene.json",
+  "known_inherited_source_STEP_face_comparison_inconclusive": true,
+  "whole_hand_drive_complete": false
+}

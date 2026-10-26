@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "previous_manifest": "checkpoints/OFFSET024.manifest.json",
+  "geometry_files": 4041,
+  "all_hashes_unchanged": true,
+  "previous_upper_keeper_face_comparison_inconclusive": true,
+  "source_STEP_equivalence_retested": false,
+  "method": "Verify every inherited STEP/STL byte hash,not new curve regeneration or mathematical equivalence.No existing geometry files changed;new visual evidence files are separate."
+}
