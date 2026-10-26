@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "new_native_tests_run": 0,
+  "nominal_rigid_body_assignment": "thumb_mcp",
+  "axial_capture_nominal_contacts_verified": true,
+  "roll_restraint_verified": false,
+  "reason": "Circular liner flange/bore and planar caps alone do not establish positive anti-rotation about the inlet axis.Existing parent slot contact or measured clamp friction may restrain the formed liner plane,but no bilateral roll/force/stiffness test was performed.Body assignment and constant FK guide centers are nominal,not proof of all6rigid constraints.",
+  "current_candidate_adopted": false,
+  "next": "Verify actual roll restraint/shape retention and liner installation sequence before treating these as fully constrained force-path guides."
+}

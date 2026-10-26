@@ -1,0 +1,33 @@
+{
+  "review_date": "2026-10-27",
+  "supplier_selected": false,
+  "primary_sources": [
+    {
+      "url": "https://ptfetubeshop.com/en/product/ptfe-tube-08mm-x-12mm/",
+      "facts": "Supplier lists nominalID0.8/OD1.2mm PTFE tubing,wall0.2mm and OD/ID tolerances+/-0.10mm.This is dimensional context only,not qualification of a rigidR5formed flanged guide or tendon load/fatigue.",
+      "application_limit": "A maximum1.3mm OD would exceed the existing nominal1.2mm slot;no guaranteed supply fit.Bend-radius graph/formed flange/shape retention not qualified."
+    },
+    {
+      "local": "cad/gesture_hand_v3/generated/build_report.json",
+      "sha256": "ca5324b06d05d900d8a8b84f7d288863acc6b1b761cb9d0b6f2338a1d17cd8f0",
+      "facts": "Existing two M2 skin-clamp axes/profiled washers/captive nuts.Original shaft length7mm;new nominal12mm shafts keep original tips and raise head seats5mm."
+    },
+    {
+      "local": "cad/thumb_ip_drive_v1/parent_passages.py",
+      "sha256": "5d8d589ece3033d0b3c5412272c75a95a788f5ff95e4d641e6b4481904bfe0a6",
+      "facts": "Existing outward-open1.2mm slots,not a new guide/support.The new nominalOD1.2mm liner has no established positive lateral tolerance in this slot."
+    },
+    {
+      "local": "cad/thumb_ip_drive_v1/source_docs/tendon/facts.json",
+      "sha256": "f5141efe89461a969988e6e90b6cc8e859ab54f52af49a40e685ac6bc67ec0ab",
+      "facts": "Previously saved cord reference only;nominal0.6mm cord/R5guide centerline are not supplied fatigue/friction/strength ratings."
+    }
+  ],
+  "assumptions": [
+    "Liner outer1.2/inner0.8mm and integralOD3x2mm flange are CUSTOM nominal shapes;material/rigid shape retention/flange production/strength and actual supply fit unresolved.",
+    "Model treats each formed liner as rigid on thumb_mcp.A flexible PTFE stock tube alone is not proof theSbend stays in shape.Additional bend support or rigid preformed part remains a manufacturing/force-design question.",
+    "M2x12/M2x10/hex nuts and original drive envelopes are nominal,no real thread/torque/driver or clamp-preload approval.",
+    "New guide is a protruding candidate attachment.Hand source form/axis/length unchanged,overall attachment outline not accepted as human-like merely because8poses clear.",
+    "Only terminal-to-IP cord segment is connected.Motor-to-inlet/root crossing,full flexible conduit/supports,length adjustment/pretension and whole hand drive remain incomplete."
+  ]
+}

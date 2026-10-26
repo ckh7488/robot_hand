@@ -1,0 +1,37 @@
+{
+  "first_report": "reviews/check.json",
+  "first_completed": false,
+  "first_completed_poses": [
+    "open",
+    "ip45",
+    "ip85"
+  ],
+  "first_reason": "Preserved first carrier/keeper and liner/cover collisions;stopped remaining repeated poses after fixed obstruction identified.No hand failure/impossibility claim.",
+  "second_report": "selected/reviews/check.json",
+  "second_completed": false,
+  "second_completed_poses": [
+    "open",
+    "ip45",
+    "ip85",
+    "ip_minus15",
+    "parent_quarter"
+  ],
+  "second_reason": "Front recess/exit correction cleared external poses completed;fixed upper nut/crossbrace intersection remained.Stopped redundant remaining poses.Preserved partial report.",
+  "input_error": "Initial check2 import resolved older motor candidate2 module and stopped at existing-output assertion before new geometry calculations.Renamed new module guide_candidate2;no source geometry repaired/deleted.",
+  "service_input_error": "First service correction imported the older motor build_check module and stopped before native collision work;explicit module-path loading fixed it.",
+  "service_scope_metadata_error": "Original service report kept the mutable installed list by reference;later appends overwrote earlier stage lists.Native obstacle lists were constructed at call time.Corrected service_scopes.json reconstructs the source call order and verifies804base+prefix pair counts for all68samples;native results unchanged.First correction/assembly image using aliased future-part lists was stopped/preserved,then corrected scopes used.",
+  "final_report": "selected2/reviews/check.json",
+  "final_completed": true,
+  "service": "selected2/reviews/final_service.json",
+  "original_service": "selected2/reviews/service.json",
+  "original_required_paths_clear": false,
+  "service_samples": 68,
+  "required_service_samples": 63,
+  "required_failed_paths": [
+    "flanged_liner_1_axial_insert",
+    "flanged_liner_0_axial_insert"
+  ],
+  "new_required_samples": 9,
+  "same_required_samples_reused": 54,
+  "correction": "Liner exit movedY-8to-6mm on existing slot tangent,R5 retained.Front keeper seating and rear nut-access pockets cut only in new carrier.Hand/motor/old skin untouched."
+}
