@@ -1,10 +1,10 @@
 {
-  "id": "MOTION002",
-  "candidate": "cad/motion_clearance_v2",
+  "id": "FUNCTION003",
+  "candidate": "cad/functional_motion_v3",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/MOTION002.manifest.json",
-  "previous_checkpoint": "GESTURE002",
-  "status": "Scoped palm relief and remaining mechanical failures reproduced from exact commit; next: root carrier/housing interference. No whole-hand, manufacturing or actuation approval.",
+  "manifest": "checkpoints/FUNCTION003.manifest.json",
+  "previous_checkpoint": "MOTION002",
+  "status": "Whole-hand functional audit expanded; one counting gesture corrected. Close crossing and opposed tip-contact candidates still intersect. Next: collision-aware opposition/crossing and actual-object tasks. Minor gaps deferred.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -12,10 +12,10 @@
     "upper_limit": 100,
     "boundary": "Robot target receipt to actual joint tracking; perception excluded"
   },
-  "baseline": "cad/thumb_ip_drive_v1",
+  "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "ec6b58d21978ea2993bf67dc5f44b86fdb0464d0",
-  "post_commit_review_report": "docs/reviews/MOTION002/README.md",
-  "post_commit_reproduction_scope": "Exact-SHA clean-clone core replay: selected full-hand poses, twenty native gap samples, every saved interval-bound arithmetic, saved-part/assembly roundtrip and frozen hashes. Not all180 poses or all adaptive distances. Remaining collisions preserved."
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null
 }

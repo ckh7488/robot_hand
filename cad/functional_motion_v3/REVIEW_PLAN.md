@@ -1,0 +1,3 @@
+# FUNCTION003 exact-SHA review
+
+Verify committed closure and all222frozen hashes in a clean checkout. Re-read all364saved STEP solids. Replay selected whole-hand successes and failures, one intermediate from each executed broad path, both count-one endpoints and five corrected-path configurations. Recompute six surface-landmark metrics. Compare pair identities and volumes within1e-5mm3; preserve remaining failures. Do not call this independent, continuous or physical validation. Full59endpoints, every path sample, every optimizer start, all33object grasps and renders are outside the replay scope.

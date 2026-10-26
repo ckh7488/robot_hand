@@ -1,0 +1,24 @@
+{
+  "reviewed_kst": "2026-10-26",
+  "primary_sources": [
+    {
+      "title": "The GRASP Taxonomy of Human Grasp Types",
+      "authors": "Feix et al.",
+      "year": 2016,
+      "url": "https://www.eng.yale.edu/grablab/pubs/Feix_THMS2016.pdf",
+      "doi": "10.1109/THMS.2015.2470657",
+      "use": "33 static one-hand grasp coverage slots; contact configuration matters. Nonprehensile gestures, crossing and in-hand motion require additional tasks.",
+      "not_a_source_for": "Our CAD joint angles, clearances, robot performance or universal everyday-use frequencies."
+    },
+    {
+      "title": "RBO Hand 3: A Platform for Soft Dexterous Manipulation",
+      "authors": "Puhlmann, Harris, Brock",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2201.10883v1",
+      "doi": "10.1109/TRO.2022.3156806",
+      "use": "Task-based thumb opposition, grasp postures and in-hand manipulation; explicitly assess contact and palm contribution, not only joint angles.",
+      "not_a_source_for": "Transferring a compliant pneumatic hand's success to this rigid CAD. No clinical Kapandji score is assigned to this CAD."
+    }
+  ],
+  "scope_note": "Robot candidate poses and any numerical screening criteria are engineering choices and will be identified as such. No research figure is redistributed."
+}
