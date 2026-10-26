@@ -1,0 +1,86 @@
+{
+  "completed": true,
+  "candidate_adopted": false,
+  "reporting_floor_mm3": 0.001,
+  "boolean_tolerance_mm": 1e-06,
+  "new_parts": 14,
+  "short_housing_references": 2,
+  "poses": 8,
+  "pairs_in_scope": 104795,
+  "native_AABB_pairs": 677,
+  "overlap_records": 84,
+  "unique_overlap_pairs": 12,
+  "operation_failures": [],
+  "open_hand_overlaps": [
+    {
+      "lead": "distal_housing_keeper_1",
+      "part": "guide_cover_M2x12_1",
+      "material_intersection_mm3": 3.570867352996659
+    },
+    {
+      "lead": "distal_housing_shoe_1",
+      "part": "guide_cover_M2x12_1",
+      "material_intersection_mm3": 13.480922209660854
+    },
+    {
+      "lead": "distal_housing_shoe_1",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 79.45170245615377
+    },
+    {
+      "lead": "distal_flanged_ferrule_1",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 2.0524015577784307
+    },
+    {
+      "lead": "distal_shoe_M2x10_1_0",
+      "part": "thumb_segment2_dark_faceplate_clamp1_washer",
+      "material_intersection_mm3": 0.5863992095931011
+    },
+    {
+      "lead": "distal_shoe_M2x10_1_0",
+      "part": "guide_cover_M2x12_1",
+      "material_intersection_mm3": 6.027769780116016
+    },
+    {
+      "lead": "distal_shoe_M2x10_1_0",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 11.836335741623566
+    },
+    {
+      "lead": "distal_shoe_M2_nut_1_0",
+      "part": "guide_cover_M2x12_1",
+      "material_intersection_mm3": 3.511348242687293
+    },
+    {
+      "lead": "distal_shoe_M2_nut_1_0",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 12.086742590167882
+    },
+    {
+      "lead": "distal_short_housing_1",
+      "part": "paired_liner_carrier",
+      "material_intersection_mm3": 0.32254129620721006
+    }
+  ],
+  "full_parent_added_thenar_overlaps": [
+    {
+      "lead": "distal_flanged_ferrule_1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 7.4557664094257445
+    },
+    {
+      "lead": "distal_short_housing_1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 28.994681049153456
+    }
+  ],
+  "assembly_tests_executed": 0,
+  "contact_load_tests_executed": 0,
+  "reason_assembly_not_run": "Final-position material overlaps already block this candidate;do not repeat insertion paths that cannot remove fixed installed-part intersections.",
+  "housing_retention": "Ferrule flange has a nominal axial capture pocket,not a validated housing-to-ferrule pullout clamp.Housing compression support is a proposed path,not collision-free installed hardware or load approval.",
+  "next": "Keep current GUIDE021 and TERMINAL022 active.In a separate bounded candidate move the NEW upper sheath abutment off the cover bolt/carrier foot using a physically supported upstream offset/channel;preserve accepted hand,liner distal centerline/motor/rack/electrical poses.Check actual support,root travel,assembly and later long housing.Do not shrink sheath OD/cut hand/use joint limits just to pass.",
+  "long_housing_installed": false,
+  "pretension_verified": false,
+  "whole_hand_drive_complete": false
+}

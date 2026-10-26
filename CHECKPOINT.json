@@ -1,10 +1,10 @@
 {
-  "id": "TERMINAL022",
-  "candidate": "cad/motor_tendon_terminal_v1/selected",
+  "id": "DISTAL023",
+  "candidate": "cad/thumb_sheath_terminal_v1",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/TERMINAL022.manifest.json",
-  "previous_checkpoint": "GUIDE021",
-  "status": "One current thumbIP motor-side twin rigid fairlead/sheath-seat/M5adjuster candidate.Sevennew replaces2spacers,366retained+7=373packaging.Hand/motor/rack/electrical positions unchanged.40finite service samples clear;long motor-to-thumb housing/distal sheath stop/pretension remain absent.",
+  "manifest": "checkpoints/DISTAL023.manifest.json",
+  "previous_checkpoint": "TERMINAL022",
+  "status": "Rejected distal sheath abutment candidate.14new replacing2GUIDE021caps has10fixed overlap pairs and2additional parent-full root pairs.Current active GUIDE021 hand373/TERMINAL022 packaging373 unchanged.No assembly/long housing or force approval.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "1036f41a5d56cedc6d7a25fe38ae856b8bffbbab",
-  "post_commit_review_report": "docs/reviews/TERMINAL022/README.md",
-  "post_commit_reproduction_scope": "ExactSHA cleanclone:hand364minus2+guide11,366retained+7new,64electrical/10neutralarm/12cord2housingrefs;53native,21adaptive metric STEP shapes,22contacts,4conditional length balances;4579closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all40assembly samples/render rerun.No longhousing/distalsheathstop,pullout/preload/strength,wholehand or physical approval.",
-  "next_stage": "Close nominal motor-side terminal packaging/support/conditional40sample assembly,do not micro-optimize fixed gaps.GUIDE021distal formed1.2mmguide is not a3mmhousing abutment.Design actual distal sheath stop/attachment and then inextensible supported housing route fromcurrent motor terminal throughwrist/thumbroot tothatstop.Check parentmotion/release,actual length adjustment/pretension/derailment,without floating waypoints or claiming ideal0.77ratio as integrated success.Keep35.5mmadditional projection/custom closed0.8channelmanufacture/material/M5threads/tools/jig/load unapproved.No acceptedhand cuts,motorrelocation,elbowbus or solvedpose reoptimization.No fullhand/physical approval. Motor-side shoulder is compression-only;add/verify actual housing pullout retention with final housing/distal end,do not call it strain relief.",
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Reject current coaxial extended keeper/ferrule candidate;preserve active GUIDE021 hand373 and TERMINAL022packaging373.Known upper cover bolt/carrier foot collision79.451702456mm3and parent-root interactions require a physically supported upstream offset/abutment candidate for the NEW guide hardware,not accepted-hand cuts or smaller sheath assumptions.Preserve distal liner centerline and motor/rack/electrical poses.Check actual support/root travel/assembly then long housing,axial retention and two-cord length/pretension.Do not claim housing pullout clamp or force approval.Solved local guide/terminal gaps and elbow bus stay closed/deferred.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -147,5 +147,16 @@
   "motor_terminal_extra_projection_mm": 35.499999900000006,
   "distal_sheath_stop_installed": false,
   "long_housing_installed": false,
-  "motor_terminal_housing_axial_pullout_restraint_verified": false
+  "motor_terminal_housing_axial_pullout_restraint_verified": false,
+  "previous_motor_terminal_review": {
+    "post_commit_review_target": "1036f41a5d56cedc6d7a25fe38ae856b8bffbbab",
+    "post_commit_review_report": "docs/reviews/TERMINAL022/README.md",
+    "post_commit_reproduction_scope": "ExactSHA cleanclone:hand364minus2+guide11,366retained+7new,64electrical/10neutralarm/12cord2housingrefs;53native,21adaptive metric STEP shapes,22contacts,4conditional length balances;4579closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all40assembly samples/render rerun.No longhousing/distalsheathstop,pullout/preload/strength,wholehand or physical approval."
+  },
+  "distal_sheath_candidate_scene": "cad/thumb_sheath_terminal_v1/generated/candidate_scene.json",
+  "distal_sheath_candidate_clear": false,
+  "distal_sheath_candidate_poses": 8,
+  "distal_sheath_candidate_unique_overlap_pairs": 12,
+  "distal_sheath_candidate_overlap_records": 84,
+  "distal_sheath_candidate_service_tests": 0
 }
