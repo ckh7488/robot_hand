@@ -1,0 +1,40 @@
+{
+  "first_input_error": "First model had exchanged tangent-port signs,producing reversedXbounds andboxconstructionDomainError before exports/nativevalidation;history/terminal_model_attempt1.py preserved.Sign corrected in terminal_model.py.",
+  "first_report": "reviews/check.json",
+  "first_completed": true,
+  "first_clear": false,
+  "first_actual_packaging_failures": [
+    {
+      "lead": "thumb_ip_twin_sheath_terminal_frame",
+      "part": "thumb_ip_actuator_base_screws",
+      "material_intersection_mm3": 18.849555921538787
+    },
+    {
+      "lead": "thumb_ip_twin_sheath_terminal_frame",
+      "part": "thumb_ip_actuator_base_nuts",
+      "material_intersection_mm3": 22.74441342402194
+    },
+    {
+      "lead": "thumb_ip_twin_sheath_terminal_frame",
+      "part": "thumb_ip_actuator_adapter",
+      "material_intersection_mm3": 266.75495697879103
+    }
+  ],
+  "first_conservative_rotation_failure": [
+    {
+      "lead": "full_rotation_drum_and_clamps_bound",
+      "part": "thumb_ip_twin_sheath_terminal_frame",
+      "material_intersection_mm3": 7.6798893612541494
+    }
+  ],
+  "interpretation": "Three actual bracket/old fastener-adapter clashes led to moving new spine left and beside the head,without changing motor/hand/rack.Old broadR18.418886rotation-envelope intersection is conservative,not proof of an exact moving-part collision.New guide entryY15to18mm avoids the same complete conservative envelope;no angle limits.",
+  "selected_report": "selected/reviews/check.json",
+  "initial_service": "selected/reviews/service.json",
+  "initial_service_clear": false,
+  "selected_service": "selected/reviews/selected_service.json",
+  "final_required_samples": 40,
+  "new_samples": 5,
+  "same_samples_reused": 35,
+  "service_correction": "Frame rear35mm entry crossed adjacent littleMCP M3screw/spacer.Changeonlyframe approach tobelow25mm.All stage missing/installed rows,geometry andother35completed samples identical.Original failure preserved.",
+  "geometry_counts": "New7 replaces2old spacer rows;366retained+7=373packaging candidates.Hand362+GUIDE021new11=373separate hand-side rows.Two17mmhousing witnesses and12cordCADpieces are notextra373packaging/installedfullcables."
+}

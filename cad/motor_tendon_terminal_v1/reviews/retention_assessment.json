@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "new_native_tests": 0,
+  "motor_terminal_frame_nominal_support_verified": true,
+  "housing_compression_shoulder_present": true,
+  "housing_axial_pullout_restraint_verified": false,
+  "reason": "Short housing witness is seated in a clearance counterbore.A positive compression stop is not an axial pull-out clamp/collet or strain relief.Full housing capture/preload/distal stop remain future work.",
+  "thread_preload_strength_or_physical_verified": false
+}
