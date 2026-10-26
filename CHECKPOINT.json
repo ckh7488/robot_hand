@@ -14,9 +14,9 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "801e3b99d316898ccc93eed39d1f8337362eeb17",
+  "post_commit_review_report": "docs/reviews/EXAMPLE007/README.md",
+  "post_commit_reproduction_scope": "Exact-SHA clean clone; 5 full364hand/object core configurations and contact distances, 1177 closure/222 frozen hashes; no full-path/continuous/physical approval.",
   "next_stage": "Verify actual motor/connector layout, then electrical cable routing with provisional board termination."
 }
