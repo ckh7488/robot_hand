@@ -17,7 +17,7 @@
   "post_commit_results_reproduced": true,
   "post_commit_review_target": "3012e1f1e684c34c590be84416d21693caf46d70",
   "post_commit_review_report": "docs/reviews/PALM014/README.md",
-  "post_commit_reproduction_scope": "Exact-SHA clean clone:364hand/24new/329retained/64wire+plug/10arm reimport;13native core comparisons including original8 and firstcandidate4failures,open+combined new endpoints,external packaging/wire/arm;24rigid source/STEP geometric signatures and3feet15witnesses;2722closure/222frozen hashes,zero differences.Clean clone,same agent.Other3endpoints/images not rerun;no fastening/insertion/coupling/continuous/electrical/physical approval.",
+  "post_commit_reproduction_scope": "Exact-SHA clean clone:364hand/24new/329retained/64wire+plug/10arm reimport;13native core comparisons including original8 and firstcandidate4failures,open+combined new endpoints,external packaging/wire/arm;24rigid source/STEP geometric signatures and3feet15witnesses;2722closure/222frozen hashes,zero differences.Clean clone,same agent.Other3endpoints/images not rerun;no fastening/insertion/coupling/continuous/electrical/physical approval. Supplemental same-target replay explicitly capped OCC pool to1 (NbThreads verified),retained same13native/24signature/3feet results;single_thread_core.json/runtime.json.",
   "next_stage": "Close nominal palm8placement. Design actual palm retention/assembly access and horn/hub/tendon load path before calling motors installed;then axial restraint,bus/provisional board termination. Preserve4hand-only previews and closed remote routes/representative assembly paths.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,

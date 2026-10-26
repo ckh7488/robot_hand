@@ -1,0 +1,13 @@
+{
+  "target_commit": "3012e1f1e684c34c590be84416d21693caf46d70",
+  "OCC_pool_NbThreads": 1,
+  "setThreads_call": "cadquery.occ_impl.shapes.setThreads(1)",
+  "OPENBLAS_NUM_THREADS": 1,
+  "OMP_NUM_THREADS": 1,
+  "MKL_NUM_THREADS": 1,
+  "NUMEXPR_NUM_THREADS": 1,
+  "launcher_sha256": "9293c03e917ec60d739c3cd7e6117de474ae3028141266df02297da6bdc6b996",
+  "core_passed": true,
+  "original_code_and_clone_unmodified": true,
+  "scope": "Same exact-SHA clean clone;13native comparisons/24rigid signatures/3feet replayed with explicit OCC pool cap. Earlier calculation records retain their original execution settings."
+}
