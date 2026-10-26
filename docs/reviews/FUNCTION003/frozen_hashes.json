@@ -1,0 +1,13 @@
+{
+  "target_commit": "6cc69e520dc92e30b9fe4fc2a4e30dcb1bad2e5a",
+  "passed": true,
+  "group_counts": {
+    "geometry_sha256": 160,
+    "code_sha256": 38,
+    "report_sha256": 24
+  },
+  "total_hashes": 222,
+  "failures": [],
+  "clean_checkout": true,
+  "purpose": "Supplement geometry-only160hash count in core.json. Includes frozen38code and24report files; no extra native collision claims."
+}
