@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "a0f6001a6c7c58c3bc40d8589f4adef86c9ec81b",
+  "post_commit_review_report": "docs/reviews/ASSEMBLY025/README.md",
+  "post_commit_reproduction_scope": "ExactSHA cleanclone:stored hand364minus2/originalguide11/new14/housing2,pack373/electrical64/neutralarm10;32native groups including selected22path ends,7criticalstarts,2bench endpoints and first blocked start;4776closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all84+4samples/render.No geometry regeneration or inherited OFFSET024 sourceSTEP comparison retry/resolution.No physical fixture/tool/threads/strength,longhousing/retention,cord threading,tension or wholehand approval.",
   "next_stage": "Close same-geometry nominal distal hardware assembly:84hand+4bench finite samples clear,upper benchkit/lateral entry beforekeeper;lower ferrule axial then shoe lateral3mminward/radial,all original bolts/nuts restored.Actual manual fixture/tool/threads/torque/load remain unvalidated.Design/verify actual housing pullout capture/strain relief at BOTH distal and motor ends,then constant-length supported motor-wrist-thumb housing route,cord threading,length adjustment/pretension,parent/wrist release motion.Do not redo solved gaps/order or elbow bus.Keep inherited OFFSET024 per-faceBBox/onepointdistance comparison inconclusive and originalfalse reports;this stage uses saved STEP,not fresh keeper regeneration/full sourceSTEP equivalence.No20motor/physical/fullhand approval.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -169,10 +169,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
+  "post_commit_review_completed": true,
   "post_commit_native_results_reproduced": true,
-  "post_commit_initial_core_passed": false,
-  "post_commit_face_supplement_passed": false,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -185,5 +183,9 @@
   },
   "distal_sheath_candidate_bench_tests": 4,
   "distal_sheath_candidate_service_report": "cad/distal_terminal_assembly_v1/reviews/selected_service.json",
-  "inherited_OFFSET024_face_comparison_inconclusive": true
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "post_commit_review_core_passed": true,
+  "post_commit_source_STEP_equivalence_retested": false,
+  "inherited_OFFSET024_initial_core_passed": false,
+  "inherited_OFFSET024_face_supplement_passed": false
 }
