@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "6cc69e520dc92e30b9fe4fc2a4e30dcb1bad2e5a",
+  "post_commit_review_report": "docs/reviews/FUNCTION003/README.md",
+  "post_commit_reproduction_scope": "Exact-SHA clean-clone: 27 full364part native core samples, six contact metrics,1090closure files and222frozen hashes. Remaining functional failures reproduced; not full59/allpaths/object/hardware approval."
 }
