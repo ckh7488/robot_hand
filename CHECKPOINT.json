@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "3df1de2e6eacc6dddc0c578cbc8b258eb9d66d4f",
+  "post_commit_review_report": "docs/reviews/DRIVE018/README.md",
+  "post_commit_reproduction_scope": "Exact SHA clean clone:358retained+10selected/64wire+outerboxes/10neutralarm reimport;23native probes matched,9sourceSTEP signatures initially matched.One drum default integration/signature failed1e-5 absolute;preserved core_initial=false.Same unchanged clone adaptive integration epsilon1e-10 and type-constrained face/edge/vertex metric matching passed same1e-5 absolute;volume delta2.356e-8mm3.All10sourceSTEP signatures covered across original+supplement.5hand endpoint saved boxes/no full364nativeimport;3005closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all source poses/middle assembly/render replayed.No tendon-to-finger,pretension,supplied fastener/driver,strength,stock motor internals or whole hand physical approval.",
   "next_stage": "Hand first:close this representative motor output coupling nominal space.Build two actual tendon routes from current thumbIP drum via wrist/parent guides to accepted thumbIP anchors,including length change under parent joints,pretension/adjustment and approach/release.Keep hand form/motor placement;verify actual local harness.Do not reopen tiny mount clearances or extend elbowward bus.No full hand/motor/cable/tendon approval yet.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -69,5 +69,7 @@
   "active_motor_coupling_scene": "cad/motor_spool_coupling_v1/selected/generated/scene.json",
   "coupling_representative_motor": "thumb_ip_actuator",
   "coupling_full_rotation_space_clear": true,
-  "coupling_physical_approved": false
+  "coupling_physical_approved": false,
+  "initial_core_passed": false,
+  "precision_supplement_passed": true
 }
