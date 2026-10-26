@@ -1,0 +1,20 @@
+{
+  "verified_utc_date": "2026-10-26",
+  "primary_source": "https://docs.robotis.com/ko/docs/dxl/model_reference/x_series/xl_series/xl330-m077/",
+  "verified_facts": [
+    "3pin TTL GND/VDD/DATA",
+    "3.7–6V,recommended5V",
+    "EHR03/B3BEHA/SEH001TP06,21AWG"
+  ],
+  "discrepancy": "JST terminal maximum22AWG vs ROBOTIS21AWG;actual supplied harness/terminal combination unresolved.",
+  "provisional_registration": "Historical solid EHR3 outer box translatedX−14.5mm into canonical motor frame;hollow housing/exit/mating unverified.",
+  "unadopted_assumptions": {
+    "wire_OD_mm": 1.9,
+    "centreline_radius_mm": 4.0,
+    "extra_straight_stub_mm": 0.5,
+    "terminal_straight_mm": 8.0
+  },
+  "radius_basis": "Unqualified static space assumption,not manufacturer minimum or supplied cable bend/life rating.",
+  "final_wire_sku": null,
+  "physical_validation": false
+}

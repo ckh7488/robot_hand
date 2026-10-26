@@ -1,0 +1,36 @@
+{
+  "studies": [
+    {
+      "report": "reviews/check.json",
+      "completed": true,
+      "first_motor_only": true,
+      "candidates": 6,
+      "source_hashes_match": true
+    },
+    {
+      "report": "reviews/refined.json",
+      "completed": true,
+      "first_motor_only": true,
+      "candidates": 6,
+      "source_hashes_match": true
+    },
+    {
+      "report": "reviews/final.json",
+      "completed": true,
+      "first_motor_only": true,
+      "candidates": 3,
+      "source_hashes_match": true
+    },
+    {
+      "report": "reviews/fan.json",
+      "completed": true,
+      "first_motor_only": true,
+      "candidates": 3,
+      "source_hashes_match": true
+    }
+  ],
+  "final_assessment": "reviews/assessment.json",
+  "initial_input_error": "CadQuery Plane origin ndarray rejected before route/intersection checks;tuple correction.No CAD defect inferred.",
+  "first_render_attempt": "No accepted route existed;assertion stopped before figure output.Followup renders unadopted assessment.",
+  "stop_rule": "No further unqualified radius shrinking or hand/mount cuts.Confirm actual harness/plug/exit;remote bus can progress meanwhile."
+}
