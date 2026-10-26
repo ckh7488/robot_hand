@@ -14,11 +14,14 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "25253313acae35cac97e216f8cc73fbabac65d7d",
+  "post_commit_review_report": "docs/reviews/WIRE009/README.md",
+  "post_commit_reproduction_scope": "Exact-SHA clean clone:48saved leads/16plug envelopes vs225packaging,1128wire pairs,5hand endpoints/all364parts and neutral10arm reproduced.12modules nominal-clear,4retain8post clashes.2148closure/222frozen hashes. Original core passed=false only for3coincident Boolean rebuild comparisons; supplementary all analytic surfaces/curves/vertices/properties/interior points matched <=1e-5. Coincident Boolean comparison remains inconclusive, no physical approval.",
   "next_stage": "Reroute the4remote modules around fixed rack posts before restraints/bus/provisional board termination; verify supplied cable/connector and remaining fixed palm motor placement. Preserve solved hand motion and geometry.",
   "candidate_adopted": false,
-  "nominal_remote_tail_space_clear": false
+  "nominal_remote_tail_space_clear": false,
+  "post_commit_original_core_passed": false,
+  "post_commit_analytic_roundtrip_passed": true,
+  "post_commit_coincident_boolean_inconclusive": true
 }

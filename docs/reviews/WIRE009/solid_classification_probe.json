@@ -1,0 +1,59 @@
+{
+  "types": [
+    "Solid",
+    "Solid"
+  ],
+  "classify": [
+    {
+      "point": [
+        -39.1,
+        -26,
+        -81.3
+      ],
+      "fresh": "TopAbs_State.TopAbs_IN",
+      "old": "TopAbs_State.TopAbs_IN"
+    },
+    {
+      "point": [
+        -55,
+        -26,
+        -68.8
+      ],
+      "fresh": "TopAbs_State.TopAbs_IN",
+      "old": "TopAbs_State.TopAbs_IN"
+    },
+    {
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "fresh": "TopAbs_State.TopAbs_OUT",
+      "old": "TopAbs_State.TopAbs_OUT"
+    }
+  ],
+  "probes": [
+    {
+      "mode": "solid",
+      "forward": 109.74819936680832,
+      "backward": 0.0,
+      "common": -2.4513724383723456e-12
+    },
+    {
+      "mode": "clean",
+      "forward": 109.74819936680832,
+      "backward": 0.0,
+      "common": -2.4513724383723456e-12
+    },
+    {
+      "mode": "orient_closed",
+      "forward": 109.74819936680832,
+      "backward": 0.0,
+      "common": -2.4513724383723456e-12
+    }
+  ],
+  "orient": [
+    true,
+    true
+  ]
+}
