@@ -1,0 +1,61 @@
+{
+  "completed": true,
+  "new_hardware_rows": 6,
+  "local_reference_housings": 2,
+  "local_reference_cords": 2,
+  "geometry_rows": 10,
+  "current_hand_rows": 397,
+  "current_packaging_rows": 385,
+  "existing_electrical_rows": 64,
+  "neutral_arm_wrist_reference_rows": 10,
+  "previous_geometry_files_unchanged": 4282,
+  "guide_attachment_body": "Palm_wrist_saddle",
+  "hardware_service30": {
+    "samples": 30,
+    "pairs_in_scope": 25755,
+    "AABB_native_pairs": 43,
+    "overlap_records": 0,
+    "operation_failures": 0
+  },
+  "all_static_and_service_samples_new": false,
+  "local_axis": "x=37+y,z=-3/2;XY45degrees",
+  "guide_bore_OD_mm": [
+    3.2,
+    5.0
+  ],
+  "housing_OD_ID_assumed_mm": [
+    3.0,
+    1.3
+  ],
+  "local_reference_length_mm": 50.91168824543143,
+  "radial_centered_gap_mm": 0.1,
+  "nominal_contact_and_radial_stops_only": true,
+  "preload_friction_z_sliding_6DOF_stiffness_strength_not_verified": true,
+  "full_housing_installed": false,
+  "full_motor_to_thumb_connected": false,
+  "constant_length_motion_threading_or_tension_verified": false,
+  "wrist_motion_tested": false,
+  "dynamic_electrical_motion_tested": false,
+  "whole_hand_drive_complete": false,
+  "manufacturing_exterior_accepted": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "local_reference_poses": 5,
+  "local_reference_poses_clear": 4,
+  "local_reference_parent_quarter_failed": true,
+  "local_reference_remaining_parent_poses_unexecuted": 3,
+  "hardware_static8": {
+    "inherited_all_ten_poses": 5,
+    "new_hardware_only_poses": 3,
+    "new_pairs_in_scope": 15408,
+    "new_AABB_native_pairs": 13,
+    "hardware_overlap_records": 0,
+    "new_operation_failures": 0
+  },
+  "local_housing_route_adopted": false,
+  "local5_with_internal45": {
+    "pairs_in_scope": 42845,
+    "AABB_native_pairs": 99,
+    "overlap_records": 2,
+    "operation_failures": 0
+  }
+}

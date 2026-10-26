@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "straight_window": "Two OD3 solid inspection cylinders x26/34,z-11,y-18..18 pass actual saddle opening but hit current hand3reportingpairs:chassis32.059091982/23.472036737 andthumbfixedhousing95.877836065mm3.Not installedparts or wholepathproof.",
+  "disconnected_model": "First implementation had two solids in the proposed single guide because upper sleeve only touched lower sleeve tangentially.Assert before inputload/native:history/disconnected_sleeve_attempt.py/txt.Bridge corrected in actual one-solid candidate;not a hand defect.",
+  "first_hardware": "reviews/check.json:one completed open pose,one frontcap/thumb_root_spread_carrier192.594870706mm3 overlap;othernewparts/localhousing/cordclear.8pose study stopped after this firstactualblock.No laterposepassclaimed.",
+  "second_hardware": "selected/reviews/check.json:clamp48mm below original center,oneopenpose stillhasfrontcap/Palm_tapered_chassis0.615993337mm3.Nativefailures0.Stopafterfirstblock.",
+  "service_guard": "First queued guide_service stopped at static-clear assertion before input/native.No assemblyresults were generated;history/service_static_guard.txt.",
+  "final": "selected2:frontcap z-58..-46 entirelybelow currentpalmminz-44.0003364523,clampcenter-52,integrationbackbone andguidepathreal solids.No originalhand/wristcut.No diameter/anglelimit changed.",
+  "prior_HOUSING027": "Both former whole-length542mmhousing candidates remain unadopted and unmodified.New localguide and50.911688245mm straightreferences do not resolve or reuse thosefullcurves.",
+  "no_inherited_comparison_resolution": "OFFSET024 source/STEPfacecomparisoninconclusive and HOUSING027 originalcorefalse/precisionpairtrue preserved;this stage does not retry either tool anomaly.",
+  "final_local_route": "Final housing localstraight references pass open/IP45/IP85/IP-15 but parentquarterhas2housing/thumbspreadcarrier0.1282898952mm3pairs.No fullparenthousing test was then run.Notadopted.No anglelimit.",
+  "hardware_follow": "First5 all-ten cases already include all6hardware with0hardwarehits.Remaining3 cases test6hardware only;report doesnot claim same two blocked housingrefs clear.No first5native repeat.",
+  "second_service_guard": "Final initiallyqueued service also stopped at failedwholelocalroute assertion before input/native.Hardware-onlyscope then explicitly separated;this is not collision exclusion or wholepathapproval."
+}
