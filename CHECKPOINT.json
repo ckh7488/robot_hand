@@ -1,10 +1,10 @@
 {
-  "id": "PINCH006",
-  "candidate": "cad/object_pinch_v2",
+  "id": "EXAMPLE007",
+  "candidate": "cad/combined_pose_v1",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/PINCH006.manifest.json",
-  "previous_checkpoint": "POSTURE005",
-  "status": "Unchanged364part CAD; supported25mm sphere approach/contact/release solved by coordinated posture. Stop fine motion optimization and proceed to motor placement/wiring preparation. No physical holding or full motion/manufacturing approval.",
+  "manifest": "checkpoints/EXAMPLE007.manifest.json",
+  "previous_checkpoint": "PINCH006",
+  "status": "One requested combined shape: opposed thumb/index around supported25mm sphere, extended/spread middle, folded ring/little. Same364part CAD. Next remains motor/connector placement and wiring preparation. No physical grasp approval.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,9 +14,9 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "15e82f22d48feb1df4f1fd4b8ebd0e77f1ae9581",
-  "post_commit_review_report": "docs/reviews/PINCH006/README.md",
-  "post_commit_reproduction_scope": "Clean exact-SHA clone; 6 core items including duplicate endpoint, full364hand/object checks and contacts; 1163 closure and 222 frozen hashes. No full-route/continuous/physical hold approval.",
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
   "next_stage": "Verify actual motor/connector layout, then electrical cable routing with provisional board termination."
 }
