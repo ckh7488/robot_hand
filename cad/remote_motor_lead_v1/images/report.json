@@ -1,0 +1,65 @@
+{
+  "completed": true,
+  "input_sha256": {
+    "cad/remote_motor_lead_v1/render.py": "855f5f4980778b3453647347da70ce5c4ba12d20a68f0250f8de1a1ced53c7ea",
+    "cad/remote_motor_lead_v1/reviews/corrected.json": "54928a38f7b6fa0bf671d65f0dd57d90a607551200f621de58be6911b0ab0fa7",
+    "cad/remote_motor_lead_v1/generated/scene.json": "b71b88d351918a0da9c3fe3503a3d9c073795586d7d560f541fe0fe2f101d196",
+    "cad/wiring_layout_v1/generated/packaging.json": "66d3ae93f44ae6919584f6157c86b8fe8572086e4443573cdaedfdee145f59b4",
+    "cad/gesture_hand_v3/render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56",
+    "cad/gesture_hand_v3/poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f",
+    "cad/functional_motion_v3/generated/catalog.json": "743c15cd203fc20e78b9b40a2e61bd4dca72f9c20c7127132ec18bf4844076f0",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_motor.stl": "4f9ebfddc297b41c4abd81f460f20e35b25e3a9b80c3e49583b845720d074031",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rotor.stl": "2e190a2724089913b3c0f8ea23e923f8e6d73fb1061b5a927d10950ece73e7bf",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_cradle.stl": "2f637ee86ea98422da037024d51b73c5cedd93efd669b9cef0cafda0479df2fb",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_body_screws.stl": "ca4eb7f33dd4be53bc5633308c07cdf4a637d49fc931b2ac94206ed7fb0e5e01",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_base_screws.stl": "85b65a5697d5d8625c9beb75b7db019dfc13eca56b0cb79f42990bd71fcb26ef",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_base_nuts.stl": "c8f677a37fdb10386da3fa7dccca48d8b6aa41ff9635269aa863bff514243a00",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_adapter.stl": "745b1396a370d2a71bdf662209e6719e304fb5d222d6451d242b84febc39b5bd",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_spool.stl": "fe17e13abad7fad88071398e36d461914a9a9c8ca4957511ce919347fe9a808d",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_screw_1.stl": "80d554f807dfe57bd18b7923ff4308db9ee58be8aa1b1f80559d19623170a930",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_nut_1.stl": "3e901476e584df477aff1b6eef929e6b09dd83e20f93e7952dafe42d77ffe2c0",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_screw_2.stl": "001db752afcb456af34797cba45ce88c2eed63cad0478d2c61480b8d871ef5b0",
+    "cad/wiring_layout_v1/generated/parts/index_spread_actuator_rack_nut_2.stl": "620b821c835bcba45a4f95bdec603a4cfea8c50a775a91bf41425894d0e3da39",
+    "cad/wiring_layout_v1/generated/parts/Forearm_twenty_axis_module_rack.step": "b6635300873cb422898a16826087c0ee009cbfc9d6d37584952557750b8e5ab7",
+    "cad/remote_motor_lead_v1/generated/visual_evidence/rack_local_visual_only.stl": "82877fe3c5d75b6c1286cbcbbf5b88bda563c0ee93107410fbff4f964f26d1dd",
+    "cad/remote_motor_lead_v1/generated/parts/remote_lead_1.stl": "164a6bb0c04bf3456ab70d32caf259db892c3a45d63a9e4b0dd54c7806254fe1",
+    "cad/remote_motor_lead_v1/generated/parts/remote_lead_2.stl": "0f23eaad7455d3ab3971f54be08826c6c20e831ea7cc36b03822ca6eb831ee54",
+    "cad/remote_motor_lead_v1/generated/parts/remote_lead_3.stl": "3c0fd2e9cafb36624e4fc1de3038fbea062fd7b62a5b996df4536d3f546ae91c",
+    "cad/remote_motor_lead_v1/generated/parts/provisional_plug_outer_envelope.stl": "6e5b66a85c47956a41935577033de028144855141d85d4bb6474b301376481e7"
+  },
+  "outputs": {
+    "remote_lead.png": "0526ef398e3a29c7b6a0b283b18efc8a77f69fd1b0a8601d85d05582bc6d8a12"
+  },
+  "actual_saved_meshes": true,
+  "simulation_steps": 0,
+  "shown_packaging": [
+    "index_spread_actuator_motor",
+    "index_spread_actuator_rotor",
+    "index_spread_actuator_cradle",
+    "index_spread_actuator_body_screws",
+    "index_spread_actuator_base_screws",
+    "index_spread_actuator_base_nuts",
+    "index_spread_actuator_adapter",
+    "index_spread_actuator_spool",
+    "index_spread_actuator_rack_screw_1",
+    "index_spread_actuator_rack_nut_1",
+    "index_spread_actuator_rack_screw_2",
+    "index_spread_actuator_rack_nut_2"
+  ],
+  "visual_only_rack_crop_mm": [
+    [
+      -80,
+      -44,
+      -112
+    ],
+    [
+      0,
+      -1,
+      -62
+    ]
+  ],
+  "audit_full_packaging_parts": 225,
+  "audit_full_hand_parts": 364,
+  "hidden_from_audit": [],
+  "interpretation": "Local illustration of one provisional motor and3electrical tails, no installed motor or full harness claim."
+}

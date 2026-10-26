@@ -1,10 +1,10 @@
 {
-  "id": "WIRE008",
-  "candidate": "cad/wiring_layout_v1",
+  "id": "WIRE009",
+  "candidate": "cad/remote_motor_lead_v1",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/WIRE008.manifest.json",
-  "previous_checkpoint": "EXAMPLE007",
-  "status": "Wiring preparation: old20motor placement clashes39pairs with current hand;4palm/16remote candidate retains8fixed clashes at each of5endposes. Three lift candidates rejected. Hand364geometry/axes/lengths unchanged. No motor installation or wiring completion.",
+  "manifest": "checkpoints/WIRE009.manifest.json",
+  "previous_checkpoint": "WIRE008",
+  "status": "Provisional16remote motor/48electrical tails; 12/16modules nominal wire space clear. Hand364and motor positions unchanged. No connector mating, restraint, connected bus/board or installed motor approval. WIRE008fixed palm8clashes remain.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,10 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "22d0ba2601660706161c1c8d0b6caf5a982296ef",
-  "post_commit_review_report": "docs/reviews/WIRE008/README.md",
-  "post_commit_reproduction_scope": "Exact-SHA clean clone: old open39clashes, proposed open/combined8clashes each and neutral reference arm screen; 1989 closure/222 frozen hashes. Reproduced failures, no motor/harness/physical approval.",
-  "next_stage": "Correct fixed motor/module placement using actual overlap geometry; prepare verified remote motor leads with provisional board termination. Preserve solved hand postures; no hand cutting or unverified connector fit approval.",
-  "candidate_adopted": false
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Reroute the4remote modules around fixed rack posts before restraints/bus/provisional board termination; verify supplied cable/connector and remaining fixed palm motor placement. Preserve solved hand motion and geometry.",
+  "candidate_adopted": false,
+  "nominal_remote_tail_space_clear": false
 }
