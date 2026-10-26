@@ -63,6 +63,7 @@
   "active_mount_scene": "cad/palm_motor_mount_v1/selected3/generated/scene.json",
   "optional_deferred_bus_scene": "cad/remote_bus_v1/generated/scene.json",
   "hand_status_report": "docs/HAND_INTEGRATION_STATUS.md",
-  "priority_update_reviewed": false,
-  "priority_update_review_target": null
+  "priority_update_reviewed": true,
+  "priority_update_review_target": "abad0a304a2ba24880034e247a5417eb2ae9d145",
+  "priority_update_review_report": "docs/reviews/HAND_SCOPE_20261027/README.md"
 }

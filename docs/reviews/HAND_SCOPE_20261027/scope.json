@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "target_commit": "abad0a304a2ba24880034e247a5417eb2ae9d145",
+  "scope_priority_matches_user": true,
+  "unchanged_geometry_files": 1592,
+  "frozen_files": 222,
+  "checkout_clean": true,
+  "elbowward_wiring_deferred": true,
+  "hand_system_complete": false,
+  "geometry_modified": false,
+  "CAD_recomputed": false,
+  "scope": "Administrative scope/status review from exact-SHA clean clone and unchanged geometry/frozen hashes only;no new CAD,collision,drive,wire-motion,strength or physical approval."
+}
