@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "hand_rows": 397,
+  "packaging_rows": 385,
+  "electrical_rows": 64,
+  "neutral_arm_reference_rows": 10,
+  "new_hardware_parts": 1,
+  "retained_hardware_parts": 5,
+  "new_local_reference_shapes": 4,
+  "new_scene_rows": 10,
+  "old_clip_replaced_not_duplicated": true,
+  "old_geometry_files_unchanged": 4356,
+  "round_two_alternatives": {
+    "pairs": 20820,
+    "AABB": 116,
+    "overlaps": 14,
+    "operation_failures": 0,
+    "complete_poses_each": 1,
+    "adopted": false
+  },
+  "S_alternative": {
+    "pairs": 17430,
+    "AABB": 171,
+    "overlaps": 4,
+    "operation_failures": 0,
+    "complete_poses": 1,
+    "adopted": false,
+    "distal_real_endpoints_connected_geometrically": true,
+    "upstream_motor_connected": false,
+    "new_bend_support_installed": false
+  },
+  "inboard_static": {
+    "pairs_in_scope": 68525,
+    "AABB_native_pairs": 116,
+    "overlap_records": 0,
+    "operation_failures": 0
+  },
+  "inboard_service": {
+    "samples": 30,
+    "pairs_in_scope": 25755,
+    "AABB_native_pairs": 41,
+    "overlap_records": 0,
+    "operation_failures": 0
+  },
+  "whole_long_housing_installed": false,
+  "whole_motor_thumb_drive_complete": false,
+  "global_length_constancy_tension_wrist_motion_verified": false,
+  "hardware_clamp_preload_friction_axial_slip_strength_manufacturing_exterior_verified": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "inherited_HOUSING027_initial_core_passed": false,
+  "inherited_HOUSING027_precision_pair_passed": true
+}

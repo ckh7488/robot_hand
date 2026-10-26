@@ -1,0 +1,9 @@
+{
+  "original_block": "Read saved WRIST028 actualcommon:centroid41.868121153,2.933835558,-3;11.173670746mm axial ahead ofguideend.Not rerunoriginal intersection.",
+  "rounds": "R20 +/-45deg two naturalexit alternatives,one fixedradius/nooptimization/supplyapproval.Bothfailfirstparent25%,14reportingrecords total;remaining7poses each notexecuted.",
+  "S": "Actual root material sections informedoneR20+45/-90 S candidate;connects real distalterminalseat/cordinlet byfixedHermitecubic,nooptimizerguidepointsclaimed.Installablebendretention/motorendstillabsent.Firstparent25%fails4reportingpairs;stop,notimpossibilityproof.",
+  "inboard": "Change only oneguidebody boresfrom45deg to+Y atX26,Z-3/2.Clampfaces/M2positions/retained5unchanged;new arm connectsrealbores toactualsaddleedge.No hand/motor/rack/electricalpositionschanged.",
+  "partial": "Originalinboardcheck completedall8nativeposes thenwrongcataloghandkey whileaddingcarrierbound;rawcheck completed=false preserved.Finalize verifies8caseIDs/angles/hashes/clearresults,aggregateswithoutstaticnative rerun,andaddsnewcarrierbound.",
+  "clamp": "30assemblysamples allnew duechangedguide.No blindinheritanceofWRIST028assembly.No physicaljig/tool/torque/loadqualification.",
+  "not_completed": "Local36mm housing references only.S directdistalconnectionfailed;finalinboardlocalexitnot connectedtoreal motor/distalends.No entirelength,threading,parent/wristpath,tension/elastic/friction approval."
+}
