@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "target_commit": "2345921a662b51f8272b48710452646200f57638",
+  "initial_core_passed": false,
+  "face_supplement_passed": false,
+  "native_groups_reproduced": 20,
+  "original_STEP_metric_signatures_matched": 17,
+  "original_STEP_metric_signatures_total": 18,
+  "nominal_contacts_reproduced": 10,
+  "junction_reproduced": true,
+  "per_face_torus_bbox_comparison_inconclusive": true,
+  "one_trimmed_face_distance_comparison_inconclusive": true,
+  "torus_surface_equation_and_metric_comparisons_matched": true,
+  "face_sample_count": 1446,
+  "face_sample_distance_mismatches": 1,
+  "ambiguous_point_analytic_projection_distance_mm": 1.5545142185003985e-12,
+  "ambiguous_point_3d_face_classification": [
+    "TopAbs_State.TopAbs_IN",
+    "TopAbs_State.TopAbs_IN"
+  ],
+  "ambiguous_point_two_sided_material_matched": true,
+  "source_STEP_full_equivalence_approved": false,
+  "manifest_files": 4739,
+  "frozen_files": 222,
+  "checkout_clean": true,
+  "OCC_pool_threads": 1,
+  "independent_audit": false,
+  "whole_hand_drive_approved": false,
+  "scope": "Completed scoped native/contact replay with unresolved per-face bbox/one extrema-distance comparisons.Original two false reports preserved;analytic projection/trim membership andtwo-sided material classification are supporting observations,not a full shape-equivalence pass."
+}

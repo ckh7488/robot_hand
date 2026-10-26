@@ -15,10 +15,10 @@
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
   "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
-  "next_stage": "Use OFFSET024selected14+GUIDE021retained9+hand362=385static candidate and TERMINAL022packaging373.Keep solved8static/upperkeeper6sample geometry;finish remaining upperM2nut/bolt,paired ferrule/shoe/newfasteners and actual housing insertion/preassembly order,explicit missing/installed parts and later restoration.Then real housing pullout capture and long motor-wrist-thumb housing,cord length/pretension,parent/wrist release motion.No small gap reoptimization,acceptedhand cuts,anglelimits,elbowbus or wholehand/physical approval.Upper extra21.991148575mm is a constant path extension,not an assumed±2mmadjuster setting.Material/manufacture/strength and external bulk remain unapproved.",
+  "post_commit_review_target": "2345921a662b51f8272b48710452646200f57638",
+  "post_commit_review_report": "docs/reviews/OFFSET024/README.md",
+  "post_commit_reproduction_scope": "ExactSHA cleanclone:20native groups/10contacts/junction reproduced;17of18metric signatures match.Upperkeeper torus per-faceBBox/onepointExtrema distance comparison inconclusive,bothfalse reports preserved.Analytic torus equations/metrics,1445of1446point distances and ambiguous-point projection/IN/two-sided material checks agree.4739closure/222frozen hashes,cleanclone,OCCpool1,sameagent.No all8poses/render/full distal assembly,longhousing or force/physical approval.No fullsourceSTEPequivalence claim.",
+  "next_stage": "Use OFFSET024selected14+GUIDE021retained9+hand362=385static candidate and TERMINAL022packaging373.Keep solved8static/upperkeeper6sample geometry;finish remaining upperM2nut/bolt,paired ferrule/shoe/newfasteners and actual housing insertion/preassembly order,explicit missing/installed parts and later restoration.Then real housing pullout capture and long motor-wrist-thumb housing,cord length/pretension,parent/wrist release motion.No small gap reoptimization,acceptedhand cuts,anglelimits,elbowbus or wholehand/physical approval.Upper extra21.991148575mm is a constant path extension,not an assumed±2mmadjuster setting.Material/manufacture/strength and external bulk remain unapproved. ExactSHA review completed with20native/10contacts match,but one upperkeeper per-faceBBox/pointdistance comparison remains inconclusive;docs/reviews/OFFSET024 preserves core_initial=false and face_supplement=false plus analytic projection/IN/material agreement.Do not auto-rerun full20native or treat this known comparison contradiction as accepted-hand defect or full shape-equivalence pass.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -168,5 +168,10 @@
   "distal_sheath_candidate_service_complete": false,
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
-  "distal_sheath_housing_pullout_verified": false
+  "distal_sheath_housing_pullout_verified": false,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
+  "post_commit_initial_core_passed": false,
+  "post_commit_face_supplement_passed": false,
+  "post_commit_source_STEP_full_comparison_inconclusive": true
 }
