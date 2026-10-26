@@ -1,0 +1,35 @@
+{
+  "studies": [
+    {
+      "report": "reviews/check.json",
+      "completed": false,
+      "nominal_clear": false,
+      "service_samples": 35,
+      "ended_early": true,
+      "reported_new_pair_count": 1,
+      "recorded_sources_unchanged": true
+    },
+    {
+      "report": "selected/reviews/check.json",
+      "completed": false,
+      "nominal_clear": false,
+      "service_samples": 34,
+      "ended_early": true,
+      "reported_new_pair_count": 8,
+      "recorded_sources_unchanged": true
+    },
+    {
+      "report": "selected3/reviews/check.json",
+      "completed": true,
+      "nominal_clear": true,
+      "service_samples": 65,
+      "ended_early": false,
+      "reported_new_pair_count": 0,
+      "recorded_sources_unchanged": true
+    }
+  ],
+  "first_two_stopped_deliberately_after_material_clash_and_failed_assembly_evidence": true,
+  "initial_service_assertion": "First correction entry expected onlyone obstructed nut,then actual later samples showed carrier pocket interference in other nuts. Assertion stopped before new geometry checks;corrected entry tests allfour actual new approaches.",
+  "selected": "selected3/reviews/check.json + reviews/final_service.json",
+  "original_failed_paths_preserved": true
+}

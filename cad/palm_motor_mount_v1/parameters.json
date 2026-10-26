@@ -1,0 +1,29 @@
+{
+  "status": "Engineering mount and assembly candidate. Hand solids and motor positions unchanged.",
+  "posts_xy_mm": [[-35,51.968503937008],[25,56.692913385827]],
+  "post_radius_mm": 4.8,
+  "collar_outer_radius_mm": 8.5,
+  "collar_height_mm": 4.5,
+  "floor_z_mm": -40.5,
+  "rail_height_mm": 3.5,
+  "split_half_gap_mm": 0.1,
+  "ear_offset_x_mm": 9,
+  "ear_size_xy_mm": [5,5],
+  "screw_hole_radius_mm": 1.1,
+  "nominal_screw_radius_mm": 1,
+  "nominal_screw_length_mm": 12,
+  "nominal_head_radius_mm": 1.75,
+  "nominal_head_length_mm": 1.5,
+  "nominal_socket_AF_mm": 1.5,
+  "nominal_nut_AF_mm": 4,
+  "nominal_nut_length_mm": 1.6,
+  "nominal_nut_bore_radius_mm": 1.05,
+  "tool_stem_radius_mm": 1.5,
+  "tool_stem_length_mm": 15,
+  "tool_tip_AF_mm": 1.4,
+  "assumptions": [
+    "M2 external envelopes inherit WIRE011 radii/head/nut dimensions with a12mm shaft and provisional socket. No purchased screw,thread,drive,torque or fit certification.",
+    "Collar bore matches the nominal post radius. Tightening friction,upward retention,post/print strength and wear remain unverified.",
+    "Tool is a declared15mm stem plus1mm hex tip. Full handle,commercial tool and operator access are not validated."
+  ]
+}
