@@ -1,0 +1,25 @@
+{
+  "initial_scope_assertion": {
+    "kind": "input selection error before geometry test",
+    "reason": "Retained scene contains20base screw/nut compounds,16remote plus4palm. Filter corrected to the16remote modules.",
+    "results_used_as_CAD_failure": false,
+    "log_job": "assembly012-hardware"
+  },
+  "original_populated_rack": {
+    "completed": false,
+    "complete_six_sample_paths": [
+      "index_mcp_actuator",
+      "little_mcp_actuator",
+      "index_spread_actuator"
+    ],
+    "reason": "Stopped after reproducing the right-column guide versus left-column motor ordering block. Replaced broad repetition by6representative paths, preserving this partial output.",
+    "report": "reviews/module_install.json",
+    "job": "assembly012-module",
+    "dependent_wait_jobs": [
+      "assembly012-preassemble",
+      "assembly012-order"
+    ],
+    "dependent_calculations_started": false
+  },
+  "completed_study_job": "assembly012-batch"
+}

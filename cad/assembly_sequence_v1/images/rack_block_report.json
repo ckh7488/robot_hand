@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "input_sha256": {
+    "cad/assembly_sequence_v1/render_block.py": "4de04b3a8f2bf3297ed5545fd67a5f284f77ffa6165c294a9577ad128467131c",
+    "cad/assembly_sequence_v1/render.py": "011bd6b5cb3a72296a5e30cc5b32cbd5614206639da40477cbd0e0bc7f60b9e8",
+    "cad/assembly_sequence_v1/reviews/rack_order.json": "006eb37e991214460ad39eb09ae782673d6e649f2e1db02578a4371009c0f2ae",
+    "cad/wire_guides_v1/generated/scene.json": "ad12ad120d2e26b21a2779fdd950698ef58aae771e8023cf9384374178116117",
+    "cad/gesture_hand_v3/render_gestures.py": "45adfd9320dbe903b5f7b6e4f44fb342f97383776ac500d9982f7d4c8473ea56",
+    "cad/gesture_hand_v3/poses.py": "5eec431b698d26c290f15d78eb890da872e5a526609740a9fff491b231407b7f",
+    "cad/functional_motion_v3/generated/catalog.json": "743c15cd203fc20e78b9b40a2e61bd4dca72f9c20c7127132ec18bf4844076f0",
+    "cad/wiring_layout_v1/generated/parts/Forearm_twenty_axis_module_rack.step": "b6635300873cb422898a16826087c0ee009cbfc9d6d37584952557750b8e5ab7",
+    "cad/assembly_sequence_v1/generated/visual_evidence/rack_35_local_visual_only.stl": "c05690d4d687eef3474c6bef794fae0f8ef268b9fe104c35d7934d08d80c70b7",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_wire_guide_base.step": "f83497c5cac9393b3d198cfe3315807193e914e17ac576431685193d5feaa6b4",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_wire_guide_lid.step": "44b7a35de384918c37321d1110425e5a7e1a5bd3ab8bb82f7a44d60884149004",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_lid_screw_2.step": "fb3b39f15aecc700dd4d39dd977ecf55c6a24c635bc5bf04ff381ae4a7c73cb1",
+    "cad/assembly_sequence_v1/generated/visual_evidence/actual_35_guide_rack_overlap.stl": "5ea531a3144a8676f6e108d60de1833bc4c4dd7c21795e2031477a2209edcdb7",
+    "cad/assembly_sequence_v1/generated/visual_evidence/actual_35_guide_rack_overlap.step": "b853c5b96a4b49d6349375fa6444b1462e779726bb7576e93587904381bfd71d",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_rack_screw_1.stl": "70d6a6c6331d6d1c9ca5183a5d422bf5e9b5734c16c348893b026af460b2fa68",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_guide_spacer_1.stl": "9181c4b56084f0f0ad8ab7f657fbe8dd22c2da85d918ed1c9f8317946f1369e6",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_rack_screw_2.stl": "39c65f1f2c8a770ad619a5b1437c36dfa1eb2cf577dc1c4b273a5bcc80b5dda2",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_guide_spacer_2.stl": "3e985e86d2840e15d5f7eca5107155aefab88a68e2d9e626d5dd10d24f86dead",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_wire_guide_base.stl": "6563a1c2523e83630d4a1850f7ff190612ee6da81946f5eb48533d0ef400d60e",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_wire_guide_lid.stl": "3cf0dcbec42c91d35de11210adf95cd0b27caa5c2f53da3ab95bf54195d6f9c8",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_lid_screw_1.stl": "be59a68b986f0c49730551dd2a64d6c99295581a5a06351f1cc1375e0fe92de5",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_lid_nut_1.stl": "2f58c7da559af55c788fc8d36bc21cc10927d03932d77b64e0143e85fa3e34fe",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_lid_screw_2.stl": "1dbeffbe70c5bcd4c46cca53438491915f9d9047ce4b17aea419b08828fb7bb7",
+    "cad/wire_guides_v1/generated/parts/middle_pip_actuator_lid_nut_2.stl": "3dbbd39b9a1f7a6fc5c594cdbb4669437082415e77f73d1a57c759ed2713d7c6",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_motor.stl": "a94356c2deac598c834cbfe1dc1f8df9eeb9869991b9b04c77d76c5d9f2fba10",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_rotor.stl": "bcaf73807edea2fcf8f0c389dfb3eaecd101e09d73b9059def945649ad2a4cb8",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_cradle.stl": "f6f2e17a6896ef3459ce3c1239045b87655df579ac9bfc8e239b6980efe4c742",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_body_screws.stl": "ff62a0de0f343e0b70b7d3ebbfecdf786c0aef57ac9b2c1722c58b9914a184e7",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_base_screws.stl": "c2c8a1ace8d21100b9a8df0ac03515eec351aff3854484fa4711198cc2a08e94",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_base_nuts.stl": "737ff2140f15441574d6339bb5e909c3356d6ccdc2c1a4f545ef0bd3afe05d67",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_adapter.stl": "2905652b0faec565fa14dc5f42baa4337e88ea70fa9a73e24911635d2af5860f",
+    "cad/wiring_layout_v1/generated/parts/middle_pip_actuator_spool.stl": "95ee832e5acee4af345f242d8e2262c2d0aa50751732af21ae2f54b4dbda26f5"
+  },
+  "output_sha256": "c1f6c98a7b473dd596643af37cb39f6b813c21ec2772048dafd3881863daf248",
+  "actual_common_material": [
+    {
+      "part": "middle_pip_actuator_wire_guide_base",
+      "material_intersection_mm3": 41.37016163683782
+    },
+    {
+      "part": "middle_pip_actuator_wire_guide_lid",
+      "material_intersection_mm3": 39.991515170329066
+    },
+    {
+      "part": "middle_pip_actuator_lid_screw_2",
+      "material_intersection_mm3": 9.424777960769388
+    }
+  ],
+  "moving_translation_mm": [
+    0,
+    0,
+    -7
+  ],
+  "visual_only_crop_mm": [
+    [
+      -85,
+      -176,
+      -112
+    ],
+    [
+      0,
+      -120,
+      -42
+    ]
+  ],
+  "whole_geometry_used_for_material": true,
+  "robot_geometry_changed": false
+}

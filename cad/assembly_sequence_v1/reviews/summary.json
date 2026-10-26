@@ -1,0 +1,39 @@
+{
+  "completed": true,
+  "statistics": {
+    "hardware": {
+      "samples": 10,
+      "overlap_records": 112,
+      "operation_failures": 0
+    },
+    "initial": {
+      "samples": 22,
+      "overlap_records": 54,
+      "operation_failures": 0
+    },
+    "pre": {
+      "samples": 25,
+      "overlap_records": 0,
+      "operation_failures": 0
+    },
+    "rack": {
+      "samples": 41,
+      "overlap_records": 14,
+      "operation_failures": 0
+    }
+  },
+  "original_full_study_completed": false,
+  "conditional_representative_order_clear": false,
+  "unchanged_prior_manifest_files": 2537,
+  "unchanged_frozen_files": 222,
+  "robot_geometry_changed": false,
+  "hand_parts": 364,
+  "old_packaging_refs": 193,
+  "new_guide_refs": 160,
+  "representative_motor_seating_paths": 4,
+  "representative_module_rack_paths": 6,
+  "other_motor_seating_paths_unverified": 12,
+  "other_module_rack_paths_unverified": 10,
+  "fixtures_qualified": false,
+  "whole_robot_assembly_qualified": false
+}
