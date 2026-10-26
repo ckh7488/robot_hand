@@ -12,9 +12,9 @@
 
 [엄지 줄 고정부·모터 모듈 확대](cad/thumb_ip_drive_v1/generated/drive_details.png) · [현재 부품 STEP 목록](cad/motion_clearance_v2/generated/assembly_catalog.json) · [현재 손 전체 STEP 압축](cad/motion_clearance_v2/generated/hand.step.zip) · [이전 제작 후보 전체 STEP](cad/manufacturing_v2/generated/hand.step) · [엄지 자세의 이전 동작 GIF](cad/thumb_wrist_v1/generated/motion.gif)
 
-현재는 **CAD를 유지하면서 사람이 자연스럽게 할 만한 자세와 움직이는 순서를 먼저 교정하는 단계**입니다. 최신 [POSTURE005](cad/posture_correction_v1/README.md)는364부품·축·길이를 보존하고 중지 앞쪽 교차의1쌍 간섭을0으로 줄였으며 접근·풀기37표본에서 보고 기준 이상 겹침0을 확인했습니다. 손끝 모으기는 빈손 근접 자세로 구분하고 실제 물체 집기 성공으로 쓰지 않습니다.
+현재는 **자연스러운 자세로 대표 동작을 정리하고 모터·배선 준비로 넘어가는 단계**입니다. 최신 [PINCH006](cad/object_pinch_v2/README.md)은 손364부품·축·길이를 유지한 채25mm 고정 지지 구의 양쪽 손끝 접근·풀기33표본에서 보고 기준 이상 관통0을 확인했습니다. 들어 올리기·파지 유지·실물 승인은 아닙니다. 이전 [POSTURE005](cad/posture_correction_v1/README.md)의 중지 앞쪽 교차와 빈손 손끝 모으기 결과도 보존합니다.
 
-**한 후보가 부딪힌다는 이유로 바로 CAD를 고치지 않습니다.** 자연스러운 각도·협응·접근/풀기로 먼저 해결하고, 필요한 동작이 기계적으로 막히는 근거가 있을 때 형상 수정을 판단합니다. 반대 교차 방향과 실제 물체 잡기는 남아 있습니다. [그림과 동작](cad/posture_correction_v1/README.md) · [이전 전체 기능 검사](cad/functional_motion_v3/README.md)
+**자세로 풀린 문제를 추가 공칭 여유 때문에 CAD 절삭으로 되돌리지 않습니다.** 필요한 일상 동작이 구조적으로 막힌다는 근거가 있을 때만 CAD를 수정합니다. 반대 밀착 교차와 다른 물체/조작은 확장 과제로 남기고, 미세 조정은 중단합니다. 다음은 실제 모터·커넥터 위치를 확인하고 보드가 없어도 케이블 경로·고정·움직일 여유를 설계하는 것입니다. 현재 손에 전체 모터가 통합 완료된 상태는 아닙니다. [그림·검사 범위](cad/object_pinch_v2/README.md)
 
 엄지의 [두 줄 고정부 연구](cad/thumb_ip_drive_v1/README.md)와 [별도 장력 조절 시험대 CAD](cad/thumb_ip_tension_v1/README.md)는 보존합니다. 이 단품 연구로 전체 손의 간섭·조립·구동 문제가 해결된 것은 아니며, 손 전체의 모터·줄·배선 통합과 실물 시험은 남아 있습니다.
 

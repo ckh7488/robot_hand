@@ -1,10 +1,10 @@
 {
-  "id": "POSTURE005",
-  "candidate": "cad/posture_correction_v1",
+  "id": "PINCH006",
+  "candidate": "cad/object_pinch_v2",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/POSTURE005.manifest.json",
-  "previous_checkpoint": "FUNCTION003",
-  "status": "Same364part CAD; posture/coordination correction first. Corrected crossing route and recorded unloaded near-tip findings; opposite crossing and real object grasps unresolved. No physical approval.",
+  "manifest": "checkpoints/PINCH006.manifest.json",
+  "previous_checkpoint": "POSTURE005",
+  "status": "Unchanged364part CAD; supported25mm sphere approach/contact/release solved by coordinated posture. Stop fine motion optimization and proceed to motor placement/wiring preparation. No physical holding or full motion/manufacturing approval.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,8 +14,9 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "ba38e86f9ba152a888ce4bc568c3ae2e7c6868ff",
-  "post_commit_review_report": "docs/reviews/POSTURE005/README.md",
-  "post_commit_reproduction_scope": "Exact-SHA clean-clone: 18 full364part core samples, selected exact gaps, 1144 closure hashes and222 frozen hashes. Failures retained. Not fullpaths/continuous/object hold/hardware approval."
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Verify actual motor/connector layout, then electrical cable routing with provisional board termination."
 }
