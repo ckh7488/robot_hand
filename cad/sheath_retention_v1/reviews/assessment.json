@@ -1,0 +1,88 @@
+{
+  "completed": true,
+  "selected_report": "selected/reviews/check.json",
+  "original_report": "reviews/check.json",
+  "new_parts": 26,
+  "new_motor_retainer_rows": 12,
+  "new_distal_rows_including2replacement_ferrules": 14,
+  "nominal_hand_rows": 397,
+  "nominal_packaging_rows": 385,
+  "source_hand_geometry_unchanged": true,
+  "old_geometry_files_hash_unchanged": 4049,
+  "installed_candidate_adopted": false,
+  "raw_static_overlap_records": 6,
+  "raw_distinct_pairs": 4,
+  "raw_failures": [
+    {
+      "case": "parent_three_quarter",
+      "lead": "distal_housing_clamp_1_jaw_-1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 9.576027693328152
+    },
+    {
+      "case": "parent_three_quarter",
+      "lead": "distal_housing_clamp_1_jaw_1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 1.1716058592957523
+    },
+    {
+      "case": "parent_three_quarter",
+      "lead": "distal_housing_clamp_1_bolt_0",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 0.14140572050533756
+    },
+    {
+      "case": "parent_three_quarter",
+      "lead": "distal_housing_clamp_1_nut_0",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 3.3411302170486126
+    },
+    {
+      "case": "parent_full",
+      "lead": "distal_housing_clamp_1_jaw_1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 0.6456235389911056
+    },
+    {
+      "case": "parent_full",
+      "lead": "distal_housing_clamp_1_bolt_0",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 0.46772650436768615
+    }
+  ],
+  "selected_upper_clamp_roll_deg": 90.0,
+  "selected_static_poses": 8,
+  "selected_pairs": 173797,
+  "selected_AABB": 508,
+  "selected_overlaps": 0,
+  "selected_operation_failures": 0,
+  "service_samples": 24,
+  "service_required_representatives_clear": false,
+  "service_failures": [
+    {
+      "site": "distal_housing_clamp_1",
+      "moving": "distal_housing_clamp_1_jaw_-1",
+      "sample": 0,
+      "lead": "distal_housing_clamp_1_jaw_-1",
+      "part": "thumb_segment1_thenar_shell",
+      "material_intersection_mm3": 13.18479255072598
+    }
+  ],
+  "friction_or_pullout_verified": false,
+  "clamp_compression_or_deformation_simulated": false,
+  "long_housing_connected": false,
+  "whole_drive_complete": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "upper_kit_correction_report": "reviews/service_order.json",
+  "upper_kit_bench_samples": 20,
+  "upper_kit_hand_samples": 29,
+  "upper_kit_correction_clear": true,
+  "selected_representative_service_clear": true,
+  "selected_representative_samples": 69,
+  "same_motor_samples_reused": 20,
+  "new_upper_order_samples": 49,
+  "original_postinstall_failed_samples_preserved": 4,
+  "new_upper_ferrule_kit_insertion_tested": true,
+  "lower_replacement_ferrule_insertion_tested": false,
+  "rigid_jaw_closure_may_be_constrained_by_simultaneous_terminal_contact": true
+}

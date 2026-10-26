@@ -1,10 +1,10 @@
 {
-  "id": "ASSEMBLY025",
-  "candidate": "cad/distal_terminal_assembly_v1",
+  "id": "RETAIN026",
+  "candidate": "cad/sheath_retention_v1/selected",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/ASSEMBLY025.manifest.json",
-  "previous_checkpoint": "OFFSET024",
-  "status": "No geometry changed.Same385hand/373packaging candidate;upper ferrule/shoe bench kit placed laterally beforekeeper,lower axial ferrule then offset shoe.84hand+4bench finite samples clear.Conditional manual holding/tools/thread/load,long housing retention/cord threading/tension unvalidated.",
+  "manifest": "checkpoints/RETAIN026.manifest.json",
+  "previous_checkpoint": "ASSEMBLY025",
+  "status": "Four housing splitclamp candidate.New26rows;upper distal clamp rotated90degrees,8staticposes clear.Friction/load/closure deformation,conditional representative assembly and replacement ferrule installation unapproved.Longhousing/cords/tension incomplete.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "a0f6001a6c7c58c3bc40d8589f4adef86c9ec81b",
-  "post_commit_review_report": "docs/reviews/ASSEMBLY025/README.md",
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
   "post_commit_reproduction_scope": "ExactSHA cleanclone:stored hand364minus2/originalguide11/new14/housing2,pack373/electrical64/neutralarm10;32native groups including selected22path ends,7criticalstarts,2bench endpoints and first blocked start;4776closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all84+4samples/render.No geometry regeneration or inherited OFFSET024 sourceSTEP comparison retry/resolution.No physical fixture/tool/threads/strength,longhousing/retention,cord threading,tension or wholehand approval.",
-  "next_stage": "Close same-geometry nominal distal hardware assembly:84hand+4bench finite samples clear,upper benchkit/lateral entry beforekeeper;lower ferrule axial then shoe lateral3mminward/radial,all original bolts/nuts restored.Actual manual fixture/tool/threads/torque/load remain unvalidated.Design/verify actual housing pullout capture/strain relief at BOTH distal and motor ends,then constant-length supported motor-wrist-thumb housing route,cord threading,length adjustment/pretension,parent/wrist release motion.Do not redo solved gaps/order or elbow bus.Keep inherited OFFSET024 per-faceBBox/onepointdistance comparison inconclusive and originalfalse reports;this stage uses saved STEP,not fresh keeper regeneration/full sourceSTEP equivalence.No20motor/physical/fullhand approval.",
+  "next_stage": "Close selected8staticposes and upper90degreehousing-axisroll,nominal representative service69samples(49newupperbench/9partkit/keeper-fastenerorder+20same motor).Original24samplepostinstallfailurepreserved.Check lower replacement collar ferrule/remaining2clamps installation as needed before claiming wholeassembly;geometry unchanged hand/motor/rack/electric.Gripcontacts bothterminal/housing:jawclosure/deformation/pressure split,actualpulloutfriction and cordpinching unverified.Designsupportedconstant-length longhousing motor-wrist-thumb,cordthreading,lengthadjustment/pretension,parent-wrist grab/release.Do not restart solved microgaps,handpostures/elbowbus;inheritedOFFSET024comparisoninconclusive.No force/wholehand approval.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -165,12 +165,12 @@
     "post_commit_reproduction_scope": "ExactSHA cleanclone:hand364minus2+guide9,pack373,electrical64,arm10,new14/housing2;10nativegroups reproducing rejected fixed/root intersections and partial clear groups;16adaptive metric STEP signatures;4631closure/222frozen hashes,cleanclone,OCCpool1,sameagent.Not all8static/render rerun.No assembly/load/longhousing/pretension/continuous integrated motion or physical approval.Active GUIDE021/TERMINAL022 unchanged."
   },
   "distal_sheath_candidate_geometry_selected": true,
-  "distal_sheath_candidate_service_complete": true,
+  "distal_sheath_candidate_service_complete": false,
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": true,
-  "post_commit_native_results_reproduced": true,
+  "post_commit_review_completed": false,
+  "post_commit_native_results_reproduced": false,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -187,5 +187,9 @@
   "post_commit_review_core_passed": true,
   "post_commit_source_STEP_equivalence_retested": false,
   "inherited_OFFSET024_initial_core_passed": false,
-  "inherited_OFFSET024_face_supplement_passed": false
+  "inherited_OFFSET024_face_supplement_passed": false,
+  "retention_nominal_service_representative_clear": true,
+  "retention_nominal_service_representative_samples": 69,
+  "retention_nominal_new_service_samples": 49,
+  "retention_nominal_reused_service_samples": 20
 }
