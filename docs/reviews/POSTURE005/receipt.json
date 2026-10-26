@@ -1,0 +1,6 @@
+{
+  "target_commit": "ba38e86f9ba152a888ce4bc568c3ae2e7c6868ff",
+  "report_sha256": "25136abac72cfc2002237f8d97bd1bcdc2818d17799330028533e98ff3a5dca0",
+  "core_samples": 18,
+  "scope": "Selected successes/failures and route intermediates; same-agent exact-SHA replay; no physical approval"
+}

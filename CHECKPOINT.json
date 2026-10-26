@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "ba38e86f9ba152a888ce4bc568c3ae2e7c6868ff",
+  "post_commit_review_report": "docs/reviews/POSTURE005/README.md",
+  "post_commit_reproduction_scope": "Exact-SHA clean-clone: 18 full364part core samples, selected exact gaps, 1144 closure hashes and222 frozen hashes. Failures retained. Not fullpaths/continuous/object hold/hardware approval."
 }
