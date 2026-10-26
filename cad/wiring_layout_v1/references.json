@@ -1,0 +1,28 @@
+{
+  "retrieved_date": "2026-10-26",
+  "motor_geometry_candidate": "XL330-M077, retained for packaging comparison; final actuator selection is open",
+  "sources": [
+    {
+      "title": "ROBOTIS XL330-M077-T e-Manual",
+      "url": "https://emanual.robotis.com/docs/en/dxl/x/xl330-m077/",
+      "facts": {"input_voltage_V": [3.7, 6.0], "recommended_V": 5.0, "interface": "3-pin TTL half duplex, 3.3V logic with5V tolerance", "pins": {"1": "GND", "2": "VDD", "3": "DATA"}, "housing": "JST EHR-03", "header": "B3B-EH-A", "terminal": "SEH-001T-P0.6", "listed_wire_AWG": 21},
+      "scope": "Component reference, no wiring or power-on performed"
+    },
+    {
+      "title": "JST EH connector catalogue",
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eEH.pdf",
+      "facts": {"pitch_mm": 2.5, "SEH001T_wire_AWG_range": [30, 22], "SEH001T_conductor_mm2_range": [0.05, 0.33], "SEH001T_insulation_OD_mm_range": [1.0, 1.9]},
+      "scope": "Catalogue dimensions/terminal range, no dynamic flex-life or whole-hand current capacity approval"
+    }
+  ],
+  "open_items": [
+    "ROBOTIS lists21AWG while the named JST terminal catalogue lists up to22AWG; do not silently certify the old22AWG envelope as the supplied cable or assume an unverified crimp combination.",
+    "The old conservative EHR3 outer-box model overlaps the case0.64mm3; hollow housing details, seating depth, keyed registration and real mating remain unresolved.",
+    "Current hand364parts contain no installed whole-hand20motor package. Proposed placement and old external motor coupon are not installation evidence.",
+    "Electrical wires and mechanical actuation tendons are different systems. Board termination can remain provisional; both full routes are unfinished."
+  ],
+  "final_wire_sku": null,
+  "final_board": null,
+  "connector_fit_verified": false,
+  "electrical_power_distribution_verified": false
+}

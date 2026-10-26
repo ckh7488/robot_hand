@@ -1,0 +1,8 @@
+{
+  "verified_date": "2026-10-26",
+  "official_current_url": "https://docs.robotis.com/ko/docs/dxl/model_reference/x_series/xl_series/xl330-m077/",
+  "reason": "The older official e-Manual points to ROBOTIS Docs as the current documentation site.",
+  "cross_check": "Current page retains the same3pin TTL mapping, EHR03/B3BEHA/SEH001TP06 family, 21AWG listing and3.7to6V input range. The JST22AWG terminal-catalogue limit remains an open sourcing/termination question.",
+  "final_wire_sku": null,
+  "physical_mating_or_power_test": false
+}
