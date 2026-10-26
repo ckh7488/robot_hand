@@ -1,0 +1,11 @@
+{
+  "id": "floor_xy_turn_2",
+  "interpretation": "Finite alternative based on actual post and root locations. No hand cut or joint-target change.",
+  "changes": {
+    "thumb_base_sweep_actuator": {"pivot_mm": [-20,33,-21], "yaw_deg": 0, "translation_mm": [0,-8,0]},
+    "thumb_opposition_actuator": {"pivot_mm": [10,57,-21], "yaw_deg": 0, "translation_mm": [36,0,0]},
+    "ring_mcp_actuator": {"pivot_mm": [-26,69,-21], "yaw_deg": 270, "translation_mm": [0,6,0]}
+  },
+  "unchanged": "All364hand solids/axes/lengths, middleMCP module,16remote modules/rack/48leads/16plug envelopes/160guide parts.",
+  "limits": "Palm feet retain original Z. Seating must be verified against actual palm. Fastening/insertion/tool/strength/coupling/palm leads remain unverified."
+}
