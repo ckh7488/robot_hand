@@ -1,0 +1,25 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+first bench_beam_0 True
+first bench_beam_6 True
+first bench_arm065_shared_rear_cap_0 True
+first bench_arm065_shared_rear_cap_7 True
+first bench_arm063_recessed_front_cap_0 True
+first bench_arm063_recessed_front_cap_2 True
+selected prefit_arm063_M3_nut_envelope_0_0 True
+selected prefit_arm063_M3_nut_envelope_0_3 True
+selected prefit_arm063_M3_nut_envelope_1_0 True
+selected prefit_arm063_M3_nut_envelope_1_3 True
+selected gap_front_cap_with_two_nuts_0 True
+selected gap_front_cap_with_two_nuts_9 True
+selected insert_arm064_clamp_nut_0_0 True
+selected insert_arm064_clamp_nut_0_6 True
+selected insert_arm064_clamp_nut_1_0 True
+selected insert_arm064_clamp_nut_1_6 True
+selected insert_arm065_rear_M3_nut_envelope_0_0 True
+selected insert_arm065_rear_M3_nut_envelope_0_6 True
+selected insert_arm065_rear_M3_nut_envelope_1_0 True
+selected insert_arm065_rear_M3_nut_envelope_1_6 True
+selected insert_arm063_M3x12_envelope_0_0 True
+selected insert_arm063_M3x12_envelope_0_3 True
+core True []
