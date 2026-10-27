@@ -1,0 +1,15 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new6__retained880 True
+new6_internal15 True
+entry8__retained880 True
+entry8__new6 True
+new_structure2__source_outer2 True
+existing_rotation_bounds9__new_structure2 True
+retained_output_entry6__new_structure2 True
+roll40__new_shared_unit_relative True
+roll_minus40__new_shared_unit_relative True
+combined55__new_shared_unit_relative True
+combined110__new_shared_unit_relative True
+assembly_0_0 True
+core False ['geometry_arm065_actual_common_1']

@@ -1,0 +1,93 @@
+{
+  "target": "746f6cbcfe9a79604d2b5a3264ff42a777559f0c",
+  "initial_core_passed": false,
+  "differences": [
+    "geometry_arm065_actual_common_1"
+  ],
+  "unmatched_native": [],
+  "unmatched_geometry": [
+    {
+      "name": "arm065_actual_common_1",
+      "matched": false,
+      "differences": [
+        "edges_count",
+        "vertices_count"
+      ],
+      "max_numeric_difference": 3.002577386723715e-08,
+      "source_solids": 4,
+      "STEP_solids": 4
+    }
+  ],
+  "common_samples": [
+    {
+      "lead": "arm065_shared_rear_cap",
+      "part": "little_mcp_actuator_motor",
+      "lead_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          14.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "volume_mm3": 126.40064196430265,
+      "solids": 2,
+      "matched": true,
+      "STEP_volume_mm3": 126.40064196430265
+    },
+    {
+      "lead": "arm065_shared_rear_cap",
+      "part": "little_pip_actuator_motor",
+      "lead_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          14.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "volume_mm3": 104.94920010014212,
+      "solids": 4,
+      "matched": true,
+      "STEP_volume_mm3": 104.94920010014212
+    }
+  ],
+  "cause_confirmed": false,
+  "automatic_precision_or_groups_repeated": 0
+}

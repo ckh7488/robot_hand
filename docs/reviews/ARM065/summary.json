@@ -1,0 +1,31 @@
+{
+  "target_commit": "746f6cbcfe9a79604d2b5a3264ff42a777559f0c",
+  "initial_core_passed": false,
+  "native_groups": 12,
+  "native_matches": 12,
+  "checked_source_overlap_records": 7,
+  "checked_STEP_overlap_records": 7,
+  "geometry_shapes": 12,
+  "geometry_matches": 11,
+  "rear_pad_queries": 16,
+  "rear_pad_matches": 16,
+  "preservation_queries": 2,
+  "common_queries": 2,
+  "common_matches": 2,
+  "design_and_body_contract_matched": true,
+  "manifest_files": 14757,
+  "frozen_files": 222,
+  "source_old_geometry_hashes_unchanged": 12727,
+  "differences": [
+    "geometry_arm065_actual_common_1"
+  ],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM065_746f6cbcfe9a",
+  "current_hardware_rows": 862,
+  "proposal_rows": 886,
+  "new_installed_geometry": 0,
+  "proposal_adopted": false,
+  "same_agent_review_not_independent": true,
+  "raw_candidate_clear": false,
+  "assembly_completed": false,
+  "whole_drive_or_exterior_approved": false
+}
