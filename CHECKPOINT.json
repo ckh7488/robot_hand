@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
-  "post_commit_review_report": null,
-  "post_commit_reproduction_scope": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "751553acf652ec92707bd94b6864e124b6b41d37",
+  "post_commit_review_report": "docs/reviews/LENGTH037/README.md",
+  "post_commit_reproduction_scope": "ExactSHAcleanclone12native(2openwristposesx5+2278internal),10adaptive source/STEPmetrics abs1e-5,44savedcurves FK/transport/splitlength/radius,54materialpoints/4returnpairs and3preplanned source-source vsSTEP-STEPadaptivecommon globalvalues eps1e-10 abs1e-5;basiccore=True,precision3=True,explicitrepro=True,differences=[].6215closure/222frozen/cleanclone/OCC1/sameagent.NoNewton/contactoptimizer/field/originalCONTACT036native/parentSolids/render/wholefeeding/forces/tension/physical/exteriorapproval.Inheritedcomparisonsuntouched.",
   "next_stage": "Close LENGTH037 prescribed linear endpoint blend+oneupstreambulge length family:11analytic/22closures but7parent local radius failure and+20/+15openwrist3actualinterline pairs;negativewristclear.No sameNewton/fixedlengthtarget/radiusboundary/independentrod/freecurve/80contact repeat.No structural impossibility conclusion. Read actual upstreamcommonX88.711..112.311/Y-237.183..-234.091/Z-261.774..-258.889 and upperentry tangent rotation atparent25%R.6244; determine necessary actual paired restraint/endbend path attached to existing motor-side/thumb_mcp bodies/contact,assembly+housingfeed before new supportedmotion. Motorfixed/PAIRH/terminalsH+FK. Keep hand/motor/rack/electrical/OD/angles;no elbowbus/microgaprepeat.New fullthreading/adjustment/preload/friction/tension/wholeinstallation/physical/exterior unresolved.NotallcertsbeforeCAD/previews.Inherited comparisons unchanged.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -169,8 +169,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": false,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -184,7 +184,7 @@
   "distal_sheath_candidate_bench_tests": 4,
   "distal_sheath_candidate_service_report": "cad/distal_terminal_assembly_v1/reviews/selected_service.json",
   "inherited_OFFSET024_face_comparison_inconclusive": true,
-  "post_commit_review_core_passed": false,
+  "post_commit_review_core_passed": true,
   "post_commit_source_STEP_equivalence_retested": false,
   "inherited_OFFSET024_initial_core_passed": false,
   "inherited_OFFSET024_face_supplement_passed": false,
@@ -195,7 +195,7 @@
   "post_commit_new26_shape_metrics_reproduced": true,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": true,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -210,7 +210,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -218,7 +218,7 @@
   "guided_whole_link_overlap_records": 45,
   "guided_whole_link_analytic_length_cases": 9,
   "guided_whole_link_native_clear": false,
-  "post_commit_precision_pairs_passed": null,
+  "post_commit_precision_pairs_passed": true,
   "wrist_guide_axis_x_mm": 100,
   "wrist_guide_axis": [
     0,
@@ -338,7 +338,7 @@
   "upstream_motor_to_guide_CAD_neutral_connected": true,
   "post_commit_recovery_completed": false,
   "post_commit_recovery_native_reruns": 0,
-  "post_commit_native_raw_results_saved": null,
+  "post_commit_native_raw_results_saved": true,
   "inherited_CONTACT036_review": {
     "post_commit_review_target": "d03af1f60143950f145c22e194e8a52bdadd4612",
     "post_commit_review_report": "docs/reviews/CONTACT036/README.md",
@@ -359,5 +359,5 @@
     false
   ],
   "long_housing_material_length_closure_verified": true,
-  "post_commit_new10_shape_metrics_reproduced": null
+  "post_commit_new10_shape_metrics_reproduced": true
 }

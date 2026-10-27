@@ -1,0 +1,62 @@
+{
+  "completed": true,
+  "target_commit": "751553acf652ec92707bd94b6864e124b6b41d37",
+  "passed": true,
+  "pairs": [
+    {
+      "pair": {
+        "lead": "material_housing_0_2",
+        "part": "material_housing_1_2",
+        "material_intersection_mm3": 30.82540343940122
+      },
+      "STEP_STEP_common_adaptive_values": [
+        30.827566167602612,
+        150.87180998137234,
+        100.55511559725197,
+        -235.57424882476968,
+        -260.1637893817105
+      ],
+      "max_numeric_difference": 4.176353627372009e-07,
+      "matched": true
+    },
+    {
+      "pair": {
+        "lead": "material_housing_0_2",
+        "part": "material_cord_1_2",
+        "material_intersection_mm3": 2.7710777878280246
+      },
+      "STEP_STEP_common_adaptive_values": [
+        2.7710794421740363,
+        21.332787280337406,
+        100.59953192280541,
+        -235.1386230180002,
+        -260.2155533624746
+      ],
+      "max_numeric_difference": 5.834666083615048e-11,
+      "matched": true
+    },
+    {
+      "pair": {
+        "lead": "material_cord_0_2",
+        "part": "material_housing_1_2",
+        "material_intersection_mm3": 2.774086751188249
+      },
+      "STEP_STEP_common_adaptive_values": [
+        2.774080670417851,
+        21.35515235880588,
+        100.6163341757693,
+        -235.99646167410413,
+        -260.3319049655088
+      ],
+      "max_numeric_difference": 6.492584248007915e-11,
+      "matched": true
+    }
+  ],
+  "same_clean_clone": true,
+  "preplanned": true,
+  "whole_native_group_reruns": 0,
+  "source": "Precommit source/source exact4sweep pieces common metrics vs exactSHA savedSTEP/STEP common metrics.",
+  "adaptive_epsilon": 1e-10,
+  "absolute_comparison_tolerance": 1e-05,
+  "original_basic_results_preserved": true
+}
