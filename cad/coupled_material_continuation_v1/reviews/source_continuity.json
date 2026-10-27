@@ -1,0 +1,10 @@
+{
+  "first_check_source_sha256": "d4f3c072bc493cc85ccdd81665b89955e122ae1274420c98d771393be56da924",
+  "current_check_source_sha256": "8f8209c77b7c4a59b02742dc3e582deae1b03e961903cbf8ed329d81661e770b",
+  "first_completed_native_groups": 0,
+  "first_profiles": 0,
+  "first_STEP_exports": 0,
+  "main_only_array_decode_changed": true,
+  "other_function_AST_identical": true,
+  "analysis_source_unchanged": true
+}

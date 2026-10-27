@@ -1,0 +1,131 @@
+"""Native swept-material checks of the new coupled continuation states."""
+import sys,time
+from pathlib import Path
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import continuation as n
+from OCP.OSD import OSD_ThreadPool
+
+
+def flat(tests):
+    return dict(pairs_in_scope=sum(z['pairs_in_scope'] for z in tests),exact_pairs=sum(z['exact_pairs'] for z in tests),
+        overlaps=[v for z in tests for v in z['overlaps']],operation_failures=[v for z in tests for v in z['operation_failures']])
+
+
+def context():
+    data,pack,guide,wrist=n.a.s.prior.inputs()
+    hardware=n.c.load([z for z in n.p.read(n.ROOT/'cad/support_attachment_basis_v1/generated/checked/scene.json')['parts'] if z['installed_part_candidate']],data[0])
+    pack=[z for z in pack if z['name'] not in [v['replaced_part'] for v in hardware]]
+    rotor={z['name'] for z in n.p.read(n.ROOT/'cad/motor_spool_coupling_v1/selected/generated/scene.json')['parts'] if z['moving']}
+    assert len(rotor)==9
+    return data,pack,guide,wrist,hardware,rotor
+
+
+def pose(ctx,case):
+    data,pack,guide,wrist,hardware,rotor=ctx
+    cc=dict(angles_deg=case['q'],solution=dict(wrist_P=case['P'],wrist_H=case['H'],parent_F=case['F']))
+    groups=n.t.prior.support.kobs(data,pack,guide,wrist,cc);M=n.s.frames(case['q'][19])[1]
+    return [(key,[dict(z,shape=n.g.original.transform(z['shape'],M)) if z['name'] in rotor else z for z in (rows+hardware if key=='packaging' else rows)]) for key,rows in groups]
+
+
+def paths(x,case,weights,budgets,i,kind):
+    middle=n.middle(x,case,weights,budgets,i,kind)
+    return middle if kind=='housing' else n.s.paths(case['q'][19],i)[:6]+middle+[ed for _,ed in n.w.distal_edges(case,i)]
+
+
+def profile(x,case,weights,budgets,kind,i):
+    base,x0,_,_=n.initial();edges=paths(x,case,weights,budgets,i,kind);zero=paths(x0,base,weights,budgets,i,kind)
+    L=sum(z.Length() for z in zero);actual=sum(z.Length() for z in edges)
+    gap=max((a.endPoint()-b.startPoint()).Length for a,b in zip(edges[:-1],edges[1:]))
+    rear_index=3+n.NUP+(6 if kind=='cord' else 0)
+    rear=sum(z.Length() for z in edges[:rear_index]);rear0=sum(z.Length() for z in zero[:rear_index]);station=rear0+20.;local=station-rear
+    point=n.np.array(n.t.point_at(edges,station));A=n.np.array(edges[rear_index].startPoint().toTuple());T=n.np.array(edges[rear_index].tangentAt(0).toTuple())
+    witness=dict(material_s_mm=station,world_mm=point,guide_rear_mm=A,guide_axis=T,location_from_rear_mm=local,
+        inside_rear_40mm_straight=bool(0<=local<=40),axis_residual_mm=float(n.np.linalg.norm(point-A-local*T)) if 0<=local<=40 else None)
+    assert abs(actual-L)<1e-5 and gap<1e-5,(kind,i,actual-L,gap)
+    tails=None
+    if kind=='cord':
+        O,R=n.g.g.v.frames(n.g.DESIGN,n.np.array(case['q']))['thumb_ip']; A0,B0=n.g.g.v.frames(n.g.DESIGN,n.np.zeros(20))['thumb_ip']
+        C=n.np.array(case['H'])@n.s.transform(O,R)@n.np.linalg.inv(n.s.transform(A0,B0));M=n.s.frames(case['q'][19])[1]
+        tails=[float(n.np.linalg.norm(n.np.array(ed.toTuple())-(T@n.np.r_[point.toTuple(),1.])[:3])) for ed,T,point in
+            [(edges[0].startPoint(),M,zero[0].startPoint()),(edges[-1].endPoint(),C,zero[-1].endPoint())]]
+        assert max(tails)<1e-5,tails
+    return dict(kind=kind,line=i,material_length_mm=L,actual_length_mm=actual,maximum_join_gap_mm=gap,conditional_no_slip_tail_frame_errors_mm=tails,
+        piece_lengths_mm=[z.Length() for z in edges],PAIR_rear_material_s_mm=rear,PAIR_rear_material_coordinate_change_mm=rear-rear0,
+        material_points=[dict(material_s_mm=float(s),world_mm=n.t.point_at(edges,float(s))) for s in n.np.linspace(0,L,9)],axis_sliding_witness=witness)
+
+
+def build(x,case,weights,budgets):
+    rows=[]
+    for kind in ['housing','cord']:
+        for i in [0,1]:
+            for j,ed in enumerate(paths(x,case,weights,budgets,i,kind)):
+                sh=n.m.swept(ed,1.5).cut(n.m.swept(ed,.65)).clean() if kind=='housing' else n.m.swept(ed,.3)
+                assert sh.isValid() and len(sh.Solids())==1,(kind,i,j)
+                rows.append(dict(name='continued_'+kind+'_'+str(i)+'_'+str(j),shape=sh,kind=kind,physical_line=i,path_segment=j,
+                    body='palm',current_world_pose_only=True,length_mm=ed.Length(),color=[.63,.25,.8] if kind=='housing' else [.97,.45,.12],
+                    endpoint_start_mm=ed.startPoint().toTuple(),endpoint_end_mm=ed.endPoint().toTuple()))
+    return rows
+
+
+def export(rows,label):
+    return n.a.a.prior.export([{k:v for k,v in z.items() if k not in ['step','mesh','sha256_step','sha256_stl']} for z in rows],n.HERE/'generated'/label)
+
+
+def rotor_field_bound(ctx,groups,rec,weights,budgets):
+    P=n.samples(n.np.array(rec['parameters']),rec['case'],weights,budgets)[0];rotor=ctx[-1];M=n.s.frames(rec['case']['q'][19])[1];values=[]
+    for _,rows in groups:
+        for row in rows:
+            if row['name'] not in rotor:continue
+            for tag,shape in [('actual',row['shape']),('nominal',n.g.original.transform(row['shape'],n.np.linalg.inv(M)))]:
+                B=n.np.array(n.c.m.pack._bbox(shape));gap=n.np.maximum(n.np.maximum(B[0]-P,P-B[1]),0.)
+                values.append(dict(name=row['name'],pose=tag,minimum_point_AABB_distance_mm=float(min(n.np.linalg.norm(gap,axis=1)))))
+    assert len(values)==18 and min(z['minimum_point_AABB_distance_mm'] for z in values)>1.7
+    return dict(bounds=values,native_contact_backend_band_mm=1.7,nominal_and_actual_rotors_both_inactive_in_point_contact_projection=True,
+        actual_rotated_hardware_used_in_all_new_swept_material_checks=True)
+
+
+def main():
+    out=n.HERE/'reviews/check.json';assert not out.exists();raw=n.p.read(n.HERE/'reviews/analysis.json');assert raw['completed']
+    ctx=context();data=ctx[0];weights=raw['arc_length_weights'];budgets=n.np.array(raw['free_contour_budgets_mm']);start=time.monotonic()
+    result=dict(completed=False,source_sha256=dict(raw['source_sha256']),states=[],profiles=[],solver_failed_increments=[j for j,z in enumerate(raw['steps']) if not z['solved']],
+        omitted_hardware=[],hardware_rows=862,new_hardware=0,actual_tail_fixation_verified=False,EI_gravity_friction_preload_tension_or_equilibrium_solved=False,
+        reporting_floor_mm3=.001,boolean_tolerance_mm=1e-6,OCC_pool_threads=OSD_ThreadPool.DefaultPool_s().NbThreads(),
+        actual_rotor_and_hand_FK_used=True,existing_hardware_self_pairs_not_retested=True,whole_hand_drive_approved=False)
+    result['source_sha256'].update(data[0])
+    for rel in ['cad/coupled_material_continuation_v1/check.py','cad/coupled_material_continuation_v1/reviews/analysis.json']:
+        result['source_sha256'][rel]=n.m.drive.sha(n.ROOT/rel)
+    def save():n.a.save(out,result)
+    save()
+    for j,rec in enumerate(raw['steps']):
+        if not rec['solved']:break
+        x=n.np.array(rec['parameters']);case=rec['case'];groups=pose(ctx,case)
+        bound=rotor_field_bound(ctx,groups,rec,weights,budgets)
+        profiles=[profile(x,case,weights,budgets,kind,i) for kind in ['housing','cord'] for i in [0,1]]
+        result['profiles'].append(dict(step=j,parent_fraction=rec['parent_fraction'],materials=profiles));save()
+        rows=build(x,case,weights,budgets);state=dict(step=j,parent_fraction=rec['parent_fraction'],case=case,rows=len(rows),native={},rotor_field_invariance_bound=bound)
+        result['states'].append(state);save()
+        for key,obs in groups:
+            state['native'][key]=n.c.material(rows,obs);save();print('native',j,key,len(state['native'][key]['overlaps']),flush=True)
+        state['native']['self']=flat([n.c.material([z],rows[k+1:]) for k,z in enumerate(rows)]);save()
+        lookup={z['name']:z for z in rows};known=[];blocking=[]
+        for key,test in state['native'].items():
+            for pair in test['overlaps']:
+                a,b=lookup.get(pair['lead']),lookup.get(pair['part'])
+                same=key=='self' and a and b and a['kind']==b['kind']=='cord' and a['physical_line']==b['physical_line'] and {a['path_segment'],b['path_segment']}=={0,1}
+                (known if same else blocking).append(dict(group=key,pair=pair))
+        state.update(known_same_cord_motor_seams=known,blocking_records=blocking,
+            raw_clear=all(n.m.drive.clear(z) for z in state['native'].values()),
+            conditional_geometry_clear=not blocking and not any(z['operation_failures'] for z in state['native'].values()))
+        state['scene']=export(rows,'state_'+str(j));save();print('state',j,'blocking',len(blocking),'same_cord',len(known),flush=True)
+        if not state['conditional_geometry_clear']:break
+    agg=flat([z for rec in result['states'] for z in rec['native'].values()]);result.update(completed=True,
+        all_executed_swept_states_clear=bool(result['states']) and all(z['conditional_geometry_clear'] for z in result['states']),
+        raw_all_clear=bool(result['states']) and all(z['raw_clear'] for z in result['states']),
+        native_states=len(result['states']),pairs_in_scope=agg['pairs_in_scope'],AABB_native_pairs=agg['exact_pairs'],overlap_records=len(agg['overlaps']),operation_failures=len(agg['operation_failures']),
+        all_five_planned_parent_increments_completed=len(result['states'])==5 and raw['all_requested_increments_solved'] and all(z['conditional_geometry_clear'] for z in result['states']),
+        input_hash_guard=all(n.m.drive.sha(n.ROOT/f)==h for f,h in result['source_sha256'].items()),elapsed_s=time.monotonic()-start)
+    save()
+
+
+if __name__=='__main__':main()

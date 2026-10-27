@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\coupled_material_continuation_v1\check.py", line 131, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\coupled_material_continuation_v1\check.py", line 103, in main
+    bound=rotor_field_bound(ctx,groups,rec,weights,budgets)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\coupled_material_continuation_v1\check.py", line 76, in rotor_field_bound
+    P=n.samples(n.np.array(rec['parameters']),rec['case'],weights,budgets)[0];rotor=ctx[-1];M=n.s.frames(rec['case']['q'][19])[1];values=[]
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\coupled_material_continuation_v1\continuation.py", line 97, in samples
+    rows=curves(x,case,weights,budgets); pts=[]; owners=[]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\coupled_material_continuation_v1\continuation.py", line 80, in curves
+    up=chain(e['up_A'],e['up_tA'],z[:2*NUP].reshape(-1,2),weights[i][0]*z[-1])
+                                                          ~~~~~~~~~~~~~^~~~~~
+TypeError: can't multiply sequence by non-int of type 'numpy.float64'
