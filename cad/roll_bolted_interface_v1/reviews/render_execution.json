@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 81028,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/roll_bolted_interface_v1/render_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm064-render-job-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm064-render-job-render.err",
+      "pid": 42716,
+      "returncode": 0
+    }
+  ]
+}

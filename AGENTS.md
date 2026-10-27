@@ -1,5 +1,7 @@
 # 작업 규칙
 
+- 2026-10-28 ARM064: cad/roll_bolted_interface_v1/README.md/CHECKPOINT.next_stage우선. 현재862/손/16구동원·빔·전기·모터축/명령clock유지. 별도888=ARM063871-옛출력판/Ecarrier2+새19,실제rearcasePCD68/6post·M3x25와outputPCD20/6M3x8·사각빔clamp후보미채택. 새13native rawfalse/연산오류0,실제output/lowerclamp-기존뒤root154.35626405814986/선언head진입32.54791198061669각2와110E시험대2남음. 명목모터원통7/동축참고2는실물결함확정아니나raw유지. 빔한방향끝받침/반대뽑힘마찰미검증,조립native0. 다음출력빔고정+뒤collar/root전체반력unit통합,완료frontunit/615면/PCD/미세코너반복·손빔절삭/모터삭제·몰래이동0.
+
 - 2026-10-28 ARM063: cad/recessed_mounting_root_v1/README.md/selected_check.json/CHECKPOINT.next_stage우선. 현재862/수용손/16구동원·전기·설치유지,별도871=불변865+carrier/cap2+같은형상나사너트4명시X±31→±25.5. 전체counterboreclamp/안쪽rail/앞면pickup반력후보이며미채택. 첫18그룹9기록·오류0(이웃rotor6/cap1·동축참고2)보존뒤carrier1만교정,새17그룹0/0·front16패드밖0,같은cap/체결5·진입4관계승계. 전체구동/외형/토크승인아님. 렌더는공통cap2solid를1로가정해4그림뒤실패·원본보존/마지막그림만복구·공통2저장/native0. 다음실제roll출력판/beam·stator체결과clock/조립을ARM062교정6M3/PCD20/pilot25기준으로설계,완료frontunit/작은코너반복·임의4mm메움·손빔절삭/모터삭제·몰래이동/각도제한0. 과거M3+13/R5/strictfalse보존.
 
 - 2026-10-28 ARM062: cad/mounting_unit_interface_basis_v1/README.md와CHECKPOINT.next_stage우선. 현재862/손/16모터/전기·설치유지,새설치0·참고18. 전체front체결6기능/20mm축진입4의새3native13기록·오류0,실제선정공구충돌과참고교차구별. 공식AK60파일은기존과해시동일·615열린면/0solid. 첫M3분류2는핀2오명칭이며interface_followup이6탭R1.25/핀R1.5로교정,원본보존. 출력면Y-230참고등록에서명목case의4mm는coupling길이아님,실제6탭축을기존plate가막는다. 다음전체clamp/cap/나사너트·root와진입공간및실제출력plate/beam/stator체결설계,임의4mm메움·작은코너수정/손빔절삭/모터삭제·몰래이동/각도제한/ODR축소0. 끝낸3/17참고+615면/1공통·ARM061/입구24/옛M3접합반복0.

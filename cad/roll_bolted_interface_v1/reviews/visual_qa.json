@@ -1,0 +1,16 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/roll_bolted_interface_v1/images/actual_obstructions.png",
+    "cad/roll_bolted_interface_v1/images/before_after.png",
+    "cad/roll_bolted_interface_v1/images/entry_and_capture.png",
+    "cad/roll_bolted_interface_v1/images/mounting_interfaces.png"
+  ],
+  "opaque": true,
+  "no_frame_clipping_observed": true,
+  "whole_hardware_display_counts": [
+    871,
+    888
+  ],
+  "pixels_armvisualunits_not_numerically_replayed": true
+}

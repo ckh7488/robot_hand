@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 85284,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/roll_bolted_interface_v1/check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "check",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm064-check-job-check.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm064-check-job-check.err",
+      "pid": 6252,
+      "returncode": 0
+    }
+  ]
+}

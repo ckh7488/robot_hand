@@ -216,3 +216,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM063 전체앞클램프와지지경로,미채택
 
 [실제후보871](../cad/recessed_mounting_root_v1/README.md). 두체결축±31→±25.5의counterboreclamp와내측rail/앞면pickup을함께설계했다. 첫18그룹9기록보존뒤carrier만교정,새17그룹0/0·front16pad보존. 같은cap/체결5·진입4를승계했고동축nut/bolt참고2·실제roll출력판/beam/stator고정미완과옛실패를남긴다. 현재862/손/16모터·전기위치유지,전체구동/외형승인없음.
+
+## ARM064 실제roll출력/고정체결후보,미채택
+
+[출력판·빔clamp·stator6post](../cad/roll_bolted_interface_v1/README.md). 현재862/손/16모터·빔·전기유지,별도888은실제뒤root와154.35626405814986mm³및선언head진입2가막힌다. 모터명목원통7/동축참고2·110E시험대2원시기록보존,새13native/오류0이다. 한방향빔끝받침/반대뽑힘마찰미검증,전체토크·조립·외형승인없음. 다음출력빔고정과뒤collar/root통합.

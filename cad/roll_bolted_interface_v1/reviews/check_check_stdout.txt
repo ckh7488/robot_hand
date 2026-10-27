@@ -1,0 +1,15 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new19__retained869 16511 49 8
+entry16__retained869 13904 26 2
+entry16__new19 304 24 2
+structural3__source_outer_references2 6 1 0
+roll40__new_elbow_relative 6160 2 0
+roll40__new_forearm_relative 5460 0 0
+roll_minus40__new_elbow_relative 6160 2 0
+roll_minus40__new_forearm_relative 5460 0 0
+combined55__new_elbow_relative 6160 18 0
+combined55__new_forearm_relative 5460 17 0
+combined110__new_elbow_relative 6160 10 2
+combined110__new_forearm_relative 5460 10 0
+complete 13 14 0

@@ -1,0 +1,93 @@
+{
+  "completed": true,
+  "proposal_adopted": false,
+  "raw_clear": false,
+  "current862_replaced": false,
+  "new_hardware_rows": 19,
+  "unchanged869": true,
+  "replaced_prior_proposal_parts": [
+    "Elbow_roll_carrier",
+    "Roll_output_flange"
+  ],
+  "nominal_motor_envelope_records": [
+    {
+      "lead": "arm064_stator_carrier_with_six_posts",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 5235.652652766605
+    },
+    {
+      "lead": "arm064_stator_M3x25_0",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 134.30308594096365
+    },
+    {
+      "lead": "arm064_stator_M3x25_1",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 134.3030859409637
+    },
+    {
+      "lead": "arm064_stator_M3x25_2",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 134.30308594096363
+    },
+    {
+      "lead": "arm064_stator_M3x25_3",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 134.30308594096365
+    },
+    {
+      "lead": "arm064_stator_M3x25_4",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 134.3030859409637
+    },
+    {
+      "lead": "arm064_stator_M3x25_5",
+      "part": "AK_forearm_roll",
+      "material_intersection_mm3": 134.30308594096365
+    }
+  ],
+  "actual_existing_hardware_records": [
+    {
+      "lead": "arm064_output_plate_lower_beam_clamp",
+      "part": "arm063_recessed_clamp_connected_carrier",
+      "material_intersection_mm3": 154.35626405814986
+    }
+  ],
+  "declared_entry_not_selected_tool_records": [
+    {
+      "lead": "arm064_clamp_head_entry_0",
+      "part": "arm063_recessed_clamp_connected_carrier",
+      "material_intersection_mm3": 32.54791198061669
+    },
+    {
+      "lead": "arm064_clamp_head_entry_1",
+      "part": "arm063_recessed_clamp_connected_carrier",
+      "material_intersection_mm3": 32.54791198061669
+    }
+  ],
+  "coaxial_filled_nut_entry_bolt_records": [
+    {
+      "lead": "arm064_clamp_nut_entry_0",
+      "part": "arm064_clamp_M3x12_0",
+      "material_intersection_mm3": 11.309733552923259
+    },
+    {
+      "lead": "arm064_clamp_nut_entry_1",
+      "part": "arm064_clamp_M3x12_1",
+      "material_intersection_mm3": 11.309733552923259
+    }
+  ],
+  "new_structural3_vs_source_outer2_records": [],
+  "new_internal171_records": [],
+  "actual_vendor_solid_repaired": false,
+  "nominal_motor_was_not_excluded_from_raw_native": true,
+  "source_step_clock_is_reference_not_physical_mount_qualification": true,
+  "stator_first_seat_distance_field_is_bbox_end_plane_delta_not_native_contact_area": true,
+  "beam_plate_distance_is_native_DSS_only": true,
+  "positive_axial_beam_stop_one_direction_only": true,
+  "opposite_pullout_preload_friction_strength_unqualified": true,
+  "assembly_native_executed": false,
+  "prior_ARM063_front_tests_repeated": 0,
+  "prior_615face_tap_pin_classification_repeated": 0,
+  "previous_failed_M3plus13_R5_samecord_and_strictfalse_holds_not_resolved": true
+}
