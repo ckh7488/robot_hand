@@ -1,0 +1,98 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\circumferential_layout_v1\check.py", line 9, in <module>
+    import model as p
+  File "D:\robot_hand\cad\circumferential_layout_v1\model.py", line 9, in <module>
+    import proposal as prior
+  File "D:\robot_hand\cad\arm_layout_proposal_v1\proposal.py", line 7, in <module>
+    import module_survey as s
+  File "D:\robot_hand\cad\arm_layout_proposal_v1\module_survey.py", line 9, in <module>
+    import audit as d
+  File "D:\robot_hand\cad\arm_packaging_audit_v1\audit.py", line 11, in <module>
+    import pack_model as a
+  File "D:\robot_hand\cad\compact_turnback_pack_v1\pack_model.py", line 12, in <module>
+    import run_motion as old
+  File "D:\robot_hand\cad\parent_wrist_material_motion_v1\run_motion.py", line 12, in <module>
+    import continuation as n
+  File "D:\robot_hand\cad\coupled_material_continuation_v1\continuation.py", line 13, in <module>
+    import slide_model as s
+  File "D:\robot_hand\cad\whole_cord_sliding_v1\slide_model.py", line 11, in <module>
+    import evidence_render as e
+  File "D:\robot_hand\cad\motor_full_cord_thread_v1\evidence_render.py", line 6, in <module>
+    import check_anchor as k
+  File "D:\robot_hand\cad\motor_full_cord_thread_v1\check_anchor.py", line 6, in <module>
+    import anchor_model as n
+  File "D:\robot_hand\cad\motor_full_cord_thread_v1\anchor_model.py", line 6, in <module>
+    import cord_model as first
+  File "D:\robot_hand\cad\motor_full_cord_thread_v1\cord_model.py", line 11, in <module>
+    import thread_model as t
+  File "D:\robot_hand\cad\whole_line_threading_v1\thread_model.py", line 10, in <module>
+    import details as prior
+  File "D:\robot_hand\cad\biarc_supported_link_v1\details.py", line 6, in <module>
+    import whole_cord as w
+  File "D:\robot_hand\cad\biarc_supported_link_v1\whole_cord.py", line 6, in <module>
+    import link_model as l
+  File "D:\robot_hand\cad\biarc_supported_link_v1\link_model.py", line 10, in <module>
+    import bend_model as b
+  File "D:\robot_hand\cad\support_attachment_basis_v1\bend_model.py", line 7, in <module>
+    import check_motion as k
+  File "D:\robot_hand\cad\material_length_motion_v1\check_motion.py", line 6, in <module>
+    import material_model as a
+  File "D:\robot_hand\cad\material_length_motion_v1\material_model.py", line 7, in <module>
+    import build_contact as b
+  File "D:\robot_hand\cad\contact_housing_link_v1\build_contact.py", line 6, in <module>
+    import contact_solver as s
+  File "D:\robot_hand\cad\contact_housing_link_v1\contact_solver.py", line 10, in <module>
+    import check_entry as prior
+  File "D:\robot_hand\cad\thumb_entry_bend_v1\check_entry.py", line 6, in <module>
+    import entry_model as a
+  File "D:\robot_hand\cad\thumb_entry_bend_v1\entry_model.py", line 7, in <module>
+    import check_pair as prior
+  File "D:\robot_hand\cad\paired_rear_guide_v1\check_pair.py", line 6, in <module>
+    import pair_model as a
+  File "D:\robot_hand\cad\paired_rear_guide_v1\pair_model.py", line 2, in <module>
+    from survey_pair import a,m,g,c,p,np,cq,ROOT,HERE
+  File "D:\robot_hand\cad\paired_rear_guide_v1\survey_pair.py", line 7, in <module>
+    import arc_rod as prior
+  File "D:\robot_hand\cad\elastic_housing_link_v1\arc_rod.py", line 11, in <module>
+    import feed_model as a
+  File "D:\robot_hand\cad\wrist_external_feed_v1\feed_model.py", line 6, in <module>
+    from feed_survey import m,g,c,p,np,cq,ROOT,HERE
+  File "D:\robot_hand\cad\wrist_external_feed_v1\feed_survey.py", line 7, in <module>
+    from outlet_survey import m,g,c,p,np,cq
+  File "D:\robot_hand\cad\wrist_outlet_route_v1\outlet_survey.py", line 7, in <module>
+    from wrist_survey import m,g,c,p,np,cq
+  File "D:\robot_hand\cad\wrist_housing_guide_v1\wrist_survey.py", line 7, in <module>
+    import route_solver as m
+  File "D:\robot_hand\cad\long_housing_route_v1\route_solver.py", line 11, in <module>
+    import retention_model as prior
+  File "D:\robot_hand\cad\sheath_retention_v1\retention_model.py", line 10, in <module>
+    import service as s
+  File "D:\robot_hand\cad\distal_terminal_assembly_v1\service.py", line 7, in <module>
+    import selected_check as k
+  File "D:\robot_hand\cad\thumb_sheath_terminal_v2\selected_check.py", line 5, in <module>
+    import selected_model as m
+  File "D:\robot_hand\cad\thumb_sheath_terminal_v2\selected_model.py", line 2, in <module>
+    from offset_model import *
+  File "D:\robot_hand\cad\thumb_sheath_terminal_v2\offset_model.py", line 7, in <module>
+    import distal_model as old
+  File "D:\robot_hand\cad\thumb_sheath_terminal_v1\distal_model.py", line 11, in <module>
+    import radial_model as base
+  File "D:\robot_hand\cad\thumb_guide_assembly_v2\radial_model.py", line 2, in <module>
+    from probe import *
+  File "D:\robot_hand\cad\thumb_guide_assembly_v2\probe.py", line 7, in <module>
+    import guide_candidate3 as g
+  File "D:\robot_hand\cad\thumb_root_guide_v1\guide_candidate3.py", line 2, in <module>
+    from guide_candidate2 import *
+  File "D:\robot_hand\cad\thumb_root_guide_v1\guide_candidate2.py", line 2, in <module>
+    from guide_model import *
+  File "D:\robot_hand\cad\thumb_root_guide_v1\guide_model.py", line 11, in <module>
+    import route_model as g
+  File "D:\robot_hand\cad\thumb_tendon_route_v1\route_model.py", line 14, in <module>
+    c,b,m,p,cq=drive.c,drive.b,drive.m,drive.p,drive.cq
+               ^^^^^^^
+AttributeError: module 'candidate2' has no attribute 'c'

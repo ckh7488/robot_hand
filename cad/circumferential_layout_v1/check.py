@@ -1,0 +1,108 @@
+"""Native checks of this separate changed-axis topology, not prior-layout replay."""
+import sys
+import time
+import importlib.util
+from itertools import combinations
+from pathlib import Path
+
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+spec = importlib.util.spec_from_file_location('_arm053_layout_model', Path(__file__).with_name('model.py'))
+p = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(p)
+
+n, np, d, ROOT, HERE = p.n, p.np, p.d, p.ROOT, p.HERE
+from OCP.OSD import OSD_ThreadPool
+from OCP.BRepExtrema import BRepExtrema_DistShapeShape
+
+
+def main():
+    out = HERE/'reviews/check.json'
+    assert not out.exists()
+    started = time.monotonic()
+    frames, source = d.inputs()
+    print('building separate four-bank cage', flush=True)
+    moved, new, unchanged, contract = p.assemble(frames)
+    for rel in ['cad/circumferential_layout_v1/model.py', 'cad/circumferential_layout_v1/check.py',
+                'cad/arm_layout_proposal_v1/proposal.py', 'cad/arm_layout_proposal_v1/module_survey.py',
+                'cad/arm_layout_proposal_v1/reviews/module_survey_corrected.json',
+                'cad/modular_roots_v9/design.json']:
+        source[rel] = n.m.drive.sha(ROOT/rel)
+    assert OSD_ThreadPool.DefaultPool_s().NbThreads() == 1
+    scene = n.a.a.prior.export(new, HERE/'generated/cage')
+    raw = dict(completed=False, source_sha256=source, scene=scene, placements=contract,
+        current862_installation_replaced=False, separate_proposal_rows=872,
+        original_rack_removed_only_in_separate_proposal=True, new_hardware_rows=11,
+        retained_moved_rows=409, unchanged_rows=452, remote_motors=16,
+        installation_axes_rotated=16, commanded_motor_angles_changed=0,
+        canonical_motor_output_axis='+X', proposed_motor_output_axis='+Y',
+        nominal_radius_mm=p.RADIUS,
+        radius_basis='39.5mm actual roll-stator outer radius +32.1mm worst inward projection of the full stored normal module bundle about canonical referenceZ-3.9. This is a chosen nominal arrangement from rigid projection, not a required minimum or supplier/mechanical clearance specification.',
+        carrier_basis='Four annular outer linksR64..68 and four actual flange-seat pads per row, original3mm M3 flange stack, four longitudinal diagonal rails, two lower44x42 beam collars and detachable caps atY-204.5/-162.5.',
+        reaction_path='Original adapter flange/two M3 -> radial pads/outer links/longitudinal rails -> two diagonal bridges/lower collars -> caps/four M3/four nuts -> actual Forearm_box_beam -> current Roll_output_flange. Nominal surfaces only; axial holding/friction/preload/strength unverified.',
+        long_housing_cords_present=False, existing64_electrical_shapes_moved_not_dynamic_harness_approval=True,
+        same_module_internal_pairs_retested=False, unchanged_arm_hand_internal_pairs_retested=False,
+        inherited_elbow110_bench_structure_obstruction_resolved=False,
+        raw_executed_clear=False, adopted=False, whole_arm_drive_or_exterior_approved=False,
+        native={}, inter_module_groups=[], motion=[], contact_distances=[],
+        original_remote_bbox_mm=p.prior.bounds([z for z in frames['forearm'] if z['source_group'] != 'arm']),
+        proposed_remote_bbox_mm=p.prior.bounds(moved+new),
+        reporting_floor_mm3=.001, boolean_tolerance_mm=1e-6, OCC_pool_threads=1)
+    def save():
+        n.a.save(out, raw)
+    save()
+    def run(label, left, right):
+        test = n.c.material(left, right)
+        raw['native'][label] = test
+        save()
+        print(label, test['exact_pairs'], len(test['overlaps']), flush=True)
+    all_unchanged = [z for rows in unchanged.values() for z in rows]
+    run('moved409__unchanged452_neutral', moved, all_unchanged)
+    run('new11__retained861_neutral', new, moved+all_unchanged)
+    for i, row in enumerate(new[:-1]):
+        run('new_internal_'+str(i), [row], new[i+1:])
+    groups = {z['module']: [] for z in contract}
+    for row in moved:
+        groups[row['proposal_module']].append(row)
+    for left, right in combinations(groups, 2):
+        test = n.c.material(groups[left], groups[right])
+        raw['inter_module_groups'].append(dict(left=left, right=right, native=test))
+        if test['overlaps'] or test['operation_failures']:
+            print('inter_module', left, right, len(test['overlaps']), flush=True)
+        save()
+    arm = n.p.read(ROOT/'cad/modular_roots_v9/design.json')['arm']
+    for name, angles, targets in [
+        ('roll_40', [0, 40, 0, 0], ['fixed', 'elbow']),
+        ('flex_-35', [0, 0, -35, 0], ['wrist', 'hand']),
+        ('deviation_20', [0, 0, 0, 20], ['hand']),
+        ('elbow_110', [110, 0, 0, 0], ['fixed'])]:
+        T = d.transforms(angles, arm)
+        left = [dict(z, shape=n.g.original.transform(z['shape'], T['forearm'])) for z in moved+new]
+        for target in targets:
+            right = [dict(z, shape=n.g.original.transform(z['shape'], T[target])) for z in unchanged[target]]
+            run(name+'__changed420__'+target, left, right)
+        raw['motion'].append(dict(id=name, angles_deg=angles, compared_frames=targets, transforms=T))
+        save()
+    beam = next(z['shape'] for z in unchanged['forearm'] if z['name'] == 'Forearm_box_beam')
+    for row in new:
+        if row['name'] != 'arm053_four_bank_cage' and not row['name'].startswith('arm053_beam_cap_'):
+            continue
+        query = BRepExtrema_DistShapeShape(row['shape'].wrapped, beam.wrapped)
+        query.SetMultiThread(False)
+        query.Perform()
+        assert query.IsDone()
+        raw['contact_distances'].append(dict(name=row['name'], actual_distance_to_beam_mm=query.Value()))
+    tests = list(raw['native'].values())+[z['native'] for z in raw['inter_module_groups']]
+    agg = d.k.flat(tests)
+    raw.update(completed=True, native_groups=len(tests), pairs_in_scope=agg['pairs_in_scope'],
+        AABB_native_pairs=agg['exact_pairs'], overlap_records=len(agg['overlaps']),
+        operation_failures=len(agg['operation_failures']),
+        raw_executed_clear=not agg['overlaps'] and not agg['operation_failures'],
+        input_hash_guard=all(n.m.drive.sha(ROOT/f) == h for f, h in source.items()),
+        elapsed_s=time.monotonic()-started)
+    save()
+    print('completed', raw['native_groups'], raw['overlap_records'], flush=True)
+
+
+if __name__ == '__main__':
+    main()

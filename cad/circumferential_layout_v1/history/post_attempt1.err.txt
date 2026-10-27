@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\circumferential_layout_v1\postprocess.py", line 136, in <module>
+    main()
+  File "D:\robot_hand\cad\circumferential_layout_v1\postprocess.py", line 102, in main
+    loaded = n.c.load(selected, source)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\palm_motor_layout_v1\check.py", line 62, in load
+    result.append(dict(row, shape=cq.importers.importStep(str(ROOT/row['step'])).val()))
+                                                                   ~~~^^^^^^^^
+KeyError: 'step'

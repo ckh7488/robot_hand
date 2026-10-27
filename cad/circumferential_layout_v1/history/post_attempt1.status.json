@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "pid": 64152,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/circumferential_layout_v1/postprocess.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "post",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm053-post-job-post.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm053-post-job-post.err",
+      "pid": 69092,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: post failed\n"
+}
