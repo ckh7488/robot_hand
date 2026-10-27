@@ -1,0 +1,41 @@
+{
+  "target_commit": "371e442f6d2a880489f3a4f68c629d75e22b210a",
+  "original_source_records": [
+    {
+      "lead": "whole_cord_0_0_motor_motor_anchor_tail",
+      "part": "whole_cord_0_1_motor_motor_wrap",
+      "material_intersection_mm3": 0.008502357297455174
+    }
+  ],
+  "clean_clone_STEP_records": [
+    {
+      "lead": "whole_cord_0_0_motor_motor_anchor_tail",
+      "part": "whole_cord_0_1_motor_motor_wrap",
+      "material_intersection_mm3": 0.00849969349568782
+    },
+    {
+      "lead": "whole_cord_1_0_motor_motor_anchor_tail",
+      "part": "whole_cord_1_1_motor_motor_wrap",
+      "material_intersection_mm3": 0.008498911044890284
+    }
+  ],
+  "extra_record_identities": [
+    {
+      "pair": {
+        "lead": "whole_cord_1_0_motor_motor_anchor_tail",
+        "part": "whole_cord_1_1_motor_motor_wrap",
+        "material_intersection_mm3": 0.008498911044890284
+      },
+      "same_physical_cord": 1,
+      "adjacent_CAD_segments": [
+        0,
+        1
+      ]
+    }
+  ],
+  "cause_determined": false,
+  "extra_pair_source_STEP_common_comparison_performed": false,
+  "target_clone_modified": false,
+  "whole_native_groups_replayed_for_diagnosis": 0,
+  "original_thresholds_and_results_preserved": true
+}

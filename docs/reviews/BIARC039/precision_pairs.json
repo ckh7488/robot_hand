@@ -1,0 +1,29 @@
+{
+  "completed": true,
+  "target_commit": "371e442f6d2a880489f3a4f68c629d75e22b210a",
+  "passed": true,
+  "pairs": [
+    {
+      "pair": {
+        "group": "internal",
+        "lead": "whole_cord_0_0_motor_motor_anchor_tail",
+        "part": "whole_cord_0_1_motor_motor_wrap",
+        "material_intersection_mm3": 0.008502357297455174
+      },
+      "STEP_STEP_adaptive_values": [
+        0.00849845576722507,
+        0.3677279538068126,
+        13.864817490529575,
+        -275.1805473616823,
+        -113.57205057265156
+      ],
+      "max_numeric_difference": 1.2127958939345262e-06,
+      "matched": true
+    }
+  ],
+  "preplanned": true,
+  "native_group_reruns": 0,
+  "adaptive_epsilon": 1e-10,
+  "absolute_comparison_tolerance": 1e-05,
+  "original_basic_native_values_preserved": true
+}
