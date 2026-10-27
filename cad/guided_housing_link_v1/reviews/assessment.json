@@ -1,0 +1,73 @@
+{
+  "completed": true,
+  "candidate_adopted": false,
+  "hand_rows": 397,
+  "packaging_rows": 385,
+  "electrical_rows": 64,
+  "neutral_arm_rows": 10,
+  "wrist_hardware_rows": 6,
+  "new_hardware_parts": 0,
+  "new_CAD_route_shapes": 36,
+  "physical_housings": 2,
+  "physical_cords": 2,
+  "CAD_sections_per_physical_line": 9,
+  "previous_geometry_unchanged": 4454,
+  "static_native_poses": 1,
+  "remaining_native_poses_not_executed": 4,
+  "release_native_executed": false,
+  "analytic_length_cases": 9,
+  "analytic_lines": [
+    {
+      "line": 0,
+      "total_length_candidate_mm": 614.260840215544,
+      "guide_slide_range_mm": [
+        -49.30083026757234,
+        0.0
+      ],
+      "maximum_length_residual_mm": 9.993073035730049e-11,
+      "sampled_distal_minimum_curvature_radius_mm": 0.5041577580439945
+    },
+    {
+      "line": 1,
+      "total_length_candidate_mm": 582.7155438989669,
+      "guide_slide_range_mm": [
+        -4.883524123712618,
+        0.0
+      ],
+      "maximum_length_residual_mm": 3.637978807091713e-12,
+      "sampled_distal_minimum_curvature_radius_mm": 0.4665341567437354
+    }
+  ],
+  "native_scope": {
+    "pairs_in_scope": 31662,
+    "AABB_native_pairs": 311,
+    "overlap_records": 45,
+    "operation_failures": 0
+  },
+  "external_records": 36,
+  "internal_records": 9,
+  "external_physical_line_obstacle_pairs": 30,
+  "full_route_rejected_before_parent_native": true,
+  "geometry_regular_offset_or_supplier_bend_approved": false,
+  "observed_distal_radius_below_housing_outer_radius_mm": 1.5,
+  "own_cord_material_intrusion_pairs": [
+    {
+      "lead": "guided_housing_0_5",
+      "part": "guided_cord_0_5",
+      "material_intersection_mm3": 9.070129284096474
+    },
+    {
+      "lead": "guided_housing_1_5",
+      "part": "guided_cord_1_5",
+      "material_intersection_mm3": 9.241544541679634
+    }
+  ],
+  "actual_material_on_both_sides_of_wrist_guide": true,
+  "constant_total_length_not_sufficient_for_routing": true,
+  "curve_coefficients_are_not_installed_supports": true,
+  "whole_hand_drive_complete": false,
+  "threading_installation_friction_pretension_wrist_motion_or_load_verified": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "inherited_HOUSING027_initial_core_passed": false,
+  "inherited_HOUSING027_precision_pair_passed": true
+}

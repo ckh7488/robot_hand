@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\guided_housing_link_v1\check_link.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\guided_housing_link_v1\check_link.py", line 24, in main
+    q=target*factor;solutions=[a.solve(q,i,lengths[i]) for i in [0,1]]
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\guided_housing_link_v1\guided_link_model.py", line 50, in solve
+    assert brackets,'No constant-length solution in this bounded family'
+           ^^^^^^^^
+AssertionError: No constant-length solution in this bounded family

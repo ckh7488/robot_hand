@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\guided_housing_link_v1\details_render.py", line 56, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\guided_housing_link_v1\details_render.py", line 36, in main
+    before=scene(local,context);after=scene(fresh+commonmeta,context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\guided_housing_link_v1\details_render.py", line 34, in scene
+    path=ROOT/z['mesh'];assert r.sha(path)==z['sha256_stl'];source[z['mesh']]=z['sha256_stl'];parts.append(dict(name=z['name'],body='palm',mesh_path=path,points=r.read_stl_points(path),color=z.get('color',[.57,.63,.69]),alpha=alpha,neutral_inverse=np.eye(4)))
+              ~^^^^^^^^
+KeyError: 'mesh'
