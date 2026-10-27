@@ -1,0 +1,91 @@
+{
+  "target_commit": "7eb2aaa665f2bfd951a5c101b54b5515d9bdd691",
+  "initial_core_passed": false,
+  "native_groups": 36,
+  "native_matches": 35,
+  "reproduced_overlap_records": 42,
+  "source_STEP_geometry": 39,
+  "geometry_matches": 39,
+  "two_cord_route_states": 3,
+  "route_state_matches": 3,
+  "installation_contract": {
+    "matched": true,
+    "relocated_fixed_rows": 16,
+    "clocked_output_rows": 7,
+    "PCD12_axes": 4,
+    "maximum_difference": 0.0,
+    "original_M3_stack_mm": 1.0
+  },
+  "attachment": {
+    "matched": true,
+    "actual": {
+      "distances": [
+        {
+          "part": "thumb_ip_actuator_wire_guide_base",
+          "distance_mm": 0.0
+        },
+        {
+          "part": "thumb_ip_actuator_adapter",
+          "distance_mm": 1.0999999999999943
+        },
+        {
+          "part": "thumb_ip_actuator_rack_screw_1",
+          "distance_mm": 0.0
+        },
+        {
+          "part": "thumb_ip_actuator_rack_screw_2",
+          "distance_mm": 0.0
+        },
+        {
+          "part": "thumb_ip_actuator_rack_nut_1",
+          "distance_mm": 8.0
+        },
+        {
+          "part": "thumb_ip_actuator_rack_nut_2",
+          "distance_mm": 8.0
+        }
+      ],
+      "pads": [
+        {
+          "original_seat_world_mm": [
+            71.0,
+            -126.0,
+            -13.0
+          ],
+          "retained_seat_outside_new_frame_mm3": 0.0,
+          "outside_solids": 0
+        },
+        {
+          "original_seat_world_mm": [
+            71.0,
+            -126.0,
+            13.0
+          ],
+          "retained_seat_outside_new_frame_mm3": 0.0,
+          "outside_solids": 0
+        }
+      ],
+      "native_distance_queries": 6,
+      "native_pad_difference_queries": 2,
+      "scope": "Six actual stack distances and two original-seat ring inclusion queries; no force/preload/thread/tool approval or replay of36groups."
+    },
+    "maximum_difference": 0.0
+  },
+  "saved_contact_classification_matched": true,
+  "wrap_branch_diagnostic_matched": true,
+  "inherited11_native_records_retested": false,
+  "previous_ARM051_to_ARM056_LINK050_replayed": false,
+  "manifest_files": 14148,
+  "frozen_files": 222,
+  "differences": [
+    "command_-90__cords_internal"
+  ],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM057_7eb2aaa665f2",
+  "review_source_sha256": "96397ef62b9d2a38669463e73896ad2c2606c324035863ced387d0e6ab860967",
+  "proposal_adopted": false,
+  "current_installed_hardware_rows": 862,
+  "separate_proposal_rows": 872,
+  "local_command_states_not_same_long_material_motion": true,
+  "whole_arm_drive_or_exterior_approved": false,
+  "same_agent_review_not_independent": true
+}

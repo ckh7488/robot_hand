@@ -1,0 +1,51 @@
+{
+  "target_commit": "7eb2aaa665f2bfd951a5c101b54b5515d9bdd691",
+  "initial_core_passed": false,
+  "differences": [
+    {
+      "id": "command_-90__cords_internal",
+      "source_native": {
+        "pairs_in_scope": 66,
+        "exact_pairs": 8,
+        "overlaps": [
+          {
+            "lead": "arm057_cord_0_0",
+            "part": "arm057_cord_0_1",
+            "material_intersection_mm3": 0.0084984551708297
+          },
+          {
+            "lead": "arm057_cord_1_0",
+            "part": "arm057_cord_1_1",
+            "material_intersection_mm3": 0.008498455067449253
+          }
+        ],
+        "operation_failures": []
+      },
+      "STEP_native": {
+        "pairs_in_scope": 66,
+        "exact_pairs": 4,
+        "overlaps": [
+          {
+            "lead": "arm057_cord_1_0",
+            "part": "arm057_cord_1_1",
+            "material_intersection_mm3": 0.008498439885171738
+          }
+        ],
+        "operation_failures": []
+      },
+      "common_pair_max_volume_difference_mm3": 1.5182277515041198e-08
+    }
+  ],
+  "metadata_only_same_physical_line": 0,
+  "adjacent_segment_indices": [
+    0,
+    1
+  ],
+  "source_records": 43,
+  "STEP_records": 42,
+  "cause_confirmed": false,
+  "new_native_or_precision_queries": 0,
+  "threshold_CAD_or_clone_changed": false,
+  "same_cord_classification_does_not_override_false": true,
+  "whole_hand_or_material_motion_failure_not_inferred": true
+}
