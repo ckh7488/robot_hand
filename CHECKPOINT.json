@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "c7afca5fe7109d7752758b010415d0373bf68906",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
   "next_stage": "ARM053 four-bank/four-axial-row proposal is unadopted and current862 hardware remains unchanged. Read cad/circumferential_layout_v1/README.md, reviews/check.json/evidence.json and docs/reviews/ARM053 before further work. All16 installation axes rotate old canonical+X world-Z to proposed+Y; actual motor command angles stay0. Full409 existing associated rows and new11 cage hardware form a separate872-row scene; no vendor shape scaling or accepted hand changes. Chosen centre radius71.6=39.5 roll case radius+32.1 normal-bundle inward projection is only a nominal projection choice, not a real full-arm clearance proof; rear carrier plate was missed by that proxy and is actually hit. 4azimuth0/90/180/270 and rowsY-268/-226/-184/-142 use42mm axial pitch, and12intermodule groups report55 repeated overlap records. New138native groups647994pairs749AABB169records0operations are rawfalse: neutral409-vs45211,newcage-vs86163,intermodule55,roll40-vselbow30,elbow110-vsfixed10; wrist-35/wrist-hand/deviation20 changed-body groups0. Maximum cage/Elbow_roll_carrier479.53766168296784mm3; neutral indexMCP wireguide/carrier376.49177445531194 andadapter/carrier335.53766168296846mm3. These records are not169independent defects or all-layout impossibility. Actual same beam collars/contact distances3 are0, not preload/friction/strength/assembly approval. Remote bbox198.5wide178.55axial179.81high versus original94.81/338/185.5000001mm; same full rigid hardware scope, not whole-arm silhouette or humanlike exterior acceptance. Representative real two R40 free exits transform to(110.5,-176,-65.5)/(110.5,-176,-85.5),tangent-Y, while proposed motor outputaxis+Y. Dots to hand rear-port directions-.9654570227700061/-.9256288106736744 mean mouths initially point away; no whole long line/constant-length route was solved and this does not prove such routing impossible. First correct distribution/orientation from actual complete packet axial extents and transformed output/guide ports. Prepare a separate8circumferential-directions x2axial-stations alternative rather than repeating4bank42pitch or shaving individual cage contacts. Determine its axial positions from actual elbow carrier and wrist moving materials, not roll cylinder or incomplete AABB-only acceptance. For representative thumbIP consider reversing the whole motor installation and its real M3 seat only in a declared separate proposal so existing R40 mouths point handward; do not relabel a motor command angle as an installation change, shrink OD/R, or silently detach/omit the actual guides. Build real support/reaction to rotating output beam and check full associated geometry, natural arm movement/assembly and transmission directions before replacing current installed placement or inheriting old wires/assembly. Keep accepted hand/body/axes/lengths and16sources. No ARM051/052 repeated closednative/contacts or LINK050 restart, no elbowward bus, fake support/tensioner, hand cuts or angle restrictions. First bare import model conflicted with old model/candidate2 during import before input load/newCAD/native; exact failed source/error preserved and only unique-path import fixed, model byte-identical. First post saved3whole/detail views then missing arm step metadata stopped common generation; unchanged native STEP already hashed bycheck supplied in recover_post, only missing2unsavedport records/common pair/picture made. Original3image hashes unchanged; initial post completedfalse/exitguard not recorded, recoverytrue; no fullnative/wholeview rerun. Full long materials/dynamic or mated wires/all20torque links/continuous orcompoundarm/upperarm/forces/strength/friction/preload/physical/manufacturing/exterior not approved. Preserve all previous strictfalse and trim/inclusion holds. Supplier certification is not an endless CAD/video gate.",
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM053_c7afca5fe710",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "Two neutral groups,carrier internal and any other positive/failure new-internal groups,all6changed-body pose groups,allpositive/failure intermodule groups and first pair each row.11sourceSTEPmetrics/16placements409names/3contacts/2realports. Otheremptygroups,renderpixels,alltrimBoolean,wholematerials/physical/drive/exterior not replayed or approved.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,9 +1026,9 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/circumferential_layout_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
-  "post_commit_proposal_placements_reproduced": null,
-  "post_commit_proposed_attachment_distances_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
+  "post_commit_proposal_placements_reproduced": true,
+  "post_commit_proposed_attachment_distances_reproduced": true,
   "inherited_ARM052_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "6ca251b456e8e79ec56b42d6b8ab22fb029d0028",
@@ -1084,5 +1084,6 @@
     "post_commit_proposal_placements_reproduced": true,
     "post_commit_proposed_attachment_distances_reproduced": true
   },
-  "proposal_motor_command_angles_changed": 0
+  "proposal_motor_command_angles_changed": 0,
+  "post_commit_transformed_real_ports_reproduced": true
 }
