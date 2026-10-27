@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\elastic_housing_link_v1\check_elastic.py", line 35, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\elastic_housing_link_v1\check_elastic.py", line 21, in main
+    q=target*factor;s=[a.solve(q,i,flex,yaw,previous[i]) for i in [0,1]];case=dict(id=j,factor=factor,wrist_flex_deg=flex,wrist_deviation_deg=yaw,angles_deg=q.tolist(),solutions=s,admissible=all(v['admissible_endpoint_solution'] for v in s));r['analytic_cases'].append(case);p.write(out,r);print('analytic',j,case['admissible'],[(v['solver_message'],v['endpoint_position_residual_mm'],v['minimum_arc_radius_mm']) for v in s],flush=True)
+                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\functional_motion_v3\audit.py", line 28, in write
+    temp=p.with_suffix(p.suffix+'.partial');temp.write_text(json.dumps(value,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n',encoding='utf-8');temp.replace(p)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable

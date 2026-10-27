@@ -1,0 +1,70 @@
+{
+  "completed": true,
+  "new_installed_hardware_rows": 0,
+  "housing_pieces_per_physical_line": 23,
+  "cord_pieces_per_physical_line": 23,
+  "new_CAD_rows": 92,
+  "physical_housings": 2,
+  "physical_middle_cords": 2,
+  "old_geometry_files_unchanged": 4546,
+  "native_poses_completed": 1,
+  "planned_native_poses": 5,
+  "analytic_pose_count": 11,
+  "analytic_solutions": 22,
+  "native_candidate_clear": false,
+  "hand_overlap_records": 5,
+  "internal_overlap_records": 14,
+  "pairs_in_scope": 83490,
+  "AABB_native_pairs": 403,
+  "operation_failures": 0,
+  "upstream_allocation_numerical_bounds_mm": [
+    300,
+    460
+  ],
+  "active_allocation_bounds": [
+    {
+      "case_id": 0,
+      "physical_line": 0,
+      "upstream_length_mm": 460.0
+    },
+    {
+      "case_id": 8,
+      "physical_line": 0,
+      "upstream_length_mm": 460.0
+    },
+    {
+      "case_id": 9,
+      "physical_line": 0,
+      "upstream_length_mm": 460.0
+    },
+    {
+      "case_id": 10,
+      "physical_line": 0,
+      "upstream_length_mm": 459.9999999999999
+    }
+  ],
+  "minimum_radius_range_mm": [
+    13.645482874198882,
+    30.172564738551962
+  ],
+  "guide_sliding": [
+    {
+      "physical_line": 0,
+      "relative_to_open_range_mm": [
+        -103.8687148434164,
+        0.0
+      ]
+    },
+    {
+      "physical_line": 1,
+      "relative_to_open_range_mm": [
+        -63.48373793228035,
+        2.0588369763265177
+      ]
+    }
+  ],
+  "gravity_twist_material_contact_friction_force_or_pretension_verified": false,
+  "mesh_convergence_or_global_minimum_verified": false,
+  "whole_hand_drive_complete": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true
+}
