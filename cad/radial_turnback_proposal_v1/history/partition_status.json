@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 84572,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/radial_turnback_proposal_v1/partition.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "partition",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm055-partition-job-partition.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm055-partition-job-partition.err",
+      "pid": 87084,
+      "returncode": 0
+    }
+  ]
+}

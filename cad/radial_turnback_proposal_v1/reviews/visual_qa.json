@@ -1,0 +1,24 @@
+{
+  "new_native_groups": 0,
+  "whole_hardware_counts": [
+    872,
+    872,
+    872,
+    872,
+    862,
+    872
+  ],
+  "pixel_matrix_and_arm_unit_numeric_replay": false,
+  "all_whole_hardware_opaque": true,
+  "exterior_accepted": false,
+  "completed": true,
+  "clamp_detail_is_explicit_12_part_subset": true,
+  "no_frame_clipping_observed": true,
+  "viewed_images": [
+    "planes_before_after.png",
+    "current_proposal.png",
+    "clamp_detail.png",
+    "actual_block.png"
+  ],
+  "common_red_separate_zoom_scale": true
+}
