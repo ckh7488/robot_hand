@@ -1,0 +1,22 @@
+{
+  "target_commit": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
+  "initial_core_passed": true,
+  "native_groups": 19,
+  "native_matches": 19,
+  "reproduced_obstruction_records": 133,
+  "FK_states": 11,
+  "FK_rows_per_state": 10,
+  "FK_matches": 11,
+  "body_lists": 5,
+  "body_list_matches": 5,
+  "actual_post_face_distances": 4,
+  "distance_matches": 4,
+  "manifest_files": 13762,
+  "frozen_files": 222,
+  "differences": [],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM051_dfc8dbdc620e",
+  "review_source_sha256": "6606fb7dce0c9ef425b8b6997d6f020dca674f52ea02cb49fe54bd57510a77bc",
+  "LINK050_replayed": false,
+  "whole_arm_or_drive_or_exterior_approved": false,
+  "same_agent_review_not_independent": true
+}
