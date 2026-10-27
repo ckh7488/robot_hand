@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\oriented_fastener_entry_v1\render_evidence.py", line 81, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\oriented_fastener_entry_v1\render_evidence.py", line 56, in main
+    r.sheet([(label,render(s,view,850)) for (label,_),s in zip(states,ss)],2,850,
+                    ^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\oriented_fastener_entry_v1\render_evidence.py", line 44, in render
+    return r.render_one(s,[0.]*20,'v',{'v':v},size,engine)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\gesture_hand_v3\render_gestures.py", line 255, in render_one
+    raise ValueError("CAD reaches the image border; refusing a clipped panel")
+ValueError: CAD reaches the image border; refusing a clipped panel

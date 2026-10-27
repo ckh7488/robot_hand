@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "no_unintended_frame_clipping_observed": true,
+  "old_common_evidence_label_checked": true,
+  "images_viewed": [
+    "cad/oriented_fastener_entry_v1/images/bench_before_after.png",
+    "cad/oriented_fastener_entry_v1/images/oriented_entry.png",
+    "cad/oriented_fastener_entry_v1/images/packet_fastener_block.png",
+    "cad/oriented_fastener_entry_v1/images/packet_restoration.png"
+  ],
+  "pixels_and_armvisualunits_not_numerically_replayed": true,
+  "opaque": true,
+  "uninstalled_screw2_not_shown": true,
+  "first_border_guard_failure_preserved": true
+}

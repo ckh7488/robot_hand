@@ -1,0 +1,40 @@
+{
+  "completed": true,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "new_hardware_geometry": 0,
+  "conditional_support_bench22_complete": true,
+  "front2_tilted_bolt_samples": 60,
+  "rear4_bolt_samples": 28,
+  "output6_bolt_samples": 18,
+  "new_bench_samples": 106,
+  "first_packet_body20_samples": 11,
+  "first_packet_nut2_samples": 6,
+  "first_packet_screw_entry_failed_samples": 1,
+  "new_groups": 124,
+  "pairs_in_scope": 109992,
+  "AABB_native_pairs": 225,
+  "overlap_records": 1,
+  "operation_failures": 0,
+  "blocked_first_packet_screw": [
+    {
+      "lead": "index_mcp_actuator_rack_screw_1",
+      "part": "index_mcp_actuator_base_nuts",
+      "material_intersection_mm3": 0.36207124135856594
+    }
+  ],
+  "complete_restored_packets": 0,
+  "assumed_nonpacket_rows": 478,
+  "actually_added_packet_rows": 22,
+  "conditional_present_rows": 500,
+  "pending_packet_rows": 386,
+  "first_render_border_guard_failure_preserved": true,
+  "first_common_scalar_not_saved": true,
+  "first_pose2_common1_exports_saved_and_reused": true,
+  "recovery_native_Boolean_queries": 0,
+  "recovery_common_Boolean_queries": 0,
+  "geometry_exports_repeated": 0,
+  "first_render_planned_absent_screw_display_not_executed_and_corrected": true,
+  "inherited_ARM065_common1_topology_mismatch_and_previous_strictfalse_holds": true,
+  "full_factory_continuous_tools_threadtorque_strength_preload_friction_whole_drive_physical_exterior_approved": false
+}
