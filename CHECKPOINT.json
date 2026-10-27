@@ -1,10 +1,10 @@
 {
-  "id": "PAIR034",
-  "candidate": "cad/paired_rear_guide_v1",
+  "id": "ENTRY035",
+  "candidate": "cad/thumb_entry_bend_v1",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/PAIR034.manifest.json",
-  "previous_checkpoint": "ELASTICA033",
-  "status": "Real one-solid paired rear S channels replace FEED031 body only.16new static/30new hardware entry/10prescribed220mm leading-feed references+union-space clear.Whole motor-to-thumb flexiblelink and thenarentry unresolved;exterior/force notapproved.",
+  "manifest": "checkpoints/ENTRY035.manifest.json",
+  "previous_checkpoint": "PAIR034",
+  "status": "Upper clamp jaw replaced by actual one-solid R20/90deg entry elbow.New8neutral-wrist handstatic/49conditional bench+handassembly/8prescribed100mmleadinghousingfeed clear.Hand397/pack385/elect64/arm10/PAIR6 maintained.Wholeflexiblelink/force/exterior unfinished.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -15,10 +15,10 @@
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
   "post_commit_results_reproduced": false,
-  "post_commit_review_target": "80d039a799bf4892a9783342aa03dd5fd9344339",
-  "post_commit_review_report": "docs/reviews/PAIR034/README.md",
-  "post_commit_reproduction_scope": "ExactSHAcleanclone41native(internal1+4posesx4+assembly12+feedunion3+3feedx3),7adaptive source/STEP abs1e-5,3seats/6feedcontainment.5713closure/222frozen,cleanclone,OCC1,sameagent.Not all16static/30assembly/10feed/render/friction/elasticfeeding/fullflexiblelink/forces/physical.Exterior unaccepted,thenarentry unresolved.Inherited comparisons untouched.passed=False,differences=['feed_containment_9_0', 'feed_containment_9_1']. Sameunchangedclone last2feedcontainment diagnostic:source/source cut0 vs source/STEP common approx0 while both referencevolume1263.077326376mm3;3000materialpoint classifications match/analyticintervalsubset;allboundary STEP Boolean inclusion unresolved.Originalcorefalse/twofull-volume outside results preserved.No41native/7metrics/static/service/render repeat.",
-  "next_stage": "Close PAIR034 local16new static/30hardware entry/10prescribed220leading-housing feed+union bound;not whole650link/actual friction feeding. New rearports(90/110,-178.729833462,-3/2),+Y;front(100,-4,-3/2) unchanged;guideH.Preserve397hand/385pack/64elect/10arm;replace FEED031body/local4 only,retaincap/4M2. Read actual thenar common/terminalentry first and design needed actual distal bending/separation support onthumb_mcp/ferrule/jaw attachment/contact,then assembly/housingfeed.Recheckchangedparts.Not freeindependentrod/650/460boundary/radiussearch;no handcut/motormove/ODshrink/anglelimit/elbowbus. Motor-to-newrear flexible spans and front-to-thumb stillmissing;whole length/sliding/cordthreading/adjustment/preload/parent+wristgrasp-release/frictionforces unfinished.Notallphysicalcertsrequired beforeCAD/previews.",
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Close ENTRY035 upper actual elbow8handstatic/49newconditionalassembly/8prescribed100mmendfeed atneutralwrist;not whole flexiblelink/realforce/cordthreading. Replaceonly upperclampjaw1;hand397/pack385/elect64/arm10/PAIR6 unchanged. Use actual new upperentry(70.411681305,8.242641011,40.066231758),axis(-.504040884,.753261047,.422540628),thumb_mcp FK;lowerterminalunchanged. PAIRfront(100,-4,-3/2) followsH,rear(90/110,-178.729833462,-3/2)H,motorterminalsforearmfixed. Connect necessary supported flexibleupstream/downstream 2housings/2cords;actual wholelength/sliding/separation/adjustment/preload/parent+wristapproach-release,frictionforces/strainrelief unfinished.Not independentrod650/460boundary/freecurve/radiussearch orvirtualguides/tensioner;no handcut/motormove/ODshrink/anglelimit/elbowbus/microgaprepeat.NotallcertsneededbeforeCAD/previews.InheritedPAIR034STEPinclusion2/othercomparisonfalse unresolved,notglobaldesignblock.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -169,8 +169,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": true,
-  "post_commit_native_results_reproduced": true,
+  "post_commit_review_completed": false,
+  "post_commit_native_results_reproduced": false,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -195,7 +195,7 @@
   "post_commit_new26_shape_metrics_reproduced": true,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": true,
-  "post_commit_initial_core_passed": false,
+  "post_commit_initial_core_passed": null,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": true,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -286,7 +286,34 @@
   "wrist_guide_exterior_accepted": false,
   "post_commit_new7_shape_metrics_reproduced": true,
   "post_commit_contact_points_reproduced": true,
-  "post_commit_STEP_feed_inclusion_inconclusive": true,
-  "post_commit_inclusion_diagnostic_completed": true,
-  "post_commit_inclusion_diagnostic_report": "docs/reviews/PAIR034/inclusion_diagnostic.json"
+  "post_commit_STEP_feed_inclusion_inconclusive": null,
+  "post_commit_inclusion_diagnostic_completed": false,
+  "post_commit_inclusion_diagnostic_report": "docs/reviews/PAIR034/inclusion_diagnostic.json",
+  "inherited_PAIR034_review": {
+    "post_commit_review_target": "80d039a799bf4892a9783342aa03dd5fd9344339",
+    "post_commit_review_report": "docs/reviews/PAIR034/README.md",
+    "post_commit_initial_core_passed": false,
+    "post_commit_STEP_feed_inclusion_inconclusive": true,
+    "post_commit_reproduction_scope": "ExactSHAcleanclone41native(internal1+4posesx4+assembly12+feedunion3+3feedx3),7adaptive source/STEP abs1e-5,3seats/6feedcontainment.5713closure/222frozen,cleanclone,OCC1,sameagent.Not all16static/30assembly/10feed/render/friction/elasticfeeding/fullflexiblelink/forces/physical.Exterior unaccepted,thenarentry unresolved.Inherited comparisons untouched.passed=False,differences=['feed_containment_9_0', 'feed_containment_9_1']. Sameunchangedclone last2feedcontainment diagnostic:source/source cut0 vs source/STEP common approx0 while both referencevolume1263.077326376mm3;3000materialpoint classifications match/analyticintervalsubset;allboundary STEP Boolean inclusion unresolved.Originalcorefalse/twofull-volume outside results preserved.No41native/7metrics/static/service/render repeat."
+  },
+  "active_upper_entry_bend_scene": "cad/thumb_entry_bend_v1/generated/assembly_scene.json",
+  "upper_entry_bend_hand_part_replaced": "distal_housing_clamp_1_jaw_1",
+  "upper_entry_bend_static_cases": 8,
+  "upper_entry_bend_static_clear": true,
+  "upper_entry_bend_assembly_samples": 49,
+  "upper_entry_bend_assembly_clear": true,
+  "upper_entry_bend_prescribed_feed_samples": 8,
+  "upper_entry_bend_prescribed_feed_clear": true,
+  "upper_entry_bend_new_entry_world_neutral_mm": [
+    70.41168130544132,
+    8.24264101127719,
+    40.066231757903076
+  ],
+  "upper_entry_bend_new_entry_axis_world_neutral": [
+    -0.5040408838620801,
+    0.7532610471869011,
+    0.4225406278530222
+  ],
+  "inherited_PAIR034_initial_core_passed": false,
+  "inherited_PAIR034_STEP_inclusion_inconclusive": true
 }

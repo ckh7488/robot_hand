@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "static_model_initial_sha256": "bd0be606aae467d995358642bb04116f248d4ab3364468be215b0a84cc27d253",
+  "current_model_sha256": "3c4cf966d541fc00ae623e8cdefd755a3d6490909a58161c6a3c07025b5da506",
+  "initial_file": "history/static_entry_model_initial.py.txt",
+  "current_model_starts_with_exact_static_source": true,
+  "only_new_function_appended": "feed_window",
+  "existing_geometry_constants_imports_and_functions_unchanged": true,
+  "static_native_results_not_modified_or_reexecuted": true
+}
