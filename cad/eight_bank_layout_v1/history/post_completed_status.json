@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 74676,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/eight_bank_layout_v1/postprocess.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "post",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm054-post-job-post.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm054-post-job-post.err",
+      "pid": 52324,
+      "returncode": 0
+    }
+  ]
+}

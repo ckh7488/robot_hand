@@ -1,0 +1,23 @@
+{
+  "new_native_groups": 0,
+  "all_whole_hardware_opaque": true,
+  "exterior_adopted": false,
+  "whole_views_counts": [
+    862,
+    872,
+    862,
+    872
+  ],
+  "images_viewed": [
+    "layout_before_after.png",
+    "width_comparison.png",
+    "attachment_detail.png",
+    "actual_block.png",
+    "thumb_neighbor_block.png"
+  ],
+  "completed": true,
+  "no_visual_frame_clipping_observed": true,
+  "pixel_matrix_or_arm_unit_numeric_replay": false,
+  "detail_is_explicit_beam_and_new11_only": true,
+  "common_red_has_separate_zoom_scale": true
+}

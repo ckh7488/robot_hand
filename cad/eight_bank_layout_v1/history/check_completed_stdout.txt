@@ -1,0 +1,50 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+{"loaded": 1}
+{"loaded": 51}
+{"loaded": 101}
+{"loaded": 151}
+{"loaded": 201}
+{"loaded": 251}
+{"loaded": 301}
+{"loaded": 351}
+building separate eight-bank carrier
+moved409__unchanged452_neutral 88 4
+new11__retained861_neutral 343 2
+new_internal_0 10 5
+new_internal_1 4 0
+new_internal_2 1 0
+new_internal_3 0 0
+new_internal_4 1 0
+new_internal_5 0 0
+new_internal_6 4 0
+new_internal_7 1 0
+new_internal_8 0 0
+new_internal_9 1 0
+inter_module index_mcp_actuator thumb_ip_actuator 1
+inter_module little_mcp_actuator thumb_ip_actuator 27
+elbow_55__changed420__fixed 1 0
+elbow_110__changed420__fixed 0 0
+roll_-80__changed420__fixed 0 0
+roll_-80__changed420__elbow 1 0
+roll_-40__changed420__fixed 0 0
+roll_-40__changed420__elbow 0 0
+roll_40__changed420__fixed 0 0
+roll_40__changed420__elbow 0 0
+roll_80__changed420__fixed 0 0
+roll_80__changed420__elbow 2 0
+flex_-35__changed420__wrist 18 2
+flex_-35__changed420__hand 21 0
+flex_55__changed420__wrist 0 0
+flex_55__changed420__hand 0 0
+deviation_-20__changed420__hand 16 0
+deviation_20__changed420__hand 0 0
+compound_a__changed420__fixed 1 0
+compound_a__changed420__elbow 19 0
+compound_a__changed420__wrist 50 0
+compound_a__changed420__hand 0 0
+compound_b__changed420__fixed 0 0
+compound_b__changed420__elbow 16 0
+compound_b__changed420__wrist 3 0
+compound_b__changed420__hand 1 0
+completed 156 41
