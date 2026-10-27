@@ -1,0 +1,7 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+saved_spool_common__outside_middle_dip_minus13_spoke
+actual_clocked_tailclamp1__carrier
+tail_common__outside_middle_dip_minus13_spoke
+counterfactual_carrier_without_middle_dip_spoke_free_span
+[('saved_spool_common__outside_middle_dip_minus13_spoke', 0.0, 0), ('actual_clocked_tailclamp1__carrier', 0.7857790902474455, 1), ('tail_common__outside_middle_dip_minus13_spoke', 0.0, 0), ('counterfactual_carrier_without_middle_dip_spoke_free_span', 44476.71897352296, 2)]

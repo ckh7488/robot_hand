@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 39360,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/motor_end_integration_basis_v1/carrier_followup.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "carrier",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm058-carrier-job-carrier.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm058-carrier-job-carrier.err",
+      "pid": 53472,
+      "returncode": 0
+    }
+  ]
+}

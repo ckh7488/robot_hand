@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/motor_end_integration_basis_v1/images/actual_obstructions.png",
+    "cad/motor_end_integration_basis_v1/images/carrier_dependency.png",
+    "cad/motor_end_integration_basis_v1/images/integration_unit.png"
+  ],
+  "opaque": true,
+  "actual_motor_end_rows": 49,
+  "diagnostic_carrier_before_after": true,
+  "no_frame_clipping_observed": true,
+  "pixel_matrices_or_arm_units_numerically_replayed": false
+}
