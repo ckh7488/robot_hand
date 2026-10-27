@@ -1,0 +1,19 @@
+{
+  "state": "failed",
+  "pid": 27108,
+  "commands": [
+    {
+      "argv": [
+        "E:/hand_recog/mujoco-lab/.venv/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/publish_review_arm059.pyw"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "publish",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm059-publish-review-job-publish.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm059-publish-review-job-publish.err",
+      "pid": 8972,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: publish failed\n"
+}

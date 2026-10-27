@@ -1,0 +1,8 @@
+{
+  "completed": false,
+  "phase": "review_exited",
+  "target_commit": "64b350d1718f387e21028d6af4a7b0e729967473",
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM059_64b350d1718f",
+  "review_output": "D:\\Codex-work\\robot-hand-workspace\\outputs\\ARM059_review_64b350d1718f.json",
+  "review_returncode": 1
+}

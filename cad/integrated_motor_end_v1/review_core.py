@@ -23,7 +23,7 @@ def main():
     def git(*xs): return subprocess.check_output(['git',*xs],cwd=ROOT,text=True,encoding='utf-8',creationflags=subprocess.CREATE_NO_WINDOW).strip()
     assert git('rev-parse','HEAD')==args.commit and not git('status','--porcelain=v1')
     assert not args.output.exists() and not args.output.resolve().is_relative_to(ROOT)
-    manifest=n.p.read(ROOT/'checkpoints/ARM059.manifest.json')
+    manifest=n.p.read(ROOT/'checkpoints/ARM059R.manifest.json')
     frozen={}
     for k in ['geometry_sha256','code_sha256','report_sha256']: frozen.update(n.p.read(ROOT/'AUDIT_EVIDENCE_INDEX.json')[k])
     def guard(): return all(n.m.drive.sha(ROOT/f)==v['sha256'] for f,v in manifest['files'].items()) and all(n.m.drive.sha(ROOT/f)==v for f,v in frozen.items())

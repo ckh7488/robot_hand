@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Codex-work\robot-hand-workspace\reviews\ARM059_64b350d1718f\cad\integrated_motor_end_v1\review_core.py", line 126, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "D:\Codex-work\robot-hand-workspace\reviews\ARM059_64b350d1718f\cad\integrated_motor_end_v1\review_core.py", line 30, in main
+    assert guard() and OSD_ThreadPool.DefaultPool_s().NbThreads()==1
+           ^^^^^^^
+  File "D:\Codex-work\robot-hand-workspace\reviews\ARM059_64b350d1718f\cad\integrated_motor_end_v1\review_core.py", line 29, in guard
+    def guard(): return all(n.m.drive.sha(ROOT/f)==v['sha256'] for f,v in manifest['files'].items()) and all(n.m.drive.sha(ROOT/f)==v for f,v in frozen.items())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Codex-work\robot-hand-workspace\reviews\ARM059_64b350d1718f\cad\integrated_motor_end_v1\review_core.py", line 29, in <genexpr>
+    def guard(): return all(n.m.drive.sha(ROOT/f)==v['sha256'] for f,v in manifest['files'].items()) and all(n.m.drive.sha(ROOT/f)==v for f,v in frozen.items())
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Codex-work\robot-hand-workspace\reviews\ARM059_64b350d1718f\cad\motor_spool_coupling_v1\model.py", line 45, in sha
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM059_64b350d1718f\\cad\\integrated_motor_end_v1\\__pycache__\\assessment.cpython-312.pyc'

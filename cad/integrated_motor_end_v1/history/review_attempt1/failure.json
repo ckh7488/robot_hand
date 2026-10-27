@@ -1,0 +1,13 @@
+{
+  "completed": false,
+  "first_target": "64b350d1718f387e21028d6af4a7b0e729967473",
+  "first_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM059_64b350d1718f",
+  "phase": "manifest_guard_before_context_or_native",
+  "new_native_groups": 0,
+  "new_geometry_rebuilt": 0,
+  "temporary_ignored_cache_not_in_commit": [
+    "cad/integrated_motor_end_v1/__pycache__/assessment.cpython-312.pyc"
+  ],
+  "old_manifest_preserved_sha256": "de438e0559830e62108892ea7313116b0f50133c22b5fb9139a69fee18f48226",
+  "no_geometry_or_collision_test_excluded": true
+}
