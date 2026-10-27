@@ -1,0 +1,96 @@
+{
+  "completed": true,
+  "executed_reports": [
+    {
+      "report": "check",
+      "new_native_groups": 5,
+      "pairs": 5,
+      "AABB": 3,
+      "overlap_records": 1,
+      "first_failure": "ring_pip_actuator__guide_base_before_motor_4"
+    },
+    {
+      "report": "selected_check",
+      "new_native_groups": 33,
+      "pairs": 410,
+      "AABB": 59,
+      "overlap_records": 1,
+      "first_failure": "ring_pip_actuator__lay_electrical4_in_open_groove_4"
+    },
+    {
+      "report": "final_check",
+      "new_native_groups": 19,
+      "pairs": 179,
+      "AABB": 32,
+      "overlap_records": 1,
+      "first_failure": "ring_pip_actuator__guide_nut_ring_pip_actuator_lid_nut_1_4"
+    },
+    {
+      "report": "continuation_check",
+      "new_native_groups": 52,
+      "pairs": 102934,
+      "AABB": 91,
+      "overlap_records": 5,
+      "first_failure": "ring_pip_actuator__body19_side_then_normal_8"
+    }
+  ],
+  "new_native_groups": 109,
+  "pairs_in_scope": 103528,
+  "AABB_native_pairs": 185,
+  "overlap_records": 8,
+  "operation_failures": 0,
+  "continuation_new_native_groups": 52,
+  "continuation_clear": false,
+  "inherited_ringPIP_M2_bench_groups": 14,
+  "inherited_guide_spacer_groups": 21,
+  "inherited_electrical_path_samples": 14,
+  "electrical_subset_query_proofs": 12,
+  "selected_full_path_sample_scope": 101,
+  "selected_new_native_groups": 52,
+  "prior_native_groups_repeated": 0,
+  "complete_restored_packets": 5,
+  "new_restored_packets": 0,
+  "conditional_initial_rows": 598,
+  "conditional_final_present_rows": 598,
+  "pending_rows": 288,
+  "rear_station_complete": false,
+  "front8_explicitly_later": true,
+  "last_failure": [
+    {
+      "lead": "ring_pip_actuator_lead1",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 0.7990918896891049
+    },
+    {
+      "lead": "ring_pip_actuator_lead2",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 0.7109686840712125
+    },
+    {
+      "lead": "ring_pip_actuator_lead3",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 0.25677808619810366
+    },
+    {
+      "lead": "ring_pip_actuator_wire_guide_base",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 0.6330451661382925
+    },
+    {
+      "lead": "ring_pip_actuator_wire_guide_lid",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 8.028125377469921
+    }
+  ],
+  "new_hardware_geometry": 0,
+  "new_common_queries": 4,
+  "new_evidence_geometry": 4,
+  "planned_replay_native_groups": 32,
+  "new_lid_axis_reads": 1,
+  "old_geometry_hashes_unchanged": 12763,
+  "frozen_files": 222,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "all_final_parts_and_poses_original": true,
+  "full_factory_drive_force_strength_tools_captive_friction_preload_tension_electrical_mating_fullarm_physical_exterior_approved": false
+}

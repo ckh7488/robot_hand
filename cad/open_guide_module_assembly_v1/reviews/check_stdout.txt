@@ -1,0 +1,8 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+ring_pip_actuator__guide_base_before_motor_0 1 0 0
+ring_pip_actuator__guide_base_before_motor_1 1 0 0
+ring_pip_actuator__guide_base_before_motor_2 1 1 0
+ring_pip_actuator__guide_base_before_motor_3 1 1 0
+ring_pip_actuator__guide_base_before_motor_4 1 1 1
+complete 5 1 restored 5 rear False

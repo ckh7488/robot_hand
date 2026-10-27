@@ -1,0 +1,22 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_0 4 0 0
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_1 4 0 0
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_2 4 0 0
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_3 4 1 0
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_4 4 1 0
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_5 4 1 0
+ring_pip_actuator__unit7_with_own_plug_into_open_guide_6 4 1 0
+ring_pip_actuator__lay_three_leads_in_open_groove_0 3 0 0
+ring_pip_actuator__lay_three_leads_in_open_groove_1 3 0 0
+ring_pip_actuator__lay_three_leads_in_open_groove_2 3 0 0
+ring_pip_actuator__lay_three_leads_in_open_groove_3 3 0 0
+ring_pip_actuator__lay_three_leads_in_open_groove_4 3 0 0
+ring_pip_actuator__lay_three_leads_in_open_groove_5 33 6 0
+ring_pip_actuator__lay_three_leads_in_open_groove_6 33 18 0
+ring_pip_actuator__guide_nut_ring_pip_actuator_lid_nut_1_0 14 0 0
+ring_pip_actuator__guide_nut_ring_pip_actuator_lid_nut_1_1 14 0 0
+ring_pip_actuator__guide_nut_ring_pip_actuator_lid_nut_1_2 14 1 0
+ring_pip_actuator__guide_nut_ring_pip_actuator_lid_nut_1_3 14 1 0
+ring_pip_actuator__guide_nut_ring_pip_actuator_lid_nut_1_4 14 2 1
+complete 19 1 restored 5 rear False

@@ -1,0 +1,19 @@
+{
+  "captions_legible": true,
+  "opaque": true,
+  "completed": true,
+  "world_registration_or_physical_approval": false,
+  "all_selected_CAD_inside_frame": true,
+  "images_viewed": [
+    "cad/open_guide_module_assembly_v1/images/body_entry.png",
+    "cad/open_guide_module_assembly_v1/images/first_block_0.png",
+    "cad/open_guide_module_assembly_v1/images/first_block_1.png",
+    "cad/open_guide_module_assembly_v1/images/first_block_2.png",
+    "cad/open_guide_module_assembly_v1/images/first_block_3.png",
+    "cad/open_guide_module_assembly_v1/images/open_guide_order.png",
+    "cad/open_guide_module_assembly_v1/images/restoration_before_after.png",
+    "cad/open_guide_module_assembly_v1/images/wire_entry_before_after.png"
+  ],
+  "failed_geometry_and_partial_views_labelled": true,
+  "note": "Eight actual saved CAD sheets visually inspected;whole root retained in failure view,common shown separately. No render/native/common repetition."
+}

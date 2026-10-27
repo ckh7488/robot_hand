@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 30484,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/open_guide_module_assembly_v1/final_check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "final",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm070-final-job-final.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm070-final-job-final.err",
+      "pid": 85832,
+      "returncode": 0
+    }
+  ]
+}
