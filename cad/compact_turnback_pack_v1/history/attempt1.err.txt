@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\compact_turnback_pack_v1\check_pack.py", line 60, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\compact_turnback_pack_v1\check_pack.py", line 15, in main
+    rows,design=a.build(ctx[1]);removed={z['replaces'] for z in rows}
+                ^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\compact_turnback_pack_v1\pack_model.py", line 40, in build
+    jaw = next(z for z in original_pack if z['name']==name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
