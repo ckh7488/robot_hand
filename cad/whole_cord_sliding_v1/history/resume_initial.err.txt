@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\whole_cord_sliding_v1\selected_check.py", line 52, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\whole_cord_sliding_v1\selected_check.py", line 33, in main
+    tests={key:s.c.material(cord,zz) for key,zz in posed};tests['whole_housings']=s.c.material(cord,housing);tests['cord_self']=k.flat([s.c.material([z],cord[j+1:]) for j,z in enumerate(cord)])
+                                                                                                                                ^^^^^^
+AttributeError: module 'check' has no attribute 'flat'

@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "pid": 78548,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/whole_cord_sliding_v1/selected_check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "resume",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\slide045-resume-render-resume.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\slide045-resume-render-resume.err",
+      "pid": 84664,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: resume failed\n"
+}

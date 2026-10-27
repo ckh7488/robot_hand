@@ -1,0 +1,52 @@
+"""Preserve the stopped report; classify the already documented motor contact."""
+import sys,time,copy
+from pathlib import Path
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import slide_model as s
+import check as k
+
+
+def classify(rec,baseline):
+    known=[];blocking=[]
+    for z in rec['blocking_records']:
+        pair=z['pair'];reference=z['group']=='moving_hardware_fixed' and (pair['lead'],pair['part'])==('thumb_ip_stock_central_retainer','thumb_ip_actuator_motor') and abs(pair['material_intersection_mm3']-baseline)<1e-5
+        (known if reference else blocking).append(z)
+    rec['unclassified_blocking_records']=copy.deepcopy(rec['blocking_records']);rec['known_source_motor_reference_records']=known;rec['blocking_records']=blocking
+    rec['conditional_motion_can_continue']=not blocking and not any(z['operation_failures'] for z in rec['native'].values())
+
+
+def main():
+    out=s.HERE/'reviews/selected_check.json';assert not out.exists();start=time.monotonic();raw=s.p.read(s.HERE/'reviews/check.json');assert raw['completed'] and len(raw['states'])==1
+    assessment=s.p.read(s.ROOT/'cad/motor_spool_coupling_v1/reviews/assessment.json');assert assessment['stock_three_solids_geometry_unchanged']
+    baseline=assessment['baseline_stock_motor_common_mm3'];source,groups,housing,rotor,child=s.context()
+    report=copy.deepcopy(raw);report.update(completed=False,states=[],source_sha256=dict(raw['source_sha256']),original_report='cad/whole_cord_sliding_v1/reviews/check.json',
+        original_unclassified_stop_preserved=True,original_native_states_reused=1,new_native_states_executed=0,source_motor_reference_baseline_mm3=baseline,
+        source_motor_reference_scope='Unmodified vendor central screw/source motor internal axial shaft contact from DRIVE018 assessment; raw remains false. No vendor internal fit or new thread approval.')
+    for rel in ['cad/whole_cord_sliding_v1/selected_check.py','cad/whole_cord_sliding_v1/reviews/check.json','cad/motor_spool_coupling_v1/reviews/assessment.json']:
+        report['source_sha256'][rel]=s.m.drive.sha(s.ROOT/rel)
+    first=copy.deepcopy(raw['states'][0]);classify(first,baseline);assert first['conditional_motion_can_continue'];first['native_reused_without_replay']=True;report['states'].append(first)
+    def save():s.a.save(out,report)
+    save()
+    for q in [30.,45.]:
+        posed,changed=s.hardware(groups,q,rotor,child);cord=s.cords(q);fixed=[z for _,zz in posed for z in zz if z['name'] not in rotor|child]
+        tests={key:s.c.material(cord,zz) for key,zz in posed};tests['whole_housings']=s.c.material(cord,housing);tests['cord_self']=k.flat([s.c.material([z],cord[j+1:]) for j,z in enumerate(cord)])
+        tests['moving_hardware_fixed']=s.c.material(changed,fixed);tests['moving_hardware_housings']=s.c.material(changed,housing);tests['rotor_child']=s.c.material([z for z in changed if z['name'] in rotor],[z for z in changed if z['name'] in child])
+        lookup={z['name']:z for z in cord};known=[];blocking=[]
+        for key,test in tests.items():
+            for pair in test['overlaps']:
+                x,y=lookup.get(pair['lead']),lookup.get(pair['part']);adjacent=key=='cord_self' and x and y and x['physical_line']==y['physical_line'] and {x['path_segment'],y['path_segment']}=={0,1}
+                (known if adjacent else blocking).append(dict(group=key,pair=pair))
+        rec=dict(IP_deg=q,motor_output_deg=.77*q,native=tests,known_same_cord_motor_joint_records=known,blocking_records=blocking,raw_all_clear=all(s.m.drive.clear(z) for z in tests.values()),
+            rigid_group_internal_pairs_not_recomputed=first['rigid_group_internal_pairs_not_recomputed'],changed_hardware_names=[z['name'] for z in changed],native_reused_without_replay=False)
+        classify(rec,baseline);report['states'].append(rec);report['new_native_states_executed']+=1;save();rec['scene']=s.export(cord+changed,'q_'+str(int(q)));save()
+        print('q',q,'blocking',len(rec['blocking_records']),'same_cord',len(known),'source_reference',len(rec['known_source_motor_reference_records']),flush=True)
+        if not rec['conditional_motion_can_continue']:break
+    agg=k.flat([z for rec in report['states'] for z in rec['native'].values()])
+    report.update(completed=True,nonzero_native_states=len(report['states']),conditional_IP_path_clear=len(report['states'])==3 and all(z['conditional_motion_can_continue'] for z in report['states']),
+        raw_all_clear=all(z['raw_all_clear'] for z in report['states']),pairs_in_scope=agg['pairs_in_scope'],AABB_native_pairs=agg['exact_pairs'],overlap_records=len(agg['overlaps']),operation_failures=len(agg['operation_failures']),
+        original15deg_native_groups_repeated=0,input_hash_guard=all(s.m.drive.sha(s.ROOT/f)==h for f,h in report['source_sha256'].items()),elapsed_s=time.monotonic()-start)
+    save()
+
+
+if __name__=='__main__':main()

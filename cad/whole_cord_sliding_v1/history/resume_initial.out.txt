@@ -1,0 +1,10 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+{"loaded": 1}
+{"loaded": 51}
+{"loaded": 101}
+{"loaded": 151}
+{"loaded": 201}
+{"loaded": 251}
+{"loaded": 301}
+{"loaded": 351}
