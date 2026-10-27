@@ -1,0 +1,50 @@
+{
+  "target_commit": "a0484eecbf34dfc95ac214a1ad3a037656d860f6",
+  "initial_core_passed": true,
+  "native_groups": 28,
+  "native_matches": 28,
+  "reproduced_overlap_records": 24,
+  "source_STEP_geometry": 13,
+  "geometry_matches": 13,
+  "R10_R5_routes": 2,
+  "route_matches": 2,
+  "placement_contract": {
+    "matched": true,
+    "rigid_rows": 18,
+    "maximum_transform_difference": 0.0,
+    "maximum_seat_difference_mm": 0.0,
+    "original_rotated_frame_removed_mm3": 0.0
+  },
+  "support_partition": {
+    "actual": {
+      "record": {
+        "lead": "arm056_stationary_terminal_bridge",
+        "part": "arm054_eight_bank_carrier",
+        "material_intersection_mm3": 341.39702301218574
+      },
+      "common_volume_mm3": 341.3970230121877,
+      "common_outside_rotated_original_frame_mm3": 10.397023012182954,
+      "outside_solids": 1,
+      "new_native_common_pairs": 0,
+      "stored_common_reused": 1,
+      "native_difference_queries": 1
+    },
+    "maximum_difference_mm3": 0.0,
+    "matched": true
+  },
+  "wrap_branch_diagnostic_matched": true,
+  "bridge_adapter_distance_matched": true,
+  "inherited12_native_records_retested": false,
+  "previous_ARM051_to_ARM055_LINK050_replayed": false,
+  "manifest_files": 14031,
+  "frozen_files": 222,
+  "differences": [],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM056_a0484eecbf34",
+  "review_source_sha256": "24628daec4f22fb2b81a6b8665dce9b0e0ef8d82ee6c178599061bf63a5a246c",
+  "proposal_adopted": false,
+  "current_installed_hardware_rows": 862,
+  "separate_proposal_rows": 872,
+  "local_cord_geometry_at_command_zero_only": true,
+  "whole_arm_drive_or_exterior_approved": false,
+  "same_agent_review_not_independent": true
+}

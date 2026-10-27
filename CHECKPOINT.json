@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "a0484eecbf34dfc95ac214a1ad3a037656d860f6",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
   "next_stage": "ARM056 is an unadopted explicit 90deg stationary-terminal-unit proposal on unadopted ARM055/054. Read cad/terminal_unit_orientation_v1/README.md/reviews/check.json/partition.json/wrap_diagnostic.json and docs/reviews/ARM056/logs/arm056-finish.json first. Current862/accepted basehand364/currenthand397/axes/lengths/four palm motors/16remote sources remain unchanged. No adoption of872. Motor installations and command0 remain ARM054; only the stationary terminal kit rotates about the output axis. 18actual adjuster/jaw/M2/guide parts rigidrotate; one new terminal frame preserves the rotated original frame and adds two real 90deg annular bridges to unchanged M3 seats. 853other hardware unchanged. Bridge nominal width6/thickness1 follows the existing seat stack,not strength/manufacture approval. Real R10 grooves at axial4/12 now exit at -180/0deg via18mm tangents/R5 bores into rotated real adjusters; command-zero local2cords/12segments length84.88013933370695/108.29606586960487mm,not full long materials. Wrap30/210deg,unchanged anchor kink26.565051177078deg. Declared single-turn branch common interval(-210,+30) motor deg is an analytic branch domain,NOT new joint/motor limits; at+30 line0wrap0. No spool rephase or physical full-drive success. New28native groups77941pairs186AABB24records0operations rawfalse:16neutral changed19-vs853,0newframe-vs18,0localcord12-vs872,2samecord anchor/wrap joins,6newguide1/rollstator records across4roll+2compound poses.12nonneutral/24body relations test only19hardware,not localcord or wholearm/material-motion.12old unchanged records carry by identity,no native replay;29changed-terminal old records not claimed applicable. Largest newframe/carrier341.39702301218574mm3; newframe/adapter42.0326820878155; guide1/rollstator100.71132856608403neutral/106.38421816393817roll-40. Adapterdistance0 is interpenetration,NOT successful seating. Stored maximumcommon-minus-rotated-original-frame onecut leaves10.397023012182954mm3 outside;331mm3 by subtraction remains within rotated old frame. Thus just changing added bridge cannot clear this retained-frame/carrier overlap;not all-layout impossibility. Stop another rigid terminal-angle/guide-plane/bank-count/radius scan or tiny fastener repair. Next define a new R5-terminal support geometry and adjuster/jaw support location from the actual M3 seats,adapter/cradle/carrier/rollstator material and both actual spool grooves/anchor phases; preserve reaction and assembly order. Do not keep the old long terminal stalk by default or relocate only abstract endpoints. Include a real mount-first/motor-output-next/cord-next assembly proposal and natural arm/wrist/handward transmission,then test changed solids; current conditional ordering has0service paths because neutral blocked. Keep known unchanged frontspool/beam,wrist,carrier/cap failures;no hand/beam cuts,angle restrictions,hidden/deleted parts,OD/R shrink,floating support/tensioner. Do not restart LINK050,old optimizers or elbowbus. Do not inherit old long line lengths/0.77 or dynamic harness tests after terminal changes. Existingstrictfalse/trim/inclusion holds remain;no physical/strength/friction/preload/tension/manufacture/exterior/20torque/continuousarm approval. Supplier certificates are not an endless CAD/video gate. Do not replay closed28groups,onepartition/two wrap branches or ARM051..055. Check arm056-check/post/partition/wrap/prepare/publish-review/followup/finish states/processes first.",
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM056_a0484eecbf34",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "All28new groups77941pairs/24records,including19changed-vs853,newframe-vs18,12localcords-vs872 and66internalpairs,24changedhardware/body relations at12finitearmposes.13sourceSTEPmetrics epsilon1e-10/absolute1e-5,18rowtransform/M3seats,2R10/R5routes,1adapterdistance and1savedcommon-minus-rotated-original-frame cut. Localcords are command-zero only,not material-motion tests.12unchanged old records carried by identity,not native replay. No priorARM051..055/LINK050/assembly/renderpixels/alltrimBoolean/wholelongmaterials/dynamic electrical/20torque/continuousarm/physical/exterior approval.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,7 +1026,7 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/terminal_unit_orientation_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
   "post_commit_proposal_placements_reproduced": null,
   "post_commit_proposed_attachment_distances_reproduced": null,
   "inherited_ARM052_review": {
@@ -1257,5 +1257,9 @@
     "post_commit_transformed_real_ports_reproduced": null,
     "post_commit_ports_lengths_seats_reproduced": true,
     "post_commit_common_jaw_partitions_reproduced": true
-  }
+  },
+  "post_commit_two_R10_R5_routes_reproduced": true,
+  "post_commit_18_hardware_transform_M3_seats_reproduced": true,
+  "post_commit_common_original_frame_partition_reproduced": true,
+  "post_commit_wrap_branch_diagnostic_reproduced": true
 }
