@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/recessed_mounting_root_v1/images/before_after.png",
+    "cad/recessed_mounting_root_v1/images/first_failure_common.png",
+    "cad/recessed_mounting_root_v1/images/reserved_spaces.png",
+    "cad/recessed_mounting_root_v1/images/root_correction.png",
+    "cad/recessed_mounting_root_v1/images/whole_unit_path.png"
+  ],
+  "opaque": true,
+  "no_frame_clipping_observed": true,
+  "first_four_finished_images_not_rerendered": true,
+  "common_source_solids": [
+    1,
+    2
+  ],
+  "whole_hardware_counts": [
+    871,
+    871
+  ],
+  "pixels_matrices_armvisualunits_numerically_replayed": false
+}

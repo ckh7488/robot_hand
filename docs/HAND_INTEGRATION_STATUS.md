@@ -212,3 +212,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM062 전체체결/실제출력 근거
 
 [참고CAD와실제검사](../cad/mounting_unit_interface_basis_v1/README.md). 실제출력의6M3/PCD20을기존plate가막으며명목case의4mm는실제coupling길이가아니다. 전체front체결의양쪽진입참고도root와교차한다. 새3그룹13기록·오류0/선정공구충돌확정아님. 첫탭/핀분류는interface_followup에서교정하고원본보존. 현재862/손/16구동원유지·설치변경0,전체구동/실물승인없음.
+
+## ARM063 전체앞클램프와지지경로,미채택
+
+[실제후보871](../cad/recessed_mounting_root_v1/README.md). 두체결축±31→±25.5의counterboreclamp와내측rail/앞면pickup을함께설계했다. 첫18그룹9기록보존뒤carrier만교정,새17그룹0/0·front16pad보존. 같은cap/체결5·진입4를승계했고동축nut/bolt참고2·실제roll출력판/beam/stator고정미완과옛실패를남긴다. 현재862/손/16모터·전기위치유지,전체구동/외형승인없음.

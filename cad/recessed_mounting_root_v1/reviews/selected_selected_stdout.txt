@@ -1,0 +1,20 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+selected_carrier__retained865 865 320 0
+selected_carrier__unchanged_new_cap_fasteners5 5 5 0
+existing_rotation_bounds9__selected_carrier 9 9 0
+existing_nut_approach__selected_carrier 1 1 0
+unchanged_new_entry4__selected_carrier 4 4 0
+elbow_55__selected_carrier_relative_bodies 449 5 0
+elbow_110__selected_carrier_relative_bodies 449 1 0
+roll_-80__selected_carrier_relative_bodies 449 0 0
+roll_-40__selected_carrier_relative_bodies 449 0 0
+roll_40__selected_carrier_relative_bodies 449 0 0
+roll_80__selected_carrier_relative_bodies 449 0 0
+flex_-35__selected_carrier_relative_bodies 449 1 0
+flex_55__selected_carrier_relative_bodies 449 0 0
+deviation_-20__selected_carrier_relative_bodies 449 0 0
+deviation_20__selected_carrier_relative_bodies 449 0 0
+compound_a__selected_carrier_relative_bodies 449 5 0
+compound_b__selected_carrier_relative_bodies 449 1 0
+complete selected 17 0 0

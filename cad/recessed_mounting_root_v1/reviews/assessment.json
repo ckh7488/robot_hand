@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "initial_raw_clear": false,
+  "initial_groups": 18,
+  "initial_records": 9,
+  "initial_physical_obstruction_records": 7,
+  "selected_changed_carrier_groups": 17,
+  "selected_changed_carrier_records": 0,
+  "selected_changed_carrier_operation_failures": 0,
+  "unchanged_other5_relations_inherited_from_initial_group_results": true,
+  "unchanged_entry4_results_inherited_except_carrier_retested": true,
+  "inherited_coaxial_nut_reference_bolt_records": 2,
+  "whole_proposal_raw_clear": false,
+  "whole_proposal_adopted": false,
+  "initial_first_failure_files_not_renamed_or_deleted": true,
+  "only_carrier_relations_retested_after_whole_root_correction": true,
+  "original_ARM061_record2_replaced_geometry_not_automatically_carried": true,
+  "original_ARM062_output_axis_blank_plate_records6_unchanged_preserved": true,
+  "old_ARM059_base_R5_failed_M3plus13_and_strictfalse_holds": true,
+  "native_exclusions": 0,
+  "installed_hardware_changes": 0,
+  "real_roll_plate_beam_stator_fixed": false
+}

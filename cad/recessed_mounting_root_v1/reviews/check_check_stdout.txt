@@ -1,0 +1,20 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new_whole_unit6__retained865_neutral 5190 323 6
+existing_rotation_bounds9__new_whole_unit6 54 9 0
+existing_nut_approach__new_whole_unit6 6 1 0
+new_entry4__whole_proposal871 3484 10 2
+new_entry4__existing_rotation_bounds9 36 0 0
+elbow_55__new6_relative_bodies 2694 5 0
+elbow_110__new6_relative_bodies 2694 1 0
+roll_-80__new6_relative_bodies 2694 0 0
+roll_-40__new6_relative_bodies 2694 0 0
+roll_40__new6_relative_bodies 2694 0 0
+roll_80__new6_relative_bodies 2694 0 0
+flex_-35__new6_relative_bodies 2694 1 0
+flex_55__new6_relative_bodies 2694 0 0
+deviation_-20__new6_relative_bodies 2694 0 0
+deviation_20__new6_relative_bodies 2694 0 0
+compound_a__new6_relative_bodies 2694 5 0
+compound_b__new6_relative_bodies 2694 1 0
+complete 18 9 0

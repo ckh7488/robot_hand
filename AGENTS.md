@@ -1,5 +1,7 @@
 # 작업 규칙
 
+- 2026-10-28 ARM063: cad/recessed_mounting_root_v1/README.md/selected_check.json/CHECKPOINT.next_stage우선. 현재862/수용손/16구동원·전기·설치유지,별도871=불변865+carrier/cap2+같은형상나사너트4명시X±31→±25.5. 전체counterboreclamp/안쪽rail/앞면pickup반력후보이며미채택. 첫18그룹9기록·오류0(이웃rotor6/cap1·동축참고2)보존뒤carrier1만교정,새17그룹0/0·front16패드밖0,같은cap/체결5·진입4관계승계. 전체구동/외형/토크승인아님. 렌더는공통cap2solid를1로가정해4그림뒤실패·원본보존/마지막그림만복구·공통2저장/native0. 다음실제roll출력판/beam·stator체결과clock/조립을ARM062교정6M3/PCD20/pilot25기준으로설계,완료frontunit/작은코너반복·임의4mm메움·손빔절삭/모터삭제·몰래이동/각도제한0. 과거M3+13/R5/strictfalse보존.
+
 - 2026-10-28 ARM062: cad/mounting_unit_interface_basis_v1/README.md와CHECKPOINT.next_stage우선. 현재862/손/16모터/전기·설치유지,새설치0·참고18. 전체front체결6기능/20mm축진입4의새3native13기록·오류0,실제선정공구충돌과참고교차구별. 공식AK60파일은기존과해시동일·615열린면/0solid. 첫M3분류2는핀2오명칭이며interface_followup이6탭R1.25/핀R1.5로교정,원본보존. 출력면Y-230참고등록에서명목case의4mm는coupling길이아님,실제6탭축을기존plate가막는다. 다음전체clamp/cap/나사너트·root와진입공간및실제출력plate/beam/stator체결설계,임의4mm메움·작은코너수정/손빔절삭/모터삭제·몰래이동/각도제한/ODR축소0. 끝낸3/17참고+615면/1공통·ARM061/입구24/옛M3접합반복0.
 
 - 2026-10-28 ARM061: 닫힌사각중앙frame/연결살의별도871도미채택이다. cad/central_reaction_frame_v1/README.md/CHECKPOINT.next_stage우선. 현재862/손/16모터/전기·설치유지,새carrier1/불변870. 새17그룹2기록·오류0,실제±90출력/12팔상대관계0이나기존front아래collar의보수원통22.556148182608197/새web의실제M3나사.036976287823302804가남는다. 실제M3패드32/lowercollar2보존34차집합0. 빔/플랜지거리0·공통면0은결합승인아니며플랜지/명목AKrollcase거리4mm로실제출력hub/체결이모델링안돼있다. 다음은frontcollar/cap/M3/공구진입전체를보호한지지경로와AK실제출력interface/beam플랜지고정을먼저정한다. 작은나사코너만수정·현재랙수용·임의4mm메움·손빔절삭/모터삭제·몰래이동/각도제한/ODR축소0. 옛M3+13/strictfalse보존,끝낸17/3/34/5/세거리·입구24반복0.

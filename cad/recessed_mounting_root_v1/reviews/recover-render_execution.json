@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 52000,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/recessed_mounting_root_v1/recover_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "recover-render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm063-recover-render-job-recover-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm063-recover-render-job-recover-render.err",
+      "pid": 64128,
+      "returncode": 0
+    }
+  ]
+}
