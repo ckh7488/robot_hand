@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 36796,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/integrated_motor_end_v1/postprocess.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm059-render-job-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm059-render-job-render.err",
+      "pid": 44052,
+      "returncode": 0
+    }
+  ]
+}

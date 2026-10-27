@@ -1,0 +1,492 @@
+{
+  "completed": true,
+  "records": [
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "middle_dip_actuator_rack_nut_2",
+        "material_intersection_mm3": 17.954510074921885
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_beam_cap_1",
+        "material_intersection_mm3": 76.1511028933974
+      },
+      "classification": "previous_carrier_cap_fastener_pair_new_carrier_retested"
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3x12_envelope_1_0",
+        "material_intersection_mm3": 0.14268441957830313
+      },
+      "classification": "previous_carrier_cap_fastener_pair_new_carrier_retested"
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3_nut_envelope_1_0",
+        "material_intersection_mm3": 0.2032175823234332
+      },
+      "classification": "previous_carrier_cap_fastener_pair_new_carrier_retested"
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3x12_envelope_1_1",
+        "material_intersection_mm3": 0.142683935874885
+      },
+      "classification": "previous_carrier_cap_fastener_pair_new_carrier_retested"
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3_nut_envelope_1_1",
+        "material_intersection_mm3": 0.2032175822629434
+      },
+      "classification": "previous_carrier_cap_fastener_pair_new_carrier_retested"
+    },
+    {
+      "group": "new4__moved16",
+      "record": {
+        "lead": "arm059_integrated_electrical_R5_base",
+        "part": "thumb_ip_barrel_adjuster_1",
+        "material_intersection_mm3": 2.7955951125100102
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    },
+    {
+      "group": "new4__moved16",
+      "record": {
+        "lead": "arm059_integrated_electrical_R5_base",
+        "part": "thumb_ip_barrel_top_nut_1",
+        "material_intersection_mm3": 2.2543445500914405
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    },
+    {
+      "group": "new4__moved16",
+      "record": {
+        "lead": "arm059_integrated_electrical_R5_base",
+        "part": "thumb_ip_barrel_bottom_nut_1",
+        "material_intersection_mm3": 2.25434455009144
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    },
+    {
+      "group": "new_cords12_internal",
+      "record": {
+        "lead": "arm059_cord_0_0",
+        "part": "arm059_cord_0_1",
+        "material_intersection_mm3": 0.008497324177772306
+      },
+      "classification": "same_cord_anchor_wrap_join"
+    },
+    {
+      "group": "new_cords12_internal",
+      "record": {
+        "lead": "arm059_cord_1_0",
+        "part": "arm059_cord_1_1",
+        "material_intersection_mm3": 0.008493423286931605
+      },
+      "classification": "same_cord_anchor_wrap_join"
+    },
+    {
+      "group": "command_-90__output9__changed20",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm059_middle_dip_dogleg_carrier",
+        "material_intersection_mm3": 10.759436068703176
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    },
+    {
+      "group": "command_90__output9__changed20",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm059_middle_dip_dogleg_carrier",
+        "material_intersection_mm3": 5.237987823941943
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    },
+    {
+      "group": "deviation_-20__new20_local12__hand",
+      "record": {
+        "lead": "arm059_straight_jaw_0",
+        "part": "compact_saddle_nested_turns",
+        "material_intersection_mm3": 11.71101817216265
+      },
+      "classification": "changed_geometry_blocking_candidate"
+    }
+  ],
+  "counts": {
+    "changed_geometry_blocking_candidate": 7,
+    "previous_carrier_cap_fastener_pair_new_carrier_retested": 5,
+    "same_cord_anchor_wrap_join": 2
+  },
+  "raw_false_preserved": true,
+  "no_pairs_excluded": true,
+  "earlier_hardware_records": 42,
+  "carried_by_identity": [
+    {
+      "group": "moved409__unchanged452_neutral",
+      "record": {
+        "lead": "index_spread_actuator_rotor",
+        "part": "Forearm_box_beam",
+        "material_intersection_mm3": 182.57849567554015
+      }
+    },
+    {
+      "group": "moved409__unchanged452_neutral",
+      "record": {
+        "lead": "index_spread_actuator_spool",
+        "part": "AK_wrist_flex",
+        "material_intersection_mm3": 34.10297440444982
+      }
+    },
+    {
+      "group": "moved409__unchanged452_neutral",
+      "record": {
+        "lead": "index_spread_actuator_spool",
+        "part": "Forearm_box_beam",
+        "material_intersection_mm3": 806.9185685505195
+      }
+    },
+    {
+      "group": "moved409__unchanged452_neutral",
+      "record": {
+        "lead": "middle_spread_actuator_spool",
+        "part": "Forearm_box_beam",
+        "material_intersection_mm3": 0.39588209715203326
+      }
+    },
+    {
+      "group": "flex_-35__changed420__wrist",
+      "record": {
+        "lead": "little_spread_actuator_adapter",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 10.613124945958965
+      }
+    },
+    {
+      "group": "flex_-35__changed420__wrist",
+      "record": {
+        "lead": "little_spread_actuator_spool",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 385.20635023489393
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_1",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.8274333882307556
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_2",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.827433388230829
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_3",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.827433388230663
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_4",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.82743338823083
+      }
+    }
+  ],
+  "changed_records_not_carried": [
+    {
+      "group": "new_internal_0",
+      "record": {
+        "lead": "arm054_eight_bank_carrier",
+        "part": "arm054_beam_cap_1",
+        "material_intersection_mm3": 76.15110289248045
+      }
+    },
+    {
+      "group": "new_internal_0",
+      "record": {
+        "lead": "arm054_eight_bank_carrier",
+        "part": "arm054_M3x12_envelope_1_0",
+        "material_intersection_mm3": 0.14268441957581726
+      }
+    },
+    {
+      "group": "new_internal_0",
+      "record": {
+        "lead": "arm054_eight_bank_carrier",
+        "part": "arm054_M3_nut_envelope_1_0",
+        "material_intersection_mm3": 0.20321758226324504
+      }
+    },
+    {
+      "group": "new_internal_0",
+      "record": {
+        "lead": "arm054_eight_bank_carrier",
+        "part": "arm054_M3x12_envelope_1_1",
+        "material_intersection_mm3": 0.14268393587484335
+      }
+    },
+    {
+      "group": "new_internal_0",
+      "record": {
+        "lead": "arm054_eight_bank_carrier",
+        "part": "arm054_M3_nut_envelope_1_1",
+        "material_intersection_mm3": 0.2032175822632254
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 66.4113483664697
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 42.215525183605195
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lid_screw_1",
+        "material_intersection_mm3": 2.2115619314525086
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lid_screw_2",
+        "material_intersection_mm3": 2.4687161608744583
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lid_nut_2",
+        "material_intersection_mm3": 0.23842294681084528
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lead1",
+        "material_intersection_mm3": 10.495971965565365
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lead2",
+        "material_intersection_mm3": 9.700644329702564
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lead3",
+        "material_intersection_mm3": 7.572350626023844
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_barrel_adjuster_0",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 90.84251768732213
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 79.54940989746308
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 63.90784376194608
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lid_screw_1",
+        "material_intersection_mm3": 7.335199843687783
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lid_screw_2",
+        "material_intersection_mm3": 9.313440183748941
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lid_nut_2",
+        "material_intersection_mm3": 0.4725830710951676
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lead1",
+        "material_intersection_mm3": 10.495987159724779
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lead2",
+        "material_intersection_mm3": 9.700675094463271
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lead3",
+        "material_intersection_mm3": 7.572343244960302
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_0",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 7.913723916605425
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_0",
+        "part": "thumb_ip_actuator_lid_screw_2",
+        "material_intersection_mm3": 7.044189987068857
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_1",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 10.910052407782615
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_1",
+        "part": "thumb_ip_actuator_lid_screw_1",
+        "material_intersection_mm3": 1.6094582817195744
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_barrel_adjuster_1",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 6.43744078339954
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_tail_clamp_1",
+        "part": "arm054_eight_bank_carrier",
+        "material_intersection_mm3": 0.7857790956859649
+      }
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm054_eight_bank_carrier",
+        "material_intersection_mm3": 18.05785261428357
+      }
+    },
+    {
+      "group": "new3__relocated16",
+      "record": {
+        "lead": "arm057_handward_R5_support",
+        "part": "thumb_ip_barrel_adjuster_1",
+        "material_intersection_mm3": 2.7955951125100778
+      }
+    },
+    {
+      "group": "new3__relocated16",
+      "record": {
+        "lead": "arm057_handward_R5_support",
+        "part": "thumb_ip_barrel_top_nut_1",
+        "material_intersection_mm3": 2.2543445500914534
+      }
+    },
+    {
+      "group": "new3__relocated16",
+      "record": {
+        "lead": "arm057_handward_R5_support",
+        "part": "thumb_ip_barrel_bottom_nut_1",
+        "material_intersection_mm3": 2.254344550091454
+      }
+    }
+  ],
+  "original_check_earlier_unchanged11_are_prior_source_records_not_automatic_current_carry": true,
+  "native_groups_reexecuted": 0,
+  "all_stack_queries_passed": false,
+  "failed_stack_queries": [
+    {
+      "id": "original_M3_pad_13.0__outside_integrated_base",
+      "operation": "cut",
+      "volume_mm3": 19.195131113433646,
+      "solids": 1
+    }
+  ],
+  "new_layout_accepted": false,
+  "assembly_or_exterior_approved": false
+}

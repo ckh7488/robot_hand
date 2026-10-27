@@ -1,0 +1,172 @@
+"""Explicit combined electrical-guide/R5 support and a neighboring spoke dogleg."""
+import importlib.util
+import sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+ROOT=Path(__file__).resolve().parents[2]
+HERE=Path(__file__).resolve().parent
+spec=importlib.util.spec_from_file_location('_arm059_prior',ROOT/'cad/forward_terminal_support_v1/postprocess.py')
+p=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(p)
+a,n,np,cq,d=p.a,p.n,p.np,p.a.cq,p.a.d
+FRAME='arm059_integrated_electrical_R5_base'
+CARRIER='arm059_middle_dip_dogleg_carrier'
+JAWS=['arm059_straight_jaw_0','arm059_straight_jaw_1']
+OLD={a.FRAME,*a.GUIDES,'thumb_ip_actuator_wire_guide_base','arm054_eight_bank_carrier'}
+
+
+def context():
+    source={}
+    rel='cad/forward_terminal_support_v1/reviews/check.json'
+    raw=n.p.read(ROOT/rel)
+    source.update(raw['source_sha256'])
+    source[rel]=n.m.drive.sha(ROOT/rel)
+    current,_,meta,membership,delta,_,_,reloc,clock=p.metadata(raw)
+    for z in meta:
+        if 'step' not in z:
+            rel='cad/modular_roots_v9/parts/'+z['name']+'.step'
+            assert n.m.drive.sha(ROOT/rel)==source[rel]
+            z.update(step=rel,sha256_step=source[rel])
+    rows=[]
+    for z in n.c.load(meta,source):
+        M=np.array(delta.get(z['name'],np.eye(4)))
+        if z['name'] in reloc: M=reloc[z['name']]@M
+        if z['name'] in a.CLOCK_NAMES: M=clock@M
+        rows.append(dict(z,shape=n.g.original.transform(z['shape'],M)))
+    assert len(rows)==872 and len(current)==862
+    for rel in ['cad/forward_terminal_support_v1/postprocess.py','cad/forward_terminal_support_v1/model.py',
+                'cad/motor_end_integration_basis_v1/reviews/final_basis.json',
+                'cad/motor_end_integration_basis_v1/reviews/carrier_followup.json']:
+        source[rel]=n.m.drive.sha(ROOT/rel)
+    return rows,membership,raw,delta,source
+
+
+def bbox(sh): return np.array(n.c.m.pack._bbox(sh))
+
+
+def setup(rows,raw):
+    names=set(n.p.read(ROOT/'cad/motor_end_integration_basis_v1/reviews/survey.json')['protected_hardware_names'])|{'thumb_ip_actuator_wire_guide_base'}
+    electrical=[z for z in rows if z['name'] in names]
+    clamp_names={name for port in raw['design']['ports'] for name in port['moved_names']}
+    # Bound actual fixed electrical material and actual inward mechanical hardware.
+    # This chooses a candidate datum only; all neighboring parts are still tested.
+    mechanical=[z for z in rows if z['name'] in clamp_names|set(a.GUIDES)]
+    old_x=raw['design']['ports'][0]['Q'][0][3]
+    outer=max(bbox(z['shape'])[1,0] for z in electrical)
+    inward=min(bbox(z['shape'])[0,0]-old_x for z in mechanical)
+    x=outer-inward
+    shift=np.eye(4)
+    shift[0,3]=x-old_x
+    return x,shift,clamp_names,dict(actual_protected_electrical_names=sorted(names),
+        actual_electrical_max_X_mm=float(outer),actual_mechanical_min_relative_X_mm=float(inward),
+        old_mechanical_axis_X_mm=old_x,new_mechanical_axis_X_mm=float(x),
+        added_axis_X_mm=float(x-old_x),zero_extra_design_clearance_mm=True,
+        finite_support_datum_not_empty_space_or_exterior_acceptance=True)
+
+
+def channels(raw,shift):
+    route=a.p.terminal.route
+    x=raw['design']['ports'][0]['Q'][0][3]+shift[0,3]
+    ports=[]
+    for old,local in zip(raw['design']['ports'],raw['local_routes']):
+        Q=np.array(old['Q']);Q[:3,3]+=shift[:3,3]
+        B=np.array(local['tangent_exit_world_mm'])
+        A=np.array([x-5.,B[1],B[2]])
+        mid=A+[5./np.sqrt(2),5.-5./np.sqrt(2),0.]
+        Z=A+[5.,5.,0.]
+        end=np.array([x,-146.,B[2]])
+        ports.append(dict(line=old['line'],Q=Q,B=B,A=A,end=end,mouth=Q[:3,3],
+            pieces=[route.arc(A,mid,Z,5.*np.pi/2,'integrated_R5_handward'),route.line(Z,end,'integrated_straight')],
+            free_port_world_mm=np.array(old['free_port_world_mm'])+shift[:3,3],
+            shoulder_world_mm=np.array(old['shoulder_world_mm'])+shift[:3,3]))
+    return ports
+
+
+def build(rows,raw):
+    original={z['name']:z for z in rows}
+    x,shift,clamp_names,basis=setup(rows,raw)
+    ports=channels(raw,shift)
+    combined=original['thumb_ip_actuator_wire_guide_base']['shape']
+    for z in [-13.,13.]:
+        pad=a.cy(3.,-127.,-126.,71.,z).cut(a.cy(1.7,-127.01,-125.99,71.,z))
+        combined=combined.fuse(pad)
+        combined=combined.fuse(a.box([71.,-127.,z-3.],[x+4.,-126.,z+3.]))
+        combined=combined.fuse(a.box([x+1.,-150.,z-1.5],[x+4.,-126.,z+1.5]))
+    z0,z1=[v['B'][2] for v in ports]
+    for y0,y1 in [(-150.,-147.),(-139.,-136.)]:
+        combined=combined.fuse(a.box([x-2.,y0,min(z0-4.,-14.5)],[x+2.,y1,max(z1+4.,14.5)]))
+    for port in ports:
+        combined=combined.fuse(a.cy(5.5,-139.,-136.,x,port['B'][2]))
+        for seg in port['pieces']: combined=combined.fuse(a.p.terminal.sweep_piece(seg,1.6))
+    for port in ports:
+        for seg in port['pieces']: combined=combined.cut(a.p.terminal.sweep_piece(seg,.4))
+        combined=combined.cut(a.cy(2.55,-139.01,-135.99,x,port['B'][2]))
+    for z in [-13.,13.]: combined=combined.cut(a.cy(1.7,-127.01,-125.99,71.,z))
+    combined=combined.clean()
+    assert combined.isValid() and len(combined.Solids())==1,('combined',combined.isValid(),len(combined.Solids()))
+    new=[dict(name=FRAME,shape=combined,body='forearm',color=[.93,.48,.1],role='one_integrated_original_electrical_base_M3_and_R5_support')]
+    for i in [0,1]:
+        new.append(dict(name=JAWS[i],shape=n.g.original.transform(original[a.GUIDES[i]]['shape'],shift),
+            body='forearm',color=[.93,.48,.1],role='actual_integral_straight_jaw_at_explicit_new_datum'))
+    # The obstructing middle_dip spoke is replaced by a connected rear dogleg.
+    # Y is invariant under output rotation about Y, but the new webs need native checks.
+    output_names=a.CLOCK_NAMES|{'thumb_ip_stock_output_horn','thumb_ip_stock_central_retainer'}
+    ymin=min(bbox(original[name]['shape'])[0,1] for name in output_names)
+    dogleg_y=float(ymin-3.)
+    R=d.around((0.,0.,0.),(0.,1.,0.),-45.)
+    local=lambda lo,hi:n.g.original.transform(a.box(lo,hi),R)
+    carrier=original['arm054_eight_bank_carrier']['shape']
+    free=local([38.,-162.,-17.],[66.5,-159.,-9.])
+    carrier=carrier.cut(free,tol=1e-6)
+    for lo,hi in [([34.,dogleg_y,-17.],[38.,-159.,-9.]),
+                  ([34.,dogleg_y,-17.],[70.5,dogleg_y+3.,-9.]),
+                  ([66.5,dogleg_y,-17.],[70.5,-159.,-9.])]:
+        carrier=carrier.fuse(local(lo,hi))
+    start=(R@np.array([71.,dogleg_y-.01,-13.,1.]))[:3]
+    carrier=carrier.cut(cq.Solid.makeCylinder(1.7,-158.-dogleg_y+.02,cq.Vector(*start),cq.Vector(0,1,0)))
+    carrier=carrier.clean()
+    assert carrier.isValid() and len(carrier.Solids())==1,('carrier',carrier.isValid(),len(carrier.Solids()))
+    new.append(dict(name=CARRIER,shape=carrier,body='forearm',color=[.3,.5,.75],role='retained_M3_pad_hub_with_connected_middle_dip_spoke_dogleg'))
+    moved=[dict(z,shape=n.g.original.transform(z['shape'],shift)) for z in rows if z['name'] in clamp_names]
+    fixed=[z for z in rows if z['name'] not in OLD|clamp_names]
+    assert len(new)==4 and len(moved)==16 and len(fixed)==851
+    design=dict(parameter_basis=basis,ports=[dict(line=z['line'],Q=z['Q'],free_port_world_mm=z['free_port_world_mm'],
+        shoulder_world_mm=z['shoulder_world_mm'],tangent_length_mm=float(z['A'][0]-z['B'][0]),
+        R5_radius_mm=5.,sleeve_OD_bore_mm=[5.,3.2],sleeve_lead_mm=12.,shoulder_free_length_mm=29.) for z in ports],
+        moved_names=sorted(clamp_names),mechanical_translation_from_ARM057=shift,
+        electrical_geometry_transform_changed=False,output_installation_or_clocking_changed=False,motor_command_deg=0.,
+        integrated_old_parts=[a.FRAME,'thumb_ip_actuator_wire_guide_base'],integrated_replacement=FRAME,
+        removed_proposal_names=sorted(OLD),new_names=[z['name'] for z in new],hardware_rows=871,
+        carrier=dict(original_name='arm054_eight_bank_carrier',replacement=CARRIER,
+            identified_neighbor='middle_dip,row1,bank1,45deg,tangent-13',output9_axial_Y_min_mm=float(ymin),
+            dogleg_Y_mm=[dogleg_y,dogleg_y+3.],dogleg_thickness_mm=3.,
+            retained_M3_axis_world_mm=(R@np.array([71.,-162.,-13.,1.]))[:3],
+            free_span_radial_mm=[38.,66.5],hub_outer_radius_mm=38.,pad_radial_mm=[66.5,75.4],
+            output_axial_bound_invariance_not_full_carrier_motion_approval=True),
+        nominal_reaction='Jaw/M2 -> captured adjuster -> R5 rail/outboard web -> integrated original electrical-base foot/shared original M3 -> adapter -> retained thumb carrier spokes/hub. Neighbor middle_dip M3pad -> new rear dogleg -> original hub/collar -> beam/roll flange.',
+        assembly_proposal='Bench support the combined base and R5/adjuster kit at the shared two-M3 stack;lid-off place three retained leads,then retain the existing lid/M2 and original M3 stack;motor/output before long mechanical cords. Manual support,tool/thread/preload/strength and service paths unverified.',
+        current862_installation_replaced=False,proposed871_adopted=False)
+    return new,moved,fixed,design
+
+
+def cords(raw,shift):
+    old=n.c.load(n.p.read(ROOT/raw['cord_scene'])['parts'])
+    storage={'step','mesh','sha256_step','sha256_stl'}
+    rows=[dict({k:v for k,v in z.items() if k not in storage},name=z['name'].replace('arm057_','arm059_')) for z in old if z['segment'] in [0,1]]
+    route=a.p.terminal.route
+    details=[]
+    for port in channels(raw,shift):
+        i=port['line']
+        pieces=[route.line(port['B'],port['A'],'new_actual_tangent'),*port['pieces'],route.line(port['end'],port['mouth'],'actual_adjuster_bore')]
+        for j,seg in enumerate(pieces,2):
+            rows.append(dict(name=f'arm059_cord_{i}_{j}',shape=a.p.terminal.sweep_piece(seg,.3),body='forearm',
+                physical_line=i,segment=j,length_mm=seg['length_mm'],role=seg['label'],evidence_reference_not_hardware=True,
+                color=[.97,.25,.1] if i==0 else [.1,.65,.95]))
+        details.append(dict(line=i,unchanged_anchor_wrap_segments=[0,1],unchanged_wrap_deg=120.,
+            tangent_exit_world_mm=port['B'],R5_entry_world_mm=port['A'],R5_exit_world_mm=port['pieces'][0]['z'],
+            mouth_world_mm=port['mouth'],shoulder_world_mm=port['shoulder_world_mm'],
+            local_cord_length_mm=sum(z['length_mm'] for z in rows if z.get('physical_line',z.get('cord'))==i),
+            new_piece_endpoint_gap_mm=max(float(np.linalg.norm(x['z']-y['a'])) for x,y in zip(pieces,pieces[1:]))))
+    rows.sort(key=lambda z:(z['physical_line'],z['segment']))
+    assert len(rows)==12
+    return rows,details

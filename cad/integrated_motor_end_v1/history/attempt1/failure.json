@@ -1,0 +1,11 @@
+{
+  "cord_scene_saved": false,
+  "reason": "inherited cord metadata step duplicated export keyword",
+  "hardware_export_rows": 4,
+  "attachment_queries": 0,
+  "geometry_changed_for_recovery": false,
+  "phase": "cord_export_before_native",
+  "cord_STEP_STL_files": 2,
+  "completed": false,
+  "native_groups_completed": 0
+}

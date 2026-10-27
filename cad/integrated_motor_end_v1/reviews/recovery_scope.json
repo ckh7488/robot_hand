@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "initial_native_groups": 0,
+  "initial_attachment_queries": 0,
+  "initial_complete_hardware_exports": 4,
+  "initial_partial_cord_export_rows": 1,
+  "initial_cord_scene_saved": false,
+  "exact_first_code_stdout_stderr_status_preserved": true,
+  "geometry_build_prefix_and_route_suffix_identical": true,
+  "check_source_identical": true,
+  "only_inherited_cord_storage_keys_removed": true,
+  "first_geometry_not_counted_as_passed_tests": true
+}

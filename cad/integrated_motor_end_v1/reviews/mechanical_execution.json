@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 11428,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/integrated_motor_end_v1/mechanical_followup.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "mechanical",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm059-mechanical-job-mechanical.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm059-mechanical-job-mechanical.err",
+      "pid": 85080,
+      "returncode": 0
+    }
+  ]
+}

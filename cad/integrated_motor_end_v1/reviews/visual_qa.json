@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/integrated_motor_end_v1/images/actual_common.png",
+    "cad/integrated_motor_end_v1/images/before_after.png",
+    "cad/integrated_motor_end_v1/images/carrier_before_after.png",
+    "cad/integrated_motor_end_v1/images/motor_end.png",
+    "cad/integrated_motor_end_v1/images/new_conflicts.png"
+  ],
+  "opaque": true,
+  "whole_hardware_counts": [
+    872,
+    871,
+    872,
+    871
+  ],
+  "local_hardware_counts": [
+    49,
+    48
+  ],
+  "local_cords": 12,
+  "no_frame_clipping_observed": true,
+  "pixels_matrices_armvisualunits_numerically_replayed": false
+}

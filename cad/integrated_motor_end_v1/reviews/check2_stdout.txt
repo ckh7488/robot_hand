@@ -1,0 +1,31 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+changed20__fixed851_neutral 340 6
+new4__moved16 24 3
+new_cords12__hardware871 35 0
+command_-90__output9__changed20 9 1
+command_90__output9__changed20 9 1
+elbow_55__new20_local12__fixed 1 0
+elbow_110__new20_local12__fixed 0 0
+roll_-80__new20_local12__fixed 0 0
+roll_-80__new20_local12__elbow 0 0
+roll_-40__new20_local12__fixed 0 0
+roll_-40__new20_local12__elbow 0 0
+roll_40__new20_local12__fixed 0 0
+roll_40__new20_local12__elbow 0 0
+roll_80__new20_local12__fixed 0 0
+roll_80__new20_local12__elbow 0 0
+flex_-35__new20_local12__wrist 2 0
+flex_-35__new20_local12__hand 8 0
+flex_55__new20_local12__wrist 0 0
+flex_55__new20_local12__hand 0 0
+deviation_-20__new20_local12__hand 10 1
+deviation_20__new20_local12__hand 0 0
+compound_a__new20_local12__fixed 1 0
+compound_a__new20_local12__elbow 2 0
+compound_a__new20_local12__wrist 7 0
+compound_a__new20_local12__hand 0 0
+compound_b__new20_local12__fixed 0 0
+compound_b__new20_local12__elbow 1 0
+compound_b__new20_local12__wrist 1 0
+compound_b__new20_local12__hand 1 0
