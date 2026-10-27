@@ -1,0 +1,21 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+bench_beam_0 1 0 0
+bench_beam_1 1 1 0
+bench_beam_2 1 1 0
+bench_beam_3 1 1 0
+bench_beam_4 1 1 0
+bench_beam_5 1 1 0
+bench_beam_6 1 1 0
+bench_arm065_shared_rear_cap_0 2 0 0
+bench_arm065_shared_rear_cap_1 2 1 0
+bench_arm065_shared_rear_cap_2 2 1 0
+bench_arm065_shared_rear_cap_3 2 2 0
+bench_arm065_shared_rear_cap_4 2 2 0
+bench_arm065_shared_rear_cap_5 2 2 0
+bench_arm065_shared_rear_cap_6 2 2 0
+bench_arm065_shared_rear_cap_7 2 2 0
+bench_arm063_recessed_front_cap_0 3 0 0
+bench_arm063_recessed_front_cap_1 3 1 0
+bench_arm063_recessed_front_cap_2 3 1 1
+complete 18 1 bench False packets False

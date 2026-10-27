@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "new_installed_geometry": 0,
+  "new_hardware_geometry": 0,
+  "evidence_common_shapes": 2,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "first_native_groups": 18,
+  "selected_new_native_groups": 50,
+  "reused_completed_groups": 15,
+  "executed_new_groups_total": 68,
+  "pairs_in_scope": 384,
+  "AABB_native_pairs": 109,
+  "raw_overlap_records": 2,
+  "operation_failures": 0,
+  "beam7_and_shared_cap8_completed": true,
+  "front_cap_vertical_first_failure": [
+    {
+      "lead": "arm063_recessed_front_cap",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 191.70796945066422
+    }
+  ],
+  "front_cap_nut_prefit8_and_gap_route10_completed": true,
+  "rear_nut4_paths28_completed": true,
+  "front_bolt_first_failure": [
+    {
+      "lead": "arm063_M3x12_envelope_0",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 31.75217294931784
+    }
+  ],
+  "complete_bench22": false,
+  "selected_bench_present_rows": 10,
+  "front_and_rear_bolt_remaining_output6_not_executed": true,
+  "packet_count": 16,
+  "packet_rows": 408,
+  "packet_restoration_started": false,
+  "packet_restoration_completed": false,
+  "first_raw_packet_final_present_list_is_assumed_condition_not_executed": true,
+  "first15_reused_no_native_repeat": true,
+  "ARM065_geometry_common1_topology_mismatch_unresolved": true,
+  "whole_factory_continuous_tools_torque_strength_friction_preload_axial_pullout_whole_drive_exterior_approved": false
+}

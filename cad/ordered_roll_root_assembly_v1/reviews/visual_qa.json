@@ -1,0 +1,13 @@
+{
+  "pixels_and_armvisualunits_not_numerically_replayed": true,
+  "images_viewed": [
+    "cad/ordered_roll_root_assembly_v1/images/actual_common.png",
+    "cad/ordered_roll_root_assembly_v1/images/bench_steps.png",
+    "cad/ordered_roll_root_assembly_v1/images/failed_entries.png",
+    "cad/ordered_roll_root_assembly_v1/images/front_cap_order.png"
+  ],
+  "actual_common_zoom_independent": true,
+  "no_unintended_frame_clipping_observed": true,
+  "completed": true,
+  "opaque": true
+}
