@@ -1,0 +1,56 @@
+{
+  "completed": true,
+  "hand_rows": 397,
+  "packaging_rows": 385,
+  "electrical_rows": 64,
+  "neutral_arm_reference_rows": 10,
+  "new_hardware_parts": 1,
+  "retained_hardware_parts": 5,
+  "local_housing_cord_reference_rows": 4,
+  "new_scene_rows": 10,
+  "old_inboard_body_and_local4_replaced_not_duplicated": true,
+  "old_geometry_files_unchanged": 4530,
+  "static": {
+    "static_cases_completed": 16,
+    "pairs_in_scope": 137005,
+    "AABB_native_pairs": 187,
+    "overlap_records": 0,
+    "operation_failures": 0
+  },
+  "static_calculation_provenance": {
+    "new_hand_cases_original_run": 8,
+    "reused_same_hand_cases_in_final": 8,
+    "new_corrected_wrist_cases": 8,
+    "original_incorrect_wrist8_not_approval": true
+  },
+  "service": {
+    "samples": 30,
+    "pairs_in_scope": 25755,
+    "AABB_native_pairs": 56,
+    "overlap_records": 0,
+    "operation_failures": 0
+  },
+  "straight_insertion_reference_lengths_mm": [
+    118,
+    118
+  ],
+  "straight_reference_insertion_translation_y_mm": [
+    -128,
+    0
+  ],
+  "straight_insertion_continuous_bound_clear": true,
+  "whole_flexible_housing_insertion_or_cord_threading_verified": false,
+  "sleeves_only_outside_two_wrist_parts_R60_bound": true,
+  "entire_bracket_continuous_wrist_motion_verified": false,
+  "palm_packaging_rows_following_hand_base": 39,
+  "forearm_packaging_fixed_during_wrist_samples": 346,
+  "electrical_forearm_rows_fixed": 64,
+  "whole_motor_thumb_link_complete": false,
+  "whole_hand_drive_complete": false,
+  "guide_material_supply_tolerance_stiffness_preload_friction_pullout_strength_lifetime_exterior_approved": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "inherited_GUIDED030_initial_core_passed": false,
+  "inherited_GUIDED030_precision_pairs_passed": true,
+  "inherited_HOUSING027_initial_core_passed": false,
+  "inherited_HOUSING027_precision_pair_passed": true
+}
