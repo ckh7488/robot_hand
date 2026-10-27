@@ -1,0 +1,27 @@
+{
+  "target_commit": "11365b0268cc07a4b5436164778f286170de2ddf",
+  "passed": true,
+  "pairs": [
+    {
+      "pair": {
+        "lead": "seat_housing_0_3",
+        "part": "Elbow_fixed_cradle",
+        "material_intersection_mm3": 21.448557507490612
+      },
+      "STEP_STEP_values": [
+        21.448556333336757,
+        70.14083050725331,
+        69.34843248902013,
+        -420.3051379047934,
+        -51.8920255563095
+      ],
+      "maximum_difference": 6.105211554086054e-07,
+      "matched": true
+    }
+  ],
+  "adaptive_epsilon": 1e-10,
+  "absolute_comparison_tolerance": 1e-05,
+  "preplanned": true,
+  "native_group_replays": 0,
+  "original_basic_values_preserved": true
+}
