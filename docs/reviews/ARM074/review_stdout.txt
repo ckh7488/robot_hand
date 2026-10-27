@@ -1,0 +1,11 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new_whole_support__all_retained885_neutral True
+output_-90__new_support True
+output_90__new_support True
+elbow_110__new_support_relative_bodies True
+roll_40__new_support_relative_bodies True
+flex_-35__new_support_relative_bodies True
+deviation_20__new_support_relative_bodies True
+compound_a__new_support_relative_bodies True
+core True []
