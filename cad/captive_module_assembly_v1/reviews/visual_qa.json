@@ -1,0 +1,16 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/captive_module_assembly_v1/images/bench_order.png",
+    "cad/captive_module_assembly_v1/images/electrical_order_correction.png",
+    "cad/captive_module_assembly_v1/images/module_order.png",
+    "cad/captive_module_assembly_v1/images/previous_block_preserved.png",
+    "cad/captive_module_assembly_v1/images/restoration_before_after.png",
+    "cad/captive_module_assembly_v1/images/full_entry_extension.png"
+  ],
+  "opaque_actual_CAD": true,
+  "all_selected_geometry_in_frame": true,
+  "footer_readable": true,
+  "view_omissions_explicit_not_test_exclusions": true,
+  "new_native_or_common_or_export_queries": 0
+}

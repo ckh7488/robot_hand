@@ -1,0 +1,27 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+motor_and_own_leads_into_adapter_before_base_nuts_0 90 0 0
+motor_and_own_leads_into_adapter_before_base_nuts_1 90 0 0
+motor_and_own_leads_into_adapter_before_base_nuts_2 90 0 0
+motor_and_own_leads_into_adapter_before_base_nuts_3 90 3 0
+motor_and_own_leads_into_adapter_before_base_nuts_4 90 6 0
+motor_and_own_leads_into_adapter_before_base_nuts_5 90 7 0
+motor_and_own_leads_into_adapter_before_base_nuts_6 90 8 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_1_0 499 1 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_1_1 499 2 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_1_2 499 3 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_1_3 499 5 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_1_4 499 5 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_2_0 500 1 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_2_1 500 2 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_2_2 500 3 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_2_3 500 5 0
+rack_M3_before_base_nuts_index_mcp_actuator_rack_screw_2_4 500 5 0
+four_M2_base_nuts_last_0 501 0 0
+four_M2_base_nuts_last_1 501 0 0
+four_M2_base_nuts_last_2 501 0 0
+four_M2_base_nuts_last_3 501 0 0
+four_M2_base_nuts_last_4 501 0 0
+four_M2_base_nuts_last_5 501 2 0
+four_M2_base_nuts_last_6 501 3 0
+complete 24 0 restored ['index_mcp_actuator']

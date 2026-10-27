@@ -1,0 +1,26 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+index_mcp_actuator_adapter [[63.4, -229.0, -20.0], [75.4, -194.0, 20.0]] solids 1
+index_mcp_actuator_base_nuts [[66.9, -218.06625532625, -15.15685424950872], [68.5, -202.13374467379998, 15.15685424940007]] solids 4
+index_mcp_actuator_base_screws [[62.3, -217.25685424949, -14.656854249499986], [68.9, -202.9431457506, 14.656854249399998]] solids 4
+index_mcp_actuator_body_screws [[57.35, -224.1, -16.75], [60.85, -196.1, 16.75]] solids 4
+index_mcp_actuator_cradle [[57.1, -224.40000000057, -17.000000000001286], [64.10000009999999, -195.79999999945912, 17.00000000000484]] solids 1
+index_mcp_actuator_guide_spacer_1 [[68.0, -224.0, 10.0], [74.0, -223.0, 16.0]] solids 1
+index_mcp_actuator_guide_spacer_2 [[68.0, -224.0, -16.0], [74.0, -223.0, -10.0]] solids 1
+index_mcp_actuator_lead1 [[58.15, -237.14999999999998, 3.05], [87.1, -221.2, 4.9500001000000005]] solids 1
+index_mcp_actuator_lead2 [[58.15, -237.14999999999998, 0.55], [87.1, -221.2, 2.4500001]] solids 1
+index_mcp_actuator_lead3 [[58.15, -237.14999999999998, -1.95], [87.1, -221.2, -0.04999990000000004]] solids 1
+index_mcp_actuator_lid_nut_1 [[79.79059892324, -234.85, -7.700000000000062], [84.40940107675, -233.25, -3.699999999999918]] solids 1
+index_mcp_actuator_lid_nut_2 [[79.79059892324, -234.85, 6.699999999999915], [84.40940107675, -233.25, 10.70000000000006]] solids 1
+index_mcp_actuator_lid_screw_1 [[80.35, -240.65, -7.449999999999989], [83.85, -233.15, -3.9499999999999886]] solids 1
+index_mcp_actuator_lid_screw_2 [[80.35, -240.65, 6.949999999999989], [83.85, -233.15, 10.449999999999989]] solids 1
+index_mcp_actuator_motor [[41.099999999999994, -224.4, -17.00000000000102], [61.100000000004826, -198.59999992801883, 17.0]] solids 12
+index_mcp_actuator_plug_outer [[57.2, -221.2, -3.25], [61.0, -214.09999999999997, 6.25]] solids 1
+index_mcp_actuator_rack_nut_1 [[67.825, -234.4, 10.250369342900001], [74.17500000003716, -232.0, 15.749630657003559]] solids 1
+index_mcp_actuator_rack_nut_2 [[67.825, -234.4, -15.749630657099999], [74.17500000003716, -232.0, -10.250369342996441]] solids 1
+index_mcp_actuator_rack_screw_1 [[68.15, -235.0, 10.15], [73.85, -221.0, 15.85]] solids 1
+index_mcp_actuator_rack_screw_2 [[68.15, -235.0, -15.85], [73.85, -221.0, -10.15]] solids 1
+index_mcp_actuator_rotor [[43.0999999, -224.6, -15.5], [59.1000001, -195.5999999, 0.5000001000000017]] solids 3
+index_mcp_actuator_spool [[42.1, -195.1, -16.5], [60.1, -188.1, 1.5]] solids 1
+index_mcp_actuator_wire_guide_base [[67.4, -237.65, -18.0], [85.1, -224.0, 18.0]] solids 1
+index_mcp_actuator_wire_guide_lid [[79.1, -239.15, -8.5], [85.1, -237.65, 11.5]] solids 1

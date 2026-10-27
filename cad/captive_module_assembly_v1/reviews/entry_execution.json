@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 77380,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/captive_module_assembly_v1/entry_extension.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "entry",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm068-entry-job-entry.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm068-entry-job-entry.err",
+      "pid": 78532,
+      "returncode": 0
+    }
+  ]
+}

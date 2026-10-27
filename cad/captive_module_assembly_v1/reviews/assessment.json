@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "new_hardware_geometry": 0,
+  "first_attempt_groups": 20,
+  "first_attempt_pairs": 531,
+  "first_attempt_AABB": 13,
+  "first_attempt_records": [
+    {
+      "lead": "index_mcp_actuator_cradle",
+      "part": "index_mcp_actuator_lead2",
+      "material_intersection_mm3": 1.5639339002139676
+    },
+    {
+      "lead": "index_mcp_actuator_cradle",
+      "part": "index_mcp_actuator_lead3",
+      "material_intersection_mm3": 1.5639339002140442
+    },
+    {
+      "lead": "index_mcp_actuator_cradle",
+      "part": "index_mcp_actuator_lead1",
+      "material_intersection_mm3": 1.5639339002139638
+    }
+  ],
+  "selected_new_groups": 24,
+  "selected_new_pairs": 9132,
+  "selected_new_AABB": 61,
+  "selected_new_overlap_records": 0,
+  "approach_extension_new_groups": 20,
+  "approach_extension_pairs": 9996,
+  "approach_extension_AABB": 0,
+  "total_new_native_groups": 64,
+  "total_new_pairs": 19659,
+  "total_new_AABB": 74,
+  "total_new_overlap_records": 3,
+  "operation_failures": 0,
+  "first_bench14_reused_not_repeated": true,
+  "prior_ARM067_body11_nuts6_subset_proofs_not_repeated": true,
+  "selected_scope_groups": 75,
+  "selected_scope_basis": "new24+same firstbench14+priorARM067subset17+new20approach;55beforeextension. Totalnew64,not75newqueries.",
+  "actual_complete_restored_packets": 1,
+  "assumed_nonpacket_rows": 478,
+  "added_packet_rows": 24,
+  "conditional_present_rows": 502,
+  "pending_packet_rows": 384,
+  "same_final_hardware_shapes_names_and_world_positions": true,
+  "permanent_motor_deletion": 0,
+  "supplier_motor_body_screws_spool_and_electrical_subassembly_references_only": true,
+  "actual_plug_mating_harness_flexibility_captive_retention_tools_threads_torque_preload_strength_continuous_factory_whole_drive_physical_exterior_approved": false,
+  "inherited_ARM065_corefalse_and_other_strictfalse_holds": true
+}

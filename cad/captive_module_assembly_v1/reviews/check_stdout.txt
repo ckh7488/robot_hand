@@ -1,0 +1,23 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+preload_M2_base_screws_0 1 0 0
+preload_M2_base_screws_1 1 0 0
+preload_M2_base_screws_2 1 0 0
+preload_M2_base_screws_3 1 0 0
+preload_M2_base_screws_4 1 1 0
+preload_M2_base_screws_5 1 1 0
+preload_M2_base_screws_6 1 1 0
+seat_motor_reference_unit_0 8 0 0
+seat_motor_reference_unit_1 8 0 0
+seat_motor_reference_unit_2 8 0 0
+seat_motor_reference_unit_3 8 0 0
+seat_motor_reference_unit_4 8 0 0
+seat_motor_reference_unit_5 8 0 0
+seat_motor_reference_unit_6 8 3 0
+unit_into_adapter_before_base_nuts_0 78 0 0
+unit_into_adapter_before_base_nuts_1 78 0 0
+unit_into_adapter_before_base_nuts_2 78 0 0
+unit_into_adapter_before_base_nuts_3 78 0 0
+unit_into_adapter_before_base_nuts_4 78 1 0
+unit_into_adapter_before_base_nuts_5 78 6 3
+complete 20 3 restored []
