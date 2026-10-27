@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "058089c8d865d698b1c2f1921570b97fdeeae66d",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
   "next_stage": "ARM068:read cad/captive_module_assembly_v1/README.md,reviews/survey.json/check.json/selected_check.json/assessment.json/entry_extension.json/evidence_final.json,docs/reviews/ARM068,logs/arm068-finish.json first. Current862/base364/hand397/fourpalm/16remote/beam/electrical/axes/lengths/commands/clock unchanged;ARM065886 unadopted,new installed/hardware geometry0. Original16packet408 exactfinal membership retained. Read saved ARM067 first rack screw/base_nuts common without Boolean0 and actual original M2/M3 stack. First bench preload original four-M2base-screw compound into cradle from X-80/-60/-40/-20/-10/-5/0 then motor/rotor/body-screw/spool reference4 into cradle/base-screw2 with same7:14clear. InitialXbbox gaps68.2/75.99999999999517mm. Next unit6 vs adapter/guide/electrical carrier13 at sixth X-5 sample hits lead1/2/3 with cradle,each1.5639339002139638/1.5639339002139676/1.5639339002140442mm3;stop before0. First20native531pairs13AABB3records0ops preserved,not erased. Selected carries same unit6+own3leads/plug4=10rows against remaining carrier9,from fullX-80/-60/-40/-20/-10/-5/0,7clear and initialbboxXgap56.300000000000004mm. Reuses same completed bench14 without queries;electrical/case/body-screw/spool internal reference assembly and actualplugmating/harness flexibility/captive retention unverified. Body19 excludes original four-base-nut compound temporarily. New conditional start assumes nonpacket478 already assembled,including completed supportbench22. Inherits ARM067body11 as moving19subset of20 with same478 obstacles;inherits racknut6 with exactsame moving geometry/poses and obstacle subset missing only base_nuts.17clear subset proofs,no17newqueries. Then same rackM3bolts2 each+Y60/40/20/10/0 total10clear while base_nuts absent,then original four-M2base-nut compound from+X80/60/40/20/10/5/0 total7clear. Selected24new9132pairs61AABB0records0ops. Totalnew44=20+24/9663pairs74AABB3records0ops,rawfirstfalse preserved. Selectedscope55=new24+samebench14+prior17proofs,not55new or75executions. First indexMCP complete24packet restored at original final identity transforms:1/16,conditional478+24=502present/384pending,other15packets not executed. This is conditional CAD restoration,not502factoryassembly or16motorinstallation/whole20drive. All base_nuts/M3screws restored,no permanent deletion/cornercut/hiddenmotor move. Old ARM067500 failure not disassembled;fresh alternative order explicit. Approach extension separately20newgroups0:each rackbolt X160/140/120/100/80/60/40/20 withY40 then reuses originalX0/Y40 andY20/10/0;four-M2nut compound X160/140/120/100 then reusesX80..0. InitialXbbox outside all stageobstacles,stored exactgaps. OriginalY60 tested sample preserved butnot part of new selected fullroute. Totalnew64(first20+selected24+extension20),raw3firstrecords preserved;selectedscope75 includes14+17reuse,not75new. Six opaque actual CAD images,old5render not repeated,saved oldcommon reuse only,no new native/renderBoolean/common/STEP-STL exports or hardware geometry. All previous geometry/frozen222/manifests preserved;measurements/meshes/pose lists not alltrimBoolean/pixel/armvisualunit proof. Next continue remaining original15packets with firstpacket24 already present,explicit own base_nuts-last sequence and actual original module membership/azimuth-specific cradle M2axis/adapter/rackbolt axes. Read first selected/entry_extension omission/final502 lists and original ARM054/ARM059 modulecontracts. Inherit only proven identical shape/transform/subset relationships,not other15worldentry clear or old world electrical/assembly passes. Register actual conditional stage,check changed body/bolt/nut entry relations and final original886 restoration;special thumb packet R5/electrical module may need separate complete bench/service interface. No replay first64/selected24/extension20/firstbench14/subset17/old ARM067124bench106/front60/common1/ARM06668common2/ARM06512pad16preservation/finishedfront/615face/PCD or angle/radius/cornerfamilies. Preserve original first20lead3 and ARM067rackbolt/base_nut failure/ARM066twofirstfailures/ARM065common1edgevertex-corefalse/failedM3plus13/R5/strictfalse/curveinclusionholds. One-sided beamendstop/oppositepullout frictionpreload unverified;radial16rack/appearance unadopted. Keep hand16drive/electricalgroove/lidM2/3leads/plug/M3stack;no handbeamcut/motordeletion/hiddenmoves/anglelimits/ODRshrink/faketensioner/LINK/oldoptimizer/elbowbus. After coherent supportassemblymotion reconnect fixedmotor->Hshortentry->actualhand longmaterials. No suppliedtools/fit/force/strength/friction/preload/tension/20torque/dynamicelectrical/fullarm/upperarm/physicalmanufacture/exterior qualification;physical perfection not endlessCAD/video gate. Check arm068-survey/check/selected/render/entry/entry-render/prepare/publish-review/followup/finish statuses and processes first.",
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM068_058089c8d865",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "Each new executed path first/last,including failure if any;identical saved ARM067 body/nut clear-path subset proofs without Boolean repetition;original16packet408/final886/body19-unit10-carrier9/temporary omissions/list continuity/final original poses. No new hardware or evidence geometry,exports or common Boolean;not all middle samples,internal supplier/electrical/output assembly,continuous factory paths,tools,captive retention,threads,torque,force,physical,whole16drive/exterior qualification.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -2206,5 +2206,8 @@
     "post_commit_packet_reference_and_inherited10_reproduced": true,
     "post_commit_bench22_pending_lists_and_sequence_reproduced": true,
     "post_commit_front60_and_packet11_contracts_reproduced": true
-  }
+  },
+  "post_commit_original_membership_lists_and_subset_proofs_reproduced": true,
+  "post_commit_new_geometry_replays": 0,
+  "post_commit_new_common_Boolean_replays": 0
 }
