@@ -1,0 +1,34 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+changed20__fixed851_neutral True
+new4__moved16 True
+new4_internal True
+new_cords12__hardware871 True
+new_cords12_internal True
+command_-90__output9__changed20 True
+command_90__output9__changed20 True
+elbow_55__new20_local12__fixed True
+elbow_110__new20_local12__fixed True
+roll_-80__new20_local12__fixed True
+roll_-80__new20_local12__elbow True
+roll_-40__new20_local12__fixed True
+roll_-40__new20_local12__elbow True
+roll_40__new20_local12__fixed True
+roll_40__new20_local12__elbow True
+roll_80__new20_local12__fixed True
+roll_80__new20_local12__elbow True
+flex_-35__new20_local12__wrist True
+flex_-35__new20_local12__hand True
+flex_55__new20_local12__wrist True
+flex_55__new20_local12__hand True
+deviation_-20__new20_local12__hand True
+deviation_20__new20_local12__hand True
+compound_a__new20_local12__fixed True
+compound_a__new20_local12__elbow True
+compound_a__new20_local12__wrist True
+compound_a__new20_local12__hand True
+compound_b__new20_local12__fixed True
+compound_b__new20_local12__elbow True
+compound_b__new20_local12__wrist True
+compound_b__new20_local12__hand True
+core True differences []
