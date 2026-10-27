@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/rotation_reserved_support_v1/images/actual_common.png",
+    "cad/rotation_reserved_support_v1/images/before_after.png",
+    "cad/rotation_reserved_support_v1/images/carrier_before_after.png",
+    "cad/rotation_reserved_support_v1/images/entry_before_after.png",
+    "cad/rotation_reserved_support_v1/images/protected_spaces.png"
+  ],
+  "opaque": true,
+  "whole_hardware_counts": [
+    871,
+    871,
+    871,
+    871
+  ],
+  "protected_shapes_are_not_installed": true,
+  "no_frame_clipping_observed": true,
+  "minus_labels_readable": true,
+  "pixels_matrices_armvisualunits_numerically_replayed": false
+}

@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 82612,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/rotation_reserved_support_v1/check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "check",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm060-check-job-check.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm060-check-job-check.err",
+      "pid": 40516,
+      "returncode": 0
+    }
+  ]
+}

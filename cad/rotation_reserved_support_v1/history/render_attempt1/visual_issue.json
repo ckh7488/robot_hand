@@ -1,0 +1,5 @@
+{
+  "first_five_images_preserved": true,
+  "problem": "U+2212 minus glyph did not render clearly in the supplied CJK font.",
+  "correction": "Text labels use ASCII hyphen-minus only;identical CAD/scenes/camera code. Five renders repeated,zero native or geometry replay."
+}

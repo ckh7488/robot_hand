@@ -1,0 +1,32 @@
+{
+  "state": "completed",
+  "pid": 85440,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/rotation_reserved_support_v1/followup.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "follow",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm060-follow-render-job-follow.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm060-follow-render-job-follow.err",
+      "pid": 46084,
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/rotation_reserved_support_v1/render_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm060-follow-render-job-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm060-follow-render-job-render.err",
+      "pid": 70964,
+      "returncode": 0
+    }
+  ]
+}

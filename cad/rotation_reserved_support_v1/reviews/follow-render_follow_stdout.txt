@@ -1,0 +1,3 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+[('arm060_plus90_spool_carrier_common', 5.237987823941943), ('arm060_plus90_common_outside_original_ARM054_carrier', 0.0), ('arm060_plus90_common_outside_original_thumb_bridge_regions', 5.237987823941943)]

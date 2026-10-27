@@ -1,0 +1,3 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+actual_plus90_common__outside_front_hub_annulus 0.0 0

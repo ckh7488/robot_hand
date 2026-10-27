@@ -1,0 +1,93 @@
+"""Opaque actual hardware before/after;protection volumes have a separate panel."""
+import importlib.util
+import sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+spec=importlib.util.spec_from_file_location('_arm060_render_model',Path(__file__).with_name('model.py'))
+a=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(a)
+n,np,d,ROOT,HERE=a.n,a.np,a.d,a.ROOT,a.HERE
+r,engine=a.p.r,a.p.engine
+
+
+def main():
+    out=HERE/'reviews/evidence.json'
+    assert not out.exists()
+    raw=n.p.read(HERE/'reviews/check.json')
+    prior=n.p.read(ROOT/'cad/integrated_motor_end_v1/reviews/check.json')
+    current,_,before,membership,delta,reloc,clock,shift=a.p.metadata(prior)
+    fresh=n.p.read(ROOT/raw['scene'])['parts']
+    after=[z for z in before if z['name'] not in a.OLD]+fresh
+    membership[a.CARRIER]='forearm';membership[a.GUIDE]='hand'
+    assert len(before)==len(after)==871
+    source={}
+    moved=set(prior['design']['moved_names'])
+    arm=n.p.read(ROOT/'cad/modular_roots_v9/design.json')['arm']
+    neutral=d.transforms([0,0,0,0],arm)
+    dev=d.transforms([0,0,0,-20],arm)
+    def scene(rows,F=neutral,command=None,world=False):
+        parts=[]
+        for z in rows:
+            name=z['name'];M=np.array(delta.get(name,np.eye(4)))
+            if name in reloc: M=reloc[name]@M
+            if name in a.a.a.CLOCK_NAMES: M=clock@M
+            if name in moved: M=shift@M
+            if command is not None and name in a.OUTPUT_NAMES: M=command@M
+            if world: M=np.eye(4)
+            else: M=np.array(F[membership.get(name,'forearm')])@M
+            path=ROOT/z['mesh'];assert r.sha(path)==z['sha256_stl']
+            source[z['mesh']]=z['sha256_stl']
+            parts.append(dict(name=name,body='palm',mesh_path=path,points=r.read_stl_points(path),neutral_inverse=M,color=z.get('color',[.3,.5,.75])))
+        return dict(parts=parts,design=n.g.DESIGN)
+    def render(s,view,size):
+        try:
+            s['_render_state']=r.make_renderer(s,{'v':view},size,engine)
+            s['_render_state']['model'].geom_rgba[:,3]=1.
+            return r.render_one(s,[0.]*20,'v',{'v':view},size,engine)[0]
+        finally:
+            if '_render_state' in s: s['_render_state']['renderer'].close();del s['_render_state']
+    def fit(ss,vec): return r.view_fit(ss,[dict(angles_deg=[0.]*20)],np.array(vec),1.)
+    images=HERE/'images';images.mkdir(exist_ok=True)
+    full=[scene(before),scene(after),scene(before,dev),scene(after,dev)]
+    view=fit(full,[.8,-.55,.4])
+    r.sheet([(label,render(s,view,850)) for label,s in zip(['이전ARM059 /871전부','새바깥가로연결·직선입구 /871전부','이전 편위−20° /871','새 편위−20° /871'],full)],2,850,
+        '실제 CAD 전후 /받침 하중경로와 손목 진입방향 변경 후보',
+        '모터/손/전기 설치 동일 /현재862설치교체0 /긴피복·힘·연속팔·외형승인 아님').save(images/'before_after.png')
+    names={'middle_dip_actuator_adapter','middle_dip_actuator_rack_screw_1','middle_dip_actuator_rack_screw_2',
+        'middle_dip_actuator_rack_nut_1','middle_dip_actuator_rack_nut_2',a.a.CARRIER,a.CARRIER}|a.OUTPUT_NAMES
+    C=np.array(next(z['transform'] for z in raw['output_commands'] if z['command_deg']==-90))
+    local=[scene([z for z in before if z['name'] in names],command=C),scene([z for z in after if z['name'] in names],command=C)]
+    view=fit(local,[.55,-.85,.65])
+    r.sheet([(label,render(s,view,1000)) for label,s in zip(['이전 뒤우회,실제 출력−90°','새 바깥패드→짝받침살,같은−90°'],local)],2,1000,
+        '실제9출력·원래M3너트와 새 받침 연결',
+        '회전공간을가로지르던안쪽web제거 /받침전체·모터부속숨김0 /강도·실물공구승인 아님').save(images/'carrier_before_after.png')
+    names={a.a.FRAME,*a.a.JAWS,'compact_saddle_nested_turns',a.GUIDE,'Palm_wrist_saddle','Wrist_box_carrier','AK_wrist_deviation'}
+    local=[scene([z for z in before if z['name'] in names],dev),scene([z for z in after if z['name'] in names],dev)]
+    view=fit(local,[.7,-.5,.7])
+    r.sheet([(label,render(s,view,1000)) for label,s in zip(['이전 고정죠+손목H굽힘관 /편위−20°','새 고정죠+손목H직선입구 /같은−20°'],local)],2,1000,
+        '전완 고정 모터 출구와 손목을 따라 움직이는 입구',
+        'OD5/보어3.2 유지 /R40·R60고정회전관을짧은손방향진입으로교체 /사이긴피복미연결').save(images/'entry_before_after.png')
+    protection=n.p.read(ROOT/raw['protection_scene'])['parts']
+    s=scene(protection,world=True)
+    view=fit([s],[.55,-.85,.65])
+    r.sheet([('실제9출력의보수적전회전공간9+너트접근구역1',render(s,view,1000))],1,1000,
+        '별도 보호공간 참고 CAD,설치물 아님',
+        '원통은정확회전합집합보다클수있음 /너트접근20mm는선언시험값,공급공구·손잡이치수미선정').save(images/'protected_spaces.png')
+    follow=n.p.read(HERE/'reviews/followup.json')
+    red=scene(n.p.read(ROOT/follow['scene'])['parts'],world=True)
+    C=np.array(next(z['transform'] for z in raw['output_commands'] if z['command_deg']==90))
+    pair=scene([z for z in after if z['name'] in {a.CARRIER,'thumb_ip_two_tail_spool'}],command=C)
+    pair['parts']+=red['parts']
+    r.sheet([('실제 +90° spool/받침과 빨강 공통',render(pair,fit([pair],[.55,-.85,.65]),1000)),
+        ('같은 공통재료만 확대',render(red,fit([red],[.55,-.85,.65]),1000))],2,1000,
+        '새 후보에 남은 실제 출력 간섭',
+        '전체설계미채택 /보호원통교차와실제부품공통을구별 /받침삭제·각도제한으로숨기지않음').save(images/'actual_common.png')
+    for f in [Path(__file__),HERE/'model.py',HERE/'reviews/check.json']:
+        source[f.relative_to(ROOT).as_posix()]=r.sha(f)
+    n.a.save(out,dict(completed=True,source_sha256=source,output_sha256={f.relative_to(ROOT).as_posix():r.sha(f) for f in images.glob('*.png')},
+        opaque=True,whole_hardware_counts=[871]*4,protection_shapes_are_installed=False,
+        native_or_geometry_rebuilt=0,pixels_matrices_armvisualunits_numerically_replayed=False,
+        input_hash_guard=all(r.sha(ROOT/f)==h for f,h in source.items())))
+
+
+if __name__=='__main__': main()

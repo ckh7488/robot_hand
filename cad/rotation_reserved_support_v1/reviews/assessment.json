@@ -1,0 +1,133 @@
+{
+  "completed": true,
+  "raw_records": 8,
+  "new_tests_raw_clear": false,
+  "whole_proposal_raw_clear": false,
+  "previous_carrier_cap_fastener_pairs_new_native": 5,
+  "remaining_actual_output_hub_pair": 1,
+  "conservative_rotational_bound_intersections": 2,
+  "bound_intersections_are_not_two_new_physical_defects": true,
+  "previous_ARM059_unchanged_raw_records_carried_by_identity": [
+    {
+      "group": "new4__moved16",
+      "record": {
+        "lead": "arm059_integrated_electrical_R5_base",
+        "part": "thumb_ip_barrel_adjuster_1",
+        "material_intersection_mm3": 2.7955951125100102
+      }
+    },
+    {
+      "group": "new4__moved16",
+      "record": {
+        "lead": "arm059_integrated_electrical_R5_base",
+        "part": "thumb_ip_barrel_top_nut_1",
+        "material_intersection_mm3": 2.2543445500914405
+      }
+    },
+    {
+      "group": "new4__moved16",
+      "record": {
+        "lead": "arm059_integrated_electrical_R5_base",
+        "part": "thumb_ip_barrel_bottom_nut_1",
+        "material_intersection_mm3": 2.25434455009144
+      }
+    },
+    {
+      "group": "new_cords12_internal",
+      "record": {
+        "lead": "arm059_cord_0_0",
+        "part": "arm059_cord_0_1",
+        "material_intersection_mm3": 0.008497324177772306
+      }
+    },
+    {
+      "group": "new_cords12_internal",
+      "record": {
+        "lead": "arm059_cord_1_0",
+        "part": "arm059_cord_1_1",
+        "material_intersection_mm3": 0.008493423286931605
+      }
+    }
+  ],
+  "previous_ARM059_changed_raw_records_not_carried": [
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "middle_dip_actuator_rack_nut_2",
+        "material_intersection_mm3": 17.954510074921885
+      }
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_beam_cap_1",
+        "material_intersection_mm3": 76.1511028933974
+      }
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3x12_envelope_1_0",
+        "material_intersection_mm3": 0.14268441957830313
+      }
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3_nut_envelope_1_0",
+        "material_intersection_mm3": 0.2032175823234332
+      }
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3x12_envelope_1_1",
+        "material_intersection_mm3": 0.142683935874885
+      }
+    },
+    {
+      "group": "changed20__fixed851_neutral",
+      "record": {
+        "lead": "arm059_middle_dip_dogleg_carrier",
+        "part": "arm054_M3_nut_envelope_1_1",
+        "material_intersection_mm3": 0.2032175822629434
+      }
+    },
+    {
+      "group": "command_-90__output9__changed20",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm059_middle_dip_dogleg_carrier",
+        "material_intersection_mm3": 10.759436068703176
+      }
+    },
+    {
+      "group": "command_90__output9__changed20",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm059_middle_dip_dogleg_carrier",
+        "material_intersection_mm3": 5.237987823941943
+      }
+    },
+    {
+      "group": "deviation_-20__new20_local12__hand",
+      "record": {
+        "lead": "arm059_straight_jaw_0",
+        "part": "compact_saddle_nested_turns",
+        "material_intersection_mm3": 11.71101817216265
+      }
+    }
+  ],
+  "previous_groups_reexecuted": 0,
+  "previous_ARM059_M3pad_plus13_outside_mm3": 19.195131113433646,
+  "previous_failed_pad_retested": false,
+  "inherited_older_strict_false_and_current862_arm_obstructions_resolved": false,
+  "actual_plus90_common_is_original_front_hub_not_new_cross_tie": true,
+  "thumb_bridge_hypothesis_rejected": true,
+  "native_exclusions": 0
+}
