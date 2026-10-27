@@ -1,0 +1,83 @@
+"""Prescribed endpoint transport with exact material-length closure, not equilibrium."""
+import sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT/'cad/contact_housing_link_v1'))
+import build_contact as b
+s,a,m,g,c,p,np,cq=b.s,b.a,b.m,b.g,b.c,b.p,b.np,b.cq
+from scipy.integrate import quad
+from scipy.optimize import brentq
+scope=m.drive.module('_length037_frames',ROOT/'cad/wrist_external_feed_v1/correct_wrist_scope.py')
+ext=m.drive.module('_length037_curvature',ROOT/'cad/contact_housing_link_v1/curve_extrema.py')
+feed=scope.a
+KNOTS=[0.,.2,.4,.6,.8,1.]
+WEIGHT=np.array([0.,0.,.2,.4,.6,.8,1.,1.])
+MODE=np.array([0.,0.,1.,1.,1.,1.,0.,0.])
+GT,GW=np.polynomial.legendre.leggauss(32)
+TS=np.concatenate([(right-left)*(GT+1)/2+left for left,right in zip(KNOTS[:-1],KNOTS[1:])])
+WS=np.concatenate([GW*(right-left)/2 for left,right in zip(KNOTS[:-1],KNOTS[1:])])
+DG=s.SPL.derivative()(TS)
+def read_seed():return p.read(ROOT/'cad/contact_housing_link_v1/reviews/check.json')
+def quad_length(C,end=1.):
+    return sum(quad(lambda t:float(np.linalg.norm(s.SPL.derivative()(t)@C)),left,min(right,end),epsabs=1e-10,epsrel=1e-12,limit=100)[0] for left,right in zip(KNOTS[:-1],KNOTS[1:]) if left<end)
+def quick_length(C):return float(WS@np.linalg.norm(DG@C,axis=1))
+def thumb_frame(q):
+    v=g.g.v;O0,R0=v.frames(g.DESIGN,np.zeros(20))['thumb_mcp'];O,R=v.frames(g.DESIGN,q)['thumb_mcp'];F=np.eye(4);F[:3,:3]=R@R0.T;F[:3,3]=O-F[:3,:3]@O0;return F
+def points(C,T):return C@T[:3,:3].T+T[:3,3]
+def transported(C,TA,TB):return (1-WEIGHT[:,None])*points(C,TA)+WEIGHT[:,None]*points(C,TB)
+def definitions(q,flex,yaw):
+    P,H=feed.wrist_frames(flex,yaw);F=thumb_frame(q);transforms=[(np.eye(4),H),(H,H@F)]*2
+    return P,H,F,transforms
+def curve_solution(q,flex,yaw):
+    seed=read_seed();C0=np.asarray(seed['solver']['controls']);P,H,F,transforms=definitions(q,flex,yaw);C=np.array([transported(z,*TT) for z,TT in zip(C0,transforms)]);records=[]
+    for i in [0,1]:
+        up,down=2*i,2*i+1;target=quad_length(C0[up])+quad_length(C0[down]);direction=np.mean(C0[up,2:6],axis=0)-(C0[up,0]+C0[up,-1])/2;direction=direction/np.linalg.norm(direction);M=MODE[:,None]*direction;history=[];amount=0.;base=C[up].copy()
+        # Only this one prescribed loop-bulge coordinate changes; no route search.
+        for j in range(12):
+            test=base+amount*M;residual=quick_length(test)+quick_length(C[down])-target;vv=DG@test;derivative=float(WS@np.einsum('ij,ij->i',vv,DG@M)/np.linalg.norm(vv,axis=1));history.append(dict(iteration=j,bulge_mm=float(amount),length_residual_mm=float(residual),length_derivative=float(derivative)))
+            if abs(residual)<1e-9:break
+            if abs(derivative)<1e-8:break
+            amount-=residual/derivative
+        C[up]=base+amount*M;lengths=[quad_length(C[up]),quad_length(C[down])];residual=sum(lengths)-target
+        records.append(dict(line=i,free_length_basis_mm=target,upstream_downstream_lengths_mm=lengths,whole_housing_length_basis_mm=target+17+176.42884082273258+25+(43.41592653589793 if i else 0),closure_residual_mm=residual,prescribed_loop_bulge_mm=float(amount),prescribed_loop_direction=direction.tolist(),newton_history=history,closed=bool(abs(residual)<1e-5),guide_rear_material_coordinate_mm=17+lengths[0],guide_front_material_coordinate_mm=17+lengths[0]+176.42884082273258,guide_material_shift_from_neutral_mm=lengths[0]-quad_length(C0[up])))
+    return dict(controls=C.tolist(),lines=records,closed=all(z['closed'] for z in records),parent_F=F.tolist(),wrist_P=P.tolist(),wrist_H=H.tolist(),prescribed_transport_not_contact_or_elastic_equilibrium=True)
+def fixed_edges(i,q,H,F,kind='housing'):
+    e=m.endpoints(q,i);motorA=e['motor_seat' if kind=='housing' else 'motor_cord'];first=cq.Edge.makeLine(cq.Vector(*motorA),cq.Vector(*e['A']))
+    guide=[g.original.transform(a.prior.a.edge(z),H) for z in a.prior.a.definitions(i)]
+    elbow=[g.original.transform(ed,H@F@a.frame()) for ed in a.edges()] if i else []
+    last=g.original.transform(cq.Edge.makeLine(cq.Vector(*e['B']),cq.Vector(*e['distal_seat' if kind=='housing' else 'distal_cord'])),H)
+    return first,guide,elbow,last
+def full_edges(case,i,kind='housing'):
+    C=np.asarray(case['solution']['controls']);q=case['angles_deg'];H=np.asarray(case['solution']['wrist_H']);F=np.asarray(case['solution']['parent_F']);up=b.spline(C[2*i]);down=b.spline(C[2*i+1]);first,guide,elbow,last=fixed_edges(i,q,H,F,kind)
+    return [first]+[up.trim(j/5,(j+1)/5) for j in range(5)]+guide+[down.trim(j/5,(j+1)/5) for j in range(5)]+elbow+[last]
+def build(case):
+    rows=[];lengths=[]
+    for i in [0,1]:
+        for kind in ['housing','cord']:
+            es=full_edges(case,i,kind);lengths.append(dict(line=i,kind=kind,total_length_mm=sum(z.Length() for z in es)))
+            for j,ed in enumerate(es):
+                sh=m.swept(ed,1.5).cut(m.swept(ed,.65)).clean() if kind=='housing' else m.swept(ed,.3);assert sh.isValid() and len(sh.Solids())==1,(i,kind,j)
+                rows.append(dict(name='material_'+kind+'_'+str(i)+'_'+str(j),shape=sh,physical_line=i,kind=kind,segment=j,body='palm',body_label_only_for_current_pose_render=True,length_mm=ed.Length(),color=[.63,.25,.8] if kind=='housing' else [.97,.45,.12]))
+    return rows,lengths
+def material_points(case,i,fractions):
+    C=np.asarray(case['solution']['controls']);q=case['angles_deg'];H=np.asarray(case['solution']['wrist_H']);F=np.asarray(case['solution']['parent_F']);first,guide,elbow,last=fixed_edges(i,q,H,F);up,down=C[2*i:2*i+2];parts=[('edge',first,first.Length()),('spline',up,quad_length(up))]+[('edge',z,z.Length()) for z in guide]+[('spline',down,quad_length(down))]+[('edge',z,z.Length()) for z in elbow+[last]];L=sum(z[2] for z in parts);result=[]
+    for fraction in fractions:
+        material=float(fraction*case['solution']['lines'][i]['whole_housing_length_basis_mm']);offset=0.
+        for j,(kind,z,ll) in enumerate(parts):
+            if material<=offset+ll+1e-7 or j==len(parts)-1:
+                local=float(np.clip(material-offset,0,ll))
+                if kind=='edge':point=z.positionAt(local/ll).toTuple();parameter=local/ll
+                else:
+                    parameter=0. if local==0 else (1. if local==ll else brentq(lambda t:quad_length(z,t)-local,0.,1.,xtol=1e-12));point=(s.SPL(parameter)@z).tolist()
+                result.append(dict(material_coordinate_mm=material,fraction=float(fraction),piece=j,local_arc_mm=local,local_parameter=float(parameter),point_mm=list(point)));break
+            offset+=ll
+    return result
+def save(path,value):
+    def clean(z):
+        if isinstance(z,dict):return {k:clean(v) for k,v in z.items()}
+        if isinstance(z,(list,tuple)):return [clean(v) for v in z]
+        if isinstance(z,np.ndarray):return z.tolist()
+        if isinstance(z,np.generic):return z.item()
+        return z
+    p.write(path,clean(value))

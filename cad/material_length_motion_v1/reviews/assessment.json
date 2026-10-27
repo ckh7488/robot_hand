@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "new_hardware_rows": 0,
+  "hand_rows": 397,
+  "packaging_rows": 385,
+  "electrical_rows": 64,
+  "arm_rows": 10,
+  "wrist_hardware_rows": 6,
+  "old_geometry_files_unchanged": 4890,
+  "physical_housings": 2,
+  "physical_middle_cords": 2,
+  "new_wrist_CAD_rows": 136,
+  "evidence_common_rows": 3,
+  "analysis_cases": 11,
+  "physical_line_length_closures": 22,
+  "maximum_length_residual_mm": 4.2572310121613555e-09,
+  "housing_length_basis_mm": [
+    730.8562916295482,
+    791.9785243464919
+  ],
+  "neutral_geometry_exactly_reused": true,
+  "neutral_native_repeated": 0,
+  "parent_prescribed_family_local_radius_failed_case_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "first_parent_failure_radius_mm": 0.6243998793957345,
+  "full_parent_failure_radius_mm": 0.06530583163836857,
+  "parent_housing_SOLID_or_native_created": false,
+  "new_native_cases": 2,
+  "native_pairs": 121788,
+  "native_AABB": 670,
+  "overlap_records": 3,
+  "operation_failures": 0,
+  "native_case_statuses": [
+    {
+      "id": 9,
+      "clear": true
+    },
+    {
+      "id": 10,
+      "clear": false
+    }
+  ],
+  "physical_equilibrium_tension_or_whole_hand_approved": false,
+  "candidate_adopted": false
+}

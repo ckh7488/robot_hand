@@ -1,0 +1,58 @@
+"""Actual wrist CAD and common material; separate mathematical bend diagnostic."""
+import sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import check_motion as k
+a,m,g,c,p,np,cq,ROOT,HERE=k.a,k.m,k.g,k.c,k.p,k.np,k.cq,k.ROOT,k.HERE
+measure=m.drive.module('_length037_metrics',ROOT/'cad/long_housing_route_v1/review_core.py')
+helper=m.drive.module('_length037_render',ROOT/'cad/thumb_root_guide_v1/guide_render.py');r,engine=helper.r,helper.engine
+def source_piece(case,z):
+    edge=a.full_edges(case,z['physical_line'],z['kind'])[z['segment']]
+    return m.swept(edge,1.5).cut(m.swept(edge,.65)).clean() if z['kind']=='housing' else m.swept(edge,.3)
+def main():
+    raw=p.read(HERE/'reviews/check.json');analysis=p.read(HERE/'reviews/analysis.json');assert raw['completed'];source=dict(raw['source_sha256'])
+    hand=p.read(ROOT/'cad/motion_clearance_v2/generated/assembly_catalog.json')['hand'];hand=[z for z in hand if z['name'] not in ['thumb_segment2_dark_faceplate_clamp1_bolt','thumb_segment2_dark_faceplate_clamp2_bolt']];offset=p.read(ROOT/'cad/thumb_sheath_terminal_v2/selected/generated/candidate_scene.json');ret=p.read(ROOT/'cad/sheath_retention_v1/selected/generated/parts/scene.json')['parts'];hand+=offset['retained_guide_parts']+[z for z in offset['parts'] if z['name'] not in ['distal_flanged_ferrule_0','distal_flanged_ferrule_1']]+[z for z in ret if z['body']=='thumb_mcp'];hand=[z for z in hand if z['name']!=a.a.REPLACED]+[z for z in p.read(ROOT/'cad/thumb_entry_bend_v1/generated/parts/scene.json')['parts'] if z['installed_part_candidate']];assert len(hand)==397
+    ps=p.read(ROOT/'cad/motor_tendon_terminal_v1/selected/generated/assembly_scene.json');pack=ps['new_parts']+ps['retained_parts']+[z for z in ret if z['body']=='forearm'];elect=p.read(ROOT/'cad/remote_motor_lead_v2/generated/scene.json')['parts'];ws=p.read(ROOT/'cad/paired_rear_guide_v1/generated/assembly_scene.json');wrist=[z for z in ws['new_parts']+ws['retained_parts'] if z['installed_part_candidate']];arm=[]
+    for z in p.read(ROOT/'cad/form_candidate_v1/generated/scene.json')['arm_reference']:
+        rel='cad/modular_roots_v9/meshes/'+z['asset']+'.stl';arm.append(dict(name=z['name'],mesh=rel,sha256_stl=r.sha(ROOT/rel),color=[.6,.65,.7]))
+    failed=next(z for z in raw['cases'] if not z['clear']);stored=p.read(HERE/'reviews/actual_common.json');common_meta=p.read(ROOT/stored['scene'])['parts']
+    neutral=p.read(ROOT/'cad/contact_housing_link_v1/generated/neutral/scene.json')['parts']
+    def assembly(which,local=False):
+        parts=[]
+        def add(z,T,alpha):
+            path=ROOT/z['mesh'];assert r.sha(path)==z['sha256_stl'];source[z['mesh']]=z['sha256_stl'];parts.append(dict(name=z['name'],body='palm',mesh_path=path,points=r.read_stl_points(path),color=z.get('color',[.56,.64,.7]),alpha=alpha,neutral_inverse=T))
+        H=np.eye(4) if which is None else np.asarray(analysis['cases'][which['id']]['solution']['wrist_H']);P=np.eye(4) if which is None else np.asarray(analysis['cases'][which['id']]['solution']['wrist_P']);rows=neutral if which is None else p.read(ROOT/which['scene'])['parts']
+        if not local:
+            for z in hand:add(z,H,.17)
+            for z in pack:add(z,H if z.get('body')=='palm' else np.eye(4),.21)
+            for z in elect:add(z,np.eye(4),.32)
+            for z in arm:add(z,H if z['name']=='Palm_wrist_saddle' else P if z['name'] in ['Wrist_box_carrier','AK_wrist_deviation'] else np.eye(4),.24)
+            for z in wrist:add(z,H,.82)
+        for z in rows:
+            if local and not (z['kind']=='housing' and z['segment']==2):continue
+            add(z,np.eye(4),.23 if local else .78 if z['kind']=='housing' else .92)
+        if which and not which['clear']:
+            for z in common_meta[:1]:add(z,np.eye(4),1.)
+        return dict(parts=parts,design=g.DESIGN)
+    scenes=[assembly(None),*[assembly(z) for z in raw['cases']]];view=r.view_fit(scenes,[dict(angles_deg=[0.]*20)],np.array([.8,-.8,.5]),1.);imgs=[]
+    def render(ss,view,size=850):
+        try:
+            ss['_render_state']=r.make_renderer(ss,{'v':view},size,engine)
+            for j,z in enumerate(ss['parts']):ss['_render_state']['model'].geom_rgba[j,3]=z['alpha']
+            return r.render_one(ss,[0.]*20,'v',{'v':view},size,engine)[0]
+        finally:
+            if '_render_state' in ss:ss['_render_state']['renderer'].close()
+    for ss in scenes:imgs.append(render(ss,view))
+    out=HERE/'images';out.mkdir(exist_ok=False);r.sheet([('기준: 저장 편손 기하 · 새 길이의 기준만 채택',imgs[0]),('굽힘-20°/편위-15° · 실제 재료검사0',imgs[1]),('굽힘+20°/편위+15° · 두 피복/줄 관통3기록',imgs[2])],3,850,'같은 재료길이의 손목 기하 후보 · 전체 운동은 미채택','실제 힘·마찰/예압·장력/설치 승인 아님 · 부모 잡기는 별도 반경 실패 · 손/모터/전선 변경0 · 빨강은 실제 공통재료').save(out/'wrist_before_after.png')
+    close=assembly(failed,True);solo=dict(close,parts=[z for z in close['parts'] if z['name'].startswith('actual_wrist_common')]);cv=r.view_fit([close],[dict(angles_deg=[0.]*20)],np.array([.7,-1.,.6]),1.);sv=r.view_fit([solo],[dict(angles_deg=[0.]*20)],np.array([.7,-1.,.6]),1.);ci=render(close,cv,850);si=render(solo,sv,850);r.sheet([('두 피복을 투명하게 · 빨강이 실제 공통재료',ci),('같은 빨간 공통재료만 확대 · 별도 배율',si)],2,850,'손목 +20°/+15°의 실제 관통','피복-피복 기본체적30.825403439mm³ · 원래 관통3쌍 보존 · 반경 축소나 손 절삭 근거 아님').save(out/'actual_cross.png')
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    plt.rcParams['font.family']='Malgun Gothic';plt.rcParams['axes.unicode_minus']=False
+    fig,axs=plt.subplots(1,2,figsize=(12,5));ts=np.linspace(0,1,501);C0=np.asarray(analysis['cases'][0]['solution']['controls'])[3];C1=np.asarray(analysis['cases'][1]['solution']['controls'])[3];xyz0=a.s.SPL(ts)@C0;xyz1=a.s.SPL(ts)@C1
+    for ax,(u,v) in zip(axs,[(0,1),(0,2)]):
+        ax.plot(xyz0[:,u],xyz0[:,v],label='편손 수학 중심선');ax.plot(xyz1[:,u],xyz1[:,v],color='crimson',label='부모25% 정해진 변형');ax.scatter([xyz1[-1,u]],[xyz1[-1,v]],c='crimson');ax.set_xlabel('XYZ'[u]+' mm');ax.set_ylabel('XYZ'[v]+' mm');ax.axis('equal');ax.grid(True,alpha=.2);ax.legend()
+    fig.suptitle('피복 솔리드 생성 전 실패: 위 하류 끝의 Rmin 0.624399879mm < 피복 외반경1.5mm');fig.text(.5,.02,'수학 중심선 진단이며 실제 관통/손 CAD 결함 증명이 아님 · 이 부모후보의 피복 솔리드/native는 만들지 않음',ha='center');fig.tight_layout(rect=[0,.04,1,.93]);fig.savefig(out/'parent_curve_diagnostic.png',dpi=160);plt.close(fig)
+    source['cad/material_length_motion_v1/render_saved.py']=m.drive.sha(Path(__file__));a.save(out/'report.json',dict(completed=True,source_sha256=source,outputs={z.name:r.sha(z) for z in out.iterdir() if z.is_file()},actual_saved_CAD_wrist_panels=True,parent_panel_is_mathematical_centerline_only=True,new_common_pairs_computed_this_render=0,actual_common_from_prior_details_run=True,whole_native_groups_repeated=0,whole_hand_drive_approved=False))
+if __name__=='__main__':main()

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\material_length_motion_v1\details_render.py", line 57, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\details_render.py", line 37, in main
+    scenes=[assembly(None),*[assembly(z) for z in raw['cases']]];view=r.view_fit(scenes,[dict(angles_deg=[0.]*20)],np.array([.8,-.8,.5]),1.);imgs=[]
+            ^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\details_render.py", line 26, in assembly
+    for z in hand:add(z,H,.17)
+                  ^^^^^^^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\details_render.py", line 23, in add
+    path=ROOT/z['mesh'];assert r.sha(path)==z['sha256_stl'];source[z['mesh']]=z['sha256_stl'];parts.append(dict(name=z['name'],body='palm',mesh_path=path,points=r.read_stl_points(path),color=z.get('color',[.56,.64,.7]),alpha=alpha,neutral_inverse=T))
+              ~^^^^^^^^
+KeyError: 'mesh'

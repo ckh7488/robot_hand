@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\material_length_motion_v1\analyze.py", line 15, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\analyze.py", line 11, in main
+    q=target*factor;solution=a.curve_solution(q,flex,yaw);case=dict(id=j,factor=factor,angles_deg=q.tolist(),wrist_flex_deg=flex,wrist_deviation_deg=yaw,solution=solution,curvature_checks=[a.ext.extrema(C) for C in np.asarray(solution['controls'])]);case['local_radius_necessary_condition']=all(z['necessary_radius_greater_than_housing_outer_radius_1p5'] for z in case['curvature_checks']);case['material_markers']=[a.material_points(case,i,np.linspace(0,1,9)) for i in [0,1]];cases.append(case);a.save(out,dict(completed=False,cases=cases));print(j,solution['closed'],case['local_radius_necessary_condition'],[(z['prescribed_loop_bulge_mm'],z['guide_material_shift_from_neutral_mm']) for z in solution['lines']],flush=True)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\material_model.py", line 38, in curve_solution
+    test=base+amount*M;residual=quick_length(test)+quick_length(C[down])-target;vv=DG@test;derivative=float(WS@np.einsum('ij,ij->i',vv,DG@M)/np.linalg.norm(vv,axis=1));history.append(dict(iteration=j,bulge_mm=float(amount),length_residual_mm=float(residual),length_derivative=float(derivative)))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: only 0-dimensional arrays can be converted to Python scalars
