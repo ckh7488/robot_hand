@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/mounting_unit_interface_basis_v1/images/actual_output_pattern.png",
+    "cad/mounting_unit_interface_basis_v1/images/entry_common.png",
+    "cad/mounting_unit_interface_basis_v1/images/reference_before_after.png",
+    "cad/mounting_unit_interface_basis_v1/images/whole_mounting_unit.png"
+  ],
+  "official_PDF_page_read": true,
+  "opaque": true,
+  "no_frame_clipping_observed": true,
+  "registered_reference_display_rows": [
+    871,
+    871
+  ],
+  "source_registration_not_installed_replacement": true,
+  "pixels_matrices_armvisualunits_numerically_replayed": false
+}

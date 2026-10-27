@@ -1,0 +1,31 @@
+{
+  "checked_date_KST": "2026-10-28",
+  "source_files": [
+    {
+      "file": "cad/modular_roots_v9/sources/AK60.pdf",
+      "sha256": "a93171f048e1f4ae4aca8d37d5dda30ea76adea3acd433741cc151d4b58e86bc",
+      "bytes": 69049,
+      "url": "https://www.cubemars.com/data/cms/202602/ak60-6-v3-0-robotic-actuator-2d-drawing.pdf",
+      "new_download_matches_existing_source": true
+    },
+    {
+      "file": "cad/modular_roots_v9/sources/AK60.zip",
+      "sha256": "80ca376209837288a0687711620f212413dce8990367aad8adfc38d890c66ac8",
+      "bytes": 829971,
+      "url": "https://www.cubemars.com/data/cms/202602/ak60-6-v3-0-robotic-actuator-3d-drawing.zip",
+      "new_download_matches_existing_source": true
+    },
+    {
+      "file": "cad/modular_roots_v9/sources/AK60.step",
+      "sha256": "49323992d74da29bc65829fa8fd86f53aa666ac0ccd835668f52e2041363178c",
+      "bytes": 3515072,
+      "url": "https://www.cubemars.com/data/cms/202602/ak60-6-v3-0-robotic-actuator-3d-drawing.zip#AK60-6%20KV80%20V3.0.STEP",
+      "new_download_matches_existing_source": true
+    }
+  ],
+  "official_product_url": "https://www.cubemars.com/product/ak60-6-v3-0-kv80-robotic-actuator.html",
+  "product_relative_download_links_returned_404": true,
+  "root_data_download_urls_succeeded": true,
+  "PDF_one_page_visually_read": true,
+  "pdf_original_unchanged": true
+}

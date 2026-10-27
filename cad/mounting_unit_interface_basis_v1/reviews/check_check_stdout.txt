@@ -1,0 +1,5 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new_axial_entry4__all_existing871 3484 10 6
+new_axial_entry4__existing_rotation_bounds9 36 2 1
+complete 2 7 0 holes 2

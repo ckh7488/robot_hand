@@ -1,0 +1,31 @@
+{
+  "state": "completed",
+  "pid": 6484,
+  "commands": [
+    {
+      "argv": [
+        "E:/hand_recog/mujoco-lab/.venv/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/arm062_sources.pyw"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "sources",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm062-check-job-sources.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm062-check-job-sources.err",
+      "pid": 86408,
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/mounting_unit_interface_basis_v1/check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "check",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm062-check-job-check.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm062-check-job-check.err",
+      "pid": 73088,
+      "returncode": 0
+    }
+  ]
+}

@@ -208,3 +208,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM061 닫힌중앙반력frame,미채택
 
 [실제후보871](../cad/central_reaction_frame_v1/README.md). 새carrier1로실제드럼±90의기존허브걸림을피했으나보수공간/frontcollar22.556148182608197·실제새web/M3나사.036976287823302804가남아미채택.17그룹2기록·오류0/34pad·collar보존/12상대팔관계0. beam/flange거리0도결합승인아니며flange/명목AKrollcase4mm·실제hub/체결미모델링이다.전체front체결unit/공구공간과실제출력반력부터정한다. 현재862/손/16모터·ARM060입구유지,전체구동/실물외형미승인.
+
+## ARM062 전체체결/실제출력 근거
+
+[참고CAD와실제검사](../cad/mounting_unit_interface_basis_v1/README.md). 실제출력의6M3/PCD20을기존plate가막으며명목case의4mm는실제coupling길이가아니다. 전체front체결의양쪽진입참고도root와교차한다. 새3그룹13기록·오류0/선정공구충돌확정아님. 첫탭/핀분류는interface_followup에서교정하고원본보존. 현재862/손/16구동원유지·설치변경0,전체구동/실물승인없음.
