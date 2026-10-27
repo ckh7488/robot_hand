@@ -1,5 +1,7 @@
 # 작업 규칙
 
+- 2026-10-28 ARM071: cad/datum_plane_packet_entry_v1/README.md/reviews/survey·check·assessment·evidence/CHECKPOINT.next_stage우선. 현재862/손16모터빔전기축길이명령clock기하변경0·886미채택. 실제adapter面Y-229/옛lid[-239.15,-237.65]의+8진입이root[-232,-229]에걸린것을읽고,완성body19를원래finalnormal0에서전체바깥방사진입/마지막20을5mm표본으로검사했다. 같은벤치92/옛109·공통4/축10재실행0. 새394native/0기록0오류·새3/총8/16·조건부670/216대기,전체공장/구동외형승인아님. 다음실제남은 전체interface/특수앞엄지48·앞7,원래전체부품/항등복구유지. 옛corefalse/strictfalse·실패보존,손빔절삭/모터삭제·몰래이동0,완료경로/615면PCD/작은코너반복0.
+
 - 2026-10-28 ARM070: cad/open_guide_module_assembly_v1/README.md/reviews/check·selected_check·final_check·continuation_check·assessment·survey·evidence/CHECKPOINT.next_stage우선. 현재862/손16모터빔전기축길이명령clock기하변경0·886미채택. 안내대수직/adapter18.9717814633·plug/rotor.1444036954·너트수직/base.9273232912의앞57실패보존. 안내대옆진입→모터와plug→열린홈3전선→너트옆진입후포켓→뚜껑/M2→원래world24복구. 새109native/8기록0오류,같은벤치14/guide21/전기14·부분집합12증명승계/옛native재실행0. 새0/총5/16·조건부598/288대기,전체공장/구동외형승인아님. 다음 실제남은 전체interface/특수앞엄지48·앞7검토. 옛corefalse/strictfalse·모든실패보존,손빔절삭/모터삭제·몰래이동0,완료57/새경로/증명·ARM069377/axis10/common1/615면PCD반복0.
 
 - 2026-10-28 ARM069: cad/rear_packet_restoration_v1/README.md/reviews/check.json/assessment.json/evidence.json/CHECKPOINT.next_stage우선. 현재862/손16모터빔전기축길이명령clock기하변경0·886미채택. 조건부502/첫24유지에서뒤7계획중새4복구/총5/16·598현재/288대기,새377native/1기록0오류다. 실제방위별M2선조립→모터와자기3선/plug→몸체19→racknut/M3→원래M2너트마지막,전체장애물AABB밖진입/축읽기10다. 앞8/특수엄지48은별도다음조건이며전체공장조립/20구동/외형승인아니다. 첫새실패/공통보존후자연진입순서검토. 끝낸새경로/축/공통·ARM06864/24/20/14/17·이전124/106/68/615면PCD반복0,손빔절삭/모터삭제·몰래이동0·옛corefalse/strictfalse보존.

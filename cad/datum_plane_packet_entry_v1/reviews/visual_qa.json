@@ -1,0 +1,15 @@
+{
+  "captions_legible": true,
+  "note": "Four actual saved CAD sheets inspected. Original root fully in datum view;outside starts and original packet restoration visible. No render/native/oldBoolean repeated.",
+  "images_viewed": [
+    "cad/datum_plane_packet_entry_v1/images/datum_before_after.png",
+    "cad/datum_plane_packet_entry_v1/images/rack_M3_entry.png",
+    "cad/datum_plane_packet_entry_v1/images/restoration_before_after.png",
+    "cad/datum_plane_packet_entry_v1/images/whole_body_entry.png"
+  ],
+  "opaque": true,
+  "view_omissions_labelled": true,
+  "completed": true,
+  "world_registration_or_physical_approval": false,
+  "all_selected_CAD_inside_frame": true
+}
