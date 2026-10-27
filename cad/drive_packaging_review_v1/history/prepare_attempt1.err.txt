@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\prepare_pack048.pyw", line 13, in <module>
+    first=ast.parse((H/'history/inspect_render_attempt1.py.txt').read_text());current=ast.parse((H/'inspect_render.py').read_text())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'cp949' codec can't decode byte 0xeb in position 6124: illegal multibyte sequence

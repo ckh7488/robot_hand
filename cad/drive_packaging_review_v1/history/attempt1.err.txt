@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\drive_packaging_review_v1\inspect_render.py", line 114, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\drive_packaging_review_v1\inspect_render.py", line 61, in main
+    output=HERE/'reviews/baseline.json';assert not output.exists();state,base,materials=metadata();source={}
+                                                                                        ^^^^^^^^^^
+  File "D:\robot_hand\cad\drive_packaging_review_v1\inspect_render.py", line 18, in metadata
+    assert state['id']=='wrist_1_back_0.0' and np.max(abs(state['case']['q']))==0
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for abs(): 'list'

@@ -1,0 +1,114 @@
+"""Measure and show the saved candidate before changing its packaging."""
+import sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT/'cad/parent_wrist_material_motion_v1'))
+import run_motion as d
+n=d.n
+fr=n.m.drive.module('_pack048_saved_renderer',n.HERE/'evidence_render.py')
+r,engine,old=fr.r,fr.engine,fr.old
+np=n.np
+from OCP.OSD import OSD_ThreadPool
+
+
+def metadata():
+    raw=n.p.read(ROOT/'cad/parent_wrist_material_motion_v1/reviews/check.json')
+    state=raw['states'][-1]
+    assert state['id']=='wrist_1_back_0.0' and np.max(abs(state['case']['q']))==0
+    assert np.max(abs(np.array(state['case']['H'])-np.eye(4)))<1e-12
+    arm=n.p.read(ROOT/'cad/motor_guide_prethread_v1/images/report.json')['arm_visual_references']
+    arms={z['name']:z for z in arm};base=[arms.get(z['name'],z) for z in old.current_metadata()]
+    materials=n.p.read(ROOT/state['scene'])['parts']
+    assert len(base)==862 and len(materials)==118
+    return state,base,materials
+
+
+def bbox(points):return np.array([points.min(axis=0),points.max(axis=0)])
+
+
+def union(boxes):
+    return np.array([np.min([z[0] for z in boxes],axis=0),np.max([z[1] for z in boxes],axis=0)])
+
+
+def summary(rows):
+    B=union([z['mesh_bbox_mm'] for z in rows]);return dict(parts=len(rows),bbox_mm=B,dimensions_mm=B[1]-B[0])
+
+
+def native_selection(base,materials):
+    # Sixteen free upstream housing arcs plus actual two motor jaws and PAIR body.
+    chosen=[z for z in materials if z['kind']=='housing' and 3<=z['path_segment']<3+n.NUP]
+    chosen += [z for z in base if z['name'] in ['motor_0_jaw_with_fixed_bend','motor_1_jaw_with_fixed_bend']]
+    pair=n.p.read(ROOT/'cad/paired_rear_guide_v1/generated/assembly_scene.json')
+    names={z['name'] for z in pair['new_parts'] if z['installed_part_candidate']}
+    chosen += [z for z in base if z['name'] in names]
+    assert len(chosen)==19
+    return chosen
+
+
+def camera(parts,normal):
+    normal=np.array(normal,dtype=float);normal/=np.linalg.norm(normal)
+    right=np.cross([0.,0.,1.],normal);right/=np.linalg.norm(right);up=np.cross(normal,right)
+    basis=np.column_stack([right,up,normal]);low=np.full(3,np.inf);high=-low
+    for z in parts:
+        P=z['points']@basis;low=np.minimum(low,P.min(axis=0));high=np.maximum(high,P.max(axis=0))
+    focus=basis@((low+high)/2);extent=high-low
+    return dict(position=(focus+normal*np.linalg.norm(extent)*3).tolist(),focus=focus.tolist(),right=right.tolist(),up=up.tolist(),
+        parallel_scale_mm=float(max(extent[:2])*.56),projected_union_bounds_mm=[low.tolist(),high.tolist()],framing_margin_fraction=.06,projection='parallel')
+
+
+def main():
+    output=HERE/'reviews/baseline.json';assert not output.exists();state,base,materials=metadata();source={}
+    dependencies=['cad/drive_packaging_review_v1/inspect_render.py','cad/whole_line_threading_v1/render.py',
+        'cad/coupled_material_continuation_v1/evidence_render.py','cad/parent_wrist_material_motion_v1/reviews/check.json',state['scene'],
+        'cad/paired_rear_guide_v1/generated/assembly_scene.json','cad/support_attachment_basis_v1/generated/checked/scene.json',
+        'cad/motor_guide_prethread_v1/images/report.json','cad/motion_clearance_v2/generated/assembly_catalog.json',
+        'cad/motor_tendon_terminal_v1/selected/generated/assembly_scene.json','cad/sheath_retention_v1/selected/generated/parts/scene.json',
+        'cad/thumb_sheath_terminal_v2/selected/generated/candidate_scene.json','cad/thumb_entry_bend_v1/generated/parts/scene.json',
+        'cad/remote_motor_lead_v2/generated/scene.json','cad/form_candidate_v1/generated/scene.json']
+    source.update({f:r.sha(ROOT/f) for f in dependencies});records=[];parts=[]
+    special={'motor_0_jaw_with_fixed_bend','motor_1_jaw_with_fixed_bend'}
+    pair=n.p.read(ROOT/'cad/paired_rear_guide_v1/generated/assembly_scene.json');special.update(z['name'] for z in pair['new_parts'] if z['installed_part_candidate'])
+    for j,z in enumerate(base+materials):
+        path=ROOT/z['mesh'];assert r.sha(path)==z['sha256_stl'];source[z['mesh']]=z['sha256_stl'];P=r.read_stl_points(path)
+        record=dict(name=z['name'],mesh=z['mesh'],sha256_stl=z['sha256_stl'],mesh_bbox_mm=bbox(P),kind=z.get('kind'),body=z.get('body'),physical_line=z.get('physical_line'),path_segment=z.get('path_segment'))
+        records.append(record)
+        color=[.64,.69,.73] if j<397 else [.36,.43,.49]
+        if z['name'] in special:color=[.93,.48,.1]
+        if j>=862:color=[.62,.21,.78] if z['physical_line']==0 else [.1,.48,.78]
+        parts.append(dict(name=z['name'],body='palm',mesh_path=path,points=P,color=color,neutral_inverse=np.eye(4)))
+    selections={'hand397':records[:397],'packaging385':records[397:782],'forearm_packaging346':[z for z in records[397:782] if z['body']!='palm'],
+        'electrical64':records[782:846],'arm10':records[846:856],'PAIR6':records[856:862],
+        'hardware862':records[:862],'materials118':records[862:],'whole980':records,
+        'upstream_free_housing16':[z for z in records[862:] if z['kind']=='housing' and 3<=z['path_segment']<3+n.NUP]}
+    assert len(records)==980 and len(selections['forearm_packaging346'])==346
+    groups={key:summary(values) for key,values in selections.items()}
+    A=groups['forearm_packaging346']['bbox_mm'];B=groups['upstream_free_housing16']['bbox_mm']
+    excess=dict(negative_xyz_mm=np.maximum(A[0]-B[0],0),positive_xyz_mm=np.maximum(B[1]-A[1],0),
+        reference='Global orthogonal box of all 346 current forearm packaging parts, not local skin clearance or an accepted exterior limit.')
+    native=[]
+    for z in native_selection(base,materials):
+        source[z['step']]=z['sha256_step'];assert r.sha(ROOT/z['step'])==z['sha256_step']
+        shape=n.cq.importers.importStep(str(ROOT/z['step'])).val()
+        native.append(dict(name=z['name'],step=z['step'],sha256_step=z['sha256_step'],bbox_mm=n.c.m.pack._bbox(shape)))
+    out=HERE/'images';out.mkdir(parents=True,exist_ok=False);assembly=dict(parts=parts,design=n.g.DESIGN)
+    views=[('X-Z 직교도',[0,-1,0]),('Y-Z 직교도',[1,0,0]),('사선',[.8,-.9,.5])];tiles=[]
+    for label,normal in views:
+        view=camera(parts,normal)
+        try:
+            assembly['_render_state']=r.make_renderer(assembly,{'v':view},900,engine)
+            tiles.append((label,r.render_one(assembly,[0.]*20,'v',{'v':view},900,engine)[0]))
+        finally:
+            if '_render_state' in assembly:assembly['_render_state']['renderer'].close();del assembly['_render_state']
+    r.sheet(tiles,3,900,'현재 전달계 외형 검토: 같은 CAD, 불투명 표시',
+        '회색: 기존 하드웨어 / 주황: 돌출 안내대 / 보라·파랑: 엄지 한 축의 두 선 / 새 설계·축소·덮개 없음').save(out/'opaque_packaging.png')
+    n.a.save(output,dict(completed=True,source_sha256=source,state_id=state['id'],case=state['case'],mesh_parts=records,groups=groups,
+        free_housing_box_excess=excess,native_STEP_boxes=native,new_geometry=0,new_hardware=0,CAD_exports=0,new_native_Boolean_groups=0,
+        prior_motion_or_seam_checks_reexecuted=0,opaque_render_only=True,geometry_optimized=False,current_packaging_exterior_accepted=False,
+        user_feedback='모양새 이게 최선임? 좀 상당히 별로인 느낌인데..',feedback_interpretation='Prioritize overall drive packaging review before replication to other axes; accepted hand body remains preserved.',
+        mesh_bounds_are_visual_not_native_clearance=True,native_boxes_are_saved_STEP_bounds_not_source_STEP_equivalence=True,
+        OCC_pool_threads=OSD_ThreadPool.DefaultPool_s().NbThreads(),physical_or_continuous_motion_approved=False,
+        images={z.name:r.sha(z) for z in out.iterdir() if z.is_file()},input_hash_guard=all(r.sha(ROOT/f)==h for f,h in source.items())))
+
+
+if __name__=='__main__':main()

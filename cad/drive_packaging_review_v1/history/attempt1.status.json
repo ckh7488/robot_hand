@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "pid": 80472,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/drive_packaging_review_v1/inspect_render.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "inspect",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\pack048-inspect-inspect.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\pack048-inspect-inspect.err",
+      "pid": 77832,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: inspect failed\n"
+}
