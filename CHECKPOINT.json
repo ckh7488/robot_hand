@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "506d6201daf5efdead7ee85c582cdb6c312bd490",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
   "next_stage": "ARM062 is a mounting-unit/actual roll-output evidence basis,not a new installed layout. Read cad/mounting_unit_interface_basis_v1/README.md,reviews/check.json/interface_followup.json/assessment.json/evidence.json,docs/reviews/ARM062,logs/arm062-finish.json first. Current862/accepted364/currenthand397/fourpalm/16remote/electrical/axes/lengths/commands/clock unchanged;ARM061871 unadopted. New18reference shapes=6existingfront mounting functional regions+4entry references+6outputtap-axis continuations+1invalid vendor surface+1common;installed0. Whole front unit has lowercollar as existingcarrier region and actual cap+M3bolts2+nuts2,separatehardware5,axesX+-31/Y-162.5,Zshaft[-4,8]/head[-6,-4]/nut[4,6.4]. Entry4 is20mm axial continuation of actualheadR2.85/nutR3.175 atheadZ[-26,-6]/nut[6.4,26.4],not selectedsocket/bit/handle or proven requiredlength. New3native3532pairs18AABB13records0ops rawfalse:4entry/carrier96.5202618440636,123.3261144050046,95.91640478980248,29.71755440113315;2nut-solid-reference/protrudingbolt11.309733552923253 each are coaxial intendedspace,not2physical defects;1entry/conservative spoolbound31.092181538002144 not confirmedactualrotation;6real-source tap-axis/blankplate19.6349540849362 each show no through axes in existing nominal flange. No exclusions/rawfalse hidden. Onecommon123.326114404963 is reference-entry/carrier evidence,not actualtool material. Official Cubemars configuredAK60-6V3.0KV80 page/2D/3D downloads checked2026-10-28. NewPDF/ZIP/STEP hashidentical to existing cad/modular_roots_v9/sources/AK60.*;615faces/108shells/invalid0solids,not repaired/sewn/used as nativevolume obstacle. Drawing onepage visually read. Outputside identity is inference from protrudingpilot anddrawing,clock/stator mount unverified. Initial check.vendor_interface.output_M3_cylinder_axes incorrectly named twoR1.5pin axes;originalcode/result/export preserved. interface_followup supersedes:6M3tap axesR10/STEP R1.25,2pinsR1.5;drawingM3depth6 vsSTEPcylindertrim7.0000002 not usablethreadlength. Drawingoutputpilot25/PCD20,casePCD68 withfrontM3depth6/rear3.5 andpins2x3+0.02/depth3. Do not infer manufacturing/engagement from openSTEP. ExactsourceoutputplaneZ-15.5000000000004 registered to existingrolljointY-230;sourceactualclock kept. Firstexport bboxdatum differs-1.0001182637608963e-7mm,stored unchanged;exactplane transform in interface_followup. Under this explicit registration outputface and existingflangebackY-230 coincide;nominalcase/flange4mm gap is not neededcouplinglength and must not be arbitrarily filled. Registration does not prove surfacecontact/preload/torque. Source6tapaxesextended4mm throughplate:all6intersectblankRoll_output_flange,beam0;no installedbolt/adoptedregistration. Actualbeam/flange/statorfastening stillmissing. Next design an explicit connectedroot/wholefront-clamp candidate protecting all6functions and declared entryspace before adjusting supports;handle retainedcollar/outputspace and root/entry together,not oldcap/boltcorner trims or angle/radius sweeps. Wholeunit station/orientation changes must be explicit with cap/bolts/nuts/rootpath and no motor/electrical hiddenmoves. Radial rack remains unadopted;newplacement invalidates oldworldwire/assembly. In parallel use verifiedoutputdatum and 6M3/PCD20/pilot25 to design real mountingplate and beamattachment plus stator fixing/clock as separate stated assumptions. No arbitrary4mm bridge/no simple drilledplate called torqueapproved;retain handbeam,avoid casebolt/outputbolt confusion,define registration/pilot/shaftgrip and assemblysequence. Sourceopen faces need not be repaired or all suppliercertified before bounded nextCAD/video. Once coherent reaction/space reconnect fixedmotor->Hshortwristentry->actualhand ends wholelongmaterials. Preserve currenthand/16sources/electricalgroove/lidM2/3leads/plug/M3stack;no handbeamcut/motor deletion/hiddenmove/anglelimit/ODRshrink/fake tensioner/LINK/oldcurveoptimizer/elbowbus. No actualtool/assembly/strength/friction/preload/tension/20torque/dynamicelectrical/continuousarm/upperarm/physical/manufacture/exteriorapproval. OldARM059failedM3+13 andstrictfalse/curveinclusion holds remain. Completed3groups/17solidrefs+1open615face signature/1common andtap-pin contracts are not allsurface equations/trim Boolean/pixel/armvisualunit proof. Do not repeat ARM062groups or vendorrepair/sourceclassification search,ARM06117/3/34/5/distances/+-90,ARM060entry24,oldfailedM3/PCD/seams. Check arm062-check/interface/render/prepare/publish-review/followup/finish statuses/processes first.",
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM062_506d6201daf5",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "New3native groups:entry4 vs existing871 and existing9bounds;actual-source tap axes6 vs plate/beam2.17solid reference signatures(6unit+4entry+6axes+1common),one common query;one invalid/open615face source-STEP area/centroid signature without volume;initial/corrected source tap/pin and datum contracts. No oldARM06117/3/34/5/distances/shortentry24,alltrim Boolean,wholearm/longmaterials/tools/assembly/strength/torque/electrical/physical/exterior approval. No new installed hardware;vendor registration is a reference assumption,not adoption.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,7 +1026,7 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/mounting_unit_interface_basis_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
   "post_commit_proposal_placements_reproduced": null,
   "post_commit_proposed_attachment_distances_reproduced": null,
   "inherited_ARM052_review": {
@@ -1690,5 +1690,9 @@
     "post_commit_assessment_reproduced": null,
     "post_commit_reaction_interfaces_reproduced": true,
     "post_commit_design_transform_reproduced": true
-  }
+  },
+  "post_commit_open_surface_metrics_reproduced": true,
+  "post_commit_source_and_corrected_interface_reproduced": true,
+  "post_commit_mounting_unit_contract_reproduced": true,
+  "post_commit_reference_common_reproduced": true
 }

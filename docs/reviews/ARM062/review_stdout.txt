@@ -1,0 +1,6 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new_axial_entry4__all_existing871 True
+new_axial_entry4__existing_rotation_bounds9 True
+output_tap_axis6__existing_flange_beam2 True
+core True diff []
