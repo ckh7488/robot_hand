@@ -1,0 +1,9 @@
+{
+  "source_file": "robot_config.json",
+  "source_sha256": "40d80b9d6dfcd7d1cdf1a10c78b83154290ee04ef7f1905005d4d58a14d15d2a",
+  "configured_sku": "AK60-6 V3.0 KV80",
+  "configured_source_url": "https://www.cubemars.com/product/ak60-6-v3-0-kv80-robotic-actuator.html",
+  "local_configuration_only": true,
+  "current_vendor_page_or_actual_output_mounting_CAD_verified": false,
+  "nominal_packaging_case_is_not_actual_output_interface": true
+}
