@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\support_attachment_basis_v1\check.py", line 45, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "D:\robot_hand\cad\support_attachment_basis_v1\check.py", line 20, in run
+    obs=kobs(data,pack_old,guide,wrist,case);tests={key:c.material(rows,zz) for key,zz in obs};internal=flat([c.material([z],rows[j+1:]) for j,z in enumerate(rows)]);ok=all(m.drive.clear(z) for z in [*tests.values(),internal]);report['static'].append(dict(case_id=case['id'],native=tests,internal=internal,clear=ok));record();print('static',case['id'],ok,flush=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\support_attachment_basis_v1\check.py", line 44, in kobs
+    def kobs(data,pack,guide,wrist,case):return b.k.obstacles(data,pack,guide,wrist,case)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\check_motion.py", line 12, in obstacles
+    return [('hand',hand),('packaging',a.scope.posed_pack(pack,H)),('electrical',data[6]),('arm',a.feed.posed_arm(data[7],P,H)),('wrist_guide',[a.feed.transform(z,H) for z in wrist])]
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\wrist_external_feed_v1\correct_wrist_scope.py", line 16, in posed_pack
+    assert len(palm)==39 and len(fixed)==346
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

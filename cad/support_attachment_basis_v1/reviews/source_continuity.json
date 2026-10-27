@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "executed_source": "history/check_native_executed.py.txt",
+  "executed_sha256": "3989b5068d8be5fe89ac7ac075ad1a288e578b9f99d51a5fa00474f621c0601c",
+  "current_source": "check.py",
+  "current_sha256": "ab1ffe6b0efd768cfbe4fcc896e8e3f9f7a0617c87d6765561179b045e12ce22",
+  "AST_identical": true,
+  "change": "Remove BOM and trailing empty EOF line only before first commit; all executed native results remain bound to exact original source hash. No geometry or native rerun."
+}

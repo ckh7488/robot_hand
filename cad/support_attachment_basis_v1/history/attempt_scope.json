@@ -1,0 +1,15 @@
+{
+  "first_job": "history/first_job_status.json",
+  "error": "history/pack_count_error.txt",
+  "original_check": "history/check_pack_count_attempt.py.txt",
+  "first_export": "generated/parts/scene.json",
+  "current_export": "cad/support_attachment_basis_v1/generated/checked/scene.json",
+  "first_export_rows": 6,
+  "current_effective_rows": 6,
+  "physical_housings": 2,
+  "local_axis_probes": 2,
+  "replacement_jaws": 2,
+  "first_static_native_or_assembly_feed_samples": 0,
+  "geometry_model_changed_after_first_error": false,
+  "reason": "Legacy wrist packaging helper required 385 unfiltered rows. Current obstacle helper explicitly poses39 palm and344 remaining fixed packaging rows after two old jaws are removed. Two new fixed jaw bodies are tested separately. No count threshold or geometry change."
+}

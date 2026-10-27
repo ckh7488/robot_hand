@@ -1,0 +1,50 @@
+"""New bend-guide static, conditional assembly and prescribed local feed checks."""
+import sys,time,math
+from pathlib import Path
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import bend_model as b
+a,m,g,c,p,np,cq,ROOT,HERE=b.a,b.m,b.g,b.c,b.p,b.np,b.cq,b.ROOT,b.HERE
+from OCP.OSD import OSD_ThreadPool
+
+def flat(tests):return dict(pairs_in_scope=sum(z['pairs_in_scope'] for z in tests),exact_pairs=sum(z['exact_pairs'] for z in tests),overlaps=[v for z in tests for v in z['overlaps']],operation_failures=[v for z in tests for v in z['operation_failures']])
+
+def run():
+    out=HERE/'reviews/check.json';assert not out.exists();start=time.monotonic();data,pack,guide,wrist=a.s.prior.inputs();rows,design=b.build(pack);removed=[z['replaced'] for z in design];pack_old=[z for z in pack if z['name'] not in removed];hardware=[z for z in rows if z['installed_part_candidate']]
+    assert len(pack_old)==383 and len(hardware)==2
+    scene=a.a.prior.export(rows,HERE/'generated/checked');analysis=p.read(ROOT/'cad/material_length_motion_v1/reviews/analysis.json');cases=[analysis['cases'][i] for i in [0,9,10]];report=dict(completed=False,source_sha256=data[0],scene=scene,design=design,static=[],assembly=[],feed=[],replacement_hardware_rows=2,added_hardware_rows=0,hand_rows=397,packaging_rows_after_replacement=385,electrical_rows=64,arm_rows=10,wrist_guide_rows=6,whole_flexible_links_connected=False,whole_hand_drive_approved=False,OCC_pool_threads=OSD_ThreadPool.DefaultPool_s().NbThreads(),reporting_floor_mm3=.001,boolean_tolerance_mm=1e-6)
+    def record():
+        for f in ['bend_model.py','check.py']:report['source_sha256']['cad/support_attachment_basis_v1/'+f]=m.drive.sha(HERE/f)
+        a.save(out,report)
+    for case in cases:
+        obs=kobs(data,pack_old,guide,wrist,case);tests={key:c.material(rows,zz) for key,zz in obs};internal=flat([c.material([z],rows[j+1:]) for j,z in enumerate(rows)]);ok=all(m.drive.clear(z) for z in [*tests.values(),internal]);report['static'].append(dict(case_id=case['id'],native=tests,internal=internal,clear=ok));record();print('static',case['id'],ok,flush=True)
+        if not ok:break
+    # Each motor station starts without its own six clamp parts and housing.
+    # Other station is complete; terminal/adjuster/motors/wires remain present.
+    if all(z['clear'] for z in report['static']) and len(report['static'])==3:
+        baseobs=[z for _,zz in kobs(data,pack_old,guide,wrist,cases[0]) for z in zz]
+        for i in [0,1]:
+            tag='motor_housing_clamp_'+str(i);names=[tag+'_jaw_1',tag+'_bolt_0',tag+'_bolt_1',tag+'_nut_0',tag+'_nut_1'];new=hardware[i];sequence=[(new,-b.frame(i)[:3,2],[14,7,2,0])]+[(next(z for z in pack_old if z['name']==tag+'_jaw_1'),b.frame(i)[:3,2],[14,7,2,0])]+[(next(z for z in pack_old if z['name']==tag+'_nut_'+str(j)),-b.frame(i)[:3,2],[10,5,0]) for j in [0,1]]+[(next(z for z in pack_old if z['name']==tag+'_bolt_'+str(j)),b.frame(i)[:3,2],[10,5,0]) for j in [0,1]]
+            missing=[new['name']]+names;fixed=[z for z in baseobs+hardware if z['name'] not in missing];installed=[];paths=[]
+            for z,axis,distances in sequence:
+                samples=[]
+                for d in distances:samples.append(dict(distance_mm=d,translation_world_mm=(d*axis).tolist(),native=c.material([dict(z,shape=z['shape'].translate(tuple(d*axis)))],fixed+installed)))
+                ok=all(m.drive.clear(v['native']) for v in samples);paths.append(dict(moving=z['name'],installed_before=[v['name'] for v in installed],missing_before=[n for n in missing if n not in [v['name'] for v in installed]],obstacle_names=[v['name'] for v in fixed+installed],samples=samples,clear=ok));record();print('assembly',i,z['name'],ok,flush=True)
+                if not ok:break
+                installed.append(z)
+            report['assembly'].append(dict(line=i,conditional_start='Own six clamp parts absent, own housing/cord absent; other completed clamp hardware with housing/cord absent, and all motors/terminal/electrical/hand/arm/wrist guide present. Loose jaw/nuts manually held until fastening.',paths=paths,clear=len(installed)==6,final_replaced_packaging_names=sorted([z['name'] for z in pack_old+hardware])));record()
+        for i in [0,1]:
+            tips=[0,20,40,60,math.pi*b.R/2,math.pi*b.R/2+b.LEAD,math.pi*b.R/2+b.LEAD+10,math.pi*b.R/2+b.LEAD+17];samples=[];other_refs=[z for z in rows if not z['installed_part_candidate'] and z['physical_line']!=i]
+            for tip in tips:
+                z=b.feed(i,tip);test=c.material([z],baseobs+hardware+other_refs);samples.append(dict(tip_mm=tip,length_mm=z['length_mm'],native=test));print('feed',i,tip,m.drive.clear(test),flush=True)
+            report['feed'].append(dict(line=i,tail_straight_outside_bore_assumed=True,housing_length_mm=100,cord_not_inserted=True,samples=samples,clear=all(m.drive.clear(z['native']) for z in samples)));record()
+    tests=[z for case in report['static'] for z in [*case['native'].values(),case['internal']]]+[z['native'] for station in report['assembly'] for path in station['paths'] for z in path['samples']]+[z['native'] for station in report['feed'] for z in station['samples']];agg=flat(tests)
+    report.update(completed=True,all_local_checks_clear=len(report['static'])==3 and all(z['clear'] for z in report['static']) and len(report['assembly'])==2 and all(z['clear'] for z in report['assembly']) and len(report['feed'])==2 and all(z['clear'] for z in report['feed']),new_native_static_cases=len(report['static']),new_assembly_samples=sum(len(v['samples']) for z in report['assembly'] for v in z['paths']),new_feed_samples=sum(len(z['samples']) for z in report['feed']),pairs_in_scope=agg['pairs_in_scope'],AABB_native_pairs=agg['exact_pairs'],overlap_records=len(agg['overlaps']),operation_failures=len(agg['operation_failures']),input_hash_guard=all(m.drive.sha(ROOT/f)==h for f,h in data[0].items()),elapsed_s=time.monotonic()-start);record()
+
+def kobs(data,pack,guide,wrist,case):
+    q=case['angles_deg'];P=np.asarray(case['solution']['wrist_P']);H=np.asarray(case['solution']['wrist_H']);F=np.asarray(case['solution']['parent_F']);hand,_,_,_=m.prior.s.k.e.prior.hand_rows(data,guide,q)
+    upper=c.load([z for z in p.read(ROOT/'cad/thumb_entry_bend_v1/generated/parts/scene.json')['parts'] if z['installed_part_candidate']],data[0]);hand+=[dict(z,shape=g.original.transform(z['shape'],F)) for z in upper];hand=[a.feed.transform(z,H) for z in hand];assert len(hand)==397
+    palm=[z for z in pack if z.get('body')=='palm'];fixed=[z for z in pack if z.get('body')!='palm'];assert len(palm)==39 and len(fixed)==344
+    return [('hand',hand),('packaging',[a.feed.transform(z,H) for z in palm]+fixed),('electrical',data[6]),('arm',a.feed.posed_arm(data[7],P,H)),('wrist_guide',[a.feed.transform(z,H) for z in wrist])]
+if __name__=='__main__':run()
+
