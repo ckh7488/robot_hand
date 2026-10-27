@@ -1,0 +1,81 @@
+{
+  "completed": true,
+  "raw_records": 2,
+  "new_tests_raw_clear": false,
+  "whole_proposal_raw_clear": false,
+  "actual_new_web_M3_bolt_obstructions": 1,
+  "retained_lower_collar_conservative_space_obstructions": 1,
+  "conservative_intersection_is_not_confirmed_actual_allangle_collision": true,
+  "earlier_ARM060_changed_records_not_carried": [
+    {
+      "group": "new2__fixed869_neutral",
+      "record": {
+        "lead": "arm060_outer_cross_tie_carrier",
+        "part": "arm054_beam_cap_1",
+        "material_intersection_mm3": 76.1511028933974
+      }
+    },
+    {
+      "group": "new2__fixed869_neutral",
+      "record": {
+        "lead": "arm060_outer_cross_tie_carrier",
+        "part": "arm054_M3x12_envelope_1_0",
+        "material_intersection_mm3": 0.14268441957830313
+      }
+    },
+    {
+      "group": "new2__fixed869_neutral",
+      "record": {
+        "lead": "arm060_outer_cross_tie_carrier",
+        "part": "arm054_M3_nut_envelope_1_0",
+        "material_intersection_mm3": 0.2032175823234332
+      }
+    },
+    {
+      "group": "new2__fixed869_neutral",
+      "record": {
+        "lead": "arm060_outer_cross_tie_carrier",
+        "part": "arm054_M3x12_envelope_1_1",
+        "material_intersection_mm3": 0.142683935874885
+      }
+    },
+    {
+      "group": "new2__fixed869_neutral",
+      "record": {
+        "lead": "arm060_outer_cross_tie_carrier",
+        "part": "arm054_M3_nut_envelope_1_1",
+        "material_intersection_mm3": 0.2032175822629434
+      }
+    },
+    {
+      "group": "full_angle_bounds9__new2",
+      "record": {
+        "lead": "arm060_rotation_bound_thumb_ip_two_tail_spool",
+        "part": "arm060_outer_cross_tie_carrier",
+        "material_intersection_mm3": 400.3913526536402
+      }
+    },
+    {
+      "group": "full_angle_bounds9__new2",
+      "record": {
+        "lead": "arm060_rotation_bound_thumb_ip_tail_clamp_1",
+        "part": "arm060_outer_cross_tie_carrier",
+        "material_intersection_mm3": 38.7136630461223
+      }
+    },
+    {
+      "group": "command_90__output9__new2",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm060_outer_cross_tie_carrier",
+        "material_intersection_mm3": 5.237987823941943
+      }
+    }
+  ],
+  "earlier_ARM060_records_carried_by_identity": [],
+  "prior_ARM059_integrated_base_R5_contacts_and_failed_M3pad_plus13_preserved": true,
+  "roll_motor_reference_is_nominal_case_not_identified_output_hub": true,
+  "beam_flange_distance_zero_not_torque_attachment_approval": true,
+  "native_exclusions": 0,
+  "old_groups_reexecuted": 0
+}

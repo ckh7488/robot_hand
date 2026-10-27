@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/central_reaction_frame_v1/images/before_after.png",
+    "cad/central_reaction_frame_v1/images/protected_space.png",
+    "cad/central_reaction_frame_v1/images/remaining_common.png",
+    "cad/central_reaction_frame_v1/images/roll_interface.png",
+    "cad/central_reaction_frame_v1/images/support_path.png"
+  ],
+  "opaque": true,
+  "whole_hardware_counts": [
+    871,
+    871,
+    871,
+    871
+  ],
+  "no_frame_clipping_observed": true,
+  "minus_labels_readable": true,
+  "pixels_matrices_armvisualunits_numerically_replayed": false
+}
