@@ -1,0 +1,44 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+front_tilt_0_0 True
+front_tilt_0_6 True
+front_tilt_0_7 True
+front_tilt_0_26 True
+front_tilt_0_27 True
+front_tilt_0_29 True
+front_tilt_1_0 True
+front_tilt_1_6 True
+front_tilt_1_7 True
+front_tilt_1_26 True
+front_tilt_1_27 True
+front_tilt_1_29 True
+rear_arm064_clamp_M3x12_0_0 True
+rear_arm064_clamp_M3x12_0_6 True
+rear_arm064_clamp_M3x12_1_0 True
+rear_arm064_clamp_M3x12_1_6 True
+rear_arm065_rear_M3x12_envelope_0_0 True
+rear_arm065_rear_M3x12_envelope_0_6 True
+rear_arm065_rear_M3x12_envelope_1_0 True
+rear_arm065_rear_M3x12_envelope_1_6 True
+output_arm064_output_M3x8_0_0 True
+output_arm064_output_M3x8_0_2 True
+output_arm064_output_M3x8_1_0 True
+output_arm064_output_M3x8_1_2 True
+output_arm064_output_M3x8_2_0 True
+output_arm064_output_M3x8_2_2 True
+output_arm064_output_M3x8_3_0 True
+output_arm064_output_M3x8_3_2 True
+output_arm064_output_M3x8_4_0 True
+output_arm064_output_M3x8_4_2 True
+output_arm064_output_M3x8_5_0 True
+output_arm064_output_M3x8_5_2 True
+packet_index_mcp_actuator_0 True
+packet_index_mcp_actuator_8 True
+packet_index_mcp_actuator_9 True
+packet_index_mcp_actuator_10 True
+mount_index_mcp_actuator_rack_nut_1_0 True
+mount_index_mcp_actuator_rack_nut_1_2 True
+mount_index_mcp_actuator_rack_nut_2_0 True
+mount_index_mcp_actuator_rack_nut_2_2 True
+mount_index_mcp_actuator_rack_screw_1_0 True
+core True []

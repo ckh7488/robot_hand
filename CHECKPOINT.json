@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "80f0d1ee9bc1fc60a3eb0805e0e0bfd439701dea",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
   "next_stage": "ARM067 oriented fastener entry:read cad/oriented_fastener_entry_v1/README.md,reviews/check.json/assessment.json/evidence_final.json/render_attempt1.json,docs/reviews/ARM067,logs/arm067-finish.json first. Current862/base364/hand397/fourpalm/16remote/beam/electrical/axes/lengths/commands/clock unchanged;ARM065886 unadopted,new installed/hardware geometry0. Original module16/408 remains. Inherited ARM066bench10 only,no68groups/2commons repeat. Actual front bolts shaftR1.5/Z[-4,8],headR2.85/Z[-6,-4],axisX+-25.5/Y-162.5,existing lowercounterboreR2.85/Z[-26,-4] read. One tilted route per frontbolt:45degY rotation with tailoutward,tipZ-26 and120/100/80/60/40/20/0mm diagonal approach,then angle/tipZ controls45/-26,35/-25,25/-23,15/-21,5/-19,0/-18 interpolated4steps each,then tipZ-10/0/8. Final transform identity;front2x30=60 clear. Initial below-rootZbbox gap34.392153570605885/34.39215357060587. Rear4bolts28/output6bolts18 clear;new106benchposes complete same22conditional rows,not threadtorque/strength approval. Then separate conditional registration at original neutral world with all nonpacket478 assumed assembled,other factory assembly untested. First indexMCPbody20 fromradial160/+Y8 inward then normal8/4/0:11poses clear,initial fullprojectiongap10.100766113909998mm;its2racknuts6poses clear. First rack_screw_1 +Y20 sample hits own index_mcp_actuator_base_nuts0.36207124135856594mm3,stop. Raw124new109992pairs225AABB1record0ops;completepacket0/16,assumed478+added22=500 conditionalpresent and386packetrows pending. Do not call500assembled/restored factory or16motors installed;remaining screw samples/15packets not run. Render attempt1 saved temporary boltposes2 and actual firstpacket common1 then first local full-root crop refused by borderguard before anyimage. Source/common scalar raw not saved,not reconstructed. Saved STEP common used with original check native record as reference andnew savedSTEP property read;recovery no new Boolean/export,4opaque actual images. Planned last original scene would include pending screw2 but never executed;recovery shows only actual lead/base_nuts2rows. Preserve initial code/error/3exports/history/render_attempt1. Evidence common isnot installed. sourceSTEP3 signatures(poses2/common1) atadaptiveepsilon1e-10/abs1e-5 not alltrimBoolean/pixels/armvisualunit proof. Next read saved firstpacket screw/base_nuts common and original real module M3stack assembly dependencies. Resolve whole module bench order/captive rackbolt+adapter/cradle/base fasteners with explicit temporary omissions,original final poses and restoration. Do not begin at+10 or nearfinal without accessible full entry;do not delete base_nuts or shave0.362corner. Bench22/106frontrearoutput paths and124/common1/60matrices finished,not repeated. If module order needs serviceinterface,explicit whole functional candidate not hand/beamcut or hidden motor relocation. Then continue original complete16packet restoration with explicit present/pending lists;old world wires/service passes not inherited. Keep ARM066old two failures/ARM065common1edgevertex/corefalse/failedM3plus13/R5/strictfalse/curve inclusion holds. One-sided beamendstop/opposite pullout frictionpreload unverified;currentradial16rack/exterior unadopted. No old ARM06668/2commons,ARM06512/12/16pad/2preservation,completedfront geometry/615faces/PCD or small corner/angle/radius families. Keep hand16drive/electricalgroove/lidM2/3leads/plug/M3stack;no motor deletion/hiddenmove/handbeamcut/anglelimits/ODRshrink/faketensioner/LINK/oldcurveoptimizer/elbowbus. After coherent support/assembly/motion reconnect fixedmotor->Hshortentry->actualhand longmaterials. No suppliedtools/fit/force/strength/friction/preload/tension/20torque/dynamicelectrical/fullarm/upperarm/physicalmanufacture/exterior qualification;physical perfection not endlessCAD/video gate. Check arm067-check/render(failed)/render-saved/prepare/publish-review/followup/finish statuses and processes first.",
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM067_80f0d1ee9bc1",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "Executed phase endpoints of two front tilted bolt routes;other new path first/last plus packet radial-to-normal last3 samples;2posed bolt evidence signatures and new failed packet common/signature;60front pose matrices/16packet408/original886/inherited10/bench22/pending lists. No remaining middle samples/124all replay,ARM06668/common2,ARM065topology hold/front geometry/615faces/PCD,fullfactory/continuouspaths/suppliedtools/strength/preload/torque/physical/20drive/exterior qualification.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,7 +1026,7 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/oriented_fastener_entry_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
   "post_commit_proposal_placements_reproduced": null,
   "post_commit_proposed_attachment_distances_reproduced": null,
   "inherited_ARM052_review": {
@@ -1855,7 +1855,7 @@
     "post_commit_first_failure_common_reproduced": true,
     "post_commit_same5_hardware_and_entry4_hashes_reproduced": true
   },
-  "post_commit_focused_common_reproduced": null,
+  "post_commit_focused_common_reproduced": true,
   "post_commit_design_body_contract_reproduced": null,
   "inherited_ARM064_review": {
     "post_commit_results_reproduced": true,
@@ -2114,5 +2114,8 @@
     "post_commit_design_body_fastener_contract_reproduced": null,
     "post_commit_packet_and_reference_lists_reproduced": true,
     "post_commit_reused15_and_pending_contracts_reproduced": true
-  }
+  },
+  "post_commit_packet_reference_and_inherited10_reproduced": true,
+  "post_commit_bench22_pending_lists_and_sequence_reproduced": true,
+  "post_commit_front60_and_packet11_contracts_reproduced": true
 }
