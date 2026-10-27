@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 3672,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/shared_roll_root_v1/assembly_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "assembly-evidence",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm065-assembly-evidence-job-assembly-evidence.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm065-assembly-evidence-job-assembly-evidence.err",
+      "pid": 73168,
+      "returncode": 0
+    }
+  ]
+}

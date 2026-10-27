@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 71088,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/shared_roll_root_v1/caption_recompose.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "caption",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm065-caption-job-caption.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm065-caption-job-caption.err",
+      "pid": 37416,
+      "returncode": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new6__retained880 5280 342 0
+entry8__retained880 7040 14 2
+entry8__new6 48 14 2
+new_structure2__source_outer2 4 1 0
+existing_rotation_bounds9__new_structure2 18 9 0
+retained_output_entry6__new_structure2 12 10 0
+roll40__new_shared_unit_relative 2730 0 0
+roll_minus40__new_shared_unit_relative 2730 0 0
+combined55__new_shared_unit_relative 2730 15 0
+combined110__new_shared_unit_relative 2730 7 0
+assembly_0_0 877 5 3
+complete 12 7 0 assembly False

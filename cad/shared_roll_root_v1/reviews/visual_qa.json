@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/shared_roll_root_v1/images/assembly_block.png",
+    "cad/shared_roll_root_v1/images/assembly_common.png",
+    "cad/shared_roll_root_v1/images/assembly_conditions.png",
+    "cad/shared_roll_root_v1/images/before_after.png",
+    "cad/shared_roll_root_v1/images/entry_and_root.png",
+    "cad/shared_roll_root_v1/images/shared_unit.png"
+  ],
+  "opaque": true,
+  "no_frame_clipping_observed": true,
+  "whole_hardware_display_counts": [
+    888,
+    886
+  ],
+  "original_first4_images_reused": true,
+  "pixels_armvisualunits_not_numerically_replayed": true
+}

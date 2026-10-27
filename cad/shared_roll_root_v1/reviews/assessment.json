@@ -1,0 +1,57 @@
+{
+  "completed": true,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "whole_proposal_raw_clear": false,
+  "new_hardware_vs_retained_records": [],
+  "new_internal15_records": [],
+  "reference_coaxial_records": [
+    {
+      "lead": "arm064_clamp_nut_entry_0",
+      "part": "arm064_clamp_M3x12_0",
+      "material_intersection_mm3": 11.309733552923253
+    },
+    {
+      "lead": "arm064_clamp_nut_entry_1",
+      "part": "arm064_clamp_M3x12_1",
+      "material_intersection_mm3": 11.309733552923253
+    },
+    {
+      "lead": "arm065_rear_nut_entry_0",
+      "part": "arm065_rear_M3x12_envelope_0",
+      "material_intersection_mm3": 11.309733552923253
+    },
+    {
+      "lead": "arm065_rear_nut_entry_1",
+      "part": "arm065_rear_M3x12_envelope_1",
+      "material_intersection_mm3": 11.309733552923253
+    }
+  ],
+  "cap_first_assembly_pose_failure": [
+    {
+      "lead": "arm065_shared_rear_cap",
+      "part": "little_mcp_actuator_motor",
+      "material_intersection_mm3": 126.40064196430593
+    },
+    {
+      "lead": "arm065_shared_rear_cap",
+      "part": "little_pip_actuator_motor",
+      "material_intersection_mm3": 104.94920010014212
+    },
+    {
+      "lead": "arm065_shared_rear_cap",
+      "part": "little_pip_actuator_rotor",
+      "material_intersection_mm3": 79.90828414561531
+    }
+  ],
+  "assembly_after_first_failure_not_executed": true,
+  "old_ARM064_actual_hardware154_and_entry32_geometry_replaced_not_deleted_or_classified_as_pass": true,
+  "shared_rear_cap_and_two_bolt_stations_explicit": true,
+  "rear4_fastener_shape_moves_explicit": true,
+  "rear_pad16_and_output_plate_and_outside_replacement_material_preserved": true,
+  "completed_front_unit_not_redesigned": true,
+  "beam_hand_motor_clock_commands_electrical_unchanged": true,
+  "inherited_ARM064_stator_nominal7_and_110E2_not_retested": true,
+  "inherited_ARM059_failed_M3plus13_R5_samecord_strictfalse_holds": true,
+  "selected_tool_or_assembly_strength_preload_friction_axial_pullout_not_approved": true
+}

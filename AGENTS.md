@@ -1,5 +1,7 @@
 # 작업 규칙
 
+- 2026-10-28 ARM065: cad/shared_roll_root_v1/README.md/reviews/check.json/evidence_final.json/CHECKPOINT.next_stage우선. 현재862/수용손/16모터/빔/전기·축길이명령clock유지,별도886=888-기존뒤8+공동root/cap2·같은뒤나사너트4명시X이동/불변880. 중립new6/880·내부/공식외곽·보호공간/출력진입·4팔관계0,rear16pad/영역밖·판보존0이다. 새12native7기록0오류:동축참고4+첫capZ+14조립의모터2/rotor1막힘,뒤조립미실행이다. 다음모터packet전빔/root/cap벤치선조립과원래16packet복구순서검사,완성root/작은코너·반경족반복0. 한방향빔끝받침/반대뽑힘마찰미검증·전체토크/외형승인없음. 손빔절삭/모터삭제·몰래이동0.
+
 - 2026-10-28 ARM064: cad/roll_bolted_interface_v1/README.md/CHECKPOINT.next_stage우선. 현재862/손/16구동원·빔·전기·모터축/명령clock유지. 별도888=ARM063871-옛출력판/Ecarrier2+새19,실제rearcasePCD68/6post·M3x25와outputPCD20/6M3x8·사각빔clamp후보미채택. 새13native rawfalse/연산오류0,실제output/lowerclamp-기존뒤root154.35626405814986/선언head진입32.54791198061669각2와110E시험대2남음. 명목모터원통7/동축참고2는실물결함확정아니나raw유지. 빔한방향끝받침/반대뽑힘마찰미검증,조립native0. 다음출력빔고정+뒤collar/root전체반력unit통합,완료frontunit/615면/PCD/미세코너반복·손빔절삭/모터삭제·몰래이동0.
 
 - 2026-10-28 ARM063: cad/recessed_mounting_root_v1/README.md/selected_check.json/CHECKPOINT.next_stage우선. 현재862/수용손/16구동원·전기·설치유지,별도871=불변865+carrier/cap2+같은형상나사너트4명시X±31→±25.5. 전체counterboreclamp/안쪽rail/앞면pickup반력후보이며미채택. 첫18그룹9기록·오류0(이웃rotor6/cap1·동축참고2)보존뒤carrier1만교정,새17그룹0/0·front16패드밖0,같은cap/체결5·진입4관계승계. 전체구동/외형/토크승인아님. 렌더는공통cap2solid를1로가정해4그림뒤실패·원본보존/마지막그림만복구·공통2저장/native0. 다음실제roll출력판/beam·stator체결과clock/조립을ARM062교정6M3/PCD20/pilot25기준으로설계,완료frontunit/작은코너반복·임의4mm메움·손빔절삭/모터삭제·몰래이동/각도제한0. 과거M3+13/R5/strictfalse보존.
