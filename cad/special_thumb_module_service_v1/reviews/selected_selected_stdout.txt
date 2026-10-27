@@ -1,0 +1,28 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+barrel_0_top_nut_lateral_before_adjuster_0 25 0 0
+barrel_0_top_nut_lateral_before_adjuster_1 25 0 0
+barrel_0_top_nut_lateral_before_adjuster_2 25 0 0
+barrel_0_top_nut_lateral_before_adjuster_3 25 0 0
+barrel_0_top_nut_lateral_before_adjuster_4 25 0 0
+barrel_0_top_nut_lateral_before_adjuster_5 25 1 0
+barrel_0_top_nut_lateral_before_adjuster_6 25 1 0
+barrel_0_bottom_nut_lateral_before_adjuster_0 26 0 0
+barrel_0_bottom_nut_lateral_before_adjuster_1 26 0 0
+barrel_0_bottom_nut_lateral_before_adjuster_2 26 0 0
+barrel_0_bottom_nut_lateral_before_adjuster_3 26 0 0
+barrel_0_bottom_nut_lateral_before_adjuster_4 26 0 0
+barrel_0_bottom_nut_lateral_before_adjuster_5 26 1 0
+barrel_0_bottom_nut_lateral_before_adjuster_6 26 1 0
+barrel_0_through_two_preplaced_nuts_0 27 0 0
+barrel_0_through_two_preplaced_nuts_1 27 0 0
+barrel_0_through_two_preplaced_nuts_2 27 0 0
+barrel_0_through_two_preplaced_nuts_3 27 1 0
+barrel_0_through_two_preplaced_nuts_4 27 1 0
+barrel_0_through_two_preplaced_nuts_5 27 2 0
+barrel_0_through_two_preplaced_nuts_6 27 3 0
+jaw_arm059_straight_jaw_0_0 28 0 0
+jaw_arm059_straight_jaw_0_1 28 0 0
+jaw_arm059_straight_jaw_0_2 28 0 0
+jaw_arm059_straight_jaw_0_3 28 5 4
+complete selected 25 4 special48 False

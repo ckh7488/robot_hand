@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 94304,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/special_thumb_module_service_v1/render_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm072-render-job-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm072-render-job-render.err",
+      "pid": 91868,
+      "returncode": 0
+    }
+  ]
+}

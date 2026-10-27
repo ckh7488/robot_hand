@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\special_thumb_module_service_v1\recover_original_common_image.py", line 42, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\special_thumb_module_service_v1\recover_original_common_image.py", line 34, in main
+    restored_hash=r.sha(overwritten);assert restored_hash==expected
+                                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

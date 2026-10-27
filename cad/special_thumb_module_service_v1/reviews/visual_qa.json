@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/special_thumb_module_service_v1/images/special48_reference.png",
+    "cad/special_thumb_module_service_v1/images/service_before_after.png",
+    "cad/special_thumb_module_service_v1/images/entry_path.png",
+    "cad/special_thumb_module_service_v1/images/actual_common.png",
+    "cad/special_thumb_module_service_v1/images/order_before_after.png",
+    "cad/special_thumb_module_service_v1/images/selected_entry_path.png",
+    "cad/special_thumb_module_service_v1/images/selected_actual_common.png",
+    "cad/special_thumb_module_service_v1/images/outer_side_before_after.png",
+    "cad/special_thumb_module_service_v1/images/continuation_entry_path.png",
+    "cad/special_thumb_module_service_v1/images/continuation_actual_common.png"
+  ],
+  "opaque": true,
+  "scope": "Actual CAD finite service poses and representative common material;world/wholefactory/drive/exterior not approved.",
+  "first_common_image_rerendered_from_saved_CAD_original_pixel_hash_not_restored": true,
+  "first_reference_lid_omission_does_not_expose_every_groove": true,
+  "native_or_common_Boolean_repeated_for_image_recovery": 0,
+  "labels_and_full_selected_geometry_readable": true
+}

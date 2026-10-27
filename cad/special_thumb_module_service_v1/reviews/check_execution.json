@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 90680,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/special_thumb_module_service_v1/check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "check",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm072-check-job-check.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm072-check-job-check.err",
+      "pid": 69060,
+      "returncode": 0
+    }
+  ]
+}

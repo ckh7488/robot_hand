@@ -248,3 +248,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM071 최종 장착면을 따르는 전체진입
 
 [실제 원래묶음 복구](../cad/datum_plane_packet_entry_v1/README.md). 형상·설치축변경0,약지PIP의+8진입자세대신원래finalnormal0에서전체바깥진입검사. 새394native/0기록0오류,새3/총8/16·조건부670/216대기. 같은body19벤치92/옛109반복0·현재862/886/외형미채택·전체공장/구동미승인이다.
+
+## ARM072 special thumbIP service order
+
+[실제 조립 순서](../cad/special_thumb_module_service_v1/README.md). 형상변경0/새120native6기록0오류,양너트 먼저 옆진입+adjuster는 통과하나 죔쇠 후삽입은 안쪽/바깥 모두 막혔다. 같은78/99승계·새0,뒤8/조건부670·216대기유지·세계특수48/앞7미실행. 현재862/886/방사랙외형미채택·전체구동미승인.

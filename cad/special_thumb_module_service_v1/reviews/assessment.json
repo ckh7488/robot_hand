@@ -1,0 +1,102 @@
+{
+  "completed": true,
+  "new_native_groups": 120,
+  "pairs_in_scope": 2788,
+  "AABB_native_pairs": 76,
+  "overlap_records": 6,
+  "operation_failures": 0,
+  "attempt_new_groups": [
+    89,
+    25,
+    6
+  ],
+  "first_failures": [
+    {
+      "sample": "barrel_0_top_nut_3",
+      "path": "barrel_0_top_nut",
+      "records": [
+        {
+          "lead": "thumb_ip_barrel_top_nut_0",
+          "part": "arm059_integrated_electrical_R5_base",
+          "material_intersection_mm3": 2.161810721637161
+        }
+      ]
+    },
+    {
+      "sample": "jaw_arm059_straight_jaw_0_3",
+      "path": "jaw_arm059_straight_jaw_0",
+      "records": [
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_adapter",
+          "material_intersection_mm3": 46.31456343781331
+        },
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_lead3",
+          "material_intersection_mm3": 7.571353815938723
+        },
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_lead2",
+          "material_intersection_mm3": 9.700120500514242
+        },
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_lead1",
+          "material_intersection_mm3": 10.495145017368065
+        }
+      ]
+    },
+    {
+      "sample": "jaw_outer_side_first_arm059_straight_jaw_0_5",
+      "path": "jaw_outer_side_first_arm059_straight_jaw_0",
+      "records": [
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_barrel_adjuster_0",
+          "material_intersection_mm3": 32.85145666711312
+        }
+      ]
+    }
+  ],
+  "raw_new_tests_clear": false,
+  "new_restored_packets": 0,
+  "complete_restored_packets": 8,
+  "conditional_initial_rows": 670,
+  "conditional_final_present_rows": 670,
+  "pending_rows": 216,
+  "inherited_prefix_scopes": [
+    78,
+    99
+  ],
+  "inherited_native_groups_repeated": 0,
+  "old_native_groups_repeated": 0,
+  "planned_replay_native_groups": 42,
+  "new_common_queries": 3,
+  "new_evidence_geometry": 3,
+  "actual_axis_parts": 8,
+  "actual_cylindrical_faces": 43,
+  "actual_part_bounds": 48,
+  "old_geometry_hashes_unchanged": 12771,
+  "frozen_files": 222,
+  "new_images": 10,
+  "image_filename_collision_and_recovery": {
+    "completed": true,
+    "cause": "selected renderer reused images/actual_common.png while its index filtered for selected_actual_common.png. Initial script and evidence kept;renamed copy preserves selected pixels,original first image rerendered from stored common STEP/STL and pair meshes.",
+    "overwritten_selected_image_sha256": "ccdaf5383d9efb1f56c64c8bc0d4545d1973729d7ab8cb760aa9217339fc8000",
+    "selected_saved_path": "cad/special_thumb_module_service_v1/images/selected_actual_common.png",
+    "expected_original_sha256": "ab18b0d1c09f83310b9b22642db9ec79a96eedebf17854ca83e3cfa7fe4e2201",
+    "restored_original_sha256": "4414d94f48a14992926493a869a5bff2f9bbbeffcca6125f6e412fde59c3c2ad",
+    "original_pixels_exactly_restored": false,
+    "native_groups_repeated": 0,
+    "common_Boolean_queries_repeated": 0,
+    "source_sha256": {
+      "cad/special_thumb_module_service_v1/recover_original_common_image_corrected.py": "9189378c8684a68b0816da7544a38e30d8eec3bd1bd025ab1b6d283dd591035f"
+    }
+  },
+  "new_hardware_geometry": 0,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "whole_factory_drive_tools_force_strength_captive_mating_harnessflex_torque_friction_preload_tension_electrical_fullarm_physical_exterior_approved": false
+}
