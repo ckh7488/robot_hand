@@ -1,0 +1,37 @@
+{
+  "completed": true,
+  "replaced_hardware_body_rows": 1,
+  "retained_hardware_rows": 5,
+  "local_reference_rows": 4,
+  "scene_rows": 10,
+  "new_actual_hardware_net_count_change": 0,
+  "old_geometry_files_unchanged": 4734,
+  "static_cases": 16,
+  "static_pairs": 137005,
+  "static_AABB": 203,
+  "hardware_assembly_samples": 30,
+  "hardware_assembly_pairs": 25755,
+  "hardware_assembly_AABB": 56,
+  "prescribed_feeding_samples": 10,
+  "prescribed_reference_length_mm": 220,
+  "prescribed_tip_interval_mm": [
+    0,
+    186.42884082273258
+  ],
+  "prescribed_feed_union_material_interval_mm": [
+    -220,
+    186.42884082273258
+  ],
+  "prescribed_feed_union_shape_length_mm": 406.4288408227326,
+  "feed_union_pairs": 1725,
+  "feed_union_AABB": 3,
+  "all_new_local_overlap_records": 0,
+  "all_new_local_operation_failures": 0,
+  "whole_link_connected": false,
+  "whole_link_contact_equilibrium_verified": false,
+  "whole_hand_drive_approved": false,
+  "exterior_accepted": false,
+  "inherited_OFFSET024_face_comparison_inconclusive": true,
+  "inherited_ELASTICA033_initial_core_passed": false,
+  "inherited_ELASTICA033_precision_pairs_passed": true
+}

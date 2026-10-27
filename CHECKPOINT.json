@@ -1,10 +1,10 @@
 {
-  "id": "ELASTICA033",
-  "candidate": "cad/elastic_housing_link_v1",
+  "id": "PAIR034",
+  "candidate": "cad/paired_rear_guide_v1",
   "exterior_reference": "cad/accepted_form_v1",
-  "manifest": "checkpoints/ELASTICA033.manifest.json",
-  "previous_checkpoint": "ASSEMBLY032",
-  "status": "Independent normalized isotropic arc-rod full link rejected in open:hand5/interline14 overlaprecords;arm/pack/elect/actualguide0.11analyticposes/22endpose+constant650solutions notphysicalequilibrium.New92pieces=2housings+2cords x23,newhardware0.",
+  "manifest": "checkpoints/PAIR034.manifest.json",
+  "previous_checkpoint": "ELASTICA033",
+  "status": "Real one-solid paired rear S channels replace FEED031 body only.16new static/30new hardware entry/10prescribed220mm leading-feed references+union-space clear.Whole motor-to-thumb flexiblelink and thenarentry unresolved;exterior/force notapproved.",
   "manufacturing_release": false,
   "motor_performance_validated": false,
   "tracking_requirement_ms": {
@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": true,
-  "post_commit_review_target": "160c3e4e7745015cad0f5e110d814d5c9a266cdf",
-  "post_commit_review_report": "docs/reviews/ELASTICA033/README.md",
-  "post_commit_reproduction_scope": "ExactSHAcleanclone:6native(open5obstacles+4186internal),16representativehousing adaptive source/STEP metrics abs1e-5,22savedparameter arc-chain/endpose/length reconstructions;no SLSQP rerun/all92metrics/remaining4native/render/physicalcontact/friction/tension.5676closure/222frozen,cleanclone,OCC1,sameagent.passed=False,differences=['0_hand', '0_internal'].Reproduced rejection,notdesign approval.Inheritedcomparisonsuntouched. Sameunchangedclone five mismatchedcommonpairs only:source8pieces recreated/native source-source vsSTEP-STEP,adaptiveeps1e-10 values atoriginalabs1e-5 matched.Maxvolume=4.2010141498849407e-07,area=1.097189120002895e-06,center=2.726955372622797e-08.Initialcorefalse/basicnative numericmismatch preserved;alllocations/other4groups/16shape/22analytic matched.No group/optimizer/render repetition ordesignapproval.",
-  "next_stage": "ELASTICA033 independent arc-rod candidate rejected:open hand5 +interline14 records,sourceactualcommons/thenarentry andpairedlinecrossings mustbe read first.22analytic650mmendpose/lengthsolutions andnormalizedEI=1 no gravity/twist/contact/friction,activeupstreamnumerical460bound are notmaintainedphysicalroute/forceapproval.Close thisfreeindependentrod family;do notrepeat length/bound/radius searches.Design necessary actualpaired separation/bending support atreal fixed/rotating body withattachment/contact andassembly/housinginsertion.Recheckchangedguide hardware ratherthaninheritFEED031approval.Hand397/pack385/elect64/arm10/FEED6 unchanged;oldlocal/terminalhousingreferences replaced bywholecandidate,notduplicated.No handcut/motormove/ODshrink/anglelimit/elbowbus.Wholehand/longhousing/cordthreading/pretension/physicalunfinished;notallcertsrequired beforeCAD/previews.",
+  "post_commit_results_reproduced": false,
+  "post_commit_review_target": null,
+  "post_commit_review_report": null,
+  "post_commit_reproduction_scope": null,
+  "next_stage": "Close PAIR034 local16new static/30hardware entry/10prescribed220leading-housing feed+union bound;not whole650link/actual friction feeding. New rearports(90/110,-178.729833462,-3/2),+Y;front(100,-4,-3/2) unchanged;guideH.Preserve397hand/385pack/64elect/10arm;replace FEED031body/local4 only,retaincap/4M2. Read actual thenar common/terminalentry first and design needed actual distal bending/separation support onthumb_mcp/ferrule/jaw attachment/contact,then assembly/housingfeed.Recheckchangedparts.Not freeindependentrod/650/460boundary/radiussearch;no handcut/motormove/ODshrink/anglelimit/elbowbus. Motor-to-newrear flexible spans and front-to-thumb stillmissing;whole length/sliding/cordthreading/adjustment/preload/parent+wristgrasp-release/frictionforces unfinished.Notallphysicalcertsrequired beforeCAD/previews.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
   "nominal_route_selected": true,
@@ -169,7 +169,7 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": true,
+  "post_commit_review_completed": false,
   "post_commit_native_results_reproduced": false,
   "post_commit_source_STEP_full_comparison_inconclusive": true,
   "previous_OFFSET024_review": {
@@ -195,30 +195,30 @@
   "post_commit_new26_shape_metrics_reproduced": true,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": true,
-  "post_commit_initial_core_passed": false,
+  "post_commit_initial_core_passed": null,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": true,
-  "wrist_local_guide_scene": "cad/wrist_external_feed_v1/generated/assembly_scene.json",
+  "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
   "wrist_guide_hardware_candidate_rows": 6,
   "wrist_local_reference_rows": 4,
   "wrist_guide_hardware_static_clear": true,
   "wrist_guide_hardware_static_poses": 16,
   "wrist_local_housing_path_clear": true,
-  "wrist_local_housing_tested_poses": 5,
+  "wrist_local_housing_tested_poses": 16,
   "wrist_guide_hardware_assembly_samples": 30,
   "wrist_guide_hardware_sampled_assembly_clear": true,
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": false,
-  "wrist_local_housing_path_scope": "Localstraight118mmrearfeed reference atX100;not whole motor-to-thumb flexiblelink.",
+  "post_commit_initial_execution_succeeded": null,
+  "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
   "guided_whole_link_native_poses": 1,
   "guided_whole_link_overlap_records": 45,
   "guided_whole_link_analytic_length_cases": 9,
   "guided_whole_link_native_clear": false,
-  "post_commit_precision_pairs_passed": true,
+  "post_commit_precision_pairs_passed": null,
   "wrist_guide_axis_x_mm": 100,
   "wrist_guide_axis": [
     0,
@@ -229,10 +229,10 @@
     -100,
     -4
   ],
-  "wrist_local_reference_length_mm": 118,
+  "wrist_local_reference_length_mm": 176.42884082273258,
   "wrist_guide_hand_cases": 8,
   "wrist_guide_reference_wrist_cases": 8,
-  "wrist_straight_end_insertion_envelope_clear": true,
+  "wrist_straight_end_insertion_envelope_clear": false,
   "remaining_retainer_assembly_samples": 90,
   "remaining_retainer_new_assembly_samples": 70,
   "remaining_retainer_same_motor_samples_reused": 20,
@@ -247,5 +247,41 @@
     650
   ],
   "long_housing_candidate_physics_calibrated": false,
-  "long_housing_candidate_pair_contact_included": false
+  "long_housing_candidate_pair_contact_included": false,
+  "inherited_ELASTICA033_review": {
+    "post_commit_review_target": "160c3e4e7745015cad0f5e110d814d5c9a266cdf",
+    "post_commit_review_report": "docs/reviews/ELASTICA033/README.md",
+    "post_commit_initial_core_passed": false,
+    "post_commit_precision_pairs_passed": true,
+    "post_commit_reproduction_scope": "ExactSHAcleanclone:6native(open5obstacles+4186internal),16representativehousing adaptive source/STEP metrics abs1e-5,22savedparameter arc-chain/endpose/length reconstructions;no SLSQP rerun/all92metrics/remaining4native/render/physicalcontact/friction/tension.5676closure/222frozen,cleanclone,OCC1,sameagent.passed=False,differences=['0_hand', '0_internal'].Reproduced rejection,notdesign approval.Inheritedcomparisonsuntouched. Sameunchangedclone five mismatchedcommonpairs only:source8pieces recreated/native source-source vsSTEP-STEP,adaptiveeps1e-10 values atoriginalabs1e-5 matched.Maxvolume=4.2010141498849407e-07,area=1.097189120002895e-06,center=2.726955372622797e-08.Initialcorefalse/basicnative numericmismatch preserved;alllocations/other4groups/16shape/22analytic matched.No group/optimizer/render repetition ordesignapproval."
+  },
+  "wrist_guide_rear_ports_mm": [
+    [
+      90.0,
+      -178.72983346207417,
+      -3.0
+    ],
+    [
+      110.0,
+      -178.72983346207417,
+      2.0
+    ]
+  ],
+  "wrist_guide_front_ports_mm": [
+    [
+      100.0,
+      -4.0,
+      -3.0
+    ],
+    [
+      100.0,
+      -4.0,
+      2.0
+    ]
+  ],
+  "wrist_guide_paired_rear_curve": true,
+  "wrist_paired_prescribed_feed_envelope_clear": true,
+  "wrist_paired_prescribed_feed_samples": 10,
+  "wrist_paired_reference_feed_length_mm": 220,
+  "wrist_guide_exterior_accepted": false
 }
