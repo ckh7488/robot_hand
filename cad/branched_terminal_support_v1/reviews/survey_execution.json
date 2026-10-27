@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 96052,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/branched_terminal_support_v1/survey.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "survey",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-survey-job-survey.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-survey-job-survey.err",
+      "pid": 91512,
+      "returncode": 0
+    }
+  ]
+}

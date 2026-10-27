@@ -1,0 +1,18 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+new_whole_support__all_retained885_neutral 885 33 0
+output_-90__new_support 9 0 0
+output_90__new_support 9 0 0
+elbow_55__new_support_relative_bodies 2 0 0
+elbow_110__new_support_relative_bodies 2 0 0
+roll_-80__new_support_relative_bodies 10 0 0
+roll_-40__new_support_relative_bodies 10 0 0
+roll_40__new_support_relative_bodies 10 0 0
+roll_80__new_support_relative_bodies 10 0 0
+flex_-35__new_support_relative_bodies 445 1 0
+flex_55__new_support_relative_bodies 445 0 0
+deviation_-20__new_support_relative_bodies 443 0 0
+deviation_20__new_support_relative_bodies 443 0 0
+compound_a__new_support_relative_bodies 455 1 0
+compound_b__new_support_relative_bodies 455 0 0
+completed native 15 records 0 pad false preserved

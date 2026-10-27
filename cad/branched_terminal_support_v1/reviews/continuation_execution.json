@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 91128,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/branched_terminal_support_v1/continue_geometry.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "continuation",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-continuation-job-continuation.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-continuation-job-continuation.err",
+      "pid": 66964,
+      "returncode": 0
+    }
+  ]
+}

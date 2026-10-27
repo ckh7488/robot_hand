@@ -1,0 +1,63 @@
+{
+  "completed": true,
+  "new_native_groups": 15,
+  "pairs_in_scope": 3633,
+  "AABB_native_pairs": 35,
+  "overlap_records": 0,
+  "operation_failures": 0,
+  "raw_new_native_clear": true,
+  "new_interface_queries": 4,
+  "interface_passed": 3,
+  "whole_upper_M3_pad_inclusion_passed": false,
+  "whole_upper_M3_pad_outside_mm3": 19.195131113433646,
+  "initial_native_groups": 0,
+  "initial_zero_native_means_not_executed": true,
+  "new_M3_bore_faces": 1,
+  "new_material_points": 216,
+  "all_points_inside_both": true,
+  "cause_confirmed": false,
+  "new_support_geometry": 1,
+  "unchanged_geometry_and_poses": 885,
+  "new_common_queries": 0,
+  "new_evidence_geometry": 0,
+  "new_images": 2,
+  "old_geometry_hashes_unchanged": 12777,
+  "frozen_files": 222,
+  "planned_replay_native_groups": 8,
+  "planned_replay_interface_queries": 4,
+  "new_restored_packets": 0,
+  "complete_restored_packets": 8,
+  "conditional_initial_rows": 670,
+  "conditional_final_present_rows": 670,
+  "pending_rows": 216,
+  "previous_49_and92_assembly_inherited": false,
+  "new_support_bbox": [
+    [
+      67.4,
+      -168.0000001,
+      -18.0
+    ],
+    [
+      98.69999999999999,
+      -112.35,
+      28.9
+    ]
+  ],
+  "old_support_bbox": [
+    [
+      67.4,
+      -168.0,
+      -18.0
+    ],
+    [
+      98.7,
+      -112.35,
+      23.0
+    ]
+  ],
+  "added_upper_Z_mm": 5.9,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "whole_candidate_approved": false,
+  "whole_factory_drive_tools_force_strength_captive_mating_harnessflex_torque_friction_preload_tension_electrical_fullarm_physical_exterior_approved": false
+}

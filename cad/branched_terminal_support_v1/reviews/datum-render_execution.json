@@ -1,0 +1,32 @@
+{
+  "state": "completed",
+  "pid": 95424,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/branched_terminal_support_v1/read_mounting_datum.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "datum",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-datum-render-job-datum.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-datum-render-job-datum.err",
+      "pid": 96368,
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/branched_terminal_support_v1/render_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-datum-render-job-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm074-datum-render-job-render.err",
+      "pid": 32792,
+      "returncode": 0
+    }
+  ]
+}

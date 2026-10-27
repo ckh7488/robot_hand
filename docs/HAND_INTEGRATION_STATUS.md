@@ -256,3 +256,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM073 포착 조절부 선조립
 
 [실제 원래7 선조립](../cad/captured_adjuster_kit_v1/README.md). 형상변경0/새49native0기록0오류로첫kit7의벤치·carrier34복구성립. 같은92승계·새0. 기존ARM059port1최종3은4STEP/pose가같아유지되며재검사0,세계48/앞7미실행·뒤8/조건부670·216대기유지. 현재862/886·방사랙외형미채택·전체구동미승인.
+
+## ARM074 전체 분기 받침
+
+[새 받침 후보와 보류](../cad/branched_terminal_support_v1/README.md). 받침1명시교체/885불변·현재862교체0. 새15관계검사3633쌍35AABB0겹침이지만윗M3전체포함false/216점IN의모순을유지한다. 윗돌출+5.9mm/외형미채택·새조립0/이전49·92승계0/뒤8·670·216유지다.

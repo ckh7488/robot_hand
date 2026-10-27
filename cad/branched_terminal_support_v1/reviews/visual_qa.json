@@ -1,0 +1,13 @@
+{
+  "geometry_in_frame": true,
+  "images_viewed": [
+    "cad/branched_terminal_support_v1/images/arm074_module_before_after.png",
+    "cad/branched_terminal_support_v1/images/arm074_support_before_after.png"
+  ],
+  "opaque": true,
+  "labels_readable": true,
+  "completed": true,
+  "notes": "두이미지모두직접확인. 전체상부분기와원래모터·전기·조절부를보존한전후표현. 새돌출외형미승인·M3포함false유지.",
+  "before_after_actual_CAD": true,
+  "unique_names_no_overwrite": true
+}
