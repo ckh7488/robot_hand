@@ -1,0 +1,7 @@
+D:\Codex-work\robot-hand-workspace\prepare_arm069.pyw:42: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
+  next_stage=(f'ARM069:read cad/rear_packet_restoration_v1/README.md,reviews/check.json/assessment.json/evidence.json,docs/reviews/ARM069,logs/arm069-finish.json first. '
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\prepare_arm069.pyw", line 42, in <module>
+    next_stage=(f'ARM069:read cad/rear_packet_restoration_v1/README.md,reviews/check.json/assessment.json/evidence.json,docs/reviews/ARM069,logs/arm069-finish.json first. '
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable

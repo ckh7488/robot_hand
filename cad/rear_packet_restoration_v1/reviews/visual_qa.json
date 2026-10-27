@@ -1,0 +1,15 @@
+{
+  "opaque_actual_CAD": true,
+  "footer_readable": true,
+  "view_omissions_not_test_exclusions": true,
+  "images_viewed": [
+    "cad/rear_packet_restoration_v1/images/bench_order.png",
+    "cad/rear_packet_restoration_v1/images/body_entry.png",
+    "cad/rear_packet_restoration_v1/images/first_block.png",
+    "cad/rear_packet_restoration_v1/images/restoration_before_after.png"
+  ],
+  "completed": true,
+  "all_selected_geometry_in_frame": true,
+  "path_native_repeated": 0,
+  "actual_axes_read_count": 10
+}

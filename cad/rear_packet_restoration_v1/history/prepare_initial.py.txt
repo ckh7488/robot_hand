@@ -1,0 +1,116 @@
+import ast,hashlib,json,shutil,sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+P=Path('D:/robot_hand');B=Path('D:/Codex-work/robot-hand-workspace');H=P/'cad/rear_packet_restoration_v1'
+def read(f):return json.loads(f.read_text(encoding='utf-8-sig'))
+def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
+def write(f,v):
+    f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes((json.dumps(v,ensure_ascii=False,indent=2)+'\n').encode())
+out=B/'outputs/ARM069_prepare.json';assert not out.exists();q,e=[read(H/('reviews/'+k+'.json')) for k in ['check','evidence']]
+assert all(z['completed'] and z['input_hash_guard'] and all(sha(P/f)==h for f,h in z['source_sha256'].items()) for z in [q,e])
+assert e['actual_M2_M3_axes_match_declared_bases'] and q['operation_failures']==0
+prior=read(P/'cad/captive_module_assembly_v1/reviews/selected_check.json');assert q['initial_world_present_names']==prior['packet_final_present_names']
+old=read(P/'checkpoints/ARM068.manifest.json');geom={f:v for f,v in old['files'].items() if Path(f).suffix.lower() in ['.step','.stl']}
+assert all(sha(P/f)==v['sha256'] for f,v in geom.items());frozen={}
+for k in ['geometry_sha256','code_sha256','report_sha256']:frozen.update(read(P/'AUDIT_EVIDENCE_INDEX.json')[k])
+assert len(frozen)==222 and all(sha(P/f)==h for f,h in frozen.items())
+for f in H.glob('*.py'):ast.parse(f.read_text(encoding='utf-8-sig'))
+for label in ['check','render']:
+    state=read(B/('logs/arm069-'+label+'-job.status.json'));assert state['state']=='completed'
+    for item in state['commands']:
+        for k in ['stdout','stderr']:shutil.copyfile(item[k],H/('reviews/'+label+'_'+k+'.txt'))
+    write(H/('reviews/'+label+'_execution.json'),state)
+qa=read(H/'reviews/visual_qa.json');assert qa['completed'] and set(qa['images_viewed'])==set(e['output_sha256'])
+count=len(q['restored_modules']);new=len(q['new_restored_modules']);present=len(q['packet_final_present_names']);pending=len(q['packet_final_pending_names'])
+replay=0
+for p in q['paths']:
+    indexes={0,len(p['samples'])-1}
+    if p['stage']=='world' and not p['id'].endswith('four_M2_base_nuts_last'):
+        n=4 if '__rack_M3_' in p['id'] else 3;indexes.update(range(max(0,len(p['samples'])-n),len(p['samples'])))
+    replay+=len(indexes)
+blocked=q.get('first_blocked_sample');failure=q['native'][blocked]['overlaps'] if blocked else []
+write(H/'reviews/assessment.json',dict(completed=True,new_native_groups=q['new_native_groups'],pairs_in_scope=q['pairs_in_scope'],AABB_native_pairs=q['AABB_native_pairs'],overlap_records=q['overlap_records'],operation_failures=0,
+    stopped_at_first_blocked_sample=blocked,first_failure_records=failure,rear_station_complete=q['rear_station_restoration_completed'],restored_before=1,new_restored_packets=new,complete_restored_packets=count,
+    conditional_initial_rows=502,conditional_final_present_rows=present,pending_rows=pending,front8_explicitly_later=True,
+    actual_M2_M3_axis_reads=len(e['actual_axis_reads']),axis_bases_match=True,old_native_repeated=0,new_hardware_geometry=0,current862_replaced=False,proposal886_adopted=False,
+    new_common_queries=e['new_common_queries'],new_evidence_geometry=e['new_evidence_geometry'],planned_replay_native_groups=replay,
+    all_final_parts_and_poses_original=True,first_packet24_and_all_previous_failures_holds_preserved=True,
+    full_factory_continuous_tools_captive_retention_threadtorque_force_strength_preload_friction_electrical_output_internalassembly_20drive_fullarm_physical_exterior_approved=False))
+stop_text=(f'첫새실패 {blocked}: {failure}. 뒤경로미실행/첫실패보존.' if blocked else '계획한뒤7묶음의새경로모두0,앞8묶음은별도다음단계로명시대기.')
+next_korean=('저장한 약지PIP의 lead1/전선안내대 실제 공통과 원래 전선경로·홈·덮개/M3스택을 읽는다. 모터와 전선을 함께 이동한 단단한 참고묶음이 −방사10에서 막힌 순서이며 손 결함이나3.522모서리 절삭 근거가 아니다. adapter/안내대/덮개·체결품의 전체 벤치 순서를 검토하고 일시누락/전체바깥진입/원래부품 복구를 명시한다. 첫모듈 순서 무검증승계·전선/안내대/덮개 삭제·막힘뒤 얕은시작/설치축·명령변경0이다. 완료5묶음을 유지하고 약지PIP/약지DIP/중지PIP 각24와 앞8묶음은 아직 없는 현재598/288대기에서 이어간다.' if blocked else
+    '앞쪽 특수 엄지IP48행의 실제 ARM059 R5·전기일체부와 전체모듈 벤치/서비스 순서를 먼저 읽는다. 일반24행 순서를 특수48행에 그대로 적용하지 않는다. 뒤쪽8묶음은 원래위치의 실제 장애물로 유지한 뒤 특수엄지와 나머지 앞7묶음을 복구한다.')
+next_stage=(f'ARM069:read cad/rear_packet_restoration_v1/README.md,reviews/check.json/assessment.json/evidence.json,docs/reviews/ARM069,logs/arm069-finish.json first. '
+    f'Current862/base364/hand397/4palm/16remote/beam/electrical/axes/lengths/commands/clock unchanged;proposal886/radiallayout/exterior unadopted,new hardwaregeometry0. Original16packet408 preserved. '
+    f'Inherit conditional502 from ARM068 including first indexMCP24 and nonpacket478;no old firstpacket/support64/24/20/14/17 or other completed paths repeated. New scope rearstation remaining7 before front8;newcomplete{new},totalcomplete{count}/16/conditionalpresent{present}/pending{pending}. {stop_text} '
+    f'New{q["new_native_groups"]}native/{q["pairs_in_scope"]}pairs/{q["AABB_native_pairs"]}AABB/{q["overlap_records"]}records/0ops/report>.001mm3/Boolean1e-6/OCC1. '
+    'For each attempted ordinaryrear24:actual ARM054 proposedbasis radial=-PcolZ,normal=PcolX;read actual fourM2base-screw and rackM3cylinder axes,not only labels. M2base screws preload7 at-radial80/60/40/20/10/5/0 into manualcradle,then motor/rotor/body-screw/spool reference4 same7;motorunit6+own3leads/plug4 into remaining carrier9 same7. Source vendor/electrical/output internals reference only. Body19 omits only original base_nuts4compound temporarily. '
+    'Worldbody enters from radial AABBoutside withnormal+8 then normal8/4/0;racknuts sideentry atnormal-20 then-10/0;M3bolts sideentry atnormal+40 then+20/+10/0;base_nuts compound from positive radialoutside then20/10/5/0. Outwardstarts chosen from full stage AABBprojections rounded20mm/min160,not design clearance requirement. Record every actual present/absent/moving list;after each clear finalidentity path restore original parts. First failure stops later paths,no hardware cut/move/exclusions. '
+    f'New evidence common{e["new_common_queries"]}/geometry{e["new_evidence_geometry"]} only if first failure;render whole native paths repeated0. Actualaxisreads{len(e["actual_axis_reads"])} and actualCADimages{len(e["output_sha256"])};previousgeometry{len(geom)}/frozen222/manifests preserved. ExactSHA boundedreplay planned{replay}native includes world radial-to-axial last3/M3last4 and path endpoints;not all middle samples/alltrimBoolean/pixels/armvisualunit proof. '
+    ('Next read saved ringPIP lead1/wire_guide_base common and original lead path/groove/lid/M3 stack in actual module basis. Motor+ownleads rigid entry is blocked at-radial10,not a hand defect or permission to shave3.522corner. Examine the whole adapter/guidebase/lid/fastener bench order,explicit temporary omissions and full outside entry with every original part restored. Do not blindly carry first module sequence or delete lead/base/lid,begin shallow after blockage or change installed axis/command. Keep complete rear5 original packets present;ringPIP/ringDIP/middlePIP24each remain with front8 unexecuted,not permanent motor deletion. Continue remaining original packets from exact current598present/288pending lists. ' if blocked else
+     'Next inspect actual special front thumbIP48/ARM059 integratedR5/electrical/PCD and full module internal bench/service order before its original restoration,then remaining front7 ordinary24. Rear8 remain in exact restored positions and are actual obstacles. No blind ordinary24 template on special48,no hidden original parts deletion or worldwire/oldassembly pass inheritance. ')+
+    f'Finishednew{q["new_native_groups"]}/actualaxisreads/common and firstindex/support/ARM06864/ARM067124bench106front60common1/ARM06668common2/ARM06512pad16preservation/finishedfrontgeometry615facesPCD/smallangle-radius-cornerfamilies not repeated. '
+    'Keep ARM068first20lead3/ARM067rackboltbase_nuts/ARM066twofirstfailures/ARM065common1edgevertex-corefalse/failedM3plus13/R5/strictfalse/inclusionholds. One-sidedbeamendstop/oppositepullout frictionpreload unverified. Currentradial16rack/exterior unadopted. Keep acceptedhand16drive/electricalgroove/lidM2/3leads/plug/M3stack;no handbeamcut/motordeletion/hiddenmove/anglelimit/ODRshrink/faketensioner/LINK/oldcurveoptimizer/elbowbus. After coherent supportassemblymotion reconnect fixedmotor->Hshortentry->actualhand longmaterials. No suppliedtools/fit/force/strength/friction/preload/tension/20torque/dynamicelectrical/wholearm/upperarm/physicalmanufacture/exterior qualification;physical perfection not endlessCAD/video gate. Check arm069-check/render/prepare/publish-review/followup/finish statuses and processes first.')
+readme=f'''# ARM069 뒤쪽 모터 묶음의 원래 위치 복구
+
+**형상변경 없이 뒤쪽 {new}묶음을 새로 복구해 총{count}/16,조건부{present}행/{pending}대기다. 현재862 설치와 방사랙 외형은 채택하지 않았다.**
+
+## 실제 범위와 순서
+
+ARM068의 조건부502행을 그대로 시작 상태로 쓴다. 첫 indexMCP24행과 이미 조립됐다고 가정한 비packet478행이 포함된다. 첫 묶음/지지부 경로를 반복하지 않았다. 이번 계획은 뒤쪽 남은7묶음이며 앞쪽8묶음은 명시적으로 다음 조립 단계다. 원래16packet408/최종886의 이름·부품·위치·손364본체·손397·축길이/명령clock·전기홈/뚜껑M2/3선/plug/M3스택을 유지한다. 새 설치/하드웨어 기하변경0이다.
+
+각 실제 ARM054 설치행렬 P에서 방사방향−P[:,2],모터출력방향P[:,0]을 썼다. 시도한 각 모듈의 실제 M2base_screws와 rack_screw_1 원통면 축을 읽어 선언 방향과 일치하는지 기록했다. 총{len(e['actual_axis_reads'])}개 부품 축 읽기이며6탭/615면/옛PCD 재분류가 아니다.
+
+분리벤치에서 cradle을 수동 유지하고 원래 M2base_screws4개 묶음을 −방사80/60/40/20/10/5/0의7표본으로 먼저 넣는다. 이어 motor/rotor/body_screws/spool 참고4행을 같은7표본으로 넣는다. 그6행과 자기3리드/plug4행을 함께 움직여 나머지 adapter/guide carrier9에 같은7표본으로 넣는다. 공급모터/body나사/출력·전기 내부는 참고묶음이며 실제 내부조립·플러그 체결·하네스 변형·토크연결을 새로 승인하지 않았다. 첫 모터가 통과했다는 이유로 다른 모듈의 세계진입을 승계하지 않았다.
+
+원래 base_nuts4개 묶음 한 행만 잠시 빠진 몸체19행을 현재 장애물 전체 경계상자 밖에서 방사방향으로 넣는다. 출력방향+8을 유지한 옆진입 뒤8/4/0으로 착좌한다. 랙너트2행도 출력방향−20에서 옆진입 뒤−10/0,랙M3나사2행은 출력방향+40에서 옆진입 뒤20/10/0이다. 마지막에 원래4M2받침너트 묶음을 바깥 방사방향에서20/10/5/0까지 넣는다. 각 바깥 시작은 해당 시점 전체 장애물의 AABB 투영보다 밖이 되도록20mm 간격으로 올리고 최소160mm부터 정한다. 이는 시험 시작 위치이며 설계 최소여유 규격이 아니다. 모든 이동·현재설치·일시누락 목록과 최종 항등변환을 보존한다.
+
+## 실제 결과
+
+새{q['new_native_groups']}native/{q['pairs_in_scope']}쌍/{q['AABB_native_pairs']}AABB/{q['overlap_records']}기록/연산오류0,보고>0.001mm³/Boolean1e−6mm/OCC1이다. 원래 첫packet/지지부·ARM06864/24/20/14/17의 같은 검사는 반복하지 않았다. {stop_text}
+
+새로 완료한 모듈은 {q['new_restored_modules']}이다. 기존 첫 묶음을 포함한 완료는{q['restored_modules']},총{count}/16이다. 실제 조건부 시작502→현재{present},원래부품{pending}행이 아직 대기한다. 조건부 등록/수동유지·지그·captive실제유지/나사산토크·강도힘마찰예압은 검증하지 않았고,{present}행 전체 공장조립이나16모터설치·20구동 승인으로 쓰지 않는다. 영구 모터 삭제/원래 너트누락/몰래 재배치/손빔절삭0이다.
+
+## 실제 CAD와 재현
+
+![복구 전후](images/restoration_before_after.png)
+![벤치 선조립](images/bench_order.png)
+![몸체 진입](images/body_entry.png)
+'''
+readme+=('![첫 실패와 실제 공통](images/first_block.png)\n' if e['common_queries'] else '![마지막 뒤쪽 M3 진입](images/last_M3_entry.png)\n')
+readme+=f'''
+불투명 실제CAD{len(e['output_sha256'])}그림이며 보기에서 생략한 다른 부품도 해당 native에서는 장애물이다. 새 공통Boolean{e['new_common_queries']}은 첫새실패의 저장 증거만이고 원래 경로 반복0이다. 공통 수치는 export/렌더 전에 common_prepared.json에 먼저 저장한다. 새 증거기하{e['new_evidence_geometry']}는 설치물이 아니다. 이전기하{len(geom)}/동결222/과거manifest를 보존한다.
+
+정확SHA의 새 깨끗한 별도사본에서 핵심{replay}native와 실제축/원래16packet408·최종886/시작502/각모듈 분할·누락·설치순서·최종 원래위치·전체장애물밖시작을 대조한다. 몸체/너트의 옆진입→축진입 마지막3,M3마지막4와 각 경로 시작끝을 포함한다. 새 공통/서명은 저장한 경우에만 대조하고 sourceSTEP 측정서명은 adaptive epsilon1e−10/절대1e−5다. 모든중간표본/곡면식trimBoolean/픽셀·팔시각단위/연속전체공장 검사는 아니며 같은에이전트로 독립감사가 아니다.
+
+ARM068전선3실패·ARM067나사실패·ARM066두실패·ARM065common1edgevertex/corefalse·옛M3+13/R5/strictfalse·곡면포함보류는 그대로다. 빔 한방향 끝받침/반대 뽑힘 마찰예압도 미검증이다. 전체팔·상완/20토크·긴재료/동적전기·실물제조/외형 승인은 없다.
+
+## 다음
+
+{next_korean}
+
+완료한 새경로/축읽기/공통·첫묶음/지지부/앞unit/615면/PCD·작은각도반경/모서리를 반복하지 않는다. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛곡선최적화/팔꿈치 전기버스 재개0이다. 실물 인증의 완벽을 다음 CAD/영상의 무한조건으로 늘리지 않는다.
+'''
+(H/'README.md').write_bytes(readme.encode())
+cp=read(P/'CHECKPOINT.json');assert cp['id']=='ARM068';cp['inherited_ARM068_review']={k:v for k,v in cp.items() if k.startswith('post_commit_')}
+for k in list(cp):
+    if k.startswith('post_commit_'):cp[k]=None
+cp.update(id='ARM069',previous_checkpoint='ARM068',candidate='cad/rear_packet_restoration_v1',manifest='checkpoints/ARM069.manifest.json',
+    status=f'Unchanged886:rear restoration new{new},total{count}/16;conditional{present}present/{pending}pending;new{q["new_native_groups"]}groups/{q["overlap_records"]}records.',
+    active_work_scope=('Resolve actual ringPIP lead/guidebase bench assembly order with original M3 stack and explicit full restoration,then remaining rear3/front8 from exact598 lists.' if blocked else 'Read special frontthumb48 actual R5/electrical bench interface and restore front8 from exact rear8-restored lists.'),next_stage=next_stage,
+    current_installed_candidate_replaced=False,proposal_geometry_adopted=False,current_hardware_rows=862,proposal_hardware_rows=886,post_commit_review_completed=False,post_commit_results_reproduced=False,
+    arm_layout_proposal_report='cad/rear_packet_restoration_v1/reviews/check.json')
+write(P/'CHECKPOINT.json',cp)
+f=P/'AGENTS.md';txt=f.read_text(encoding='utf-8-sig');txt=txt.replace('# 작업 규칙\n',f'# 작업 규칙\n\n- 2026-10-28 ARM069: cad/rear_packet_restoration_v1/README.md/reviews/check.json/assessment.json/evidence.json/CHECKPOINT.next_stage우선. 현재862/손16모터빔전기축길이명령clock기하변경0·886미채택. 조건부502/첫24유지에서뒤7계획중새{new}복구/총{count}/16·{present}현재/{pending}대기,새{q["new_native_groups"]}native/{q["overlap_records"]}기록0오류다. 실제방위별M2선조립→모터와자기3선/plug→몸체19→racknut/M3→원래M2너트마지막,전체장애물AABB밖진입/축읽기{len(e["actual_axis_reads"])}다. 앞8/특수엄지48은별도다음조건이며전체공장조립/20구동/외형승인아니다. {"첫새실패/공통보존후자연진입순서검토" if blocked else "다음특수앞엄지48의실제R5전기일체/전체벤치순서와앞7복구"}. 끝낸새경로/축/공통·ARM06864/24/20/14/17·이전124/106/68/615면PCD반복0,손빔절삭/모터삭제·몰래이동0·옛corefalse/strictfalse보존.\n',1);f.write_bytes(txt.encode())
+f=P/'docs/HAND_INTEGRATION_STATUS.md';f.write_bytes(f.read_bytes()+(f'\n## ARM069 뒤쪽 모터 복구\n\n[실제 원래위치 복구](../cad/rear_packet_restoration_v1/README.md). 시작502에서뒤7계획중새{new}/총{count}묶음복구,{present}현재/{pending}대기·앞8별도다음조건. 새{q["new_native_groups"]}native/{q["overlap_records"]}기록0오류·실제M2/M3축읽기{len(e["actual_axis_reads"])}. 형상/현재862변경0·886/외형미채택·전체공장조립/구동미승인이다.\n').encode())
+f=P/'PROGRESS.md';f.write_bytes(f.read_bytes()+(f'\n- ARM069: 형상변경없이뒤모터새{new}묶음복구,첫묶음포함{count}/16·조건부{present}행/{pending}대기.\n- 검사: 새{q["new_native_groups"]}검사/{q["overlap_records"]}겹침기록·연산오류0,원래M2/M3축과전체바깥진입확인.\n- 저장/다음: 정확SHA재현후남은묶음의실제조립순서와원래위치복구검사.\n').encode())
+(P/'checkpoints/ARM069.md').write_bytes(b'# ARM069\n\n[Rear packet original restoration](../cad/rear_packet_restoration_v1/README.md). Current862 unchanged.\n')
+paths=set(old['files'])|{'checkpoints/ARM068.manifest.json','checkpoints/ARM069.md','AGENTS.md','docs/HAND_INTEGRATION_STATUS.md'}
+for z in [q,e]:paths.update(z['source_sha256'])
+for folder in [H,P/'docs/reviews/ARM068']:paths.update(f.relative_to(P).as_posix() for f in folder.rglob('*') if f.is_file())
+paths-={'CHECKPOINT.json','PROGRESS.md','checkpoints/ARM069.manifest.json'}
+assert not [f for f in paths if '__pycache__' in Path(f).parts or Path(f).suffix.lower()=='.pyc']
+write(P/'checkpoints/ARM069.manifest.json',dict(checkpoint='ARM069',scope=f'New{q["new_native_groups"]}rear assembly groups;bounded{replay}replay,actualaxes/original16packet408/final886/current{present}pending{pending};new common{e["new_common_queries"]}',
+    exclusions=['self','CHECKPOINT.json','PROGRESS.md','temporary __pycache__/.pyc'],files={f:dict(sha256=sha(P/f),bytes=(P/f).stat().st_size) for f in sorted(paths)}))
+write(out,dict(completed=True,manifest_files=len(paths),old_geometry_hashes_unchanged=len(geom),frozen_files=222,new_native_groups=q['new_native_groups'],planned_replay_native_groups=replay,
+    new_geometry=e['new_evidence_geometry'],new_common_queries=e['new_common_queries'],complete_packet_restorations=count,new_restored_packets=new,conditional_present_rows=present,pending_rows=pending))
+print('prepared',len(paths),'oldgeometry',len(geom),'native',q['new_native_groups'],'replay',replay,'restored',count,flush=True)

@@ -1,0 +1,36 @@
+{
+  "completed": true,
+  "new_native_groups": 377,
+  "pairs_in_scope": 599585,
+  "AABB_native_pairs": 913,
+  "overlap_records": 1,
+  "operation_failures": 0,
+  "stopped_at_first_blocked_sample": "ring_pip_actuator__motor_and_own_leads_into_carrier_4",
+  "first_failure_records": [
+    {
+      "lead": "ring_pip_actuator_lead1",
+      "part": "ring_pip_actuator_wire_guide_base",
+      "material_intersection_mm3": 3.5226195712629798
+    }
+  ],
+  "rear_station_complete": false,
+  "restored_before": 1,
+  "new_restored_packets": 4,
+  "complete_restored_packets": 5,
+  "conditional_initial_rows": 502,
+  "conditional_final_present_rows": 598,
+  "pending_rows": 288,
+  "front8_explicitly_later": true,
+  "actual_M2_M3_axis_reads": 10,
+  "axis_bases_match": true,
+  "old_native_repeated": 0,
+  "new_hardware_geometry": 0,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "new_common_queries": 1,
+  "new_evidence_geometry": 1,
+  "planned_replay_native_groups": 126,
+  "all_final_parts_and_poses_original": true,
+  "first_packet24_and_all_previous_failures_holds_preserved": true,
+  "full_factory_continuous_tools_captive_retention_threadtorque_force_strength_preload_friction_electrical_output_internalassembly_20drive_fullarm_physical_exterior_approved": false
+}

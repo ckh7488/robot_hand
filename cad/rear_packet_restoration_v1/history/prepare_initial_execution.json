@@ -1,0 +1,19 @@
+{
+  "state": "failed",
+  "pid": 92300,
+  "commands": [
+    {
+      "argv": [
+        "E:/hand_recog/mujoco-lab/.venv/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/prepare_arm069.pyw"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "prepare",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm069-prepare-job-prepare.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm069-prepare-job-prepare.err",
+      "pid": 94704,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: prepare failed\n"
+}
