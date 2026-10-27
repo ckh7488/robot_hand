@@ -1,0 +1,131 @@
+{
+  "target_commit": "d7e60e8e1d31383dc2e3a2ebc441c71906d519ed",
+  "initial_core_passed": true,
+  "native_groups": 42,
+  "native_matches": 42,
+  "geometry_shapes": 3,
+  "geometry_matches": 3,
+  "common_queries": 3,
+  "common_matches": 3,
+  "contracts": {
+    "original16packet408_final886_start670_prior8_retained": true,
+    "special48_body44_rack4_no_generic_rows": true,
+    "original_preassembled_reference12_internal_not_newly_approved": true,
+    "actual_special_basis_and_open_groove_frame": true,
+    "all_paths_full_stage_outside_starts": true,
+    "explicit_omissions_sequence_stop_first_block_final_identity": true,
+    "actual_present_pending_and_remaining_front7": true,
+    "same_successful78_prefix_proof_no_native_repeat": true,
+    "selected_both_nuts_before_adjuster_outside_lists_identity_stop": true,
+    "selected_world670_and_original_pending_contract": true,
+    "same99_prefix_and_outer_jaw_first_wholeoutside_contract": true,
+    "continuation_original_present_pending_rear8_retained": true,
+    "actual48_bounds_and_selected_cylindrical_axes_planes": true
+  },
+  "checked_STEP_overlap_records": 6,
+  "manifest_files": 15100,
+  "frozen_files": 222,
+  "source_old_geometry_hashes_unchanged": 12771,
+  "differences": [],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM072_d7e60e8e1d31",
+  "current_hardware_rows": 862,
+  "proposal_rows": 886,
+  "new_hardware_geometry": 0,
+  "new_evidence_geometry": 3,
+  "executed_new_groups": 120,
+  "attempt_new_groups": [
+    89,
+    25,
+    6
+  ],
+  "source_raw_overlap_records": 6,
+  "pairs_in_scope": 2788,
+  "AABB_native_pairs": 76,
+  "operation_failures": 0,
+  "new_restored_packets": 0,
+  "conditional_complete_packet_restorations": 8,
+  "conditional_initial_rows": 670,
+  "conditional_present_rows": 670,
+  "pending_packet_rows": 216,
+  "inherited_successful_prefix_scopes": [
+    78,
+    99
+  ],
+  "actual_axis_parts": 8,
+  "actual_cylindrical_faces": 43,
+  "actual_part_bounds": 48,
+  "special48_restored": false,
+  "front7_explicitly_later": true,
+  "first_failures": [
+    {
+      "sample": "barrel_0_top_nut_3",
+      "path": "barrel_0_top_nut",
+      "records": [
+        {
+          "lead": "thumb_ip_barrel_top_nut_0",
+          "part": "arm059_integrated_electrical_R5_base",
+          "material_intersection_mm3": 2.161810721637161
+        }
+      ]
+    },
+    {
+      "sample": "jaw_arm059_straight_jaw_0_3",
+      "path": "jaw_arm059_straight_jaw_0",
+      "records": [
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_adapter",
+          "material_intersection_mm3": 46.31456343781331
+        },
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_lead3",
+          "material_intersection_mm3": 7.571353815938723
+        },
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_lead2",
+          "material_intersection_mm3": 9.700120500514242
+        },
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_actuator_lead1",
+          "material_intersection_mm3": 10.495145017368065
+        }
+      ]
+    },
+    {
+      "sample": "jaw_outer_side_first_arm059_straight_jaw_0_5",
+      "path": "jaw_outer_side_first_arm059_straight_jaw_0",
+      "records": [
+        {
+          "lead": "arm059_straight_jaw_0",
+          "part": "thumb_ip_barrel_adjuster_0",
+          "material_intersection_mm3": 32.85145666711312
+        }
+      ]
+    }
+  ],
+  "new_images": 10,
+  "old_native_paths_repeated": 0,
+  "old_common_Boolean_repeated": 0,
+  "proposal_adopted": false,
+  "same_agent_review_not_independent": true,
+  "new_tests_clear": false,
+  "inherited_rawfalse_and_corefalse_holds_preserved": true,
+  "whole_drive_or_exterior_approved": false,
+  "image_filename_collision_and_recovery": {
+    "completed": true,
+    "cause": "selected renderer reused images/actual_common.png while its index filtered for selected_actual_common.png. Initial script and evidence kept;renamed copy preserves selected pixels,original first image rerendered from stored common STEP/STL and pair meshes.",
+    "overwritten_selected_image_sha256": "ccdaf5383d9efb1f56c64c8bc0d4545d1973729d7ab8cb760aa9217339fc8000",
+    "selected_saved_path": "cad/special_thumb_module_service_v1/images/selected_actual_common.png",
+    "expected_original_sha256": "ab18b0d1c09f83310b9b22642db9ec79a96eedebf17854ca83e3cfa7fe4e2201",
+    "restored_original_sha256": "4414d94f48a14992926493a869a5bff2f9bbbeffcca6125f6e412fde59c3c2ad",
+    "original_pixels_exactly_restored": false,
+    "native_groups_repeated": 0,
+    "common_Boolean_queries_repeated": 0,
+    "source_sha256": {
+      "cad/special_thumb_module_service_v1/recover_original_common_image_corrected.py": "9189378c8684a68b0816da7544a38e30d8eec3bd1bd025ab1b6d283dd591035f"
+    }
+  }
+}
