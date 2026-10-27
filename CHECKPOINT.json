@@ -14,10 +14,10 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
+  "post_commit_results_reproduced": true,
   "post_commit_review_target": "0fa63da3a1980f42c7a8a9d3fb4a81f181ecc1f0",
   "post_commit_review_report": "docs/reviews/GUIDED030/README.md",
-  "post_commit_reproduction_scope": "ExactSHAcleanclone:6native(firstopen5obstacles+630internal),36source/STEPadaptive metrics abs1e-5,18analytic actualFK/length/joins.5407closure/222frozen,cleanclone,OCC1,sameagent.passed=False;differences=['open_internal630'].Not remaining4native/reverse/render/elasticfriction/tension/threading/installation,wristmotion or fullhand/physical approval.Inherited OFFSET024/HOUSING027 comparison limits not resolved.",
+  "post_commit_reproduction_scope": "ExactSHAcleanclone:external5nativegroups and alloverlaplocations/7of9internalbasicvolumes match;original core_initial=false for2adjacent housingsection pairs default volume deltas8.889935078e-5/8.076335867e-5>abs1e-5.Sameunchangedclone/source-vs-savedSTEP nativecommons adaptiveepsilon1e-10 foronly2pairs,volume delta1.072203e-9/1.381540e-8,area1.286920e-8/4.525154e-8,centroidmax4.785997e-7<originalabs1e-5,precision_pairs=true.Originalfalse retained.Original36sourceSTEPmetrics and18actualFK/length/joins match.5407closure/222frozen originallyverified,cleanclone/OCC1,sameagent.Notallnativebasicvalues identical/wholecorepass;notelasticfriction/tension/threading/installation,wristmotion or fullhand/physical approval.Inherited OFFSET024/HOUSING027 limits untouched.",
   "next_stage": "Close rejected unsupported guided030 polynomial family:constant total length/axial sliding alone not a feasible housing.One opening native fail including upstream wrist actuator/carrier,downstream root and internal tight bend/owncord/twohousing overlap.No more samefreecurve/ODshrink/radiussearch/anglelimit/handcut/elbowbus.Inspect actual rear wrist inlet/material and root corridor/terminal approach,then design installable supported passage at real attachment bodies before another wholelink.Parent/wristmotion,threading/pretension/friction/physical/wholehand stillunverified;do not require allsuppliercertification before next CAD/previews.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -195,7 +195,7 @@
   "post_commit_new26_shape_metrics_reproduced": true,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": true,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": false,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": true,
   "wrist_local_guide_scene": "cad/wrist_outlet_route_v1/inboard/generated/assembly_scene.json",
@@ -217,5 +217,6 @@
   "guided_whole_link_native_poses": 1,
   "guided_whole_link_overlap_records": 45,
   "guided_whole_link_analytic_length_cases": 9,
-  "guided_whole_link_native_clear": false
+  "guided_whole_link_native_clear": false,
+  "post_commit_precision_pairs_passed": true
 }
