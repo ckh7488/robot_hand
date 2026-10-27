@@ -1,0 +1,19 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+inner_jaw_from_open_half_before_carrier_0 True
+inner_jaw_from_open_half_before_carrier_6 True
+opposite_jaw_capture_adjuster_0 True
+opposite_jaw_capture_adjuster_6 True
+kit_M2_motor_housing_clamp_0_nut_0_0 True
+kit_M2_motor_housing_clamp_0_nut_0_6 True
+kit_M2_motor_housing_clamp_0_nut_1_0 True
+kit_M2_motor_housing_clamp_0_nut_1_6 True
+kit_M2_motor_housing_clamp_0_bolt_0_0 True
+kit_M2_motor_housing_clamp_0_bolt_0_6 True
+kit_M2_motor_housing_clamp_0_bolt_1_0 True
+kit_M2_motor_housing_clamp_0_bolt_1_6 True
+whole_original_kit7_into_R5_with_two_nuts_0 True
+whole_original_kit7_into_R5_with_two_nuts_4 True
+whole_original_kit7_into_R5_with_two_nuts_5 True
+whole_original_kit7_into_R5_with_two_nuts_6 True
+core True []
