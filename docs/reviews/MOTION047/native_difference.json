@@ -1,0 +1,327 @@
+{
+  "target_commit": "739222fdf60b1169722839739684fd6b8b1844d9",
+  "initial_core_passed": false,
+  "differences": [
+    {
+      "id": "approach_30/self",
+      "source_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 266,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.008499936511912519
+          },
+          {
+            "lead": "continued_cord_1_0",
+            "part": "continued_cord_1_1",
+            "material_intersection_mm3": 0.008498511038330102
+          }
+        ],
+        "operation_failures": []
+      },
+      "STEP_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 226,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.008498035522988348
+          }
+        ],
+        "operation_failures": []
+      },
+      "pair_lists_equal": false,
+      "pair_metadata": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "stored_part_metadata": {
+            "continued_cord_0_0": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 0
+            },
+            "continued_cord_0_1": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        },
+        {
+          "lead": "continued_cord_1_0",
+          "part": "continued_cord_1_1",
+          "stored_part_metadata": {
+            "continued_cord_1_0": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 0
+            },
+            "continued_cord_1_1": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        }
+      ],
+      "same_pair_volume_differences": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "source_mm3": 0.008499936511912519,
+          "STEP_mm3": 0.008498035522988348,
+          "difference_mm3": -1.9009889241708433e-06
+        }
+      ],
+      "extra_precision_or_group_replays": 0,
+      "cause_or_full_Boolean_equivalence_proven": false
+    },
+    {
+      "id": "wrist_-1_out_1.0/self",
+      "source_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 256,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.008502357297455174
+          }
+        ],
+        "operation_failures": []
+      },
+      "STEP_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 236,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.00849969349568782
+          },
+          {
+            "lead": "continued_cord_1_0",
+            "part": "continued_cord_1_1",
+            "material_intersection_mm3": 0.008498911044890284
+          }
+        ],
+        "operation_failures": []
+      },
+      "pair_lists_equal": false,
+      "pair_metadata": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "stored_part_metadata": {
+            "continued_cord_0_0": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 0
+            },
+            "continued_cord_0_1": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        },
+        {
+          "lead": "continued_cord_1_0",
+          "part": "continued_cord_1_1",
+          "stored_part_metadata": {
+            "continued_cord_1_0": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 0
+            },
+            "continued_cord_1_1": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        }
+      ],
+      "same_pair_volume_differences": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "source_mm3": 0.008502357297455174,
+          "STEP_mm3": 0.00849969349568782,
+          "difference_mm3": -2.6638017673538683e-06
+        }
+      ],
+      "extra_precision_or_group_replays": 0,
+      "cause_or_full_Boolean_equivalence_proven": false
+    },
+    {
+      "id": "wrist_1_out_1.0/self",
+      "source_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 281,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.008502357297455174
+          }
+        ],
+        "operation_failures": []
+      },
+      "STEP_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 261,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.00849969349568782
+          },
+          {
+            "lead": "continued_cord_1_0",
+            "part": "continued_cord_1_1",
+            "material_intersection_mm3": 0.008498911044890284
+          }
+        ],
+        "operation_failures": []
+      },
+      "pair_lists_equal": false,
+      "pair_metadata": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "stored_part_metadata": {
+            "continued_cord_0_0": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 0
+            },
+            "continued_cord_0_1": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        },
+        {
+          "lead": "continued_cord_1_0",
+          "part": "continued_cord_1_1",
+          "stored_part_metadata": {
+            "continued_cord_1_0": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 0
+            },
+            "continued_cord_1_1": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        }
+      ],
+      "same_pair_volume_differences": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "source_mm3": 0.008502357297455174,
+          "STEP_mm3": 0.00849969349568782,
+          "difference_mm3": -2.6638017673538683e-06
+        }
+      ],
+      "extra_precision_or_group_replays": 0,
+      "cause_or_full_Boolean_equivalence_proven": false
+    },
+    {
+      "id": "wrist_1_back_0.0/self",
+      "source_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 265,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.008502357297455174
+          }
+        ],
+        "operation_failures": []
+      },
+      "STEP_raw": {
+        "pairs_in_scope": 6903,
+        "exact_pairs": 225,
+        "overlaps": [
+          {
+            "lead": "continued_cord_0_0",
+            "part": "continued_cord_0_1",
+            "material_intersection_mm3": 0.00849969349568782
+          },
+          {
+            "lead": "continued_cord_1_0",
+            "part": "continued_cord_1_1",
+            "material_intersection_mm3": 0.008498911044890284
+          }
+        ],
+        "operation_failures": []
+      },
+      "pair_lists_equal": false,
+      "pair_metadata": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "stored_part_metadata": {
+            "continued_cord_0_0": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 0
+            },
+            "continued_cord_0_1": {
+              "kind": "cord",
+              "physical_line": 0,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        },
+        {
+          "lead": "continued_cord_1_0",
+          "part": "continued_cord_1_1",
+          "stored_part_metadata": {
+            "continued_cord_1_0": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 0
+            },
+            "continued_cord_1_1": {
+              "kind": "cord",
+              "physical_line": 1,
+              "path_segment": 1
+            }
+          },
+          "metadata_only_not_a_geometric_comparison": true
+        }
+      ],
+      "same_pair_volume_differences": [
+        {
+          "lead": "continued_cord_0_0",
+          "part": "continued_cord_0_1",
+          "source_mm3": 0.008502357297455174,
+          "STEP_mm3": 0.00849969349568782,
+          "difference_mm3": -2.6638017673538683e-06
+        }
+      ],
+      "extra_precision_or_group_replays": 0,
+      "cause_or_full_Boolean_equivalence_proven": false
+    }
+  ],
+  "CAD_clone_or_threshold_changed": false
+}
