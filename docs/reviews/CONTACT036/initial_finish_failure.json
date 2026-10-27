@@ -1,0 +1,8 @@
+{
+  "completed": false,
+  "phase": "failed",
+  "target_commit": "d03af1f60143950f145c22e194e8a52bdadd4612",
+  "checkout": "D:\\Codex-work\\robot-hand-workspace\\reviews\\CONTACT036_d03af1f60143",
+  "output": "D:\\Codex-work\\robot-hand-workspace\\outputs\\CONTACT036_review_d03af1f60143.json",
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\finish_contact036.pyw\", line 17, in <module>\n    assert out.exists();core=read(out);assert core['completed'] and child.returncode in [0,1] and len(core['key_samples'])==6 and len(core['geometry_comparisons'])==20 and len(core['length_residual_reconstructions'])==2;passed=bool(core['passed']);rd=P/'docs/reviews/CONTACT036';rd.mkdir(exist_ok=False);shutil.copyfile(out,rd/('core.json' if passed else 'core_initial.json'))\n           ^^^^^^^^^^^^\nAssertionError\n"
+}
