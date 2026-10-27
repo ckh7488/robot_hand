@@ -1,0 +1,15 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+actual_lower_jaw__fixed_lead2
+actual_lower_jaw__protected_electrical_groove
+saved_adjuster_base_common__foot_bridge_band
+saved_adjuster_base_common__post_band
+saved_adjuster_base_common__groove_block_band
+actual_clocked_spool__carrier
+spool_common__outside_two_actual_bridges
+counterfactual_carrier_without_bridge_free_spans
+saved_spool_common__outside_middle_dip_minus13_spoke
+actual_clocked_tailclamp1__carrier
+tail_common__outside_middle_dip_minus13_spoke
+counterfactual_carrier_without_middle_dip_spoke_free_span
+core True native 12 geometry 11

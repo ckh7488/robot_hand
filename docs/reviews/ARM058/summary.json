@@ -1,0 +1,23 @@
+{
+  "target_commit": "faa19f8e1dbecf1d029b101c04b584db6614269b",
+  "initial_core_passed": true,
+  "native_queries": 12,
+  "native_matches": 12,
+  "source_STEP_evidence_shapes": 11,
+  "geometry_matches": 11,
+  "electrical_contract_matched": true,
+  "neighbor_spoke_identification_matched": true,
+  "initial_thumb_bridge_hypothesis_rejected": true,
+  "actual_spoke": "middle_dip,row1,bank1,45deg,tangent-13mm",
+  "source_old_geometry_hashes_unchanged": 12480,
+  "manifest_files": 14203,
+  "frozen_files": 222,
+  "differences": [],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM058_faa19f8e1dbe",
+  "same_agent_review_not_independent": true,
+  "current_installed_hardware_rows": 862,
+  "new_installed_geometry_rows": 0,
+  "new_layout_adopted": false,
+  "old_ARM051_to_ARM057_or_LINK050_replayed": false,
+  "whole_drive_or_exterior_approved": false
+}
