@@ -1,0 +1,14 @@
+{
+  "unique_names_no_overwrites": true,
+  "bench_transport_registration_and_manual_support_conditions_labelled": true,
+  "port1_known_final_conflicts_not_cleared_by_new_port0_tests": true,
+  "scope": "Actual original7 bench and carrier finite entry;special48/world/wholefactory/drive/exterior not approved.",
+  "labels_and_full_selected_geometry_readable": true,
+  "images_viewed": [
+    "cad/captured_adjuster_kit_v1/images/arm073_kit_before_after.png",
+    "cad/captured_adjuster_kit_v1/images/arm073_carrier_before_after.png",
+    "cad/captured_adjuster_kit_v1/images/arm073_whole_kit_entry.png"
+  ],
+  "opaque": true,
+  "completed": true
+}

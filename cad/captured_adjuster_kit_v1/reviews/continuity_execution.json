@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 96948,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/captured_adjuster_kit_v1/conflict_continuity.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "continuity",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm073-continuity-job-continuity.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm073-continuity-job-continuity.err",
+      "pid": 72800,
+      "returncode": 0
+    }
+  ]
+}

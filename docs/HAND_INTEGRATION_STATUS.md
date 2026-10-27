@@ -252,3 +252,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM072 special thumbIP service order
 
 [실제 조립 순서](../cad/special_thumb_module_service_v1/README.md). 형상변경0/새120native6기록0오류,양너트 먼저 옆진입+adjuster는 통과하나 죔쇠 후삽입은 안쪽/바깥 모두 막혔다. 같은78/99승계·새0,뒤8/조건부670·216대기유지·세계특수48/앞7미실행. 현재862/886/방사랙외형미채택·전체구동미승인.
+
+## ARM073 포착 조절부 선조립
+
+[실제 원래7 선조립](../cad/captured_adjuster_kit_v1/README.md). 형상변경0/새49native0기록0오류로첫kit7의벤치·carrier34복구성립. 같은92승계·새0. 기존ARM059port1최종3은4STEP/pose가같아유지되며재검사0,세계48/앞7미실행·뒤8/조건부670·216대기유지. 현재862/886·방사랙외형미채택·전체구동미승인.

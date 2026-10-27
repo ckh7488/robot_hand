@@ -1,0 +1,51 @@
+{
+  "completed": true,
+  "new_native_groups": 49,
+  "pairs_in_scope": 1470,
+  "AABB_native_pairs": 29,
+  "overlap_records": 0,
+  "operation_failures": 0,
+  "raw_new_tests_clear": true,
+  "port0_kit_external_assembly_completed": true,
+  "kit_original_rows": 7,
+  "carrier_bench_rows": 34,
+  "remaining_port1_mechanical_rows": 9,
+  "new_restored_packets": 0,
+  "complete_restored_packets": 8,
+  "conditional_initial_rows": 670,
+  "conditional_final_present_rows": 670,
+  "pending_rows": 216,
+  "inherited_prefix_scope": 92,
+  "inherited_native_groups_repeated": 0,
+  "old_native_groups_repeated": 0,
+  "planned_replay_native_groups": 16,
+  "new_common_queries": 0,
+  "new_evidence_geometry": 0,
+  "new_capture_face_properties": 22,
+  "existing_port1_conflict_records": [
+    {
+      "lead": "arm059_integrated_electrical_R5_base",
+      "part": "thumb_ip_barrel_adjuster_1",
+      "material_intersection_mm3": 2.7955951125100102
+    },
+    {
+      "lead": "arm059_integrated_electrical_R5_base",
+      "part": "thumb_ip_barrel_top_nut_1",
+      "material_intersection_mm3": 2.2543445500914405
+    },
+    {
+      "lead": "arm059_integrated_electrical_R5_base",
+      "part": "thumb_ip_barrel_bottom_nut_1",
+      "material_intersection_mm3": 2.25434455009144
+    }
+  ],
+  "old_port1_native_repeated": 0,
+  "same_STEP_pose_continuities": 4,
+  "old_geometry_hashes_unchanged": 12777,
+  "frozen_files": 222,
+  "new_images": 3,
+  "new_hardware_geometry": 0,
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "whole_factory_drive_tools_force_strength_captive_mating_harnessflex_torque_friction_preload_tension_electrical_fullarm_physical_exterior_approved": false
+}
