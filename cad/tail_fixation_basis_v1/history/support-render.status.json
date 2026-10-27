@@ -1,0 +1,33 @@
+{
+  "state": "failed",
+  "pid": 5308,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/tail_fixation_basis_v1/support.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "support",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\fix044-support-render-support.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\fix044-support-render-support.err",
+      "pid": 71948,
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/tail_fixation_basis_v1/render.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\fix044-support-render-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\fix044-support-render-render.err",
+      "pid": 69580,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: render failed\n"
+}

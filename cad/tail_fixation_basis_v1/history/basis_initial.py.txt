@@ -1,0 +1,106 @@
+"""Actual tail contacts and bounded fastener approach, without grip assumptions."""
+import sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT/'cad/motor_full_cord_thread_v1'))
+import evidence_render as e
+n,t,w,a,m,g,c,p,np,cq=e.n,e.t,e.w,e.a,e.m,e.g,e.c,e.p,e.np,e.cq
+from OCP.BRepExtrema import BRepExtrema_DistShapeShape
+from OCP.BRepClass3d import BRepClass3d_SolidClassifier
+from OCP.gp import gp_Pnt
+
+
+def context():
+    case,data,groups,housing=e.inputs();source=data[0]
+    raw=p.read(ROOT/'cad/motor_full_cord_thread_v1/reviews/anchor_check.json');cord=[]
+    for i in [0,1]:
+        rec=next(z for z in reversed(raw['cases']) if z['line']==i)
+        source[rec['scene']]=m.drive.sha(ROOT/rec['scene'])
+        cord+=c.load(p.read(ROOT/rec['scene'])['parts'],source)
+    allrows=[z for _,zz in groups for z in zz]+housing+cord
+    assert len(allrows)==940 and len({z['name'] for z in allrows})==940
+    for rel in ['cad/motor_full_cord_thread_v1/reviews/anchor_check.json',
+                'cad/motor_spool_coupling_v1/selected/reviews/check.json',
+                'cad/thumb_ip_drive_v1/joint_drive.py','cad/thumb_ip_drive_v1/motor_adapter.py',
+                'cad/tail_fixation_basis_v1/basis.py']:
+        source[rel]=m.drive.sha(ROOT/rel)
+    return case,source,allrows
+
+
+def distance(left,right):
+    d=BRepExtrema_DistShapeShape(left.wrapped,right.wrapped);d.Perform();assert d.IsDone()
+    return dict(distance_mm=d.Value(),point_on_first_mm=d.PointOnShape1(1).Coord(),
+                point_on_second_mm=d.PointOnShape2(1).Coord())
+
+
+def state(shape,point):
+    return str(BRepClass3d_SolidClassifier(shape.wrapped,gp_Pnt(*[float(x) for x in point]),1e-7).State()).split('.')[-1]
+
+
+def specifications(case):
+    anchors=p.read(ROOT/'cad/motor_spool_coupling_v1/selected/reviews/check.json')['design']['anchors']
+    M=w.motor.M;result=[]
+    for i,z in enumerate(anchors):
+        center=(M@np.r_[z['cord_center_at_clamp_mm'],1.])[:3]
+        normal=M[:3,:3]@np.array(z['screw_axis_outward'])
+        ed=n.specification(case,i)[0][0]
+        result.append(dict(id='motor_'+str(i),line=i,center=center,normal=normal,edge=ed,
+            cord_name='anchorfeed_cord_'+str(i)+'_0',first='thumb_ip_tail_clamp_'+str(i+1),
+            second='thumb_ip_two_tail_spool',surface_offsets_mm=[.3,-.4],
+            expected_gaps_mm=[0.,.1],axial_stroke_mm=3.,floor_is_contact=False))
+    q=np.asarray(case['q']);O,R=g.g.v.frames(g.DESIGN,q)['thumb_ip'];G=np.eye(4);G[:3,:3]=R;G[:3,3]=O;G=np.asarray(case['H'])@G
+    for i,x in enumerate([-4.,4.]):
+        ed=n.specification(case,i)[0][-1];center=np.array(ed.positionAt(.5).toTuple())
+        normal=G[:3,:3]@np.array([0.,1.,0.])
+        result.append(dict(id='child_'+str(i),line=i,center=center,normal=normal,edge=ed,
+            cord_name='anchorfeed_cord_'+str(i)+'_'+str(len(n.specification(case,i)[0])-1),
+            first='thumb_ip_tendon_clamp',second='thumb_segment3_tip_core',
+            surface_offsets_mm=[.3,-.3],expected_gaps_mm=[0.,0.],axial_stroke_mm=6.,floor_is_contact=True))
+    return result
+
+
+def contact(spec,lookup):
+    ed=spec['edge'];center=spec['center'];axis=np.array(ed.tangentAt(0).toTuple())
+    station=float((center-np.array(ed.startPoint().toTuple()))@axis)
+    assert 0.5<station<ed.Length()-.5
+    assert np.linalg.norm(np.array(ed.startPoint().toTuple())+station*axis-center)<1e-5
+    piece=ed.trim(ed.paramAt((station-.5)/ed.Length()),ed.paramAt((station+.5)/ed.Length()))
+    probe=dict(name=spec['id']+'_actual_tail_material',shape=m.swept(piece,.3),body='palm',
+               installed_part_candidate=False,kind='material_subset',physical_line=spec['line'],color=[.97,.45,.12])
+    surfaces=[]
+    for j,name in enumerate([spec['first'],spec['second']]):
+        sh=lookup[name]['shape'];point=center+spec['surface_offsets_mm'][j]*spec['normal']
+        states=[dict(normal_offset_mm=d,hardware_state=state(sh,point+d*spec['normal']),
+                     cord_state=state(probe['shape'],point+d*spec['normal'])) for d in [-.05,0.,.05]]
+        surfaces.append(dict(hardware=name,expected_gap_mm=spec['expected_gaps_mm'][j],
+                             boundary_point_mm=point,normal_samples=states,**distance(probe['shape'],sh)))
+    native=c.material([probe],[lookup[spec['first']],lookup[spec['second']]])
+    result=dict(id=spec['id'],line=spec['line'],cord_name=spec['cord_name'],station_from_piece_start_mm=station,
+        center_mm=center,tail_axis=axis,normal=spec['normal'],tail_axis_dot_contact_normal=float(axis@spec['normal']),
+        material_subset_length_mm=piece.Length(),surfaces=surfaces,native=native,
+        frictionless_axial_direction_is_unconstrained=abs(float(axis@spec['normal']))<1e-10,
+        declared_no_slip_requires_unmeasured_friction_and_preload=True)
+    return result,probe
+
+
+def plans(case):
+    specs=specifications(case);out=[]
+    for z in specs[:2]:out.append(dict(id=z['id'],moving=z['first'],axis=z['normal'].tolist(),stroke_mm=3.,distances_mm=[3.,1.5,0.]))
+    normal=specs[2]['normal'].tolist()
+    for j in [1,2]:out.append(dict(id='child_screw_'+str(j),moving='thumb_ip_tendon_clamp_screw_'+str(j),axis=normal,stroke_mm=6.,distances_mm=[6.,3.,0.]))
+    return out
+
+
+def moved(row,plan,d):
+    delta=np.array(plan['axis'])*d
+    return dict(row,shape=row['shape'].translate(tuple(delta)),assembly_translation_mm=delta.tolist())
+
+
+def export(rows,label):
+    clean=[{k:v for k,v in z.items() if k not in ['step','mesh','sha256_step','sha256_stl']} for z in rows]
+    folder=HERE/'generated'/label;assert not folder.exists()
+    folder.parent.mkdir(parents=True,exist_ok=True)
+    saved=a.a.prior.export(clean,folder)
+    a.save(folder/'scene.json',dict(parts=saved,installed_new_hardware=0,conditional_geometry_only=True))
+    return (folder/'scene.json').relative_to(ROOT).as_posix()
