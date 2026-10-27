@@ -1,0 +1,54 @@
+{
+  "completed": true,
+  "hand_rows": 397,
+  "packaging_rows": 385,
+  "electrical_rows": 64,
+  "arm_rows": 10,
+  "wrist_guide_hardware_rows": 6,
+  "new_CAD_rows": 68,
+  "physical_housings": 2,
+  "physical_middle_cords": 2,
+  "new_hardware_rows": 0,
+  "old_geometry_files_unchanged": 4754,
+  "neutral_only": true,
+  "native_material_clear": true,
+  "candidate_admissible": false,
+  "solver_converged": false,
+  "solver_iterations": 80,
+  "native_pairs": 60894,
+  "native_AABB": 321,
+  "new_internal_pairs": 2278,
+  "overlap_records": 0,
+  "operation_failures": 0,
+  "saved_free_length_targets_mm": [
+    505.2652566673621,
+    523.4345141299735
+  ],
+  "assumed_whole_housing_targets_mm": [
+    723.6940974900947,
+    785.279281488604
+  ],
+  "CAD_housing_lengths_mm": [
+    730.8562916295483,
+    791.978524346492
+  ],
+  "saved_Gauss64_free_length_residual_mm": [
+    7.163821391158991,
+    6.700865274000421
+  ],
+  "independent_split_quad_residual_mm": [
+    7.162194139453504,
+    6.699242857887839
+  ],
+  "minimum_free_span_radii_mm": [
+    66.33698366644951,
+    10.485430349631109,
+    64.92642430856708,
+    10.780898883083966
+  ],
+  "length_target_failure_not_relabelled": true,
+  "assembly_or_motion_newly_tested": false,
+  "whole_housing_installed": false,
+  "whole_hand_drive_approved": false,
+  "physical_equilibrium_preload_tension_or_exterior_approved": false
+}

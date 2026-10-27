@@ -1,0 +1,60 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "kind": "linear",
+      "fixed_inequality": -3.255173908200959e-14,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": 1.0,
+      "eq_residual": 0.0,
+      "iterations": 3
+    },
+    {
+      "kind": "linear",
+      "fixed_inequality": 0.0,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": 1.0,
+      "eq_residual": 0.0,
+      "iterations": 3
+    },
+    {
+      "kind": "linear",
+      "fixed_inequality": 1.0,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": 1.0,
+      "eq_residual": 0.0,
+      "iterations": 3
+    },
+    {
+      "kind": "quadratic",
+      "fixed_inequality": -3.255173908200959e-14,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": 1.0000000000000495,
+      "eq_residual": 9.903189379656396e-14,
+      "iterations": 8
+    },
+    {
+      "kind": "quadratic",
+      "fixed_inequality": 0.0,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": 1.0000000000000495,
+      "eq_residual": 9.903189379656396e-14,
+      "iterations": 8
+    },
+    {
+      "kind": "quadratic",
+      "fixed_inequality": 1.0,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": 1.0000000000000495,
+      "eq_residual": 9.903189379656396e-14,
+      "iterations": 8
+    }
+  ],
+  "not_proof_of_full_route_cause": true
+}
