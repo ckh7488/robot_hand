@@ -1,0 +1,8 @@
+{
+  "target_commit": "fada7e3d9e152526c8a50ca5c60e3d4309d52956",
+  "same_clean_clone": true,
+  "executed_source_hash_matches_raw_report": true,
+  "current_AST_matches_executed_source": true,
+  "change": "Remove BOM and trailing empty EOF line only before first commit; all executed native results remain bound to exact original source hash. No geometry or native rerun.",
+  "native_reruns_for_formatting": 0
+}
