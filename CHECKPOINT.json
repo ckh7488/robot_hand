@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "ea2542f3f3ef40176f11d378e8e7c3d5d34307c1",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
-  "next_stage": "ARM069:read cad/rear_packet_restoration_v1/README.md,reviews/check.json/assessment.json/evidence.json,docs/reviews/ARM069,logs/arm069-finish.json first. Current862/base364/hand397/4palm/16remote/beam/electrical/axes/lengths/commands/clock unchanged;proposal886/radiallayout/exterior unadopted,new hardwaregeometry0. Original16packet408 preserved. Inherit conditional502 from ARM068 including first indexMCP24 and nonpacket478;no old firstpacket/support64/24/20/14/17 or other completed paths repeated. New scope rearstation remaining7 before front8;newcomplete4,totalcomplete5/16/conditionalpresent598/pending288. 첫새실패 ring_pip_actuator__motor_and_own_leads_into_carrier_4: [{'lead': 'ring_pip_actuator_lead1', 'part': 'ring_pip_actuator_wire_guide_base', 'material_intersection_mm3': 3.5226195712629798}]. 뒤경로미실행/첫실패보존. New377native/599585pairs/913AABB/1records/0ops/report>.001mm3/Boolean1e-6/OCC1. For each attempted ordinaryrear24:actual ARM054 proposedbasis radial=-PcolZ,normal=PcolX;read actual fourM2base-screw and rackM3cylinder axes,not only labels. M2base screws preload7 at-radial80/60/40/20/10/5/0 into manualcradle,then motor/rotor/body-screw/spool reference4 same7;motorunit6+own3leads/plug4 into remaining carrier9 same7. Source vendor/electrical/output internals reference only. Body19 omits only original base_nuts4compound temporarily. Worldbody enters from radial AABBoutside withnormal+8 then normal8/4/0;racknuts sideentry atnormal-20 then-10/0;M3bolts sideentry atnormal+40 then+20/+10/0;base_nuts compound from positive radialoutside then20/10/5/0. Outwardstarts chosen from full stage AABBprojections rounded20mm/min160,not design clearance requirement. Record every actual present/absent/moving list;after each clear finalidentity path restore original parts. First failure stops later paths,no hardware cut/move/exclusions. New evidence common1/geometry1 only if first failure;render whole native paths repeated0. Actualaxisreads10 and actualCADimages4;previousgeometry12761/frozen222/manifests preserved. ExactSHA boundedreplay planned126native includes world radial-to-axial last3/M3last4 and path endpoints;not all middle samples/alltrimBoolean/pixels/armvisualunit proof. Next read saved ringPIP lead1/wire_guide_base common and original lead path/groove/lid/M3 stack in actual module basis. Motor+ownleads rigid entry is blocked at-radial10,not a hand defect or permission to shave3.522corner. Examine the whole adapter/guidebase/lid/fastener bench order,explicit temporary omissions and full outside entry with every original part restored. Do not blindly carry first module sequence or delete lead/base/lid,begin shallow after blockage or change installed axis/command. Keep complete rear5 original packets present;ringPIP/ringDIP/middlePIP24each remain with front8 unexecuted,not permanent motor deletion. Continue remaining original packets from exact current598present/288pending lists. Finishednew377/actualaxisreads/common and firstindex/support/ARM06864/ARM067124bench106front60common1/ARM06668common2/ARM06512pad16preservation/finishedfrontgeometry615facesPCD/smallangle-radius-cornerfamilies not repeated. Keep ARM068first20lead3/ARM067rackboltbase_nuts/ARM066twofirstfailures/ARM065common1edgevertex-corefalse/failedM3plus13/R5/strictfalse/inclusionholds. One-sidedbeamendstop/oppositepullout frictionpreload unverified. Currentradial16rack/exterior unadopted. Keep acceptedhand16drive/electricalgroove/lidM2/3leads/plug/M3stack;no handbeamcut/motordeletion/hiddenmove/anglelimit/ODRshrink/faketensioner/LINK/oldcurveoptimizer/elbowbus. After coherent supportassemblymotion reconnect fixedmotor->Hshortentry->actualhand longmaterials. No suppliedtools/fit/force/strength/friction/preload/tension/20torque/dynamicelectrical/wholearm/upperarm/physicalmanufacture/exterior qualification;physical perfection not endlessCAD/video gate. Check arm069-check/render/prepare/publish-review/followup/finish statuses and processes first.",
+  "next_stage": "ARM069:read cad/rear_packet_restoration_v1/README.md,reviews/check.json/assessment.json/evidence.json,docs/reviews/ARM069,logs/arm069-finish.json first. Current862/base364/hand397/4palm/16remote/beam/electrical/axes/lengths/commands/clock unchanged;proposal886/radiallayout/exterior unadopted,new hardwaregeometry0. Original16packet408 preserved. Inherit conditional502 from ARM068 including first indexMCP24 and nonpacket478;no old firstpacket/support64/24/20/14/17 or other completed paths repeated. New scope rearstation remaining7 before front8;newcomplete4,totalcomplete5/16/conditionalpresent598/pending288. 첫새실패 ring_pip_actuator__motor_and_own_leads_into_carrier_4: [{'lead': 'ring_pip_actuator_lead1', 'part': 'ring_pip_actuator_wire_guide_base', 'material_intersection_mm3': 3.5226195712629798}]. 뒤경로미실행/첫실패보존. New377native/599585pairs/913AABB/1records/0ops/report>.001mm3/Boolean1e-6/OCC1. For each attempted ordinaryrear24:actual ARM054 proposedbasis radial=-PcolZ,normal=PcolX;read actual fourM2base-screw and rackM3cylinder axes,not only labels. M2base screws preload7 at-radial80/60/40/20/10/5/0 into manualcradle,then motor/rotor/body-screw/spool reference4 same7;motorunit6+own3leads/plug4 into remaining carrier9 same7. Source vendor/electrical/output internals reference only. Body19 omits only original base_nuts4compound temporarily. Worldbody enters from radial AABBoutside withnormal+8 then normal8/4/0;racknuts sideentry atnormal-20 then-10/0;M3bolts sideentry atnormal+40 then+20/+10/0;base_nuts compound from positive radialoutside then20/10/5/0. Outwardstarts chosen from full stage AABBprojections rounded20mm/min160,not design clearance requirement. Record every actual present/absent/moving list;after each clear finalidentity path restore original parts. First failure stops later paths,no hardware cut/move/exclusions. New evidence common1/geometry1 only if first failure;render whole native paths repeated0. Actualaxisreads10 and actualCADimages4;previousgeometry12761/frozen222/manifests preserved. ExactSHA boundedreplay planned126native includes world radial-to-axial last3/M3last4 and path endpoints;not all middle samples/alltrimBoolean/pixels/armvisualunit proof. Next read saved ringPIP lead1/wire_guide_base common and original lead path/groove/lid/M3 stack in actual module basis. Motor+ownleads rigid entry is blocked at-radial10,not a hand defect or permission to shave3.522corner. Examine the whole adapter/guidebase/lid/fastener bench order,explicit temporary omissions and full outside entry with every original part restored. Do not blindly carry first module sequence or delete lead/base/lid,begin shallow after blockage or change installed axis/command. Keep complete rear5 original packets present;ringPIP/ringDIP/middlePIP24each remain with front8 unexecuted,not permanent motor deletion. Continue remaining original packets from exact current598present/288pending lists. Finishednew377/actualaxisreads/common and firstindex/support/ARM06864/ARM067124bench106front60common1/ARM06668common2/ARM06512pad16preservation/finishedfrontgeometry615facesPCD/smallangle-radius-cornerfamilies not repeated. Keep ARM068first20lead3/ARM067rackboltbase_nuts/ARM066twofirstfailures/ARM065common1edgevertex-corefalse/failedM3plus13/R5/strictfalse/inclusionholds. One-sidedbeamendstop/oppositepullout frictionpreload unverified. Currentradial16rack/exterior unadopted. Keep acceptedhand16drive/electricalgroove/lidM2/3leads/plug/M3stack;no handbeamcut/motordeletion/hiddenmove/anglelimit/ODRshrink/faketensioner/LINK/oldcurveoptimizer/elbowbus. After coherent supportassemblymotion reconnect fixedmotor->Hshortentry->actualhand longmaterials. No suppliedtools/fit/force/strength/friction/preload/tension/20torque/dynamicelectrical/wholearm/upperarm/physicalmanufacture/exterior qualification;physical perfection not endlessCAD/video gate. Check arm069-check/render/prepare/publish-review/followup/finish statuses and processes first. First metadata prepare failed after assessment at next_stage string concatenation TypeError;history/prepare_initial source/stdout/stderr/state preserved. prepare-corrected fixed only the concatenation and completed;CAD/native/render repeated0. Check arm069-prepare(failed)/prepare-corrected(completed) statuses as well.",
   "previous_next_stage_before_arm_layout_review_20261027": "Continue from the new separate PACK049 rigid guide candidate, not the old large-loop layout. Read its real motor turnback ports and nested saddle inlets, opaque hardware comparison and conditional assembly/local bore-fit evidence. The accepted hand397/base364, proportions/axes/lengths, all16 forearm motors, current motor/rack/electrical positions and OD remain unchanged. New motor guide R40/180deg exits (-1.1/18.9,-163.5,-187) toward+Z. Saddle R40/R60 inlets are (100,-84,-43)/(100,-104,-58) toward+Z, front ports (100,-4,-3/2) toward+Y unchanged, same existing saddle clamp seats. The different nested radii prevent the two Z5-separated turned mouths from becoming collinear; they are actual fixed bores, not arbitrary free-path radius tuning. PACK049 establishes only three rigid replacement guides, four finite static poses, three separate conditional service starts and four local housing fits. It has no full flexible connections or new whole-material budget, no continuous/wrist/parent material movement or exterior improvement approval. Next establish one new, explicitly named constant housing/cord budget from this actual mechanism and the existing natural parent/wrist motion, then connect and follow the same material with actual bore sliding and two-line/hardware contact. Preserve the original MOTION047 budgets698.964345153791/761.108456948670 housing and853.356663204892/932.491923574900 cord as old-candidate evidence; never silently shorten them or reuse independent variable-length pose families as constant-material motion. No virtual supports/tensioners, arbitrary OD/R shrink, hand cutting, motor/rack/electrical relocation, angle restriction, elbowward bus or old Newton80/free curves/independent rods. Judge the resulting actually connected opaque CAD before accepting appearance or copying to other axes; removing old flexible lines from a hardware-only figure is not a successful compact connection. Do not repeat closed PACK049 static/service/local fits, PACK048980/19 baseline, MOTION04743/14/14 or tiny seams/tails/screws. Preserve MOTION047 initial corefalse/four same-cord seam-list differences and all older failures/holds. Do not make all supplier/physical certification a prerequisite for useful next CAD or requested movement illustrations.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM069_ea2542f3f3ef",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "New rear-module bench first/last;world body/nuts first and radial-to-axial last3;M3first and last4;M2nuts first/last,including first failure. Original16packet408/final886/initial502/actual module bases,body19-unit10-carrier9/omissions/lists/final original transforms/outside AABBstarts;new common/signature only if saved. Not all new middle samples,ARM06864or17proofs,oldfront/PCD/615faces/holds,alltrimBoolean/pixels/armvisualunits,continuousfactory/tools/captive retention/supplier/electrical/output internalassembly,physical/20drive/fullarm/exterior qualification.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,7 +1026,7 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/rear_packet_restoration_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
   "post_commit_proposal_placements_reproduced": null,
   "post_commit_proposed_attachment_distances_reproduced": null,
   "inherited_ARM052_review": {
@@ -2301,5 +2301,7 @@
     "post_commit_original_membership_lists_and_subset_proofs_reproduced": true,
     "post_commit_new_geometry_replays": 0,
     "post_commit_new_common_Boolean_replays": 0
-  }
+  },
+  "post_commit_actual_axes_module_partitions_omissions_lists_final_poses_reproduced": true,
+  "post_commit_new_common_reproduced": true
 }
