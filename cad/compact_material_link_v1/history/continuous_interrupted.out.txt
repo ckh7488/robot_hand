@@ -1,0 +1,31 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+{"loaded": 1}
+{"loaded": 51}
+{"loaded": 101}
+{"loaded": 151}
+{"loaded": 201}
+{"loaded": 251}
+{"loaded": 301}
+{"loaded": 351}
+begin whole_arc_neutral
+solve whole_arc_neutral True
+native whole_arc_neutral hand 0
+native whole_arc_neutral packaging 0
+native whole_arc_neutral electrical 0
+native whole_arc_neutral arm 0
+native whole_arc_neutral wrist_guide 0
+begin whole_arc_parent_5
+solve whole_arc_parent_5 True
+native whole_arc_parent_5 hand 0
+native whole_arc_parent_5 packaging 0
+native whole_arc_parent_5 electrical 0
+native whole_arc_parent_5 arm 0
+native whole_arc_parent_5 wrist_guide 0
+begin whole_arc_parent_10
+solve whole_arc_parent_10 True
+native whole_arc_parent_10 hand 0
+native whole_arc_parent_10 packaging 0
+native whole_arc_parent_10 electrical 0
+native whole_arc_parent_10 arm 0
+native whole_arc_parent_10 wrist_guide 0

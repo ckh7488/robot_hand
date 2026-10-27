@@ -1,0 +1,15 @@
+{
+  "time_utc": "20261027T115627Z",
+  "reason": "Latest human questions wrist/elbow/forearm movement and concentrated rack. Deliberately interrupted local route expansion before broader architecture review.",
+  "stopped_owned_process_ids": [
+    86760,
+    68644
+  ],
+  "raw_results_modified": false,
+  "continuous_completed": false,
+  "continuous_report": "D:/robot_hand/cad/compact_material_link_v1/reviews/continuous.json",
+  "checkpoint_before": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm-layout-user-steering-20261027T115627Z-checkpoint-before.json",
+  "automatic_restart_authorized": false,
+  "last_completed_checkpoint": "PACK049",
+  "geometry_changed_for_this_steering": false
+}

@@ -1,0 +1,19 @@
+{
+  "state": "failed",
+  "pid": 75288,
+  "commands": [
+    {
+      "argv": [
+        "E:/hand_recog/mujoco-lab/.venv/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/post_link050.pyw"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "post",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\link050-post-job-post.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\link050-post-job-post.err",
+      "pid": 46484,
+      "returncode": 4294967295
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: post failed\n"
+}

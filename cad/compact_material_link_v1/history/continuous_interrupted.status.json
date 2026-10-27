@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "pid": 86264,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/compact_material_link_v1/continuous_contact.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "continuous",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\link050-continuous-continuous.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\link050-continuous-continuous.err",
+      "pid": 79996,
+      "returncode": 4294967295
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: continuous failed\n"
+}
