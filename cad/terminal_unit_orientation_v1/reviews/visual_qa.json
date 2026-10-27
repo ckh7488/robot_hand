@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/terminal_unit_orientation_v1/images/actual_block.png",
+    "cad/terminal_unit_orientation_v1/images/current_proposal.png",
+    "cad/terminal_unit_orientation_v1/images/terminal_cords.png",
+    "cad/terminal_unit_orientation_v1/images/unit_before_after.png"
+  ],
+  "whole_hardware_opaque": true,
+  "whole_counts": [
+    872,
+    872,
+    872,
+    872,
+    862,
+    872
+  ],
+  "local_subset_hardware": 23,
+  "local_cord_reference_segments": 12,
+  "no_frame_clipping_observed": true,
+  "pixels_matrices_arm_units_numerically_replayed": false,
+  "scope": "Four actual CAD images inspected; no physical or exterior acceptance."
+}
