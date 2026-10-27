@@ -1,0 +1,64 @@
+{
+  "target_commit": "301958fea55e7579d25daeee44bd88d270361d15",
+  "initial_core_passed": false,
+  "differences": [
+    {
+      "id": "15.0_cord_self",
+      "source_raw": {
+        "pairs_in_scope": 1326,
+        "exact_pairs": 51,
+        "overlaps": [
+          {
+            "lead": "sliding_cord_0_0",
+            "part": "sliding_cord_0_1",
+            "material_intersection_mm3": 0.008498483995627923
+          },
+          {
+            "lead": "sliding_cord_1_0",
+            "part": "sliding_cord_1_1",
+            "material_intersection_mm3": 0.008498042509874678
+          }
+        ],
+        "operation_failures": []
+      },
+      "STEP_raw": {
+        "pairs_in_scope": 1326,
+        "exact_pairs": 36,
+        "overlaps": [
+          {
+            "lead": "sliding_cord_0_0",
+            "part": "sliding_cord_0_1",
+            "material_intersection_mm3": 0.008498099383605432
+          },
+          {
+            "lead": "sliding_cord_1_0",
+            "part": "sliding_cord_1_1",
+            "material_intersection_mm3": 0.008445514964119851
+          }
+        ],
+        "operation_failures": []
+      },
+      "pair_lists_equal": true,
+      "same_pair_numeric_differences": [
+        {
+          "lead": "sliding_cord_1_0",
+          "part": "sliding_cord_1_1",
+          "source_mm3": 0.008498042509874678,
+          "STEP_mm3": 0.008445514964119851,
+          "difference_mm3": -5.2527545754826876e-05
+        },
+        {
+          "lead": "sliding_cord_0_0",
+          "part": "sliding_cord_0_1",
+          "source_mm3": 0.008498483995627923,
+          "STEP_mm3": 0.008498099383605432,
+          "difference_mm3": -3.8461202249082116e-07
+        }
+      ],
+      "extra_precision_or_native_replays": 0,
+      "cause_or_full_Boolean_equivalence_proven": false
+    }
+  ],
+  "raw_false_preserved": true,
+  "threshold_CAD_or_clone_changed": false
+}
