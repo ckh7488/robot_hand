@@ -1,0 +1,10 @@
+{
+  "frame_solids": 2,
+  "completed": false,
+  "cause": "Lower actual M3 seat web lay below the port-only cross-rail Z span; it was disconnected.",
+  "STEP_exports_completed": 0,
+  "current_installation_changed": false,
+  "frame_valid": true,
+  "phase": "frame_single_solid_assert_before_export_or_native",
+  "native_groups_completed": 0
+}

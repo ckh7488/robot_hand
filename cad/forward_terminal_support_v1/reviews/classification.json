@@ -1,0 +1,450 @@
+{
+  "records": [
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 66.4113483664697
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 42.215525183605195
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lid_screw_1",
+        "material_intersection_mm3": 2.2115619314525086
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lid_screw_2",
+        "material_intersection_mm3": 2.4687161608744583
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lid_nut_2",
+        "material_intersection_mm3": 0.23842294681084528
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lead1",
+        "material_intersection_mm3": 10.495971965565365
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lead2",
+        "material_intersection_mm3": 9.700644329702564
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "arm057_straight_jaw_0",
+        "part": "thumb_ip_actuator_lead3",
+        "material_intersection_mm3": 7.572350626023844
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_barrel_adjuster_0",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 90.84251768732213
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 79.54940989746308
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 63.90784376194608
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lid_screw_1",
+        "material_intersection_mm3": 7.335199843687783
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lid_screw_2",
+        "material_intersection_mm3": 9.313440183748941
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lid_nut_2",
+        "material_intersection_mm3": 0.4725830710951676
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lead1",
+        "material_intersection_mm3": 10.495987159724779
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lead2",
+        "material_intersection_mm3": 9.700675094463271
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_jaw_1",
+        "part": "thumb_ip_actuator_lead3",
+        "material_intersection_mm3": 7.572343244960302
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_0",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 7.913723916605425
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_0",
+        "part": "thumb_ip_actuator_lid_screw_2",
+        "material_intersection_mm3": 7.044189987068857
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_1",
+        "part": "thumb_ip_actuator_wire_guide_lid",
+        "material_intersection_mm3": 10.910052407782615
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "motor_housing_clamp_0_bolt_1",
+        "part": "thumb_ip_actuator_lid_screw_1",
+        "material_intersection_mm3": 1.6094582817195744
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_barrel_adjuster_1",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 6.43744078339954
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_1",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.8274333882307556
+      },
+      "category": "saved_nominal_thread_reference",
+      "saved_scalar_reference_matches": true
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_2",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.827433388230829
+      },
+      "category": "saved_nominal_thread_reference",
+      "saved_scalar_reference_matches": true
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_3",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.827433388230663
+      },
+      "category": "saved_nominal_thread_reference",
+      "saved_scalar_reference_matches": true
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_spool_tap6_4",
+        "part": "thumb_ip_stock_output_horn",
+        "material_intersection_mm3": 2.82743338823083
+      },
+      "category": "saved_nominal_thread_reference",
+      "saved_scalar_reference_matches": true
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_tail_clamp_1",
+        "part": "arm054_eight_bank_carrier",
+        "material_intersection_mm3": 0.7857790956859649
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "changed26__unchanged846_neutral",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm054_eight_bank_carrier",
+        "material_intersection_mm3": 18.05785261428357
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "new3__relocated16",
+      "record": {
+        "lead": "arm057_handward_R5_support",
+        "part": "thumb_ip_barrel_adjuster_1",
+        "material_intersection_mm3": 2.7955951125100778
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "new3__relocated16",
+      "record": {
+        "lead": "arm057_handward_R5_support",
+        "part": "thumb_ip_barrel_top_nut_1",
+        "material_intersection_mm3": 2.2543445500914534
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "new3__relocated16",
+      "record": {
+        "lead": "arm057_handward_R5_support",
+        "part": "thumb_ip_barrel_bottom_nut_1",
+        "material_intersection_mm3": 2.254344550091454
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "local_cords12__hardware872",
+      "record": {
+        "lead": "arm057_cord_0_5",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 1.9792033717615736
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "local_cords12_internal",
+      "record": {
+        "lead": "arm057_cord_0_0",
+        "part": "arm057_cord_0_1",
+        "material_intersection_mm3": 0.00849740311988719
+      },
+      "category": "same_cord_anchor_wrap_join",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "local_cords12_internal",
+      "record": {
+        "lead": "arm057_cord_1_0",
+        "part": "arm057_cord_1_1",
+        "material_intersection_mm3": 0.008496757536177131
+      },
+      "category": "same_cord_anchor_wrap_join",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_-90__output9__stationary863",
+      "record": {
+        "lead": "thumb_ip_stock_central_retainer",
+        "part": "thumb_ip_actuator_motor",
+        "material_intersection_mm3": 34.84649662623413
+      },
+      "category": "unchanged_factory_reference_contact",
+      "saved_scalar_reference_matches": true
+    },
+    {
+      "group": "command_-90__cords12__hardware872",
+      "record": {
+        "lead": "arm057_cord_0_5",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 1.9792033717615736
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_-90__cords_internal",
+      "record": {
+        "lead": "arm057_cord_0_0",
+        "part": "arm057_cord_0_1",
+        "material_intersection_mm3": 0.0084984551708297
+      },
+      "category": "same_cord_anchor_wrap_join",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_-90__cords_internal",
+      "record": {
+        "lead": "arm057_cord_1_0",
+        "part": "arm057_cord_1_1",
+        "material_intersection_mm3": 0.008498455067449253
+      },
+      "category": "same_cord_anchor_wrap_join",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_90__output9__stationary863",
+      "record": {
+        "lead": "thumb_ip_two_tail_spool",
+        "part": "arm054_eight_bank_carrier",
+        "material_intersection_mm3": 5.23798782381566
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_90__output9__stationary863",
+      "record": {
+        "lead": "thumb_ip_stock_central_retainer",
+        "part": "thumb_ip_actuator_motor",
+        "material_intersection_mm3": 34.84649662623413
+      },
+      "category": "unchanged_factory_reference_contact",
+      "saved_scalar_reference_matches": true
+    },
+    {
+      "group": "command_90__cords12__hardware872",
+      "record": {
+        "lead": "arm057_cord_0_5",
+        "part": "thumb_ip_actuator_wire_guide_base",
+        "material_intersection_mm3": 1.9792033717615736
+      },
+      "category": "geometric_blocking_candidate",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_90__cords_internal",
+      "record": {
+        "lead": "arm057_cord_0_0",
+        "part": "arm057_cord_0_1",
+        "material_intersection_mm3": 0.008498455170682456
+      },
+      "category": "same_cord_anchor_wrap_join",
+      "saved_scalar_reference_matches": null
+    },
+    {
+      "group": "command_90__cords_internal",
+      "record": {
+        "lead": "arm057_cord_1_0",
+        "part": "arm057_cord_1_1",
+        "material_intersection_mm3": 0.008498455071259008
+      },
+      "category": "same_cord_anchor_wrap_join",
+      "saved_scalar_reference_matches": null
+    }
+  ],
+  "counts": {
+    "geometric_blocking_candidate": 31,
+    "same_cord_anchor_wrap_join": 6,
+    "saved_nominal_thread_reference": 4,
+    "unchanged_factory_reference_contact": 2
+  },
+  "raw_record_count": 43,
+  "raw_false_preserved": true,
+  "saved_region_proofs_reexecuted": false,
+  "classification_does_not_exclude_tests_or_approve_geometry": true,
+  "completed": true,
+  "source_sha256": {
+    "cad/forward_terminal_support_v1/classify.py": "6c7d6128e387ae52ed72a2f8b45c93ea29f013da4b63d2c83bfebb8db6419dee",
+    "cad/forward_terminal_support_v1/reviews/check.json": "dce3c6d6057df8d1f8b1e462442fa1efbb1bf0feead54441929634d25a0a53e7",
+    "cad/motor_spool_coupling_v1/reviews/assessment.json": "6f8aed404de6801eb01c539420564b582036e7b25c65bfdcfd6a9677fd691bb3"
+  }
+}

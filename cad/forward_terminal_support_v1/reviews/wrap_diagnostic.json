@@ -1,0 +1,32 @@
+{
+  "lines": [
+    {
+      "line": 0,
+      "wrap_at_command0_deg": 120.0,
+      "open_branch_command_interval_deg": [
+        -240.0,
+        120.0
+      ]
+    },
+    {
+      "line": 1,
+      "wrap_at_command0_deg": 120.0,
+      "open_branch_command_interval_deg": [
+        -120.0,
+        240.0
+      ]
+    }
+  ],
+  "common_open_branch_interval_deg": [
+    -120.0,
+    120.0
+  ],
+  "is_new_motor_or_joint_limit": false,
+  "spool_installation_clocking_canonical_X_deg": -90.0,
+  "scope": "Only the declared0<wrap<360 branch,with explicitly clocked physical spool/anchors. Command geometry is not continuous whole-material motion or a motor-to-joint mapping.",
+  "completed": true,
+  "source_sha256": {
+    "cad/forward_terminal_support_v1/wrap_diagnostic.py": "e881c82c2d47716d3efc12c4c59ec0f8d9102e9527364559753a7e25962033a8",
+    "cad/forward_terminal_support_v1/reviews/check.json": "dce3c6d6057df8d1f8b1e462442fa1efbb1bf0feead54441929634d25a0a53e7"
+  }
+}

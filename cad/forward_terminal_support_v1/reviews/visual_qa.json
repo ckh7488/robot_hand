@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/forward_terminal_support_v1/images/actual_common.png",
+    "cad/forward_terminal_support_v1/images/current_proposal.png",
+    "cad/forward_terminal_support_v1/images/support_before_after.png",
+    "cad/forward_terminal_support_v1/images/terminal_commands.png"
+  ],
+  "whole_hardware_counts": [
+    872,
+    872,
+    872,
+    872,
+    862,
+    872
+  ],
+  "opaque": true,
+  "local_hardware_rows": 29,
+  "local_cord_segments_per_state": 12,
+  "independent_motor_command_views": 3,
+  "no_frame_clipping_observed": true,
+  "pixels_matrices_arm_units_numerically_replayed": false
+}
