@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "first_geometry_model_sha256": "bf953626af1a34aa4c5b649b99f30691488bc4518cb1336a5b9b7f929e636a20",
+  "current_geometry_model_sha256": "bf953626af1a34aa4c5b649b99f30691488bc4518cb1336a5b9b7f929e636a20",
+  "geometry_model_byte_identical": true,
+  "first_two_attempts_native_raw_saved": false,
+  "first_two_attempts_completed_samples": 0,
+  "first_two_attempts_did_execute_first_state_native": true,
+  "partial_CAD_preserved": [
+    "generated/feed_0_0",
+    "generated/checked/feed_0_0"
+  ],
+  "current_completed_scene_prefix": "generated/verified",
+  "correction": "Output metadata only: exclude previous file keys/assembly_transform from export; actual T retained in line report; record native before exporting. No geometry/tolerance change."
+}

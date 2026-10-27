@@ -1,0 +1,52 @@
+"""Conditional guide prethread, paired carry, and fastener restoration."""
+import sys,time,math
+from pathlib import Path
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import seat_model as s
+t,a,m,g,c,p,np,ROOT,HERE=s.t,s.a,s.m,s.g,s.c,s.p,s.np,s.ROOT,s.HERE
+from OCP.OSD import OSD_ThreadPool
+
+
+def combine(tests):return dict(pairs_in_scope=sum(z['pairs_in_scope'] for z in tests),exact_pairs=sum(z['exact_pairs'] for z in tests),overlaps=[v for z in tests for v in z['overlaps']],operation_failures=[v for z in tests for v in z['operation_failures']])
+
+
+def main():
+    out=HERE/'reviews/check.json';assert not out.exists();case=t.neutral();data,full=t.prior.inputs(case);pack=dict(full)['packaging'];hardware=[next(z for z in pack if z['name']=='motor_'+str(i)+'_jaw_with_fixed_bend') for i in [0,1]];oldparts=[[next(z for z in pack if z['name']=='motor_housing_clamp_'+str(i)+'_'+name) for name in ['jaw_1','nut_0','nut_1','bolt_0','bolt_1']] for i in [0,1]];missing=[z['name'] for z in hardware+sum(oldparts,[])];groups=[(key,[z for z in zz if z['name'] not in missing]) for key,zz in full];start=time.monotonic();report=dict(completed=False,source_sha256=data[0],cases=[],restoration=[],initial_missing_clamp_names=missing,initial_fixed_hardware_names={k:[z['name'] for z in zz] for k,zz in groups},start_condition='THREAD040 after both housing feeds, before any cord feed. Both six-part motor clamps detached; loose lower jaw/guides introduced at respective tail tips. Detachment/transport from storage is not checked. All other hardware/motors/wires/hand/arm remain present.',cords_absent=True,manual_guide_housing_and_loose_fastener_holding=True,actual_force_friction_or_clamp_tightening_solved=False,OCC_pool_threads=OSD_ThreadPool.DefaultPool_s().NbThreads(),reporting_floor_mm3=.001,boolean_tolerance_mm=1e-6)
+    def save():
+        for f in ['seat_model.py','check_seat.py']:report['source_sha256']['cad/motor_guide_prethread_v1/'+f]=m.drive.sha(HERE/f)
+        for f in ['cad/whole_line_threading_v1/thread_model.py','cad/whole_line_threading_v1/reviews/check.json','cad/biarc_supported_link_v1/reviews/analysis.json','cad/biarc_supported_link_v1/link_model.py','cad/support_attachment_basis_v1/bend_model.py']:report['source_sha256'][f]=m.drive.sha(ROOT/f)
+        a.save(out,report)
+    def test_state(label,states,active_guides,store=False):
+        built=[s.build(case,i,phase,value,hardware[i]) for i,(phase,value) in enumerate(states)];housings=sum([v[0] for v in built],[]);moving=housings+[built[i][1] for i in active_guides];tests={key:c.material(moving,zz) for key,zz in groups};tests['internal']=combine([c.material([z],moving[j+1:]) for j,z in enumerate(moving)]);clear=all(m.drive.clear(z) for z in tests.values());record=dict(id=label,states=[dict(line=i,phase=ph,value=v) for i,(ph,v) in enumerate(states)],active_guides=active_guides,lines=[v[2] for v in built],native=tests,clear=clear,moving_rows=len(moving))
+        if store or not clear:record['scene']=a.a.prior.export(moving,HERE/'generated'/label)
+        report['cases'].append(record);save();print(label,clear,sum(len(z['overlaps']) for z in tests.values()),flush=True);return clear,built
+    fixed_lengths=[s.definitions(case,i)[4] for i in [0,1]];ok=True;built=None
+    for i in [0,1]:
+        tips=[0.,20.,40.,60.,math.pi*s.b.R/2,math.pi*s.b.R/2+s.b.LEAD,math.pi*s.b.R/2+s.b.LEAD+10,fixed_lengths[i]]
+        for j,tip in enumerate(tips):
+            states=[('feed',fixed_lengths[0] if i else tip),('feed',tip if i else 0.)];ok,built=test_state('feed_'+str(i)+'_'+str(j),states,list(range(i+1)),j in [0,len(tips)-1])
+            if not ok:break
+        if not ok:break
+    if ok:
+        for j,value in enumerate([.125,.25,.375,.5,.625,.75,.875,1.]):
+            ok,built=test_state('carry_'+str(j),[('bend',value),('bend',value)],[0,1],value in [.125,.5,1.])
+            if not ok:break
+    if ok:
+        housing=sum([v[0] for v in built],[]);mobile=[v[1] for v in built];installed=[]
+        for i in [0,1]:
+            for item in oldparts[i]:
+                axis=s.b.frame(i)[:3,2]*(-1 if '_nut_' in item['name'] else 1);distances=[14.,7.,2.,0.] if '_jaw_' in item['name'] else [10.,5.,0.];path=dict(moving=item['name'],installed_before=[z['name'] for z in mobile+installed],missing_before=[z['name'] for z in sum(oldparts,[]) if z['name'] not in [v['name'] for v in installed]],samples=[])
+                for j,distance in enumerate(distances):
+                    row=dict(item,shape=item['shape'].translate(tuple(axis*distance)));tests={key:c.material([row],zz) for key,zz in groups};tests['new_material_and_installed_clamps']=c.material([row],housing+mobile+installed);clear=all(m.drive.clear(z) for z in tests.values());sample=dict(distance_mm=distance,native=tests,clear=clear)
+                    if j in [0,len(distances)-1] or not clear:sample['scene']=a.a.prior.export([row],HERE/'generated'/('restore_'+item['name']+'_'+str(j)))
+                    path['samples'].append(sample);save();print('restore',item['name'],distance,clear,flush=True)
+                    if not clear:ok=False;break
+                report['restoration'].append(path);save()
+                if not ok:break
+                installed.append(item)
+            if not ok:break
+        if ok:
+            tests={key:c.material(housing,zz) for key,zz in full};tests['internal']=combine([c.material([z],housing[j+1:]) for j,z in enumerate(housing)]);report['final']=dict(native=tests,clear=all(m.drive.clear(z) for z in tests.values()),scene=a.a.prior.export(housing,HERE/'generated/final_housings'),full_packaging_names=sorted(z['name'] for z in pack));ok=report['final']['clear'];save()
+    tests=[z for v in report['cases'] for z in v['native'].values()]+[z for path in report['restoration'] for v in path['samples'] for z in v['native'].values()]+list(report.get('final',{}).get('native',{}).values());agg=combine(tests);report.update(completed=True,conditional_sequence_clear=ok,housing_material_length_preserved=True,physical_motor_housings_installed=False,physical_cords_threaded=False,whole_hand_drive_approved=False,new_hardware_rows=0,pairs_in_scope=agg['pairs_in_scope'],AABB_native_pairs=agg['exact_pairs'],overlap_records=len(agg['overlaps']),operation_failures=len(agg['operation_failures']),input_hash_guard=all(m.drive.sha(ROOT/f)==h for f,h in data[0].items()),elapsed_s=time.monotonic()-start);save()
+if __name__=='__main__':main()
