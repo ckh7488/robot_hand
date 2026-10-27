@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "original_analytic_model": "history/analysis_link_model_initial.py.txt",
+  "original_analytic_model_sha256": "f6a37092c3d9ceb4d4dfc05e037ac71f14728c996639c6d971c929f2aad92cd7",
+  "current_model_sha256": "f13161f2add6936987858b53d0947bf45b74021d36b1102f9fc728e4d27d7f76",
+  "all_AST_except_CAD_edge_function_identical": true,
+  "change": "CAD edge conversion of stored JSON lists to arrays only; analytic biarc functions/inputs/constants unchanged; no analytic rerun. Whole-cord source corrected from unselected15mm to selected18mm terminal after 3mm gap caught before any STEP/native. Explicit reverse-offset arc construction replaces TopoDS orientation-only reversal before first completed whole cord."
+}

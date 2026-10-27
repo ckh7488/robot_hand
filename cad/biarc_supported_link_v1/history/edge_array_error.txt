@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\biarc_supported_link_v1\check.py", line 20, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\check.py", line 12, in main
+    out=HERE/'reviews/check.json';assert not out.exists();start=time.monotonic();analysis=p.read(HERE/'reviews/analysis.json');case=analysis['cases'][0];assert case['local_thick_tube_condition'];data,pack,guide,wrist=a.s.prior.inputs();sm=p.read(ROOT/'cad/support_attachment_basis_v1/generated/checked/scene.json')['parts'];hw=c.load([z for z in sm if z['installed_part_candidate']],data[0]);removed=[z['replaced_part'] for z in hw];pack_old=[z for z in pack if z['name'] not in removed];currentcase=dict(angles_deg=case['q'],solution=dict(wrist_H=case['H'],wrist_P=case['P'],parent_F=case['F']));obstacles=support.kobs(data,pack_old,guide,wrist,currentcase);obstacles=[(key,zz+hw if key=='packaging' else zz) for key,zz in obstacles];rows,lengths,chains=w.build(case);scene=a.a.prior.export(rows,HERE/'generated/neutral');report=dict(completed=False,source_sha256=data[0],scene=scene,native={},internal=[],chains=chains,new_CAD_rows=len(rows),physical_housings=2,physical_whole_modeled_cords=2,new_hardware_rows=0,geometric_lengths=lengths,all_modeled_centerline_endpoint_joins_close=True,fixed_material_length_motion_approved=False,actual_threading_preload_force_or_installation_verified=False,whole_hand_drive_approved=False,OCC_pool_threads=OSD_ThreadPool.DefaultPool_s().NbThreads(),reporting_floor_mm3=.001,boolean_tolerance_mm=1e-6)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\whole_cord.py", line 30, in build
+    middle,lengths=l.build(case);housing=[z for z in middle if z['kind']=='housing'];rows=list(housing);chains=[]
+                   ^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\link_model.py", line 52, in build
+    es=middle_edges(case,i,kind);lengths.append(dict(line=i,kind=kind,length_mm=sum(z.Length() for z in es)))
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\link_model.py", line 45, in middle_edges
+    z=case['lines'][i];q=case['q'];H=np.asarray(case['H']);F=np.asarray(case['F']);ep=m.endpoints(q,i);Q=b.frame(i);first=cq.Edge.makeLine(cq.Vector(*(ep['motor_seat'] if kind=='housing' else ep['motor_cord'])),cq.Vector(*ep['A']));motor=[g.original.transform(ed,Q) for ed in b.outward_edges()];up=[edge(ed) for ed in z['up']['arcs']];guide=[g.original.transform(a.a.prior.a.edge(seg),H) for seg in a.a.prior.a.definitions(i)];down=[edge(ed) for ed in z['down']['arcs']];elbow=[g.original.transform(ed,H@F@a.a.frame()) for ed in a.a.edges()] if i else [];last=g.original.transform(cq.Edge.makeLine(cq.Vector(*ep['B']),cq.Vector(*(ep['distal_seat'] if kind=='housing' else ep['distal_cord']))),H)
+                                                                                                                                                                                                                                                                                                           ^^^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\link_model.py", line 35, in edge
+    h=z['angle_rad']/2;mid=z['center']+z['radius_mm']*(math.cos(h)*z['u']+math.sin(h)*z['t0']);ed=cq.Edge.makeThreePointArc(cq.Vector(*z['start']),cq.Vector(*mid),cq.Vector(*z['end']));assert abs(ed.Length()-z['length_mm'])<1e-5;return ed
+                                                       ~~~~~~~~~~~^~~~~~~
+TypeError: can't multiply sequence by non-int of type 'float'

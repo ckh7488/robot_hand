@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "pid": 59444,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/biarc_supported_link_v1/check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "native",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\biarc039-native2-native.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\biarc039-native2-native.err",
+      "pid": 54244,
+      "returncode": 1
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex-work\\robot-hand-workspace\\run_hidden.pyw\", line 18, in <module>\n    if row['returncode'] and not c.get('allow_failure',False): raise RuntimeError(label+' failed')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: native failed\n"
+}

@@ -1,0 +1,56 @@
+"""Equal-tangent-distance biarcs at current real ports; no path optimization.
+
+Arc joins are mathematical curvature breaks, not extra installed supports.
+"""
+import sys,math
+from pathlib import Path
+sys.dont_write_bytecode=True
+ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT/'cad/support_attachment_basis_v1'))
+import bend_model as b
+a,m,g,c,p,np,cq=b.a,b.m,b.g,b.c,b.p,b.np,b.cq
+
+def arc(P,t,Z):
+    P,t,Z=map(lambda x:np.asarray(x,float),[P,t,Z]);t=t/np.linalg.norm(t);delta=Z-P;n=delta-t*np.dot(delta,t)
+    if np.linalg.norm(n)<1e-9:
+        assert np.dot(delta,t)>0,'Backward collinear arc degeneracy';return dict(kind='line',start=P,end=Z,t0=t,t1=t,radius_mm=None,length_mm=float(np.linalg.norm(delta)))
+    center=P+n*np.dot(delta,delta)/(2*np.dot(n,n));R=np.linalg.norm(center-P);u=(P-center)/R;theta=math.atan2(np.dot(Z-center,t)/R,np.dot(Z-center,u)/R)
+    if theta<=0:theta+=2*math.pi
+    t1=-math.sin(theta)*u+math.cos(theta)*t
+    return dict(kind='arc',start=P,end=Z,t0=t,t1=t1,center=center,u=u,radius_mm=float(R),angle_rad=theta,length_mm=float(R*theta))
+
+def reverse(z):
+    if z['kind']=='line':return dict(z,start=z['end'],end=z['start'],t0=-z['t1'],t1=-z['t0'])
+    return dict(z,start=z['end'],end=z['start'],u=(z['end']-z['center'])/z['radius_mm'],t0=-z['t1'],t1=-z['t0'])
+
+def biarc(A,Z,ta,tz):
+    A,Z,ta,tz=map(lambda x:np.asarray(x,float),[A,Z,ta,tz]);ta/=np.linalg.norm(ta);tz/=np.linalg.norm(tz);v=Z-A;aa=2*(1-ta@tz);bb=2*(v@(ta+tz));vv=v@v
+    if aa<1e-12:assert bb>0;d=vv/bb
+    else:d=(-bb+math.sqrt(bb*bb+4*aa*vv))/(2*aa)
+    J=(A+Z+d*(ta-tz))/2;first=arc(A,ta,J);second=reverse(arc(Z,-tz,J));gap=np.linalg.norm(first['end']-second['start']);tangent_gap=np.linalg.norm(first['t1']-second['t0']);assert gap<1e-6 and tangent_gap<1e-7,(gap,tangent_gap)
+    return dict(arcs=[first,second],tangent_distance_mm=float(d),join_mm=J,join_gap_mm=float(gap),join_tangent_error=float(tangent_gap),length_mm=first['length_mm']+second['length_mm'],minimum_radius_mm=min(z['radius_mm'] for z in [first,second] if z['radius_mm'] is not None))
+
+def edge(z):
+    if z['kind']=='line':return cq.Edge.makeLine(cq.Vector(*z['start']),cq.Vector(*z['end']))
+    h=z['angle_rad']/2;mid=np.asarray(z['center'])+z['radius_mm']*(math.cos(h)*np.asarray(z['u'])+math.sin(h)*np.asarray(z['t0']));ed=cq.Edge.makeThreePointArc(cq.Vector(*z['start']),cq.Vector(*mid),cq.Vector(*z['end']));assert abs(ed.Length()-z['length_mm'])<1e-5;return ed
+
+def geometry(q,flex=0,yaw=0):
+    P,H=a.feed.wrist_frames(flex,yaw);F=a.thumb_frame(q);anchors=a.s.anchors(q);lines=[]
+    for i in [0,1]:
+        Q=b.frame(i);A=(Q@np.array([0.,-64.,-40.,1.]))[:3];U=(H@np.r_[anchors[i]['up_B'],1.])[:3];V=(H@np.r_[anchors[i]['down_A'],1.])[:3];W=(H@np.r_[anchors[i]['down_B'],1.])[:3];ta=Q[:3,:3]@np.array([0.,0.,-1.]);tg=H[:3,:3]@np.array([0.,1.,0.]);tw=H[:3,:3]@anchors[i]['down_tB'];up=biarc(A,U,ta,tg);down=biarc(V,W,tg,tw);fixed=91.83185307179586+176.42884082273258+25+(43.41592653589793 if i else 0.)
+        lines.append(dict(line=i,up=up,down=down,fixed_housing_path_mm=fixed,housing_length_mm=fixed+up['length_mm']+down['length_mm'],middle_cord_length_mm=fixed+up['length_mm']+down['length_mm']-(4 if i else 7),minimum_free_radius_mm=min(up['minimum_radius_mm'],down['minimum_radius_mm'])))
+    return dict(q=list(q),wrist_flex_deg=flex,wrist_yaw_deg=yaw,P=P,H=H,F=F,lines=lines)
+
+def middle_edges(case,i,kind):
+    z=case['lines'][i];q=case['q'];H=np.asarray(case['H']);F=np.asarray(case['F']);ep=m.endpoints(q,i);Q=b.frame(i);first=cq.Edge.makeLine(cq.Vector(*(ep['motor_seat'] if kind=='housing' else ep['motor_cord'])),cq.Vector(*ep['A']));motor=[g.original.transform(ed,Q) for ed in b.outward_edges()];up=[edge(ed) for ed in z['up']['arcs']];guide=[g.original.transform(a.a.prior.a.edge(seg),H) for seg in a.a.prior.a.definitions(i)];down=[edge(ed) for ed in z['down']['arcs']];elbow=[g.original.transform(ed,H@F@a.a.frame()) for ed in a.a.edges()] if i else [];last=g.original.transform(cq.Edge.makeLine(cq.Vector(*ep['B']),cq.Vector(*(ep['distal_seat'] if kind=='housing' else ep['distal_cord']))),H)
+    return [first]+motor+up+guide+down+elbow+[last]
+
+def build(case):
+    rows=[];lengths=[]
+    for i in [0,1]:
+        for kind in ['housing','cord']:
+            es=middle_edges(case,i,kind);lengths.append(dict(line=i,kind=kind,length_mm=sum(z.Length() for z in es)))
+            for j,ed in enumerate(es):
+                sh=m.swept(ed,1.5).cut(m.swept(ed,.65)).clean() if kind=='housing' else m.swept(ed,.3);assert sh.isValid() and len(sh.Solids())==1,(i,kind,j)
+                rows.append(dict(name='biarc_'+kind+'_'+str(i)+'_'+str(j),shape=sh,physical_line=i,kind=kind,segment=j,length_mm=ed.Length(),body='palm',current_world_pose_only=True,color=[.63,.25,.8] if kind=='housing' else [.97,.45,.12]))
+    return rows,lengths

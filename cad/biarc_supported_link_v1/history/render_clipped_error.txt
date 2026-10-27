@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\biarc_supported_link_v1\render.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\render.py", line 32, in main
+    z=max(common,key=lambda z:z['pair']['material_intersection_mm3']);names=[z['pair']['lead'],z['pair']['part']];lookup={z['name']:z for z in base+new};local=scene([lookup[n] for n in names]+[z],.3);solo=scene([z]);cv=r.view_fit([solo],[dict(angles_deg=[0.]*20)],np.array([.7,-1,.6]),1.5);r.sheet([('실제 관통 국부 · 주변 부품은 화면 밖으로 이어짐',render(local,cv)),('같은 실제 공통재료만 표시 · 같은 배율',render(solo,cv))],2,850,'편손의 대표 실제 공통재료',z['pair']['lead']+' / '+z['pair']['part']+' · 기본체적 '+str(round(z['pair']['material_intersection_mm3'],6))+' mm³').save(out/'actual_block.png')
+                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\biarc_supported_link_v1\render.py", line 27, in render
+    return r.render_one(ss,[0.]*20,'v',{'v':view},size,engine)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\gesture_hand_v3\render_gestures.py", line 255, in render_one
+    raise ValueError("CAD reaches the image border; refusing a clipped panel")
+ValueError: CAD reaches the image border; refusing a clipped panel
