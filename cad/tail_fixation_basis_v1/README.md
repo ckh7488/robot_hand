@@ -33,3 +33,7 @@ CORD043 초기corefalse/위줄 source0·STEP1접합 목록차이와 BIARC039같�
 ## 장면 목록 복구
 
 첫 그림은 장면목록 parts가 목록 대신 경로문자열로 저장된 오류에서 중단했다. 원래 export helper가 이미 올바른 목록을 저장하고 경로를 반환하는데 wrapper가 다시 덮어쓴 오류다. 원래 코드·오류/stdout/status·잘못된10장면 목록을 history에 보존했다. 기존 STEP/STL32해시와 완료된12접근/16거리·재료분류 원시값을 유지하고 목록만 복구했다. export 외 모든 기하/native 함수 AST는 첫 원본과 같다. 복구는 native·거리·분류·SOLID생성·CAD export 재실행0이며 원시결과의 첫 코드해시는 history 원본에 묶인다. 같은 검사를 새 완료표본으로 합산하지 않는다. [복구와 연속성](reviews/metadata_recovery.json).
+
+## 정확 SHA 재검사
+
+대상 `d8ed866af32678e16becd85337e55a8298c9a3e6`의 새 깨끗한 별도 사본에서16native그룹/16거리·48재료위치/12측정서명과 초기코드AST·32기하해시를 대조했다. 이번명시core=true, 차이=[]. [한정결과](../../docs/reviews/FIX044/README.md). 실제 고정력·예압/손운동 승인이 아니며 CORD043/이전false를 보존한다.
