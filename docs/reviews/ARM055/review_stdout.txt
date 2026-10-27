@@ -1,0 +1,36 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+{"loaded": 1}
+{"loaded": 51}
+{"loaded": 101}
+{"loaded": 151}
+{"loaded": 201}
+{"loaded": 251}
+{"loaded": 301}
+{"loaded": 351}
+new2__retained870_neutral True
+new2_internal True
+elbow_55__new2__fixed True
+elbow_110__new2__fixed True
+roll_-80__new2__fixed True
+roll_-80__new2__elbow True
+roll_-40__new2__fixed True
+roll_-40__new2__elbow True
+roll_40__new2__fixed True
+roll_40__new2__elbow True
+roll_80__new2__fixed True
+roll_80__new2__elbow True
+flex_-35__new2__wrist True
+flex_-35__new2__hand True
+flex_55__new2__wrist True
+flex_55__new2__hand True
+deviation_-20__new2__hand True
+deviation_20__new2__hand True
+compound_a__new2__fixed True
+compound_a__new2__elbow True
+compound_a__new2__wrist True
+compound_a__new2__hand True
+compound_b__new2__fixed True
+compound_b__new2__elbow True
+compound_b__new2__wrist True
+compound_b__new2__hand True

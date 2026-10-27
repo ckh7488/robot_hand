@@ -14,8 +14,8 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "0735e41a4c823bd82774a0980969259c6bd184e9",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
   "next_stage": "ARM055 is an unadopted separate change of two R40 bend planes on the already unadopted ARM054 layout. Read cad/radial_turnback_proposal_v1/README.md, reviews/check.json/partition.json and docs/reviews/ARM055 plus logs/arm055-finish.json first. Current862/accepted hand364/current397/axes/lengths/16remote sources remain unchanged; no adoption of either872 proposal. Only2 integral lower-jaw/guide shapes replace compact_motor_turnback_0/1 in separate872; retained870/module placements and commands unchanged from ARM054. Real original M2 clamp seats/jaw material are preserved; R40/OD5/bore3.2/180deg/12lead/154.66370614359175 shoulder length remain, with outward bend-plane directions(+X+Z)/sqrt2 and(+X-Z)/sqrt2. New26native groups7129pairs74AABB8neutral records0operations rawfalse.12nonneutral/24changed-body tests and newpair internal are0, not continuous/wholearm approval. 33original ARM054 records involve unchanged shapes and are carried by identity without native replay;8old replaced-guide records are not claimed applicable. No full-assembly0 or8independent defects claim. Largest new lower-jaw0/littleMCPadapter145.835757466095mm3; guide1/littleMCPmotor40.48847249253785; guide1/ARM054carrier8.122093084476782. Actual common partition:7additional pair constructions+1reuse of stored postprocess common, then8native common-minus-original-unbent-jaw cuts. Four records entirely lie inside the retained original jaw: littleMCPmotor10.994878912722173,cradle17.159779153627294,body_screws.8422525309544643,base_screws1.267550067106988mm3;outsidejaw0/no solids. Other4have outsidejaw16.52897790300748/24.730766083791526/3.7443928504789237/8.122093084476782mm3; not all records are jaw-only. At this unchanged jaw/module placement, changing only the free bend plane cannot remove the4jaw-contained collisions. This is a scoped necessary change, not all-layout/hand impossibility. Stop further bend-plane/radius/bank-count scans and tiny nut repairs. Next define the actual R10 spool tangent -> R5 terminal/frame -> two barrel adjusters/captured jaws and their fasteners as one mechanical unit. Prepare the required terminal/jaw/adjuster support-location or full-unit orientation change as a named separate proposal with actual attachment/reaction to the output body, real cord/guide direction, assembly approach and relevant arm/wrist movement; preserve current hand/16 sources and motor command-vs-installation distinction. Do not silently retain or move only abstract endpoints while fixed jaw bodies remain in another motor; changing adjusters also requires checking actual R5/cord transition, not inheriting old connection. Also preserve known unchanged front-beam/spool,wrist and carrier/cap obstructions; do not cut the hand/beam or adopt ARM054 carrier. No long routing/LINK050 restart/elbowbus, OD/R shrink, angle restriction, removed hidden parts or floating support/tensioner. Free exits are(117.6685424949238,-232,87.0685424949238)/(97.6685424949238,-232,-26.068542494923797),tangent+Y; they moved outward, not humanlike exterior acceptance or a solved whole-line route. All previous strictfalse/trim/inclusion holds remain. No assembly service paths or wholelongmaterials/dynamic electrical/20torque/continuous compoundarm/upperarm/strength/friction/preload/tension/physical/manufacture/exterior approval. Supplier certification is not an endless CAD/video gate. Do not replay closed26/8partition or ARM051..054156/120/19. Check arm055-check/post/partition/prepare/publish-review/followup/finish processes first.",
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM055_0735e41a4c82",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "All26new-guide native groups7129pairs with8neutral records;2newsourceSTEPmetrics epsilon1e-10/absolute1e-5;2ports/lengths/jaw-seat frames/original-jaw removed0;8common-minus-jaw partitions with7newcommon constructions and1savedwitness reuse.33inheritedunchanged records are metadata/identity carry,not native replay. NoARM054156/oldarm groups,assembly/renderpixels/alltrimBoolean/fullmaterials/physical/whole20drive/exterior approval.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,7 +1026,7 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/radial_turnback_proposal_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
   "post_commit_proposal_placements_reproduced": null,
   "post_commit_proposed_attachment_distances_reproduced": null,
   "inherited_ARM052_review": {
@@ -1197,5 +1197,7 @@
     "post_commit_proposal_placements_reproduced": true,
     "post_commit_proposed_attachment_distances_reproduced": true,
     "post_commit_transformed_real_ports_reproduced": true
-  }
+  },
+  "post_commit_ports_lengths_seats_reproduced": true,
+  "post_commit_common_jaw_partitions_reproduced": true
 }
