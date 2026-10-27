@@ -1,0 +1,61 @@
+{
+  "target_commit": "ba2e00e9fc1c593560d447fcc5a839eec6f15a51",
+  "passed": true,
+  "pairs": [
+    {
+      "mode": "original",
+      "state": "feed_0_0",
+      "pair": {
+        "lead": "motorfeed_cord_0_0",
+        "part": "thumb_ip_two_tail_spool",
+        "material_intersection_mm3": 1.3487264363057334
+      },
+      "STEP_STEP_values": [
+        1.3487173474418785,
+        10.208742163127553,
+        18.393027242257524,
+        -272.5798160951601,
+        -113.40663129786236
+      ],
+      "source_source_values": [
+        1.3487173473696699,
+        10.208742163245294,
+        18.393027242309635,
+        -272.5798160949337,
+        -113.40663129786036
+      ],
+      "maximum_difference": 2.2640733732259832e-10,
+      "matched": true
+    },
+    {
+      "mode": "anchor_first",
+      "state": "anchor_0_24",
+      "pair": {
+        "lead": "anchorfeed_cord_0_0",
+        "part": "anchorfeed_cord_0_1",
+        "material_intersection_mm3": 0.008502357297455174
+      },
+      "STEP_STEP_values": [
+        0.00849845576722507,
+        0.3677279538068126,
+        13.864817490529575,
+        -275.1805473616823,
+        -113.57205057265156
+      ],
+      "source_source_values": [
+        0.00849837504720754,
+        0.367726908205871,
+        13.864817144292475,
+        -275.1805461488864,
+        -113.57205074221852
+      ],
+      "maximum_difference": 1.2127958939345262e-06,
+      "matched": true
+    }
+  ],
+  "selection": "Preplanned largest original obstruction and last executed anchor-first state per line: blocking pair if present, otherwise recorded adjacent motor model seam. No unreported pair searched.",
+  "adaptive_epsilon": 1e-10,
+  "absolute_comparison_tolerance": 1e-05,
+  "native_group_replays": 0,
+  "original_basic_values_preserved": true
+}

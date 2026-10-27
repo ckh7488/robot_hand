@@ -1,0 +1,51 @@
+{
+  "target_commit": "ba2e00e9fc1c593560d447fcc5a839eec6f15a51",
+  "initial_core_passed": false,
+  "explicit_results_reproduced": false,
+  "differences": [
+    "anchor_first_anchor_1_28_self"
+  ],
+  "native_differences": [
+    {
+      "id": "anchor_first_anchor_1_28_self",
+      "source_raw": {
+        "pairs_in_scope": 378,
+        "exact_pairs": 24,
+        "overlaps": [],
+        "operation_failures": []
+      },
+      "STEP_raw": {
+        "pairs_in_scope": 378,
+        "exact_pairs": 18,
+        "overlaps": [
+          {
+            "lead": "anchorfeed_cord_1_0",
+            "part": "anchorfeed_cord_1_1",
+            "material_intersection_mm3": 0.008498911044890284
+          }
+        ],
+        "operation_failures": []
+      },
+      "added_pairs": [
+        {
+          "pair": {
+            "lead": "anchorfeed_cord_1_0",
+            "part": "anchorfeed_cord_1_1",
+            "material_intersection_mm3": 0.008498911044890284
+          },
+          "metadata_same_physical_line": true,
+          "metadata_path_indices": [
+            0,
+            1
+          ],
+          "metadata_only_no_new_source_STEP_common_comparison": true
+        }
+      ],
+      "removed_pairs": [],
+      "matched_pair_numeric_differences": []
+    }
+  ],
+  "extra_native_groups_or_pairs_recomputed": 0,
+  "raw_false_and_pair_lists_preserved": true,
+  "metadata_classification_does_not_override_raw_or_prove_cause": true
+}
