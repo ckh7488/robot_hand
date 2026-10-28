@@ -1,0 +1,88 @@
+{
+  "completed": true,
+  "new_native_groups": 185,
+  "pairs_in_scope": 575111,
+  "AABB_native_pairs": 721,
+  "overlap_records": 3,
+  "operation_failures": 0,
+  "raw_new_tests_clear": false,
+  "canonical_initial_rows": 718,
+  "conditional_final_present_rows": 718,
+  "pending_rows": 168,
+  "complete_restored_packets": 9,
+  "new_restored_packets": 0,
+  "planned_front_modules": [
+    "middle_dip_actuator",
+    "index_pip_actuator",
+    "index_dip_actuator",
+    "index_spread_actuator",
+    "middle_spread_actuator",
+    "ring_spread_actuator",
+    "little_spread_actuator"
+  ],
+  "attempted_modules": [
+    "middle_dip_actuator"
+  ],
+  "body19_benches_completed": [
+    "middle_dip_actuator"
+  ],
+  "first_blocked_path": "middle_dip_actuator__body19_final_datum_radial",
+  "actual_axis_reads": 14,
+  "projected_event_records": 113,
+  "new_hardware_geometry": 0,
+  "new_common_queries": 2,
+  "new_evidence_geometry": 2,
+  "new_images": 4,
+  "old_geometry_hashes_unchanged": 12795,
+  "frozen_files": 222,
+  "planned_replay_native_groups": 66,
+  "failures": [
+    {
+      "lead": "middle_dip_actuator_lead1",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 1.543956092576693
+    },
+    {
+      "lead": "middle_dip_actuator_lead2",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 1.5439560925766675
+    },
+    {
+      "lead": "middle_dip_actuator_lead3",
+      "part": "arm065_shared_output_beam_rack_root",
+      "material_intersection_mm3": 1.5439560925768068
+    }
+  ],
+  "next_action": "middle_dip의세lead와arm065공동root의새실제공통·도달변위(7.204476835099143,0,7.204476835099143)mm/부품축·지지면을읽는다. body19전체방사진입재반복대신실제열린전기홈/뚜껑·M2의선후관계를읽어body13(세lead·lid·M2둘완성전)세계진입→세lead→lid/M2→랙체결대안을성공가정없이검사한다. 원래19/24를모두복구하고참고plug는유지한다. 새로운전체밖진입/실제718및완료부품장애물·실제사건표본을유지한다. 이미완료한벤치는실제입력/집합/등록동일성증명때만승계하고새세계진입은변경장애물을포함한다. 기존718/특수48·뒤8및이번부분상태를보존한다. 원래24전체·M3/M2스택을최종항등복구하며개별M2너트가필요하면원래솔리드참조후compound한행복구다. 막힌뒤얕은시작/삭제/작은코너절삭/모터이동0이다. 이번새185native/조건부world718/대기168/완전packet9/16이다. 완료경로/축14/투영사건·옛68/106/162/ARM07415·4·보어1/216·615PCD재실행0. ARM074윗M3전체포함false19.195131113433646mm³/1solid·실제보어1/216IN모순/원인미확정·윗돌출5.9mm/외형미채택,ARM065edgevertex/corefalse·ARM072픽셀false·옛strictfalse/모든이전실패보류유지다. 같은차집합/정밀/픽셀복구/615PCD반복0. 빔반대뽑힘·출력12내부/mating·하네스/captive/공구·토크힘강도마찰예압장력/20구동·동적전기·전체팔상완/실물제조외형미승인. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛최적화/팔꿈치버스재개0.",
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "old_native_common_or_M3points_repeated": 0,
+  "whole_factory_drive_or_exterior_approved": false,
+  "manifest_files": 15361,
+  "target_commit": "ebc3957343404c907ddb182a7d26fc0986dbe497",
+  "initial_core_passed": true,
+  "native_groups": 66,
+  "native_matches": 66,
+  "geometry_shapes": 2,
+  "geometry_matches": 2,
+  "common_matches": 2,
+  "contracts": {
+    "original16packet408_front7x24_886_one_support_replacement": true,
+    "same718_start_special48_rear8_hand_arm_preserved": true,
+    "actual_frames_and_installation_bases_unchanged": true,
+    "fresh_bench_world_sequence_no_duplicates_omissions_firstblock": true,
+    "each_path_whole_obstacle_AABB_outside_start": true,
+    "projected_actual_part_AABB_event_prefix_reproduced": true,
+    "completed_paths_original_final_identity": true,
+    "canonical_cumulative_world_pending_and_restoration_claims": true,
+    "special48_and_previous718_never_removed": true,
+    "actual_front7_M2_M3_cylinder_properties": true,
+    "no_old_native_or_geometry_change_current862_adoption": true
+  },
+  "differences": [],
+  "review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM078_ebc395734340",
+  "same_agent_review_not_independent": true,
+  "old_native_groups_repeated": 0,
+  "old_common_Boolean_repeated": 0,
+  "whole_drive_or_exterior_approved": false
+}

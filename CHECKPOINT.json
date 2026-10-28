@@ -14,11 +14,11 @@
   },
   "baseline": "cad/motion_clearance_v2",
   "assembly_catalog": "cad/motion_clearance_v2/generated/assembly_catalog.json",
-  "post_commit_results_reproduced": false,
-  "post_commit_review_target": null,
+  "post_commit_results_reproduced": true,
+  "post_commit_review_target": "ebc3957343404c907ddb182a7d26fc0986dbe497",
   "post_commit_review_report": null,
   "post_commit_reproduction_scope": null,
-  "next_stage": "ARM078:read cad/front_packet_restoration_v1/README.md,reviews/survey.json/check.json/assessment.json/evidence.json/common_prepared.json,docs/reviews/ARM078,CHECKPOINT.json,logs/arm078-finish.json first. 현재862/기본364·손397/손바닥4·16원격·빔전기·설치축길이명령clock유지,886/방사랙외형미채택이다. ARM074받침1명시교체의별도886/특수48=원래47+새받침1,다른885유지/이번설치형상변경0이다. {\"completed\": true, \"new_native_groups\": 185, \"pairs_in_scope\": 575111, \"AABB_native_pairs\": 721, \"overlap_records\": 3, \"operation_failures\": 0, \"raw_new_tests_clear\": false, \"canonical_initial_rows\": 718, \"conditional_final_present_rows\": 718, \"pending_rows\": 168, \"complete_restored_packets\": 9, \"new_restored_packets\": 0, \"planned_front_modules\": [\"middle_dip_actuator\", \"index_pip_actuator\", \"index_dip_actuator\", \"index_spread_actuator\", \"middle_spread_actuator\", \"ring_spread_actuator\", \"little_spread_actuator\"], \"attempted_modules\": [\"middle_dip_actuator\"], \"body19_benches_completed\": [\"middle_dip_actuator\"], \"first_blocked_path\": \"middle_dip_actuator__body19_final_datum_radial\", \"actual_axis_reads\": 14, \"projected_event_records\": 113, \"new_hardware_geometry\": 0, \"new_common_queries\": 2, \"new_evidence_geometry\": 2, \"new_images\": 4, \"old_geometry_hashes_unchanged\": 12795, \"frozen_files\": 222, \"planned_replay_native_groups\": 66, \"failures\": [{\"lead\": \"middle_dip_actuator_lead1\", \"part\": \"arm065_shared_output_beam_rack_root\", \"material_intersection_mm3\": 1.543956092576693}, {\"lead\": \"middle_dip_actuator_lead2\", \"part\": \"arm065_shared_output_beam_rack_root\", \"material_intersection_mm3\": 1.5439560925766675}, {\"lead\": \"middle_dip_actuator_lead3\", \"part\": \"arm065_shared_output_beam_rack_root\", \"material_intersection_mm3\": 1.5439560925768068}], \"next_action\": \"middle_dip의세lead와arm065공동root의새실제공통·도달변위(7.204476835099143,0,7.204476835099143)mm/부품축·지지면을읽는다. body19전체방사진입재반복대신실제열린전기홈/뚜껑·M2의선후관계를읽어body13(세lead·lid·M2둘완성전)세계진입→세lead→lid/M2→랙체결대안을성공가정없이검사한다. 원래19/24를모두복구하고참고plug는유지한다. 새로운전체밖진입/실제718및완료부품장애물·실제사건표본을유지한다. 이미완료한벤치는실제입력/집합/등록동일성증명때만승계하고새세계진입은변경장애물을포함한다. 기존718/특수48·뒤8및이번부분상태를보존한다. 원래24전체·M3/M2스택을최종항등복구하며개별M2너트가필요하면원래솔리드참조후compound한행복구다. 막힌뒤얕은시작/삭제/작은코너절삭/모터이동0이다. 이번새185native/조건부world718/대기168/완전packet9/16이다. 완료경로/축14/투영사건·옛68/106/162/ARM07415·4·보어1/216·615PCD재실행0. ARM074윗M3전체포함false19.195131113433646mm³/1solid·실제보어1/216IN모순/원인미확정·윗돌출5.9mm/외형미채택,ARM065edgevertex/corefalse·ARM072픽셀false·옛strictfalse/모든이전실패보류유지다. 같은차집합/정밀/픽셀복구/615PCD반복0. 빔반대뽑힘·출력12내부/mating·하네스/captive/공구·토크힘강도마찰예압장력/20구동·동적전기·전체팔상완/실물제조외형미승인. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛최적화/팔꿈치버스재개0.\", \"current862_replaced\": false, \"proposal886_adopted\": false, \"old_native_common_or_M3points_repeated\": 0, \"whole_factory_drive_or_exterior_approved\": false} Check arm078-check including survey/render/publish-review prepare,publish-review/followup/finish states and processes first.",
+  "next_stage": "ARM078:read cad/front_packet_restoration_v1/README.md,reviews/survey.json/check.json/assessment.json/evidence.json/common_prepared.json,docs/reviews/ARM078,CHECKPOINT.json,logs/arm078-finish.json first. 현재862/기본364·손397/손바닥4·16원격·빔전기·설치축길이명령clock유지,886/방사랙외형미채택이다. ARM074받침1명시교체의별도886/특수48=원래47+새받침1,다른885유지/이번설치형상변경0이다. {\"completed\": true, \"new_native_groups\": 185, \"pairs_in_scope\": 575111, \"AABB_native_pairs\": 721, \"overlap_records\": 3, \"operation_failures\": 0, \"raw_new_tests_clear\": false, \"canonical_initial_rows\": 718, \"conditional_final_present_rows\": 718, \"pending_rows\": 168, \"complete_restored_packets\": 9, \"new_restored_packets\": 0, \"planned_front_modules\": [\"middle_dip_actuator\", \"index_pip_actuator\", \"index_dip_actuator\", \"index_spread_actuator\", \"middle_spread_actuator\", \"ring_spread_actuator\", \"little_spread_actuator\"], \"attempted_modules\": [\"middle_dip_actuator\"], \"body19_benches_completed\": [\"middle_dip_actuator\"], \"first_blocked_path\": \"middle_dip_actuator__body19_final_datum_radial\", \"actual_axis_reads\": 14, \"projected_event_records\": 113, \"new_hardware_geometry\": 0, \"new_common_queries\": 2, \"new_evidence_geometry\": 2, \"new_images\": 4, \"old_geometry_hashes_unchanged\": 12795, \"frozen_files\": 222, \"planned_replay_native_groups\": 66, \"failures\": [{\"lead\": \"middle_dip_actuator_lead1\", \"part\": \"arm065_shared_output_beam_rack_root\", \"material_intersection_mm3\": 1.543956092576693}, {\"lead\": \"middle_dip_actuator_lead2\", \"part\": \"arm065_shared_output_beam_rack_root\", \"material_intersection_mm3\": 1.5439560925766675}, {\"lead\": \"middle_dip_actuator_lead3\", \"part\": \"arm065_shared_output_beam_rack_root\", \"material_intersection_mm3\": 1.5439560925768068}], \"next_action\": \"middle_dip의세lead와arm065공동root의새실제공통·도달변위(7.204476835099143,0,7.204476835099143)mm/부품축·지지면을읽는다. body19전체방사진입재반복대신실제열린전기홈/뚜껑·M2의선후관계를읽어body13(세lead·lid·M2둘완성전)세계진입→세lead→lid/M2→랙체결대안을성공가정없이검사한다. 원래19/24를모두복구하고참고plug는유지한다. 새로운전체밖진입/실제718및완료부품장애물·실제사건표본을유지한다. 이미완료한벤치는실제입력/집합/등록동일성증명때만승계하고새세계진입은변경장애물을포함한다. 기존718/특수48·뒤8및이번부분상태를보존한다. 원래24전체·M3/M2스택을최종항등복구하며개별M2너트가필요하면원래솔리드참조후compound한행복구다. 막힌뒤얕은시작/삭제/작은코너절삭/모터이동0이다. 이번새185native/조건부world718/대기168/완전packet9/16이다. 완료경로/축14/투영사건·옛68/106/162/ARM07415·4·보어1/216·615PCD재실행0. ARM074윗M3전체포함false19.195131113433646mm³/1solid·실제보어1/216IN모순/원인미확정·윗돌출5.9mm/외형미채택,ARM065edgevertex/corefalse·ARM072픽셀false·옛strictfalse/모든이전실패보류유지다. 같은차집합/정밀/픽셀복구/615PCD반복0. 빔반대뽑힘·출력12내부/mating·하네스/captive/공구·토크힘강도마찰예압장력/20구동·동적전기·전체팔상완/실물제조외형미승인. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛최적화/팔꿈치버스재개0.\", \"current862_replaced\": false, \"proposal886_adopted\": false, \"old_native_common_or_M3points_repeated\": 0, \"whole_factory_drive_or_exterior_approved\": false} Check arm078-check including survey/render/publish-review prepare,publish-review/followup/finish states and processes first. ExactSHA target=ebc3957343404c907ddb182a7d26fc0986dbe497;freshclone native66/66,newcommon geometry2/2,common2/2,contracts11/11,initialcore=True,differences=[],manifest15361/frozen222/OCC1. Common0 means ungenerated/unexecuted. Same-agent bounded reproduction,not independentaudit or wholefactory/20driveapproval. No automatic oldnative/precision/groups/M3points/pixelrecovery;all previous false and exterior unadopted preserved.",
   "previous_next_stage_before_arm_layout_review_20261027": "Continue from the new separate PACK049 rigid guide candidate, not the old large-loop layout. Read its real motor turnback ports and nested saddle inlets, opaque hardware comparison and conditional assembly/local bore-fit evidence. The accepted hand397/base364, proportions/axes/lengths, all16 forearm motors, current motor/rack/electrical positions and OD remain unchanged. New motor guide R40/180deg exits (-1.1/18.9,-163.5,-187) toward+Z. Saddle R40/R60 inlets are (100,-84,-43)/(100,-104,-58) toward+Z, front ports (100,-4,-3/2) toward+Y unchanged, same existing saddle clamp seats. The different nested radii prevent the two Z5-separated turned mouths from becoming collinear; they are actual fixed bores, not arbitrary free-path radius tuning. PACK049 establishes only three rigid replacement guides, four finite static poses, three separate conditional service starts and four local housing fits. It has no full flexible connections or new whole-material budget, no continuous/wrist/parent material movement or exterior improvement approval. Next establish one new, explicitly named constant housing/cord budget from this actual mechanism and the existing natural parent/wrist motion, then connect and follow the same material with actual bore sliding and two-line/hardware contact. Preserve the original MOTION047 budgets698.964345153791/761.108456948670 housing and853.356663204892/932.491923574900 cord as old-candidate evidence; never silently shorten them or reuse independent variable-length pose families as constant-material motion. No virtual supports/tensioners, arbitrary OD/R shrink, hand cutting, motor/rack/electrical relocation, angle restriction, elbowward bus or old Newton80/free curves/independent rods. Judge the resulting actually connected opaque CAD before accepting appearance or copying to other axes; removing old flexible lines from a hardware-only figure is not a successful compact connection. Do not repeat closed PACK049 static/service/local fits, PACK048980/19 baseline, MOTION04743/14/14 or tiny seams/tails/screws. Preserve MOTION047 initial corefalse/four same-cord seam-list differences and all older failures/holds. Do not make all supplier/physical certification a prerequisite for useful next CAD or requested movement illustrations.",
   "candidate_adopted": false,
   "nominal_remote_tail_space_clear": true,
@@ -170,8 +170,8 @@
   "distal_sheath_nominal_contacts_verified": true,
   "distal_sheath_whole_assembly_validated": false,
   "distal_sheath_housing_pullout_verified": false,
-  "post_commit_review_completed": false,
-  "post_commit_native_results_reproduced": null,
+  "post_commit_review_completed": true,
+  "post_commit_native_results_reproduced": true,
   "post_commit_source_STEP_full_comparison_inconclusive": null,
   "previous_OFFSET024_review": {
     "post_commit_results_reproduced": false,
@@ -196,7 +196,7 @@
   "post_commit_new26_shape_metrics_reproduced": null,
   "long_housing_geometric_candidate_drawn": true,
   "post_commit_native_overlap_locations_reproduced": null,
-  "post_commit_initial_core_passed": null,
+  "post_commit_initial_core_passed": true,
   "post_commit_precision_pair_passed": null,
   "post_commit_new20_shape_metrics_reproduced": null,
   "wrist_local_guide_scene": "cad/paired_rear_guide_v1/generated/assembly_scene.json",
@@ -211,7 +211,7 @@
   "wrist_guide_clamp_preload_friction_stiffness_validated": false,
   "inherited_HOUSING027_initial_core_passed": false,
   "inherited_HOUSING027_precision_pair_passed": true,
-  "post_commit_initial_execution_succeeded": null,
+  "post_commit_initial_execution_succeeded": true,
   "wrist_local_housing_path_scope": "PairedR40S rear channels+old96mmstraight;not whole flexiblelink.220mmleading housing feeding prescribed within real guides,external tails straightassumption.",
   "guided_whole_link_scene": "cad/guided_housing_link_v1/generated/pose_0/scene.json",
   "guided_whole_link_is_unadopted_research": true,
@@ -648,8 +648,8 @@
   "post_commit_compared_shapes": null,
   "post_commit_contact_stations": null,
   "post_commit_independent_audit": null,
-  "post_commit_review_clone": null,
-  "post_commit_unresolved_differences": null,
+  "post_commit_review_clone": "D:\\Codex-work\\robot-hand-workspace\\reviews\\ARM078_ebc395734340",
+  "post_commit_unresolved_differences": [],
   "inherited_FIX044_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "d8ed866af32678e16becd85337e55a8298c9a3e6",
@@ -964,8 +964,8 @@
   "arm_packaging_evidence_report": "cad/arm_packaging_audit_v1/reviews/evidence.json",
   "post_commit_attachment_distances_reproduced": null,
   "post_commit_arm_FK_reproduced": null,
-  "post_commit_review_independent": null,
-  "post_commit_review_scope": null,
+  "post_commit_review_independent": false,
+  "post_commit_review_scope": "Each new path first/last;world last5;all reached failedpath samples. Fourteen actualfront7 M2/M3cylinder reads,actualframes/projectedAABB event prefix/inventories/omissions/wholeoutside/identity/initial718+special48 retained/16packet408+support1/886/current862unadopted. Only newcommon typed signatures epsilon1e-10 abs1e-5. Not allmiddle/native/continuousswept/benchtransport/manualholding/tools/threads/torque/outputinternal/mating/flexibleharness/captive/strength/force/friction/preload/tension/20drive/fullarm/exterior/trimBoolean/pixels/armvisualunits. Old68/106/162/216M3/615PCD/precision/pixelrecovery not repeated.",
   "inherited_ARM051_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "dfc8dbdc620eb2654c65253d21557ed2ef6bfce4",
@@ -1026,7 +1026,7 @@
   "remote_drive_sources": 16,
   "proposal_geometry_adopted": false,
   "arm_layout_proposal_report": "cad/front_packet_restoration_v1/reviews/check.json",
-  "post_commit_new_geometry_metrics_reproduced": null,
+  "post_commit_new_geometry_metrics_reproduced": true,
   "post_commit_proposal_placements_reproduced": null,
   "post_commit_proposed_attachment_distances_reproduced": null,
   "inherited_ARM052_review": {
@@ -2303,7 +2303,7 @@
     "post_commit_new_common_Boolean_replays": 0
   },
   "post_commit_actual_axes_module_partitions_omissions_lists_final_poses_reproduced": null,
-  "post_commit_new_common_reproduced": null,
+  "post_commit_new_common_reproduced": true,
   "inherited_ARM069_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "ea2542f3f3ef40176f11d378e8e7c3d5d34307c1",
@@ -2690,8 +2690,8 @@
     "post_commit_special48_actual_axes_bounds_frames_lists_omissions_prefix78_99_reproduced": true
   },
   "post_commit_port0_kit7_capture_properties_prefix92_same_four_STEP_poses_reproduced": null,
-  "post_commit_new_geometry_tests_executed": null,
-  "post_commit_new_common_tests_executed": null,
+  "post_commit_new_geometry_tests_executed": true,
+  "post_commit_new_common_tests_executed": true,
   "inherited_ARM073_review": {
     "post_commit_results_reproduced": true,
     "post_commit_review_target": "7334bc61ad7b4b38a1916ce45a37eaebe8174bfe",
@@ -3205,5 +3205,6 @@
     "post_commit_interface_queries_reproduced": null,
     "post_commit_design_inventory_and_mounting_contracts_reproduced": null,
     "post_commit_assembly_mapping_inventory_and_inheritance_contracts_reproduced": true
-  }
+  },
+  "post_commit_assembly_mapping_inventory_and_event_contracts_reproduced": true
 }
