@@ -1,0 +1,7 @@
+{
+  "initial_followup_execution_succeeded": false,
+  "stage": "Python parse before any followup mutation",
+  "error": "SyntaxError: missing + before prep[next_action] in README concatenation",
+  "correction": "Add string concatenation operator only; preserve original source/log/status. Reuse completed exactSHA review51/51;new CAD/native/common/render=0",
+  "review_repeated": false
+}

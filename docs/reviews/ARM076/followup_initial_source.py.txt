@@ -1,0 +1,37 @@
+import datetime,json,shutil,subprocess,sys
+from pathlib import Path
+sys.dont_write_bytecode=True
+P=Path('D:/robot_hand');B=Path('D:/Codex-work/robot-hand-workspace');H=P/'cad/preloaded_rack_nut_module_v1'
+def read(f):return json.loads(f.read_text(encoding='utf-8-sig'))
+def write(f,x):
+    f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes((json.dumps(x,ensure_ascii=False,indent=2)+'\n').encode())
+def git(root,*xs):return subprocess.check_output(['git',*xs],cwd=root,text=True,encoding='utf-8',creationflags=subprocess.CREATE_NO_WINDOW).strip()
+finish=B/'logs/arm076-finish.json';assert not finish.exists();t=read(B/'logs/arm076-target.json');assert t['completed'] and t['review_returncode']==0
+r=read(Path(t['review_output']));assert r['completed'] and r['input_hash_guard'] and r['checkout_clean']
+assert git(P,'rev-parse','HEAD')==t['target_commit']==git(P,'ls-remote','origin','refs/heads/main').split()[0] and not git(P,'status','--porcelain=v1')
+clone=Path(t['review_clone']);folder=P/'docs/reviews/ARM076';assert not folder.exists();folder.mkdir()
+for src,name in [(Path(t['review_output']),'core_initial.json'),(B/'logs/arm076-review.out','review_stdout.txt'),(B/'logs/arm076-review.err','review_stderr.txt'),(clone/'cad/preloaded_rack_nut_module_v1/review_core.py','exact_review_source.py.txt')]:shutil.copyfile(src,folder/name)
+passed=bool(r['initial_core_passed']);cp=read(P/'CHECKPOINT.json');assert cp['id']=='ARM076';prep=read(B/'outputs/ARM076_prepare.json')
+cp.update(post_commit_review_completed=True,post_commit_initial_execution_succeeded=True,post_commit_initial_core_passed=passed,post_commit_results_reproduced=passed,post_commit_native_results_reproduced=r['native_matches']==r['native_groups'],post_commit_new_geometry_metrics_reproduced=r['geometry_matches']==r['geometry_shapes'],post_commit_new_geometry_tests_executed=bool(prep['new_evidence_geometry']),post_commit_new_common_tests_executed=bool(prep['new_common_queries']),post_commit_new_common_reproduced=None if not prep['new_common_queries'] else r['common_matches']==prep['new_common_queries'],post_commit_assembly_mapping_inventory_and_inheritance_contracts_reproduced=all(r['contracts'].values()),post_commit_review_target=t['target_commit'],post_commit_review_clone=str(clone),post_commit_unresolved_differences=r['differences'],post_commit_review_independent=False,post_commit_review_scope=r['replay_scope'])
+cp['next_stage']+=f' ExactSHA target={t["target_commit"]};freshclone native{r["native_matches"]}/{r["native_groups"]},newgeometry{r["geometry_matches"]}/{r["geometry_shapes"]},newcommon{r["common_matches"]}/{prep["new_common_queries"]},contracts{sum(r["contracts"].values())}/{len(r["contracts"])},initialcore={passed},differences={r["differences"]},manifest{r["manifest_files"]}/frozen222/OCC1. Same-agent bounded failure-inclusive reproduction,not independentaudit or wholemapped48/20driveapproval. No automatic precision/groups/oldpoints/pixelrecovery;oldARM074M3false/216IN,ARM065corefalse/strictfalse/ARM072pixelhashfalse preserved.'
+if not passed:
+    cp['next_stage']='ARM076 initialcore=false;preserve docs/reviews/ARM076/native_difference.json,no automatic precision/group replay or threshold/CAD/clone changes. '+cp['next_stage']
+    write(folder/'native_difference.json',dict(target=t['target_commit'],initial_core_passed=False,differences=r['differences'],unmatched_native=[z for z in r['native_samples'] if not z['matched']],unmatched_geometry=[z for z in r['geometry_comparisons'] if not z['matched']],contracts=r['contracts'],cause_confirmed=False,automatic_precision_or_groups_repeated=0))
+write(P/'CHECKPOINT.json',cp)
+summary={**prep,'target_commit':t['target_commit'],'initial_core_passed':passed,'native_groups':r['native_groups'],'native_matches':r['native_matches'],'geometry_shapes':r['geometry_shapes'],'geometry_matches':r['geometry_matches'],'common_matches':r['common_matches'],'contracts':r['contracts'],'differences':r['differences'],'review_clone':str(clone),'same_agent_review_not_independent':True,'old_native_groups_repeated':0,'old_common_Boolean_repeated':0,'whole_drive_or_exterior_approved':False}
+write(folder/'summary.json',summary)
+(folder/'README.md').write_bytes(('# ARM076 정확 커밋 한정 재현\n\n'
+    f'대상 `{t["target_commit"]}`의새깨끗한별도사본에서초기core={str(passed).lower()},native{r["native_matches"]}/{r["native_groups"]}·증거기하{r["geometry_matches"]}/{r["geometry_shapes"]}·공통{r["common_matches"]}/{prep["new_common_queries"]}·계약{sum(r["contracts"].values())}/{len(r["contracts"])}·차이{r["differences"]}/의존{r["manifest_files"]}/동결222/OCC1이다. 같은에이전트이며독립감사가아니다.\n\n'
+    '현재862/수용손397·기본364/16원격/빔전기·모터설치축/길이/명령clock유지,이번기하0/ARM074받침1명시교체의별도886외형미채택이다. 이전714부분결과보존/자기body43+첫nut1=44만명시분리한670독립대안이며다른뒤8/손/팔은장애물유지·자기fixed/moving중복0이다. 역분해/벤치운반·중립등록/수동유지는별도미검증조건이다.\n\n'
+    '독립motor14+port0kit42+port1kit42=98과전기carrier64,계162는새racknut이moving/present에없는동일입력·등록경로를증명해승계/새native0이다. 옛body43세계진입/양port진입은그대로승계하지않았다. 실제두너트R1.5보어/+Y축·X71/Z±13·Y[-118,-115.6]착좌면을읽었다.\n\n'
+    '첫옆진입은X10에서lid_nut_2 .9833710941156963·새받침4.157884613050564mm³로막힌5native/125쌍4AABB2기록0오류/rawfalse다. 기존20→0표본으로중간통과를승인하지않는다. 독립벤치에서실제나사축+Y로전체밖부터넣는선택대안은양너트→각jamnut/원래kit7→body45세계진입→M3둘→원래M2너트4묶음의실제도달단계만검사했다. 세계에서의+Y손목막힘과벤치축진입의조건을구분한다.\n\n'
+    f'합계새{prep["new_native_groups"]}native/{prep["pairs_in_scope"]}쌍/{prep["AABB_native_pairs"]}AABB/{prep["overlap_records"]}기록/{prep["operation_failures"]}오류,report>.001mm³/Boolean1e−6mm/OCC1. 마지막벤치{prep["carrier_bench_rows"]}·world{prep["conditional_final_present_rows"]}/대기{prep["pending_rows"]}/완전{prep["complete_restored_packets"]}/16·특수48전체복구={prep["mapped_special48_restoration_completed"]}이다. 첫실패/다음미실행을삭제하거나부분상태를전체공장·16모터설치완료로쓰지않는다.\n\n'
+    f'핵심{r["native_groups"]}native는각새경로시작끝/kit7첫+마지막3/world첫+마지막5·실패경로도달전부/도달한실제rail사건표본이다. 원래16packet408/명시1교체·원래47/886/이전714보존·44분리→670/뒤8/누락·전체밖시작/최종항등/162승계·너트축착좌면/도달원래M3M2목록을대조했다. 새공통{prep["new_common_queries"]}만source/STEP typed서명epsilon1e−10/절대1e−5로비교했다. 옛187/ARM07415·4·보어1/216점/615PCD재실행0이다.\n\n'
+    f'불투명{prep["new_images"]}고유그림을직접확인했고덮어쓰기0·새공통수치선저장/설치기하export0/이전12783기하·동결222·과거manifest불변이다. 모든중간/곡면trimBoolean·픽셀/팔시각단위/연속전체공장·역분해/운반·공구/실물구동증명이아니다. 원시실패목록/다음은summary.json과후보README에보존한다.\n\n'
+    prep['next_action']+'\n').encode())
+pr=P/'PROGRESS.md';txt=pr.read_text(encoding='utf-8-sig');old='- 저장/다음: 정확SHA핵심재현후남은전체체결순서와앞7검사.';new=f'- 저장/다음: {t["target_commit"][:12]} 새사본native{r["native_matches"]}/{r["native_groups"]}·기하{r["geometry_matches"]}/{r["geometry_shapes"]},core={str(passed).lower()},남은체결/앞7검사.'
+assert txt.count(old)==1;pr.write_bytes(txt.replace(old,new).encode())
+git(P,'add','--','docs/reviews/ARM076','CHECKPOINT.json','PROGRESS.md');git(P,'-c','core.whitespace=cr-at-eol','diff','--cached','--check');git(P,'diff','--cached','--check','--','*.py','*.md')
+print(git(P,'commit','-m','Record exact nut-first assembly replay and retained fastener failures'),flush=True);print(git(P,'push','origin','main'),flush=True)
+head=git(P,'rev-parse','HEAD');assert head==git(P,'ls-remote','origin','refs/heads/main').split()[0] and not git(P,'status','--porcelain=v1') and not git(clone,'status','--porcelain=v1')
+summary.update(completed=False,phase='followup_pushed_pending_automation',review_commit=head,remote_main=head,workspace_clean=True,review_clone_clean=True,finished_review_utc=datetime.datetime.now(datetime.timezone.utc).isoformat());write(finish,summary);print(json.dumps(dict(target=t['target_commit'],followup=head,core=passed)),flush=True)

@@ -1,0 +1,4 @@
+  File "D:\Codex-work\robot-hand-workspace\publish_followup_arm076.pyw", line 23
+    (folder/'README.md').write_bytes(('# ARM076 정확 커밋 한정 재현\n\n'
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
