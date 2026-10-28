@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/front_packet_restoration_v1/images/arm078_assembly_before_after.png",
+    "cad/front_packet_restoration_v1/images/arm078_common_0.png",
+    "cad/front_packet_restoration_v1/images/arm078_common_1.png",
+    "cad/front_packet_restoration_v1/images/arm078_world_before_after.png"
+  ],
+  "opaque": true,
+  "labels_and_footer_readable": true,
+  "unique_names_preserved": true,
+  "notes": "Four actual CAD sheets inspected. Common panels use individual magnification of thin actual intersection. World panels deliberately identical because no new packet was restored. Display omissions are explicit and do not exclude native obstacles."
+}
