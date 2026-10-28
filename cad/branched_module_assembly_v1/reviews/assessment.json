@@ -1,0 +1,78 @@
+{
+  "completed": true,
+  "new_native_groups": 187,
+  "initial_new_native_groups": 170,
+  "selected_new_native_groups": 17,
+  "pairs_in_scope": 398658,
+  "AABB_native_pairs": 197,
+  "overlap_records": 4,
+  "operation_failures": 0,
+  "raw_new_tests_clear": false,
+  "dualport_carrier_bench_completed": true,
+  "carrier_bench_rows": 43,
+  "port1_kit_rows": 7,
+  "inherited_independent_samples": 56,
+  "inherited_independent_breakdown": [
+    14,
+    42
+  ],
+  "inherited_new_successful_prefix_samples": 161,
+  "inherited_native_groups_repeated": 0,
+  "old_full49_or92_inherited": false,
+  "conditional_initial_rows": 670,
+  "conditional_after_body43_rows": 713,
+  "conditional_final_present_rows": 714,
+  "pending_rows": 172,
+  "complete_restored_packets": 8,
+  "new_restored_packets": 0,
+  "mapped_special48_restoration_completed": false,
+  "new_hardware_geometry": 0,
+  "new_common_queries": 2,
+  "new_evidence_geometry": 2,
+  "new_images": 6,
+  "old_geometry_hashes_unchanged": 12779,
+  "frozen_files": 222,
+  "planned_replay_native_groups": 73,
+  "failures": [
+    {
+      "report": "initial",
+      "id": "rack_nut_thumb_ip_actuator_rack_nut_1_8",
+      "record": {
+        "lead": "thumb_ip_actuator_rack_nut_1",
+        "part": "Wrist_box_carrier",
+        "material_intersection_mm3": 9.550077838035046
+      }
+    },
+    {
+      "report": "selected",
+      "id": "rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_7",
+      "record": {
+        "lead": "thumb_ip_actuator_rack_nut_2",
+        "part": "arm059_straight_jaw_1",
+        "material_intersection_mm3": 10.610581057343527
+      }
+    },
+    {
+      "report": "selected",
+      "id": "rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_7",
+      "record": {
+        "lead": "thumb_ip_actuator_rack_nut_2",
+        "part": "thumb_ip_barrel_adjuster_1",
+        "material_intersection_mm3": 3.5699475537968914
+      }
+    },
+    {
+      "report": "selected",
+      "id": "rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_7",
+      "record": {
+        "lead": "thumb_ip_actuator_rack_nut_2",
+        "part": "motor_housing_clamp_1_jaw_1",
+        "material_intersection_mm3": 1.44147946769965
+      }
+    }
+  ],
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "old_inclusion_Boolean_or_points_repeated": 0,
+  "whole_factory_drive_tools_force_strength_captive_mating_harnessflex_torque_friction_preload_tension_electrical_fullarm_physical_exterior_approved": false
+}

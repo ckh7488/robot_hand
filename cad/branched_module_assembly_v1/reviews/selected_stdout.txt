@@ -1,0 +1,20 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_0 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_1 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_2 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_3 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_4 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_5 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_6 713 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_7 713 3 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_1_8 713 1 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_0 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_1 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_2 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_3 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_4 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_5 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_6 714 0 0
+rack_nut_final_axial_thumb_ip_actuator_rack_nut_2_7 714 4 3
+complete selected 17 3 mapped48 False world 714

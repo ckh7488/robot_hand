@@ -1,0 +1,32 @@
+{
+  "state": "completed",
+  "pid": 89296,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/branched_module_assembly_v1/survey.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "survey",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm075-survey-check-job-survey.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm075-survey-check-job-survey.err",
+      "pid": 30424,
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/branched_module_assembly_v1/check.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "check",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm075-survey-check-job-check.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm075-survey-check-job-check.err",
+      "pid": 28040,
+      "returncode": 0
+    }
+  ]
+}

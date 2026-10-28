@@ -1,0 +1,16 @@
+{
+  "all_geometry_in_frame": true,
+  "labels_readable": true,
+  "opaque": true,
+  "notes": "실제6그림직접확인. 원래43벤치/몸체전체진입·너트첫실패와대안/두대표공통은서로다른파일. native장애물전체와그림의선택표시를구분한다.",
+  "completed": true,
+  "unique_names_no_overwrite": true,
+  "images_viewed": [
+    "cad/branched_module_assembly_v1/images/arm075_dualport_bench_before_after.png",
+    "cad/branched_module_assembly_v1/images/arm075_first_new_common.png",
+    "cad/branched_module_assembly_v1/images/arm075_port1_kit_before_after.png",
+    "cad/branched_module_assembly_v1/images/arm075_world_body_entry.png",
+    "cad/branched_module_assembly_v1/images/arm075_selected_first_new_common.png",
+    "cad/branched_module_assembly_v1/images/arm075_selected_nut_order.png"
+  ]
+}
