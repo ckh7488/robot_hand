@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/open_electrical_world_assembly_v1/images/arm079_assembly_before_after.png",
+    "cad/open_electrical_world_assembly_v1/images/arm079_common_0.png",
+    "cad/open_electrical_world_assembly_v1/images/arm079_common_1.png",
+    "cad/open_electrical_world_assembly_v1/images/arm079_order_before_after.png",
+    "cad/open_electrical_world_assembly_v1/images/arm079_world_before_after.png"
+  ],
+  "opaque": true,
+  "labels_and_footer_readable": true,
+  "unique_names_preserved": true,
+  "notes": "Five opaque actual CAD sheets inspected. Global entry failure panel intentionally shows separated target and test cradle;two separate close common views show actual overlap. Order comparison shows actual old blocked19 and new reached13. World731 is partial,not complete packet10."
+}

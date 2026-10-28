@@ -1,0 +1,62 @@
+{
+  "completed": true,
+  "new_native_groups": 88,
+  "pairs_in_scope": 485185,
+  "AABB_native_pairs": 469,
+  "overlap_records": 3,
+  "operation_failures": 0,
+  "raw_new_tests_clear": false,
+  "canonical_initial_rows": 718,
+  "conditional_final_present_rows": 731,
+  "pending_rows": 155,
+  "complete_restored_packets": 9,
+  "new_restored_packets": 0,
+  "planned_front_modules": [
+    "middle_dip_actuator",
+    "index_pip_actuator",
+    "index_dip_actuator",
+    "index_spread_actuator",
+    "middle_spread_actuator",
+    "ring_spread_actuator",
+    "little_spread_actuator"
+  ],
+  "attempted_modules": [
+    "middle_dip_actuator"
+  ],
+  "body19_benches_completed": [],
+  "first_blocked_path": "middle_dip_actuator__lay_three_original_leads_in_open_groove",
+  "actual_axis_reads": 0,
+  "inherited_bench_scope": 69,
+  "inherited_bench_new_native": 0,
+  "body13_bench_completed": true,
+  "projected_event_records": 221,
+  "new_hardware_geometry": 0,
+  "new_common_queries": 2,
+  "new_evidence_geometry": 2,
+  "new_images": 5,
+  "old_geometry_hashes_unchanged": 12799,
+  "frozen_files": 222,
+  "planned_replay_native_groups": 14,
+  "failures": [
+    {
+      "lead": "middle_dip_actuator_lead1",
+      "part": "Elbow_fixed_cradle",
+      "material_intersection_mm3": 25.998081275102404
+    },
+    {
+      "lead": "middle_dip_actuator_lead2",
+      "part": "Elbow_fixed_cradle",
+      "material_intersection_mm3": 25.9980812750961
+    },
+    {
+      "lead": "middle_dip_actuator_lead3",
+      "part": "Elbow_fixed_cradle",
+      "material_intersection_mm3": 25.998081275101473
+    }
+  ],
+  "next_action": "열린body13의세계진입51통과/실제731을보존한다. 새세lead의전체뒤진입(0,-260,0)mm가Elbow_fixed_cradle에각25.998081275102404/25.9980812750961/25.998081275101473mm³로걸린새실제공통·받침경계/전기홈진입축을읽는다. 세계전체밖방사시작→실제공동root뒤면을피한opening방향오프셋옆진입→원래열린홈축복귀의꺾인전기참고진입대안을성공가정없이검사한다. 오프셋은실제root/세lead경계로정하고최소여유규격으로쓰지않는다. 전체밖시작을빼고받침뒤쪽의얕은시작으로성공처리하지않는다. 실제718및이번완료부품을보존하고원래24전체/전기홈·덮개·세lead/자기plug·M3/M2스택을모두복구한다. 같은69승계는입력·등록/moving-present집합동일성증명만허용하고변경집합은새검사다. 기존185경로/새실패경로자동반복·막힌뒤얕은시작/삭제/코너절삭/모터이동0이다. 이번새88native/조건부world731/대기155/완전packet9/16이다. 완료경로/같은69·투영사건·옛185/축14/68/106/162/ARM07415·4·보어1/216·615PCD재실행0. ARM074윗M3전체포함false19.195131113433646mm³/1solid·실제보어1/216IN모순/원인미확정·윗돌출5.9mm/외형미채택,ARM065edgevertex/corefalse·ARM072픽셀false·옛strictfalse/모든이전실패보류유지다. 같은차집합/정밀/픽셀복구/615PCD반복0. 빔반대뽑힘·출력12내부/mating·하네스/captive/공구·토크힘강도마찰예압장력/20구동·동적전기·전체팔상완/실물제조외형미승인. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛최적화/팔꿈치버스재개0.",
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "old_native_common_or_M3points_repeated": 0,
+  "whole_factory_drive_or_exterior_approved": false
+}
