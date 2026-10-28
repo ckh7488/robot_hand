@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "D:\Codex-work\robot-hand-workspace\run_cad_single_thread.pyw", line 18, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\robot_hand\cad\dogleg_electrical_entry_v1\check.py", line 67, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\robot_hand\cad\dogleg_electrical_entry_v1\check.py", line 53, in main
+    if not dogleg('original_lid_M2_'+screw,[screw]):blocked=True;break
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\dogleg_electrical_entry_v1\check.py", line 48, in dogleg
+    return whole('world',label,names,world,radial,offset*opening,[15.*opening,10.*opening,5.*opening,np.zeros(3)])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\dogleg_electrical_entry_v1\check.py", line 46, in whole
+    offset=np.zeros(3) if offset is None else offset;start=m.outside_start([lookup[k] for k in names],[lookup[k] for k in present],axis,offset);vectors=[x*axis+offset for x in list(np.arange(start,19.,-20.))+[15.,10.,5.,0.]]+(tail or []);return path(stage,label,names,present,vectors,axis)
+                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\dogleg_electrical_entry_v1\check.py", line 44, in path
+    rec['completed']=True;present.update(names);save();return True
+                                                ^^^^^^
+  File "D:\robot_hand\cad\dogleg_electrical_entry_v1\check.py", line 35, in save
+    def save():n.a.save(out,raw)
+               ^^^^^^^^^^^^^^^^^
+  File "D:\robot_hand\cad\material_length_motion_v1\material_model.py", line 83, in save
+    p.write(path,clean(value))
+  File "D:\robot_hand\cad\functional_motion_v3\audit.py", line 28, in write
+    temp=p.with_suffix(p.suffix+'.partial');temp.write_text(json.dumps(value,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n',encoding='utf-8');temp.replace(p)
+                                                                                                                                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\artzy\miniconda3\Lib\pathlib.py", line 1376, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] 액세스가 거부되었습니다: 'D:\\robot_hand\\cad\\dogleg_electrical_entry_v1\\reviews\\check.json.partial' -> 'D:\\robot_hand\\cad\\dogleg_electrical_entry_v1\\reviews\\check.json'

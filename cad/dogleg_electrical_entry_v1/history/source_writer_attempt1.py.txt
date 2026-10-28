@@ -1,0 +1,36 @@
+import ast
+from pathlib import Path
+P=Path('D:/robot_hand');H=P/'cad/dogleg_electrical_entry_v1'
+s=(P/'cad/open_electrical_world_assembly_v1/review_core.py').read_text(encoding='utf-8-sig').replace('_arm079','_arm080').replace('ARM079.manifest','ARM080.manifest').replace("prior=n.p.read(ROOT/'cad/front_packet_restoration_v1/reviews/check.json')","prior=n.p.read(ROOT/'cad/open_electrical_world_assembly_v1/reviews/check.json')")
+s=s.replace("initial_world718_names","initial_world731_names").replace("same718_start_special48_rear8_hand_arm_preserved","same731_start_body13_special48_rear8_hand_arm_preserved").replace('len(world)==718','len(world)==731')
+s=s.replace("    if q['body13_bench_completed']:sequence=sequence and carrierstates[m.MODULE]==body13\n",'')
+a=s.index("    inherited=m.inheritance(lookup);pfx=");b=s.index("    c['fresh_bench",a)
+s=s[:a]+'''    inherited=m.inheritance(lookup);pfx=q['inherited_prefix'];c['exact84_and_earlier69_input_registration_moving_present_inheritance_new0']=pfx['paths']==inherited['paths'] and pfx['sample_scope']==84 and q['inherited_sample_scope']==84 and q['inherited_earlier_bench_scope']==69 and pfx['exact69']['paths']==inherited['exact69']['paths'] and pfx['final_world731_names']==q['initial_world731_names'] and q['inherited_new_native_groups']==0 and max(float(np.max(abs(np.array(pfx['registered_bounds'][k])-np.array(v)))) for k,v in inherited['registered_bounds'].items())<1e-5
+''' +s[b:]
+s=s.replace("special48_and_previous718_never_removed","special48_and_previous731_never_removed")
+a=s.index('        for f in z[\'faces\']:');b=s.index("    oldev=",a)
+s=s[:a]+s[b:]
+s=s.replace("oldev=n.p.read(ROOT/'cad/front_packet_restoration_v1/reviews/evidence.json')","oldev=n.p.read(ROOT/'cad/open_electrical_world_assembly_v1/reviews/evidence.json')")
+a=s.index("    c['actual_groove");b=s.index("    c['no_old_native",a)
+s=s[:a]+'''    datum=survey['local_root_rear_face'];face=lookup[m.ROOT_PART]['shape'].Faces()[datum['index']];plane=BRepAdaptor_Surface(face.wrapped).Plane();opening=np.array(oldframe['opening']);radial=np.array(oldframe['radial']);point=np.array(plane.Location().Coord());leadnames=[m.MODULE+'_lead'+str(i) for i in [1,2,3]];lp=m.project_bounds([lookup[k] for k in leadnames],opening);planeproj=float(point@opening);needed=max(0.,planeproj-lp[0]);offset=float(np.ceil(needed/20.)*20.)
+    propmax=max(propmax,float(np.max(abs(np.array(n.c.m.pack._bbox(face))-np.array(datum['bbox'])))),float(np.max(abs(point-np.array(datum['point'])))),float(np.max(abs(np.array(plane.Axis().Direction().Coord())-np.array(datum['normal'])))))
+    c['actual_boundaries_oldcommon_readonly_and_derived_opening_offset']=propmax<1e-5 and abs(needed-survey['offset_needed_to_rear_plane_mm'])<1e-8 and offset==survey['opening_offset_mm']==20. and survey['whole_lead_plane_separation_at_offset_mm']>0 and survey['old_common_Boolean_repeated']==survey['old_axis14_repeated']==0 and survey['all_root_and_cradle_material_retained']
+    routeok=True
+    for p in q['paths']:
+        if not ('three_original_leads_radial_then_opening' in p['id'] or 'original_lid_' in p['id']):continue
+        start=m.outside_start([lookup[k] for k in p['moving_names']],[lookup[k] for k in p['present_names']],radial,offset*opening);expected=[x*radial+offset*opening for x in list(np.arange(start,19.,-20.))+[15.,10.,5.,0.]]+[15.*opening,10.*opening,5.*opening,np.zeros(3)]
+        routeok=routeok and len(expected)==len(p['requested_vectors']) and np.max(abs(np.array(expected)-np.array(p['requested_vectors'])))<1e-8
+    c['whole_outside_radial_to_offset_then_original_opening_route']=bool(routeok)
+''' +s[b:]
+a=s.index("replay_scope='");b=s.index("')\n    result['initial_core",a)
+s=s[:a]+"replay_scope='New world paths first-last/worldlast5/all reached failed samples. Exact prior84 completed prefix and earlier69 inheritance inputhash/registered geometry/moving-present proof,new0. Sameworld731/body13/special48/rear8/original16packet408/886/support1/full24/fulloutside/cumulativeinventory/identity/eventprefix,actual localroot face318/cradle/electrical boundary and derived20mm openingoffset/testnotminimum. Only newcommon typed signatures epsilon1e-10 abs1e-5. No old88/185/14axes/68/106/162/M3cut216/615PCD/precision/pixelrecovery. Not allmiddle/continuouspaths/benchtransport/manualholding/registration/mating/harnessflex/captive/tools/threads/torque/force/strength/friction/preload/tension/fullfactory/20drive/fullarm/exterior/trimBoolean/pixels/armvisualunits"+s[b:]
+(H/'review_core.py').write_bytes(s.encode())
+s=(P/'cad/open_electrical_world_assembly_v1/render_evidence.py').read_text(encoding='utf-8-sig').replace('_arm079','_arm080').replace('arm079_','arm080_')
+a=s.index("    prior=n.p.read(ROOT/'cad/front_packet_restoration_v1/reviews/check.json');");b=s.index("    world=set(",a)
+s=s[:a]+'''    prior=n.p.read(ROOT/'cad/open_electrical_world_assembly_v1/reviews/check.json');oldpath=prior['paths'][-1];newpath=q['paths'][0];fixed={m.ROOT_PART,'Elbow_fixed_cradle'};M=newpath['samples'][-1]['transform'];oldM=oldpath['samples'][-1]['transform']
+    sheet([('이전,직선 뒤진입의 실제 막힘',scene(fixed|set(oldpath['moving_names']),{k:oldM for k in oldpath['moving_names']},oldpath['moving_names'])),('새,옆진입 경로의 실제 마지막',scene(fixed|set(newpath['moving_names']),{k:M for k in newpath['moving_names']},newpath['moving_names']))],'세 전선의 실제 진입 경로 전후','시험대 받침·공동 root 유지 /이전88 native 반복0 /새 실제 도달만 표시 /전체 경로 성공 여부는 원시 결과 참조','route_before_after',True)
+''' +s[b:]
+s=s.replace('initial_world718_names','initial_world731_names').replace('시작,실제 세계718','시작,실제 세계731').replace('모든718은','모든731은')
+s=s.replace('전기 덮개 완성 전의 실제 조립 전후','원래 전기 부품의 실제 조립 전후')
+(H/'render_evidence.py').write_bytes(s.encode())
+for f in H.glob('*.py'):ast.parse(f.read_text());print(f.name,'syntax ok')

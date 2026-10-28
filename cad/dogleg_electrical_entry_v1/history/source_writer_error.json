@@ -1,0 +1,8 @@
+{
+  "completed": false,
+  "phase": "post_write_AST_check",
+  "error": "UnicodeDecodeError: source writer used Windows cp949 default while rereading saved UTF-8 source",
+  "all_four_sources_saved": true,
+  "CAD_native_or_export_repeated": 0,
+  "correction": "Read saved sources with explicit UTF-8 for AST validation only"
+}

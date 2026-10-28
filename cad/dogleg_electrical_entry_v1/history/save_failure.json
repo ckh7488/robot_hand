@@ -1,0 +1,11 @@
+{
+  "initial_execution_succeeded": false,
+  "native_groups_saved": 90,
+  "all90_complete_paths_saved_in_partial": true,
+  "phase": "fourth_path_completed_flag_atomic_replace",
+  "error": "PermissionError WinError5 replacing check.json.partial with check.json",
+  "concurrent_report_read_was_active": true,
+  "cause_confirmed": false,
+  "CAD_native_repeated": 0,
+  "continued_from": "history/check_saved_complete90.json"
+}

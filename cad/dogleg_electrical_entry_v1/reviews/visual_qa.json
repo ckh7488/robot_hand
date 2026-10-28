@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "images_viewed": [
+    "cad/dogleg_electrical_entry_v1/images/arm080_assembly_before_after.png",
+    "cad/dogleg_electrical_entry_v1/images/arm080_common_0.png",
+    "cad/dogleg_electrical_entry_v1/images/arm080_common_1.png",
+    "cad/dogleg_electrical_entry_v1/images/arm080_route_before_after.png",
+    "cad/dogleg_electrical_entry_v1/images/arm080_world_before_after.png"
+  ],
+  "opaque": true,
+  "labels_and_footers_readable": true,
+  "actual_before_after_and_new_common_material_visible": true,
+  "world_and_route_panels_show_distant_cradle_intentionally": true,
+  "not_physical_or_complete_drive_approval": true
+}

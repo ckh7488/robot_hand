@@ -1,0 +1,62 @@
+{
+  "completed": true,
+  "new_native_groups": 110,
+  "pairs_in_scope": 120261,
+  "AABB_native_pairs": 262,
+  "overlap_records": 2,
+  "operation_failures": 0,
+  "raw_new_tests_clear": false,
+  "canonical_initial_rows": 731,
+  "conditional_final_present_rows": 737,
+  "pending_rows": 149,
+  "complete_restored_packets": 9,
+  "new_restored_packets": 0,
+  "planned_front_modules": [
+    "middle_dip_actuator",
+    "index_pip_actuator",
+    "index_dip_actuator",
+    "index_spread_actuator",
+    "middle_spread_actuator",
+    "ring_spread_actuator",
+    "little_spread_actuator"
+  ],
+  "attempted_modules": [
+    "middle_dip_actuator"
+  ],
+  "first_blocked_path": "middle_dip_actuator__rack_nut_middle_dip_actuator_rack_nut_1",
+  "actual_axis_reads": 0,
+  "initial_execution_succeeded": false,
+  "saved_prefix_reused_no_native_repeat": 90,
+  "new_continuation_native_groups": 20,
+  "inherited_completed_scope": 84,
+  "inherited_earlier_bench_scope": 69,
+  "inherited_new_native": 0,
+  "body13_bench_completed": true,
+  "projected_event_records": 55,
+  "opening_offset_mm": 20.0,
+  "offset_needed_to_rear_plane_mm": 10.800000000000011,
+  "new_hardware_geometry": 0,
+  "new_common_queries": 2,
+  "new_evidence_geometry": 2,
+  "new_images": 5,
+  "old_geometry_hashes_unchanged": 12803,
+  "frozen_files": 222,
+  "planned_replay_native_groups": 44,
+  "failures": [
+    {
+      "lead": "middle_dip_actuator_rack_nut_1",
+      "part": "middle_dip_actuator_lead1",
+      "material_intersection_mm3": 8.336652404063367
+    },
+    {
+      "lead": "middle_dip_actuator_rack_nut_1",
+      "part": "middle_dip_actuator_lead2",
+      "material_intersection_mm3": 5.962545566242333
+    }
+  ],
+  "next_action": "ARM080 실제737=이전731+세lead/lid/M2둘6과완료90전기진입을보존한다. 첫racknut1의(0,-3.25,0)mm에서lead1 8.336652404063367/lead2 5.962545566242333mm³로막힌새공통2·실제너트축/전선홈과선후관계를읽는다. 같은후삽입재반복대신원래자기전기6을명시부재로둔같은body13/world731의독립대안에서원래racknuts→M3둘→base_nuts를먼저복구하고세lead→lid/M2를뒤에넣는순서를성공가정없이검사한다. 737에서분리하는역분해·운반/수동유지는검증되지않았으며전체공장연속성으로쓰지않는다. 기존731/뒤8/엄지48/원래24/plug/모든M3M2·축길이명령clock은유지한다. 실제fixed집합이달라진경로는새검사하고ARM080완료90을새장애물에맹목승계하지않는다. ARM079완료84와이전69는입력/등록·moving-present집합동일성증명때만승계·새0이다. 완료110=첫저장90+새계속20/이번세계737·대기149(이번랙5+앞6×24)/완전9/16,첫너트21계획중20도달후나머지너트/M3/base_nuts·앞6미실행이다. 초기WinError5원문·completedfalse/partial90보존,final_check.json이최종집계이며90native반복0이다. 10.8→시험opening20mm·27/18/22/23전기표본/AABB사건·옛88/185/축14/68/106/162/216/615PCD반복0. ARM074윗M3전체포함false19.195131113433646mm³/1solid·실제보어1/216IN모순/원인미확정·윗돌출5.9mm/외형미채택,ARM065edgevertex/corefalse·ARM072픽셀false·옛strictfalse/모든이전실패보류유지. 같은차집합/정밀/픽셀복구/615PCD반복0. 빔반대뽑힘·출력12내부/mating·하네스/captive/공구·토크힘강도마찰예압장력/20구동·동적전기·전체팔상완/실물제조외형미승인. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛최적화/팔꿈치버스재개0.",
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "old_native_common_or_M3points_repeated": 0,
+  "whole_factory_drive_or_exterior_approved": false
+}
