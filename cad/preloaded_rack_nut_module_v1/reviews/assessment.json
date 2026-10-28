@@ -1,0 +1,100 @@
+{
+  "completed": true,
+  "new_native_groups": 106,
+  "initial_new_native_groups": 5,
+  "selected_new_native_groups": 101,
+  "pairs_in_scope": 419519,
+  "AABB_native_pairs": 176,
+  "overlap_records": 4,
+  "operation_failures": 0,
+  "raw_new_tests_clear": false,
+  "inherited_independent_samples": 162,
+  "inherited_breakdown": [
+    14,
+    42,
+    42,
+    64
+  ],
+  "inherited_native_groups_repeated": 0,
+  "old5_failure_repeated": 0,
+  "previous714_preserved": true,
+  "explicit_separated_rows": 44,
+  "conditional_initial_rows": 670,
+  "conditional_final_present_rows": 717,
+  "pending_rows": 169,
+  "complete_restored_packets": 8,
+  "new_restored_packets": 0,
+  "body45_bench_completed": true,
+  "carrier_bench_rows": 45,
+  "mapped_special48_restoration_completed": false,
+  "new_hardware_geometry": 0,
+  "new_common_queries": 2,
+  "new_evidence_geometry": 2,
+  "new_images": 9,
+  "old_geometry_hashes_unchanged": 12783,
+  "frozen_files": 222,
+  "planned_replay_native_groups": 51,
+  "failures": [
+    {
+      "report": "initial",
+      "id": "preload_rack_nut_1_4",
+      "translation_mm": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "record": {
+        "lead": "thumb_ip_actuator_rack_nut_1",
+        "part": "thumb_ip_actuator_lid_nut_2",
+        "material_intersection_mm3": 0.9833710941156963
+      }
+    },
+    {
+      "report": "initial",
+      "id": "preload_rack_nut_1_4",
+      "translation_mm": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "record": {
+        "lead": "thumb_ip_actuator_rack_nut_1",
+        "part": "arm074_branched_electrical_R5_support",
+        "material_intersection_mm3": 4.157884613050564
+      }
+    },
+    {
+      "report": "selected",
+      "id": "original_four_M2_base_nuts_with_rail_events_7",
+      "translation_mm": [
+        29.5,
+        0.0,
+        0.0
+      ],
+      "record": {
+        "lead": "thumb_ip_actuator_base_nuts",
+        "part": "thumb_ip_barrel_bottom_nut_1",
+        "material_intersection_mm3": 0.2984741455007405
+      }
+    },
+    {
+      "report": "selected",
+      "id": "original_four_M2_base_nuts_with_rail_events_7",
+      "translation_mm": [
+        29.5,
+        0.0,
+        0.0
+      ],
+      "record": {
+        "lead": "thumb_ip_actuator_base_nuts",
+        "part": "arm074_branched_electrical_R5_support",
+        "material_intersection_mm3": 13.088827791000892
+      }
+    }
+  ],
+  "next_action": "이번두실패의실제공통·도달한M3/M2전체스택과얇은rail교차면/포켓을먼저읽고남은전체체결순서를검토한다. 원래M2너트4개솔리드/4나사·adapter/cradle의실제포켓/축을읽고각너트를독립적으로넣는선후관계또는받침/전기완성전unit선조립→전체body46진입을성공가정없이검사한다. 원래4솔리드/최종compound복구를보존하고묶음을강체로옮긴이번실패를개별조립불가능으로확대하지않는다. 기존714/이번부분세계목록은보존하며이번자기47행만명시분리한670과다른뒤8/손/팔장애물을유지한다. 역분해·운반은별도미검증조건,막힌뒤얕은시작/부품삭제/코너절삭/모터이동0이다. 실제이번world717/대기169/완전packet8/16·전체48복구=False이며전체공장/16모터설치완료아니다. 완료새106/독립98·전기64의162승계/실제너트축·포착면·옛187/ARM07415·4·보어1/216·615PCD반복0. ARM074M3전체포함false19.195131113433646mm³/1solid·실제보어1/216IN모순/원인미확정·윗돌출5.9mm/외형미채택,ARM059옛최종3/M3+13·ARM065edgevertex/corefalse·ARM072픽셀false·옛strictfalse/모든이전실패보류유지다. 같은차집합/정밀·픽셀복구/615PCD반복0. 빔반대뽑힘·출력12내부/mating·하네스/captive/공구·토크힘강도마찰예압장력/20구동·동적전기·전체팔상완/실물제조외형미승인. 손빔절삭/모터삭제·몰래이동/각도제한/ODR축소/가짜텐셔너/LINK·옛최적화/팔꿈치버스재개0.",
+  "current862_replaced": false,
+  "proposal886_adopted": false,
+  "old_inclusion_Boolean_or_points_repeated": 0,
+  "whole_factory_drive_or_exterior_approved": false
+}

@@ -1,0 +1,20 @@
+{
+  "old_pixels_or_native_repeated": 0,
+  "images_viewed": [
+    "cad/preloaded_rack_nut_module_v1/images/arm076_bench_actual_result.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_first_block_path.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_first_new_common.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_nut_first_before_after.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_selected_bench_actual_result.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_selected_body45_world_entry.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_selected_first_block_path.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_selected_first_new_common.png",
+    "cad/preloaded_rack_nut_module_v1/images/arm076_selected_nut_first_before_after.png"
+  ],
+  "selected_5_images_show_successful_bench45_and_failed_four_nut_group": true,
+  "initial_4_images_preserve_failed_nut_first_attempt": true,
+  "opaque": true,
+  "labels_and_footers_readable": true,
+  "all_geometry_inside_frame": true,
+  "completed": true
+}

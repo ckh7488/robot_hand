@@ -1,0 +1,33 @@
+{
+  "state": "completed",
+  "pid": 102596,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/preloaded_rack_nut_module_v1/render_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render-initial",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm076-render-job-render-initial.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm076-render-job-render-initial.err",
+      "pid": 72436,
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/preloaded_rack_nut_module_v1/render_evidence.py",
+        "--selected"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render-selected",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm076-render-job-render-selected.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm076-render-job-render-selected.err",
+      "pid": 105252,
+      "returncode": 0
+    }
+  ]
+}

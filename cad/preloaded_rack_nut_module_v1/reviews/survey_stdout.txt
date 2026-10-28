@@ -1,0 +1,3 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+read actual nuts/adapter 3 oldcommon read only;reuse162;separate44=>670

@@ -1,0 +1,8 @@
+OCC thread pool initialized to1
+pool getters [('NbThreads', 1), ('NbDefaultThreadsToLaunch', 48)]
+preload_rack_nut_1_0 25 0 0
+preload_rack_nut_1_1 25 0 0
+preload_rack_nut_1_2 25 0 0
+preload_rack_nut_1_3 25 1 0
+preload_rack_nut_1_4 25 3 2
+completed 5 2 body45 False world 670 mapped48 False
