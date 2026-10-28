@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 105340,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/individual_base_nut_assembly_v1/survey.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "survey",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm077-survey-job-survey.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm077-survey-job-survey.err",
+      "pid": 99520,
+      "returncode": 0
+    }
+  ]
+}

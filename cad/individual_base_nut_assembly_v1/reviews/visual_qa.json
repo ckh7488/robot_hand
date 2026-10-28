@@ -1,0 +1,13 @@
+{
+  "all_geometry_inside_frame": true,
+  "completed": true,
+  "images_viewed": [
+    "cad/individual_base_nut_assembly_v1/images/arm077_individual_entry.png",
+    "cad/individual_base_nut_assembly_v1/images/arm077_module_actual_result.png",
+    "cad/individual_base_nut_assembly_v1/images/arm077_order_before_after.png"
+  ],
+  "labels_and_footers_readable": true,
+  "source4solid_extraction_evidence_not_new_hardware": true,
+  "opaque": true,
+  "old_native_or_pixels_repeated": 0
+}

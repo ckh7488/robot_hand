@@ -268,3 +268,7 @@ ARM059 첫정확SHA는임시pyc가manifest에들어가guard/native전중단했�
 ## ARM076 랙 너트 선조립 순서
 
 [실제 경로와 실패](../cad/preloaded_rack_nut_module_v1/README.md). 원래714보존/자기44분리→670독립대안. 첫옆진입X10에서뚜껑너트/받침에막혀5native2기록을보존하고벤치+Y실제축진입을검사했다. 새총106/4기록0오류·벤치45/world717/대기169/특수48=False. 독립98+전기64정확승계162/재검사0,전체구동외형미승인·M3포함false/기존모든보류유지.
+
+## ARM077 원래 M2 너트 개별 조립
+
+[실제 개별 진입과 구성](../cad/individual_base_nut_assembly_v1/README.md). 네너트/네나사원래솔리드·adapter/cradle속성읽기뒤717전체와완료너트를장애물로개별진입했다. 새68표본/0기록·개별너트4/4·원래compound복구=True/world718/대기168/완전9/16이다. 4추출CAD는표시재현증거/추가하드웨어0,옛106재검사0·기존M3포함false/모든보류/전체구동외형미승인유지.

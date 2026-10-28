@@ -1,5 +1,7 @@
 # 작업 규칙
 
+- 2026-10-28 ARM077: cad/individual_base_nut_assembly_v1/README/reviews/survey·check·assessment·evidence/CP우선. 실제원래M2너트4/나사4·adapter/cradle축포켓읽기·옛공통속성만/oldBoolean0. 새68native/0기록0오류,개별너트4/4·compound=True/world718/대기168/완전9/16·특수48=True. 실제717+완료원래너트장애물유지·전체밖±Z/X4→원래−X착좌·실제투영AABB사건표본,동일compound중복0/4개완료때원래한행718복구다. 원래4추출STEP-STL은표시재현증거/새하드웨어0·현재862/886외형미채택·M3포함false/216IN·기존모든false/힘구동외형미승인유지. 다음실제앞7/변경장애물전체조립,완료68/4원래솔리드·옛106/162/9rail7사건/ARM07415·4·보어1/216/615PCD반복0·손빔절삭/삭제/몰래이동/얕은시작/각도제한0.
+
 - 2026-10-28 ARM076: cad/preloaded_rack_nut_module_v1/README/reviews/check·selected·survey·evidence둘/CP우선. 기하0/현재862·별도886외형미채택/명시받침1·885유지. 이전714보존/자기44명시분리→670·뒤8/손팔유지·중복0/역분해운반미검증. 독립98+전기64=162정확승계새0. 첫너트옆X10의lidnut.9833710941/새받침4.1578846131실패5native보존뒤벤치+Y실제축진입대안. 합계새106/4기록0오류·벤치45/body45=True·world717/대기169/완전8/특수48=False. 도달한M2rail실제면사건표본만/미실행성공처리0. M3포함false/216IN·기존strictfalse/corefalse/pixelfalse유지·전체구동외형미승인. 다음전체M2/M3순서/앞7,완료새106/162·옛187/ARM07415·4·1보어216/615PCD반복0. 삭제/얕은시작/코너절삭/모터이동0.
 
 - 2026-10-28 ARM075: cad/branched_module_assembly_v1/README/reviews/원본check·selected·survey·evidence둘/CP우선. 새기하0·ARM074받침1명시교체/885불변·현재862/886외형미채택. 독립motor14+port0kit42=56동일승계·새0/옛전체49·92맹목승계0. 새port1kit7/전기·양port carrier43벤치완료,실제670장애물밖→몸체43항등진입13통과/713뒤첫racknut+Y20X0/Wrist9.550077838035046실패·초기170rawfalse보존. 같은161prefix승계뒤최종축높이옆진입등선택새17,합계새187/4기록0오류·마지막world714/대기172/완전8/특수48=False. M3포함false·216IN모순/윗돌출5.9/전기홈·M3스택/모터축길이clock유지·wholefactory/20구동외형미승인. 완료187/벤치43/56/161·ARM07415/4/보어1·216/옛49/92/615PCD반복0·다음실제남은체결전체순서/앞7,막힌뒤얕은시작/삭제/코너절삭/몰래이동0.

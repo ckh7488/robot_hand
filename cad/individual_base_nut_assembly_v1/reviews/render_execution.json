@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "pid": 105908,
+  "commands": [
+    {
+      "argv": [
+        "D:/Codex-work/robot-hand-workspace/cad-env/Scripts/pythonw.exe",
+        "D:/Codex-work/robot-hand-workspace/run_cad_single_thread.pyw",
+        "D:/robot_hand/cad/individual_base_nut_assembly_v1/render_evidence.py"
+      ],
+      "cwd": "D:/robot_hand",
+      "label": "render",
+      "stdout": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm077-render-job-render.out",
+      "stderr": "D:\\Codex-work\\robot-hand-workspace\\logs\\arm077-render-job-render.err",
+      "pid": 37316,
+      "returncode": 0
+    }
+  ]
+}
