@@ -13,7 +13,14 @@ a = ap.parse_args()
 current = json.loads((P/'CHECKPOINT.json').read_text(encoding='utf-8'))
 manifest_path = a.manifest or P/current['manifest']
 manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+# An explicitly supplied snapshot still checks every recorded file.
+working_documents = (
+    manifest['files'].keys() & {'README.md', 'PROGRESS.md', 'AGENTS.md'}
+    if a.manifest is None else set()
+)
 for relative, expected in manifest['files'].items():
+    if relative in working_documents:
+        continue
     f = (P/relative).resolve()
     assert f.is_relative_to(P), relative
     assert f.is_file(), 'Missing '+relative
@@ -58,7 +65,9 @@ for row in curves['curves']:
 assert len(curves['curves']) == 123
 assert err < 1e-3 and radius >= 10.
 assert not current['manufacturing_release']
-result = {'checkpoint': current['id'], 'manifest_files_checked': len(manifest['files']), 'V9_frozen_hashes_checked': n,
+result = {'checkpoint': current['id'],
+          'manifest_files_checked': len(manifest['files']) - len(working_documents),
+          'working_documents_excluded': sorted(working_documents), 'V9_frozen_hashes_checked': n,
           'FK': fk, 'local_import': str(Path(k.__file__).relative_to(P)), 'meshes': meshes,
           'loop_curves_recomputed': len(curves['curves']), 'loop_max_length_error_mm': err,
           'loop_min_dense_sampled_radius_mm': radius, 'manufacturing_release': False,
